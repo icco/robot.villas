@@ -1,4 +1,4 @@
-import { and, eq } from "drizzle-orm";
+import { and, count, desc, eq } from "drizzle-orm";
 import { drizzle, type PostgresJsDatabase } from "drizzle-orm/postgres-js";
 import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
 import type postgres from "postgres";
@@ -61,6 +61,36 @@ export async function removeFollower(db: Db, botUsername: string, followerId: st
   await db
     .delete(schema.followers)
     .where(and(eq(schema.followers.botUsername, botUsername), eq(schema.followers.followerId, followerId)));
+}
+
+export async function countEntries(db: Db, botUsername: string): Promise<number> {
+  const rows = await db
+    .select({ value: count() })
+    .from(schema.feedEntries)
+    .where(eq(schema.feedEntries.botUsername, botUsername));
+  return rows[0]?.value ?? 0;
+}
+
+export async function getEntriesPage(
+  db: Db,
+  botUsername: string,
+  limit: number,
+  offset: number,
+): Promise<
+  Array<{ guid: string; url: string; title: string; publishedAt: Date | null }>
+> {
+  return db
+    .select({
+      guid: schema.feedEntries.guid,
+      url: schema.feedEntries.url,
+      title: schema.feedEntries.title,
+      publishedAt: schema.feedEntries.publishedAt,
+    })
+    .from(schema.feedEntries)
+    .where(eq(schema.feedEntries.botUsername, botUsername))
+    .orderBy(desc(schema.feedEntries.createdAt))
+    .limit(limit)
+    .offset(offset);
 }
 
 export async function getKeypair(

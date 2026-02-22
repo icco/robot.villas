@@ -4,6 +4,41 @@ import { Create, Note } from "@fedify/vocab";
 import { getFollowers, hasEntry, insertEntry, type Db } from "./db.js";
 import type { FeedEntry } from "./rss.js";
 
+export interface EntryLike {
+  guid: string;
+  title: string;
+  link: string;
+  publishedAt: Date | null;
+}
+
+export function buildCreateActivity(
+  botUsername: string,
+  entry: EntryLike,
+  baseUrl: string | URL,
+): Create {
+  const noteId = new URL(
+    `/users/${botUsername}/posts/${encodeURIComponent(entry.guid)}`,
+    baseUrl,
+  );
+  const actorId = new URL(`/users/${botUsername}`, baseUrl);
+
+  const note = new Note({
+    id: noteId,
+    attribution: actorId,
+    content: formatContent(entry),
+    url: tryParseUrl(entry.link),
+    published: entry.publishedAt
+      ? Temporal.Instant.from(entry.publishedAt.toISOString())
+      : undefined,
+  });
+
+  return new Create({
+    id: new URL(`${noteId.href}#activity`),
+    actor: actorId,
+    object: note,
+  });
+}
+
 export interface PublishResult {
   published: number;
   skipped: number;
@@ -41,27 +76,11 @@ export async function publishNewEntries(
       continue;
     }
 
-    const noteId = new URL(
-      `/users/${botUsername}/posts/${encodeURIComponent(entry.guid)}`,
+    const create = buildCreateActivity(
+      botUsername,
+      entry,
       `https://${domain}`,
     );
-    const actorId = new URL(`/users/${botUsername}`, `https://${domain}`);
-
-    const note = new Note({
-      id: noteId,
-      attribution: actorId,
-      content: formatContent(entry),
-      url: tryParseUrl(entry.link),
-      published: entry.publishedAt
-        ? Temporal.Instant.from(entry.publishedAt.toISOString())
-        : undefined,
-    });
-
-    const create = new Create({
-      id: new URL(`${noteId.href}#activity`),
-      actor: actorId,
-      object: note,
-    });
 
     await ctx.sendActivity(
       { identifier: botUsername },

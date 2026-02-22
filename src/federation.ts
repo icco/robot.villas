@@ -11,12 +11,15 @@ import { Accept, Application, Follow, Undo } from "@fedify/vocab";
 import type { FeedsConfig } from "./config.js";
 import {
   addFollower,
+  countEntries,
+  getEntriesPage,
   getFollowers,
   getKeypair,
   removeFollower,
   saveKeypair,
   type Db,
 } from "./db.js";
+import { buildCreateActivity } from "./publisher.js";
 
 export interface FederationDeps {
   config: FeedsConfig;
@@ -68,6 +71,52 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         await exportJwk(privateKey),
       );
       return [{ privateKey, publicKey }];
+    });
+
+  const OUTBOX_PAGE_SIZE = 20;
+
+  fed
+    .setOutboxDispatcher(
+      "/users/{identifier}/outbox",
+      async (ctx, identifier, cursor) => {
+        if (!botUsernames.includes(identifier)) return null;
+        const offset = cursor ? parseInt(cursor, 10) : 0;
+        const entries = await getEntriesPage(
+          db,
+          identifier,
+          OUTBOX_PAGE_SIZE,
+          offset,
+        );
+        const total = await countEntries(db, identifier);
+        const nextOffset = offset + entries.length;
+        return {
+          items: entries.map((e) =>
+            buildCreateActivity(
+              identifier,
+              { ...e, link: e.url },
+              ctx.url,
+            ),
+          ),
+          prevCursor: offset > 0 ? String(Math.max(0, offset - OUTBOX_PAGE_SIZE)) : null,
+          nextCursor: nextOffset < total ? String(nextOffset) : null,
+        };
+      },
+    )
+    .setCounter(async (_ctx, identifier) => {
+      if (!botUsernames.includes(identifier)) return null;
+      return await countEntries(db, identifier);
+    })
+    .setFirstCursor(async (_ctx, identifier) => {
+      if (!botUsernames.includes(identifier)) return null;
+      return "0";
+    })
+    .setLastCursor(async (_ctx, identifier) => {
+      if (!botUsernames.includes(identifier)) return null;
+      const total = await countEntries(db, identifier);
+      if (total === 0) return null;
+      const lastOffset =
+        Math.floor((total - 1) / OUTBOX_PAGE_SIZE) * OUTBOX_PAGE_SIZE;
+      return String(lastOffset);
     });
 
   fed.setFollowersDispatcher(
