@@ -56,9 +56,10 @@ ${botList}
     return c.redirect(`/@${username}`);
   });
 
-  app.get("/@:username", async (c) => {
-    const username = c.req.param("username") as string;
-    console.log("DEBUG /@:username route hit:", JSON.stringify({ username, knownBots: Object.keys(config.bots), match: username in config.bots }));
+  app.get("/:handle", async (c) => {
+    const handle = c.req.param("handle") as string;
+    if (!handle.startsWith("@")) return c.notFound();
+    const username = handle.slice(1);
     if (!(username in config.bots)) return c.notFound();
 
     const bot = config.bots[username];
