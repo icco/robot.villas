@@ -20,13 +20,22 @@ bots:
     feed_url: "https://news.ycombinator.com/rss"
     display_name: "Hacker News"
     summary: "Top stories from Hacker News"
+    profile_photo: "https://news.ycombinator.com/y18.svg"
   lobsters:
     feed_url: "https://lobste.rs/rss"
     display_name: "Lobsters"
     summary: "Stories from Lobsters"
+    profile_photo: "https://lobste.rs/apple-touch-icon-144.png"
 ```
 
 Each key under `bots` becomes the bot's username on the instance. Usernames must be lowercase alphanumeric or underscores (validated at startup via Zod).
+
+| Field | Required | Description |
+|---|---|---|
+| `feed_url` | Yes | URL of the RSS/Atom feed |
+| `display_name` | Yes | Display name shown on the profile (max 100 chars) |
+| `summary` | Yes | Short bio/description (max 500 chars) |
+| `profile_photo` | No | URL to an avatar image, used as the ActivityPub actor icon and shown on the profile page |
 
 ## Tech Stack
 
@@ -98,7 +107,7 @@ src/
   federation.ts     Fedify federation, actor dispatchers, inbox listeners
   publisher.ts      Dedup + publish new entries as Create(Note) activities
   poller.ts         Interval-based polling loop
-  server.ts         Hono app with Fedify middleware and healthcheck
+  server.ts         Hono app with Fedify middleware, homepage, and bot profile pages
   __tests__/        Unit and integration tests
 drizzle/            Generated SQL migration files (committed to git)
 ```
@@ -117,6 +126,7 @@ drizzle/            Generated SQL migration files (committed to git)
 - Add a new entry under `bots:` in `feeds.yml`. The key becomes the bot's fediverse username (e.g. `lobsters` -> `@lobsters@robot.villas`).
 - Usernames must be lowercase alphanumeric or underscores -- this is enforced by Zod validation at startup.
 - Provide a meaningful `display_name` and `summary` -- these appear on the bot's fediverse profile.
+- Optionally set `profile_photo` to a URL pointing to an avatar image. This is served as the ActivityPub actor `icon` (visible in Mastodon etc.) and displayed on the bot's HTML profile page at `/@username`.
 - No restart is needed for key generation; key pairs are created lazily on first actor dispatch and persisted in the `actor_keypairs` table.
 
 ### Fedify v2 Notes
