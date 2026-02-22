@@ -4,7 +4,7 @@ import { getLogger } from "@logtape/logtape";
 import postgres from "postgres";
 import { behindProxy } from "x-forwarded-fetch";
 import { getBlockedInstances, loadConfig } from "./config.js";
-import { createDb, migrate } from "./db.js";
+import { createDb, ensureTables } from "./db.js";
 import { setupFederation } from "./federation.js";
 import { setupLogging } from "./logging.js";
 import { startPoller } from "./poller.js";
@@ -32,7 +32,7 @@ const config = loadConfig("feeds.yml");
 const sql = postgres(DATABASE_URL);
 const db = createDb(sql);
 
-await migrate(db);
+await ensureTables(sql);
 
 const kvStore = new PostgresKvStore(sql);
 const messageQueue = new PostgresMessageQueue(sql);
