@@ -59,7 +59,9 @@ describeWithDb("database", () => {
   });
 
   afterAll(async () => {
-    await client`DROP TABLE IF EXISTS feed_entries, actor_keypairs, followers`;
+    await db.delete(schema.feedEntries).where(rawSql`1=1`);
+    await db.delete(schema.actorKeypairs).where(rawSql`1=1`);
+    await db.delete(schema.followers).where(rawSql`1=1`);
     await client.end();
   });
 
