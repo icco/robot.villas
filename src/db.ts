@@ -112,7 +112,7 @@ export async function getEntriesPage(
     })
     .from(schema.feedEntries)
     .where(eq(schema.feedEntries.botUsername, botUsername))
-    .orderBy(desc(schema.feedEntries.createdAt))
+    .orderBy(desc(schema.feedEntries.publishedAt))
     .limit(limit)
     .offset(offset);
 }
