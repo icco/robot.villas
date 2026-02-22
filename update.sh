@@ -15,9 +15,6 @@ git diff --quiet --staged || git commit -m 'chore: lint'
 
 yarn run build
 
-git add public
-git diff --quiet --staged || git commit -m 'chore: update build artifacts'
-
 git commit --allow-empty -m 'chore: redeploy'
 
 git push -u
