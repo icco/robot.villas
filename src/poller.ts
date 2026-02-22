@@ -18,7 +18,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   const { config, sql, domain, getContext } = opts;
   const intervalMs = opts.intervalMs ?? DEFAULT_INTERVAL_MS;
 
-  let timer: ReturnType<typeof setInterval> | null = null;
+  let stopped = false;
 
   async function poll(): Promise<void> {
     const ctx = getContext();
@@ -37,16 +37,20 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
     }
   }
 
-  // Run immediately, then on interval
-  poll();
-  timer = setInterval(poll, intervalMs);
+  async function loop(): Promise<void> {
+    while (!stopped) {
+      await poll();
+      if (!stopped) {
+        await new Promise((resolve) => setTimeout(resolve, intervalMs));
+      }
+    }
+  }
+
+  loop();
 
   return {
     stop() {
-      if (timer) {
-        clearInterval(timer);
-        timer = null;
-      }
+      stopped = true;
     },
   };
 }
