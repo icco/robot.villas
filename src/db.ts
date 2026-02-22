@@ -14,36 +14,6 @@ export async function migrate(db: Db): Promise<void> {
   await runMigrations(db, { migrationsFolder: "./drizzle" });
 }
 
-export async function ensureTables(sql: postgres.Sql): Promise<void> {
-  await sql`
-    CREATE TABLE IF NOT EXISTS "actor_keypairs" (
-      "bot_username" text PRIMARY KEY NOT NULL,
-      "public_key" jsonb NOT NULL,
-      "private_key" jsonb NOT NULL,
-      "created_at" timestamp with time zone DEFAULT now() NOT NULL
-    )`;
-  await sql`
-    CREATE TABLE IF NOT EXISTS "feed_entries" (
-      "id" serial PRIMARY KEY NOT NULL,
-      "bot_username" text NOT NULL,
-      "guid" text NOT NULL,
-      "url" text NOT NULL,
-      "title" text NOT NULL,
-      "published_at" timestamp with time zone,
-      "created_at" timestamp with time zone DEFAULT now() NOT NULL,
-      CONSTRAINT "feed_entries_bot_username_guid_unique" UNIQUE("bot_username","guid")
-    )`;
-  await sql`
-    CREATE TABLE IF NOT EXISTS "followers" (
-      "id" serial PRIMARY KEY NOT NULL,
-      "bot_username" text NOT NULL,
-      "follower_id" text NOT NULL,
-      "follow_id" text NOT NULL,
-      "created_at" timestamp with time zone DEFAULT now() NOT NULL,
-      CONSTRAINT "followers_bot_username_follower_id_unique" UNIQUE("bot_username","follower_id")
-    )`;
-}
-
 export async function hasEntry(db: Db, botUsername: string, guid: string): Promise<boolean> {
   const rows = await db
     .select({ id: schema.feedEntries.id })
