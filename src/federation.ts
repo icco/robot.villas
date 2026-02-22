@@ -70,7 +70,6 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         assertionMethods: keys.map((kp) => kp.multikey),
       });
     })
-    .mapHandle((_ctx, handle) => handle)
     .setKeyPairsDispatcher(async (_ctx, identifier) => {
       if (!botUsernames.includes(identifier)) return [];
       const existing = await getKeypairs(db, identifier);
@@ -101,7 +100,8 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         },
       ]);
       return [rsaPair, ed25519Pair];
-    });
+    })
+    .mapHandle((_ctx, handle) => handle);
 
   const OUTBOX_PAGE_SIZE = 20;
 
