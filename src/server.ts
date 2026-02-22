@@ -58,6 +58,7 @@ ${botList}
 
   app.get("/@:username", async (c) => {
     const username = c.req.param("username") as string;
+    console.log("DEBUG /@:username route hit:", JSON.stringify({ username, knownBots: Object.keys(config.bots), match: username in config.bots }));
     if (!(username in config.bots)) return c.notFound();
 
     const bot = config.bots[username];
