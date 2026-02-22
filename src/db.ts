@@ -1,34 +1,17 @@
-import { and, count, desc, eq, sql } from "drizzle-orm";
-import { drizzle, type PostgresJsDatabase } from "drizzle-orm/postgres-js";
+import { and, count, desc, eq } from "drizzle-orm";
+import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
-import fs from "node:fs";
 import type postgres from "postgres";
 import * as schema from "./schema.js";
 
-export type Db = PostgresJsDatabase<typeof schema>;
+export type Db = ReturnType<typeof createDb>;
 
-export function createDb(client: postgres.Sql): Db {
-  return drizzle(client, { schema });
+export function createDb(client: postgres.Sql) {
+  return drizzle({ client, schema });
 }
 
 export async function migrate(db: Db): Promise<void> {
-  const migrationsFolder = "./drizzle";
-  const journal = JSON.parse(
-    fs.readFileSync(`${migrationsFolder}/meta/_journal.json`, "utf-8"),
-  );
-  const journalCount: number = journal.entries.length;
-
-  const rows = await db.execute<{ cnt: string }>(
-    sql`SELECT count(*)::text AS cnt FROM drizzle.__drizzle_migrations`,
-  ).catch(() => [] as Array<{ cnt: string }>);
-
-  const dbCount = Number(rows[0]?.cnt ?? 0);
-
-  if (dbCount > journalCount) {
-    await db.execute(sql`TRUNCATE drizzle.__drizzle_migrations`);
-  }
-
-  await runMigrations(db, { migrationsFolder });
+  await runMigrations(db, { migrationsFolder: "./drizzle" });
 }
 
 export async function hasEntry(db: Db, botUsername: string, guid: string): Promise<boolean> {

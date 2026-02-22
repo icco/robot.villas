@@ -25,10 +25,9 @@ describeWithDb("database", () => {
   beforeAll(async () => {
     client = postgres(DATABASE_URL!);
     db = createDb(client);
-    // Push schema directly for tests
     await client`
       CREATE TABLE IF NOT EXISTS feed_entries (
-        id            SERIAL PRIMARY KEY,
+        id            INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
         bot_username  TEXT NOT NULL,
         guid          TEXT NOT NULL,
         url           TEXT NOT NULL,
@@ -48,7 +47,7 @@ describeWithDb("database", () => {
     `;
     await client`
       CREATE TABLE IF NOT EXISTS followers (
-        id            SERIAL PRIMARY KEY,
+        id            INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
         bot_username  TEXT NOT NULL,
         follower_id   TEXT NOT NULL,
         follow_id     TEXT NOT NULL,
@@ -148,7 +147,6 @@ describeWithDb("database", () => {
     it("reads legacy single-JWK format as a single-element array", async () => {
       const pub = { kty: "RSA", n: "legacy" } as JsonWebKey;
       const priv = { kty: "RSA", d: "legacy" } as JsonWebKey;
-      // Simulate the old storage format: a plain JWK object, not an array
       await client`
         INSERT INTO actor_keypairs (bot_username, public_key, private_key)
         VALUES ('legacybot', ${JSON.stringify(pub)}::jsonb, ${JSON.stringify(priv)}::jsonb)
