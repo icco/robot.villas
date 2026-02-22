@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach } from "vitest";
+import { describe, it, expect, afterEach } from "vitest";
 import { getBlockedInstances, parseConfig, loadConfig } from "../config.js";
 import { join } from "node:path";
 
