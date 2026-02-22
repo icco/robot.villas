@@ -86,33 +86,50 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
   // Key pairs dispatcher — must be registered via the setters returned above
   actorCallbacks.setKeyPairsDispatcher(async (_ctx, identifier) => {
     if (!botUsernames.includes(identifier)) return [];
-    const existing = await getKeypairs(db, identifier);
-    if (existing && existing.length >= 2) {
-      return await Promise.all(
-        existing.map(async (kp) => ({
-          privateKey: await importJwk(kp.privateKey, "private"),
-          publicKey: await importJwk(kp.publicKey, "public"),
-        })),
-      );
+    try {
+      const existing = await getKeypairs(db, identifier);
+      if (existing && existing.length >= 2) {
+        logger.info("Loaded {count} existing key pairs for {identifier}", {
+          count: existing.length,
+          identifier,
+        });
+        return await Promise.all(
+          existing.map(async (kp) => ({
+            privateKey: await importJwk(kp.privateKey, "private"),
+            publicKey: await importJwk(kp.publicKey, "public"),
+          })),
+        );
+      }
+      logger.info("Generating key pairs for {identifier} (existing: {existing})", {
+        identifier,
+        existing: existing?.length ?? 0,
+      });
+      const rsaPair = existing?.[0]
+        ? {
+            privateKey: await importJwk(existing[0].privateKey, "private"),
+            publicKey: await importJwk(existing[0].publicKey, "public"),
+          }
+        : await generateCryptoKeyPair("RSASSA-PKCS1-v1_5");
+      const ed25519Pair = await generateCryptoKeyPair("Ed25519");
+      await saveKeypairs(db, identifier, [
+        {
+          publicKey: await exportJwk(rsaPair.publicKey),
+          privateKey: await exportJwk(rsaPair.privateKey),
+        },
+        {
+          publicKey: await exportJwk(ed25519Pair.publicKey),
+          privateKey: await exportJwk(ed25519Pair.privateKey),
+        },
+      ]);
+      logger.info("Saved new key pairs for {identifier}", { identifier });
+      return [rsaPair, ed25519Pair];
+    } catch (error) {
+      logger.error("Key pairs dispatcher failed for {identifier}: {error}", {
+        identifier,
+        error,
+      });
+      throw error;
     }
-    const rsaPair = existing?.[0]
-      ? {
-          privateKey: await importJwk(existing[0].privateKey, "private"),
-          publicKey: await importJwk(existing[0].publicKey, "public"),
-        }
-      : await generateCryptoKeyPair("RSASSA-PKCS1-v1_5");
-    const ed25519Pair = await generateCryptoKeyPair("Ed25519");
-    await saveKeypairs(db, identifier, [
-      {
-        publicKey: await exportJwk(rsaPair.publicKey),
-        privateKey: await exportJwk(rsaPair.privateKey),
-      },
-      {
-        publicKey: await exportJwk(ed25519Pair.publicKey),
-        privateKey: await exportJwk(ed25519Pair.privateKey),
-      },
-    ]);
-    return [rsaPair, ed25519Pair];
   });
 
   // --- Outbox dispatcher ---
