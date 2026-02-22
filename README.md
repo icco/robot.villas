@@ -42,14 +42,14 @@ Each key under `bots` becomes the bot's username on the instance.
 
 ```bash
 # Install dependencies
-npm install
+yarn install
 
 # Set required environment variables (see below)
 export DATABASE_URL="postgres://user:password@localhost:5432/robot_villas"
 export DOMAIN="robot.villas"
 
 # Start the development server
-npm run dev
+yarn dev
 ```
 
 A running PostgreSQL instance is required. The application will apply any necessary schema migrations on startup.
