@@ -35,6 +35,10 @@ const blockedInstances = getBlockedInstances();
 const fed = setupFederation({ config, db, kvStore, messageQueue, blockedInstances });
 const app = createApp(fed, config, DOMAIN, db);
 
+const queueController = new AbortController();
+await fed.startQueue(undefined, { signal: queueController.signal });
+console.log("Fedify message queue worker started");
+
 const server = serve({ fetch: app.fetch, port: PORT }, (info) => {
   console.log(`robot.villas listening on http://localhost:${info.port}`);
 });
@@ -50,6 +54,7 @@ const poller = startPoller({
 function shutdown() {
   console.log("Shutting down...");
   poller.stop();
+  queueController.abort();
   server.close();
   sql.end().then(() => process.exit(0));
 }

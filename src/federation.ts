@@ -7,16 +7,16 @@ import {
   type KvStore,
   type MessageQueue,
 } from "@fedify/fedify";
-import { Accept, Application, Follow, Image, Reject, Undo } from "@fedify/vocab";
+import { Accept, Application, Endpoints, Follow, Image, Reject, Undo } from "@fedify/vocab";
 import type { FeedsConfig } from "./config.js";
 import {
   addFollower,
   countEntries,
   getEntriesPage,
   getFollowers,
-  getKeypair,
+  getKeypairs,
   removeFollower,
-  saveKeypair,
+  saveKeypairs,
   type Db,
 } from "./db.js";
 import { buildCreateActivity } from "./publisher.js";
@@ -37,12 +37,14 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
   const fed = createFederation<void>({
     kv: kvStore,
     queue: messageQueue,
+    manuallyStartQueue: true,
   });
 
   fed
     .setActorDispatcher("/users/{identifier}", async (ctx, identifier) => {
       if (!botUsernames.includes(identifier)) return null;
       const bot = config.bots[identifier];
+      const keys = await ctx.getActorKeyPairs(identifier);
       return new Application({
         id: ctx.getActorUri(identifier),
         preferredUsername: identifier,
@@ -53,29 +55,45 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
           : null,
         inbox: ctx.getInboxUri(identifier),
         outbox: ctx.getOutboxUri(identifier),
+        followers: ctx.getFollowersUri(identifier),
+        endpoints: new Endpoints({
+          sharedInbox: ctx.getInboxUri(),
+        }),
         url: new URL(`/users/${identifier}`, ctx.url),
-        publicKeys: (await ctx.getActorKeyPairs(identifier)).map(
-          (kp) => kp.cryptographicKey,
-        ),
+        publicKeys: keys.map((kp) => kp.cryptographicKey),
+        assertionMethods: keys.map((kp) => kp.multikey),
       });
     })
     .setKeyPairsDispatcher(async (_ctx, identifier) => {
       if (!botUsernames.includes(identifier)) return [];
-      const existing = await getKeypair(db, identifier);
-      if (existing) {
-        const privateKey = await importJwk(existing.privateKey, "private");
-        const publicKey = await importJwk(existing.publicKey, "public");
-        return [{ privateKey, publicKey }];
+      const existing = await getKeypairs(db, identifier);
+      if (existing && existing.length >= 2) {
+        return await Promise.all(
+          existing.map(async (kp) => ({
+            privateKey: await importJwk(kp.privateKey, "private"),
+            publicKey: await importJwk(kp.publicKey, "public"),
+          })),
+        );
       }
-      const { privateKey, publicKey } =
-        await generateCryptoKeyPair("RSASSA-PKCS1-v1_5");
-      await saveKeypair(
-        db,
-        identifier,
-        await exportJwk(publicKey),
-        await exportJwk(privateKey),
-      );
-      return [{ privateKey, publicKey }];
+      // Reuse existing RSA key pair if present, otherwise generate fresh
+      const rsaPair = existing?.[0]
+        ? {
+            privateKey: await importJwk(existing[0].privateKey, "private"),
+            publicKey: await importJwk(existing[0].publicKey, "public"),
+          }
+        : await generateCryptoKeyPair("RSASSA-PKCS1-v1_5");
+      const ed25519Pair = await generateCryptoKeyPair("Ed25519");
+      await saveKeypairs(db, identifier, [
+        {
+          publicKey: await exportJwk(rsaPair.publicKey),
+          privateKey: await exportJwk(rsaPair.privateKey),
+        },
+        {
+          publicKey: await exportJwk(ed25519Pair.publicKey),
+          privateKey: await exportJwk(ed25519Pair.privateKey),
+        },
+      ]);
+      return [rsaPair, ed25519Pair];
     });
 
   const OUTBOX_PAGE_SIZE = 20;
@@ -159,14 +177,23 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
   fed
     .setInboxListeners("/users/{identifier}/inbox", "/inbox")
     .on(Follow, async (ctx, follow) => {
-      if (!follow.id || !follow.actorId || !follow.objectId) return;
-      const parsed = ctx.parseUri(follow.objectId);
-      if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier))
+      if (!follow.id || !follow.actorId || !follow.objectId) {
+        console.warn("[Follow] Ignored: missing id, actorId, or objectId");
         return;
+      }
+      const parsed = ctx.parseUri(follow.objectId);
+      if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) {
+        console.warn(`[Follow] Ignored: objectId ${follow.objectId} is not a known bot`);
+        return;
+      }
       const follower = await follow.getActor(ctx);
-      if (!follower?.id) return;
+      if (!follower?.id) {
+        console.error(`[Follow] Failed to resolve actor ${follow.actorId}`);
+        return;
+      }
       const followerHost = follower.id.hostname.toLowerCase();
       if (blockedInstances.has(followerHost)) {
+        console.log(`[Follow] Rejected follow from blocked instance ${followerHost}`);
         await ctx.sendActivity(
           { identifier: parsed.identifier },
           follower,
@@ -180,6 +207,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         follower.id.href,
         follow.id.href,
       );
+      console.log(`[Follow] ${follower.id.href} -> ${parsed.identifier}: sending Accept`);
       await ctx.sendActivity(
         { identifier: parsed.identifier },
         follower,
