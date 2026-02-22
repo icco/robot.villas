@@ -82,6 +82,30 @@ bots:
 `),
     ).toThrow();
   });
+
+  it("rejects config with display_name over 100 chars", () => {
+    expect(() =>
+      parseConfig(`
+bots:
+  test:
+    feed_url: "https://example.com/rss"
+    display_name: "${"x".repeat(101)}"
+    summary: "A bot"
+`),
+    ).toThrow();
+  });
+
+  it("rejects config with summary over 500 chars", () => {
+    expect(() =>
+      parseConfig(`
+bots:
+  test:
+    feed_url: "https://example.com/rss"
+    display_name: "Test"
+    summary: "${"y".repeat(501)}"
+`),
+    ).toThrow();
+  });
 });
 
 describe("loadConfig", () => {

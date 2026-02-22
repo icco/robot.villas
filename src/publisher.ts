@@ -1,32 +1,44 @@
 import { Temporal } from "@js-temporal/polyfill";
 import type { Context } from "@fedify/fedify";
 import { Create, Note } from "@fedify/vocab";
-import { getFollowers, hasEntry, insertEntry, type Db } from "./db.js";
+import { getFollowers, insertEntry, type Db } from "./db.js";
 import type { FeedEntry } from "./rss.js";
 
+/** Max lengths for feed-derived fields (storage and Note content). */
+export const MAX_TITLE_LENGTH = 2000;
+export const MAX_URL_LENGTH = 2048;
+export const MAX_GUID_LENGTH = 2048;
+
+export function truncateToMax(s: string, max: number): string {
+  if (s.length <= max) return s;
+  return s.slice(0, max);
+}
+
+/** Content for a Note; id is our server-generated entry id (used in Note URI). */
 export interface EntryLike {
-  guid: string;
   title: string;
   link: string;
   publishedAt: Date | null;
 }
 
+/**
+ * Builds a Create(Note) activity. Uses entryId (our DB id) in the Note URI, not
+ * the feed's guid, so feed-supplied data never appears in URLs.
+ */
 export function buildCreateActivity(
   botUsername: string,
+  entryId: number,
   entry: EntryLike,
   baseUrl: string | URL,
 ): Create {
-  const noteId = new URL(
-    `/users/${botUsername}/posts/${encodeURIComponent(entry.guid)}`,
-    baseUrl,
-  );
+  const noteId = new URL(`/users/${botUsername}/posts/${entryId}`, baseUrl);
   const actorId = new URL(`/users/${botUsername}`, baseUrl);
 
   const note = new Note({
     id: noteId,
     attribution: actorId,
     content: formatContent(entry),
-    url: tryParseUrl(entry.link),
+    url: safeParseUrl(entry.link),
     published: entry.publishedAt
       ? Temporal.Instant.from(entry.publishedAt.toISOString())
       : undefined,
@@ -57,19 +69,22 @@ export async function publishNewEntries(
   const followers = await getFollowers(db, botUsername);
 
   for (const entry of entries) {
-    if (await hasEntry(db, botUsername, entry.guid)) {
+    const guid = truncateToMax(entry.guid, MAX_GUID_LENGTH);
+    const url = truncateToMax(entry.link, MAX_URL_LENGTH);
+    const title = truncateToMax(entry.title, MAX_TITLE_LENGTH);
+
+    const entryId = await insertEntry(
+      db,
+      botUsername,
+      guid,
+      url,
+      title,
+      entry.publishedAt,
+    );
+    if (entryId === null) {
       skipped++;
       continue;
     }
-
-    await insertEntry(
-      db,
-      botUsername,
-      entry.guid,
-      entry.link,
-      entry.title,
-      entry.publishedAt,
-    );
 
     if (followers.length === 0) {
       skipped++;
@@ -78,7 +93,8 @@ export async function publishNewEntries(
 
     const create = buildCreateActivity(
       botUsername,
-      entry,
+      entryId,
+      { title, link: url, publishedAt: entry.publishedAt },
       `https://${domain}`,
     );
 
@@ -93,20 +109,25 @@ export async function publishNewEntries(
   return { published, skipped };
 }
 
-function formatContent(entry: FeedEntry): string {
-  if (entry.link) {
-    return `<p>${escapeHtml(entry.title)}</p><p><a href="${escapeHtml(entry.link)}">${escapeHtml(entry.link)}</a></p>`;
-  }
-  return `<p>${escapeHtml(entry.title)}</p>`;
-}
-
-function tryParseUrl(link: string | undefined): URL | undefined {
+/** Returns a URL only for http: or https:; otherwise undefined. Used for Note.url and hrefs. */
+export function safeParseUrl(link: string | undefined): URL | undefined {
   if (!link) return undefined;
   try {
-    return new URL(link);
+    const url = new URL(link);
+    if (url.protocol === "http:" || url.protocol === "https:") return url;
+    return undefined;
   } catch {
     return undefined;
   }
+}
+
+function formatContent(entry: EntryLike): string {
+  const safeUrl = safeParseUrl(entry.link);
+  if (safeUrl) {
+    const href = safeUrl.href;
+    return `<p>${escapeHtml(entry.title)}</p><p><a href="${escapeHtml(href)}">${escapeHtml(href)}</a></p>`;
+  }
+  return `<p>${escapeHtml(entry.title)}</p>`;
 }
 
 function escapeHtml(s: string): string {
@@ -114,5 +135,6 @@ function escapeHtml(s: string): string {
     .replace(/&/g, "&amp;")
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }

@@ -2,6 +2,9 @@ import Parser from "rss-parser";
 
 const parser = new Parser({ timeout: 10_000 });
 
+/** Max items to process per feed per poll; limits DoS from huge feeds. */
+export const MAX_ITEMS_PER_POLL = 100;
+
 export interface FeedEntry {
   guid: string;
   title: string;
@@ -11,12 +14,14 @@ export interface FeedEntry {
 
 export async function fetchFeed(feedUrl: string): Promise<FeedEntry[]> {
   const feed = await parser.parseURL(feedUrl);
-  return feed.items.map(normalizeFeedItem);
+  const items = feed.items.map(normalizeFeedItem);
+  return items.slice(0, MAX_ITEMS_PER_POLL);
 }
 
 export async function parseFeedXml(xml: string): Promise<FeedEntry[]> {
   const feed = await parser.parseString(xml);
-  return feed.items.map(normalizeFeedItem);
+  const items = feed.items.map(normalizeFeedItem);
+  return items.slice(0, MAX_ITEMS_PER_POLL);
 }
 
 function normalizeFeedItem(item: Parser.Item): FeedEntry {

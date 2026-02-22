@@ -1,16 +1,22 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
 vi.mock("../db.js", () => ({
-  hasEntry: vi.fn(),
   insertEntry: vi.fn(),
   getFollowers: vi.fn(),
 }));
 
-import { hasEntry, insertEntry, getFollowers } from "../db.js";
-import { publishNewEntries } from "../publisher.js";
+import { insertEntry, getFollowers } from "../db.js";
+import {
+  buildCreateActivity,
+  MAX_GUID_LENGTH,
+  MAX_TITLE_LENGTH,
+  MAX_URL_LENGTH,
+  publishNewEntries,
+  safeParseUrl,
+  truncateToMax,
+} from "../publisher.js";
 import type { FeedEntry } from "../rss.js";
 
-const mockHasEntry = vi.mocked(hasEntry);
 const mockInsertEntry = vi.mocked(insertEntry);
 const mockGetFollowers = vi.mocked(getFollowers);
 
@@ -27,15 +33,15 @@ const entries: FeedEntry[] = [
 describe("publishNewEntries", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mockHasEntry.mockResolvedValue(false);
-    mockInsertEntry.mockResolvedValue(undefined);
+    mockInsertEntry.mockResolvedValue(1); // default: new entry, return id
     mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
   });
 
   it("publishes new entries and skips existing ones", async () => {
-    mockHasEntry.mockResolvedValueOnce(true); // g1 already exists
-    mockHasEntry.mockResolvedValueOnce(false); // g2 is new
-    mockHasEntry.mockResolvedValueOnce(false); // g3 is new
+    mockInsertEntry
+      .mockResolvedValueOnce(null) // g1 already exists (conflict)
+      .mockResolvedValueOnce(2) // g2 new
+      .mockResolvedValueOnce(3); // g3 new
 
     const result = await publishNewEntries(
       mockCtx,
@@ -47,12 +53,13 @@ describe("publishNewEntries", () => {
 
     expect(result.skipped).toBe(1);
     expect(result.published).toBe(2);
-    expect(mockInsertEntry).toHaveBeenCalledTimes(2);
+    expect(mockInsertEntry).toHaveBeenCalledTimes(3);
     expect(mockCtx.sendActivity).toHaveBeenCalledTimes(2);
   });
 
   it("records entries but does not send when there are no followers", async () => {
     mockGetFollowers.mockResolvedValue([]);
+    mockInsertEntry.mockResolvedValue(1);
 
     const result = await publishNewEntries(
       mockCtx,
@@ -68,7 +75,7 @@ describe("publishNewEntries", () => {
   });
 
   it("skips all entries when all already exist", async () => {
-    mockHasEntry.mockResolvedValue(true);
+    mockInsertEntry.mockResolvedValue(null);
 
     const result = await publishNewEntries(
       mockCtx,
@@ -80,7 +87,7 @@ describe("publishNewEntries", () => {
 
     expect(result.published).toBe(0);
     expect(result.skipped).toBe(3);
-    expect(mockInsertEntry).not.toHaveBeenCalled();
+    expect(mockInsertEntry).toHaveBeenCalledTimes(3);
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
   });
 
@@ -89,6 +96,7 @@ describe("publishNewEntries", () => {
       { guid: "bad1", title: "Bad Link", link: "not a url", publishedAt: null },
       { guid: "bad2", title: "Relative", link: "/relative/path", publishedAt: null },
     ];
+    mockInsertEntry.mockResolvedValueOnce(1).mockResolvedValueOnce(2);
 
     const result = await publishNewEntries(
       mockCtx,
@@ -114,5 +122,141 @@ describe("publishNewEntries", () => {
 
     expect(result.published).toBe(0);
     expect(result.skipped).toBe(0);
+  });
+});
+
+describe("safeParseUrl", () => {
+  it("returns undefined for javascript:, data:, and vbscript:", () => {
+    expect(safeParseUrl("javascript:alert(1)")).toBeUndefined();
+    expect(safeParseUrl("data:text/html,<script>")).toBeUndefined();
+    expect(safeParseUrl("vbscript:msgbox(1)")).toBeUndefined();
+  });
+
+  it("returns URL for http and https only", () => {
+    expect(safeParseUrl("https://example.com")?.href).toBe("https://example.com/");
+    expect(safeParseUrl("http://example.com/path")?.href).toBe("http://example.com/path");
+  });
+
+  it("returns undefined for invalid or empty input", () => {
+    expect(safeParseUrl("not a url")).toBeUndefined();
+    expect(safeParseUrl("")).toBeUndefined();
+    expect(safeParseUrl(undefined)).toBeUndefined();
+  });
+});
+
+describe("buildCreateActivity", () => {
+  const baseUrl = "https://robot.villas";
+
+  async function getNoteContent(create: Awaited<ReturnType<typeof buildCreateActivity>>): Promise<{ url?: URL; content?: string } | null> {
+    const note = await (create as { getObject?: () => Promise<unknown> }).getObject?.();
+    return note as { url?: URL; content?: string } | null;
+  }
+
+  it("does not put javascript: or data: in Note url or content href", async () => {
+    const create = buildCreateActivity(
+      "testbot",
+      1,
+      { title: "X", link: "javascript:alert(1)", publishedAt: null },
+      baseUrl,
+    );
+    const note = await getNoteContent(create);
+    expect(note).not.toBeNull();
+    expect(note!.url == null).toBe(true);
+    expect(note!.content).not.toContain("javascript:");
+    expect(note!.content).not.toMatch(/<a href=/);
+  });
+
+  it("uses https link in Note url and content when link is safe", async () => {
+    const create = buildCreateActivity(
+      "testbot",
+      2,
+      { title: "OK", link: "https://example.com/ok", publishedAt: null },
+      baseUrl,
+    );
+    const note = await getNoteContent(create);
+    expect(note).not.toBeNull();
+    expect(note!.url?.href).toBe("https://example.com/ok");
+    expect(note!.content).toContain("https://example.com/ok");
+    expect(note!.content).toContain("<a href=");
+  });
+
+  it("escapes HTML in title and link (quotes and angle brackets)", async () => {
+    const create = buildCreateActivity(
+      "testbot",
+      3,
+      {
+        title: 'Say "hello" <script>',
+        link: "https://example.com",
+        publishedAt: null,
+      },
+      baseUrl,
+    );
+    const note = await getNoteContent(create);
+    expect(note).not.toBeNull();
+    expect(note!.content).toContain("&quot;");
+    expect(note!.content).toContain("&lt;script&gt;");
+    expect(note!.content).not.toContain("<script>");
+  });
+
+  it("escapes single quote in title", async () => {
+    const create = buildCreateActivity(
+      "testbot",
+      4,
+      { title: "It's a test", link: "", publishedAt: null },
+      baseUrl,
+    );
+    const note = await getNoteContent(create);
+    expect(note).not.toBeNull();
+    expect(note!.content).toContain("&#39;");
+    expect(note!.content).toContain("It&#39;s a test");
+  });
+});
+
+describe("truncateToMax", () => {
+  it("returns string unchanged when within limit", () => {
+    expect(truncateToMax("short", 10)).toBe("short");
+    expect(truncateToMax("exactly10!", 10)).toBe("exactly10!");
+  });
+
+  it("truncates to max length when over", () => {
+    expect(truncateToMax("hello world", 5)).toBe("hello");
+    expect(truncateToMax("x".repeat(3000), MAX_TITLE_LENGTH)).toHaveLength(MAX_TITLE_LENGTH);
+  });
+});
+
+describe("publishNewEntries with length limits", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockInsertEntry.mockResolvedValue(1);
+    mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
+  });
+
+  it("truncates over-long title, link, and guid before insert and in Note", async () => {
+    const longTitle = "a".repeat(MAX_TITLE_LENGTH + 100);
+    const longLink = "https://example.com/" + "b".repeat(MAX_URL_LENGTH);
+    const longGuid = "c".repeat(MAX_URL_LENGTH + 50);
+    const entries: FeedEntry[] = [
+      { guid: longGuid, title: longTitle, link: longLink, publishedAt: null },
+    ];
+
+    await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot",
+      "robot.villas",
+      entries,
+    );
+
+    expect(mockInsertEntry).toHaveBeenCalledTimes(1);
+    const [, , guid, url, title] = mockInsertEntry.mock.calls[0]!;
+    expect(guid).toHaveLength(MAX_GUID_LENGTH);
+    expect(url).toHaveLength(MAX_URL_LENGTH);
+    expect(title).toHaveLength(MAX_TITLE_LENGTH);
+    expect(mockCtx.sendActivity).toHaveBeenCalledTimes(1);
+    const create = mockCtx.sendActivity.mock.calls[0]![2] as { getObject?: () => Promise<{ content?: string }> };
+    const note = create.getObject ? await create.getObject() : null;
+    expect(note?.content).toBeDefined();
+    expect(note!.content).toContain("a".repeat(MAX_TITLE_LENGTH).slice(0, 50));
+    expect(note!.content).toContain("https://example.com/");
   });
 });
