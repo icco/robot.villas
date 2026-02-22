@@ -59,8 +59,8 @@ ${botList}
   });
 
   app.get("/@:username", async (c) => {
-    const username = c.req.param("username");
-    if (!config.bots[username]) return c.notFound();
+    const username = c.req.param("username") as string;
+    if (!(username in config.bots)) return c.notFound();
 
     const bot = config.bots[username];
     const page = parseInt(c.req.query("page") || "0", 10);
