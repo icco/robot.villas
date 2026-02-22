@@ -77,6 +77,24 @@ export async function countEntries(db: Db, botUsername: string): Promise<number>
   return rows[0]?.value ?? 0;
 }
 
+export async function getEntryById(
+  db: Db,
+  botUsername: string,
+  entryId: number,
+): Promise<{ id: number; url: string; title: string; publishedAt: Date | null } | null> {
+  const rows = await db
+    .select({
+      id: schema.feedEntries.id,
+      url: schema.feedEntries.url,
+      title: schema.feedEntries.title,
+      publishedAt: schema.feedEntries.publishedAt,
+    })
+    .from(schema.feedEntries)
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
 export async function getEntriesPage(
   db: Db,
   botUsername: string,

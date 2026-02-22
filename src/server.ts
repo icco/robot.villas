@@ -58,6 +58,12 @@ ${botList}
     return c.html(html);
   });
 
+  app.get("/users/:username", (c) => {
+    const username = c.req.param("username") as string;
+    if (!(username in config.bots)) return c.notFound();
+    return c.redirect(`/@${username}`);
+  });
+
   app.get("/@:username", async (c) => {
     const username = c.req.param("username") as string;
     if (!(username in config.bots)) return c.notFound();

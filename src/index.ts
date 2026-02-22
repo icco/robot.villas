@@ -2,6 +2,7 @@ import { serve } from "@hono/node-server";
 import { PostgresKvStore, PostgresMessageQueue } from "@fedify/postgres";
 import { getLogger } from "@logtape/logtape";
 import postgres from "postgres";
+import { behindProxy } from "x-forwarded-fetch";
 import { getBlockedInstances, loadConfig } from "./config.js";
 import { createDb, migrate } from "./db.js";
 import { setupFederation } from "./federation.js";
@@ -44,9 +45,12 @@ const queueController = new AbortController();
 fed.startQueue(undefined, { signal: queueController.signal });
 logger.info("Fedify message queue worker started");
 
-const server = serve({ fetch: app.fetch, port: PORT }, (info) => {
-  logger.info("Listening on http://localhost:{port}", { port: info.port });
-});
+const server = serve(
+  { fetch: behindProxy(app.fetch.bind(app)), port: PORT },
+  (info) => {
+    logger.info("Listening on http://localhost:{port}", { port: info.port });
+  },
+);
 
 const poller = startPoller({
   config,
