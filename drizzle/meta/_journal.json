@@ -15,6 +15,13 @@
       "when": 1740254400000,
       "tag": "0001_create_followers",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1740258000000,
+      "tag": "0002_create_missing_tables",
+      "breakpoints": true
     }
   ]
 }
