@@ -8,6 +8,13 @@
       "when": 1771768863433,
       "tag": "0000_naive_captain_midlands",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1740254400000,
+      "tag": "0001_create_followers",
+      "breakpoints": true
     }
   ]
 }
