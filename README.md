@@ -69,6 +69,7 @@ A running PostgreSQL instance is required. The application will apply any necess
 | `DOMAIN` | Public domain the server is running on (used for ActivityPub IDs and WebFinger) | (required) |
 | `PORT` | HTTP server port | `3000` |
 | `POLL_INTERVAL_MS` | Milliseconds between RSS poll cycles | `300000` (5 min) |
+| `BLOCKED_INSTANCES` | Comma-separated instance hostnames to reject Follows from (e.g. `spam.example,bad.example`) | (none) |
 
 ## Scripts
 

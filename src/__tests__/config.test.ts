@@ -1,5 +1,5 @@
-import { describe, it, expect } from "vitest";
-import { parseConfig, loadConfig } from "../config.js";
+import { describe, it, expect, beforeEach, afterEach } from "vitest";
+import { getBlockedInstances, parseConfig, loadConfig } from "../config.js";
 import { join } from "node:path";
 
 describe("parseConfig", () => {
@@ -92,5 +92,30 @@ describe("loadConfig", () => {
       expect(bot.feed_url).toMatch(/^https?:\/\//);
       expect(bot.display_name.length).toBeGreaterThan(0);
     }
+  });
+});
+
+describe("getBlockedInstances", () => {
+  const envKey = "BLOCKED_INSTANCES";
+
+  afterEach(() => {
+    delete process.env[envKey];
+  });
+
+  it("returns empty set when BLOCKED_INSTANCES is unset", () => {
+    expect(getBlockedInstances()).toEqual(new Set());
+  });
+
+  it("returns empty set when BLOCKED_INSTANCES is empty string", () => {
+    process.env[envKey] = "";
+    expect(getBlockedInstances()).toEqual(new Set());
+  });
+
+  it("parses comma-separated hostnames and lowercases them", () => {
+    process.env[envKey] = "Spam.Example.COM , bad.instance";
+    const blocked = getBlockedInstances();
+    expect(blocked.size).toBe(2);
+    expect(blocked.has("spam.example.com")).toBe(true);
+    expect(blocked.has("bad.instance")).toBe(true);
   });
 });
