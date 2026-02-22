@@ -51,7 +51,7 @@ export async function publishNewEntries(
       id: noteId,
       attribution: actorId,
       content: formatContent(entry),
-      url: entry.link ? new URL(entry.link) : undefined,
+      url: tryParseUrl(entry.link),
       published: entry.publishedAt
         ? Temporal.Instant.from(entry.publishedAt.toISOString())
         : undefined,
@@ -79,6 +79,15 @@ function formatContent(entry: FeedEntry): string {
     return `<p>${escapeHtml(entry.title)}</p><p><a href="${escapeHtml(entry.link)}">${escapeHtml(entry.link)}</a></p>`;
   }
   return `<p>${escapeHtml(entry.title)}</p>`;
+}
+
+function tryParseUrl(link: string | undefined): URL | undefined {
+  if (!link) return undefined;
+  try {
+    return new URL(link);
+  } catch {
+    return undefined;
+  }
 }
 
 function escapeHtml(s: string): string {

@@ -84,6 +84,25 @@ describe("publishNewEntries", () => {
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
   });
 
+  it("publishes entries with malformed links without throwing", async () => {
+    const badEntries: FeedEntry[] = [
+      { guid: "bad1", title: "Bad Link", link: "not a url", publishedAt: null },
+      { guid: "bad2", title: "Relative", link: "/relative/path", publishedAt: null },
+    ];
+
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot",
+      "robot.villas",
+      badEntries,
+    );
+
+    expect(result.published).toBe(2);
+    expect(mockInsertEntry).toHaveBeenCalledTimes(2);
+    expect(mockCtx.sendActivity).toHaveBeenCalledTimes(2);
+  });
+
   it("handles empty entries array", async () => {
     const result = await publishNewEntries(
       mockCtx,
