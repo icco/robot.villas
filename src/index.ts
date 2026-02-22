@@ -33,7 +33,7 @@ const messageQueue = new PostgresMessageQueue(sql);
 
 const blockedInstances = getBlockedInstances();
 const fed = setupFederation({ config, db, kvStore, messageQueue, blockedInstances });
-const app = createApp(fed, config, DOMAIN);
+const app = createApp(fed, config, DOMAIN, db);
 
 const server = serve({ fetch: app.fetch, port: PORT }, (info) => {
   console.log(`robot.villas listening on http://localhost:${info.port}`);
