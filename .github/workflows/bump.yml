@@ -1,0 +1,21 @@
+name: bump
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC
+    - cron: 12 5 * * *
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install zsh
+        run: sudo apt-get update; sudo apt-get install zsh
+      - name: Set Node.js 24.x
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+      - run: git config user.email "nat@natwelch.com"
+      - run: git config user.name "Nat Welch"
+      - run: ./update.sh
+      - run: git push
