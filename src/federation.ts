@@ -100,8 +100,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         },
       ]);
       return [rsaPair, ed25519Pair];
-    })
-    .mapHandle((_ctx, handle) => handle);
+    });
 
   const OUTBOX_PAGE_SIZE = 20;
 
