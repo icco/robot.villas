@@ -1,7 +1,16 @@
-# Node.js
 node_modules/
 dist/
-*.log
+*.js.map
+*.d.ts.map
 
-# Go workspace file
-go.work
+.env
+.env.*
+!.env.example
+
+*.log
+coverage/
+.vitest/
+
+# OS
+.DS_Store
+Thumbs.db

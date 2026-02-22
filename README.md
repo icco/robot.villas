@@ -26,21 +26,28 @@ bots:
     summary: "Stories from Lobsters"
 ```
 
-Each key under `bots` becomes the bot's username on the instance.
+Each key under `bots` becomes the bot's username on the instance. Usernames must be lowercase alphanumeric or underscores (validated at startup via Zod).
 
 ## Tech Stack
 
 | Component | Technology |
 |---|---|
-| Language / Runtime | TypeScript / Node.js |
-| ActivityPub | [Fedify](https://fedify.dev/) v2 (`@fedify/fedify`) |
+| Language / Runtime | TypeScript / Node.js 24+ |
+| Web Framework | [Hono](https://hono.dev/) |
+| ActivityPub | [Fedify](https://fedify.dev/) v2 (`@fedify/fedify`, `@fedify/vocab`, `@fedify/hono`) |
 | KvStore & MessageQueue | `@fedify/postgres` |
 | Database | PostgreSQL |
-| RSS Parsing | `rss-parser` (or similar) |
+| RSS Parsing | `rss-parser` |
+| Config Validation | Zod v4 |
+| Testing | Vitest v4 |
+| CI | GitHub Actions |
 
 ## Development Setup
 
 ```bash
+# Use the correct Node version
+nvm use
+
 # Install dependencies
 yarn install
 
@@ -48,7 +55,7 @@ yarn install
 export DATABASE_URL="postgres://user:password@localhost:5432/robot_villas"
 export DOMAIN="robot.villas"
 
-# Start the development server
+# Start the development server (hot-reload via tsx)
 yarn dev
 ```
 
@@ -56,58 +63,109 @@ A running PostgreSQL instance is required. The application will apply any necess
 
 ## Environment Variables
 
-| Variable | Description |
+| Variable | Description | Default |
+|---|---|---|
+| `DATABASE_URL` | PostgreSQL connection string | (required) |
+| `DOMAIN` | Public domain the server is running on (used for ActivityPub IDs and WebFinger) | (required) |
+| `PORT` | HTTP server port | `3000` |
+| `POLL_INTERVAL_MS` | Milliseconds between RSS poll cycles | `300000` (5 min) |
+
+## Scripts
+
+| Command | Description |
 |---|---|
-| `DATABASE_URL` | PostgreSQL connection string |
-| `DOMAIN` | Public domain the server is running on (used for ActivityPub IDs and WebFinger) |
+| `yarn dev` | Start dev server with hot-reload (tsx watch) |
+| `yarn build` | Compile TypeScript to `dist/` |
+| `yarn start` | Run compiled output (`node dist/index.js`) |
+| `yarn test` | Run tests with Vitest |
+| `yarn test:watch` | Run tests in watch mode |
+| `yarn lint` | Lint with ESLint |
+| `yarn typecheck` | Type-check without emitting |
+
+## Project Structure
+
+```
+src/
+  index.ts          Entry point: wires config, DB, federation, server, poller
+  config.ts         Zod-validated feeds.yml parser
+  db.ts             PostgreSQL connection, schema migration, data access
+  rss.ts            RSS/Atom feed fetcher and normalizer
+  federation.ts     Fedify federation, actor dispatchers, inbox listeners
+  publisher.ts      Dedup + publish new entries as Create(Note) activities
+  poller.ts         Interval-based polling loop
+  server.ts         Hono app with Fedify middleware and healthcheck
+  __tests__/        Unit and integration tests
+```
 
 ## Best Practices
 
 ### Tooling
 
-- **Node.js version** is pinned in `.nvmrc` (Node 24 LTS). Use `nvm use` to switch automatically.
-- **Linting** uses ESLint 10 with the flat config format (`eslint.config.mjs`) and `typescript-eslint`. Run `npm run lint` before committing.
-- **TypeScript** should be compiled with `strict: true` to catch null/undefined issues early — especially important for network-heavy bot code.
-- Use `"type": "module"` in `package.json` and write all source files as ES modules (`.ts` with `import`/`export`).
+- **Node.js version** is pinned in `.nvmrc` (Node 24). Use `nvm use` to switch automatically.
+- **Linting** uses ESLint with the flat config format and `typescript-eslint`. Run `yarn lint` before committing.
+- **TypeScript** is compiled with `strict: true` to catch null/undefined issues early -- especially important when working with Fedify's nullable ActivityPub fields.
+- Use `"type": "module"` in `package.json` and write all source files as ES modules with `import`/`export`.
 
 ### Adding a New Bot
 
-- Add a new entry under `bots:` in `feeds.yml`. The key becomes the bot's fediverse username (e.g. `lobsters` → `@lobsters@robot.villas`).
-- Keep usernames short, lowercase, and URL-safe (no spaces or special characters).
-- Provide a meaningful `display_name` and `summary` — these appear on the bot's fediverse profile.
+- Add a new entry under `bots:` in `feeds.yml`. The key becomes the bot's fediverse username (e.g. `lobsters` -> `@lobsters@robot.villas`).
+- Usernames must be lowercase alphanumeric or underscores -- this is enforced by Zod validation at startup.
+- Provide a meaningful `display_name` and `summary` -- these appear on the bot's fediverse profile.
+- No restart is needed for key generation; key pairs are created lazily on first actor dispatch and persisted in the `actor_keypairs` table.
+
+### Fedify v2 Notes
+
+- Fedify v2 splits vocabulary classes into `@fedify/vocab` (was `@fedify/fedify/vocab`) and framework integration into separate packages like `@fedify/hono` (was `@fedify/fedify/x/hono`). Import accordingly.
+- Fedify uses the TC39 `Temporal` API for timestamps (e.g. `Temporal.Instant` for the `published` field on Notes). Since Node.js does not ship Temporal natively yet, the `@js-temporal/polyfill` package is required. Fedify itself imports from this polyfill, so use the same package for consistency.
+- The `sendActivity` method accepts the string `"followers"` as a recipient, which requires a registered followers collection dispatcher. This is simpler than iterating over followers manually.
+- Bot actors use the `Application` type (not `Person`) since they are automated accounts. This is the ActivityPub convention for bots.
+- The followers collection dispatcher must return objects satisfying the `Recipient` interface (`{ id, inboxId, endpoints }`). When you only have follower URIs stored in the database, you can return `{ id: new URL(uri), inboxId: null, endpoints: null }` and Fedify will resolve the inbox by dereferencing the actor.
 
 ### Feed Polling & Deduplication
 
-- Use the RSS entry `guid` (or a hash of `link` + `title`) as the deduplication key stored in PostgreSQL — never rely on publish dates alone, as feeds often backfill or reorder items.
-- Poll feeds no more frequently than once every 15 minutes to be a good citizen toward feed providers.
-- Handle HTTP errors and malformed XML gracefully; log and skip bad entries rather than crashing.
+- The RSS entry `guid` is used as the primary dedup key, falling back to `link` then `title` for feeds that omit it. This is handled in `rss.ts`'s `normalizeFeedItem`.
+- Both RSS 2.0 and Atom feeds are supported. Note that `rss-parser` maps the Atom `<id>` element to `item.id` (not `item.guid`), so the normalizer checks both fields.
+- Entries are recorded in the `feed_entries` table before sending activities. If delivery fails, the entry is still marked as seen to avoid duplicate posts on retry. This is a deliberate trade-off: missed posts are better than duplicate posts on the fediverse.
+- The default polling interval is 5 minutes. Tune `POLL_INTERVAL_MS` based on feed update frequency.
 
 ### ActivityPub
 
-- Every actor (bot) needs a persistent RSA key pair for [HTTP Signatures](https://docs.joinmastodon.org/spec/security/). Generate and store keys once at actor creation time, not on every request.
+- Every actor (bot) needs a persistent RSA key pair for [HTTP Signatures](https://docs.joinmastodon.org/spec/security/). Key pairs are generated lazily via Fedify's `setKeyPairsDispatcher` and stored as JWK in the `actor_keypairs` table.
 - Always respond to `Follow` activities with an `Accept` sent to the sender's inbox, or followers will never actually subscribe.
 - Handle `Undo(Follow)` to remove followers from the database and avoid delivering to dead inboxes.
-- Sign all outgoing `POST` requests to remote inboxes; unsigned deliveries will be rejected by Mastodon and most other servers.
-- Set `Content-Type: application/activity+json` on all ActivityPub endpoints.
+- New entries are wrapped in `Create(Note)` activities (not sent as bare `Note`), which is what Mastodon and other implementations expect for timeline display.
+- Fedify handles HTTP Signatures, content negotiation, and WebFinger automatically when you use its actor dispatcher and `sendActivity` API. You do not need to implement these manually.
 
 ### Error Handling & Reliability
 
-- Wrap inbox handlers in try/catch and return `202 Accepted` quickly — remote servers time out after a few seconds.
-- Use a message queue (via `@fedify/postgres`) for outbound deliveries so a slow or unreachable server does not block the polling loop.
-- Retry failed deliveries with exponential backoff; permanently remove unreachable inboxes after repeated failures.
+- The poller wraps each bot's poll cycle in try/catch so that a failure in one feed does not block others.
+- Use `@fedify/postgres` for both `KvStore` and `MessageQueue` so that Fedify's outbound deliveries are persisted and survive restarts.
+- The application performs graceful shutdown on SIGTERM/SIGINT: stops the poller, closes the HTTP server, and ends the database connection.
+
+### Testing
+
+- Tests use Vitest with `vi.mock()` for isolating modules (e.g. publisher tests mock the database layer).
+- Database integration tests (in `db.test.ts`) require a `DATABASE_URL` environment variable and skip gracefully when it is not set. In CI, a PostgreSQL service container provides the database.
+- RSS tests use inline XML fixtures rather than hitting real feeds, making them fast and deterministic.
+- Run `yarn test` locally (config/RSS/publisher tests work without Postgres) and rely on CI for the full suite including database tests.
+
+### Docker
+
+- The Dockerfile uses a multi-stage build: compile TypeScript in the builder stage, then copy only `dist/` and production dependencies into the final `node:24-slim` image.
+- `feeds.yml` is copied into the image. To change bot configuration, rebuild the image or mount the file as a volume.
 
 ## Implementation Roadmap
 
-- [ ] Project scaffolding (TypeScript, `package.json`, `tsconfig.json`)
-- [ ] `feeds.yml` schema and parser
-- [ ] PostgreSQL schema (feed entry history table)
-- [ ] Fedify federation setup with one Actor per bot
-- [ ] RSS feed polling and parsing
-- [ ] Publishing new entries as ActivityPub Notes
-- [ ] WebFinger support for bot discovery
-- [ ] Follower management (accept Follow requests)
-- [ ] Dockerfile for production deployment
-- [ ] Scheduled polling (cron or interval-based)
+- [x] Project scaffolding (TypeScript, `package.json`, `tsconfig.json`)
+- [x] `feeds.yml` schema and parser
+- [x] PostgreSQL schema (feed entry history table)
+- [x] Fedify federation setup with one Actor per bot
+- [x] RSS feed polling and parsing
+- [x] Publishing new entries as ActivityPub Notes
+- [x] WebFinger support for bot discovery
+- [x] Follower management (accept Follow requests)
+- [x] Dockerfile for production deployment
+- [x] Scheduled polling (cron or interval-based)
 
 ## License
 

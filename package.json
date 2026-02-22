@@ -1,15 +1,41 @@
 {
-  "name": "robot.villas",
-  "version": "0.0.1",
-  "description": "RSS-to-Mastodon bridge using ActivityPub/Fedify",
+  "name": "@icco/robot.villas",
+  "version": "1.0.0",
   "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
-    "lint": "eslint ."
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fedify/fedify": "^2.0.0",
+    "@fedify/hono": "^2.0.0",
+    "@fedify/postgres": "^2.0.0",
+    "@fedify/vocab": "^2.0.0",
+    "@hono/node-server": "^1.13.0",
+    "@js-temporal/polyfill": "^0.5.1",
+    "hono": "^4.6.0",
+    "js-yaml": "^4.1.0",
+    "postgres": "^3.4.0",
+    "rss-parser": "^3.13.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^25.3.0",
     "eslint": "^10.0.1",
+    "tsx": "^4.19.0",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.56.0"
+    "typescript-eslint": "^8.56.0",
+    "vitest": "^4.0.18"
   }
 }
