@@ -27,7 +27,6 @@ bots:
     feed_url: "https://writing.natwelch.com/feed.atom"
     display_name: "Nat? Nat. Nat!"
     summary: "Nat Welch's blog about random stuff."
-    profile_photo: "https://avatars.githubusercontent.com/u/1588?s=200"
   chronogram:
     feed_url: "https://www.chronogram.com/feed/"
     display_name: "Chronogram Magazine"
