@@ -15,6 +15,32 @@ bots:
     expect(config.bots.hackernews.feed_url).toBe("https://news.ycombinator.com/rss");
     expect(config.bots.hackernews.display_name).toBe("Hacker News");
     expect(config.bots.hackernews.summary).toBe("Top stories from Hacker News");
+    expect(config.bots.hackernews.profile_photo).toBeUndefined();
+  });
+
+  it("parses config with profile_photo", () => {
+    const config = parseConfig(`
+bots:
+  hackernews:
+    feed_url: "https://news.ycombinator.com/rss"
+    display_name: "Hacker News"
+    summary: "Top stories from Hacker News"
+    profile_photo: "https://example.com/photo.png"
+`);
+    expect(config.bots.hackernews.profile_photo).toBe("https://example.com/photo.png");
+  });
+
+  it("rejects config with invalid profile_photo URL", () => {
+    expect(() =>
+      parseConfig(`
+bots:
+  test:
+    feed_url: "https://example.com/rss"
+    display_name: "Test"
+    summary: "A bot"
+    profile_photo: "not-a-url"
+`),
+    ).toThrow();
   });
 
   it("parses multiple bots", () => {

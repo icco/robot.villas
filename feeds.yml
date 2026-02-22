@@ -3,7 +3,9 @@ bots:
     feed_url: "https://news.ycombinator.com/rss"
     display_name: "Hacker News"
     summary: "Top stories from Hacker News"
+    profile_photo: "https://news.ycombinator.com/y18.svg"
   lobsters:
     feed_url: "https://lobste.rs/rss"
     display_name: "Lobsters"
     summary: "Stories from Lobsters"
+    profile_photo: "https://lobste.rs/apple-touch-icon-144.png"

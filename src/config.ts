@@ -9,6 +9,7 @@ const BotSchema = z.object({
   feed_url: z.string().url(),
   display_name: z.string().min(1).max(MAX_DISPLAY_NAME_LENGTH),
   summary: z.string().min(1).max(MAX_SUMMARY_LENGTH),
+  profile_photo: z.string().url().optional(),
 });
 
 export const FeedsConfigSchema = z.object({

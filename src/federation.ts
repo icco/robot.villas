@@ -7,7 +7,7 @@ import {
   type KvStore,
   type MessageQueue,
 } from "@fedify/fedify";
-import { Accept, Application, Follow, Reject, Undo } from "@fedify/vocab";
+import { Accept, Application, Follow, Image, Reject, Undo } from "@fedify/vocab";
 import type { FeedsConfig } from "./config.js";
 import {
   addFollower,
@@ -48,6 +48,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         preferredUsername: identifier,
         name: bot.display_name,
         summary: bot.summary,
+        icon: bot.profile_photo
+          ? new Image({ url: new URL(bot.profile_photo) })
+          : null,
         inbox: ctx.getInboxUri(identifier),
         outbox: ctx.getOutboxUri(identifier),
         url: new URL(`/users/${identifier}`, ctx.url),
