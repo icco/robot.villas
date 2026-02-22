@@ -17,24 +17,29 @@ export interface PollerOptions {
 export function startPoller(opts: PollerOptions): { stop: () => void } {
   const { config, db, domain, getContext } = opts;
   const intervalMs = opts.intervalMs ?? DEFAULT_INTERVAL_MS;
+  const botNames = Object.keys(config.bots);
 
   let stopped = false;
 
+  console.log(
+    `[Poller] Starting: ${botNames.length} bot(s) [${botNames.join(", ")}], interval ${intervalMs}ms`,
+  );
+
   async function poll(): Promise<void> {
+    console.log("[Poller] Poll cycle starting");
     const ctx = getContext();
     for (const [username, bot] of Object.entries(config.bots)) {
       try {
         const entries = await fetchFeed(bot.feed_url);
         const result = await publishNewEntries(ctx, db, username, domain, entries);
-        if (result.published > 0) {
-          console.log(
-            `[${username}] published ${result.published}, skipped ${result.skipped}`,
-          );
-        }
+        console.log(
+          `[Poller] [${username}] fetched ${entries.length} entries, published ${result.published}, skipped ${result.skipped}`,
+        );
       } catch (err) {
-        console.error(`[${username}] polling error:`, err);
+        console.error(`[Poller] [${username}] error:`, err);
       }
     }
+    console.log("[Poller] Poll cycle complete");
   }
 
   async function loop(): Promise<void> {

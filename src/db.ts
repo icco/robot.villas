@@ -99,10 +99,14 @@ export async function getEntriesPage(
     .offset(offset);
 }
 
-export async function getKeypair(
+/**
+ * Returns stored key pairs for a bot. Handles both the legacy single-JWK
+ * format and the new array-of-JWKs format (for dual RSA + Ed25519 keys).
+ */
+export async function getKeypairs(
   db: Db,
   botUsername: string,
-): Promise<{ publicKey: JsonWebKey; privateKey: JsonWebKey } | null> {
+): Promise<Array<{ publicKey: JsonWebKey; privateKey: JsonWebKey }> | null> {
   const rows = await db
     .select({
       publicKey: schema.actorKeypairs.publicKey,
@@ -111,20 +115,32 @@ export async function getKeypair(
     .from(schema.actorKeypairs)
     .where(eq(schema.actorKeypairs.botUsername, botUsername));
   if (rows.length === 0) return null;
-  return {
-    publicKey: rows[0].publicKey as JsonWebKey,
-    privateKey: rows[0].privateKey as JsonWebKey,
-  };
+  const pubRaw = rows[0].publicKey;
+  const privRaw = rows[0].privateKey;
+  const pubs = Array.isArray(pubRaw) ? pubRaw : [pubRaw];
+  const privs = Array.isArray(privRaw) ? privRaw : [privRaw];
+  return pubs.map((pub: unknown, i: number) => ({
+    publicKey: pub as JsonWebKey,
+    privateKey: privs[i] as JsonWebKey,
+  }));
 }
 
-export async function saveKeypair(
+/**
+ * Saves key pairs for a bot, upserting so that Ed25519 keys can be added
+ * alongside existing RSA keys without losing them.
+ */
+export async function saveKeypairs(
   db: Db,
   botUsername: string,
-  publicKey: JsonWebKey,
-  privateKey: JsonWebKey,
+  keypairs: Array<{ publicKey: JsonWebKey; privateKey: JsonWebKey }>,
 ): Promise<void> {
+  const publicKey = keypairs.map((kp) => kp.publicKey);
+  const privateKey = keypairs.map((kp) => kp.privateKey);
   await db
     .insert(schema.actorKeypairs)
     .values({ botUsername, publicKey, privateKey })
-    .onConflictDoNothing({ target: schema.actorKeypairs.botUsername });
+    .onConflictDoUpdate({
+      target: schema.actorKeypairs.botUsername,
+      set: { publicKey, privateKey },
+    });
 }

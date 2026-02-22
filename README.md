@@ -136,6 +136,8 @@ drizzle/            Generated SQL migration files (committed to git)
 - The `sendActivity` method accepts the string `"followers"` as a recipient, which requires a registered followers collection dispatcher. This is simpler than iterating over followers manually.
 - Bot actors use the `Application` type (not `Person`) since they are automated accounts. This is the ActivityPub convention for bots.
 - The followers collection dispatcher must return objects satisfying the `Recipient` interface (`{ id, inboxId, endpoints }`). When you only have follower URIs stored in the database, you can return `{ id: new URL(uri), inboxId: null, endpoints: null }` and Fedify will resolve the inbox by dereferencing the actor.
+- **Message queue startup**: `createFederation` is called with `manuallyStartQueue: true`, and the queue worker is explicitly started via `fed.startQueue()` with an `AbortController` signal for graceful shutdown. The default auto-start mode (`manuallyStartQueue: false`) is fragile with `PostgresMessageQueue` — if the first enqueue races with table initialization, the queue can silently fail to start and no outbound activities (Accept, Create) are ever delivered. Explicit startup avoids this entirely.
+- **Dual cryptographic keys**: Each bot generates both `RSASSA-PKCS1-v1_5` (RSA) and `Ed25519` key pairs via `setKeyPairsDispatcher`. Fedify v2 defaults to `rfc9421` (HTTP Message Signatures) for `firstKnock`, which works best with Ed25519. Having only RSA may cause extra round-trips or failures with servers that prefer the newer spec. Both key pairs are stored as an array of JWKs in the `actor_keypairs` table and the dispatcher handles backward-compatible reads from the legacy single-JWK format.
 
 ### Database & Drizzle ORM
 
@@ -154,7 +156,8 @@ drizzle/            Generated SQL migration files (committed to git)
 
 ### ActivityPub
 
-- Every actor (bot) needs a persistent RSA key pair for [HTTP Signatures](https://docs.joinmastodon.org/spec/security/). Key pairs are generated lazily via Fedify's `setKeyPairsDispatcher` and stored as JWK in the `actor_keypairs` table.
+- Every actor (bot) needs persistent key pairs for HTTP Signatures. Both RSA and Ed25519 key pairs are generated lazily via Fedify's `setKeyPairsDispatcher` and stored as JWK arrays in the `actor_keypairs` table.
+- Actors expose `followers` (pointing to the followers collection URI), `endpoints.sharedInbox` (the shared inbox URI for efficient batch delivery), and `assertionMethods` (Multikey format, per [FEP-521a](https://codeberg.org/fediverse/fep/src/branch/main/fep/521a/fep-521a.md)) alongside the legacy `publicKeys` (CryptographicKey format). Both key representation formats are needed for compatibility with servers that support only the older or newer spec.
 - Always respond to `Follow` activities with an `Accept` sent to the sender's inbox, or followers will never actually subscribe.
 - Handle `Undo(Follow)` to remove followers from the database and avoid delivering to dead inboxes.
 - New entries are wrapped in `Create(Note)` activities (not sent as bare `Note`), which is what Mastodon and other implementations expect for timeline display.
@@ -162,9 +165,10 @@ drizzle/            Generated SQL migration files (committed to git)
 
 ### Error Handling & Reliability
 
-- The poller wraps each bot's poll cycle in try/catch so that a failure in one feed does not block others.
+- The poller wraps each bot's poll cycle in try/catch so that a failure in one feed does not block others. It logs at startup, on each cycle start/completion, and for every feed fetch (including entry counts), making it easy to verify it is running from container logs.
+- The Follow inbox handler logs at each decision point (missing fields, unknown bot, failed actor resolution, blocked instance, successful accept) so silent failures are visible in production.
 - Use `@fedify/postgres` for both `KvStore` and `MessageQueue` so that Fedify's outbound deliveries are persisted and survive restarts.
-- The application performs graceful shutdown on SIGTERM/SIGINT: stops the poller, closes the HTTP server, and ends the database connection.
+- The application performs graceful shutdown on SIGTERM/SIGINT: stops the poller, aborts the message queue worker (via `AbortController`), closes the HTTP server, and ends the database connection.
 
 ### Testing
 
@@ -177,6 +181,16 @@ drizzle/            Generated SQL migration files (committed to git)
 
 - The Dockerfile uses a multi-stage build: compile TypeScript in the builder stage, then copy only `dist/` and production dependencies into the final `node:24-slim` image.
 - `feeds.yml` is copied into the image. To change bot configuration, rebuild the image or mount the file as a volume.
+
+### Debugging with `fedify` CLI
+
+The [`fedify` CLI](https://fedify.dev/cli) is useful for manual testing and debugging of the ActivityPub integration:
+
+- `fedify lookup @hackernews@robot.villas` — Verify an actor's properties (check that `followers`, `endpoints`, `assertionMethods`, and `publicKey` are all present).
+- `fedify inbox -f @hackernews@robot.villas` — Spin up a temporary inbox and send a Follow to the bot. Watch the logs for the Accept response to verify the Follow/Accept round-trip works end to end.
+- `fedify node info https://robot.villas/` — Check the NodeInfo response for the instance.
+
+Install with `npm install -g @fedify/cli` (or see [fedify.dev/cli](https://fedify.dev/cli) for other methods).
 
 ## Implementation Roadmap
 

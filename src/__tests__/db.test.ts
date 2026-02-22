@@ -8,8 +8,8 @@ import {
   getFollowers,
   addFollower,
   removeFollower,
-  getKeypair,
-  saveKeypair,
+  getKeypairs,
+  saveKeypairs,
   type Db,
 } from "../db.js";
 import * as schema from "../schema.js";
@@ -114,25 +114,46 @@ describeWithDb("database", () => {
 
   describe("actor_keypairs", () => {
     it("stores and retrieves keypairs", async () => {
-      expect(await getKeypair(db, "testbot")).toBeNull();
+      expect(await getKeypairs(db, "testbot")).toBeNull();
       const pub = { kty: "RSA", n: "test-n", e: "AQAB" } as JsonWebKey;
       const priv = { kty: "RSA", n: "test-n", e: "AQAB", d: "test-d" } as JsonWebKey;
-      await saveKeypair(db, "testbot", pub, priv);
-      const kp = await getKeypair(db, "testbot");
-      expect(kp).not.toBeNull();
-      expect(kp!.publicKey).toMatchObject({ kty: "RSA", n: "test-n" });
-      expect(kp!.privateKey).toMatchObject({ kty: "RSA", d: "test-d" });
+      await saveKeypairs(db, "testbot", [{ publicKey: pub, privateKey: priv }]);
+      const kps = await getKeypairs(db, "testbot");
+      expect(kps).not.toBeNull();
+      expect(kps).toHaveLength(1);
+      expect(kps![0].publicKey).toMatchObject({ kty: "RSA", n: "test-n" });
+      expect(kps![0].privateKey).toMatchObject({ kty: "RSA", d: "test-d" });
     });
 
-    it("does not overwrite existing keypair", async () => {
-      const pub1 = { kty: "RSA", n: "first" } as JsonWebKey;
-      const priv1 = { kty: "RSA", d: "first" } as JsonWebKey;
-      const pub2 = { kty: "RSA", n: "second" } as JsonWebKey;
-      const priv2 = { kty: "RSA", d: "second" } as JsonWebKey;
-      await saveKeypair(db, "testbot", pub1, priv1);
-      await saveKeypair(db, "testbot", pub2, priv2);
-      const kp = await getKeypair(db, "testbot");
-      expect(kp!.publicKey).toMatchObject({ n: "first" });
+    it("upserts keypairs when adding Ed25519 alongside RSA", async () => {
+      const rsaPub = { kty: "RSA", n: "first" } as JsonWebKey;
+      const rsaPriv = { kty: "RSA", d: "first" } as JsonWebKey;
+      await saveKeypairs(db, "testbot", [{ publicKey: rsaPub, privateKey: rsaPriv }]);
+
+      const ed25519Pub = { kty: "OKP", crv: "Ed25519", x: "ed-pub" } as JsonWebKey;
+      const ed25519Priv = { kty: "OKP", crv: "Ed25519", x: "ed-pub", d: "ed-priv" } as JsonWebKey;
+      await saveKeypairs(db, "testbot", [
+        { publicKey: rsaPub, privateKey: rsaPriv },
+        { publicKey: ed25519Pub, privateKey: ed25519Priv },
+      ]);
+
+      const kps = await getKeypairs(db, "testbot");
+      expect(kps).toHaveLength(2);
+      expect(kps![0].publicKey).toMatchObject({ kty: "RSA", n: "first" });
+      expect(kps![1].publicKey).toMatchObject({ kty: "OKP", crv: "Ed25519" });
+    });
+
+    it("reads legacy single-JWK format as a single-element array", async () => {
+      const pub = { kty: "RSA", n: "legacy" } as JsonWebKey;
+      const priv = { kty: "RSA", d: "legacy" } as JsonWebKey;
+      // Simulate the old storage format: a plain JWK object, not an array
+      await client`
+        INSERT INTO actor_keypairs (bot_username, public_key, private_key)
+        VALUES ('legacybot', ${JSON.stringify(pub)}::jsonb, ${JSON.stringify(priv)}::jsonb)
+      `;
+      const kps = await getKeypairs(db, "legacybot");
+      expect(kps).toHaveLength(1);
+      expect(kps![0].publicKey).toMatchObject({ kty: "RSA", n: "legacy" });
     });
   });
 });
