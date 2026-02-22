@@ -18,6 +18,7 @@
     "@fedify/postgres": "^2.0.0",
     "@fedify/vocab": "^2.0.0",
     "@hono/node-server": "^1.13.0",
+    "@js-temporal/polyfill": "^0.5.1",
     "hono": "^4.6.0",
     "js-yaml": "^4.1.0",
     "postgres": "^3.4.0",

@@ -11,6 +11,7 @@ import { Accept, Application, Follow, Undo } from "@fedify/vocab";
 import type { FeedsConfig } from "./config.js";
 import {
   addFollower,
+  getFollowers,
   getKeypair,
   removeFollower,
   saveKeypair,
@@ -68,6 +69,21 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       );
       return [{ privateKey, publicKey }];
     });
+
+  fed.setFollowersDispatcher(
+    "/users/{identifier}/followers",
+    async (_ctx, identifier) => {
+      if (!botUsernames.includes(identifier)) return null;
+      const followerIds = await getFollowers(sql, identifier);
+      return {
+        items: followerIds.map((id) => ({
+          id: new URL(id),
+          inboxId: null,
+          endpoints: null,
+        })),
+      };
+    },
+  );
 
   fed
     .setInboxListeners("/users/{identifier}/inbox", "/inbox")
