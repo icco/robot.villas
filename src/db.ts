@@ -43,6 +43,14 @@ export async function insertEntry(
   return rows[0]?.id ?? null;
 }
 
+export async function countFollowers(db: Db, botUsername: string): Promise<number> {
+  const rows = await db
+    .select({ value: count() })
+    .from(schema.followers)
+    .where(eq(schema.followers.botUsername, botUsername));
+  return rows[0]?.value ?? 0;
+}
+
 export async function getFollowers(db: Db, botUsername: string): Promise<string[]> {
   const rows = await db
     .select({ followerId: schema.followers.followerId })
