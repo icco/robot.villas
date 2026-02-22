@@ -7,7 +7,7 @@ import {
   type KvStore,
   type MessageQueue,
 } from "@fedify/fedify";
-import { Accept, Application, Follow, Undo } from "@fedify/vocab";
+import { Accept, Application, Follow, Reject, Undo } from "@fedify/vocab";
 import type { FeedsConfig } from "./config.js";
 import {
   addFollower,
@@ -26,10 +26,12 @@ export interface FederationDeps {
   db: Db;
   kvStore: KvStore;
   messageQueue: MessageQueue;
+  /** Blocked instance hostnames (lowercase); Follow from these gets Reject. */
+  blockedInstances?: Set<string>;
 }
 
 export function setupFederation(deps: FederationDeps): Federation<void> {
-  const { config, db, kvStore, messageQueue } = deps;
+  const { config, db, kvStore, messageQueue, blockedInstances = new Set() } = deps;
   const botUsernames = Object.keys(config.bots);
 
   const fed = createFederation<void>({
@@ -135,6 +137,22 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     },
   );
 
+  fed.setNodeInfoDispatcher("/nodeinfo/2.1", async () => {
+    let localPosts = 0;
+    for (const identifier of botUsernames) {
+      localPosts += await countEntries(db, identifier);
+    }
+    return {
+      software: { name: "robot-villas", version: "1.0.0" },
+      protocols: ["activitypub"],
+      usage: {
+        users: { total: botUsernames.length },
+        localPosts,
+        localComments: 0,
+      },
+    };
+  });
+
   fed
     .setInboxListeners("/users/{identifier}/inbox", "/inbox")
     .on(Follow, async (ctx, follow) => {
@@ -144,6 +162,15 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         return;
       const follower = await follow.getActor(ctx);
       if (!follower?.id) return;
+      const followerHost = follower.id.hostname.toLowerCase();
+      if (blockedInstances.has(followerHost)) {
+        await ctx.sendActivity(
+          { identifier: parsed.identifier },
+          follower,
+          new Reject({ actor: follow.objectId, object: follow }),
+        );
+        return;
+      }
       await addFollower(
         db,
         parsed.identifier,

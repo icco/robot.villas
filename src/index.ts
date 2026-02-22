@@ -1,7 +1,7 @@
 import { serve } from "@hono/node-server";
 import { PostgresKvStore, PostgresMessageQueue } from "@fedify/postgres";
 import postgres from "postgres";
-import { loadConfig } from "./config.js";
+import { getBlockedInstances, loadConfig } from "./config.js";
 import { createDb, migrate } from "./db.js";
 import { setupFederation } from "./federation.js";
 import { startPoller } from "./poller.js";
@@ -31,8 +31,9 @@ await migrate(db);
 const kvStore = new PostgresKvStore(sql);
 const messageQueue = new PostgresMessageQueue(sql);
 
-const fed = setupFederation({ config, db, kvStore, messageQueue });
-const app = createApp(fed);
+const blockedInstances = getBlockedInstances();
+const fed = setupFederation({ config, db, kvStore, messageQueue, blockedInstances });
+const app = createApp(fed, config, DOMAIN);
 
 const server = serve({ fetch: app.fetch, port: PORT }, (info) => {
   console.log(`robot.villas listening on http://localhost:${info.port}`);

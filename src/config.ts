@@ -30,3 +30,18 @@ export function parseConfig(yaml: string): FeedsConfig {
   const data = parseYaml(yaml);
   return FeedsConfigSchema.parse(data);
 }
+
+/**
+ * Returns the set of blocked instance hostnames (lowercase) from env
+ * BLOCKED_INSTANCES (comma-separated). Used to Reject Follow from those instances.
+ */
+export function getBlockedInstances(): Set<string> {
+  const raw = process.env.BLOCKED_INSTANCES;
+  if (!raw || typeof raw !== "string") return new Set();
+  return new Set(
+    raw
+      .split(",")
+      .map((h) => h.trim().toLowerCase())
+      .filter(Boolean),
+  );
+}
