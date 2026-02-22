@@ -1,17 +1,9 @@
 import { Hono } from "hono";
 import { federation as fedifyMiddleware } from "@fedify/hono";
 import type { Federation } from "@fedify/fedify";
+import escapeHtml from "escape-html";
 import type { FeedsConfig } from "./config.js";
 import { countEntries, getEntriesPage, type Db } from "./db.js";
-
-function escapeHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
-}
 
 const PROFILE_PAGE_SIZE = 40;
 
@@ -56,6 +48,12 @@ ${botList}
 </body>
 </html>`;
     return c.html(html);
+  });
+
+  app.get("/users/:username", (c) => {
+    const username = c.req.param("username") as string;
+    if (!(username in config.bots)) return c.notFound();
+    return c.redirect(`/@${username}`);
   });
 
   app.get("/@:username", async (c) => {

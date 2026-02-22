@@ -1,6 +1,7 @@
 import { Temporal } from "@js-temporal/polyfill";
 import type { Context } from "@fedify/fedify";
-import { Create, Note } from "@fedify/vocab";
+import { Create, Note, PUBLIC_COLLECTION } from "@fedify/vocab";
+import escapeHtml from "escape-html";
 import { getFollowers, insertEntry, type Db } from "./db.js";
 import type { FeedEntry } from "./rss.js";
 
@@ -33,11 +34,15 @@ export function buildCreateActivity(
 ): Create {
   const noteId = new URL(`/users/${botUsername}/posts/${entryId}`, baseUrl);
   const actorId = new URL(`/users/${botUsername}`, baseUrl);
+  const followersId = new URL(`/users/${botUsername}/followers`, baseUrl);
 
   const note = new Note({
     id: noteId,
     attribution: actorId,
+    to: PUBLIC_COLLECTION,
+    cc: followersId,
     content: formatContent(entry),
+    mediaType: "text/html",
     url: safeParseUrl(entry.link),
     published: entry.publishedAt
       ? Temporal.Instant.from(entry.publishedAt.toISOString())
@@ -48,6 +53,8 @@ export function buildCreateActivity(
     id: new URL(`${noteId.href}#activity`),
     actor: actorId,
     object: note,
+    tos: [PUBLIC_COLLECTION],
+    ccs: [followersId],
   });
 }
 
@@ -128,13 +135,4 @@ function formatContent(entry: EntryLike): string {
     return `<p>${escapeHtml(entry.title)}</p><p><a href="${escapeHtml(href)}">${escapeHtml(href)}</a></p>`;
   }
   return `<p>${escapeHtml(entry.title)}</p>`;
-}
-
-function escapeHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 }

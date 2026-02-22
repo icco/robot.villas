@@ -8,19 +8,22 @@ import {
   type MessageQueue,
 } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
-import { Accept, Application, Endpoints, Follow, Image, Reject, Undo } from "@fedify/vocab";
+import { Temporal } from "@js-temporal/polyfill";
+import { Accept, Application, Endpoints, Follow, Image, Note, PUBLIC_COLLECTION, Reject, Undo } from "@fedify/vocab";
 import type { FeedsConfig } from "./config.js";
 import {
   addFollower,
   countEntries,
   getEntriesPage,
+  getEntryById,
   getFollowers,
   getKeypairs,
   removeFollower,
   saveKeypairs,
   type Db,
 } from "./db.js";
-import { buildCreateActivity } from "./publisher.js";
+import escapeHtml from "escape-html";
+import { buildCreateActivity, safeParseUrl } from "./publisher.js";
 
 export interface FederationDeps {
   config: FeedsConfig;
@@ -63,10 +66,11 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
           sharedInbox: ctx.getInboxUri(),
         }),
         url: new URL(`/@${identifier}`, ctx.url),
-        publicKeys: keys.map((kp) => kp.cryptographicKey),
+        publicKey: keys[0].cryptographicKey,
         assertionMethods: keys.map((kp) => kp.multikey),
       });
     })
+    .mapHandle((_ctx, handle) => handle)
     .setKeyPairsDispatcher(async (_ctx, identifier) => {
       if (!botUsernames.includes(identifier)) return [];
       const existing = await getKeypairs(db, identifier);
@@ -145,6 +149,33 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         Math.floor((total - 1) / OUTBOX_PAGE_SIZE) * OUTBOX_PAGE_SIZE;
       return String(lastOffset);
     });
+
+  fed.setObjectDispatcher(
+    Note,
+    "/users/{identifier}/posts/{id}",
+    async (ctx, values) => {
+      const { identifier, id } = values;
+      if (!botUsernames.includes(identifier)) return null;
+      const entryId = parseInt(id, 10);
+      if (Number.isNaN(entryId)) return null;
+      const entry = await getEntryById(db, identifier, entryId);
+      if (!entry) return null;
+      const content = `<p>${escapeHtml(entry.title)}</p>` +
+        (entry.url ? `<p><a href="${escapeHtml(entry.url)}">${escapeHtml(entry.url)}</a></p>` : "");
+      return new Note({
+        id: ctx.getObjectUri(Note, values),
+        attribution: ctx.getActorUri(identifier),
+        to: PUBLIC_COLLECTION,
+        cc: ctx.getFollowersUri(identifier),
+        content,
+        mediaType: "text/html",
+        url: safeParseUrl(entry.url),
+        published: entry.publishedAt
+          ? Temporal.Instant.from(entry.publishedAt.toISOString())
+          : undefined,
+      });
+    },
+  );
 
   fed.setFollowersDispatcher(
     "/users/{identifier}/followers",
