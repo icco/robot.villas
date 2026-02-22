@@ -36,7 +36,7 @@ Each key under `bots` becomes the bot's username on the instance. Usernames must
 | Web Framework | [Hono](https://hono.dev/) |
 | ActivityPub | [Fedify](https://fedify.dev/) v2 (`@fedify/fedify`, `@fedify/vocab`, `@fedify/hono`) |
 | KvStore & MessageQueue | `@fedify/postgres` |
-| Database | PostgreSQL |
+| Database | PostgreSQL via [Drizzle ORM](https://orm.drizzle.team/) |
 | RSS Parsing | `rss-parser` |
 | Config Validation | Zod v4 |
 | Testing | Vitest v4 |
@@ -81,6 +81,9 @@ A running PostgreSQL instance is required. The application will apply any necess
 | `yarn test:watch` | Run tests in watch mode |
 | `yarn lint` | Lint with ESLint |
 | `yarn typecheck` | Type-check without emitting |
+| `yarn db:generate` | Generate Drizzle migration from schema changes |
+| `yarn db:push` | Push schema directly to database (dev only) |
+| `yarn db:studio` | Open Drizzle Studio database browser |
 
 ## Project Structure
 
@@ -88,13 +91,15 @@ A running PostgreSQL instance is required. The application will apply any necess
 src/
   index.ts          Entry point: wires config, DB, federation, server, poller
   config.ts         Zod-validated feeds.yml parser
-  db.ts             PostgreSQL connection, schema migration, data access
+  schema.ts         Drizzle ORM table definitions
+  db.ts             Drizzle instance creation and typed data access functions
   rss.ts            RSS/Atom feed fetcher and normalizer
   federation.ts     Fedify federation, actor dispatchers, inbox listeners
   publisher.ts      Dedup + publish new entries as Create(Note) activities
   poller.ts         Interval-based polling loop
   server.ts         Hono app with Fedify middleware and healthcheck
   __tests__/        Unit and integration tests
+drizzle/            Generated SQL migration files (committed to git)
 ```
 
 ## Best Practices
@@ -120,6 +125,14 @@ src/
 - The `sendActivity` method accepts the string `"followers"` as a recipient, which requires a registered followers collection dispatcher. This is simpler than iterating over followers manually.
 - Bot actors use the `Application` type (not `Person`) since they are automated accounts. This is the ActivityPub convention for bots.
 - The followers collection dispatcher must return objects satisfying the `Recipient` interface (`{ id, inboxId, endpoints }`). When you only have follower URIs stored in the database, you can return `{ id: new URL(uri), inboxId: null, endpoints: null }` and Fedify will resolve the inbox by dereferencing the actor.
+
+### Database & Drizzle ORM
+
+- The database schema is defined in `src/schema.ts` using Drizzle's TypeScript API. All queries in `db.ts` use Drizzle's type-safe query builder -- no raw SQL strings.
+- Drizzle ORM uses the same `postgres` (postgres.js) driver that `@fedify/postgres` depends on. A single postgres.js client is created in `index.ts` and shared between Drizzle and Fedify's `PostgresKvStore`/`PostgresMessageQueue`, so there is one connection pool for the whole application.
+- Migrations are generated with `yarn db:generate` and committed to the `drizzle/` directory. In production, `migrate()` from `drizzle-orm/postgres-js/migrator` applies pending migrations on startup.
+- For local development, `yarn db:push` can push schema changes directly to the database without generating migration files.
+- When modifying the schema, edit `src/schema.ts`, then run `yarn db:generate` to create a new migration file. Review the generated SQL before committing.
 
 ### Feed Polling & Deduplication
 
