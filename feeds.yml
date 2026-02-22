@@ -9,13 +9,11 @@ bots:
     display_name: "Lobsters"
     summary: "Stories from Lobsters"
     profile_photo: "https://lobste.rs/apple-touch-icon-144.png"
-
-  # Music
   cdm:
     feed_url: "https://cdm.link/feed/"
     display_name: "CDM Create Digital Music"
     summary: "Create digital music, motion, and more."
-  signal_perfect_circuit:
+  perfect_circuit:
     feed_url: "https://fetchrss.com/feed/1tanGi5SX5y71tanGB1Tg78M.atom"
     display_name: "SIGNAL - Perfect Circuit"
     summary: "In-depth analysis of synthesis history, methods, and the latest releases"
@@ -23,39 +21,19 @@ bots:
     feed_url: "https://www.synthtopia.com/feed/"
     display_name: "Synthtopia"
     summary: "Synthesizer and electronic music news, synth and music software reviews and more!"
-
-  # Nat
-  icco_mastodon:
-    feed_url: "https://merveilles.town/@icco.rss"
-    display_name: "icco"
-    summary: "Public posts from @icco@merveilles.town"
-  icco_pixelfed:
-    feed_url: "https://pixelfed.social/users/icco.atom"
-    display_name: "icco on pixelfed.social"
-    summary: "Photos from icco on Pixelfed"
-  letterboxd_nat:
-    feed_url: "https://letterboxd.com/icco/rss/"
-    display_name: "Letterboxd - Nat Welch"
-    summary: "Letterboxd - Nat Welch"
-  nat_blog:
+  natwelch:
     feed_url: "https://writing.natwelch.com/feed.atom"
     display_name: "Nat? Nat. Nat!"
     summary: "Nat Welch's blog about random stuff."
-  nat_combined:
-    feed_url: "https://natwelch.com/feed.rss"
-    display_name: "Nat Welch's Combined Feed"
-    summary: "A combined feed of Nat Welch's content from around the internet."
-
-  # News
   chronogram:
-    feed_url: "https://www.chronogram.com/hudsonvalley/Rss.xml"
+    feed_url: "https://www.chronogram.com/feed/"
     display_name: "Chronogram Magazine"
     summary: "A lifestyle magazine for the Hudson Valley and Catskills with the latest news on arts and cultural events, new restaurants, shops, and more."
   propublica:
     feed_url: "https://www.propublica.org/feeds/propublica/main"
     display_name: "ProPublica"
     summary: "Latest articles and investigations from ProPublica, an independent, non-profit newsroom that produces investigative journalism in the public interest."
-  the_current:
+  highlands_current:
     feed_url: "https://highlandscurrent.org/feed/"
     display_name: "The Current"
     summary: "News for Philipstown (Cold Spring, Nelsonville, Garrison) and Beacon, New York"
@@ -63,26 +41,14 @@ bots:
     feed_url: "https://www.theverge.com/rss/partner/subscriber-only-full-feed/rss.xml"
     display_name: "The Verge"
     summary: "Technology news, reviews, and features from The Verge."
-
-  # Other
   hundred_rabbits:
     feed_url: "https://100r.co/links/rss.xml"
     display_name: "Hundred Rabbits"
     summary: "Rek and Devine project updates"
-  letterboxd_frankie:
-    feed_url: "https://letterboxd.com/plantnerd/rss/"
-    display_name: "Letterboxd - frankie"
-    summary: "Letterboxd - frankie"
-  letterboxd_megan:
-    feed_url: "https://letterboxd.com/meganmcguinness/rss/"
-    display_name: "Letterboxd - meganmcguinness"
-    summary: "Letterboxd - meganmcguinness"
   mcsweeneys:
     feed_url: "https://feeds.feedburner.com/mcsweeneys"
     display_name: "McSweeney's"
     summary: "Timothy McSweeney's Internet Tendency"
-
-  # Tech
   drew_devault:
     feed_url: "https://drewdevault.com/blog/index.xml"
     display_name: "Drew DeVault's blog"
@@ -99,10 +65,6 @@ bots:
     feed_url: "https://www.16elt.com/atom.xml"
     display_name: "Eliran Turgeman"
     summary: "Blog posts from Eliran Turgeman"
-  honeycomb:
-    feed_url: "https://www.honeycomb.io/feed"
-    display_name: "Honeycomb"
-    summary: "Event driven debugging and observability"
   danluu:
     feed_url: "https://danluu.com/atom.xml"
     display_name: "danluu.com"
@@ -127,7 +89,7 @@ bots:
     feed_url: "https://engineering.atspotify.com/feed"
     display_name: "Spotify Engineering"
     summary: "Spotify's official technology blog"
-  the_webb_blog:
+  paul_anthony_webb:
     feed_url: "https://blog.webb.page/feed/atom"
     display_name: "the webb blog"
     summary: "Paul Anthony Webb's corner of the 'Net"
