@@ -1,42 +1,17 @@
 import { and, count, desc, eq } from "drizzle-orm";
-import { drizzle, type PostgresJsDatabase } from "drizzle-orm/postgres-js";
+import { drizzle } from "drizzle-orm/postgres-js";
+import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
 import type postgres from "postgres";
 import * as schema from "./schema.js";
 
-export type Db = PostgresJsDatabase<typeof schema>;
+export type Db = ReturnType<typeof createDb>;
 
-export function createDb(client: postgres.Sql): Db {
-  return drizzle(client, { schema });
+export function createDb(client: postgres.Sql) {
+  return drizzle({ client, schema });
 }
 
-export async function ensureTables(client: postgres.Sql): Promise<void> {
-  await client`
-    CREATE TABLE IF NOT EXISTS "actor_keypairs" (
-      "bot_username" text PRIMARY KEY NOT NULL,
-      "public_key" jsonb NOT NULL,
-      "private_key" jsonb NOT NULL,
-      "created_at" timestamp with time zone DEFAULT now() NOT NULL
-    )`;
-  await client`
-    CREATE TABLE IF NOT EXISTS "feed_entries" (
-      "id" serial PRIMARY KEY NOT NULL,
-      "bot_username" text NOT NULL,
-      "guid" text NOT NULL,
-      "url" text NOT NULL,
-      "title" text NOT NULL,
-      "published_at" timestamp with time zone,
-      "created_at" timestamp with time zone DEFAULT now() NOT NULL,
-      CONSTRAINT "feed_entries_bot_username_guid_unique" UNIQUE("bot_username","guid")
-    )`;
-  await client`
-    CREATE TABLE IF NOT EXISTS "followers" (
-      "id" serial PRIMARY KEY NOT NULL,
-      "bot_username" text NOT NULL,
-      "follower_id" text NOT NULL,
-      "follow_id" text NOT NULL,
-      "created_at" timestamp with time zone DEFAULT now() NOT NULL,
-      CONSTRAINT "followers_bot_username_follower_id_unique" UNIQUE("bot_username","follower_id")
-    )`;
+export async function migrate(db: Db): Promise<void> {
+  await runMigrations(db, { migrationsFolder: "./drizzle" });
 }
 
 export async function hasEntry(db: Db, botUsername: string, guid: string): Promise<boolean> {
