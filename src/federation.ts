@@ -93,7 +93,8 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
           items: entries.map((e) =>
             buildCreateActivity(
               identifier,
-              { ...e, link: e.url },
+              e.id,
+              { title: e.title, link: e.url, publishedAt: e.publishedAt },
               ctx.url,
             ),
           ),

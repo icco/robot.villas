@@ -23,6 +23,10 @@ export async function hasEntry(db: Db, botUsername: string, guid: string): Promi
   return rows.length > 0;
 }
 
+/**
+ * Inserts a feed entry. Returns the new row id when inserted, or null when the
+ * entry already existed (dedup by bot + guid). Use the returned id for Note URIs.
+ */
 export async function insertEntry(
   db: Db,
   botUsername: string,
@@ -30,11 +34,13 @@ export async function insertEntry(
   url: string,
   title: string,
   publishedAt: Date | null,
-): Promise<void> {
-  await db
+): Promise<number | null> {
+  const rows = await db
     .insert(schema.feedEntries)
     .values({ botUsername, guid, url, title, publishedAt })
-    .onConflictDoNothing({ target: [schema.feedEntries.botUsername, schema.feedEntries.guid] });
+    .onConflictDoNothing({ target: [schema.feedEntries.botUsername, schema.feedEntries.guid] })
+    .returning({ id: schema.feedEntries.id });
+  return rows[0]?.id ?? null;
 }
 
 export async function getFollowers(db: Db, botUsername: string): Promise<string[]> {
@@ -77,11 +83,11 @@ export async function getEntriesPage(
   limit: number,
   offset: number,
 ): Promise<
-  Array<{ guid: string; url: string; title: string; publishedAt: Date | null }>
+  Array<{ id: number; url: string; title: string; publishedAt: Date | null }>
 > {
   return db
     .select({
-      guid: schema.feedEntries.guid,
+      id: schema.feedEntries.id,
       url: schema.feedEntries.url,
       title: schema.feedEntries.title,
       publishedAt: schema.feedEntries.publishedAt,
