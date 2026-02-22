@@ -15,18 +15,18 @@ import {
   getKeypair,
   removeFollower,
   saveKeypair,
-  type Sql,
+  type Db,
 } from "./db.js";
 
 export interface FederationDeps {
   config: FeedsConfig;
-  sql: Sql;
+  db: Db;
   kvStore: KvStore;
   messageQueue: MessageQueue;
 }
 
 export function setupFederation(deps: FederationDeps): Federation<void> {
-  const { config, sql, kvStore, messageQueue } = deps;
+  const { config, db, kvStore, messageQueue } = deps;
   const botUsernames = Object.keys(config.bots);
 
   const fed = createFederation<void>({
@@ -53,7 +53,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     })
     .setKeyPairsDispatcher(async (_ctx, identifier) => {
       if (!botUsernames.includes(identifier)) return [];
-      const existing = await getKeypair(sql, identifier);
+      const existing = await getKeypair(db, identifier);
       if (existing) {
         const privateKey = await importJwk(existing.privateKey, "private");
         const publicKey = await importJwk(existing.publicKey, "public");
@@ -62,7 +62,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       const { privateKey, publicKey } =
         await generateCryptoKeyPair("RSASSA-PKCS1-v1_5");
       await saveKeypair(
-        sql,
+        db,
         identifier,
         await exportJwk(publicKey),
         await exportJwk(privateKey),
@@ -74,7 +74,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     "/users/{identifier}/followers",
     async (_ctx, identifier) => {
       if (!botUsernames.includes(identifier)) return null;
-      const followerIds = await getFollowers(sql, identifier);
+      const followerIds = await getFollowers(db, identifier);
       return {
         items: followerIds.map((id) => ({
           id: new URL(id),
@@ -95,7 +95,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       const follower = await follow.getActor(ctx);
       if (!follower?.id) return;
       await addFollower(
-        sql,
+        db,
         parsed.identifier,
         follower.id.href,
         follow.id.href,
@@ -113,7 +113,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       const parsed = ctx.parseUri(object.objectId);
       if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier))
         return;
-      await removeFollower(sql, parsed.identifier, undo.actorId.href);
+      await removeFollower(db, parsed.identifier, undo.actorId.href);
     });
 
   return fed;

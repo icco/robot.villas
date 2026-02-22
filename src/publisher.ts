@@ -1,7 +1,7 @@
 import { Temporal } from "@js-temporal/polyfill";
 import type { Context } from "@fedify/fedify";
 import { Create, Note } from "@fedify/vocab";
-import { getFollowers, hasEntry, insertEntry, type Sql } from "./db.js";
+import { getFollowers, hasEntry, insertEntry, type Db } from "./db.js";
 import type { FeedEntry } from "./rss.js";
 
 export interface PublishResult {
@@ -11,7 +11,7 @@ export interface PublishResult {
 
 export async function publishNewEntries(
   ctx: Context<void>,
-  sql: Sql,
+  db: Db,
   botUsername: string,
   domain: string,
   entries: FeedEntry[],
@@ -19,16 +19,16 @@ export async function publishNewEntries(
   let published = 0;
   let skipped = 0;
 
-  const followers = await getFollowers(sql, botUsername);
+  const followers = await getFollowers(db, botUsername);
 
   for (const entry of entries) {
-    if (await hasEntry(sql, botUsername, entry.guid)) {
+    if (await hasEntry(db, botUsername, entry.guid)) {
       skipped++;
       continue;
     }
 
     await insertEntry(
-      sql,
+      db,
       botUsername,
       entry.guid,
       entry.link,

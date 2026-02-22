@@ -2,7 +2,7 @@ import { serve } from "@hono/node-server";
 import { PostgresKvStore, PostgresMessageQueue } from "@fedify/postgres";
 import postgres from "postgres";
 import { loadConfig } from "./config.js";
-import { migrate } from "./db.js";
+import { createDb, migrate } from "./db.js";
 import { setupFederation } from "./federation.js";
 import { startPoller } from "./poller.js";
 import { createApp } from "./server.js";
@@ -24,13 +24,14 @@ if (!DOMAIN) {
 
 const config = loadConfig("feeds.yml");
 const sql = postgres(DATABASE_URL);
+const db = createDb(sql);
 
-await migrate(sql);
+await migrate(db);
 
 const kvStore = new PostgresKvStore(sql);
 const messageQueue = new PostgresMessageQueue(sql);
 
-const fed = setupFederation({ config, sql, kvStore, messageQueue });
+const fed = setupFederation({ config, db, kvStore, messageQueue });
 const app = createApp(fed);
 
 const server = serve({ fetch: app.fetch, port: PORT }, (info) => {
@@ -39,7 +40,7 @@ const server = serve({ fetch: app.fetch, port: PORT }, (info) => {
 
 const poller = startPoller({
   config,
-  sql,
+  db,
   domain: DOMAIN,
   intervalMs: POLL_INTERVAL_MS,
   getContext: () => fed.createContext(new URL(`https://${DOMAIN}`)),
