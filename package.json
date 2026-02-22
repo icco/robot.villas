@@ -1,6 +1,6 @@
 {
-  "name": "robot.villas",
-  "version": "0.1.0",
+  "name": "@icco/robot.villas",
+  "version": "1.0.0",
   "type": "module",
   "private": true,
   "engines": {
