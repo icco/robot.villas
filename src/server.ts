@@ -35,11 +35,17 @@ export function createApp(
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escapeHtml(domain)}</title>
+  <title>${escapeHtml(domain)} – RSS-to-Mastodon Bridge</title>
 </head>
 <body>
   <h1>${escapeHtml(domain)}</h1>
-  <p>This is an <strong>RSS-to-Mastodon bridge</strong>. Each bot account mirrors an RSS feed; you can follow them from any Mastodon or ActivityPub-compatible server.</p>
+  <p><strong>${escapeHtml(domain)}</strong> is an <strong>RSS-to-Mastodon bridge</strong>. It runs a collection of bot accounts, each mirroring a public RSS or Atom feed. New posts from each feed are automatically published as toots, so you can follow your favorite blogs, news sites, and newsletters directly from Mastodon or any ActivityPub-compatible server (Pleroma, Misskey, GoToSocial, etc.).</p>
+  <h3>How it works</h3>
+  <ol>
+    <li>Pick a bot from the list below.</li>
+    <li>Search for its handle (e.g. <code>@hackernews@${escapeHtml(domain)}</code>) on your Mastodon instance, or click "Follow on Mastodon" on its profile page.</li>
+    <li>New items from the RSS feed will appear in your home timeline.</li>
+  </ol>
   <h2>Bots</h2>
   <ul>
 ${botList}
@@ -95,7 +101,8 @@ ${botList}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>@${escapeHtml(username)}@${escapeHtml(domain)}</title>
+  <title>${escapeHtml(bot.display_name)} (@${escapeHtml(username)}@${escapeHtml(domain)}) – ${escapeHtml(domain)}</title>
+  <script type="module" src="https://unpkg.com/mastodon-widget"></script>
 </head>
 <body>
   <header>
@@ -103,16 +110,9 @@ ${botList}
     <h1>${escapeHtml(bot.display_name)}</h1>
     <p><code>@${escapeHtml(username)}@${escapeHtml(domain)}</code></p>
     <p>${escapeHtml(bot.summary)}</p>
-    <form id="follow-form" style="margin-top:0.75em" onsubmit="return handleFollow()">
-      <button type="button" id="follow-btn" onclick="document.getElementById('follow-prompt').hidden=false;this.hidden=true" style="cursor:pointer">Follow on Mastodon</button>
-      <span id="follow-prompt" hidden>
-        <label>Your instance: <input id="instance" type="text" placeholder="mastodon.social" required style="width:12em"></label>
-        <button type="submit">Go</button>
-      </span>
-    </form>
-    <script>
-    function handleFollow(){var i=document.getElementById("instance").value.trim().replace(/^https?:\\/\\//,"").replace(/\\/$/,"");if(!i)return false;location.href="https://"+i+"/authorize_interaction?uri="+encodeURIComponent("acct:${escapeHtml(username)}@${escapeHtml(domain)}");return false}
-    </script>
+    <mastodon-follow account="${escapeHtml(username)}@${escapeHtml(domain)}" style="margin-top:0.75em;display:inline-block">
+      <button style="cursor:pointer">Follow on Mastodon</button>
+    </mastodon-follow>
   </header>
   <h2>Posts</h2>
   <ul>
