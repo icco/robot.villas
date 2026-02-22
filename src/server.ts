@@ -103,6 +103,16 @@ ${botList}
     <h1>${escapeHtml(bot.display_name)}</h1>
     <p><code>@${escapeHtml(username)}@${escapeHtml(domain)}</code></p>
     <p>${escapeHtml(bot.summary)}</p>
+    <form id="follow-form" style="margin-top:0.75em" onsubmit="return handleFollow()">
+      <button type="button" id="follow-btn" onclick="document.getElementById('follow-prompt').hidden=false;this.hidden=true" style="cursor:pointer">Follow on Mastodon</button>
+      <span id="follow-prompt" hidden>
+        <label>Your instance: <input id="instance" type="text" placeholder="mastodon.social" required style="width:12em"></label>
+        <button type="submit">Go</button>
+      </span>
+    </form>
+    <script>
+    function handleFollow(){var i=document.getElementById("instance").value.trim().replace(/^https?:\\/\\//,"").replace(/\\/$/,"");if(!i)return false;location.href="https://"+i+"/authorize_interaction?uri="+encodeURIComponent("acct:${escapeHtml(username)}@${escapeHtml(domain)}");return false}
+    </script>
   </header>
   <h2>Posts</h2>
   <ul>
