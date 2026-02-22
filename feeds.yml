@@ -13,10 +13,12 @@ bots:
     feed_url: "https://cdm.link/feed/"
     display_name: "CDM Create Digital Music"
     summary: "Create digital music, motion, and more."
+    profile_photo: "https://cdm.link/app/uploads/2015/12/cdmlogo-200x200.png"
   perfect_circuit:
     feed_url: "https://fetchrss.com/feed/1tanGi5SX5y71tanGB1Tg78M.atom"
     display_name: "SIGNAL - Perfect Circuit"
     summary: "In-depth analysis of synthesis history, methods, and the latest releases"
+    profile_photo: "https://www.perfectcircuit.com/media/logo/stores/1/pc-logo-dark.svg"
   synthtopia:
     feed_url: "https://www.synthtopia.com/feed/"
     display_name: "Synthtopia"
@@ -25,46 +27,52 @@ bots:
     feed_url: "https://writing.natwelch.com/feed.atom"
     display_name: "Nat? Nat. Nat!"
     summary: "Nat Welch's blog about random stuff."
+    profile_photo: "https://avatars.githubusercontent.com/u/1588?s=200"
   chronogram:
     feed_url: "https://www.chronogram.com/feed/"
     display_name: "Chronogram Magazine"
     summary: "A lifestyle magazine for the Hudson Valley and Catskills with the latest news on arts and cultural events, new restaurants, shops, and more."
+    profile_photo: "https://www.chronogram.com/wp-content/uploads/2025/07/cropped-apple-touch-icon-iphone.png"
   propublica:
     feed_url: "https://www.propublica.org/feeds/propublica/main"
     display_name: "ProPublica"
     summary: "Latest articles and investigations from ProPublica, an independent, non-profit newsroom that produces investigative journalism in the public interest."
+    profile_photo: "https://www.propublica.org/wp-content/uploads/2026/02/propublica-site-icon-512x512-2.png"
   highlands_current:
     feed_url: "https://highlandscurrent.org/feed/"
     display_name: "The Current"
     summary: "News for Philipstown (Cold Spring, Nelsonville, Garrison) and Beacon, New York"
+    profile_photo: "https://highlandscurrent.org/wp-content/uploads/2018/04/cropped-HC-circle-new-180x180.png"
   the_verge:
     feed_url: "https://www.theverge.com/rss/partner/subscriber-only-full-feed/rss.xml"
     display_name: "The Verge"
     summary: "Technology news, reviews, and features from The Verge."
+    profile_photo: "https://www.theverge.com/static-assets/icons/apple-touch-icon.png"
   hundred_rabbits:
     feed_url: "https://100r.co/links/rss.xml"
     display_name: "Hundred Rabbits"
     summary: "Rek and Devine project updates"
+    profile_photo: "https://100r.co/media/services/icon.jpg"
   mcsweeneys:
     feed_url: "https://feeds.feedburner.com/mcsweeneys"
     display_name: "McSweeney's"
     summary: "Timothy McSweeney's Internet Tendency"
+    profile_photo: "https://www.mcsweeneys.net/assets/chair-white-b56c46cc6ff30c7d87e754d65dd4f170f7681164c08c91142962b746e0261e19.png"
   drew_devault:
     feed_url: "https://drewdevault.com/blog/index.xml"
     display_name: "Drew DeVault's blog"
     summary: "Recent content from Drew DeVault's blog"
+    profile_photo: "https://drewdevault.com/avatar.png"
   dropbox_tech:
     feed_url: "https://dropbox.tech/feed"
     display_name: "Dropbox Tech Blog"
     summary: "Engineering blog from Dropbox"
+    profile_photo: "https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/app-dropbox-android.png"
   eli_bendersky:
     feed_url: "https://eli.thegreenplace.net/feeds/all.atom.xml"
     display_name: "Eli Bendersky's website"
     summary: "Articles from Eli Bendersky's website"
-  eliran_turgeman:
-    feed_url: "https://www.16elt.com/atom.xml"
-    display_name: "Eliran Turgeman"
-    summary: "Blog posts from Eliran Turgeman"
+
   danluu:
     feed_url: "https://danluu.com/atom.xml"
     display_name: "danluu.com"
@@ -77,10 +85,12 @@ bots:
     feed_url: "https://www.marcdougherty.com/index.xml"
     display_name: "Marc Dougherty"
     summary: "Recent content from Marc Dougherty"
+    profile_photo: "https://www.marcdougherty.com/apple-touch-icon.png"
   eatonphil:
     feed_url: "https://notes.eatonphil.com/rss.xml"
     display_name: "Notes on software development"
     summary: "Notes on software development"
+    profile_photo: "https://avatars.githubusercontent.com/u/2424777?s=200"
   purplesyringa:
     feed_url: "https://purplesyringa.moe/blog/feed.rss"
     display_name: "purplesyringa's blog"
@@ -89,10 +99,12 @@ bots:
     feed_url: "https://engineering.atspotify.com/feed"
     display_name: "Spotify Engineering"
     summary: "Spotify's official technology blog"
+    profile_photo: "https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png"
   paul_anthony_webb:
     feed_url: "https://blog.webb.page/feed/atom"
     display_name: "the webb blog"
     summary: "Paul Anthony Webb's corner of the 'Net"
+    profile_photo: "https://xn--4v8h.pixels.wtf/blog/asset/apple-touch-icon.png"
   transactional:
     feed_url: "https://transactional.blog/feed.xml"
     display_name: "Transactional"

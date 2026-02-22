@@ -1,15 +1,15 @@
-import { jsonb, pgTable, serial, text, timestamp, unique } from "drizzle-orm/pg-core";
+import { integer, jsonb, pgTable, text, timestamp, unique } from "drizzle-orm/pg-core";
 
 export const feedEntries = pgTable(
   "feed_entries",
   {
-    id: serial("id").primaryKey(),
+    id: integer().primaryKey().generatedAlwaysAsIdentity(),
     botUsername: text("bot_username").notNull(),
-    guid: text("guid").notNull(),
-    url: text("url").notNull(),
-    title: text("title").notNull(),
-    publishedAt: timestamp("published_at", { withTimezone: true }),
-    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    guid: text().notNull(),
+    url: text().notNull(),
+    title: text().notNull(),
+    publishedAt: timestamp("published_at", { withTimezone: true, mode: "date" }),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
   },
   (t) => [unique().on(t.botUsername, t.guid)],
 );
@@ -18,17 +18,17 @@ export const actorKeypairs = pgTable("actor_keypairs", {
   botUsername: text("bot_username").primaryKey(),
   publicKey: jsonb("public_key").notNull(),
   privateKey: jsonb("private_key").notNull(),
-  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
 });
 
 export const followers = pgTable(
   "followers",
   {
-    id: serial("id").primaryKey(),
+    id: integer().primaryKey().generatedAlwaysAsIdentity(),
     botUsername: text("bot_username").notNull(),
     followerId: text("follower_id").notNull(),
     followId: text("follow_id").notNull(),
-    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
   },
   (t) => [unique().on(t.botUsername, t.followerId)],
 );
