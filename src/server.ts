@@ -3,7 +3,7 @@ import { federation as fedifyMiddleware } from "@fedify/hono";
 import type { Federation } from "@fedify/fedify";
 import escapeHtml from "escape-html";
 import type { FeedsConfig } from "./config.js";
-import { countEntries, getEntriesPage, type Db } from "./db.js";
+import { countEntries, countFollowers, getEntriesPage, type Db } from "./db.js";
 
 const PROFILE_PAGE_SIZE = 40;
 
@@ -71,8 +71,11 @@ ${botList}
     const bot = config.bots[username];
     const page = parseInt(c.req.query("page") || "0", 10);
     const offset = Math.max(0, page) * PROFILE_PAGE_SIZE;
-    const total = await countEntries(db, username);
-    const entries = await getEntriesPage(db, username, PROFILE_PAGE_SIZE, offset);
+    const [total, followerCount, entries] = await Promise.all([
+      countEntries(db, username),
+      countFollowers(db, username),
+      getEntriesPage(db, username, PROFILE_PAGE_SIZE, offset),
+    ]);
     const hasNext = offset + entries.length < total;
     const hasPrev = offset > 0;
 
@@ -114,6 +117,10 @@ ${botList}
       <button style="cursor:pointer">Follow on Mastodon</button>
     </mastodon-follow>
   </header>
+  <dl style="display:flex;gap:2em;margin:1em 0">
+    <div><dt style="font-size:0.85em;color:#666">Posts</dt><dd style="margin:0;font-size:1.25em;font-weight:bold">${total.toLocaleString("en-US")}</dd></div>
+    <div><dt style="font-size:0.85em;color:#666">Followers</dt><dd style="margin:0;font-size:1.25em;font-weight:bold">${followerCount.toLocaleString("en-US")}</dd></div>
+  </dl>
   <h2>Posts</h2>
   <ul>
 ${entriesHtml}
