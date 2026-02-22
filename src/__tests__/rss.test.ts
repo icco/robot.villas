@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { parseFeedXml, type FeedEntry } from "../rss.js";
+import { MAX_ITEMS_PER_POLL, parseFeedXml, type FeedEntry } from "../rss.js";
 
 const SAMPLE_RSS = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
@@ -83,5 +83,16 @@ describe("parseFeedXml", () => {
       <rss version="2.0"><channel><title>Empty</title></channel></rss>`;
     const entries = await parseFeedXml(xml);
     expect(entries).toEqual([]);
+  });
+
+  it("caps items at MAX_ITEMS_PER_POLL", async () => {
+    const item = (i: number) =>
+      `<item><title>Item ${i}</title><link>https://example.com/${i}</link><guid>g-${i}</guid></item>`;
+    const many = Array.from({ length: MAX_ITEMS_PER_POLL + 10 }, (_, i) => item(i)).join("");
+    const xml = `<?xml version="1.0"?><rss version="2.0"><channel><title>Big</title>${many}</channel></rss>`;
+    const entries = await parseFeedXml(xml);
+    expect(entries).toHaveLength(MAX_ITEMS_PER_POLL);
+    expect(entries[0]?.title).toBe("Item 0");
+    expect(entries[MAX_ITEMS_PER_POLL - 1]?.title).toBe(`Item ${MAX_ITEMS_PER_POLL - 1}`);
   });
 });
