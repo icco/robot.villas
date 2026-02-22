@@ -59,7 +59,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         endpoints: new Endpoints({
           sharedInbox: ctx.getInboxUri(),
         }),
-        url: new URL(`/users/${identifier}`, ctx.url),
+        url: new URL(`/@${identifier}`, ctx.url),
         publicKeys: keys.map((kp) => kp.cryptographicKey),
         assertionMethods: keys.map((kp) => kp.multikey),
       });
