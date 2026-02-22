@@ -9,8 +9,6 @@ yarn upgrade
 git add package* yarn.lock
 git diff --quiet --staged || git commit -m 'chore(deps): yarn upgrade'
 
-yarn run chrome
-
 yarn run lint 
 git add src
 git diff --quiet --staged || git commit -m 'chore: lint'
