@@ -36,7 +36,7 @@ const fed = setupFederation({ config, db, kvStore, messageQueue, blockedInstance
 const app = createApp(fed, config, DOMAIN, db);
 
 const queueController = new AbortController();
-await fed.startQueue(undefined, { signal: queueController.signal });
+fed.startQueue(undefined, { signal: queueController.signal });
 console.log("Fedify message queue worker started");
 
 const server = serve({ fetch: app.fetch, port: PORT }, (info) => {
