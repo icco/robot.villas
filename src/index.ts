@@ -1,9 +1,11 @@
 import { serve } from "@hono/node-server";
 import { PostgresKvStore, PostgresMessageQueue } from "@fedify/postgres";
+import { getLogger } from "@logtape/logtape";
 import postgres from "postgres";
 import { getBlockedInstances, loadConfig } from "./config.js";
 import { createDb, migrate } from "./db.js";
 import { setupFederation } from "./federation.js";
+import { setupLogging } from "./logging.js";
 import { startPoller } from "./poller.js";
 import { createApp } from "./server.js";
 
@@ -22,6 +24,9 @@ if (!DOMAIN) {
   process.exit(1);
 }
 
+await setupLogging();
+const logger = getLogger(["robot-villas", "server"]);
+
 const config = loadConfig("feeds.yml");
 const sql = postgres(DATABASE_URL);
 const db = createDb(sql);
@@ -37,10 +42,10 @@ const app = createApp(fed, config, DOMAIN, db);
 
 const queueController = new AbortController();
 fed.startQueue(undefined, { signal: queueController.signal });
-console.log("Fedify message queue worker started");
+logger.info("Fedify message queue worker started");
 
 const server = serve({ fetch: app.fetch, port: PORT }, (info) => {
-  console.log(`robot.villas listening on http://localhost:${info.port}`);
+  logger.info("Listening on http://localhost:{port}", { port: info.port });
 });
 
 const poller = startPoller({
@@ -52,7 +57,7 @@ const poller = startPoller({
 });
 
 function shutdown() {
-  console.log("Shutting down...");
+  logger.info("Shutting down...");
   poller.stop();
   queueController.abort();
   server.close();

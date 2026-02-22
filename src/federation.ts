@@ -7,6 +7,7 @@ import {
   type KvStore,
   type MessageQueue,
 } from "@fedify/fedify";
+import { getLogger } from "@logtape/logtape";
 import { Accept, Application, Endpoints, Follow, Image, Reject, Undo } from "@fedify/vocab";
 import type { FeedsConfig } from "./config.js";
 import {
@@ -29,6 +30,8 @@ export interface FederationDeps {
   /** Blocked instance hostnames (lowercase); Follow from these gets Reject. */
   blockedInstances?: Set<string>;
 }
+
+const logger = getLogger(["robot-villas", "federation"]);
 
 export function setupFederation(deps: FederationDeps): Federation<void> {
   const { config, db, kvStore, messageQueue, blockedInstances = new Set() } = deps;
@@ -178,22 +181,22 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     .setInboxListeners("/users/{identifier}/inbox", "/inbox")
     .on(Follow, async (ctx, follow) => {
       if (!follow.id || !follow.actorId || !follow.objectId) {
-        console.warn("[Follow] Ignored: missing id, actorId, or objectId");
+        logger.warn("Follow ignored: missing id, actorId, or objectId");
         return;
       }
       const parsed = ctx.parseUri(follow.objectId);
       if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) {
-        console.warn(`[Follow] Ignored: objectId ${follow.objectId} is not a known bot`);
+        logger.warn("Follow ignored: {objectId} is not a known bot", { objectId: follow.objectId });
         return;
       }
       const follower = await follow.getActor(ctx);
       if (!follower?.id) {
-        console.error(`[Follow] Failed to resolve actor ${follow.actorId}`);
+        logger.error("Failed to resolve actor {actorId}", { actorId: follow.actorId });
         return;
       }
       const followerHost = follower.id.hostname.toLowerCase();
       if (blockedInstances.has(followerHost)) {
-        console.log(`[Follow] Rejected follow from blocked instance ${followerHost}`);
+        logger.info("Rejected follow from blocked instance {host}", { host: followerHost });
         await ctx.sendActivity(
           { identifier: parsed.identifier },
           follower,
@@ -207,7 +210,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         follower.id.href,
         follow.id.href,
       );
-      console.log(`[Follow] ${follower.id.href} -> ${parsed.identifier}: sending Accept`);
+      logger.info("Accepting follow {followerId} -> {identifier}", { followerId: follower.id.href, identifier: parsed.identifier });
       await ctx.sendActivity(
         { identifier: parsed.identifier },
         follower,
