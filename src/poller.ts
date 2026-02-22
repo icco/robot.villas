@@ -1,10 +1,12 @@
 import type { Context } from "@fedify/fedify";
+import { getLogger } from "@logtape/logtape";
 import type { FeedsConfig } from "./config.js";
 import type { Db } from "./db.js";
 import { fetchFeed } from "./rss.js";
 import { publishNewEntries } from "./publisher.js";
 
 const DEFAULT_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
+const logger = getLogger(["robot-villas", "poller"]);
 
 export interface PollerOptions {
   config: FeedsConfig;
@@ -21,25 +23,27 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
 
   let stopped = false;
 
-  console.log(
-    `[Poller] Starting: ${botNames.length} bot(s) [${botNames.join(", ")}], interval ${intervalMs}ms`,
+  logger.info(
+    "Starting: {botCount} bot(s) [{botNames}], interval {intervalMs}ms",
+    { botCount: botNames.length, botNames: botNames.join(", "), intervalMs },
   );
 
   async function poll(): Promise<void> {
-    console.log("[Poller] Poll cycle starting");
+    logger.info("Poll cycle starting");
     const ctx = getContext();
     for (const [username, bot] of Object.entries(config.bots)) {
       try {
         const entries = await fetchFeed(bot.feed_url);
         const result = await publishNewEntries(ctx, db, username, domain, entries);
-        console.log(
-          `[Poller] [${username}] fetched ${entries.length} entries, published ${result.published}, skipped ${result.skipped}`,
+        logger.info(
+          "Fetched {entryCount} entries for {username}, published {published}, skipped {skipped}",
+          { username, entryCount: entries.length, published: result.published, skipped: result.skipped },
         );
       } catch (err) {
-        console.error(`[Poller] [${username}] error:`, err);
+        logger.error("Error polling {username}: {error}", { username, error: err });
       }
     }
-    console.log("[Poller] Poll cycle complete");
+    logger.info("Poll cycle complete");
   }
 
   async function loop(): Promise<void> {
