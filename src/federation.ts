@@ -22,7 +22,8 @@ import {
   saveKeypairs,
   type Db,
 } from "./db.js";
-import { buildCreateActivity, escapeHtml, safeParseUrl } from "./publisher.js";
+import escapeHtml from "escape-html";
+import { buildCreateActivity, safeParseUrl } from "./publisher.js";
 
 export interface FederationDeps {
   config: FeedsConfig;

@@ -1,6 +1,7 @@
 import { Temporal } from "@js-temporal/polyfill";
 import type { Context } from "@fedify/fedify";
 import { Create, Note, PUBLIC_COLLECTION } from "@fedify/vocab";
+import escapeHtml from "escape-html";
 import { getFollowers, insertEntry, type Db } from "./db.js";
 import type { FeedEntry } from "./rss.js";
 
@@ -134,13 +135,4 @@ function formatContent(entry: EntryLike): string {
     return `<p>${escapeHtml(entry.title)}</p><p><a href="${escapeHtml(href)}">${escapeHtml(href)}</a></p>`;
   }
   return `<p>${escapeHtml(entry.title)}</p>`;
-}
-
-export function escapeHtml(s: string): string {
-  return s
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#39;");
 }
