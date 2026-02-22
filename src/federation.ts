@@ -7,9 +7,15 @@ import {
   type KvStore,
   type MessageQueue,
 } from "@fedify/fedify";
-import { Application } from "@fedify/vocab";
+import { Accept, Application, Follow, Undo } from "@fedify/vocab";
 import type { FeedsConfig } from "./config.js";
-import { getKeypair, saveKeypair, type Sql } from "./db.js";
+import {
+  addFollower,
+  getKeypair,
+  removeFollower,
+  saveKeypair,
+  type Sql,
+} from "./db.js";
 
 export interface FederationDeps {
   config: FeedsConfig;
@@ -61,6 +67,37 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         await exportJwk(privateKey),
       );
       return [{ privateKey, publicKey }];
+    });
+
+  fed
+    .setInboxListeners("/users/{identifier}/inbox", "/inbox")
+    .on(Follow, async (ctx, follow) => {
+      if (!follow.id || !follow.actorId || !follow.objectId) return;
+      const parsed = ctx.parseUri(follow.objectId);
+      if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier))
+        return;
+      const follower = await follow.getActor(ctx);
+      if (!follower?.id) return;
+      await addFollower(
+        sql,
+        parsed.identifier,
+        follower.id.href,
+        follow.id.href,
+      );
+      await ctx.sendActivity(
+        { identifier: parsed.identifier },
+        follower,
+        new Accept({ actor: follow.objectId, object: follow }),
+      );
+    })
+    .on(Undo, async (ctx, undo) => {
+      const object = await undo.getObject(ctx);
+      if (!(object instanceof Follow)) return;
+      if (!object.objectId || !undo.actorId) return;
+      const parsed = ctx.parseUri(object.objectId);
+      if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier))
+        return;
+      await removeFollower(sql, parsed.identifier, undo.actorId.href);
     });
 
   return fed;
