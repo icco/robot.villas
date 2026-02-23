@@ -28,6 +28,7 @@ export const followers = pgTable(
     botUsername: text("bot_username").notNull(),
     followerId: text("follower_id").notNull(),
     followId: text("follow_id").notNull(),
+    sharedInboxUrl: text("shared_inbox_url"),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
   },
   (t) => [unique().on(t.botUsername, t.followerId)],

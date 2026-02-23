@@ -3,7 +3,7 @@ import type { Context } from "@fedify/fedify";
 import { Create, Note, PUBLIC_COLLECTION, type Recipient } from "@fedify/vocab";
 import escapeHtml from "escape-html";
 import { getLogger } from "@logtape/logtape";
-import { getAcceptedRelays, getFollowers, insertEntry, type Db } from "./db.js";
+import { getAcceptedRelays, getFollowerRecipients, insertEntry, type Db } from "./db.js";
 import type { FeedEntry } from "./rss.js";
 
 const logger = getLogger(["robot-villas", "publisher"]);
@@ -76,7 +76,14 @@ export async function publishNewEntries(
   let published = 0;
   let skipped = 0;
 
-  const followers = await getFollowers(db, botUsername);
+  const followerRows = await getFollowerRecipients(db, botUsername);
+  const followerRecipients: Recipient[] = followerRows
+    .filter((f) => f.sharedInboxUrl)
+    .map((f) => ({
+      id: new URL(f.followerId),
+      inboxId: new URL(f.sharedInboxUrl!),
+      endpoints: null,
+    }));
   const relays = await getAcceptedRelays(db);
   const relayRecipients: Recipient[] = relays
     .filter((r) => r.inboxUrl && r.actorId)
@@ -86,7 +93,7 @@ export async function publishNewEntries(
       endpoints: null,
     }));
 
-  const hasRecipients = followers.length > 0 || relayRecipients.length > 0;
+  const hasRecipients = followerRecipients.length > 0 || relayRecipients.length > 0;
 
   for (const entry of entries) {
     const guid = truncateToMax(entry.guid, MAX_GUID_LENGTH);
@@ -119,11 +126,11 @@ export async function publishNewEntries(
       `https://${domain}`,
     );
 
-    if (followers.length > 0) {
+    if (followerRecipients.length > 0) {
       try {
         await ctx.sendActivity(
           { identifier: botUsername },
-          "followers",
+          followerRecipients,
           create,
         );
       } catch (error) {

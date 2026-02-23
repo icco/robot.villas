@@ -51,6 +51,11 @@ export async function countFollowers(db: Db, botUsername: string): Promise<numbe
   return rows[0]?.value ?? 0;
 }
 
+export interface FollowerRow {
+  followerId: string;
+  sharedInboxUrl: string | null;
+}
+
 export async function getFollowers(db: Db, botUsername: string): Promise<string[]> {
   const rows = await db
     .select({ followerId: schema.followers.followerId })
@@ -59,16 +64,26 @@ export async function getFollowers(db: Db, botUsername: string): Promise<string[
   return rows.map((r) => r.followerId);
 }
 
+export async function getFollowerRecipients(db: Db, botUsername: string): Promise<FollowerRow[]> {
+  return db
+    .select({
+      followerId: schema.followers.followerId,
+      sharedInboxUrl: schema.followers.sharedInboxUrl,
+    })
+    .from(schema.followers)
+    .where(eq(schema.followers.botUsername, botUsername));
+}
 
 export async function addFollower(
   db: Db,
   botUsername: string,
   followerId: string,
   followId: string,
+  sharedInboxUrl: string | null = null,
 ): Promise<void> {
   await db
     .insert(schema.followers)
-    .values({ botUsername, followerId, followId })
+    .values({ botUsername, followerId, followId, sharedInboxUrl })
     .onConflictDoNothing({ target: [schema.followers.botUsername, schema.followers.followerId] });
 }
 

@@ -33,6 +33,7 @@ import {
   getAllRelays,
   getEntriesPage,
   getEntryById,
+  getFollowerRecipients,
   getFollowers,
   getFollowingByActivityId,
   getKeypairs,
@@ -330,7 +331,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         );
         return;
       }
-      await addFollower(db, parsed.identifier, follower.id.href, follow.id.href);
+      const endpoints = await follower.getEndpoints();
+      const sharedInbox = endpoints?.sharedInbox?.href ?? follower.inboxId?.href ?? null;
+      await addFollower(db, parsed.identifier, follower.id.href, follow.id.href, sharedInbox);
       logger.info("Accepting follow {followerId} -> {identifier}", {
         followerId: follower.id.href,
         identifier: parsed.identifier,
@@ -371,9 +374,16 @@ export async function sendProfileUpdates(
   config: FeedsConfig,
 ): Promise<void> {
   for (const identifier of Object.keys(config.bots)) {
-    const followerCount = await countFollowers(db, identifier);
-    if (followerCount === 0) {
-      logger.info("Skipping profile update for {identifier}: no followers", {
+    const followerRows = await getFollowerRecipients(db, identifier);
+    const recipients = followerRows
+      .filter((f) => f.sharedInboxUrl)
+      .map((f) => ({
+        id: new URL(f.followerId),
+        inboxId: new URL(f.sharedInboxUrl!),
+        endpoints: null,
+      }));
+    if (recipients.length === 0) {
+      logger.info("Skipping profile update for {identifier}: no followers with inbox", {
         identifier,
       });
       continue;
@@ -391,10 +401,10 @@ export async function sendProfileUpdates(
       object: actor,
     });
 
-    await ctx.sendActivity({ identifier }, "followers", update);
+    await ctx.sendActivity({ identifier }, recipients, update);
     logger.info(
       "Sent profile Update for {identifier} to {count} follower(s)",
-      { identifier, count: followerCount },
+      { identifier, count: recipients.length },
     );
   }
 }
