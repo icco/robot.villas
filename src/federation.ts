@@ -274,7 +274,10 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         })),
       };
     },
-  );
+  ).setCounter(async (_ctx, identifier) => {
+    if (!botUsernames.includes(identifier)) return null;
+    return await countFollowers(db, identifier);
+  });
 
   // --- NodeInfo dispatcher ---
   federation.setNodeInfoDispatcher("/nodeinfo/2.1", async () => {
