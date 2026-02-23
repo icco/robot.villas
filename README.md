@@ -50,21 +50,6 @@ yarn dev
 
 A running PostgreSQL instance is required. Migrations are applied automatically on startup.
 
-## Scripts
-
-| Command            | Description                                    |
-| ------------------ | ---------------------------------------------- |
-| `yarn dev`         | Dev server with hot-reload (tsx watch)         |
-| `yarn build`       | Compile TypeScript to `dist/`                  |
-| `yarn start`       | Run compiled output (`node dist/index.js`)     |
-| `yarn test`        | Run tests with Vitest                          |
-| `yarn test:watch`  | Run tests in watch mode                        |
-| `yarn lint`        | Lint with ESLint                               |
-| `yarn typecheck`   | Type-check without emitting                    |
-| `yarn db:generate` | Generate Drizzle migration from schema changes |
-| `yarn db:push`     | Push schema directly to database (dev only)    |
-| `yarn db:studio`   | Open Drizzle Studio database browser           |
-
 ## Tech Stack
 
 | Component          | Technology                                                                           |
