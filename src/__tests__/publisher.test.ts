@@ -15,6 +15,7 @@ import {
   publishNewEntries,
   safeParseUrl,
   truncateToMax,
+  formatContent,
 } from "../publisher.js";
 import type { FeedEntry } from "../rss.js";
 
@@ -60,7 +61,7 @@ describe("publishNewEntries", () => {
     expect(mockCtx.sendActivity).toHaveBeenCalledTimes(2);
   });
 
-  it("records entries but does not send when there are no followers", async () => {
+  it("does not insert or send entries when there are no followers", async () => {
     mockGetFollowers.mockResolvedValue([]);
     mockInsertEntry.mockResolvedValue(1);
 
@@ -73,7 +74,7 @@ describe("publishNewEntries", () => {
     );
 
     expect(result.published).toBe(0);
-    expect(mockInsertEntry).toHaveBeenCalledTimes(3);
+    expect(mockInsertEntry).not.toHaveBeenCalled();
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
   });
 
@@ -112,6 +113,24 @@ describe("publishNewEntries", () => {
     expect(result.published).toBe(2);
     expect(mockInsertEntry).toHaveBeenCalledTimes(2);
     expect(mockCtx.sendActivity).toHaveBeenCalledTimes(2);
+  });
+
+  it("continues publishing remaining entries if follower send throws", async () => {
+    mockInsertEntry.mockResolvedValueOnce(1).mockResolvedValueOnce(2).mockResolvedValueOnce(3);
+    mockCtx.sendActivity.mockRejectedValueOnce(new Error("network error")).mockResolvedValue(undefined);
+
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot",
+      "robot.villas",
+      entries,
+    );
+
+    // All three entries should be marked published (error is caught, not propagated)
+    expect(result.published).toBe(3);
+    expect(result.skipped).toBe(0);
+    expect(mockCtx.sendActivity).toHaveBeenCalledTimes(3);
   });
 
   it("handles empty entries array", async () => {
@@ -262,5 +281,28 @@ describe("publishNewEntries with length limits", () => {
     expect(note?.content).toBeDefined();
     expect(note!.content).toContain("a".repeat(MAX_TITLE_LENGTH).slice(0, 50));
     expect(note!.content).toContain("https://example.com/");
+  });
+});
+
+describe("formatContent", () => {
+  it("includes link in anchor tag for valid https url", () => {
+    const content = formatContent({ title: "My Post", link: "https://example.com/post", publishedAt: null });
+    expect(content).toBe('<p>My Post</p><p><a href="https://example.com/post">https://example.com/post</a></p>');
+  });
+
+  it("omits link for unsafe url schemes", () => {
+    const content = formatContent({ title: "My Post", link: "javascript:alert(1)", publishedAt: null });
+    expect(content).toBe("<p>My Post</p>");
+  });
+
+  it("omits link when link is empty", () => {
+    const content = formatContent({ title: "No Link", link: "", publishedAt: null });
+    expect(content).toBe("<p>No Link</p>");
+  });
+
+  it("escapes HTML in title and link", () => {
+    const content = formatContent({ title: '<b>Test</b>', link: "https://example.com/", publishedAt: null });
+    expect(content).not.toContain("<b>");
+    expect(content).toContain("&lt;b&gt;");
   });
 });
