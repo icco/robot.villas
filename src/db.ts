@@ -285,3 +285,21 @@ export async function updateFollowingStatus(
     .set({ status })
     .where(eq(schema.following.followActivityId, followActivityId));
 }
+
+export async function getFollowingByActivityId(
+  db: Db,
+  followActivityId: string,
+): Promise<FollowingRow | null> {
+  const rows = await db
+    .select({
+      botUsername: schema.following.botUsername,
+      handle: schema.following.handle,
+      targetActorId: schema.following.targetActorId,
+      followActivityId: schema.following.followActivityId,
+      status: schema.following.status,
+    })
+    .from(schema.following)
+    .where(eq(schema.following.followActivityId, followActivityId))
+    .limit(1);
+  return rows[0] ?? null;
+}

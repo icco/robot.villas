@@ -34,6 +34,7 @@ import {
   getEntriesPage,
   getEntryById,
   getFollowers,
+  getFollowingByActivityId,
   getKeypairs,
   removeFollower,
   saveKeypairs,
@@ -239,6 +240,24 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         published: entry.publishedAt
           ? Temporal.Instant.from(entry.publishedAt.toISOString())
           : undefined,
+      });
+    },
+  );
+
+  // --- Follow object dispatcher (so Accept can dereference our outgoing follows) ---
+  federation.setObjectDispatcher(
+    Follow,
+    "/users/{identifier}/follows/{id}",
+    async (ctx, values) => {
+      const { identifier } = values;
+      if (!botUsernames.includes(identifier)) return null;
+      const followUri = ctx.getObjectUri(Follow, values);
+      const row = await getFollowingByActivityId(db, followUri.href);
+      if (!row || !row.targetActorId) return null;
+      return new Follow({
+        id: followUri,
+        actor: ctx.getActorUri(identifier),
+        object: new URL(row.targetActorId),
       });
     },
   );
