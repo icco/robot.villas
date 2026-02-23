@@ -29,6 +29,13 @@
       "when": 1771816357066,
       "tag": "0003_clear_feed_entries",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1771860760787,
+      "tag": "0004_powerful_network",
+      "breakpoints": true
     }
   ]
 }

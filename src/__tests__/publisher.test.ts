@@ -3,10 +3,11 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 vi.mock("../db.js", () => ({
   insertEntry: vi.fn(),
   getFollowers: vi.fn(),
+  getFollowerRecipients: vi.fn(),
   getAcceptedRelays: vi.fn(),
 }));
 
-import { insertEntry, getFollowers, getAcceptedRelays } from "../db.js";
+import { insertEntry, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db.js";
 import {
   buildCreateActivity,
   MAX_GUID_LENGTH,
@@ -21,6 +22,7 @@ import type { FeedEntry } from "../rss.js";
 
 const mockInsertEntry = vi.mocked(insertEntry);
 const mockGetFollowers = vi.mocked(getFollowers);
+const mockGetFollowerRecipients = vi.mocked(getFollowerRecipients);
 const mockGetAcceptedRelays = vi.mocked(getAcceptedRelays);
 
 const mockCtx = {
@@ -38,6 +40,9 @@ describe("publishNewEntries", () => {
     vi.clearAllMocks();
     mockInsertEntry.mockResolvedValue(1);
     mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
+    mockGetFollowerRecipients.mockResolvedValue([
+      { followerId: "https://remote.example/user/1", sharedInboxUrl: "https://remote.example/inbox" },
+    ]);
     mockGetAcceptedRelays.mockResolvedValue([]);
   });
 
@@ -61,8 +66,9 @@ describe("publishNewEntries", () => {
     expect(mockCtx.sendActivity).toHaveBeenCalledTimes(2);
   });
 
-  it("does not insert or send entries when there are no followers", async () => {
+  it("inserts entries but does not send when there are no followers", async () => {
     mockGetFollowers.mockResolvedValue([]);
+    mockGetFollowerRecipients.mockResolvedValue([]);
     mockInsertEntry.mockResolvedValue(1);
 
     const result = await publishNewEntries(
@@ -74,7 +80,8 @@ describe("publishNewEntries", () => {
     );
 
     expect(result.published).toBe(0);
-    expect(mockInsertEntry).not.toHaveBeenCalled();
+    expect(result.skipped).toBe(3);
+    expect(mockInsertEntry).toHaveBeenCalledTimes(3);
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
   });
 
@@ -251,6 +258,9 @@ describe("publishNewEntries with length limits", () => {
     vi.clearAllMocks();
     mockInsertEntry.mockResolvedValue(1);
     mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
+    mockGetFollowerRecipients.mockResolvedValue([
+      { followerId: "https://remote.example/user/1", sharedInboxUrl: "https://remote.example/inbox" },
+    ]);
     mockGetAcceptedRelays.mockResolvedValue([]);
   });
 
