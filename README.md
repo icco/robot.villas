@@ -19,24 +19,24 @@ relays:
 
 Each key under `bots` becomes the bot's fediverse username. Usernames must be lowercase alphanumeric or underscores (validated at startup via Zod).
 
-| Field | Required | Description |
-|---|---|---|
-| `feed_url` | Yes | URL of the RSS/Atom feed |
-| `display_name` | Yes | Display name shown on the profile (max 100 chars) |
-| `summary` | Yes | Short bio/description (max 500 chars) |
-| `profile_photo` | No | URL to an avatar image |
+| Field           | Required | Description                                       |
+| --------------- | -------- | ------------------------------------------------- |
+| `feed_url`      | Yes      | URL of the RSS/Atom feed                          |
+| `display_name`  | Yes      | Display name shown on the profile (max 100 chars) |
+| `summary`       | Yes      | Short bio/description (max 500 chars)             |
+| `profile_photo` | No       | URL to an avatar image                            |
 
 The `relays` list contains ActivityPub relay actor URLs. The server subscribes to these on startup so posts reach a wider audience.
 
 ## Environment Variables
 
-| Variable | Description | Default |
-|---|---|---|
-| `DATABASE_URL` | PostgreSQL connection string | (required) |
-| `DOMAIN` | Public domain for ActivityPub IDs and WebFinger | (required) |
-| `PORT` | HTTP server port | `3000` |
-| `POLL_INTERVAL_MS` | Milliseconds between RSS poll cycles | `300000` (5 min) |
-| `BLOCKED_INSTANCES` | Comma-separated hostnames to reject Follows from | (none) |
+| Variable            | Description                                      | Default          |
+| ------------------- | ------------------------------------------------ | ---------------- |
+| `DATABASE_URL`      | PostgreSQL connection string                     | (required)       |
+| `DOMAIN`            | Public domain for ActivityPub IDs and WebFinger  | (required)       |
+| `PORT`              | HTTP server port                                 | `3000`           |
+| `POLL_INTERVAL_MS`  | Milliseconds between RSS poll cycles             | `300000` (5 min) |
+| `BLOCKED_INSTANCES` | Comma-separated hostnames to reject Follows from | (none)           |
 
 ## Development
 
@@ -52,31 +52,31 @@ A running PostgreSQL instance is required. Migrations are applied automatically 
 
 ## Scripts
 
-| Command | Description |
-|---|---|
-| `yarn dev` | Dev server with hot-reload (tsx watch) |
-| `yarn build` | Compile TypeScript to `dist/` |
-| `yarn start` | Run compiled output (`node dist/index.js`) |
-| `yarn test` | Run tests with Vitest |
-| `yarn test:watch` | Run tests in watch mode |
-| `yarn lint` | Lint with ESLint |
-| `yarn typecheck` | Type-check without emitting |
+| Command            | Description                                    |
+| ------------------ | ---------------------------------------------- |
+| `yarn dev`         | Dev server with hot-reload (tsx watch)         |
+| `yarn build`       | Compile TypeScript to `dist/`                  |
+| `yarn start`       | Run compiled output (`node dist/index.js`)     |
+| `yarn test`        | Run tests with Vitest                          |
+| `yarn test:watch`  | Run tests in watch mode                        |
+| `yarn lint`        | Lint with ESLint                               |
+| `yarn typecheck`   | Type-check without emitting                    |
 | `yarn db:generate` | Generate Drizzle migration from schema changes |
-| `yarn db:push` | Push schema directly to database (dev only) |
-| `yarn db:studio` | Open Drizzle Studio database browser |
+| `yarn db:push`     | Push schema directly to database (dev only)    |
+| `yarn db:studio`   | Open Drizzle Studio database browser           |
 
 ## Tech Stack
 
-| Component | Technology |
-|---|---|
-| Runtime | TypeScript / Node.js 24+ |
-| Web Framework | [Hono](https://hono.dev/) |
-| ActivityPub | [Fedify](https://fedify.dev/) v2 (`@fedify/fedify`, `@fedify/vocab`, `@fedify/hono`) |
-| KV & Message Queue | `@fedify/postgres` |
-| Database | PostgreSQL via [Drizzle ORM](https://orm.drizzle.team/) |
-| RSS Parsing | `rss-parser` |
-| Config Validation | Zod v4 |
-| Testing | Vitest v4 |
+| Component          | Technology                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------ |
+| Runtime            | TypeScript / Node.js 24+                                                             |
+| Web Framework      | [Hono](https://hono.dev/)                                                            |
+| ActivityPub        | [Fedify](https://fedify.dev/) v2 (`@fedify/fedify`, `@fedify/vocab`, `@fedify/hono`) |
+| KV & Message Queue | `@fedify/postgres`                                                                   |
+| Database           | PostgreSQL via [Drizzle ORM](https://orm.drizzle.team/)                              |
+| RSS Parsing        | `rss-parser`                                                                         |
+| Config Validation  | Zod v4                                                                               |
+| Testing            | Vitest v4                                                                            |
 
 ## Project Structure
 
