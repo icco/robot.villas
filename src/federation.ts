@@ -116,13 +116,15 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
   });
 
   // --- Actor dispatcher (following the Fedify microblog tutorial pattern) ---
-  const actorCallbacks = federation.setActorDispatcher(
-    "/users/{identifier}",
-    async (ctx, identifier) => {
-      if (!botUsernames.includes(identifier)) return null;
-      return buildActor(ctx, identifier, config.bots[identifier]);
-    },
-  );
+  const actorCallbacks = federation
+    .setActorDispatcher(
+      "/users/{identifier}",
+      async (ctx, identifier) => {
+        if (!botUsernames.includes(identifier)) return null;
+        return buildActor(ctx, identifier, config.bots[identifier]);
+      },
+    )
+    .mapHandle((_ctx, handle) => handle);
 
   // Key pairs dispatcher — must be registered via the setters returned above
   actorCallbacks.setKeyPairsDispatcher(async (_ctx, identifier) => {
