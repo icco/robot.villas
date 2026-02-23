@@ -22,6 +22,7 @@ export function createApp(
 
   app.get("/", (c) => {
     const botList = Object.entries(config.bots)
+      .sort(([a], [b]) => a.localeCompare(b))
       .map(([username, bot]) => {
         const photoHtml = bot.profile_photo
           ? `<img src="${escapeHtml(bot.profile_photo)}" alt="" width="24" height="24" class="rounded-full">`
