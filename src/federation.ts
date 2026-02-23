@@ -370,8 +370,8 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     .on(Announce, async (ctx, announce) => {
       if (!announce.objectId) return;
       const parsed = ctx.parseUri(announce.objectId);
-      if (parsed?.type !== "object" || parsed.constructor !== Note) return;
-      const { identifier, id } = parsed.values as { identifier: string; id: string };
+      if (parsed?.type !== "object" || parsed.class !== Note) return;
+      const { identifier, id } = parsed.values;
       if (!botUsernames.includes(identifier)) return;
       const entryId = parseInt(id, 10);
       if (Number.isNaN(entryId)) return;
@@ -381,8 +381,8 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     .on(Like, async (ctx, like) => {
       if (!like.objectId) return;
       const parsed = ctx.parseUri(like.objectId);
-      if (parsed?.type !== "object" || parsed.constructor !== Note) return;
-      const { identifier, id } = parsed.values as { identifier: string; id: string };
+      if (parsed?.type !== "object" || parsed.class !== Note) return;
+      const { identifier, id } = parsed.values;
       if (!botUsernames.includes(identifier)) return;
       const entryId = parseInt(id, 10);
       if (Number.isNaN(entryId)) return;

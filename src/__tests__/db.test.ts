@@ -34,9 +34,13 @@ describeWithDb("database", () => {
         title         TEXT NOT NULL,
         published_at  TIMESTAMPTZ,
         created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
+        like_count    INTEGER NOT NULL DEFAULT 0,
+        boost_count   INTEGER NOT NULL DEFAULT 0,
         UNIQUE (bot_username, guid)
       )
     `;
+    await client`ALTER TABLE feed_entries ADD COLUMN IF NOT EXISTS like_count INTEGER NOT NULL DEFAULT 0`;
+    await client`ALTER TABLE feed_entries ADD COLUMN IF NOT EXISTS boost_count INTEGER NOT NULL DEFAULT 0`;
     await client`
       CREATE TABLE IF NOT EXISTS actor_keypairs (
         bot_username  TEXT PRIMARY KEY,
