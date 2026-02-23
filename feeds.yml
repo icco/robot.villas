@@ -140,7 +140,7 @@ bots:
     display_name: kottke.org
     summary: Home of fine hypertext products since 1998.
   nelson_elhage:
-    feed_url: https://nelhage.com/feed.xml
+    feed_url: https://blog.nelhage.com/atom.xml
     display_name: Nelson Elhage
     summary: Blog posts on systems, compilers, and performance.
 relays:
