@@ -398,7 +398,7 @@ export async function followAccounts(
   for (const rawHandle of handles) {
     const handle = rawHandle.replace(/^@/, "");
 
-    let targetActor: Recipient | null = null;
+    let targetActor: Recipient;
     try {
       const resolved = await ctx.lookupObject(`acct:${handle}`);
       if (!resolved || !("id" in resolved) || !("inboxId" in resolved)) {
