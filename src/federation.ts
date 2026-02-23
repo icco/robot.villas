@@ -3,6 +3,7 @@ import {
   exportJwk,
   generateCryptoKeyPair,
   importJwk,
+  type Context,
   type Federation,
   type KvStore,
   type MessageQueue,
@@ -17,6 +18,7 @@ import {
   Image,
   Note,
   PUBLIC_COLLECTION,
+  type Recipient,
   Reject,
   Undo,
 } from "@fedify/vocab";
@@ -25,12 +27,15 @@ import type { FeedsConfig } from "./config.js";
 import {
   addFollower,
   countEntries,
+  getAllRelays,
   getEntriesPage,
   getEntryById,
   getFollowers,
   getKeypairs,
   removeFollower,
   saveKeypairs,
+  updateRelayStatus,
+  upsertRelay,
   type Db,
 } from "./db.js";
 import { buildCreateActivity, safeParseUrl } from "./publisher.js";
@@ -289,7 +294,91 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       const parsed = ctx.parseUri(object.objectId);
       if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) return;
       await removeFollower(db, parsed.identifier, undo.actorId.href);
+    })
+    .on(Accept, async (_ctx, accept) => {
+      const object = await accept.getObject();
+      if (!(object instanceof Follow) || !object.id) return;
+      await updateRelayStatus(db, object.id.href, "accepted");
+      logger.info("Relay accepted our Follow {followId}", {
+        followId: object.id.href,
+      });
     });
 
   return federation;
+}
+
+/**
+ * Subscribes to configured relays by sending Follow activities from the first
+ * bot actor. Skips relays that already have a pending or accepted subscription.
+ */
+export async function subscribeToRelays(
+  ctx: Context<void>,
+  db: Db,
+  config: FeedsConfig,
+): Promise<void> {
+  const relayUrls = config.relays ?? [];
+  if (relayUrls.length === 0) return;
+
+  const subscriberBot = Object.keys(config.bots)[0];
+  if (!subscriberBot) return;
+
+  const existingRelays = await getAllRelays(db);
+  const existingUrls = new Set(existingRelays.map((r) => r.url));
+
+  for (const relayUrl of relayUrls) {
+    if (existingUrls.has(relayUrl)) {
+      logger.info("Relay {url} already tracked, skipping subscription", {
+        url: relayUrl,
+      });
+      continue;
+    }
+
+    try {
+      const relayActor = await ctx.lookupObject(relayUrl);
+      if (!relayActor || !("inboxId" in relayActor)) {
+        logger.error("Could not resolve relay actor at {url}", { url: relayUrl });
+        continue;
+      }
+      const recipient = relayActor as Recipient;
+      if (!recipient.id || !recipient.inboxId) {
+        logger.error("Relay actor at {url} has no id or inbox", { url: relayUrl });
+        continue;
+      }
+
+      const followId = new URL(
+        `/relay-follows/${crypto.randomUUID()}`,
+        ctx.getActorUri(subscriberBot),
+      );
+
+      const follow = new Follow({
+        id: followId,
+        actor: ctx.getActorUri(subscriberBot),
+        object: recipient.id,
+      });
+
+      await upsertRelay(
+        db,
+        relayUrl,
+        recipient.inboxId.href,
+        recipient.id.href,
+        followId.href,
+      );
+
+      await ctx.sendActivity(
+        { identifier: subscriberBot },
+        recipient,
+        follow,
+      );
+
+      logger.info(
+        "Sent Follow to relay {url} (actor: {actorId}) from {bot}",
+        { url: relayUrl, actorId: recipient.id!.href, bot: subscriberBot },
+      );
+    } catch (error) {
+      logger.error("Failed to subscribe to relay {url}: {error}", {
+        url: relayUrl,
+        error,
+      });
+    }
+  }
 }

@@ -1,9 +1,12 @@
 import { Temporal } from "@js-temporal/polyfill";
 import type { Context } from "@fedify/fedify";
-import { Create, Note, PUBLIC_COLLECTION } from "@fedify/vocab";
+import { Create, Note, PUBLIC_COLLECTION, type Recipient } from "@fedify/vocab";
 import escapeHtml from "escape-html";
-import { getFollowers, insertEntry, type Db } from "./db.js";
+import { getLogger } from "@logtape/logtape";
+import { getAcceptedRelays, getFollowers, insertEntry, type Db } from "./db.js";
 import type { FeedEntry } from "./rss.js";
+
+const logger = getLogger(["robot-villas", "publisher"]);
 
 /** Max lengths for feed-derived fields (storage and Note content). */
 export const MAX_TITLE_LENGTH = 2000;
@@ -74,6 +77,16 @@ export async function publishNewEntries(
   let skipped = 0;
 
   const followers = await getFollowers(db, botUsername);
+  const relays = await getAcceptedRelays(db);
+  const relayRecipients: Recipient[] = relays
+    .filter((r) => r.inboxUrl && r.actorId)
+    .map((r) => ({
+      id: new URL(r.actorId!),
+      inboxId: new URL(r.inboxUrl!),
+      endpoints: null,
+    }));
+
+  const hasRecipients = followers.length > 0 || relayRecipients.length > 0;
 
   for (const entry of entries) {
     const guid = truncateToMax(entry.guid, MAX_GUID_LENGTH);
@@ -93,7 +106,7 @@ export async function publishNewEntries(
       continue;
     }
 
-    if (followers.length === 0) {
+    if (!hasRecipients) {
       skipped++;
       continue;
     }
@@ -105,11 +118,29 @@ export async function publishNewEntries(
       `https://${domain}`,
     );
 
-    await ctx.sendActivity(
-      { identifier: botUsername },
-      "followers",
-      create,
-    );
+    if (followers.length > 0) {
+      await ctx.sendActivity(
+        { identifier: botUsername },
+        "followers",
+        create,
+      );
+    }
+
+    for (const relay of relayRecipients) {
+      try {
+        await ctx.sendActivity(
+          { identifier: botUsername },
+          relay,
+          create,
+        );
+      } catch (error) {
+        logger.error("Failed to send to relay {relayId}: {error}", {
+          relayId: relay.id?.href,
+          error,
+        });
+      }
+    }
+
     published++;
   }
 

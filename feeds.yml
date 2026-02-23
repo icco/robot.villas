@@ -108,3 +108,6 @@ bots:
     feed_url: "https://transactional.blog/feed.xml"
     display_name: "Transactional"
     summary: "Databases"
+
+relays:
+  - "https://relay.toot.io/actor"

@@ -1,4 +1,4 @@
-import { integer, jsonb, pgTable, text, timestamp, unique } from "drizzle-orm/pg-core";
+import { integer, jsonb, pgEnum, pgTable, text, timestamp, unique } from "drizzle-orm/pg-core";
 
 export const feedEntries = pgTable(
   "feed_entries",
@@ -32,3 +32,19 @@ export const followers = pgTable(
   },
   (t) => [unique().on(t.botUsername, t.followerId)],
 );
+
+export const relayStatusEnum = pgEnum("relay_status", [
+  "pending",
+  "accepted",
+  "rejected",
+]);
+
+export const relays = pgTable("relays", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  url: text().notNull().unique(),
+  inboxUrl: text("inbox_url"),
+  actorId: text("actor_id"),
+  status: relayStatusEnum().notNull().default("pending"),
+  followActivityId: text("follow_activity_id"),
+  createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+});
