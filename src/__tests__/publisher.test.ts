@@ -49,8 +49,8 @@ describe("publishNewEntries", () => {
   it("publishes new entries and skips existing ones", async () => {
     mockInsertEntry
       .mockResolvedValueOnce(null) // g1 already exists (conflict)
-      .mockResolvedValueOnce(2) // g2 new
-      .mockResolvedValueOnce(3); // g3 new
+      .mockResolvedValueOnce(2)
+      .mockResolvedValueOnce(3);
 
     const result = await publishNewEntries(
       mockCtx,

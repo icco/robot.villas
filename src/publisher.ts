@@ -8,7 +8,6 @@ import type { FeedEntry } from "./rss.js";
 
 const logger = getLogger(["robot-villas", "publisher"]);
 
-/** Max lengths for feed-derived fields (storage and Note content). */
 export const MAX_TITLE_LENGTH = 2000;
 export const MAX_URL_LENGTH = 2048;
 export const MAX_GUID_LENGTH = 2048;
@@ -18,7 +17,6 @@ export function truncateToMax(s: string, max: number): string {
   return s.slice(0, max);
 }
 
-/** Content for a Note; id is our server-generated entry id (used in Note URI). */
 export interface EntryLike {
   title: string;
   link: string;
@@ -162,7 +160,6 @@ export async function publishNewEntries(
   return { published, skipped };
 }
 
-/** Returns a URL only for http: or https:; otherwise undefined. Used for Note.url and hrefs. */
 export function safeParseUrl(link: string | undefined): URL | undefined {
   if (!link) return undefined;
   try {

@@ -51,6 +51,7 @@ describeWithDb("database", () => {
         bot_username  TEXT NOT NULL,
         follower_id   TEXT NOT NULL,
         follow_id     TEXT NOT NULL,
+        shared_inbox_url TEXT,
         created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
         UNIQUE (bot_username, follower_id)
       )

@@ -5,7 +5,7 @@ import type { Db } from "./db.js";
 import { fetchFeed } from "./rss.js";
 import { publishNewEntries } from "./publisher.js";
 
-const DEFAULT_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
+const DEFAULT_INTERVAL_MS = 5 * 60 * 1000;
 const logger = getLogger(["robot-villas", "poller"]);
 
 export interface PollerOptions {
