@@ -12,6 +12,7 @@ import { getLogger } from "@logtape/logtape";
 import { Temporal } from "@js-temporal/polyfill";
 import {
   Accept,
+  Announce,
   Application,
   Delete,
   Endpoints,
@@ -362,6 +363,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       await updateRelayStatus(db, followIdHref, "accepted");
       await updateFollowingStatus(db, followIdHref, "accepted");
       logger.info("Accepted Follow {followId}", { followId: followIdHref });
+    })
+    .on(Announce, async (_ctx, _announce) => {
+      // No-op: boosts of external posts don't require action from our bots.
     })
     .on(Delete, async (_ctx, del) => {
       if (!del.actorId) return;
