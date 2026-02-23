@@ -30,16 +30,25 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
 
   async function poll(): Promise<void> {
     logger.info("Poll cycle starting");
+    // #region agent log
+    logger.debug("poll cycle starting: bots={botNames}", { botNames: Object.keys(config.bots).join(", ") });
+    // #endregion
     const ctx = getContext();
     for (const [username, bot] of Object.entries(config.bots)) {
       try {
         const entries = await fetchFeed(bot.feed_url);
+        // #region agent log
+        logger.debug("fetched feed: bot={username} url={feedUrl} entries={entryCount} firstGuid={firstGuid}", { username, feedUrl: bot.feed_url, entryCount: entries.length, firstGuid: entries[0]?.guid ?? "none" });
+        // #endregion
         const result = await publishNewEntries(ctx, db, username, domain, entries);
         logger.info(
           "Fetched {entryCount} entries for {username}, published {published}, skipped {skipped}",
           { username, entryCount: entries.length, published: result.published, skipped: result.skipped },
         );
       } catch (err) {
+        // #region agent log
+        logger.debug("error polling bot: bot={username} error={error}", { username, error: String(err) });
+        // #endregion
         logger.error("Error polling {username}: {error}", { username, error: err });
       }
     }

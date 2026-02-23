@@ -88,12 +88,19 @@ export async function publishNewEntries(
 
   const hasRecipients = followers.length > 0 || relayRecipients.length > 0;
 
+  // #region agent log
+  logger.debug("publishNewEntries: bot={botUsername} entries={entriesCount} followers={followersCount} relays={relayCount} hasRecipients={hasRecipients} followerIds={followerIds}", { botUsername, entriesCount: entries.length, followersCount: followers.length, relayCount: relayRecipients.length, hasRecipients, followerIds: JSON.stringify(followers) });
+  // #endregion
+
   for (const entry of entries) {
     const guid = truncateToMax(entry.guid, MAX_GUID_LENGTH);
     const url = truncateToMax(entry.link, MAX_URL_LENGTH);
     const title = truncateToMax(entry.title, MAX_TITLE_LENGTH);
 
     if (!hasRecipients) {
+      // #region agent log
+      logger.debug("skipping entry (no recipients): bot={botUsername} guid={guid} title={title}", { botUsername, guid, title });
+      // #endregion
       skipped++;
       continue;
     }
@@ -106,6 +113,11 @@ export async function publishNewEntries(
       title,
       entry.publishedAt,
     );
+
+    // #region agent log
+    logger.debug("insertEntry result: bot={botUsername} guid={guid} entryId={entryId}", { botUsername, guid, entryId });
+    // #endregion
+
     if (entryId === null) {
       skipped++;
       continue;
@@ -125,7 +137,13 @@ export async function publishNewEntries(
           "followers",
           create,
         );
+        // #region agent log
+        logger.debug("sendActivity to followers succeeded: bot={botUsername} entryId={entryId}", { botUsername, entryId });
+        // #endregion
       } catch (error) {
+        // #region agent log
+        logger.debug("sendActivity to followers FAILED: bot={botUsername} entryId={entryId} error={error}", { botUsername, entryId, error: String(error) });
+        // #endregion
         logger.error("Failed to send to followers for {botUsername}: {error}", {
           botUsername,
           error,
@@ -150,6 +168,10 @@ export async function publishNewEntries(
 
     published++;
   }
+
+  // #region agent log
+  logger.debug("publishNewEntries complete: bot={botUsername} published={published} skipped={skipped}", { botUsername, published, skipped });
+  // #endregion
 
   return { published, skipped };
 }
