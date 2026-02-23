@@ -395,14 +395,24 @@ export async function followAccounts(
   const existing = await getAllFollowing(db);
   const existingSet = new Set(existing.map((f) => `${f.botUsername}:${f.handle}`));
 
+  const signingIdentifier = botUsernames[0];
+  const documentLoader = await ctx.getDocumentLoader({
+    identifier: signingIdentifier,
+  });
+
   for (const rawHandle of handles) {
     const handle = rawHandle.replace(/^@/, "");
 
     let targetActor: Recipient;
     try {
-      const resolved = await ctx.lookupObject(`acct:${handle}`);
+      const resolved = await ctx.lookupObject(`acct:${handle}`, {
+        documentLoader,
+      });
       if (!resolved || !("id" in resolved) || !("inboxId" in resolved)) {
-        logger.error("Could not resolve actor for {handle}", { handle });
+        logger.error(
+          "Could not resolve actor for {handle}: lookup returned {type}",
+          { handle, type: resolved?.constructor?.name ?? String(resolved) },
+        );
         continue;
       }
       targetActor = resolved as Recipient;
