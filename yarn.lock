@@ -15,61 +15,6 @@
     ky "^1.14.2"
     undici "^6.23.0"
 
-"@dprint/darwin-arm64@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/darwin-arm64/-/darwin-arm64-0.51.1.tgz#8a75f0c66c6d3d5ce703e891668d347bc4a242f6"
-  integrity sha512-C7fkaz0/NGf/X4G9Cq65izdJgerND5jWShOaPiOgGs4A0CyCMKMLRd45m3xKIttuO8x0IQiZVixD22qmVglXmQ==
-
-"@dprint/darwin-x64@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/darwin-x64/-/darwin-x64-0.51.1.tgz#37a16bd92bceeffe4f860120e2d497c4071d5c8d"
-  integrity sha512-/CESb4SJejshTWb/nO2gucrioKdLD/fK2gKB5Immi4XecAjhkV1HZpUMRLsIeVDQ6ha7xktKbnnvudJRI0maSg==
-
-"@dprint/linux-arm64-glibc@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-arm64-glibc/-/linux-arm64-glibc-0.51.1.tgz#4b1154cfcf21c98b304e694ad501c8f95230051c"
-  integrity sha512-W+QD/4TkQKMPq02uz+ZIz/EI91YEtS2zHBu/Jihx2lfNh3HjUKgyY1KfqCTg2WGJVDkJtPc5KDw+M8yd4rI+Rg==
-
-"@dprint/linux-arm64-musl@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-arm64-musl/-/linux-arm64-musl-0.51.1.tgz#391a3446be3dc2d2a33b2d23f41ee3b3c9542bad"
-  integrity sha512-P4Cfn8wrdSvdoMoz0HtsC5zZpbh8Kk3OjRzgG4qs/gub5Ba3CCLcVaQvQmIOCvgPzdhPB41eSn5qAK87mh7vCQ==
-
-"@dprint/linux-loong64-glibc@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-loong64-glibc/-/linux-loong64-glibc-0.51.1.tgz#e4dcad3b33aa63e172cbca00b58166a2376662ef"
-  integrity sha512-dxDShELBrSGB9PktRqhYrm1UWCL+7N430rGuDTFg+i4d1wL4JD7EI5NDS/5IVbg3lrKJUu6gAJoY9NWF4sZ0mQ==
-
-"@dprint/linux-loong64-musl@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-loong64-musl/-/linux-loong64-musl-0.51.1.tgz#0a01a449f13dc1d328f4cea07f0f49b5a2750388"
-  integrity sha512-l+uNPzUBNxkywGN1HgvTV0CzUDpzXC+s6VEvjYRdVAEKl9TAsIfLMfZifS8rnlOi9hz/0sckmpny+wL40G6dhQ==
-
-"@dprint/linux-riscv64-glibc@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-riscv64-glibc/-/linux-riscv64-glibc-0.51.1.tgz#d54361d66df34121c640a7c5a8ce02b664787ce1"
-  integrity sha512-YI6SemJRMsLUrtognhkAYOJ67j/AkiufHfx6+cPv/7qO6zBoBL6otR1e5yFYvAgEJOzRZD5g51EdqCcuK19B+g==
-
-"@dprint/linux-x64-glibc@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-x64-glibc/-/linux-x64-glibc-0.51.1.tgz#787c5a944bd01f3d59e746d51ce7c904302a24a4"
-  integrity sha512-Hm9ntOWeclXU6/rZGYIN2XjuAhsRUZ77lRJC5EiM1rP6Ayh0J/YMsDdqlPAs+xZGdFFzt8ZeUpqJJJsbc54ZjQ==
-
-"@dprint/linux-x64-musl@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-x64-musl/-/linux-x64-musl-0.51.1.tgz#9e929fa6b42a300350a4d6e43e65a4c878b2a6a9"
-  integrity sha512-iUs/9Z4Ky6+2GAK+i1jF1ZwM27CSIGaqw3LxTXtmE8eBCRwyCW+opzn9bzaFtlT9REUAGMC5PXihAPmzP3ttWg==
-
-"@dprint/win32-arm64@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/win32-arm64/-/win32-arm64-0.51.1.tgz#fc866388b09eaca147cb15cb238e55f46d533d72"
-  integrity sha512-oXjEL7Blf/160/j7U8MapRzSOVQvLIdAKEZbslIHA4Fwj10fvoDizqpfVU/aVj/BVrlIcZ/+AH8kfSC9XAyjLw==
-
-"@dprint/win32-x64@0.51.1":
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/@dprint/win32-x64/-/win32-x64-0.51.1.tgz#d08be1aaa32b7142110cc44e73ad7dbbf439f6a0"
-  integrity sha512-RM9thb/+Jm6GkXJS+eW+0Pzmz2PNeDk8ZOWcjunE1jv2RabHgm+GbeGpS+WZPOM9W3LSntswv6f4wjzfUkWD0g==
-
 "@drizzle-team/brocli@^0.10.2":
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/@drizzle-team/brocli/-/brocli-0.10.2.tgz#9757c006a43daaa6f45512e6cf5fabed36fb9da7"
@@ -1116,23 +1061,6 @@ deep-is@^0.1.3:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.4.tgz#a6f2dce612fadd2ef1f519b73551f17e85199831"
   integrity sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==
-
-dprint@^0.51.1:
-  version "0.51.1"
-  resolved "https://registry.yarnpkg.com/dprint/-/dprint-0.51.1.tgz#acc35f2f16c70c20fdb339ab51ac07640b14c144"
-  integrity sha512-CEx+wYARxLAe9o7RCZ77GKae6DF7qjn5Rd98xbWdA3hB4PFBr+kHwLANmNHscNumBAIrCg5ZJj/Kz+OYbJ+GBA==
-  optionalDependencies:
-    "@dprint/darwin-arm64" "0.51.1"
-    "@dprint/darwin-x64" "0.51.1"
-    "@dprint/linux-arm64-glibc" "0.51.1"
-    "@dprint/linux-arm64-musl" "0.51.1"
-    "@dprint/linux-loong64-glibc" "0.51.1"
-    "@dprint/linux-loong64-musl" "0.51.1"
-    "@dprint/linux-riscv64-glibc" "0.51.1"
-    "@dprint/linux-x64-glibc" "0.51.1"
-    "@dprint/linux-x64-musl" "0.51.1"
-    "@dprint/win32-arm64" "0.51.1"
-    "@dprint/win32-x64" "0.51.1"
 
 drizzle-kit@^0.31.9:
   version "0.31.9"

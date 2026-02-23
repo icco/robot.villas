@@ -1,24 +1,33 @@
 name: CI
-
 on:
   push:
-    branches: [main, init]
+    branches:
+      - main
+      - init
   pull_request:
-    branches: [main]
-
+    branches:
+      - main
 jobs:
   lint-and-typecheck:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
       - uses: actions/setup-node@v4
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: .nvmrc
           cache: yarn
+      - uses: mikefarah/yq@master
       - run: yarn install --frozen-lockfile
       - run: yarn lint
+      - run: yarn fmt:yaml
       - run: yarn typecheck
-
+      - uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: 'style: auto-fix lint and formatting'
   test:
     runs-on: ubuntu-latest
     services:
@@ -30,22 +39,17 @@ jobs:
           POSTGRES_DB: robot_villas_test
         ports:
           - 5432:5432
-        options: >-
-          --health-cmd "pg_isready -U test"
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
+        options: --health-cmd "pg_isready -U test" --health-interval 10s --health-timeout 5s --health-retries 5
     env:
       DATABASE_URL: postgres://test:test@localhost:5432/robot_villas_test
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: .nvmrc
           cache: yarn
       - run: yarn install --frozen-lockfile
       - run: yarn test
-
   docker:
     runs-on: ubuntu-latest
     steps:
