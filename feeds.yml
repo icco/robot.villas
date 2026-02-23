@@ -3,7 +3,7 @@ bots:
     feed_url: https://news.ycombinator.com/rss
     display_name: Hacker News
     summary: Top stories from Hacker News
-    profile_photo: https://news.ycombinator.com/y18.svg
+    profile_photo: https://news.ycombinator.com/apple-touch-icon.png
   lobsters:
     feed_url: https://lobste.rs/rss
     display_name: Lobsters
@@ -112,11 +112,11 @@ bots:
     display_name: Cloudflare Blog
     summary: Deep dives into networking, security, and systems engineering.
   brandur:
-    feed_url: https://brandur.org/articles.xml
+    feed_url: https://brandur.org/articles.atom
     display_name: Brandur Leach
     summary: High-quality writing on Postgres, distributed systems, and API design.
   orbital_index:
-    feed_url: https://orbitalindex.com/issues/rss/
+    feed_url: https://orbitalindex.com/feed.xml
     display_name: The Orbital Index
     summary: A technical, curated weekly digest of space exploration news.
   quanta:
@@ -124,11 +124,11 @@ bots:
     display_name: Quanta Magazine
     summary: Illuminating science and mathematics through public-service journalism.
   low_tech:
-    feed_url: https://solar.lowtechmagazine.com/feed.xml
+    feed_url: https://solar.lowtechmagazine.com/posts/index.xml
     display_name: Low-tech Magazine
     summary: A solar-powered blog about sustainable and historical technology.
   tigerbeetle:
-    feed_url: https://tigerbeetle.com/blog/rss.xml
+    feed_url: https://tigerbeetle.com/blog/atom.xml
     display_name: TigerBeetle
     summary: Engineering a high-performance, safety-critical financial database.
   false_knees:
@@ -143,5 +143,43 @@ bots:
     feed_url: https://blog.nelhage.com/atom.xml
     display_name: Nelson Elhage
     summary: Blog posts on systems, compilers, and performance.
+  simon_willison:
+    feed_url: https://simonwillison.net/atom/everything/
+    display_name: Simon Willison
+    summary: Creator of Datasette, writing about AI, Python, and open source tools.
+    profile_photo: https://simonwillison.net/favicon.ico
+  rachel_by_the_bay:
+    feed_url: https://rachelbythebay.com/w/atom.xml
+    display_name: Rachel by the Bay
+    summary: War stories and observations from the trenches of systems programming.
+  xe_iaso:
+    feed_url: https://xeiaso.net/blog.rss
+    display_name: Xe Iaso
+    summary: Technical writing on Nix, Go, and the philosophy of software.
+    profile_photo: https://cdn.xeiaso.net/static/img/avatar.png
+  hackaday:
+    feed_url: https://hackaday.com/feed/
+    display_name: Hackaday
+    summary: Fresh hacks every day from the hardware and maker community.
+    profile_photo: https://hackaday.com/wp-content/uploads/2019/12/cropped-hackaday_had-logo-trimmed-192x192.png
+  craig_mod:
+    feed_url: https://craigmod.com/rss/
+    display_name: Craig Mod
+    summary: Writing about walking, books, photography, and technology.
+    profile_photo: https://craigmod.com/apple-touch-icon.png
+  austin_kleon:
+    feed_url: https://austinkleon.com/feed/
+    display_name: Austin Kleon
+    summary: A writer who draws. Author of Steal Like an Artist.
+    profile_photo: https://austinkleon.com/wp-content/uploads/2019/05/cropped-ak-square-192x192.jpg
+  matrixsynth:
+    feed_url: https://www.matrixsynth.com/feeds/posts/default?alt=rss
+    display_name: MATRIXSYNTH
+    summary: Encyclopedic coverage of synthesizers old and new.
+  ars_technica:
+    feed_url: https://arstechnica.com/feed/
+    display_name: Ars Technica
+    summary: In-depth technology, science, and culture reporting.
+    profile_photo: https://cdn.arstechnica.net/wp-content/uploads/2016/10/cropped-ars-logo-512_480-32x32.png
 relays:
   - https://relay.toot.io/actor
