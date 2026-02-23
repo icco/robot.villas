@@ -181,5 +181,7 @@ bots:
     display_name: Ars Technica
     summary: In-depth technology, science, and culture reporting.
     profile_photo: https://cdn.arstechnica.net/wp-content/uploads/2016/10/cropped-ars-logo-512_480-32x32.png
+follows:
+  - '@icco@merveilles.town'
 relays:
   - https://relay.toot.io/actor

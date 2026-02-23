@@ -33,6 +33,20 @@ export const followers = pgTable(
   (t) => [unique().on(t.botUsername, t.followerId)],
 );
 
+export const following = pgTable(
+  "following",
+  {
+    id: integer().primaryKey().generatedAlwaysAsIdentity(),
+    botUsername: text("bot_username").notNull(),
+    handle: text().notNull(),
+    targetActorId: text("target_actor_id"),
+    followActivityId: text("follow_activity_id"),
+    status: text().notNull().default("pending"),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+  },
+  (t) => [unique().on(t.botUsername, t.handle)],
+);
+
 export const relayStatusEnum = pgEnum("relay_status", [
   "pending",
   "accepted",

@@ -15,6 +15,13 @@
       "when": 1771807628076,
       "tag": "0001_organic_killer_shrike",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1771816357065,
+      "tag": "0002_perfect_sabra",
+      "breakpoints": true
     }
   ]
 }

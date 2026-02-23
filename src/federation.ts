@@ -29,6 +29,7 @@ import {
   addFollower,
   countEntries,
   countFollowers,
+  getAllFollowing,
   getAllRelays,
   getEntriesPage,
   getEntryById,
@@ -36,7 +37,9 @@ import {
   getKeypairs,
   removeFollower,
   saveKeypairs,
+  updateFollowingStatus,
   updateRelayStatus,
+  upsertFollowing,
   upsertRelay,
   type Db,
 } from "./db.js";
@@ -329,10 +332,10 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     .on(Accept, async (_ctx, accept) => {
       const object = await accept.getObject();
       if (!(object instanceof Follow) || !object.id) return;
-      await updateRelayStatus(db, object.id.href, "accepted");
-      logger.info("Relay accepted our Follow {followId}", {
-        followId: object.id.href,
-      });
+      const followIdHref = object.id.href;
+      await updateRelayStatus(db, followIdHref, "accepted");
+      await updateFollowingStatus(db, followIdHref, "accepted");
+      logger.info("Accepted Follow {followId}", { followId: followIdHref });
     });
 
   return federation;
@@ -373,6 +376,81 @@ export async function sendProfileUpdates(
       "Sent profile Update for {identifier} to {count} follower(s)",
       { identifier, count: followerCount },
     );
+  }
+}
+
+/**
+ * Sends a Follow activity from every bot to each account listed in
+ * config.follows. Skips accounts that a bot has already followed.
+ */
+export async function followAccounts(
+  ctx: Context<void>,
+  db: Db,
+  config: FeedsConfig,
+): Promise<void> {
+  const handles = config.follows ?? [];
+  if (handles.length === 0) return;
+
+  const botUsernames = Object.keys(config.bots);
+  const existing = await getAllFollowing(db);
+  const existingSet = new Set(existing.map((f) => `${f.botUsername}:${f.handle}`));
+
+  for (const rawHandle of handles) {
+    const handle = rawHandle.replace(/^@/, "");
+
+    let targetActor: Recipient;
+    try {
+      const resolved = await ctx.lookupObject(`acct:${handle}`);
+      if (!resolved || !("id" in resolved) || !("inboxId" in resolved)) {
+        logger.error("Could not resolve actor for {handle}", { handle });
+        continue;
+      }
+      targetActor = resolved as Recipient;
+      if (!targetActor.id || !targetActor.inboxId) {
+        logger.error("Actor for {handle} has no id or inbox", { handle });
+        continue;
+      }
+    } catch (error) {
+      logger.error("Failed to look up {handle}: {error}", { handle, error });
+      continue;
+    }
+
+    for (const botUsername of botUsernames) {
+      if (existingSet.has(`${botUsername}:${handle}`)) {
+        logger.info("Bot {bot} already follows {handle}, skipping", {
+          bot: botUsername,
+          handle,
+        });
+        continue;
+      }
+
+      try {
+        const followId = new URL(
+          `/users/${botUsername}/follows/${crypto.randomUUID()}`,
+          ctx.getActorUri(botUsername),
+        );
+
+        const follow = new Follow({
+          id: followId,
+          actor: ctx.getActorUri(botUsername),
+          object: targetActor.id,
+        });
+
+        await upsertFollowing(db, botUsername, handle, targetActor.id!.href, followId.href);
+        await ctx.sendActivity({ identifier: botUsername }, targetActor, follow);
+
+        logger.info("Sent Follow from {bot} to {handle}", {
+          bot: botUsername,
+          handle,
+        });
+      } catch (error) {
+        logger.error("Failed to follow {handle} from {bot}: {error}", {
+          handle,
+          bot: botUsername,
+          error,
+        });
+      }
+    }
   }
 }
 
