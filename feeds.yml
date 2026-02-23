@@ -199,6 +199,76 @@ bots:
     display_name: Bandcamp Daily
     summary: Music discovery, artist features, and deep dives from Bandcamp.
     profile_photo: https://s4.bcbits.com/img/favicon/apple-touch-icon.png
+  nyt_homepage:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+    display_name: NYT > Home Page
+    summary: The New York Times Home Page news feed.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_world:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+    display_name: NYT > World
+    summary: World news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_us:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/US.xml
+    display_name: NYT > U.S.
+    summary: U.S. news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_politics:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml
+    display_name: NYT > Politics
+    summary: Politics news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_business:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+    display_name: NYT > Business
+    summary: Business news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_technology:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+    display_name: NYT > Technology
+    summary: Technology news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_sports:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Sports.xml
+    display_name: NYT > Sports
+    summary: Sports news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_science:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+    display_name: NYT > Science
+    summary: Science news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_health:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Health.xml
+    display_name: NYT > Health
+    summary: Health news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_arts:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml
+    display_name: NYT > Arts
+    summary: Arts news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_style:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/FashionandStyle.xml
+    display_name: NYT > Style
+    summary: Fashion and style news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_travel:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Travel.xml
+    display_name: NYT > Travel
+    summary: Travel news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_opinion:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Opinion.xml
+    display_name: NYT > Opinion
+    summary: Opinion and editorials from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  nyt_food:
+    feed_url: https://rss.nytimes.com/services/xml/rss/nyt/DiningandWine.xml
+    display_name: NYT > Food
+    summary: Food and dining news from The New York Times.
+    profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
 follows:
   - '@icco@merveilles.town'
 relays:
