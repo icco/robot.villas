@@ -190,21 +190,6 @@ The [`fedify` CLI](https://fedify.dev/cli) is useful for manual testing and debu
 - `fedify inbox -f @hackernews@robot.villas` — Spin up a temporary inbox and send a Follow to the bot. Watch the logs for the Accept response to verify the Follow/Accept round-trip works end to end.
 - `fedify node info https://robot.villas/` — Check the NodeInfo response for the instance.
 
-Install with `npm install -g @fedify/cli` (or see [fedify.dev/cli](https://fedify.dev/cli) for other methods).
-
-## Implementation Roadmap
-
-- [x] Project scaffolding (TypeScript, `package.json`, `tsconfig.json`)
-- [x] `feeds.yml` schema and parser
-- [x] PostgreSQL schema (feed entry history table)
-- [x] Fedify federation setup with one Actor per bot
-- [x] RSS feed polling and parsing
-- [x] Publishing new entries as ActivityPub Notes
-- [x] WebFinger support for bot discovery
-- [x] Follower management (accept Follow requests)
-- [x] Dockerfile for production deployment
-- [x] Scheduled polling (cron or interval-based)
-
 ## License
 
 MIT
