@@ -331,8 +331,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         );
         return;
       }
-      const endpoints = await follower.getEndpoints();
-      const sharedInbox = endpoints?.sharedInbox?.href ?? follower.inboxId?.href ?? null;
+      const sharedInbox = follower.endpoints?.sharedInbox?.href ?? follower.inboxId?.href ?? null;
       await addFollower(db, parsed.identifier, follower.id.href, follow.id.href, sharedInbox);
       logger.info("Accepting follow {followerId} -> {identifier}", {
         followerId: follower.id.href,

@@ -6,6 +6,7 @@ export async function setupLogging(): Promise<void> {
     sinks: { console: getConsoleSink() },
     loggers: [
       { category: "robot-villas", sinks: ["console"], lowestLevel: "debug" },
+      { category: ["fedify", "federation", "outbox"], sinks: ["console"], lowestLevel: "debug" },
       { category: "fedify", sinks: ["console"], lowestLevel: "info" },
     ],
     contextLocalStorage: new AsyncLocalStorage(),
