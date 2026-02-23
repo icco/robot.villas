@@ -50,7 +50,9 @@ export function createApp(
   <ul>
 ${botList}
   </ul>
-  <p><a href="https://github.com/icco/robot.villas">Source code</a></p>
+  <footer style="margin-top:2em;padding-top:1em;border-top:1px solid #ddd;font-size:0.85em;color:#666">
+    <p>&copy; <a href="https://natwelch.com">Nat Welch</a> · <a href="https://github.com/icco/robot.villas">Source code</a> · <a href="https://github.com/icco/robot.villas/edit/main/feeds.yml">Add or update a feed</a></p>
+  </footer>
 </body>
 </html>`;
     return c.html(html);
@@ -128,6 +130,9 @@ ${entriesHtml}
   </ul>
   ${paginationHtml}
   <p style="margin-top:2em"><a href="/">&larr; All bots</a></p>
+  <footer style="margin-top:2em;padding-top:1em;border-top:1px solid #ddd;font-size:0.85em;color:#666">
+    <p>&copy; <a href="https://natwelch.com">Nat Welch</a> · <a href="https://github.com/icco/robot.villas">Source code</a> · <a href="https://github.com/icco/robot.villas/edit/main/feeds.yml">Add or update a feed</a></p>
+  </footer>
 </body>
 </html>`;
     return c.html(html);
