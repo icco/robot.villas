@@ -30,64 +30,64 @@ bots:
   chronogram:
     feed_url: https://www.chronogram.com/feed/
     display_name: Chronogram Magazine
-    summary: A lifestyle magazine for the Hudson Valley and Catskills with the latest news on arts and cultural events, new restaurants, shops, and more.
+    summary: A lifestyle magazine for the Hudson Valley and Catskills.
     profile_photo: https://www.chronogram.com/wp-content/uploads/2025/07/cropped-apple-touch-icon-iphone.png
   propublica:
     feed_url: https://www.propublica.org/feeds/propublica/main
     display_name: ProPublica
-    summary: Latest articles and investigations from ProPublica, an independent, non-profit newsroom that produces investigative journalism in the public interest.
+    summary: Investigative journalism in the public interest.
     profile_photo: https://www.propublica.org/wp-content/uploads/2026/02/propublica-site-icon-512x512-2.png
   highlands_current:
     feed_url: https://highlandscurrent.org/feed/
     display_name: The Current
-    summary: News for Philipstown (Cold Spring, Nelsonville, Garrison) and Beacon, New York
+    summary: News for Philipstown and Beacon, New York.
     profile_photo: https://highlandscurrent.org/wp-content/uploads/2018/04/cropped-HC-circle-new-180x180.png
   the_verge:
     feed_url: https://www.theverge.com/rss/partner/subscriber-only-full-feed/rss.xml
     display_name: The Verge
-    summary: Technology news, reviews, and features from The Verge.
+    summary: Technology news, reviews, and features.
     profile_photo: https://www.theverge.com/static-assets/icons/apple-touch-icon.png
   hundred_rabbits:
     feed_url: https://100r.co/links/rss.xml
     display_name: Hundred Rabbits
-    summary: Rek and Devine project updates
+    summary: Rek and Devine project updates.
     profile_photo: https://100r.co/media/services/icon.jpg
   mcsweeneys:
     feed_url: https://feeds.feedburner.com/mcsweeneys
     display_name: McSweeney's
-    summary: Timothy McSweeney's Internet Tendency
+    summary: Timothy McSweeney's Internet Tendency.
     profile_photo: https://www.mcsweeneys.net/assets/chair-white-b56c46cc6ff30c7d87e754d65dd4f170f7681164c08c91142962b746e0261e19.png
   drew_devault:
     feed_url: https://drewdevault.com/blog/index.xml
     display_name: Drew DeVault's blog
-    summary: Recent content from Drew DeVault's blog
+    summary: Recent content from Drew DeVault's blog.
     profile_photo: https://drewdevault.com/avatar.png
   dropbox_tech:
     feed_url: https://dropbox.tech/feed
     display_name: Dropbox Tech Blog
-    summary: Engineering blog from Dropbox
+    summary: Engineering blog from Dropbox.
     profile_photo: https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/app-dropbox-android.png
   eli_bendersky:
     feed_url: https://eli.thegreenplace.net/feeds/all.atom.xml
-    display_name: Eli Bendersky's website
-    summary: Articles from Eli Bendersky's website
+    display_name: Eli Bendersky
+    summary: Articles from Eli Bendersky's website.
   danluu:
     feed_url: https://danluu.com/atom.xml
-    display_name: danluu.com
-    summary: Articles from Dan Luu
+    display_name: Dan Luu
+    summary: Articles from Dan Luu.
   julia_evans:
     feed_url: https://jvns.ca/atom.xml
     display_name: Julia Evans
-    summary: Blog posts from Julia Evans
+    summary: Blog posts from Julia Evans.
   marc_dougherty:
     feed_url: https://www.marcdougherty.com/index.xml
     display_name: Marc Dougherty
-    summary: Recent content from Marc Dougherty
+    summary: Recent content from Marc Dougherty.
     profile_photo: https://www.marcdougherty.com/apple-touch-icon.png
   eatonphil:
     feed_url: https://notes.eatonphil.com/rss.xml
-    display_name: Notes on software development
-    summary: Notes on software development
+    display_name: Phil Eaton
+    summary: Notes on software development.
     profile_photo: https://avatars.githubusercontent.com/u/2424777?s=200
   purplesyringa:
     feed_url: https://purplesyringa.moe/blog/feed.rss
@@ -96,16 +96,53 @@ bots:
   spotify_engineering:
     feed_url: https://engineering.atspotify.com/feed
     display_name: Spotify Engineering
-    summary: Spotify's official technology blog
+    summary: Spotify's official technology blog.
     profile_photo: https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png
   paul_anthony_webb:
     feed_url: https://blog.webb.page/feed/atom
     display_name: the webb blog
-    summary: Paul Anthony Webb's corner of the 'Net
+    summary: Paul Anthony Webb's corner of the 'Net.
     profile_photo: https://xn--4v8h.pixels.wtf/blog/asset/apple-touch-icon.png
   transactional:
     feed_url: https://transactional.blog/feed.xml
     display_name: Transactional
-    summary: Databases
+    summary: Deep dives into database internals.
+  cloudflare:
+    feed_url: https://blog.cloudflare.com/rss/
+    display_name: Cloudflare Blog
+    summary: Deep dives into networking, security, and systems engineering.
+  brandur:
+    feed_url: https://brandur.org/articles.xml
+    display_name: Brandur Leach
+    summary: High-quality writing on Postgres, distributed systems, and API design.
+  orbital_index:
+    feed_url: https://orbitalindex.com/issues/rss/
+    display_name: The Orbital Index
+    summary: A technical, curated weekly digest of space exploration news.
+  quanta:
+    feed_url: https://www.quantamagazine.org/feed/
+    display_name: Quanta Magazine
+    summary: Illuminating science and mathematics through public-service journalism.
+  low_tech:
+    feed_url: https://solar.lowtechmagazine.com/feed.xml
+    display_name: Low-tech Magazine
+    summary: A solar-powered blog about sustainable and historical technology.
+  tigerbeetle:
+    feed_url: https://tigerbeetle.com/blog/rss.xml
+    display_name: TigerBeetle
+    summary: Engineering a high-performance, safety-critical financial database.
+  false_knees:
+    feed_url: https://falseknees.com/rss.xml
+    display_name: False Knees
+    summary: Comics about birds and animals having existential crises.
+  kottke:
+    feed_url: https://feeds.kottke.org/main
+    display_name: kottke.org
+    summary: Home of fine hypertext products since 1998.
+  nelson_elhage:
+    feed_url: https://nelhage.com/feed.xml
+    display_name: Nelson Elhage
+    summary: Blog posts on systems, compilers, and performance.
+
 relays:
   - https://relay.toot.io/actor
