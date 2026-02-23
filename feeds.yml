@@ -174,7 +174,7 @@ bots:
     feed_url: https://hackaday.com/feed/
     display_name: Hackaday
     summary: Fresh hacks every day from the hardware and maker community.
-    profile_photo: https://hackaday.com/wp-content/uploads/2019/12/cropped-hackaday_had-logo-trimmed-192x192.png
+    profile_photo: https://hackaday.com/wp-content/themes/hackaday-2/img/logo.png
   craig_mod:
     feed_url: https://craigmod.com/rss/
     display_name: Craig Mod
