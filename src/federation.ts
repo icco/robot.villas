@@ -13,6 +13,7 @@ import { Temporal } from "@js-temporal/polyfill";
 import {
   Accept,
   Application,
+  Delete,
   Endpoints,
   Follow,
   Image,
@@ -38,6 +39,7 @@ import {
   getFollowingByActivityId,
   getKeypairs,
   removeFollower,
+  removeFollowerFromAll,
   saveKeypairs,
   updateFollowingStatus,
   updateRelayStatus,
@@ -360,6 +362,16 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       await updateRelayStatus(db, followIdHref, "accepted");
       await updateFollowingStatus(db, followIdHref, "accepted");
       logger.info("Accepted Follow {followId}", { followId: followIdHref });
+    })
+    .on(Delete, async (_ctx, del) => {
+      if (!del.actorId) return;
+      const removed = await removeFollowerFromAll(db, del.actorId.href);
+      if (removed > 0) {
+        logger.info("Removed deleted actor {actorId} from {count} bot(s)", {
+          actorId: del.actorId.href,
+          count: removed,
+        });
+      }
     });
 
   return federation;

@@ -93,6 +93,14 @@ export async function removeFollower(db: Db, botUsername: string, followerId: st
     .where(and(eq(schema.followers.botUsername, botUsername), eq(schema.followers.followerId, followerId)));
 }
 
+export async function removeFollowerFromAll(db: Db, followerId: string): Promise<number> {
+  const rows = await db
+    .delete(schema.followers)
+    .where(eq(schema.followers.followerId, followerId))
+    .returning({ id: schema.followers.id });
+  return rows.length;
+}
+
 export async function countEntries(db: Db, botUsername: string): Promise<number> {
   const rows = await db
     .select({ value: count() })
