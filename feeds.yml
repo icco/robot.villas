@@ -27,6 +27,7 @@ bots:
     feed_url: https://writing.natwelch.com/feed.atom
     display_name: Nat? Nat. Nat!
     summary: Nat Welch's blog about random stuff.
+    profile_photo: https://avatars.githubusercontent.com/u/20201?s=200
   chronogram:
     feed_url: https://www.chronogram.com/feed/
     display_name: Chronogram Magazine
@@ -71,14 +72,17 @@ bots:
     feed_url: https://eli.thegreenplace.net/feeds/all.atom.xml
     display_name: Eli Bendersky
     summary: Articles from Eli Bendersky's website.
+    profile_photo: https://avatars.githubusercontent.com/u/383822?s=200
   danluu:
     feed_url: https://danluu.com/atom.xml
     display_name: Dan Luu
     summary: Articles from Dan Luu.
+    profile_photo: https://avatars.githubusercontent.com/u/157136?s=200
   julia_evans:
     feed_url: https://jvns.ca/atom.xml
     display_name: Julia Evans
     summary: Blog posts from Julia Evans.
+    profile_photo: https://avatars.githubusercontent.com/u/817739?s=200
   marc_dougherty:
     feed_url: https://www.marcdougherty.com/index.xml
     display_name: Marc Dougherty
@@ -93,6 +97,7 @@ bots:
     feed_url: https://purplesyringa.moe/blog/feed.rss
     display_name: purplesyringa's blog
     summary: Posts from purplesyringa's blog.
+    profile_photo: https://avatars.githubusercontent.com/u/16370781?s=200
   spotify_engineering:
     feed_url: https://engineering.atspotify.com/feed
     display_name: Spotify Engineering
@@ -111,10 +116,12 @@ bots:
     feed_url: https://blog.cloudflare.com/rss/
     display_name: Cloudflare Blog
     summary: Deep dives into networking, security, and systems engineering.
+    profile_photo: https://blog.cloudflare.com/images/favicon-32x32.png
   brandur:
     feed_url: https://brandur.org/articles.atom
     display_name: Brandur Leach
     summary: High-quality writing on Postgres, distributed systems, and API design.
+    profile_photo: https://brandur.org/assets/images/favicon/favicon-256.jpg
   orbital_index:
     feed_url: https://orbitalindex.com/feed.xml
     display_name: The Orbital Index
@@ -123,31 +130,37 @@ bots:
     feed_url: https://www.quantamagazine.org/feed/
     display_name: Quanta Magazine
     summary: Illuminating science and mathematics through public-service journalism.
+    profile_photo: https://www.quantamagazine.org/wp-content/themes/quanta2024/frontend/images/apple-touch-icon.png
   low_tech:
     feed_url: https://solar.lowtechmagazine.com/posts/index.xml
     display_name: Low-tech Magazine
     summary: A solar-powered blog about sustainable and historical technology.
+    profile_photo: https://solar.lowtechmagazine.com/icons/sun.svg
   tigerbeetle:
     feed_url: https://tigerbeetle.com/blog/atom.xml
     display_name: TigerBeetle
     summary: Engineering a high-performance, safety-critical financial database.
+    profile_photo: https://framerusercontent.com/images/GMJ8d83FjKzitkLWA3knVLO5HQ.png
   false_knees:
     feed_url: https://falseknees.com/rss.xml
     display_name: False Knees
     summary: Comics about birds and animals having existential crises.
+    profile_photo: https://falseknees.com/assets/favicon.webp
   kottke:
     feed_url: https://feeds.kottke.org/main
     display_name: kottke.org
     summary: Home of fine hypertext products since 1998.
+    profile_photo: https://kottke.org/images/2024/icons/256x256.png
   nelson_elhage:
     feed_url: https://blog.nelhage.com/atom.xml
     display_name: Nelson Elhage
     summary: Blog posts on systems, compilers, and performance.
+    profile_photo: https://avatars.githubusercontent.com/u/220198?s=200
   simon_willison:
     feed_url: https://simonwillison.net/atom/everything/
     display_name: Simon Willison
     summary: Creator of Datasette, writing about AI, Python, and open source tools.
-    profile_photo: https://simonwillison.net/favicon.ico
+    profile_photo: https://avatars.githubusercontent.com/u/9599?s=200
   rachel_by_the_bay:
     feed_url: https://rachelbythebay.com/w/atom.xml
     display_name: Rachel by the Bay
@@ -180,7 +193,12 @@ bots:
     feed_url: https://arstechnica.com/feed/
     display_name: Ars Technica
     summary: In-depth technology, science, and culture reporting.
-    profile_photo: https://cdn.arstechnica.net/wp-content/uploads/2016/10/cropped-ars-logo-512_480-32x32.png
+    profile_photo: https://cdn.arstechnica.net/wp-content/uploads/2016/10/cropped-ars-logo-512_480.png
+  bandcamp_daily:
+    feed_url: https://daily.bandcamp.com/feed
+    display_name: Bandcamp Daily
+    summary: Music discovery, artist features, and deep dives from Bandcamp.
+    profile_photo: https://s4.bcbits.com/img/favicon/apple-touch-icon.png
 follows:
   - '@icco@merveilles.town'
 relays:
