@@ -1,0 +1,2 @@
+ALTER TABLE "feed_entries" ADD COLUMN IF NOT EXISTS "like_count" integer DEFAULT 0 NOT NULL;--> statement-breakpoint
+ALTER TABLE "feed_entries" ADD COLUMN IF NOT EXISTS "boost_count" integer DEFAULT 0 NOT NULL;

@@ -1,4 +1,4 @@
-import { and, count, desc, eq } from "drizzle-orm";
+import { and, count, desc, eq, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
 import type postgres from "postgres";
@@ -93,6 +93,28 @@ export async function removeFollower(db: Db, botUsername: string, followerId: st
     .where(and(eq(schema.followers.botUsername, botUsername), eq(schema.followers.followerId, followerId)));
 }
 
+export async function removeFollowerFromAll(db: Db, followerId: string): Promise<number> {
+  const rows = await db
+    .delete(schema.followers)
+    .where(eq(schema.followers.followerId, followerId))
+    .returning({ id: schema.followers.id });
+  return rows.length;
+}
+
+export async function incrementLikeCount(db: Db, botUsername: string, entryId: number): Promise<void> {
+  await db
+    .update(schema.feedEntries)
+    .set({ likeCount: sql`${schema.feedEntries.likeCount} + 1` })
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)));
+}
+
+export async function incrementBoostCount(db: Db, botUsername: string, entryId: number): Promise<void> {
+  await db
+    .update(schema.feedEntries)
+    .set({ boostCount: sql`${schema.feedEntries.boostCount} + 1` })
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)));
+}
+
 export async function countEntries(db: Db, botUsername: string): Promise<number> {
   const rows = await db
     .select({ value: count() })
@@ -125,7 +147,7 @@ export async function getEntriesPage(
   limit: number,
   offset: number,
 ): Promise<
-  Array<{ id: number; url: string; title: string; publishedAt: Date | null }>
+  Array<{ id: number; url: string; title: string; publishedAt: Date | null; likeCount: number; boostCount: number }>
 > {
   return db
     .select({
@@ -133,6 +155,8 @@ export async function getEntriesPage(
       url: schema.feedEntries.url,
       title: schema.feedEntries.title,
       publishedAt: schema.feedEntries.publishedAt,
+      likeCount: schema.feedEntries.likeCount,
+      boostCount: schema.feedEntries.boostCount,
     })
     .from(schema.feedEntries)
     .where(eq(schema.feedEntries.botUsername, botUsername))

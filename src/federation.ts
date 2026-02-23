@@ -12,10 +12,13 @@ import { getLogger } from "@logtape/logtape";
 import { Temporal } from "@js-temporal/polyfill";
 import {
   Accept,
+  Announce,
   Application,
+  Delete,
   Endpoints,
   Follow,
   Image,
+  Like,
   Note,
   PUBLIC_COLLECTION,
   type Recipient,
@@ -37,7 +40,10 @@ import {
   getFollowers,
   getFollowingByActivityId,
   getKeypairs,
+  incrementBoostCount,
+  incrementLikeCount,
   removeFollower,
+  removeFollowerFromAll,
   saveKeypairs,
   updateFollowingStatus,
   updateRelayStatus,
@@ -360,6 +366,38 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       await updateRelayStatus(db, followIdHref, "accepted");
       await updateFollowingStatus(db, followIdHref, "accepted");
       logger.info("Accepted Follow {followId}", { followId: followIdHref });
+    })
+    .on(Announce, async (ctx, announce) => {
+      if (!announce.objectId) return;
+      const parsed = ctx.parseUri(announce.objectId);
+      if (parsed?.type !== "object" || parsed.class !== Note) return;
+      const { identifier, id } = parsed.values;
+      if (!botUsernames.includes(identifier)) return;
+      const entryId = parseInt(id, 10);
+      if (Number.isNaN(entryId)) return;
+      await incrementBoostCount(db, identifier, entryId);
+      logger.info("Boost on {identifier}/posts/{entryId}", { identifier, entryId });
+    })
+    .on(Like, async (ctx, like) => {
+      if (!like.objectId) return;
+      const parsed = ctx.parseUri(like.objectId);
+      if (parsed?.type !== "object" || parsed.class !== Note) return;
+      const { identifier, id } = parsed.values;
+      if (!botUsernames.includes(identifier)) return;
+      const entryId = parseInt(id, 10);
+      if (Number.isNaN(entryId)) return;
+      await incrementLikeCount(db, identifier, entryId);
+      logger.info("Like on {identifier}/posts/{entryId}", { identifier, entryId });
+    })
+    .on(Delete, async (_ctx, del) => {
+      if (!del.actorId) return;
+      const removed = await removeFollowerFromAll(db, del.actorId.href);
+      if (removed > 0) {
+        logger.info("Removed deleted actor {actorId} from {count} bot(s)", {
+          actorId: del.actorId.href,
+          count: removed,
+        });
+      }
     });
 
   return federation;
