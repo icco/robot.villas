@@ -18,6 +18,7 @@ import {
   Endpoints,
   Follow,
   Image,
+  Like,
   Note,
   PUBLIC_COLLECTION,
   type Recipient,
@@ -39,6 +40,8 @@ import {
   getFollowers,
   getFollowingByActivityId,
   getKeypairs,
+  incrementBoostCount,
+  incrementLikeCount,
   removeFollower,
   removeFollowerFromAll,
   saveKeypairs,
@@ -364,8 +367,27 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       await updateFollowingStatus(db, followIdHref, "accepted");
       logger.info("Accepted Follow {followId}", { followId: followIdHref });
     })
-    .on(Announce, async (_ctx, _announce) => {
-      // No-op: boosts of external posts don't require action from our bots.
+    .on(Announce, async (ctx, announce) => {
+      if (!announce.objectId) return;
+      const parsed = ctx.parseUri(announce.objectId);
+      if (parsed?.type !== "object" || parsed.constructor !== Note) return;
+      const { identifier, id } = parsed.values as { identifier: string; id: string };
+      if (!botUsernames.includes(identifier)) return;
+      const entryId = parseInt(id, 10);
+      if (Number.isNaN(entryId)) return;
+      await incrementBoostCount(db, identifier, entryId);
+      logger.info("Boost on {identifier}/posts/{entryId}", { identifier, entryId });
+    })
+    .on(Like, async (ctx, like) => {
+      if (!like.objectId) return;
+      const parsed = ctx.parseUri(like.objectId);
+      if (parsed?.type !== "object" || parsed.constructor !== Note) return;
+      const { identifier, id } = parsed.values as { identifier: string; id: string };
+      if (!botUsernames.includes(identifier)) return;
+      const entryId = parseInt(id, 10);
+      if (Number.isNaN(entryId)) return;
+      await incrementLikeCount(db, identifier, entryId);
+      logger.info("Like on {identifier}/posts/{entryId}", { identifier, entryId });
     })
     .on(Delete, async (_ctx, del) => {
       if (!del.actorId) return;

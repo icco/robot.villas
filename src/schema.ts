@@ -10,6 +10,8 @@ export const feedEntries = pgTable(
     title: text().notNull(),
     publishedAt: timestamp("published_at", { withTimezone: true, mode: "date" }),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+    likeCount: integer("like_count").notNull().default(0),
+    boostCount: integer("boost_count").notNull().default(0),
   },
   (t) => [unique().on(t.botUsername, t.guid)],
 );
