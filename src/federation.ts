@@ -52,6 +52,25 @@ export interface FederationDeps {
 
 const logger = getLogger(["robot-villas", "federation"]);
 
+const IMAGE_MEDIA_TYPES: Record<string, string> = {
+  ".png": "image/png",
+  ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
+  ".gif": "image/gif",
+  ".webp": "image/webp",
+  ".avif": "image/avif",
+};
+
+function buildIcon(photoUrl: string): Image {
+  const url = new URL(photoUrl);
+  const ext = url.pathname.match(/\.[a-z]+$/i)?.[0]?.toLowerCase() ?? "";
+  const mediaType = IMAGE_MEDIA_TYPES[ext];
+  return new Image({
+    url,
+    ...(mediaType ? { mediaType } : {}),
+  });
+}
+
 async function buildActor(
   ctx: Context<void>,
   identifier: string,
@@ -68,9 +87,7 @@ async function buildActor(
     preferredUsername: identifier,
     name: bot.display_name,
     summary: enrichedSummary,
-    icon: bot.profile_photo
-      ? new Image({ url: new URL(bot.profile_photo) })
-      : null,
+    icon: bot.profile_photo ? buildIcon(bot.profile_photo) : null,
     inbox: ctx.getInboxUri(identifier),
     outbox: ctx.getOutboxUri(identifier),
     followers: ctx.getFollowersUri(identifier),
