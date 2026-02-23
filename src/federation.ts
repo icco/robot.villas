@@ -21,12 +21,14 @@ import {
   type Recipient,
   Reject,
   Undo,
+  Update,
 } from "@fedify/vocab";
 import escapeHtml from "escape-html";
-import type { FeedsConfig } from "./config.js";
+import type { BotConfig, FeedsConfig } from "./config.js";
 import {
   addFollower,
   countEntries,
+  countFollowers,
   getAllRelays,
   getEntriesPage,
   getEntryById,
@@ -50,6 +52,37 @@ export interface FederationDeps {
 
 const logger = getLogger(["robot-villas", "federation"]);
 
+async function buildActor(
+  ctx: Context<void>,
+  identifier: string,
+  bot: BotConfig,
+): Promise<Application> {
+  const keys = await ctx.getActorKeyPairs(identifier);
+  const actorUri = ctx.getActorUri(identifier);
+  const enrichedSummary =
+    `<p>${escapeHtml(bot.summary)}</p>` +
+    `<p>I am a bot that mirrors an RSS feed. ` +
+    `Source: <a href="${escapeHtml(bot.feed_url)}">${escapeHtml(bot.feed_url)}</a></p>`;
+  return new Application({
+    id: actorUri,
+    preferredUsername: identifier,
+    name: bot.display_name,
+    summary: enrichedSummary,
+    icon: bot.profile_photo
+      ? new Image({ url: new URL(bot.profile_photo) })
+      : null,
+    inbox: ctx.getInboxUri(identifier),
+    outbox: ctx.getOutboxUri(identifier),
+    followers: ctx.getFollowersUri(identifier),
+    endpoints: new Endpoints({
+      sharedInbox: ctx.getInboxUri(),
+    }),
+    url: new URL(`/@${identifier}`, actorUri),
+    publicKey: keys[0]?.cryptographicKey,
+    assertionMethods: keys.map((k) => k.multikey),
+  });
+}
+
 export function setupFederation(deps: FederationDeps): Federation<void> {
   const { config, db, kvStore, messageQueue, blockedInstances = new Set() } = deps;
   const botUsernames = Object.keys(config.bots);
@@ -65,30 +98,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     "/users/{identifier}",
     async (ctx, identifier) => {
       if (!botUsernames.includes(identifier)) return null;
-      const bot = config.bots[identifier];
-      const keys = await ctx.getActorKeyPairs(identifier);
-      const enrichedSummary =
-        `<p>${escapeHtml(bot.summary)}</p>` +
-        `<p>I am a bot that mirrors an RSS feed. ` +
-        `Source: <a href="${escapeHtml(bot.feed_url)}">${escapeHtml(bot.feed_url)}</a></p>`;
-      return new Application({
-        id: ctx.getActorUri(identifier),
-        preferredUsername: identifier,
-        name: bot.display_name,
-        summary: enrichedSummary,
-        icon: bot.profile_photo
-          ? new Image({ url: new URL(bot.profile_photo) })
-          : null,
-        inbox: ctx.getInboxUri(identifier),
-        outbox: ctx.getOutboxUri(identifier),
-        followers: ctx.getFollowersUri(identifier),
-        endpoints: new Endpoints({
-          sharedInbox: ctx.getInboxUri(),
-        }),
-        url: new URL(`/@${identifier}`, ctx.url),
-        publicKey: keys[0]?.cryptographicKey,
-        assertionMethods: keys.map((k) => k.multikey),
-      });
+      return buildActor(ctx, identifier, config.bots[identifier]);
     },
   );
 
@@ -309,6 +319,44 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     });
 
   return federation;
+}
+
+/**
+ * Sends an Update(Application) activity for each bot to all its followers,
+ * causing remote servers to refresh their cached copy of the actor profile.
+ */
+export async function sendProfileUpdates(
+  ctx: Context<void>,
+  db: Db,
+  config: FeedsConfig,
+): Promise<void> {
+  for (const identifier of Object.keys(config.bots)) {
+    const followerCount = await countFollowers(db, identifier);
+    if (followerCount === 0) {
+      logger.info("Skipping profile update for {identifier}: no followers", {
+        identifier,
+      });
+      continue;
+    }
+
+    const bot = config.bots[identifier];
+    const actor = await buildActor(ctx, identifier, bot);
+
+    const update = new Update({
+      id: new URL(
+        `/users/${identifier}#profile-update-${Date.now()}`,
+        ctx.getActorUri(identifier),
+      ),
+      actor: ctx.getActorUri(identifier),
+      object: actor,
+    });
+
+    await ctx.sendActivity({ identifier }, "followers", update);
+    logger.info(
+      "Sent profile Update for {identifier} to {count} follower(s)",
+      { identifier, count: followerCount },
+    );
+  }
 }
 
 /**
