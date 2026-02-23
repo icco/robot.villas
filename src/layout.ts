@@ -17,11 +17,11 @@ export function layout(opts: {
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style type="text/tailwindcss">
     @theme {
-      --font-display: "Space Mono", monospace;
-      --font-body: "DM Sans", sans-serif;
+      --font-display: "Roboto Mono", monospace;
+      --font-body: "Roboto", sans-serif;
     }
   </style>
   ${opts.extraHead ?? ""}
