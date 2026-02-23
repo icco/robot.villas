@@ -1,4 +1,4 @@
-ALTER TABLE "followers" ADD COLUMN "shared_inbox_url" text;
+ALTER TABLE "followers" ADD COLUMN IF NOT EXISTS "shared_inbox_url" text;
 
 --> statement-breakpoint
 UPDATE followers
