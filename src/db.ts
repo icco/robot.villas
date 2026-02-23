@@ -239,3 +239,49 @@ export async function updateRelayStatus(
 export async function removeRelay(db: Db, url: string): Promise<void> {
   await db.delete(schema.relays).where(eq(schema.relays.url, url));
 }
+
+// --- Following functions ---
+
+export interface FollowingRow {
+  botUsername: string;
+  handle: string;
+  targetActorId: string | null;
+  followActivityId: string | null;
+  status: string;
+}
+
+export async function getAllFollowing(db: Db): Promise<FollowingRow[]> {
+  return db
+    .select({
+      botUsername: schema.following.botUsername,
+      handle: schema.following.handle,
+      targetActorId: schema.following.targetActorId,
+      followActivityId: schema.following.followActivityId,
+      status: schema.following.status,
+    })
+    .from(schema.following);
+}
+
+export async function upsertFollowing(
+  db: Db,
+  botUsername: string,
+  handle: string,
+  targetActorId: string | null,
+  followActivityId: string | null,
+): Promise<void> {
+  await db
+    .insert(schema.following)
+    .values({ botUsername, handle, targetActorId, followActivityId, status: "pending" })
+    .onConflictDoNothing({ target: [schema.following.botUsername, schema.following.handle] });
+}
+
+export async function updateFollowingStatus(
+  db: Db,
+  followActivityId: string,
+  status: "accepted" | "rejected",
+): Promise<void> {
+  await db
+    .update(schema.following)
+    .set({ status })
+    .where(eq(schema.following.followActivityId, followActivityId));
+}

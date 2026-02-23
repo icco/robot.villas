@@ -5,7 +5,7 @@ import postgres from "postgres";
 import { behindProxy } from "x-forwarded-fetch";
 import { getBlockedInstances, loadConfig } from "./config.js";
 import { createDb, migrate } from "./db.js";
-import { sendProfileUpdates, setupFederation, subscribeToRelays } from "./federation.js";
+import { followAccounts, sendProfileUpdates, setupFederation, subscribeToRelays } from "./federation.js";
 import { setupLogging } from "./logging.js";
 import { startPoller } from "./poller.js";
 import { createApp } from "./server.js";
@@ -55,6 +55,10 @@ const server = serve(
 const fedCtx = fed.createContext(new URL(`https://${DOMAIN}`));
 subscribeToRelays(fedCtx, db, config).catch((err) => {
   logger.error("Relay subscription failed: {error}", { error: err });
+});
+
+followAccounts(fedCtx, db, config).catch((err) => {
+  logger.error("Follow accounts failed: {error}", { error: err });
 });
 
 sendProfileUpdates(fedCtx, db, config).catch((err) => {

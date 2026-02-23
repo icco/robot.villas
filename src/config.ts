@@ -17,6 +17,7 @@ export const FeedsConfigSchema = z.object({
     z.string().regex(/^[a-z0-9_]+$/, "Bot username must be lowercase alphanumeric or underscore"),
     BotSchema,
   ).refine((bots) => Object.keys(bots).length > 0, "At least one bot must be defined"),
+  follows: z.array(z.string().min(3)).optional().default([]),
   relays: z.array(z.string().url()).optional().default([]),
 });
 
