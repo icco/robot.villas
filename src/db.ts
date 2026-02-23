@@ -59,6 +59,7 @@ export async function getFollowers(db: Db, botUsername: string): Promise<string[
   return rows.map((r) => r.followerId);
 }
 
+
 export async function addFollower(
   db: Db,
   botUsername: string,
