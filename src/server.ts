@@ -48,10 +48,10 @@ export function createApp(
       <div class="card bg-base-200 mb-8">
         <div class="card-body">
           <h3 class="card-title font-display text-lg">How it works</h3>
-          <ol class="steps steps-vertical text-sm">
-            <li class="step step-primary">Pick a bot from the list below.</li>
-            <li class="step step-primary">Search for its handle (e.g. <code class="badge badge-sm font-mono">@hackernews@${escapeHtml(domain)}</code>) on your Mastodon instance, or click "Follow on Mastodon" on its profile page.</li>
-            <li class="step step-primary">New items from the RSS feed will appear in your home timeline.</li>
+          <ol class="list-decimal list-inside space-y-2 text-sm text-base-content/80">
+            <li>Pick a bot from the list below.</li>
+            <li>Search for its handle (e.g. <code class="bg-base-300 px-1.5 py-0.5 rounded font-mono text-xs">@hackernews@${escapeHtml(domain)}</code>) on your Mastodon instance, or click "Follow on Mastodon" on its profile page.</li>
+            <li>New items from the RSS feed will appear in your home timeline.</li>
           </ol>
         </div>
       </div>
