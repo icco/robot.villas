@@ -122,19 +122,21 @@ export function createApp(
           <p class="font-mono text-sm text-base-content/60 mt-1">@${escapeHtml(username)}@${escapeHtml(domain)}</p>
           <p class="mt-2 text-base-content/80">${escapeHtml(bot.summary)}</p>
           <p class="text-sm text-base-content/50 mt-2">Source: <a href="${escapeHtml(bot.feed_url)}" class="link link-hover">${escapeHtml(bot.feed_url)}</a></p>
-          <mastodon-follow account="${escapeHtml(username)}@${escapeHtml(domain)}" class="mt-3 inline-block">
-            <button class="btn btn-primary btn-sm">Follow on Mastodon</button>
-          </mastodon-follow>
-        </div>
-      </div>
-      <div class="stats shadow bg-base-200 mb-8">
-        <div class="stat">
-          <div class="stat-title">Posts</div>
-          <div class="stat-value text-2xl">${total.toLocaleString("en-US")}</div>
-        </div>
-        <div class="stat">
-          <div class="stat-title">Followers</div>
-          <div class="stat-value text-2xl">${followerCount.toLocaleString("en-US")}</div>
+          <div class="flex items-center gap-3 mt-3 flex-wrap">
+            <mastodon-follow account="${escapeHtml(username)}@${escapeHtml(domain)}" class="inline-block">
+              <button class="btn btn-primary btn-sm">Follow on Mastodon</button>
+            </mastodon-follow>
+            <div class="stats shadow bg-base-200">
+              <div class="stat px-4 py-2">
+                <div class="stat-title text-xs">Posts</div>
+                <div class="stat-value text-lg">${total.toLocaleString("en-US")}</div>
+              </div>
+              <div class="stat px-4 py-2">
+                <div class="stat-title text-xs">Followers</div>
+                <div class="stat-value text-lg">${followerCount.toLocaleString("en-US")}</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <h2 class="text-xl font-display font-bold mb-3">Posts</h2>
