@@ -161,10 +161,6 @@ bots:
     display_name: Simon Willison
     summary: Creator of Datasette, writing about AI, Python, and open source tools.
     profile_photo: https://avatars.githubusercontent.com/u/9599?s=200
-  rachel_by_the_bay:
-    feed_url: https://rachelbythebay.com/w/atom.xml
-    display_name: Rachel by the Bay
-    summary: War stories and observations from the trenches of systems programming.
   xe_iaso:
     feed_url: https://xeiaso.net/blog.rss
     display_name: Xe Iaso
