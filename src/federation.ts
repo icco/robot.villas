@@ -67,11 +67,15 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       if (!botUsernames.includes(identifier)) return null;
       const bot = config.bots[identifier];
       const keys = await ctx.getActorKeyPairs(identifier);
+      const enrichedSummary =
+        `<p>${escapeHtml(bot.summary)}</p>` +
+        `<p>I am a bot that mirrors an RSS feed. ` +
+        `Source: <a href="${escapeHtml(bot.feed_url)}">${escapeHtml(bot.feed_url)}</a></p>`;
       return new Application({
         id: ctx.getActorUri(identifier),
         preferredUsername: identifier,
         name: bot.display_name,
-        summary: bot.summary,
+        summary: enrichedSummary,
         icon: bot.profile_photo
           ? new Image({ url: new URL(bot.profile_photo) })
           : null,

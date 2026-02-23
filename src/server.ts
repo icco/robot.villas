@@ -26,7 +26,7 @@ export function createApp(
           const photoHtml = bot.profile_photo
             ? `<img src="${escapeHtml(bot.profile_photo)}" alt="" width="24" height="24" style="vertical-align:middle;border-radius:50%;margin-right:6px">`
             : "";
-          return `<li>${photoHtml}<a href="/@${escapeHtml(username)}">@${escapeHtml(username)}</a> – ${escapeHtml(bot.display_name)}</li>`;
+          return `<li>${photoHtml}<a href="/@${escapeHtml(username)}">@${escapeHtml(username)}</a> – ${escapeHtml(bot.display_name)} <small style="color:#666">(${escapeHtml(bot.summary)})</small></li>`;
         },
       )
       .join("\n");
@@ -113,6 +113,7 @@ ${botList}
     <h1>${escapeHtml(bot.display_name)}</h1>
     <p><code>@${escapeHtml(username)}@${escapeHtml(domain)}</code></p>
     <p>${escapeHtml(bot.summary)}</p>
+    <p style="font-size:0.9em;color:#666">This is a bot that mirrors an RSS feed. Source: <a href="${escapeHtml(bot.feed_url)}">${escapeHtml(bot.feed_url)}</a></p>
     <mastodon-follow account="${escapeHtml(username)}@${escapeHtml(domain)}" style="margin-top:0.75em;display:inline-block">
       <button style="cursor:pointer">Follow on Mastodon</button>
     </mastodon-follow>
