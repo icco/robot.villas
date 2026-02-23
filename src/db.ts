@@ -170,3 +170,72 @@ export async function saveKeypairs(
       set: { publicKey, privateKey },
     });
 }
+
+// --- Relay functions ---
+
+export interface RelayRow {
+  id: number;
+  url: string;
+  inboxUrl: string | null;
+  actorId: string | null;
+  status: "pending" | "accepted" | "rejected";
+  followActivityId: string | null;
+}
+
+export async function getAcceptedRelays(db: Db): Promise<RelayRow[]> {
+  return db
+    .select({
+      id: schema.relays.id,
+      url: schema.relays.url,
+      inboxUrl: schema.relays.inboxUrl,
+      actorId: schema.relays.actorId,
+      status: schema.relays.status,
+      followActivityId: schema.relays.followActivityId,
+    })
+    .from(schema.relays)
+    .where(eq(schema.relays.status, "accepted"));
+}
+
+export async function getAllRelays(db: Db): Promise<RelayRow[]> {
+  return db
+    .select({
+      id: schema.relays.id,
+      url: schema.relays.url,
+      inboxUrl: schema.relays.inboxUrl,
+      actorId: schema.relays.actorId,
+      status: schema.relays.status,
+      followActivityId: schema.relays.followActivityId,
+    })
+    .from(schema.relays);
+}
+
+export async function upsertRelay(
+  db: Db,
+  url: string,
+  inboxUrl: string | null,
+  actorId: string | null,
+  followActivityId: string | null,
+): Promise<void> {
+  await db
+    .insert(schema.relays)
+    .values({ url, inboxUrl, actorId, followActivityId, status: "pending" })
+    .onConflictDoUpdate({
+      target: schema.relays.url,
+      set: { inboxUrl, actorId, followActivityId, status: "pending" as const },
+    });
+}
+
+export async function updateRelayStatus(
+  db: Db,
+  followActivityId: string,
+  status: "accepted" | "rejected",
+): Promise<void> {
+  await db
+    .update(schema.relays)
+    .set({ status })
+    .where(eq(schema.relays.followActivityId, followActivityId));
+}
+
+export async function removeRelay(db: Db, url: string): Promise<void> {
+  await db.delete(schema.relays).where(eq(schema.relays.url, url));
+}

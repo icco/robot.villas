@@ -3,9 +3,10 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 vi.mock("../db.js", () => ({
   insertEntry: vi.fn(),
   getFollowers: vi.fn(),
+  getAcceptedRelays: vi.fn(),
 }));
 
-import { insertEntry, getFollowers } from "../db.js";
+import { insertEntry, getFollowers, getAcceptedRelays } from "../db.js";
 import {
   buildCreateActivity,
   MAX_GUID_LENGTH,
@@ -19,6 +20,7 @@ import type { FeedEntry } from "../rss.js";
 
 const mockInsertEntry = vi.mocked(insertEntry);
 const mockGetFollowers = vi.mocked(getFollowers);
+const mockGetAcceptedRelays = vi.mocked(getAcceptedRelays);
 
 const mockCtx = {
   sendActivity: vi.fn().mockResolvedValue(undefined),
@@ -33,8 +35,9 @@ const entries: FeedEntry[] = [
 describe("publishNewEntries", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mockInsertEntry.mockResolvedValue(1); // default: new entry, return id
+    mockInsertEntry.mockResolvedValue(1);
     mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
+    mockGetAcceptedRelays.mockResolvedValue([]);
   });
 
   it("publishes new entries and skips existing ones", async () => {
@@ -229,6 +232,7 @@ describe("publishNewEntries with length limits", () => {
     vi.clearAllMocks();
     mockInsertEntry.mockResolvedValue(1);
     mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
+    mockGetAcceptedRelays.mockResolvedValue([]);
   });
 
   it("truncates over-long title, link, and guid before insert and in Note", async () => {
