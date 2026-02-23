@@ -143,6 +143,5 @@ bots:
     feed_url: https://nelhage.com/feed.xml
     display_name: Nelson Elhage
     summary: Blog posts on systems, compilers, and performance.
-
 relays:
   - https://relay.toot.io/actor
