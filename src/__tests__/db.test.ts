@@ -3,6 +3,7 @@ import postgres from "postgres";
 import { sql as rawSql } from "drizzle-orm";
 import {
   createDb,
+  migrate,
   hasEntry,
   insertEntry,
   getFollowers,
@@ -25,41 +26,7 @@ describeWithDb("database", () => {
   beforeAll(async () => {
     client = postgres(DATABASE_URL!);
     db = createDb(client);
-    await client`
-      CREATE TABLE IF NOT EXISTS feed_entries (
-        id            INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-        bot_username  TEXT NOT NULL,
-        guid          TEXT NOT NULL,
-        url           TEXT NOT NULL,
-        title         TEXT NOT NULL,
-        published_at  TIMESTAMPTZ,
-        created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
-        like_count    INTEGER NOT NULL DEFAULT 0,
-        boost_count   INTEGER NOT NULL DEFAULT 0,
-        UNIQUE (bot_username, guid)
-      )
-    `;
-    await client`ALTER TABLE feed_entries ADD COLUMN IF NOT EXISTS like_count INTEGER NOT NULL DEFAULT 0`;
-    await client`ALTER TABLE feed_entries ADD COLUMN IF NOT EXISTS boost_count INTEGER NOT NULL DEFAULT 0`;
-    await client`
-      CREATE TABLE IF NOT EXISTS actor_keypairs (
-        bot_username  TEXT PRIMARY KEY,
-        public_key    JSONB NOT NULL,
-        private_key   JSONB NOT NULL,
-        created_at    TIMESTAMPTZ NOT NULL DEFAULT now()
-      )
-    `;
-    await client`
-      CREATE TABLE IF NOT EXISTS followers (
-        id            INTEGER PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-        bot_username  TEXT NOT NULL,
-        follower_id   TEXT NOT NULL,
-        follow_id     TEXT NOT NULL,
-        shared_inbox_url TEXT,
-        created_at    TIMESTAMPTZ NOT NULL DEFAULT now(),
-        UNIQUE (bot_username, follower_id)
-      )
-    `;
+    await migrate(db);
   });
 
   afterAll(async () => {
@@ -152,10 +119,11 @@ describeWithDb("database", () => {
     it("reads legacy single-JWK format as a single-element array", async () => {
       const pub = { kty: "RSA", n: "legacy" } as JsonWebKey;
       const priv = { kty: "RSA", d: "legacy" } as JsonWebKey;
-      await client`
-        INSERT INTO actor_keypairs (bot_username, public_key, private_key)
-        VALUES ('legacybot', ${JSON.stringify(pub)}::jsonb, ${JSON.stringify(priv)}::jsonb)
-      `;
+      await db.insert(schema.actorKeypairs).values({
+        botUsername: "legacybot",
+        publicKey: pub,
+        privateKey: priv,
+      });
       const kps = await getKeypairs(db, "legacybot");
       expect(kps).toHaveLength(1);
       expect(kps![0].publicKey).toMatchObject({ kty: "RSA", n: "legacy" });
