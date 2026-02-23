@@ -93,6 +93,11 @@ export async function publishNewEntries(
     const url = truncateToMax(entry.link, MAX_URL_LENGTH);
     const title = truncateToMax(entry.title, MAX_TITLE_LENGTH);
 
+    if (!hasRecipients) {
+      skipped++;
+      continue;
+    }
+
     const entryId = await insertEntry(
       db,
       botUsername,
@@ -106,11 +111,6 @@ export async function publishNewEntries(
       continue;
     }
 
-    if (!hasRecipients) {
-      skipped++;
-      continue;
-    }
-
     const create = buildCreateActivity(
       botUsername,
       entryId,
@@ -119,11 +119,18 @@ export async function publishNewEntries(
     );
 
     if (followers.length > 0) {
-      await ctx.sendActivity(
-        { identifier: botUsername },
-        "followers",
-        create,
-      );
+      try {
+        await ctx.sendActivity(
+          { identifier: botUsername },
+          "followers",
+          create,
+        );
+      } catch (error) {
+        logger.error("Failed to send to followers for {botUsername}: {error}", {
+          botUsername,
+          error,
+        });
+      }
     }
 
     for (const relay of relayRecipients) {
@@ -159,7 +166,7 @@ export function safeParseUrl(link: string | undefined): URL | undefined {
   }
 }
 
-function formatContent(entry: EntryLike): string {
+export function formatContent(entry: EntryLike): string {
   const safeUrl = safeParseUrl(entry.link);
   if (safeUrl) {
     const href = safeUrl.href;

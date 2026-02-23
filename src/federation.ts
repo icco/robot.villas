@@ -44,7 +44,7 @@ import {
   upsertRelay,
   type Db,
 } from "./db.js";
-import { buildCreateActivity, safeParseUrl } from "./publisher.js";
+import { buildCreateActivity, formatContent, safeParseUrl } from "./publisher.js";
 
 export interface FederationDeps {
   config: FeedsConfig;
@@ -226,9 +226,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       if (Number.isNaN(entryId)) return null;
       const entry = await getEntryById(db, identifier, entryId);
       if (!entry) return null;
-      const content =
-        `<p>${escapeHtml(entry.title)}</p>` +
-        (entry.url ? `<p><a href="${escapeHtml(entry.url)}">${escapeHtml(entry.url)}</a></p>` : "");
+      const content = formatContent({ title: entry.title, link: entry.url, publishedAt: entry.publishedAt });
       return new Note({
         id: ctx.getObjectUri(Note, values),
         attribution: ctx.getActorUri(identifier),
