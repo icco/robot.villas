@@ -43,7 +43,7 @@ bots:
     summary: News for Philipstown and Beacon, New York.
     profile_photo: https://highlandscurrent.org/wp-content/uploads/2018/04/cropped-HC-circle-new-180x180.png
   the_verge:
-    feed_url: https://www.theverge.com/rss/partner/subscriber-only-full-feed/rss.xml
+    feed_url: https://www.theverge.com/rss/index.xml
     display_name: The Verge
     summary: Technology news, reviews, and features.
     profile_photo: https://www.theverge.com/static-assets/icons/apple-touch-icon.png
