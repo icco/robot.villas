@@ -369,24 +369,52 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       logger.info("Accepted Follow {followId}", { followId: followIdHref });
     })
     .on(Announce, async (ctx, announce) => {
-      if (!announce.objectId) return;
+      if (!announce.objectId) {
+        logger.debug("Announce ignored: missing objectId");
+        return;
+      }
       const parsed = ctx.parseUri(announce.objectId);
-      if (parsed?.type !== "object" || parsed.class !== Note) return;
+      if (parsed?.type !== "object" || parsed.class !== Note) {
+        logger.debug("Announce ignored: objectId {objectId} did not resolve to a Note", {
+          objectId: announce.objectId.href,
+        });
+        return;
+      }
       const { identifier, id } = parsed.values;
-      if (!botUsernames.includes(identifier)) return;
+      if (!botUsernames.includes(identifier)) {
+        logger.debug("Announce ignored: unknown bot {identifier}", { identifier });
+        return;
+      }
       const entryId = parseInt(id, 10);
-      if (Number.isNaN(entryId)) return;
+      if (Number.isNaN(entryId)) {
+        logger.debug("Announce ignored: non-numeric entry id {id}", { id });
+        return;
+      }
       await incrementBoostCount(db, identifier, entryId);
       logger.info("Boost on {identifier}/posts/{entryId}", { identifier, entryId });
     })
     .on(Like, async (ctx, like) => {
-      if (!like.objectId) return;
+      if (!like.objectId) {
+        logger.debug("Like ignored: missing objectId");
+        return;
+      }
       const parsed = ctx.parseUri(like.objectId);
-      if (parsed?.type !== "object" || parsed.class !== Note) return;
+      if (parsed?.type !== "object" || parsed.class !== Note) {
+        logger.debug("Like ignored: objectId {objectId} did not resolve to a Note", {
+          objectId: like.objectId.href,
+        });
+        return;
+      }
       const { identifier, id } = parsed.values;
-      if (!botUsernames.includes(identifier)) return;
+      if (!botUsernames.includes(identifier)) {
+        logger.debug("Like ignored: unknown bot {identifier}", { identifier });
+        return;
+      }
       const entryId = parseInt(id, 10);
-      if (Number.isNaN(entryId)) return;
+      if (Number.isNaN(entryId)) {
+        logger.debug("Like ignored: non-numeric entry id {id}", { id });
+        return;
+      }
       await incrementLikeCount(db, identifier, entryId);
       logger.info("Like on {identifier}/posts/{entryId}", { identifier, entryId });
     })
@@ -399,6 +427,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
           count: removed,
         });
       }
+    })
+    .onError((_ctx, error) => {
+      logger.error("Inbox listener error: {error}", { error });
     });
 
   return federation;
