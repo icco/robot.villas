@@ -115,6 +115,20 @@ export async function incrementBoostCount(db: Db, botUsername: string, entryId: 
     .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)));
 }
 
+export async function decrementLikeCount(db: Db, botUsername: string, entryId: number): Promise<void> {
+  await db
+    .update(schema.feedEntries)
+    .set({ likeCount: sql`GREATEST(${schema.feedEntries.likeCount} - 1, 0)` })
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)));
+}
+
+export async function decrementBoostCount(db: Db, botUsername: string, entryId: number): Promise<void> {
+  await db
+    .update(schema.feedEntries)
+    .set({ boostCount: sql`GREATEST(${schema.feedEntries.boostCount} - 1, 0)` })
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)));
+}
+
 export async function countEntries(db: Db, botUsername: string): Promise<number> {
   const rows = await db
     .select({ value: count() })

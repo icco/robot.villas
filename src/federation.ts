@@ -32,6 +32,8 @@ import {
   addFollower,
   countEntries,
   countFollowers,
+  decrementBoostCount,
+  decrementLikeCount,
   getAllFollowing,
   getAllRelays,
   getEntriesPage,
@@ -354,11 +356,32 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     })
     .on(Undo, async (ctx, undo) => {
       const object = await undo.getObject(ctx);
-      if (!(object instanceof Follow)) return;
-      if (!object.objectId || !undo.actorId) return;
-      const parsed = ctx.parseUri(object.objectId);
-      if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) return;
-      await removeFollower(db, parsed.identifier, undo.actorId.href);
+      if (object instanceof Follow) {
+        if (!object.objectId || !undo.actorId) return;
+        const parsed = ctx.parseUri(object.objectId);
+        if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) return;
+        await removeFollower(db, parsed.identifier, undo.actorId.href);
+      } else if (object instanceof Like) {
+        if (!object.objectId) return;
+        const parsed = ctx.parseUri(object.objectId);
+        if (parsed?.type !== "object" || parsed.class !== Note) return;
+        const { identifier, id } = parsed.values;
+        if (!botUsernames.includes(identifier)) return;
+        const entryId = parseInt(id, 10);
+        if (Number.isNaN(entryId)) return;
+        await decrementLikeCount(db, identifier, entryId);
+        logger.info("Undo Like on {identifier}/posts/{entryId}", { identifier, entryId });
+      } else if (object instanceof Announce) {
+        if (!object.objectId) return;
+        const parsed = ctx.parseUri(object.objectId);
+        if (parsed?.type !== "object" || parsed.class !== Note) return;
+        const { identifier, id } = parsed.values;
+        if (!botUsernames.includes(identifier)) return;
+        const entryId = parseInt(id, 10);
+        if (Number.isNaN(entryId)) return;
+        await decrementBoostCount(db, identifier, entryId);
+        logger.info("Undo Boost on {identifier}/posts/{entryId}", { identifier, entryId });
+      }
     })
     .on(Accept, async (ctx, accept) => {
       const object = await accept.getObject(ctx);
