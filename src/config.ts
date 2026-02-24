@@ -40,7 +40,9 @@ export function parseConfig(yaml: string): FeedsConfig {
  */
 export function getBlockedInstances(): Set<string> {
   const raw = process.env.BLOCKED_INSTANCES;
-  if (!raw || typeof raw !== "string") return new Set();
+  if (!raw || typeof raw !== "string") {
+    return new Set();
+  }
   return new Set(
     raw
       .split(",")

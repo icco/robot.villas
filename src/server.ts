@@ -70,15 +70,21 @@ export function createApp(
 
   app.get("/users/:username", (c) => {
     const username = c.req.param("username") as string;
-    if (!(username in config.bots)) return c.notFound();
+    if (!(username in config.bots)) {
+      return c.notFound();
+    }
     return c.redirect(`/@${username}`);
   });
 
   app.get("/:handle", async (c) => {
     const handle = c.req.param("handle") as string;
-    if (!handle.startsWith("@")) return c.notFound();
+    if (!handle.startsWith("@")) {
+      return c.notFound();
+    }
     const username = handle.slice(1);
-    if (!(username in config.bots)) return c.notFound();
+    if (!(username in config.bots)) {
+      return c.notFound();
+    }
 
     const bot = config.bots[username];
     const page = parseInt(c.req.query("page") || "0", 10);
