@@ -149,6 +149,89 @@ function parseNoteRef(
   return { identifier, entryId };
 }
 
+async function handleFollow(
+  ctx: Context<void>,
+  follow: Follow,
+  db: Db,
+  botUsernames: string[],
+  blockedInstances: Set<string>,
+): Promise<void> {
+  if (!follow.id || !follow.actorId || !follow.objectId) {
+    logger.warn("Follow ignored: missing id, actorId, or objectId");
+    return;
+  }
+  const parsed = ctx.parseUri(follow.objectId);
+  if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) {
+    logger.warn("Follow ignored: {objectId} is not a known bot", {
+      objectId: follow.objectId,
+    });
+    return;
+  }
+  const follower = await follow.getActor(ctx);
+  if (!follower?.id) {
+    logger.error("Failed to resolve actor {actorId}", {
+      actorId: follow.actorId,
+    });
+    return;
+  }
+  const followerHost = follower.id.hostname.toLowerCase();
+  if (blockedInstances.has(followerHost)) {
+    logger.info("Rejected follow from blocked instance {host}", {
+      host: followerHost,
+    });
+    await ctx.sendActivity(
+      { identifier: parsed.identifier },
+      follower,
+      new Reject({ actor: follow.objectId, object: follow }),
+    );
+    return;
+  }
+  const sharedInbox = follower.endpoints?.sharedInbox?.href ?? follower.inboxId?.href ?? null;
+  await addFollower(db, parsed.identifier, follower.id.href, follow.id.href, sharedInbox);
+  logger.info("Accepting follow {followerId} -> {identifier}", {
+    followerId: follower.id.href,
+    identifier: parsed.identifier,
+  });
+  await ctx.sendActivity(
+    { identifier: parsed.identifier },
+    follower,
+    new Accept({ actor: follow.objectId, object: follow }),
+  );
+}
+
+async function handleUndo(
+  ctx: Context<void>,
+  undo: Undo,
+  db: Db,
+  botUsernames: string[],
+): Promise<void> {
+  const object = await undo.getObject(ctx);
+  if (object instanceof Follow) {
+    if (!object.objectId || !undo.actorId) {
+      return;
+    }
+    const parsed = ctx.parseUri(object.objectId);
+    if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) {
+      return;
+    }
+    await removeFollower(db, parsed.identifier, undo.actorId.href);
+  } else if (object instanceof Like || object instanceof EmojiReact) {
+    const ref = parseNoteRef(ctx, object.objectId, botUsernames, "Undo Like");
+    if (!ref) {
+      return;
+    }
+    await decrementLikeCount(db, ref.identifier, ref.entryId);
+    logger.info("Undo Like on {identifier}/posts/{entryId}", ref);
+  } else if (object instanceof Announce) {
+    const ref = parseNoteRef(ctx, object.objectId, botUsernames, "Undo Announce");
+    if (!ref) {
+      return;
+    }
+    await decrementBoostCount(db, ref.identifier, ref.entryId);
+    logger.info("Undo Boost on {identifier}/posts/{entryId}", ref);
+  }
+}
+
 export function setupFederation(deps: FederationDeps): Federation<void> {
   const { config, db, kvStore, messageQueue, blockedInstances = new Set() } = deps;
   const botUsernames = Object.keys(config.bots);
@@ -164,7 +247,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     .setActorDispatcher(
       "/users/{identifier}",
       async (ctx, identifier) => {
-        if (!botUsernames.includes(identifier)) return null;
+        if (!botUsernames.includes(identifier)) {
+          return null;
+        }
         return buildActor(ctx, identifier, config.bots[identifier]);
       },
     )
@@ -172,7 +257,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
 
   // Key pairs dispatcher — must be registered via the setters returned above
   actorCallbacks.setKeyPairsDispatcher(async (_ctx, identifier) => {
-    if (!botUsernames.includes(identifier)) return [];
+    if (!botUsernames.includes(identifier)) {
+      return [];
+    }
     try {
       const existing = await getKeypairs(db, identifier);
       if (existing && existing.length >= 2) {
@@ -226,7 +313,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     .setOutboxDispatcher(
       "/users/{identifier}/outbox",
       async (ctx, identifier, cursor) => {
-        if (!botUsernames.includes(identifier)) return null;
+        if (!botUsernames.includes(identifier)) {
+          return null;
+        }
         const offset = cursor ? parseInt(cursor, 10) : 0;
         const entries = await getEntriesPage(db, identifier, OUTBOX_PAGE_SIZE, offset);
         const total = await countEntries(db, identifier);
@@ -246,17 +335,25 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       },
     )
     .setCounter(async (_ctx, identifier) => {
-      if (!botUsernames.includes(identifier)) return null;
+      if (!botUsernames.includes(identifier)) {
+        return null;
+      }
       return await countEntries(db, identifier);
     })
     .setFirstCursor(async (_ctx, identifier) => {
-      if (!botUsernames.includes(identifier)) return null;
+      if (!botUsernames.includes(identifier)) {
+        return null;
+      }
       return "0";
     })
     .setLastCursor(async (_ctx, identifier) => {
-      if (!botUsernames.includes(identifier)) return null;
+      if (!botUsernames.includes(identifier)) {
+        return null;
+      }
       const total = await countEntries(db, identifier);
-      if (total === 0) return null;
+      if (total === 0) {
+        return null;
+      }
       const lastOffset =
         Math.floor((total - 1) / OUTBOX_PAGE_SIZE) * OUTBOX_PAGE_SIZE;
       return String(lastOffset);
@@ -268,11 +365,17 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     "/users/{identifier}/posts/{id}",
     async (ctx, values) => {
       const { identifier, id } = values;
-      if (!botUsernames.includes(identifier)) return null;
+      if (!botUsernames.includes(identifier)) {
+        return null;
+      }
       const entryId = parseInt(id, 10);
-      if (Number.isNaN(entryId)) return null;
+      if (Number.isNaN(entryId)) {
+        return null;
+      }
       const entry = await getEntryById(db, identifier, entryId);
-      if (!entry) return null;
+      if (!entry) {
+        return null;
+      }
       const content = formatContent({ title: entry.title, link: entry.url, publishedAt: entry.publishedAt });
       return new Note({
         id: ctx.getObjectUri(Note, values),
@@ -295,10 +398,14 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     "/users/{identifier}/follows/{id}",
     async (ctx, values) => {
       const { identifier } = values;
-      if (!botUsernames.includes(identifier)) return null;
+      if (!botUsernames.includes(identifier)) {
+        return null;
+      }
       const followUri = ctx.getObjectUri(Follow, values);
       const row = await getFollowingByActivityId(db, followUri.href);
-      if (!row || !row.targetActorId) return null;
+      if (!row || !row.targetActorId) {
+        return null;
+      }
       return new Follow({
         id: followUri,
         actor: ctx.getActorUri(identifier),
@@ -311,7 +418,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
   federation.setFollowersDispatcher(
     "/users/{identifier}/followers",
     async (_ctx, identifier) => {
-      if (!botUsernames.includes(identifier)) return null;
+      if (!botUsernames.includes(identifier)) {
+        return null;
+      }
       const followerIds = await getFollowers(db, identifier);
       return {
         items: followerIds.map((id) => ({
@@ -322,7 +431,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       };
     },
   ).setCounter(async (_ctx, identifier) => {
-    if (!botUsernames.includes(identifier)) return null;
+    if (!botUsernames.includes(identifier)) {
+      return null;
+    }
     return await countFollowers(db, identifier);
   });
 
@@ -347,71 +458,13 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
   federation
     .setInboxListeners("/users/{identifier}/inbox", "/inbox")
     .setSharedKeyDispatcher(() => ({ identifier: botUsernames[0] }))
-    .on(Follow, async (ctx, follow) => {
-      if (!follow.id || !follow.actorId || !follow.objectId) {
-        logger.warn("Follow ignored: missing id, actorId, or objectId");
-        return;
-      }
-      const parsed = ctx.parseUri(follow.objectId);
-      if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) {
-        logger.warn("Follow ignored: {objectId} is not a known bot", {
-          objectId: follow.objectId,
-        });
-        return;
-      }
-      const follower = await follow.getActor(ctx);
-      if (!follower?.id) {
-        logger.error("Failed to resolve actor {actorId}", {
-          actorId: follow.actorId,
-        });
-        return;
-      }
-      const followerHost = follower.id.hostname.toLowerCase();
-      if (blockedInstances.has(followerHost)) {
-        logger.info("Rejected follow from blocked instance {host}", {
-          host: followerHost,
-        });
-        await ctx.sendActivity(
-          { identifier: parsed.identifier },
-          follower,
-          new Reject({ actor: follow.objectId, object: follow }),
-        );
-        return;
-      }
-      const sharedInbox = follower.endpoints?.sharedInbox?.href ?? follower.inboxId?.href ?? null;
-      await addFollower(db, parsed.identifier, follower.id.href, follow.id.href, sharedInbox);
-      logger.info("Accepting follow {followerId} -> {identifier}", {
-        followerId: follower.id.href,
-        identifier: parsed.identifier,
-      });
-      await ctx.sendActivity(
-        { identifier: parsed.identifier },
-        follower,
-        new Accept({ actor: follow.objectId, object: follow }),
-      );
-    })
-    .on(Undo, async (ctx, undo) => {
-      const object = await undo.getObject(ctx);
-      if (object instanceof Follow) {
-        if (!object.objectId || !undo.actorId) return;
-        const parsed = ctx.parseUri(object.objectId);
-        if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) return;
-        await removeFollower(db, parsed.identifier, undo.actorId.href);
-      } else if (object instanceof Like || object instanceof EmojiReact) {
-        const ref = parseNoteRef(ctx, object.objectId, botUsernames, "Undo Like");
-        if (!ref) return;
-        await decrementLikeCount(db, ref.identifier, ref.entryId);
-        logger.info("Undo Like on {identifier}/posts/{entryId}", ref);
-      } else if (object instanceof Announce) {
-        const ref = parseNoteRef(ctx, object.objectId, botUsernames, "Undo Announce");
-        if (!ref) return;
-        await decrementBoostCount(db, ref.identifier, ref.entryId);
-        logger.info("Undo Boost on {identifier}/posts/{entryId}", ref);
-      }
-    })
+    .on(Follow, (ctx, follow) => handleFollow(ctx, follow, db, botUsernames, blockedInstances))
+    .on(Undo, (ctx, undo) => handleUndo(ctx, undo, db, botUsernames))
     .on(Accept, async (ctx, accept) => {
       const object = await accept.getObject(ctx);
-      if (!(object instanceof Follow) || !object.id) return;
+      if (!(object instanceof Follow) || !object.id) {
+        return;
+      }
       const followIdHref = object.id.href;
       await updateRelayStatus(db, followIdHref, "accepted");
       await updateFollowingStatus(db, followIdHref, "accepted");
@@ -419,24 +472,32 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     })
     .on(Announce, async (ctx, announce) => {
       const ref = parseNoteRef(ctx, announce.objectId, botUsernames, "Announce");
-      if (!ref) return;
+      if (!ref) {
+        return;
+      }
       await incrementBoostCount(db, ref.identifier, ref.entryId);
       logger.info("Boost on {identifier}/posts/{entryId}", ref);
     })
     .on(Like, async (ctx, like) => {
       const ref = parseNoteRef(ctx, like.objectId, botUsernames, "Like");
-      if (!ref) return;
+      if (!ref) {
+        return;
+      }
       await incrementLikeCount(db, ref.identifier, ref.entryId);
       logger.info("Like on {identifier}/posts/{entryId}", ref);
     })
     .on(EmojiReact, async (ctx, react) => {
       const ref = parseNoteRef(ctx, react.objectId, botUsernames, "EmojiReact");
-      if (!ref) return;
+      if (!ref) {
+        return;
+      }
       await incrementLikeCount(db, ref.identifier, ref.entryId);
       logger.info("EmojiReact on {identifier}/posts/{entryId}", ref);
     })
     .on(Delete, async (_ctx, del) => {
-      if (!del.actorId) return;
+      if (!del.actorId) {
+        return;
+      }
       const removed = await removeFollowerFromAll(db, del.actorId.href);
       if (removed > 0) {
         logger.info("Removed deleted actor {actorId} from {count} bot(s)", {
@@ -507,7 +568,9 @@ export async function followAccounts(
   config: FeedsConfig,
 ): Promise<void> {
   const handles = config.follows ?? [];
-  if (handles.length === 0) return;
+  if (handles.length === 0) {
+    return;
+  }
 
   const botUsernames = Object.keys(config.bots);
   const existing = await getAllFollowing(db);
@@ -592,10 +655,14 @@ export async function subscribeToRelays(
   config: FeedsConfig,
 ): Promise<void> {
   const relayUrls = config.relays ?? [];
-  if (relayUrls.length === 0) return;
+  if (relayUrls.length === 0) {
+    return;
+  }
 
   const subscriberBot = Object.keys(config.bots)[0];
-  if (!subscriberBot) return;
+  if (!subscriberBot) {
+    return;
+  }
 
   const existingRelays = await getAllRelays(db);
   const existingUrls = new Set(existingRelays.map((r) => r.url));

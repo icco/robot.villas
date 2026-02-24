@@ -194,7 +194,9 @@ export async function getKeypairs(
     })
     .from(schema.actorKeypairs)
     .where(eq(schema.actorKeypairs.botUsername, botUsername));
-  if (rows.length === 0) return null;
+  if (rows.length === 0) {
+    return null;
+  }
   const pubRaw = rows[0].publicKey;
   const privRaw = rows[0].privateKey;
   const pubs = Array.isArray(pubRaw) ? pubRaw : [pubRaw];

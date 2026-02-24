@@ -13,7 +13,9 @@ export const MAX_URL_LENGTH = 2048;
 export const MAX_GUID_LENGTH = 2048;
 
 export function truncateToMax(s: string, max: number): string {
-  if (s.length <= max) return s;
+  if (s.length <= max) {
+    return s;
+  }
   return s.slice(0, max);
 }
 
@@ -161,10 +163,14 @@ export async function publishNewEntries(
 }
 
 export function safeParseUrl(link: string | undefined): URL | undefined {
-  if (!link) return undefined;
+  if (!link) {
+    return undefined;
+  }
   try {
     const url = new URL(link);
-    if (url.protocol === "http:" || url.protocol === "https:") return url;
+    if (url.protocol === "http:" || url.protocol === "https:") {
+      return url;
+    }
     return undefined;
   } catch {
     return undefined;
