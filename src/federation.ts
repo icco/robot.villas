@@ -114,6 +114,41 @@ async function buildActor(
   });
 }
 
+/**
+ * Parses an activity's objectId into a bot identifier and entry ID,
+ * returning null (with debug logging) if any step fails.
+ */
+function parseNoteRef(
+  ctx: Context<void>,
+  objectId: URL | null,
+  botUsernames: string[],
+  label: string,
+): { identifier: string; entryId: number } | null {
+  if (!objectId) {
+    logger.debug("{label} ignored: missing objectId", { label });
+    return null;
+  }
+  const parsed = ctx.parseUri(objectId);
+  if (parsed?.type !== "object" || parsed.class !== Note) {
+    logger.debug("{label} ignored: objectId {objectId} did not resolve to a Note", {
+      label,
+      objectId: objectId.href,
+    });
+    return null;
+  }
+  const { identifier, id } = parsed.values;
+  if (!botUsernames.includes(identifier)) {
+    logger.debug("{label} ignored: unknown bot {identifier}", { label, identifier });
+    return null;
+  }
+  const entryId = parseInt(id, 10);
+  if (Number.isNaN(entryId)) {
+    logger.debug("{label} ignored: non-numeric entry id {id}", { label, id });
+    return null;
+  }
+  return { identifier, entryId };
+}
+
 export function setupFederation(deps: FederationDeps): Federation<void> {
   const { config, db, kvStore, messageQueue, blockedInstances = new Set() } = deps;
   const botUsernames = Object.keys(config.bots);
@@ -362,36 +397,16 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         const parsed = ctx.parseUri(object.objectId);
         if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) return;
         await removeFollower(db, parsed.identifier, undo.actorId.href);
-      } else if (object instanceof Like) {
-        if (!object.objectId) return;
-        const parsed = ctx.parseUri(object.objectId);
-        if (parsed?.type !== "object" || parsed.class !== Note) return;
-        const { identifier, id } = parsed.values;
-        if (!botUsernames.includes(identifier)) return;
-        const entryId = parseInt(id, 10);
-        if (Number.isNaN(entryId)) return;
-        await decrementLikeCount(db, identifier, entryId);
-        logger.info("Undo Like on {identifier}/posts/{entryId}", { identifier, entryId });
+      } else if (object instanceof Like || object instanceof EmojiReact) {
+        const ref = parseNoteRef(ctx, object.objectId, botUsernames, "Undo Like");
+        if (!ref) return;
+        await decrementLikeCount(db, ref.identifier, ref.entryId);
+        logger.info("Undo Like on {identifier}/posts/{entryId}", ref);
       } else if (object instanceof Announce) {
-        if (!object.objectId) return;
-        const parsed = ctx.parseUri(object.objectId);
-        if (parsed?.type !== "object" || parsed.class !== Note) return;
-        const { identifier, id } = parsed.values;
-        if (!botUsernames.includes(identifier)) return;
-        const entryId = parseInt(id, 10);
-        if (Number.isNaN(entryId)) return;
-        await decrementBoostCount(db, identifier, entryId);
-        logger.info("Undo Boost on {identifier}/posts/{entryId}", { identifier, entryId });
-      } else if (object instanceof EmojiReact) {
-        if (!object.objectId) return;
-        const parsed = ctx.parseUri(object.objectId);
-        if (parsed?.type !== "object" || parsed.class !== Note) return;
-        const { identifier, id } = parsed.values;
-        if (!botUsernames.includes(identifier)) return;
-        const entryId = parseInt(id, 10);
-        if (Number.isNaN(entryId)) return;
-        await decrementLikeCount(db, identifier, entryId);
-        logger.info("Undo EmojiReact on {identifier}/posts/{entryId}", { identifier, entryId });
+        const ref = parseNoteRef(ctx, object.objectId, botUsernames, "Undo Announce");
+        if (!ref) return;
+        await decrementBoostCount(db, ref.identifier, ref.entryId);
+        logger.info("Undo Boost on {identifier}/posts/{entryId}", ref);
       }
     })
     .on(Accept, async (ctx, accept) => {
@@ -403,79 +418,22 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       logger.info("Accepted Follow {followId}", { followId: followIdHref });
     })
     .on(Announce, async (ctx, announce) => {
-      if (!announce.objectId) {
-        logger.debug("Announce ignored: missing objectId");
-        return;
-      }
-      const parsed = ctx.parseUri(announce.objectId);
-      if (parsed?.type !== "object" || parsed.class !== Note) {
-        logger.debug("Announce ignored: objectId {objectId} did not resolve to a Note", {
-          objectId: announce.objectId.href,
-        });
-        return;
-      }
-      const { identifier, id } = parsed.values;
-      if (!botUsernames.includes(identifier)) {
-        logger.debug("Announce ignored: unknown bot {identifier}", { identifier });
-        return;
-      }
-      const entryId = parseInt(id, 10);
-      if (Number.isNaN(entryId)) {
-        logger.debug("Announce ignored: non-numeric entry id {id}", { id });
-        return;
-      }
-      await incrementBoostCount(db, identifier, entryId);
-      logger.info("Boost on {identifier}/posts/{entryId}", { identifier, entryId });
+      const ref = parseNoteRef(ctx, announce.objectId, botUsernames, "Announce");
+      if (!ref) return;
+      await incrementBoostCount(db, ref.identifier, ref.entryId);
+      logger.info("Boost on {identifier}/posts/{entryId}", ref);
     })
     .on(Like, async (ctx, like) => {
-      if (!like.objectId) {
-        logger.debug("Like ignored: missing objectId");
-        return;
-      }
-      const parsed = ctx.parseUri(like.objectId);
-      if (parsed?.type !== "object" || parsed.class !== Note) {
-        logger.debug("Like ignored: objectId {objectId} did not resolve to a Note", {
-          objectId: like.objectId.href,
-        });
-        return;
-      }
-      const { identifier, id } = parsed.values;
-      if (!botUsernames.includes(identifier)) {
-        logger.debug("Like ignored: unknown bot {identifier}", { identifier });
-        return;
-      }
-      const entryId = parseInt(id, 10);
-      if (Number.isNaN(entryId)) {
-        logger.debug("Like ignored: non-numeric entry id {id}", { id });
-        return;
-      }
-      await incrementLikeCount(db, identifier, entryId);
-      logger.info("Like on {identifier}/posts/{entryId}", { identifier, entryId });
+      const ref = parseNoteRef(ctx, like.objectId, botUsernames, "Like");
+      if (!ref) return;
+      await incrementLikeCount(db, ref.identifier, ref.entryId);
+      logger.info("Like on {identifier}/posts/{entryId}", ref);
     })
     .on(EmojiReact, async (ctx, react) => {
-      if (!react.objectId) {
-        logger.debug("EmojiReact ignored: missing objectId");
-        return;
-      }
-      const parsed = ctx.parseUri(react.objectId);
-      if (parsed?.type !== "object" || parsed.class !== Note) {
-        logger.debug("EmojiReact ignored: objectId {objectId} did not resolve to a Note", {
-          objectId: react.objectId.href,
-        });
-        return;
-      }
-      const { identifier, id } = parsed.values;
-      if (!botUsernames.includes(identifier)) {
-        logger.debug("EmojiReact ignored: unknown bot {identifier}", { identifier });
-        return;
-      }
-      const entryId = parseInt(id, 10);
-      if (Number.isNaN(entryId)) {
-        logger.debug("EmojiReact ignored: non-numeric entry id {id}", { id });
-        return;
-      }
-      await incrementLikeCount(db, identifier, entryId);
-      logger.info("EmojiReact on {identifier}/posts/{entryId}", { identifier, entryId });
+      const ref = parseNoteRef(ctx, react.objectId, botUsernames, "EmojiReact");
+      if (!ref) return;
+      await incrementLikeCount(db, ref.identifier, ref.entryId);
+      logger.info("EmojiReact on {identifier}/posts/{entryId}", ref);
     })
     .on(Delete, async (_ctx, del) => {
       if (!del.actorId) return;
