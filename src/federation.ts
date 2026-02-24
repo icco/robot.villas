@@ -15,6 +15,7 @@ import {
   Announce,
   Application,
   Delete,
+  EmojiReact,
   Endpoints,
   Follow,
   Image,
@@ -381,6 +382,16 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         if (Number.isNaN(entryId)) return;
         await decrementBoostCount(db, identifier, entryId);
         logger.info("Undo Boost on {identifier}/posts/{entryId}", { identifier, entryId });
+      } else if (object instanceof EmojiReact) {
+        if (!object.objectId) return;
+        const parsed = ctx.parseUri(object.objectId);
+        if (parsed?.type !== "object" || parsed.class !== Note) return;
+        const { identifier, id } = parsed.values;
+        if (!botUsernames.includes(identifier)) return;
+        const entryId = parseInt(id, 10);
+        if (Number.isNaN(entryId)) return;
+        await decrementLikeCount(db, identifier, entryId);
+        logger.info("Undo EmojiReact on {identifier}/posts/{entryId}", { identifier, entryId });
       }
     })
     .on(Accept, async (ctx, accept) => {
@@ -440,6 +451,31 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       }
       await incrementLikeCount(db, identifier, entryId);
       logger.info("Like on {identifier}/posts/{entryId}", { identifier, entryId });
+    })
+    .on(EmojiReact, async (ctx, react) => {
+      if (!react.objectId) {
+        logger.debug("EmojiReact ignored: missing objectId");
+        return;
+      }
+      const parsed = ctx.parseUri(react.objectId);
+      if (parsed?.type !== "object" || parsed.class !== Note) {
+        logger.debug("EmojiReact ignored: objectId {objectId} did not resolve to a Note", {
+          objectId: react.objectId.href,
+        });
+        return;
+      }
+      const { identifier, id } = parsed.values;
+      if (!botUsernames.includes(identifier)) {
+        logger.debug("EmojiReact ignored: unknown bot {identifier}", { identifier });
+        return;
+      }
+      const entryId = parseInt(id, 10);
+      if (Number.isNaN(entryId)) {
+        logger.debug("EmojiReact ignored: non-numeric entry id {id}", { id });
+        return;
+      }
+      await incrementLikeCount(db, identifier, entryId);
+      logger.info("EmojiReact on {identifier}/posts/{entryId}", { identifier, entryId });
     })
     .on(Delete, async (_ctx, del) => {
       if (!del.actorId) return;
