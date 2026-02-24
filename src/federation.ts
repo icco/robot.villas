@@ -308,6 +308,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
   // --- Inbox listeners ---
   federation
     .setInboxListeners("/users/{identifier}/inbox", "/inbox")
+    .setSharedKeyDispatcher(() => ({ identifier: botUsernames[0] }))
     .on(Follow, async (ctx, follow) => {
       if (!follow.id || !follow.actorId || !follow.objectId) {
         logger.warn("Follow ignored: missing id, actorId, or objectId");
@@ -359,8 +360,8 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       if (parsed?.type !== "actor" || !botUsernames.includes(parsed.identifier)) return;
       await removeFollower(db, parsed.identifier, undo.actorId.href);
     })
-    .on(Accept, async (_ctx, accept) => {
-      const object = await accept.getObject();
+    .on(Accept, async (ctx, accept) => {
+      const object = await accept.getObject(ctx);
       if (!(object instanceof Follow) || !object.id) return;
       const followIdHref = object.id.href;
       await updateRelayStatus(db, followIdHref, "accepted");
