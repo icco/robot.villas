@@ -165,7 +165,6 @@ bots:
     feed_url: https://xeiaso.net/blog.rss
     display_name: Xe Iaso
     summary: Technical writing on Nix, Go, and the philosophy of software.
-    profile_photo: https://cdn.xeiaso.net/static/img/avatar.png
   hackaday:
     feed_url: https://hackaday.com/feed/
     display_name: Hackaday
@@ -175,12 +174,10 @@ bots:
     feed_url: https://craigmod.com/rss/
     display_name: Craig Mod
     summary: Writing about walking, books, photography, and technology.
-    profile_photo: https://craigmod.com/apple-touch-icon.png
   austin_kleon:
     feed_url: https://austinkleon.com/feed/
     display_name: Austin Kleon
     summary: A writer who draws. Author of Steal Like an Artist.
-    profile_photo: https://austinkleon.com/wp-content/uploads/2019/05/cropped-ak-square-192x192.jpg
   matrixsynth:
     feed_url: https://www.matrixsynth.com/feeds/posts/default?alt=rss
     display_name: MATRIXSYNTH
