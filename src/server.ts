@@ -102,7 +102,7 @@ export function createApp(
         </div>
       </div>`;
 
-    const sortedBots = [...perBot].sort((a, b) => b.postCount - a.postCount);
+    const sortedBots = [...perBot].sort((a, b) => a.botUsername.localeCompare(b.botUsername));
     const botTableRows = sortedBots
       .map((bot) => {
         const displayName = config.bots[bot.botUsername]?.display_name ?? bot.botUsername;
