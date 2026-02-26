@@ -141,11 +141,6 @@ bots:
     display_name: TigerBeetle
     summary: Engineering a high-performance, safety-critical financial database.
     profile_photo: https://framerusercontent.com/images/GMJ8d83FjKzitkLWA3knVLO5HQ.png
-  false_knees:
-    feed_url: https://falseknees.com/rss.xml
-    display_name: False Knees
-    summary: Comics about birds and animals having existential crises.
-    profile_photo: https://falseknees.com/assets/favicon.webp
   kottke:
     feed_url: https://feeds.kottke.org/main
     display_name: kottke.org

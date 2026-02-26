@@ -4,14 +4,27 @@ export function layout(opts: {
   title: string;
   domain: string;
   content: string;
+  path?: string;
+  description?: string;
   extraHead?: string;
 }): string {
+  const desc = opts.description ?? `RSS-to-Mastodon bridge on ${opts.domain}`;
+  const url = `https://${opts.domain}${opts.path ?? "/"}`;
   return `<!DOCTYPE html>
 <html lang="en" data-theme="dim">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${escapeHtml(opts.title)}</title>
+  <meta name="description" content="${escapeHtml(desc)}">
+  <meta property="og:title" content="${escapeHtml(opts.title)}">
+  <meta property="og:description" content="${escapeHtml(desc)}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${escapeHtml(url)}">
+  <meta property="og:site_name" content="${escapeHtml(opts.domain)}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="${escapeHtml(opts.title)}">
+  <meta name="twitter:description" content="${escapeHtml(desc)}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -34,6 +47,7 @@ export function layout(opts: {
         <span class="text-2xl">🤖</span>
         <span>${escapeHtml(opts.domain)}</span>
       </a>
+      <a href="/stats" class="btn btn-ghost btn-sm font-display ml-auto">Stats</a>
     </div>
   </header>
   <main class="container mx-auto flex-1 px-4 py-8 max-w-4xl">
