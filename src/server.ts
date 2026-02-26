@@ -3,7 +3,7 @@ import { federation as fedifyMiddleware } from "@fedify/hono";
 import type { Federation } from "@fedify/fedify";
 import escapeHtml from "escape-html";
 import type { FeedsConfig } from "./config.js";
-import { countEntries, countFollowers, getEntriesPage, type Db } from "./db.js";
+import { countEntries, countFollowers, getEntriesPage, getGlobalStats, getPerBotStats, getTopPosts, type Db } from "./db.js";
 import { layout } from "./layout.js";
 
 const PROFILE_PAGE_SIZE = 40;
@@ -65,6 +65,114 @@ export function createApp(
       title: `${domain} – RSS-to-Mastodon Bridge`,
       domain,
       content,
+      description: "A collection of bot accounts mirroring public RSS and Atom feeds on the Fediverse.",
+    }));
+  });
+
+  app.get("/stats", async (c) => {
+    const botCount = Object.keys(config.bots).length;
+    const [global, perBot, topPosts] = await Promise.all([
+      getGlobalStats(db),
+      getPerBotStats(db),
+      getTopPosts(db, 20),
+    ]);
+
+    const fmt = (n: number) => n.toLocaleString("en-US");
+
+    const globalStatsHtml = `
+      <div class="stats shadow bg-base-200 w-full stats-vertical sm:stats-horizontal">
+        <div class="stat">
+          <div class="stat-title">Bots</div>
+          <div class="stat-value">${fmt(botCount)}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Posts</div>
+          <div class="stat-value">${fmt(global.totalPosts)}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Followers</div>
+          <div class="stat-value">${fmt(global.totalFollowers)}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Likes</div>
+          <div class="stat-value">${fmt(global.totalLikes)}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Boosts</div>
+          <div class="stat-value">${fmt(global.totalBoosts)}</div>
+        </div>
+      </div>`;
+
+    const sortedBots = [...perBot].sort((a, b) => a.botUsername.localeCompare(b.botUsername));
+    const botTableRows = sortedBots
+      .map((bot) => {
+        const displayName = config.bots[bot.botUsername]?.display_name ?? bot.botUsername;
+        return `<tr>
+          <td><a href="/@${escapeHtml(bot.botUsername)}" class="link link-hover font-mono text-sm">@${escapeHtml(bot.botUsername)}</a></td>
+          <td class="hidden sm:table-cell">${escapeHtml(displayName)}</td>
+          <td class="text-right">${fmt(bot.postCount)}</td>
+          <td class="text-right">${fmt(bot.followerCount)}</td>
+          <td class="text-right">${fmt(bot.totalLikes)}</td>
+          <td class="text-right">${fmt(bot.totalBoosts)}</td>
+          <td class="text-right text-xs text-base-content/50">${bot.latestPostAt ? new Date(bot.latestPostAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) : "–"}</td>
+        </tr>`;
+      })
+      .join("\n");
+
+    const topPostsHtml = topPosts
+      .filter((p) => p.likeCount + p.boostCount > 0)
+      .map((post) => {
+        const date = post.publishedAt
+          ? `<time datetime="${post.publishedAt.toISOString()}" class="text-xs text-base-content/50 whitespace-nowrap">${post.publishedAt.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}</time>`
+          : "";
+        return `<li class="flex items-baseline justify-between gap-4 py-2">
+          <span class="min-w-0">
+            <a href="${escapeHtml(post.url)}" class="link link-hover font-medium">${escapeHtml(post.title)}</a>
+            <span class="text-xs text-base-content/50 ml-1">via <a href="/@${escapeHtml(post.botUsername)}" class="link link-hover font-mono">@${escapeHtml(post.botUsername)}</a></span>
+            <span class="flex items-center gap-2 text-xs text-base-content/50">${post.boostCount > 0 ? `<span title="Boosts">&#x1F501; ${post.boostCount}</span>` : ""}${post.likeCount > 0 ? `<span title="Likes">&#x2764;&#xFE0F; ${post.likeCount}</span>` : ""}</span>
+          </span>
+          ${date}
+        </li>`;
+      })
+      .join("\n");
+
+    const content = `
+      <a href="/" class="btn btn-ghost btn-sm gap-1 mb-6 -ml-2">
+        <span>&larr;</span> All bots
+      </a>
+      <h1 class="text-3xl font-display font-bold tracking-tight mb-6">Stats</h1>
+      ${globalStatsHtml}
+      <h2 class="text-xl font-display font-bold mt-8 mb-4">Per Bot</h2>
+      <div class="overflow-x-auto">
+        <table class="table table-sm">
+          <thead>
+            <tr>
+              <th>Bot</th>
+              <th class="hidden sm:table-cell">Name</th>
+              <th class="text-right">Posts</th>
+              <th class="text-right">Followers</th>
+              <th class="text-right">Likes</th>
+              <th class="text-right">Boosts</th>
+              <th class="text-right">Latest</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${botTableRows}
+          </tbody>
+        </table>
+      </div>
+      ${topPostsHtml.length > 0 ? `
+      <h2 class="text-xl font-display font-bold mt-8 mb-4">Top Posts</h2>
+      <ul class="divide-y divide-base-300">
+        ${topPostsHtml}
+      </ul>` : ""}`;
+
+    return c.html(layout({
+      title: `Stats – ${domain}`,
+      domain,
+      path: "/stats",
+      content,
+      description: `Statistics for ${fmt(botCount)} bots, ${fmt(global.totalPosts)} posts, and ${fmt(global.totalFollowers)} followers on ${domain}.`,
     }));
   });
 
@@ -157,7 +265,9 @@ export function createApp(
     return c.html(layout({
       title: `${bot.display_name} (@${username}@${domain}) – ${domain}`,
       domain,
+      path: `/@${username}`,
       content,
+      description: bot.summary,
       extraHead: `<script type="module" src="https://unpkg.com/mastodon-widget"></script>`,
     }));
   });

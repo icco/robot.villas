@@ -250,6 +250,96 @@ export async function removeAllFollowing(db: Db, botUsername: string): Promise<v
   await db.delete(schema.following).where(eq(schema.following.botUsername, botUsername));
 }
 
+// --- Stats functions ---
+
+export interface BotStats {
+  botUsername: string;
+  postCount: number;
+  followerCount: number;
+  totalLikes: number;
+  totalBoosts: number;
+  latestPostAt: Date | null;
+}
+
+export async function getGlobalStats(db: Db): Promise<{
+  totalPosts: number;
+  totalFollowers: number;
+  totalLikes: number;
+  totalBoosts: number;
+}> {
+  const [postStats] = await db
+    .select({
+      totalPosts: count(),
+      totalLikes: sql<number>`coalesce(sum(${schema.feedEntries.likeCount}), 0)`,
+      totalBoosts: sql<number>`coalesce(sum(${schema.feedEntries.boostCount}), 0)`,
+    })
+    .from(schema.feedEntries);
+  const [followerStats] = await db
+    .select({ totalFollowers: count() })
+    .from(schema.followers);
+  return {
+    totalPosts: postStats.totalPosts,
+    totalFollowers: followerStats.totalFollowers,
+    totalLikes: Number(postStats.totalLikes),
+    totalBoosts: Number(postStats.totalBoosts),
+  };
+}
+
+export async function getPerBotStats(db: Db): Promise<BotStats[]> {
+  const postStats = await db
+    .select({
+      botUsername: schema.feedEntries.botUsername,
+      postCount: count(),
+      totalLikes: sql<number>`coalesce(sum(${schema.feedEntries.likeCount}), 0)`,
+      totalBoosts: sql<number>`coalesce(sum(${schema.feedEntries.boostCount}), 0)`,
+      latestPostAt: sql<Date | null>`max(${schema.feedEntries.publishedAt})`,
+    })
+    .from(schema.feedEntries)
+    .groupBy(schema.feedEntries.botUsername);
+
+  const followerCounts = await db
+    .select({
+      botUsername: schema.followers.botUsername,
+      followerCount: count(),
+    })
+    .from(schema.followers)
+    .groupBy(schema.followers.botUsername);
+
+  const followerMap = new Map(followerCounts.map((r) => [r.botUsername, r.followerCount]));
+
+  return postStats.map((r) => ({
+    botUsername: r.botUsername,
+    postCount: r.postCount,
+    followerCount: followerMap.get(r.botUsername) ?? 0,
+    totalLikes: Number(r.totalLikes),
+    totalBoosts: Number(r.totalBoosts),
+    latestPostAt: r.latestPostAt,
+  }));
+}
+
+export interface TopPost {
+  botUsername: string;
+  title: string;
+  url: string;
+  likeCount: number;
+  boostCount: number;
+  publishedAt: Date | null;
+}
+
+export async function getTopPosts(db: Db, limit: number): Promise<TopPost[]> {
+  return db
+    .select({
+      botUsername: schema.feedEntries.botUsername,
+      title: schema.feedEntries.title,
+      url: schema.feedEntries.url,
+      likeCount: schema.feedEntries.likeCount,
+      boostCount: schema.feedEntries.boostCount,
+      publishedAt: schema.feedEntries.publishedAt,
+    })
+    .from(schema.feedEntries)
+    .orderBy(desc(sql`${schema.feedEntries.likeCount} + ${schema.feedEntries.boostCount}`))
+    .limit(limit);
+} origin/main
 // --- Relay functions ---
 
 export interface RelayRow {
