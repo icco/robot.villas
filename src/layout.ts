@@ -34,8 +34,7 @@ export function layout(opts: {
         <span class="text-2xl">🤖</span>
         <span>${escapeHtml(opts.domain)}</span>
       </a>
-      <div class="flex-1"></div>
-      <a href="/stats" class="btn btn-ghost btn-sm font-display">Stats</a>
+      <a href="/stats" class="btn btn-ghost btn-sm font-display ml-auto">Stats</a>
     </div>
   </header>
   <main class="container mx-auto flex-1 px-4 py-8 max-w-4xl">

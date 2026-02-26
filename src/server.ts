@@ -113,7 +113,7 @@ export function createApp(
           <td class="text-right">${fmt(bot.followerCount)}</td>
           <td class="text-right">${fmt(bot.totalLikes)}</td>
           <td class="text-right">${fmt(bot.totalBoosts)}</td>
-          <td class="text-right text-xs text-base-content/50">${bot.latestPostAt ? bot.latestPostAt.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) : "–"}</td>
+          <td class="text-right text-xs text-base-content/50">${bot.latestPostAt ? new Date(bot.latestPostAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" }) : "–"}</td>
         </tr>`;
       })
       .join("\n");
