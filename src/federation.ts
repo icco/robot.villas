@@ -7,6 +7,7 @@ import {
   type Federation,
   type KvStore,
   type MessageQueue,
+  type SenderKeyPair,
 } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
 import { Temporal } from "@js-temporal/polyfill";
@@ -35,6 +36,7 @@ import {
   countFollowers,
   decrementBoostCount,
   decrementLikeCount,
+  getAllBotUsernames,
   getAllFollowing,
   getAllRelays,
   getEntriesPage,
@@ -45,8 +47,12 @@ import {
   getKeypairs,
   incrementBoostCount,
   incrementLikeCount,
+  removeAllEntries,
+  removeAllFollowers,
+  removeAllFollowing,
   removeFollower,
   removeFollowerFromAll,
+  removeKeypairs,
   saveKeypairs,
   updateFollowingStatus,
   updateRelayStatus,
@@ -722,5 +728,89 @@ export async function subscribeToRelays(
         error,
       });
     }
+  }
+}
+
+/**
+ * Detects bots that have been removed from feeds.yml (but still have keypairs
+ * in the DB) and sends a Delete activity to all their followers, then cleans
+ * up the database.
+ */
+export async function sendDeletedBotActivities(
+  ctx: Context<void>,
+  db: Db,
+  config: FeedsConfig,
+): Promise<void> {
+  const dbBots = await getAllBotUsernames(db);
+  const configBots = new Set(Object.keys(config.bots));
+  const deletedBots = dbBots.filter((b) => !configBots.has(b));
+
+  for (const botUsername of deletedBots) {
+    logger.info("Detected deleted bot {identifier}, sending Delete activities", {
+      identifier: botUsername,
+    });
+
+    const keypairs = await getKeypairs(db, botUsername);
+    if (!keypairs || keypairs.length === 0) {
+      logger.warn("No keypairs found for deleted bot {identifier}, skipping", {
+        identifier: botUsername,
+      });
+      continue;
+    }
+
+    const actorUri = ctx.getActorUri(botUsername);
+    const senderKeys: SenderKeyPair[] = await Promise.all(
+      keypairs.map(async (kp, i) => ({
+        privateKey: await importJwk(kp.privateKey, "private"),
+        keyId: new URL(i === 0 ? "#main-key" : `#key-${i + 1}`, actorUri),
+      })),
+    );
+
+    const followerRows = await getFollowerRecipients(db, botUsername);
+    const recipients = followerRows
+      .filter((f) => f.sharedInboxUrl)
+      .map((f) => ({
+        id: new URL(f.followerId),
+        inboxId: new URL(f.sharedInboxUrl!),
+        endpoints: null,
+      }));
+
+    if (recipients.length > 0) {
+      const deleteActivity = new Delete({
+        id: new URL(`${actorUri.href}#delete-${Date.now()}`),
+        actor: actorUri,
+        to: PUBLIC_COLLECTION,
+        object: actorUri,
+      });
+
+      try {
+        await ctx.sendActivity(
+          senderKeys,
+          recipients,
+          deleteActivity,
+        );
+        logger.info(
+          "Sent Delete for {identifier} to {count} recipient(s)",
+          { identifier: botUsername, count: recipients.length },
+        );
+      } catch (error) {
+        logger.error("Failed to send Delete for {identifier}: {error}", {
+          identifier: botUsername,
+          error,
+        });
+      }
+    } else {
+      logger.info("No followers with inbox for deleted bot {identifier}", {
+        identifier: botUsername,
+      });
+    }
+
+    await removeAllFollowers(db, botUsername);
+    await removeAllEntries(db, botUsername);
+    await removeAllFollowing(db, botUsername);
+    await removeKeypairs(db, botUsername);
+    logger.info("Cleaned up database for deleted bot {identifier}", {
+      identifier: botUsername,
+    });
   }
 }

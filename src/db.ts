@@ -227,6 +227,29 @@ export async function saveKeypairs(
     });
 }
 
+export async function getAllBotUsernames(db: Db): Promise<string[]> {
+  const rows = await db
+    .select({ botUsername: schema.actorKeypairs.botUsername })
+    .from(schema.actorKeypairs);
+  return rows.map((r) => r.botUsername);
+}
+
+export async function removeKeypairs(db: Db, botUsername: string): Promise<void> {
+  await db.delete(schema.actorKeypairs).where(eq(schema.actorKeypairs.botUsername, botUsername));
+}
+
+export async function removeAllFollowers(db: Db, botUsername: string): Promise<void> {
+  await db.delete(schema.followers).where(eq(schema.followers.botUsername, botUsername));
+}
+
+export async function removeAllEntries(db: Db, botUsername: string): Promise<void> {
+  await db.delete(schema.feedEntries).where(eq(schema.feedEntries.botUsername, botUsername));
+}
+
+export async function removeAllFollowing(db: Db, botUsername: string): Promise<void> {
+  await db.delete(schema.following).where(eq(schema.following.botUsername, botUsername));
+}
+
 // --- Relay functions ---
 
 export interface RelayRow {
