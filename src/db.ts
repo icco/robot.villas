@@ -339,7 +339,8 @@ export async function getTopPosts(db: Db, limit: number): Promise<TopPost[]> {
     .from(schema.feedEntries)
     .orderBy(desc(sql`${schema.feedEntries.likeCount} + ${schema.feedEntries.boostCount}`))
     .limit(limit);
-} origin/main
+}
+
 // --- Relay functions ---
 
 export interface RelayRow {
