@@ -5,7 +5,7 @@ import postgres from "postgres";
 import { behindProxy } from "x-forwarded-fetch";
 import { getBlockedInstances, loadConfig } from "./config.js";
 import { createDb, migrate } from "./db.js";
-import { followAccounts, sendProfileUpdates, setupFederation, subscribeToRelays } from "./federation.js";
+import { followAccounts, sendDeletedBotActivities, sendProfileUpdates, setupFederation, subscribeToRelays } from "./federation.js";
 import { setupLogging } from "./logging.js";
 import { startPoller } from "./poller.js";
 import { createApp } from "./server.js";
@@ -63,6 +63,10 @@ followAccounts(fedCtx, db, config).catch((err) => {
 
 sendProfileUpdates(fedCtx, db, config).catch((err) => {
   logger.error("Profile update failed: {error}", { error: err });
+});
+
+sendDeletedBotActivities(fedCtx, db, config).catch((err) => {
+  logger.error("Deleted bot cleanup failed: {error}", { error: err });
 });
 
 const poller = startPoller({
