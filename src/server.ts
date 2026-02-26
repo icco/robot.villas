@@ -65,6 +65,7 @@ export function createApp(
       title: `${domain} – RSS-to-Mastodon Bridge`,
       domain,
       content,
+      description: "A collection of bot accounts mirroring public RSS and Atom feeds on the Fediverse.",
     }));
   });
 
@@ -170,6 +171,7 @@ export function createApp(
       title: `Stats – ${domain}`,
       domain,
       content,
+      description: `Statistics for ${fmt(botCount)} bots, ${fmt(global.totalPosts)} posts, and ${fmt(global.totalFollowers)} followers on ${domain}.`,
     }));
   });
 
@@ -263,6 +265,7 @@ export function createApp(
       title: `${bot.display_name} (@${username}@${domain}) – ${domain}`,
       domain,
       content,
+      description: bot.summary,
       extraHead: `<script type="module" src="https://unpkg.com/mastodon-widget"></script>`,
     }));
   });
