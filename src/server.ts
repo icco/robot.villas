@@ -170,6 +170,7 @@ export function createApp(
     return c.html(layout({
       title: `Stats – ${domain}`,
       domain,
+      path: "/stats",
       content,
       description: `Statistics for ${fmt(botCount)} bots, ${fmt(global.totalPosts)} posts, and ${fmt(global.totalFollowers)} followers on ${domain}.`,
     }));
@@ -264,6 +265,7 @@ export function createApp(
     return c.html(layout({
       title: `${bot.display_name} (@${username}@${domain}) – ${domain}`,
       domain,
+      path: `/@${username}`,
       content,
       description: bot.summary,
       extraHead: `<script type="module" src="https://unpkg.com/mastodon-widget"></script>`,

@@ -4,11 +4,12 @@ export function layout(opts: {
   title: string;
   domain: string;
   content: string;
+  path?: string;
   description?: string;
   extraHead?: string;
 }): string {
   const desc = opts.description ?? `RSS-to-Mastodon bridge on ${opts.domain}`;
-  const url = `https://${opts.domain}`;
+  const url = `https://${opts.domain}${opts.path ?? "/"}`;
   return `<!DOCTYPE html>
 <html lang="en" data-theme="dim">
 <head>
