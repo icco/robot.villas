@@ -20,6 +20,38 @@ export function createApp(
 
   app.get("/healthcheck", (c) => c.text("ok"));
 
+  app.get("/robots.txt", (c) => {
+    return c.text(
+      [
+        "User-agent: *",
+        "Allow: /",
+        "Disallow: /inbox",
+        "Disallow: /nodeinfo/",
+        "Disallow: /.well-known/",
+        "",
+      ].join("\n"),
+    );
+  });
+
+  app.get("/nodeinfo/2.0", async (c) => {
+    const botUsernames = Object.keys(config.bots);
+    let localPosts = 0;
+    for (const identifier of botUsernames) {
+      localPosts += await countEntries(db, identifier);
+    }
+    return c.json({
+      version: "2.0",
+      software: { name: "robot-villas", version: "1.0.0" },
+      protocols: ["activitypub"],
+      usage: {
+        users: { total: botUsernames.length, activeMonth: botUsernames.length, activeHalfyear: botUsernames.length },
+        localPosts,
+        localComments: 0,
+      },
+      openRegistrations: false,
+    });
+  });
+
   app.get("/", (c) => {
     const botList = Object.entries(config.bots)
       .sort(([a], [b]) => a.localeCompare(b))
