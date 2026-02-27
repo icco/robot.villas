@@ -1,4 +1,4 @@
-import { and, count, desc, eq, sql } from "drizzle-orm";
+import { and, count, desc, eq, isNotNull, isNull, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
 import type postgres from "postgres";
@@ -18,7 +18,7 @@ export async function hasEntry(db: Db, botUsername: string, guid: string): Promi
   const rows = await db
     .select({ id: schema.feedEntries.id })
     .from(schema.feedEntries)
-    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.guid, guid)))
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.guid, guid), isNull(schema.feedEntries.deletedAt)))
     .limit(1);
   return rows.length > 0;
 }
@@ -38,7 +38,11 @@ export async function insertEntry(
   const rows = await db
     .insert(schema.feedEntries)
     .values({ botUsername, guid, url, title, publishedAt })
-    .onConflictDoNothing({ target: [schema.feedEntries.botUsername, schema.feedEntries.guid] })
+    .onConflictDoUpdate({
+      target: [schema.feedEntries.botUsername, schema.feedEntries.guid],
+      set: { deletedAt: null },
+      where: isNotNull(schema.feedEntries.deletedAt),
+    })
     .returning({ id: schema.feedEntries.id });
   return rows[0]?.id ?? null;
 }
@@ -47,7 +51,7 @@ export async function countFollowers(db: Db, botUsername: string): Promise<numbe
   const rows = await db
     .select({ value: count() })
     .from(schema.followers)
-    .where(eq(schema.followers.botUsername, botUsername));
+    .where(and(eq(schema.followers.botUsername, botUsername), isNull(schema.followers.deletedAt)));
   return rows[0]?.value ?? 0;
 }
 
@@ -60,7 +64,7 @@ export async function getFollowers(db: Db, botUsername: string): Promise<string[
   const rows = await db
     .select({ followerId: schema.followers.followerId })
     .from(schema.followers)
-    .where(eq(schema.followers.botUsername, botUsername));
+    .where(and(eq(schema.followers.botUsername, botUsername), isNull(schema.followers.deletedAt)));
   return rows.map((r) => r.followerId);
 }
 
@@ -71,7 +75,7 @@ export async function getFollowerRecipients(db: Db, botUsername: string): Promis
       sharedInboxUrl: schema.followers.sharedInboxUrl,
     })
     .from(schema.followers)
-    .where(eq(schema.followers.botUsername, botUsername));
+    .where(and(eq(schema.followers.botUsername, botUsername), isNull(schema.followers.deletedAt)));
 }
 
 export async function addFollower(
@@ -84,19 +88,24 @@ export async function addFollower(
   await db
     .insert(schema.followers)
     .values({ botUsername, followerId, followId, sharedInboxUrl })
-    .onConflictDoNothing({ target: [schema.followers.botUsername, schema.followers.followerId] });
+    .onConflictDoUpdate({
+      target: [schema.followers.botUsername, schema.followers.followerId],
+      set: { followId, sharedInboxUrl, deletedAt: null },
+    });
 }
 
 export async function removeFollower(db: Db, botUsername: string, followerId: string): Promise<void> {
   await db
-    .delete(schema.followers)
-    .where(and(eq(schema.followers.botUsername, botUsername), eq(schema.followers.followerId, followerId)));
+    .update(schema.followers)
+    .set({ deletedAt: new Date() })
+    .where(and(eq(schema.followers.botUsername, botUsername), eq(schema.followers.followerId, followerId), isNull(schema.followers.deletedAt)));
 }
 
 export async function removeFollowerFromAll(db: Db, followerId: string): Promise<number> {
   const rows = await db
-    .delete(schema.followers)
-    .where(eq(schema.followers.followerId, followerId))
+    .update(schema.followers)
+    .set({ deletedAt: new Date() })
+    .where(and(eq(schema.followers.followerId, followerId), isNull(schema.followers.deletedAt)))
     .returning({ id: schema.followers.id });
   return rows.length;
 }
@@ -105,35 +114,35 @@ export async function incrementLikeCount(db: Db, botUsername: string, entryId: n
   await db
     .update(schema.feedEntries)
     .set({ likeCount: sql`${schema.feedEntries.likeCount} + 1` })
-    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)));
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId), isNull(schema.feedEntries.deletedAt)));
 }
 
 export async function incrementBoostCount(db: Db, botUsername: string, entryId: number): Promise<void> {
   await db
     .update(schema.feedEntries)
     .set({ boostCount: sql`${schema.feedEntries.boostCount} + 1` })
-    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)));
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId), isNull(schema.feedEntries.deletedAt)));
 }
 
 export async function decrementLikeCount(db: Db, botUsername: string, entryId: number): Promise<void> {
   await db
     .update(schema.feedEntries)
     .set({ likeCount: sql`GREATEST(${schema.feedEntries.likeCount} - 1, 0)` })
-    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)));
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId), isNull(schema.feedEntries.deletedAt)));
 }
 
 export async function decrementBoostCount(db: Db, botUsername: string, entryId: number): Promise<void> {
   await db
     .update(schema.feedEntries)
     .set({ boostCount: sql`GREATEST(${schema.feedEntries.boostCount} - 1, 0)` })
-    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)));
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId), isNull(schema.feedEntries.deletedAt)));
 }
 
 export async function countEntries(db: Db, botUsername: string): Promise<number> {
   const rows = await db
     .select({ value: count() })
     .from(schema.feedEntries)
-    .where(eq(schema.feedEntries.botUsername, botUsername));
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), isNull(schema.feedEntries.deletedAt)));
   return rows[0]?.value ?? 0;
 }
 
@@ -150,7 +159,7 @@ export async function getEntryById(
       publishedAt: schema.feedEntries.publishedAt,
     })
     .from(schema.feedEntries)
-    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)))
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId), isNull(schema.feedEntries.deletedAt)))
     .limit(1);
   return rows[0] ?? null;
 }
@@ -173,7 +182,7 @@ export async function getEntriesPage(
       boostCount: schema.feedEntries.boostCount,
     })
     .from(schema.feedEntries)
-    .where(eq(schema.feedEntries.botUsername, botUsername))
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), isNull(schema.feedEntries.deletedAt)))
     .orderBy(desc(schema.feedEntries.publishedAt))
     .limit(limit)
     .offset(offset);
@@ -193,7 +202,7 @@ export async function getKeypairs(
       privateKey: schema.actorKeypairs.privateKey,
     })
     .from(schema.actorKeypairs)
-    .where(eq(schema.actorKeypairs.botUsername, botUsername));
+    .where(and(eq(schema.actorKeypairs.botUsername, botUsername), isNull(schema.actorKeypairs.deletedAt)));
   if (rows.length === 0) {
     return null;
   }
@@ -223,31 +232,44 @@ export async function saveKeypairs(
     .values({ botUsername, publicKey, privateKey })
     .onConflictDoUpdate({
       target: schema.actorKeypairs.botUsername,
-      set: { publicKey, privateKey },
+      set: { publicKey, privateKey, deletedAt: null },
     });
 }
 
 export async function getAllBotUsernames(db: Db): Promise<string[]> {
   const rows = await db
     .select({ botUsername: schema.actorKeypairs.botUsername })
-    .from(schema.actorKeypairs);
+    .from(schema.actorKeypairs)
+    .where(isNull(schema.actorKeypairs.deletedAt));
   return rows.map((r) => r.botUsername);
 }
 
 export async function removeKeypairs(db: Db, botUsername: string): Promise<void> {
-  await db.delete(schema.actorKeypairs).where(eq(schema.actorKeypairs.botUsername, botUsername));
+  await db
+    .update(schema.actorKeypairs)
+    .set({ deletedAt: new Date() })
+    .where(and(eq(schema.actorKeypairs.botUsername, botUsername), isNull(schema.actorKeypairs.deletedAt)));
 }
 
 export async function removeAllFollowers(db: Db, botUsername: string): Promise<void> {
-  await db.delete(schema.followers).where(eq(schema.followers.botUsername, botUsername));
+  await db
+    .update(schema.followers)
+    .set({ deletedAt: new Date() })
+    .where(and(eq(schema.followers.botUsername, botUsername), isNull(schema.followers.deletedAt)));
 }
 
 export async function removeAllEntries(db: Db, botUsername: string): Promise<void> {
-  await db.delete(schema.feedEntries).where(eq(schema.feedEntries.botUsername, botUsername));
+  await db
+    .update(schema.feedEntries)
+    .set({ deletedAt: new Date() })
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), isNull(schema.feedEntries.deletedAt)));
 }
 
 export async function removeAllFollowing(db: Db, botUsername: string): Promise<void> {
-  await db.delete(schema.following).where(eq(schema.following.botUsername, botUsername));
+  await db
+    .update(schema.following)
+    .set({ deletedAt: new Date() })
+    .where(and(eq(schema.following.botUsername, botUsername), isNull(schema.following.deletedAt)));
 }
 
 // --- Stats functions ---
@@ -273,10 +295,12 @@ export async function getGlobalStats(db: Db): Promise<{
       totalLikes: sql<number>`coalesce(sum(${schema.feedEntries.likeCount}), 0)`,
       totalBoosts: sql<number>`coalesce(sum(${schema.feedEntries.boostCount}), 0)`,
     })
-    .from(schema.feedEntries);
+    .from(schema.feedEntries)
+    .where(isNull(schema.feedEntries.deletedAt));
   const [followerStats] = await db
     .select({ totalFollowers: count() })
-    .from(schema.followers);
+    .from(schema.followers)
+    .where(isNull(schema.followers.deletedAt));
   return {
     totalPosts: postStats.totalPosts,
     totalFollowers: followerStats.totalFollowers,
@@ -295,6 +319,7 @@ export async function getPerBotStats(db: Db): Promise<BotStats[]> {
       latestPostAt: sql<Date | null>`max(${schema.feedEntries.publishedAt})`,
     })
     .from(schema.feedEntries)
+    .where(isNull(schema.feedEntries.deletedAt))
     .groupBy(schema.feedEntries.botUsername);
 
   const followerCounts = await db
@@ -303,6 +328,7 @@ export async function getPerBotStats(db: Db): Promise<BotStats[]> {
       followerCount: count(),
     })
     .from(schema.followers)
+    .where(isNull(schema.followers.deletedAt))
     .groupBy(schema.followers.botUsername);
 
   const followerMap = new Map(followerCounts.map((r) => [r.botUsername, r.followerCount]));
@@ -337,6 +363,7 @@ export async function getTopPosts(db: Db, limit: number): Promise<TopPost[]> {
       publishedAt: schema.feedEntries.publishedAt,
     })
     .from(schema.feedEntries)
+    .where(isNull(schema.feedEntries.deletedAt))
     .orderBy(desc(sql`${schema.feedEntries.likeCount} + ${schema.feedEntries.boostCount}`))
     .limit(limit);
 }
@@ -363,7 +390,7 @@ export async function getAcceptedRelays(db: Db): Promise<RelayRow[]> {
       followActivityId: schema.relays.followActivityId,
     })
     .from(schema.relays)
-    .where(eq(schema.relays.status, "accepted"));
+    .where(and(eq(schema.relays.status, "accepted"), isNull(schema.relays.deletedAt)));
 }
 
 export async function getAllRelays(db: Db): Promise<RelayRow[]> {
@@ -376,7 +403,8 @@ export async function getAllRelays(db: Db): Promise<RelayRow[]> {
       status: schema.relays.status,
       followActivityId: schema.relays.followActivityId,
     })
-    .from(schema.relays);
+    .from(schema.relays)
+    .where(isNull(schema.relays.deletedAt));
 }
 
 export async function upsertRelay(
@@ -391,7 +419,7 @@ export async function upsertRelay(
     .values({ url, inboxUrl, actorId, followActivityId, status: "pending" })
     .onConflictDoUpdate({
       target: schema.relays.url,
-      set: { inboxUrl, actorId, followActivityId, status: "pending" as const },
+      set: { inboxUrl, actorId, followActivityId, status: "pending" as const, deletedAt: null },
     });
 }
 
@@ -407,7 +435,10 @@ export async function updateRelayStatus(
 }
 
 export async function removeRelay(db: Db, url: string): Promise<void> {
-  await db.delete(schema.relays).where(eq(schema.relays.url, url));
+  await db
+    .update(schema.relays)
+    .set({ deletedAt: new Date() })
+    .where(and(eq(schema.relays.url, url), isNull(schema.relays.deletedAt)));
 }
 
 // --- Following functions ---
@@ -429,7 +460,8 @@ export async function getAllFollowing(db: Db): Promise<FollowingRow[]> {
       followActivityId: schema.following.followActivityId,
       status: schema.following.status,
     })
-    .from(schema.following);
+    .from(schema.following)
+    .where(isNull(schema.following.deletedAt));
 }
 
 export async function upsertFollowing(
@@ -442,7 +474,10 @@ export async function upsertFollowing(
   await db
     .insert(schema.following)
     .values({ botUsername, handle, targetActorId, followActivityId, status: "pending" })
-    .onConflictDoNothing({ target: [schema.following.botUsername, schema.following.handle] });
+    .onConflictDoUpdate({
+      target: [schema.following.botUsername, schema.following.handle],
+      set: { targetActorId, followActivityId, status: "pending", deletedAt: null },
+    });
 }
 
 export async function updateFollowingStatus(
@@ -469,7 +504,7 @@ export async function getFollowingByActivityId(
       status: schema.following.status,
     })
     .from(schema.following)
-    .where(eq(schema.following.followActivityId, followActivityId))
+    .where(and(eq(schema.following.followActivityId, followActivityId), isNull(schema.following.deletedAt)))
     .limit(1);
   return rows[0] ?? null;
 }

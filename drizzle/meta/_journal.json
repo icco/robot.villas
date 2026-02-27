@@ -43,6 +43,13 @@
       "when": 1771888578873,
       "tag": "0005_married_supernaut",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1772164297782,
+      "tag": "0006_loose_wrecker",
+      "breakpoints": true
     }
   ]
 }

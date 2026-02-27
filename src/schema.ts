@@ -12,6 +12,7 @@ export const feedEntries = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
     likeCount: integer("like_count").notNull().default(0),
     boostCount: integer("boost_count").notNull().default(0),
+    deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
   },
   (t) => [unique().on(t.botUsername, t.guid)],
 );
@@ -21,6 +22,7 @@ export const actorKeypairs = pgTable("actor_keypairs", {
   publicKey: jsonb("public_key").notNull(),
   privateKey: jsonb("private_key").notNull(),
   createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+  deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
 });
 
 export const followers = pgTable(
@@ -32,6 +34,7 @@ export const followers = pgTable(
     followId: text("follow_id").notNull(),
     sharedInboxUrl: text("shared_inbox_url"),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+    deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
   },
   (t) => [unique().on(t.botUsername, t.followerId)],
 );
@@ -46,6 +49,7 @@ export const following = pgTable(
     followActivityId: text("follow_activity_id"),
     status: text().notNull().default("pending"),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+    deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
   },
   (t) => [unique().on(t.botUsername, t.handle)],
 );
@@ -64,4 +68,5 @@ export const relays = pgTable("relays", {
   status: relayStatusEnum().notNull().default("pending"),
   followActivityId: text("follow_activity_id"),
   createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+  deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
 });
