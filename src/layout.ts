@@ -42,7 +42,7 @@ export function layout(opts: {
 </head>
 <body class="min-h-screen flex flex-col bg-base-100 font-body">
   <header class="navbar bg-base-200 border-b border-base-300">
-    <div class="container mx-auto">
+    <div class="container mx-auto flex items-center">
       <a href="/" class="text-xl font-display font-bold tracking-tight hover:opacity-80 transition-opacity flex items-center gap-2">
         <span class="text-2xl">🤖</span>
         <span>${escapeHtml(opts.domain)}</span>
