@@ -251,11 +251,11 @@ export function createApp(
             : `<span class="font-medium">${escapeHtml(entry.title)}</span>`;
           const postUrl = entry.url ? escapeHtml(entry.url) : null;
           const boostBtn = postUrl
-            ? `<a href="${postUrl}" title="Boost" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info no-underline">&#x1F501;${entry.boostCount > 0 ? ` ${entry.boostCount}` : ""}</a>`
-            : (entry.boostCount > 0 ? `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50 no-underline">&#x1F501; ${entry.boostCount}</span>` : "");
+            ? `<a href="${postUrl}" title="Boost" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info no-underline">&#x1F501; ${entry.boostCount}</a>`
+            : `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50 no-underline">&#x1F501; ${entry.boostCount}</span>`;
           const likeBtn = postUrl
-            ? `<a href="${postUrl}" title="Favorite" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error no-underline">&#x2764;&#xFE0F;${entry.likeCount > 0 ? ` ${entry.likeCount}` : ""}</a>`
-            : (entry.likeCount > 0 ? `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50 no-underline">&#x2764;&#xFE0F; ${entry.likeCount}</span>` : "");
+            ? `<a href="${postUrl}" title="Favorite" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error no-underline">&#x2764;&#xFE0F; ${entry.likeCount}</a>`
+            : `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50 no-underline">&#x2764;&#xFE0F; ${entry.likeCount}</span>`;
           return `<li class="flex items-baseline justify-between gap-4 py-2"><span class="flex items-baseline gap-3 min-w-0">${link}</span><span class="flex items-center gap-1 shrink-0">${boostBtn}${likeBtn}${date}</span></li>`;
         }).join("\n")
       : `<li class="py-4 text-base-content/50 italic">No posts yet.</li>`;
