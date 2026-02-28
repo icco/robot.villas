@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   serverExternalPackages: [
     "@fedify/fedify",
-    "@fedify/next",
     "@fedify/postgres",
     "@fedify/vocab",
     "@fedify/vocab-runtime",
