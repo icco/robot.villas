@@ -131,36 +131,24 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
                 )}
               </span>
               <span className="flex items-center gap-1 shrink-0">
-                {entry.url ? (
-                  <InteractButton uri={entry.url}>
-                    <button
-                      type="button"
-                      title="Boost"
-                      className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info"
-                    >
-                      <ArrowPathRoundedSquareIcon className="w-4 h-4" /> {entry.boostCount}
-                    </button>
-                  </InteractButton>
-                ) : (
-                  <span className="btn btn-ghost btn-xs gap-1 text-base-content/50">
+                <InteractButton uri={`https://${domain}/users/${username}/posts/${entry.id}`}>
+                  <button
+                    type="button"
+                    title="Boost"
+                    className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info"
+                  >
                     <ArrowPathRoundedSquareIcon className="w-4 h-4" /> {entry.boostCount}
-                  </span>
-                )}
-                {entry.url ? (
-                  <InteractButton uri={entry.url}>
-                    <button
-                      type="button"
-                      title="Favorite"
-                      className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error"
-                    >
-                      <HeartIcon className="w-4 h-4" /> {entry.likeCount}
-                    </button>
-                  </InteractButton>
-                ) : (
-                  <span className="btn btn-ghost btn-xs gap-1 text-base-content/50">
+                  </button>
+                </InteractButton>
+                <InteractButton uri={`https://${domain}/users/${username}/posts/${entry.id}`}>
+                  <button
+                    type="button"
+                    title="Favorite"
+                    className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error"
+                  >
                     <HeartIcon className="w-4 h-4" /> {entry.likeCount}
-                  </span>
-                )}
+                  </button>
+                </InteractButton>
                 {entry.publishedAt && (
                   <time
                     dateTime={entry.publishedAt.toISOString()}
