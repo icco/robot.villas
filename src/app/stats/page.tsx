@@ -4,6 +4,8 @@ import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outli
 import { getGlobals } from "@/lib/globals";
 import { getGlobalStats, getPerBotStats, getTopPosts } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata(): Promise<Metadata> {
   const { config, domain, db } = getGlobals();
   const botCount = Object.keys(config.bots).length;
@@ -90,12 +92,12 @@ export default async function StatsPage() {
               return (
                 <tr key={bot.botUsername}>
                   <td>
-                    <a
+                    <Link
                       href={`/@${bot.botUsername}`}
                       className="link link-hover font-mono text-sm"
                     >
                       @{bot.botUsername}
-                    </a>
+                    </Link>
                   </td>
                   <td className="hidden sm:table-cell">{displayName}</td>
                   <td className="text-right">{fmt(bot.postCount)}</td>
@@ -138,12 +140,12 @@ export default async function StatsPage() {
                   </a>
                   <span className="text-xs text-base-content/50 ml-1">
                     via{" "}
-                    <a
+                    <Link
                       href={`/@${post.botUsername}`}
                       className="link link-hover font-mono"
                     >
                       @{post.botUsername}
-                    </a>
+                    </Link>
                   </span>
                   <span className="flex items-center gap-2 text-xs text-base-content/50">
                     {post.boostCount > 0 && (

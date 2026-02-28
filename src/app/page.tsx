@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { CpuChipIcon } from "@heroicons/react/24/solid";
 import { getGlobals } from "@/lib/globals";
 
@@ -61,7 +62,7 @@ export default function HomePage() {
       <h2 className="text-2xl font-display font-bold mb-4">Bots</h2>
       <div className="divide-y divide-base-300">
         {sortedBots.map(([username, bot]) => (
-          <a
+          <Link
             key={username}
             href={`/@${username}`}
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-base-200 transition-colors group"
@@ -90,7 +91,7 @@ export default function HomePage() {
                 {bot.summary}
               </p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </>

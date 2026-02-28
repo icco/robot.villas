@@ -10,8 +10,19 @@ const globalForApp = globalThis as unknown as {
   __robotVillas?: Globals;
 };
 
+function requireEnv(name: string): string {
+  const value = process.env[name];
+  if (!value) {
+    throw new Error(`${name} environment variable is required`);
+  }
+  return value;
+}
+
 function initGlobals() {
-  const sql = postgres(process.env.DATABASE_URL!);
+  const databaseUrl = requireEnv("DATABASE_URL");
+  const domain = requireEnv("DOMAIN");
+
+  const sql = postgres(databaseUrl);
   const db = createDb(sql);
   const config = loadConfig("feeds.yml");
   const kvStore = new PostgresKvStore(sql);
@@ -24,7 +35,6 @@ function initGlobals() {
     messageQueue,
     blockedInstances,
   });
-  const domain = process.env.DOMAIN!;
   return { sql, db, config, federation, kvStore, messageQueue, domain };
 }
 

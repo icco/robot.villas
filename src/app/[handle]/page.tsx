@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowPathRoundedSquareIcon, HeartIcon, CpuChipIcon } from "@heroicons/react/24/outline";
+import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
+import { CpuChipIcon } from "@heroicons/react/24/solid";
 import { getGlobals } from "@/lib/globals";
 import { countEntries, countFollowers, getEntriesPage } from "@/lib/db";
 import { MastodonWidgets } from "./mastodon-widgets";
@@ -200,20 +201,20 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
       {(hasPrev || hasNext) && (
         <div className="join mt-6">
           {hasPrev && (
-            <a
+            <Link
               href={`/@${username}?page=${page - 1}`}
               className="join-item btn btn-sm"
             >
               &laquo; Newer
-            </a>
+            </Link>
           )}
           {hasNext && (
-            <a
+            <Link
               href={`/@${username}?page=${page + 1}`}
               className="join-item btn btn-sm"
             >
               Older &raquo;
-            </a>
+            </Link>
           )}
         </div>
       )}
