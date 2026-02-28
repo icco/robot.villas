@@ -23,6 +23,7 @@ const robotoMono = Roboto_Mono({
 export function generateMetadata(): Metadata {
   const { domain } = getGlobals();
   return {
+    metadataBase: new URL(`https://${domain}`),
     title: {
       default: `${domain} – RSS-to-Mastodon Bridge`,
       template: `%s – ${domain}`,
