@@ -19,6 +19,7 @@ const nextConfig: NextConfig = {
     "escape-html",
     "zod",
   ],
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   experimental: {
     middlewareExternalPackages: [
       "@fedify/fedify",
@@ -37,7 +38,7 @@ const nextConfig: NextConfig = {
       "escape-html",
       "zod",
     ],
-  },
+  } as NextConfig["experimental"],
 };
 
 export default nextConfig;
