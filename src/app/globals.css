@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-display: "Roboto Mono", monospace;
+  --font-body: "Roboto", sans-serif;
+}

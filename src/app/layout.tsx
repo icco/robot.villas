@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
-import Script from "next/script";
+import { Roboto, Roboto_Mono } from "next/font/google";
 import { getGlobals } from "@/lib/globals";
+import "./globals.css";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
 
 export function generateMetadata(): Metadata {
   const { domain } = getGlobals();
@@ -22,40 +37,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   const { domain } = getGlobals();
 
   return (
-    <html lang="en" data-theme="dim">
-      <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <link
-          href="https://cdn.jsdelivr.net/npm/daisyui@5"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <style
-          type="text/tailwindcss"
-          dangerouslySetInnerHTML={{
-            __html: `
-    @theme {
-      --font-display: "Roboto Mono", monospace;
-      --font-body: "Roboto", sans-serif;
-    }`,
-          }}
-        />
-      </head>
+    <html
+      lang="en"
+      data-theme="dim"
+      className={`${roboto.variable} ${robotoMono.variable}`}
+    >
       <body className="min-h-screen flex flex-col bg-base-100 font-body">
         <header className="navbar bg-base-200 border-b border-base-300">
           <div className="container mx-auto flex items-center">
@@ -101,10 +87,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </a>
           </nav>
         </footer>
-        <Script
-          src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
-          strategy="beforeInteractive"
-        />
       </body>
     </html>
   );

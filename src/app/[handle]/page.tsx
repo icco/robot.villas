@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { getGlobals } from "@/lib/globals";
 import { countEntries, countFollowers, getEntriesPage } from "@/lib/db";
+import { MastodonWidgets } from "./mastodon-widgets";
 
 const PROFILE_PAGE_SIZE = 40;
 
@@ -217,30 +217,7 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
         </div>
       )}
 
-      <Script
-        src="https://unpkg.com/mastodon-widget"
-        strategy="afterInteractive"
-        type="module"
-      />
-      <Script id="mastodon-interact-def" strategy="afterInteractive">{`
-customElements.define("mastodon-interact", class extends HTMLElement {
-  connectedCallback() {
-    this.addEventListener("click", async () => {
-      let picker = this.querySelector("mastodon-instancepicker");
-      if (!picker) {
-        picker = document.createElement("mastodon-instancepicker");
-        this.appendChild(picker);
-      }
-      try {
-        const instance = await picker.pickInstance();
-        const newWindow = window.open("https://" + instance + "/authorize_interaction?uri=" + encodeURIComponent(this.getAttribute("uri")), "_blank", "noopener,noreferrer");
-        if (newWindow) newWindow.opener = null;
-      } catch {}
-      picker.remove();
-    });
-  }
-});
-`}</Script>
+      <MastodonWidgets />
     </>
   );
 }
