@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll, afterAll, beforeEach } from "vitest";
 import postgres from "postgres";
-import { sql as rawSql } from "drizzle-orm";
+import { eq, inArray } from "drizzle-orm";
 import {
   createDb,
   migrate,
@@ -19,6 +19,14 @@ const DATABASE_URL = process.env.DATABASE_URL;
 
 const describeWithDb = DATABASE_URL ? describe : describe.skip;
 
+const TEST_BOTS = ["testbot", "bot_a", "bot_b", "legacybot"];
+
+async function cleanTestData(db: Db) {
+  await db.delete(schema.feedEntries).where(inArray(schema.feedEntries.botUsername, TEST_BOTS));
+  await db.delete(schema.actorKeypairs).where(inArray(schema.actorKeypairs.botUsername, TEST_BOTS));
+  await db.delete(schema.followers).where(inArray(schema.followers.botUsername, TEST_BOTS));
+}
+
 describeWithDb("database", () => {
   let client: postgres.Sql;
   let db: Db;
@@ -30,16 +38,12 @@ describeWithDb("database", () => {
   });
 
   afterAll(async () => {
-    await db.delete(schema.feedEntries).where(rawSql`1=1`);
-    await db.delete(schema.actorKeypairs).where(rawSql`1=1`);
-    await db.delete(schema.followers).where(rawSql`1=1`);
+    await cleanTestData(db);
     await client.end();
   });
 
   beforeEach(async () => {
-    await db.delete(schema.feedEntries).where(rawSql`1=1`);
-    await db.delete(schema.actorKeypairs).where(rawSql`1=1`);
-    await db.delete(schema.followers).where(rawSql`1=1`);
+    await cleanTestData(db);
   });
 
   describe("feed_entries", () => {
