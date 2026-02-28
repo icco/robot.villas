@@ -251,11 +251,11 @@ export function createApp(
             : `<span class="font-medium">${escapeHtml(entry.title)}</span>`;
           const postUrl = entry.url ? escapeHtml(entry.url) : null;
           const boostBtn = postUrl
-            ? `<a href="${postUrl}" title="Boost" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info no-underline">&#x1F501; ${entry.boostCount}</a>`
-            : `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50 no-underline">&#x1F501; ${entry.boostCount}</span>`;
+            ? `<mastodon-interact uri="${postUrl}" class="inline-block"><button title="Boost" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info">&#x1F501; ${entry.boostCount}</button></mastodon-interact>`
+            : `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50">&#x1F501; ${entry.boostCount}</span>`;
           const likeBtn = postUrl
-            ? `<a href="${postUrl}" title="Favorite" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error no-underline">&#x2764;&#xFE0F; ${entry.likeCount}</a>`
-            : `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50 no-underline">&#x2764;&#xFE0F; ${entry.likeCount}</span>`;
+            ? `<mastodon-interact uri="${postUrl}" class="inline-block"><button title="Favorite" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error">&#x2764;&#xFE0F; ${entry.likeCount}</button></mastodon-interact>`
+            : `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50">&#x2764;&#xFE0F; ${entry.likeCount}</span>`;
           return `<li class="flex items-baseline justify-between gap-4 py-2"><span class="flex items-baseline gap-3 min-w-0">${link}</span><span class="flex items-center gap-1 shrink-0">${boostBtn}${likeBtn}${date}</span></li>`;
         }).join("\n")
       : `<li class="py-4 text-base-content/50 italic">No posts yet.</li>`;
@@ -304,7 +304,25 @@ export function createApp(
       path: `/@${username}`,
       content,
       description: bot.summary,
-      extraHead: `<script type="module" src="https://unpkg.com/mastodon-widget"></script>`,
+      extraHead: `<script type="module" src="https://unpkg.com/mastodon-widget"></script>
+<script type="module">
+customElements.define("mastodon-interact", class extends HTMLElement {
+  connectedCallback() {
+    this.addEventListener("click", async () => {
+      let picker = this.querySelector("mastodon-instancepicker");
+      if (!picker) {
+        picker = document.createElement("mastodon-instancepicker");
+        this.appendChild(picker);
+      }
+      try {
+        const instance = await picker.pickInstance();
+        window.open("https://" + instance + "/authorize_interaction?uri=" + encodeURIComponent(this.getAttribute("uri")), "_blank");
+      } catch {}
+      picker.remove();
+    });
+  }
+});
+</script>`,
     }));
   });
 
