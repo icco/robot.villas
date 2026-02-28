@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - init
+      - nextjs
   pull_request:
     branches:
       - main
@@ -43,6 +43,7 @@ jobs:
         options: --health-cmd "pg_isready -U test" --health-interval 10s --health-timeout 5s --health-retries 5
     env:
       DATABASE_URL: postgres://test:test@localhost:5432/robot_villas_test
+      DOMAIN: test.robot.villas
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

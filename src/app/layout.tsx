@@ -3,7 +3,6 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { Roboto, Roboto_Mono } from "next/font/google";
 import { CpuChipIcon } from "@heroicons/react/24/solid";
-import { getGlobals } from "@/lib/globals";
 import { faviconSvg } from "@/lib/og-icon";
 import "./globals.css";
 
@@ -21,8 +20,12 @@ const robotoMono = Roboto_Mono({
   display: "swap",
 });
 
+function getDomain(): string {
+  return process.env.DOMAIN || "localhost";
+}
+
 export function generateMetadata(): Metadata {
-  const { domain } = getGlobals();
+  const domain = getDomain();
   return {
     metadataBase: new URL(`https://${domain}`),
     title: {
@@ -37,7 +40,7 @@ export function generateMetadata(): Metadata {
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  const { domain } = getGlobals();
+  const domain = getDomain();
 
   return (
     <html

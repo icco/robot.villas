@@ -3,6 +3,8 @@ import Link from "next/link";
 import { CpuChipIcon } from "@heroicons/react/24/solid";
 import { getGlobals } from "@/lib/globals";
 
+export const dynamic = "force-dynamic";
+
 export function generateMetadata(): Metadata {
   const { domain } = getGlobals();
   return {

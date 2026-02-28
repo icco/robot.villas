@@ -7,6 +7,7 @@ RUN yarn install --frozen-lockfile
 
 COPY . .
 
+ENV DOMAIN=build.placeholder
 RUN yarn build
 
 FROM node:24-slim
