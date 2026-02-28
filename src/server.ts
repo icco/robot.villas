@@ -249,10 +249,14 @@ export function createApp(
           const link = entry.url
             ? `<a href="${escapeHtml(entry.url)}" class="link link-hover font-medium">${escapeHtml(entry.title)}</a>`
             : `<span class="font-medium">${escapeHtml(entry.title)}</span>`;
-          const stats = (entry.likeCount > 0 || entry.boostCount > 0)
-            ? `<span class="flex items-center gap-2 text-xs text-base-content/50">${entry.boostCount > 0 ? `<span title="Boosts">&#x1F501; ${entry.boostCount}</span>` : ""}${entry.likeCount > 0 ? `<span title="Likes">&#x2764;&#xFE0F; ${entry.likeCount}</span>` : ""}</span>`
-            : "";
-          return `<li class="flex items-baseline justify-between gap-4 py-2"><span class="flex items-baseline gap-3">${link}${stats}</span>${date}</li>`;
+          const postUrl = entry.url ? escapeHtml(entry.url) : null;
+          const boostBtn = postUrl
+            ? `<a href="${postUrl}" title="Boost" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info no-underline">&#x1F501;${entry.boostCount > 0 ? ` ${entry.boostCount}` : ""}</a>`
+            : (entry.boostCount > 0 ? `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50 no-underline">&#x1F501; ${entry.boostCount}</span>` : "");
+          const likeBtn = postUrl
+            ? `<a href="${postUrl}" title="Favorite" class="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error no-underline">&#x2764;&#xFE0F;${entry.likeCount > 0 ? ` ${entry.likeCount}` : ""}</a>`
+            : (entry.likeCount > 0 ? `<span class="btn btn-ghost btn-xs gap-1 text-base-content/50 no-underline">&#x2764;&#xFE0F; ${entry.likeCount}</span>` : "");
+          return `<li class="flex items-baseline justify-between gap-4 py-2"><span class="flex items-baseline gap-3 min-w-0">${link}</span><span class="flex items-center gap-1 shrink-0">${boostBtn}${likeBtn}${date}</span></li>`;
         }).join("\n")
       : `<li class="py-4 text-base-content/50 italic">No posts yet.</li>`;
 
