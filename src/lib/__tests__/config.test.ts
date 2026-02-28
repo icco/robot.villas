@@ -136,7 +136,7 @@ bots:
 
 describe("loadConfig", () => {
   it("loads the example feeds.yml", () => {
-    const config = loadConfig(join(import.meta.dirname!, "..", "..", "feeds.yml"));
+    const config = loadConfig(join(import.meta.dirname!, "..", "..", "..", "feeds.yml"));
     expect(Object.keys(config.bots).length).toBeGreaterThanOrEqual(1);
     for (const bot of Object.values(config.bots)) {
       expect(bot.feed_url).toMatch(/^https?:\/\//);
