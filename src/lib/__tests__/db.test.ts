@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeAll, afterAll, beforeEach } from "vitest";
 import postgres from "postgres";
-import { eq, inArray } from "drizzle-orm";
+import { inArray } from "drizzle-orm";
 import {
   createDb,
   migrate,

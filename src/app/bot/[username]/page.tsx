@@ -5,7 +5,7 @@ import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outli
 import { CpuChipIcon } from "@heroicons/react/24/solid";
 import { getGlobals } from "@/lib/globals";
 import { countEntries, countFollowers, getEntriesPage } from "@/lib/db";
-import { MastodonWidgets } from "./mastodon-widgets";
+import { FollowButton, InteractButton } from "./mastodon-widgets";
 
 const PROFILE_PAGE_SIZE = 40;
 
@@ -87,16 +87,11 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
             </a>
           </p>
           <div className="flex items-center gap-3 mt-3 flex-wrap">
-            {/* @ts-expect-error -- custom element from mastodon-widget */}
-            <mastodon-follow
-              account={`${username}@${domain}`}
-              className="inline-block"
-            >
+            <FollowButton account={`${username}@${domain}`}>
               <button type="button" className="btn btn-primary btn-sm">
                 Follow on Mastodon
               </button>
-            {/* @ts-expect-error -- custom element */}
-            </mastodon-follow>
+            </FollowButton>
             <div className="stats shadow bg-base-200">
               <div className="stat px-4 py-2">
                 <div className="stat-title text-xs">Posts</div>
@@ -137,8 +132,7 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
               </span>
               <span className="flex items-center gap-1 shrink-0">
                 {entry.url ? (
-                  /* @ts-expect-error -- custom element */
-                  <mastodon-interact uri={entry.url} className="inline-block">
+                  <InteractButton uri={entry.url}>
                     <button
                       type="button"
                       title="Boost"
@@ -146,16 +140,14 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
                     >
                       <ArrowPathRoundedSquareIcon className="w-4 h-4" /> {entry.boostCount}
                     </button>
-                  {/* @ts-expect-error -- custom element */}
-                  </mastodon-interact>
+                  </InteractButton>
                 ) : (
                   <span className="btn btn-ghost btn-xs gap-1 text-base-content/50">
                     <ArrowPathRoundedSquareIcon className="w-4 h-4" /> {entry.boostCount}
                   </span>
                 )}
                 {entry.url ? (
-                  /* @ts-expect-error -- custom element */
-                  <mastodon-interact uri={entry.url} className="inline-block">
+                  <InteractButton uri={entry.url}>
                     <button
                       type="button"
                       title="Favorite"
@@ -163,8 +155,7 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
                     >
                       <HeartIcon className="w-4 h-4" /> {entry.likeCount}
                     </button>
-                  {/* @ts-expect-error -- custom element */}
-                  </mastodon-interact>
+                  </InteractButton>
                 ) : (
                   <span className="btn btn-ghost btn-xs gap-1 text-base-content/50">
                     <HeartIcon className="w-4 h-4" /> {entry.likeCount}
@@ -211,7 +202,6 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
         </div>
       )}
 
-      <MastodonWidgets />
     </>
   );
 }
