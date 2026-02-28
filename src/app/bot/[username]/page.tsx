@@ -10,16 +10,12 @@ import { MastodonWidgets } from "./mastodon-widgets";
 const PROFILE_PAGE_SIZE = 40;
 
 interface Props {
-  params: Promise<{ handle: string }>;
+  params: Promise<{ username: string }>;
   searchParams: Promise<{ page?: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { handle } = await params;
-  if (!handle.startsWith("@")) {
-    return {};
-  }
-  const username = handle.slice(1);
+  const { username } = await params;
   const { config, domain } = getGlobals();
   const bot = config.bots[username];
   if (!bot) {
@@ -37,11 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BotProfilePage({ params, searchParams }: Props) {
-  const { handle } = await params;
-  if (!handle.startsWith("@")) {
-    notFound();
-  }
-  const username = handle.slice(1);
+  const { username } = await params;
   const { config, domain, db } = getGlobals();
   const bot = config.bots[username];
   if (!bot) {

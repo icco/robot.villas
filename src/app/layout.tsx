@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Roboto, Roboto_Mono } from "next/font/google";
-import { CpuChipIcon } from "@heroicons/react/24/solid";
 import { faviconSvg } from "@/lib/og-icon";
 import "./globals.css";
 
@@ -55,7 +54,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               href="/"
               className="text-xl font-display font-bold tracking-tight hover:opacity-80 transition-opacity flex items-center gap-2"
             >
-              <CpuChipIcon className="w-6 h-6" />
+              <span className="text-2xl">🤖</span>
               <span>{domain}</span>
             </Link>
             <Link

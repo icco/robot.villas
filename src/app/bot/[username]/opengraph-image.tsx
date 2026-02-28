@@ -10,13 +10,9 @@ export const contentType = "image/png";
 export default async function OgImage({
   params,
 }: {
-  params: Promise<{ handle: string }>;
+  params: Promise<{ username: string }>;
 }) {
-  const { handle } = await params;
-  if (!handle.startsWith("@")) {
-    return new Response("Not found", { status: 404 });
-  }
-  const username = handle.slice(1);
+  const { username } = await params;
   const { config, domain, db } = getGlobals();
   const bot = config.bots[username];
   if (!bot) {

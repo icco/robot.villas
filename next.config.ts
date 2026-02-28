@@ -7,6 +7,14 @@ const nextConfig: NextConfig = {
     "rss-parser",
     "postgres",
   ],
+  async rewrites() {
+    return [
+      {
+        source: "/@:username",
+        destination: "/bot/:username",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
