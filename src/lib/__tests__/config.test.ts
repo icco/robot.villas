@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from "vitest";
-import { getBlockedInstances, parseConfig, loadConfig } from "../config.js";
+import { getBlockedInstances, parseConfig, loadConfig } from "../config";
 import { join } from "node:path";
 
 describe("parseConfig", () => {

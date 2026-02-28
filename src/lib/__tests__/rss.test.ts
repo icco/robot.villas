@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { MAX_ITEMS_PER_POLL, parseFeedXml, type FeedEntry } from "../rss.js";
+import { MAX_ITEMS_PER_POLL, parseFeedXml, type FeedEntry } from "../rss";
 
 const SAMPLE_RSS = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">

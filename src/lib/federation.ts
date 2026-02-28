@@ -29,7 +29,7 @@ import {
   Update,
 } from "@fedify/vocab";
 import escapeHtml from "escape-html";
-import type { BotConfig, FeedsConfig } from "./config.js";
+import type { BotConfig, FeedsConfig } from "./config";
 import {
   addFollower,
   countEntries,
@@ -59,8 +59,8 @@ import {
   upsertFollowing,
   upsertRelay,
   type Db,
-} from "./db.js";
-import { buildCreateActivity, formatContent, safeParseUrl } from "./publisher.js";
+} from "./db";
+import { buildCreateActivity, formatContent, safeParseUrl } from "./publisher";
 
 export interface FederationDeps {
   config: FeedsConfig;
