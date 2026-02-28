@@ -1,13 +1,13 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
-vi.mock("../db.js", () => ({
+vi.mock("../db", () => ({
   insertEntry: vi.fn(),
   getFollowers: vi.fn(),
   getFollowerRecipients: vi.fn(),
   getAcceptedRelays: vi.fn(),
 }));
 
-import { insertEntry, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db.js";
+import { insertEntry, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db";
 import {
   buildCreateActivity,
   MAX_GUID_LENGTH,
@@ -17,8 +17,8 @@ import {
   safeParseUrl,
   truncateToMax,
   formatContent,
-} from "../publisher.js";
-import type { FeedEntry } from "../rss.js";
+} from "../publisher";
+import type { FeedEntry } from "../rss";
 
 const mockInsertEntry = vi.mocked(insertEntry);
 const mockGetFollowers = vi.mocked(getFollowers);

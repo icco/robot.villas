@@ -1,8 +1,10 @@
 node_modules
 dist
+.next
 .git
 .gitignore
 .github
+.cursor
 *.md
 .env*
 coverage

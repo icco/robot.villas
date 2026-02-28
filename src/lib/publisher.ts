@@ -3,8 +3,8 @@ import type { Context } from "@fedify/fedify";
 import { Create, Note, PUBLIC_COLLECTION, type Recipient } from "@fedify/vocab";
 import escapeHtml from "escape-html";
 import { getLogger } from "@logtape/logtape";
-import { getAcceptedRelays, getFollowerRecipients, insertEntry, type Db } from "./db.js";
-import type { FeedEntry } from "./rss.js";
+import { getAcceptedRelays, getFollowerRecipients, insertEntry, type Db } from "./db";
+import type { FeedEntry } from "./rss";
 
 const logger = getLogger(["robot-villas", "publisher"]);
 

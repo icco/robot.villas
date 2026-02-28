@@ -12,8 +12,8 @@ import {
   getKeypairs,
   saveKeypairs,
   type Db,
-} from "../db.js";
-import * as schema from "../schema.js";
+} from "../db";
+import * as schema from "../schema";
 
 const DATABASE_URL = process.env.DATABASE_URL;
 

@@ -1,9 +1,9 @@
 import type { Context } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
-import type { FeedsConfig } from "./config.js";
-import type { Db } from "./db.js";
-import { fetchFeed } from "./rss.js";
-import { publishNewEntries } from "./publisher.js";
+import type { FeedsConfig } from "./config";
+import type { Db } from "./db";
+import { fetchFeed } from "./rss";
+import { publishNewEntries } from "./publisher";
 
 const DEFAULT_INTERVAL_MS = 5 * 60 * 1000;
 const logger = getLogger(["robot-villas", "poller"]);
