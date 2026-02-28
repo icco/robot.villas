@@ -7,7 +7,7 @@ RUN yarn install --frozen-lockfile
 
 COPY . .
 
-ENV DOMAIN=build.placeholder
+ENV DOMAIN=robot.villas
 RUN yarn build
 
 FROM node:24-slim
