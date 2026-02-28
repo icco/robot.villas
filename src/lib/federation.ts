@@ -67,6 +67,7 @@ export interface FederationDeps {
   db: Db;
   kvStore: KvStore;
   messageQueue: MessageQueue;
+  origin: string;
   blockedInstances?: Set<string>;
 }
 
@@ -239,13 +240,14 @@ async function handleUndo(
 }
 
 export function setupFederation(deps: FederationDeps): Federation<void> {
-  const { config, db, kvStore, messageQueue, blockedInstances = new Set() } = deps;
+  const { config, db, kvStore, messageQueue, origin, blockedInstances = new Set() } = deps;
   const botUsernames = Object.keys(config.bots);
 
   const federation = createFederation<void>({
     kv: kvStore,
     queue: messageQueue,
     manuallyStartQueue: true,
+    origin,
   });
 
   // --- Actor dispatcher (following the Fedify microblog tutorial pattern) ---

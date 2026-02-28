@@ -33,6 +33,7 @@ function initGlobals() {
     db,
     kvStore,
     messageQueue,
+    origin: `https://${domain}`,
     blockedInstances,
   });
   return { sql, db, config, federation, kvStore, messageQueue, domain };
