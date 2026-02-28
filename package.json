@@ -31,7 +31,7 @@
     "escape-html": "^1.0.3",
     "js-yaml": "^4.1.0",
     "mastodon-widget": "^0.2.1",
-    "next": "^15.3.3",
+    "next": "^15.5.12",
     "postgres": "^3.4.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@next/eslint-plugin-next": "^16.1.6",
+    "@next/eslint-plugin-next": "^15.5.12",
     "@tailwindcss/postcss": "^4",
     "@types/escape-html": "^1.0.4",
     "@types/js-yaml": "^4.0.9",
