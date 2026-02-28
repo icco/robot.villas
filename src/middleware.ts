@@ -1,9 +1,12 @@
-import { fedifyWith } from "@fedify/next";
-import { getGlobals } from "@/lib/globals";
+import type { NextRequest } from "next/server";
 
-const { federation } = getGlobals();
-
-export default fedifyWith(federation)();
+export async function middleware(request: NextRequest) {
+  const { fedifyWith } = await import("@fedify/next");
+  const { getGlobals } = await import("@/lib/globals");
+  const { federation } = getGlobals();
+  const handler = fedifyWith(federation)();
+  return handler(request);
+}
 
 export const config = {
   runtime: "nodejs",
@@ -12,7 +15,7 @@ export const config = {
       source: "/:path*",
       has: [
         {
-          type: "header" as const,
+          type: "header",
           key: "Accept",
           value:
             ".*application\\/((jrd|activity|ld)\\+json|xrd\\+xml).*",
@@ -23,7 +26,7 @@ export const config = {
       source: "/:path*",
       has: [
         {
-          type: "header" as const,
+          type: "header",
           key: "content-type",
           value:
             ".*application\\/((jrd|activity|ld)\\+json|xrd\\+xml).*",
