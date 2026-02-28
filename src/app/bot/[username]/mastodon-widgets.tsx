@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect } from "react";
+import Script from "next/script";
 
 export function MastodonWidgets() {
   useEffect(() => {
-    import("mastodon-widget");
-
     if (!customElements.get("mastodon-interact")) {
       customElements.define(
         "mastodon-interact",
@@ -43,5 +42,10 @@ export function MastodonWidgets() {
     }
   }, []);
 
-  return null;
+  return (
+    <Script
+      src="https://unpkg.com/mastodon-widget@0.2.1"
+      strategy="afterInteractive"
+    />
+  );
 }
