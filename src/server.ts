@@ -316,7 +316,8 @@ customElements.define("mastodon-interact", class extends HTMLElement {
       }
       try {
         const instance = await picker.pickInstance();
-        window.open("https://" + instance + "/authorize_interaction?uri=" + encodeURIComponent(this.getAttribute("uri")), "_blank");
+        const newWindow = window.open("https://" + instance + "/authorize_interaction?uri=" + encodeURIComponent(this.getAttribute("uri")), "_blank", "noopener,noreferrer");
+        if (newWindow) newWindow.opener = null;
       } catch {}
       picker.remove();
     });
