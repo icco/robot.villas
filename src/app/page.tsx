@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { CpuChipIcon } from "@heroicons/react/24/solid";
 import { getGlobals } from "@/lib/globals";
 
 export function generateMetadata(): Metadata {
@@ -75,8 +76,8 @@ export default function HomePage() {
                 className="rounded-full"
               />
             ) : (
-              <div className="w-6 h-6 rounded-full bg-base-300 flex items-center justify-center text-xs">
-                🤖
+              <div className="w-6 h-6 rounded-full bg-base-300 flex items-center justify-center">
+                <CpuChipIcon className="w-4 h-4 text-base-content/50" />
               </div>
             )}
             <div className="min-w-0">

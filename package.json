@@ -23,6 +23,7 @@
     "@fedify/next": "^2.0.0",
     "@fedify/postgres": "^2.0.0",
     "@fedify/vocab": "^2.0.0",
+    "@heroicons/react": "^2.2.0",
     "@js-temporal/polyfill": "^0.5.1",
     "@logtape/logtape": "^2.0.2",
     "daisyui": "^5",

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
 import { getGlobals } from "@/lib/globals";
 import { getGlobalStats, getPerBotStats, getTopPosts } from "@/lib/db";
 
@@ -146,10 +147,10 @@ export default async function StatsPage() {
                   </span>
                   <span className="flex items-center gap-2 text-xs text-base-content/50">
                     {post.boostCount > 0 && (
-                      <span title="Boosts">🔁 {post.boostCount}</span>
+                      <span title="Boosts" className="inline-flex items-center gap-0.5"><ArrowPathRoundedSquareIcon className="w-3.5 h-3.5" /> {post.boostCount}</span>
                     )}
                     {post.likeCount > 0 && (
-                      <span title="Likes">❤️ {post.likeCount}</span>
+                      <span title="Likes" className="inline-flex items-center gap-0.5"><HeartIcon className="w-3.5 h-3.5" /> {post.likeCount}</span>
                     )}
                   </span>
                 </span>

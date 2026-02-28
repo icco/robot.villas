@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArrowPathRoundedSquareIcon, HeartIcon, CpuChipIcon } from "@heroicons/react/24/outline";
 import { getGlobals } from "@/lib/globals";
 import { countEntries, countFollowers, getEntriesPage } from "@/lib/db";
 import { MastodonWidgets } from "./mastodon-widgets";
@@ -74,8 +75,8 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
             className="rounded-full ring-2 ring-base-300"
           />
         ) : (
-          <div className="w-24 h-24 rounded-full bg-base-300 flex items-center justify-center text-4xl ring-2 ring-base-300">
-            🤖
+          <div className="w-24 h-24 rounded-full bg-base-300 flex items-center justify-center ring-2 ring-base-300">
+            <CpuChipIcon className="w-10 h-10 text-base-content/50" />
           </div>
         )}
         <div>
@@ -150,13 +151,13 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
                       title="Boost"
                       className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info"
                     >
-                      🔁 {entry.boostCount}
+                      <ArrowPathRoundedSquareIcon className="w-4 h-4" /> {entry.boostCount}
                     </button>
                   {/* @ts-expect-error -- custom element */}
                   </mastodon-interact>
                 ) : (
                   <span className="btn btn-ghost btn-xs gap-1 text-base-content/50">
-                    🔁 {entry.boostCount}
+                    <ArrowPathRoundedSquareIcon className="w-4 h-4" /> {entry.boostCount}
                   </span>
                 )}
                 {entry.url ? (
@@ -167,13 +168,13 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
                       title="Favorite"
                       className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error"
                     >
-                      ❤️ {entry.likeCount}
+                      <HeartIcon className="w-4 h-4" /> {entry.likeCount}
                     </button>
                   {/* @ts-expect-error -- custom element */}
                   </mastodon-interact>
                 ) : (
                   <span className="btn btn-ghost btn-xs gap-1 text-base-content/50">
-                    ❤️ {entry.likeCount}
+                    <HeartIcon className="w-4 h-4" /> {entry.likeCount}
                   </span>
                 )}
                 {entry.publishedAt && (
