@@ -66,6 +66,7 @@ export default function HomePage() {
             className="flex items-center gap-3 p-3 rounded-lg hover:bg-base-200 transition-colors group"
           >
             {bot.profile_photo ? (
+              /* eslint-disable-next-line @next/next/no-img-element */
               <img
                 src={bot.profile_photo}
                 alt=""

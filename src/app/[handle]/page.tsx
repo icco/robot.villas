@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import { getGlobals } from "@/lib/globals";
@@ -58,12 +59,13 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
 
   return (
     <>
-      <a href="/" className="btn btn-ghost btn-sm gap-1 mb-6 -ml-2">
+      <Link href="/" className="btn btn-ghost btn-sm gap-1 mb-6 -ml-2">
         <span>&larr;</span> All bots
-      </a>
+      </Link>
 
       <div className="flex items-start gap-6 mb-6">
         {bot.profile_photo ? (
+          /* eslint-disable-next-line @next/next/no-img-element */
           <img
             src={bot.profile_photo}
             alt=""

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Link from "next/link";
+import Script from "next/script";
 import { getGlobals } from "@/lib/globals";
 
 export function generateMetadata(): Metadata {
@@ -32,13 +34,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           rel="stylesheet"
           type="text/css"
         />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap"
           rel="stylesheet"
@@ -57,19 +59,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="min-h-screen flex flex-col bg-base-100 font-body">
         <header className="navbar bg-base-200 border-b border-base-300">
           <div className="container mx-auto flex items-center">
-            <a
+            <Link
               href="/"
               className="text-xl font-display font-bold tracking-tight hover:opacity-80 transition-opacity flex items-center gap-2"
             >
               <span className="text-2xl">🤖</span>
               <span>{domain}</span>
-            </a>
-            <a
+            </Link>
+            <Link
               href="/stats"
               className="btn btn-ghost btn-sm font-display ml-auto"
             >
               Stats
-            </a>
+            </Link>
           </div>
         </header>
         <main className="container mx-auto flex-1 px-4 py-8 max-w-4xl">
@@ -99,6 +101,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </a>
           </nav>
         </footer>
+        <Script
+          src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+          strategy="beforeInteractive"
+        />
       </body>
     </html>
   );

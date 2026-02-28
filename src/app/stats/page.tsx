@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getGlobals } from "@/lib/globals";
 import { getGlobalStats, getPerBotStats, getTopPosts } from "@/lib/db";
 
@@ -37,9 +38,9 @@ export default async function StatsPage() {
 
   return (
     <>
-      <a href="/" className="btn btn-ghost btn-sm gap-1 mb-6 -ml-2">
+      <Link href="/" className="btn btn-ghost btn-sm gap-1 mb-6 -ml-2">
         <span>&larr;</span> All bots
-      </a>
+      </Link>
       <h1 className="text-3xl font-display font-bold tracking-tight mb-6">
         Stats
       </h1>
