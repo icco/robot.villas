@@ -24,6 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${bot.display_name} (@${username}@${domain})`,
     description: bot.summary,
+    alternates: {
+      canonical: `https://${domain}/@${username}`,
+    },
     openGraph: {
       title: `${bot.display_name} (@${username}@${domain}) – ${domain}`,
       description: bot.summary,

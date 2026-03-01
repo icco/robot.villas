@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import Link from "next/link";
 import { Roboto, Roboto_Mono } from "next/font/google";
 import { faviconSvg } from "@/lib/og-icon";
+import { WebVitals } from "@/components/WebVitals";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -32,6 +33,9 @@ export function generateMetadata(): Metadata {
       template: `%s – ${domain}`,
     },
     description: `RSS-to-Mastodon bridge on ${domain}`,
+    twitter: {
+      card: "summary_large_image",
+    },
     icons: {
       icon: faviconSvg,
     },
@@ -48,6 +52,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${roboto.variable} ${robotoMono.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-base-100 font-body">
+        <WebVitals />
         <header className="navbar bg-base-200 border-b border-base-300">
           <div className="container mx-auto flex items-center">
             <Link

@@ -14,6 +14,9 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: `Stats`,
     description: `Statistics for ${fmt(botCount)} bots, ${fmt(global.totalPosts)} posts, and ${fmt(global.totalFollowers)} followers on ${domain}.`,
+    alternates: {
+      canonical: `https://${domain}/stats`,
+    },
     openGraph: {
       title: `Stats – ${domain}`,
       description: `Statistics for ${fmt(botCount)} bots, ${fmt(global.totalPosts)} posts, and ${fmt(global.totalFollowers)} followers on ${domain}.`,

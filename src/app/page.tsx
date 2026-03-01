@@ -11,6 +11,9 @@ export function generateMetadata(): Metadata {
     title: `${domain} – RSS-to-Mastodon Bridge`,
     description:
       "A collection of bot accounts mirroring public RSS and Atom feeds on the Fediverse.",
+    alternates: {
+      canonical: `https://${domain}/`,
+    },
     openGraph: {
       title: `${domain} – RSS-to-Mastodon Bridge`,
       description:
