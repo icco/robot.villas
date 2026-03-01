@@ -6,15 +6,12 @@ const securityHeaders = [
   {
     key: "Content-Security-Policy",
     value: [
-      "default-src 'none'",
+      "default-src 'self'",
       "script-src 'self' 'unsafe-inline'",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' https: data:",
-      "font-src 'self'",
-      "connect-src 'self' https://reportd.natwelch.com",
+      "connect-src 'self' https://reportd.natwelch.com https://mastodon.social",
       "frame-ancestors 'none'",
-      "base-uri 'self'",
-      "form-action 'self'",
       `report-uri ${REPORT_URI}`,
     ].join("; "),
   },
