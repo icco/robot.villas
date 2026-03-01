@@ -1213,9 +1213,9 @@
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
 "@types/node@^25.3.0":
-  version "25.3.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.3.2.tgz#cbc4b963e1b3503eb2bcf7c55bf48c95204918d1"
-  integrity sha512-RpV6r/ij22zRRdyBPcxDeKAzH43phWVKEjL2iksqo1Vz3CuBUrgmPpPhALKiRfU7OMCmeeO9vECBMsV0hMTG8Q==
+  version "25.3.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-25.3.3.tgz#605862544ee7ffd7a936bcbf0135a14012f1e549"
+  integrity sha512-DpzbrH7wIcBaJibpKo9nnSQL0MTRdnWttGyE5haGwK86xgMOkFLp7vEyfQPGLOJh5wNYiJ3V9PmUMDhV9u8kkQ==
   dependencies:
     undici-types "~7.18.0"
 
@@ -1459,9 +1459,9 @@ bytestreamjs@^2.0.1:
   integrity sha512-U1Z/ob71V/bXfVABvNr/Kumf5VyeQRBEm6Txb0PQ6S7V5GpBM3w4Cbqz/xPDicR5tN0uvDifng8C+5qECeGwyQ==
 
 caniuse-lite@^1.0.30001579:
-  version "1.0.30001774"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001774.tgz#0e576b6f374063abcd499d202b9ba1301be29b70"
-  integrity sha512-DDdwPGz99nmIEv216hKSgLD+D4ikHQHjBC/seF98N9CPqRX4M5mSxT9eTV6oyisnJcuzxtZy4n17yKKQYmYQOA==
+  version "1.0.30001775"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001775.tgz#9572266e3f7f77efee5deac1efeb4795879d1b7f"
+  integrity sha512-s3Qv7Lht9zbVKE9XoTyRG6wVDCKdtOFIjBGg3+Yhn6JaytuNKPIjBMTMIY1AnOH3seL5mvF+x33oGAyK3hVt3A==
 
 canonicalize@^2.1.0:
   version "2.1.0"
