@@ -19,7 +19,7 @@
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
-    "@fedify/fedify": "^2.0.0",
+    "@fedify/fedify": "^2.0.3",
     "@fedify/next": "^2.0.0",
     "@fedify/postgres": "^2.0.0",
     "@fedify/vocab": "^2.0.0",
