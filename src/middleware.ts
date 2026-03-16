@@ -1,9 +1,19 @@
 import { fedifyWith } from "@fedify/next";
 import { getGlobals } from "@/lib/globals";
 
-const { federation } = getGlobals();
+let handler: ((request: Request) => unknown) | null = null;
 
-export default fedifyWith(federation)();
+function getHandler(): (request: Request) => unknown {
+  if (!handler) {
+    const { federation } = getGlobals();
+    handler = fedifyWith(federation)();
+  }
+  return handler;
+}
+
+export default function middleware(request: Request) {
+  return getHandler()(request);
+}
 
 export const config = {
   runtime: "nodejs",
