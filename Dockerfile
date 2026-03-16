@@ -1,4 +1,4 @@
-FROM node:24-slim AS builder
+FROM node:25-slim AS builder
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ COPY . .
 ENV DOMAIN=robot.villas
 RUN yarn build
 
-FROM node:24-slim
+FROM node:25-slim
 
 WORKDIR /app
 
