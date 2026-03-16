@@ -6,6 +6,10 @@ updates:
       interval: weekly
     versioning-strategy: increase
     open-pull-requests-limit: 10
+    groups:
+      fedify:
+        patterns:
+          - "@fedify/*"
   - package-ecosystem: docker
     directory: /
     open-pull-requests-limit: 10
