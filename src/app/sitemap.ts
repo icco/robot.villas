@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { getGlobals } from "@/lib/globals";
 
+export const dynamic = "force-dynamic";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const { config, domain } = getGlobals();
   const base = `https://${domain}`;
