@@ -36,43 +36,6 @@ function dedupePush(pool: string[], next: string): void {
   pool.push(next);
 }
 
-function titleDerivedTags(title: string): string[] {
-  const words = title
-    .normalize("NFKD")
-    .replace(/\p{M}/gu, "")
-    .split(/[^a-zA-Z0-9]+/g)
-    .map((w) => w.trim())
-    .filter((w) => w.length >= 3);
-  const out: string[] = [];
-  for (const w of words) {
-    const t =
-      w.charAt(0).toUpperCase() +
-      w
-        .slice(1)
-        .toLowerCase()
-        .replace(/[^a-zA-Z0-9_]/g, "");
-    const norm = normalizeHashtagLabel(t);
-    if (norm) {
-      out.push(norm);
-    }
-  }
-  return out;
-}
-
-function hostnameDerivedTag(link: string): string | null {
-  try {
-    const host = new URL(link).hostname.replace(/^www\./i, "");
-    const first = host.split(".")[0] ?? "";
-    if (first.length < 2) {
-      return null;
-    }
-    const t = first.charAt(0).toUpperCase() + first.slice(1).toLowerCase();
-    return normalizeHashtagLabel(t);
-  } catch {
-    return null;
-  }
-}
-
 /**
  * Normalize and dedupe stored DB values only (legacy [] → no tags until backfill).
  */
@@ -91,9 +54,9 @@ export function hashtagsForNoteBody(stored: string[]): string[] {
 }
 
 /**
- * Merge raw strings (e.g. feed categories + defaults), then title tokens, then hostname.
+ * Normalize and dedupe raw strings (feed categories + config defaults), capped at `max`.
  */
-export function mergeHashtagCandidates(rawStrings: string[], title: string, link: string, max = MAX_TAGS): string[] {
+export function mergeHashtagCandidates(rawStrings: string[], max = MAX_TAGS): string[] {
   const pool: string[] = [];
   for (const s of rawStrings) {
     const n = normalizeHashtagLabel(s);
@@ -102,18 +65,6 @@ export function mergeHashtagCandidates(rawStrings: string[], title: string, link
     }
     if (pool.length >= max) {
       return pool.slice(0, max);
-    }
-  }
-  for (const t of titleDerivedTags(title)) {
-    dedupePush(pool, t);
-    if (pool.length >= max) {
-      return pool.slice(0, max);
-    }
-  }
-  if (link) {
-    const h = hostnameDerivedTag(link);
-    if (h) {
-      dedupePush(pool, h);
     }
   }
   return pool.slice(0, max);
@@ -208,7 +159,7 @@ export interface ResolveHashtagsOptions {
 }
 
 /**
- * Up to MAX_TAGS labels: categories + defaults + title + hostname, then optional Gemini. No generic padding.
+ * Up to MAX_TAGS labels: feed categories + config defaults, then optional Gemini. No title/URL heuristics.
  */
 export async function resolveHashtags(
   entry: FeedEntry,
@@ -217,7 +168,7 @@ export async function resolveHashtags(
   opts: ResolveHashtagsOptions = {},
 ): Promise<string[]> {
   const raw = [...entry.feedCategories, ...(bot.default_hashtags ?? [])];
-  const pool = mergeHashtagCandidates(raw, entry.title, entry.link, MAX_TAGS);
+  const pool = mergeHashtagCandidates(raw, MAX_TAGS);
   const need = MAX_TAGS - pool.length;
   const apiKey = opts.geminiApiKey ?? process.env.GEMINI_API_KEY;
   const model = opts.geminiModel ?? process.env.GEMINI_MODEL ?? GEMINI_DEFAULT_MODEL;

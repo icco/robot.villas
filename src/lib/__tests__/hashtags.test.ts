@@ -35,11 +35,8 @@ describe("hashtagsForNoteBody", () => {
 });
 
 describe("mergeHashtagCandidates", () => {
-  it("merges raw strings then title words", () => {
-    const tags = mergeHashtagCandidates(["Tech"], "The quick brown", "", 3);
-    expect(tags).toContain("Tech");
-    expect(tags).toContain("The");
-    expect(tags).toContain("Quick");
+  it("normalizes and dedupes raw strings only", () => {
+    expect(mergeHashtagCandidates(["Tech", "#tech", "News"], 3)).toEqual(["Tech", "News"]);
   });
 });
 
@@ -71,35 +68,22 @@ describe("resolveHashtags", () => {
     expect(tags).toEqual(["rust", "lang", "systems"]);
   });
 
-  it("uses default_hashtags from bot config", async () => {
+  it("uses only default_hashtags when feed has no categories", async () => {
     const tags = await resolveHashtags(makeEntry({ title: "Hello world today" }), "nyt_world", {
       ...baseBot,
       default_hashtags: ["World", "News"],
     });
-    expect(tags[0]).toBe("World");
-    expect(tags[1]).toBe("News");
-    expect(tags).toHaveLength(3);
+    expect(tags).toEqual(["World", "News"]);
   });
 
-  it("derives tags from title (and hostname) without generic padding", async () => {
+  it("returns empty when no categories, defaults, or Gemini", async () => {
+    vi.stubEnv("GEMINI_API_KEY", "");
     const tags = await resolveHashtags(
       makeEntry({ title: "The quick brown fox", link: "https://example.com/x", feedCategories: [] }),
       "danluu",
       baseBot,
-      {},
+      { geminiApiKey: "" },
     );
-    expect(tags).toContain("The");
-    expect(tags).toContain("Quick");
-    expect(tags).toContain("Brown");
-  });
-
-  it("can return only hostname when title yields no long words", async () => {
-    const tags = await resolveHashtags(
-      makeEntry({ title: "Hi", link: "https://www.theverge.com/2024/1/1", feedCategories: [] }),
-      "x",
-      baseBot,
-      {},
-    );
-    expect(tags).toEqual(["Theverge"]);
+    expect(tags).toEqual([]);
   });
 });
