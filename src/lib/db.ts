@@ -36,8 +36,8 @@ export async function insertEntry(
   publishedAt: Date | null,
   hashtags: string[],
 ): Promise<number | null> {
-  if (hashtags.length !== 3) {
-    throw new Error("insertEntry: hashtags must have exactly 3 entries");
+  if (hashtags.length > 3) {
+    throw new Error("insertEntry: at most 3 hashtags");
   }
   const rows = await db
     .insert(schema.feedEntries)

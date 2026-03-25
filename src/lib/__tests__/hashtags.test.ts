@@ -20,17 +20,27 @@ function makeEntry(over: Partial<FeedEntry> & Pick<FeedEntry, "title">): FeedEnt
 }
 
 describe("coerceNoteHashtags", () => {
-  it("fills three tags when DB stored value is empty (legacy row)", () => {
+  it("derives tags from title/link when DB stored value is empty", () => {
     const tags = coerceNoteHashtags([], {
       botUsername: "my_bot",
       title: "Rust 1.85 released",
       link: "https://blog.rust-lang.org/",
     });
-    expect(tags).toHaveLength(3);
+    expect(tags.length).toBeGreaterThan(0);
     expect(tags.some((t) => /rust/i.test(t))).toBe(true);
   });
 
-  it("keeps three stored tags when present", () => {
+  it("returns empty when nothing is stored and nothing can be derived", () => {
+    expect(
+      coerceNoteHashtags([], {
+        botUsername: "x",
+        title: "a",
+        link: "",
+      }),
+    ).toEqual([]);
+  });
+
+  it("keeps stored tags when present", () => {
     expect(
       coerceNoteHashtags(["A", "B", "C"], {
         botUsername: "x",
@@ -79,7 +89,7 @@ describe("resolveHashtags", () => {
     expect(tags).toHaveLength(3);
   });
 
-  it("derives tags from title and pads with bot-specific tag", async () => {
+  it("derives tags from title (and hostname) without generic padding", async () => {
     const tags = await resolveHashtags(
       makeEntry({ title: "The quick brown fox", link: "https://example.com/x", feedCategories: [] }),
       "danluu",
@@ -91,13 +101,13 @@ describe("resolveHashtags", () => {
     expect(tags).toContain("Brown");
   });
 
-  it("includes hostname token when title words are insufficient", async () => {
+  it("can return only hostname when title yields no long words", async () => {
     const tags = await resolveHashtags(
       makeEntry({ title: "Hi", link: "https://www.theverge.com/2024/1/1", feedCategories: [] }),
       "x",
       baseBot,
       {},
     );
-    expect(tags).toContain("Theverge");
+    expect(tags).toEqual(["Theverge"]);
   });
 });

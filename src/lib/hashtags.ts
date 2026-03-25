@@ -37,13 +37,6 @@ function dedupePush(pool: string[], next: string): void {
   pool.push(next);
 }
 
-function botUsernameToDefaultTag(botUsername: string): string {
-  const parts = botUsername.split("_").filter(Boolean);
-  const pieces = parts.map((p) => p.charAt(0).toUpperCase() + p.slice(1).toLowerCase());
-  const tag = pieces.join("") || "Bot";
-  return normalizeHashtagLabel(tag) ?? "Bot";
-}
-
 function titleDerivedTags(title: string): string[] {
   const words = title
     .normalize("NFKD")
@@ -81,20 +74,6 @@ function hostnameDerivedTag(link: string): string | null {
   }
 }
 
-const GENERIC_FALLBACKS = ["RSS", "Feed", "News", "Blog", "Link"] as const;
-
-function padToThree(pool: string[], botUsername: string): [string, string, string] {
-  const botTag = botUsernameToDefaultTag(botUsername);
-  const fillers = [botTag, ...GENERIC_FALLBACKS];
-  let i = 0;
-  while (pool.length < HASHTAG_COUNT) {
-    const f = fillers[i % fillers.length];
-    i++;
-    dedupePush(pool, f);
-  }
-  return [pool[0]!, pool[1]!, pool[2]!];
-}
-
 export interface NoteHashtagContext {
   botUsername: string;
   title: string;
@@ -102,10 +81,10 @@ export interface NoteHashtagContext {
 }
 
 /**
- * Builds three display hashtags from DB `hashtags` plus title/link heuristics.
- * Legacy rows use [] — this still yields three tags for the Note without persisting.
+ * Display hashtags from DB `hashtags` plus title/link heuristics (capped at HASHTAG_COUNT).
+ * Legacy rows may be [] — may stay empty if nothing can be derived.
  */
-export function coerceNoteHashtags(stored: string[], ctx: NoteHashtagContext): [string, string, string] {
+export function coerceNoteHashtags(stored: string[], ctx: NoteHashtagContext): string[] {
   const pool: string[] = [];
   for (const s of stored) {
     const n = normalizeHashtagLabel(s);
@@ -113,13 +92,13 @@ export function coerceNoteHashtags(stored: string[], ctx: NoteHashtagContext): [
       dedupePush(pool, n);
     }
     if (pool.length >= HASHTAG_COUNT) {
-      return [pool[0]!, pool[1]!, pool[2]!];
+      return pool.slice(0, HASHTAG_COUNT);
     }
   }
   for (const t of titleDerivedTags(ctx.title)) {
     dedupePush(pool, t);
     if (pool.length >= HASHTAG_COUNT) {
-      return [pool[0]!, pool[1]!, pool[2]!];
+      return pool.slice(0, HASHTAG_COUNT);
     }
   }
   if (ctx.link) {
@@ -127,11 +106,8 @@ export function coerceNoteHashtags(stored: string[], ctx: NoteHashtagContext): [
     if (h) {
       dedupePush(pool, h);
     }
-    if (pool.length >= HASHTAG_COUNT) {
-      return [pool[0]!, pool[1]!, pool[2]!];
-    }
   }
-  return padToThree(pool, ctx.botUsername);
+  return pool.slice(0, HASHTAG_COUNT);
 }
 
 interface GeminiTagsResponse {
@@ -268,14 +244,14 @@ export interface ResolveHashtagsOptions {
 }
 
 /**
- * Produces exactly three hashtag labels for a feed entry (cheapest sources first).
+ * Up to HASHTAG_COUNT hashtag labels (cheapest sources first). May return fewer; no generic padding.
  */
 export async function resolveHashtags(
   entry: FeedEntry,
   botUsername: string,
   bot: BotConfig,
   opts: ResolveHashtagsOptions = {},
-): Promise<[string, string, string]> {
+): Promise<string[]> {
   const pool: string[] = [];
 
   for (const c of entry.feedCategories) {
@@ -284,7 +260,7 @@ export async function resolveHashtags(
       dedupePush(pool, n);
     }
     if (pool.length >= HASHTAG_COUNT) {
-      return [pool[0]!, pool[1]!, pool[2]!];
+      return pool.slice(0, HASHTAG_COUNT);
     }
   }
 
@@ -294,14 +270,14 @@ export async function resolveHashtags(
       dedupePush(pool, n);
     }
     if (pool.length >= HASHTAG_COUNT) {
-      return [pool[0]!, pool[1]!, pool[2]!];
+      return pool.slice(0, HASHTAG_COUNT);
     }
   }
 
   for (const t of titleDerivedTags(entry.title)) {
     dedupePush(pool, t);
     if (pool.length >= HASHTAG_COUNT) {
-      return [pool[0]!, pool[1]!, pool[2]!];
+      return pool.slice(0, HASHTAG_COUNT);
     }
   }
 
@@ -332,8 +308,5 @@ export async function resolveHashtags(
     }
   }
 
-  if (pool.length >= HASHTAG_COUNT) {
-    return [pool[0]!, pool[1]!, pool[2]!];
-  }
-  return padToThree(pool, botUsername);
+  return pool.slice(0, HASHTAG_COUNT);
 }

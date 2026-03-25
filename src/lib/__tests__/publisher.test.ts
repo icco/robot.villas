@@ -327,7 +327,7 @@ describe("publishNewEntries with length limits", () => {
   });
 });
 
-const h3 = ["One", "Two", "Three"] as [string, string, string];
+const h3 = ["One", "Two", "Three"];
 
 describe("formatContent", () => {
   it("includes link in anchor tag for valid https url", () => {
@@ -366,5 +366,11 @@ describe("formatContent", () => {
     });
     expect(content).not.toContain("<b>");
     expect(content).toContain("&lt;b&gt;");
+  });
+
+  it("omits hashtag paragraph when there are none", () => {
+    expect(formatContent({ title: "T", link: "https://x.com/", publishedAt: null, hashtags: [] })).toBe(
+      '<p>T</p><p><a href="https://x.com/">https://x.com/</a></p>',
+    );
   });
 });

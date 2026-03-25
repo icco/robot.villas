@@ -25,8 +25,8 @@ export interface EntryLike {
   title: string;
   link: string;
   publishedAt: Date | null;
-  /** Exactly three hashtag labels (no leading #). */
-  hashtags: [string, string, string];
+  /** Hashtag labels (no leading #), at most three. */
+  hashtags: string[];
 }
 
 /**
@@ -196,8 +196,9 @@ export function safeParseUrl(link: string | undefined): URL | undefined {
 
 export function formatContent(entry: EntryLike): string {
   const safeUrl = safeParseUrl(entry.link);
-  const tagLine = entry.hashtags.map((h) => `#${escapeHtml(h)}`).join(" ");
-  const tagsHtml = `<p>${tagLine}</p>`;
+  const tags = entry.hashtags.filter(Boolean);
+  const tagsHtml =
+    tags.length > 0 ? `<p>${tags.map((h) => `#${escapeHtml(h)}`).join(" ")}</p>` : "";
   if (safeUrl) {
     const href = safeUrl.href;
     return `<p>${escapeHtml(entry.title)}</p><p><a href="${escapeHtml(href)}">${escapeHtml(href)}</a></p>${tagsHtml}`;
