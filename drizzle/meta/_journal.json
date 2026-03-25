@@ -57,6 +57,13 @@
       "when": 1774413909592,
       "tag": "0007_funny_prima",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1774500000000,
+      "tag": "0008_legacy_hashtag_placeholder_clear",
+      "breakpoints": true
     }
   ]
 }

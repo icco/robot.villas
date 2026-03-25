@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
-import { normalizeHashtagLabel, resolveHashtags } from "../hashtags";
+import { coerceNoteHashtags, normalizeHashtagLabel, resolveHashtags } from "../hashtags";
 import type { BotConfig } from "../config";
 import type { FeedEntry } from "../rss";
 
@@ -18,6 +18,28 @@ function makeEntry(over: Partial<FeedEntry> & Pick<FeedEntry, "title">): FeedEnt
     ...over,
   };
 }
+
+describe("coerceNoteHashtags", () => {
+  it("fills three tags when DB stored value is empty (legacy row)", () => {
+    const tags = coerceNoteHashtags([], {
+      botUsername: "my_bot",
+      title: "Rust 1.85 released",
+      link: "https://blog.rust-lang.org/",
+    });
+    expect(tags).toHaveLength(3);
+    expect(tags.some((t) => /rust/i.test(t))).toBe(true);
+  });
+
+  it("keeps three stored tags when present", () => {
+    expect(
+      coerceNoteHashtags(["A", "B", "C"], {
+        botUsername: "x",
+        title: "ignored",
+        link: "",
+      }),
+    ).toEqual(["A", "B", "C"]);
+  });
+});
 
 describe("normalizeHashtagLabel", () => {
   it("strips # and non-alphanumeric ASCII", () => {

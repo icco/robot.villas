@@ -29,13 +29,6 @@ export interface EntryLike {
   hashtags: [string, string, string];
 }
 
-export function coerceNoteHashtags(hashtags: string[]): [string, string, string] {
-  if (hashtags.length === 3) {
-    return [hashtags[0]!, hashtags[1]!, hashtags[2]!];
-  }
-  return ["RSS", "Feed", "Bot"];
-}
-
 /**
  * Builds a Create(Note) activity. Uses entryId (our DB id) in the Note URI, not
  * the feed's guid, so feed-supplied data never appears in URLs.

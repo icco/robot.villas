@@ -262,3 +262,4 @@ follows:
   - '@_followback@tags.pub'
 relays:
   - https://relay.toot.io/actor
+  - https://relay.minecloud.ro/inbox

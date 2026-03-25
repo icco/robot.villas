@@ -95,6 +95,45 @@ function padToThree(pool: string[], botUsername: string): [string, string, strin
   return [pool[0]!, pool[1]!, pool[2]!];
 }
 
+export interface NoteHashtagContext {
+  botUsername: string;
+  title: string;
+  link: string;
+}
+
+/**
+ * Builds three display hashtags from DB `hashtags` plus title/link heuristics.
+ * Legacy rows use [] — this still yields three tags for the Note without persisting.
+ */
+export function coerceNoteHashtags(stored: string[], ctx: NoteHashtagContext): [string, string, string] {
+  const pool: string[] = [];
+  for (const s of stored) {
+    const n = normalizeHashtagLabel(s);
+    if (n) {
+      dedupePush(pool, n);
+    }
+    if (pool.length >= HASHTAG_COUNT) {
+      return [pool[0]!, pool[1]!, pool[2]!];
+    }
+  }
+  for (const t of titleDerivedTags(ctx.title)) {
+    dedupePush(pool, t);
+    if (pool.length >= HASHTAG_COUNT) {
+      return [pool[0]!, pool[1]!, pool[2]!];
+    }
+  }
+  if (ctx.link) {
+    const h = hostnameDerivedTag(ctx.link);
+    if (h) {
+      dedupePush(pool, h);
+    }
+    if (pool.length >= HASHTAG_COUNT) {
+      return [pool[0]!, pool[1]!, pool[2]!];
+    }
+  }
+  return padToThree(pool, ctx.botUsername);
+}
+
 interface GeminiTagsResponse {
   tags?: unknown;
 }
@@ -117,32 +156,68 @@ function parseGeminiJsonLenient(text: string): string[] {
   }
 }
 
+export interface GeminiHashtagContext {
+  botUsername: string;
+  bot: BotConfig;
+  entry: FeedEntry;
+}
+
+function buildGeminiPrompt(need: number, ctx: GeminiHashtagContext): string {
+  const { botUsername, bot, entry } = ctx;
+  const published =
+    entry.publishedAt instanceof Date && !Number.isNaN(entry.publishedAt.getTime())
+      ? entry.publishedAt.toISOString()
+      : "unknown";
+  const categories =
+    entry.feedCategories.length > 0 ? entry.feedCategories.join(", ") : "(none)";
+  const defaults =
+    bot.default_hashtags && bot.default_hashtags.length > 0
+      ? bot.default_hashtags.join(", ")
+      : "(none)";
+
+  return [
+    "You are tagging a Fediverse post that mirrors one RSS/Atom feed item.",
+    "",
+    "=== Feed item (all available fields) ===",
+    `guid: ${entry.guid || "(empty)"}`,
+    `title: ${entry.title}`,
+    `link: ${entry.link || "(empty)"}`,
+    `published_at: ${published}`,
+    `categories / keywords from feed XML: ${categories}`,
+    "",
+    "=== Mirroring bot (this account) ===",
+    `bot_username: ${botUsername}`,
+    `source_feed_url: ${bot.feed_url}`,
+    `display_name: ${bot.display_name}`,
+    `summary: ${bot.summary}`,
+    `configured_default_hashtags: ${defaults}`,
+    "",
+    `Suggest exactly ${need} distinct short hashtags that fit this item and bot context. `,
+    "Each tag: ASCII letters, digits, underscores only (CamelCase or snake_case). ",
+    "No # character. No spaces inside a tag.",
+    "",
+    `Respond with JSON only: {"tags":["TagOne",...]} with exactly ${need} strings.`,
+  ].join("\n");
+}
+
 async function geminiFillTags(params: {
   apiKey: string;
   model: string;
   need: number;
-  title: string;
-  link: string;
-  botSummary?: string;
+  context: GeminiHashtagContext;
 }): Promise<string[]> {
-  const { apiKey, model, need, title, link, botSummary } = params;
+  const { apiKey, model, need, context } = params;
   if (need <= 0) {
     return [];
   }
 
-  const summaryLine = botSummary ? `Context: ${botSummary}\n` : "";
-  const prompt =
-    `${summaryLine}Title: ${title}\nURL: ${link}\n\n` +
-    `Suggest exactly ${need} distinct short hashtags for this link share. ` +
-    `Each tag must use only ASCII letters, digits, and underscores (CamelCase or snake_case). ` +
-    `No # character. No spaces inside a tag.\n` +
-    `Respond with JSON only in this shape: {"tags":["TagOne",...]} with exactly ${need} strings.`;
+  const prompt = buildGeminiPrompt(need, context);
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
   const body = {
     contents: [{ role: "user", parts: [{ text: prompt }] }],
     generationConfig: {
-      maxOutputTokens: 96,
+      maxOutputTokens: 128,
       temperature: 0.3,
       responseMimeType: "application/json",
     },
@@ -173,9 +248,7 @@ async function tryGeminiFill(params: {
   apiKey: string;
   model: string;
   need: number;
-  title: string;
-  link: string;
-  botSummary?: string;
+  context: GeminiHashtagContext;
 }): Promise<string[]> {
   try {
     const raw = await geminiFillTags(params);
@@ -244,13 +317,12 @@ export async function resolveHashtags(
   const model = opts.geminiModel ?? process.env.GEMINI_MODEL ?? GEMINI_DEFAULT_MODEL;
 
   if (need > 0 && apiKey) {
+    const geminiContext: GeminiHashtagContext = { botUsername, bot, entry };
     const filled = await tryGeminiFill({
       apiKey,
       model,
       need,
-      title: entry.title,
-      link: entry.link || "(no url)",
-      botSummary: bot.summary,
+      context: geminiContext,
     });
     for (const t of filled) {
       dedupePush(pool, t);

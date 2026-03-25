@@ -12,7 +12,7 @@ export const feedEntries = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
     likeCount: integer("like_count").notNull().default(0),
     boostCount: integer("boost_count").notNull().default(0),
-    /** Exactly three Mastodon-safe hashtag labels (no leading #). */
+    /** Stored hashtag labels (no leading #). New posts have three; legacy rows may be []. */
     hashtags: jsonb("hashtags").$type<string[]>().notNull(),
     deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
   },
