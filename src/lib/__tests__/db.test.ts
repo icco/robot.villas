@@ -49,18 +49,22 @@ describeWithDb("database", () => {
   describe("feed_entries", () => {
     it("inserts and detects entries", async () => {
       expect(await hasEntry(db, "testbot", "guid-1")).toBe(false);
-      await insertEntry(db, "testbot", "guid-1", "https://example.com/1", "Title 1", new Date());
+      await insertEntry(db, "testbot", "guid-1", "https://example.com/1", "Title 1", new Date(), [
+        "One",
+        "Two",
+        "Three",
+      ]);
       expect(await hasEntry(db, "testbot", "guid-1")).toBe(true);
     });
 
     it("handles duplicate inserts gracefully", async () => {
-      await insertEntry(db, "testbot", "guid-dup", "https://example.com/dup", "Dup", null);
-      await insertEntry(db, "testbot", "guid-dup", "https://example.com/dup", "Dup", null);
+      await insertEntry(db, "testbot", "guid-dup", "https://example.com/dup", "Dup", null, ["A", "B", "C"]);
+      await insertEntry(db, "testbot", "guid-dup", "https://example.com/dup", "Dup", null, ["A", "B", "C"]);
       expect(await hasEntry(db, "testbot", "guid-dup")).toBe(true);
     });
 
     it("scopes entries to bot username", async () => {
-      await insertEntry(db, "bot_a", "guid-x", "https://example.com/x", "X", null);
+      await insertEntry(db, "bot_a", "guid-x", "https://example.com/x", "X", null, ["X", "Y", "Z"]);
       expect(await hasEntry(db, "bot_a", "guid-x")).toBe(true);
       expect(await hasEntry(db, "bot_b", "guid-x")).toBe(false);
     });

@@ -60,7 +60,7 @@ import {
   upsertRelay,
   type Db,
 } from "./db";
-import { buildCreateActivity, formatContent, safeParseUrl } from "./publisher";
+import { buildCreateActivity, coerceNoteHashtags, formatContent, safeParseUrl } from "./publisher";
 
 export interface FederationDeps {
   config: FeedsConfig;
@@ -333,7 +333,12 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
             buildCreateActivity(
               identifier,
               e.id,
-              { title: e.title, link: e.url, publishedAt: e.publishedAt },
+              {
+                title: e.title,
+                link: e.url,
+                publishedAt: e.publishedAt,
+                hashtags: coerceNoteHashtags(e.hashtags),
+              },
               ctx.url,
             ),
           ),
@@ -384,7 +389,12 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       if (!entry) {
         return null;
       }
-      const content = formatContent({ title: entry.title, link: entry.url, publishedAt: entry.publishedAt });
+      const content = formatContent({
+        title: entry.title,
+        link: entry.url,
+        publishedAt: entry.publishedAt,
+        hashtags: coerceNoteHashtags(entry.hashtags),
+      });
       return new Note({
         id: ctx.getObjectUri(Note, values),
         attribution: ctx.getActorUri(identifier),

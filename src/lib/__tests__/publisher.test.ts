@@ -2,12 +2,17 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 
 vi.mock("../db", () => ({
   insertEntry: vi.fn(),
+  hasEntry: vi.fn(),
   getFollowers: vi.fn(),
   getFollowerRecipients: vi.fn(),
   getAcceptedRelays: vi.fn(),
 }));
 
-import { insertEntry, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db";
+vi.mock("../hashtags", () => ({
+  resolveHashtags: vi.fn().mockResolvedValue(["T1", "T2", "T3"]),
+}));
+
+import { insertEntry, hasEntry, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db";
 import {
   buildCreateActivity,
   MAX_GUID_LENGTH,
@@ -21,6 +26,7 @@ import {
 import type { FeedEntry } from "../rss";
 
 const mockInsertEntry = vi.mocked(insertEntry);
+const mockHasEntry = vi.mocked(hasEntry);
 const mockGetFollowers = vi.mocked(getFollowers);
 const mockGetFollowerRecipients = vi.mocked(getFollowerRecipients);
 const mockGetAcceptedRelays = vi.mocked(getAcceptedRelays);
@@ -30,14 +36,33 @@ const mockCtx = {
 } as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
 const entries: FeedEntry[] = [
-  { guid: "g1", title: "First Post", link: "https://example.com/1", publishedAt: new Date("2024-01-01") },
-  { guid: "g2", title: "Second Post", link: "https://example.com/2", publishedAt: null },
-  { guid: "g3", title: "Third Post", link: "", publishedAt: null },
+  {
+    guid: "g1",
+    title: "First Post",
+    link: "https://example.com/1",
+    publishedAt: new Date("2024-01-01"),
+    feedCategories: [],
+  },
+  {
+    guid: "g2",
+    title: "Second Post",
+    link: "https://example.com/2",
+    publishedAt: null,
+    feedCategories: [],
+  },
+  { guid: "g3", title: "Third Post", link: "", publishedAt: null, feedCategories: [] },
 ];
+
+const testBotConfig = {
+  feed_url: "https://example.com/feed.xml",
+  display_name: "Test Bot",
+  summary: "A test bot for unit tests.",
+};
 
 describe("publishNewEntries", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    mockHasEntry.mockResolvedValue(false);
     mockInsertEntry.mockResolvedValue(1);
     mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
     mockGetFollowerRecipients.mockResolvedValue([
@@ -47,10 +72,8 @@ describe("publishNewEntries", () => {
   });
 
   it("publishes new entries and skips existing ones", async () => {
-    mockInsertEntry
-      .mockResolvedValueOnce(null) // g1 already exists (conflict)
-      .mockResolvedValueOnce(2)
-      .mockResolvedValueOnce(3);
+    mockHasEntry.mockResolvedValueOnce(true).mockResolvedValue(false).mockResolvedValue(false);
+    mockInsertEntry.mockResolvedValueOnce(2).mockResolvedValueOnce(3);
 
     const result = await publishNewEntries(
       mockCtx,
@@ -58,11 +81,12 @@ describe("publishNewEntries", () => {
       "testbot",
       "robot.villas",
       entries,
+      testBotConfig,
     );
 
     expect(result.skipped).toBe(1);
     expect(result.published).toBe(2);
-    expect(mockInsertEntry).toHaveBeenCalledTimes(3);
+    expect(mockInsertEntry).toHaveBeenCalledTimes(2);
     expect(mockCtx.sendActivity).toHaveBeenCalledTimes(2);
   });
 
@@ -77,6 +101,7 @@ describe("publishNewEntries", () => {
       "testbot",
       "robot.villas",
       entries,
+      testBotConfig,
     );
 
     expect(result.published).toBe(0);
@@ -86,7 +111,7 @@ describe("publishNewEntries", () => {
   });
 
   it("skips all entries when all already exist", async () => {
-    mockInsertEntry.mockResolvedValue(null);
+    mockHasEntry.mockResolvedValue(true);
 
     const result = await publishNewEntries(
       mockCtx,
@@ -94,18 +119,19 @@ describe("publishNewEntries", () => {
       "testbot",
       "robot.villas",
       entries,
+      testBotConfig,
     );
 
     expect(result.published).toBe(0);
     expect(result.skipped).toBe(3);
-    expect(mockInsertEntry).toHaveBeenCalledTimes(3);
+    expect(mockInsertEntry).not.toHaveBeenCalled();
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
   });
 
   it("publishes entries with malformed links without throwing", async () => {
     const badEntries: FeedEntry[] = [
-      { guid: "bad1", title: "Bad Link", link: "not a url", publishedAt: null },
-      { guid: "bad2", title: "Relative", link: "/relative/path", publishedAt: null },
+      { guid: "bad1", title: "Bad Link", link: "not a url", publishedAt: null, feedCategories: [] },
+      { guid: "bad2", title: "Relative", link: "/relative/path", publishedAt: null, feedCategories: [] },
     ];
     mockInsertEntry.mockResolvedValueOnce(1).mockResolvedValueOnce(2);
 
@@ -115,6 +141,7 @@ describe("publishNewEntries", () => {
       "testbot",
       "robot.villas",
       badEntries,
+      testBotConfig,
     );
 
     expect(result.published).toBe(2);
@@ -132,6 +159,7 @@ describe("publishNewEntries", () => {
       "testbot",
       "robot.villas",
       entries,
+      testBotConfig,
     );
 
     // All three entries should be marked published (error is caught, not propagated)
@@ -147,6 +175,7 @@ describe("publishNewEntries", () => {
       "testbot",
       "robot.villas",
       [],
+      testBotConfig,
     );
 
     expect(result.published).toBe(0);
@@ -185,7 +214,7 @@ describe("buildCreateActivity", () => {
     const create = buildCreateActivity(
       "testbot",
       1,
-      { title: "X", link: "javascript:alert(1)", publishedAt: null },
+      { title: "X", link: "javascript:alert(1)", publishedAt: null, hashtags: ["H1", "H2", "H3"] },
       baseUrl,
     );
     const note = await getNoteContent(create);
@@ -199,7 +228,7 @@ describe("buildCreateActivity", () => {
     const create = buildCreateActivity(
       "testbot",
       2,
-      { title: "OK", link: "https://example.com/ok", publishedAt: null },
+      { title: "OK", link: "https://example.com/ok", publishedAt: null, hashtags: ["H1", "H2", "H3"] },
       baseUrl,
     );
     const note = await getNoteContent(create);
@@ -217,6 +246,7 @@ describe("buildCreateActivity", () => {
         title: 'Say "hello" <script>',
         link: "https://example.com",
         publishedAt: null,
+        hashtags: ["H1", "H2", "H3"],
       },
       baseUrl,
     );
@@ -231,7 +261,7 @@ describe("buildCreateActivity", () => {
     const create = buildCreateActivity(
       "testbot",
       4,
-      { title: "It's a test", link: "", publishedAt: null },
+      { title: "It's a test", link: "", publishedAt: null, hashtags: ["H1", "H2", "H3"] },
       baseUrl,
     );
     const note = await getNoteContent(create);
@@ -256,6 +286,7 @@ describe("truncateToMax", () => {
 describe("publishNewEntries with length limits", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    mockHasEntry.mockResolvedValue(false);
     mockInsertEntry.mockResolvedValue(1);
     mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
     mockGetFollowerRecipients.mockResolvedValue([
@@ -269,7 +300,7 @@ describe("publishNewEntries with length limits", () => {
     const longLink = "https://example.com/" + "b".repeat(MAX_URL_LENGTH);
     const longGuid = "c".repeat(MAX_URL_LENGTH + 50);
     const entries: FeedEntry[] = [
-      { guid: longGuid, title: longTitle, link: longLink, publishedAt: null },
+      { guid: longGuid, title: longTitle, link: longLink, publishedAt: null, feedCategories: [] },
     ];
 
     await publishNewEntries(
@@ -278,10 +309,12 @@ describe("publishNewEntries with length limits", () => {
       "testbot",
       "robot.villas",
       entries,
+      testBotConfig,
     );
 
     expect(mockInsertEntry).toHaveBeenCalledTimes(1);
     const [, , guid, url, title] = mockInsertEntry.mock.calls[0]!;
+    expect(mockInsertEntry.mock.calls[0]![6]).toEqual(["T1", "T2", "T3"]);
     expect(guid).toHaveLength(MAX_GUID_LENGTH);
     expect(url).toHaveLength(MAX_URL_LENGTH);
     expect(title).toHaveLength(MAX_TITLE_LENGTH);
@@ -294,24 +327,43 @@ describe("publishNewEntries with length limits", () => {
   });
 });
 
+const h3 = ["One", "Two", "Three"] as [string, string, string];
+
 describe("formatContent", () => {
   it("includes link in anchor tag for valid https url", () => {
-    const content = formatContent({ title: "My Post", link: "https://example.com/post", publishedAt: null });
-    expect(content).toBe('<p>My Post</p><p><a href="https://example.com/post">https://example.com/post</a></p>');
+    const content = formatContent({
+      title: "My Post",
+      link: "https://example.com/post",
+      publishedAt: null,
+      hashtags: h3,
+    });
+    expect(content).toBe(
+      '<p>My Post</p><p><a href="https://example.com/post">https://example.com/post</a></p><p>#One #Two #Three</p>',
+    );
   });
 
   it("omits link for unsafe url schemes", () => {
-    const content = formatContent({ title: "My Post", link: "javascript:alert(1)", publishedAt: null });
-    expect(content).toBe("<p>My Post</p>");
+    const content = formatContent({
+      title: "My Post",
+      link: "javascript:alert(1)",
+      publishedAt: null,
+      hashtags: h3,
+    });
+    expect(content).toBe("<p>My Post</p><p>#One #Two #Three</p>");
   });
 
   it("omits link when link is empty", () => {
-    const content = formatContent({ title: "No Link", link: "", publishedAt: null });
-    expect(content).toBe("<p>No Link</p>");
+    const content = formatContent({ title: "No Link", link: "", publishedAt: null, hashtags: h3 });
+    expect(content).toBe("<p>No Link</p><p>#One #Two #Three</p>");
   });
 
   it("escapes HTML in title and link", () => {
-    const content = formatContent({ title: '<b>Test</b>', link: "https://example.com/", publishedAt: null });
+    const content = formatContent({
+      title: '<b>Test</b>',
+      link: "https://example.com/",
+      publishedAt: null,
+      hashtags: h3,
+    });
     expect(content).not.toContain("<b>");
     expect(content).toContain("&lt;b&gt;");
   });

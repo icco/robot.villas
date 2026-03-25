@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { MAX_ITEMS_PER_POLL, parseFeedXml, type FeedEntry } from "../rss";
+import { extractFeedCategories, MAX_ITEMS_PER_POLL, parseFeedXml, type FeedEntry } from "../rss";
+import type { Item } from "rss-parser";
 
 const SAMPLE_RSS = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
@@ -18,6 +19,8 @@ const SAMPLE_RSS = `<?xml version="1.0" encoding="UTF-8"?>
       <link>https://example.com/second</link>
       <guid>guid-2</guid>
       <pubDate>Tue, 02 Jan 2024 12:00:00 GMT</pubDate>
+      <category>Tech</category>
+      <category>News</category>
     </item>
   </channel>
 </rss>`;
@@ -52,9 +55,11 @@ describe("parseFeedXml", () => {
       guid: "guid-1",
       title: "First Post",
       link: "https://example.com/first",
+      feedCategories: [],
     });
     expect(entries[0].publishedAt).toBeInstanceOf(Date);
     expect(entries[1].guid).toBe("guid-2");
+    expect(entries[1].feedCategories).toEqual(["Tech", "News"]);
   });
 
   it("parses Atom feeds", async () => {
@@ -64,6 +69,7 @@ describe("parseFeedXml", () => {
       guid: "urn:uuid:atom-1",
       title: "Atom Entry",
       link: "https://example.com/atom-entry",
+      feedCategories: [],
     });
     expect(entries[0].publishedAt).toBeInstanceOf(Date);
   });
@@ -76,6 +82,15 @@ describe("parseFeedXml", () => {
     expect(entry.guid).toBe("No link or guid");
     expect(entry.link).toBe("");
     expect(entry.publishedAt).toBeNull();
+    expect(entry.feedCategories).toEqual([]);
+  });
+
+  it("collects categories via extractFeedCategories", () => {
+    const item = {
+      categories: ["A", { _: "B" }, { term: "C" }],
+      "media:keywords": "foo, bar",
+    } as Item;
+    expect(extractFeedCategories(item).sort()).toEqual(["A", "B", "C", "foo", "bar"].sort());
   });
 
   it("returns empty array for empty feed", async () => {

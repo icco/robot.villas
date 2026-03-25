@@ -34,10 +34,14 @@ export async function insertEntry(
   url: string,
   title: string,
   publishedAt: Date | null,
+  hashtags: string[],
 ): Promise<number | null> {
+  if (hashtags.length !== 3) {
+    throw new Error("insertEntry: hashtags must have exactly 3 entries");
+  }
   const rows = await db
     .insert(schema.feedEntries)
-    .values({ botUsername, guid, url, title, publishedAt })
+    .values({ botUsername, guid, url, title, publishedAt, hashtags })
     .onConflictDoUpdate({
       target: [schema.feedEntries.botUsername, schema.feedEntries.guid],
       set: { deletedAt: null },
@@ -150,13 +154,14 @@ export async function getEntryById(
   db: Db,
   botUsername: string,
   entryId: number,
-): Promise<{ id: number; url: string; title: string; publishedAt: Date | null } | null> {
+): Promise<{ id: number; url: string; title: string; publishedAt: Date | null; hashtags: string[] } | null> {
   const rows = await db
     .select({
       id: schema.feedEntries.id,
       url: schema.feedEntries.url,
       title: schema.feedEntries.title,
       publishedAt: schema.feedEntries.publishedAt,
+      hashtags: schema.feedEntries.hashtags,
     })
     .from(schema.feedEntries)
     .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId), isNull(schema.feedEntries.deletedAt)))
@@ -170,7 +175,15 @@ export async function getEntriesPage(
   limit: number,
   offset: number,
 ): Promise<
-  Array<{ id: number; url: string; title: string; publishedAt: Date | null; likeCount: number; boostCount: number }>
+  Array<{
+    id: number;
+    url: string;
+    title: string;
+    publishedAt: Date | null;
+    likeCount: number;
+    boostCount: number;
+    hashtags: string[];
+  }>
 > {
   return db
     .select({
@@ -180,6 +193,7 @@ export async function getEntriesPage(
       publishedAt: schema.feedEntries.publishedAt,
       likeCount: schema.feedEntries.likeCount,
       boostCount: schema.feedEntries.boostCount,
+      hashtags: schema.feedEntries.hashtags,
     })
     .from(schema.feedEntries)
     .where(and(eq(schema.feedEntries.botUsername, botUsername), isNull(schema.feedEntries.deletedAt)))

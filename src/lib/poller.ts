@@ -34,7 +34,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
     for (const [username, bot] of Object.entries(config.bots)) {
       try {
         const entries = await fetchFeed(bot.feed_url);
-        const result = await publishNewEntries(ctx, db, username, domain, entries);
+        const result = await publishNewEntries(ctx, db, username, domain, entries, bot);
         logger.info(
           "Fetched {entryCount} entries for {username}, published {published}, skipped {skipped}",
           { username, entryCount: entries.length, published: result.published, skipped: result.skipped },
