@@ -60,7 +60,7 @@ import {
   upsertRelay,
   type Db,
 } from "./db";
-import { coerceNoteHashtags } from "./hashtags";
+import { hashtagsForNoteBody } from "./hashtags";
 import { buildCreateActivity, formatContent, safeParseUrl } from "./publisher";
 
 export interface FederationDeps {
@@ -338,11 +338,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
                 title: e.title,
                 link: e.url,
                 publishedAt: e.publishedAt,
-                hashtags: coerceNoteHashtags(e.hashtags, {
-                  botUsername: identifier,
-                  title: e.title,
-                  link: e.url,
-                }),
+                hashtags: hashtagsForNoteBody(e.hashtags),
               },
               ctx.url,
             ),
@@ -398,11 +394,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         title: entry.title,
         link: entry.url,
         publishedAt: entry.publishedAt,
-        hashtags: coerceNoteHashtags(entry.hashtags, {
-          botUsername: identifier,
-          title: entry.title,
-          link: entry.url,
-        }),
+        hashtags: hashtagsForNoteBody(entry.hashtags),
       });
       return new Note({
         id: ctx.getObjectUri(Note, values),

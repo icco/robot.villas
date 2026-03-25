@@ -1,5 +1,10 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
-import { coerceNoteHashtags, normalizeHashtagLabel, resolveHashtags } from "../hashtags";
+import {
+  hashtagsForNoteBody,
+  mergeHashtagCandidates,
+  normalizeHashtagLabel,
+  resolveHashtags,
+} from "../hashtags";
 import type { BotConfig } from "../config";
 import type { FeedEntry } from "../rss";
 
@@ -19,35 +24,22 @@ function makeEntry(over: Partial<FeedEntry> & Pick<FeedEntry, "title">): FeedEnt
   };
 }
 
-describe("coerceNoteHashtags", () => {
-  it("derives tags from title/link when DB stored value is empty", () => {
-    const tags = coerceNoteHashtags([], {
-      botUsername: "my_bot",
-      title: "Rust 1.85 released",
-      link: "https://blog.rust-lang.org/",
-    });
-    expect(tags.length).toBeGreaterThan(0);
-    expect(tags.some((t) => /rust/i.test(t))).toBe(true);
+describe("hashtagsForNoteBody", () => {
+  it("returns empty for legacy empty storage", () => {
+    expect(hashtagsForNoteBody([])).toEqual([]);
   });
 
-  it("returns empty when nothing is stored and nothing can be derived", () => {
-    expect(
-      coerceNoteHashtags([], {
-        botUsername: "x",
-        title: "a",
-        link: "",
-      }),
-    ).toEqual([]);
+  it("normalizes and dedupes stored tags", () => {
+    expect(hashtagsForNoteBody(["#A", "a", "B"])).toEqual(["A", "B"]);
   });
+});
 
-  it("keeps stored tags when present", () => {
-    expect(
-      coerceNoteHashtags(["A", "B", "C"], {
-        botUsername: "x",
-        title: "ignored",
-        link: "",
-      }),
-    ).toEqual(["A", "B", "C"]);
+describe("mergeHashtagCandidates", () => {
+  it("merges raw strings then title words", () => {
+    const tags = mergeHashtagCandidates(["Tech"], "The quick brown", "", 3);
+    expect(tags).toContain("Tech");
+    expect(tags).toContain("The");
+    expect(tags).toContain("Quick");
   });
 });
 

@@ -4,14 +4,13 @@ import type { FeedEntry } from "./rss";
 
 const logger = getLogger(["robot-villas", "hashtags"]);
 
-export const HASHTAG_COUNT = 3;
+/** Max hashtags per note (stored and rendered). */
+export const MAX_TAGS = 3;
 const MAX_TAG_LEN = 80;
-
 const GEMINI_DEFAULT_MODEL = "gemini-2.0-flash-lite";
 
 /**
  * Normalizes a candidate label to a Mastodon-safe hashtag token (no leading #).
- * Prefers ASCII letters, digits, and underscores; drops other characters.
  */
 export function normalizeHashtagLabel(raw: string): string | null {
   let s = raw.trim().replace(/^#+/u, "");
@@ -74,135 +73,118 @@ function hostnameDerivedTag(link: string): string | null {
   }
 }
 
-export interface NoteHashtagContext {
-  botUsername: string;
-  title: string;
-  link: string;
-}
-
 /**
- * Display hashtags from DB `hashtags` plus title/link heuristics (capped at HASHTAG_COUNT).
- * Legacy rows may be [] — may stay empty if nothing can be derived.
+ * Normalize and dedupe stored DB values only (legacy [] → no tags until backfill).
  */
-export function coerceNoteHashtags(stored: string[], ctx: NoteHashtagContext): string[] {
+export function hashtagsForNoteBody(stored: string[]): string[] {
   const pool: string[] = [];
   for (const s of stored) {
     const n = normalizeHashtagLabel(s);
     if (n) {
       dedupePush(pool, n);
     }
-    if (pool.length >= HASHTAG_COUNT) {
-      return pool.slice(0, HASHTAG_COUNT);
+    if (pool.length >= MAX_TAGS) {
+      break;
     }
   }
-  for (const t of titleDerivedTags(ctx.title)) {
+  return pool;
+}
+
+/**
+ * Merge raw strings (e.g. feed categories + defaults), then title tokens, then hostname.
+ */
+export function mergeHashtagCandidates(rawStrings: string[], title: string, link: string, max = MAX_TAGS): string[] {
+  const pool: string[] = [];
+  for (const s of rawStrings) {
+    const n = normalizeHashtagLabel(s);
+    if (n) {
+      dedupePush(pool, n);
+    }
+    if (pool.length >= max) {
+      return pool.slice(0, max);
+    }
+  }
+  for (const t of titleDerivedTags(title)) {
     dedupePush(pool, t);
-    if (pool.length >= HASHTAG_COUNT) {
-      return pool.slice(0, HASHTAG_COUNT);
+    if (pool.length >= max) {
+      return pool.slice(0, max);
     }
   }
-  if (ctx.link) {
-    const h = hostnameDerivedTag(ctx.link);
+  if (link) {
+    const h = hostnameDerivedTag(link);
     if (h) {
       dedupePush(pool, h);
     }
   }
-  return pool.slice(0, HASHTAG_COUNT);
+  return pool.slice(0, max);
 }
 
-interface GeminiTagsResponse {
-  tags?: unknown;
-}
-
-function parseGeminiJson(text: string): string[] {
-  const trimmed = text.trim();
-  const data = JSON.parse(trimmed) as GeminiTagsResponse;
-  if (!Array.isArray(data.tags)) {
-    throw new Error("missing tags array");
-  }
-  return data.tags.filter((x): x is string => typeof x === "string");
-}
-
-function parseGeminiJsonLenient(text: string): string[] {
+function parseGeminiTagsJson(text: string): string[] {
+  const trim = text.trim();
+  const tryParse = (s: string): string[] => {
+    const data = JSON.parse(s) as { tags?: unknown };
+    if (!Array.isArray(data.tags)) {
+      throw new Error("missing tags array");
+    }
+    return data.tags.filter((x): x is string => typeof x === "string");
+  };
   try {
-    return parseGeminiJson(text);
+    return tryParse(trim);
   } catch {
-    const stripped = text.trim().replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/u, "");
-    return parseGeminiJson(stripped);
+    return tryParse(trim.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/u, ""));
   }
 }
 
-export interface GeminiHashtagContext {
+async function geminiSuggestMissingTags(params: {
+  need: number;
+  apiKey: string;
+  model: string;
   botUsername: string;
   bot: BotConfig;
   entry: FeedEntry;
-}
-
-function buildGeminiPrompt(need: number, ctx: GeminiHashtagContext): string {
-  const { botUsername, bot, entry } = ctx;
-  const published =
-    entry.publishedAt instanceof Date && !Number.isNaN(entry.publishedAt.getTime())
-      ? entry.publishedAt.toISOString()
-      : "unknown";
-  const categories =
-    entry.feedCategories.length > 0 ? entry.feedCategories.join(", ") : "(none)";
-  const defaults =
-    bot.default_hashtags && bot.default_hashtags.length > 0
-      ? bot.default_hashtags.join(", ")
-      : "(none)";
-
-  return [
-    "You are tagging a Fediverse post that mirrors one RSS/Atom feed item.",
-    "",
-    "=== Feed item (all available fields) ===",
-    `guid: ${entry.guid || "(empty)"}`,
-    `title: ${entry.title}`,
-    `link: ${entry.link || "(empty)"}`,
-    `published_at: ${published}`,
-    `categories / keywords from feed XML: ${categories}`,
-    "",
-    "=== Mirroring bot (this account) ===",
-    `bot_username: ${botUsername}`,
-    `source_feed_url: ${bot.feed_url}`,
-    `display_name: ${bot.display_name}`,
-    `summary: ${bot.summary}`,
-    `configured_default_hashtags: ${defaults}`,
-    "",
-    `Suggest exactly ${need} distinct short hashtags that fit this item and bot context. `,
-    "Each tag: ASCII letters, digits, underscores only (CamelCase or snake_case). ",
-    "No # character. No spaces inside a tag.",
-    "",
-    `Respond with JSON only: {"tags":["TagOne",...]} with exactly ${need} strings.`,
-  ].join("\n");
-}
-
-async function geminiFillTags(params: {
-  apiKey: string;
-  model: string;
-  need: number;
-  context: GeminiHashtagContext;
 }): Promise<string[]> {
-  const { apiKey, model, need, context } = params;
+  const { need, apiKey, model, botUsername, bot, entry } = params;
   if (need <= 0) {
     return [];
   }
 
-  const prompt = buildGeminiPrompt(need, context);
-
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
-  const body = {
-    contents: [{ role: "user", parts: [{ text: prompt }] }],
-    generationConfig: {
-      maxOutputTokens: 128,
-      temperature: 0.3,
-      responseMimeType: "application/json",
+  const context = {
+    bot_username: botUsername,
+    bot: {
+      feed_url: bot.feed_url,
+      display_name: bot.display_name,
+      summary: bot.summary,
+      default_hashtags: bot.default_hashtags ?? [],
+    },
+    entry: {
+      guid: entry.guid,
+      title: entry.title,
+      link: entry.link,
+      published_at: entry.publishedAt instanceof Date && !Number.isNaN(entry.publishedAt.getTime())
+        ? entry.publishedAt.toISOString()
+        : null,
+      categories: entry.feedCategories,
     },
   };
 
+  const prompt =
+    `Given this JSON describing a Fediverse mirroring bot and one RSS/Atom item, suggest exactly ${need} distinct short hashtags ` +
+    `(ASCII letters, digits, underscore only; CamelCase or snake_case; no # or spaces inside a tag).\n\n` +
+    `${JSON.stringify(context, null, 2)}\n\n` +
+    `Respond with JSON only: {"tags":["TagOne",...]} with exactly ${need} strings.`;
+
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
+    body: JSON.stringify({
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      generationConfig: {
+        maxOutputTokens: 128,
+        temperature: 0.3,
+        responseMimeType: "application/json",
+      },
+    }),
   });
 
   if (!res.ok) {
@@ -217,25 +199,7 @@ async function geminiFillTags(params: {
   if (!text) {
     throw new Error("empty Gemini response");
   }
-  return parseGeminiJsonLenient(text);
-}
-
-async function tryGeminiFill(params: {
-  apiKey: string;
-  model: string;
-  need: number;
-  context: GeminiHashtagContext;
-}): Promise<string[]> {
-  try {
-    const raw = await geminiFillTags(params);
-    const normalized = raw
-      .map((s) => normalizeHashtagLabel(s))
-      .filter((s): s is string => s != null);
-    return normalized.slice(0, params.need);
-  } catch (e) {
-    logger.warn("Gemini hashtag fill failed: {error}", { error: e });
-    return [];
-  }
+  return parseGeminiTagsJson(text);
 }
 
 export interface ResolveHashtagsOptions {
@@ -244,7 +208,7 @@ export interface ResolveHashtagsOptions {
 }
 
 /**
- * Up to HASHTAG_COUNT hashtag labels (cheapest sources first). May return fewer; no generic padding.
+ * Up to MAX_TAGS labels: categories + defaults + title + hostname, then optional Gemini. No generic padding.
  */
 export async function resolveHashtags(
   entry: FeedEntry,
@@ -252,61 +216,37 @@ export async function resolveHashtags(
   bot: BotConfig,
   opts: ResolveHashtagsOptions = {},
 ): Promise<string[]> {
-  const pool: string[] = [];
-
-  for (const c of entry.feedCategories) {
-    const n = normalizeHashtagLabel(c);
-    if (n) {
-      dedupePush(pool, n);
-    }
-    if (pool.length >= HASHTAG_COUNT) {
-      return pool.slice(0, HASHTAG_COUNT);
-    }
-  }
-
-  for (const d of bot.default_hashtags ?? []) {
-    const n = normalizeHashtagLabel(d);
-    if (n) {
-      dedupePush(pool, n);
-    }
-    if (pool.length >= HASHTAG_COUNT) {
-      return pool.slice(0, HASHTAG_COUNT);
-    }
-  }
-
-  for (const t of titleDerivedTags(entry.title)) {
-    dedupePush(pool, t);
-    if (pool.length >= HASHTAG_COUNT) {
-      return pool.slice(0, HASHTAG_COUNT);
-    }
-  }
-
-  if (pool.length < HASHTAG_COUNT && entry.link) {
-    const h = hostnameDerivedTag(entry.link);
-    if (h) {
-      dedupePush(pool, h);
-    }
-  }
-
-  const need = HASHTAG_COUNT - pool.length;
+  const raw = [...entry.feedCategories, ...(bot.default_hashtags ?? [])];
+  const pool = mergeHashtagCandidates(raw, entry.title, entry.link, MAX_TAGS);
+  const need = MAX_TAGS - pool.length;
   const apiKey = opts.geminiApiKey ?? process.env.GEMINI_API_KEY;
   const model = opts.geminiModel ?? process.env.GEMINI_MODEL ?? GEMINI_DEFAULT_MODEL;
 
-  if (need > 0 && apiKey) {
-    const geminiContext: GeminiHashtagContext = { botUsername, bot, entry };
-    const filled = await tryGeminiFill({
+  if (need <= 0 || !apiKey) {
+    return pool;
+  }
+
+  try {
+    const more = await geminiSuggestMissingTags({
+      need,
       apiKey,
       model,
-      need,
-      context: geminiContext,
+      botUsername,
+      bot,
+      entry,
     });
-    for (const t of filled) {
-      dedupePush(pool, t);
-      if (pool.length >= HASHTAG_COUNT) {
+    for (const t of more) {
+      const n = normalizeHashtagLabel(t);
+      if (n) {
+        dedupePush(pool, n);
+      }
+      if (pool.length >= MAX_TAGS) {
         break;
       }
     }
+  } catch (e) {
+    logger.warn("Gemini hashtag fill failed: {error}", { error: e });
   }
 
-  return pool.slice(0, HASHTAG_COUNT);
+  return pool.slice(0, MAX_TAGS);
 }

@@ -1,11 +1,6 @@
 import Parser from "rss-parser";
 
-const parser = new Parser({
-  timeout: 10_000,
-  customFields: {
-    item: ["media:keywords", ["dc:subject", "dcSubject"]],
-  },
-});
+const parser = new Parser({ timeout: 10_000 });
 
 /** Max items to process per feed per poll; limits DoS from huge feeds. */
 export const MAX_ITEMS_PER_POLL = 100;
@@ -15,7 +10,7 @@ export interface FeedEntry {
   title: string;
   link: string;
   publishedAt: Date | null;
-  /** Raw category/keyword strings from the feed item (RSS category, Atom term, dc:subject, etc.). */
+  /** Category strings from RSS `<category>` / Atom `<category term>`. */
   feedCategories: string[];
 }
 
@@ -51,21 +46,13 @@ function flattenCategoryValue(c: unknown): string[] {
   return [];
 }
 
-function splitKeywordBlob(s: string): string[] {
-  return s
-    .split(/[,;|]/)
-    .map((x) => x.trim())
-    .filter(Boolean);
-}
-
 /**
- * Collects human-readable category/tag strings from an rss-parser item.
+ * Collects category strings from `item.categories` only (RSS + Atom).
  */
 export function extractFeedCategories(item: Parser.Item): string[] {
   const raw = item as Record<string, unknown>;
-  const out: string[] = [];
-
   const cats = raw.categories;
+  const out: string[] = [];
   if (Array.isArray(cats)) {
     for (const c of cats) {
       out.push(...flattenCategoryValue(c));
@@ -73,47 +60,14 @@ export function extractFeedCategories(item: Parser.Item): string[] {
   } else if (cats != null) {
     out.push(...flattenCategoryValue(cats));
   }
-
-  const mediaKw = raw["media:keywords"];
-  if (typeof mediaKw === "string") {
-    out.push(...splitKeywordBlob(mediaKw));
-  }
-
-  const dc = raw.dcSubject;
-  if (typeof dc === "string") {
-    out.push(...splitKeywordBlob(dc));
-  } else if (Array.isArray(dc)) {
-    for (const x of dc) {
-      if (typeof x === "string") {
-        out.push(...splitKeywordBlob(x));
-      } else {
-        out.push(...flattenCategoryValue(x));
-      }
-    }
-  }
-
-  const itunes = raw.itunes as Record<string, unknown> | undefined;
-  const ik = itunes?.keywords;
-  if (Array.isArray(ik)) {
-    for (const x of ik) {
-      if (typeof x === "string") {
-        out.push(...splitKeywordBlob(x));
-      }
-    }
-  } else if (typeof ik === "string") {
-    out.push(...splitKeywordBlob(ik));
-  }
-
   return out;
 }
 
 function normalizeFeedItem(item: Parser.Item): FeedEntry {
-  // rss-parser maps RSS <guid> to item.guid and Atom <id> to item.id
   const raw = item as Record<string, unknown>;
   const guid = item.guid || (raw.id as string | undefined) || item.link || item.title || "";
   const title = item.title || "(untitled)";
   const link = item.link || "";
   const publishedAt = item.isoDate ? new Date(item.isoDate) : null;
-  const feedCategories = extractFeedCategories(item);
-  return { guid, title, link, publishedAt, feedCategories };
+  return { guid, title, link, publishedAt, feedCategories: extractFeedCategories(item) };
 }

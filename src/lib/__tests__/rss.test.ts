@@ -85,12 +85,11 @@ describe("parseFeedXml", () => {
     expect(entry.feedCategories).toEqual([]);
   });
 
-  it("collects categories via extractFeedCategories", () => {
+  it("collects only item.categories via extractFeedCategories", () => {
     const item = {
       categories: ["A", { _: "B" }, { term: "C" }],
-      "media:keywords": "foo, bar",
     } as Item;
-    expect(extractFeedCategories(item).sort()).toEqual(["A", "B", "C", "foo", "bar"].sort());
+    expect(extractFeedCategories(item).sort()).toEqual(["A", "B", "C"].sort());
   });
 
   it("returns empty array for empty feed", async () => {

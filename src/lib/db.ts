@@ -2,6 +2,7 @@ import { and, count, desc, eq, isNotNull, isNull, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
 import type postgres from "postgres";
+import { MAX_TAGS } from "./hashtags";
 import * as schema from "./schema";
 
 export type Db = ReturnType<typeof createDb>;
@@ -36,8 +37,8 @@ export async function insertEntry(
   publishedAt: Date | null,
   hashtags: string[],
 ): Promise<number | null> {
-  if (hashtags.length > 3) {
-    throw new Error("insertEntry: at most 3 hashtags");
+  if (hashtags.length > MAX_TAGS) {
+    throw new Error(`insertEntry: at most ${MAX_TAGS} hashtags`);
   }
   const rows = await db
     .insert(schema.feedEntries)
