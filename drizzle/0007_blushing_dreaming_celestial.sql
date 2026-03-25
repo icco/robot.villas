@@ -1,0 +1,1 @@
+ALTER TABLE "feed_entries" ADD COLUMN "hashtags" jsonb DEFAULT '[]'::jsonb NOT NULL;

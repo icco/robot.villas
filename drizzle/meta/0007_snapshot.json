@@ -1,5 +1,5 @@
 {
-  "id": "4a193921-6484-40aa-b45d-5af90952494b",
+  "id": "a1cf33ec-e4d1-44c0-a79a-dec6d6a8e696",
   "prevId": "69900d7c-8016-4a51-a98c-9fca63388e73",
   "version": "7",
   "dialect": "postgresql",
@@ -124,7 +124,8 @@
           "name": "hashtags",
           "type": "jsonb",
           "primaryKey": false,
-          "notNull": true
+          "notNull": true,
+          "default": "'[]'::jsonb"
         },
         "deleted_at": {
           "name": "deleted_at",
