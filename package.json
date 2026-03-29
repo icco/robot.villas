@@ -27,7 +27,7 @@
     "@js-temporal/polyfill": "^0.5.1",
     "@logtape/logtape": "^2.0.2",
     "daisyui": "^5",
-    "drizzle-orm": "^0.45.1",
+    "drizzle-orm": "^0.45.2",
     "escape-html": "^1.0.3",
     "js-yaml": "^4.1.0",
     "mastodon-widget": "^0.2.1",
