@@ -486,14 +486,14 @@
     "@eslint/core" "^1.1.1"
     levn "^0.4.1"
 
-"@fedify/fedify@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@fedify/fedify/-/fedify-2.1.2.tgz#a83d48bf34861b65084fe660ed42fd9ef7c0bf19"
-  integrity sha512-9i2dFdf/Fch6E/mlBCqlooAujujd2/Vf+7ZYlSqBkBeGtBYxicYswr842mU6lSO4DYjBAFQM83gLOxmLhqdOtg==
+"@fedify/fedify@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@fedify/fedify/-/fedify-2.1.3.tgz#5149e0bdd7d6caa4d27a3bc9f0f397b862ce3207"
+  integrity sha512-E40MJiyvct7shJxTvT8n5RqO620oeJ/Q2xp800I9O0QEekc2c6IN9HGMvEK2MDbFHhYayQbLA/zZU6oD4lOnxA==
   dependencies:
-    "@fedify/vocab" "2.1.2"
-    "@fedify/vocab-runtime" "2.1.2"
-    "@fedify/webfinger" "2.1.2"
+    "@fedify/vocab" "2.1.3"
+    "@fedify/vocab-runtime" "2.1.3"
+    "@fedify/webfinger" "2.1.3"
     "@js-temporal/polyfill" "^0.5.1"
     "@logtape/logtape" "^2.0.5"
     "@opentelemetry/api" "^1.9.0"
@@ -509,23 +509,23 @@
     url-template "^3.1.1"
     urlpattern-polyfill "^10.1.0"
 
-"@fedify/next@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@fedify/next/-/next-2.1.2.tgz#69486d35fe3de5cc0c9fc4424147197236b7b49c"
-  integrity sha512-VeRDNqet1DSPUwxRv4dUR+iSOUzQ0zD5M50EhcVv2rQkJguiTqDUvi9pyyTmwrd71O4LFCIvudm0KN7fgA7+Ww==
+"@fedify/next@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@fedify/next/-/next-2.1.3.tgz#192e24bc87e573b1e32a95df105c2cf9494086ab"
+  integrity sha512-AVqugOjw7EhZmI9NAX2f1LbY82QWFXE4cSh1IZ43a4labrrdZAydbvqUuUuhKsFwW1UKiowzlZ7f19Fva8jegQ==
 
-"@fedify/postgres@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@fedify/postgres/-/postgres-2.1.2.tgz#b9c35225ff48177d0122a39f1faf5ca52a453d22"
-  integrity sha512-XewxhDhFhLSoxiogaNjWzydIQ2BbL1qu41w4JKGdcBkuC4l6j8w4AJbINucM5LO0CIHlyG7FSSA+mC2H+CnJHQ==
+"@fedify/postgres@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@fedify/postgres/-/postgres-2.1.3.tgz#1964981ba09345d0efdf4a67a1f1528566dedfae"
+  integrity sha512-1UFaHQIZOeDK8Jc5C/a+TytaBruJom35CPG7q6NyBTyDwHWi9Iuh9WPh+a2P/mgR8+K/KGk0Ofx+2DmoxYuzxg==
   dependencies:
     "@js-temporal/polyfill" "^0.5.1"
     "@logtape/logtape" "^2.0.5"
 
-"@fedify/vocab-runtime@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@fedify/vocab-runtime/-/vocab-runtime-2.1.2.tgz#d2ef9ccfe87c65335b5c1d4bfbaeb15c8a62c56e"
-  integrity sha512-Yn7XUAWclBz+eHuGnaHtz8CxynLYJ66qnEV1QjraveLSz+tB5Z4T0jQjpY3PMkUx3EhEiGJFu8Nb5hB7a89Jcw==
+"@fedify/vocab-runtime@2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@fedify/vocab-runtime/-/vocab-runtime-2.1.3.tgz#b8c92aabd8c1ed4c51b934d60bc5e8268ac84f84"
+  integrity sha512-pfT2eiRaSMvLXIzaVtfrlYShlhzJJaPH09tHiY2FNiTXFGf7SEB4nbEIGJcFhjxnyXEVP7DmX68Qecjm8Rz/8A==
   dependencies:
     "@logtape/logtape" "^2.0.5"
     "@multiformats/base-x" "^4.0.1"
@@ -535,24 +535,24 @@
     jsonld "^9.0.0"
     pkijs "^3.3.3"
 
-"@fedify/vocab-tools@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@fedify/vocab-tools/-/vocab-tools-2.1.2.tgz#dcaea2443d2dc586e1fcda8de7d533e8305069aa"
-  integrity sha512-AeMA04m8pRnRut5mFKifKyAYrAEvEw0o0RVPCxzypZM8iEwneIQBRhZA435NHMdhIb5Zqx3aEp6J0+P9gevfWQ==
+"@fedify/vocab-tools@2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@fedify/vocab-tools/-/vocab-tools-2.1.3.tgz#207b65b69b7373d5787af98083dd3411d823b16c"
+  integrity sha512-BtQTcuoVjLfwcOPXPSJc4XHENTqM9odrkR5nmZIZe9C6oZLwpaIibelwmxxVFewFvecfBq5fGqwyRiwLfebpnw==
   dependencies:
     "@cfworker/json-schema" "^4.1.1"
     byte-encodings "^1.0.11"
     es-toolkit "^1.39.10"
     yaml "^2.8.1"
 
-"@fedify/vocab@2.1.2", "@fedify/vocab@^2.0.0":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@fedify/vocab/-/vocab-2.1.2.tgz#5c924e3c24e921296ff8112575610ff556113d25"
-  integrity sha512-gyBRp8BdXnRGNX98+5z//30xElWUP8d4kOid41wQJ9t4sqSYcyPpNr5re7r6jPQxc3ut7fpGBDmr9DJItJ7YYw==
+"@fedify/vocab@2.1.3", "@fedify/vocab@^2.0.0":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@fedify/vocab/-/vocab-2.1.3.tgz#7e3c0c8f7e9be754615c583d3893571e3ee9554e"
+  integrity sha512-VM8iCFDEQJcWPCLTPr8LGvglpT67XFSnwBcQdEUltxxxxav0Ksc+UgJ5VLM9tuWZW4J1ZEXgLdY4DvI5J3bFSw==
   dependencies:
-    "@fedify/vocab-runtime" "2.1.2"
-    "@fedify/vocab-tools" "2.1.2"
-    "@fedify/webfinger" "2.1.2"
+    "@fedify/vocab-runtime" "2.1.3"
+    "@fedify/vocab-tools" "2.1.3"
+    "@fedify/webfinger" "2.1.3"
     "@js-temporal/polyfill" "^0.5.1"
     "@logtape/logtape" "^2.0.5"
     "@multiformats/base-x" "^4.0.1"
@@ -562,12 +562,12 @@
     jsonld "^9.0.0"
     pkijs "^3.3.3"
 
-"@fedify/webfinger@2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@fedify/webfinger/-/webfinger-2.1.2.tgz#91b8b95038220c4beefa8897aa3a5a7a676ebbe0"
-  integrity sha512-7wzWrYAZaTd+NG/CqbNrgt10+EXHRGbk1B640GjP51tT0oOEALG9/WGh8PYTSg/8G7htR8GLgWQEwskWO2cmjg==
+"@fedify/webfinger@2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@fedify/webfinger/-/webfinger-2.1.3.tgz#5781844d648844d60e19cd692eb26156584e11af"
+  integrity sha512-WMkPwv0FBFwpWHy7yCBgwXGBhNwYQiqSq3kerhJFQrRs8JSrebjCzFfuDZsQqRPp49EPr1zHRH0d9x1y0JQiog==
   dependencies:
-    "@fedify/vocab-runtime" "2.1.2"
+    "@fedify/vocab-runtime" "2.1.3"
     "@logtape/logtape" "^2.0.5"
     "@opentelemetry/api" "^1.9.0"
     es-toolkit "1.43.0"

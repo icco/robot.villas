@@ -72,12 +72,17 @@ bots:
     feed_url: https://eli.thegreenplace.net/feeds/all.atom.xml
     display_name: Eli Bendersky
     summary: Articles from Eli Bendersky's website.
-    profile_photo: https://avatars.githubusercontent.com/u/383822?s=200
+    profile_photo: https://avatars.githubusercontent.com/u/1130906?s=200
   danluu:
     feed_url: https://danluu.com/atom.xml
     display_name: Dan Luu
     summary: Articles from Dan Luu.
     profile_photo: https://avatars.githubusercontent.com/u/157136?s=200
+  cassidoo:
+    feed_url: https://buttondown.email/cassidoo/rss
+    display_name: Cassidy Williams
+    summary: rendezvous with cassidoo, a newsletter by Cassidy Williams.
+    profile_photo: https://assets.buttondown.email/images/d40c16f2-c6ab-4a4f-b37f-e8e145580003.png
   julia_evans:
     feed_url: https://jvns.ca/atom.xml
     display_name: Julia Evans
@@ -92,7 +97,7 @@ bots:
     feed_url: https://notes.eatonphil.com/rss.xml
     display_name: Phil Eaton
     summary: Notes on software development.
-    profile_photo: https://avatars.githubusercontent.com/u/2424777?s=200
+    profile_photo: https://avatars.githubusercontent.com/u/3925912?s=200
   purplesyringa:
     feed_url: https://purplesyringa.moe/blog/feed.rss
     display_name: purplesyringa's blog
@@ -150,7 +155,7 @@ bots:
     feed_url: https://blog.nelhage.com/atom.xml
     display_name: Nelson Elhage
     summary: Blog posts on systems, compilers, and performance.
-    profile_photo: https://avatars.githubusercontent.com/u/220198?s=200
+    profile_photo: https://avatars.githubusercontent.com/u/16725?s=200
   simon_willison:
     feed_url: https://simonwillison.net/atom/everything/
     display_name: Simon Willison
