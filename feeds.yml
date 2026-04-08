@@ -78,6 +78,11 @@ bots:
     display_name: Dan Luu
     summary: Articles from Dan Luu.
     profile_photo: https://avatars.githubusercontent.com/u/157136?s=200
+  cassidoo:
+    feed_url: https://buttondown.email/cassidoo/rss
+    display_name: Cassidy Williams
+    summary: rendezvous with cassidoo, a newsletter by Cassidy Williams.
+    profile_photo: https://avatars.githubusercontent.com/u/1454403?s=200
   julia_evans:
     feed_url: https://jvns.ca/atom.xml
     display_name: Julia Evans
