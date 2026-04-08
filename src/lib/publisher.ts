@@ -1,6 +1,6 @@
 import { Temporal } from "@js-temporal/polyfill";
 import type { Context } from "@fedify/fedify";
-import { Create, Note, PUBLIC_COLLECTION, type Recipient } from "@fedify/vocab";
+import { Create, Hashtag, Note, PUBLIC_COLLECTION, type Recipient } from "@fedify/vocab";
 import escapeHtml from "escape-html";
 import { getLogger } from "@logtape/logtape";
 import type { BotConfig } from "./config";
@@ -43,6 +43,16 @@ export function buildCreateActivity(
   const actorId = new URL(`/users/${botUsername}`, baseUrl);
   const followersId = new URL(`/users/${botUsername}/followers`, baseUrl);
 
+  const hashtagTags = entry.hashtags
+    .filter(Boolean)
+    .map(
+      (h) =>
+        new Hashtag({
+          href: new URL(`/tags/${encodeURIComponent(h)}`, baseUrl),
+          name: `#${h}`,
+        }),
+    );
+
   const note = new Note({
     id: noteId,
     attribution: actorId,
@@ -54,6 +64,7 @@ export function buildCreateActivity(
     published: entry.publishedAt
       ? Temporal.Instant.from(entry.publishedAt.toISOString())
       : undefined,
+    tags: hashtagTags,
   });
 
   return new Create({

@@ -19,6 +19,7 @@ import {
   EmojiReact,
   Endpoints,
   Follow,
+  Hashtag,
   Image,
   Like,
   Note,
@@ -390,12 +391,22 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       if (!entry) {
         return null;
       }
+      const hashtags = hashtagsForNoteBody(entry.hashtags);
       const content = formatContent({
         title: entry.title,
         link: entry.url,
         publishedAt: entry.publishedAt,
-        hashtags: hashtagsForNoteBody(entry.hashtags),
+        hashtags,
       });
+      const hashtagTags = hashtags
+        .filter(Boolean)
+        .map(
+          (h) =>
+            new Hashtag({
+              href: new URL(`/tags/${encodeURIComponent(h)}`, ctx.url),
+              name: `#${h}`,
+            }),
+        );
       return new Note({
         id: ctx.getObjectUri(Note, values),
         attribution: ctx.getActorUri(identifier),
@@ -407,6 +418,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         published: entry.publishedAt
           ? Temporal.Instant.from(entry.publishedAt.toISOString())
           : undefined,
+        tags: hashtagTags,
       });
     },
   );
