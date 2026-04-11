@@ -122,7 +122,7 @@ async function geminiSuggestMissingTags(params: {
     `Given this JSON describing a Fediverse mirroring bot and one RSS/Atom item, suggest exactly ${need} distinct hashtags.\n\n` +
     `Rules:\n` +
     `- Each tag MUST be a single common word or well-known short compound (e.g. "Tech", "OpenSource", "Science", "Music").\n` +
-    `- Maximum 20 characters per tag. Prefer tags under 15 characters.\n` +
+    `- Maximum 30 characters per tag. Prefer tags under 15 characters.\n` +
     `- ASCII letters, digits, underscore only; CamelCase; no # or spaces inside a tag.\n` +
     `- Use broad, widely-recognized topic tags, NOT article-specific phrases.\n\n` +
     `${JSON.stringify(context, null, 2)}\n\n` +
