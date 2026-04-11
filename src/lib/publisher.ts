@@ -58,7 +58,7 @@ export function buildCreateActivity(
     attribution: actorId,
     to: PUBLIC_COLLECTION,
     cc: followersId,
-    content: formatContent(entry),
+    content: formatContent(entry, baseUrl),
     mediaType: "text/html",
     url: safeParseUrl(entry.link),
     published: entry.publishedAt
@@ -205,11 +205,22 @@ export function safeParseUrl(link: string | undefined): URL | undefined {
   }
 }
 
-export function formatContent(entry: EntryLike): string {
+export function formatContent(entry: EntryLike, baseUrl?: string | URL): string {
   const safeUrl = safeParseUrl(entry.link);
   const tags = entry.hashtags.filter(Boolean);
   const tagsHtml =
-    tags.length > 0 ? `<p>${tags.map((h) => `#${escapeHtml(h)}`).join(" ")}</p>` : "";
+    tags.length > 0
+      ? `<p>${tags
+          .map((h) => {
+            const escaped = escapeHtml(h);
+            if (baseUrl) {
+              const tagHref = new URL(`/tags/${encodeURIComponent(h)}`, baseUrl).href;
+              return `<a href="${escapeHtml(tagHref)}" class="mention hashtag" rel="tag">#<span>${escaped}</span></a>`;
+            }
+            return `#${escaped}`;
+          })
+          .join(" ")}</p>`
+      : "";
   if (safeUrl) {
     const href = safeUrl.href;
     return `<p>${escapeHtml(entry.title)}</p><p><a href="${escapeHtml(href)}">${escapeHtml(href)}</a></p>${tagsHtml}`;

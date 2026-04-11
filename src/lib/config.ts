@@ -11,7 +11,7 @@ const BotSchema = z.object({
   summary: z.string().min(1).max(MAX_SUMMARY_LENGTH),
   profile_photo: z.string().url().optional(),
   /** Up to three default hashtags (no #); merged with feed categories before optional Gemini. */
-  default_hashtags: z.array(z.string().min(1).max(80)).max(3).optional(),
+  default_hashtags: z.array(z.string().min(1).max(30)).max(3).optional(),
 });
 
 export const FeedsConfigSchema = z.object({

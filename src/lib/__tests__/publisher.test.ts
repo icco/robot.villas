@@ -221,7 +221,8 @@ describe("buildCreateActivity", () => {
     expect(note).not.toBeNull();
     expect(note!.url == null).toBe(true);
     expect(note!.content).not.toContain("javascript:");
-    expect(note!.content).not.toMatch(/<a href=/);
+    // Hashtag links are fine; only the article link should be suppressed
+    expect(note!.content).not.toMatch(/<a href="javascript:/);
   });
 
   it("uses https link in Note url and content when link is safe", async () => {
@@ -340,6 +341,21 @@ describe("formatContent", () => {
     expect(content).toBe(
       '<p>My Post</p><p><a href="https://example.com/post">https://example.com/post</a></p><p>#One #Two #Three</p>',
     );
+  });
+
+  it("renders hashtags as clickable links when baseUrl is provided", () => {
+    const content = formatContent(
+      {
+        title: "My Post",
+        link: "https://example.com/post",
+        publishedAt: null,
+        hashtags: h3,
+      },
+      "https://robot.villas",
+    );
+    expect(content).toContain('<a href="https://robot.villas/tags/One" class="mention hashtag" rel="tag">#<span>One</span></a>');
+    expect(content).toContain('<a href="https://robot.villas/tags/Two" class="mention hashtag" rel="tag">#<span>Two</span></a>');
+    expect(content).toContain('<a href="https://robot.villas/tags/Three" class="mention hashtag" rel="tag">#<span>Three</span></a>');
   });
 
   it("omits link for unsafe url schemes", () => {
