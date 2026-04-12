@@ -1,3 +1,4 @@
+import { GoogleGenAI } from "@google/genai";
 import { getLogger } from "@logtape/logtape";
 import type { BotConfig } from "./config";
 import type { FeedEntry } from "./rss";
@@ -128,29 +129,18 @@ async function geminiSuggestMissingTags(params: {
     `${JSON.stringify(context, null, 2)}\n\n` +
     `Respond with JSON only: {"tags":["Tag",...]} with exactly ${need} strings.`;
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`;
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ role: "user", parts: [{ text: prompt }] }],
-      generationConfig: {
-        maxOutputTokens: 128,
-        temperature: 0.3,
-        responseMimeType: "application/json",
-      },
-    }),
+  const ai = new GoogleGenAI({ apiKey });
+  const response = await ai.models.generateContent({
+    model,
+    contents: prompt,
+    config: {
+      maxOutputTokens: 128,
+      temperature: 0.3,
+      responseMimeType: "application/json",
+    },
   });
 
-  if (!res.ok) {
-    const errText = await res.text();
-    throw new Error(`Gemini HTTP ${res.status}: ${errText.slice(0, 200)}`);
-  }
-
-  const json = (await res.json()) as {
-    candidates?: Array<{ content?: { parts?: Array<{ text?: string }> } }>;
-  };
-  const text = json.candidates?.[0]?.content?.parts?.[0]?.text;
+  const text = response.text;
   if (!text) {
     throw new Error("empty Gemini response");
   }
