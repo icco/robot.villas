@@ -63,13 +63,18 @@ export const relayStatusEnum = pgEnum("relay_status", [
   "rejected",
 ]);
 
-export const relays = pgTable("relays", {
-  id: integer().primaryKey().generatedAlwaysAsIdentity(),
-  url: text().notNull().unique(),
-  inboxUrl: text("inbox_url"),
-  actorId: text("actor_id"),
-  status: relayStatusEnum().notNull().default("pending"),
-  followActivityId: text("follow_activity_id"),
-  createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
-  deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
-});
+export const relays = pgTable(
+  "relays",
+  {
+    id: integer().primaryKey().generatedAlwaysAsIdentity(),
+    botUsername: text("bot_username").notNull(),
+    url: text().notNull(),
+    inboxUrl: text("inbox_url"),
+    actorId: text("actor_id"),
+    status: relayStatusEnum().notNull().default("pending"),
+    followActivityId: text("follow_activity_id"),
+    createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+    deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
+  },
+  (t) => [unique().on(t.botUsername, t.url)],
+);

@@ -57,6 +57,13 @@
       "when": 1774415004052,
       "tag": "0007_blushing_dreaming_celestial",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1776282138000,
+      "tag": "0008_relay_per_bot",
+      "breakpoints": true
     }
   ]
 }

@@ -387,6 +387,7 @@ export async function getTopPosts(db: Db, limit: number): Promise<TopPost[]> {
 
 export interface RelayRow {
   id: number;
+  botUsername: string;
   url: string;
   inboxUrl: string | null;
   actorId: string | null;
@@ -395,9 +396,10 @@ export interface RelayRow {
 }
 
 export async function getAcceptedRelays(db: Db): Promise<RelayRow[]> {
-  return db
+  const rows = await db
     .select({
       id: schema.relays.id,
+      botUsername: schema.relays.botUsername,
       url: schema.relays.url,
       inboxUrl: schema.relays.inboxUrl,
       actorId: schema.relays.actorId,
@@ -406,12 +408,25 @@ export async function getAcceptedRelays(db: Db): Promise<RelayRow[]> {
     })
     .from(schema.relays)
     .where(and(eq(schema.relays.status, "accepted"), isNull(schema.relays.deletedAt)));
+  // Deduplicate by inboxUrl so we don't deliver to the same relay inbox more than once.
+  const seen = new Set<string>();
+  return rows.filter((r) => {
+    if (!r.inboxUrl) { return false; }
+    if (seen.has(r.inboxUrl)) { return false; }
+    seen.add(r.inboxUrl);
+    return true;
+  });
 }
 
-export async function getAllRelays(db: Db): Promise<RelayRow[]> {
+export async function getAllRelays(db: Db, botUsername?: string): Promise<RelayRow[]> {
+  const conditions = [isNull(schema.relays.deletedAt)];
+  if (botUsername !== undefined) {
+    conditions.push(eq(schema.relays.botUsername, botUsername));
+  }
   return db
     .select({
       id: schema.relays.id,
+      botUsername: schema.relays.botUsername,
       url: schema.relays.url,
       inboxUrl: schema.relays.inboxUrl,
       actorId: schema.relays.actorId,
@@ -419,11 +434,12 @@ export async function getAllRelays(db: Db): Promise<RelayRow[]> {
       followActivityId: schema.relays.followActivityId,
     })
     .from(schema.relays)
-    .where(isNull(schema.relays.deletedAt));
+    .where(and(...conditions));
 }
 
 export async function upsertRelay(
   db: Db,
+  botUsername: string,
   url: string,
   inboxUrl: string | null,
   actorId: string | null,
@@ -431,9 +447,9 @@ export async function upsertRelay(
 ): Promise<void> {
   await db
     .insert(schema.relays)
-    .values({ url, inboxUrl, actorId, followActivityId, status: "pending" })
+    .values({ botUsername, url, inboxUrl, actorId, followActivityId, status: "pending" })
     .onConflictDoUpdate({
-      target: schema.relays.url,
+      target: [schema.relays.botUsername, schema.relays.url],
       set: { inboxUrl, actorId, followActivityId, status: "pending" as const, deletedAt: null },
     });
 }
@@ -449,11 +465,11 @@ export async function updateRelayStatus(
     .where(eq(schema.relays.followActivityId, followActivityId));
 }
 
-export async function removeRelay(db: Db, url: string): Promise<void> {
+export async function removeRelay(db: Db, botUsername: string, url: string): Promise<void> {
   await db
     .update(schema.relays)
     .set({ deletedAt: new Date() })
-    .where(and(eq(schema.relays.url, url), isNull(schema.relays.deletedAt)));
+    .where(and(eq(schema.relays.botUsername, botUsername), eq(schema.relays.url, url), isNull(schema.relays.deletedAt)));
 }
 
 // --- Following functions ---

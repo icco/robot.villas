@@ -677,8 +677,9 @@ export async function followAccounts(
 }
 
 /**
- * Subscribes to configured relays by sending Follow activities from the first
- * bot actor. Skips relays that already have a pending or accepted subscription.
+ * Subscribes to configured relays by sending Follow activities from every
+ * bot actor. Skips individual (bot, relay) pairs that already have a
+ * pending or accepted subscription.
  */
 export async function subscribeToRelays(
   ctx: Context<void>,
@@ -690,68 +691,86 @@ export async function subscribeToRelays(
     return;
   }
 
-  const subscriberBot = Object.keys(config.bots)[0];
-  if (!subscriberBot) {
+  const botUsernames = Object.keys(config.bots);
+  if (botUsernames.length === 0) {
     return;
   }
 
   const existingRelays = await getAllRelays(db);
-  const existingUrls = new Set(existingRelays.map((r) => r.url));
+  const existingSet = new Set(existingRelays.map((r) => `${r.botUsername}:${r.url}`));
+
+  // Resolve each relay actor once (shared across all bots).
+  const signingIdentifier = botUsernames[0];
+  const resolvedRelays: Array<{ relayUrl: string; recipient: { id: URL; inboxId: URL } }> = [];
 
   for (const relayUrl of relayUrls) {
-    if (existingUrls.has(relayUrl)) {
-      logger.info("Relay {url} already tracked, skipping subscription", {
-        url: relayUrl,
-      });
-      continue;
-    }
-
     try {
-      const relayActor = await ctx.lookupObject(relayUrl);
+      const relayActor = await ctx.lookupObject(relayUrl, {
+        documentLoader: await ctx.getDocumentLoader({ identifier: signingIdentifier }),
+      });
       if (!relayActor || !("inboxId" in relayActor)) {
         logger.error("Could not resolve relay actor at {url}", { url: relayUrl });
         continue;
       }
-      const recipient = relayActor as Recipient;
+      const recipient = relayActor as { id: URL; inboxId: URL };
       if (!recipient.id || !recipient.inboxId) {
         logger.error("Relay actor at {url} has no id or inbox", { url: relayUrl });
         continue;
       }
-
-      const followId = new URL(
-        `/relay-follows/${crypto.randomUUID()}`,
-        ctx.getActorUri(subscriberBot),
-      );
-
-      const follow = new Follow({
-        id: followId,
-        actor: ctx.getActorUri(subscriberBot),
-        object: recipient.id,
-      });
-
-      await upsertRelay(
-        db,
-        relayUrl,
-        recipient.inboxId.href,
-        recipient.id.href,
-        followId.href,
-      );
-
-      await ctx.sendActivity(
-        { identifier: subscriberBot },
-        recipient,
-        follow,
-      );
-
-      logger.info(
-        "Sent Follow to relay {url} (actor: {actorId}) from {bot}",
-        { url: relayUrl, actorId: recipient.id!.href, bot: subscriberBot },
-      );
+      resolvedRelays.push({ relayUrl, recipient });
     } catch (error) {
-      logger.error("Failed to subscribe to relay {url}: {error}", {
-        url: relayUrl,
-        error,
-      });
+      logger.error("Failed to resolve relay {url}: {error}", { url: relayUrl, error });
+    }
+  }
+
+  for (const botUsername of botUsernames) {
+    for (const { relayUrl, recipient } of resolvedRelays) {
+      if (existingSet.has(`${botUsername}:${relayUrl}`)) {
+        logger.info("Bot {bot} already subscribed to relay {url}, skipping", {
+          bot: botUsername,
+          url: relayUrl,
+        });
+        continue;
+      }
+
+      try {
+        const followId = new URL(
+          `/relay-follows/${crypto.randomUUID()}`,
+          ctx.getActorUri(botUsername),
+        );
+
+        const follow = new Follow({
+          id: followId,
+          actor: ctx.getActorUri(botUsername),
+          object: recipient.id,
+        });
+
+        await upsertRelay(
+          db,
+          botUsername,
+          relayUrl,
+          recipient.inboxId.href,
+          recipient.id.href,
+          followId.href,
+        );
+
+        await ctx.sendActivity(
+          { identifier: botUsername },
+          recipient,
+          follow,
+        );
+
+        logger.info(
+          "Sent Follow to relay {url} (actor: {actorId}) from {bot}",
+          { url: relayUrl, actorId: recipient.id.href, bot: botUsername },
+        );
+      } catch (error) {
+        logger.error("Failed to subscribe to relay {url} from {bot}: {error}", {
+          url: relayUrl,
+          bot: botUsername,
+          error,
+        });
+      }
     }
   }
 }
