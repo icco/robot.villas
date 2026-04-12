@@ -1,4 +1,4 @@
-import { and, count, desc, eq, isNotNull, isNull, sql } from "drizzle-orm";
+import { and, asc, count, desc, eq, inArray, isNotNull, isNull, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
 import type postgres from "postgres";
@@ -586,4 +586,97 @@ export async function getFollowingByActivityId(
     .where(and(eq(schema.following.followActivityId, followActivityId), isNull(schema.following.deletedAt)))
     .limit(1);
   return rows[0] ?? null;
+}
+
+export async function countAcceptedFollowing(db: Db, botUsername: string): Promise<number> {
+  const rows = await db
+    .select({ value: count() })
+    .from(schema.following)
+    .where(
+      and(
+        eq(schema.following.botUsername, botUsername),
+        eq(schema.following.status, "accepted"),
+        isNull(schema.following.deletedAt),
+        isNotNull(schema.following.targetActorId),
+      ),
+    );
+  return rows[0]?.value ?? 0;
+}
+
+export async function getAcceptedFollowingActorIds(db: Db, botUsername: string): Promise<string[]> {
+  const rows = await db
+    .select({ targetActorId: schema.following.targetActorId })
+    .from(schema.following)
+    .where(
+      and(
+        eq(schema.following.botUsername, botUsername),
+        eq(schema.following.status, "accepted"),
+        isNull(schema.following.deletedAt),
+        isNotNull(schema.following.targetActorId),
+      ),
+    )
+    .orderBy(asc(schema.following.handle));
+  return rows.map((r) => r.targetActorId!);
+}
+
+export interface FollowingListItem {
+  handle: string;
+  targetActorId: string | null;
+  status: string;
+}
+
+export async function getFollowingListForBot(db: Db, botUsername: string): Promise<FollowingListItem[]> {
+  return db
+    .select({
+      handle: schema.following.handle,
+      targetActorId: schema.following.targetActorId,
+      status: schema.following.status,
+    })
+    .from(schema.following)
+    .where(and(eq(schema.following.botUsername, botUsername), isNull(schema.following.deletedAt)))
+    .orderBy(asc(schema.following.handle));
+}
+
+// --- RSS feed poll status ---
+
+export interface FeedPollStatusRow {
+  botUsername: string;
+  lastCheckedAt: Date;
+  lastHttpStatus: number | null;
+  lastError: string | null;
+}
+
+export async function upsertFeedPollStatus(
+  db: Db,
+  botUsername: string,
+  lastCheckedAt: Date,
+  lastHttpStatus: number | null,
+  lastError: string | null,
+): Promise<void> {
+  await db
+    .insert(schema.feedPollStatus)
+    .values({ botUsername, lastCheckedAt, lastHttpStatus, lastError })
+    .onConflictDoUpdate({
+      target: schema.feedPollStatus.botUsername,
+      set: { lastCheckedAt, lastHttpStatus, lastError },
+    });
+}
+
+export async function getFeedPollStatusMap(
+  db: Db,
+  botUsernames: string[],
+): Promise<Map<string, FeedPollStatusRow>> {
+  if (botUsernames.length === 0) {
+    return new Map();
+  }
+  const rows = await db
+    .select({
+      botUsername: schema.feedPollStatus.botUsername,
+      lastCheckedAt: schema.feedPollStatus.lastCheckedAt,
+      lastHttpStatus: schema.feedPollStatus.lastHttpStatus,
+      lastError: schema.feedPollStatus.lastError,
+    })
+    .from(schema.feedPollStatus)
+    .where(inArray(schema.feedPollStatus.botUsername, botUsernames));
+  return new Map(rows.map((r) => [r.botUsername, r]));
 }

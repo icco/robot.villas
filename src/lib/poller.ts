@@ -1,8 +1,8 @@
 import type { Context } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
 import type { FeedsConfig } from "./config";
-import type { Db } from "./db";
-import { fetchFeed } from "./rss";
+import { upsertFeedPollStatus, type Db } from "./db";
+import { fetchFeedWithHttpResult } from "./rss";
 import { publishNewEntries } from "./publisher";
 
 const DEFAULT_INTERVAL_MS = 5 * 60 * 1000;
@@ -32,12 +32,32 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
     logger.info("Poll cycle starting");
     const ctx = getContext();
     for (const [username, bot] of Object.entries(config.bots)) {
+      const checkedAt = new Date();
       try {
-        const entries = await fetchFeed(bot.feed_url);
-        const result = await publishNewEntries(ctx, db, username, domain, entries, bot);
+        const fetchResult = await fetchFeedWithHttpResult(bot.feed_url);
+        await upsertFeedPollStatus(
+          db,
+          username,
+          checkedAt,
+          fetchResult.httpStatus,
+          fetchResult.errorMessage,
+        );
+        if (fetchResult.errorMessage) {
+          logger.warn("Feed poll failed for {username}: {message}", {
+            username,
+            message: fetchResult.errorMessage,
+          });
+          continue;
+        }
+        const result = await publishNewEntries(ctx, db, username, domain, fetchResult.entries, bot);
         logger.info(
           "Fetched {entryCount} entries for {username}, published {published}, skipped {skipped}",
-          { username, entryCount: entries.length, published: result.published, skipped: result.skipped },
+          {
+            username,
+            entryCount: fetchResult.entries.length,
+            published: result.published,
+            skipped: result.skipped,
+          },
         );
       } catch (err) {
         logger.error("Error polling {username}: {error}", { username, error: err });

@@ -34,6 +34,7 @@ import type { BotConfig, FeedsConfig } from "./config";
 import {
   addFollower,
   countEntries,
+  countAcceptedFollowing,
   countFollowers,
   decrementBoostCount,
   decrementLikeCount,
@@ -43,6 +44,7 @@ import {
   getEntriesPage,
   getEntryById,
   getFollowerRecipients,
+  getAcceptedFollowingActorIds,
   getFollowers,
   getFollowingByActivityId,
   getKeypairs,
@@ -114,6 +116,7 @@ async function buildActor(
     inbox: ctx.getInboxUri(identifier),
     outbox: ctx.getOutboxUri(identifier),
     followers: ctx.getFollowersUri(identifier),
+    following: ctx.getFollowingUri(identifier),
     endpoints: new Endpoints({
       sharedInbox: ctx.getInboxUri(),
     }),
@@ -466,6 +469,22 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       return null;
     }
     return await countFollowers(db, identifier);
+  });
+
+  federation.setFollowingDispatcher(
+    "/users/{identifier}/following",
+    async (_ctx, identifier) => {
+      if (!botUsernames.includes(identifier)) {
+        return null;
+      }
+      const actorIds = await getAcceptedFollowingActorIds(db, identifier);
+      return { items: actorIds.map((id) => new URL(id)) };
+    },
+  ).setCounter(async (_ctx, identifier) => {
+    if (!botUsernames.includes(identifier)) {
+      return null;
+    }
+    return await countAcceptedFollowing(db, identifier);
   });
 
   // --- NodeInfo dispatcher ---

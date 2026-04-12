@@ -78,3 +78,13 @@ export const relays = pgTable(
   },
   (t) => [unique().on(t.botUsername, t.url)],
 );
+
+/** Last HTTP poll outcome per bot RSS feed (keyed by bot username). */
+export const feedPollStatus = pgTable("feed_poll_status", {
+  botUsername: text("bot_username").primaryKey(),
+  lastCheckedAt: timestamp("last_checked_at", { withTimezone: true, mode: "date" }).notNull(),
+  /** Response status when a response was received; null on network/timeout errors before headers. */
+  lastHttpStatus: integer("last_http_status"),
+  /** Null when the last poll completed successfully at HTTP + parse level. */
+  lastError: text("last_error"),
+});

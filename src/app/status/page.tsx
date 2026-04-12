@@ -7,7 +7,7 @@ import {
   MinusCircleIcon,
 } from "@heroicons/react/24/outline";
 import { getGlobals } from "@/lib/globals";
-import { getRelayStatusSummary, getFollowingStatusSummary } from "@/lib/db";
+import { getFeedPollStatusMap, getRelayStatusSummary, getFollowingStatusSummary } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
@@ -67,9 +67,11 @@ function StatusCell({ count, type }: { count: number; type: "accepted" | "pendin
 export default async function StatusPage() {
   const { config, db } = getGlobals();
   const botCount = Object.keys(config.bots).length;
-  const [relaySummary, followingSummary] = await Promise.all([
+  const botUsernames = Object.keys(config.bots).sort((a, b) => a.localeCompare(b));
+  const [relaySummary, followingSummary, feedPollMap] = await Promise.all([
     getRelayStatusSummary(db),
     getFollowingStatusSummary(db),
+    getFeedPollStatusMap(db, botUsernames),
   ]);
 
   const configuredRelays = config.relays ?? [];
@@ -179,12 +181,16 @@ export default async function StatusPage() {
                 <th>Bot</th>
                 <th className="hidden sm:table-cell">Name</th>
                 <th>Feed URL</th>
+                <th className="whitespace-nowrap">Last HTTP check</th>
+                <th className="text-right whitespace-nowrap">HTTP</th>
+                <th className="hidden md:table-cell">Last error</th>
               </tr>
             </thead>
             <tbody>
-              {Object.entries(config.bots)
-                .sort(([a], [b]) => a.localeCompare(b))
-                .map(([username, bot]) => (
+              {botUsernames.map((username) => {
+                const bot = config.bots[username];
+                const poll = feedPollMap.get(username);
+                return (
                   <tr key={username}>
                     <td>
                       <Link
@@ -205,8 +211,29 @@ export default async function StatusPage() {
                         {bot.feed_url}
                       </a>
                     </td>
+                    <td className="text-xs text-base-content/80 whitespace-nowrap">
+                      {poll
+                        ? poll.lastCheckedAt.toLocaleString("en-US", {
+                          dateStyle: "medium",
+                          timeStyle: "short",
+                        })
+                        : "—"}
+                    </td>
+                    <td className="text-right font-mono text-xs">
+                      {!poll ? (
+                        <span className="text-base-content/40">—</span>
+                      ) : poll.lastHttpStatus != null ? (
+                        <span className={poll.lastError ? "text-error" : "text-success"}>{poll.lastHttpStatus}</span>
+                      ) : (
+                        <span className="text-base-content/40">—</span>
+                      )}
+                    </td>
+                    <td className="hidden md:table-cell text-xs text-error break-all max-w-xs">
+                      {poll?.lastError ?? ""}
+                    </td>
                   </tr>
-                ))}
+                );
+              })}
             </tbody>
           </table>
         </div>

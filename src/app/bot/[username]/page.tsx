@@ -4,7 +4,12 @@ import { notFound } from "next/navigation";
 import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
 import { CpuChipIcon } from "@heroicons/react/24/solid";
 import { getGlobals } from "@/lib/globals";
-import { countEntries, countFollowers, getEntriesPage } from "@/lib/db";
+import {
+  countAcceptedFollowing,
+  countEntries,
+  countFollowers,
+  getEntriesPage,
+} from "@/lib/db";
 import { FollowButton, InteractButton } from "./mastodon-widgets";
 
 const PROFILE_PAGE_SIZE = 40;
@@ -46,9 +51,10 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
   const { page: pageParam } = await searchParams;
   const page = parseInt(pageParam || "0", 10);
   const offset = Math.max(0, page) * PROFILE_PAGE_SIZE;
-  const [total, followerCount, entries] = await Promise.all([
+  const [total, followerCount, followingCount, entries] = await Promise.all([
     countEntries(db, username),
     countFollowers(db, username),
+    countAcceptedFollowing(db, username),
     getEntriesPage(db, username, PROFILE_PAGE_SIZE, offset),
   ]);
   const hasNext = offset + entries.length < total;
@@ -102,12 +108,18 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
                   {total.toLocaleString("en-US")}
                 </div>
               </div>
-              <div className="stat px-4 py-2">
+              <Link href={`/@${username}/followers`} className="stat px-4 py-2 hover:bg-base-300/60 transition-colors">
                 <div className="stat-title text-xs">Followers</div>
                 <div className="stat-value text-lg">
                   {followerCount.toLocaleString("en-US")}
                 </div>
-              </div>
+              </Link>
+              <Link href={`/@${username}/following`} className="stat px-4 py-2 hover:bg-base-300/60 transition-colors">
+                <div className="stat-title text-xs">Following</div>
+                <div className="stat-value text-lg">
+                  {followingCount.toLocaleString("en-US")}
+                </div>
+              </Link>
             </div>
           </div>
         </div>

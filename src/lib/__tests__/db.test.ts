@@ -25,6 +25,7 @@ async function cleanTestData(db: Db) {
   await db.delete(schema.feedEntries).where(inArray(schema.feedEntries.botUsername, TEST_BOTS));
   await db.delete(schema.actorKeypairs).where(inArray(schema.actorKeypairs.botUsername, TEST_BOTS));
   await db.delete(schema.followers).where(inArray(schema.followers.botUsername, TEST_BOTS));
+  await db.delete(schema.feedPollStatus).where(inArray(schema.feedPollStatus.botUsername, TEST_BOTS));
 }
 
 describeWithDb("database", () => {

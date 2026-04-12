@@ -60,6 +60,14 @@ const nextConfig: NextConfig = {
         source: "/@:username",
         destination: "/bot/:username",
       },
+      {
+        source: "/@:username/followers",
+        destination: "/bot/:username/followers",
+      },
+      {
+        source: "/@:username/following",
+        destination: "/bot/:username/following",
+      },
     ];
   },
   async headers() {

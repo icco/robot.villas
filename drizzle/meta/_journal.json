@@ -64,6 +64,13 @@
       "when": 1776026396203,
       "tag": "0008_relay_per_bot",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1776030978129,
+      "tag": "0009_natural_gideon",
+      "breakpoints": true
     }
   ]
 }

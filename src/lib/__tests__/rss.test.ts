@@ -1,5 +1,11 @@
-import { describe, it, expect } from "vitest";
-import { extractFeedCategories, MAX_ITEMS_PER_POLL, parseFeedXml, type FeedEntry } from "../rss";
+import { afterEach, describe, expect, it } from "vitest";
+import {
+  extractFeedCategories,
+  fetchFeedWithHttpResult,
+  MAX_ITEMS_PER_POLL,
+  parseFeedXml,
+  type FeedEntry,
+} from "../rss";
 import type { Item } from "rss-parser";
 
 const SAMPLE_RSS = `<?xml version="1.0" encoding="UTF-8"?>
@@ -108,5 +114,30 @@ describe("parseFeedXml", () => {
     expect(entries).toHaveLength(MAX_ITEMS_PER_POLL);
     expect(entries[0]?.title).toBe("Item 0");
     expect(entries[MAX_ITEMS_PER_POLL - 1]?.title).toBe(`Item ${MAX_ITEMS_PER_POLL - 1}`);
+  });
+});
+
+describe("fetchFeedWithHttpResult", () => {
+  const originalFetch = globalThis.fetch;
+
+  afterEach(() => {
+    globalThis.fetch = originalFetch;
+  });
+
+  it("returns HTTP status and no entries on non-OK responses", async () => {
+    globalThis.fetch = async () => new Response("", { status: 503 });
+    const r = await fetchFeedWithHttpResult("https://example.com/feed.xml");
+    expect(r.httpStatus).toBe(503);
+    expect(r.errorMessage).toMatch(/503/);
+    expect(r.entries).toEqual([]);
+  });
+
+  it("parses entries on successful responses", async () => {
+    globalThis.fetch = async () =>
+      new Response(SAMPLE_RSS, { status: 200, headers: { "Content-Type": "application/rss+xml" } });
+    const r = await fetchFeedWithHttpResult("https://example.com/feed.xml");
+    expect(r.httpStatus).toBe(200);
+    expect(r.errorMessage).toBeNull();
+    expect(r.entries.length).toBe(2);
   });
 });
