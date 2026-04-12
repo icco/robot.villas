@@ -182,6 +182,10 @@ bots:
     feed_url: https://www.matrixsynth.com/feeds/posts/default?alt=rss
     display_name: MATRIXSYNTH
     summary: Encyclopedic coverage of synthesizers old and new.
+  monome:
+    feed_url: https://monome.org/rss.xml
+    display_name: monome
+    summary: Sound machines for the exploration of time and space—grid, norns, arc, and news.
   ars_technica:
     feed_url: https://arstechnica.com/feed/
     display_name: Ars Technica
