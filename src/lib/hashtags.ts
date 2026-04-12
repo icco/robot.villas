@@ -120,12 +120,17 @@ async function geminiSuggestMissingTags(params: {
   };
 
   const prompt =
-    `Given this JSON describing a Fediverse mirroring bot and one RSS/Atom item, suggest exactly ${need} distinct hashtags.\n\n` +
-    `Rules:\n` +
+    `You are an experienced social-media content strategist. ` +
+    `Given the JSON below describing a Fediverse mirroring bot and one RSS/Atom item, suggest exactly ${need} distinct hashtags.\n\n` +
+    `Strategy:\n` +
+    `- Analyze the entry title, categories, and bot summary to identify key themes, topics, and sentiments.\n` +
+    `- Curate tags that are varied in popularity: mix broadly trending tags (high reach) with specific niche tags (targeted engagement) so the post is discoverable by both large and focused audiences.\n` +
+    `- Align tags with the bot's identity and typical content (feed URL, display name, summary, default hashtags) to fit its overall social-media strategy.\n\n` +
+    `Format rules:\n` +
     `- Each tag MUST be a single common word or well-known short compound (e.g. "Tech", "OpenSource", "Science", "Music").\n` +
     `- Maximum 30 characters per tag. Prefer tags under 15 characters.\n` +
     `- ASCII letters, digits, underscore only; CamelCase; no # or spaces inside a tag.\n` +
-    `- Use broad, widely-recognized topic tags, NOT article-specific phrases.\n\n` +
+    `- Use recognizable topic tags, NOT article-specific phrases or proper nouns from the title.\n\n` +
     `${JSON.stringify(context, null, 2)}\n\n` +
     `Respond with JSON only: {"tags":["Tag",...]} with exactly ${need} strings.`;
 
