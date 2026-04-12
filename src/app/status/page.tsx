@@ -51,6 +51,19 @@ function StatusBadge({ status }: { status: "accepted" | "pending" | "rejected" |
   );
 }
 
+/** Renders a status badge + count, or a "none" badge when count is 0. */
+function StatusCell({ count, type }: { count: number; type: "accepted" | "pending" | "rejected" }) {
+  if (count > 0) {
+    return (
+      <>
+        <StatusBadge status={type} />
+        <span className="ml-1 text-xs">{count}</span>
+      </>
+    );
+  }
+  return <StatusBadge status="none" />;
+}
+
 export default async function StatusPage() {
   const { config, db } = getGlobals();
   const botCount = Object.keys(config.bots).length;
@@ -104,16 +117,9 @@ export default async function StatusPage() {
                       <td className="text-right">
                         <span className={total < botCount ? "text-warning font-semibold" : ""}>{total} / {botCount}</span>
                       </td>
-                      <td className="text-right">
-                        {s ? <StatusBadge status={s.accepted > 0 ? "accepted" : "none"} /> : <StatusBadge status="none" />}
-                        {s && s.accepted > 0 ? <span className="ml-1 text-xs">{s.accepted}</span> : null}
-                      </td>
-                      <td className="text-right">
-                        {s && s.pending > 0 ? <><StatusBadge status="pending" /><span className="ml-1 text-xs">{s.pending}</span></> : <StatusBadge status="none" />}
-                      </td>
-                      <td className="text-right">
-                        {s && s.rejected > 0 ? <><StatusBadge status="rejected" /><span className="ml-1 text-xs">{s.rejected}</span></> : <StatusBadge status="none" />}
-                      </td>
+                      <td className="text-right"><StatusCell count={s?.accepted ?? 0} type="accepted" /></td>
+                      <td className="text-right"><StatusCell count={s?.pending ?? 0} type="pending" /></td>
+                      <td className="text-right"><StatusCell count={s?.rejected ?? 0} type="rejected" /></td>
                     </tr>
                   );
                 })}
@@ -151,16 +157,9 @@ export default async function StatusPage() {
                       <td className="text-right">
                         <span className={total < botCount ? "text-warning font-semibold" : ""}>{total} / {botCount}</span>
                       </td>
-                      <td className="text-right">
-                        {s ? <StatusBadge status={s.accepted > 0 ? "accepted" : "none"} /> : <StatusBadge status="none" />}
-                        {s && s.accepted > 0 ? <span className="ml-1 text-xs">{s.accepted}</span> : null}
-                      </td>
-                      <td className="text-right">
-                        {s && s.pending > 0 ? <><StatusBadge status="pending" /><span className="ml-1 text-xs">{s.pending}</span></> : <StatusBadge status="none" />}
-                      </td>
-                      <td className="text-right">
-                        {s && s.rejected > 0 ? <><StatusBadge status="rejected" /><span className="ml-1 text-xs">{s.rejected}</span></> : <StatusBadge status="none" />}
-                      </td>
+                      <td className="text-right"><StatusCell count={s?.accepted ?? 0} type="accepted" /></td>
+                      <td className="text-right"><StatusCell count={s?.pending ?? 0} type="pending" /></td>
+                      <td className="text-right"><StatusCell count={s?.rejected ?? 0} type="rejected" /></td>
                     </tr>
                   );
                 })}
