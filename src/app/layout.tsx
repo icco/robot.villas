@@ -68,6 +68,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             >
               Stats
             </Link>
+            <Link
+              href="/status"
+              className="btn btn-ghost btn-sm font-display"
+            >
+              Status
+            </Link>
           </div>
         </header>
         <main className="container mx-auto flex-1 px-4 py-8 max-w-4xl">

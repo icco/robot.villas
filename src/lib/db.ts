@@ -472,6 +472,54 @@ export async function removeRelay(db: Db, botUsername: string, url: string): Pro
     .where(and(eq(schema.relays.botUsername, botUsername), eq(schema.relays.url, url), isNull(schema.relays.deletedAt)));
 }
 
+// --- Status summary functions ---
+
+export interface RelayStatusSummary {
+  url: string;
+  pending: number;
+  accepted: number;
+  rejected: number;
+}
+
+/**
+ * Returns a per-relay-URL summary of how many bots are in each subscription status.
+ */
+export async function getRelayStatusSummary(db: Db): Promise<RelayStatusSummary[]> {
+  const rows = await getAllRelays(db);
+  const map = new Map<string, RelayStatusSummary>();
+  for (const row of rows) {
+    const existing = map.get(row.url) ?? { url: row.url, pending: 0, accepted: 0, rejected: 0 };
+    if (row.status === "accepted") { existing.accepted++; }
+    else if (row.status === "rejected") { existing.rejected++; }
+    else { existing.pending++; }
+    map.set(row.url, existing);
+  }
+  return [...map.values()];
+}
+
+export interface FollowingStatusSummary {
+  handle: string;
+  pending: number;
+  accepted: number;
+  rejected: number;
+}
+
+/**
+ * Returns a per-handle summary of how many bots are in each follow status.
+ */
+export async function getFollowingStatusSummary(db: Db): Promise<FollowingStatusSummary[]> {
+  const rows = await getAllFollowing(db);
+  const map = new Map<string, FollowingStatusSummary>();
+  for (const row of rows) {
+    const existing = map.get(row.handle) ?? { handle: row.handle, pending: 0, accepted: 0, rejected: 0 };
+    if (row.status === "accepted") { existing.accepted++; }
+    else if (row.status === "rejected") { existing.rejected++; }
+    else { existing.pending++; }
+    map.set(row.handle, existing);
+  }
+  return [...map.values()];
+}
+
 // --- Following functions ---
 
 export interface FollowingRow {
