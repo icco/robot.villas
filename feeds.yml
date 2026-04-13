@@ -4,7 +4,9 @@ bots:
     display_name: Hacker News
     summary: Top stories from Hacker News
     profile_photo: https://news.ycombinator.com/apple-touch-icon.png
-    default_hashtags: [HackerNews, Tech]
+    default_hashtags:
+      - HackerNews
+      - Tech
   lobsters:
     feed_url: https://lobste.rs/rss
     display_name: Lobsters
