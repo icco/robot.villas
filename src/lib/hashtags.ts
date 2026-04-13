@@ -89,13 +89,15 @@ function parseGeminiTagsJson(text: string): string[] {
 
 async function geminiSuggestMissingTags(params: {
   need: number;
-  apiKey: string;
+  apiKey?: string;
+  project?: string;
+  location?: string;
   model: string;
   botUsername: string;
   bot: BotConfig;
   entry: FeedEntry;
 }): Promise<string[]> {
-  const { need, apiKey, model, botUsername, bot, entry } = params;
+  const { need, apiKey, project, location, model, botUsername, bot, entry } = params;
   if (need <= 0) {
     return [];
   }
@@ -134,7 +136,9 @@ async function geminiSuggestMissingTags(params: {
     `${JSON.stringify(context, null, 2)}\n\n` +
     `Respond with JSON only: {"tags":["Tag",...]} with exactly ${need} strings.`;
 
-  const ai = new GoogleGenAI({ apiKey });
+  const ai = project
+    ? new GoogleGenAI({ vertexai: true, project, location: location ?? "us-central1" })
+    : new GoogleGenAI({ apiKey: apiKey! });
   const response = await ai.models.generateContent({
     model,
     contents: prompt,
@@ -155,6 +159,8 @@ async function geminiSuggestMissingTags(params: {
 export interface ResolveHashtagsOptions {
   geminiApiKey?: string;
   geminiModel?: string;
+  geminiProject?: string;
+  geminiLocation?: string;
 }
 
 /**
@@ -171,8 +177,10 @@ export async function resolveHashtags(
   const need = MAX_TAGS - pool.length;
   const apiKey = opts.geminiApiKey ?? process.env.GEMINI_API_KEY;
   const model = opts.geminiModel ?? process.env.GEMINI_MODEL ?? GEMINI_DEFAULT_MODEL;
+  const project = opts.geminiProject ?? process.env.GEMINI_PROJECT;
+  const location = opts.geminiLocation ?? process.env.GEMINI_LOCATION;
 
-  if (need <= 0 || !apiKey) {
+  if (need <= 0 || (!apiKey && !project)) {
     return pool;
   }
 
@@ -180,6 +188,8 @@ export async function resolveHashtags(
     const more = await geminiSuggestMissingTags({
       need,
       apiKey,
+      project,
+      location,
       model,
       botUsername,
       bot,
