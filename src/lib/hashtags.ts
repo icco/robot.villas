@@ -83,11 +83,15 @@ function parseGeminiTagsJson(text: string): string[] {
   // Try raw text first.
   try {
     return tryParse(trim);
-  } catch { /* fall through */ }
+  } catch (e) {
+    logger.debug("Gemini JSON parse (raw) failed, trying next strategy: {error}", { error: e });
+  }
   // Strip markdown code fences.
   try {
     return tryParse(trim.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/u, ""));
-  } catch { /* fall through */ }
+  } catch (e) {
+    logger.debug("Gemini JSON parse (fence-stripped) failed, trying next strategy: {error}", { error: e });
+  }
   // Extract the first {...} block in case the model prepended prose.
   const match = /\{[\s\S]*\}/u.exec(trim);
   if (match) {
