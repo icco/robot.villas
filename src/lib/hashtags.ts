@@ -89,7 +89,7 @@ function parseGeminiTagsJson(text: string): string[] {
 
   for (const [label, extract] of strategies) {
     const candidate = extract();
-    if (candidate === null) continue;
+    if (candidate === null) {continue;}
     try {
       return tryParse(candidate);
     } catch (e) {
