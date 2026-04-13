@@ -80,11 +80,20 @@ function parseGeminiTagsJson(text: string): string[] {
     }
     return data.tags.filter((x): x is string => typeof x === "string");
   };
+  // Try raw text first.
   try {
     return tryParse(trim);
-  } catch {
+  } catch { /* fall through */ }
+  // Strip markdown code fences.
+  try {
     return tryParse(trim.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/u, ""));
+  } catch { /* fall through */ }
+  // Extract the first {...} block in case the model prepended prose.
+  const match = /\{[\s\S]*\}/u.exec(trim);
+  if (match) {
+    return tryParse(match[0]);
   }
+  throw new Error("no JSON object found in Gemini response");
 }
 
 async function geminiSuggestMissingTags(params: {
