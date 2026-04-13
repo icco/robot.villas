@@ -15,6 +15,7 @@ import {
   Accept,
   Announce,
   Application,
+  Create,
   Delete,
   EmojiReact,
   Endpoints,
@@ -556,6 +557,8 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         });
       }
     })
+    .on(Update, async () => {})
+    .on(Create, async () => {})
     .onError((_ctx, error) => {
       logger.error("Inbox listener error: {error}", { error });
     });
