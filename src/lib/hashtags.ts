@@ -164,7 +164,9 @@ export interface ResolveHashtagsOptions {
 }
 
 /**
- * Up to MAX_TAGS labels: feed categories + config defaults, then optional Gemini. No title/URL heuristics.
+ * Up to MAX_TAGS labels. When Gemini is available, feed categories are used only as
+ * context in the Gemini prompt (not added directly to the pool); default_hashtags always
+ * seed the pool. Without Gemini, falls back to categories + defaults as direct hashtags.
  */
 export async function resolveHashtags(
   entry: FeedEntry,
@@ -172,15 +174,24 @@ export async function resolveHashtags(
   bot: BotConfig,
   opts: ResolveHashtagsOptions = {},
 ): Promise<string[]> {
-  const raw = [...entry.feedCategories, ...(bot.default_hashtags ?? [])];
-  const pool = mergeHashtagCandidates(raw, MAX_TAGS);
-  const need = MAX_TAGS - pool.length;
   const apiKey = opts.geminiApiKey ?? process.env.GEMINI_API_KEY;
   const model = opts.geminiModel ?? process.env.GEMINI_MODEL ?? GEMINI_DEFAULT_MODEL;
   const project = opts.geminiProject ?? process.env.GEMINI_PROJECT;
   const location = opts.geminiLocation ?? process.env.GEMINI_LOCATION;
+  const hasGemini = !!(apiKey || project);
 
-  if (need <= 0 || (!apiKey && !project)) {
+  if (!hasGemini) {
+    // No Gemini: use feed categories + config defaults directly as hashtags.
+    return mergeHashtagCandidates(
+      [...entry.feedCategories, ...(bot.default_hashtags ?? [])],
+      MAX_TAGS,
+    );
+  }
+
+  // Gemini available: seed pool from default_hashtags only; categories go into the prompt.
+  const pool = mergeHashtagCandidates(bot.default_hashtags ?? [], MAX_TAGS);
+  const need = MAX_TAGS - pool.length;
+  if (need <= 0) {
     return pool;
   }
 

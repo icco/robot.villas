@@ -133,7 +133,7 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
               key={entry.id}
               className="flex items-baseline justify-between gap-4 py-2"
             >
-              <span className="flex items-baseline gap-3 min-w-0">
+              <span className="flex flex-wrap items-baseline gap-x-3 gap-y-1 min-w-0">
                 {entry.url ? (
                   <a
                     href={entry.url}
@@ -143,6 +143,15 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
                   </a>
                 ) : (
                   <span className="font-medium">{entry.title}</span>
+                )}
+                {entry.hashtags && entry.hashtags.length > 0 && (
+                  <span className="flex gap-1 flex-wrap">
+                    {entry.hashtags.map((tag) => (
+                      <span key={tag} className="text-xs text-primary/70 font-mono">
+                        #{tag}
+                      </span>
+                    ))}
+                  </span>
                 )}
               </span>
               <span className="flex items-center gap-1 shrink-0">
