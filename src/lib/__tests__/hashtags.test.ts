@@ -1,4 +1,13 @@
 import { describe, it, expect, vi, afterEach, beforeEach } from "vitest";
+
+vi.mock("@google/genai", () => ({
+  GoogleGenAI: class {
+    models = {
+      generateContent: vi.fn().mockRejectedValue(new Error("mock: no real API calls in tests")),
+    };
+  },
+}));
+
 import {
   hashtagsForNoteBody,
   mergeHashtagCandidates,

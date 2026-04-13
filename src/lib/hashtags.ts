@@ -80,22 +80,21 @@ function parseGeminiTagsJson(text: string): string[] {
     }
     return data.tags.filter((x): x is string => typeof x === "string");
   };
-  // Try raw text first.
-  try {
-    return tryParse(trim);
-  } catch (e) {
-    logger.debug("Gemini JSON parse (raw) failed, trying next strategy: {error}", { error: e });
-  }
-  // Strip markdown code fences.
-  try {
-    return tryParse(trim.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/u, ""));
-  } catch (e) {
-    logger.debug("Gemini JSON parse (fence-stripped) failed, trying next strategy: {error}", { error: e });
-  }
-  // Extract the first {...} block in case the model prepended prose.
-  const match = /\{[\s\S]*\}/u.exec(trim);
-  if (match) {
-    return tryParse(match[0]);
+
+  const strategies: Array<[string, () => string | null]> = [
+    ["raw", () => trim],
+    ["fence-stripped", () => trim.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/u, "")],
+    ["object-extract", () => /\{[\s\S]*\}/u.exec(trim)?.[0] ?? null],
+  ];
+
+  for (const [label, extract] of strategies) {
+    const candidate = extract();
+    if (candidate === null) continue;
+    try {
+      return tryParse(candidate);
+    } catch (e) {
+      logger.debug("Gemini JSON parse ({label}) failed: {error}", { label, error: e });
+    }
   }
   throw new Error("no JSON object found in Gemini response");
 }
@@ -134,20 +133,23 @@ async function geminiSuggestMissingTags(params: {
     },
   };
 
-  const prompt =
-    `You are an experienced social-media content strategist. ` +
-    `Given the JSON below describing a Fediverse mirroring bot and one RSS/Atom item, suggest exactly ${need} distinct hashtags.\n\n` +
-    `Strategy:\n` +
-    `- Analyze the entry title, categories, and bot summary to identify key themes, topics, and sentiments.\n` +
-    `- Curate tags that are varied in popularity: mix broadly trending tags (high reach) with specific niche tags (targeted engagement) so the post is discoverable by both large and focused audiences.\n` +
-    `- Align tags with the bot's identity and typical content (feed URL, display name, summary, default hashtags) to fit its overall social-media strategy.\n\n` +
-    `Format rules:\n` +
-    `- Each tag MUST be a single common word or well-known short compound (e.g. "Tech", "OpenSource", "Science", "Music").\n` +
-    `- Maximum 30 characters per tag. Prefer tags under 15 characters.\n` +
-    `- ASCII letters, digits, underscore only; CamelCase; no # or spaces inside a tag.\n` +
-    `- Use recognizable topic tags, NOT article-specific phrases or proper nouns from the title.\n\n` +
-    `${JSON.stringify(context, null, 2)}\n\n` +
-    `Respond with JSON only: {"tags":["Tag",...]} with exactly ${need} strings.`;
+  const prompt = `You are an experienced social-media content strategist. \
+Given the JSON below describing a Fediverse mirroring bot and one RSS/Atom item, suggest exactly ${need} distinct hashtags.
+
+Strategy:
+- Analyze the entry title, categories, and bot summary to identify key themes, topics, and sentiments.
+- Curate tags that are varied in popularity: mix broadly trending tags (high reach) with specific niche tags (targeted engagement) so the post is discoverable by both large and focused audiences.
+- Align tags with the bot's identity and typical content (feed URL, display name, summary, default hashtags) to fit its overall social-media strategy.
+
+Format rules:
+- Each tag MUST be a single common word or well-known short compound (e.g. "Tech", "OpenSource", "Science", "Music").
+- Maximum 30 characters per tag. Prefer tags under 15 characters.
+- ASCII letters, digits, underscore only; CamelCase; no # or spaces inside a tag.
+- Use recognizable topic tags, NOT article-specific phrases or proper nouns from the title.
+
+${JSON.stringify(context, null, 2)}
+
+Respond with JSON only: {"tags":["Tag",...]} with exactly ${need} strings.`;
 
   const ai = project
     ? new GoogleGenAI({ vertexai: true, project, location: location ?? "us-central1" })
@@ -219,18 +221,10 @@ export async function resolveHashtags(
       bot,
       entry,
     });
-    for (const t of more) {
-      const n = normalizeHashtagLabel(t);
-      if (n) {
-        dedupePush(pool, n);
-      }
-      if (pool.length >= MAX_TAGS) {
-        break;
-      }
-    }
+    return mergeHashtagCandidates([...pool, ...more], MAX_TAGS);
   } catch (e) {
     logger.warn("Gemini hashtag fill failed: {error}", { error: e });
   }
 
-  return pool.slice(0, MAX_TAGS);
+  return pool;
 }
