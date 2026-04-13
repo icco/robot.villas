@@ -1,4 +1,4 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenAI, Type } from "@google/genai";
 import { getLogger } from "@logtape/logtape";
 import type { BotConfig } from "./config";
 import type { FeedEntry } from "./rss";
@@ -72,31 +72,11 @@ export function mergeHashtagCandidates(rawStrings: string[], max = MAX_TAGS): st
 }
 
 function parseGeminiTagsJson(text: string): string[] {
-  const trim = text.trim();
-  const tryParse = (s: string): string[] => {
-    const data = JSON.parse(s) as { tags?: unknown };
-    if (!Array.isArray(data.tags)) {
-      throw new Error("missing tags array");
-    }
-    return data.tags.filter((x): x is string => typeof x === "string");
-  };
-
-  const strategies: Array<[string, () => string | null]> = [
-    ["raw", () => trim],
-    ["fence-stripped", () => trim.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/u, "")],
-    ["object-extract", () => /\{[\s\S]*\}/u.exec(trim)?.[0] ?? null],
-  ];
-
-  for (const [label, extract] of strategies) {
-    const candidate = extract();
-    if (candidate === null) {continue;}
-    try {
-      return tryParse(candidate);
-    } catch (e) {
-      logger.debug("Gemini JSON parse ({label}) failed: {error}", { label, error: e });
-    }
+  const data = JSON.parse(text) as { tags?: unknown };
+  if (!Array.isArray(data.tags)) {
+    throw new Error("missing tags array in Gemini response");
   }
-  throw new Error("no JSON object found in Gemini response");
+  return data.tags.filter((x): x is string => typeof x === "string");
 }
 
 async function geminiSuggestMissingTags(params: {
@@ -161,6 +141,16 @@ Respond with JSON only: {"tags":["Tag",...]} with exactly ${need} strings.`;
       maxOutputTokens: 128,
       temperature: 0.3,
       responseMimeType: "application/json",
+      responseSchema: {
+        type: Type.OBJECT,
+        properties: {
+          tags: {
+            type: Type.ARRAY,
+            items: { type: Type.STRING },
+          },
+        },
+        required: ["tags"],
+      },
     },
   });
 
