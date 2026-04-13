@@ -2,6 +2,7 @@ import { defineConfig } from "eslint/config";
 import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 import nextPlugin from "@next/eslint-plugin-next";
+import stylistic from "@stylistic/eslint-plugin";
 
 export default defineConfig([
   js.configs.recommended,
@@ -9,6 +10,7 @@ export default defineConfig([
   {
     plugins: {
       "@next/next": nextPlugin,
+      "@stylistic": stylistic,
     },
     rules: {
       ...nextPlugin.configs.recommended.rules,
@@ -21,6 +23,7 @@ export default defineConfig([
   {
     rules: {
       curly: "error",
+      "@stylistic/brace-style": ["error", "1tbs", { allowSingleLine: false }],
     },
   },
 ]);

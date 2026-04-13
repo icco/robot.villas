@@ -411,8 +411,12 @@ export async function getAcceptedRelays(db: Db): Promise<RelayRow[]> {
   // Deduplicate by inboxUrl so we don't deliver to the same relay inbox more than once.
   const seen = new Set<string>();
   return rows.filter((r) => {
-    if (!r.inboxUrl) { return false; }
-    if (seen.has(r.inboxUrl)) { return false; }
+    if (!r.inboxUrl) {
+      return false;
+    }
+    if (seen.has(r.inboxUrl)) {
+      return false;
+    }
     seen.add(r.inboxUrl);
     return true;
   });
@@ -489,9 +493,13 @@ export async function getRelayStatusSummary(db: Db): Promise<RelayStatusSummary[
   const map = new Map<string, RelayStatusSummary>();
   for (const row of rows) {
     const existing = map.get(row.url) ?? { url: row.url, pending: 0, accepted: 0, rejected: 0 };
-    if (row.status === "accepted") { existing.accepted++; }
-    else if (row.status === "rejected") { existing.rejected++; }
-    else { existing.pending++; }
+    if (row.status === "accepted") {
+      existing.accepted++;
+    } else if (row.status === "rejected") {
+      existing.rejected++;
+    } else {
+      existing.pending++;
+    }
     map.set(row.url, existing);
   }
   return [...map.values()];
@@ -512,9 +520,13 @@ export async function getFollowingStatusSummary(db: Db): Promise<FollowingStatus
   const map = new Map<string, FollowingStatusSummary>();
   for (const row of rows) {
     const existing = map.get(row.handle) ?? { handle: row.handle, pending: 0, accepted: 0, rejected: 0 };
-    if (row.status === "accepted") { existing.accepted++; }
-    else if (row.status === "rejected") { existing.rejected++; }
-    else { existing.pending++; }
+    if (row.status === "accepted") {
+      existing.accepted++;
+    } else if (row.status === "rejected") {
+      existing.rejected++;
+    } else {
+      existing.pending++;
+    }
     map.set(row.handle, existing);
   }
   return [...map.values()];
