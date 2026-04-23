@@ -17,8 +17,12 @@ const NAMED_ENTITIES: Record<string, string> = {
  */
 export function decodeHtmlEntities(str: string): string {
   return str.replace(/&(?:#(\d+)|#x([0-9a-fA-F]+)|([a-zA-Z]+));/gi, (match, dec, hex, name) => {
-    if (dec) return String.fromCodePoint(parseInt(dec, 10));
-    if (hex) return String.fromCodePoint(parseInt(hex, 16));
+    if (dec) {
+return String.fromCodePoint(parseInt(dec, 10));
+}
+    if (hex) {
+return String.fromCodePoint(parseInt(hex, 16));
+}
     return NAMED_ENTITIES[name.toLowerCase()] ?? match;
   });
 }
