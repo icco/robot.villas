@@ -85,6 +85,13 @@
       "when": 1776972482870,
       "tag": "0011_chilly_exiles",
       "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1745438400000,
+      "tag": "0012_reset_rejected_relays",
+      "breakpoints": true
     }
   ]
 }

@@ -460,7 +460,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         return new Follow({
           id: followUri,
           actor: ctx.getActorUri(identifier),
-          object: new URL(relayRow.actorId),
+          object: PUBLIC_COLLECTION,
         });
       }
       return null;
@@ -845,7 +845,10 @@ export async function subscribeToRelays(
         const follow = new Follow({
           id: followId,
           actor: ctx.getActorUri(botUsername),
-          object: recipient.id,
+          // ActivityRelay expects object=PUBLIC_COLLECTION (Mastodon-style subscription),
+          // not the relay actor's own URL (which triggers the LitePub peer-relay path
+          // and gets rejected because our actor URLs don't end in /relay).
+          object: PUBLIC_COLLECTION,
         });
 
         await upsertRelay(
