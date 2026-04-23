@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Roboto, Roboto_Mono } from "next/font/google";
-import { Footer } from "@icco/react-common";
+import { Footer, WebVitals } from "@icco/react-common";
 import { faviconSvg } from "@/lib/og-icon";
-import { WebVitals } from "@/components/WebVitals";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -53,7 +52,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${roboto.variable} ${robotoMono.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-base-100 font-body">
-        <WebVitals />
+        <WebVitals analyticsPath="analytics/robot-villas" />
         <header className="navbar bg-base-200 border-b border-base-300">
           <div className="container mx-auto flex items-center">
             <Link
@@ -96,7 +95,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           sourceRepo="https://github.com/icco/robot.villas"
           editUrl="https://github.com/icco/robot.villas/edit/main/feeds.yml"
           showRecurseCenter={false}
-          showPrivacyPolicy={false}
           showSocial={false}
           showRecurseRing={false}
           showXXIIVVRing={false}
