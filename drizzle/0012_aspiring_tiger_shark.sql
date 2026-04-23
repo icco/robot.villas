@@ -1,3 +1,5 @@
+-- Custom SQL migration file, put your code below! --
+
 -- Reset rejected relay subscriptions to pending so they are retried on next startup.
 -- Previously, Follow activities used object=<relay-actor-url> which ActivityRelay
 -- interprets as a LitePub peer-relay request (rejected unless sender URL ends in /relay).
