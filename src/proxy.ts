@@ -11,12 +11,11 @@ function getHandler(): (request: Request) => unknown {
   return handler;
 }
 
-export default function middleware(request: Request) {
+export default function proxy(request: Request) {
   return getHandler()(request);
 }
 
 export const config = {
-  runtime: "nodejs",
   matcher: [
     {
       source: "/:path*",

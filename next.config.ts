@@ -51,8 +51,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   serverExternalPackages: [
-    "rss-parser",
+    "jsdom",
     "postgres",
+    "rss-parser",
   ],
   async rewrites() {
     return [
