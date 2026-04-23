@@ -305,22 +305,15 @@ export async function countAllEntries(db: Db): Promise<number> {
 }
 
 export async function getAllTags(db: Db): Promise<Array<{ tag: string; postCount: number }>> {
-  const rows = await db
-    .select({ hashtags: schema.feedEntries.hashtags })
-    .from(schema.feedEntries)
-    .where(isNull(schema.feedEntries.deletedAt));
-
-  const counts = new Map<string, number>();
-  for (const { hashtags } of rows) {
-    for (const tag of hashtags) {
-      const key = tag.toLowerCase();
-      counts.set(key, (counts.get(key) ?? 0) + 1);
-    }
-  }
-
-  return [...counts.entries()]
-    .map(([tag, postCount]) => ({ tag, postCount }))
-    .sort((a, b) => b.postCount - a.postCount);
+  const result = await db.execute<{ tag: string; post_count: number }>(sql`
+    SELECT lower(t.v) AS tag, count(*)::int AS post_count
+    FROM ${schema.feedEntries},
+         jsonb_array_elements_text(${schema.feedEntries.hashtags}) AS t(v)
+    WHERE ${schema.feedEntries.deletedAt} IS NULL
+    GROUP BY lower(t.v)
+    ORDER BY count(*) DESC
+  `);
+  return result.map((r) => ({ tag: r.tag, postCount: r.post_count }));
 }
 
 /**

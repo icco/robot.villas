@@ -78,6 +78,13 @@
       "when": 1776969518283,
       "tag": "0010_delete_posts_without_dates",
       "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1776972482870,
+      "tag": "0011_chilly_exiles",
+      "breakpoints": true
     }
   ]
 }

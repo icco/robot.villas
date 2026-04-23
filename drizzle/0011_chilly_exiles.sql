@@ -1,0 +1,2 @@
+CREATE INDEX "feed_entries_hashtags_gin_idx" ON "feed_entries" USING gin ("hashtags") WHERE "feed_entries"."deleted_at" IS NULL;--> statement-breakpoint
+CREATE INDEX "feed_entries_published_at_idx" ON "feed_entries" USING btree ("published_at") WHERE "feed_entries"."deleted_at" IS NULL;

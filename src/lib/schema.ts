@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { integer, jsonb, pgEnum, pgTable, text, timestamp, unique } from "drizzle-orm/pg-core";
+import { index, integer, jsonb, pgEnum, pgTable, text, timestamp, unique } from "drizzle-orm/pg-core";
 
 export const feedEntries = pgTable(
   "feed_entries",
@@ -17,7 +17,13 @@ export const feedEntries = pgTable(
     hashtags: jsonb("hashtags").$type<string[]>().notNull().default(sql`'[]'::jsonb`),
     deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
   },
-  (t) => [unique().on(t.botUsername, t.guid)],
+  (t) => [
+    unique().on(t.botUsername, t.guid),
+    // GIN index for fast JSONB array element lookups (tag filter + tag aggregation)
+    index("feed_entries_hashtags_gin_idx").using("gin", t.hashtags).where(sql`${t.deletedAt} IS NULL`),
+    // Partial index for chronological pagination across all non-deleted posts
+    index("feed_entries_published_at_idx").on(t.publishedAt).where(sql`${t.deletedAt} IS NULL`),
+  ],
 );
 
 export const actorKeypairs = pgTable("actor_keypairs", {
