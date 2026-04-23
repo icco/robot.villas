@@ -4,24 +4,12 @@ import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outli
 import { InteractButton } from "@/app/bot/[username]/mastodon-widgets";
 
 type Props = {
-  /** Fedify object URI for the Note (e.g. https://domain/users/bot/posts/42) */
   activityUri: string;
   boostCount: number;
   likeCount: number;
-  size?: "sm" | "md";
 };
 
-/**
- * Boost / favorite controls for feed entries, same on profile, all-posts, tags, and stats.
- * Opens the instance picker and deep-links to authorize against this post’s ActivityPub URI.
- */
-export function PostInteractMetrics({
-  activityUri,
-  boostCount,
-  likeCount,
-  size = "md",
-}: Props) {
-  const icon = size === "sm" ? "w-3.5 h-3.5" : "w-4 h-4";
+export function EntryInteractButtons({ activityUri, boostCount, likeCount }: Props) {
   return (
     <>
       <InteractButton uri={activityUri}>
@@ -30,7 +18,7 @@ export function PostInteractMetrics({
           title="Boost"
           className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info"
         >
-          <ArrowPathRoundedSquareIcon className={icon} /> {boostCount}
+          <ArrowPathRoundedSquareIcon className="h-4 w-4" /> {boostCount}
         </button>
       </InteractButton>
       <InteractButton uri={activityUri}>
@@ -39,7 +27,7 @@ export function PostInteractMetrics({
           title="Favorite"
           className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error"
         >
-          <HeartIcon className={icon} /> {likeCount}
+          <HeartIcon className="h-4 w-4" /> {likeCount}
         </button>
       </InteractButton>
     </>

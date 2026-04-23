@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PostList, PostListItem } from "@/components/post-list";
-import { PostInteractMetrics } from "@/components/post-interact-metrics";
+import { PostFeed } from "@/components/feed-entries";
 import { getGlobals } from "@/lib/globals";
 import { getGlobalStats, getPerBotStats, getTopPosts } from "@/lib/db";
 
@@ -129,25 +128,7 @@ export default async function StatsPage() {
           <h2 className="text-xl font-display font-bold mt-8 mb-4">
             Top Posts
           </h2>
-          <PostList>
-            {filteredTopPosts.map((post) => (
-              <PostListItem
-                key={`${post.botUsername}-${post.id}`}
-                showBotLink={{ username: post.botUsername }}
-                title={post.title}
-                href={post.url}
-                publishedAt={post.publishedAt}
-                metrics={
-                  <PostInteractMetrics
-                    activityUri={`https://${domain}/users/${post.botUsername}/posts/${post.id}`}
-                    boostCount={post.boostCount}
-                    likeCount={post.likeCount}
-                    size="sm"
-                  />
-                }
-              />
-            ))}
-          </PostList>
+          <PostFeed domain={domain} entries={filteredTopPosts} />
         </>
       )}
     </>

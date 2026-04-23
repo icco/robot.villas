@@ -2,8 +2,7 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PostList, PostListItem } from "@/components/post-list";
-import { PostInteractMetrics } from "@/components/post-interact-metrics";
+import { PostFeed } from "@/components/feed-entries";
 import { getGlobals } from "@/lib/globals";
 import { getAllEntries, countAllEntries } from "@/lib/db";
 
@@ -45,25 +44,7 @@ export default async function PostsPage({ searchParams }: Props) {
         </p>
       </div>
 
-      <PostList>
-        {entries.map((entry) => (
-          <PostListItem
-            key={entry.id}
-            showBotLink={{ username: entry.botUsername }}
-            title={entry.title}
-            href={entry.url}
-            hashtags={entry.hashtags}
-            publishedAt={entry.publishedAt}
-            metrics={
-              <PostInteractMetrics
-                activityUri={`https://${domain}/users/${entry.botUsername}/posts/${entry.id}`}
-                boostCount={entry.boostCount}
-                likeCount={entry.likeCount}
-              />
-            }
-          />
-        ))}
-      </PostList>
+      <PostFeed domain={domain} entries={entries} />
 
       {(hasPrev || hasNext) && (
         <div className="join mt-6">

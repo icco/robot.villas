@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CpuChipIcon } from "@heroicons/react/24/solid";
-import { PostList, PostListItem } from "@/components/post-list";
-import { PostInteractMetrics } from "@/components/post-interact-metrics";
+import { PostFeed } from "@/components/feed-entries";
 import { getGlobals } from "@/lib/globals";
 import {
   countAcceptedFollowing,
@@ -127,29 +126,12 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
       </div>
 
       <h2 className="text-xl font-display font-bold mb-3">Posts</h2>
-      <PostList>
-        {entries.length > 0 ? (
-          entries.map((entry) => (
-            <PostListItem
-              key={entry.id}
-              title={entry.title}
-              href={entry.url}
-              hashtags={entry.hashtags ?? []}
-              hashtagClassName="text-xs text-primary/70 font-mono hover:text-primary"
-              publishedAt={entry.publishedAt}
-              metrics={
-                <PostInteractMetrics
-                  activityUri={`https://${domain}/users/${username}/posts/${entry.id}`}
-                  boostCount={entry.boostCount}
-                  likeCount={entry.likeCount}
-                />
-              }
-            />
-          ))
-        ) : (
-          <li className="py-4 text-base-content/50 italic">No posts yet.</li>
-        )}
-      </PostList>
+      <PostFeed
+        domain={domain}
+        entries={entries}
+        emptyMessage="No posts yet."
+        showBotHandle={false}
+      />
 
       {(hasPrev || hasNext) && (
         <div className="join mt-6">

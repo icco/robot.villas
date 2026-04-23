@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { PostList, PostListItem } from "@/components/post-list";
-import { PostInteractMetrics } from "@/components/post-interact-metrics";
+import { PostFeed } from "@/components/feed-entries";
 import { getGlobals } from "@/lib/globals";
 import { countEntriesByTag, getEntriesByTag } from "@/lib/db";
 
@@ -62,26 +61,11 @@ export default async function TagPage({ params, searchParams }: Props) {
         </p>
       </div>
 
-      <PostList>
-        {entries.map((entry) => (
-          <PostListItem
-            key={entry.id}
-            showBotLink={{ username: entry.botUsername }}
-            title={entry.title}
-            href={entry.url}
-            hashtags={entry.hashtags}
-            tagHighlight={displayTag}
-            publishedAt={entry.publishedAt}
-            metrics={
-              <PostInteractMetrics
-                activityUri={`https://${domain}/users/${entry.botUsername}/posts/${entry.id}`}
-                boostCount={entry.boostCount}
-                likeCount={entry.likeCount}
-              />
-            }
-          />
-        ))}
-      </PostList>
+      <PostFeed
+        domain={domain}
+        entries={entries}
+        tagHighlight={displayTag}
+      />
 
       {(hasPrev || hasNext) && (
         <div className="join mt-6">
