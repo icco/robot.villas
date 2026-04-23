@@ -378,7 +378,7 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.3.tgz#c2b9d2e374ee62c586d3adbea87199b1d7a7a6ba"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
-"@icco/react-common@2026.423.1":
+"@icco/react-common@^2026.423.1":
   version "2026.423.1"
   resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.423.1/4c569a8ea269dc5ea03e664dd26c89a519bb15e5#4c569a8ea269dc5ea03e664dd26c89a519bb15e5"
   integrity sha512-8yZ+7vpYBxtyDbY+chZJ6IP8SSfXbI0JuNvHHjpeOOP34DCGSJ5naKI2EnTjmZpi2iIHEBH1Qc1jKpuF5Ct5ew==
