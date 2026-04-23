@@ -2,6 +2,34 @@ import Parser from "rss-parser";
 
 const parser = new Parser({ timeout: 10_000 });
 
+/**
+ * Decodes HTML entities from a string. Needed because rss-parser returns raw
+ * CDATA content without decoding HTML entities (e.g. &#8217; stays as-is
+ * instead of becoming the curly apostrophe ʼ). Without this, escapeHtml()
+ * double-encodes the ampersand, causing Mastodon to display raw entity strings.
+ */
+export function decodeHtmlEntities(str: string): string {
+  return str
+    // Named entities (process before numeric so &amp;#8217; → &#8217; → ')
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&nbsp;/g, "\u00A0")
+    .replace(/&ndash;/g, "\u2013")
+    .replace(/&mdash;/g, "\u2014")
+    .replace(/&lsquo;/g, "\u2018")
+    .replace(/&rsquo;/g, "\u2019")
+    .replace(/&ldquo;/g, "\u201C")
+    .replace(/&rdquo;/g, "\u201D")
+    .replace(/&hellip;/g, "\u2026")
+    // Decimal numeric character references (e.g. &#8217; → ')
+    .replace(/&#(\d+);/g, (_, dec: string) => String.fromCodePoint(parseInt(dec, 10)))
+    // Hex numeric character references (e.g. &#x2019; → ')
+    .replace(/&#x([0-9a-fA-F]+);/gi, (_, hex: string) => String.fromCodePoint(parseInt(hex, 16)));
+}
+
 const FEED_FETCH_TIMEOUT_MS = 10_000;
 
 /** Max items to process per feed per poll; limits DoS from huge feeds. */
@@ -107,7 +135,7 @@ export function extractFeedCategories(item: Parser.Item): string[] {
 function normalizeFeedItem(item: Parser.Item): FeedEntry {
   const raw = item as Record<string, unknown>;
   const guid = item.guid || (raw.id as string | undefined) || item.link || item.title || "";
-  const title = item.title || "(untitled)";
+  const title = decodeHtmlEntities(item.title || "(untitled)");
   const link = item.link || "";
   const publishedAt = item.isoDate ? new Date(item.isoDate) : null;
   return { guid, title, link, publishedAt, feedCategories: extractFeedCategories(item) };

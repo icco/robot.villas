@@ -1,5 +1,6 @@
 import { afterEach, describe, expect, it } from "vitest";
 import {
+  decodeHtmlEntities,
   extractFeedCategories,
   fetchFeedWithHttpResult,
   MAX_ITEMS_PER_POLL,
@@ -114,6 +115,55 @@ describe("parseFeedXml", () => {
     expect(entries).toHaveLength(MAX_ITEMS_PER_POLL);
     expect(entries[0]?.title).toBe("Item 0");
     expect(entries[MAX_ITEMS_PER_POLL - 1]?.title).toBe(`Item ${MAX_ITEMS_PER_POLL - 1}`);
+  });
+
+  it("decodes HTML entities in CDATA titles", async () => {
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Test</title>
+    <item>
+      <title><![CDATA[Ikea&#8217;s new inflatable chair doesn&#8217;t look like an inflatable chair]]></title>
+      <link>https://example.com/ikea</link>
+      <guid>ikea-1</guid>
+    </item>
+  </channel>
+</rss>`;
+    const entries = await parseFeedXml(xml);
+    expect(entries).toHaveLength(1);
+    expect(entries[0]?.title).toBe("Ikea\u2019s new inflatable chair doesn\u2019t look like an inflatable chair");
+  });
+});
+
+describe("decodeHtmlEntities", () => {
+  it("decodes decimal numeric character references", () => {
+    expect(decodeHtmlEntities("Ikea&#8217;s")).toBe("Ikea\u2019s");
+    expect(decodeHtmlEntities("&#169; 2024")).toBe("\u00A9 2024");
+  });
+
+  it("decodes hex numeric character references", () => {
+    expect(decodeHtmlEntities("&#x2019;s")).toBe("\u2019s");
+    expect(decodeHtmlEntities("&#X2019;s")).toBe("\u2019s");
+  });
+
+  it("decodes common named entities", () => {
+    expect(decodeHtmlEntities("AT&amp;T")).toBe("AT&T");
+    expect(decodeHtmlEntities("&lt;b&gt;")).toBe("<b>");
+    expect(decodeHtmlEntities("&quot;quoted&quot;")).toBe('"quoted"');
+    expect(decodeHtmlEntities("&apos;")).toBe("'");
+    expect(decodeHtmlEntities("foo&nbsp;bar")).toBe("foo\u00A0bar");
+    expect(decodeHtmlEntities("&mdash;")).toBe("\u2014");
+    expect(decodeHtmlEntities("&hellip;")).toBe("\u2026");
+  });
+
+  it("decodes double-encoded ampersand before numeric reference", () => {
+    // &amp;#8217; → &#8217; → '
+    expect(decodeHtmlEntities("&amp;#8217;")).toBe("\u2019");
+  });
+
+  it("passes through plain text unchanged", () => {
+    expect(decodeHtmlEntities("Hello world")).toBe("Hello world");
+    expect(decodeHtmlEntities("")).toBe("");
   });
 });
 
