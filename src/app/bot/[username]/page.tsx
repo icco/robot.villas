@@ -135,6 +135,7 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
               title={entry.title}
               href={entry.url}
               hashtags={entry.hashtags ?? []}
+              hashtagClassName="text-xs text-primary/70 font-mono hover:text-primary"
               publishedAt={entry.publishedAt}
               metrics={
                 <>

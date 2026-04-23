@@ -94,6 +94,9 @@ type PostListItemProps = {
   href?: string | null;
   hashtags?: string[];
   tagHighlight?: string;
+  /** Overrides for {@link PostHashtags} (e.g. bot profile vs /posts) */
+  hashtagClassName?: string;
+  highlightHashtagClassName?: string;
   publishedAt: Date | null;
   /** Boost/favorite (static spans or client InteractButton wrapper) + optional extras */
   metrics: ReactNode;
@@ -102,7 +105,9 @@ type PostListItemProps = {
 
 /**
  * One row: primary column (optional @bot, title, hashtags) and trailing
- * (metrics + date) aligned like /posts and /tags.
+ * (metrics + date). Layout matches the bot profile and /posts; static counts
+ * use {@link ReadonlyEngagement} like /posts; pass custom `metrics` for
+ * profile InteractButton actions.
  */
 export function PostListItem({
   showBotLink,
@@ -110,6 +115,8 @@ export function PostListItem({
   href,
   hashtags = [],
   tagHighlight,
+  hashtagClassName,
+  highlightHashtagClassName,
   publishedAt,
   metrics,
   extraLeading,
@@ -134,7 +141,12 @@ export function PostListItem({
           <span className="font-medium">{title}</span>
         )}
         {hashtags.length > 0 && (
-          <PostHashtags tags={hashtags} highlightTag={tagHighlight} />
+          <PostHashtags
+            tags={hashtags}
+            highlightTag={tagHighlight}
+            tagClassName={hashtagClassName}
+            highlightClassName={highlightHashtagClassName}
+          />
         )}
       </span>
       <span className="flex items-center gap-1 shrink-0">
