@@ -2,8 +2,11 @@ FROM node:25-slim AS builder
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+COPY package.json yarn.lock .npmrc ./
+RUN --mount=type=secret,id=npm_token \
+    echo "//npm.pkg.github.com/:_authToken=$(cat /run/secrets/npm_token)" >> .npmrc && \
+    yarn install --frozen-lockfile && \
+    rm -f .npmrc
 
 COPY . .
 

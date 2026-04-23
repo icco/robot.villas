@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      packages: read
     steps:
       - uses: actions/checkout@v6
         with:
@@ -20,6 +21,7 @@ jobs:
           node-version-file: .nvmrc
           cache: yarn
       - uses: mikefarah/yq@master
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
       - run: yarn install --frozen-lockfile
       - run: yarn lint
       - run: yarn fmt:yaml
@@ -30,6 +32,9 @@ jobs:
           file_pattern: src/**/* *.yml .github/*.yml
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
     services:
       postgres:
         image: postgres:16
@@ -49,6 +54,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: yarn
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
       - run: yarn install --frozen-lockfile
       - run: yarn build
       - run: yarn test
