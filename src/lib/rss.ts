@@ -2,32 +2,25 @@ import Parser from "rss-parser";
 
 const parser = new Parser({ timeout: 10_000 });
 
+const NAMED_ENTITIES: Record<string, string> = {
+  amp: "&", lt: "<", gt: ">", quot: '"', apos: "'",
+  nbsp: "\u00A0", ndash: "\u2013", mdash: "\u2014",
+  lsquo: "\u2018", rsquo: "\u2019", ldquo: "\u201C", rdquo: "\u201D",
+  hellip: "\u2026",
+};
+
 /**
- * Decodes HTML entities from a string. Needed because rss-parser returns raw
- * CDATA content without decoding HTML entities (e.g. &#8217; stays as-is
- * instead of becoming the curly apostrophe ʼ). Without this, escapeHtml()
- * double-encodes the ampersand, causing Mastodon to display raw entity strings.
+ * Decodes HTML entities from a string in a single pass. Needed because
+ * rss-parser returns raw CDATA content without decoding HTML entities
+ * (e.g. &#8217; stays as-is). Without this, escapeHtml() double-encodes
+ * the ampersand, causing Mastodon to display raw entity strings like &#8217;.
  */
 export function decodeHtmlEntities(str: string): string {
-  return str
-    // Named entities (process before numeric so &amp;#8217; → &#8217; → ')
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .replace(/&nbsp;/g, "\u00A0")
-    .replace(/&ndash;/g, "\u2013")
-    .replace(/&mdash;/g, "\u2014")
-    .replace(/&lsquo;/g, "\u2018")
-    .replace(/&rsquo;/g, "\u2019")
-    .replace(/&ldquo;/g, "\u201C")
-    .replace(/&rdquo;/g, "\u201D")
-    .replace(/&hellip;/g, "\u2026")
-    // Decimal numeric character references (e.g. &#8217; → ')
-    .replace(/&#(\d+);/g, (_, dec: string) => String.fromCodePoint(parseInt(dec, 10)))
-    // Hex numeric character references (e.g. &#x2019; → ')
-    .replace(/&#x([0-9a-fA-F]+);/gi, (_, hex: string) => String.fromCodePoint(parseInt(hex, 16)));
+  return str.replace(/&(?:#(\d+)|#x([0-9a-fA-F]+)|([a-zA-Z]+));/gi, (match, dec, hex, name) => {
+    if (dec) return String.fromCodePoint(parseInt(dec, 10));
+    if (hex) return String.fromCodePoint(parseInt(hex, 16));
+    return NAMED_ENTITIES[name.toLowerCase()] ?? match;
+  });
 }
 
 /** Replaces Unicode typographic characters with plain ASCII equivalents. */

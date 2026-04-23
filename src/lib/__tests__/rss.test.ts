@@ -157,9 +157,10 @@ describe("decodeHtmlEntities", () => {
     expect(decodeHtmlEntities("&hellip;")).toBe("\u2026");
   });
 
-  it("decodes double-encoded ampersand before numeric reference", () => {
-    // &amp;#8217; → &#8217; → '
-    expect(decodeHtmlEntities("&amp;#8217;")).toBe("\u2019");
+  it("decodes &amp; as a single pass (does not double-decode)", () => {
+    // Single pass: &amp;#8217; → &#8217; (the &amp; is decoded to &, but the
+    // resulting &#8217; is not processed again in the same call)
+    expect(decodeHtmlEntities("&amp;#8217;")).toBe("&#8217;");
   });
 
   it("passes through plain text unchanged", () => {
