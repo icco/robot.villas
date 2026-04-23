@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
+import {
+  PostList,
+  PostListItem,
+  ReadonlyEngagement,
+} from "@/components/post-list";
 import { getGlobals } from "@/lib/globals";
 import { getGlobalStats, getPerBotStats, getTopPosts } from "@/lib/db";
 
@@ -128,52 +132,24 @@ export default async function StatsPage() {
           <h2 className="text-xl font-display font-bold mt-8 mb-4">
             Top Posts
           </h2>
-          <ul className="divide-y divide-base-300">
-            {filteredTopPosts.map((post, i) => (
-              <li
-                key={i}
-                className="flex items-baseline justify-between gap-4 py-2"
-              >
-                <span className="min-w-0">
-                  <a
-                    href={post.url}
-                    className="link link-hover font-medium"
-                  >
-                    {post.title}
-                  </a>
-                  <span className="text-xs text-base-content/50 ml-1">
-                    via{" "}
-                    <Link
-                      href={`/@${post.botUsername}`}
-                      className="link link-hover font-mono"
-                    >
-                      @{post.botUsername}
-                    </Link>
-                  </span>
-                  <span className="flex items-center gap-2 text-xs text-base-content/50">
-                    {post.boostCount > 0 && (
-                      <span title="Boosts" className="inline-flex items-center gap-0.5"><ArrowPathRoundedSquareIcon className="w-3.5 h-3.5" /> {post.boostCount}</span>
-                    )}
-                    {post.likeCount > 0 && (
-                      <span title="Likes" className="inline-flex items-center gap-0.5"><HeartIcon className="w-3.5 h-3.5" /> {post.likeCount}</span>
-                    )}
-                  </span>
-                </span>
-                {post.publishedAt && (
-                  <time
-                    dateTime={post.publishedAt.toISOString()}
-                    className="text-xs text-base-content/50 whitespace-nowrap"
-                  >
-                    {post.publishedAt.toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    })}
-                  </time>
-                )}
-              </li>
+          <PostList>
+            {filteredTopPosts.map((post) => (
+              <PostListItem
+                key={`${post.botUsername}-${post.url}`}
+                showBotLink={{ username: post.botUsername }}
+                title={post.title}
+                href={post.url}
+                publishedAt={post.publishedAt}
+                metrics={
+                  <ReadonlyEngagement
+                    boostCount={post.boostCount}
+                    likeCount={post.likeCount}
+                    size="sm"
+                  />
+                }
+              />
             ))}
-          </ul>
+          </PostList>
         </>
       )}
     </>

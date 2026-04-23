@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
 import { CpuChipIcon } from "@heroicons/react/24/solid";
+import { PostList, PostListItem } from "@/components/post-list";
 import { getGlobals } from "@/lib/globals";
 import {
   countAcceptedFollowing,
@@ -126,76 +127,48 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
       </div>
 
       <h2 className="text-xl font-display font-bold mb-3">Posts</h2>
-      <ul className="divide-y divide-base-300">
+      <PostList>
         {entries.length > 0 ? (
           entries.map((entry) => (
-            <li
+            <PostListItem
               key={entry.id}
-              className="flex items-baseline justify-between gap-4 py-2"
-            >
-              <span className="flex flex-wrap items-baseline gap-x-3 gap-y-1 min-w-0">
-                {entry.url ? (
-                  <a
-                    href={entry.url}
-                    className="link link-hover font-medium"
+              title={entry.title}
+              href={entry.url}
+              hashtags={entry.hashtags ?? []}
+              publishedAt={entry.publishedAt}
+              metrics={
+                <>
+                  <InteractButton
+                    uri={`https://${domain}/users/${username}/posts/${entry.id}`}
                   >
-                    {entry.title}
-                  </a>
-                ) : (
-                  <span className="font-medium">{entry.title}</span>
-                )}
-                {entry.hashtags && entry.hashtags.length > 0 && (
-                  <span className="flex gap-1 flex-wrap">
-                    {entry.hashtags.map((tag) => (
-                      <Link
-                        key={tag}
-                        href={`/tags/${encodeURIComponent(tag.toLowerCase())}`}
-                        className="text-xs text-primary/70 font-mono hover:text-primary"
-                      >
-                        #{tag}
-                      </Link>
-                    ))}
-                  </span>
-                )}
-              </span>
-              <span className="flex items-center gap-1 shrink-0">
-                <InteractButton uri={`https://${domain}/users/${username}/posts/${entry.id}`}>
-                  <button
-                    type="button"
-                    title="Boost"
-                    className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info"
+                    <button
+                      type="button"
+                      title="Boost"
+                      className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info"
+                    >
+                      <ArrowPathRoundedSquareIcon className="w-4 h-4" />{" "}
+                      {entry.boostCount}
+                    </button>
+                  </InteractButton>
+                  <InteractButton
+                    uri={`https://${domain}/users/${username}/posts/${entry.id}`}
                   >
-                    <ArrowPathRoundedSquareIcon className="w-4 h-4" /> {entry.boostCount}
-                  </button>
-                </InteractButton>
-                <InteractButton uri={`https://${domain}/users/${username}/posts/${entry.id}`}>
-                  <button
-                    type="button"
-                    title="Favorite"
-                    className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error"
-                  >
-                    <HeartIcon className="w-4 h-4" /> {entry.likeCount}
-                  </button>
-                </InteractButton>
-                {entry.publishedAt && (
-                  <time
-                    dateTime={entry.publishedAt.toISOString()}
-                    className="text-xs text-base-content/50 whitespace-nowrap"
-                  >
-                    {entry.publishedAt.toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    })}
-                  </time>
-                )}
-              </span>
-            </li>
+                    <button
+                      type="button"
+                      title="Favorite"
+                      className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error"
+                    >
+                      <HeartIcon className="w-4 h-4" /> {entry.likeCount}
+                    </button>
+                  </InteractButton>
+                </>
+              }
+            />
           ))
         ) : (
           <li className="py-4 text-base-content/50 italic">No posts yet.</li>
         )}
-      </ul>
+      </PostList>
 
       {(hasPrev || hasNext) && (
         <div className="join mt-6">
