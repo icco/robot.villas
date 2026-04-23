@@ -1,6 +1,6 @@
 "use client";
 
-import { ErrorMessage } from "@icco/react-common";
+import { ErrorMessage } from "@icco/react-common/ErrorMessage";
 
 interface Props {
   error: Error & { digest?: string };

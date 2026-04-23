@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Roboto, Roboto_Mono } from "next/font/google";
-import { Footer, WebVitals } from "@icco/react-common";
+import { Footer } from "@icco/react-common/Footer";
+import { WebVitals } from "@icco/react-common/WebVitals";
 import { faviconSvg } from "@/lib/og-icon";
 import "./globals.css";
 
