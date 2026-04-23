@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
