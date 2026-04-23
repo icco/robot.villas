@@ -93,12 +93,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </main>
         <Footer
+          startYear={2025}
           sourceRepo="https://github.com/icco/robot.villas"
           editUrl="https://github.com/icco/robot.villas/edit/main/feeds.yml"
           showRecurseCenter={false}
           showSocial={false}
           showRecurseRing={false}
           showXXIIVVRing={false}
+          showPrivacyPolicy={true}
         />
       </body>
     </html>

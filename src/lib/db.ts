@@ -2,6 +2,7 @@ import { and, asc, count, desc, eq, inArray, isNotNull, isNull, sql } from "driz
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
 import type postgres from "postgres";
+import type { FeedEntry } from "./feed-entry";
 import { MAX_TAGS } from "./hashtags";
 import * as schema from "./schema";
 
@@ -189,20 +190,11 @@ export async function getEntriesPage(
   botUsername: string,
   limit: number,
   offset: number,
-): Promise<
-  Array<{
-    id: number;
-    url: string;
-    title: string;
-    publishedAt: Date | null;
-    likeCount: number;
-    boostCount: number;
-    hashtags: string[];
-  }>
-> {
+): Promise<FeedEntry[]> {
   return db
     .select({
       id: schema.feedEntries.id,
+      botUsername: schema.feedEntries.botUsername,
       url: schema.feedEntries.url,
       title: schema.feedEntries.title,
       publishedAt: schema.feedEntries.publishedAt,
@@ -246,16 +238,7 @@ export async function getEntriesByTag(
   tag: string,
   limit: number,
   offset: number,
-): Promise<Array<{
-  id: number;
-  botUsername: string;
-  url: string;
-  title: string;
-  publishedAt: Date | null;
-  likeCount: number;
-  boostCount: number;
-  hashtags: string[];
-}>> {
+): Promise<FeedEntry[]> {
   return db
     .select(TAG_ENTRY_FIELDS)
     .from(schema.feedEntries)
@@ -277,16 +260,7 @@ export async function getAllEntries(
   db: Db,
   limit: number,
   offset: number,
-): Promise<Array<{
-  id: number;
-  botUsername: string;
-  url: string;
-  title: string;
-  publishedAt: Date | null;
-  likeCount: number;
-  boostCount: number;
-  hashtags: string[];
-}>> {
+): Promise<FeedEntry[]> {
   return db
     .select(TAG_ENTRY_FIELDS)
     .from(schema.feedEntries)
@@ -471,24 +445,17 @@ export async function getPerBotStats(db: Db): Promise<BotStats[]> {
   }));
 }
 
-export interface TopPost {
-  botUsername: string;
-  title: string;
-  url: string;
-  likeCount: number;
-  boostCount: number;
-  publishedAt: Date | null;
-}
-
-export async function getTopPosts(db: Db, limit: number): Promise<TopPost[]> {
+export async function getTopPosts(db: Db, limit: number): Promise<FeedEntry[]> {
   return db
     .select({
+      id: schema.feedEntries.id,
       botUsername: schema.feedEntries.botUsername,
       title: schema.feedEntries.title,
       url: schema.feedEntries.url,
       likeCount: schema.feedEntries.likeCount,
       boostCount: schema.feedEntries.boostCount,
       publishedAt: schema.feedEntries.publishedAt,
+      hashtags: schema.feedEntries.hashtags,
     })
     .from(schema.feedEntries)
     .where(isNull(schema.feedEntries.deletedAt))

@@ -1,4 +1,8 @@
 @import "tailwindcss";
+
+/* Class names in @icco/react-common (Footer, WebVitals) live in node_modules; scan them. */
+@source "../../node_modules/@icco/react-common/dist/lib/*.js";
+
 @plugin "daisyui" {
   themes: dim --default;
 }
