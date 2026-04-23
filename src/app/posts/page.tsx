@@ -2,11 +2,8 @@ export const dynamic = "force-dynamic";
 
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  PostList,
-  PostListItem,
-  ReadonlyEngagement,
-} from "@/components/post-list";
+import { PostList, PostListItem } from "@/components/post-list";
+import { PostInteractMetrics } from "@/components/post-interact-metrics";
 import { getGlobals } from "@/lib/globals";
 import { getAllEntries, countAllEntries } from "@/lib/db";
 
@@ -25,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function PostsPage({ searchParams }: Props) {
-  const { db } = getGlobals();
+  const { db, domain } = getGlobals();
 
   const { page: pageParam } = await searchParams;
   const page = Math.max(0, parseInt(pageParam || "0", 10));
@@ -58,7 +55,8 @@ export default async function PostsPage({ searchParams }: Props) {
             hashtags={entry.hashtags}
             publishedAt={entry.publishedAt}
             metrics={
-              <ReadonlyEngagement
+              <PostInteractMetrics
+                activityUri={`https://${domain}/users/${entry.botUsername}/posts/${entry.id}`}
                 boostCount={entry.boostCount}
                 likeCount={entry.likeCount}
               />

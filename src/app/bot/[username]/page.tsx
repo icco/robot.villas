@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
 import { CpuChipIcon } from "@heroicons/react/24/solid";
 import { PostList, PostListItem } from "@/components/post-list";
+import { PostInteractMetrics } from "@/components/post-interact-metrics";
 import { getGlobals } from "@/lib/globals";
 import {
   countAcceptedFollowing,
@@ -11,7 +11,7 @@ import {
   countFollowers,
   getEntriesPage,
 } from "@/lib/db";
-import { FollowButton, InteractButton } from "./mastodon-widgets";
+import { FollowButton } from "./mastodon-widgets";
 
 const PROFILE_PAGE_SIZE = 40;
 
@@ -138,31 +138,11 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
               hashtagClassName="text-xs text-primary/70 font-mono hover:text-primary"
               publishedAt={entry.publishedAt}
               metrics={
-                <>
-                  <InteractButton
-                    uri={`https://${domain}/users/${username}/posts/${entry.id}`}
-                  >
-                    <button
-                      type="button"
-                      title="Boost"
-                      className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info"
-                    >
-                      <ArrowPathRoundedSquareIcon className="w-4 h-4" />{" "}
-                      {entry.boostCount}
-                    </button>
-                  </InteractButton>
-                  <InteractButton
-                    uri={`https://${domain}/users/${username}/posts/${entry.id}`}
-                  >
-                    <button
-                      type="button"
-                      title="Favorite"
-                      className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error"
-                    >
-                      <HeartIcon className="w-4 h-4" /> {entry.likeCount}
-                    </button>
-                  </InteractButton>
-                </>
+                <PostInteractMetrics
+                  activityUri={`https://${domain}/users/${username}/posts/${entry.id}`}
+                  boostCount={entry.boostCount}
+                  likeCount={entry.likeCount}
+                />
               }
             />
           ))

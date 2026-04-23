@@ -472,6 +472,7 @@ export async function getPerBotStats(db: Db): Promise<BotStats[]> {
 }
 
 export interface TopPost {
+  id: number;
   botUsername: string;
   title: string;
   url: string;
@@ -483,6 +484,7 @@ export interface TopPost {
 export async function getTopPosts(db: Db, limit: number): Promise<TopPost[]> {
   return db
     .select({
+      id: schema.feedEntries.id,
       botUsername: schema.feedEntries.botUsername,
       title: schema.feedEntries.title,
       url: schema.feedEntries.url,

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
 
 const DATE_OPTS: Intl.DateTimeFormatOptions = {
   year: "numeric",
@@ -19,38 +18,6 @@ function PostPublishedAt({ at }: { at: Date | null | undefined }) {
     >
       {at.toLocaleDateString("en-US", DATE_OPTS)}
     </time>
-  );
-}
-
-type ReadonlyEngagementProps = {
-  boostCount: number;
-  likeCount: number;
-  /** Use compact icons (e.g. stats) */
-  size?: "sm" | "md";
-};
-
-/** Static boost/favorite counts; matches the btn-ghost look used on /posts. */
-export function ReadonlyEngagement({
-  boostCount,
-  likeCount,
-  size = "md",
-}: ReadonlyEngagementProps) {
-  const icon = size === "sm" ? "w-3.5 h-3.5" : "w-4 h-4";
-  return (
-    <>
-      <span
-        title="Boosts"
-        className="btn btn-ghost btn-xs gap-1 text-base-content/50 cursor-default"
-      >
-        <ArrowPathRoundedSquareIcon className={icon} /> {boostCount}
-      </span>
-      <span
-        title="Favorites"
-        className="btn btn-ghost btn-xs gap-1 text-base-content/50 cursor-default"
-      >
-        <HeartIcon className={icon} /> {likeCount}
-      </span>
-    </>
   );
 }
 
@@ -98,16 +65,14 @@ type PostListItemProps = {
   hashtagClassName?: string;
   highlightHashtagClassName?: string;
   publishedAt: Date | null;
-  /** Boost/favorite (static spans or client InteractButton wrapper) + optional extras */
+  /** Use `PostInteractMetrics` (Mastodon picker) for boost/favorite. */
   metrics: ReactNode;
   extraLeading?: ReactNode;
 };
 
 /**
  * One row: primary column (optional @bot, title, hashtags) and trailing
- * (metrics + date). Layout matches the bot profile and /posts; static counts
- * use {@link ReadonlyEngagement} like /posts; pass custom `metrics` for
- * profile InteractButton actions.
+ * (metrics + date). Use `PostInteractMetrics` for boost/favorite everywhere.
  */
 export function PostListItem({
   showBotLink,

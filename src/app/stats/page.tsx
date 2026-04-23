@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  PostList,
-  PostListItem,
-  ReadonlyEngagement,
-} from "@/components/post-list";
+import { PostList, PostListItem } from "@/components/post-list";
+import { PostInteractMetrics } from "@/components/post-interact-metrics";
 import { getGlobals } from "@/lib/globals";
 import { getGlobalStats, getPerBotStats, getTopPosts } from "@/lib/db";
 
@@ -30,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function StatsPage() {
-  const { config, db } = getGlobals();
+  const { config, db, domain } = getGlobals();
   const botCount = Object.keys(config.bots).length;
   const [global, perBot, topPosts] = await Promise.all([
     getGlobalStats(db),
@@ -135,13 +132,14 @@ export default async function StatsPage() {
           <PostList>
             {filteredTopPosts.map((post) => (
               <PostListItem
-                key={`${post.botUsername}-${post.url}`}
+                key={`${post.botUsername}-${post.id}`}
                 showBotLink={{ username: post.botUsername }}
                 title={post.title}
                 href={post.url}
                 publishedAt={post.publishedAt}
                 metrics={
-                  <ReadonlyEngagement
+                  <PostInteractMetrics
+                    activityUri={`https://${domain}/users/${post.botUsername}/posts/${post.id}`}
                     boostCount={post.boostCount}
                     likeCount={post.likeCount}
                     size="sm"

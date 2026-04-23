@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import {
-  PostList,
-  PostListItem,
-  ReadonlyEngagement,
-} from "@/components/post-list";
+import { PostList, PostListItem } from "@/components/post-list";
+import { PostInteractMetrics } from "@/components/post-interact-metrics";
 import { getGlobals } from "@/lib/globals";
 import { countEntriesByTag, getEntriesByTag } from "@/lib/db";
 
@@ -31,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function TagPage({ params, searchParams }: Props) {
   const { tag } = await params;
-  const { db } = getGlobals();
+  const { db, domain } = getGlobals();
   const displayTag = decodeURIComponent(tag);
 
   const { page: pageParam } = await searchParams;
@@ -76,7 +73,8 @@ export default async function TagPage({ params, searchParams }: Props) {
             tagHighlight={displayTag}
             publishedAt={entry.publishedAt}
             metrics={
-              <ReadonlyEngagement
+              <PostInteractMetrics
+                activityUri={`https://${domain}/users/${entry.botUsername}/posts/${entry.id}`}
                 boostCount={entry.boostCount}
                 likeCount={entry.likeCount}
               />
