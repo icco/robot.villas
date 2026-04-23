@@ -4,6 +4,7 @@ import {
   extractFeedCategories,
   fetchFeedWithHttpResult,
   MAX_ITEMS_PER_POLL,
+  normalizeTypography,
   parseFeedXml,
   type FeedEntry,
 } from "../rss";
@@ -117,7 +118,7 @@ describe("parseFeedXml", () => {
     expect(entries[MAX_ITEMS_PER_POLL - 1]?.title).toBe(`Item ${MAX_ITEMS_PER_POLL - 1}`);
   });
 
-  it("decodes HTML entities in CDATA titles", async () => {
+  it("decodes HTML entities in CDATA titles and normalizes to ASCII", async () => {
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
@@ -131,7 +132,7 @@ describe("parseFeedXml", () => {
 </rss>`;
     const entries = await parseFeedXml(xml);
     expect(entries).toHaveLength(1);
-    expect(entries[0]?.title).toBe("Ikea\u2019s new inflatable chair doesn\u2019t look like an inflatable chair");
+    expect(entries[0]?.title).toBe("Ikea's new inflatable chair doesn't look like an inflatable chair");
   });
 });
 
@@ -164,6 +165,38 @@ describe("decodeHtmlEntities", () => {
   it("passes through plain text unchanged", () => {
     expect(decodeHtmlEntities("Hello world")).toBe("Hello world");
     expect(decodeHtmlEntities("")).toBe("");
+  });
+});
+
+describe("normalizeTypography", () => {
+  it("replaces curly single quotes and apostrophes with ASCII apostrophe", () => {
+    expect(normalizeTypography("\u2018hello\u2019")).toBe("'hello'");
+    expect(normalizeTypography("Ikea\u2019s")).toBe("Ikea's");
+  });
+
+  it("replaces curly double quotes with ASCII double quote", () => {
+    expect(normalizeTypography("\u201Chello\u201D")).toBe('"hello"');
+  });
+
+  it("replaces en dash with hyphen", () => {
+    expect(normalizeTypography("2020\u20132021")).toBe("2020-2021");
+  });
+
+  it("replaces em dash with double hyphen", () => {
+    expect(normalizeTypography("foo\u2014bar")).toBe("foo--bar");
+  });
+
+  it("replaces ellipsis with three dots", () => {
+    expect(normalizeTypography("wait\u2026")).toBe("wait...");
+  });
+
+  it("replaces non-breaking space with regular space", () => {
+    expect(normalizeTypography("foo\u00A0bar")).toBe("foo bar");
+  });
+
+  it("passes through plain ASCII unchanged", () => {
+    expect(normalizeTypography("Hello, world!")).toBe("Hello, world!");
+    expect(normalizeTypography("")).toBe("");
   });
 });
 

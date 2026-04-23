@@ -30,6 +30,17 @@ export function decodeHtmlEntities(str: string): string {
     .replace(/&#x([0-9a-fA-F]+);/gi, (_, hex: string) => String.fromCodePoint(parseInt(hex, 16)));
 }
 
+/** Replaces Unicode typographic characters with plain ASCII equivalents. */
+export function normalizeTypography(str: string): string {
+  return str
+    .replace(/[\u2018\u2019\u201A\u201B\u2032\u2035]/g, "'")  // curly single quotes, apostrophes, primes
+    .replace(/[\u201C\u201D\u201E\u201F\u2033\u2036]/g, '"')  // curly double quotes, double primes
+    .replace(/\u2013/g, "-")                                   // en dash
+    .replace(/\u2014/g, "--")                                  // em dash
+    .replace(/\u2026/g, "...")                                 // ellipsis
+    .replace(/\u00A0/g, " ");                                  // non-breaking space
+}
+
 const FEED_FETCH_TIMEOUT_MS = 10_000;
 
 /** Max items to process per feed per poll; limits DoS from huge feeds. */
@@ -135,7 +146,7 @@ export function extractFeedCategories(item: Parser.Item): string[] {
 function normalizeFeedItem(item: Parser.Item): FeedEntry {
   const raw = item as Record<string, unknown>;
   const guid = item.guid || (raw.id as string | undefined) || item.link || item.title || "";
-  const title = decodeHtmlEntities(item.title || "(untitled)");
+  const title = normalizeTypography(decodeHtmlEntities(item.title || "(untitled)"));
   const link = item.link || "";
   const publishedAt = item.isoDate ? new Date(item.isoDate) : null;
   return { guid, title, link, publishedAt, feedCategories: extractFeedCategories(item) };
