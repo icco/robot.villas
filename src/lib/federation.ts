@@ -539,6 +539,19 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       await updateFollowingStatus(db, followIdHref, "accepted");
       logger.info("Accepted Follow {followId}", { followId: followIdHref });
     })
+    .on(Reject, async (ctx, reject) => {
+      const object = await reject.getObject(ctx);
+      if (!(object instanceof Follow) || !object.id) {
+        return;
+      }
+      const followIdHref = object.id.href;
+      await updateRelayStatus(db, followIdHref, "rejected");
+      await updateFollowingStatus(db, followIdHref, "rejected");
+      logger.warn("Follow {followId} was rejected by {actor}", {
+        followId: followIdHref,
+        actor: reject.actorId?.href,
+      });
+    })
     .on(Announce, async (ctx, announce) => {
       const ref = parseNoteRef(ctx, announce.objectId, botUsernames, "Announce");
       if (!ref) {
