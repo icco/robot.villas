@@ -645,7 +645,14 @@ export async function followAccounts(
 
   const botUsernames = Object.keys(config.bots);
   const existing = await getAllFollowing(db);
-  const existingSet = new Set(existing.map((f) => `${f.botUsername}:${f.handle}`));
+  // Only skip follows that are already accepted or explicitly rejected.
+  // Pending follows (sent but no Accept received) are retried, matching the
+  // same logic used by subscribeToRelays().
+  const existingSet = new Set(
+    existing
+      .filter((f) => f.status === "accepted" || f.status === "rejected")
+      .map((f) => `${f.botUsername}:${f.handle}`),
+  );
 
   const signingIdentifier = botUsernames[0];
   const documentLoader = await ctx.getDocumentLoader({
@@ -679,7 +686,7 @@ export async function followAccounts(
 
     for (const botUsername of botUsernames) {
       if (existingSet.has(`${botUsername}:${handle}`)) {
-        logger.info("Bot {bot} already follows {handle}, skipping", {
+        logger.info("Bot {bot} follow of {handle} already accepted/rejected, skipping", {
           bot: botUsername,
           handle,
         });
