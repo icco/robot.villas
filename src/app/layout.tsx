@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Roboto, Roboto_Mono } from "next/font/google";
+import { Footer } from "@icco/react-common";
 import { faviconSvg } from "@/lib/og-icon";
 import { WebVitals } from "@/components/WebVitals";
 import "./globals.css";
@@ -91,30 +92,15 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <main className="container mx-auto flex-1 px-4 py-8 max-w-4xl">
           {children}
         </main>
-        <footer className="footer sm:footer-horizontal footer-center bg-base-200 border-t border-base-300 text-base-content p-6 text-sm">
-          <nav className="flex flex-wrap justify-center gap-x-1">
-            <span>
-              &copy;{" "}
-              <a href="https://natwelch.com" className="link link-hover">
-                Nat Welch
-              </a>
-            </span>
-            <span>&middot;</span>
-            <a
-              href="https://github.com/icco/robot.villas"
-              className="link link-hover"
-            >
-              Source code
-            </a>
-            <span>&middot;</span>
-            <a
-              href="https://github.com/icco/robot.villas/edit/main/feeds.yml"
-              className="link link-hover"
-            >
-              Add or update a feed
-            </a>
-          </nav>
-        </footer>
+        <Footer
+          sourceRepo="https://github.com/icco/robot.villas"
+          editUrl="https://github.com/icco/robot.villas/edit/main/feeds.yml"
+          showRecurseCenter={false}
+          showPrivacyPolicy={false}
+          showSocial={false}
+          showRecurseRing={false}
+          showXXIIVVRing={false}
+        />
       </body>
     </html>
   );

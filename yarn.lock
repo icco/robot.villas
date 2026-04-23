@@ -378,6 +378,13 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.3.tgz#c2b9d2e374ee62c586d3adbea87199b1d7a7a6ba"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
+"@icco/react-common@^2026.418.4":
+  version "2026.418.4"
+  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.418.4/e956f662653895fb38941198e817f2da9afb4423#e956f662653895fb38941198e817f2da9afb4423"
+  integrity sha512-EbDP2+GzsRa4ay0xGFeVUo7ddM9P1JRWH3lVT3X99LQExJdellEyAAlsjZJ9eh6CdQeq2cVPP5pg1u2u37oY7w==
+  dependencies:
+    vivus "^0.4.6"
+
 "@img/colour@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@img/colour/-/colour-1.1.0.tgz#b0c2c2fa661adf75effd6b4964497cd80010bb9d"
@@ -2521,6 +2528,11 @@ vitest@^4.1.2:
     tinyrainbow "^3.1.0"
     vite "^6.0.0 || ^7.0.0 || ^8.0.0"
     why-is-node-running "^2.3.0"
+
+vivus@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/vivus/-/vivus-0.4.6.tgz#60661b43d08aaa70efc1854dfd2f1583f2066608"
+  integrity sha512-q6cDPTGqw/bq9sKF2h2T6GJ9PlwAFncHq7MdaK95WTSyd/7gz//UHTZbJ3B+r8f7AhcISPTC3sv9+u65BmmFbw==
 
 web-streams-polyfill@^3.0.3:
   version "3.3.3"
