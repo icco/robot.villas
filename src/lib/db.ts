@@ -273,6 +273,49 @@ export async function countEntriesByTag(db: Db, tag: string): Promise<number> {
   return rows[0]?.value ?? 0;
 }
 
+export async function getAllEntries(
+  db: Db,
+  limit: number,
+  offset: number,
+): Promise<Array<{
+  id: number;
+  botUsername: string;
+  url: string;
+  title: string;
+  publishedAt: Date | null;
+  likeCount: number;
+  boostCount: number;
+  hashtags: string[];
+}>> {
+  return db
+    .select(TAG_ENTRY_FIELDS)
+    .from(schema.feedEntries)
+    .where(isNull(schema.feedEntries.deletedAt))
+    .orderBy(desc(schema.feedEntries.publishedAt))
+    .limit(limit)
+    .offset(offset);
+}
+
+export async function countAllEntries(db: Db): Promise<number> {
+  const rows = await db
+    .select({ value: count() })
+    .from(schema.feedEntries)
+    .where(isNull(schema.feedEntries.deletedAt));
+  return rows[0]?.value ?? 0;
+}
+
+export async function getAllTags(db: Db): Promise<Array<{ tag: string; postCount: number }>> {
+  const result = await db.execute<{ tag: string; post_count: string }>(sql`
+    SELECT lower(t.v) AS tag, count(*)::int AS post_count
+    FROM feed_entries,
+         jsonb_array_elements_text(feed_entries.hashtags) AS t(v)
+    WHERE feed_entries.deleted_at IS NULL
+    GROUP BY lower(t.v)
+    ORDER BY count(*) DESC
+  `);
+  return result.map((r) => ({ tag: r.tag, postCount: Number(r.post_count) }));
+}
+
 /**
  * Returns stored key pairs for a bot. Handles both the legacy single-JWK
  * format and the new array-of-JWKs format (for dual RSA + Ed25519 keys).

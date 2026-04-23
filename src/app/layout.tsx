@@ -63,8 +63,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               <span>{domain}</span>
             </Link>
             <Link
-              href="/stats"
+              href="/posts"
               className="btn btn-ghost btn-sm font-display ml-auto"
+            >
+              Posts
+            </Link>
+            <Link
+              href="/tags"
+              className="btn btn-ghost btn-sm font-display"
+            >
+              Tags
+            </Link>
+            <Link
+              href="/stats"
+              className="btn btn-ghost btn-sm font-display"
             >
               Stats
             </Link>
