@@ -12,6 +12,11 @@ export type FeedEntry = {
   hashtags: string[];
 };
 
+/**
+ * Canonical URL for a Note in this app, identical to
+ * `new URL(\`/users/…/posts/…\`, origin)` in {@link import("./publisher").buildCreateActivity}
+ * and the Fedify object path `/users/{identifier}/posts/{id}` in federation.
+ */
 export function entryObjectUrl(domain: string, botUsername: string, id: number): string {
-  return `https://${domain}/users/${botUsername}/posts/${id}`;
+  return new URL(`/users/${botUsername}/posts/${id}`, `https://${domain}`).href;
 }
