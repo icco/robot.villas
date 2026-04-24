@@ -520,6 +520,13 @@ bots:
     display_name: AP Top News (via Google News)
     summary: Recent Associated Press stories on apnews.com, delivered via a Google News RSS search (24h, site filter).
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://apnews.com&size=128
+  aartaka:
+    feed_url: https://aartaka.me/rss.xml
+    display_name: Artyom’s Chaotic Blog
+    summary: I’m Artyom Bologov, an ironic bipolar programmer trying to make my environment (and, consequently, the Internet) slightly better and weirder.
+    profile_photo: https://aartaka.me/favicons/apple-touch-icon.png
+    default_hashtags:
+      - Tech
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
