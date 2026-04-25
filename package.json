@@ -16,7 +16,8 @@
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:push": "drizzle-kit push",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "validate-feeds": "tsx scripts/validate-feeds.ts"
   },
   "dependencies": {
     "@fedify/fedify": "^2.1.10",

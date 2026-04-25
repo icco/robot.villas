@@ -30,6 +30,20 @@ jobs:
         with:
           commit_message: 'style: auto-fix lint and formatting'
           file_pattern: src/**/* *.yml .github/*.yml
+  validate-feeds:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: yarn
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
+      - run: yarn install --frozen-lockfile
+      - run: yarn validate-feeds
   test:
     runs-on: ubuntu-latest
     permissions:
