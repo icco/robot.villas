@@ -11,7 +11,7 @@
     "start": "next start",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "eslint --fix src/ && yarn fmt:yaml",
+    "lint": "eslint --fix src/ && yarn fmt:yaml && yarn typecheck",
     "fmt:yaml": "find . \\( -name '*.yml' -o -name '*.yaml' \\) -not -path './node_modules/*' -not -path './.next/*' -exec yq -iP '.' {} \\;",
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
