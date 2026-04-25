@@ -21,7 +21,7 @@ bots:
     feed_url: https://news.google.com/rss/search?q=site:perfectcircuit.com/signal&hl=en-US&gl=US&ceid=US:en
     display_name: SIGNAL - Perfect Circuit
     summary: In-depth analysis of synthesis history, methods, and the latest releases
-    profile_photo: https://www.perfectcircuit.com/media/logo/stores/1/pc-logo-dark.svg
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.perfectcircuit.com&size=128
   synthtopia:
     feed_url: https://www.synthtopia.com/feed/
     display_name: Synthtopia
@@ -279,7 +279,7 @@ bots:
     feed_url: https://feeds.bbci.co.uk/news/rss.xml
     display_name: BBC News
     summary: BBC News — front page and breaking stories from the British Broadcasting Corporation.
-    profile_photo: https://www.bbc.com/favicon.ico
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.bbc.com&size=128
   npr_news:
     feed_url: https://feeds.npr.org/1001/rss.xml
     display_name: 'NPR Topics: News'
@@ -434,7 +434,7 @@ bots:
     feed_url: https://www.theguardian.com/world/rss
     display_name: World news | The Guardian
     summary: World news, comment, and analysis from the Guardian.
-    profile_photo: https://www.theguardian.com/favicon.ico
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.theguardian.com&size=128
   wapo_world:
     feed_url: https://feeds.washingtonpost.com/rss/world
     display_name: The Washington Post — World
@@ -454,7 +454,7 @@ bots:
     feed_url: https://www.engadget.com/rss.xml
     display_name: Engadget
     summary: Technology news, reviews, and buying advice.
-    profile_photo: https://www.engadget.com/favicon.ico
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.engadget.com&size=128
   gizmodo:
     feed_url: https://gizmodo.com/feed/
     display_name: Gizmodo
@@ -474,17 +474,17 @@ bots:
     feed_url: https://lifehacker.com/feed/
     display_name: Lifehacker
     summary: Tips, tricks, and downloads for getting things done.
-    profile_photo: https://lifehacker.com/favicon.ico
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://lifehacker.com&size=128
   cnn_edition:
     feed_url: https://edition.cnn.com/xml/rss/edition.rss
     display_name: CNN — International Edition
     summary: World news RSS from CNN’s international edition
-    profile_photo: https://www.cnn.com/favicon.ico
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cnn.com&size=128
   cnn_top_stories:
     feed_url: http://rss.cnn.com/rss/cnn_topstories.rss
     display_name: CNN — Top Stories
     summary: Top stories from CNN.com.
-    profile_photo: https://www.cnn.com/favicon.ico
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cnn.com&size=128
   wsj_world:
     feed_url: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
     display_name: WSJ.com — World News
@@ -514,7 +514,7 @@ bots:
     feed_url: https://www.reuters.com/arc/outboundfeeds/rss/category/world/?outputType=xml
     display_name: Reuters — World
     summary: Reuters world news
-    profile_photo: https://www.reuters.com/favicon.ico
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.reuters.com&size=128
   ap_top_news:
     feed_url: https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&hl=en-US&gl=US&ceid=US:en
     display_name: AP Top News (via Google News)
