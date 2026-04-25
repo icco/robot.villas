@@ -465,7 +465,7 @@ bots:
     feed_url: https://gizmodo.com/feed/
     display_name: Gizmodo
     summary: The future of science, technology, and culture.
-    profile_photo: https://gizmodo.com/app/uploads/2025/10/gizmodo-identity-696x696-1.jpg
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gizmodo.com&size=128
   fast_company:
     feed_url: https://www.fastcompany.com/latest/rss
     display_name: Fast Company
