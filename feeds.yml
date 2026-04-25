@@ -143,7 +143,7 @@ bots:
     feed_url: https://solar.lowtechmagazine.com/posts/index.xml
     display_name: Low-tech Magazine
     summary: A solar-powered blog about sustainable and historical technology.
-    profile_photo: https://solar.lowtechmagazine.com/icons/sun.svg
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://solar.lowtechmagazine.com&size=128
   tigerbeetle:
     feed_url: https://tigerbeetle.com/blog/atom.xml
     display_name: TigerBeetle
@@ -274,7 +274,7 @@ bots:
     feed_url: https://hellgatenyc.com/all-posts/rss/
     display_name: Hell Gate
     summary: Subscriber-funded, worker-owned news outlet about New York City.
-    profile_photo: https://hellgatenyc.com/assets/svg/logo-standard.svg
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://hellgatenyc.com&size=128
   bbc_news:
     feed_url: https://feeds.bbci.co.uk/news/rss.xml
     display_name: BBC News
@@ -469,7 +469,7 @@ bots:
     feed_url: https://www.scientificamerican.com/platform/syndication/rss/
     display_name: Scientific American
     summary: Awe-inspiring advances in science and technology from Scientific American.
-    profile_photo: https://www.scientificamerican.com/static/sciam.svg
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.scientificamerican.com&size=128
   lifehacker:
     feed_url: https://lifehacker.com/feed/
     display_name: Lifehacker

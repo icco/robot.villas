@@ -4,10 +4,6 @@
  *   1. Schema correctness (via Zod, same rules the app uses at startup)
  *   2. Each profile_photo URL is reachable and returns a Mastodon-compatible
  *      image MIME type (png / jpeg / webp / gif).
- *
- * Network failures (timeouts, DNS errors) are reported as warnings and do
- * not fail the check — they are transient. Wrong MIME types (e.g. svg, ico)
- * are hard errors because Mastodon will silently drop those icons.
  */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -62,7 +58,7 @@ async function main() {
   const configPath = join(process.cwd(), "feeds.yml");
   const raw = readFileSync(configPath, "utf-8");
 
-  // Step 1: schema validation — hard failure
+  // Step 1: schema validation
   const parsed = parseYaml(raw);
   const result = FeedsConfigSchema.safeParse(parsed);
   if (!result.success) {
@@ -79,8 +75,7 @@ async function main() {
   const bots = Object.entries(config.bots).filter(([, b]) => b.profile_photo);
   console.log(`\nChecking ${bots.length} profile photos…\n`);
 
-  const hardErrors: string[] = [];
-  const warnings: string[] = [];
+  const errors: string[] = [];
 
   await Promise.all(
     bots.map(async ([name, bot]) => {
@@ -88,30 +83,24 @@ async function main() {
       const r = await probeUrl(url);
 
       if (r.kind === "wrong_mime") {
-        hardErrors.push(
+        errors.push(
           `[${name}] MIME type "${r.contentType}" is not supported by Mastodon — use png/jpeg/gif/webp\n    ${url}`,
         );
       } else if (r.kind === "http_error") {
-        warnings.push(`[${name}] HTTP ${r.status}\n    ${url}`);
+        errors.push(`[${name}] HTTP ${r.status}\n    ${url}`);
       } else if (r.kind === "network_error") {
-        warnings.push(`[${name}] network error — ${r.detail}\n    ${url}`);
+        errors.push(`[${name}] unreachable — ${r.detail}\n    ${url}`);
       }
     }),
   );
 
-  if (warnings.length > 0) {
-    console.warn(`${warnings.length} warning(s) (transient network issues, not blocking):\n`);
-    for (const w of warnings) console.warn(`  ⚠ ${w}`);
-    console.warn("");
-  }
-
-  if (hardErrors.length > 0) {
-    console.error(`${hardErrors.length} error(s):\n`);
-    for (const e of hardErrors) console.error(`  ✗ ${e}`);
+  if (errors.length > 0) {
+    console.error(`${errors.length} error(s):\n`);
+    for (const e of errors) console.error(`  ✗ ${e}`);
     process.exit(1);
   }
 
-  console.log("✓ All reachable profile photos have valid MIME types");
+  console.log("✓ All profile photos are reachable and have valid MIME types");
 }
 
 main();
