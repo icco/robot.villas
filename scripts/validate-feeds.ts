@@ -8,7 +8,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { load as parseYaml } from "js-yaml";
-import { FeedsConfigSchema } from "../src/lib/config.ts";
+import { FeedsConfigSchema } from "../src/lib/config";
 
 const VALID_MIME_TYPES = new Set([
   "image/png",
