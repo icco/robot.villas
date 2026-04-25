@@ -26,6 +26,7 @@ bots:
     feed_url: https://www.synthtopia.com/feed/
     display_name: Synthtopia
     summary: Synthesizer and electronic music news, synth and music software reviews and more!
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.synthtopia.com&size=128
   natwelch:
     feed_url: https://writing.natwelch.com/feed.atom
     display_name: Nat? Nat. Nat!
@@ -120,6 +121,7 @@ bots:
     feed_url: https://transactional.blog/feed.xml
     display_name: Transactional
     summary: Deep dives into database internals.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://transactional.blog&size=128
   cloudflare:
     feed_url: https://blog.cloudflare.com/rss/
     display_name: Cloudflare Blog
@@ -134,6 +136,7 @@ bots:
     feed_url: https://orbitalindex.com/feed.xml
     display_name: The Orbital Index
     summary: A technical, curated weekly digest of space exploration news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://orbitalindex.com&size=128
   quanta:
     feed_url: https://www.quantamagazine.org/feed/
     display_name: Quanta Magazine
@@ -173,6 +176,7 @@ bots:
     feed_url: https://xeiaso.net/blog.rss
     display_name: Xe Iaso
     summary: Technical writing on Nix, Go, and the philosophy of software.
+    profile_photo: https://xeiaso.net/static/img/avatar.png
   hackaday:
     feed_url: https://hackaday.com/feed/
     display_name: Hackaday
@@ -182,14 +186,17 @@ bots:
     feed_url: https://craigmod.com/rss/
     display_name: Craig Mod
     summary: Writing about walking, books, photography, and technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://craigmod.com&size=128
   austin_kleon:
     feed_url: https://austinkleon.com/feed/
     display_name: Austin Kleon
     summary: A writer who draws. Author of Steal Like an Artist.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://austinkleon.com&size=128
   matrixsynth:
     feed_url: https://www.matrixsynth.com/feeds/posts/default?alt=rss
     display_name: MATRIXSYNTH
     summary: Encyclopedic coverage of synthesizers old and new.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.matrixsynth.com&size=128
   ars_technica:
     feed_url: https://arstechnica.com/feed/
     display_name: Ars Technica
