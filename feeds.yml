@@ -521,11 +521,6 @@ bots:
     display_name: Reuters — World
     summary: Reuters world news
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.reuters.com&size=128
-  ap_top_news:
-    feed_url: https://news.google.com/rss/search?q=when:24h+allinurl:apnews.com&hl=en-US&gl=US&ceid=US:en
-    display_name: AP Top News (via Google News)
-    summary: Recent Associated Press stories on apnews.com, delivered via a Google News RSS search (24h, site filter).
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://apnews.com&size=128
   aartaka:
     feed_url: https://aartaka.me/rss.xml
     display_name: Artyom’s Chaotic Blog
