@@ -15,6 +15,9 @@ RUN yarn build
 
 FROM node:25-slim
 
+LABEL org.opencontainers.image.source=https://github.com/icco/robot.villas
+LABEL org.opencontainers.image.description="RSS to Mastodon Bridge"
+
 WORKDIR /app
 
 ENV NODE_ENV=production
