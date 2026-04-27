@@ -166,6 +166,11 @@ bots:
     display_name: Simon Willison
     summary: Creator of Datasette, writing about AI, Python, and open source tools.
     profile_photo: https://avatars.githubusercontent.com/u/9599?s=200
+  sindresorhus:
+    feed_url: https://sindresorhus.com/rss.xml
+    display_name: Sindre Sorhus
+    summary: Full-Time Open-Sourcerer & Aspiring Rebel
+    profile_photo: https://avatars.githubusercontent.com/u/170270?s=200
   xe_iaso:
     feed_url: https://xeiaso.net/blog.rss
     display_name: Xe Iaso
