@@ -7,6 +7,9 @@ on:
 jobs:
   bump:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: read
     steps:
       - uses: actions/checkout@v6
       - name: Install zsh
@@ -15,6 +18,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 24.x
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
       - run: git config user.email "nat@natwelch.com"
       - run: git config user.name "Nat Welch"
       - run: ./update.sh
