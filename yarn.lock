@@ -455,10 +455,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.3.tgz#c2b9d2e374ee62c586d3adbea87199b1d7a7a6ba"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
-"@icco/react-common@^2026.430.1":
-  version "2026.430.1"
-  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.430.1/36885424816801ca56fce83bb5b621f08ad9c352#36885424816801ca56fce83bb5b621f08ad9c352"
-  integrity sha512-69x0XpmkQcGkZzVkjx1a5xJcUst98o1sttfdeeudoYJ1FLHI+Fytb9U2IcGvOZ7t3EpmkMYOC9FHFHEpBX4WYA==
+"@icco/react-common@^2026.430.3":
+  version "2026.430.3"
+  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.430.3/b7829a20bbfb1ba58fb83ceaee783a136c8951b9#b7829a20bbfb1ba58fb83ceaee783a136c8951b9"
+  integrity sha512-d67dBml2zRYSMNQqLQEG6gNsemitlQ4oJu2DrcRFP7XY9R/uyIGRAPvFuU2HBOr45Nq9aXZpTgMctQK8Xvhowg==
   dependencies:
     "@wrksz/themes" "^0.9.0"
     vivus "^0.4.6"
@@ -652,9 +652,9 @@
     jsbi "^4.3.0"
 
 "@logtape/logtape@^2.0.2", "@logtape/logtape@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@logtape/logtape/-/logtape-2.0.5.tgz#2069c97a5790a403c475f04d6bc294d02a1a8cb4"
-  integrity sha512-UizDkh20ZPJVOddRxG1F77WhHdlNl/sbQgoO8T534R7XvUBMAJ9En9f35u+meW2tRsNLvjz6R87Zanwf53tspQ==
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@logtape/logtape/-/logtape-2.0.6.tgz#6d545be061f2ca6b84061853f662ad05309f4d01"
+  integrity sha512-iumhZlANOLioxWajsssRz1W+bo26xmex/pFiSweIRegChYJmxGZ8ZD/UQZUSKgXJktl4wMoaWDoJ/3uHaPi7jw==
 
 "@multiformats/base-x@^4.0.1":
   version "4.0.1"
