@@ -26,7 +26,7 @@
     "@fedify/vocab": "^2.1.10",
     "@google/genai": "^1.49.0",
     "@heroicons/react": "^2.2.0",
-    "@icco/react-common": "^2026.423.1",
+    "@icco/react-common": "^2026.430.1",
     "@js-temporal/polyfill": "^0.5.1",
     "@logtape/logtape": "^2.0.2",
     "daisyui": "^5",

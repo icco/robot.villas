@@ -455,10 +455,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.3.tgz#c2b9d2e374ee62c586d3adbea87199b1d7a7a6ba"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
-"@icco/react-common@^2026.423.1":
-  version "2026.429.1"
-  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.429.1/fdb31fe5f7a573a92f6975d06919772c21f2afbc#fdb31fe5f7a573a92f6975d06919772c21f2afbc"
-  integrity sha512-pxWSYtr0Kf3JEfdcqts5OTL4gWLsqlJHWMeYTYW464YHjsSLPMsfnemZqU+mT9j77emD/+2toUgj1BemazRKbQ==
+"@icco/react-common@^2026.430.1":
+  version "2026.430.1"
+  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.430.1/36885424816801ca56fce83bb5b621f08ad9c352#36885424816801ca56fce83bb5b621f08ad9c352"
+  integrity sha512-69x0XpmkQcGkZzVkjx1a5xJcUst98o1sttfdeeudoYJ1FLHI+Fytb9U2IcGvOZ7t3EpmkMYOC9FHFHEpBX4WYA==
   dependencies:
     "@wrksz/themes" "^0.9.0"
     vivus "^0.4.6"
