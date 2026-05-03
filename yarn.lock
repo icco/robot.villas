@@ -2604,17 +2604,17 @@ tinyrainbow@^3.1.0:
   resolved "https://registry.yarnpkg.com/tinyrainbow/-/tinyrainbow-3.1.0.tgz#1d8a623893f95cf0a2ddb9e5d11150e191409421"
   integrity sha512-Bf+ILmBgretUrdJxzXM0SgXLZ3XfiaUuOj/IKQHuTXip+05Xn+uyEYdVg0kYDipTBcLrCVyUzAPz7QmArb0mmw==
 
-tldts-core@^7.0.29:
-  version "7.0.29"
-  resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-7.0.29.tgz#c3806f5af57b0351ed9415899be2a8dafa3f56dc"
-  integrity sha512-W99NuU7b1DcG3uJ3v9k9VztCH3WialNbBkBft5wCs8V8mexu0XQqaZEYb9l9RNNzK8+3EJ9PKWB0/RUtTQ/o+Q==
+tldts-core@^7.0.30:
+  version "7.0.30"
+  resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-7.0.30.tgz#c495dba27778f2220bea94f3f6399005c7aca61c"
+  integrity sha512-uiHN8PIB1VmWyS98eZYja4xzlYqeFZVjb4OuYlJQnZAuJhMw4PbKQOKgHKhBdJR3FE/t5mUQ1Kd80++B+qhD1Q==
 
 tldts@^7.0.5:
-  version "7.0.29"
-  resolved "https://registry.yarnpkg.com/tldts/-/tldts-7.0.29.tgz#5a246d4ffcdf8b34cd9cc2dea424162a653f69d1"
-  integrity sha512-JIXCerhudr/N6OWLwLF1HVsTTUo7ry6qHa5eWZEkiMuxsIiAACL55tGLfqfHfoH7QaMQUW8fngD7u7TxWexYQg==
+  version "7.0.30"
+  resolved "https://registry.yarnpkg.com/tldts/-/tldts-7.0.30.tgz#497cea8d610953222f9dcb3ceb07c7207efcd816"
+  integrity sha512-ELrFxuqsDdHUwoh0XxDbxuLD3Wnz49Z57IFvTtvWy1hJdcMZjXLIuonjilCiWHlT2GbE4Wlv1wKVTzDFnXH1aw==
   dependencies:
-    tldts-core "^7.0.29"
+    tldts-core "^7.0.30"
 
 to-regex-range@^5.0.1:
   version "5.0.1"
@@ -2845,9 +2845,9 @@ yallist@^4.0.0:
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
 yaml@^2.8.1:
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.8.3.tgz#a0d6bd2efb3dd03c59370223701834e60409bd7d"
-  integrity sha512-AvbaCLOO2Otw/lW5bmh9d/WEdcDFdQp2Z2ZUH3pX9U2ihyUY0nvLv7J6TrWowklRGPYbB/IuIMfYgxaCPg5Bpg==
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.8.4.tgz#4b5f411dd25f9544914d8673d4da7f29248e5e2e"
+  integrity sha512-ml/JPOj9fOQK8RNnWojA67GbZ0ApXAUlN2UQclwv2eVgTgn7O9gg9o7paZWKMp4g0H3nTLtS9LVzhkpOFIKzog==
 
 yocto-queue@^0.1.0:
   version "0.1.0"
