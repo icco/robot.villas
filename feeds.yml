@@ -341,11 +341,6 @@ bots:
     display_name: 'NPR Topics: Movies'
     summary: Film news and reviews from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
-  npr_music:
-    feed_url: https://feeds.npr.org/1102/rss.xml
-    display_name: 'NPR Topics: Music'
-    summary: Music news and features from NPR.
-    profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_news_now:
     feed_url: https://feeds.npr.org/500005/podcast.xml
     display_name: NPR News Now
@@ -466,11 +461,6 @@ bots:
     display_name: Lifehacker
     summary: Tips, tricks, and downloads for getting things done.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://lifehacker.com&size=128
-  cnn_top_stories:
-    feed_url: http://rss.cnn.com/rss/cnn_topstories.rss
-    display_name: CNN — Top Stories
-    summary: Top stories from CNN.com.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.cnn.com&size=128
   wsj_world:
     feed_url: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
     display_name: WSJ.com — World News
