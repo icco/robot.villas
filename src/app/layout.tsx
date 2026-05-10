@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Roboto, Roboto_Mono } from "next/font/google";
+import {
+  ChartBarIcon,
+  QueueListIcon,
+  SignalIcon,
+  TagIcon,
+} from "@heroicons/react/24/outline";
 import { Footer } from "@icco/react-common/Footer";
 import { SiteHeader } from "@icco/react-common/SiteHeader";
 import { WebVitals } from "@icco/react-common/WebVitals";
@@ -67,10 +73,26 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </Link>
           }
           links={[
-            { name: "Posts", href: "/posts" },
-            { name: "Tags", href: "/tags" },
-            { name: "Stats", href: "/stats" },
-            { name: "Status", href: "/status" },
+            {
+              name: "Posts",
+              href: "/posts",
+              icon: <QueueListIcon className="h-5 w-5" />,
+            },
+            {
+              name: "Tags",
+              href: "/tags",
+              icon: <TagIcon className="h-5 w-5" />,
+            },
+            {
+              name: "Stats",
+              href: "/stats",
+              icon: <ChartBarIcon className="h-5 w-5" />,
+            },
+            {
+              name: "Status",
+              href: "/status",
+              icon: <SignalIcon className="h-5 w-5" />,
+            },
           ]}
         />
         <main className="container mx-auto flex-1 px-4 py-8 max-w-4xl">
