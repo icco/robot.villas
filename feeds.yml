@@ -488,6 +488,13 @@ bots:
     display_name: Lydia Dehn — and then
     summary: Lydia Dehn's blog on painting, textiles, art history, fashion, and creative practice.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.lydiadehn.com&size=128
+  liliputing:
+    feed_url: https://liliputing.com/feed/
+    display_name: Liliputing
+    summary: News and reviews of mobile tech, mini PCs, and other small computers.
+    profile_photo: https://liliputing.com/wp-content/uploads/2020/02/cropped-lp_icon_1024-e1582423214846-180x180.png
+    default_hashtags:
+      - Tech
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
