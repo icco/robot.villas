@@ -28,7 +28,7 @@
     "@heroicons/react": "^2.2.0",
     "@icco/react-common": "^2026.510.2",
     "@js-temporal/polyfill": "^0.5.1",
-    "@logtape/logtape": "^2.0.2",
+    "@logtape/logtape": "^2.0.9",
     "daisyui": "^5",
     "drizzle-orm": "^0.45.2",
     "escape-html": "^1.0.3",
