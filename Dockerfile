@@ -1,4 +1,4 @@
-FROM node:25-slim AS builder
+FROM node:26-slim AS builder
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ COPY . .
 ENV DOMAIN=robot.villas
 RUN yarn build
 
-FROM node:25-slim
+FROM node:26-slim
 
 LABEL org.opencontainers.image.source=https://github.com/icco/robot.villas
 LABEL org.opencontainers.image.description="RSS to Mastodon Bridge"
