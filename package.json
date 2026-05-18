@@ -20,9 +20,9 @@
     "validate-feeds": "tsx scripts/validate-feeds.ts"
   },
   "dependencies": {
-    "@fedify/fedify": "^2.1.10",
-    "@fedify/next": "^2.1.10",
-    "@fedify/postgres": "^2.1.10",
+    "@fedify/fedify": "^2.2.2",
+    "@fedify/next": "^2.2.2",
+    "@fedify/postgres": "^2.2.2",
     "@fedify/vocab": "^2.1.10",
     "@google/genai": "^2.3.0",
     "@heroicons/react": "^2.2.0",
