@@ -409,10 +409,10 @@
     "@opentelemetry/api" "^1.9.0"
     es-toolkit "1.43.0"
 
-"@google/genai@^2.0.1":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@google/genai/-/genai-2.2.0.tgz#9ecf5101b94bb73297cd83c5f569f83c9f2f3fa2"
-  integrity sha512-RA3cuaKLldWTrpxhNm2nAe0Oez/UEuoH11jFjPzbYL7TSP83lMk+ic7pQKZ4ekJdZfnIdgxWl1DwJoUwxmvWGQ==
+"@google/genai@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@google/genai/-/genai-2.3.0.tgz#158f9198369d33ecf1fc1d6207d991def99b3746"
+  integrity sha512-rXDhXUBj31gZafcwQFbXvt8jMrMxZoK7ECjQpk88UfA/OkZls3PtZDprT9lM3jjqRtwRjQoNLoPoNq6MlV8qLw==
   dependencies:
     google-auth-library "^10.3.0"
     p-retry "^4.6.2"
