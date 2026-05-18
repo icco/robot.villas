@@ -1,4 +1,4 @@
-import { Temporal } from "@js-temporal/polyfill";
+import { Temporal as TemporalPolyfill } from "@js-temporal/polyfill";
 import type { Context } from "@fedify/fedify";
 import { Create, Hashtag, Note, PUBLIC_COLLECTION, type Recipient } from "@fedify/vocab";
 import escapeHtml from "escape-html";
@@ -62,7 +62,9 @@ export function buildCreateActivity(
     mediaType: "text/html",
     url: safeParseUrl(entry.link),
     published: entry.publishedAt
-      ? Temporal.Instant.from(entry.publishedAt.toISOString())
+      ? (TemporalPolyfill.Instant.from(
+          entry.publishedAt.toISOString(),
+        ) as unknown as Temporal.Instant)
       : undefined,
     tags: hashtagTags,
   });

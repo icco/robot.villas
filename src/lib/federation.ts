@@ -10,7 +10,7 @@ import {
   type SenderKeyPair,
 } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
-import { Temporal } from "@js-temporal/polyfill";
+import { Temporal as TemporalPolyfill } from "@js-temporal/polyfill";
 import {
   Accept,
   Add,
@@ -443,7 +443,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         mediaType: "text/html",
         url: safeParseUrl(entry.url),
         published: entry.publishedAt
-          ? Temporal.Instant.from(entry.publishedAt.toISOString())
+          ? (TemporalPolyfill.Instant.from(
+              entry.publishedAt.toISOString(),
+            ) as unknown as Temporal.Instant)
           : undefined,
         tags: hashtagTags,
       });
