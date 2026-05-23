@@ -2,7 +2,7 @@ FROM node:26-slim AS builder
 
 WORKDIR /app
 
-RUN corepack enable
+RUN npm install -g pnpm@11.2.2
 
 COPY package.json pnpm-lock.yaml .npmrc ./
 RUN --mount=type=secret,id=npm_token \
