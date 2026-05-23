@@ -2,8 +2,9 @@
   "name": "@icco/robot.villas",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@11.2.2",
   "engines": {
-    "node": ">=24"
+    "node": ">=26"
   },
   "scripts": {
     "dev": "next dev",
@@ -11,7 +12,7 @@
     "start": "next start",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "eslint --fix src/ && yarn fmt:yaml && yarn typecheck",
+    "lint": "eslint --fix src/ && pnpm fmt:yaml && pnpm typecheck",
     "fmt:yaml": "find . \\( -name '*.yml' -o -name '*.yaml' \\) -not -path './node_modules/*' -not -path './.next/*' -exec yq -iP '.' {} \\;",
     "typecheck": "tsc --noEmit",
     "db:generate": "drizzle-kit generate",
@@ -42,9 +43,6 @@
     "rss-parser": "^3.13.0",
     "tailwindcss": "^4",
     "zod": "^4.3.6"
-  },
-  "resolutions": {
-    "esbuild": "^0.28.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
