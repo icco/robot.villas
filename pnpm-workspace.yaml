@@ -1,0 +1,10 @@
+overrides:
+  esbuild: ^0.28.0
+allowBuilds:
+  '@google/genai': true
+  esbuild: true
+  protobufjs: true
+  sharp: true
+
+minimumReleaseAgeExclude:
+  - "@icco/react-common"

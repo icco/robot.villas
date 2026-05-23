@@ -4,16 +4,16 @@ set -ex
 
 rm -rf package-lock.json dist node_modules
 
-yarn 
-yarn upgrade 
-git add package* yarn.lock
-git diff --quiet --staged || git commit -m 'chore(deps): yarn upgrade'
+pnpm install
+pnpm update
+git add package* pnpm-lock.yaml
+git diff --quiet --staged || git commit -m 'chore(deps): pnpm update'
 
-yarn run lint 
+pnpm run lint
 git add src
 git diff --quiet --staged || git commit -m 'chore: lint'
 
-yarn run build
+pnpm run build
 
 git commit --allow-empty -m 'chore: redeploy'
 

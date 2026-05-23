@@ -1,19 +1,21 @@
-FROM node:25-slim AS builder
+FROM node:26-slim AS builder
 
 WORKDIR /app
 
-COPY package.json yarn.lock .npmrc ./
+RUN npm install -g pnpm@11.2.2
+
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN --mount=type=secret,id=npm_token \
     echo "//npm.pkg.github.com/:_authToken=$(cat /run/secrets/npm_token)" >> .npmrc && \
-    yarn install --frozen-lockfile && \
+    pnpm install --frozen-lockfile && \
     rm -f .npmrc
 
 COPY . .
 
 ENV DOMAIN=robot.villas
-RUN yarn build
+RUN pnpm build
 
-FROM node:25-slim
+FROM node:26-slim
 
 LABEL org.opencontainers.image.source=https://github.com/icco/robot.villas
 LABEL org.opencontainers.image.description="RSS to Mastodon Bridge"
