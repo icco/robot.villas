@@ -21,11 +21,11 @@
     "validate-feeds": "tsx scripts/validate-feeds.ts"
   },
   "dependencies": {
-    "@fedify/fedify": "^2.2.3",
-    "@fedify/next": "^2.2.3",
-    "@fedify/postgres": "^2.2.3",
-    "@fedify/vocab": "^2.2.3",
-    "@google/genai": "^2.7.0",
+    "@fedify/fedify": "^2.2.4",
+    "@fedify/next": "^2.2.4",
+    "@fedify/postgres": "^2.2.4",
+    "@fedify/vocab": "^2.2.4",
+    "@google/genai": "^2.8.0",
     "@heroicons/react": "^2.2.0",
     "@icco/react-common": "^2026.10601.1",
     "@js-temporal/polyfill": "^0.5.1",

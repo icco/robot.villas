@@ -12,20 +12,20 @@ importers:
   .:
     dependencies:
       '@fedify/fedify':
-        specifier: ^2.2.3
-        version: 2.2.3
+        specifier: ^2.2.4
+        version: 2.2.4
       '@fedify/next':
-        specifier: ^2.2.3
-        version: 2.2.3(@fedify/fedify@2.2.3)(next@16.2.7(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
+        specifier: ^2.2.4
+        version: 2.2.4(@fedify/fedify@2.2.4)(next@16.2.7(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
       '@fedify/postgres':
-        specifier: ^2.2.3
-        version: 2.2.3(@fedify/fedify@2.2.3)(postgres@3.4.9)
+        specifier: ^2.2.4
+        version: 2.2.4(@fedify/fedify@2.2.4)(postgres@3.4.9)
       '@fedify/vocab':
-        specifier: ^2.2.3
-        version: 2.2.3
+        specifier: ^2.2.4
+        version: 2.2.4
       '@google/genai':
-        specifier: ^2.7.0
-        version: 2.7.0
+        specifier: ^2.8.0
+        version: 2.8.0
       '@heroicons/react':
         specifier: ^2.2.0
         version: 2.2.0(react@19.2.7)
@@ -176,8 +176,8 @@ packages:
     peerDependencies:
       '@csstools/css-tokenizer': ^4.0.0
 
-  '@csstools/css-syntax-patches-for-csstree@1.1.4':
-    resolution: {integrity: sha512-wgsqt92b7C7tQhIdPNxj0n9zuUbQlvAuI1exyzeNrOKOi62SD7ren8zqszmpVREjAOqg8cD2FqYhQfAuKjk4sw==}
+  '@csstools/css-syntax-patches-for-csstree@1.1.5':
+    resolution: {integrity: sha512-oNjBvzLq2GPZtJphCjLqXow/cHySHSgtxvKZb7OqSZ/xHgw6NWNhfad+6AB9cLeVm6eA9d/qMll3JdEHjy6M+A==}
     peerDependencies:
       css-tree: ^3.2.1
     peerDependenciesMeta:
@@ -416,40 +416,40 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@fedify/fedify@2.2.3':
-    resolution: {integrity: sha512-mEczGCZVZsgQQj8gCKZizOJsOuV3kOBpMVPJrhmOkE+RKh8XjnZwtzPwN2UWp4Yt2E9YsKg3fSxNJmJW/o4uDQ==}
+  '@fedify/fedify@2.2.4':
+    resolution: {integrity: sha512-HK9NQOyHcdHT/HCTJ58QOMp5HuLuHwSP4mmC4yX4kQflqrb1B3v083oYAXxewUucmjf0XkBANN+qPs0qkT4Anw==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/next@2.2.3':
-    resolution: {integrity: sha512-hilf7EHJnhd3F2IuFJxymZ/ixYjUXretfLf1BDLhOOC5cSPPFC5L9ikdBkPX0BgdbP+VH9Jz+BkFTjlWxjcjog==}
+  '@fedify/next@2.2.4':
+    resolution: {integrity: sha512-fqSBgyxlXrv8bNhC7+nFc+3D4zOSvN1X0Kj47Rdgdh1voFjCIRuWUFSDeSNL9lwrAU0jUM44BVxmgIKUrcAqgQ==}
     peerDependencies:
-      '@fedify/fedify': ^2.2.3
+      '@fedify/fedify': ^2.2.4
       next: '>=15.4.6 <17'
 
-  '@fedify/postgres@2.2.3':
-    resolution: {integrity: sha512-51jv/pcG1hVSYJL60ZCxmMd970PgwWzY3gr9zxTfc2YdjYP3TYFcluGsxanhOYD6Pd9oEx9GmMeLXNuZYORT3Q==}
+  '@fedify/postgres@2.2.4':
+    resolution: {integrity: sha512-aGl0NbwWOK/FmWOqgzk2j+NNsPLUzDHfOh7X2szy1YiiTogkacQawcoG3PIox3F1yUGMiamXevdkKb3rlORAFA==}
     peerDependencies:
-      '@fedify/fedify': ^2.2.3
+      '@fedify/fedify': ^2.2.4
       postgres: ^3.4.7
 
-  '@fedify/vocab-runtime@2.2.3':
-    resolution: {integrity: sha512-MDAW28KooWhj9z3HQY3nDhVJ15HkgD4TOCK8vHCoARy1Q4HmTUGXZZzUdGiSuefQkm5mW7VckImCDNj05dIAPA==}
+  '@fedify/vocab-runtime@2.2.4':
+    resolution: {integrity: sha512-WOF6ei2P55gH2K0Sn1Hqwlf4zjqkYW8FrpQ63Z/BtCn0h2GtGnw6z9ocSUNsyD3Yej1HrwkpW3DfCPEFY8uK6w==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab-tools@2.2.3':
-    resolution: {integrity: sha512-zmaRKeJk+7wC7kgiiQNX6PpGgNaQTwjEBCREqXdZuY0Zw2lYeoyzL3F8PEIttOUIxdBdBxGOC9/HE6AVMndN6Q==}
+  '@fedify/vocab-tools@2.2.4':
+    resolution: {integrity: sha512-hcbycBEGebLufCfc5uYhf0WzsksWYStkuDbFgtq0ZniZ9sYYJGIIFiQl2dZFkpAR6aAK6rnCqjyUWyL71dJ/IA==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab@2.2.3':
-    resolution: {integrity: sha512-a5llEaCj3f9UGIY+t1PadGdfhMt0tY1TnpMTtx2Ulw+U8ONKAbRTz9Wnq2QWAF7Yp7JOqyy/EluZ2w/AIUNSGw==}
+  '@fedify/vocab@2.2.4':
+    resolution: {integrity: sha512-hk3hIN3oymbXBziHZS+/W9kXl3v+Q53iU00/jWn7KujA1IHI29JnHLYmM3Ggg/bwoAv+MWLliZxHqKHw/6Oigg==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/webfinger@2.2.3':
-    resolution: {integrity: sha512-WJQw0cKkSfK4IbdPc+z9ODspYDO+t0q5dIRo7eR/oO31yqVGjwLYJsDL0dlyXQ0WF/Q+Qrfw2fQOvTs9Xarc9g==}
+  '@fedify/webfinger@2.2.4':
+    resolution: {integrity: sha512-8zqtQB9CAwvy/qSR0QRFJvt/VbxY1r6LQpB2qGaBOXJYTsakWHOEHG/+zvprsRNS+seZXY77qpKumYDQ2jprGg==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@google/genai@2.7.0':
-    resolution: {integrity: sha512-tv0DRtcndt2oEhBYy+5mA0TaXH98+L1Gt0AP9unBfH7DP20KhB7+O3QqAN1Lz+laMARGTHS7BFQSNpLbl4gm1g==}
+  '@google/genai@2.8.0':
+    resolution: {integrity: sha512-pc2ayxqO5+O7AvnHBqpNHIk7PAZkHZgL31tbyx0gJZBSS9qPYiQoqwK7oYOw/ePmG6QY4EMSu+304vD5QlhXAw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@modelcontextprotocol/sdk': ^1.25.2
@@ -1372,8 +1372,8 @@ packages:
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
-  enhanced-resolve@5.22.1:
-    resolution: {integrity: sha512-6QEuw3zoX1SJQc7b87aBXke/no+mG2bTBgw29gWMQonLmpEkWoCAVkl+M49e48AZlWzxiDzDZzYdp6kobcyLww==}
+  enhanced-resolve@5.22.2:
+    resolution: {integrity: sha512-0rxICaFZ7NQho/sHely2bvOPRP0Eu2B0NZ9zM54YvRvWMn7jfz3DmnOZDR9LlXDdDcqntAVc6Hfy4gr/tdH/Ag==}
     engines: {node: '>=10.13.0'}
 
   entities@2.2.0:
@@ -2290,7 +2290,7 @@ snapshots:
     dependencies:
       '@csstools/css-tokenizer': 4.0.0
 
-  '@csstools/css-syntax-patches-for-csstree@1.1.4(css-tree@3.2.1)':
+  '@csstools/css-syntax-patches-for-csstree@1.1.5(css-tree@3.2.1)':
     optionalDependencies:
       css-tree: 3.2.1
 
@@ -2443,11 +2443,11 @@ snapshots:
 
   '@exodus/bytes@1.15.1': {}
 
-  '@fedify/fedify@2.2.3':
+  '@fedify/fedify@2.2.4':
     dependencies:
-      '@fedify/vocab': 2.2.3
-      '@fedify/vocab-runtime': 2.2.3
-      '@fedify/webfinger': 2.2.3
+      '@fedify/vocab': 2.2.4
+      '@fedify/vocab-runtime': 2.2.4
+      '@fedify/webfinger': 2.2.4
       '@js-temporal/polyfill': 0.5.1
       '@logtape/logtape': 2.1.1
       '@opentelemetry/api': 1.9.1
@@ -2463,19 +2463,19 @@ snapshots:
       url-template: 3.1.1
       urlpattern-polyfill: 10.1.0
 
-  '@fedify/next@2.2.3(@fedify/fedify@2.2.3)(next@16.2.7(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))':
+  '@fedify/next@2.2.4(@fedify/fedify@2.2.4)(next@16.2.7(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))':
     dependencies:
-      '@fedify/fedify': 2.2.3
+      '@fedify/fedify': 2.2.4
       next: 16.2.7(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
 
-  '@fedify/postgres@2.2.3(@fedify/fedify@2.2.3)(postgres@3.4.9)':
+  '@fedify/postgres@2.2.4(@fedify/fedify@2.2.4)(postgres@3.4.9)':
     dependencies:
-      '@fedify/fedify': 2.2.3
+      '@fedify/fedify': 2.2.4
       '@js-temporal/polyfill': 0.5.1
       '@logtape/logtape': 2.1.1
       postgres: 3.4.9
 
-  '@fedify/vocab-runtime@2.2.3':
+  '@fedify/vocab-runtime@2.2.4':
     dependencies:
       '@js-temporal/polyfill': 0.5.1
       '@logtape/logtape': 2.1.1
@@ -2486,18 +2486,18 @@ snapshots:
       jsonld: 9.0.0
       pkijs: 3.4.0
 
-  '@fedify/vocab-tools@2.2.3':
+  '@fedify/vocab-tools@2.2.4':
     dependencies:
       '@cfworker/json-schema': 4.1.1
       byte-encodings: 1.0.11
       es-toolkit: 1.43.0
       yaml: 2.9.0
 
-  '@fedify/vocab@2.2.3':
+  '@fedify/vocab@2.2.4':
     dependencies:
-      '@fedify/vocab-runtime': 2.2.3
-      '@fedify/vocab-tools': 2.2.3
-      '@fedify/webfinger': 2.2.3
+      '@fedify/vocab-runtime': 2.2.4
+      '@fedify/vocab-tools': 2.2.4
+      '@fedify/webfinger': 2.2.4
       '@js-temporal/polyfill': 0.5.1
       '@logtape/logtape': 2.1.1
       '@multiformats/base-x': 4.0.1
@@ -2507,14 +2507,14 @@ snapshots:
       jsonld: 9.0.0
       pkijs: 3.4.0
 
-  '@fedify/webfinger@2.2.3':
+  '@fedify/webfinger@2.2.4':
     dependencies:
-      '@fedify/vocab-runtime': 2.2.3
+      '@fedify/vocab-runtime': 2.2.4
       '@logtape/logtape': 2.1.1
       '@opentelemetry/api': 1.9.1
       es-toolkit: 1.43.0
 
-  '@google/genai@2.7.0':
+  '@google/genai@2.8.0':
     dependencies:
       google-auth-library: 10.6.2
       p-retry: 4.6.2
@@ -2848,7 +2848,7 @@ snapshots:
   '@tailwindcss/node@4.3.0':
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      enhanced-resolve: 5.22.1
+      enhanced-resolve: 5.22.2
       jiti: 2.7.0
       lightningcss: 1.32.0
       magic-string: 0.30.21
@@ -3203,7 +3203,7 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  enhanced-resolve@5.22.1:
+  enhanced-resolve@5.22.2:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.3
@@ -3472,7 +3472,7 @@ snapshots:
       '@asamuzakjp/css-color': 5.1.11
       '@asamuzakjp/dom-selector': 7.1.1
       '@bramus/specificity': 2.4.2
-      '@csstools/css-syntax-patches-for-csstree': 1.1.4(css-tree@3.2.1)
+      '@csstools/css-syntax-patches-for-csstree': 1.1.5(css-tree@3.2.1)
       '@exodus/bytes': 1.15.1
       css-tree: 3.2.1
       data-urls: 7.0.0
