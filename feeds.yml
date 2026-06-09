@@ -495,16 +495,16 @@ bots:
     profile_photo: https://liliputing.com/wp-content/uploads/2020/02/cropped-lp_icon_1024-e1582423214846-180x180.png
     default_hashtags:
       - Tech
-motorsport:
-  feed_url: https://www.motorsport.com/rss/all/news/
-  display_name: Motorsport.com
-  summary: Global motorsport news, analysis, and race coverage.
-  profile_photo: https://cdn-1.motorsportnetwork.com/msnt/static/logo/motorsport.jpg
-the_race:
-  feed_url: https://www.the-race.com/rss/
-  display_name: The Race
-  summary: Independent Formula 1, MotoGP, Formula E, and motorsport news.
-  profile_photo: https://www.the-race.com/favicon.png
+  motorsport:
+    feed_url: https://www.motorsport.com/rss/all/news/
+    display_name: Motorsport.com
+    summary: Global motorsport news, analysis, and race coverage.
+    profile_photo: https://cdn-1.motorsportnetwork.com/msnt/static/logo/motorsport.jpg
+  the_race:
+    feed_url: https://www.the-race.com/rss/
+    display_name: The Race
+    summary: Independent Formula 1, MotoGP, Formula E, and motorsport news.
+    profile_photo: https://www.the-race.com/favicon.png
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
