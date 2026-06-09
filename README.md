@@ -7,6 +7,7 @@ An RSS-to-Mastodon bridge. Each RSS feed gets its own bot account on the fediver
 Bots, follows, and relays are configured in `feeds.yml`:
 
 ```yaml
+# yaml-language-server: $schema=./feeds.schema.json
 bots:
   hackernews:
     feed_url: "https://news.ycombinator.com/rss"
@@ -21,6 +22,8 @@ follows:
 relays:
   - https://relay.toot.io/actor
 ```
+
+`feeds.schema.json` contains a JSON Schema spec for `feeds.yml` that can be used by editors and external validators.
 
 Each key under `bots` becomes the bot's fediverse username. Usernames must be lowercase alphanumeric or underscores (validated at startup via Zod).
 
@@ -106,6 +109,7 @@ src/
   instrumentation.ts  Server startup: migrations, queue, poller
 drizzle/              Generated SQL migration files (committed to git)
 feeds.yml             Bot, follow, and relay configuration
+feeds.schema.json     JSON Schema spec for feeds.yml
 ```
 
 ## Docker
