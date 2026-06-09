@@ -507,7 +507,7 @@ the_race:
   profile_photo: https://www.the-race.com/favicon.png
 relay_subscription_bot: nyt_homepage
 follows:
-- '@icco@merveilles.town'
+  - '@icco@merveilles.town'
   - '@_followback@tags.pub'
 relays:
   - https://relay.toot.io/actor
