@@ -4,7 +4,6 @@
   "title": "robot.villas feeds configuration",
   "description": "Configuration for RSS bot feeds, follows, and relays.",
   "type": "object",
-  "additionalProperties": false,
   "required": [
     "bots"
   ],
@@ -41,14 +40,13 @@
     },
     "relay_subscription_bot": {
       "type": "string",
-      "description": "Bot username used for relay subscription requests.",
+      "description": "Bot username used for relay subscription requests; must match a key in `bots` (enforced at runtime).",
       "pattern": "^[a-z0-9_]+$"
     }
   },
   "$defs": {
     "bot": {
       "type": "object",
-      "additionalProperties": false,
       "required": [
         "feed_url",
         "display_name",
