@@ -1,6 +1,8 @@
 import { describe, it, expect, afterEach } from "vitest";
 import { getBlockedInstances, getRelaySubscriptionBot, parseConfig, loadConfig } from "../config";
 import { join } from "node:path";
+import { readFileSync } from "node:fs";
+import { load as parseYaml } from "js-yaml";
 
 describe("parseConfig", () => {
   it("parses a valid config", () => {
@@ -171,6 +173,93 @@ describe("loadConfig", () => {
     for (const bot of Object.values(config.bots)) {
       expect(bot.feed_url).toMatch(/^https?:\/\//);
       expect(bot.display_name.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("validates feeds.yml against feeds.schema.json", () => {
+    const repoRoot = join(import.meta.dirname!, "..", "..", "..");
+    const feedsYaml = readFileSync(join(repoRoot, "feeds.yml"), "utf-8");
+    const schemaRaw = readFileSync(join(repoRoot, "feeds.schema.json"), "utf-8");
+
+    const feedsData = parseYaml(feedsYaml) as Record<string, unknown>;
+    const schema = JSON.parse(schemaRaw) as {
+      required: string[];
+      properties: Record<string, unknown>;
+      $defs: { bot: { required: string[]; properties: Record<string, unknown> } };
+    };
+
+    const isUri = (value: unknown) => {
+      if (typeof value !== "string") return false;
+      try {
+        new URL(value);
+        return true;
+      } catch {
+        return false;
+      }
+    };
+
+    for (const key of schema.required) {
+      expect(feedsData[key]).toBeDefined();
+    }
+
+    const botPropertySchema = schema.properties.bots as {
+      propertyNames: { pattern: string };
+    };
+    const botSchema = schema.$defs.bot;
+    const botNameRe = new RegExp(botPropertySchema.propertyNames.pattern);
+    const bots = feedsData.bots as Record<string, Record<string, unknown>>;
+    expect(Object.keys(bots).length).toBeGreaterThanOrEqual(1);
+
+    for (const [botName, bot] of Object.entries(bots)) {
+      expect(botNameRe.test(botName)).toBe(true);
+      for (const field of botSchema.required) {
+        expect(bot[field]).toBeDefined();
+      }
+
+      expect(isUri(bot.feed_url)).toBe(true);
+      expect(typeof bot.display_name).toBe("string");
+      expect((bot.display_name as string).length).toBeGreaterThanOrEqual(1);
+      expect((bot.display_name as string).length).toBeLessThanOrEqual(100);
+      expect(typeof bot.summary).toBe("string");
+      expect((bot.summary as string).length).toBeGreaterThanOrEqual(1);
+      expect((bot.summary as string).length).toBeLessThanOrEqual(500);
+
+      if (bot.profile_photo != null) {
+        expect(isUri(bot.profile_photo)).toBe(true);
+      }
+
+      if (bot.default_hashtags != null) {
+        expect(Array.isArray(bot.default_hashtags)).toBe(true);
+        expect(bot.default_hashtags.length).toBeLessThanOrEqual(3);
+        for (const hashtag of bot.default_hashtags) {
+          expect(typeof hashtag).toBe("string");
+          expect(hashtag.length).toBeGreaterThanOrEqual(1);
+          expect(hashtag.length).toBeLessThanOrEqual(30);
+        }
+      }
+    }
+
+    const follows = feedsData.follows;
+    if (follows != null) {
+      expect(Array.isArray(follows)).toBe(true);
+      for (const follow of follows as unknown[]) {
+        expect(typeof follow).toBe("string");
+        expect((follow as string).length).toBeGreaterThanOrEqual(3);
+      }
+    }
+
+    const relays = feedsData.relays;
+    if (relays != null) {
+      expect(Array.isArray(relays)).toBe(true);
+      for (const relay of relays as unknown[]) {
+        expect(isUri(relay)).toBe(true);
+      }
+    }
+
+    const relaySubscriptionBot = feedsData.relay_subscription_bot;
+    if (relaySubscriptionBot != null) {
+      expect(typeof relaySubscriptionBot).toBe("string");
+      expect(botNameRe.test(relaySubscriptionBot as string)).toBe(true);
     }
   });
 });

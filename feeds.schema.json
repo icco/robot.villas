@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://robot.villas/feeds.schema.json",
+  "title": "robot.villas feeds configuration",
+  "description": "Configuration for RSS bot feeds, follows, and relays.",
+  "type": "object",
+  "required": [
+    "bots"
+  ],
+  "properties": {
+    "bots": {
+      "type": "object",
+      "description": "Bot definitions keyed by fediverse username.",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-z0-9_]+$",
+        "description": "Bot username must be lowercase alphanumeric or underscore."
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/bot"
+      }
+    },
+    "follows": {
+      "type": "array",
+      "description": "Fediverse handles that every bot follows on startup.",
+      "default": [],
+      "items": {
+        "type": "string",
+        "minLength": 3
+      }
+    },
+    "relays": {
+      "type": "array",
+      "description": "ActivityPub relay actor URLs to subscribe to.",
+      "default": [],
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "relay_subscription_bot": {
+      "type": "string",
+      "description": "Bot username used for relay subscription requests; must match a key in `bots` (enforced at runtime).",
+      "pattern": "^[a-z0-9_]+$"
+    }
+  },
+  "$defs": {
+    "bot": {
+      "type": "object",
+      "required": [
+        "feed_url",
+        "display_name",
+        "summary"
+      ],
+      "properties": {
+        "feed_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "RSS/Atom feed URL."
+        },
+        "display_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "profile_photo": {
+          "type": "string",
+          "format": "uri",
+          "description": "Profile photo URL."
+        },
+        "default_hashtags": {
+          "type": "array",
+          "description": "Up to three default hashtags without leading #.",
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 30
+          }
+        }
+      }
+    }
+  }
+}
