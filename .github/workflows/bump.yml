@@ -11,7 +11,7 @@ jobs:
       contents: write
       packages: read
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Install zsh
         run: sudo apt-get update; sudo apt-get install zsh
       - uses: pnpm/action-setup@v6
