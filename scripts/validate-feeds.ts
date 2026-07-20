@@ -19,10 +19,13 @@ const VALID_MIME_TYPES = new Set([
 
 const TIMEOUT_MS = 15_000;
 const USER_AGENT = "robot.villas-feed-validator/1.0 (feed validation bot)";
+const BROWSER_USER_AGENT =
+  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36";
 
 async function probeUrl(url: string): Promise<
   | { kind: "ok"; contentType: string }
   | { kind: "wrong_mime"; contentType: string }
+  | { kind: "blocked"; status: number }
   | { kind: "http_error"; status: number }
   | { kind: "network_error"; detail: string }
 > {
@@ -40,6 +43,17 @@ async function probeUrl(url: string): Promise<
         headers: { ...headers, Range: "bytes=0-0" },
         signal: AbortSignal.timeout(TIMEOUT_MS),
       });
+    }
+    // WAFs (e.g. Cloudflare) intermittently reject bot user agents — retry as a browser
+    if (res.status === 403 || res.status === 429) {
+      res = await fetch(url, {
+        method: "GET",
+        headers: { "User-Agent": BROWSER_USER_AGENT, Range: "bytes=0-0" },
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      });
+      if (res.status === 403 || res.status === 429) {
+        return { kind: "blocked", status: res.status };
+      }
     }
     if (!res.ok && res.status !== 206) {
       return { kind: "http_error", status: res.status };
@@ -76,13 +90,18 @@ async function main() {
   console.log(`\nChecking ${bots.length} profile photos…\n`);
 
   const errors: string[] = [];
+  const warnings: string[] = [];
 
   await Promise.all(
     bots.map(async ([name, bot]) => {
       const url = bot.profile_photo!;
       const r = await probeUrl(url);
 
-      if (r.kind === "wrong_mime") {
+      if (r.kind === "blocked") {
+        warnings.push(
+          `[${name}] HTTP ${r.status} — server blocks automated probes, cannot verify\n    ${url}`,
+        );
+      } else if (r.kind === "wrong_mime") {
         errors.push(
           `[${name}] MIME type "${r.contentType}" is not supported by Mastodon — use png/jpeg/gif/webp\n    ${url}`,
         );
@@ -93,6 +112,11 @@ async function main() {
       }
     }),
   );
+
+  if (warnings.length > 0) {
+    console.log(`${warnings.length} warning(s):\n`);
+    for (const w of warnings) console.log(`  ⚠ ${w}`);
+  }
 
   if (errors.length > 0) {
     console.error(`${errors.length} error(s):\n`);

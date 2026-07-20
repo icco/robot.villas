@@ -22,9 +22,9 @@ jobs:
           node-version-file: .nvmrc
           cache: pnpm
       - uses: mikefarah/yq@master
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
       - run: pnpm install --frozen-lockfile
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: git checkout -- .npmrc
       - run: pnpm lint
       - run: pnpm fmt:yaml
       - run: pnpm typecheck
@@ -44,9 +44,8 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: pnpm
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
       - run: pnpm install --frozen-lockfile
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm validate-feeds
   test:
     runs-on: ubuntu-latest
@@ -73,8 +72,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: pnpm
+      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
       - run: pnpm install --frozen-lockfile
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm build
       - run: pnpm test

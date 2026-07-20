@@ -121,7 +121,7 @@ bots:
     feed_url: https://blog.cloudflare.com/rss/
     display_name: Cloudflare Blog
     summary: Deep dives into networking, security, and systems engineering.
-    profile_photo: https://blog.cloudflare.com/images/favicon-32x32.png
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://blog.cloudflare.com&size=128
   brandur:
     feed_url: https://brandur.org/articles.atom
     display_name: Brandur Leach

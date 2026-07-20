@@ -189,7 +189,9 @@ describe("loadConfig", () => {
     };
 
     const isUri = (value: unknown) => {
-      if (typeof value !== "string") return false;
+      if (typeof value !== "string") {
+        return false;
+      }
       try {
         new URL(value);
         return true;
@@ -230,11 +232,12 @@ describe("loadConfig", () => {
 
       if (bot.default_hashtags != null) {
         expect(Array.isArray(bot.default_hashtags)).toBe(true);
-        expect(bot.default_hashtags.length).toBeLessThanOrEqual(3);
-        for (const hashtag of bot.default_hashtags) {
+        const hashtags = bot.default_hashtags as unknown[];
+        expect(hashtags.length).toBeLessThanOrEqual(3);
+        for (const hashtag of hashtags) {
           expect(typeof hashtag).toBe("string");
-          expect(hashtag.length).toBeGreaterThanOrEqual(1);
-          expect(hashtag.length).toBeLessThanOrEqual(30);
+          expect((hashtag as string).length).toBeGreaterThanOrEqual(1);
+          expect((hashtag as string).length).toBeLessThanOrEqual(30);
         }
       }
     }
