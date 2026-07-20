@@ -6,10 +6,9 @@ RUN npm install -g pnpm@11.2.2
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN --mount=type=secret,id=npm_token \
-    cp .npmrc .npmrc.orig && \
     echo "//npm.pkg.github.com/:_authToken=$(cat /run/secrets/npm_token)" >> .npmrc && \
     pnpm install --frozen-lockfile && \
-    mv .npmrc.orig .npmrc
+    rm -f .npmrc
 
 COPY . .
 
