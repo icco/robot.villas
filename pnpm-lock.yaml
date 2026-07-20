@@ -36,8 +36,8 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1
       '@logtape/logtape':
-        specifier: ^2.1.3
-        version: 2.1.3
+        specifier: ^2.2.4
+        version: 2.2.4
       daisyui:
         specifier: ^5.5.23
         version: 5.5.23
@@ -670,9 +670,6 @@ packages:
   '@js-temporal/polyfill@0.5.1':
     resolution: {integrity: sha512-hloP58zRVCRSpgDxmqCWJNlizAlUgJFqG2ypq79DCvyv9tHjRYMDOcPFjzfl/A1/YxDvRCZz8wvZvmapQnKwFQ==}
     engines: {node: '>=12'}
-
-  '@logtape/logtape@2.1.3':
-    resolution: {integrity: sha512-DgFWjTYG403/FYbe2rIN6oEE20aN34r5UBC4wktCsM+qSF1L9HMZErvH+u+urNuDQX4bcnLm5UYgX+wWE79U3g==}
 
   '@logtape/logtape@2.2.4':
     resolution: {integrity: sha512-2rALzv9m4ibE5FyB8/FMm5MPMMlK7ujgy3ufricVKIxj6e7SZbw4w6J16/fRAsXgdDlOXPUA0aa6XoEQvdlKxw==}
@@ -2717,8 +2714,6 @@ snapshots:
   '@js-temporal/polyfill@0.5.1':
     dependencies:
       jsbi: 4.3.2
-
-  '@logtape/logtape@2.1.3': {}
 
   '@logtape/logtape@2.2.4': {}
 
