@@ -30,8 +30,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0(react@19.2.7)
       '@icco/react-common':
-        specifier: ^2026.10607.1
-        version: 2026.10607.1(@heroicons/react@2.2.0(react@19.2.7))(jsdom@29.1.1)(next@16.2.10(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)
+        specifier: ^2026.10713.4
+        version: 2026.10713.4(@heroicons/react@2.2.0(react@19.2.7))(jsdom@29.1.1)(next@16.2.10(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)
       '@js-temporal/polyfill':
         specifier: ^0.5.1
         version: 0.5.1
@@ -489,8 +489,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@icco/react-common@2026.10607.1':
-    resolution: {integrity: sha512-4BrgLPrOG85/HAjzJDPZgnrnHMhOWuQ6NjghwamkXx34qPosyLC/55eEU2pD17xiaNIiRi5XrmbPg5hR2Nm2jQ==, tarball: https://npm.pkg.github.com/download/@icco/react-common/2026.10607.1/a454afed0199908ac72d159753bc5f740fb67e26}
+  '@icco/react-common@2026.10713.4':
+    resolution: {integrity: sha512-nvC09lLn5YQryMP4fD7uPGtHg7r81HrC/5d/0IAdCiMnTU70hsEqUhX5Eop1VcDxOMGyw3rwrc25s5KQBTFhsg==, tarball: https://npm.pkg.github.com/download/@icco/react-common/2026.10713.4/30548bdca07b12a63b7e9543b439b1840ee07071}
     peerDependencies:
       '@heroicons/react': ^2.0.0
       jsdom: '>=20.0.0'
@@ -1168,8 +1168,8 @@ packages:
   '@vitest/utils@4.1.10':
     resolution: {integrity: sha512-fy9am/HWxbaGt/Sawrp90vt6Y6jQwf1RX77cz3uwoJwJVMli/e1IEwRPnMNJ7vKfPTwo0diXifkpPvwH9v7nGA==}
 
-  '@wrksz/themes@0.9.3':
-    resolution: {integrity: sha512-PRUeM4syP7vSnSnZwacHEK/vLGEBHfvxwoituc7J144ZnQytFIg5z26TknXWWLhYb0adhtsRlQEV+e6RIZ3AaQ==}
+  '@wrksz/themes@1.0.0':
+    resolution: {integrity: sha512-UZ1mvFe9xXvxPCK/aXKVYbJCtI4gxM9J4orvDEZLdpk/9tvcbH2U8ZU3h5R1Pwjjjf4Q3um0wK4o+wqj3Vv40Q==}
     peerDependencies:
       next: '>=16.0.0'
       react: ^18.0.0 || ^19.0.0
@@ -2586,10 +2586,10 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@icco/react-common@2026.10607.1(@heroicons/react@2.2.0(react@19.2.7))(jsdom@29.1.1)(next@16.2.10(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)':
+  '@icco/react-common@2026.10713.4(@heroicons/react@2.2.0(react@19.2.7))(jsdom@29.1.1)(next@16.2.10(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)':
     dependencies:
       '@heroicons/react': 2.2.0(react@19.2.7)
-      '@wrksz/themes': 0.9.3(next@16.2.10(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)
+      '@wrksz/themes': 1.0.0(next@16.2.10(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)
       jsdom: 29.1.1
       next: 16.2.10(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       react: 19.2.7
@@ -3148,7 +3148,7 @@ snapshots:
       convert-source-map: 2.0.0
       tinyrainbow: 3.1.0
 
-  '@wrksz/themes@0.9.3(next@16.2.10(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)':
+  '@wrksz/themes@1.0.0(next@16.2.10(@opentelemetry/api@1.9.1)(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(react-dom@19.2.7(react@19.2.7))(react@19.2.7)(typescript@6.0.3)':
     dependencies:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
