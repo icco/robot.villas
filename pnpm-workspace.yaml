@@ -5,6 +5,5 @@ allowBuilds:
   esbuild: true
   protobufjs: true
   sharp: true
-
 minimumReleaseAgeExclude:
-  - "@icco/react-common"
+  - '@icco/react-common'
