@@ -1,5 +1,6 @@
 overrides:
   esbuild: ^0.28.0
+  postcss: ^8.5.24
 allowBuilds:
   '@google/genai': true
   esbuild: true
