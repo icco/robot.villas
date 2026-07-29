@@ -51,7 +51,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   serverExternalPackages: [
-    "jsdom",
     "postgres",
     "rss-parser",
   ],

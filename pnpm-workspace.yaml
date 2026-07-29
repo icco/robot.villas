@@ -1,5 +1,8 @@
 overrides:
+  '@opentelemetry/sdk-metrics': ^2.10.0
   esbuild: ^0.28.0
+  postcss: ^8.5.24
+  sharp: ^0.35.3
 allowBuilds:
   '@google/genai': true
   esbuild: true

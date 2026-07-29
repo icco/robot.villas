@@ -15,6 +15,6 @@ git diff --quiet --staged || git commit -m 'chore: lint'
 
 pnpm run build
 
-git commit --allow-empty -m 'chore: redeploy'
+git commit -a --allow-empty -m 'chore: redeploy'
 
 git push -u
