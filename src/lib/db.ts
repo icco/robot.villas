@@ -166,6 +166,26 @@ export async function countEntries(db: Db, botUsername: string): Promise<number>
   return rows[0]?.value ?? 0;
 }
 
+/**
+ * Total non-deleted entry count across all given bots, in one query.
+ * Use instead of summing countEntries() per bot in a loop.
+ */
+export async function countEntriesForBots(db: Db, botUsernames: string[]): Promise<number> {
+  if (botUsernames.length === 0) {
+    return 0;
+  }
+  const rows = await db
+    .select({ value: count() })
+    .from(schema.feedEntries)
+    .where(
+      and(
+        inArray(schema.feedEntries.botUsername, botUsernames),
+        isNull(schema.feedEntries.deletedAt),
+      ),
+    );
+  return rows[0]?.value ?? 0;
+}
+
 export async function getEntryById(
   db: Db,
   botUsername: string,

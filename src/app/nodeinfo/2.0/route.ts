@@ -1,16 +1,13 @@
 import { NextResponse } from "next/server";
 import { getGlobals } from "@/lib/globals";
-import { countEntries } from "@/lib/db";
+import { countEntriesForBots } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
   const { config, db } = getGlobals();
   const botUsernames = Object.keys(config.bots);
-  let localPosts = 0;
-  for (const identifier of botUsernames) {
-    localPosts += await countEntries(db, identifier);
-  }
+  const localPosts = await countEntriesForBots(db, botUsernames);
 
   return NextResponse.json({
     version: "2.0",

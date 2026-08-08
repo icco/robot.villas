@@ -6,6 +6,7 @@ import {
   migrate,
   hasEntry,
   insertEntry,
+  countEntriesForBots,
   getFollowers,
   addFollower,
   removeFollower,
@@ -68,6 +69,34 @@ describeWithDb("database", () => {
       await insertEntry(db, "bot_a", "guid-x", "https://example.com/x", "X", null, ["X", "Y", "Z"]);
       expect(await hasEntry(db, "bot_a", "guid-x")).toBe(true);
       expect(await hasEntry(db, "bot_b", "guid-x")).toBe(false);
+    });
+  });
+
+  describe("countEntriesForBots", () => {
+    it("sums non-deleted entries across all given bots in one query", async () => {
+      await insertEntry(db, "testbot", "guid-1", "https://example.com/1", "T1", null, []);
+      await insertEntry(db, "testbot", "guid-2", "https://example.com/2", "T2", null, []);
+      await insertEntry(db, "bot_a", "guid-3", "https://example.com/3", "T3", null, []);
+
+      expect(await countEntriesForBots(db, ["testbot", "bot_a"])).toBe(3);
+      expect(await countEntriesForBots(db, ["testbot"])).toBe(2);
+    });
+
+    it("ignores bots not in the given list and soft-deleted entries", async () => {
+      await insertEntry(db, "testbot", "guid-1", "https://example.com/1", "T1", null, []);
+      await insertEntry(db, "bot_a", "guid-2", "https://example.com/2", "T2", null, []);
+
+      expect(await countEntriesForBots(db, ["testbot"])).toBe(1);
+
+      await db
+        .update(schema.feedEntries)
+        .set({ deletedAt: new Date() })
+        .where(inArray(schema.feedEntries.botUsername, ["testbot"]));
+      expect(await countEntriesForBots(db, ["testbot", "bot_a"])).toBe(1);
+    });
+
+    it("returns 0 for an empty bot list without querying", async () => {
+      expect(await countEntriesForBots(db, [])).toBe(0);
     });
   });
 
