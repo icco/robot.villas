@@ -116,7 +116,6 @@ bots:
     feed_url: https://transactional.blog/feed.xml
     display_name: Transactional
     summary: Deep dives into database internals.
-    profile_photo: https://www.google.com/s2/favicons?domain=transactional.blog&sz=128
   cloudflare:
     feed_url: https://blog.cloudflare.com/rss/
     display_name: Cloudflare Blog

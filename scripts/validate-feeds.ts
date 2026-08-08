@@ -95,7 +95,15 @@ async function main() {
   await Promise.all(
     bots.map(async ([name, bot]) => {
       const url = bot.profile_photo!;
-      const r = await probeUrl(url);
+      let r = await probeUrl(url);
+
+      // A transient origin hiccup (e.g. a momentary error page served with
+      // 200 text/html, or a dropped connection) shouldn't fail CI outright.
+      // Retry once after a short delay before treating it as a real error.
+      if (r.kind === "wrong_mime" || r.kind === "network_error") {
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        r = await probeUrl(url);
+      }
 
       if (r.kind === "blocked") {
         warnings.push(
