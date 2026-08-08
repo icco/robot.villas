@@ -14,7 +14,11 @@ export async function mapWithConcurrency<T, R>(
     return results;
   }
   let nextIndex = 0;
-  const workerCount = Math.max(1, Math.min(limit, items.length));
+  // Guard against a non-finite/non-positive limit (e.g. NaN from a bad env
+  // var) collapsing Array.from({length}) to zero workers, which would
+  // silently skip every item instead of falling back to sequential.
+  const safeLimit = Number.isFinite(limit) && limit > 0 ? limit : 1;
+  const workerCount = Math.max(1, Math.min(safeLimit, items.length));
 
   async function worker(): Promise<void> {
     while (nextIndex < items.length) {

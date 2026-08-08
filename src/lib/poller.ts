@@ -3,6 +3,7 @@ import { getLogger } from "@logtape/logtape";
 import type { BotConfig, FeedsConfig } from "./config";
 import { mapWithConcurrency } from "./concurrency";
 import { upsertFeedPollStatus, type Db } from "./db";
+import { parsePositiveInt } from "./env";
 import { fetchFeedWithHttpResult } from "./rss";
 import { publishNewEntries } from "./publisher";
 
@@ -23,8 +24,8 @@ export interface PollerOptions {
 
 export function startPoller(opts: PollerOptions): { stop: () => void } {
   const { config, db, domain, getContext } = opts;
-  const intervalMs = opts.intervalMs ?? DEFAULT_INTERVAL_MS;
-  const concurrency = opts.concurrency ?? DEFAULT_CONCURRENCY;
+  const intervalMs = parsePositiveInt(opts.intervalMs, DEFAULT_INTERVAL_MS);
+  const concurrency = parsePositiveInt(opts.concurrency, DEFAULT_CONCURRENCY);
   const botNames = Object.keys(config.bots);
 
   let stopped = false;

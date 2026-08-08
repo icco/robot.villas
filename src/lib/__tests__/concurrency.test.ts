@@ -70,4 +70,32 @@ describe("mapWithConcurrency", () => {
       }),
     ).rejects.toThrow("boom");
   });
+
+  it("still processes every item when limit is NaN instead of silently skipping all of them", async () => {
+    const items = [1, 2, 3, 4];
+    const seen: number[] = [];
+    const results = await mapWithConcurrency(items, Number.NaN, async (i) => {
+      seen.push(i);
+      return i;
+    });
+    expect(seen.sort((a, b) => a - b)).toEqual(items);
+    expect(results).toEqual(items);
+  });
+
+  it("falls back to sequential processing when limit is zero or negative", async () => {
+    const items = [1, 2, 3];
+    const seen: number[] = [];
+    await mapWithConcurrency(items, 0, async (i) => {
+      seen.push(i);
+      return i;
+    });
+    expect(seen.sort((a, b) => a - b)).toEqual(items);
+
+    seen.length = 0;
+    await mapWithConcurrency(items, -5, async (i) => {
+      seen.push(i);
+      return i;
+    });
+    expect(seen.sort((a, b) => a - b)).toEqual(items);
+  });
 });

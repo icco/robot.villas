@@ -116,4 +116,24 @@ describe("startPoller concurrency", () => {
 
     poller.stop();
   });
+
+  it("falls back to the default concurrency instead of polling zero bots when given NaN", async () => {
+    const botCount = 3;
+    mockFetchFeed.mockResolvedValue({ entries: [], httpStatus: 200, errorMessage: null });
+
+    const poller = startPoller({
+      config: makeConfig(botCount),
+      db: {} as never,
+      domain: "robot.villas",
+      intervalMs: 10_000_000,
+      concurrency: Number.parseInt("not-a-number", 10),
+      getContext: () => ({}) as never,
+    });
+
+    await vi.waitFor(() => {
+      expect(mockFetchFeed).toHaveBeenCalledTimes(botCount);
+    });
+
+    poller.stop();
+  });
 });
