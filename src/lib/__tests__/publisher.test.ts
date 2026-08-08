@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 
 vi.mock("../db", () => ({
   insertEntry: vi.fn(),
-  hasEntry: vi.fn(),
+  getExistingGuids: vi.fn(),
   getFollowers: vi.fn(),
   getFollowerRecipients: vi.fn(),
   getAcceptedRelays: vi.fn(),
@@ -12,7 +12,7 @@ vi.mock("../hashtags", () => ({
   resolveHashtags: vi.fn().mockResolvedValue(["T1", "T2", "T3"]),
 }));
 
-import { insertEntry, hasEntry, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db";
+import { insertEntry, getExistingGuids, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db";
 import {
   buildCreateActivity,
   MAX_GUID_LENGTH,
@@ -26,7 +26,7 @@ import {
 import type { FeedEntry } from "../rss";
 
 const mockInsertEntry = vi.mocked(insertEntry);
-const mockHasEntry = vi.mocked(hasEntry);
+const mockGetExistingGuids = vi.mocked(getExistingGuids);
 const mockGetFollowers = vi.mocked(getFollowers);
 const mockGetFollowerRecipients = vi.mocked(getFollowerRecipients);
 const mockGetAcceptedRelays = vi.mocked(getAcceptedRelays);
@@ -62,7 +62,7 @@ const testBotConfig = {
 describe("publishNewEntries", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mockHasEntry.mockResolvedValue(false);
+    mockGetExistingGuids.mockResolvedValue(new Set());
     mockInsertEntry.mockResolvedValue(1);
     mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
     mockGetFollowerRecipients.mockResolvedValue([
@@ -72,7 +72,7 @@ describe("publishNewEntries", () => {
   });
 
   it("publishes new entries and skips existing ones", async () => {
-    mockHasEntry.mockResolvedValueOnce(true).mockResolvedValue(false).mockResolvedValue(false);
+    mockGetExistingGuids.mockResolvedValue(new Set(["g1"]));
     mockInsertEntry.mockResolvedValueOnce(2).mockResolvedValueOnce(3);
 
     const result = await publishNewEntries(
@@ -111,7 +111,7 @@ describe("publishNewEntries", () => {
   });
 
   it("skips all entries when all already exist", async () => {
-    mockHasEntry.mockResolvedValue(true);
+    mockGetExistingGuids.mockResolvedValue(new Set(["g1", "g2", "g3"]));
 
     const result = await publishNewEntries(
       mockCtx,
@@ -287,7 +287,7 @@ describe("truncateToMax", () => {
 describe("publishNewEntries with length limits", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mockHasEntry.mockResolvedValue(false);
+    mockGetExistingGuids.mockResolvedValue(new Set());
     mockInsertEntry.mockResolvedValue(1);
     mockGetFollowers.mockResolvedValue(["https://remote.example/user/1"]);
     mockGetFollowerRecipients.mockResolvedValue([
@@ -325,6 +325,35 @@ describe("publishNewEntries with length limits", () => {
     expect(note?.content).toBeDefined();
     expect(note!.content).toContain("a".repeat(MAX_TITLE_LENGTH).slice(0, 50));
     expect(note!.content).toContain("https://example.com/");
+
+    // The dedup check must run against the truncated guid (what's actually stored),
+    // not the raw feed-supplied guid.
+    expect(mockGetExistingGuids).toHaveBeenCalledWith({}, "testbot", [guid]);
+  });
+});
+
+describe("publishNewEntries dedup batching", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockGetExistingGuids.mockResolvedValue(new Set());
+    mockInsertEntry.mockResolvedValue(1);
+    mockGetFollowers.mockResolvedValue([]);
+    mockGetFollowerRecipients.mockResolvedValue([]);
+    mockGetAcceptedRelays.mockResolvedValue([]);
+  });
+
+  it("checks existing guids in a single batched call, not once per entry", async () => {
+    await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot",
+      "robot.villas",
+      entries,
+      testBotConfig,
+    );
+
+    expect(mockGetExistingGuids).toHaveBeenCalledTimes(1);
+    expect(mockGetExistingGuids).toHaveBeenCalledWith({}, "testbot", ["g1", "g2", "g3"]);
   });
 });
 

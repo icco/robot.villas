@@ -26,6 +26,32 @@ export async function hasEntry(db: Db, botUsername: string, guid: string): Promi
 }
 
 /**
+ * Batched version of hasEntry: looks up which of the given guids already
+ * exist (and are not soft-deleted) for a bot in a single round trip, instead
+ * of one query per guid. Used to dedup a whole feed poll's items at once.
+ */
+export async function getExistingGuids(
+  db: Db,
+  botUsername: string,
+  guids: string[],
+): Promise<Set<string>> {
+  if (guids.length === 0) {
+    return new Set();
+  }
+  const rows = await db
+    .select({ guid: schema.feedEntries.guid })
+    .from(schema.feedEntries)
+    .where(
+      and(
+        eq(schema.feedEntries.botUsername, botUsername),
+        inArray(schema.feedEntries.guid, guids),
+        isNull(schema.feedEntries.deletedAt),
+      ),
+    );
+  return new Set(rows.map((r) => r.guid));
+}
+
+/**
  * Inserts a feed entry. Returns the new row id when inserted, or null when the
  * entry already existed (dedup by bot + guid). Use the returned id for Note URIs.
  */

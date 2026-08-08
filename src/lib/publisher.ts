@@ -4,7 +4,7 @@ import { Create, Hashtag, Note, PUBLIC_COLLECTION, type Recipient } from "@fedif
 import escapeHtml from "escape-html";
 import { getLogger } from "@logtape/logtape";
 import type { BotConfig } from "./config";
-import { getAcceptedRelays, getFollowerRecipients, hasEntry, insertEntry, type Db } from "./db";
+import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, insertEntry, type Db } from "./db";
 import { resolveHashtags } from "./hashtags";
 import type { FeedEntry } from "./rss";
 
@@ -113,12 +113,21 @@ export async function publishNewEntries(
 
   const hasRecipients = followerRecipients.length > 0 || relayRecipients.length > 0;
 
-  for (const entry of entries) {
-    const guid = truncateToMax(entry.guid, MAX_GUID_LENGTH);
-    const url = truncateToMax(entry.link, MAX_URL_LENGTH);
-    const title = truncateToMax(entry.title, MAX_TITLE_LENGTH);
+  const truncatedEntries = entries.map((entry) => ({
+    entry,
+    guid: truncateToMax(entry.guid, MAX_GUID_LENGTH),
+    url: truncateToMax(entry.link, MAX_URL_LENGTH),
+    title: truncateToMax(entry.title, MAX_TITLE_LENGTH),
+  }));
+  // One round trip to find which guids already exist, instead of one query per entry.
+  const existingGuids = await getExistingGuids(
+    db,
+    botUsername,
+    truncatedEntries.map((e) => e.guid),
+  );
 
-    if (await hasEntry(db, botUsername, guid)) {
+  for (const { entry, guid, url, title } of truncatedEntries) {
+    if (existingGuids.has(guid)) {
       skipped++;
       continue;
     }
