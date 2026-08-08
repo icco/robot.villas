@@ -123,7 +123,7 @@ export async function publishNewEntries(
   const existingGuids = await getExistingGuids(
     db,
     botUsername,
-    truncatedEntries.map((e) => e.guid),
+    [...new Set(truncatedEntries.map((e) => e.guid))],
   );
 
   for (const { entry, guid, url, title } of truncatedEntries) {
@@ -131,6 +131,10 @@ export async function publishNewEntries(
       skipped++;
       continue;
     }
+    // Mark as seen before processing so a duplicate guid later in the same
+    // feed (existingGuids is only a pre-loop DB snapshot) is skipped here
+    // too, instead of redundantly resolving hashtags for it.
+    existingGuids.add(guid);
 
     const hashtags = await resolveHashtags(
       { ...entry, title, link: url },

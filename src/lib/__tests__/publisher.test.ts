@@ -13,6 +13,7 @@ vi.mock("../hashtags", () => ({
 }));
 
 import { insertEntry, getExistingGuids, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db";
+import { resolveHashtags } from "../hashtags";
 import {
   buildCreateActivity,
   MAX_GUID_LENGTH,
@@ -30,6 +31,7 @@ const mockGetExistingGuids = vi.mocked(getExistingGuids);
 const mockGetFollowers = vi.mocked(getFollowers);
 const mockGetFollowerRecipients = vi.mocked(getFollowerRecipients);
 const mockGetAcceptedRelays = vi.mocked(getAcceptedRelays);
+const mockResolveHashtags = vi.mocked(resolveHashtags);
 
 const mockCtx = {
   sendActivity: vi.fn().mockResolvedValue(undefined),
@@ -354,6 +356,35 @@ describe("publishNewEntries dedup batching", () => {
 
     expect(mockGetExistingGuids).toHaveBeenCalledTimes(1);
     expect(mockGetExistingGuids).toHaveBeenCalledWith({}, "testbot", ["g1", "g2", "g3"]);
+  });
+
+  it("dedupes repeated guids before querying and only processes the first occurrence", async () => {
+    const dupedEntries: FeedEntry[] = [
+      { guid: "g1", title: "First", link: "https://example.com/1", publishedAt: null, feedCategories: [] },
+      { guid: "g1", title: "First (again)", link: "https://example.com/1b", publishedAt: null, feedCategories: [] },
+    ];
+    mockInsertEntry.mockResolvedValueOnce(1);
+
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot",
+      "robot.villas",
+      dupedEntries,
+      testBotConfig,
+    );
+
+    // Only one distinct guid is queried for, even though the feed listed it twice.
+    expect(mockGetExistingGuids).toHaveBeenCalledWith({}, "testbot", ["g1"]);
+    // Only the first occurrence is resolved/inserted; the repeat is skipped
+    // in-memory without a wasted resolveHashtags (e.g. Gemini) call.
+    expect(mockResolveHashtags).toHaveBeenCalledTimes(1);
+    expect(mockInsertEntry).toHaveBeenCalledTimes(1);
+    // This describe block configures no followers/relays, so the one
+    // processed entry is inserted but marked skipped (no recipients) rather
+    // than published - the point here is the *count* of processed entries.
+    expect(result.published).toBe(0);
+    expect(result.skipped).toBe(2);
   });
 });
 

@@ -90,7 +90,7 @@ describeWithDb("database", () => {
       expect(await getExistingGuids(db, "bot_a", ["guid-shared"])).toEqual(new Set());
     });
 
-    it("getExistingGuids returns an empty set for an empty guid list without querying", async () => {
+    it("getExistingGuids returns an empty set for an empty guid list", async () => {
       expect(await getExistingGuids(db, "testbot", [])).toEqual(new Set());
     });
   });
