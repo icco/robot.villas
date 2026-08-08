@@ -59,16 +59,16 @@ export async function register() {
   });
 
   const { startPoller } = await import("@/lib/poller");
-  const pollIntervalMs = parseInt(
-    process.env.POLL_INTERVAL_MS || "300000",
-    10,
-  );
+  const { parsePositiveInt } = await import("@/lib/env");
+  const pollIntervalMs = parsePositiveInt(process.env.POLL_INTERVAL_MS, 300_000);
+  const pollConcurrency = parsePositiveInt(process.env.POLL_CONCURRENCY, 10);
 
   startPoller({
     config,
     db,
     domain,
     intervalMs: pollIntervalMs,
+    concurrency: pollConcurrency,
     getContext: () => federation.createContext(new URL(`https://${domain}`)),
   });
 
