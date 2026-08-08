@@ -36,6 +36,7 @@ import { getRelaySubscriptionBot, type BotConfig, type FeedsConfig } from "./con
 import {
   addFollower,
   countEntries,
+  countEntriesForBots,
   countAcceptedFollowing,
   countFollowers,
   decrementBoostCount,
@@ -525,10 +526,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
 
   // --- NodeInfo dispatcher ---
   federation.setNodeInfoDispatcher("/nodeinfo/2.1", async () => {
-    let localPosts = 0;
-    for (const identifier of botUsernames) {
-      localPosts += await countEntries(db, identifier);
-    }
+    const localPosts = await countEntriesForBots(db, botUsernames);
     return {
       software: { name: "robot-villas", version: "1.0.0" },
       protocols: ["activitypub"],

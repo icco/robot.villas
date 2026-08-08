@@ -7,6 +7,7 @@ import {
   hasEntry,
   getExistingGuids,
   insertEntry,
+  countEntriesForBots,
   getFollowers,
   addFollower,
   removeFollower,
@@ -92,6 +93,34 @@ describeWithDb("database", () => {
 
     it("getExistingGuids returns an empty set for an empty guid list", async () => {
       expect(await getExistingGuids(db, "testbot", [])).toEqual(new Set());
+    });
+  });
+
+  describe("countEntriesForBots", () => {
+    it("sums non-deleted entries across all given bots in one query", async () => {
+      await insertEntry(db, "testbot", "guid-1", "https://example.com/1", "T1", null, []);
+      await insertEntry(db, "testbot", "guid-2", "https://example.com/2", "T2", null, []);
+      await insertEntry(db, "bot_a", "guid-3", "https://example.com/3", "T3", null, []);
+
+      expect(await countEntriesForBots(db, ["testbot", "bot_a"])).toBe(3);
+      expect(await countEntriesForBots(db, ["testbot"])).toBe(2);
+    });
+
+    it("ignores bots not in the given list and soft-deleted entries", async () => {
+      await insertEntry(db, "testbot", "guid-1", "https://example.com/1", "T1", null, []);
+      await insertEntry(db, "bot_a", "guid-2", "https://example.com/2", "T2", null, []);
+
+      expect(await countEntriesForBots(db, ["testbot"])).toBe(1);
+
+      await db
+        .update(schema.feedEntries)
+        .set({ deletedAt: new Date() })
+        .where(inArray(schema.feedEntries.botUsername, ["testbot"]));
+      expect(await countEntriesForBots(db, ["testbot", "bot_a"])).toBe(1);
+    });
+
+    it("returns 0 for an empty bot list", async () => {
+      expect(await countEntriesForBots(db, [])).toBe(0);
     });
   });
 
