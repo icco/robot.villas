@@ -63,12 +63,14 @@ export async function register() {
     process.env.POLL_INTERVAL_MS || "300000",
     10,
   );
+  const pollConcurrency = parseInt(process.env.POLL_CONCURRENCY || "10", 10);
 
   startPoller({
     config,
     db,
     domain,
     intervalMs: pollIntervalMs,
+    concurrency: pollConcurrency,
     getContext: () => federation.createContext(new URL(`https://${domain}`)),
   });
 
