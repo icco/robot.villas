@@ -5,6 +5,7 @@ import {
   createDb,
   migrate,
   hasEntry,
+  getExistingGuids,
   insertEntry,
   getFollowers,
   addFollower,
@@ -68,6 +69,29 @@ describeWithDb("database", () => {
       await insertEntry(db, "bot_a", "guid-x", "https://example.com/x", "X", null, ["X", "Y", "Z"]);
       expect(await hasEntry(db, "bot_a", "guid-x")).toBe(true);
       expect(await hasEntry(db, "bot_b", "guid-x")).toBe(false);
+    });
+
+    it("getExistingGuids returns the subset of guids that already exist", async () => {
+      await insertEntry(db, "testbot", "guid-1", "https://example.com/1", "Title 1", null, []);
+      await insertEntry(db, "testbot", "guid-2", "https://example.com/2", "Title 2", null, []);
+
+      const existing = await getExistingGuids(db, "testbot", ["guid-1", "guid-2", "guid-missing"]);
+      expect(existing).toEqual(new Set(["guid-1", "guid-2"]));
+    });
+
+    it("getExistingGuids scopes to bot username and ignores soft-deleted rows", async () => {
+      await insertEntry(db, "bot_a", "guid-shared", "https://example.com/shared", "Shared", null, []);
+      expect(await getExistingGuids(db, "bot_b", ["guid-shared"])).toEqual(new Set());
+
+      await db
+        .update(schema.feedEntries)
+        .set({ deletedAt: new Date() })
+        .where(inArray(schema.feedEntries.botUsername, ["bot_a"]));
+      expect(await getExistingGuids(db, "bot_a", ["guid-shared"])).toEqual(new Set());
+    });
+
+    it("getExistingGuids returns an empty set for an empty guid list", async () => {
+      expect(await getExistingGuids(db, "testbot", [])).toEqual(new Set());
     });
   });
 
