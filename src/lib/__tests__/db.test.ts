@@ -95,7 +95,7 @@ describeWithDb("database", () => {
       expect(await countEntriesForBots(db, ["testbot", "bot_a"])).toBe(1);
     });
 
-    it("returns 0 for an empty bot list without querying", async () => {
+    it("returns 0 for an empty bot list", async () => {
       expect(await countEntriesForBots(db, [])).toBe(0);
     });
   });
