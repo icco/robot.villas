@@ -10,6 +10,7 @@ import {
   countFollowers,
   getEntriesPage,
 } from "@/lib/db";
+import { parsePageParam } from "@/lib/pagination";
 import { FollowButton } from "./mastodon-widgets";
 
 const PROFILE_PAGE_SIZE = 40;
@@ -49,8 +50,8 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
   }
 
   const { page: pageParam } = await searchParams;
-  const page = parseInt(pageParam || "0", 10);
-  const offset = Math.max(0, page) * PROFILE_PAGE_SIZE;
+  const page = parsePageParam(pageParam);
+  const offset = page * PROFILE_PAGE_SIZE;
   const [total, followerCount, followingCount, entries] = await Promise.all([
     countEntries(db, username),
     countFollowers(db, username),

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { PostFeed } from "@/components/feed-entries";
 import { getGlobals } from "@/lib/globals";
 import { countEntriesByTag, getEntriesByTag } from "@/lib/db";
+import { parsePageParam } from "@/lib/pagination";
 
 const PAGE_SIZE = 40;
 
@@ -31,7 +32,7 @@ export default async function TagPage({ params, searchParams }: Props) {
   const displayTag = decodeURIComponent(tag);
 
   const { page: pageParam } = await searchParams;
-  const page = Math.max(0, parseInt(pageParam || "0", 10));
+  const page = parsePageParam(pageParam);
   const offset = page * PAGE_SIZE;
 
   const [total, entries] = await Promise.all([
