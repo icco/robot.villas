@@ -5,6 +5,7 @@ import Link from "next/link";
 import { PostFeed } from "@/components/feed-entries";
 import { getGlobals } from "@/lib/globals";
 import { getAllEntries, countAllEntries } from "@/lib/db";
+import { parsePageParam } from "@/lib/pagination";
 
 const PAGE_SIZE = 40;
 
@@ -24,7 +25,7 @@ export default async function PostsPage({ searchParams }: Props) {
   const { db, domain } = getGlobals();
 
   const { page: pageParam } = await searchParams;
-  const page = Math.max(0, parseInt(pageParam || "0", 10));
+  const page = parsePageParam(pageParam);
   const offset = page * PAGE_SIZE;
 
   const [total, entries] = await Promise.all([
