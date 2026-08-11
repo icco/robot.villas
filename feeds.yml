@@ -512,6 +512,11 @@ bots:
     profile_photo: https://www.jvt.me/img/profile.png
     default_hashtags:
       - Tech
+  wallpaper:
+    feed_url: https://www.wallpaper.com/feeds/news
+    display_name: Wallpaper*
+    summary: Design, architecture, art, travel, and lifestyle from Wallpaper* magazine.
+    profile_photo: https://www.wallpaper.com/apple-touch-icon.png
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
