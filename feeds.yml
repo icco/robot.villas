@@ -505,6 +505,13 @@ bots:
     display_name: The Race
     summary: Independent Formula 1, MotoGP, Formula E, and motorsport news.
     profile_photo: https://www.the-race.com/favicon.png
+  jamietanna:
+    feed_url: https://www.jvt.me/kind/articles/feed.xml
+    display_name: Jamie Tanna
+    summary: Jamie Tanna's personal blog about tech, life, ADHD and more.
+    profile_photo: https://www.jvt.me/img/profile.png
+    default_hashtags:
+      - Tech
   wallpaper:
     feed_url: https://www.wallpaper.com/feeds/news
     display_name: Wallpaper*
