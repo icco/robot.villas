@@ -505,9 +505,11 @@ bots:
     display_name: The Race
     summary: Independent Formula 1, MotoGP, Formula E, and motorsport news.
     profile_photo: https://www.the-race.com/favicon.png
+  wallpaper:
+    feed_url: https://feeds.feedburner.com/Wallpaperfeed
+    display_name: Wallpaper*
+    summary: Wallpaper* magazine feed.
 relay_subscription_bot: nyt_homepage
-   wallpaper:
-     feed_url: https://feeds.feedburner.com/Wallpaperfeed
 follows:
   - '@icco@merveilles.town'
   - '@_followback@tags.pub'
