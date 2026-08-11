@@ -1,0 +1,4 @@
+# Request @icco's review on every pull request.
+# Note: GitHub never requests review from a PR's own author, so this
+# applies to contributions from others (Dependabot, Copilot, outside PRs).
+* @icco
