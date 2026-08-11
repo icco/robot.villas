@@ -511,7 +511,7 @@ bots:
     summary: Jamie Tanna's personal blog about tech, life, ADHD and more.
     profile_photo: https://www.jvt.me/img/profile.png
     default_hashtags:
-    - Tech
+      - Tech
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
