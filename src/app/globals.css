@@ -11,3 +11,11 @@
   --font-display: "Roboto Mono", monospace;
   --font-body: "Roboto", sans-serif;
 }
+
+/* Feed titles, hashtags, and actor URLs are external input: one long token
+   otherwise overflows the viewport. */
+@layer base {
+  body {
+    overflow-wrap: break-word;
+  }
+}

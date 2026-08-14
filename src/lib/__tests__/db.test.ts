@@ -8,6 +8,7 @@ import {
   getExistingGuids,
   insertEntry,
   countEntriesForBots,
+  getTagsPage,
   getFollowers,
   addFollower,
   removeFollower,
@@ -121,6 +122,98 @@ describeWithDb("database", () => {
 
     it("returns 0 for an empty bot list", async () => {
       expect(await countEntriesForBots(db, [])).toBe(0);
+    });
+  });
+
+  // Tag counts are global, not per-bot, so every assertion here is relative to
+  // a baseline taken after cleanup and filtered to this prefix — the suite
+  // stays deterministic against a database that holds other bots' entries.
+  describe("getTagsPage", () => {
+    const PREFIX = "zztagfixture";
+    const SHARED = `${PREFIX}shared`;
+
+    /** All pages walked end to end, plus the total the query reports. */
+    async function walkAllPages(limit: number) {
+      const collected: Array<{ tag: string; postCount: number }> = [];
+      let total = 0;
+      for (let offset = 0; ; offset += limit) {
+        const page = await getTagsPage(db, limit, offset);
+        total = page.total || total;
+        collected.push(...page.tags);
+        if (page.tags.length < limit) {
+          break;
+        }
+      }
+      return { collected, total };
+    }
+
+    const fixtureTags = (tags: Array<{ tag: string; postCount: number }>) =>
+      tags.filter((t) => t.tag.startsWith(PREFIX));
+
+    async function baselineTotal() {
+      return (await getTagsPage(db, 1, 0)).total;
+    }
+
+    // SHARED lands on 3 entries and the rest on 1 apiece, so ordering exercises
+    // the post-count sort and the tag tie-break that breaks its ties.
+    async function seedTags() {
+      await insertEntry(db, "testbot", "t-1", "https://example.com/1", "T1", null, [`${PREFIX}Shared`, `${PREFIX}Gamma`]);
+      await insertEntry(db, "testbot", "t-2", "https://example.com/2", "T2", null, [SHARED, `${PREFIX}Beta`]);
+      await insertEntry(db, "bot_a", "t-3", "https://example.com/3", "T3", null, [SHARED.toUpperCase(), `${PREFIX}Alpha`]);
+    }
+
+    it("orders by post count then tag, and counts each tag once", async () => {
+      const base = await baselineTotal();
+      await seedTags();
+
+      const { tags, total } = await getTagsPage(db, 10_000, 0);
+      expect(total).toBe(base + 4);
+      expect(fixtureTags(tags)).toEqual([
+        { tag: SHARED, postCount: 3 },
+        { tag: `${PREFIX}alpha`, postCount: 1 },
+        { tag: `${PREFIX}beta`, postCount: 1 },
+        { tag: `${PREFIX}gamma`, postCount: 1 },
+      ]);
+    });
+
+    it("pages without dropping or repeating equally-ranked tags", async () => {
+      await seedTags();
+
+      // Without the `tag ASC` tie-break, equal post counts order arbitrarily
+      // per query, so a walk like this both repeats and misses tags.
+      const { collected, total } = await walkAllPages(2);
+
+      expect(collected).toHaveLength(total);
+      expect(new Set(collected.map((t) => t.tag)).size).toBe(total);
+      expect(fixtureTags(collected).map((t) => t.tag)).toEqual([
+        SHARED,
+        `${PREFIX}alpha`,
+        `${PREFIX}beta`,
+        `${PREFIX}gamma`,
+      ]);
+    });
+
+    it("ignores soft-deleted entries", async () => {
+      const base = await baselineTotal();
+      await seedTags();
+      await db
+        .update(schema.feedEntries)
+        .set({ deletedAt: new Date() })
+        .where(inArray(schema.feedEntries.botUsername, ["testbot"]));
+
+      const { tags, total } = await getTagsPage(db, 10_000, 0);
+      expect(total).toBe(base + 2);
+      expect(fixtureTags(tags)).toEqual([
+        { tag: `${PREFIX}alpha`, postCount: 1 },
+        { tag: SHARED, postCount: 1 },
+      ]);
+    });
+
+    it("returns an empty page past the last one", async () => {
+      await seedTags();
+      const { total } = await getTagsPage(db, 1, 0);
+
+      expect(await getTagsPage(db, 100, total)).toEqual({ tags: [], total: 0 });
     });
   });
 

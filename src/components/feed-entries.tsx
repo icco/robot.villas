@@ -42,7 +42,7 @@ export function PostFeed({
     <ul className="divide-y divide-base-300">
       {entries.map((e) => (
         <li key={e.id} className="flex flex-col gap-1 py-2 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
-          <p className="text-sm leading-relaxed min-w-0">
+          <p className="text-sm leading-relaxed min-w-0 break-words">
             {showBotHandle && (
               <>
                 <Link

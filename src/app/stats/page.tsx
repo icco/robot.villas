@@ -44,18 +44,6 @@ export default async function StatsPage() {
 
   return (
     <>
-      {filteredTopPosts.length > 0 && (
-        <>
-          <h2 className="text-xl font-display font-bold mt-8 mb-4">
-            Top Posts
-          </h2>
-          <PostFeed domain={domain} entries={filteredTopPosts} />
-        </>
-      )}
-
-      <Link href="/" className="btn btn-ghost btn-sm gap-1 mb-6 -ml-2">
-        <span>&larr;</span> All bots
-      </Link>
       <h1 className="text-3xl font-display font-bold tracking-tight mb-6">
         Stats
       </h1>
@@ -82,6 +70,15 @@ export default async function StatsPage() {
           <div className="stat-value">{fmt(global.totalBoosts)}</div>
         </div>
       </div>
+
+      {filteredTopPosts.length > 0 && (
+        <>
+          <h2 className="text-xl font-display font-bold mt-8 mb-4">
+            Top Posts
+          </h2>
+          <PostFeed domain={domain} entries={filteredTopPosts} />
+        </>
+      )}
 
       <h2 className="text-xl font-display font-bold mt-8 mb-4">Per Bot</h2>
       <div className="overflow-x-auto">

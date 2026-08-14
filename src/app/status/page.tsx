@@ -112,7 +112,9 @@ export default async function StatusPage() {
                   const allAccepted = s && s.accepted === botCount;
                   return (
                     <tr key={url} className={allAccepted ? "text-success" : ""}>
-                      <td className="font-mono text-xs break-all">{url}</td>
+                      {/* min-w: the scroller otherwise squeezes this to a few
+                          characters per line on phones. */}
+                      <td className="font-mono text-xs break-all min-w-48">{url}</td>
                       <td className="text-right">
                         <span className={total < botCount ? "text-warning font-semibold" : ""}>{total} / {botCount}</span>
                       </td>
@@ -198,7 +200,7 @@ export default async function StatusPage() {
                       </Link>
                     </td>
                     <td className="hidden sm:table-cell text-sm">{bot.display_name}</td>
-                    <td>
+                    <td className="min-w-48">
                       <a
                         href={bot.feed_url}
                         target="_blank"

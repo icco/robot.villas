@@ -4,6 +4,8 @@ import { z } from "zod";
 
 const MAX_DISPLAY_NAME_LENGTH = 100;
 const MAX_SUMMARY_LENGTH = 500;
+/** Max characters per hashtag; longer candidates are dropped, not truncated. */
+export const MAX_TAG_LEN = 32;
 
 const BotSchema = z.object({
   feed_url: z.string().url(),
@@ -11,7 +13,7 @@ const BotSchema = z.object({
   summary: z.string().min(1).max(MAX_SUMMARY_LENGTH),
   profile_photo: z.string().url().optional(),
   /** Up to three default hashtags (no #); merged with feed categories before optional Gemini. */
-  default_hashtags: z.array(z.string().min(1).max(30)).max(3).optional(),
+  default_hashtags: z.array(z.string().min(1).max(MAX_TAG_LEN)).max(3).optional(),
 });
 
 export const FeedsConfigSchema = z

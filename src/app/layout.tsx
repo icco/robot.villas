@@ -66,9 +66,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           brand={
             <Link
               href="/"
-              className="text-xl font-display font-bold tracking-tight hover:opacity-80 transition-opacity flex items-center gap-2"
+              className="text-lg sm:text-xl font-display font-bold tracking-tight hover:opacity-80 transition-opacity flex items-center gap-2"
             >
-              <span className="text-2xl">🤖</span>
+              <span className="text-xl sm:text-2xl">🤖</span>
               <span>{domain}</span>
             </Link>
           }
