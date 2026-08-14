@@ -691,7 +691,7 @@ bots:
     feed_url: https://www.publicbooks.org/feed/
     display_name: Public Books
     summary: Literature, culture, politics, criticism, and ideas from scholars and writers.
-    profile_photo: https://www.publicbooks.org/wp-content/uploads/2020/09/cropped-favicon-2-300x300.png
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.publicbooks.org&size=128
   paris_review:
     feed_url: https://www.theparisreview.org/blog/feed/
     display_name: The Paris Review
