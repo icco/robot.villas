@@ -60,7 +60,8 @@ export async function register() {
 
   const { startPoller } = await import("@/lib/poller");
   const { parsePositiveInt } = await import("@/lib/env");
-  const pollIntervalMs = parsePositiveInt(process.env.POLL_INTERVAL_MS, 300_000);
+  // One hour: feed publishers treat anything faster as abuse (utcc.utoronto.ca returns 429).
+  const pollIntervalMs = parsePositiveInt(process.env.POLL_INTERVAL_MS, 3_600_000);
   const pollConcurrency = parsePositiveInt(process.env.POLL_CONCURRENCY, 10);
 
   startPoller({

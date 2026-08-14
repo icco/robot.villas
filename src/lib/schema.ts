@@ -93,4 +93,10 @@ export const feedPollStatus = pgTable("feed_poll_status", {
   lastHttpStatus: integer("last_http_status"),
   /** Null when the last poll completed successfully at HTTP + parse level. */
   lastError: text("last_error"),
+  /** `ETag` from the last 200/304, sent back as `If-None-Match` for conditional GET. */
+  etag: text("etag"),
+  /** `Last-Modified` from the last 200/304, sent back as `If-Modified-Since`. */
+  lastModified: text("last_modified"),
+  /** Set from a 429 `Retry-After`; the poller skips this feed until it passes. */
+  nextPollAt: timestamp("next_poll_at", { withTimezone: true, mode: "date" }),
 });

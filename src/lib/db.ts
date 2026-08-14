@@ -856,21 +856,22 @@ export interface FeedPollStatusRow {
   lastCheckedAt: Date;
   lastHttpStatus: number | null;
   lastError: string | null;
+  etag: string | null;
+  lastModified: string | null;
+  nextPollAt: Date | null;
 }
 
 export async function upsertFeedPollStatus(
   db: Db,
-  botUsername: string,
-  lastCheckedAt: Date,
-  lastHttpStatus: number | null,
-  lastError: string | null,
+  status: FeedPollStatusRow,
 ): Promise<void> {
+  const { botUsername, ...rest } = status;
   await db
     .insert(schema.feedPollStatus)
-    .values({ botUsername, lastCheckedAt, lastHttpStatus, lastError })
+    .values(status)
     .onConflictDoUpdate({
       target: schema.feedPollStatus.botUsername,
-      set: { lastCheckedAt, lastHttpStatus, lastError },
+      set: rest,
     });
 }
 
@@ -887,6 +888,9 @@ export async function getFeedPollStatusMap(
       lastCheckedAt: schema.feedPollStatus.lastCheckedAt,
       lastHttpStatus: schema.feedPollStatus.lastHttpStatus,
       lastError: schema.feedPollStatus.lastError,
+      etag: schema.feedPollStatus.etag,
+      lastModified: schema.feedPollStatus.lastModified,
+      nextPollAt: schema.feedPollStatus.nextPollAt,
     })
     .from(schema.feedPollStatus)
     .where(inArray(schema.feedPollStatus.botUsername, botUsernames));
