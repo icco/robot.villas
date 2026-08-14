@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Roboto, Roboto_Mono } from "next/font/google";
 import {
   ChartBarIcon,
+  InformationCircleIcon,
   QueueListIcon,
   SignalIcon,
   TagIcon,
@@ -92,6 +93,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               name: "Status",
               href: "/status",
               icon: <SignalIcon className="h-5 w-5" />,
+            },
+            {
+              name: "About",
+              href: "/about",
+              icon: <InformationCircleIcon className="h-5 w-5" />,
             },
           ]}
         />

@@ -43,6 +43,15 @@ const FEED_FETCH_TIMEOUT_MS = 10_000;
 /** Max items to process per feed per poll; limits DoS from huge feeds. */
 export const MAX_ITEMS_PER_POLL = 100;
 
+/** Identifies the fetcher so feed hosts can contact us instead of blocking an anonymous bot. */
+export const FEED_USER_AGENT = "robot.villas RSS poller/1.0 (+https://robot.villas/about)";
+
+/** Backoff used when a 429 arrives without a usable `Retry-After`. */
+export const DEFAULT_RATE_LIMIT_BACKOFF_MS = 60 * 60 * 1000;
+
+/** Ceiling on server-requested backoff, so a bogus `Retry-After` can't park a feed forever. */
+export const MAX_RATE_LIMIT_BACKOFF_MS = 24 * 60 * 60 * 1000;
+
 export interface FeedEntry {
   guid: string;
   title: string;
@@ -52,48 +61,142 @@ export interface FeedEntry {
   feedCategories: string[];
 }
 
+/** Cached HTTP validators for conditional GET, as last seen on a 200 or 304. */
+export interface ConditionalGetState {
+  etag: string | null;
+  lastModified: string | null;
+}
+
 export interface FeedFetchResult {
   entries: FeedEntry[];
   /** HTTP status when a response was received; null on errors before a response (e.g. timeout). */
   httpStatus: number | null;
-  /** Null when the feed was fetched with a 2xx/3xx response and parsed successfully. */
+  /** Null when the feed was fetched with a 2xx/304 response and parsed successfully. */
   errorMessage: string | null;
+  /** True on 304: unchanged since `validators`, so there is nothing to publish. */
+  notModified: boolean;
+  /**
+   * Validators to persist. Null means "keep the stored ones" — caching validators from an
+   * unparseable body would 304 forever and never retry it.
+   */
+  validators: ConditionalGetState | null;
+  /** How long the server asked us to wait (429); null when not rate limited. */
+  retryAfterMs: number | null;
+}
+
+/** Parses `Retry-After` (delta-seconds or HTTP-date) to ms, clamped; null when unusable. */
+export function parseRetryAfterMs(value: string | null, now: number = Date.now()): number | null {
+  if (!value) {
+    return null;
+  }
+  const trimmed = value.trim();
+  let ms: number;
+  if (/^\d+$/.test(trimmed)) {
+    ms = Number(trimmed) * 1000;
+  } else {
+    const at = Date.parse(trimmed);
+    if (Number.isNaN(at)) {
+      return null;
+    }
+    ms = at - now;
+  }
+  return Math.min(Math.max(ms, 0), MAX_RATE_LIMIT_BACKOFF_MS);
 }
 
 /**
- * Fetches a feed over HTTP, records status for observability, and parses the body when the response is OK.
+ * Fetches a feed with a conditional GET, records status for observability, and parses
+ * the body when the response carries one.
  */
-export async function fetchFeedWithHttpResult(feedUrl: string): Promise<FeedFetchResult> {
+export async function fetchFeedWithHttpResult(
+  feedUrl: string,
+  cached: ConditionalGetState = { etag: null, lastModified: null },
+): Promise<FeedFetchResult> {
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), FEED_FETCH_TIMEOUT_MS);
     try {
+      const headers: Record<string, string> = {
+        Accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+        "User-Agent": FEED_USER_AGENT,
+      };
+      if (cached.etag) {
+        headers["If-None-Match"] = cached.etag;
+      }
+      if (cached.lastModified) {
+        headers["If-Modified-Since"] = cached.lastModified;
+      }
       const res = await fetch(feedUrl, {
         signal: controller.signal,
         redirect: "follow",
-        headers: {
-          Accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
-          "User-Agent": "robot.villas RSS poller",
-        },
+        headers,
       });
       const httpStatus = res.status;
+      if (httpStatus === 304) {
+        // A 304 may repeat or omit the validators we sent.
+        return {
+          entries: [],
+          httpStatus,
+          errorMessage: null,
+          notModified: true,
+          validators: {
+            etag: res.headers.get("etag") ?? cached.etag,
+            lastModified: res.headers.get("last-modified") ?? cached.lastModified,
+          },
+          retryAfterMs: null,
+        };
+      }
       if (!res.ok) {
-        return { entries: [], httpStatus, errorMessage: `HTTP ${httpStatus}` };
+        const retryAfterMs =
+          httpStatus === 429
+            ? (parseRetryAfterMs(res.headers.get("retry-after")) ?? DEFAULT_RATE_LIMIT_BACKOFF_MS)
+            : null;
+        return {
+          entries: [],
+          httpStatus,
+          errorMessage: `HTTP ${httpStatus}`,
+          notModified: false,
+          validators: null,
+          retryAfterMs,
+        };
       }
       const text = await res.text();
       try {
         const entries = await parseFeedXml(text);
-        return { entries, httpStatus, errorMessage: null };
+        return {
+          entries,
+          httpStatus,
+          errorMessage: null,
+          notModified: false,
+          validators: {
+            etag: res.headers.get("etag"),
+            lastModified: res.headers.get("last-modified"),
+          },
+          retryAfterMs: null,
+        };
       } catch (parseErr) {
         const msg = parseErr instanceof Error ? parseErr.message : String(parseErr);
-        return { entries: [], httpStatus, errorMessage: msg };
+        return {
+          entries: [],
+          httpStatus,
+          errorMessage: msg,
+          notModified: false,
+          validators: null,
+          retryAfterMs: null,
+        };
       }
     } finally {
       clearTimeout(timeout);
     }
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
-    return { entries: [], httpStatus: null, errorMessage: msg };
+    return {
+      entries: [],
+      httpStatus: null,
+      errorMessage: msg,
+      notModified: false,
+      validators: null,
+      retryAfterMs: null,
+    };
   }
 }
 
@@ -140,11 +243,34 @@ export function extractFeedCategories(item: Parser.Item): string[] {
   return out;
 }
 
+/**
+ * Coerces a parsed feed field to a string. rss-parser returns an object for a tag with
+ * attributes but no text — `<guid isPermaLink="false"></guid>` becomes
+ * `{ $: { isPermaLink: "false" } }` — which is truthy and crashes string callers.
+ */
+export function toFeedText(value: unknown): string {
+  if (typeof value === "string") {
+    return value;
+  }
+  if (value && typeof value === "object") {
+    const o = value as Record<string, unknown>;
+    if (typeof o._ === "string") {
+      return o._;
+    }
+    if (typeof o.href === "string") {
+      return o.href;
+    }
+  }
+  return "";
+}
+
 function normalizeFeedItem(item: Parser.Item): FeedEntry {
   const raw = item as Record<string, unknown>;
-  const guid = item.guid || (raw.id as string | undefined) || item.link || item.title || "";
-  const title = normalizeTypography(decodeHtmlEntities(item.title || "(untitled)"));
-  const link = item.link || "";
+  const itemTitle = toFeedText(item.title);
+  const itemLink = toFeedText(item.link);
+  const guid = toFeedText(item.guid) || toFeedText(raw.id) || itemLink || itemTitle || "";
+  const title = normalizeTypography(decodeHtmlEntities(itemTitle || "(untitled)"));
+  const link = itemLink;
   const publishedAt = item.isoDate ? new Date(item.isoDate) : null;
   return { guid, title, link, publishedAt, feedCategories: extractFeedCategories(item) };
 }

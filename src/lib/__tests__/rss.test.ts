@@ -1,11 +1,16 @@
 import { afterEach, describe, expect, it } from "vitest";
 import {
   decodeHtmlEntities,
+  DEFAULT_RATE_LIMIT_BACKOFF_MS,
   extractFeedCategories,
+  FEED_USER_AGENT,
   fetchFeedWithHttpResult,
   MAX_ITEMS_PER_POLL,
+  MAX_RATE_LIMIT_BACKOFF_MS,
   normalizeTypography,
   parseFeedXml,
+  parseRetryAfterMs,
+  toFeedText,
   type FeedEntry,
 } from "../rss";
 import type { Item } from "rss-parser";
@@ -223,5 +228,179 @@ describe("fetchFeedWithHttpResult", () => {
     expect(r.httpStatus).toBe(200);
     expect(r.errorMessage).toBeNull();
     expect(r.entries.length).toBe(2);
+    expect(r.notModified).toBe(false);
+  });
+
+  it("sends an identifying User-Agent", async () => {
+    let seen: Headers | undefined;
+    globalThis.fetch = async (_url, init) => {
+      seen = new Headers(init?.headers);
+      return new Response(SAMPLE_RSS, { status: 200 });
+    };
+    await fetchFeedWithHttpResult("https://example.com/feed.xml");
+    expect(seen?.get("user-agent")).toBe(FEED_USER_AGENT);
+    expect(seen?.get("user-agent")).toMatch(/robot\.villas/);
+  });
+
+  it("sends stored validators as conditional GET headers", async () => {
+    let seen: Headers | undefined;
+    globalThis.fetch = async (_url, init) => {
+      seen = new Headers(init?.headers);
+      return new Response(SAMPLE_RSS, { status: 200 });
+    };
+    await fetchFeedWithHttpResult("https://example.com/feed.xml", {
+      etag: '"abc"',
+      lastModified: "Wed, 21 Oct 2015 07:28:00 GMT",
+    });
+    expect(seen?.get("if-none-match")).toBe('"abc"');
+    expect(seen?.get("if-modified-since")).toBe("Wed, 21 Oct 2015 07:28:00 GMT");
+  });
+
+  it("omits conditional headers when nothing is cached", async () => {
+    let seen: Headers | undefined;
+    globalThis.fetch = async (_url, init) => {
+      seen = new Headers(init?.headers);
+      return new Response(SAMPLE_RSS, { status: 200 });
+    };
+    await fetchFeedWithHttpResult("https://example.com/feed.xml");
+    expect(seen?.has("if-none-match")).toBe(false);
+    expect(seen?.has("if-modified-since")).toBe(false);
+  });
+
+  it("returns validators from a 200 so the next request can be conditional", async () => {
+    globalThis.fetch = async () =>
+      new Response(SAMPLE_RSS, {
+        status: 200,
+        headers: { ETag: '"v2"', "Last-Modified": "Wed, 21 Oct 2015 07:28:00 GMT" },
+      });
+    const r = await fetchFeedWithHttpResult("https://example.com/feed.xml");
+    expect(r.validators).toEqual({
+      etag: '"v2"',
+      lastModified: "Wed, 21 Oct 2015 07:28:00 GMT",
+    });
+  });
+
+  it("treats 304 as success with no entries", async () => {
+    globalThis.fetch = async () => new Response(null, { status: 304 });
+    const r = await fetchFeedWithHttpResult("https://example.com/feed.xml", {
+      etag: '"abc"',
+      lastModified: null,
+    });
+    expect(r.httpStatus).toBe(304);
+    expect(r.errorMessage).toBeNull();
+    expect(r.notModified).toBe(true);
+    expect(r.entries).toEqual([]);
+  });
+
+  it("keeps the cached validators when a 304 repeats none of them", async () => {
+    globalThis.fetch = async () => new Response(null, { status: 304 });
+    const r = await fetchFeedWithHttpResult("https://example.com/feed.xml", {
+      etag: '"abc"',
+      lastModified: "Wed, 21 Oct 2015 07:28:00 GMT",
+    });
+    expect(r.validators).toEqual({
+      etag: '"abc"',
+      lastModified: "Wed, 21 Oct 2015 07:28:00 GMT",
+    });
+  });
+
+  it("does not return validators for an unparseable body, so the body is retried", async () => {
+    globalThis.fetch = async () =>
+      new Response("this is not xml at all", { status: 200, headers: { ETag: '"v2"' } });
+    const r = await fetchFeedWithHttpResult("https://example.com/feed.xml");
+    expect(r.errorMessage).not.toBeNull();
+    expect(r.validators).toBeNull();
+  });
+
+  it("does not return validators for an error response", async () => {
+    globalThis.fetch = async () => new Response("", { status: 500, headers: { ETag: '"v2"' } });
+    const r = await fetchFeedWithHttpResult("https://example.com/feed.xml");
+    expect(r.validators).toBeNull();
+    expect(r.retryAfterMs).toBeNull();
+  });
+
+  it("honours Retry-After on a 429", async () => {
+    globalThis.fetch = async () =>
+      new Response("", { status: 429, headers: { "Retry-After": "120" } });
+    const r = await fetchFeedWithHttpResult("https://example.com/feed.xml");
+    expect(r.httpStatus).toBe(429);
+    expect(r.errorMessage).toMatch(/429/);
+    expect(r.retryAfterMs).toBe(120_000);
+  });
+
+  it("falls back to a default backoff when a 429 carries no Retry-After", async () => {
+    globalThis.fetch = async () => new Response("", { status: 429 });
+    const r = await fetchFeedWithHttpResult("https://example.com/feed.xml");
+    expect(r.retryAfterMs).toBe(DEFAULT_RATE_LIMIT_BACKOFF_MS);
+  });
+});
+
+describe("parseRetryAfterMs", () => {
+  const NOW = Date.parse("2026-08-14T21:00:00Z");
+
+  it("parses delta-seconds", () => {
+    expect(parseRetryAfterMs("30", NOW)).toBe(30_000);
+  });
+
+  it("parses an HTTP-date", () => {
+    expect(parseRetryAfterMs("Fri, 14 Aug 2026 21:05:00 GMT", NOW)).toBe(300_000);
+  });
+
+  it("clamps a past HTTP-date to zero", () => {
+    expect(parseRetryAfterMs("Fri, 14 Aug 2026 20:00:00 GMT", NOW)).toBe(0);
+  });
+
+  it("clamps an absurd delay to the maximum", () => {
+    expect(parseRetryAfterMs("99999999", NOW)).toBe(MAX_RATE_LIMIT_BACKOFF_MS);
+  });
+
+  it("returns null for a missing or unparseable value", () => {
+    expect(parseRetryAfterMs(null, NOW)).toBeNull();
+    expect(parseRetryAfterMs("soon", NOW)).toBeNull();
+  });
+});
+
+describe("toFeedText", () => {
+  it("passes strings through", () => {
+    expect(toFeedText("hello")).toBe("hello");
+  });
+
+  it("unwraps the text node of an attributed tag", () => {
+    expect(toFeedText({ _: "hello", $: { isPermaLink: "false" } })).toBe("hello");
+  });
+
+  it("returns an empty string for an attributes-only tag", () => {
+    // `<guid isPermaLink="false"></guid>`, as seen on undark.org, parses to this shape.
+    expect(toFeedText({ $: { isPermaLink: "false" } })).toBe("");
+  });
+
+  it("returns an empty string for missing values", () => {
+    expect(toFeedText(undefined)).toBe("");
+    expect(toFeedText(null)).toBe("");
+  });
+});
+
+describe("parseFeedXml with an attributes-only guid", () => {
+  const RSS_WITH_EMPTY_GUID = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Broken Guid Feed</title>
+    <link>https://example.com</link>
+    <description>Feed whose guid tag carries only attributes</description>
+    <item>
+      <title>A Post</title>
+      <link>https://example.com/a-post</link>
+      <guid isPermaLink="false"></guid>
+      <pubDate>Mon, 01 Jan 2024 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>`;
+
+  it("falls back to the link instead of yielding a non-string guid", async () => {
+    const entries = await parseFeedXml(RSS_WITH_EMPTY_GUID);
+    expect(entries).toHaveLength(1);
+    expect(typeof entries[0].guid).toBe("string");
+    expect(entries[0].guid).toBe("https://example.com/a-post");
+    expect(entries[0].title).toBe("A Post");
   });
 });

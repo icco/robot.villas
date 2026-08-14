@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${base}/`, changeFrequency: "daily", priority: 1.0 },
     { url: `${base}/stats`, changeFrequency: "hourly", priority: 0.7 },
+    { url: `${base}/about`, changeFrequency: "monthly", priority: 0.5 },
   ];
 
   const botPages: MetadataRoute.Sitemap = Object.keys(config.bots).map(

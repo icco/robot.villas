@@ -808,7 +808,7 @@ bots:
     feed_url: https://shkspr.mobi/blog/feed/atom/
     display_name: Terence Eden
     summary: Open standards, accessibility, the web, and occasionally grumpy technology criticism.
-    profile_photo: https://shkspr.mobi/android-chrome-512x512.png
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://shkspr.mobi&size=128
   fabien_sanglard:
     feed_url: https://fabiensanglard.net/rss.xml
     display_name: Fabien Sanglard
