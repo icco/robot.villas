@@ -125,11 +125,10 @@ describeWithDb("database", () => {
     });
   });
 
-  // Tag counts are global (not scoped to a bot), so these assertions assume a
-  // dedicated test database, which is what CI provisions.
+  // Tag counts are global, not per-bot, so these assume the dedicated test
+  // database CI provisions.
   describe("getTagsPage", () => {
-    // "shared" is on 3 entries, "alpha"/"beta"/"gamma" on 1 each, so paging
-    // over them exercises both the count ordering and the tag tie-break.
+    // "shared" on 3 entries, the rest on 1: exercises count order + tie-break.
     async function seedTags() {
       await insertEntry(db, "testbot", "t-1", "https://example.com/1", "T1", null, ["Shared", "Gamma"]);
       await insertEntry(db, "testbot", "t-2", "https://example.com/2", "T2", null, ["shared", "Beta"]);

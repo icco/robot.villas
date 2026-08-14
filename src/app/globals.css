@@ -12,24 +12,16 @@
   --font-body: "Roboto", sans-serif;
 }
 
-/*
- * Feed titles, hashtags, and actor URLs are all external input, and a single
- * long token (a 51-character hashtag, a URL in a post title) otherwise
- * overflows the viewport. Only affects words that wouldn't fit anyway.
- */
+/* Feed titles, hashtags, and actor URLs are external input: one long token
+   otherwise overflows the viewport. */
 @layer base {
   body {
     overflow-wrap: break-word;
   }
 }
 
-/*
- * SiteHeader (@icco/react-common) hard-codes `px-8` gutters on a nav that
- * can't wrap, which overflowed the viewport on phones and left the header
- * misaligned with the main column. Drop its gutters — the wrapper supplies
- * them, matching <main> and the footer — and let the nav wrap when the brand
- * plus links don't fit on one line.
- */
+/* SiteHeader (@icco/react-common) hard-codes px-8 on a nav that can't wrap,
+   which overflows phones. The wrapper supplies the gutters instead. */
 .site-header nav {
   flex-wrap: wrap;
   gap: 0.25rem 1rem;

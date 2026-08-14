@@ -332,11 +332,9 @@ export interface TagsPage {
 
 /**
  * One page of hashtags, most-used first. `tag ASC` is a required tie-break:
- * most tags have the same (small) post count, and without it LIMIT/OFFSET
- * ordering is unstable, so tags would repeat across pages while others never
- * appeared. `count(*) OVER ()` computes the distinct-tag total in the same
- * pass — window functions run before LIMIT — instead of a second full
- * unnest + GROUP BY over every entry.
+ * most tags share the same post count, so without it LIMIT/OFFSET repeats
+ * tags across pages and drops others. `count(*) OVER ()` gets the total in
+ * the same pass instead of a second unnest + GROUP BY over every entry.
  */
 export async function getTagsPage(db: Db, limit: number, offset: number): Promise<TagsPage> {
   const result = await db.execute<{ tag: string; post_count: number; total: number }>(sql`
