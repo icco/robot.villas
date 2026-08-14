@@ -96,13 +96,13 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
               {bot.feed_url}
             </a>
           </p>
-          <div className="flex items-center gap-3 mt-3 flex-wrap">
+          <div className="flex flex-col items-stretch gap-3 mt-3 sm:flex-row sm:flex-wrap sm:items-center">
             <FollowButton account={`${username}@${domain}`}>
               <button type="button" className="btn btn-primary btn-sm">
                 Follow on Mastodon
               </button>
             </FollowButton>
-            <div className="stats stats-vertical shadow bg-base-200 sm:stats-horizontal">
+            <div className="stats stats-horizontal shadow bg-base-200">
               <div className="stat px-4 py-2">
                 <div className="stat-title text-xs">Posts</div>
                 <div className="stat-value text-lg">

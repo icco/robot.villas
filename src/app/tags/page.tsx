@@ -37,15 +37,19 @@ export default async function TagsPage({ searchParams }: Props) {
     <>
       <div className="mb-6">
         <h1 className="text-3xl font-display font-bold tracking-tight">Tags</h1>
-        <p className="text-base-content/60 mt-1">
-          {total.toLocaleString("en-US")} tag{total !== 1 ? "s" : ""}
-          {total > PAGE_SIZE && (
-            <>
-              {" · "}page {(page + 1).toLocaleString("en-US")} of{" "}
-              {pageCount.toLocaleString("en-US")}
-            </>
-          )}
-        </p>
+        {/* `total` comes from the page's own rows, so it's 0 on an
+            out-of-range page — don't claim the site has no tags there. */}
+        {(total > 0 || !hasPrev) && (
+          <p className="text-base-content/60 mt-1">
+            {total.toLocaleString("en-US")} tag{total !== 1 ? "s" : ""}
+            {total > PAGE_SIZE && (
+              <>
+                {" · "}page {(page + 1).toLocaleString("en-US")} of{" "}
+                {pageCount.toLocaleString("en-US")}
+              </>
+            )}
+          </p>
+        )}
       </div>
 
       <ul className="divide-y divide-base-300">
