@@ -613,6 +613,270 @@ bots:
     feed_url: https://publicdomainreview.org/feed/
     display_name: The Public Domain Review
     summary: Curated art, literature, history, science, and strange treasures from the public domain.
+  martin_fowler:
+    feed_url: https://martinfowler.com/feed.atom
+    display_name: Martin Fowler
+    summary: Software architecture, design, refactoring, and engineering practice.
+
+  pragmatic_engineer:
+    feed_url: https://blog.pragmaticengineer.com/rss/
+    display_name: The Pragmatic Engineer
+    summary: Software engineering, technology companies, and engineering leadership.
+
+  hillel_wayne:
+    feed_url: https://www.hillelwayne.com/index.xml
+    display_name: Hillel Wayne
+    summary: Software engineering, programming languages, formal methods, and computer science.
+
+  mitchell_hashimoto:
+    feed_url: https://mitchellh.com/feed.xml
+    display_name: Mitchell Hashimoto
+    summary: Software engineering, infrastructure, developer tools, and programming.
+
+  jeff_geerling:
+    feed_url: https://www.jeffgeerling.com/blog.xml
+    display_name: Jeff Geerling
+    summary: Linux, hardware, Raspberry Pi, homelabs, automation, and open source.
+
+  netflix_tech:
+    feed_url: https://netflixtechblog.com/feed
+    display_name: Netflix TechBlog
+    summary: Engineering stories about distributed systems, infrastructure, and large-scale software.
+
+  stripe_engineering:
+    feed_url: https://stripe.com/blog/feed.rss
+    display_name: Stripe Engineering
+    summary: Engineering, APIs, infrastructure, and building reliable financial software.
+
+  github_engineering:
+    feed_url: https://github.blog/engineering/feed/
+    display_name: GitHub Engineering
+    summary: Engineering stories about developer tools, infrastructure, and software development.
+
+  synth_anatomy:
+    feed_url: https://www.synthanatomy.com/feed
+    display_name: Synth Anatomy
+    summary: News and reviews about synthesizers, music technology, and electronic music.
+
+  synth_history:
+    feed_url: https://www.synthhistory.com/rss
+    display_name: Synth History
+    summary: Stories about the history, people, instruments, and culture of synthesizers.
+
+  simon_willison:
+    feed_url: https://simonwillison.net/atom/everything/
+    display_name: Simon Willison
+    summary: AI, Python, SQLite, web development, open source, and practical software experiments.
+
+  gwern:
+    feed_url: https://gwern.net/feed
+    display_name: Gwern
+    summary: Long-form research into AI, statistics, psychology, technology, and unusual corners of the internet.
+
+  sean_goedecke:
+    feed_url: https://seangoedecke.com/rss.xml
+    display_name: Sean Goedecke
+    summary: Software engineering, technical leadership, architecture, and engineering organizations.
+
+  scott_berkun:
+    feed_url: https://scottberkun.com/feed/
+    display_name: Scott Berkun
+    summary: Design, creativity, technology, management, and how people work.
+
+  alexwlchan:
+    feed_url: https://alexwlchan.net/atom.xml
+    display_name: Alex Chan
+    summary: Practical programming, software engineering, Python, and tooling.
+
+  ned_batchelder:
+    feed_url: https://nedbatchelder.com/blog/rss.xml
+    display_name: Ned Batchelder
+    summary: Python, software design, programming culture, and thoughtful technical essays.
+
+  cloudflare:
+    feed_url: https://blog.cloudflare.com/rss/
+    display_name: Cloudflare Blog
+    summary: Networking, distributed systems, security, performance, and internet infrastructure.
+
+  lobsters:
+    feed_url: https://lobste.rs/rss
+    display_name: Lobsters
+    summary: Community discussion and links about programming, software, systems, and computing.
+
+  etsy_code_as_craft:
+    feed_url: https://www.etsy.com/codeascraft/feed/
+    display_name: Etsy Code as Craft
+    summary: Software engineering, infrastructure, developer culture, and technology at Etsy.
+
+  discord_engineering:
+    feed_url: https://discord.com/blog/rss.xml
+    display_name: Discord Engineering
+    summary: Distributed systems, infrastructure, performance, and engineering at Discord.
+
+  figma:
+    feed_url: https://www.figma.com/blog/feed/
+    display_name: Figma Engineering
+    summary: Graphics, collaboration, frontend, infrastructure, and unusual engineering problems.
+
+  soundcloud_backstage:
+    feed_url: https://developers.soundcloud.com/blog/feed.xml
+    display_name: SoundCloud Backstage
+    summary: Developer infrastructure, distributed systems, APIs, and engineering at SoundCloud.
+
+  hugging_face:
+    feed_url: https://huggingface.co/blog/feed.xml
+    display_name: Hugging Face
+    summary: Open machine learning, models, datasets, inference, and AI infrastructure.
+
+  lmsys:
+    feed_url: https://lmsys.org/blog/feed.xml
+    display_name: LMSYS
+    summary: Large language models, evaluation, inference, and AI research.
+
+  stanislas:
+    feed_url: https://www.stanislas.blog/feed/
+    display_name: Stanislas
+    summary: Rust, Go, DevOps, networking, home automation, terminal tools, and software tinkering.
+
+  adactio:
+    feed_url: https://adactio.com/articles/rss
+    display_name: Adactio
+    summary: Web standards, web development, design, and the history and future of the web.
+
+  eric_meyer:
+    feed_url: https://meyerweb.com/eric/thoughts/feed/
+    display_name: Eric Meyer
+    summary: Web standards, CSS, web development, and the evolution of the web.
+
+  josh_comeau:
+    feed_url: https://www.joshwcomeau.com/rss.xml
+    display_name: Josh Comeau
+    summary: Frontend development, CSS, JavaScript, animation, and interactive web design.
+
+  overreacted:
+    feed_url: https://overreacted.io/rss.xml
+    display_name: Overreacted
+    summary: Programming, React, software abstractions, and thoughts on building software.
+
+  horizontalpitch:
+    feed_url: https://www.horizontalpitch.com/feed/
+    display_name: Horizontalpitch
+    summary: Modular synthesis, Eurorack, electronic music, experimentation, and making music without presets.
+
+  great_synthesizers:
+    feed_url: https://greatsynthesizers.com/en/feed/
+    display_name: GreatSynthesizers
+    summary: Synthesizer reviews, historical instruments, documentation, and sound examples.
+
+  mark_mosher:
+    feed_url: https://markmoshermusic.com/feed/
+    display_name: Mark Mosher
+    summary: Experimental electronic music, synthesis, dark ambient, cinematic music, glitch, and multimedia.
+
+  synth_and_i:
+    feed_url: https://synthandi.blogspot.com/feeds/posts/default?alt=rss
+    display_name: The Synth and I
+    summary: Synthesis, sound, electronic music, art, and creative inspiration.
+
+  vintage_synth_explorer:
+    feed_url: https://feeds.feedburner.com/vintagesynth
+    display_name: Vintage Synth Explorer
+    summary: Historical synthesizers, electronic instruments, specifications, and reference material.
+
+  jondent:
+    feed_url: https://jondent.co.uk/feed/
+    display_name: JonDent
+    summary: Electronic music, synthesizers, DJing, production, art, travel, and culture.
+
+  quanta:
+    feed_url: https://www.quantamagazine.org/feed/
+    display_name: Quanta Magazine
+    summary: Mathematics, physics, biology, computer science, and fundamental scientific discoveries.
+
+  the_marginalian:
+    feed_url: https://www.themarginalian.org/feed/
+    display_name: The Marginalian
+    summary: Art, science, literature, philosophy, creativity, and the human experience.
+
+  public_domain_review:
+    feed_url: https://publicdomainreview.org/feed/
+    display_name: The Public Domain Review
+    summary: Curated art, literature, history, science, and strange treasures from the public domain.
+
+  the_millions:
+    feed_url: https://themillions.com/feed
+    display_name: The Millions
+    summary: Books, literature, publishing, and contemporary literary culture.
+
+  public_books:
+    feed_url: https://www.publicbooks.org/feed/
+    display_name: Public Books
+    summary: Literature, culture, politics, criticism, and ideas from scholars and writers.
+
+  paris_review:
+    feed_url: https://www.theparisreview.org/blog/feed/
+    display_name: The Paris Review
+    summary: Literature, writers, interviews, fiction, poetry, and literary culture.
+
+  lithub:
+    feed_url: https://lithub.com/feed/
+    display_name: Literary Hub
+    summary: Books, literature, essays, publishing, and literary culture.
+
+  strong_towns:
+    feed_url: https://www.strongtowns.org/journal?format=rss
+    display_name: Strong Towns
+    summary: Cities, transportation, housing, walkability, and sustainable urban development.
+
+  citylab:
+    feed_url: https://www.bloomberg.com/citylab/feed
+    display_name: Bloomberg CityLab
+    summary: Cities, urbanism, transportation, housing, architecture, and public policy.
+
+  places_journal:
+    feed_url: https://placesjournal.org/feed/
+    display_name: Places Journal
+    summary: Architecture, landscape, urbanism, design, and the built environment.
+
+  atlas_obscura:
+    feed_url: https://www.atlasobscura.com/feeds/latest
+    display_name: Atlas Obscura
+    summary: Unusual places, history, culture, science, food, and the hidden world around us.
+
+  lensculture:
+    feed_url: https://www.lensculture.com/rss
+    display_name: LensCulture
+    summary: Contemporary photography, photographers, visual culture, and photography criticism.
+
+  petapixel:
+    feed_url: https://petapixel.com/feed/
+    display_name: PetaPixel
+    summary: Photography, cameras, image-making technology, and photographic culture.
+
+  conscientious:
+    feed_url: https://www.conscientious.photography/rss
+    display_name: Conscientious Photography
+    summary: Contemporary photography, photographic books, exhibitions, and visual culture.
+
+  magnum_photos:
+    feed_url: https://www.magnumphotos.com/feed/
+    display_name: Magnum Photos
+    summary: Documentary photography, photojournalism, photographers, and visual storytelling.
+
+  nautilus:
+    feed_url: https://nautil.us/feed/
+    display_name: Nautilus
+    summary: Science, philosophy, culture, and big questions about the natural world.
+
+  aeon:
+    feed_url: https://aeon.co/feed.rss
+    display_name: Aeon
+    summary: Philosophy, science, psychology, culture, and ideas about human life.
+
+  works_in_progress:
+    feed_url: https://worksinprogress.co/feed/
+    display_name: Works in Progress
+    summary: Technology, science, economics, progress, infrastructure, and ideas for improving the world.
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
