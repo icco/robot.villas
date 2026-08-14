@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { getGlobals } from "@/lib/globals";
 import { FEED_USER_AGENT } from "@/lib/rss";
 
@@ -20,7 +21,7 @@ export function generateMetadata(): Metadata {
   };
 }
 
-function Code({ children }: { children: React.ReactNode }) {
+function Code({ children }: { children: ReactNode }) {
   return (
     <code className="bg-base-300 px-1.5 py-0.5 rounded font-mono text-xs break-all">
       {children}
