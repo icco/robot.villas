@@ -21,7 +21,7 @@ import {
   normalizeHashtagLabel,
   resolveHashtags,
 } from "../hashtags";
-import type { BotConfig } from "../config";
+import { MAX_TAG_LEN, type BotConfig } from "../config";
 import type { FeedEntry } from "../rss";
 
 const baseBot: BotConfig = {
@@ -63,6 +63,29 @@ describe("normalizeHashtagLabel", () => {
 
   it("returns null for empty after normalization", () => {
     expect(normalizeHashtagLabel("!!!")).toBeNull();
+  });
+
+  it("keeps a tag of exactly MAX_TAG_LEN and drops longer ones", () => {
+    expect(normalizeHashtagLabel("a".repeat(MAX_TAG_LEN))).toBe("a".repeat(MAX_TAG_LEN));
+    expect(normalizeHashtagLabel("a".repeat(MAX_TAG_LEN + 1))).toBeNull();
+  });
+
+  it("measures length after stripping, so punctuation doesn't count", () => {
+    expect(normalizeHashtagLabel("Los Angeles Organizing 1984")).toBe("LosAngelesOrganizing1984");
+    expect(
+      normalizeHashtagLabel("Los Angeles Organizing Committee for the Olympic Games 1984"),
+    ).toBeNull();
+  });
+});
+
+describe("hashtag length limit", () => {
+  it("skips over-length candidates but keeps the ones that follow", () => {
+    expect(mergeHashtagCandidates(["b".repeat(40), "Tech", "News"], 3)).toEqual(["Tech", "News"]);
+  });
+
+  it("drops over-length tags stored before the limit existed", () => {
+    expect(hashtagsForNoteBody(["losangelesorganizingcommitteefortheolympicgames1984", "news"]))
+      .toEqual(["news"]);
   });
 });
 

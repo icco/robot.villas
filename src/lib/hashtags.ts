@@ -1,17 +1,18 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { getLogger } from "@logtape/logtape";
-import type { BotConfig } from "./config";
+import { MAX_TAG_LEN, type BotConfig } from "./config";
 import type { FeedEntry } from "./rss";
 
 const logger = getLogger(["robot-villas", "hashtags"]);
 
 /** Max hashtags per note (stored and rendered). */
 export const MAX_TAGS = 3;
-const MAX_TAG_LEN = 30;
 const GEMINI_DEFAULT_MODEL = "gemini-2.5-flash-lite";
 
 /**
  * Normalizes a candidate label to a Mastodon-safe hashtag token (no leading #).
+ * Returns null past MAX_TAG_LEN: truncating a long label just yields a mangled
+ * word ("LosAngelesOrganizingCommitteeFo"), which is worse than no tag.
  */
 export function normalizeHashtagLabel(raw: string): string | null {
   let s = raw.trim().replace(/^#+/u, "");
@@ -20,11 +21,8 @@ export function normalizeHashtagLabel(raw: string): string | null {
   }
   s = s.normalize("NFKD").replace(/\p{M}/gu, "");
   s = s.replace(/[^a-zA-Z0-9_]/g, "");
-  if (!s) {
+  if (!s || s.length > MAX_TAG_LEN) {
     return null;
-  }
-  if (s.length > MAX_TAG_LEN) {
-    s = s.slice(0, MAX_TAG_LEN);
   }
   return s;
 }
@@ -139,7 +137,7 @@ Strategy:
 
 Format rules:
 - Each tag MUST be a single common word or well-known short compound (e.g. "Tech", "OpenSource", "Science", "Music").
-- Maximum 30 characters per tag. Prefer tags under 15 characters.
+- Maximum ${MAX_TAG_LEN} characters per tag (longer tags are discarded). Prefer tags under 15 characters.
 - ASCII letters, digits, underscore only; CamelCase; no # or spaces inside a tag.
 - Use recognizable topic tags, NOT article-specific phrases or proper nouns from the title.
 
