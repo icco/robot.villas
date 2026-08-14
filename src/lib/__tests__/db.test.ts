@@ -8,6 +8,7 @@ import {
   getExistingGuids,
   insertEntry,
   countEntriesForBots,
+  getTagsPage,
   getFollowers,
   addFollower,
   removeFollower,
@@ -121,6 +122,64 @@ describeWithDb("database", () => {
 
     it("returns 0 for an empty bot list", async () => {
       expect(await countEntriesForBots(db, [])).toBe(0);
+    });
+  });
+
+  // Tag counts are global (not scoped to a bot), so these assertions assume a
+  // dedicated test database, which is what CI provisions.
+  describe("getTagsPage", () => {
+    // "shared" is on 3 entries, "alpha"/"beta"/"gamma" on 1 each, so paging
+    // over them exercises both the count ordering and the tag tie-break.
+    async function seedTags() {
+      await insertEntry(db, "testbot", "t-1", "https://example.com/1", "T1", null, ["Shared", "Gamma"]);
+      await insertEntry(db, "testbot", "t-2", "https://example.com/2", "T2", null, ["shared", "Beta"]);
+      await insertEntry(db, "bot_a", "t-3", "https://example.com/3", "T3", null, ["SHARED", "Alpha"]);
+    }
+
+    it("orders by post count then tag, and reports the distinct-tag total", async () => {
+      await seedTags();
+
+      const { tags, total } = await getTagsPage(db, 100, 0);
+      expect(total).toBe(4);
+      expect(tags).toEqual([
+        { tag: "shared", postCount: 3 },
+        { tag: "alpha", postCount: 1 },
+        { tag: "beta", postCount: 1 },
+        { tag: "gamma", postCount: 1 },
+      ]);
+    });
+
+    it("pages without dropping or repeating equally-ranked tags", async () => {
+      await seedTags();
+
+      const first = await getTagsPage(db, 2, 0);
+      const second = await getTagsPage(db, 2, 2);
+      const third = await getTagsPage(db, 2, 4);
+
+      expect(first.tags.map((t) => t.tag)).toEqual(["shared", "alpha"]);
+      expect(second.tags.map((t) => t.tag)).toEqual(["beta", "gamma"]);
+      expect(third.tags).toEqual([]);
+      expect(first.total).toBe(4);
+      expect(second.total).toBe(4);
+    });
+
+    it("ignores soft-deleted entries", async () => {
+      await seedTags();
+      await db
+        .update(schema.feedEntries)
+        .set({ deletedAt: new Date() })
+        .where(inArray(schema.feedEntries.botUsername, ["testbot"]));
+
+      const { tags, total } = await getTagsPage(db, 100, 0);
+      expect(total).toBe(2);
+      expect(tags).toEqual([
+        { tag: "alpha", postCount: 1 },
+        { tag: "shared", postCount: 1 },
+      ]);
+    });
+
+    it("returns an empty page and a zero total when there are no tags", async () => {
+      expect(await getTagsPage(db, 100, 0)).toEqual({ tags: [], total: 0 });
     });
   });
 

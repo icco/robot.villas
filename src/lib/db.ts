@@ -324,16 +324,37 @@ export async function countAllEntries(db: Db): Promise<number> {
   return rows[0]?.value ?? 0;
 }
 
-export async function getAllTags(db: Db): Promise<Array<{ tag: string; postCount: number }>> {
-  const result = await db.execute<{ tag: string; post_count: number }>(sql`
-    SELECT lower(t.v) AS tag, count(*)::int AS post_count
-    FROM ${schema.feedEntries},
-         jsonb_array_elements_text(${schema.feedEntries.hashtags}) AS t(v)
-    WHERE ${schema.feedEntries.deletedAt} IS NULL
-    GROUP BY lower(t.v)
-    ORDER BY count(*) DESC
+export interface TagsPage {
+  tags: Array<{ tag: string; postCount: number }>;
+  /** Total number of distinct tags, i.e. across every page. */
+  total: number;
+}
+
+/**
+ * One page of hashtags, most-used first. `tag ASC` is a required tie-break:
+ * most tags have the same (small) post count, and without it LIMIT/OFFSET
+ * ordering is unstable, so tags would repeat across pages while others never
+ * appeared. `count(*) OVER ()` computes the distinct-tag total in the same
+ * pass — window functions run before LIMIT — instead of a second full
+ * unnest + GROUP BY over every entry.
+ */
+export async function getTagsPage(db: Db, limit: number, offset: number): Promise<TagsPage> {
+  const result = await db.execute<{ tag: string; post_count: number; total: number }>(sql`
+    SELECT tag, post_count, (count(*) OVER ())::int AS total
+    FROM (
+      SELECT lower(t.v) AS tag, count(*)::int AS post_count
+      FROM ${schema.feedEntries},
+           jsonb_array_elements_text(${schema.feedEntries.hashtags}) AS t(v)
+      WHERE ${schema.feedEntries.deletedAt} IS NULL
+      GROUP BY lower(t.v)
+    ) AS grouped
+    ORDER BY post_count DESC, tag ASC
+    LIMIT ${limit} OFFSET ${offset}
   `);
-  return result.map((r) => ({ tag: r.tag, postCount: r.post_count }));
+  return {
+    tags: result.map((r) => ({ tag: r.tag, postCount: r.post_count })),
+    total: result[0]?.total ?? 0,
+  };
 }
 
 /**

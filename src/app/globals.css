@@ -11,3 +11,26 @@
   --font-display: "Roboto Mono", monospace;
   --font-body: "Roboto", sans-serif;
 }
+
+/*
+ * SiteHeader (@icco/react-common) hard-codes `px-8` gutters on a nav that
+ * can't wrap, which overflowed the viewport on phones and left the header
+ * misaligned with the main column. Drop its gutters — the wrapper supplies
+ * them, matching <main> and the footer — and let the nav wrap when the brand
+ * plus links don't fit on one line.
+ */
+.site-header nav {
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  padding-block: 1.5rem;
+}
+
+.site-header nav > div {
+  padding-inline: 0;
+}
+
+@media (width >= 40rem) {
+  .site-header nav {
+    padding-block: 2rem;
+  }
+}

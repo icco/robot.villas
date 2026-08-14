@@ -70,7 +70,7 @@ export default function HomePage() {
           <Link
             key={username}
             href={`/@${username}`}
-            className="flex items-center gap-3 p-3 rounded-lg hover:bg-base-200 transition-colors group"
+            className="flex items-center gap-3 px-1 py-3 sm:p-3 rounded-lg hover:bg-base-200 transition-colors group"
           >
             {bot.profile_photo ? (
               /* eslint-disable-next-line @next/next/no-img-element */
@@ -86,7 +86,7 @@ export default function HomePage() {
                 <CpuChipIcon className="w-4 h-4 text-base-content/50" />
               </div>
             )}
-            <div className="min-w-0">
+            <div className="min-w-0 break-words">
               <span className="font-mono text-sm font-semibold group-hover:text-primary transition-colors">
                 @{username}
               </span>
