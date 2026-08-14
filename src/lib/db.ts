@@ -865,13 +865,13 @@ export async function upsertFeedPollStatus(
   db: Db,
   status: FeedPollStatusRow,
 ): Promise<void> {
-  const { botUsername, ...rest } = status;
+  const { lastCheckedAt, lastHttpStatus, lastError, etag, lastModified, nextPollAt } = status;
   await db
     .insert(schema.feedPollStatus)
     .values(status)
     .onConflictDoUpdate({
       target: schema.feedPollStatus.botUsername,
-      set: rest,
+      set: { lastCheckedAt, lastHttpStatus, lastError, etag, lastModified, nextPollAt },
     });
 }
 

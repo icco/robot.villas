@@ -12,6 +12,8 @@ const DEFAULT_INTERVAL_MS = 60 * 60 * 1000;
 /** How many bot feeds to poll at once. Keeps a large feeds.yml from making a
  * poll cycle run far longer than intervalMs when polled fully sequentially. */
 const DEFAULT_CONCURRENCY = 10;
+/** Tolerance on the per-feed staleness check, so a cycle that runs a little long still polls. */
+const RECHECK_SLACK_MS = 60 * 1000;
 const logger = getLogger(["robot-villas", "poller"]);
 
 export interface PollerOptions {
@@ -50,6 +52,17 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         logger.debug("Skipping {username}: backing off until {nextPollAt}", {
           username,
           nextPollAt: previous.nextPollAt.toISOString(),
+        });
+        return;
+      }
+      // The interval is process-local, so a restart (mist redeploys hourly) would otherwise
+      // re-fetch every feed no matter how recently it was hit. The slack keeps a normal cycle
+      // — which takes slightly longer than intervalMs — from skipping a turn and drifting.
+      const sinceLastCheck = checkedAt.getTime() - (previous?.lastCheckedAt.getTime() ?? 0);
+      if (previous && sinceLastCheck < intervalMs - RECHECK_SLACK_MS) {
+        logger.debug("Skipping {username}: checked {sinceLastCheck}ms ago", {
+          username,
+          sinceLastCheck,
         });
         return;
       }

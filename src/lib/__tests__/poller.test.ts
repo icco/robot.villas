@@ -40,7 +40,8 @@ function okFetch(overrides: Partial<FeedFetchResult> = {}): FeedFetchResult {
 function statusRow(overrides: Partial<FeedPollStatusRow> = {}): FeedPollStatusRow {
   return {
     botUsername: "bot0",
-    lastCheckedAt: new Date("2026-08-14T20:00:00Z"),
+    // Old enough that the staleness gate never skips a bot that a test wants polled.
+    lastCheckedAt: new Date(Date.now() - 24 * 60 * 60 * 1000),
     lastHttpStatus: 200,
     lastError: null,
     etag: null,
@@ -286,6 +287,23 @@ describe("startPoller conditional GET and rate limiting", () => {
 
     expect(mockFetchFeed).not.toHaveBeenCalled();
     expect(mockUpsertStatus).not.toHaveBeenCalled();
+  });
+
+  it("does not re-fetch a feed checked less than an interval ago", async () => {
+    // A restart re-enters poll() immediately; without this gate every feed gets hit again.
+    mockGetStatusMap.mockResolvedValue(
+      new Map([["bot0", statusRow({ lastCheckedAt: new Date(Date.now() - 1_000) })]]),
+    );
+    mockFetchFeed.mockResolvedValue(okFetch());
+
+    const poller = startOneBot();
+    await vi.waitFor(() => {
+      expect(mockGetStatusMap).toHaveBeenCalledTimes(1);
+    });
+    await new Promise((resolve) => setTimeout(resolve, 50));
+    poller.stop();
+
+    expect(mockFetchFeed).not.toHaveBeenCalled();
   });
 
   it("polls again once the backoff deadline has passed", async () => {
