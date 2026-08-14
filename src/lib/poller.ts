@@ -7,12 +7,12 @@ import { parsePositiveInt } from "./env";
 import { fetchFeedWithHttpResult } from "./rss";
 import { publishNewEntries } from "./publisher";
 
-/** Feed publishers expect at most one request per hour per feed; anything faster earns a 429. */
+/** Feed hosts 429 fetchers that poll faster than hourly. */
 const DEFAULT_INTERVAL_MS = 60 * 60 * 1000;
 /** How many bot feeds to poll at once. Keeps a large feeds.yml from making a
  * poll cycle run far longer than intervalMs when polled fully sequentially. */
 const DEFAULT_CONCURRENCY = 10;
-/** Tolerance on the per-feed staleness check, so a cycle that runs a little long still polls. */
+/** Slack on the staleness check, so a cycle running a little long doesn't skip a turn. */
 const RECHECK_SLACK_MS = 60 * 1000;
 const logger = getLogger(["robot-villas", "poller"]);
 
@@ -46,8 +46,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   ): Promise<void> {
     const checkedAt = new Date();
     try {
-      // Honour a server-requested backoff without touching the stored status row, so the
-      // status page keeps showing the 429 that put this feed on hold.
+      // Don't touch the status row while backing off, so /status keeps showing the 429.
       if (previous?.nextPollAt && previous.nextPollAt.getTime() > checkedAt.getTime()) {
         logger.debug("Skipping {username}: backing off until {nextPollAt}", {
           username,
@@ -55,9 +54,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         });
         return;
       }
-      // The interval is process-local, so a restart (mist redeploys hourly) would otherwise
-      // re-fetch every feed no matter how recently it was hit. The slack keeps a normal cycle
-      // — which takes slightly longer than intervalMs — from skipping a turn and drifting.
+      // The interval is process-local, so without this a restart re-fetches every feed.
       const sinceLastCheck = checkedAt.getTime() - (previous?.lastCheckedAt.getTime() ?? 0);
       if (previous && sinceLastCheck < intervalMs - RECHECK_SLACK_MS) {
         logger.debug("Skipping {username}: checked {sinceLastCheck}ms ago", {

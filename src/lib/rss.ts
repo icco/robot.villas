@@ -73,22 +73,18 @@ export interface FeedFetchResult {
   httpStatus: number | null;
   /** Null when the feed was fetched with a 2xx/304 response and parsed successfully. */
   errorMessage: string | null;
-  /** True on 304: the feed is unchanged since `validators`, so there is nothing to publish. */
+  /** True on 304: unchanged since `validators`, so there is nothing to publish. */
   notModified: boolean;
   /**
-   * Validators to persist for the next request. Null means "keep whatever is stored" — an error
-   * response or an unparseable body must not overwrite validators, or the next conditional GET
-   * would get a 304 and we'd never retry the body.
+   * Validators to persist. Null means "keep the stored ones" — caching validators from an
+   * unparseable body would 304 forever and never retry it.
    */
   validators: ConditionalGetState | null;
-  /** How long the server asked us to wait before retrying (429); null when not rate limited. */
+  /** How long the server asked us to wait (429); null when not rate limited. */
   retryAfterMs: number | null;
 }
 
-/**
- * Parses a `Retry-After` value, which is either delta-seconds or an HTTP-date.
- * Returns milliseconds clamped to [0, MAX_RATE_LIMIT_BACKOFF_MS], or null when unusable.
- */
+/** Parses `Retry-After` (delta-seconds or HTTP-date) to ms, clamped; null when unusable. */
 export function parseRetryAfterMs(value: string | null, now: number = Date.now()): number | null {
   if (!value) {
     return null;
@@ -108,8 +104,8 @@ export function parseRetryAfterMs(value: string | null, now: number = Date.now()
 }
 
 /**
- * Fetches a feed over HTTP with a conditional GET, records status for observability,
- * and parses the body when the response carries one.
+ * Fetches a feed with a conditional GET, records status for observability, and parses
+ * the body when the response carries one.
  */
 export async function fetchFeedWithHttpResult(
   feedUrl: string,
@@ -136,7 +132,7 @@ export async function fetchFeedWithHttpResult(
       });
       const httpStatus = res.status;
       if (httpStatus === 304) {
-        // A 304 body is empty by definition, and may repeat or omit the validators we sent.
+        // A 304 may repeat or omit the validators we sent.
         return {
           entries: [],
           httpStatus,
@@ -248,10 +244,9 @@ export function extractFeedCategories(item: Parser.Item): string[] {
 }
 
 /**
- * Coerces a parsed feed field to a string. rss-parser returns an object for a tag that carries
- * attributes but no text — e.g. `<guid isPermaLink="false"></guid>` becomes
- * `{ $: { isPermaLink: "false" } }` — which is truthy and would otherwise flow into code
- * expecting a string (see truncateToMax in publisher.ts).
+ * Coerces a parsed feed field to a string. rss-parser returns an object for a tag with
+ * attributes but no text — `<guid isPermaLink="false"></guid>` becomes
+ * `{ $: { isPermaLink: "false" } }` — which is truthy and crashes string callers.
  */
 export function toFeedText(value: unknown): string {
   if (typeof value === "string") {
