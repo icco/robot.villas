@@ -83,9 +83,6 @@ export default async function StatusPage() {
 
   return (
     <>
-      <Link href="/" className="btn btn-ghost btn-sm gap-1 mb-6 -ml-2">
-        <span>&larr;</span> All bots
-      </Link>
       <h1 className="text-3xl font-display font-bold tracking-tight mb-2">Status</h1>
       <p className="text-base-content/60 text-sm mb-8">
         Live view of relay subscriptions, account follows, and configured RSS feeds.
