@@ -61,42 +61,40 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     >
       <body className="min-h-screen flex flex-col bg-base-100 font-body">
         <WebVitals analyticsPath="/analytics/robot-villas" />
-        <div className="site-header container mx-auto w-full max-w-4xl px-4">
-          <SiteHeader
-            showThemeToggle={false}
-            brand={
-              <Link
-                href="/"
-                className="text-lg sm:text-xl font-display font-bold tracking-tight hover:opacity-80 transition-opacity flex items-center gap-2"
-              >
-                <span className="text-xl sm:text-2xl">🤖</span>
-                <span>{domain}</span>
-              </Link>
-            }
-            links={[
-              {
-                name: "Posts",
-                href: "/posts",
-                icon: <QueueListIcon className="h-5 w-5" />,
-              },
-              {
-                name: "Tags",
-                href: "/tags",
-                icon: <TagIcon className="h-5 w-5" />,
-              },
-              {
-                name: "Stats",
-                href: "/stats",
-                icon: <ChartBarIcon className="h-5 w-5" />,
-              },
-              {
-                name: "Status",
-                href: "/status",
-                icon: <SignalIcon className="h-5 w-5" />,
-              },
-            ]}
-          />
-        </div>
+        <SiteHeader
+          showThemeToggle={false}
+          brand={
+            <Link
+              href="/"
+              className="text-lg sm:text-xl font-display font-bold tracking-tight hover:opacity-80 transition-opacity flex items-center gap-2"
+            >
+              <span className="text-xl sm:text-2xl">🤖</span>
+              <span>{domain}</span>
+            </Link>
+          }
+          links={[
+            {
+              name: "Posts",
+              href: "/posts",
+              icon: <QueueListIcon className="h-5 w-5" />,
+            },
+            {
+              name: "Tags",
+              href: "/tags",
+              icon: <TagIcon className="h-5 w-5" />,
+            },
+            {
+              name: "Stats",
+              href: "/stats",
+              icon: <ChartBarIcon className="h-5 w-5" />,
+            },
+            {
+              name: "Status",
+              href: "/status",
+              icon: <SignalIcon className="h-5 w-5" />,
+            },
+          ]}
+        />
         <main className="container mx-auto flex-1 px-4 py-8 max-w-4xl">
           {children}
         </main>

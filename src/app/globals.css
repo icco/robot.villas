@@ -19,21 +19,3 @@
     overflow-wrap: break-word;
   }
 }
-
-/* SiteHeader (@icco/react-common) hard-codes px-8 on a nav that can't wrap,
-   which overflows phones. The wrapper supplies the gutters instead. */
-.site-header nav {
-  flex-wrap: wrap;
-  gap: 0.25rem 1rem;
-  padding-block: 1.5rem;
-}
-
-.site-header nav > div {
-  padding-inline: 0;
-}
-
-@media (width >= 40rem) {
-  .site-header nav {
-    padding-block: 2rem;
-  }
-}
