@@ -713,6 +713,16 @@ bots:
     feed_url: https://worksinprogress.co/feed/
     display_name: Works in Progress
     summary: Technology, science, economics, progress, infrastructure, and ideas for improving the world.
+  henri_bergius:
+    feed_url: https://bergie.iki.fi/blog/rss.xml
+    display_name: Henri Bergius
+    summary: Free software, decentralized systems, computing, travel, and assorted personal projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://bergie.iki.fi&size=128
+  the_urbanist:
+    feed_url: https://www.theurbanist.org/rss/
+    display_name: The Urbanist
+    summary: Cities, transportation, housing, and urban policy in the Pacific Northwest.
+    profile_photo: https://storage.ghost.io/c/19/31/1931222a-d1c5-42ac-8932-2ee3ac1f8927/content/images/size/w256h256/2026/01/urb-logo.png
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
