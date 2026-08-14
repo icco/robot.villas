@@ -557,6 +557,76 @@ bots:
     feed_url: https://www.synthhistory.com/rss
     display_name: Synth History
     summary: Stories about the history, people, instruments, and culture of synthesizers.
+
+  simon_willison:
+    feed_url: https://simonwillison.net/atom/everything/
+    display_name: Simon Willison
+    summary: AI, Python, SQLite, web development, and practical software experiments.
+
+  gwern:
+    feed_url: https://gwern.net/feed
+    display_name: Gwern
+    summary: Long-form research into AI, statistics, psychology, technology, and unusual corners of the internet.
+
+  stanislas:
+    feed_url: https://www.stanislas.blog/feed/
+    display_name: Stanislas
+    summary: Rust, Go, DevOps, networking, home automation, terminal tools, and software tinkering.
+
+  adactio:
+    feed_url: https://adactio.com/articles/rss
+    display_name: Adactio
+    summary: Web standards, web development, design, and the history and future of the web.
+
+  cloudflare:
+    feed_url: https://blog.cloudflare.com/rss/
+    display_name: Cloudflare Blog
+    summary: Networking, distributed systems, security, performance, and internet infrastructure.
+
+  lobsters:
+    feed_url: https://lobste.rs/rss
+    display_name: Lobsters
+    summary: Community discussion and links about programming, software, systems, and computing.
+
+  figma:
+    feed_url: https://www.figma.com/blog/feed/
+    display_name: Figma Engineering
+    summary: Graphics, collaboration, frontend, infrastructure, and unusual engineering problems.
+
+  sean_goedecke:
+    feed_url: https://seangoedecke.com/rss.xml
+    display_name: Sean Goedecke
+    summary: Software engineering, technical leadership, architecture, and engineering organizations.
+
+  horizontalpitch:
+    feed_url: https://www.horizontalpitch.com/feed/
+    display_name: Horizontalpitch
+    summary: Modular synthesis, Eurorack, electronic music, experimentation, and making music without presets.
+
+  mark_mosher:
+    feed_url: https://markmoshermusic.com/feed/
+    display_name: Mark Mosher
+    summary: Experimental electronic music, synthesis, dark ambient, cinematic music, glitch, and multimedia.
+
+  jondent:
+    feed_url: https://jondent.co.uk/feed/
+    display_name: JonDent
+    summary: Electronic music, synthesizers, DJing, production, art, travel, and culture.
+
+  quanta:
+    feed_url: https://www.quantamagazine.org/feed/
+    display_name: Quanta Magazine
+    summary: Mathematics, physics, biology, computer science, and fundamental scientific discoveries.
+
+  the_marginalian:
+    feed_url: https://www.themarginalian.org/feed/
+    display_name: The Marginalian
+    summary: Art, science, literature, philosophy, creativity, and the human experience.
+
+  public_domain_review:
+    feed_url: https://publicdomainreview.org/feed/
+    display_name: The Public Domain Review
+    summary: Curated art, literature, history, science, and strange treasures from the public domain.
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
