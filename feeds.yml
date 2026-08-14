@@ -762,6 +762,188 @@ bots:
     display_name: The Urbanist
     summary: Cities, transportation, housing, and urban policy in the Pacific Northwest.
     profile_photo: https://storage.ghost.io/c/19/31/1931222a-d1c5-42ac-8932-2ee3ac1f8927/content/images/size/w256h256/2026/01/urb-logo.png
+  rachelbythebay:
+    feed_url: https://rachelbythebay.com/w/atom.xml
+    display_name: Rachel by the Bay
+    summary: Systems administration, debugging war stories, distributed systems, and the operational reality of running software.
+  schneier:
+    feed_url: https://www.schneier.com/feed/atom/
+    display_name: Schneier on Security
+    summary: Security, cryptography, privacy, surveillance, and the politics of both.
+    profile_photo: https://www.schneier.com/wp-content/uploads/2020/06/cropped-favicon-1-192x192.png
+  fasterthanlime:
+    feed_url: https://fasterthanli.me/index.xml
+    display_name: fasterthanli.me
+    summary: Rust, systems programming, compilers, and long illustrated deep dives into how things actually work.
+    profile_photo: https://cdn.fasterthanli.me/content/img/favicon~679ae9c272874bba.webp
+  russcox:
+    feed_url: https://research.swtch.com/feed.atom
+    display_name: research!rsc
+    summary: Go, version control, programming language design, and computing history from Russ Cox.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://research.swtch.com&size=128
+  ken_shirriff:
+    feed_url: https://www.righto.com/feeds/posts/default
+    display_name: Ken Shirriff
+    summary: Chip reverse engineering, vintage computer restoration, silicon die photography, and electronics archaeology.
+  chris_siebenmann:
+    feed_url: https://utcc.utoronto.ca/~cks/space/blog/?atom
+    display_name: Wandering Thoughts
+    summary: Unix, system administration, networking, and the practical details of running infrastructure.
+  daniel_lemire:
+    feed_url: https://lemire.me/blog/feed/
+    display_name: Daniel Lemire
+    summary: Performance engineering, SIMD, parsing, data structures, and computer science research.
+    profile_photo: https://lemire.me/blog/wp-content/uploads/2015/10/profile2011_152.jpg
+  maggie_appleton:
+    feed_url: https://maggieappleton.com/rss.xml
+    display_name: Maggie Appleton
+    summary: Design, anthropology, programming, and illustrated essays about tools for thought.
+    profile_photo: https://maggieappleton.com/images/favicon/android-chrome-512x512.png
+  molly_white:
+    feed_url: https://www.citationneeded.news/rss/
+    display_name: Citation Needed
+    summary: Cryptocurrency, tech accountability, and critical reporting on the industry from Molly White.
+    profile_photo: https://www.citationneeded.news/content/images/size/w256h256/2024/01/cn-blue-square.png
+  terence_eden:
+    feed_url: https://shkspr.mobi/blog/feed/atom/
+    display_name: Terence Eden
+    summary: Open standards, accessibility, the web, and occasionally grumpy technology criticism.
+    profile_photo: https://shkspr.mobi/android-chrome-512x512.png
+  fabien_sanglard:
+    feed_url: https://fabiensanglard.net/rss.xml
+    display_name: Fabien Sanglard
+    summary: Game engine archaeology, graphics programming, hardware teardowns, and code review of classic software.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://fabiensanglard.net&size=128
+  ben_kuhn:
+    feed_url: https://www.benkuhn.net/rss/
+    display_name: Ben Kuhn
+    summary: Engineering management, productivity, decision making, and essays on working effectively.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.benkuhn.net&size=128
+  robin_sloan:
+    feed_url: https://www.robinsloan.com/feed.xml
+    display_name: Robin Sloan
+    summary: Writing, media, technology, olive oil, and speculative thinking about the internet.
+    profile_photo: https://www.robinsloan.com/img/dragon-moon-logotype-2025-256.png
+  antirez:
+    feed_url: https://antirez.com/rss
+    display_name: antirez
+    summary: Systems programming, C, databases, and notes from the creator of Redis.
+    profile_photo: https://avatars.githubusercontent.com/u/65632?s=200
+  fly_io:
+    feed_url: https://fly.io/blog/feed.xml
+    display_name: Fly.io
+    summary: Distributed systems, networking, edge computing, security, and infrastructure engineering.
+    profile_photo: https://fly.io/phx/ui/images/favicon/android-chrome-512x512.png
+  jane_street:
+    feed_url: https://blog.janestreet.com/feed.xml
+    display_name: Jane Street Tech Blog
+    summary: OCaml, functional programming, systems, and engineering at a quantitative trading firm.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://blog.janestreet.com&size=128
+  meta_engineering:
+    feed_url: https://engineering.fb.com/feed/
+    display_name: Engineering at Meta
+    summary: Infrastructure, distributed systems, AI, open source, and engineering at Meta scale.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://engineering.fb.com&size=128
+  slack_engineering:
+    feed_url: https://slack.engineering/feed/
+    display_name: Slack Engineering
+    summary: Backend infrastructure, mobile, performance, and engineering culture at Slack.
+    profile_photo: https://slack.engineering/wp-content/uploads/sites/7/2020/05/cropped-octothrope-1.png?w=192
+  airbnb_engineering:
+    feed_url: https://medium.com/feed/airbnb-engineering
+    display_name: Airbnb Tech Blog
+    summary: Data infrastructure, machine learning, mobile, and engineering practice at Airbnb.
+    profile_photo: https://a0.muscache.com/airbnb/static/icons/android-icon-192x192-c0465f9f0380893768972a31a614b670.png
+  vercel:
+    feed_url: https://vercel.com/atom
+    display_name: Vercel
+    summary: Frontend infrastructure, Next.js, edge computing, and web performance.
+    profile_photo: https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com/front/favicon/vercel/android-chrome-512x512.png
+  sentry:
+    feed_url: https://blog.sentry.io/feed.xml
+    display_name: Sentry Blog
+    summary: Error monitoring, observability, debugging, performance, and open source developer tooling.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://blog.sentry.io&size=128
+  signal:
+    feed_url: https://signal.org/blog/rss.xml
+    display_name: Signal Blog
+    summary: Private messaging, cryptography, protocol design, and the case for encryption.
+    profile_photo: https://signal.org/assets/images/favicon/android-chrome-512x512.png
+  gothamist:
+    feed_url: https://gothamist.com/feed
+    display_name: Gothamist
+    summary: News, politics, transit, food, and culture in New York City.
+    profile_photo: https://gothamist.com/android-chrome-512x512.png
+  the_city:
+    feed_url: https://www.thecity.nyc/feed/
+    display_name: THE CITY
+    summary: Nonprofit accountability journalism about New York City government and the people it serves.
+    profile_photo: https://i0.wp.com/www.thecityreporter.nyc/wp-content/uploads/2026/05/cropped-Untitled-design-4.png?fit=512%2C512&ssl=1
+  curbed:
+    feed_url: https://www.curbed.com/rss/index.xml
+    display_name: Curbed
+    summary: Cities, real estate, architecture, design, and the way New York is built and lived in.
+    profile_photo: https://assets.curbed.com/media/sites/curbed/icon.196x196.png
+  streetsblog_nyc:
+    feed_url: https://nyc.streetsblog.org/feed
+    display_name: Streetsblog NYC
+    summary: Transportation policy, cycling, transit, street safety, and car culture in New York City.
+    profile_photo: https://nyc.streetsblog.org/wp-content/uploads/sites/9/2023/10/cropped-Round-SB-NYC-Stroke-2160px.png?w=192
+  hudson_valley_one:
+    feed_url: https://hudsonvalleyone.com/feed/
+    display_name: Hudson Valley One
+    summary: News, politics, arts, and community reporting from Ulster County and the Hudson Valley.
+    profile_photo: https://ulsterpub.wpenginepowered.com/wp-content/uploads/2017/01/cropped-hv1-icon-1-192x192.png
+  longreads:
+    feed_url: https://longreads.com/feed/
+    display_name: Longreads
+    summary: Curated longform journalism, essays, reporting, and narrative nonfiction from across the web.
+    profile_photo: https://i0.wp.com/longreads.com/wp-content/uploads/2017/01/longreads-logo-sm-rgb.png?fit=512%2C512&quality=80&ssl=1
+  noema:
+    feed_url: https://www.noemamag.com/feed/
+    display_name: Noema Magazine
+    summary: Long essays on technology, geopolitics, philosophy, economics, and the future of governance.
+    profile_photo: https://www.noemamag.com/wp-content/uploads/2020/06/cropped-ms-icon-310x310-1-192x192.png
+  astral_codex_ten:
+    feed_url: https://www.astralcodexten.com/feed
+    display_name: Astral Codex Ten
+    summary: Psychiatry, statistics, forecasting, medicine, and long arguments about how to think clearly.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!o6Of!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8c00a032-defa-44b7-9ab7-b7cc6d88db75%2Fapple-touch-icon-1024x1024.png
+  marginal_revolution:
+    feed_url: https://marginalrevolution.com/feed
+    display_name: Marginal Revolution
+    summary: Economics, books, culture, food, and daily links from Tyler Cowen and Alex Tabarrok.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://marginalrevolution.com&size=128
+  asterisk:
+    feed_url: https://asteriskmag.com/feed
+    display_name: Asterisk Magazine
+    summary: Rigorous writing on forecasting, biosecurity, economics, AI, and global development.
+    profile_photo: https://asteriskmag.com/assets/favicon/apple-touch-icon.png
+  colossal:
+    feed_url: https://www.thisiscolossal.com/feed/
+    display_name: Colossal
+    summary: Contemporary art, craft, illustration, sculpture, photography, and visual invention.
+    profile_photo: https://www.thisiscolossal.com/wp-content/uploads/2024/08/icon-crow.png
+  aperture:
+    feed_url: https://aperture.org/feed/
+    display_name: Aperture
+    summary: Photography, photobooks, exhibitions, and criticism from the Aperture Foundation.
+    profile_photo: https://aperture.org/wp-content/uploads/2023/05/cropped-v2_favicon-32x32-2-192x192.png
+  undark:
+    feed_url: https://undark.org/feed/
+    display_name: Undark Magazine
+    summary: Science journalism at the intersection of research, policy, medicine, and society.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://undark.org&size=128
+  nasa:
+    feed_url: https://www.nasa.gov/feed/
+    display_name: NASA
+    summary: Missions, spaceflight, astronomy, Earth science, and research from NASA.
+    profile_photo: https://www.nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/android-chrome-512x512.png
+  bedroom_producers:
+    feed_url: https://bedroomproducersblog.com/feed/
+    display_name: Bedroom Producers Blog
+    summary: Free VST plugins, samples, music production tools, and bedroom studio gear.
+    profile_photo: https://bedroomproducersblog.com/wp-content/uploads/2020/06/cropped-bpb-icon-192x192.jpg
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
