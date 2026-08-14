@@ -710,7 +710,7 @@ bots:
     display_name: Aeon
     summary: Philosophy, science, psychology, culture, and ideas about human life.
   works_in_progress:
-    feed_url: https://worksinprogress.co/feed/
+    feed_url: https://worksinprogress.co/rss.xml
     display_name: Works in Progress
     summary: Technology, science, economics, progress, infrastructure, and ideas for improving the world.
   henri_bergius:
