@@ -517,6 +517,57 @@ bots:
     display_name: Wallpaper*
     summary: Design, architecture, art, travel, and lifestyle from Wallpaper* magazine.
     profile_photo: https://www.wallpaper.com/apple-touch-icon.png
+
+  martin_fowler:
+    feed_url: https://martinfowler.com/feed.atom
+    display_name: Martin Fowler
+    summary: Software architecture, design, refactoring, and engineering practice.
+
+  pragmatic_engineer:
+    feed_url: https://blog.pragmaticengineer.com/rss/
+    display_name: The Pragmatic Engineer
+    summary: Software engineering, technology companies, and engineering leadership.
+
+  hillel_wayne:
+    feed_url: https://www.hillelwayne.com/index.xml
+    display_name: Hillel Wayne
+    summary: Software engineering, programming languages, formal methods, and computer science.
+
+  mitchell_hashimoto:
+    feed_url: https://mitchellh.com/feed.xml
+    display_name: Mitchell Hashimoto
+    summary: Software engineering, infrastructure, developer tools, and programming.
+
+  jeff_geerling:
+    feed_url: https://www.jeffgeerling.com/blog.xml
+    display_name: Jeff Geerling
+    summary: Linux, hardware, Raspberry Pi, homelabs, automation, and open source.
+
+  netflix_tech:
+    feed_url: https://netflixtechblog.com/feed
+    display_name: Netflix TechBlog
+    summary: Engineering stories about distributed systems, infrastructure, and large-scale software.
+
+  stripe_engineering:
+    feed_url: https://stripe.com/blog/feed.rss
+    display_name: Stripe Engineering
+    summary: Engineering, APIs, infrastructure, and building reliable financial software.
+
+  github_engineering:
+    feed_url: https://github.blog/engineering/feed/
+    display_name: GitHub Engineering
+    summary: Engineering stories about developer tools, infrastructure, and software development.
+
+  synth_anatomy:
+    feed_url: https://www.synthanatomy.com/feed
+    display_name: Synth Anatomy
+    summary: News and reviews about synthesizers, music technology, and electronic music.
+
+  synth_history:
+    feed_url: https://www.synthhistory.com/rss
+    display_name: Synth History
+    summary: Stories about the history, people, instruments, and culture of synthesizers.
+
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
