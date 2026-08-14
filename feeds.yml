@@ -17,7 +17,7 @@ bots:
     feed_url: https://cdm.link/feed/
     display_name: CDM Create Digital Music
     summary: Create digital music, motion, and more.
-    profile_photo: https://cdm.link/app/uploads/2015/12/cdmlogo-200x200.png
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cdm.link&size=128
   synthtopia:
     feed_url: https://www.synthtopia.com/feed/
     display_name: Synthtopia
