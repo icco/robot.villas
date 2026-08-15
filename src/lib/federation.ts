@@ -104,9 +104,16 @@ function buildIcon(photoUrl: string): Image {
   });
 }
 
-/** Profile field values are rendered as HTML, so links need anchors. */
+/**
+ * Profile field values are rendered as HTML, so links need anchors.
+ * Anything that isn't an http(s) URL stays plain text.
+ */
 function buildFieldLink(href: string): string {
-  return `<a href="${escapeHtml(href)}">${escapeHtml(href)}</a>`;
+  const url = safeParseUrl(href);
+  if (!url) {
+    return escapeHtml(href);
+  }
+  return `<a href="${escapeHtml(url.href)}">${escapeHtml(url.href)}</a>`;
 }
 
 async function buildActor(
