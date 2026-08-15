@@ -25,6 +25,7 @@ import {
   Image,
   Like,
   Note,
+  PropertyValue,
   PUBLIC_COLLECTION,
   type Recipient,
   Reject,
@@ -103,6 +104,11 @@ function buildIcon(photoUrl: string): Image {
   });
 }
 
+/** Profile field values are rendered as HTML, so links need anchors. */
+function link(href: string): string {
+  return `<a href="${escapeHtml(href)}">${escapeHtml(href)}</a>`;
+}
+
 async function buildActor(
   ctx: Context<void>,
   identifier: string,
@@ -127,14 +133,14 @@ async function buildActor(
     endpoints: new Endpoints({
       sharedInbox: ctx.getInboxUri(),
     }),
-    fields: [
-      new Field({
+    attachments: [
+      new PropertyValue({
         name: "source",
-        value: bot.feed_url,
+        value: link(bot.feed_url),
       }),
-      new Field({
+      new PropertyValue({
         name: "old posts",
-        value: profileUrl.href,
+        value: link(profileUrl.href),
       }),
     ],
     url: new URL(`/@${identifier}`, actorUri),
