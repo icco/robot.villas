@@ -112,10 +112,8 @@ async function buildActor(
   const actorUri = ctx.getActorUri(identifier);
   const profileUrl = new URL(`/@${identifier}`, actorUri);
   const enrichedSummary =
-    `<p>${escapeHtml(bot.summary)} ` +
-    `<a href="${escapeHtml(profileUrl.href)}">See old posts.</a></p>` +
-    `<p>I am a bot that mirrors an RSS feed. ` +
-    `Source: <a href="${escapeHtml(bot.feed_url)}">${escapeHtml(bot.feed_url)}</a></p>`;
+    `<p>${escapeHtml(bot.summary)}</p>` +
+    `<p>I am a bot that mirrors an RSS feed.</p>`;
   return new Application({
     id: actorUri,
     preferredUsername: identifier,
@@ -129,6 +127,16 @@ async function buildActor(
     endpoints: new Endpoints({
       sharedInbox: ctx.getInboxUri(),
     }),
+    fields: [
+      new Field({
+        name: "source",
+        value: bot.feed_url,
+      }),
+      new Field({
+        name: "old posts",
+        value: profileUrl.href,
+      }),
+    ],
     url: new URL(`/@${identifier}`, actorUri),
     publicKey: keys[0]?.cryptographicKey,
     assertionMethods: keys.map((k) => k.multikey),
