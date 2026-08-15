@@ -46,14 +46,14 @@ The `relays` list contains ActivityPub relay actor URLs. The server subscribes t
 | `DATABASE_URL`      | PostgreSQL connection string                     | (required)         |
 | `DOMAIN`            | Public domain for ActivityPub IDs and WebFinger  | (required)         |
 | `PORT`              | HTTP server port                                 | `3000`             |
-| `POLL_INTERVAL_MS`  | Milliseconds between RSS poll cycles             | `3600000` (1 hour) |
+| `POLL_INTERVAL_MS`  | Milliseconds between RSS poll cycles             | `900000` (15 min)  |
 | `BLOCKED_INSTANCES` | Comma-separated hostnames to reject Follows from | (none)             |
 | `GEMINI_API_KEY`    | Google Gemini API key for AI hashtag suggestions | (none)             |
 | `GEMINI_PROJECT`    | GCP project for Vertex AI (alternative to key)   | (none)             |
 | `GEMINI_LOCATION`   | GCP region for Vertex AI                         | `us-central1`     |
 | `GEMINI_MODEL`      | Gemini model name                                | `gemini-2.5-flash` |
 
-The poller identifies itself with a `robot.villas` User-Agent, sends conditional GETs (`If-None-Match` / `If-Modified-Since`) so unchanged feeds cost a 304, and stops polling a feed until the `Retry-After` of a 429 has elapsed. Don't set `POLL_INTERVAL_MS` below an hour — feed hosts block fetchers that poll faster.
+The poller identifies itself with a `robot.villas` User-Agent, sends conditional GETs (`If-None-Match` / `If-Modified-Since`) so unchanged feeds cost a 304, and stops polling a feed until the `Retry-After` of a 429 has elapsed. Lower `POLL_INTERVAL_MS` with care — it is a floor, not a promise, and a host that wants to be polled less often enforces that itself with a 429.
 
 ## Development
 

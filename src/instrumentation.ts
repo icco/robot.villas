@@ -60,8 +60,8 @@ export async function register() {
 
   const { startPoller } = await import("@/lib/poller");
   const { parsePositiveInt } = await import("@/lib/env");
-  // One hour: feed hosts 429 fetchers that poll faster.
-  const pollIntervalMs = parsePositiveInt(process.env.POLL_INTERVAL_MS, 3_600_000);
+  // Fifteen minutes; hosts that want slower get it via their own 429 backoff.
+  const pollIntervalMs = parsePositiveInt(process.env.POLL_INTERVAL_MS, 900_000);
   const pollConcurrency = parsePositiveInt(process.env.POLL_CONCURRENCY, 10);
 
   startPoller({
