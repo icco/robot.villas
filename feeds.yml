@@ -568,11 +568,6 @@ bots:
     display_name: Synth History
     summary: Stories about the history, people, instruments, and culture of synthesizers.
     profile_photo: https://static.wixstatic.com/media/8c9e81_a58d513f3b184515b750539f47c5c6a1%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/8c9e81_a58d513f3b184515b750539f47c5c6a1%7Emv2.png
-  gwern:
-    feed_url: https://gwern.net/feed
-    display_name: Gwern
-    summary: Long-form research into AI, statistics, psychology, technology, and unusual corners of the internet.
-    profile_photo: https://gwern.net/static/img/logo/logo-favicon-appletouch.png
   stanislas:
     feed_url: https://stanislas.blog/feed.xml
     display_name: Stanislas
