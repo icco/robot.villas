@@ -7,8 +7,8 @@ import { parsePositiveInt } from "./env";
 import { fetchFeedWithHttpResult } from "./rss";
 import { publishNewEntries } from "./publisher";
 
-/** Feed hosts 429 fetchers that poll faster than hourly. */
-const DEFAULT_INTERVAL_MS = 60 * 60 * 1000;
+/** Not configurable: a 429 backs a slow-polling host off on its own. */
+const DEFAULT_INTERVAL_MS = 15 * 60 * 1000;
 /** How many bot feeds to poll at once. Keeps a large feeds.yml from making a
  * poll cycle run far longer than intervalMs when polled fully sequentially. */
 const DEFAULT_CONCURRENCY = 10;
@@ -18,6 +18,7 @@ export interface PollerOptions {
   config: FeedsConfig;
   db: Db;
   domain: string;
+  /** Tests only. */
   intervalMs?: number;
   concurrency?: number;
   getContext: () => Context<void>;

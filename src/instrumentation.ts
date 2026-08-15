@@ -60,15 +60,12 @@ export async function register() {
 
   const { startPoller } = await import("@/lib/poller");
   const { parsePositiveInt } = await import("@/lib/env");
-  // One hour: feed hosts 429 fetchers that poll faster.
-  const pollIntervalMs = parsePositiveInt(process.env.POLL_INTERVAL_MS, 3_600_000);
   const pollConcurrency = parsePositiveInt(process.env.POLL_CONCURRENCY, 10);
 
   startPoller({
     config,
     db,
     domain,
-    intervalMs: pollIntervalMs,
     concurrency: pollConcurrency,
     getContext: () => federation.createContext(new URL(`https://${domain}`)),
   });

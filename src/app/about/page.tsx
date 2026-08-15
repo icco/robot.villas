@@ -94,7 +94,7 @@ export default function AboutPage() {
           <li>
             It identifies itself as <Code>{FEED_USER_AGENT}</Code>.
           </li>
-          <li>Each feed is fetched at most once an hour.</li>
+          <li>Each feed is fetched at most once every 15 minutes.</li>
           <li>
             Requests are conditional (<Code>If-None-Match</Code> / <Code>If-Modified-Since</Code>),
             so an unchanged feed costs you a 304 and no body.
