@@ -2,6 +2,7 @@
 bots:
   hackernews:
     feed_url: https://news.ycombinator.com/rss
+    homepage_url: https://news.ycombinator.com
     display_name: Hacker News
     summary: Top stories from Hacker News
     profile_photo: https://news.ycombinator.com/apple-touch-icon.png
@@ -10,475 +11,570 @@ bots:
       - Tech
   lobsters:
     feed_url: https://lobste.rs/rss
+    homepage_url: https://lobste.rs
     display_name: Lobsters
     summary: Stories from Lobsters
     profile_photo: https://lobste.rs/apple-touch-icon-144.png
   cdm:
     feed_url: https://cdm.link/feed/
+    homepage_url: https://cdm.link
     display_name: CDM Create Digital Music
     summary: Create digital music, motion, and more.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cdm.link&size=128
   synthtopia:
     feed_url: https://www.synthtopia.com/feed/
+    homepage_url: https://www.synthtopia.com
     display_name: Synthtopia
     summary: Synthesizer and electronic music news, synth and music software reviews and more!
   natwelch:
     feed_url: https://writing.natwelch.com/feed.atom
+    homepage_url: https://natwelch.com
     display_name: Nat? Nat. Nat!
     summary: Nat Welch's blog about random stuff.
     profile_photo: https://avatars.githubusercontent.com/u/20201?s=200
   chronogram:
     feed_url: https://www.chronogram.com/feed/
+    homepage_url: https://www.chronogram.com
     display_name: Chronogram Magazine
     summary: A lifestyle magazine for the Hudson Valley and Catskills.
     profile_photo: https://www.chronogram.com/wp-content/uploads/2025/07/cropped-apple-touch-icon-iphone.png
   propublica:
     feed_url: https://www.propublica.org/feeds/propublica/main
+    homepage_url: https://www.propublica.org
     display_name: ProPublica
     summary: Investigative journalism in the public interest.
     profile_photo: https://www.propublica.org/wp-content/uploads/2026/02/propublica-site-icon-512x512-2.png
   highlands_current:
     feed_url: https://highlandscurrent.org/feed/
+    homepage_url: https://highlandscurrent.org
     display_name: The Current
     summary: News for Philipstown and Beacon, New York.
     profile_photo: https://highlandscurrent.org/wp-content/uploads/2018/04/cropped-HC-circle-new-180x180.png
   the_verge:
     feed_url: https://www.theverge.com/rss/index.xml
+    homepage_url: https://www.theverge.com
     display_name: The Verge
     summary: Technology news, reviews, and features.
     profile_photo: https://www.theverge.com/static-assets/icons/apple-touch-icon.png
   hundred_rabbits:
     feed_url: https://100r.co/links/rss.xml
+    homepage_url: https://100r.co
     display_name: Hundred Rabbits
     summary: Rek and Devine project updates.
     profile_photo: https://100r.co/media/services/icon.jpg
   mcsweeneys:
     feed_url: https://feeds.feedburner.com/mcsweeneys
+    homepage_url: https://www.mcsweeneys.net
     display_name: McSweeney's
     summary: Timothy McSweeney's Internet Tendency.
     profile_photo: https://www.mcsweeneys.net/assets/chair-white-b56c46cc6ff30c7d87e754d65dd4f170f7681164c08c91142962b746e0261e19.png
   drew_devault:
     feed_url: https://drewdevault.com/blog/index.xml
+    homepage_url: https://drewdevault.com
     display_name: Drew DeVault's blog
     summary: Recent content from Drew DeVault's blog.
     profile_photo: https://drewdevault.com/avatar.png
   dropbox_tech:
     feed_url: https://dropbox.tech/feed
+    homepage_url: https://dropbox.tech
     display_name: Dropbox Tech Blog
     summary: Engineering blog from Dropbox.
     profile_photo: https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/app-dropbox-android.png
   eli_bendersky:
     feed_url: https://eli.thegreenplace.net/feeds/all.atom.xml
+    homepage_url: https://eli.thegreenplace.net
     display_name: Eli Bendersky
     summary: Articles from Eli Bendersky's website.
     profile_photo: https://avatars.githubusercontent.com/u/1130906?s=200
   danluu:
     feed_url: https://danluu.com/atom.xml
+    homepage_url: https://danluu.com
     display_name: Dan Luu
     summary: Articles from Dan Luu.
     profile_photo: https://avatars.githubusercontent.com/u/157136?s=200
   cassidoo:
     feed_url: https://buttondown.com/cassidoo/rss
+    homepage_url: https://cassidoo.co
     display_name: Cassidy Williams
     summary: rendezvous with cassidoo, a newsletter by Cassidy Williams.
     profile_photo: https://assets.buttondown.email/images/d40c16f2-c6ab-4a4f-b37f-e8e145580003.png
   julia_evans:
     feed_url: https://jvns.ca/atom.xml
+    homepage_url: https://jvns.ca
     display_name: Julia Evans
     summary: Blog posts from Julia Evans.
     profile_photo: https://avatars.githubusercontent.com/u/817739?s=200
   marc_dougherty:
     feed_url: https://www.marcdougherty.com/index.xml
+    homepage_url: https://www.marcdougherty.com
     display_name: Marc Dougherty
     summary: Recent content from Marc Dougherty.
     profile_photo: https://www.marcdougherty.com/apple-touch-icon.png
   eatonphil:
     feed_url: https://notes.eatonphil.com/rss.xml
+    homepage_url: https://notes.eatonphil.com
     display_name: Phil Eaton
     summary: Notes on software development.
     profile_photo: https://avatars.githubusercontent.com/u/3925912?s=200
   purplesyringa:
     feed_url: https://purplesyringa.moe/blog/feed.rss
+    homepage_url: https://purplesyringa.moe
     display_name: purplesyringa's blog
     summary: Posts from purplesyringa's blog.
     profile_photo: https://avatars.githubusercontent.com/u/16370781?s=200
   spotify_engineering:
     feed_url: https://engineering.atspotify.com/feed
+    homepage_url: https://engineering.atspotify.com
     display_name: Spotify Engineering
     summary: Spotify's official technology blog.
     profile_photo: https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png
   paul_anthony_webb:
     feed_url: https://blog.webb.page/feed/atom
+    homepage_url: https://blog.webb.page
     display_name: the webb blog
     summary: Paul Anthony Webb's corner of the 'Net.
     profile_photo: https://xn--4v8h.pixels.wtf/blog/asset/apple-touch-icon.png
   transactional:
     feed_url: https://transactional.blog/feed.xml
+    homepage_url: https://transactional.blog
     display_name: Transactional
     summary: Deep dives into database internals.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://transactional.blog&size=128
   cloudflare:
     feed_url: https://blog.cloudflare.com/rss/
+    homepage_url: https://blog.cloudflare.com
     display_name: Cloudflare Blog
     summary: Deep dives into networking, security, and systems engineering.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://blog.cloudflare.com&size=128
   brandur:
     feed_url: https://brandur.org/articles.atom
+    homepage_url: https://brandur.org
     display_name: Brandur Leach
     summary: High-quality writing on Postgres, distributed systems, and API design.
     profile_photo: https://brandur.org/assets/images/favicon/favicon-256.jpg
   orbital_index:
     feed_url: https://orbitalindex.com/feed.xml
+    homepage_url: https://orbitalindex.com
     display_name: The Orbital Index
     summary: A technical, curated weekly digest of space exploration news.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://orbitalindex.com&size=128
   quanta:
     feed_url: https://www.quantamagazine.org/feed/
+    homepage_url: https://www.quantamagazine.org
     display_name: Quanta Magazine
     summary: Illuminating science and mathematics through public-service journalism.
     profile_photo: https://www.quantamagazine.org/wp-content/themes/quanta2024/frontend/images/apple-touch-icon.png
   low_tech:
     feed_url: https://solar.lowtechmagazine.com/posts/index.xml
+    homepage_url: https://www.lowtechmagazine.com
     display_name: Low-tech Magazine
     summary: A solar-powered blog about sustainable and historical technology.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://solar.lowtechmagazine.com&size=128
   tigerbeetle:
     feed_url: https://tigerbeetle.com/blog/atom.xml
+    homepage_url: https://tigerbeetle.com/blog
     display_name: TigerBeetle
     summary: Engineering a high-performance, safety-critical financial database.
     profile_photo: https://framerusercontent.com/images/GMJ8d83FjKzitkLWA3knVLO5HQ.png
   kottke:
     feed_url: https://feeds.kottke.org/main
+    homepage_url: https://kottke.org
     display_name: kottke.org
     summary: Home of fine hypertext products since 1998.
     profile_photo: https://kottke.org/images/2024/icons/256x256.png
   nelson_elhage:
     feed_url: https://blog.nelhage.com/atom.xml
+    homepage_url: https://blog.nelhage.com
     display_name: Nelson Elhage
     summary: Blog posts on systems, compilers, and performance.
     profile_photo: https://avatars.githubusercontent.com/u/16725?s=200
   import_ai:
     feed_url: https://importai.substack.com/feed
+    homepage_url: https://importai.substack.com
     display_name: Import AI
     summary: A weekly newsletter about artificial intelligence based on detailed analysis of cutting-edge research, by Jack Clark.
     profile_photo: https://substack-post-media.s3.amazonaws.com/public/images/8cc1c9c9-fc87-4eeb-ad15-7dc989b77553_528x504.png
   simon_willison:
     feed_url: https://simonwillison.net/atom/everything/
+    homepage_url: https://simonwillison.net
     display_name: Simon Willison
     summary: Creator of Datasette, writing about AI, Python, and open source tools.
     profile_photo: https://avatars.githubusercontent.com/u/9599?s=200
   sindresorhus:
     feed_url: https://sindresorhus.com/rss.xml
+    homepage_url: https://sindresorhus.com
     display_name: Sindre Sorhus
     summary: Full-Time Open-Sourcerer & Aspiring Rebel
     profile_photo: https://avatars.githubusercontent.com/u/170270?s=200
   xe_iaso:
     feed_url: https://xeiaso.net/blog.rss
+    homepage_url: https://xeiaso.net
     display_name: Xe Iaso
     summary: Technical writing on Nix, Go, and the philosophy of software.
     profile_photo: https://xeiaso.net/static/img/avatar.png
   hackaday:
     feed_url: https://hackaday.com/feed/
+    homepage_url: https://hackaday.com
     display_name: Hackaday
     summary: Fresh hacks every day from the hardware and maker community.
     profile_photo: https://hackaday.com/wp-content/themes/hackaday-2/img/logo.png
   craig_mod:
     feed_url: https://craigmod.com/index.xml
+    homepage_url: https://craigmod.com
     display_name: Craig Mod
     summary: Writing about walking, books, photography, and technology.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://craigmod.com&size=128
   austin_kleon:
     feed_url: https://austinkleon.com/feed/
+    homepage_url: https://austinkleon.com
     display_name: Austin Kleon
     summary: A writer who draws. Author of Steal Like an Artist.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://austinkleon.com&size=128
   matrixsynth:
     feed_url: https://www.matrixsynth.com/feeds/posts/default?alt=rss
+    homepage_url: https://www.matrixsynth.com
     display_name: MATRIXSYNTH
     summary: Encyclopedic coverage of synthesizers old and new.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.matrixsynth.com&size=128
   ars_technica:
     feed_url: https://arstechnica.com/feed/
+    homepage_url: https://arstechnica.com
     display_name: Ars Technica
     summary: In-depth technology, science, and culture reporting.
     profile_photo: https://cdn.arstechnica.net/wp-content/uploads/2016/10/cropped-ars-logo-512_480.png
   bandcamp_daily:
     feed_url: https://daily.bandcamp.com/feed
+    homepage_url: https://daily.bandcamp.com
     display_name: Bandcamp Daily
     summary: Music discovery, artist features, and deep dives from Bandcamp.
     profile_photo: https://s4.bcbits.com/img/favicon/apple-touch-icon.png
   nyt_homepage:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
+    homepage_url: https://www.nytimes.com
     display_name: NYT > Home Page
     summary: The New York Times Home Page news feed.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_world:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/World.xml
+    homepage_url: https://www.nytimes.com/section/world
     display_name: NYT > World
     summary: World news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_us:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/US.xml
+    homepage_url: https://www.nytimes.com/section/us
     display_name: NYT > U.S.
     summary: U.S. news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_politics:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml
+    homepage_url: https://www.nytimes.com/section/politics
     display_name: NYT > Politics
     summary: Politics news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_business:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+    homepage_url: https://www.nytimes.com/section/business
     display_name: NYT > Business
     summary: Business news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_technology:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+    homepage_url: https://www.nytimes.com/section/technology
     display_name: NYT > Technology
     summary: Technology news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_science:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+    homepage_url: https://www.nytimes.com/section/science
     display_name: NYT > Science
     summary: Science news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_health:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Health.xml
+    homepage_url: https://www.nytimes.com/section/health
     display_name: NYT > Health
     summary: Health news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_arts:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml
+    homepage_url: https://www.nytimes.com/section/arts
     display_name: NYT > Arts
     summary: Arts news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_style:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/FashionandStyle.xml
+    homepage_url: https://www.nytimes.com/section/style
     display_name: NYT > Style
     summary: Fashion and style news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_travel:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Travel.xml
+    homepage_url: https://www.nytimes.com/section/travel
     display_name: NYT > Travel
     summary: Travel news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_opinion:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Opinion.xml
+    homepage_url: https://www.nytimes.com/section/opinion
     display_name: NYT > Opinion
     summary: Opinion and editorials from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_food:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/DiningandWine.xml
+    homepage_url: https://www.nytimes.com/section/food
     display_name: NYT > Food
     summary: Food and dining news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
   nyt_sports:
     feed_url: https://www.nytimes.com/athletic/rss/news/
+    homepage_url: https://theathletic.com
     display_name: The Athletic
     summary: Sports journalism from The Athletic, now part of The New York Times.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://theathletic.com&size=128
   hell_gate:
     feed_url: https://hellgatenyc.com/all-posts/rss/
+    homepage_url: https://hellgatenyc.com
     display_name: Hell Gate
     summary: Subscriber-funded, worker-owned news outlet about New York City.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://hellgatenyc.com&size=128
   bbc_news:
     feed_url: https://feeds.bbci.co.uk/news/rss.xml
+    homepage_url: https://www.bbc.com/news
     display_name: BBC News
     summary: BBC News — front page and breaking stories from the British Broadcasting Corporation.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.bbc.com&size=128
   npr_news:
     feed_url: https://feeds.npr.org/1001/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: News'
     summary: NPR news, audio, and podcasts — breaking stories, national and world news, politics, business, science, and technology.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_national:
     feed_url: https://feeds.npr.org/1003/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: National'
     summary: NPR coverage of U.S. news, politics, elections, business, arts, culture, health, science, and technology.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_world:
     feed_url: https://feeds.npr.org/1004/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: World'
     summary: International news and analysis from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_business:
     feed_url: https://feeds.npr.org/1006/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: Business'
     summary: Business and economy coverage from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_science:
     feed_url: https://feeds.npr.org/1007/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: Science'
     summary: Science and research coverage from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_culture:
     feed_url: https://feeds.npr.org/1008/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: Culture'
     summary: Arts and culture coverage from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_education:
     feed_url: https://feeds.npr.org/1013/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: Education'
     summary: Education news and ideas from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_race_and_culture:
     feed_url: https://feeds.npr.org/1015/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: Race & Culture'
     summary: Race, identity, and culture stories from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_economy:
     feed_url: https://feeds.npr.org/1017/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: Economy'
     summary: Economic news and analysis from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_technology:
     feed_url: https://feeds.npr.org/1019/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: Technology'
     summary: Technology news from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_movies:
     feed_url: https://feeds.npr.org/1045/rss.xml
+    homepage_url: https://www.npr.org
     display_name: 'NPR Topics: Movies'
     summary: Film news and reviews from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_news_now:
     feed_url: https://feeds.npr.org/500005/podcast.xml
+    homepage_url: https://www.npr.org/podcasts/500005/npr-news-now
     display_name: NPR News Now
     summary: Short hourly NPR newscast updates.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_up_first:
     feed_url: https://feeds.npr.org/510318/podcast.xml
+    homepage_url: https://www.npr.org/podcasts/510318/up-first
     display_name: Up First
     summary: Morning news podcast from NPR — the biggest stories, in about ten minutes.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_consider_this:
     feed_url: https://feeds.npr.org/510355/podcast.xml
+    homepage_url: https://www.npr.org/podcasts/510355/consider-this-from-npr
     display_name: Consider This
     summary: Daily context on the day’s biggest story from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_planet_money:
     feed_url: https://feeds.npr.org/510289/podcast.xml
+    homepage_url: https://www.npr.org/podcasts/510289/planet-money
     display_name: Planet Money
     summary: NPR podcast about the economy, explained in human terms.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_fresh_air:
     feed_url: https://feeds.npr.org/381444908/podcast.xml
+    homepage_url: https://www.npr.org/programs/fresh-air
     display_name: Fresh Air
     summary: Interviews and reviews with Terry Gross and the Fresh Air team.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_ted_radio_hour:
     feed_url: https://feeds.npr.org/510298/podcast.xml
+    homepage_url: https://www.npr.org/programs/ted-radio-hour
     display_name: TED Radio Hour
     summary: A journey through big ideas, based on talks from the TED stage.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_wait_wait:
     feed_url: https://feeds.npr.org/344098539/podcast.xml
+    homepage_url: https://www.npr.org/programs/wait-wait-dont-tell-me
     display_name: Wait Wait... Don’t Tell Me!
     summary: The NPR news quiz; panelists, listeners, and Carl Kasell.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_politics_podcast:
     feed_url: https://feeds.npr.org/510310/podcast.xml
+    homepage_url: https://www.npr.org/podcasts/510310/npr-politics-podcast
     display_name: NPR Politics Podcast
     summary: Weekly roundups and deep dives on politics from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_code_switch:
     feed_url: https://feeds.npr.org/510312/podcast.xml
+    homepage_url: https://www.npr.org/codeswitch
     display_name: Code Switch
     summary: Race and identity, with hosts of color and heart.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_throughline:
     feed_url: https://feeds.npr.org/510333/podcast.xml
+    homepage_url: https://www.npr.org/podcasts/510333/throughline
     display_name: Throughline
     summary: History, one story at a time — the past, unfinished, from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_pop_culture_happy_hour:
     feed_url: https://feeds.npr.org/510282/podcast.xml
+    homepage_url: https://www.npr.org/podcasts/510282/pop-culture-happy-hour
     display_name: Pop Culture Happy Hour
     summary: What to watch, read, and play — a film, TV, and book discussion show from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_all_songs_considered:
     feed_url: https://feeds.npr.org/510019/podcast.xml
+    homepage_url: https://www.npr.org/sections/allsongs
     display_name: All Songs Considered
     summary: New-music discovery and long conversations with Bob Boilen and friends.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_storycorps:
     feed_url: https://feeds.npr.org/510200/podcast.xml
+    homepage_url: https://storycorps.org
     display_name: StoryCorps
     summary: Everyday people recording conversations in StoryCorps booths, shared on NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_hidden_brain:
     feed_url: https://feeds.npr.org/510308/podcast.xml
+    homepage_url: https://hiddenbrain.org
     display_name: Hidden Brain
     summary: Science and storytelling, exploring the unconscious patterns that drive human behavior.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   npr_latino_usa:
     feed_url: https://feeds.npr.org/510016/podcast.xml
+    homepage_url: https://latinousa.org
     display_name: Latino USA
     summary: News and culture from the Latino USA and Futuro Media team.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
   guardian_world:
     feed_url: https://www.theguardian.com/world/rss
+    homepage_url: https://www.theguardian.com
     display_name: World news | The Guardian
     summary: World news, comment, and analysis from the Guardian.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.theguardian.com&size=128
   wapo_world:
     feed_url: https://feeds.washingtonpost.com/rss/world
+    homepage_url: https://www.washingtonpost.com
     display_name: The Washington Post — World
     summary: Breaking world news, analysis, and the Post’s international reporting.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.washingtonpost.com&size=128
   techcrunch:
     feed_url: https://techcrunch.com/feed/
+    homepage_url: https://techcrunch.com
     display_name: TechCrunch
     summary: Startup and technology news.
     profile_photo: https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png
   wired:
     feed_url: https://www.wired.com/feed/rss
+    homepage_url: https://www.wired.com
     display_name: WIRED
     summary: The latest from WIRED on technology, science, and culture.
     profile_photo: https://www.wired.com/apple-touch-icon.png
   engadget:
     feed_url: https://www.engadget.com/rss.xml
+    homepage_url: https://www.engadget.com
     display_name: Engadget
     summary: Technology news, reviews, and buying advice.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.engadget.com&size=128
   gizmodo:
     feed_url: https://gizmodo.com/feed/
+    homepage_url: https://gizmodo.com
     display_name: Gizmodo
     summary: The future of science, technology, and culture.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://gizmodo.com&size=128
   fast_company:
     feed_url: https://www.fastcompany.com/latest/rss
+    homepage_url: https://www.fastcompany.com
     display_name: Fast Company
     summary: Innovation, leadership, and the future of business and design.
     profile_photo: https://www.fastcompany.com/apple-touch-icon.png
   scientific_american:
     feed_url: https://www.scientificamerican.com/platform/syndication/rss/
+    homepage_url: https://www.scientificamerican.com
     display_name: Scientific American
     summary: Awe-inspiring advances in science and technology from Scientific American.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.scientificamerican.com&size=128
   lifehacker:
     feed_url: https://lifehacker.com/feed/rss
+    homepage_url: https://lifehacker.com
     display_name: Lifehacker
     summary: Tips, tricks, and downloads for getting things done.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://lifehacker.com&size=128
   wsj_world:
     feed_url: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+    homepage_url: https://www.wsj.com
     display_name: WSJ.com — World News
     summary: The Wall Street Journal world news.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wsj.com&size=128
   wsj_markets:
     feed_url: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+    homepage_url: https://www.wsj.com
     display_name: WSJ.com — Markets
     summary: Wall Street Journal markets and finance headlines.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wsj.com&size=128
   wsj_opinion:
     feed_url: https://feeds.content.dowjones.io/public/rss/RSSOpinion
+    homepage_url: https://www.wsj.com
     display_name: WSJ.com — Opinion
     summary: Wall Street Journal opinion and editorials.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wsj.com&size=128
   aartaka:
     feed_url: https://aartaka.me/rss.xml
+    homepage_url: https://aartaka.me
     display_name: Artyom’s Chaotic Blog
     summary: I’m Artyom Bologov, an ironic bipolar programmer trying to make my environment (and, consequently, the Internet) slightly better and weirder.
     profile_photo: https://aartaka.me/favicons/apple-touch-icon.png
@@ -486,11 +582,13 @@ bots:
       - Tech
   lydia_dehn:
     feed_url: https://www.lydiadehn.com/andthen?format=rss
+    homepage_url: https://www.lydiadehn.com
     display_name: Lydia Dehn — and then
     summary: Lydia Dehn's blog on painting, textiles, art history, fashion, and creative practice.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.lydiadehn.com&size=128
   liliputing:
     feed_url: https://liliputing.com/feed/
+    homepage_url: https://liliputing.com
     display_name: Liliputing
     summary: News and reviews of mobile tech, mini PCs, and other small computers.
     profile_photo: https://liliputing.com/wp-content/uploads/2020/02/cropped-lp_icon_1024-e1582423214846-180x180.png
@@ -498,16 +596,19 @@ bots:
       - Tech
   motorsport:
     feed_url: https://www.motorsport.com/rss/all/news/
+    homepage_url: https://www.motorsport.com
     display_name: Motorsport.com
     summary: Global motorsport news, analysis, and race coverage.
     profile_photo: https://cdn-1.motorsportnetwork.com/msnt/static/logo/motorsport.jpg
   the_race:
     feed_url: https://www.the-race.com/rss/
+    homepage_url: https://www.the-race.com
     display_name: The Race
     summary: Independent Formula 1, MotoGP, Formula E, and motorsport news.
     profile_photo: https://www.the-race.com/favicon.png
   jamietanna:
     feed_url: https://www.jvt.me/kind/articles/feed.xml
+    homepage_url: https://www.jvt.me
     display_name: Jamie Tanna
     summary: Jamie Tanna's personal blog about tech, life, ADHD and more.
     profile_photo: https://www.jvt.me/img/profile.png
@@ -515,428 +616,514 @@ bots:
       - Tech
   wallpaper:
     feed_url: https://www.wallpaper.com/feeds/news
+    homepage_url: https://www.wallpaper.com
     display_name: Wallpaper*
     summary: Design, architecture, art, travel, and lifestyle from Wallpaper* magazine.
     profile_photo: https://www.wallpaper.com/apple-touch-icon.png
   martin_fowler:
     feed_url: https://martinfowler.com/feed.atom
+    homepage_url: https://martinfowler.com
     display_name: Martin Fowler
     summary: Software architecture, design, refactoring, and engineering practice.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://martinfowler.com&size=128
   pragmatic_engineer:
     feed_url: https://blog.pragmaticengineer.com/rss/
+    homepage_url: https://blog.pragmaticengineer.com
     display_name: The Pragmatic Engineer
     summary: Software engineering, technology companies, and engineering leadership.
     profile_photo: https://storage.ghost.io/c/39/f8/39f85cc7-8637-40fc-a57c-f45754453717/content/images/size/w256h256/2024/06/The-Pragmatic-Engineer-Blog-Publication-Icon--Logo-.png
   hillel_wayne:
     feed_url: https://www.hillelwayne.com/index.xml
+    homepage_url: https://www.hillelwayne.com
     display_name: Hillel Wayne
     summary: Software engineering, programming languages, formal methods, and computer science.
     profile_photo: https://avatars.githubusercontent.com/u/2660212?s=200
   mitchell_hashimoto:
     feed_url: https://mitchellh.com/feed.xml
+    homepage_url: https://mitchellh.com
     display_name: Mitchell Hashimoto
     summary: Software engineering, infrastructure, developer tools, and programming.
     profile_photo: https://mitchellh.com/static/favicons/apple-touch-icon.png
   jeff_geerling:
     feed_url: https://www.jeffgeerling.com/blog.xml
+    homepage_url: https://www.jeffgeerling.com
     display_name: Jeff Geerling
     summary: Linux, hardware, Raspberry Pi, homelabs, automation, and open source.
     profile_photo: https://www.jeffgeerling.com/apple-touch-icon.png
   netflix_tech:
     feed_url: https://netflixtechblog.com/feed
+    homepage_url: https://netflixtechblog.com
     display_name: Netflix TechBlog
     summary: Engineering stories about distributed systems, infrastructure, and large-scale software.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://netflixtechblog.com&size=128
   stripe_engineering:
     feed_url: https://stripe.com/blog/feed.rss
+    homepage_url: https://stripe.com
     display_name: Stripe Engineering
     summary: Engineering, APIs, infrastructure, and building reliable financial software.
     profile_photo: https://images.stripeassets.com/fzn2n1nzq965/4vVgZi0ZMoEzOhkcv7EVwK/8cce6fdcf2733b2ec8e99548908847ed/favicon.png?w=180&h=180
   github_engineering:
     feed_url: https://github.blog/engineering/feed/
+    homepage_url: https://github.blog
     display_name: GitHub Engineering
     summary: Engineering stories about developer tools, infrastructure, and software development.
     profile_photo: https://github.blog/wp-content/uploads/2019/01/cropped-github-favicon-512.png?fit=180%2C180
   synth_anatomy:
     feed_url: https://synthanatomy.com/feed
+    homepage_url: https://synthanatomy.com
     display_name: Synth Anatomy
     summary: News and reviews about synthesizers, music technology, and electronic music.
     profile_photo: https://synthanatomy.com/wp-content/uploads/2017/06/Synth_Anatomy_Icon_1.png
   synth_history:
     feed_url: https://www.synthhistory.com/blog-feed.xml
+    homepage_url: https://www.synthhistory.com
     display_name: Synth History
     summary: Stories about the history, people, instruments, and culture of synthesizers.
     profile_photo: https://static.wixstatic.com/media/8c9e81_a58d513f3b184515b750539f47c5c6a1%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/8c9e81_a58d513f3b184515b750539f47c5c6a1%7Emv2.png
   stanislas:
     feed_url: https://stanislas.blog/feed.xml
+    homepage_url: https://stanislas.blog
     display_name: Stanislas
     summary: Rust, Go, DevOps, networking, home automation, terminal tools, and software tinkering.
     profile_photo: https://stanislas.blog/apple-touch-icon.png
   adactio:
     feed_url: https://adactio.com/articles/rss
+    homepage_url: https://adactio.com
     display_name: Adactio
     summary: Web standards, web development, design, and the history and future of the web.
     profile_photo: https://adactio.com/icon.png
   figma:
     feed_url: https://www.figma.com/blog/feed/atom.xml
+    homepage_url: https://www.figma.com
     display_name: Figma Engineering
     summary: Graphics, collaboration, frontend, infrastructure, and unusual engineering problems.
     profile_photo: https://static.figma.com/app/icon/2/touch-180.png
   sean_goedecke:
     feed_url: https://www.seangoedecke.com/rss.xml
+    homepage_url: https://www.seangoedecke.com
     display_name: Sean Goedecke
     summary: Software engineering, technical leadership, architecture, and engineering organizations.
     profile_photo: https://www.seangoedecke.com/icons/icon-512x512.png?v=ac7bb3aa286bd21c42741d9c9aa60cb7
   horizontalpitch:
     feed_url: https://www.horizontalpitch.com/feed/
+    homepage_url: https://www.horizontalpitch.com
     display_name: Horizontalpitch
     summary: Modular synthesis, Eurorack, electronic music, experimentation, and making music without presets.
     profile_photo: https://www.horizontalpitch.com/wp-content/uploads/2023/10/cropped-icon512-180x180.png
   mark_mosher:
     feed_url: https://markmoshermusic.com/feed/
+    homepage_url: https://markmoshermusic.com
     display_name: Mark Mosher
     summary: Experimental electronic music, synthesis, dark ambient, cinematic music, glitch, and multimedia.
     profile_photo: https://i0.wp.com/markmoshermusic.com/wp-content/uploads/2022/02/cropped-2da15-cropped-snapshot-06-06-2021-0917-1.png?fit=180%2C180&ssl=1
   jondent:
     feed_url: https://djjondent.blogspot.com/feeds/posts/default?alt=rss
+    homepage_url: https://djjondent.blogspot.com
     display_name: JonDent
     summary: Electronic music, synthesizers, DJing, production, art, travel, and culture.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://djjondent.blogspot.com&size=128
   the_marginalian:
     feed_url: https://www.themarginalian.org/feed/
+    homepage_url: https://www.themarginalian.org
     display_name: The Marginalian
     summary: Art, science, literature, philosophy, creativity, and the human experience.
     profile_photo: https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2021/10/cropped-tm_site_icon-1.png?fit=180%2C180&ssl=1
   public_domain_review:
     feed_url: https://publicdomainreview.org/rss.xml
+    homepage_url: https://publicdomainreview.org
     display_name: The Public Domain Review
     summary: Curated art, literature, history, science, and strange treasures from the public domain.
     profile_photo: https://publicdomainreview.org/apple-icon-180x180.png
   scott_berkun:
     feed_url: https://scottberkun.com/feed/
+    homepage_url: https://scottberkun.com
     display_name: Scott Berkun
     summary: Design, creativity, technology, management, and how people work.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://scottberkun.com&size=128
   alexwlchan:
     feed_url: https://alexwlchan.net/atom.xml
+    homepage_url: https://alexwlchan.net
     display_name: Alex Chan
     summary: Practical programming, software engineering, Python, and tooling.
     profile_photo: https://alexwlchan.net/apple-touch-icon.png
   ned_batchelder:
     feed_url: https://nedbatchelder.com/blog/rss.xml
+    homepage_url: https://nedbatchelder.com
     display_name: Ned Batchelder
     summary: Python, software design, programming culture, and thoughtful technical essays.
     profile_photo: https://avatars.githubusercontent.com/u/23789?s=200
   etsy_code_as_craft:
     feed_url: https://www.etsy.com/codeascraft/rss
+    homepage_url: https://www.etsy.com
     display_name: Etsy Code as Craft
     summary: Software engineering, infrastructure, developer culture, and technology at Etsy.
     profile_photo: https://www.etsy.com/android-chrome-512x512.png
   discord_engineering:
     feed_url: https://discord.com/blog/rss.xml
+    homepage_url: https://discord.com
     display_name: Discord Engineering
     summary: Distributed systems, infrastructure, performance, and engineering at Discord.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://discord.com&size=128
   soundcloud_backstage:
     feed_url: https://developers.soundcloud.com/blog/blog.rss
+    homepage_url: https://developers.soundcloud.com
     display_name: SoundCloud Backstage
     summary: Developer infrastructure, distributed systems, APIs, and engineering at SoundCloud.
     profile_photo: https://soundcloud.com/pwa-round-icon-512x512.png
   hugging_face:
     feed_url: https://huggingface.co/blog/feed.xml
+    homepage_url: https://huggingface.co
     display_name: Hugging Face
     summary: Open machine learning, models, datasets, inference, and AI infrastructure.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://huggingface.co&size=128
   eric_meyer:
     feed_url: https://meyerweb.com/eric/thoughts/feed/
+    homepage_url: https://meyerweb.com
     display_name: Eric Meyer
     summary: Web standards, CSS, web development, and the evolution of the web.
     profile_photo: https://meyerweb.com/apple-touch-icon.png
   josh_comeau:
     feed_url: https://www.joshwcomeau.com/rss.xml
+    homepage_url: https://www.joshwcomeau.com
     display_name: Josh Comeau
     summary: Frontend development, CSS, JavaScript, animation, and interactive web design.
     profile_photo: https://www.joshwcomeau.com/favicon.png
   overreacted:
     feed_url: https://overreacted.io/rss.xml
+    homepage_url: https://overreacted.io
     display_name: Overreacted
     summary: Programming, React, software abstractions, and thoughts on building software.
     profile_photo: https://overreacted.io/icon.png?e0852c1e2c7f0e65
   great_synthesizers:
     feed_url: https://greatsynthesizers.com/en/feed/
+    homepage_url: https://greatsynthesizers.com
     display_name: GreatSynthesizers
     summary: Synthesizer reviews, historical instruments, documentation, and sound examples.
     profile_photo: https://greatsynthesizers.com/wp/wp-content/uploads/2018/08/cropped-sprechblase-blank-288x288.png
   synth_and_i:
     feed_url: https://synthandi.blogspot.com/feeds/posts/default?alt=rss
+    homepage_url: https://synthandi.blogspot.com
     display_name: The Synth and I
     summary: Synthesis, sound, electronic music, art, and creative inspiration.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://synthandi.blogspot.com&size=128
   vintage_synth_explorer:
     feed_url: https://feeds.feedburner.com/vintagesynth
+    homepage_url: https://www.vintagesynth.com
     display_name: Vintage Synth Explorer
     summary: Historical synthesizers, electronic instruments, specifications, and reference material.
   the_millions:
     feed_url: https://themillions.com/feed
+    homepage_url: https://themillions.com
     display_name: The Millions
     summary: Books, literature, publishing, and contemporary literary culture.
     profile_photo: https://themillions.com/wp-content/themes/millions-v2/dist/images/apple-touch-icon.png
   public_books:
     feed_url: https://www.publicbooks.org/feed/
+    homepage_url: https://www.publicbooks.org
     display_name: Public Books
     summary: Literature, culture, politics, criticism, and ideas from scholars and writers.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.publicbooks.org&size=128
   paris_review:
     feed_url: https://www.theparisreview.org/blog/feed/
+    homepage_url: https://www.theparisreview.org
     display_name: The Paris Review
     summary: Literature, writers, interviews, fiction, poetry, and literary culture.
     profile_photo: https://www.theparisreview.org/images/favicons/apple-touch-icon.png
   lithub:
     feed_url: https://lithub.com/feed/
+    homepage_url: https://lithub.com
     display_name: Literary Hub
     summary: Books, literature, essays, publishing, and literary culture.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://lithub.com&size=128
   strong_towns:
     feed_url: https://www.strongtowns.org/journal/rss.xml
+    homepage_url: https://www.strongtowns.org
     display_name: Strong Towns
     summary: Cities, transportation, housing, walkability, and sustainable urban development.
     profile_photo: https://cdn.prod.website-files.com/67ed6684112274e687cbf06e/68bb2b845bd31fd2886492e9_strong-towns_webclip.png
   places_journal:
     feed_url: https://feeds.feedburner.com/placesjournal
+    homepage_url: https://placesjournal.org
     display_name: Places Journal
     summary: Architecture, landscape, urbanism, design, and the built environment.
     profile_photo: https://placesjournal.org/apple-touch-icon.png
   atlas_obscura:
     feed_url: https://www.atlasobscura.com/feeds/latest
+    homepage_url: https://www.atlasobscura.com
     display_name: Atlas Obscura
     summary: Unusual places, history, culture, science, food, and the hidden world around us.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.atlasobscura.com&size=128
   lensculture:
     feed_url: https://www.lensculture.com/feeds/flipboard.rss
+    homepage_url: https://www.lensculture.com
     display_name: LensCulture
     summary: Contemporary photography, photographers, visual culture, and photography criticism.
     profile_photo: https://www.lensculture.com/icon.png
   petapixel:
     feed_url: https://petapixel.com/feed/
+    homepage_url: https://petapixel.com
     display_name: PetaPixel
     summary: Photography, cameras, image-making technology, and photographic culture.
     profile_photo: https://petapixel.com/assets/img/apple-touch-icon-180x180.png
   conscientious:
     feed_url: https://cphmag.com/feed-rss/
+    homepage_url: https://cphmag.com
     display_name: Conscientious Photography
     summary: Contemporary photography, photographic books, exhibitions, and visual culture.
     profile_photo: https://cphmag.com/apple-touch-icon-192x192.png
   magnum_photos:
     feed_url: https://www.magnumphotos.com/feed/
+    homepage_url: https://www.magnumphotos.com
     display_name: Magnum Photos
     summary: Documentary photography, photojournalism, photographers, and visual storytelling.
     profile_photo: https://www.magnumphotos.com/wp-content/themes/template/res/img/favicons/apple-touch-icon-180x180.png
   nautilus:
     feed_url: https://nautil.us/feed/
+    homepage_url: https://nautil.us
     display_name: Nautilus
     summary: Science, philosophy, culture, and big questions about the natural world.
     profile_photo: https://lede-admin.nautil.us/wp-content/uploads/sites/70/sites/3/nautilus/cropped-thicker_smaller_logo.png
   aeon:
     feed_url: https://aeon.co/feed.rss
+    homepage_url: https://aeon.co
     display_name: Aeon
     summary: Philosophy, science, psychology, culture, and ideas about human life.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://aeon.co&size=128
   works_in_progress:
     feed_url: https://worksinprogress.co/rss.xml
+    homepage_url: https://worksinprogress.co
     display_name: Works in Progress
     summary: Technology, science, economics, progress, infrastructure, and ideas for improving the world.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://worksinprogress.co&size=128
   henri_bergius:
     feed_url: https://bergie.iki.fi/blog/rss.xml
+    homepage_url: https://bergie.iki.fi
     display_name: Henri Bergius
     summary: Free software, decentralized systems, computing, travel, and assorted personal projects.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://bergie.iki.fi&size=128
   the_urbanist:
     feed_url: https://www.theurbanist.org/rss/
+    homepage_url: https://www.theurbanist.org
     display_name: The Urbanist
     summary: Cities, transportation, housing, and urban policy in the Pacific Northwest.
     profile_photo: https://storage.ghost.io/c/19/31/1931222a-d1c5-42ac-8932-2ee3ac1f8927/content/images/size/w256h256/2026/01/urb-logo.png
   schneier:
     feed_url: https://www.schneier.com/feed/atom/
+    homepage_url: https://www.schneier.com
     display_name: Schneier on Security
     summary: Security, cryptography, privacy, surveillance, and the politics of both.
     profile_photo: https://www.schneier.com/wp-content/uploads/2020/06/cropped-favicon-1-192x192.png
   fasterthanlime:
     feed_url: https://fasterthanli.me/index.xml
+    homepage_url: https://fasterthanli.me
     display_name: fasterthanli.me
     summary: Rust, systems programming, compilers, and long illustrated deep dives into how things actually work.
     profile_photo: https://cdn.fasterthanli.me/content/img/favicon~679ae9c272874bba.webp
   russcox:
     feed_url: https://research.swtch.com/feed.atom
+    homepage_url: https://research.swtch.com
     display_name: research!rsc
     summary: Go, version control, programming language design, and computing history from Russ Cox.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://research.swtch.com&size=128
   ken_shirriff:
     feed_url: https://www.righto.com/feeds/posts/default
+    homepage_url: https://www.righto.com
     display_name: Ken Shirriff
     summary: Chip reverse engineering, vintage computer restoration, silicon die photography, and electronics archaeology.
   chris_siebenmann:
     feed_url: https://utcc.utoronto.ca/~cks/space/blog/?atom
+    homepage_url: https://utcc.utoronto.ca/~cks/space/blog/
     display_name: Wandering Thoughts
     summary: Unix, system administration, networking, and the practical details of running infrastructure.
   daniel_lemire:
     feed_url: https://lemire.me/blog/feed/
+    homepage_url: https://lemire.me
     display_name: Daniel Lemire
     summary: Performance engineering, SIMD, parsing, data structures, and computer science research.
     profile_photo: https://lemire.me/blog/wp-content/uploads/2015/10/profile2011_152.jpg
   maggie_appleton:
     feed_url: https://maggieappleton.com/rss.xml
+    homepage_url: https://maggieappleton.com
     display_name: Maggie Appleton
     summary: Design, anthropology, programming, and illustrated essays about tools for thought.
     profile_photo: https://maggieappleton.com/images/favicon/android-chrome-512x512.png
   molly_white:
     feed_url: https://www.citationneeded.news/rss/
+    homepage_url: https://www.citationneeded.news
     display_name: Citation Needed
     summary: Cryptocurrency, tech accountability, and critical reporting on the industry from Molly White.
     profile_photo: https://www.citationneeded.news/content/images/size/w256h256/2024/01/cn-blue-square.png
   terence_eden:
     feed_url: https://shkspr.mobi/blog/feed/atom/
+    homepage_url: https://shkspr.mobi
     display_name: Terence Eden
     summary: Open standards, accessibility, the web, and occasionally grumpy technology criticism.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://shkspr.mobi&size=128
   fabien_sanglard:
     feed_url: https://fabiensanglard.net/rss.xml
+    homepage_url: https://fabiensanglard.net
     display_name: Fabien Sanglard
     summary: Game engine archaeology, graphics programming, hardware teardowns, and code review of classic software.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://fabiensanglard.net&size=128
   ben_kuhn:
     feed_url: https://www.benkuhn.net/rss/
+    homepage_url: https://www.benkuhn.net
     display_name: Ben Kuhn
     summary: Engineering management, productivity, decision making, and essays on working effectively.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.benkuhn.net&size=128
   robin_sloan:
     feed_url: https://www.robinsloan.com/feed.xml
+    homepage_url: https://www.robinsloan.com
     display_name: Robin Sloan
     summary: Writing, media, technology, olive oil, and speculative thinking about the internet.
     profile_photo: https://www.robinsloan.com/img/dragon-moon-logotype-2025-256.png
   antirez:
     feed_url: https://antirez.com/rss
+    homepage_url: https://antirez.com
     display_name: antirez
     summary: Systems programming, C, databases, and notes from the creator of Redis.
     profile_photo: https://avatars.githubusercontent.com/u/65632?s=200
   fly_io:
     feed_url: https://fly.io/blog/feed.xml
+    homepage_url: https://fly.io
     display_name: Fly.io
     summary: Distributed systems, networking, edge computing, security, and infrastructure engineering.
     profile_photo: https://fly.io/phx/ui/images/favicon/android-chrome-512x512.png
   jane_street:
     feed_url: https://blog.janestreet.com/feed.xml
+    homepage_url: https://blog.janestreet.com
     display_name: Jane Street Tech Blog
     summary: OCaml, functional programming, systems, and engineering at a quantitative trading firm.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://blog.janestreet.com&size=128
   meta_engineering:
     feed_url: https://engineering.fb.com/feed/
+    homepage_url: https://engineering.fb.com
     display_name: Engineering at Meta
     summary: Infrastructure, distributed systems, AI, open source, and engineering at Meta scale.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://engineering.fb.com&size=128
   slack_engineering:
     feed_url: https://slack.engineering/feed/
+    homepage_url: https://slack.engineering
     display_name: Slack Engineering
     summary: Backend infrastructure, mobile, performance, and engineering culture at Slack.
     profile_photo: https://slack.engineering/wp-content/uploads/sites/7/2020/05/cropped-octothrope-1.png?w=192
   airbnb_engineering:
     feed_url: https://medium.com/feed/airbnb-engineering
+    homepage_url: https://medium.com/airbnb-engineering
     display_name: Airbnb Tech Blog
     summary: Data infrastructure, machine learning, mobile, and engineering practice at Airbnb.
     profile_photo: https://a0.muscache.com/airbnb/static/icons/android-icon-192x192-c0465f9f0380893768972a31a614b670.png
   vercel:
     feed_url: https://vercel.com/atom
+    homepage_url: https://vercel.com
     display_name: Vercel
     summary: Frontend infrastructure, Next.js, edge computing, and web performance.
     profile_photo: https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com/front/favicon/vercel/android-chrome-512x512.png
   sentry:
     feed_url: https://blog.sentry.io/feed.xml
+    homepage_url: https://blog.sentry.io
     display_name: Sentry Blog
     summary: Error monitoring, observability, debugging, performance, and open source developer tooling.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://blog.sentry.io&size=128
   signal:
     feed_url: https://signal.org/blog/rss.xml
+    homepage_url: https://signal.org
     display_name: Signal Blog
     summary: Private messaging, cryptography, protocol design, and the case for encryption.
     profile_photo: https://signal.org/assets/images/favicon/android-chrome-512x512.png
   gothamist:
     feed_url: https://gothamist.com/feed
+    homepage_url: https://gothamist.com
     display_name: Gothamist
     summary: News, politics, transit, food, and culture in New York City.
     profile_photo: https://gothamist.com/android-chrome-512x512.png
   the_city:
     feed_url: https://www.thecity.nyc/feed/
+    homepage_url: https://www.thecity.nyc
     display_name: THE CITY
     summary: Nonprofit accountability journalism about New York City government and the people it serves.
     profile_photo: https://i0.wp.com/www.thecityreporter.nyc/wp-content/uploads/2026/05/cropped-Untitled-design-4.png?fit=512%2C512&ssl=1
   curbed:
     feed_url: https://www.curbed.com/rss/index.xml
+    homepage_url: https://www.curbed.com
     display_name: Curbed
     summary: Cities, real estate, architecture, design, and the way New York is built and lived in.
     profile_photo: https://assets.curbed.com/media/sites/curbed/icon.196x196.png
   streetsblog_nyc:
     feed_url: https://nyc.streetsblog.org/feed
+    homepage_url: https://nyc.streetsblog.org
     display_name: Streetsblog NYC
     summary: Transportation policy, cycling, transit, street safety, and car culture in New York City.
     profile_photo: https://nyc.streetsblog.org/wp-content/uploads/sites/9/2023/10/cropped-Round-SB-NYC-Stroke-2160px.png?w=192
   hudson_valley_one:
     feed_url: https://hudsonvalleyone.com/feed/
+    homepage_url: https://hudsonvalleyone.com
     display_name: Hudson Valley One
     summary: News, politics, arts, and community reporting from Ulster County and the Hudson Valley.
     profile_photo: https://ulsterpub.wpenginepowered.com/wp-content/uploads/2017/01/cropped-hv1-icon-1-192x192.png
   longreads:
     feed_url: https://longreads.com/feed/
+    homepage_url: https://longreads.com
     display_name: Longreads
     summary: Curated longform journalism, essays, reporting, and narrative nonfiction from across the web.
     profile_photo: https://i0.wp.com/longreads.com/wp-content/uploads/2017/01/longreads-logo-sm-rgb.png?fit=512%2C512&quality=80&ssl=1
   noema:
     feed_url: https://www.noemamag.com/feed/
+    homepage_url: https://www.noemamag.com
     display_name: Noema Magazine
     summary: Long essays on technology, geopolitics, philosophy, economics, and the future of governance.
     profile_photo: https://www.noemamag.com/wp-content/uploads/2020/06/cropped-ms-icon-310x310-1-192x192.png
   astral_codex_ten:
     feed_url: https://www.astralcodexten.com/feed
+    homepage_url: https://www.astralcodexten.com
     display_name: Astral Codex Ten
     summary: Psychiatry, statistics, forecasting, medicine, and long arguments about how to think clearly.
     profile_photo: https://substackcdn.com/image/fetch/$s_!o6Of!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8c00a032-defa-44b7-9ab7-b7cc6d88db75%2Fapple-touch-icon-1024x1024.png
   marginal_revolution:
     feed_url: https://marginalrevolution.com/feed
+    homepage_url: https://marginalrevolution.com
     display_name: Marginal Revolution
     summary: Economics, books, culture, food, and daily links from Tyler Cowen and Alex Tabarrok.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://marginalrevolution.com&size=128
   asterisk:
     feed_url: https://asteriskmag.com/feed
+    homepage_url: https://asteriskmag.com
     display_name: Asterisk Magazine
     summary: Rigorous writing on forecasting, biosecurity, economics, AI, and global development.
     profile_photo: https://asteriskmag.com/assets/favicon/apple-touch-icon.png
   colossal:
     feed_url: https://www.thisiscolossal.com/feed/
+    homepage_url: https://www.thisiscolossal.com
     display_name: Colossal
     summary: Contemporary art, craft, illustration, sculpture, photography, and visual invention.
     profile_photo: https://www.thisiscolossal.com/wp-content/uploads/2024/08/icon-crow.png
   aperture:
     feed_url: https://aperture.org/feed/
+    homepage_url: https://aperture.org
     display_name: Aperture
     summary: Photography, photobooks, exhibitions, and criticism from the Aperture Foundation.
     profile_photo: https://aperture.org/wp-content/uploads/2023/05/cropped-v2_favicon-32x32-2-192x192.png
   undark:
     feed_url: https://undark.org/feed/
+    homepage_url: https://undark.org
     display_name: Undark Magazine
     summary: Science journalism at the intersection of research, policy, medicine, and society.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://undark.org&size=128
   nasa:
     feed_url: https://www.nasa.gov/feed/
+    homepage_url: https://www.nasa.gov
     display_name: NASA
     summary: Missions, spaceflight, astronomy, Earth science, and research from NASA.
     profile_photo: https://www.nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/android-chrome-512x512.png
   bedroom_producers:
     feed_url: https://bedroomproducersblog.com/feed/
+    homepage_url: https://bedroomproducersblog.com
     display_name: Bedroom Producers Blog
     summary: Free VST plugins, samples, music production tools, and bedroom studio gear.
     profile_photo: https://bedroomproducersblog.com/wp-content/uploads/2020/06/cropped-bpb-icon-192x192.jpg
   military_times:
     feed_url: https://www.militarytimes.com/arc/outboundfeeds/rss/
+    homepage_url: https://www.militarytimes.com
     display_name: Military Times
     summary: Independent news about service members at home and deployed around the world.
     profile_photo: https://www.militarytimes.com/pf/resources/img/favicons/mil/apple-touch-icon.png?d=143
