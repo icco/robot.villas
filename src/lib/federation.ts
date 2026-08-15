@@ -105,7 +105,7 @@ function buildIcon(photoUrl: string): Image {
 }
 
 /** Profile field values are rendered as HTML, so links need anchors. */
-function link(href: string): string {
+function buildFieldLink(href: string): string {
   return `<a href="${escapeHtml(href)}">${escapeHtml(href)}</a>`;
 }
 
@@ -136,11 +136,11 @@ async function buildActor(
     attachments: [
       new PropertyValue({
         name: "source",
-        value: link(bot.feed_url),
+        value: buildFieldLink(bot.feed_url),
       }),
       new PropertyValue({
         name: "old posts",
-        value: link(profileUrl.href),
+        value: buildFieldLink(profileUrl.href),
       }),
     ],
     url: new URL(`/@${identifier}`, actorUri),
