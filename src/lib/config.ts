@@ -12,6 +12,7 @@ const BotSchema = z.object({
   display_name: z.string().min(1).max(MAX_DISPLAY_NAME_LENGTH),
   summary: z.string().min(1).max(MAX_SUMMARY_LENGTH),
   profile_photo: z.string().url().optional(),
+  homepage_url: z.string().url().optional(),
   /** Up to three default hashtags (no #); merged with feed categories before optional Gemini. */
   default_hashtags: z.array(z.string().min(1).max(MAX_TAG_LEN)).max(3).optional(),
 });
