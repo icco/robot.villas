@@ -73,6 +73,11 @@
           "format": "uri",
           "description": "Profile photo URL."
         },
+        "homepage_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Homepage URL for the site being mirrored."
+        },
         "default_hashtags": {
           "type": "array",
           "description": "Up to three default hashtags without leading #.",

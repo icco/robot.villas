@@ -96,6 +96,14 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
               {bot.feed_url}
             </a>
           </p>
+          {bot.homepage_url && (
+            <p className="text-sm text-base-content/50 mt-1">
+              Homepage:{" "}
+              <a href={bot.homepage_url} className="link link-hover break-all">
+                {bot.homepage_url}
+              </a>
+            </p>
+          )}
           <div className="flex flex-col items-stretch gap-3 mt-3 sm:flex-row sm:flex-wrap sm:items-center">
             <FollowButton account={`${username}@${domain}`}>
               <button type="button" className="btn btn-primary btn-sm">

@@ -145,6 +145,14 @@ async function buildActor(
         name: "source",
         value: buildFieldLink(bot.feed_url),
       }),
+      ...(bot.homepage_url
+        ? [
+            new PropertyValue({
+              name: "homepage",
+              value: buildFieldLink(bot.homepage_url),
+            }),
+          ]
+        : []),
       new PropertyValue({
         name: "old posts",
         value: buildFieldLink(profileUrl.href),
