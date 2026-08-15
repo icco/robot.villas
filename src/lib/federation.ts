@@ -25,6 +25,7 @@ import {
   Image,
   Like,
   Note,
+  PropertyValue,
   PUBLIC_COLLECTION,
   type Recipient,
   Reject,
@@ -103,6 +104,18 @@ function buildIcon(photoUrl: string): Image {
   });
 }
 
+/**
+ * Profile field values are rendered as HTML, so links need anchors.
+ * Anything that isn't an http(s) URL stays plain text.
+ */
+function buildFieldLink(href: string): string {
+  const url = safeParseUrl(href);
+  if (!url) {
+    return escapeHtml(href);
+  }
+  return `<a href="${escapeHtml(url.href)}">${escapeHtml(url.href)}</a>`;
+}
+
 async function buildActor(
   ctx: Context<void>,
   identifier: string,
@@ -127,14 +140,14 @@ async function buildActor(
     endpoints: new Endpoints({
       sharedInbox: ctx.getInboxUri(),
     }),
-    fields: [
-      new Field({
+    attachments: [
+      new PropertyValue({
         name: "source",
-        value: bot.feed_url,
+        value: buildFieldLink(bot.feed_url),
       }),
-      new Field({
+      new PropertyValue({
         name: "old posts",
-        value: profileUrl.href,
+        value: buildFieldLink(profileUrl.href),
       }),
     ],
     url: new URL(`/@${identifier}`, actorUri),
