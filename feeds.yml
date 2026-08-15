@@ -762,10 +762,6 @@ bots:
     display_name: The Urbanist
     summary: Cities, transportation, housing, and urban policy in the Pacific Northwest.
     profile_photo: https://storage.ghost.io/c/19/31/1931222a-d1c5-42ac-8932-2ee3ac1f8927/content/images/size/w256h256/2026/01/urb-logo.png
-  rachelbythebay:
-    feed_url: https://rachelbythebay.com/w/atom.xml
-    display_name: Rachel by the Bay
-    summary: Systems administration, debugging war stories, distributed systems, and the operational reality of running software.
   schneier:
     feed_url: https://www.schneier.com/feed/atom/
     display_name: Schneier on Security
