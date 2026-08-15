@@ -60,15 +60,12 @@ export async function register() {
 
   const { startPoller } = await import("@/lib/poller");
   const { parsePositiveInt } = await import("@/lib/env");
-  // Fifteen minutes; hosts that want slower get it via their own 429 backoff.
-  const pollIntervalMs = parsePositiveInt(process.env.POLL_INTERVAL_MS, 900_000);
   const pollConcurrency = parsePositiveInt(process.env.POLL_CONCURRENCY, 10);
 
   startPoller({
     config,
     db,
     domain,
-    intervalMs: pollIntervalMs,
     concurrency: pollConcurrency,
     getContext: () => federation.createContext(new URL(`https://${domain}`)),
   });

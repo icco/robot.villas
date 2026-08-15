@@ -19,6 +19,7 @@ export interface PollerOptions {
   config: FeedsConfig;
   db: Db;
   domain: string;
+  /** Overridden by tests only; production always uses DEFAULT_INTERVAL_MS. */
   intervalMs?: number;
   concurrency?: number;
   getContext: () => Context<void>;
