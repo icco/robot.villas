@@ -7,8 +7,7 @@ import { parsePositiveInt } from "./env";
 import { fetchFeedWithHttpResult } from "./rss";
 import { publishNewEntries } from "./publisher";
 
-/** Conditional GETs keep unchanged feeds at a 304, and a 429 backs that feed
- * off on its own, so a 15 minute cycle is safe. */
+/** Not configurable: a 429 backs a slow-polling host off on its own. */
 const DEFAULT_INTERVAL_MS = 15 * 60 * 1000;
 /** How many bot feeds to poll at once. Keeps a large feeds.yml from making a
  * poll cycle run far longer than intervalMs when polled fully sequentially. */
@@ -19,7 +18,7 @@ export interface PollerOptions {
   config: FeedsConfig;
   db: Db;
   domain: string;
-  /** Overridden by tests only; production always uses DEFAULT_INTERVAL_MS. */
+  /** Tests only. */
   intervalMs?: number;
   concurrency?: number;
   getContext: () => Context<void>;

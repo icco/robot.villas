@@ -52,7 +52,7 @@ The `relays` list contains ActivityPub relay actor URLs. The server subscribes t
 | `GEMINI_LOCATION`   | GCP region for Vertex AI                         | `us-central1`     |
 | `GEMINI_MODEL`      | Gemini model name                                | `gemini-2.5-flash` |
 
-The poller identifies itself with a `robot.villas` User-Agent, sends conditional GETs (`If-None-Match` / `If-Modified-Since`) so unchanged feeds cost a 304, and stops polling a feed until the `Retry-After` of a 429 has elapsed. Feeds are polled at most once every 15 minutes; the interval is a floor rather than a promise, and it is a constant (`DEFAULT_INTERVAL_MS` in `src/lib/poller.ts`), not a config knob — a host that wants to be polled less often enforces that itself with a 429.
+The poller identifies itself with a `robot.villas` User-Agent, sends conditional GETs (`If-None-Match` / `If-Modified-Since`) so unchanged feeds cost a 304, and stops polling a feed until the `Retry-After` of a 429 has elapsed. Feeds are fetched at most once every 15 minutes — a constant (`DEFAULT_INTERVAL_MS` in `src/lib/poller.ts`), not a config knob.
 
 ## Development
 
