@@ -940,6 +940,11 @@ bots:
     display_name: Bedroom Producers Blog
     summary: Free VST plugins, samples, music production tools, and bedroom studio gear.
     profile_photo: https://bedroomproducersblog.com/wp-content/uploads/2020/06/cropped-bpb-icon-192x192.jpg
+  military_times:
+    feed_url: https://www.militarytimes.com/arc/outboundfeeds/rss/
+    display_name: Military Times
+    summary: Independent news about service members at home and deployed around the world.
+    profile_photo: https://www.militarytimes.com/pf/resources/img/favicons/mil/apple-touch-icon.png?d=143
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
