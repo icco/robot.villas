@@ -834,7 +834,7 @@ bots:
     homepage_url: https://lithub.com
     display_name: Literary Hub
     summary: Books, literature, essays, publishing, and literary culture.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://lithub.com&size=128
+    profile_photo: https://s26162.pcdn.co/wp-content/themes/lithub-prime/img/logo-compact.png
   strong_towns:
     feed_url: https://www.strongtowns.org/journal/rss.xml
     homepage_url: https://www.strongtowns.org
