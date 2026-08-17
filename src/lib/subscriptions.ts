@@ -58,6 +58,33 @@ export function isRelayTerminal(
   return now.getTime() - statusChangedAt.getTime() < retryAfterMs;
 }
 
+export interface RelaySubscriptionState {
+  status: RelayStatus | "none";
+  /** The bot whose row holds the subscription, for display. */
+  botUsername: string | null;
+  statusChangedAt: Date | null;
+}
+
+/**
+ * Collapses a relay's rows into one instance-level state.
+ *
+ * Relays key subscriptions by domain (YUKIMOCHI stores `relay:subscription:<domain>`
+ * and matches on `actorID.Host`), so a single accepted row subscribes every bot
+ * on the instance. Per-bot counts describe our own bookkeeping, never coverage —
+ * showing "1 / 187" implies 186 are missing when nothing is.
+ */
+export function summarizeRelaySubscription(
+  rows: ReadonlyArray<{ botUsername: string; status: RelayStatus; statusChangedAt: Date | null }>,
+): RelaySubscriptionState {
+  for (const status of ["accepted", "pending", "rejected"] as const) {
+    const winner = rows.find((r) => r.status === status);
+    if (winner !== undefined) {
+      return { status, botUsername: winner.botUsername, statusChangedAt: winner.statusChangedAt };
+    }
+  }
+  return { status: "none", botUsername: null, statusChangedAt: null };
+}
+
 /** Instances vary on trailing slashes. */
 function normalizeActorId(id: string): string {
   return id.endsWith("/") ? id.slice(0, -1) : id;

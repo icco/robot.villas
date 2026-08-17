@@ -4,6 +4,7 @@ import {
   RELAY_REJECT_RETRY_MS,
   isRelayTerminal,
   findLostAccepts,
+  summarizeRelaySubscription,
   RelayFollow,
   AS_PUBLIC,
 } from "../subscriptions";
@@ -77,6 +78,57 @@ describe("isRelayTerminal", () => {
   it("uses the configured cooldown", () => {
     expect(isRelayTerminal("rejected", daysAgo(2), NOW, 24 * 60 * 60 * 1000)).toBe(false);
     expect(RELAY_REJECT_RETRY_MS).toBe(30 * 24 * 60 * 60 * 1000);
+  });
+});
+
+describe("summarizeRelaySubscription", () => {
+  const row = (botUsername: string, status: "pending" | "accepted" | "rejected", d?: Date) => ({
+    botUsername,
+    status,
+    statusChangedAt: d ?? null,
+  });
+
+  it("reports none when the relay has no rows", () => {
+    expect(summarizeRelaySubscription([])).toMatchObject({ status: "none", botUsername: null });
+  });
+
+  it("a single accepted row is a complete subscription", () => {
+    // Relays key subscriptions by domain, so one accepted row covers every bot.
+    const s = summarizeRelaySubscription([row("nyt_homepage", "accepted", NOW)]);
+    expect(s).toMatchObject({ status: "accepted", botUsername: "nyt_homepage" });
+    expect(s.statusChangedAt).toBe(NOW);
+  });
+
+  it("prefers accepted over pending and rejected", () => {
+    const s = summarizeRelaySubscription([
+      row("a", "rejected"),
+      row("b", "accepted", NOW),
+      row("c", "pending"),
+    ]);
+    expect(s).toMatchObject({ status: "accepted", botUsername: "b" });
+  });
+
+  it("prefers pending over rejected", () => {
+    expect(summarizeRelaySubscription([row("a", "rejected"), row("b", "pending")])).toMatchObject({
+      status: "pending",
+      botUsername: "b",
+    });
+  });
+
+  it("collapses duplicate rows to one state", () => {
+    // Legacy rows from the all-bots era are bookkeeping, not extra coverage.
+    const rows = Array.from({ length: 57 }, (_, i) => row(`bot${i}`, "accepted"));
+    expect(summarizeRelaySubscription(rows)).toMatchObject({
+      status: "accepted",
+      botUsername: "bot0",
+    });
+  });
+
+  it("reports rejected when every row is rejected", () => {
+    expect(summarizeRelaySubscription([row("a", "rejected", NOW)])).toMatchObject({
+      status: "rejected",
+      botUsername: "a",
+    });
   });
 });
 
