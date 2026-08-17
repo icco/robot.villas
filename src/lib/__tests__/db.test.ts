@@ -14,6 +14,13 @@ import {
   removeFollower,
   getKeypairs,
   saveKeypairs,
+  upsertFollowing,
+  markFollowingAccepted,
+  getAllFollowing,
+  updateFollowingStatus,
+  upsertRelay,
+  updateRelayStatus,
+  getAllRelays,
   type Db,
 } from "../db";
 import * as schema from "../schema";
@@ -29,6 +36,8 @@ async function cleanTestData(db: Db) {
   await db.delete(schema.actorKeypairs).where(inArray(schema.actorKeypairs.botUsername, TEST_BOTS));
   await db.delete(schema.followers).where(inArray(schema.followers.botUsername, TEST_BOTS));
   await db.delete(schema.feedPollStatus).where(inArray(schema.feedPollStatus.botUsername, TEST_BOTS));
+  await db.delete(schema.following).where(inArray(schema.following.botUsername, TEST_BOTS));
+  await db.delete(schema.relays).where(inArray(schema.relays.botUsername, TEST_BOTS));
 }
 
 describeWithDb("database", () => {
@@ -282,6 +291,113 @@ describeWithDb("database", () => {
       const kps = await getKeypairs(db, "legacybot");
       expect(kps).toHaveLength(1);
       expect(kps![0].publicKey).toMatchObject({ kty: "RSA", n: "legacy" });
+    });
+  });
+
+  describe("following", () => {
+    const HANDLE = "_followback@example.test";
+
+    async function seedPending(bots: string[]) {
+      for (const botUsername of bots) {
+        await upsertFollowing(db, botUsername, HANDLE, "https://example.test/user/_followback", `https://robot.test/users/${botUsername}/follows/1`);
+      }
+    }
+
+    it("markFollowingAccepted flips only the named bots", async () => {
+      await seedPending(["bot_a", "bot_b"]);
+
+      await markFollowingAccepted(db, HANDLE, ["bot_a"]);
+
+      const rows = await getAllFollowing(db);
+      const byBot = new Map(rows.filter((r) => r.handle === HANDLE).map((r) => [r.botUsername, r.status]));
+      expect(byBot.get("bot_a")).toBe("accepted");
+      expect(byBot.get("bot_b")).toBe("pending");
+    });
+
+    it("markFollowingAccepted records when the status changed", async () => {
+      await seedPending(["bot_a"]);
+      await markFollowingAccepted(db, HANDLE, ["bot_a"]);
+
+      const [row] = await db
+        .select({ statusChangedAt: schema.following.statusChangedAt })
+        .from(schema.following)
+        .where(inArray(schema.following.botUsername, ["bot_a"]));
+      expect(row.statusChangedAt).toBeInstanceOf(Date);
+    });
+
+    it("markFollowingAccepted is a no-op for an empty bot list", async () => {
+      await seedPending(["bot_a"]);
+      await markFollowingAccepted(db, HANDLE, []);
+
+      const rows = await getAllFollowing(db);
+      expect(rows.find((r) => r.botUsername === "bot_a")?.status).toBe("pending");
+    });
+
+    it("markFollowingAccepted leaves an explicit Reject alone", async () => {
+      // The pending set is a snapshot; a Reject can land before we write.
+      await seedPending(["bot_a"]);
+      await updateFollowingStatus(db, "https://robot.test/users/bot_a/follows/1", "rejected");
+
+      await markFollowingAccepted(db, HANDLE, ["bot_a"]);
+
+      const rows = await getAllFollowing(db);
+      expect(rows.find((r) => r.botUsername === "bot_a")?.status).toBe("rejected");
+    });
+
+    it("markFollowingAccepted does not touch other handles", async () => {
+      await upsertFollowing(db, "bot_a", "someone@example.test", "https://example.test/user/someone", "https://robot.test/f/2");
+      await seedPending(["bot_a"]);
+
+      await markFollowingAccepted(db, HANDLE, ["bot_a"]);
+
+      const rows = await getAllFollowing(db);
+      expect(rows.find((r) => r.handle === "someone@example.test")?.status).toBe("pending");
+    });
+  });
+
+  describe("relays", () => {
+    const URL = "https://relay.example.test/actor";
+    const seed = () =>
+      upsertRelay(db, "bot_a", URL, `${URL.replace("/actor", "/inbox")}`, URL, "https://robot.test/f/relay-1");
+
+    const relayRow = async () => (await getAllRelays(db, "bot_a")).find((r) => r.url === URL);
+
+    it("upsertRelay does not restamp a row that is already pending", async () => {
+      // Otherwise a permanently-pending relay looks freshly changed on every
+      // boot, hiding exactly the stuck state the column exists to surface.
+      await seed();
+      const first = (await relayRow())!.statusChangedAt;
+      expect(first).toBeInstanceOf(Date);
+
+      await seed();
+      expect((await relayRow())!.statusChangedAt?.getTime()).toBe(first!.getTime());
+    });
+
+    it("upsertRelay restamps when reviving a rejected row", async () => {
+      await seed();
+      await updateRelayStatus(db, "https://robot.test/f/relay-1", "rejected");
+      const rejectedAt = (await relayRow())!.statusChangedAt!;
+      await db
+        .update(schema.relays)
+        .set({ statusChangedAt: new Date(rejectedAt.getTime() - 60_000) })
+        .where(inArray(schema.relays.botUsername, ["bot_a"]));
+
+      await seed();
+
+      const row = (await relayRow())!;
+      expect(row.status).toBe("pending");
+      expect(row.statusChangedAt!.getTime()).toBeGreaterThan(rejectedAt.getTime() - 60_000);
+    });
+
+    it("upsertRelay backfills a null timestamp on a pending row", async () => {
+      await seed();
+      await db
+        .update(schema.relays)
+        .set({ statusChangedAt: null })
+        .where(inArray(schema.relays.botUsername, ["bot_a"]));
+
+      await seed();
+      expect((await relayRow())!.statusChangedAt).toBeInstanceOf(Date);
     });
   });
 });

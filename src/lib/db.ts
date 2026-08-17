@@ -575,6 +575,7 @@ export interface RelayRow {
   inboxUrl: string | null;
   actorId: string | null;
   status: "pending" | "accepted" | "rejected";
+  statusChangedAt: Date | null;
   followActivityId: string | null;
 }
 
@@ -587,6 +588,7 @@ export async function getAcceptedRelays(db: Db): Promise<RelayRow[]> {
       inboxUrl: schema.relays.inboxUrl,
       actorId: schema.relays.actorId,
       status: schema.relays.status,
+      statusChangedAt: schema.relays.statusChangedAt,
       followActivityId: schema.relays.followActivityId,
     })
     .from(schema.relays)
@@ -618,6 +620,7 @@ export async function getAllRelays(db: Db, botUsername?: string): Promise<RelayR
       inboxUrl: schema.relays.inboxUrl,
       actorId: schema.relays.actorId,
       status: schema.relays.status,
+      statusChangedAt: schema.relays.statusChangedAt,
       followActivityId: schema.relays.followActivityId,
     })
     .from(schema.relays)
@@ -634,10 +637,29 @@ export async function upsertRelay(
 ): Promise<void> {
   await db
     .insert(schema.relays)
-    .values({ botUsername, url, inboxUrl, actorId, followActivityId, status: "pending" })
+    .values({
+      botUsername,
+      url,
+      inboxUrl,
+      actorId,
+      followActivityId,
+      status: "pending",
+      statusChangedAt: new Date(),
+    })
     .onConflictDoUpdate({
       target: [schema.relays.botUsername, schema.relays.url],
-      set: { inboxUrl, actorId, followActivityId, status: "pending" as const, deletedAt: null },
+      set: {
+        inboxUrl,
+        actorId,
+        followActivityId,
+        status: "pending" as const,
+        // Only a real transition restamps, so a permanently-pending relay
+        // doesn't look freshly changed on every boot.
+        statusChangedAt: sql`CASE WHEN ${schema.relays.status} = 'pending'
+          AND ${schema.relays.statusChangedAt} IS NOT NULL
+          THEN ${schema.relays.statusChangedAt} ELSE now() END`,
+        deletedAt: null,
+      },
     });
 }
 
@@ -650,6 +672,7 @@ export async function getRelayByActivityId(db: Db, followActivityId: string): Pr
       inboxUrl: schema.relays.inboxUrl,
       actorId: schema.relays.actorId,
       status: schema.relays.status,
+      statusChangedAt: schema.relays.statusChangedAt,
       followActivityId: schema.relays.followActivityId,
     })
     .from(schema.relays)
@@ -665,7 +688,7 @@ export async function updateRelayStatus(
 ): Promise<void> {
   await db
     .update(schema.relays)
-    .set({ status })
+    .set({ status, statusChangedAt: new Date() })
     .where(eq(schema.relays.followActivityId, followActivityId));
 }
 
@@ -764,10 +787,26 @@ export async function upsertFollowing(
 ): Promise<void> {
   await db
     .insert(schema.following)
-    .values({ botUsername, handle, targetActorId, followActivityId, status: "pending" })
+    .values({
+      botUsername,
+      handle,
+      targetActorId,
+      followActivityId,
+      status: "pending",
+      statusChangedAt: new Date(),
+    })
     .onConflictDoUpdate({
       target: [schema.following.botUsername, schema.following.handle],
-      set: { targetActorId, followActivityId, status: "pending", deletedAt: null },
+      set: {
+        targetActorId,
+        followActivityId,
+        status: "pending",
+        // See upsertRelay: retries must not restamp an unchanged status.
+        statusChangedAt: sql`CASE WHEN ${schema.following.status} = 'pending'
+          AND ${schema.following.statusChangedAt} IS NOT NULL
+          THEN ${schema.following.statusChangedAt} ELSE now() END`,
+        deletedAt: null,
+      },
     });
 }
 
@@ -778,8 +817,32 @@ export async function updateFollowingStatus(
 ): Promise<void> {
   await db
     .update(schema.following)
-    .set({ status })
+    .set({ status, statusChangedAt: new Date() })
     .where(eq(schema.following.followActivityId, followActivityId));
+}
+
+/** Records follows the target already lists as followers. See `findLostAccepts`. */
+export async function markFollowingAccepted(
+  db: Db,
+  handle: string,
+  botUsernames: string[],
+): Promise<void> {
+  if (botUsernames.length === 0) {
+    return;
+  }
+  await db
+    .update(schema.following)
+    .set({ status: "accepted", statusChangedAt: new Date() })
+    .where(
+      and(
+        eq(schema.following.handle, handle),
+        inArray(schema.following.botUsername, botUsernames),
+        // The caller's pending set is a snapshot; don't clobber a Reject that
+        // landed since.
+        eq(schema.following.status, "pending"),
+        isNull(schema.following.deletedAt),
+      )!,
+    );
 }
 
 export async function getFollowingByActivityId(
