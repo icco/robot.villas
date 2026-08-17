@@ -37,7 +37,7 @@ import {
 } from "@fedify/vocab";
 import escapeHtml from "escape-html";
 import { getRelaySubscriptionBot, type BotConfig, type FeedsConfig } from "./config";
-import { findLostAccepts, isRelayTerminal } from "./subscriptions";
+import { findLostAccepts, isRelayTerminal, RelayFollow } from "./subscriptions";
 import {
   addFollower,
   countEntries,
@@ -509,7 +509,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       // Also check the relays table (relay subscriptions)
       const relayRow = await getRelayByActivityId(db, followUri.href);
       if (relayRow?.actorId) {
-        return new Follow({
+        // RelayFollow, not Follow: the relay re-fetches this URL to verify the
+        // subscription and applies the same full-IRI string check.
+        return new RelayFollow({
           id: followUri,
           actor: ctx.getActorUri(identifier),
           object: PUBLIC_COLLECTION,
@@ -1037,12 +1039,13 @@ export async function subscribeToRelays(
         id: crypto.randomUUID(),
       });
 
-      const follow = new Follow({
+      const follow = new RelayFollow({
         id: followId,
         actor: ctx.getActorUri(designated),
         // ActivityRelay expects object=PUBLIC_COLLECTION (Mastodon-style subscription),
         // not the relay actor's own URL (which triggers the LitePub peer-relay path
         // and gets rejected because our actor URLs don't end in /relay).
+        // RelayFollow serializes it as the full IRI; see its docstring.
         object: PUBLIC_COLLECTION,
       });
 

@@ -1,9 +1,48 @@
 import { describe, it, expect } from "vitest";
+import { Follow, PUBLIC_COLLECTION } from "@fedify/vocab";
 import {
   RELAY_REJECT_RETRY_MS,
   isRelayTerminal,
   findLostAccepts,
+  RelayFollow,
+  AS_PUBLIC,
 } from "../subscriptions";
+
+const FOLLOW_ARGS = {
+  id: new URL("https://robot.villas/users/nyt_homepage/follows/x"),
+  actor: new URL("https://robot.villas/users/nyt_homepage"),
+  object: PUBLIC_COLLECTION,
+};
+
+describe("RelayFollow", () => {
+  it("serializes object as the full Public IRI", async () => {
+    const json = (await new RelayFollow(FOLLOW_ARGS).toJsonLd()) as Record<string, unknown>;
+    expect(json.object).toBe(AS_PUBLIC);
+    expect(json.type).toBe("Follow");
+  });
+
+  it("documents the upstream behaviour it works around", async () => {
+    // Plain Follow compacts to the CURIE, which YUKIMOCHI Activity-Relay
+    // rejects because it string-compares against the full IRI.
+    const json = (await new Follow(FOLLOW_ARGS).toJsonLd()) as Record<string, unknown>;
+    expect(json.object).toBe("as:Public");
+  });
+
+  it("survives clone(), which Fedify uses internally", async () => {
+    const cloned = new RelayFollow(FOLLOW_ARGS).clone({});
+    expect(cloned).toBeInstanceOf(RelayFollow);
+    const json = (await cloned.toJsonLd()) as Record<string, unknown>;
+    expect(json.object).toBe(AS_PUBLIC);
+  });
+
+  it("leaves a non-Public object untouched", async () => {
+    const json = (await new RelayFollow({
+      ...FOLLOW_ARGS,
+      object: new URL("https://tags.pub/user/_followback"),
+    }).toJsonLd()) as Record<string, unknown>;
+    expect(json.object).toBe("https://tags.pub/user/_followback");
+  });
+});
 
 const NOW = new Date("2026-08-16T00:00:00Z");
 const daysAgo = (n: number) => new Date(NOW.getTime() - n * 24 * 60 * 60 * 1000);

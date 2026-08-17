@@ -1,4 +1,33 @@
-/** Escape hatches from terminal subscription state that would otherwise stick forever. */
+/** Relay and follow subscription helpers: retry policy, reconciliation, wire format. */
+
+import { Follow } from "@fedify/vocab";
+
+export const AS_PUBLIC = "https://www.w3.org/ns/activitystreams#Public";
+
+/**
+ * A Follow that serializes `object` as the full Public IRI instead of the
+ * `as:Public` CURIE that JSON-LD compaction produces.
+ *
+ * YUKIMOCHI Activity-Relay — which relay.toot.io and relay.intahnet.co.uk both
+ * run — validates subscriptions with a literal string comparison against the
+ * full IRI, so the compacted form falls through to its "only
+ * https://www.w3.org/ns/activitystreams#Public is allowed to follow" Reject.
+ * Fedify applies the same rewrite to to/cc/bto/bcc/audience as of 2.2.0 but not
+ * to `object`. Rewriting inside toJsonLd keeps the signed bytes and the wire
+ * bytes identical.
+ */
+export class RelayFollow extends Follow {
+  override async toJsonLd(options?: Parameters<Follow["toJsonLd"]>[0]): Promise<unknown> {
+    const json = await super.toJsonLd(options);
+    if (json && typeof json === "object") {
+      const doc = json as Record<string, unknown>;
+      if (doc.object === "as:Public" || doc.object === "Public") {
+        doc.object = AS_PUBLIC;
+      }
+    }
+    return json;
+  }
+}
 
 /** How long a relay Reject is honored before we re-attempt. */
 export const RELAY_REJECT_RETRY_MS = 30 * 24 * 60 * 60 * 1000;
