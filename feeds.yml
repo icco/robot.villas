@@ -1127,6 +1127,11 @@ bots:
     display_name: Military Times
     summary: Independent news about service members at home and deployed around the world.
     profile_photo: https://www.militarytimes.com/pf/resources/img/favicons/mil/apple-touch-icon.png?d=143
+  horn_gg:
+    feed_url: https://horn.gg/feed.xml
+    homepage_url: https://horn.gg
+    display_name: David Horn
+    summary: Writing about AI, technology, games, and culture.
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
