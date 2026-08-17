@@ -14,6 +14,9 @@ import {
   removeFollower,
   getKeypairs,
   saveKeypairs,
+  upsertFollowing,
+  markFollowingAccepted,
+  getAllFollowing,
   type Db,
 } from "../db";
 import * as schema from "../schema";
@@ -29,6 +32,7 @@ async function cleanTestData(db: Db) {
   await db.delete(schema.actorKeypairs).where(inArray(schema.actorKeypairs.botUsername, TEST_BOTS));
   await db.delete(schema.followers).where(inArray(schema.followers.botUsername, TEST_BOTS));
   await db.delete(schema.feedPollStatus).where(inArray(schema.feedPollStatus.botUsername, TEST_BOTS));
+  await db.delete(schema.following).where(inArray(schema.following.botUsername, TEST_BOTS));
 }
 
 describeWithDb("database", () => {
@@ -282,6 +286,56 @@ describeWithDb("database", () => {
       const kps = await getKeypairs(db, "legacybot");
       expect(kps).toHaveLength(1);
       expect(kps![0].publicKey).toMatchObject({ kty: "RSA", n: "legacy" });
+    });
+  });
+
+  describe("following", () => {
+    const HANDLE = "_followback@example.test";
+
+    async function seedPending(bots: string[]) {
+      for (const botUsername of bots) {
+        await upsertFollowing(db, botUsername, HANDLE, "https://example.test/user/_followback", `https://robot.test/users/${botUsername}/follows/1`);
+      }
+    }
+
+    it("markFollowingAccepted flips only the named bots", async () => {
+      await seedPending(["bot_a", "bot_b"]);
+
+      await markFollowingAccepted(db, HANDLE, ["bot_a"]);
+
+      const rows = await getAllFollowing(db);
+      const byBot = new Map(rows.filter((r) => r.handle === HANDLE).map((r) => [r.botUsername, r.status]));
+      expect(byBot.get("bot_a")).toBe("accepted");
+      expect(byBot.get("bot_b")).toBe("pending");
+    });
+
+    it("markFollowingAccepted records when the status changed", async () => {
+      await seedPending(["bot_a"]);
+      await markFollowingAccepted(db, HANDLE, ["bot_a"]);
+
+      const [row] = await db
+        .select({ statusChangedAt: schema.following.statusChangedAt })
+        .from(schema.following)
+        .where(inArray(schema.following.botUsername, ["bot_a"]));
+      expect(row.statusChangedAt).toBeInstanceOf(Date);
+    });
+
+    it("markFollowingAccepted is a no-op for an empty bot list", async () => {
+      await seedPending(["bot_a"]);
+      await markFollowingAccepted(db, HANDLE, []);
+
+      const rows = await getAllFollowing(db);
+      expect(rows.find((r) => r.botUsername === "bot_a")?.status).toBe("pending");
+    });
+
+    it("markFollowingAccepted does not touch other handles", async () => {
+      await upsertFollowing(db, "bot_a", "someone@example.test", "https://example.test/user/someone", "https://robot.test/f/2");
+      await seedPending(["bot_a"]);
+
+      await markFollowingAccepted(db, HANDLE, ["bot_a"]);
+
+      const rows = await getAllFollowing(db);
+      expect(rows.find((r) => r.handle === "someone@example.test")?.status).toBe("pending");
     });
   });
 });

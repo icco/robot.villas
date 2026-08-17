@@ -13,16 +13,19 @@ import { getLogger } from "@logtape/logtape";
 import { Temporal as TemporalPolyfill } from "@js-temporal/polyfill";
 import {
   Accept,
+  type Actor,
   Add,
   Announce,
   Application,
   Create,
   Delete,
+  type DocumentLoader,
   EmojiReact,
   Endpoints,
   Follow,
   Hashtag,
   Image,
+  isActor,
   Like,
   Note,
   PropertyValue,
@@ -34,6 +37,7 @@ import {
 } from "@fedify/vocab";
 import escapeHtml from "escape-html";
 import { getRelaySubscriptionBot, type BotConfig, type FeedsConfig } from "./config";
+import { findLostAccepts, isRelayTerminal } from "./subscriptions";
 import {
   addFollower,
   countEntries,
@@ -55,6 +59,7 @@ import {
   getRelayByActivityId,
   getKeypairs,
   incrementBoostCount,
+  markFollowingAccepted,
   incrementLikeCount,
   pruneRedundantRelaySubscriptions,
   removeAllEntries,
@@ -726,6 +731,50 @@ export async function sendProfileUpdates(
   }
 }
 
+/** Cap on follower entries read per target; some collections are enormous. */
+const FOLLOWER_SCAN_LIMIT = 20_000;
+
+/**
+ * Collects the actor IDs listed in a target's followers collection.
+ *
+ * Best-effort: an actor that hides its followers, or a fetch that fails, yields
+ * an empty (or partial) set. Callers must read that as "unknown", never as "not
+ * a follower" — a missing ID only ever means we fall back to re-sending the
+ * Follow, which is the safe direction.
+ */
+async function fetchFollowerActorIds(
+  ctx: Context<void>,
+  actor: Actor,
+  documentLoader: DocumentLoader,
+  handle: string,
+): Promise<Set<string>> {
+  const ids = new Set<string>();
+  try {
+    const collection = await actor.getFollowers({ documentLoader, suppressError: true });
+    if (!collection) {
+      logger.debug("No readable followers collection for {handle}", { handle });
+      return ids;
+    }
+    for await (const item of ctx.traverseCollection(collection, { documentLoader })) {
+      const id = item.id?.href;
+      if (id) {
+        ids.add(id);
+      }
+      if (ids.size >= FOLLOWER_SCAN_LIMIT) {
+        logger.warn("Stopped reading {handle} followers at the {limit} entry cap", {
+          handle,
+          limit: FOLLOWER_SCAN_LIMIT,
+        });
+        break;
+      }
+    }
+  } catch (error) {
+    // Keep whatever was collected; a partial set can only produce true matches.
+    logger.warn("Could not read followers of {handle}: {error}", { handle, error });
+  }
+  return ids;
+}
+
 /**
  * Sends a Follow activity from every bot to each account listed in
  * config.follows. Skips accounts that a bot has already followed.
@@ -760,6 +809,7 @@ export async function followAccounts(
     const handle = rawHandle.replace(/^@/, "");
 
     let targetActor: Recipient;
+    let resolvedObject: unknown;
     try {
       const resolved = await ctx.lookupObject(`acct:${handle}`, {
         documentLoader,
@@ -771,6 +821,7 @@ export async function followAccounts(
         );
         continue;
       }
+      resolvedObject = resolved;
       targetActor = resolved as Recipient;
       if (!targetActor.id || !targetActor.inboxId) {
         logger.error("Actor for {handle} has no id or inbox", { handle });
@@ -779,6 +830,34 @@ export async function followAccounts(
     } catch (error) {
       logger.error("Failed to look up {handle}: {error}", { handle, error });
       continue;
+    }
+
+    // Reconcile before re-sending: a Follow whose Accept was delivered but
+    // never matched a row stays pending forever, because the target will not
+    // re-Accept a duplicate Follow. If the target already lists the bot as a
+    // follower, record that instead of sending another Follow into the void.
+    const pendingForHandle = existing.filter(
+      (f) => f.handle === handle && f.status === "pending",
+    );
+    if (pendingForHandle.length > 0 && isActor(resolvedObject)) {
+      const followerIds = await fetchFollowerActorIds(ctx, resolvedObject, documentLoader, handle);
+      const reconciled = findLostAccepts(
+        pendingForHandle.map((f) => ({
+          botUsername: f.botUsername,
+          actorId: ctx.getActorUri(f.botUsername).href,
+        })),
+        followerIds,
+      );
+      if (reconciled.length > 0) {
+        await markFollowingAccepted(db, handle, reconciled);
+        for (const bot of reconciled) {
+          existingSet.add(`${bot}:${handle}`);
+        }
+        logger.info(
+          "Reconciled {count} lost Accept(s) for {handle}: {bots} already follow it",
+          { count: reconciled.length, handle, bots: reconciled.join(", ") },
+        );
+      }
     }
 
     for (const botUsername of botUsernames) {
@@ -891,13 +970,17 @@ export async function subscribeToRelays(
 
   const hasAcceptedForInstance = (url: string) =>
     allRelays.some((r) => r.url === url && r.status === "accepted");
-  // Terminal (accepted or rejected) for the designated bot + URL — pending retries.
+  // Terminal for the designated bot + URL. `accepted` is permanent; a Reject
+  // expires after RELAY_REJECT_RETRY_MS so a relay that denied us under a
+  // subscription format we have since fixed gets asked again rather than
+  // staying frozen forever. Pending always retries.
+  const now = new Date();
   const designatedTerminalUrls = new Set(
     allRelays
       .filter(
         (r) =>
           r.botUsername === designated &&
-          (r.status === "accepted" || r.status === "rejected"),
+          isRelayTerminal(r.status, r.statusChangedAt, now),
       )
       .map((r) => r.url),
   );

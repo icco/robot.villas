@@ -575,6 +575,7 @@ export interface RelayRow {
   inboxUrl: string | null;
   actorId: string | null;
   status: "pending" | "accepted" | "rejected";
+  statusChangedAt: Date | null;
   followActivityId: string | null;
 }
 
@@ -587,6 +588,7 @@ export async function getAcceptedRelays(db: Db): Promise<RelayRow[]> {
       inboxUrl: schema.relays.inboxUrl,
       actorId: schema.relays.actorId,
       status: schema.relays.status,
+      statusChangedAt: schema.relays.statusChangedAt,
       followActivityId: schema.relays.followActivityId,
     })
     .from(schema.relays)
@@ -618,6 +620,7 @@ export async function getAllRelays(db: Db, botUsername?: string): Promise<RelayR
       inboxUrl: schema.relays.inboxUrl,
       actorId: schema.relays.actorId,
       status: schema.relays.status,
+      statusChangedAt: schema.relays.statusChangedAt,
       followActivityId: schema.relays.followActivityId,
     })
     .from(schema.relays)
@@ -634,10 +637,25 @@ export async function upsertRelay(
 ): Promise<void> {
   await db
     .insert(schema.relays)
-    .values({ botUsername, url, inboxUrl, actorId, followActivityId, status: "pending" })
+    .values({
+      botUsername,
+      url,
+      inboxUrl,
+      actorId,
+      followActivityId,
+      status: "pending",
+      statusChangedAt: new Date(),
+    })
     .onConflictDoUpdate({
       target: [schema.relays.botUsername, schema.relays.url],
-      set: { inboxUrl, actorId, followActivityId, status: "pending" as const, deletedAt: null },
+      set: {
+        inboxUrl,
+        actorId,
+        followActivityId,
+        status: "pending" as const,
+        statusChangedAt: new Date(),
+        deletedAt: null,
+      },
     });
 }
 
@@ -650,6 +668,7 @@ export async function getRelayByActivityId(db: Db, followActivityId: string): Pr
       inboxUrl: schema.relays.inboxUrl,
       actorId: schema.relays.actorId,
       status: schema.relays.status,
+      statusChangedAt: schema.relays.statusChangedAt,
       followActivityId: schema.relays.followActivityId,
     })
     .from(schema.relays)
@@ -665,7 +684,7 @@ export async function updateRelayStatus(
 ): Promise<void> {
   await db
     .update(schema.relays)
-    .set({ status })
+    .set({ status, statusChangedAt: new Date() })
     .where(eq(schema.relays.followActivityId, followActivityId));
 }
 
@@ -778,8 +797,34 @@ export async function updateFollowingStatus(
 ): Promise<void> {
   await db
     .update(schema.following)
-    .set({ status })
+    .set({ status, statusChangedAt: new Date() })
     .where(eq(schema.following.followActivityId, followActivityId));
+}
+
+/**
+ * Marks follows accepted for a set of bots that the target already lists as
+ * followers — an `Accept` that was delivered but never matched a row. See
+ * `findLostAccepts`; the target will not re-Accept a duplicate Follow, so
+ * without this the rows stay pending forever.
+ */
+export async function markFollowingAccepted(
+  db: Db,
+  handle: string,
+  botUsernames: string[],
+): Promise<void> {
+  if (botUsernames.length === 0) {
+    return;
+  }
+  await db
+    .update(schema.following)
+    .set({ status: "accepted", statusChangedAt: new Date() })
+    .where(
+      and(
+        eq(schema.following.handle, handle),
+        inArray(schema.following.botUsername, botUsernames),
+        isNull(schema.following.deletedAt),
+      )!,
+    );
 }
 
 export async function getFollowingByActivityId(
