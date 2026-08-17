@@ -58,6 +58,34 @@ export function isRelayTerminal(
   return now.getTime() - statusChangedAt.getTime() < retryAfterMs;
 }
 
+export interface RelaySubscriptionState {
+  status: RelayStatus | "none";
+  /** The bot whose row holds the subscription, for display. */
+  botUsername: string | null;
+  statusChangedAt: Date | null;
+}
+
+/**
+ * Collapses a relay's rows into one instance-level state. Relays key
+ * subscriptions by domain, so one accepted row subscribes every bot — per-bot
+ * counts are our bookkeeping, not coverage.
+ */
+export function summarizeRelaySubscription(
+  rows: ReadonlyArray<{ botUsername: string; status: RelayStatus; statusChangedAt: Date | null }>,
+): RelaySubscriptionState {
+  // Most recent wins, dated over undated — row order from the DB is arbitrary.
+  const changedAt = (r: { statusChangedAt: Date | null }) => r.statusChangedAt?.getTime() ?? -Infinity;
+  for (const status of ["accepted", "pending", "rejected"] as const) {
+    const matching = rows.filter((r) => r.status === status);
+    if (matching.length === 0) {
+      continue;
+    }
+    const winner = matching.reduce((best, r) => (changedAt(r) > changedAt(best) ? r : best));
+    return { status, botUsername: winner.botUsername, statusChangedAt: winner.statusChangedAt };
+  }
+  return { status: "none", botUsername: null, statusChangedAt: null };
+}
+
 /** Instances vary on trailing slashes. */
 function normalizeActorId(id: string): string {
   return id.endsWith("/") ? id.slice(0, -1) : id;

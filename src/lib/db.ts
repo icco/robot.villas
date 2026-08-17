@@ -5,6 +5,7 @@ import type postgres from "postgres";
 import type { FeedEntry } from "./feed-entry";
 import { MAX_TAGS } from "./hashtags";
 import * as schema from "./schema";
+import { summarizeRelaySubscription, type RelaySubscriptionState } from "./subscriptions";
 
 export type Db = ReturnType<typeof createDb>;
 
@@ -701,31 +702,23 @@ export async function removeRelay(db: Db, botUsername: string, url: string): Pro
 
 // --- Status summary functions ---
 
-export interface RelayStatusSummary {
-  url: string;
-  pending: number;
-  accepted: number;
-  rejected: number;
-}
+export type RelayStatusSummary = RelaySubscriptionState & { url: string };
 
 /**
- * Returns a per-relay-URL summary of how many bots are in each subscription status.
+ * Returns one instance-level subscription state per relay URL. A relay keys
+ * subscriptions by domain, so this is a single state, not a per-bot tally.
  */
 export async function getRelayStatusSummary(db: Db): Promise<RelayStatusSummary[]> {
-  const rows = await getAllRelays(db);
-  const map = new Map<string, RelayStatusSummary>();
-  for (const row of rows) {
-    const existing = map.get(row.url) ?? { url: row.url, pending: 0, accepted: 0, rejected: 0 };
-    if (row.status === "accepted") {
-      existing.accepted++;
-    } else if (row.status === "rejected") {
-      existing.rejected++;
+  const byUrl = new Map<string, RelayRow[]>();
+  for (const row of await getAllRelays(db)) {
+    const rows = byUrl.get(row.url);
+    if (rows === undefined) {
+      byUrl.set(row.url, [row]);
     } else {
-      existing.pending++;
+      rows.push(row);
     }
-    map.set(row.url, existing);
   }
-  return [...map.values()];
+  return [...byUrl].map(([url, rows]) => ({ url, ...summarizeRelaySubscription(rows) }));
 }
 
 export interface FollowingStatusSummary {

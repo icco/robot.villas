@@ -51,6 +51,10 @@ function StatusBadge({ status }: { status: "accepted" | "pending" | "rejected" |
   );
 }
 
+function formatDate(d: Date): string {
+  return d.toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
+}
+
 /** Renders a status badge + count, or a "none" badge when count is 0. */
 function StatusCell({ count, type }: { count: number; type: "accepted" | "pending" | "rejected" }) {
   if (count > 0) {
@@ -91,6 +95,10 @@ export default async function StatusPage() {
       {/* Relay Subscriptions */}
       <section className="mb-10">
         <h2 className="text-xl font-display font-bold mb-3">Relay Subscriptions</h2>
+        <p className="text-base-content/50 text-sm mb-3">
+          Relays subscribe a whole instance, not individual accounts, so one accepted
+          subscription relays posts for all {botCount} bots.
+        </p>
         {configuredRelays.length === 0 ? (
           <p className="text-base-content/50 text-sm">No relays configured.</p>
         ) : (
@@ -99,28 +107,25 @@ export default async function StatusPage() {
               <thead>
                 <tr>
                   <th>Relay URL</th>
-                  <th className="text-right">Bots / Total</th>
-                  <th className="text-right">Accepted</th>
-                  <th className="text-right">Pending</th>
-                  <th className="text-right">Rejected</th>
+                  <th>Status</th>
+                  <th>Subscribed as</th>
+                  <th className="text-right">Since</th>
                 </tr>
               </thead>
               <tbody>
                 {configuredRelays.map((url) => {
                   const s = relayMap.get(url);
-                  const total = s ? s.accepted + s.pending + s.rejected : 0;
-                  const allAccepted = s && s.accepted === botCount;
+                  const status = s?.status ?? "none";
                   return (
-                    <tr key={url} className={allAccepted ? "text-success" : ""}>
+                    <tr key={url} className={status === "accepted" ? "text-success" : ""}>
                       {/* min-w: the scroller otherwise squeezes this to a few
                           characters per line on phones. */}
                       <td className="font-mono text-xs break-all min-w-48">{url}</td>
-                      <td className="text-right">
-                        <span className={total < botCount ? "text-warning font-semibold" : ""}>{total} / {botCount}</span>
+                      <td><StatusBadge status={status} /></td>
+                      <td className="font-mono text-xs">{s?.botUsername ?? "—"}</td>
+                      <td className="text-right text-xs text-base-content/60">
+                        {s?.statusChangedAt ? formatDate(s.statusChangedAt) : "—"}
                       </td>
-                      <td className="text-right"><StatusCell count={s?.accepted ?? 0} type="accepted" /></td>
-                      <td className="text-right"><StatusCell count={s?.pending ?? 0} type="pending" /></td>
-                      <td className="text-right"><StatusCell count={s?.rejected ?? 0} type="rejected" /></td>
                     </tr>
                   );
                 })}
