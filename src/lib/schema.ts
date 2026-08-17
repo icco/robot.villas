@@ -57,7 +57,7 @@ export const following = pgTable(
     targetActorId: text("target_actor_id"),
     followActivityId: text("follow_activity_id"),
     status: text().notNull().default("pending"),
-    /** When `status` last changed. Null for rows written before this column. */
+    /** When `status` last changed; null for pre-existing rows. */
     statusChangedAt: timestamp("status_changed_at", { withTimezone: true, mode: "date" }),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
     deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
@@ -80,10 +80,7 @@ export const relays = pgTable(
     inboxUrl: text("inbox_url"),
     actorId: text("actor_id"),
     status: relayStatusEnum().notNull().default("pending"),
-    /**
-     * When `status` last changed. Drives the Reject cooldown in
-     * `isRelayTerminal`; null for rows written before this column existed.
-     */
+    /** When `status` last changed; null for pre-existing rows. Drives the Reject cooldown. */
     statusChangedAt: timestamp("status_changed_at", { withTimezone: true, mode: "date" }),
     followActivityId: text("follow_activity_id"),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),

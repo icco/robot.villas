@@ -814,12 +814,7 @@ export async function updateFollowingStatus(
     .where(eq(schema.following.followActivityId, followActivityId));
 }
 
-/**
- * Marks follows accepted for a set of bots that the target already lists as
- * followers — an `Accept` that was delivered but never matched a row. See
- * `findLostAccepts`; the target will not re-Accept a duplicate Follow, so
- * without this the rows stay pending forever.
- */
+/** Records follows the target already lists as followers. See `findLostAccepts`. */
 export async function markFollowingAccepted(
   db: Db,
   handle: string,

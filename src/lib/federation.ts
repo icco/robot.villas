@@ -736,17 +736,15 @@ const FOLLOWER_SCAN_LIMIT = 20_000;
 const FOLLOWER_PAGE_LIMIT = 200;
 
 /**
- * Collects the actor IDs listed in a target's followers collection.
+ * Actor IDs in a target's followers collection.
  *
- * Walks pages reading `itemIds` rather than using `traverseCollection`, which
- * dereferences every entry — that costs one HTTP request per follower and
- * aborts the whole traversal when any one of them 404s (tags.pub still lists
- * bots we have since removed). We only need the IDs.
+ * Pages over `itemIds` rather than `traverseCollection`, which dereferences
+ * every entry — one request per follower, and it throws if any 404s (tags.pub
+ * still lists bots we removed).
  *
- * Best-effort: an actor that hides its followers, or a fetch that fails, yields
- * an empty or partial set. Callers must read that as "unknown", never as "not a
- * follower" — a missing ID only ever means we fall back to re-sending the
- * Follow, which is the safe direction.
+ * Best-effort: hidden followers or a failed fetch yield an empty or partial
+ * set. Read that as "unknown", never "not a follower" — a missing ID only means
+ * we fall back to re-sending, which is the safe direction.
  */
 async function fetchFollowerActorIds(
   actor: Actor,
@@ -845,10 +843,9 @@ export async function followAccounts(
       continue;
     }
 
-    // Reconcile before re-sending: a Follow whose Accept was delivered but
-    // never matched a row stays pending forever, because the target will not
-    // re-Accept a duplicate Follow. If the target already lists the bot as a
-    // follower, record that instead of sending another Follow into the void.
+    // A Follow whose Accept was delivered but never matched a row stays pending
+    // forever, since the target won't re-Accept a duplicate. Record what the
+    // target already lists instead of sending another Follow into the void.
     const pendingForHandle = existing.filter(
       (f) => f.handle === handle && f.status === "pending",
     );
@@ -983,10 +980,8 @@ export async function subscribeToRelays(
 
   const hasAcceptedForInstance = (url: string) =>
     allRelays.some((r) => r.url === url && r.status === "accepted");
-  // Terminal for the designated bot + URL. `accepted` is permanent; a Reject
-  // expires after RELAY_REJECT_RETRY_MS so a relay that denied us under a
-  // subscription format we have since fixed gets asked again rather than
-  // staying frozen forever. Pending always retries.
+  // Terminal for the designated bot + URL. Rejects expire (see isRelayTerminal)
+  // so a relay isn't frozen by a denial from a since-fixed format.
   const now = new Date();
   const designatedTerminalUrls = new Set(
     allRelays

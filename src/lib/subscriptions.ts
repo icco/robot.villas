@@ -1,25 +1,15 @@
-/**
- * Decisions about when a stored subscription row may be re-attempted.
- *
- * Both relay subscriptions and account follows record a terminal status that
- * stops us re-sending a Follow forever. That is right for `accepted` and wrong
- * for everything else: a Reject from four months ago, or an Accept that was
- * delivered but never matched a row, leaves the subscription frozen with no way
- * back. These helpers are the two escape hatches.
- */
+/** Escape hatches from terminal subscription state that would otherwise stick forever. */
 
-/** How long a relay Reject is honored before we re-attempt the subscription. */
+/** How long a relay Reject is honored before we re-attempt. */
 export const RELAY_REJECT_RETRY_MS = 30 * 24 * 60 * 60 * 1000;
 
 export type RelayStatus = "pending" | "accepted" | "rejected";
 
 /**
- * Whether a relay row should still block a new Follow.
- *
- * `accepted` is permanent. `rejected` expires, so a relay that denied us under
- * a subscription format we have since fixed gets asked again instead of staying
- * frozen. A rejection with no recorded time predates `status_changed_at`; ask
- * once, and the reply stamps the column so the cooldown applies from then on.
+ * Whether a relay row should still block a new Follow. `accepted` is permanent;
+ * `rejected` expires so a relay we were denied by under a since-fixed
+ * subscription format gets re-asked. A null time predates the column — ask once,
+ * and the reply stamps it.
  */
 export function isRelayTerminal(
   status: RelayStatus,
@@ -39,18 +29,15 @@ export function isRelayTerminal(
   return now.getTime() - statusChangedAt.getTime() < retryAfterMs;
 }
 
-/** Compares actor URIs ignoring a trailing slash, which instances vary on. */
+/** Instances vary on trailing slashes. */
 function normalizeActorId(id: string): string {
   return id.endsWith("/") ? id.slice(0, -1) : id;
 }
 
 /**
- * Given our still-pending follows of one target and that target's followers
- * collection, returns the bots the target already considers followers.
- *
- * These are follows whose `Accept` was delivered but never recorded — the
- * target will not re-Accept a duplicate Follow, so retrying can never clear
- * them. An empty `followerIds` (an actor that hides its followers) yields
+ * Pending follows the target already lists as followers — an Accept that was
+ * delivered but never recorded. The target won't re-Accept a duplicate Follow,
+ * so retrying can't clear these. Empty `followerIds` (hidden followers) yields
  * nothing, so the caller falls back to re-sending.
  */
 export function findLostAccepts(
