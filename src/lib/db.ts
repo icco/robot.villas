@@ -653,7 +653,11 @@ export async function upsertRelay(
         actorId,
         followActivityId,
         status: "pending" as const,
-        statusChangedAt: new Date(),
+        // Only a real transition restamps, so a permanently-pending relay
+        // doesn't look freshly changed on every boot.
+        statusChangedAt: sql`CASE WHEN ${schema.relays.status} = 'pending'
+          AND ${schema.relays.statusChangedAt} IS NOT NULL
+          THEN ${schema.relays.statusChangedAt} ELSE now() END`,
         deletedAt: null,
       },
     });
@@ -797,7 +801,10 @@ export async function upsertFollowing(
         targetActorId,
         followActivityId,
         status: "pending",
-        statusChangedAt: new Date(),
+        // See upsertRelay: retries must not restamp an unchanged status.
+        statusChangedAt: sql`CASE WHEN ${schema.following.status} = 'pending'
+          AND ${schema.following.statusChangedAt} IS NOT NULL
+          THEN ${schema.following.statusChangedAt} ELSE now() END`,
         deletedAt: null,
       },
     });
@@ -830,6 +837,9 @@ export async function markFollowingAccepted(
       and(
         eq(schema.following.handle, handle),
         inArray(schema.following.botUsername, botUsernames),
+        // The caller's pending set is a snapshot; don't clobber a Reject that
+        // landed since.
+        eq(schema.following.status, "pending"),
         isNull(schema.following.deletedAt),
       )!,
     );

@@ -17,6 +17,10 @@ import {
   upsertFollowing,
   markFollowingAccepted,
   getAllFollowing,
+  updateFollowingStatus,
+  upsertRelay,
+  updateRelayStatus,
+  getAllRelays,
   type Db,
 } from "../db";
 import * as schema from "../schema";
@@ -33,6 +37,7 @@ async function cleanTestData(db: Db) {
   await db.delete(schema.followers).where(inArray(schema.followers.botUsername, TEST_BOTS));
   await db.delete(schema.feedPollStatus).where(inArray(schema.feedPollStatus.botUsername, TEST_BOTS));
   await db.delete(schema.following).where(inArray(schema.following.botUsername, TEST_BOTS));
+  await db.delete(schema.relays).where(inArray(schema.relays.botUsername, TEST_BOTS));
 }
 
 describeWithDb("database", () => {
@@ -328,6 +333,17 @@ describeWithDb("database", () => {
       expect(rows.find((r) => r.botUsername === "bot_a")?.status).toBe("pending");
     });
 
+    it("markFollowingAccepted leaves an explicit Reject alone", async () => {
+      // The pending set is a snapshot; a Reject can land before we write.
+      await seedPending(["bot_a"]);
+      await updateFollowingStatus(db, "https://robot.test/users/bot_a/follows/1", "rejected");
+
+      await markFollowingAccepted(db, HANDLE, ["bot_a"]);
+
+      const rows = await getAllFollowing(db);
+      expect(rows.find((r) => r.botUsername === "bot_a")?.status).toBe("rejected");
+    });
+
     it("markFollowingAccepted does not touch other handles", async () => {
       await upsertFollowing(db, "bot_a", "someone@example.test", "https://example.test/user/someone", "https://robot.test/f/2");
       await seedPending(["bot_a"]);
@@ -336,6 +352,52 @@ describeWithDb("database", () => {
 
       const rows = await getAllFollowing(db);
       expect(rows.find((r) => r.handle === "someone@example.test")?.status).toBe("pending");
+    });
+  });
+
+  describe("relays", () => {
+    const URL = "https://relay.example.test/actor";
+    const seed = () =>
+      upsertRelay(db, "bot_a", URL, `${URL.replace("/actor", "/inbox")}`, URL, "https://robot.test/f/relay-1");
+
+    const relayRow = async () => (await getAllRelays(db, "bot_a")).find((r) => r.url === URL);
+
+    it("upsertRelay does not restamp a row that is already pending", async () => {
+      // Otherwise a permanently-pending relay looks freshly changed on every
+      // boot, hiding exactly the stuck state the column exists to surface.
+      await seed();
+      const first = (await relayRow())!.statusChangedAt;
+      expect(first).toBeInstanceOf(Date);
+
+      await seed();
+      expect((await relayRow())!.statusChangedAt?.getTime()).toBe(first!.getTime());
+    });
+
+    it("upsertRelay restamps when reviving a rejected row", async () => {
+      await seed();
+      await updateRelayStatus(db, "https://robot.test/f/relay-1", "rejected");
+      const rejectedAt = (await relayRow())!.statusChangedAt!;
+      await db
+        .update(schema.relays)
+        .set({ statusChangedAt: new Date(rejectedAt.getTime() - 60_000) })
+        .where(inArray(schema.relays.botUsername, ["bot_a"]));
+
+      await seed();
+
+      const row = (await relayRow())!;
+      expect(row.status).toBe("pending");
+      expect(row.statusChangedAt!.getTime()).toBeGreaterThan(rejectedAt.getTime() - 60_000);
+    });
+
+    it("upsertRelay backfills a null timestamp on a pending row", async () => {
+      await seed();
+      await db
+        .update(schema.relays)
+        .set({ statusChangedAt: null })
+        .where(inArray(schema.relays.botUsername, ["bot_a"]));
+
+      await seed();
+      expect((await relayRow())!.statusChangedAt).toBeInstanceOf(Date);
     });
   });
 });
