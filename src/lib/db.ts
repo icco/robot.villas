@@ -419,6 +419,11 @@ export async function removeKeypairs(db: Db, botUsername: string): Promise<void>
     .where(and(eq(schema.actorKeypairs.botUsername, botUsername), isNull(schema.actorKeypairs.deletedAt)));
 }
 
+/** Hard delete: feed_poll_status has no deleted_at, one row per bot. */
+export async function removeFeedPollStatus(db: Db, botUsername: string): Promise<void> {
+  await db.delete(schema.feedPollStatus).where(eq(schema.feedPollStatus.botUsername, botUsername));
+}
+
 export async function removeAllFollowers(db: Db, botUsername: string): Promise<void> {
   await db
     .update(schema.followers)
