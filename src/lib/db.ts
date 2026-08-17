@@ -783,10 +783,23 @@ export async function upsertFollowing(
 ): Promise<void> {
   await db
     .insert(schema.following)
-    .values({ botUsername, handle, targetActorId, followActivityId, status: "pending" })
+    .values({
+      botUsername,
+      handle,
+      targetActorId,
+      followActivityId,
+      status: "pending",
+      statusChangedAt: new Date(),
+    })
     .onConflictDoUpdate({
       target: [schema.following.botUsername, schema.following.handle],
-      set: { targetActorId, followActivityId, status: "pending", deletedAt: null },
+      set: {
+        targetActorId,
+        followActivityId,
+        status: "pending",
+        statusChangedAt: new Date(),
+        deletedAt: null,
+      },
     });
 }
 

@@ -731,42 +731,55 @@ export async function sendProfileUpdates(
   }
 }
 
-/** Cap on follower entries read per target; some collections are enormous. */
+/** Caps on how much of a followers collection we read; some are enormous. */
 const FOLLOWER_SCAN_LIMIT = 20_000;
+const FOLLOWER_PAGE_LIMIT = 200;
 
 /**
  * Collects the actor IDs listed in a target's followers collection.
  *
+ * Walks pages reading `itemIds` rather than using `traverseCollection`, which
+ * dereferences every entry — that costs one HTTP request per follower and
+ * aborts the whole traversal when any one of them 404s (tags.pub still lists
+ * bots we have since removed). We only need the IDs.
+ *
  * Best-effort: an actor that hides its followers, or a fetch that fails, yields
- * an empty (or partial) set. Callers must read that as "unknown", never as "not
- * a follower" — a missing ID only ever means we fall back to re-sending the
+ * an empty or partial set. Callers must read that as "unknown", never as "not a
+ * follower" — a missing ID only ever means we fall back to re-sending the
  * Follow, which is the safe direction.
  */
 async function fetchFollowerActorIds(
-  ctx: Context<void>,
   actor: Actor,
   documentLoader: DocumentLoader,
   handle: string,
 ): Promise<Set<string>> {
   const ids = new Set<string>();
+  const opts = { documentLoader, suppressError: true } as const;
   try {
-    const collection = await actor.getFollowers({ documentLoader, suppressError: true });
+    const collection = await actor.getFollowers(opts);
     if (!collection) {
       logger.debug("No readable followers collection for {handle}", { handle });
       return ids;
     }
-    for await (const item of ctx.traverseCollection(collection, { documentLoader })) {
-      const id = item.id?.href;
-      if (id) {
-        ids.add(id);
+    // Small collections inline their items instead of paginating.
+    for (const id of collection.itemIds) {
+      ids.add(id.href);
+    }
+    let page = await collection.getFirst(opts);
+    let pageCount = 0;
+    while (page !== null) {
+      for (const id of page.itemIds) {
+        ids.add(id.href);
       }
-      if (ids.size >= FOLLOWER_SCAN_LIMIT) {
-        logger.warn("Stopped reading {handle} followers at the {limit} entry cap", {
+      if (ids.size >= FOLLOWER_SCAN_LIMIT || ++pageCount >= FOLLOWER_PAGE_LIMIT) {
+        logger.warn("Stopped reading {handle} followers at {ids} ids / {pages} pages", {
           handle,
-          limit: FOLLOWER_SCAN_LIMIT,
+          ids: ids.size,
+          pages: pageCount,
         });
         break;
       }
+      page = await page.getNext(opts);
     }
   } catch (error) {
     // Keep whatever was collected; a partial set can only produce true matches.
@@ -840,7 +853,7 @@ export async function followAccounts(
       (f) => f.handle === handle && f.status === "pending",
     );
     if (pendingForHandle.length > 0 && isActor(resolvedObject)) {
-      const followerIds = await fetchFollowerActorIds(ctx, resolvedObject, documentLoader, handle);
+      const followerIds = await fetchFollowerActorIds(resolvedObject, documentLoader, handle);
       const reconciled = findLostAccepts(
         pendingForHandle.map((f) => ({
           botUsername: f.botUsername,
