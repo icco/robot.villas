@@ -10,6 +10,9 @@ updates:
       fedify:
         patterns:
           - '@fedify/*'
+      react:
+        patterns:
+          - '*react*'
   - package-ecosystem: docker
     directory: /
     open-pull-requests-limit: 10
