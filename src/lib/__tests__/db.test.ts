@@ -14,6 +14,9 @@ import {
   removeFollower,
   getKeypairs,
   saveKeypairs,
+  upsertFeedPollStatus,
+  removeFeedPollStatus,
+  getFeedPollStatusMap,
   upsertFollowing,
   markFollowingAccepted,
   getAllFollowing,
@@ -291,6 +294,30 @@ describeWithDb("database", () => {
       const kps = await getKeypairs(db, "legacybot");
       expect(kps).toHaveLength(1);
       expect(kps![0].publicKey).toMatchObject({ kty: "RSA", n: "legacy" });
+    });
+  });
+
+  describe("feed_poll_status cleanup", () => {
+    it("removeFeedPollStatus deletes only that bot's row", async () => {
+      // Removing a bot left its poll status behind — 18 orphans accumulated
+      // in prod because the deleted-bot cleanup never touched this table.
+      for (const botUsername of ["bot_a", "bot_b"]) {
+        await upsertFeedPollStatus(db, {
+          botUsername,
+          lastCheckedAt: new Date(),
+          lastHttpStatus: 200,
+          lastError: null,
+          etag: null,
+          lastModified: null,
+          nextPollAt: null,
+        });
+      }
+
+      await removeFeedPollStatus(db, "bot_a");
+
+      const remaining = await getFeedPollStatusMap(db, ["bot_a", "bot_b"]);
+      expect(remaining.has("bot_a")).toBe(false);
+      expect(remaining.has("bot_b")).toBe(true);
     });
   });
 

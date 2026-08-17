@@ -67,6 +67,7 @@ import {
   removeAllFollowing,
   removeFollower,
   removeFollowerFromAll,
+  removeFeedPollStatus,
   removeKeypairs,
   saveKeypairs,
   updateFollowerInboxUrl,
@@ -1157,6 +1158,7 @@ export async function sendDeletedBotActivities(
     await removeAllEntries(db, botUsername);
     await removeAllFollowing(db, botUsername);
     await removeKeypairs(db, botUsername);
+    await removeFeedPollStatus(db, botUsername);
     logger.info("Cleaned up database for deleted bot {identifier}", {
       identifier: botUsername,
     });
