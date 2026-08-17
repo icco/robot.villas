@@ -711,7 +711,12 @@ export type RelayStatusSummary = RelaySubscriptionState & { url: string };
 export async function getRelayStatusSummary(db: Db): Promise<RelayStatusSummary[]> {
   const byUrl = new Map<string, RelayRow[]>();
   for (const row of await getAllRelays(db)) {
-    byUrl.set(row.url, [...(byUrl.get(row.url) ?? []), row]);
+    const rows = byUrl.get(row.url);
+    if (rows === undefined) {
+      byUrl.set(row.url, [row]);
+    } else {
+      rows.push(row);
+    }
   }
   return [...byUrl].map(([url, rows]) => ({ url, ...summarizeRelaySubscription(rows) }));
 }

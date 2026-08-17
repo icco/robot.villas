@@ -118,10 +118,24 @@ describe("summarizeRelaySubscription", () => {
   it("collapses duplicate rows to one state", () => {
     // Legacy rows from the all-bots era are bookkeeping, not extra coverage.
     const rows = Array.from({ length: 57 }, (_, i) => row(`bot${i}`, "accepted"));
+    expect(summarizeRelaySubscription(rows)).toMatchObject({ status: "accepted" });
+  });
+
+  it("picks the most recent row, not the first", () => {
+    const older = new Date("2026-01-01T00:00:00Z");
+    const rows = [row("stale", "accepted", older), row("fresh", "accepted", NOW)];
+    expect(summarizeRelaySubscription(rows)).toMatchObject({ botUsername: "fresh" });
+    // Same answer whatever order the DB hands them back in.
+    expect(summarizeRelaySubscription([...rows].reverse())).toMatchObject({ botUsername: "fresh" });
+  });
+
+  it("prefers a row with a timestamp over one without", () => {
+    const rows = [row("undated", "accepted"), row("dated", "accepted", NOW)];
     expect(summarizeRelaySubscription(rows)).toMatchObject({
-      status: "accepted",
-      botUsername: "bot0",
+      botUsername: "dated",
+      statusChangedAt: NOW,
     });
+    expect(summarizeRelaySubscription([...rows].reverse())).toMatchObject({ botUsername: "dated" });
   });
 
   it("reports rejected when every row is rejected", () => {

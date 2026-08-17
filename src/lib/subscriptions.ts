@@ -66,21 +66,22 @@ export interface RelaySubscriptionState {
 }
 
 /**
- * Collapses a relay's rows into one instance-level state.
- *
- * Relays key subscriptions by domain (YUKIMOCHI stores `relay:subscription:<domain>`
- * and matches on `actorID.Host`), so a single accepted row subscribes every bot
- * on the instance. Per-bot counts describe our own bookkeeping, never coverage —
- * showing "1 / 187" implies 186 are missing when nothing is.
+ * Collapses a relay's rows into one instance-level state. Relays key
+ * subscriptions by domain, so one accepted row subscribes every bot — per-bot
+ * counts are our bookkeeping, not coverage.
  */
 export function summarizeRelaySubscription(
   rows: ReadonlyArray<{ botUsername: string; status: RelayStatus; statusChangedAt: Date | null }>,
 ): RelaySubscriptionState {
+  // Most recent wins, dated over undated — row order from the DB is arbitrary.
+  const changedAt = (r: { statusChangedAt: Date | null }) => r.statusChangedAt?.getTime() ?? -Infinity;
   for (const status of ["accepted", "pending", "rejected"] as const) {
-    const winner = rows.find((r) => r.status === status);
-    if (winner !== undefined) {
-      return { status, botUsername: winner.botUsername, statusChangedAt: winner.statusChangedAt };
+    const matching = rows.filter((r) => r.status === status);
+    if (matching.length === 0) {
+      continue;
     }
+    const winner = matching.reduce((best, r) => (changedAt(r) > changedAt(best) ? r : best));
+    return { status, botUsername: winner.botUsername, statusChangedAt: winner.statusChangedAt };
   }
   return { status: "none", botUsername: null, statusChangedAt: null };
 }
