@@ -11,6 +11,7 @@ import {
   parseFeedXml,
   parseRetryAfterMs,
   toFeedText,
+  unwrapMediaWikiFeedItem,
   type FeedEntry,
 } from "../rss";
 import type { Item } from "rss-parser";
@@ -402,5 +403,112 @@ describe("parseFeedXml with an attributes-only guid", () => {
     expect(typeof entries[0].guid).toBe("string");
     expect(entries[0].guid).toBe("https://example.com/a-post");
     expect(entries[0].title).toBe("A Post");
+  });
+});
+
+describe("unwrapMediaWikiFeedItem", () => {
+  const FEED_ITEM_LINK = "https://en.wikipedia.org/wiki/Special:FeedItem/featured/20260822000000/en";
+  const blurb = (inner: string) =>
+    `<div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr">` +
+    `<span typeof="mw:File"><a href="/wiki/File:Photo.jpg" class="mw-file-description" title="Photo">` +
+    `<img alt="Photo" src="//upload.wikimedia.org/photo.jpg"/></a></span>` +
+    `<p>${inner}</p></div>`;
+
+  it("uses the lead bolded article link when the blurb closes with 'Full article...'", () => {
+    const html = blurb(
+      `The <b><a href="/wiki/European_rabbit" title="European rabbit">European rabbit</a></b> is a` +
+        ` species of rabbit. <i>(<b><a href="/wiki/European_rabbit" title="European rabbit">Full` +
+        ` article...</a></b>)</i>`,
+    );
+    expect(unwrapMediaWikiFeedItem(FEED_ITEM_LINK, html)).toEqual({
+      link: "https://en.wikipedia.org/wiki/European_rabbit",
+      title: "European rabbit",
+    });
+  });
+
+  it("handles the featured-topic blurb, which says 'This article' instead", () => {
+    const html = blurb(
+      `<b><a href="/wiki/SMS_Schwaben" title="SMS Schwaben">SMS Schwaben</a></b> was a battleship.` +
+        ` <i>(<b><a href="/wiki/SMS_Schwaben" title="SMS Schwaben">This article</a></b> is part of a` +
+        ` <a href="/wiki/Wikipedia:Featured_topics" title="Wikipedia:Featured topics">featured` +
+        ` topic</a>.)</i>`,
+    );
+    expect(unwrapMediaWikiFeedItem(FEED_ITEM_LINK, html)?.link).toBe(
+      "https://en.wikipedia.org/wiki/SMS_Schwaben",
+    );
+  });
+
+  it("skips bolded links into non-article namespaces", () => {
+    const html = blurb(
+      `<b><a href="/wiki/Wikipedia:Featured_topics" title="Wikipedia:Featured topics">A topic</a></b>` +
+        ` covers <b><a href="/wiki/Mesklin" title="Mesklin">Mesklin</a></b>.`,
+    );
+    expect(unwrapMediaWikiFeedItem(FEED_ITEM_LINK, html)?.link).toBe(
+      "https://en.wikipedia.org/wiki/Mesklin",
+    );
+  });
+
+  it("resolves against the entry link, so non-English wikis keep their host", () => {
+    const html = blurb(`<b><a href="/wiki/Berlin" title="Berlin">Berlin</a></b> ist eine Stadt.`);
+    expect(
+      unwrapMediaWikiFeedItem(
+        "https://de.wikipedia.org/wiki/Spezial:FeedItem/featured/20260822000000/de".replace(
+          "Spezial:FeedItem",
+          "Special:FeedItem",
+        ),
+        html,
+      )?.link,
+    ).toBe("https://de.wikipedia.org/wiki/Berlin");
+  });
+
+  it("normalizes typography in the article title", () => {
+    const html = blurb(
+      `<b><a href="/wiki/Pat_O%27Keeffe" title="Pat O&#8217;Keeffe">Pat O'Keeffe</a></b> was a boxer.`,
+    );
+    expect(unwrapMediaWikiFeedItem(FEED_ITEM_LINK, html)?.title).toBe("Pat O'Keeffe");
+  });
+
+  it("leaves other MediaWiki feeds alone, whose blurbs bold links that aren't the subject", () => {
+    const html = blurb(`<b><a href="/wiki/Mesklin" title="Mesklin">Mesklin</a></b>`);
+    const onThisDay = "https://en.wikipedia.org/wiki/Special:FeedItem/onthisday/20260822000000/en";
+    expect(unwrapMediaWikiFeedItem(onThisDay, html)).toBeNull();
+  });
+
+  it("leaves non-MediaWiki links alone", () => {
+    const html = blurb(`<b><a href="/wiki/Mesklin" title="Mesklin">Mesklin</a></b>`);
+    expect(unwrapMediaWikiFeedItem("https://example.com/post/1", html)).toBeNull();
+  });
+
+  it("returns null when the blurb has no bolded article link", () => {
+    expect(unwrapMediaWikiFeedItem(FEED_ITEM_LINK, blurb("Just prose, no links."))).toBeNull();
+    expect(unwrapMediaWikiFeedItem(FEED_ITEM_LINK, "")).toBeNull();
+  });
+});
+
+describe("parseFeedXml on a MediaWiki featuredfeed", () => {
+  const WIKI_ATOM = `<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Wikipedia featured articles feed</title>
+  <entry>
+    <id>https://en.wikipedia.org/wiki/Special:FeedItem/featured/20260822000000/en</id>
+    <title>August 22 Wikipedia featured article</title>
+    <link rel="alternate" type="text/html" href="https://en.wikipedia.org/wiki/Special:FeedItem/featured/20260822000000/en"/>
+    <updated>2026-08-22T00:00:00Z</updated>
+    <summary type="html">&lt;p&gt;The &lt;b&gt;&lt;a href="/wiki/Edmontosaurus_mummy_SMF_R_4036" title="Edmontosaurus mummy SMF R 4036"&gt;Edmontosaurus mummy SMF R 4036&lt;/a&gt;&lt;/b&gt; is a dinosaur fossil.&lt;/p&gt;</summary>
+  </entry>
+</feed>`;
+
+  it("publishes the article, not the Special:FeedItem wrapper", async () => {
+    const entries = await parseFeedXml(WIKI_ATOM);
+    expect(entries).toHaveLength(1);
+    expect(entries[0].link).toBe("https://en.wikipedia.org/wiki/Edmontosaurus_mummy_SMF_R_4036");
+    expect(entries[0].title).toBe("Edmontosaurus mummy SMF R 4036");
+  });
+
+  it("keeps the guid on the feed's own id, so unwrapping never reposts an entry", async () => {
+    const entries = await parseFeedXml(WIKI_ATOM);
+    expect(entries[0].guid).toBe(
+      "https://en.wikipedia.org/wiki/Special:FeedItem/featured/20260822000000/en",
+    );
   });
 });
