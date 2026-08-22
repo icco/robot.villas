@@ -19,9 +19,8 @@ export async function register() {
 
   const { migrateWithRetry } = await import("@/lib/db");
   try {
-    // Next re-runs register() per request until it succeeds, and measurably dedupes callers
-    // onto one in-flight hook. Pinning the promise makes that guarantee ours rather than
-    // Next's: two retry loops racing to migrate would be far worse than the outage.
+    // Next re-runs register() per request until it succeeds. Pin the promise so the retry
+    // window can't put two migrations in flight at once.
     globalForBoot.__robotVillasMigration ??= migrateWithRetry(db, (attempt, delayMs, error) => {
       logger.warn("Migration attempt {attempt} failed, retrying in {delayMs}ms: {error}", {
         attempt,
@@ -31,8 +30,8 @@ export async function register() {
     });
     await globalForBoot.__robotVillasMigration;
   } catch (err) {
-    // Next re-runs register() per request, so throwing here would serve 500s forever while
-    // the process stays alive and `restart: always` never fires. Exit so Docker restarts us.
+    // Throwing would leave the process up and 500ing every request, so `restart: always`
+    // never fires. Exit and let Docker restart us.
     logger.fatal("Database migrations failed, exiting so the container restarts: {error}", {
       error: err,
     });
