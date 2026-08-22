@@ -21,8 +21,9 @@ export async function migrate(db: Db): Promise<void> {
 const MIGRATE_RETRY_DELAYS_MS = [1_000, 2_000, 4_000, 8_000, 15_000];
 
 /**
- * Runs {@link migrate}, retrying while the database is still coming up. Callers get the last
- * error if every attempt fails, so a genuinely broken migration still surfaces.
+ * Runs {@link migrate}, retrying on any failure -- the expected one being a database that is
+ * still coming up. Rethrows the last error once attempts are exhausted, so a genuinely broken
+ * migration surfaces after ~30s instead of retrying forever.
  */
 export async function migrateWithRetry(
   db: Db,

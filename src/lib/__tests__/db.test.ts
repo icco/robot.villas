@@ -432,19 +432,24 @@ describeWithDb("database", () => {
 
 describe("migrateWithRetry", () => {
   const fakeDb = {} as Parameters<typeof migrateWithRetry>[0];
-  const unreachable = () => Object.assign(new Error("connect EHOSTUNREACH"), { code: "EHOSTUNREACH" });
+
+  function unreachable(): Error {
+    return Object.assign(new Error("connect EHOSTUNREACH"), { code: "EHOSTUNREACH" });
+  }
 
   it("succeeds without sleeping when the database is already up", async () => {
     const slept: number[] = [];
     let calls = 0;
+
     await migrateWithRetry(fakeDb, undefined, {
       run: async () => {
- calls++; 
-},
+        calls++;
+      },
       sleep: async (ms) => {
- slept.push(ms); 
-},
+        slept.push(ms);
+      },
     });
+
     expect(calls).toBe(1);
     expect(slept).toEqual([]);
   });
@@ -453,16 +458,18 @@ describe("migrateWithRetry", () => {
     const slept: number[] = [];
     const retries: number[] = [];
     let calls = 0;
+
     await migrateWithRetry(fakeDb, (attempt) => retries.push(attempt), {
       run: async () => {
         if (++calls < 3) {
-throw unreachable();
-}
+          throw unreachable();
+        }
       },
       sleep: async (ms) => {
- slept.push(ms); 
-},
+        slept.push(ms);
+      },
     });
+
     expect(calls).toBe(3);
     expect(slept).toEqual([1_000, 2_000]);
     expect(retries).toEqual([1, 2]);
@@ -471,16 +478,18 @@ throw unreachable();
   it("rethrows the last error once attempts are exhausted, so a broken migration surfaces", async () => {
     const slept: number[] = [];
     let calls = 0;
-    await expect(
-      migrateWithRetry(fakeDb, undefined, {
-        run: async () => {
- calls++; throw unreachable(); 
-},
-        sleep: async (ms) => {
- slept.push(ms); 
-},
-      }),
-    ).rejects.toThrow("connect EHOSTUNREACH");
+
+    const attempt = migrateWithRetry(fakeDb, undefined, {
+      run: async () => {
+        calls++;
+        throw unreachable();
+      },
+      sleep: async (ms) => {
+        slept.push(ms);
+      },
+    });
+
+    await expect(attempt).rejects.toThrow("connect EHOSTUNREACH");
     expect(calls).toBe(6);
     expect(slept).toEqual([1_000, 2_000, 4_000, 8_000, 15_000]);
   });
