@@ -264,13 +264,13 @@ export function toFeedText(value: unknown): string {
   return "";
 }
 
-/** MediaWiki `featuredfeed` entry links, e.g. `/wiki/Special:FeedItem/featured/20260822000000/en`. */
-const MEDIAWIKI_FEED_ITEM_LINK = /^https?:\/\/[^/]+\/wiki\/Special:FeedItem\//i;
+/** Pinned to `featured`: `onthisday` and `potd` blurbs bold links that aren't the subject. */
+const MEDIAWIKI_FEED_ITEM_LINK = /^https?:\/\/[^/]+\/wiki\/Special:FeedItem\/featured\//i;
 
-/** Opening tag of a bolded link in a blurb, capturing its attributes. */
+/** Opening tag of a bolded link, capturing its attributes. */
 const BOLD_ANCHOR = /<b>\s*<a\s+([^>]*)>/i;
 
-/** Namespaced targets that are chrome around the blurb, never the article it features. */
+/** Chrome around the blurb, never the article it features. */
 const NON_ARTICLE_TARGET = /^\/wiki\/(?:File|Image|Wikipedia|Portal|Help|Template|Category|Special):/i;
 
 function htmlAttr(attrs: string, name: string): string | null {
@@ -279,16 +279,10 @@ function htmlAttr(attrs: string, name: string): string | null {
 }
 
 /**
- * Pulls the article a MediaWiki `featuredfeed` entry is about out of its blurb.
- *
- * The entry's own `<link>` points at a `Special:FeedItem` wrapper: a `noindex` page titled
- * after the date ("August 22 Wikipedia featured article") with no OpenGraph metadata, so
- * clients render it as a bare link and readers land somewhere other than the article. The
- * real target is the first bolded article link in the blurb — the lead mention, which every
- * blurb layout carries whether it closes with "Full article..." or "This article is part of
- * a featured topic".
- *
- * Returns null when the blurb has no such link, leaving the entry as the feed supplied it.
+ * Resolves the article behind a `featuredfeed` entry, whose own `<link>` is a `noindex`
+ * `Special:FeedItem` wrapper titled after the date. The article is the blurb's first bolded
+ * article link, present in both blurb layouts ("Full article..." and "This article is part
+ * of a featured topic"). Null when absent, leaving the entry as the feed supplied it.
  */
 export function unwrapMediaWikiFeedItem(
   itemLink: string,
@@ -304,14 +298,13 @@ export function unwrapMediaWikiFeedItem(
       return null;
     }
     const href = htmlAttr(m[1], "href");
-    if (href?.startsWith("/wiki/") && !NON_ARTICLE_TARGET.test(href)) {
-      // Resolve against the entry link so this works on any language wiki, not just en.
-      const link = new URL(href, itemLink).href;
-      const rawTitle = htmlAttr(m[1], "title");
-      if (!rawTitle) {
-        return null;
-      }
-      return { link, title: normalizeTypography(decodeHtmlEntities(rawTitle)) };
+    const rawTitle = htmlAttr(m[1], "title");
+    if (href?.startsWith("/wiki/") && rawTitle && !NON_ARTICLE_TARGET.test(href)) {
+      return {
+        // Resolve against the entry link so this works on any language wiki, not just en.
+        link: new URL(href, itemLink).href,
+        title: normalizeTypography(decodeHtmlEntities(rawTitle)),
+      };
     }
     rest = rest.slice(m.index! + m[0].length);
   }
@@ -323,7 +316,7 @@ function normalizeFeedItem(item: Parser.Item): FeedEntry {
   const itemTitle = toFeedText(item.title);
   const itemLink = toFeedText(item.link);
   const guid = toFeedText(item.guid) || toFeedText(raw.id) || itemLink || itemTitle || "";
-  // Deliberately after `guid`: unwrapping must not change identity, or every entry reposts.
+  // After `guid` on purpose: unwrapping must not change identity, or every entry reposts.
   const unwrapped = unwrapMediaWikiFeedItem(itemLink, toFeedText(raw.summary));
   const title = unwrapped
     ? unwrapped.title

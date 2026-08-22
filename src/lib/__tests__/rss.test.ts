@@ -468,6 +468,12 @@ describe("unwrapMediaWikiFeedItem", () => {
     expect(unwrapMediaWikiFeedItem(FEED_ITEM_LINK, html)?.title).toBe("Pat O'Keeffe");
   });
 
+  it("leaves other MediaWiki feeds alone, whose blurbs bold links that aren't the subject", () => {
+    const html = blurb(`<b><a href="/wiki/Mesklin" title="Mesklin">Mesklin</a></b>`);
+    const onThisDay = "https://en.wikipedia.org/wiki/Special:FeedItem/onthisday/20260822000000/en";
+    expect(unwrapMediaWikiFeedItem(onThisDay, html)).toBeNull();
+  });
+
   it("leaves non-MediaWiki links alone", () => {
     const html = blurb(`<b><a href="/wiki/Mesklin" title="Mesklin">Mesklin</a></b>`);
     expect(unwrapMediaWikiFeedItem("https://example.com/post/1", html)).toBeNull();
