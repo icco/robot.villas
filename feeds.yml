@@ -1146,7 +1146,6 @@ bots:
     profile_photo: https://en.wikipedia.org/static/apple-touch/wikipedia.png
     default_hashtags:
       - Wikipedia
-      - ArticleOfTheDay
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
