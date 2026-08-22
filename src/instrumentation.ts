@@ -1,3 +1,7 @@
+const globalForBoot = globalThis as unknown as {
+  __robotVillasMigration?: Promise<void>;
+};
+
 export async function register() {
   if (process.env.NEXT_RUNTIME !== "nodejs") {
     return;
@@ -13,8 +17,26 @@ export async function register() {
   const { getLogger } = await import("@logtape/logtape");
   const logger = getLogger(["robot-villas", "server"]);
 
-  const { migrate } = await import("@/lib/db");
-  await migrate(db);
+  const { migrateWithRetry } = await import("@/lib/db");
+  try {
+    // Next re-runs register() per request until it succeeds. Pin the promise so the retry
+    // window can't put two migrations in flight at once.
+    globalForBoot.__robotVillasMigration ??= migrateWithRetry(db, (attempt, delayMs, error) => {
+      logger.warn("Migration attempt {attempt} failed, retrying in {delayMs}ms: {error}", {
+        attempt,
+        delayMs,
+        error,
+      });
+    });
+    await globalForBoot.__robotVillasMigration;
+  } catch (err) {
+    // Throwing would leave the process up and 500ing every request, so `restart: always`
+    // never fires. Exit and let Docker restart us.
+    logger.fatal("Database migrations failed, exiting so the container restarts: {error}", {
+      error: err,
+    });
+    process.exit(1);
+  }
   logger.info("Database migrations complete");
 
   if (process.env.DISABLE_BACKGROUND === "true") {

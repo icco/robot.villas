@@ -17,6 +17,39 @@ export async function migrate(db: Db): Promise<void> {
   await runMigrations(db, { migrationsFolder: "./drizzle" });
 }
 
+/** Backoff before each retry; ~30s total. Longer outages are covered by exiting and restarting. */
+const MIGRATE_RETRY_DELAYS_MS = [1_000, 2_000, 4_000, 8_000, 15_000];
+
+/**
+ * Runs {@link migrate}, retrying any failure -- normally a database still coming up. Rethrows
+ * the last error once attempts are exhausted, so a broken migration surfaces instead of looping.
+ */
+export async function migrateWithRetry(
+  db: Db,
+  onRetry?: (attempt: number, delayMs: number, error: unknown) => void,
+  /** Tests only. */
+  deps: {
+    run?: (db: Db) => Promise<void>;
+    sleep?: (ms: number) => Promise<void>;
+  } = {},
+): Promise<void> {
+  const run = deps.run ?? migrate;
+  const sleep = deps.sleep ?? ((ms) => new Promise((resolve) => setTimeout(resolve, ms)));
+  for (let attempt = 0; ; attempt++) {
+    try {
+      await run(db);
+      return;
+    } catch (err) {
+      const delayMs = MIGRATE_RETRY_DELAYS_MS[attempt];
+      if (delayMs == null) {
+        throw err;
+      }
+      onRetry?.(attempt + 1, delayMs, err);
+      await sleep(delayMs);
+    }
+  }
+}
+
 export async function hasEntry(db: Db, botUsername: string, guid: string): Promise<boolean> {
   const rows = await db
     .select({ id: schema.feedEntries.id })
