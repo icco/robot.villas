@@ -1138,6 +1138,14 @@ bots:
     display_name: Daring Fireball
     summary: John Gruber's writing about Apple, design, and technology.
     profile_photo: https://daringfireball.net/graphics/apple-touch-icon.png
+  wikipedia_featured:
+    feed_url: https://en.wikipedia.org/w/api.php?action=featuredfeed&feed=featured&feedformat=atom
+    homepage_url: https://en.wikipedia.org/wiki/Wikipedia:Today%27s_featured_article
+    display_name: Wikipedia Article of the Day
+    summary: Wikipedia's daily featured article — the best of Wikipedia's encyclopedic content.
+    profile_photo: https://en.wikipedia.org/static/apple-touch/wikipedia.png
+    default_hashtags:
+      - Wikipedia
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
