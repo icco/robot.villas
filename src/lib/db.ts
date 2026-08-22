@@ -17,6 +17,39 @@ export async function migrate(db: Db): Promise<void> {
   await runMigrations(db, { migrationsFolder: "./drizzle" });
 }
 
+/** Attempts, and the backoff before each retry. Spans ~30s, enough for a Postgres restart. */
+const MIGRATE_RETRY_DELAYS_MS = [1_000, 2_000, 4_000, 8_000, 15_000];
+
+/**
+ * Runs {@link migrate}, retrying while the database is still coming up. Callers get the last
+ * error if every attempt fails, so a genuinely broken migration still surfaces.
+ */
+export async function migrateWithRetry(
+  db: Db,
+  onRetry?: (attempt: number, delayMs: number, error: unknown) => void,
+  /** Tests only. */
+  deps: {
+    run?: (db: Db) => Promise<void>;
+    sleep?: (ms: number) => Promise<void>;
+  } = {},
+): Promise<void> {
+  const run = deps.run ?? migrate;
+  const sleep = deps.sleep ?? ((ms) => new Promise((resolve) => setTimeout(resolve, ms)));
+  for (let attempt = 0; ; attempt++) {
+    try {
+      await run(db);
+      return;
+    } catch (err) {
+      const delayMs = MIGRATE_RETRY_DELAYS_MS[attempt];
+      if (delayMs == null) {
+        throw err;
+      }
+      onRetry?.(attempt + 1, delayMs, err);
+      await sleep(delayMs);
+    }
+  }
+}
+
 export async function hasEntry(db: Db, botUsername: string, guid: string): Promise<boolean> {
   const rows = await db
     .select({ id: schema.feedEntries.id })

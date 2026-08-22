@@ -13,8 +13,23 @@ export async function register() {
   const { getLogger } = await import("@logtape/logtape");
   const logger = getLogger(["robot-villas", "server"]);
 
-  const { migrate } = await import("@/lib/db");
-  await migrate(db);
+  const { migrateWithRetry } = await import("@/lib/db");
+  try {
+    await migrateWithRetry(db, (attempt, delayMs, error) => {
+      logger.warn("Migration attempt {attempt} failed, retrying in {delayMs}ms: {error}", {
+        attempt,
+        delayMs,
+        error,
+      });
+    });
+  } catch (err) {
+    // Next re-runs register() per request, so throwing here would serve 500s forever while
+    // the process stays alive and `restart: always` never fires. Exit so Docker restarts us.
+    logger.fatal("Database migrations failed, exiting so the container restarts: {error}", {
+      error: err,
+    });
+    process.exit(1);
+  }
   logger.info("Database migrations complete");
 
   if (process.env.DISABLE_BACKGROUND === "true") {
