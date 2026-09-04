@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from "vitest";
-import { getBlockedInstances, getRelaySubscriptionBot, parseConfig, loadConfig } from "../config";
+import { getBlockedInstances, getRelaySubscriptionBot, parseConfig, loadConfig, resolveBlockedInstances } from "../config";
 import { join } from "node:path";
 import { readFileSync } from "node:fs";
 import { load as parseYaml } from "js-yaml";
@@ -289,5 +289,35 @@ describe("getBlockedInstances", () => {
     expect(blocked.size).toBe(2);
     expect(blocked.has("spam.example.com")).toBe(true);
     expect(blocked.has("bad.instance")).toBe(true);
+  });
+});
+
+describe("resolveBlockedInstances", () => {
+  const yaml = (blocked?: string) => `
+bots:
+  a:
+    feed_url: "https://e.test/f.xml"
+    display_name: "A"
+    summary: "s"
+${blocked ?? ""}`;
+
+  afterEach(() => {
+    delete process.env.BLOCKED_INSTANCES;
+  });
+
+  it("unions feeds.yml with the env override", () => {
+    process.env.BLOCKED_INSTANCES = "fromenv.test";
+    const cfg = parseConfig(yaml('blocked_instances:\n  - "fromyaml.test"'));
+    expect([...resolveBlockedInstances(cfg)].sort()).toEqual(["fromenv.test", "fromyaml.test"]);
+  });
+
+  it("defaults to empty when neither is set", () => {
+    expect(resolveBlockedInstances(parseConfig(yaml())).size).toBe(0);
+  });
+
+  it("normalizes what it reads from yaml", () => {
+    // A pasted inbox URL and stray case must not create an entry that never matches.
+    const cfg = parseConfig(yaml('blocked_instances:\n  - " Evil.COM "\n  - "https://x.test/inbox"'));
+    expect([...resolveBlockedInstances(cfg)].sort()).toEqual(["evil.com", "x.test"]);
   });
 });

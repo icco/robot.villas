@@ -60,7 +60,7 @@ function makeConfig(botCount: number): FeedsConfig {
       summary: "A test bot",
     };
   }
-  return { bots, follows: [], relays: [] };
+  return { bots, follows: [], relays: [], blocked_instances: [] };
 }
 
 describe("startPoller concurrency", () => {

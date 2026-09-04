@@ -36,6 +36,7 @@ import {
   Update,
 } from "@fedify/vocab";
 import escapeHtml from "escape-html";
+import { isBlockedHost, normalizeHost } from "./blocklist";
 import { getRelaySubscriptionBot, type BotConfig, type FeedsConfig } from "./config";
 import {
   findLostAccepts,
@@ -93,7 +94,7 @@ export interface FederationDeps {
   kvStore: KvStore;
   messageQueue: MessageQueue;
   origin: string;
-  blockedInstances?: Set<string>;
+  blockedInstances?: ReadonlySet<string>;
 }
 
 const logger = getLogger(["robot-villas", "federation"]);
@@ -217,7 +218,7 @@ async function handleFollow(
   follow: Follow,
   db: Db,
   botUsernames: string[],
-  blockedInstances: Set<string>,
+  blockedInstances: ReadonlySet<string>,
 ): Promise<void> {
   if (!follow.id || !follow.actorId || !follow.objectId) {
     logger.warn("Follow ignored: missing id, actorId, or objectId");
@@ -237,8 +238,10 @@ async function handleFollow(
     });
     return;
   }
-  const followerHost = follower.id.hostname.toLowerCase();
-  if (blockedInstances.has(followerHost)) {
+  // Same predicate as outbound delivery, so a domain block covers subdomains
+  // here too and the two directions cannot disagree about what is blocked.
+  const followerHost = normalizeHost(follower.id.hostname);
+  if (isBlockedHost(followerHost, blockedInstances)) {
     logger.info("Rejected follow from blocked instance {host}", {
       host: followerHost,
     });
