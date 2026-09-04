@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { load as parseYaml } from "js-yaml";
 import { z } from "zod";
+import { buildBlocklist } from "./blocklist";
 
 const MAX_DISPLAY_NAME_LENGTH = 100;
 const MAX_SUMMARY_LENGTH = 500;
@@ -27,6 +28,13 @@ export const FeedsConfigSchema = z
       .refine((bots) => Object.keys(bots).length > 0, "At least one bot must be defined"),
     follows: z.array(z.string().min(3)).optional().default([]),
     relays: z.array(z.string().url()).optional().default([]),
+    /**
+     * Instances we refuse to federate with, in both directions: their Follows
+     * are Rejected and they are dropped from every delivery. Hostnames, not
+     * URLs; blocking a domain blocks its subdomains. Unioned with the
+     * BLOCKED_INSTANCES env var.
+     */
+    blocked_instances: z.array(z.string().min(1)).optional().default([]),
     /**
      * Single bot that sends `Follow` to each relay. Relays expect one subscription per
      * instance; all bots still publish `Create` to a relay if any subscription is accepted.
@@ -72,18 +80,24 @@ export function parseConfig(yaml: string): FeedsConfig {
 }
 
 /**
- * Returns the set of blocked instance hostnames (lowercase) from env
- * BLOCKED_INSTANCES (comma-separated). Used to Reject Follow from those instances.
+ * Blocked instance hostnames from env BLOCKED_INSTANCES (comma-separated).
+ * Kept as a break-glass override so a host can be blocked without a deploy;
+ * the durable list lives in `blocked_instances` in feeds.yml. Prefer
+ * `resolveBlockedInstances`, which unions the two.
  */
 export function getBlockedInstances(): Set<string> {
   const raw = process.env.BLOCKED_INSTANCES;
   if (!raw || typeof raw !== "string") {
     return new Set();
   }
-  return new Set(
-    raw
-      .split(",")
-      .map((h) => h.trim().toLowerCase())
-      .filter(Boolean),
-  );
+  return new Set(buildBlocklist(raw.split(",")));
+}
+
+/**
+ * The effective blocklist: `blocked_instances` from feeds.yml plus anything in
+ * BLOCKED_INSTANCES. One set governs both inbound Follows and outbound
+ * delivery, so the two directions cannot drift apart.
+ */
+export function resolveBlockedInstances(config: FeedsConfig): ReadonlySet<string> {
+  return buildBlocklist([...(config.blocked_instances ?? []), ...getBlockedInstances()]);
 }

@@ -3,6 +3,7 @@ import type { Context } from "@fedify/fedify";
 import { Create, Hashtag, Note, PUBLIC_COLLECTION, type Recipient } from "@fedify/vocab";
 import escapeHtml from "escape-html";
 import { getLogger } from "@logtape/logtape";
+import { partitionBlockedRecipients } from "./blocklist";
 import type { BotConfig } from "./config";
 import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, insertEntry, type Db } from "./db";
 import { resolveHashtags } from "./hashtags";
@@ -90,12 +91,13 @@ export async function publishNewEntries(
   domain: string,
   entries: FeedEntry[],
   bot: BotConfig,
+  blockedInstances: ReadonlySet<string> = new Set(),
 ): Promise<PublishResult> {
   let published = 0;
   let skipped = 0;
 
   const followerRows = await getFollowerRecipients(db, botUsername);
-  const followerRecipients: Recipient[] = followerRows
+  const allFollowerRecipients: Recipient[] = followerRows
     .filter((f) => f.sharedInboxUrl)
     .map((f) => ({
       id: new URL(f.followerId),
@@ -103,13 +105,30 @@ export async function publishNewEntries(
       endpoints: null,
     }));
   const relays = await getAcceptedRelays(db);
-  const relayRecipients: Recipient[] = relays
+  const allRelayRecipients: Recipient[] = relays
     .filter((r) => r.inboxUrl && r.actorId)
     .map((r) => ({
       id: new URL(r.actorId!),
       inboxId: new URL(r.inboxUrl!),
       endpoints: null,
     }));
+
+  // Blocked hosts are dropped here rather than at follow time: a host can be
+  // blocked long after it followed, and rows for it stay in the DB.
+  const followers = partitionBlockedRecipients(allFollowerRecipients, blockedInstances);
+  const relayed = partitionBlockedRecipients(allRelayRecipients, blockedInstances);
+  const followerRecipients = followers.allowed;
+  const relayRecipients = relayed.allowed;
+  const blockedHosts = [...new Set([...followers.blockedHosts, ...relayed.blockedHosts])];
+  if (blockedHosts.length > 0) {
+    // Counted, not silent: a blocklist that quietly eats deliveries looks
+    // exactly like a delivery bug.
+    logger.info("Skipping {count} blocked recipient(s) for {identifier}: {hosts}", {
+      identifier: botUsername,
+      count: followers.blockedHosts.length + relayed.blockedHosts.length,
+      hosts: blockedHosts.join(", "),
+    });
+  }
 
   const hasRecipients = followerRecipients.length > 0 || relayRecipients.length > 0;
 
