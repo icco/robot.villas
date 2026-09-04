@@ -1155,9 +1155,9 @@ follows:
 # subdomains. Each of these refuses us permanently, and without this list every
 # post retries against them until the queue gives up.
 blocked_instances:
-  - horche.demkontinuum.de  # Friendica, 403 "Bots are not allowed" -- policy, not an outage
-  - fediverse.tryptophonic.com  # 401 on every delivery
-  - 8ball.space  # 502 then 405; instance has been broken for days
+  - horche.demkontinuum.de # Friendica, 403 "Bots are not allowed" -- policy, not an outage
+  - fediverse.tryptophonic.com # 401 on every delivery
+  - 8ball.space # 502 then 405; instance has been broken for days
 relays:
   - https://relay.toot.io/actor
   - https://relay.minecloud.ro/actor
