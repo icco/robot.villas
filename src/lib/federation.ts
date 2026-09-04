@@ -37,7 +37,13 @@ import {
 } from "@fedify/vocab";
 import escapeHtml from "escape-html";
 import { getRelaySubscriptionBot, type BotConfig, type FeedsConfig } from "./config";
-import { findLostAccepts, isRelayTerminal, RelayFollow, selectRemovedRelays } from "./subscriptions";
+import {
+  findLostAccepts,
+  isRelayTerminal,
+  normalizeIdUrl,
+  RelayFollow,
+  selectRemovedRelays,
+} from "./subscriptions";
 import {
   addFollower,
   countEntries,
@@ -1042,8 +1048,14 @@ export async function subscribeToRelays(
 
   const allRelays = await getAllRelays(db);
 
-  const hasAcceptedForInstance = (url: string) =>
-    allRelays.some((r) => r.url === url && r.status === "accepted");
+  // Every URL comparison below normalizes trailing slashes, matching
+  // unsubscribeFromRemovedRelays. Strict equality here would read a slash-only
+  // feeds.yml edit as a brand new relay and, since upsertRelay conflicts on
+  // (botUsername, url) exactly, write a second row for a relay we already have.
+  const acceptedUrls = new Set(
+    allRelays.filter((r) => r.status === "accepted").map((r) => normalizeIdUrl(r.url)),
+  );
+  const hasAcceptedForInstance = (url: string) => acceptedUrls.has(normalizeIdUrl(url));
   // Terminal for the designated bot + URL. Rejects expire (see isRelayTerminal)
   // so a relay isn't frozen by a denial from a since-fixed format.
   const now = new Date();
@@ -1054,7 +1066,7 @@ export async function subscribeToRelays(
           r.botUsername === designated &&
           isRelayTerminal(r.status, r.statusChangedAt, now),
       )
-      .map((r) => r.url),
+      .map((r) => normalizeIdUrl(r.url)),
   );
 
   const signingIdentifier = botUsernames[0];
@@ -1087,7 +1099,7 @@ export async function subscribeToRelays(
       });
       continue;
     }
-    if (designatedTerminalUrls.has(relayUrl)) {
+    if (designatedTerminalUrls.has(normalizeIdUrl(relayUrl))) {
       logger.info("Designated bot {bot} has terminal state for relay {url}, skipping", {
         bot: designated,
         url: relayUrl,
