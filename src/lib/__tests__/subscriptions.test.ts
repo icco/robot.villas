@@ -7,6 +7,8 @@ import {
   summarizeRelaySubscription,
   RelayFollow,
   AS_PUBLIC,
+  selectRemovedRelays,
+  normalizeIdUrl,
 } from "../subscriptions";
 
 const FOLLOW_ARGS = {
@@ -180,5 +182,50 @@ describe("findLostAccepts", () => {
   it("skips rows with no resolved actor id", () => {
     const rows = [{ botUsername: "ghost", actorId: null }];
     expect(findLostAccepts(rows, new Set(["https://robot.villas/users/ghost"]))).toEqual([]);
+  });
+});
+
+describe("selectRemovedRelays", () => {
+  const rows = [
+    { url: "https://relay.toot.io/actor", botUsername: "nyt_homepage" },
+    { url: "https://relay.intahnet.co.uk/actor", botUsername: "nyt_homepage" },
+  ];
+
+  it("returns rows whose url is no longer configured", () => {
+    const removed = selectRemovedRelays(rows, ["https://relay.toot.io/actor"]);
+    expect(removed.map((r) => r.url)).toEqual(["https://relay.intahnet.co.uk/actor"]);
+  });
+
+  it("returns nothing when every row is still configured", () => {
+    expect(selectRemovedRelays(rows, rows.map((r) => r.url))).toEqual([]);
+  });
+
+  it("returns every row when the config lists no relays", () => {
+    // Emptying `relays:` has to unsubscribe, not no-op, or the last relay is
+    // unreachable through config.
+    expect(selectRemovedRelays(rows, [])).toHaveLength(2);
+  });
+
+  it("ignores a trailing slash difference", () => {
+    // Otherwise reformatting feeds.yml silently drops a relay we still want.
+    const removed = selectRemovedRelays(rows, [
+      "https://relay.toot.io/actor/",
+      "https://relay.intahnet.co.uk/actor",
+    ]);
+    expect(removed).toEqual([]);
+  });
+});
+
+describe("normalizeIdUrl", () => {
+  it("treats the two trailing-slash forms as one url", () => {
+    // subscribeToRelays and unsubscribeFromRemovedRelays both key off this. If
+    // only one of them normalized, a slash-only feeds.yml edit would look like
+    // a removal to one and a brand new relay to the other -- and upsertRelay
+    // conflicts on (botUsername, url) exactly, so it would write a second row.
+    expect(normalizeIdUrl("https://relay.toot.io/actor/")).toBe(normalizeIdUrl("https://relay.toot.io/actor"));
+  });
+
+  it("leaves a url without a trailing slash alone", () => {
+    expect(normalizeIdUrl("https://relay.toot.io/actor")).toBe("https://relay.toot.io/actor");
   });
 });

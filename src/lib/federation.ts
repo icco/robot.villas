@@ -37,7 +37,13 @@ import {
 } from "@fedify/vocab";
 import escapeHtml from "escape-html";
 import { getRelaySubscriptionBot, type BotConfig, type FeedsConfig } from "./config";
-import { findLostAccepts, isRelayTerminal, RelayFollow } from "./subscriptions";
+import {
+  findLostAccepts,
+  isRelayTerminal,
+  normalizeIdUrl,
+  RelayFollow,
+  selectRemovedRelays,
+} from "./subscriptions";
 import {
   addFollower,
   countEntries,
@@ -62,6 +68,7 @@ import {
   markFollowingAccepted,
   incrementLikeCount,
   pruneRedundantRelaySubscriptions,
+  removeRelay,
   removeAllEntries,
   removeAllFollowers,
   removeAllFollowing,
@@ -950,6 +957,64 @@ export async function repairFollowerInboxes(
 }
 
 /**
+ * Drops relay subscriptions whose URL has left feeds.yml, sending an
+ * `Undo(Follow)` first so the relay stops sending to us as well.
+ *
+ * Delivery targets come from `getAcceptedRelays`, which reads the DB, so
+ * without this a relay removed from config keeps receiving every `Create`
+ * forever — one that starts refusing them is a permanent error source with no
+ * way out short of editing the table by hand.
+ *
+ * The `Undo` is best effort: the row is soft-deleted either way, since a relay
+ * we cannot reach is exactly the case this usually cleans up after.
+ */
+export async function unsubscribeFromRemovedRelays(
+  ctx: Context<void>,
+  db: Db,
+  config: FeedsConfig,
+): Promise<void> {
+  const stale = selectRemovedRelays(await getAllRelays(db), config.relays ?? []);
+
+  for (const relay of stale) {
+    if (relay.status === "accepted" && relay.inboxUrl && relay.actorId && relay.followActivityId) {
+      try {
+        const actorUri = ctx.getActorUri(relay.botUsername);
+        await ctx.sendActivity(
+          { identifier: relay.botUsername },
+          { id: new URL(relay.actorId), inboxId: new URL(relay.inboxUrl), endpoints: null },
+          new Undo({
+            id: new URL(`${actorUri.href}#undo-relay-${relay.id}`),
+            actor: actorUri,
+            // RelayFollow, and the stored Follow id, so the activity we retract
+            // matches the one we sent byte for byte. See RelayFollow's docstring.
+            object: new RelayFollow({
+              id: new URL(relay.followActivityId),
+              actor: actorUri,
+              object: PUBLIC_COLLECTION,
+            }),
+          }),
+        );
+        logger.info("Sent Undo(Follow) to removed relay {url} from {bot}", {
+          url: relay.url,
+          bot: relay.botUsername,
+        });
+      } catch (error) {
+        logger.error("Failed to send Undo(Follow) to removed relay {url}: {error}", {
+          url: relay.url,
+          error,
+        });
+      }
+    }
+
+    await removeRelay(db, relay.botUsername, relay.url);
+    logger.info("Dropped relay {url} for {bot}: no longer in feeds.yml", {
+      url: relay.url,
+      bot: relay.botUsername,
+    });
+  }
+}
+
+/**
  * Subscribes to configured relays with a **single** bot (see
  * `relay_subscription_bot` in config, default: first bot). Many ActivityPub
  * relays treat one subscription per origin instance; sending a Follow from
@@ -961,6 +1026,8 @@ export async function subscribeToRelays(
   db: Db,
   config: FeedsConfig,
 ): Promise<void> {
+  await unsubscribeFromRemovedRelays(ctx, db, config);
+
   const relayUrls = config.relays ?? [];
   if (relayUrls.length === 0) {
     return;
@@ -981,8 +1048,14 @@ export async function subscribeToRelays(
 
   const allRelays = await getAllRelays(db);
 
-  const hasAcceptedForInstance = (url: string) =>
-    allRelays.some((r) => r.url === url && r.status === "accepted");
+  // Every URL comparison below normalizes trailing slashes, matching
+  // unsubscribeFromRemovedRelays. Strict equality here would read a slash-only
+  // feeds.yml edit as a brand new relay and, since upsertRelay conflicts on
+  // (botUsername, url) exactly, write a second row for a relay we already have.
+  const acceptedUrls = new Set(
+    allRelays.filter((r) => r.status === "accepted").map((r) => normalizeIdUrl(r.url)),
+  );
+  const hasAcceptedForInstance = (url: string) => acceptedUrls.has(normalizeIdUrl(url));
   // Terminal for the designated bot + URL. Rejects expire (see isRelayTerminal)
   // so a relay isn't frozen by a denial from a since-fixed format.
   const now = new Date();
@@ -993,7 +1066,7 @@ export async function subscribeToRelays(
           r.botUsername === designated &&
           isRelayTerminal(r.status, r.statusChangedAt, now),
       )
-      .map((r) => r.url),
+      .map((r) => normalizeIdUrl(r.url)),
   );
 
   const signingIdentifier = botUsernames[0];
@@ -1026,7 +1099,7 @@ export async function subscribeToRelays(
       });
       continue;
     }
-    if (designatedTerminalUrls.has(relayUrl)) {
+    if (designatedTerminalUrls.has(normalizeIdUrl(relayUrl))) {
       logger.info("Designated bot {bot} has terminal state for relay {url}, skipping", {
         bot: designated,
         url: relayUrl,
