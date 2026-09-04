@@ -25,7 +25,7 @@
     "@fedify/next": "^2.3.6",
     "@fedify/postgres": "^2.3.6",
     "@fedify/vocab": "^2.3.6",
-    "@google/genai": "^2.20.0",
+    "@google/genai": "^2.21.0",
     "@heroicons/react": "^2.2.0",
     "@icco/react-common": "^2026.10901.6",
     "@js-temporal/polyfill": "^0.5.1",
