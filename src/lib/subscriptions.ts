@@ -92,6 +92,19 @@ function normalizeActorId(id: string): string {
 }
 
 /**
+ * Relay rows whose URL is no longer in feeds.yml. Trailing slashes are
+ * normalized on both sides: a config edit that only adds or drops one must not
+ * read as a removal and unsubscribe a relay we still want.
+ */
+export function selectRemovedRelays<T extends { url: string }>(
+  rows: ReadonlyArray<T>,
+  configuredUrls: Iterable<string>,
+): T[] {
+  const configured = new Set([...configuredUrls].map(normalizeActorId));
+  return rows.filter((row) => !configured.has(normalizeActorId(row.url)));
+}
+
+/**
  * Pending follows the target already lists as followers — an Accept that was
  * delivered but never recorded. The target won't re-Accept a duplicate Follow,
  * so retrying can't clear these. Empty `followerIds` (hidden followers) yields

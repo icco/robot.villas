@@ -25,6 +25,8 @@ import {
   upsertRelay,
   updateRelayStatus,
   getAllRelays,
+  getAcceptedRelays,
+  removeRelay,
   type Db,
 } from "../db";
 import * as schema from "../schema";
@@ -426,6 +428,29 @@ describeWithDb("database", () => {
 
       await seed();
       expect((await relayRow())!.statusChangedAt).toBeInstanceOf(Date);
+    });
+
+    it("removeRelay hides the row from getAllRelays and getAcceptedRelays", async () => {
+      // unsubscribeFromRemovedRelays is removeRelay's first caller, and
+      // delivery reads getAcceptedRelays -- so an accepted row has to stop
+      // being a delivery target, not just disappear from the listing.
+      await seed();
+      await updateRelayStatus(db, "https://robot.test/f/relay-1", "accepted");
+      expect((await getAcceptedRelays(db)).some((r) => r.url === URL)).toBe(true);
+
+      await removeRelay(db, "bot_a", URL);
+
+      expect(await relayRow()).toBeUndefined();
+      expect((await getAcceptedRelays(db)).some((r) => r.url === URL)).toBe(false);
+    });
+
+    it("removeRelay leaves other bots' rows for the same relay alone", async () => {
+      await seed();
+      await upsertRelay(db, "bot_b", URL, URL.replace("/actor", "/inbox"), URL, "https://robot.test/f/relay-2");
+
+      await removeRelay(db, "bot_a", URL);
+
+      expect((await getAllRelays(db, "bot_b")).some((r) => r.url === URL)).toBe(true);
     });
   });
 });
