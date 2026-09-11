@@ -1146,6 +1146,121 @@ bots:
     profile_photo: https://en.wikipedia.org/static/apple-touch/wikipedia.png
     default_hashtags:
       - Wikipedia
+  seinwave:
+    feed_url: https://seinwave.com/feed.xml
+    homepage_url: https://seinwave.com/
+    display_name: seinwave
+    summary: Personal updates and projects from Matt Seidholz.
+  anton_podviaznikov:
+    feed_url: https://podviaznikov.com/rss.xml
+    homepage_url: https://podviaznikov.com/
+    display_name: podviaznikov.com
+    summary: Personal notes, tools, and ideas from Anton Podviaznikov.
+  thornberry:
+    feed_url: https://thornberry.io/index.xml
+    homepage_url: https://thornberry.io/
+    display_name: thornberry.io
+    summary: Software, fiction, and reflections from Elijah Kennedy.
+  ian_fisher:
+    feed_url: https://iafisher.com/blog/rss.xml
+    homepage_url: https://iafisher.com/
+    display_name: iafisher.com
+    summary: Systems programming and backend development from Ian Fisher.
+  greg_sadetsky:
+    feed_url: https://blog.greg.technology/feed.xml
+    homepage_url: https://blog.greg.technology/
+    display_name: the greg technology blog
+    summary: Software, hardware, and AI experiments from Greg Sadetsky.
+  bryan_braun:
+    feed_url: https://www.bryanbraun.com/rss.xml
+    homepage_url: https://www.bryanbraun.com/
+    display_name: Bryan Braun - Blog
+    summary: Making things and sharing lessons learned.
+  jagi_natarajan:
+    feed_url: https://jagi.studio/index.xml
+    homepage_url: https://jagi.studio/
+    display_name: Jagi Natarajan
+    summary: Audio software and creative projects.
+  robin_neufeld:
+    feed_url: https://metavee.github.io/blog/feed.xml
+    homepage_url: https://metavee.github.io/blog/
+    display_name: the weightless state
+    summary: Projects and thoughts from Robin Neufeld.
+  thomas_broadley:
+    feed_url: https://thomasbroadley.com/blog/rss.xml
+    homepage_url: https://thomasbroadley.com/
+    display_name: Thomas Broadley
+    summary: Software, AI evaluation, and personal reflections.
+  tierney_cyren:
+    feed_url: https://bnb.im/feed.xml
+    homepage_url: https://bnb.im/
+    display_name: Tierney Cyren
+    summary: JavaScript, developer tools, and open protocols.
+  sammy_straus:
+    feed_url: https://www.sammystraus.com/feed.xml
+    homepage_url: https://www.sammystraus.com/
+    display_name: Sammy's Blog
+    summary: Programming, Clojure, Emacs, and technology.
+  sophie_downward:
+    feed_url: https://www.scd31.com/posts.rss
+    homepage_url: https://www.scd31.com/
+    display_name: The Cat House
+    summary: Electronics, programming, and DIY projects from Sophie Downward.
+  figbert:
+    feed_url: https://figbert.com/atom.xml
+    homepage_url: https://figbert.com/
+    display_name: FIGBERT
+    summary: Projects, reading, and reflections from Benji Welner.
+  hugh_tipping:
+    feed_url: https://techblog.hughtipping.com/feed
+    homepage_url: https://techblog.hughtipping.com/
+    display_name: Hugh's Tech Blog
+    summary: Platform engineering and technology from Hugh Tipping.
+  mark_dominus:
+    feed_url: https://blog.plover.com/index.atom
+    homepage_url: https://blog.plover.com/
+    display_name: The Universe of Discourse
+    summary: Mathematics, programming, and life from Mark Dominus.
+  push_cx:
+    feed_url: https://push.cx/feed.xml
+    homepage_url: https://push.cx/
+    display_name: Push.cx
+    summary: Projects and technical notes from Peter Bhat Harkins.
+  zach_ahn:
+    feed_url: https://zachahn.com/posts/atom.xml
+    homepage_url: https://zachahn.com/
+    display_name: Zach Ahn
+    summary: Personal essays and technical notes.
+  mark_mayes:
+    feed_url: https://mm-dev.rocks/index.xml
+    homepage_url: https://mm-dev.rocks/
+    display_name: mm-dev
+    summary: Software development and learning experiences from Mark Mayes.
+  charlie_volow:
+    feed_url: https://charlie-volow.com/blog/feed.xml
+    homepage_url: https://charlie-volow.com/blog/index.html
+    display_name: Charlie Volow's blog
+    summary: Developing the Jackdaw digital audio workstation.
+  jacob_vosmaer:
+    feed_url: https://blog.jacobvosmaer.nl/atom.xml
+    homepage_url: https://blog.jacobvosmaer.nl/
+    display_name: Jacob Vosmaer's blog
+    summary: Music, electronics, and programming projects.
+  jakub_sygnowski:
+    feed_url: https://sygi.xyz/rss.xml
+    homepage_url: https://sygi.xyz/
+    display_name: Jakub Sygnowski blog
+    summary: Games, programming, and art.
+  brian_abelson:
+    feed_url: https://brian.abelson.live/feed.xml
+    homepage_url: https://brian.abelson.live/
+    display_name: Brian Abelson
+    summary: Code, writing, and music.
+  robbie_lyman:
+    feed_url: https://www.robbielyman.com/blog/index.xml
+    homepage_url: https://www.robbielyman.com/
+    display_name: Robbie Lyman
+    summary: Mathematics, groups, topology, and reflections.
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
