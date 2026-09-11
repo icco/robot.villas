@@ -6,9 +6,8 @@ const globalForBoot = globalThis as unknown as {
 };
 
 /**
- * Migrates on startup, exiting the process if the database stays unreachable. Lives here
- * rather than in `instrumentation.ts` because that file is also compiled for the Edge
- * runtime, where `process.exit` is unsupported.
+ * Migrates on startup, exiting if it keeps failing. Not in `instrumentation.ts`: that file is
+ * also compiled for the Edge runtime, where `process.exit` is unsupported.
  */
 export async function migrateOrExit(db: Db, logger: Logger): Promise<void> {
   try {

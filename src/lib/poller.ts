@@ -1,6 +1,6 @@
 import type { Context } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
-import type { BotConfig, FeedsConfig } from "./config";
+import { resolveBlockedInstances, type BotConfig, type FeedsConfig } from "./config";
 import { mapWithConcurrency } from "./concurrency";
 import { getFeedPollStatusMap, upsertFeedPollStatus, type Db, type FeedPollStatusRow } from "./db";
 import { parsePositiveInt } from "./env";
@@ -29,6 +29,8 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   const intervalMs = parsePositiveInt(opts.intervalMs, DEFAULT_INTERVAL_MS);
   const concurrency = parsePositiveInt(opts.concurrency, DEFAULT_CONCURRENCY);
   const botNames = Object.keys(config.bots);
+  // Resolved once per poller, not per entry: the list only changes on redeploy.
+  const blockedInstances = resolveBlockedInstances(config);
 
   let stopped = false;
 
@@ -91,7 +93,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         logger.info("Feed unchanged for {username} (HTTP 304)", { username });
         return;
       }
-      const result = await publishNewEntries(ctx, db, username, domain, fetchResult.entries, bot);
+      const result = await publishNewEntries(ctx, db, username, domain, fetchResult.entries, bot, blockedInstances);
       logger.info(
         "Fetched {entryCount} entries for {username}, published {published}, skipped {skipped}",
         {

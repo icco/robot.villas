@@ -25,6 +25,8 @@ import {
   upsertRelay,
   updateRelayStatus,
   getAllRelays,
+  getAcceptedRelays,
+  removeRelay,
   type Db,
 } from "../db";
 import * as schema from "../schema";
@@ -427,6 +429,94 @@ describeWithDb("database", () => {
       await seed();
       expect((await relayRow())!.statusChangedAt).toBeInstanceOf(Date);
     });
+
+    it("removeRelay hides the row from getAllRelays and getAcceptedRelays", async () => {
+      // unsubscribeFromRemovedRelays is removeRelay's first caller, and
+      // delivery reads getAcceptedRelays -- so an accepted row has to stop
+      // being a delivery target, not just disappear from the listing.
+      await seed();
+      await updateRelayStatus(db, "https://robot.test/f/relay-1", "accepted");
+      expect((await getAcceptedRelays(db)).some((r) => r.url === URL)).toBe(true);
+
+      await removeRelay(db, "bot_a", URL);
+
+      expect(await relayRow()).toBeUndefined();
+      expect((await getAcceptedRelays(db)).some((r) => r.url === URL)).toBe(false);
+    });
+
+    it("removeRelay leaves other bots' rows for the same relay alone", async () => {
+      await seed();
+      await upsertRelay(db, "bot_b", URL, URL.replace("/actor", "/inbox"), URL, "https://robot.test/f/relay-2");
+
+      await removeRelay(db, "bot_a", URL);
+
+      expect((await getAllRelays(db, "bot_b")).some((r) => r.url === URL)).toBe(true);
+    });
+  });
+});
+
+describe("migrateWithRetry", () => {
+  const fakeDb = {} as Parameters<typeof migrateWithRetry>[0];
+
+  function unreachable(): Error {
+    return Object.assign(new Error("connect EHOSTUNREACH"), { code: "EHOSTUNREACH" });
+  }
+
+  it("succeeds without sleeping when the database is already up", async () => {
+    const slept: number[] = [];
+    let calls = 0;
+
+    await migrateWithRetry(fakeDb, undefined, {
+      run: async () => {
+        calls++;
+      },
+      sleep: async (ms) => {
+        slept.push(ms);
+      },
+    });
+
+    expect(calls).toBe(1);
+    expect(slept).toEqual([]);
+  });
+
+  it("retries with backoff while the database is still coming up", async () => {
+    const slept: number[] = [];
+    const retries: number[] = [];
+    let calls = 0;
+
+    await migrateWithRetry(fakeDb, (attempt) => retries.push(attempt), {
+      run: async () => {
+        if (++calls < 3) {
+          throw unreachable();
+        }
+      },
+      sleep: async (ms) => {
+        slept.push(ms);
+      },
+    });
+
+    expect(calls).toBe(3);
+    expect(slept).toEqual([1_000, 2_000]);
+    expect(retries).toEqual([1, 2]);
+  });
+
+  it("rethrows the last error once attempts are exhausted, so a broken migration surfaces", async () => {
+    const slept: number[] = [];
+    let calls = 0;
+
+    const attempt = migrateWithRetry(fakeDb, undefined, {
+      run: async () => {
+        calls++;
+        throw unreachable();
+      },
+      sleep: async (ms) => {
+        slept.push(ms);
+      },
+    });
+
+    await expect(attempt).rejects.toThrow("connect EHOSTUNREACH");
+    expect(calls).toBe(6);
+    expect(slept).toEqual([1_000, 2_000, 4_000, 8_000, 15_000]);
   });
 });
 

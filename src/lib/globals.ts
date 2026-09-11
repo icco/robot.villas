@@ -1,6 +1,6 @@
 import { PostgresKvStore, PostgresMessageQueue } from "@fedify/postgres";
 import postgres from "postgres";
-import { getBlockedInstances, loadConfig } from "./config";
+import { loadConfig, resolveBlockedInstances } from "./config";
 import { createDb } from "./db";
 import { setupFederation } from "./federation";
 
@@ -27,7 +27,7 @@ function initGlobals() {
   const config = loadConfig("feeds.yml");
   const kvStore = new PostgresKvStore(sql);
   const messageQueue = new PostgresMessageQueue(sql);
-  const blockedInstances = getBlockedInstances();
+  const blockedInstances = resolveBlockedInstances(config);
   const federation = setupFederation({
     config,
     db,
