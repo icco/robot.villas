@@ -1391,6 +1391,15 @@ bots:
     homepage_url: https://www.robbielyman.com/
     display_name: Robbie Lyman
     summary: Mathematics, groups, topology, and reflections.
+  reliablepgm:
+    feed_url: https://www.reliablepgm.com/feed/
+    homepage_url: https://www.reliablepgm.com/
+    display_name: The Reliable PgM
+    summary: Jennifer Petoff on SRE, program management, and career advice.
+    profile_photo: https://www.reliablepgm.com/wp-content/uploads/2025/05/cropped-reliable-pgm-favicon-1-180x180.png
+    default_hashtags:
+      - SRE
+      - ProgramManagement
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
