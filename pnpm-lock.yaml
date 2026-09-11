@@ -106,7 +106,7 @@ importers:
         specifier: ^10.9.1
         version: 10.9.1(jiti@2.7.0)
       postcss:
-        specifier: ^8.5.28
+        specifier: ^8.5.26
         version: 8.5.28
       tsx:
         specifier: ^4.23.13
