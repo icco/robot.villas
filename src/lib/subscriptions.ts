@@ -86,8 +86,13 @@ export function summarizeRelaySubscription(
   return { status: "none", botUsername: null, statusChangedAt: null };
 }
 
-/** Instances vary on trailing slashes. */
-function normalizeActorId(id: string): string {
+/**
+ * Instances vary on trailing slashes, so every comparison between a URL we
+ * store and one we were handed goes through this. Relay bookkeeping keys on
+ * `(botUsername, url)` exactly, so treating the two forms as different URLs
+ * writes a second row for the same relay.
+ */
+export function normalizeIdUrl(id: string): string {
   return id.endsWith("/") ? id.slice(0, -1) : id;
 }
 
@@ -100,8 +105,8 @@ export function selectRemovedRelays<T extends { url: string }>(
   rows: ReadonlyArray<T>,
   configuredUrls: Iterable<string>,
 ): T[] {
-  const configured = new Set([...configuredUrls].map(normalizeActorId));
-  return rows.filter((row) => !configured.has(normalizeActorId(row.url)));
+  const configured = new Set([...configuredUrls].map(normalizeIdUrl));
+  return rows.filter((row) => !configured.has(normalizeIdUrl(row.url)));
 }
 
 /**
@@ -117,8 +122,8 @@ export function findLostAccepts(
   if (followerIds.size === 0) {
     return [];
   }
-  const normalized = new Set([...followerIds].map(normalizeActorId));
+  const normalized = new Set([...followerIds].map(normalizeIdUrl));
   return pending
-    .filter((row) => row.actorId !== null && normalized.has(normalizeActorId(row.actorId)))
+    .filter((row) => row.actorId !== null && normalized.has(normalizeIdUrl(row.actorId)))
     .map((row) => row.botUsername);
 }

@@ -36,8 +36,15 @@ import {
   Update,
 } from "@fedify/vocab";
 import escapeHtml from "escape-html";
+import { isBlockedHost, normalizeHost } from "./blocklist";
 import { getRelaySubscriptionBot, type BotConfig, type FeedsConfig } from "./config";
-import { findLostAccepts, isRelayTerminal, RelayFollow, selectRemovedRelays } from "./subscriptions";
+import {
+  findLostAccepts,
+  isRelayTerminal,
+  normalizeIdUrl,
+  RelayFollow,
+  selectRemovedRelays,
+} from "./subscriptions";
 import {
   addFollower,
   countEntries,
@@ -87,7 +94,7 @@ export interface FederationDeps {
   kvStore: KvStore;
   messageQueue: MessageQueue;
   origin: string;
-  blockedInstances?: Set<string>;
+  blockedInstances?: ReadonlySet<string>;
 }
 
 const logger = getLogger(["robot-villas", "federation"]);
@@ -211,7 +218,7 @@ async function handleFollow(
   follow: Follow,
   db: Db,
   botUsernames: string[],
-  blockedInstances: Set<string>,
+  blockedInstances: ReadonlySet<string>,
 ): Promise<void> {
   if (!follow.id || !follow.actorId || !follow.objectId) {
     logger.warn("Follow ignored: missing id, actorId, or objectId");
@@ -231,8 +238,10 @@ async function handleFollow(
     });
     return;
   }
-  const followerHost = follower.id.hostname.toLowerCase();
-  if (blockedInstances.has(followerHost)) {
+  // Same predicate as outbound delivery, so a domain block covers subdomains
+  // here too and the two directions cannot disagree about what is blocked.
+  const followerHost = normalizeHost(follower.id.hostname);
+  if (isBlockedHost(followerHost, blockedInstances)) {
     logger.info("Rejected follow from blocked instance {host}", {
       host: followerHost,
     });
@@ -1042,8 +1051,14 @@ export async function subscribeToRelays(
 
   const allRelays = await getAllRelays(db);
 
-  const hasAcceptedForInstance = (url: string) =>
-    allRelays.some((r) => r.url === url && r.status === "accepted");
+  // Every URL comparison below normalizes trailing slashes, matching
+  // unsubscribeFromRemovedRelays. Strict equality here would read a slash-only
+  // feeds.yml edit as a brand new relay and, since upsertRelay conflicts on
+  // (botUsername, url) exactly, write a second row for a relay we already have.
+  const acceptedUrls = new Set(
+    allRelays.filter((r) => r.status === "accepted").map((r) => normalizeIdUrl(r.url)),
+  );
+  const hasAcceptedForInstance = (url: string) => acceptedUrls.has(normalizeIdUrl(url));
   // Terminal for the designated bot + URL. Rejects expire (see isRelayTerminal)
   // so a relay isn't frozen by a denial from a since-fixed format.
   const now = new Date();
@@ -1054,7 +1069,7 @@ export async function subscribeToRelays(
           r.botUsername === designated &&
           isRelayTerminal(r.status, r.statusChangedAt, now),
       )
-      .map((r) => r.url),
+      .map((r) => normalizeIdUrl(r.url)),
   );
 
   const signingIdentifier = botUsernames[0];
@@ -1087,7 +1102,7 @@ export async function subscribeToRelays(
       });
       continue;
     }
-    if (designatedTerminalUrls.has(relayUrl)) {
+    if (designatedTerminalUrls.has(normalizeIdUrl(relayUrl))) {
       logger.info("Designated bot {bot} has terminal state for relay {url}, skipping", {
         bot: designated,
         url: relayUrl,

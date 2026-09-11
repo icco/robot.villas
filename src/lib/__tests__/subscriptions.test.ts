@@ -8,6 +8,7 @@ import {
   RelayFollow,
   AS_PUBLIC,
   selectRemovedRelays,
+  normalizeIdUrl,
 } from "../subscriptions";
 
 const FOLLOW_ARGS = {
@@ -212,5 +213,19 @@ describe("selectRemovedRelays", () => {
       "https://relay.intahnet.co.uk/actor",
     ]);
     expect(removed).toEqual([]);
+  });
+});
+
+describe("normalizeIdUrl", () => {
+  it("treats the two trailing-slash forms as one url", () => {
+    // subscribeToRelays and unsubscribeFromRemovedRelays both key off this. If
+    // only one of them normalized, a slash-only feeds.yml edit would look like
+    // a removal to one and a brand new relay to the other -- and upsertRelay
+    // conflicts on (botUsername, url) exactly, so it would write a second row.
+    expect(normalizeIdUrl("https://relay.toot.io/actor/")).toBe(normalizeIdUrl("https://relay.toot.io/actor"));
+  });
+
+  it("leaves a url without a trailing slash alone", () => {
+    expect(normalizeIdUrl("https://relay.toot.io/actor")).toBe("https://relay.toot.io/actor");
   });
 });
