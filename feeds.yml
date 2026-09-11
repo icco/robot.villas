@@ -1132,6 +1132,7 @@ bots:
     homepage_url: https://horn.gg
     display_name: David Horn
     summary: Writing about AI, technology, games, and culture.
+    profile_photo: https://horn.gg/apple-touch-icon.png
   daring_fireball:
     feed_url: https://daringfireball.net/feeds/main
     homepage_url: https://daringfireball.net
@@ -1151,6 +1152,7 @@ bots:
     homepage_url: https://www.fractalkitty.com/
     display_name: Fractal Kitty
     summary: Math-inspired art and creative explorations.
+    profile_photo: https://storage.ghost.io/c/1b/2e/1b2e7dbb-ac74-48f3-b18d-86f3e8bdb643/content/images/size/w256h256/2024/11/logofav.png
   dan_vanderkam:
     feed_url: https://www.danvk.org/atom.xml
     homepage_url: https://www.danvk.org/
@@ -1166,11 +1168,13 @@ bots:
     homepage_url: https://occasionallycogent.com/
     display_name: James Cash's blog
     summary: Programming experiments, books, and personal reflections.
+    profile_photo: https://occasionallycogent.com/logo.png
   aaron_strick:
     feed_url: https://www.aaronstrick.com/rss.xml
     homepage_url: https://www.aaronstrick.com/
     display_name: AaronStrick.com
     summary: Personal essays, photography, and project updates.
+    profile_photo: https://aaronstrick.com/images/icon.png
   djan:
     feed_url: https://djan.org/atom.xml
     homepage_url: https://djan.org/
@@ -1181,6 +1185,7 @@ bots:
     homepage_url: https://hamy.xyz/
     display_name: HAMY
     summary: Software, projects, and building things.
+    profile_photo: https://hamy.xyz/static/images/favicon.png
   hallway_track:
     feed_url: https://hallway.aris.pub/feed.xml
     homepage_url: https://hallway.aris.pub/
@@ -1191,6 +1196,7 @@ bots:
     homepage_url: https://vishnubharathi.codes/
     display_name: Vishnu Bharathi
     summary: Reading logs and programming notes.
+    profile_photo: https://www.gravatar.com/avatar/261fb0f50b7dea501c807ac01f242343?s=180
   veit_heller:
     feed_url: https://blog.veitheller.de/feed.rss
     homepage_url: https://blog.veitheller.de/
@@ -1221,11 +1227,13 @@ bots:
     homepage_url: https://george.mand.is/
     display_name: George Mandis
     summary: Web development, creative technology, and travel.
+    profile_photo: https://george.mand.is/apple-touch-icon.png
   namanyay_goel:
     feed_url: https://nmn.gl/blog/feed.xml
     homepage_url: https://nmn.gl/blog/
     display_name: N's Blog
     summary: Thoughts on AI, startups, and life.
+    profile_photo: https://nmn.gl/blog/favicon.png
   andrew_healey:
     feed_url: https://healeycodes.com/feed.xml
     homepage_url: https://healeycodes.com/
@@ -1236,11 +1244,13 @@ bots:
     homepage_url: https://www.fauxtrots.com/
     display_name: Fauxtrots
     summary: Personal reflections, art, and technology projects.
+    profile_photo: https://www.fauxtrots.com/apple-touch-icon.png
   evan_schwartz:
     feed_url: https://emschwartz.me/feed/
     homepage_url: https://emschwartz.me/
     display_name: Evan Schwartz
     summary: Software engineering, inventions, and Scour updates.
+    profile_photo: https://bear-images.sfo2.cdn.digitaloceanspaces.com/emschwartz-1723634231.webp
   novalis:
     feed_url: https://novalis.org/blog/atom.xml
     homepage_url: https://novalis.org/blog/
@@ -1261,6 +1271,7 @@ bots:
     homepage_url: https://www.vesto.me/
     display_name: vesto
     summary: Personal notes and links on technology and everyday life.
+    profile_photo: https://www.vesto.me/static/favicon.png
   liquidbrain:
     feed_url: https://liquidbrain.net/rss/
     homepage_url: https://liquidbrain.net/
@@ -1276,6 +1287,7 @@ bots:
     homepage_url: https://igupta.in/
     display_name: Cracking The Code
     summary: Programming, development tools, and engineering lessons.
+    profile_photo: https://igupta.in/favicon.png
   seinwave:
     feed_url: https://seinwave.com/feed.xml
     homepage_url: https://seinwave.com/
@@ -1291,6 +1303,7 @@ bots:
     homepage_url: https://thornberry.io/
     display_name: thornberry.io
     summary: Software, fiction, and reflections from Elijah Kennedy.
+    profile_photo: https://thornberry.io/static/icon.png
   ian_fisher:
     feed_url: https://iafisher.com/blog/rss.xml
     homepage_url: https://iafisher.com/
@@ -1301,11 +1314,13 @@ bots:
     homepage_url: https://blog.greg.technology/
     display_name: the greg technology blog
     summary: Software, hardware, and AI experiments from Greg Sadetsky.
+    profile_photo: https://greg.technology/apple-touch-icon.png
   bryan_braun:
     feed_url: https://www.bryanbraun.com/rss.xml
     homepage_url: https://www.bryanbraun.com/
     display_name: Bryan Braun - Blog
     summary: Making things and sharing lessons learned.
+    profile_photo: https://www.bryanbraun.com/assets/images/feed-favicon.png
   jagi_natarajan:
     feed_url: https://jagi.studio/index.xml
     homepage_url: https://jagi.studio/
@@ -1321,11 +1336,13 @@ bots:
     homepage_url: https://thomasbroadley.com/
     display_name: Thomas Broadley
     summary: Software, AI evaluation, and personal reflections.
+    profile_photo: https://thomasbroadley.com/apple-touch-icon.png
   tierney_cyren:
     feed_url: https://bnb.im/feed.xml
     homepage_url: https://bnb.im/
     display_name: Tierney Cyren
     summary: JavaScript, developer tools, and open protocols.
+    profile_photo: https://bnb.im/img/small-card.png
   sammy_straus:
     feed_url: https://www.sammystraus.com/feed.xml
     homepage_url: https://www.sammystraus.com/
@@ -1336,6 +1353,7 @@ bots:
     homepage_url: https://www.scd31.com/
     display_name: The Cat House
     summary: Electronics, programming, and DIY projects from Sophie Downward.
+    profile_photo: https://www.scd31.com/apple-touch-icon.png
   figbert:
     feed_url: https://figbert.com/atom.xml
     homepage_url: https://figbert.com/
@@ -1346,26 +1364,31 @@ bots:
     homepage_url: https://techblog.hughtipping.com/
     display_name: Hugh's Tech Blog
     summary: Platform engineering and technology from Hugh Tipping.
+    profile_photo: https://substack-post-media.s3.amazonaws.com/public/images/cf268b80-2704-43e6-8232-c002cddb3f5b/apple-touch-icon-1024x1024.png
   mark_dominus:
     feed_url: https://blog.plover.com/index.atom
     homepage_url: https://blog.plover.com/
     display_name: The Universe of Discourse
     summary: Mathematics, programming, and life from Mark Dominus.
+    profile_photo: https://pic.blog.plover.com/HOP-192.png
   push_cx:
     feed_url: https://push.cx/feed.xml
     homepage_url: https://push.cx/
     display_name: Push.cx
     summary: Projects and technical notes from Peter Bhat Harkins.
+    profile_photo: https://push.cx/apple-touch-icon.png
   zach_ahn:
     feed_url: https://zachahn.com/posts/atom.xml
     homepage_url: https://zachahn.com/
     display_name: Zach Ahn
     summary: Personal essays and technical notes.
+    profile_photo: https://zachahn.com/apple-touch-icon-precomposed.png
   mark_mayes:
     feed_url: https://mm-dev.rocks/index.xml
     homepage_url: https://mm-dev.rocks/
     display_name: mm-dev
     summary: Software development and learning experiences from Mark Mayes.
+    profile_photo: https://mm-dev.rocks/apple-touch-icon.png
   charlie_volow:
     feed_url: https://charlie-volow.com/blog/feed.xml
     homepage_url: https://charlie-volow.com/blog/index.html
@@ -1376,21 +1399,25 @@ bots:
     homepage_url: https://blog.jacobvosmaer.nl/
     display_name: Jacob Vosmaer's blog
     summary: Music, electronics, and programming projects.
+    profile_photo: https://blog.jacobvosmaer.nl/apple-touch-icon.png
   jakub_sygnowski:
     feed_url: https://sygi.xyz/rss.xml
     homepage_url: https://sygi.xyz/
     display_name: Jakub Sygnowski blog
     summary: Games, programming, and art.
+    profile_photo: https://sygi.xyz/images/favicon.png
   brian_abelson:
     feed_url: https://brian.abelson.live/feed.xml
     homepage_url: https://brian.abelson.live/
     display_name: Brian Abelson
     summary: Code, writing, and music.
+    profile_photo: https://brian.abelson.live/assets/img/apple-touch-icon.png
   robbie_lyman:
     feed_url: https://www.robbielyman.com/blog/index.xml
     homepage_url: https://www.robbielyman.com/
     display_name: Robbie Lyman
     summary: Mathematics, groups, topology, and reflections.
+    profile_photo: https://www.robbielyman.com/headshot-2025.jpeg
   reliablepgm:
     feed_url: https://www.reliablepgm.com/feed/
     homepage_url: https://www.reliablepgm.com/
