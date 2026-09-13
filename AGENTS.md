@@ -7,8 +7,8 @@ See [CLAUDE.md](CLAUDE.md) for Claude Code entrypoint (`@AGENTS.md`).
 
 ActivityPub / Fediverse server built with Fedify, Next.js 16 (App Router), Drizzle ORM + PostgreSQL, Tailwind CSS 4 + DaisyUI 5, and Google GenAI (Gemini).
 - App routes: `src/app/`
-- Fediverse federation: Fedify integration in `src/app/` and `src/federation/`
-- Database schema & migrations: Drizzle ORM in `src/db/`
+- Fediverse integration: `src/lib/federation.ts` (initialized from `src/instrumentation.ts`)
+- Database schema & migrations: Drizzle schema/DB helpers in `src/lib/schema.ts` and `src/lib/db.ts`; SQL migrations in `drizzle/`
 - Scripts & validation: `scripts/validate-feeds.ts`
 
 ## Commands
