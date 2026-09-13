@@ -30,7 +30,7 @@
     "@icco/react-common": "^2026.10901.6",
     "@js-temporal/polyfill": "^0.5.1",
     "@logtape/logtape": "^2.3.4",
-    "daisyui": "^5.7.36",
+    "daisyui": "^5.7.37",
     "drizzle-orm": "^0.45.2",
     "escape-html": "^1.0.3",
     "js-yaml": "^5.4.1",
@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@next/eslint-plugin-next": "^16.3.4",
+    "@next/eslint-plugin-next": "^16.3.5",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/escape-html": "^1.0.4",
