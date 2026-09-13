@@ -1,7 +1,6 @@
 # AGENTS.md
 
 Guidance for coding agents working on robot.villas.
-See [CLAUDE.md](CLAUDE.md) for Claude Code entrypoint (`@AGENTS.md`).
 
 ## Project Overview
 
