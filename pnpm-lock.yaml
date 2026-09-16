@@ -39,11 +39,11 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1
       '@logtape/logtape':
-        specifier: ^2.3.4
-        version: 2.3.4
+        specifier: ^2.3.5
+        version: 2.3.5
       daisyui:
-        specifier: ^5.7.37
-        version: 5.7.37
+        specifier: ^5.7.38
+        version: 5.7.38
       drizzle-orm:
         specifier: ^0.45.2
         version: 0.45.2(@opentelemetry/api@1.9.1)(postgres@3.4.9)
@@ -685,8 +685,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@logtape/logtape@2.3.4':
-    resolution: {integrity: sha512-oW5Q6EOdjemL94c324j2fUn+2nRGuODwmOKmrwY6YAVkjqNWYVgkzpfbckFc4CKmDDCMk+GiwNfPybMZB3QqNQ==}
+  '@logtape/logtape@2.3.5':
+    resolution: {integrity: sha512-s4LlalG0JO2Fg8ENy1aQVdOS47VOD2pip6mOW29TNuCxW5zOhrQk/ck/xs77M7O15b2pK2KnDSr7L0Tf6LIUXg==}
 
   '@multiformats/base-x@4.0.1':
     resolution: {integrity: sha512-eMk0b9ReBbV23xXU693TAIrLyeO5iTgBZGSJfpqriG8UkYvr/hC9u9pyMlAakDNHWmbhMZCDs6KQO0jzKD8OTw==}
@@ -1213,8 +1213,8 @@ packages:
   bignumber.js@9.3.1:
     resolution: {integrity: sha512-Ko0uX15oIUS7wJ3Rb30Fs6SkVbLmPBAKdlm7q9+ak9bbIeFf0MwuBsQV6z7+X768/cHsfg+WlysDWJcmthjsjQ==}
 
-  brace-expansion@5.0.9:
-    resolution: {integrity: sha512-ScQ4IuvIEF1TMlP7Zt+vjJ//9zlPb2SDcxWxM3bk8s6t6GGdJ7KO1dCcTidOPJKePW30LE/2cT7wCyPho9/Wxg==}
+  brace-expansion@5.0.12:
+    resolution: {integrity: sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==}
     engines: {node: 20 || >=22}
 
   braces@3.0.3:
@@ -1265,8 +1265,8 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  daisyui@5.7.37:
-    resolution: {integrity: sha512-PVcdAcL0ni6/wmcNwvldARZuO0HdzxtjVEAT86ie9GMgFjwmqIWeXsPaM2/eYqLb4WMexqj146C5Z1xmzZDnjg==}
+  daisyui@5.7.38:
+    resolution: {integrity: sha512-ef3RIbteKVmlQ10ak0l4mu8F70pBJ2UBjDJNsA2vWlpNdErpHqfxddxK2ckNNYd7vQvTqP4a1A1vSsunlCGVOw==}
 
   data-uri-to-buffer@4.0.1:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
@@ -2555,7 +2555,7 @@ snapshots:
       '@fedify/vocab-runtime': 2.3.6
       '@fedify/webfinger': 2.3.6
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.4
+      '@logtape/logtape': 2.3.5
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.11.0(@opentelemetry/api@1.9.1)
       '@opentelemetry/sdk-metrics': 2.11.0(@opentelemetry/api@1.9.1)
@@ -2577,7 +2577,7 @@ snapshots:
     dependencies:
       '@fedify/fedify': 2.3.6
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.4
+      '@logtape/logtape': 2.3.5
       postgres: 3.4.9
 
   '@fedify/uri-template@2.3.6': {}
@@ -2585,7 +2585,7 @@ snapshots:
   '@fedify/vocab-runtime@2.3.6':
     dependencies:
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.4
+      '@logtape/logtape': 2.3.5
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2606,7 +2606,7 @@ snapshots:
       '@fedify/vocab-tools': 2.3.6
       '@fedify/webfinger': 2.3.6
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.4
+      '@logtape/logtape': 2.3.5
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2617,7 +2617,7 @@ snapshots:
   '@fedify/webfinger@2.3.6':
     dependencies:
       '@fedify/vocab-runtime': 2.3.6
-      '@logtape/logtape': 2.3.4
+      '@logtape/logtape': 2.3.5
       '@opentelemetry/api': 1.9.1
       es-toolkit: 1.46.1
 
@@ -2802,7 +2802,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@logtape/logtape@2.3.4': {}
+  '@logtape/logtape@2.3.5': {}
 
   '@multiformats/base-x@4.0.1': {}
 
@@ -3249,7 +3249,7 @@ snapshots:
 
   bignumber.js@9.3.1: {}
 
-  brace-expansion@5.0.9:
+  brace-expansion@5.0.12:
     dependencies:
       balanced-match: 4.0.4
 
@@ -3296,7 +3296,7 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  daisyui@5.7.37: {}
+  daisyui@5.7.38: {}
 
   data-uri-to-buffer@4.0.1: {}
 
@@ -3796,7 +3796,7 @@ snapshots:
 
   minimatch@10.2.6:
     dependencies:
-      brace-expansion: 5.0.9
+      brace-expansion: 5.0.12
 
   ms@2.1.3: {}
 
