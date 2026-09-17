@@ -21,10 +21,10 @@
     "validate-feeds": "tsx scripts/validate-feeds.ts"
   },
   "dependencies": {
-    "@fedify/fedify": "^2.3.6",
-    "@fedify/next": "^2.3.6",
-    "@fedify/postgres": "^2.3.6",
-    "@fedify/vocab": "^2.3.6",
+    "@fedify/fedify": "^2.3.7",
+    "@fedify/next": "^2.3.7",
+    "@fedify/postgres": "^2.3.7",
+    "@fedify/vocab": "^2.3.7",
     "@google/genai": "^2.22.0",
     "@heroicons/react": "^2.2.0",
     "@icco/react-common": "^2026.10913.3",
@@ -48,7 +48,7 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/escape-html": "^1.0.4",
-    "@types/node": "^26.5.1",
+    "@types/node": "^26.6.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "drizzle-kit": "^0.31.10",
