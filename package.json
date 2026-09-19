@@ -30,7 +30,7 @@
     "@icco/react-common": "^2026.10917.2",
     "@js-temporal/polyfill": "^0.5.1",
     "@logtape/logtape": "^2.3.5",
-    "daisyui": "^5.7.39",
+    "daisyui": "^5.7.40",
     "drizzle-orm": "^0.45.2",
     "escape-html": "^1.0.3",
     "js-yaml": "^5.4.2",
