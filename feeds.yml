@@ -32,7 +32,7 @@ bots:
     display_name: Nat? Nat. Nat!
     summary: Nat Welch's blog about random stuff.
     profile_photo: https://avatars.githubusercontent.com/u/20201?s=200
-  micah_flee:
+  micahflee:
     feed_url: https://micahflee.com/rss/
     homepage_url: https://micahflee.com
     display_name: Micah Lee
