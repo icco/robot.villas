@@ -39,8 +39,8 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1
       '@logtape/logtape':
-        specifier: ^2.3.5
-        version: 2.3.5
+        specifier: ^2.3.6
+        version: 2.3.6
       daisyui:
         specifier: ^5.7.42
         version: 5.7.42
@@ -685,8 +685,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@logtape/logtape@2.3.5':
-    resolution: {integrity: sha512-s4LlalG0JO2Fg8ENy1aQVdOS47VOD2pip6mOW29TNuCxW5zOhrQk/ck/xs77M7O15b2pK2KnDSr7L0Tf6LIUXg==}
+  '@logtape/logtape@2.3.6':
+    resolution: {integrity: sha512-1ajI6YRkq+gIpgYVhOcJ4Mn5QUarSvWnnuj8SNMjwrjIcOy1ANEIcZyaLN+vPtL2MCa845D8ghXR8xDA+c3Khg==}
 
   '@multiformats/base-x@4.0.1':
     resolution: {integrity: sha512-eMk0b9ReBbV23xXU693TAIrLyeO5iTgBZGSJfpqriG8UkYvr/hC9u9pyMlAakDNHWmbhMZCDs6KQO0jzKD8OTw==}
@@ -2555,7 +2555,7 @@ snapshots:
       '@fedify/vocab-runtime': 2.3.7
       '@fedify/webfinger': 2.3.7
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.5
+      '@logtape/logtape': 2.3.6
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.11.0(@opentelemetry/api@1.9.1)
       '@opentelemetry/sdk-metrics': 2.11.0(@opentelemetry/api@1.9.1)
@@ -2577,7 +2577,7 @@ snapshots:
     dependencies:
       '@fedify/fedify': 2.3.7
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.5
+      '@logtape/logtape': 2.3.6
       postgres: 3.4.9
 
   '@fedify/uri-template@2.3.7': {}
@@ -2585,7 +2585,7 @@ snapshots:
   '@fedify/vocab-runtime@2.3.7':
     dependencies:
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.5
+      '@logtape/logtape': 2.3.6
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2606,7 +2606,7 @@ snapshots:
       '@fedify/vocab-tools': 2.3.7
       '@fedify/webfinger': 2.3.7
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.5
+      '@logtape/logtape': 2.3.6
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2617,7 +2617,7 @@ snapshots:
   '@fedify/webfinger@2.3.7':
     dependencies:
       '@fedify/vocab-runtime': 2.3.7
-      '@logtape/logtape': 2.3.5
+      '@logtape/logtape': 2.3.6
       '@opentelemetry/api': 1.9.1
       es-toolkit: 1.46.1
 
@@ -2802,7 +2802,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@logtape/logtape@2.3.5': {}
+  '@logtape/logtape@2.3.6': {}
 
   '@multiformats/base-x@4.0.1': {}
 
