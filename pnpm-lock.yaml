@@ -39,8 +39,8 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1
       '@logtape/logtape':
-        specifier: ^2.3.7
-        version: 2.3.7
+        specifier: ^2.3.8
+        version: 2.3.8
       daisyui:
         specifier: ^5.7.46
         version: 5.7.46
@@ -685,8 +685,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@logtape/logtape@2.3.7':
-    resolution: {integrity: sha512-y0X4Liaj9voRRn0aAffCw2HCRpZEibOdmHiOgwsAT0hgHS8MaDKHl9cQGZ8r8uZR+b+yN9qznNYru6z9oOEMVw==}
+  '@logtape/logtape@2.3.8':
+    resolution: {integrity: sha512-MufJjxJF9frfmRuDBmpTYxhMgENkNGqSaDw59DnSjVeZ+ptxkDgfEoaJkLcpxtF8is9TAptRsCYXfw+j+3yX3A==}
 
   '@multiformats/base-x@4.0.1':
     resolution: {integrity: sha512-eMk0b9ReBbV23xXU693TAIrLyeO5iTgBZGSJfpqriG8UkYvr/hC9u9pyMlAakDNHWmbhMZCDs6KQO0jzKD8OTw==}
@@ -2277,8 +2277,8 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  ws@8.21.3:
-    resolution: {integrity: sha512-201TZ/kPWxoPr/OKWjquZR1SWKXcvxdH+e1xrx89b3YbmzLMFCLfnaG1HFIgWzJOEWZ7MvpK++odZufgYR50Rw==}
+  ws@8.22.0:
+    resolution: {integrity: sha512-Ydggc987+RO0AnWtZ/7Wq9FtNvcrL1b/RO0ud9mWjUPgDrsAAwQSF51sm2hm1XofbU/4jkpGEsLFsZZxU+1DOg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -2530,7 +2530,7 @@ snapshots:
       '@fedify/vocab-runtime': 2.3.8
       '@fedify/webfinger': 2.3.8
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.7
+      '@logtape/logtape': 2.3.8
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.11.0(@opentelemetry/api@1.9.1)
       '@opentelemetry/sdk-metrics': 2.11.0(@opentelemetry/api@1.9.1)
@@ -2552,7 +2552,7 @@ snapshots:
     dependencies:
       '@fedify/fedify': 2.3.8
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.7
+      '@logtape/logtape': 2.3.8
       postgres: 3.4.9
 
   '@fedify/uri-template@2.3.8': {}
@@ -2560,7 +2560,7 @@ snapshots:
   '@fedify/vocab-runtime@2.3.8':
     dependencies:
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.7
+      '@logtape/logtape': 2.3.8
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2581,7 +2581,7 @@ snapshots:
       '@fedify/vocab-tools': 2.3.8
       '@fedify/webfinger': 2.3.8
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.7
+      '@logtape/logtape': 2.3.8
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2592,7 +2592,7 @@ snapshots:
   '@fedify/webfinger@2.3.8':
     dependencies:
       '@fedify/vocab-runtime': 2.3.8
-      '@logtape/logtape': 2.3.7
+      '@logtape/logtape': 2.3.8
       '@opentelemetry/api': 1.9.1
       es-toolkit: 1.46.1
 
@@ -2601,7 +2601,7 @@ snapshots:
       google-auth-library: 10.9.1
       p-retry: 4.6.2
       protobufjs: 7.6.6
-      ws: 8.21.3
+      ws: 8.22.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -2777,7 +2777,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@logtape/logtape@2.3.7': {}
+  '@logtape/logtape@2.3.8': {}
 
   '@multiformats/base-x@4.0.1': {}
 
@@ -4137,7 +4137,7 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  ws@8.21.3: {}
+  ws@8.22.0: {}
 
   xml-name-validator@5.0.0: {}
 
