@@ -85,8 +85,8 @@ async function main() {
   const config = result.data;
   console.log(`✓ Schema valid — ${Object.keys(config.bots).length} bots`);
 
-  // Step 2: profile photo checks
-  const bots = Object.entries(config.bots).filter(([, b]) => b.profile_photo);
+  // Check RSS avatars; the built-in icon is generated during the build.
+  const bots = Object.entries(config.bots).filter(([, b]) => b.feed_url && b.profile_photo);
   console.log(`\nChecking ${bots.length} profile photos…\n`);
 
   const errors: string[] = [];
