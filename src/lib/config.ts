@@ -66,9 +66,12 @@ export const FeedsConfigSchema = z
   .transform((config) => {
     const bots: Record<string, BotConfig> = { ...config.bots };
     if (config.meta) {
+      const origin = `https://${process.env.DOMAIN || "robot.villas"}`;
       bots.meta = {
         display_name: "robot.villas Meta",
         summary: "New bot accounts on robot.villas.",
+        profile_photo: `${origin}/icon`,
+        homepage_url: `${origin}/`,
       };
     }
     return { ...config, bots };

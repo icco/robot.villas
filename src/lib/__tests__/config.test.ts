@@ -96,9 +96,12 @@ bots:
     summary: A feed
 `;
     const enabled = parseConfig(`${yaml}meta: true\n`);
+    const origin = `https://${process.env.DOMAIN || "robot.villas"}`;
     expect(enabled.bots.meta).toEqual({
       display_name: "robot.villas Meta",
       summary: "New bot accounts on robot.villas.",
+      profile_photo: `${origin}/icon`,
+      homepage_url: `${origin}/`,
     });
     expect(getRelaySubscriptionBot(enabled)).toBe("news");
     expect(parseConfig(yaml).meta).toBe(false);
