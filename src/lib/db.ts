@@ -265,6 +265,23 @@ export async function getEntryById(
   return rows[0] ?? null;
 }
 
+export async function getEntryByGuid(db: Db, botUsername: string, guid: string) {
+  const rows = await db.select({
+    id: schema.feedEntries.id,
+    url: schema.feedEntries.url,
+    title: schema.feedEntries.title,
+    publishedAt: schema.feedEntries.publishedAt,
+    hashtags: schema.feedEntries.hashtags,
+  }).from(schema.feedEntries)
+    .where(and(
+      eq(schema.feedEntries.botUsername, botUsername),
+      eq(schema.feedEntries.guid, guid),
+      isNull(schema.feedEntries.deletedAt),
+    ))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
 export async function getEntriesPage(
   db: Db,
   botUsername: string,

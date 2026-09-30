@@ -51,6 +51,7 @@ Defaults to `false`. Its username and profile are fixed; do not add it under `bo
 After deployment, it posts each new account's name, handle, summary, and profile link.
 Restarts do not repeat posts. The migration skips accounts with existing actor keys;
 a fresh database announces all RSS bots.
+Failed queue submissions retry the stored activity on the next poll.
 
 ## Environment Variables
 

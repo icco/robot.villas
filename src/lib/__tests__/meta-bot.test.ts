@@ -5,7 +5,7 @@ vi.mock("../db", () => ({
   markBotsAnnounced: vi.fn(),
   getFollowerRecipients: vi.fn(),
   getAcceptedRelays: vi.fn(),
-  getExistingGuids: vi.fn(),
+  getEntryByGuid: vi.fn(),
   insertEntry: vi.fn(),
 }));
 
@@ -14,7 +14,7 @@ import {
   markBotsAnnounced,
   getFollowerRecipients,
   getAcceptedRelays,
-  getExistingGuids,
+  getEntryByGuid,
   insertEntry,
 } from "../db";
 import { parseConfig } from "../config";
@@ -34,6 +34,13 @@ const createdAt = new Date("2026-09-30T12:00:00Z");
 const db = {} as never;
 const sendActivity = vi.fn().mockResolvedValue(undefined);
 const ctx = { sendActivity } as never;
+const storedEntry = {
+  id: 42,
+  title: "New bot: New <Bot> (@newbot@robot.villas). A new feed",
+  url: "https://robot.villas/@newbot",
+  publishedAt: createdAt,
+  hashtags: [],
+};
 
 describe("meta bot announcements", () => {
   beforeEach(() => {
@@ -41,7 +48,7 @@ describe("meta bot announcements", () => {
     vi.mocked(getPendingBotAnnouncements).mockResolvedValue([
       { botUsername: "newbot", createdAt, announcedAt: null },
     ]);
-    vi.mocked(getExistingGuids).mockImplementation(async () => new Set());
+    vi.mocked(getEntryByGuid).mockResolvedValue(storedEntry);
     vi.mocked(insertEntry).mockResolvedValue(42);
     vi.mocked(getFollowerRecipients).mockResolvedValue([
       { followerId: "https://remote.example/user", sharedInboxUrl: "https://remote.example/inbox" },
@@ -69,12 +76,53 @@ describe("meta bot announcements", () => {
     expect(markBotsAnnounced).toHaveBeenCalledWith(db, ["newbot"]);
   });
 
-  it("deduplicates retries after posting", async () => {
-    vi.mocked(getExistingGuids).mockResolvedValue(new Set(["new-bot:newbot"]));
+  it("reuses the stored activity after an interrupted state update", async () => {
+    vi.mocked(markBotsAnnounced).mockRejectedValueOnce(new Error("database unavailable"));
+    await expect(announceNewBots(ctx, db, config, "robot.villas")).rejects.toThrow("database unavailable");
+    vi.mocked(insertEntry).mockResolvedValue(null);
     await announceNewBots(ctx, db, config, "robot.villas");
-    expect(insertEntry).not.toHaveBeenCalled();
-    expect(sendActivity).not.toHaveBeenCalled();
+    expect(sendActivity).toHaveBeenCalledTimes(2);
+    expect(await sendActivity.mock.calls[1][2].toJsonLd())
+      .toEqual(await sendActivity.mock.calls[0][2].toJsonLd());
     expect(markBotsAnnounced).toHaveBeenCalledWith(db, ["newbot"]);
+  });
+
+  it.each(["follower", "relay"])("retries a failed %s send", async (target) => {
+    if (target === "relay") {
+      vi.mocked(getAcceptedRelays).mockResolvedValue([{
+        id: 1, botUsername: "newbot", url: "https://relay.example/actor",
+        actorId: "https://relay.example/actor", inboxUrl: "https://relay.example/inbox",
+        status: "accepted", statusChangedAt: null, followActivityId: null,
+      }]);
+      sendActivity.mockResolvedValueOnce(undefined);
+    }
+    sendActivity.mockRejectedValueOnce(new Error("queue unavailable"));
+    await announceNewBots(ctx, db, config, "robot.villas");
+    expect(markBotsAnnounced).not.toHaveBeenCalled();
+    const original = await sendActivity.mock.calls[0][2].toJsonLd();
+
+    sendActivity.mockClear();
+    vi.mocked(insertEntry).mockResolvedValue(null);
+    const changedConfig = {
+      ...config,
+      bots: { ...config.bots, newbot: { ...config.bots.newbot, summary: "Changed" } },
+    };
+    await announceNewBots(ctx, db, changedConfig, "robot.villas");
+    expect(await sendActivity.mock.calls[0][2].toJsonLd()).toEqual(original);
+    expect(sendActivity).toHaveBeenCalledTimes(target === "relay" ? 2 : 1);
+    expect(markBotsAnnounced).toHaveBeenCalledWith(db, ["newbot"]);
+  });
+
+  it("only completes successfully queued announcements", async () => {
+    vi.mocked(getPendingBotAnnouncements).mockResolvedValue([
+      { botUsername: "newbot", createdAt, announcedAt: null },
+      { botUsername: "other", createdAt, announcedAt: null },
+    ]);
+    sendActivity.mockRejectedValueOnce(new Error("queue unavailable"));
+    await announceNewBots(ctx, db, {
+      ...config, bots: { ...config.bots, other: config.bots.newbot },
+    }, "robot.villas");
+    expect(markBotsAnnounced).toHaveBeenCalledExactlyOnceWith(db, ["other"]);
   });
 
   it("retries failed inserts", async () => {

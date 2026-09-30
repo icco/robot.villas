@@ -1,7 +1,7 @@
 import type { Context } from "@fedify/fedify";
 import { resolveBlockedInstances, type FeedsConfig } from "./config";
-import { getPendingBotAnnouncements, markBotsAnnounced, type Db } from "./db";
-import { publishNewEntries } from "./publisher";
+import { getEntryByGuid, getPendingBotAnnouncements, insertEntry, markBotsAnnounced, type Db } from "./db";
+import { buildCreateActivity, getPublishRecipients, sendCreateActivity } from "./publisher";
 
 export async function announceNewBots(
   ctx: Context<void>,
@@ -18,21 +18,29 @@ export async function announceNewBots(
     return;
   }
 
-  await publishNewEntries(
-    ctx,
-    db,
-    "meta",
-    domain,
-    pending.map(({ botUsername, createdAt }) => ({
-      guid: `new-bot:${botUsername}`,
-      title: `New bot: ${config.bots[botUsername].display_name} (@${botUsername}@${domain}). ${config.bots[botUsername].summary}`,
-      link: new URL(`/@${botUsername}`, `https://${domain}`).href,
-      publishedAt: createdAt,
-      feedCategories: [],
-    })),
-    config.bots.meta,
-    resolveBlockedInstances(config),
-  );
-  // Stable GUIDs prevent duplicate posts if this update fails.
-  await markBotsAnnounced(db, pending.map(({ botUsername }) => botUsername));
+  const recipients = await getPublishRecipients(db, "meta", resolveBlockedInstances(config));
+  for (const { botUsername, createdAt } of pending) {
+    const bot = config.bots[botUsername];
+    const guid = `new-bot:${botUsername}`;
+    await insertEntry(
+      db, "meta", guid,
+      new URL(`/@${botUsername}`, `https://${domain}`).href,
+      `New bot: ${bot.display_name} (@${botUsername}@${domain}). ${bot.summary}`,
+      createdAt, [],
+    );
+    const entry = await getEntryByGuid(db, "meta", guid);
+    if (!entry) {
+      throw new Error(`Missing announcement for ${botUsername}`);
+    }
+    // Retries reuse the stored content and activity ID.
+    const activity = buildCreateActivity("meta", entry.id, {
+      title: entry.title,
+      link: entry.url,
+      publishedAt: entry.publishedAt,
+      hashtags: entry.hashtags,
+    }, `https://${domain}`);
+    if (await sendCreateActivity(ctx, "meta", activity, recipients)) {
+      await markBotsAnnounced(db, [botUsername]);
+    }
+  }
 }

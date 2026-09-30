@@ -7,6 +7,7 @@ import {
   migrateWithRetry,
   hasEntry,
   getExistingGuids,
+  getEntryByGuid,
   insertEntry,
   countEntriesForBots,
   getTagsPage,
@@ -106,6 +107,17 @@ describeWithDb("database", () => {
       await insertEntry(db, "testbot", "guid-dup", "https://example.com/dup", "Dup", null, ["A", "B", "C"]);
       await insertEntry(db, "testbot", "guid-dup", "https://example.com/dup", "Dup", null, ["A", "B", "C"]);
       expect(await hasEntry(db, "testbot", "guid-dup")).toBe(true);
+    });
+
+    it("preserves the stored activity on retry", async () => {
+      const publishedAt = new Date("2026-09-30T12:00:00Z");
+      const id = await insertEntry(db, "testbot", "new-bot:bot_a", "https://example.com/@bot_a", "Original", publishedAt, []);
+      expect(await insertEntry(db, "testbot", "new-bot:bot_a", "https://example.com/changed", "Changed", new Date(), []))
+        .toBeNull();
+      expect(await getEntryByGuid(db, "testbot", "new-bot:bot_a")).toEqual({
+        id, url: "https://example.com/@bot_a", title: "Original", publishedAt, hashtags: [],
+      });
+      expect(await getEntryByGuid(db, "bot_b", "new-bot:bot_a")).toBeNull();
     });
 
     it("scopes entries to bot username", async () => {
