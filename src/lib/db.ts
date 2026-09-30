@@ -462,6 +462,19 @@ export async function getAllBotUsernames(db: Db): Promise<string[]> {
   return rows.map((r) => r.botUsername);
 }
 
+/** PostgreSQL releases this lock on completion, rollback, or disconnect. */
+export async function withBotAnnouncementLock(db: Db, publish: () => Promise<void>): Promise<void> {
+  await db.transaction(async (tx) => {
+    const [row] = await tx.execute<{ locked: boolean }>(sql`
+      SELECT pg_try_advisory_xact_lock(hashtext('robot.villas'), hashtext('meta')) AS locked
+    `);
+    if (row.locked) {
+      // Publish uses committed writes so a failed attempt preserves the post ID.
+      await publish();
+    }
+  });
+}
+
 export async function getPendingBotAnnouncements(db: Db, botUsernames: string[]) {
   if (botUsernames.length === 0) {
     return [];

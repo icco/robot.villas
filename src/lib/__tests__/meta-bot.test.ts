@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 vi.mock("../db", () => ({
+  withBotAnnouncementLock: vi.fn(),
   getPendingBotAnnouncements: vi.fn(),
   markBotsAnnounced: vi.fn(),
   getFollowerRecipients: vi.fn(),
@@ -10,6 +11,7 @@ vi.mock("../db", () => ({
 }));
 
 import {
+  withBotAnnouncementLock,
   getPendingBotAnnouncements,
   markBotsAnnounced,
   getFollowerRecipients,
@@ -45,6 +47,7 @@ const storedEntry = {
 describe("meta bot announcements", () => {
   beforeEach(() => {
     vi.clearAllMocks();
+    vi.mocked(withBotAnnouncementLock).mockImplementation(async (_db, publish) => publish());
     vi.mocked(getPendingBotAnnouncements).mockResolvedValue([
       { botUsername: "newbot", createdAt, announcedAt: null },
     ]);
@@ -74,6 +77,15 @@ describe("meta bot announcements", () => {
     expect(note.id.href).toBe("https://robot.villas/users/meta/posts/42");
     expect(note.toIds.map((url: URL) => url.href)).toContain("https://www.w3.org/ns/activitystreams#Public");
     expect(markBotsAnnounced).toHaveBeenCalledWith(db, ["newbot"]);
+  });
+
+  it("skips publishing when another worker holds the lock", async () => {
+    vi.mocked(withBotAnnouncementLock).mockResolvedValueOnce(undefined);
+    await announceNewBots(ctx, db, config, "robot.villas");
+    expect(getPendingBotAnnouncements).not.toHaveBeenCalled();
+    expect(insertEntry).not.toHaveBeenCalled();
+    expect(sendActivity).not.toHaveBeenCalled();
+    expect(markBotsAnnounced).not.toHaveBeenCalled();
   });
 
   it("reuses the stored activity after an interrupted state update", async () => {

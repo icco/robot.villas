@@ -27,6 +27,7 @@ import {
   updateRelayStatus,
   getAllRelays,
   getPendingBotAnnouncements,
+  withBotAnnouncementLock,
   markBotsAnnounced,
   getAcceptedRelays,
   removeRelay,
@@ -83,12 +84,53 @@ describeWithDb("database", () => {
       expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual([]);
     });
 
-    it("deduplicates simultaneous account discovery", async () => {
-      await Promise.all([
-        getPendingBotAnnouncements(db, ["bot_a"]),
-        getPendingBotAnnouncements(db, ["bot_a"]),
-      ]);
-      expect(await getPendingBotAnnouncements(db, ["bot_a"])).toHaveLength(1);
+    it("only lets one worker publish pending announcements", async () => {
+      const otherClient = postgres(DATABASE_URL!);
+      const otherDb = createDb(otherClient);
+      const entered = Promise.withResolvers<void>();
+      const release = Promise.withResolvers<void>();
+      const published: string[] = [];
+      const publish = async (workerDb: Db) => {
+        const pending = await getPendingBotAnnouncements(workerDb, ["bot_a"]);
+        published.push(...pending.map((row) => row.botUsername));
+        await markBotsAnnounced(workerDb, pending.map((row) => row.botUsername));
+      };
+      const first = withBotAnnouncementLock(db, async () => {
+        entered.resolve();
+        await release.promise;
+        await publish(db);
+      });
+      try {
+        await entered.promise;
+        await withBotAnnouncementLock(otherDb, async () => publish(otherDb));
+        expect(published).toEqual([]);
+        release.resolve();
+        await first;
+        expect(published).toEqual(["bot_a"]);
+        await withBotAnnouncementLock(otherDb, async () => publish(otherDb));
+        expect(published).toEqual(["bot_a"]);
+      } finally {
+        release.resolve();
+        await first;
+        await otherClient.end();
+      }
+    });
+
+    it("releases a failed worker's lock and preserves its stored post", async () => {
+      let id: number | null = null;
+      await expect(withBotAnnouncementLock(db, async () => {
+        await getPendingBotAnnouncements(db, ["bot_a"]);
+        id = await insertEntry(db, "testbot", "new-bot:bot_a", "https://example.com/@bot_a", "Original", new Date(), []);
+        throw new Error("queue unavailable");
+      })).rejects.toThrow("queue unavailable");
+      let retried = false;
+      await withBotAnnouncementLock(db, async () => {
+        expect((await getPendingBotAnnouncements(db, ["bot_a"])).map((row) => row.botUsername))
+          .toEqual(["bot_a"]);
+        expect((await getEntryByGuid(db, "testbot", "new-bot:bot_a"))?.id).toBe(id);
+        retried = true;
+      });
+      expect(retried).toBe(true);
     });
   });
 
