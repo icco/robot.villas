@@ -34,6 +34,13 @@ export const actorKeypairs = pgTable("actor_keypairs", {
   deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
 });
 
+/** Durable account discovery and announcement state, retained even if a bot is removed. */
+export const botRegistrations = pgTable("bot_registrations", {
+  botUsername: text("bot_username").primaryKey(),
+  createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+  announcedAt: timestamp("announced_at", { withTimezone: true, mode: "date" }),
+});
+
 export const followers = pgTable(
   "followers",
   {

@@ -48,11 +48,25 @@
     "bot": {
       "type": "object",
       "required": [
-        "feed_url",
         "display_name",
         "summary"
       ],
+      "oneOf": [
+        {
+          "required": ["feed_url"],
+          "properties": { "type": { "const": "rss" } }
+        },
+        {
+          "required": ["type"],
+          "properties": { "type": { "const": "meta" } },
+          "not": { "required": ["feed_url"] }
+        }
+      ],
       "properties": {
+        "type": {
+          "enum": ["rss", "meta"],
+          "description": "Defaults to rss. A single meta bot announces newly added local accounts."
+        },
         "feed_url": {
           "type": "string",
           "format": "uri",

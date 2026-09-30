@@ -90,12 +90,14 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
             @{username}@{domain}
           </p>
           <p className="mt-2 text-base-content/80">{bot.summary}</p>
-          <p className="text-sm text-base-content/50 mt-2">
-            Source:{" "}
-            <a href={bot.feed_url} className="link link-hover break-all">
-              {bot.feed_url}
-            </a>
-          </p>
+          {bot.feed_url && (
+            <p className="text-sm text-base-content/50 mt-2">
+              Source:{" "}
+              <a href={bot.feed_url} className="link link-hover break-all">
+                {bot.feed_url}
+              </a>
+            </p>
+          )}
           {bot.homepage_url && (
             <p className="text-sm text-base-content/50 mt-1">
               Homepage:{" "}

@@ -445,6 +445,33 @@ export async function getAllBotUsernames(db: Db): Promise<string[]> {
   return rows.map((r) => r.botUsername);
 }
 
+export async function getPendingBotAnnouncements(db: Db, botUsernames: string[]) {
+  if (botUsernames.length === 0) {
+    return [];
+  }
+  await db.insert(schema.botRegistrations)
+    .values(botUsernames.map((botUsername) => ({ botUsername })))
+    .onConflictDoNothing();
+  return db.select().from(schema.botRegistrations)
+    .where(and(
+      inArray(schema.botRegistrations.botUsername, botUsernames),
+      isNull(schema.botRegistrations.announcedAt),
+    ))
+    .orderBy(asc(schema.botRegistrations.createdAt), asc(schema.botRegistrations.botUsername));
+}
+
+export async function markBotsAnnounced(db: Db, botUsernames: string[]): Promise<void> {
+  if (botUsernames.length === 0) {
+    return;
+  }
+  await db.update(schema.botRegistrations)
+    .set({ announcedAt: new Date() })
+    .where(and(
+      inArray(schema.botRegistrations.botUsername, botUsernames),
+      isNull(schema.botRegistrations.announcedAt),
+    ));
+}
+
 export async function removeKeypairs(db: Db, botUsername: string): Promise<void> {
   await db
     .update(schema.actorKeypairs)

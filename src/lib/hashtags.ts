@@ -199,8 +199,8 @@ export async function resolveHashtags(
   const location = opts.geminiLocation ?? process.env.GEMINI_LOCATION;
   const hasGemini = !!(apiKey || project);
 
-  if (!hasGemini) {
-    // No Gemini: use feed categories + config defaults directly as hashtags.
+  if (!hasGemini || bot.type === "meta") {
+    // Meta announcements use deterministic tags; RSS falls back here without Gemini.
     return mergeHashtagCandidates(
       [...entry.feedCategories, ...(bot.default_hashtags ?? [])],
       MAX_TAGS,

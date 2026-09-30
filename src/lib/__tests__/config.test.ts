@@ -87,6 +87,33 @@ bots:
     ).toThrow();
   });
 
+  it("accepts a meta bot without a feed and rejects one with a feed", () => {
+    const yaml = `
+bots:
+  meta:
+    type: meta
+    display_name: Meta
+    summary: Announces new accounts
+`;
+    expect(parseConfig(yaml).bots.meta.type).toBe("meta");
+    expect(() => parseConfig(`${yaml}    feed_url: https://example.com/rss\n`)).toThrow();
+    expect(() => parseConfig(yaml.replace("type: meta", "type: unknown"))).toThrow();
+  });
+
+  it("rejects multiple meta bots", () => {
+    expect(() => parseConfig(`
+bots:
+  meta:
+    type: meta
+    display_name: Meta
+    summary: Announcements
+  other:
+    type: meta
+    display_name: Other
+    summary: Announcements
+`)).toThrow("At most one meta bot");
+  });
+
   it("rejects bot usernames with uppercase letters", () => {
     expect(() =>
       parseConfig(`
@@ -171,7 +198,9 @@ describe("loadConfig", () => {
     const config = loadConfig(join(import.meta.dirname!, "..", "..", "..", "feeds.yml"));
     expect(Object.keys(config.bots).length).toBeGreaterThanOrEqual(1);
     for (const bot of Object.values(config.bots)) {
-      expect(bot.feed_url).toMatch(/^https?:\/\//);
+      if (bot.type !== "meta") {
+        expect(bot.feed_url).toMatch(/^https?:\/\//);
+      }
       expect(bot.display_name.length).toBeGreaterThan(0);
     }
   });
@@ -218,7 +247,11 @@ describe("loadConfig", () => {
         expect(bot[field]).toBeDefined();
       }
 
-      expect(isUri(bot.feed_url)).toBe(true);
+      if (bot.type === "meta") {
+        expect(bot.feed_url).toBeUndefined();
+      } else {
+        expect(isUri(bot.feed_url)).toBe(true);
+      }
       expect(typeof bot.display_name).toBe("string");
       expect((bot.display_name as string).length).toBeGreaterThanOrEqual(1);
       expect((bot.display_name as string).length).toBeLessThanOrEqual(100);

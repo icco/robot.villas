@@ -25,6 +25,8 @@ import {
   upsertRelay,
   updateRelayStatus,
   getAllRelays,
+  getPendingBotAnnouncements,
+  markBotsAnnounced,
   getAcceptedRelays,
   removeRelay,
   type Db,
@@ -38,6 +40,7 @@ const describeWithDb = DATABASE_URL ? describe : describe.skip;
 const TEST_BOTS = ["testbot", "bot_a", "bot_b", "legacybot"];
 
 async function cleanTestData(db: Db) {
+  await db.delete(schema.botRegistrations).where(inArray(schema.botRegistrations.botUsername, TEST_BOTS));
   await db.delete(schema.feedEntries).where(inArray(schema.feedEntries.botUsername, TEST_BOTS));
   await db.delete(schema.actorKeypairs).where(inArray(schema.actorKeypairs.botUsername, TEST_BOTS));
   await db.delete(schema.followers).where(inArray(schema.followers.botUsername, TEST_BOTS));
@@ -63,6 +66,29 @@ describeWithDb("database", () => {
 
   beforeEach(async () => {
     await cleanTestData(db);
+  });
+
+  describe("bot announcements", () => {
+    it("retains pending announcements across retries and only discovers new usernames", async () => {
+      const first = await getPendingBotAnnouncements(db, ["bot_a"]);
+      expect(first.map((row) => row.botUsername)).toEqual(["bot_a"]);
+      expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual(first);
+      await markBotsAnnounced(db, ["bot_a"]);
+      expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual([]);
+      expect((await getPendingBotAnnouncements(db, ["bot_a", "bot_b"]))
+        .map((row) => row.botUsername)).toEqual(["bot_b"]);
+      // Removed bots aren't announced, but their state survives a later re-add.
+      expect(await getPendingBotAnnouncements(db, [])).toEqual([]);
+      expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual([]);
+    });
+
+    it("deduplicates simultaneous account discovery", async () => {
+      await Promise.all([
+        getPendingBotAnnouncements(db, ["bot_a"]),
+        getPendingBotAnnouncements(db, ["bot_a"]),
+      ]);
+      expect(await getPendingBotAnnouncements(db, ["bot_a"])).toHaveLength(1);
+    });
   });
 
   describe("feed_entries", () => {

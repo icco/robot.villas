@@ -8,6 +8,10 @@ vi.mock("../publisher", () => ({
   publishNewEntries: vi.fn(),
 }));
 
+vi.mock("../meta-bot", () => ({
+  announceNewBots: vi.fn().mockResolvedValue(undefined),
+}));
+
 vi.mock("../db", () => ({
   upsertFeedPollStatus: vi.fn().mockResolvedValue(undefined),
   getFeedPollStatusMap: vi.fn().mockResolvedValue(new Map()),
@@ -15,6 +19,7 @@ vi.mock("../db", () => ({
 
 import { fetchFeedWithHttpResult, type FeedFetchResult } from "../rss";
 import { publishNewEntries } from "../publisher";
+import { announceNewBots } from "../meta-bot";
 import { startPoller } from "../poller";
 import { getFeedPollStatusMap, upsertFeedPollStatus, type FeedPollStatusRow } from "../db";
 import type { FeedsConfig } from "../config";
@@ -88,6 +93,29 @@ describe("startPoller concurrency", () => {
     });
 
     poller.stop();
+  });
+
+  it("runs announcements but only fetches RSS bots, even if announcements fail", async () => {
+    const config = makeConfig(1);
+    config.bots.meta = { type: "meta", display_name: "Meta", summary: "Announcements" };
+    vi.mocked(announceNewBots).mockRejectedValueOnce(new Error("database unavailable"));
+    mockFetchFeed.mockResolvedValue(okFetch());
+    const poller = startPoller({
+      config,
+      db: {} as never,
+      domain: "robot.villas",
+      intervalMs: 10_000_000,
+      getContext: () => ({}) as never,
+    });
+    try {
+      await vi.waitFor(() => expect(mockPublishNewEntries).toHaveBeenCalledTimes(1));
+      expect(announceNewBots).toHaveBeenCalledTimes(1);
+      expect(mockGetStatusMap).toHaveBeenCalledWith({}, ["bot0"]);
+      expect(mockFetchFeed).toHaveBeenCalledTimes(1);
+      expect(mockFetchFeed.mock.calls[0][0]).toBe("https://example.com/feed0.xml");
+    } finally {
+      poller.stop();
+    }
   });
 
   it("never has more than `concurrency` feed fetches in flight at once", async () => {

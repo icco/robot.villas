@@ -9,6 +9,11 @@ bots:
     default_hashtags:
       - HackerNews
       - Tech
+  meta:
+    type: meta
+    display_name: robot.villas Meta
+    summary: Announces new bot accounts added to robot.villas. Follow to discover new feeds!
+    homepage_url: https://robot.villas
   lobsters:
     feed_url: https://lobste.rs/rss
     homepage_url: https://lobste.rs

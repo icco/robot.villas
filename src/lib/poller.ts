@@ -6,6 +6,7 @@ import { getFeedPollStatusMap, upsertFeedPollStatus, type Db, type FeedPollStatu
 import { parsePositiveInt } from "./env";
 import { fetchFeedWithHttpResult } from "./rss";
 import { publishNewEntries } from "./publisher";
+import { announceNewBots } from "./meta-bot";
 
 /** Not configurable: a 429 backs a slow-polling host off on its own. */
 const DEFAULT_INTERVAL_MS = 15 * 60 * 1000;
@@ -28,7 +29,10 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   const { config, db, domain, getContext } = opts;
   const intervalMs = parsePositiveInt(opts.intervalMs, DEFAULT_INTERVAL_MS);
   const concurrency = parsePositiveInt(opts.concurrency, DEFAULT_CONCURRENCY);
-  const botNames = Object.keys(config.bots);
+  const rssBots = Object.entries(config.bots).filter(
+    (entry): entry is [string, Exclude<BotConfig, { type: "meta" }>] => entry[1].type !== "meta",
+  );
+  const botNames = rssBots.map(([username]) => username);
   // Resolved once per poller, not per entry: the list only changes on redeploy.
   const blockedInstances = resolveBlockedInstances(config);
 
@@ -42,7 +46,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   async function pollBot(
     ctx: Context<void>,
     username: string,
-    bot: BotConfig,
+    bot: Exclude<BotConfig, { type: "meta" }>,
     previous: FeedPollStatusRow | undefined,
   ): Promise<void> {
     const checkedAt = new Date();
@@ -111,6 +115,11 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   async function poll(): Promise<void> {
     logger.info("Poll cycle starting");
     const ctx = getContext();
+    try {
+      await announceNewBots(ctx, db, config, domain);
+    } catch (err) {
+      logger.error("New bot announcements failed: {error}", { error: err });
+    }
     let statuses: Map<string, FeedPollStatusRow>;
     try {
       statuses = await getFeedPollStatusMap(db, botNames);
@@ -120,7 +129,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
       statuses = new Map();
     }
     await mapWithConcurrency(
-      Object.entries(config.bots),
+      rssBots,
       concurrency,
       ([username, bot]) => pollBot(ctx, username, bot, statuses.get(username)),
     );
