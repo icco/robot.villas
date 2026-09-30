@@ -113,6 +113,13 @@
       "when": 1786922617878,
       "tag": "0015_bitter_human_robot",
       "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1790757490655,
+      "tag": "0016_bot_registrations",
+      "breakpoints": true
     }
   ]
 }

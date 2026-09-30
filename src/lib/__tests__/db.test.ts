@@ -7,6 +7,7 @@ import {
   migrateWithRetry,
   hasEntry,
   getExistingGuids,
+  getEntryByGuid,
   insertEntry,
   countEntriesForBots,
   getTagsPage,
@@ -25,6 +26,9 @@ import {
   upsertRelay,
   updateRelayStatus,
   getAllRelays,
+  getPendingBotAnnouncements,
+  withBotAnnouncementLock,
+  markBotsAnnounced,
   getAcceptedRelays,
   removeRelay,
   type Db,
@@ -38,6 +42,7 @@ const describeWithDb = DATABASE_URL ? describe : describe.skip;
 const TEST_BOTS = ["testbot", "bot_a", "bot_b", "legacybot"];
 
 async function cleanTestData(db: Db) {
+  await db.delete(schema.botRegistrations).where(inArray(schema.botRegistrations.botUsername, TEST_BOTS));
   await db.delete(schema.feedEntries).where(inArray(schema.feedEntries.botUsername, TEST_BOTS));
   await db.delete(schema.actorKeypairs).where(inArray(schema.actorKeypairs.botUsername, TEST_BOTS));
   await db.delete(schema.followers).where(inArray(schema.followers.botUsername, TEST_BOTS));
@@ -65,6 +70,70 @@ describeWithDb("database", () => {
     await cleanTestData(db);
   });
 
+  describe("bot announcements", () => {
+    it("retains pending announcements and skips announced usernames", async () => {
+      const first = await getPendingBotAnnouncements(db, ["bot_a"]);
+      expect(first.map((row) => row.botUsername)).toEqual(["bot_a"]);
+      expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual(first);
+      await markBotsAnnounced(db, ["bot_a"]);
+      expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual([]);
+      expect((await getPendingBotAnnouncements(db, ["bot_a", "bot_b"]))
+        .map((row) => row.botUsername)).toEqual(["bot_b"]);
+      // Re-adding a bot does not repeat its announcement.
+      expect(await getPendingBotAnnouncements(db, [])).toEqual([]);
+      expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual([]);
+    });
+
+    it("only lets one worker publish pending announcements", async () => {
+      const otherClient = postgres(DATABASE_URL!);
+      const otherDb = createDb(otherClient);
+      const entered = Promise.withResolvers<void>();
+      const release = Promise.withResolvers<void>();
+      const published: string[] = [];
+      const publish = async (workerDb: Db) => {
+        const pending = await getPendingBotAnnouncements(workerDb, ["bot_a"]);
+        published.push(...pending.map((row) => row.botUsername));
+        await markBotsAnnounced(workerDb, pending.map((row) => row.botUsername));
+      };
+      const first = withBotAnnouncementLock(db, async () => {
+        entered.resolve();
+        await release.promise;
+        await publish(db);
+      });
+      try {
+        await entered.promise;
+        await withBotAnnouncementLock(otherDb, async () => publish(otherDb));
+        expect(published).toEqual([]);
+        release.resolve();
+        await first;
+        expect(published).toEqual(["bot_a"]);
+        await withBotAnnouncementLock(otherDb, async () => publish(otherDb));
+        expect(published).toEqual(["bot_a"]);
+      } finally {
+        release.resolve();
+        await first;
+        await otherClient.end();
+      }
+    });
+
+    it("releases a failed worker's lock and preserves its stored post", async () => {
+      let id: number | null = null;
+      await expect(withBotAnnouncementLock(db, async () => {
+        await getPendingBotAnnouncements(db, ["bot_a"]);
+        id = await insertEntry(db, "testbot", "new-bot:bot_a", "https://example.com/@bot_a", "Original", new Date(), []);
+        throw new Error("queue unavailable");
+      })).rejects.toThrow("queue unavailable");
+      let retried = false;
+      await withBotAnnouncementLock(db, async () => {
+        expect((await getPendingBotAnnouncements(db, ["bot_a"])).map((row) => row.botUsername))
+          .toEqual(["bot_a"]);
+        expect((await getEntryByGuid(db, "testbot", "new-bot:bot_a"))?.id).toBe(id);
+        retried = true;
+      });
+      expect(retried).toBe(true);
+    });
+  });
+
   describe("feed_entries", () => {
     it("inserts and detects entries", async () => {
       expect(await hasEntry(db, "testbot", "guid-1")).toBe(false);
@@ -80,6 +149,17 @@ describeWithDb("database", () => {
       await insertEntry(db, "testbot", "guid-dup", "https://example.com/dup", "Dup", null, ["A", "B", "C"]);
       await insertEntry(db, "testbot", "guid-dup", "https://example.com/dup", "Dup", null, ["A", "B", "C"]);
       expect(await hasEntry(db, "testbot", "guid-dup")).toBe(true);
+    });
+
+    it("preserves the stored activity on retry", async () => {
+      const publishedAt = new Date("2026-09-30T12:00:00Z");
+      const id = await insertEntry(db, "testbot", "new-bot:bot_a", "https://example.com/@bot_a", "Original", publishedAt, []);
+      expect(await insertEntry(db, "testbot", "new-bot:bot_a", "https://example.com/changed", "Changed", new Date(), []))
+        .toBeNull();
+      expect(await getEntryByGuid(db, "testbot", "new-bot:bot_a")).toEqual({
+        id, url: "https://example.com/@bot_a", title: "Original", publishedAt, hashtags: [],
+      });
+      expect(await getEntryByGuid(db, "bot_b", "new-bot:bot_a")).toBeNull();
     });
 
     it("scopes entries to bot username", async () => {

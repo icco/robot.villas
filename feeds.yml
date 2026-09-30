@@ -1,4 +1,5 @@
 # yaml-language-server: $schema=./feeds.schema.json
+meta: true
 bots:
   hackernews:
     feed_url: https://news.ycombinator.com/rss

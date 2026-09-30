@@ -84,18 +84,11 @@ export interface PublishResult {
   skipped: number;
 }
 
-export async function publishNewEntries(
-  ctx: Context<void>,
+export async function getPublishRecipients(
   db: Db,
   botUsername: string,
-  domain: string,
-  entries: FeedEntry[],
-  bot: BotConfig,
   blockedInstances: ReadonlySet<string> = new Set(),
-): Promise<PublishResult> {
-  let published = 0;
-  let skipped = 0;
-
+) {
   const followerRows = await getFollowerRecipients(db, botUsername);
   const allFollowerRecipients: Recipient[] = followerRows
     .filter((f) => f.sharedInboxUrl)
@@ -130,7 +123,49 @@ export async function publishNewEntries(
     });
   }
 
-  const hasRecipients = followerRecipients.length > 0 || relayRecipients.length > 0;
+  return { followerRecipients, relayRecipients };
+}
+
+/** Success means Fedify queued all sends; its queue handles network retries. */
+export async function sendCreateActivity(
+  ctx: Context<void>,
+  botUsername: string,
+  create: Create,
+  { followerRecipients, relayRecipients }: Awaited<ReturnType<typeof getPublishRecipients>>,
+): Promise<boolean> {
+  let success = true;
+  if (followerRecipients.length > 0) {
+    try {
+      await ctx.sendActivity({ identifier: botUsername }, followerRecipients, create);
+    } catch (error) {
+      success = false;
+      logger.error("Failed to send to followers for {botUsername}: {error}", { botUsername, error });
+    }
+  }
+  for (const relay of relayRecipients) {
+    try {
+      await ctx.sendActivity({ identifier: botUsername }, relay, create);
+    } catch (error) {
+      success = false;
+      logger.error("Failed to send to relay {relayId}: {error}", { relayId: relay.id?.href, error });
+    }
+  }
+  return success;
+}
+
+export async function publishNewEntries(
+  ctx: Context<void>,
+  db: Db,
+  botUsername: string,
+  domain: string,
+  entries: FeedEntry[],
+  bot: BotConfig,
+  blockedInstances: ReadonlySet<string> = new Set(),
+): Promise<PublishResult> {
+  let published = 0;
+  let skipped = 0;
+  const recipients = await getPublishRecipients(db, botUsername, blockedInstances);
+  const hasRecipients = recipients.followerRecipients.length > 0 || recipients.relayRecipients.length > 0;
 
   const truncatedEntries = entries.map((entry) => ({
     entry,
@@ -188,36 +223,7 @@ export async function publishNewEntries(
       `https://${domain}`,
     );
 
-    if (followerRecipients.length > 0) {
-      try {
-        await ctx.sendActivity(
-          { identifier: botUsername },
-          followerRecipients,
-          create,
-        );
-      } catch (error) {
-        logger.error("Failed to send to followers for {botUsername}: {error}", {
-          botUsername,
-          error,
-        });
-      }
-    }
-
-    for (const relay of relayRecipients) {
-      try {
-        await ctx.sendActivity(
-          { identifier: botUsername },
-          relay,
-          create,
-        );
-      } catch (error) {
-        logger.error("Failed to send to relay {relayId}: {error}", {
-          relayId: relay.id?.href,
-          error,
-        });
-      }
-    }
-
+    await sendCreateActivity(ctx, botUsername, create, recipients);
     published++;
   }
 

@@ -265,6 +265,23 @@ export async function getEntryById(
   return rows[0] ?? null;
 }
 
+export async function getEntryByGuid(db: Db, botUsername: string, guid: string) {
+  const rows = await db.select({
+    id: schema.feedEntries.id,
+    url: schema.feedEntries.url,
+    title: schema.feedEntries.title,
+    publishedAt: schema.feedEntries.publishedAt,
+    hashtags: schema.feedEntries.hashtags,
+  }).from(schema.feedEntries)
+    .where(and(
+      eq(schema.feedEntries.botUsername, botUsername),
+      eq(schema.feedEntries.guid, guid),
+      isNull(schema.feedEntries.deletedAt),
+    ))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
 export async function getEntriesPage(
   db: Db,
   botUsername: string,
@@ -443,6 +460,46 @@ export async function getAllBotUsernames(db: Db): Promise<string[]> {
     .from(schema.actorKeypairs)
     .where(isNull(schema.actorKeypairs.deletedAt));
   return rows.map((r) => r.botUsername);
+}
+
+/** PostgreSQL releases this lock on completion, rollback, or disconnect. */
+export async function withBotAnnouncementLock(db: Db, publish: () => Promise<void>): Promise<void> {
+  await db.transaction(async (tx) => {
+    const [row] = await tx.execute<{ locked: boolean }>(sql`
+      SELECT pg_try_advisory_xact_lock(hashtext('robot.villas'), hashtext('meta')) AS locked
+    `);
+    if (row.locked) {
+      // Publish uses committed writes so a failed attempt preserves the post ID.
+      await publish();
+    }
+  });
+}
+
+export async function getPendingBotAnnouncements(db: Db, botUsernames: string[]) {
+  if (botUsernames.length === 0) {
+    return [];
+  }
+  await db.insert(schema.botRegistrations)
+    .values(botUsernames.map((botUsername) => ({ botUsername })))
+    .onConflictDoNothing();
+  return db.select().from(schema.botRegistrations)
+    .where(and(
+      inArray(schema.botRegistrations.botUsername, botUsernames),
+      isNull(schema.botRegistrations.announcedAt),
+    ))
+    .orderBy(asc(schema.botRegistrations.createdAt), asc(schema.botRegistrations.botUsername));
+}
+
+export async function markBotsAnnounced(db: Db, botUsernames: string[]): Promise<void> {
+  if (botUsernames.length === 0) {
+    return;
+  }
+  await db.update(schema.botRegistrations)
+    .set({ announcedAt: new Date() })
+    .where(and(
+      inArray(schema.botRegistrations.botUsername, botUsernames),
+      isNull(schema.botRegistrations.announcedAt),
+    ));
 }
 
 export async function removeKeypairs(db: Db, botUsername: string): Promise<void> {

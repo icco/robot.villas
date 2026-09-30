@@ -191,7 +191,7 @@ export default async function StatusPage() {
               </tr>
             </thead>
             <tbody>
-              {botUsernames.map((username) => {
+              {botUsernames.filter((username) => config.bots[username].feed_url).map((username) => {
                 const bot = config.bots[username];
                 const poll = feedPollMap.get(username);
                 return (

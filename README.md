@@ -39,6 +39,20 @@ The `follows` list contains fediverse handles (`@user@instance`) that every bot 
 
 The `relays` list contains ActivityPub relay actor URLs. The server subscribes to these on startup so posts reach a wider audience.
 
+### New account announcements
+
+Enable the built-in `@meta@robot.villas` bot with a top-level flag in `feeds.yml`:
+
+```yaml
+meta: true
+```
+
+Defaults to `false`. Its username and profile are fixed; do not add it under `bots`.
+After deployment, it posts each new account's name, handle, summary, and profile link.
+Restarts do not repeat posts. The migration skips accounts with existing actor keys;
+a fresh database announces all RSS bots.
+Failed queue submissions retry the stored activity on the next poll.
+
 ## Environment Variables
 
 | Variable            | Description                                      | Default            |

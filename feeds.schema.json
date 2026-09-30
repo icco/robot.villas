@@ -8,6 +8,11 @@
     "bots"
   ],
   "properties": {
+    "meta": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enable @meta to announce new bot accounts. Reserves the username meta."
+    },
     "bots": {
       "type": "object",
       "description": "Bot definitions keyed by fediverse username.",

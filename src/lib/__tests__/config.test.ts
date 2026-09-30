@@ -87,6 +87,38 @@ bots:
     ).toThrow();
   });
 
+  it("enables the fixed meta bot with a boolean", () => {
+    const yaml = `
+bots:
+  news:
+    feed_url: https://example.com/rss
+    display_name: News
+    summary: A feed
+`;
+    const enabled = parseConfig(`${yaml}meta: true\n`);
+    expect(enabled.bots.meta).toEqual({
+      display_name: "robot.villas Meta",
+      summary: "New bot accounts on robot.villas.",
+    });
+    expect(getRelaySubscriptionBot(enabled)).toBe("news");
+    expect(parseConfig(yaml).meta).toBe(false);
+    expect(parseConfig(yaml).bots.meta).toBeUndefined();
+    expect(parseConfig(`${yaml}meta: false\n`).bots.meta).toBeUndefined();
+    expect(() => parseConfig(`${yaml}meta: "true"\n`)).toThrow();
+    expect(() => parseConfig(`${yaml}meta: { display_name: Custom }\n`)).toThrow();
+  });
+
+  it("rejects a username collision", () => {
+    expect(() => parseConfig(`
+meta: true
+bots:
+  meta:
+    feed_url: https://example.com/rss
+    display_name: Custom
+    summary: A feed
+`)).toThrow("meta is reserved");
+  });
+
   it("rejects bot usernames with uppercase letters", () => {
     expect(() =>
       parseConfig(`
@@ -170,8 +202,10 @@ describe("loadConfig", () => {
   it("loads the example feeds.yml", () => {
     const config = loadConfig(join(import.meta.dirname!, "..", "..", "..", "feeds.yml"));
     expect(Object.keys(config.bots).length).toBeGreaterThanOrEqual(1);
-    for (const bot of Object.values(config.bots)) {
-      expect(bot.feed_url).toMatch(/^https?:\/\//);
+    for (const [username, bot] of Object.entries(config.bots)) {
+      if (username !== "meta") {
+        expect(bot.feed_url).toMatch(/^https?:\/\//);
+      }
       expect(bot.display_name.length).toBeGreaterThan(0);
     }
   });

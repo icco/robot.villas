@@ -140,7 +140,7 @@ async function buildActor(
   const profileUrl = new URL(`/@${identifier}`, actorUri);
   const enrichedSummary =
     `<p>${escapeHtml(bot.summary)}</p>` +
-    `<p>I am a bot that mirrors an RSS feed.</p>`;
+    (bot.feed_url ? `<p>I am a bot that mirrors an RSS feed.</p>` : "");
   return new Application({
     id: actorUri,
     preferredUsername: identifier,
@@ -155,10 +155,9 @@ async function buildActor(
       sharedInbox: ctx.getInboxUri(),
     }),
     attachments: [
-      new PropertyValue({
-        name: "source",
-        value: buildFieldLink(bot.feed_url),
-      }),
+      ...(bot.feed_url
+        ? [new PropertyValue({ name: "source", value: buildFieldLink(bot.feed_url) })]
+        : []),
       ...(bot.homepage_url
         ? [
             new PropertyValue({
