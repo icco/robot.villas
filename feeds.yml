@@ -350,6 +350,12 @@ bots:
     display_name: BBC News
     summary: BBC News — front page and breaking stories from the British Broadcasting Corporation.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.bbc.com&size=128
+  the_standard:
+    feed_url: https://www.standard.co.uk/rss
+    homepage_url: https://www.standard.co.uk
+    display_name: The Standard
+    summary: Latest London news, business, sport, culture, celebrity, and entertainment from The Standard.
+    profile_photo: https://www.standard.co.uk/img/shortcut-icons/icon-192x192.png
   npr_news:
     feed_url: https://feeds.npr.org/1001/rss.xml
     homepage_url: https://www.npr.org
