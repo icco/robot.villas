@@ -199,7 +199,7 @@ export async function resolveHashtags(
   const location = opts.geminiLocation ?? process.env.GEMINI_LOCATION;
   const hasGemini = !!(apiKey || project);
 
-  if (!hasGemini || bot.type === "meta") {
+  if (!hasGemini || !bot.feed_url) {
     // Meta announcements use deterministic tags; RSS falls back here without Gemini.
     return mergeHashtagCandidates(
       [...entry.feedCategories, ...(bot.default_hashtags ?? [])],

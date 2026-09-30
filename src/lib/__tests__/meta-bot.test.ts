@@ -21,11 +21,8 @@ import { parseConfig } from "../config";
 import { announceNewBots } from "../meta-bot";
 
 const config = parseConfig(`
+meta: true
 bots:
-  meta:
-    type: meta
-    display_name: Meta
-    summary: New accounts
   newbot:
     feed_url: https://example.com/rss
     display_name: New <Bot>
@@ -53,12 +50,12 @@ describe("meta bot announcements", () => {
     vi.mocked(getAcceptedRelays).mockResolvedValue([]);
   });
 
-  it("stores a public post, links the new profile, and delivers to allowed followers", async () => {
+  it("posts a profile link to allowed followers", async () => {
     await announceNewBots(ctx, db, config, "robot.villas");
     expect(getPendingBotAnnouncements).toHaveBeenCalledWith(db, ["newbot"]);
     expect(insertEntry).toHaveBeenCalledWith(
       db, "meta", "new-bot:newbot", "https://robot.villas/@newbot",
-      "Welcome New <Bot> (@newbot@robot.villas) to robot.villas! A new feed", createdAt, [],
+      "New bot: New <Bot> (@newbot@robot.villas). A new feed", createdAt, [],
     );
     expect(sendActivity).toHaveBeenCalledTimes(1);
     const [sender, recipients, activity] = sendActivity.mock.calls[0];
@@ -72,7 +69,7 @@ describe("meta bot announcements", () => {
     expect(markBotsAnnounced).toHaveBeenCalledWith(db, ["newbot"]);
   });
 
-  it("does not duplicate a post if publishing succeeded before an interrupted state update", async () => {
+  it("deduplicates retries after posting", async () => {
     vi.mocked(getExistingGuids).mockResolvedValue(new Set(["new-bot:newbot"]));
     await announceNewBots(ctx, db, config, "robot.villas");
     expect(insertEntry).not.toHaveBeenCalled();
@@ -80,7 +77,7 @@ describe("meta bot announcements", () => {
     expect(markBotsAnnounced).toHaveBeenCalledWith(db, ["newbot"]);
   });
 
-  it("leaves failed inserts pending so the next cycle can retry", async () => {
+  it("retries failed inserts", async () => {
     vi.mocked(insertEntry).mockRejectedValueOnce(new Error("database unavailable"));
     await expect(announceNewBots(ctx, db, config, "robot.villas")).rejects.toThrow("database unavailable");
     expect(markBotsAnnounced).not.toHaveBeenCalled();
@@ -89,7 +86,7 @@ describe("meta bot announcements", () => {
     expect(markBotsAnnounced).toHaveBeenCalledWith(db, ["newbot"]);
   });
 
-  it("stores announcements even before the meta bot has followers", async () => {
+  it("stores posts without followers", async () => {
     vi.mocked(getFollowerRecipients).mockResolvedValue([]);
     await announceNewBots(ctx, db, config, "robot.villas");
     expect(insertEntry).toHaveBeenCalledTimes(1);
@@ -97,10 +94,10 @@ describe("meta bot announcements", () => {
     expect(markBotsAnnounced).toHaveBeenCalledWith(db, ["newbot"]);
   });
 
-  it("does nothing when there are no new accounts or no meta bot", async () => {
+  it("skips empty or disabled announcements", async () => {
     vi.mocked(getPendingBotAnnouncements).mockResolvedValue([]);
     await announceNewBots(ctx, db, config, "robot.villas");
-    await announceNewBots(ctx, db, { ...config, bots: { newbot: config.bots.newbot } }, "robot.villas");
+    await announceNewBots(ctx, db, { ...config, meta: false }, "robot.villas");
     expect(getPendingBotAnnouncements).toHaveBeenCalledTimes(1);
     expect(insertEntry).not.toHaveBeenCalled();
     expect(markBotsAnnounced).not.toHaveBeenCalled();

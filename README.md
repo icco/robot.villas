@@ -41,27 +41,16 @@ The `relays` list contains ActivityPub relay actor URLs. The server subscribes t
 
 ### New account announcements
 
-Follow `@meta@robot.villas` to discover new local bot accounts. The meta bot is configured
-alongside RSS bots, with `type: meta` and no `feed_url`:
+Enable the built-in `@meta@robot.villas` bot with a top-level flag in `feeds.yml`:
 
 ```yaml
-  meta:
-    type: meta
-    display_name: robot.villas Meta
-    summary: Announces new bot accounts added to robot.villas.
-    homepage_url: https://robot.villas
+meta: true
 ```
 
-Only one meta bot can be configured. RSS bots can omit `type` (or set `type: rss`) and
-still require `feed_url`. The meta bot has a normal followable profile and outbox, but
-is not polled as an RSS feed.
-
-New usernames in `feeds.yml` are discovered on startup after deployment and announced
-with their display name, handle, summary, and profile link. Pending announcements are
-retried each poll cycle. Account discovery and post deduplication are stored in PostgreSQL,
-so restarts, profile edits, and removing/re-adding a username do not repeat announcements.
-The migration seeds existing accounts from stored actor keys as already announced to
-avoid historical backfill; a fresh database announces all configured RSS accounts.
+Defaults to `false`. Its username and profile are fixed; do not add it under `bots`.
+After deployment, it posts each new account's name, handle, summary, and profile link.
+Restarts do not repeat posts. The migration skips accounts with existing actor keys;
+a fresh database announces all RSS bots.
 
 ## Environment Variables
 

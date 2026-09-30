@@ -8,7 +8,8 @@ const MAX_SUMMARY_LENGTH = 500;
 /** Max characters per hashtag; longer candidates are dropped, not truncated. */
 export const MAX_TAG_LEN = 32;
 
-const BotProfileSchema = z.object({
+const BotSchema = z.object({
+  feed_url: z.string().url(),
   display_name: z.string().min(1).max(MAX_DISPLAY_NAME_LENGTH),
   summary: z.string().min(1).max(MAX_SUMMARY_LENGTH),
   profile_photo: z.string().url().optional(),
@@ -17,29 +18,18 @@ const BotProfileSchema = z.object({
   default_hashtags: z.array(z.string().min(1).max(MAX_TAG_LEN)).max(3).optional(),
 });
 
-const BotSchema = z.union([
-  BotProfileSchema.extend({
-    type: z.literal("rss").optional(),
-    feed_url: z.string().url(),
-  }),
-  BotProfileSchema.extend({
-    type: z.literal("meta"),
-    feed_url: z.never().optional(),
-  }),
-]);
+export type RssBotConfig = z.infer<typeof BotSchema>;
+export type BotConfig = Omit<RssBotConfig, "feed_url"> & { feed_url?: string };
 
 export const FeedsConfigSchema = z
   .object({
+    meta: z.boolean().default(false),
     bots: z
       .record(
         z.string().regex(/^[a-z0-9_]+$/, "Bot username must be lowercase alphanumeric or underscore"),
         BotSchema,
       )
-      .refine((bots) => Object.keys(bots).length > 0, "At least one bot must be defined")
-      .refine(
-        (bots) => Object.values(bots).filter((bot) => bot.type === "meta").length <= 1,
-        "At most one meta bot may be defined",
-      ),
+      .refine((bots) => Object.keys(bots).length > 0, "At least one bot must be defined"),
     follows: z.array(z.string().min(3)).optional().default([]),
     relays: z.array(z.string().url()).optional().default([]),
     /**
@@ -68,9 +58,22 @@ export const FeedsConfigSchema = z
       message: "relay_subscription_bot must be a key in bots",
       path: ["relay_subscription_bot"],
     },
-  );
+  )
+  .refine((config) => !config.meta || !("meta" in config.bots), {
+    message: "meta is reserved when meta: true",
+    path: ["bots", "meta"],
+  })
+  .transform((config) => {
+    const bots: Record<string, BotConfig> = { ...config.bots };
+    if (config.meta) {
+      bots.meta = {
+        display_name: "robot.villas Meta",
+        summary: "New bot accounts on robot.villas.",
+      };
+    }
+    return { ...config, bots };
+  });
 
-export type BotConfig = z.infer<typeof BotSchema>;
 export type FeedsConfig = z.infer<typeof FeedsConfigSchema>;
 
 /**

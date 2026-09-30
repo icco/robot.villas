@@ -1,6 +1,6 @@
 import type { Context } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
-import { resolveBlockedInstances, type BotConfig, type FeedsConfig } from "./config";
+import { resolveBlockedInstances, type RssBotConfig, type FeedsConfig } from "./config";
 import { mapWithConcurrency } from "./concurrency";
 import { getFeedPollStatusMap, upsertFeedPollStatus, type Db, type FeedPollStatusRow } from "./db";
 import { parsePositiveInt } from "./env";
@@ -30,7 +30,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   const intervalMs = parsePositiveInt(opts.intervalMs, DEFAULT_INTERVAL_MS);
   const concurrency = parsePositiveInt(opts.concurrency, DEFAULT_CONCURRENCY);
   const rssBots = Object.entries(config.bots).filter(
-    (entry): entry is [string, Exclude<BotConfig, { type: "meta" }>] => entry[1].type !== "meta",
+    (entry): entry is [string, RssBotConfig] => !!entry[1].feed_url,
   );
   const botNames = rssBots.map(([username]) => username);
   // Resolved once per poller, not per entry: the list only changes on redeploy.
@@ -46,7 +46,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   async function pollBot(
     ctx: Context<void>,
     username: string,
-    bot: Exclude<BotConfig, { type: "meta" }>,
+    bot: RssBotConfig,
     previous: FeedPollStatusRow | undefined,
   ): Promise<void> {
     const checkedAt = new Date();

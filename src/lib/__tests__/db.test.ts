@@ -69,7 +69,7 @@ describeWithDb("database", () => {
   });
 
   describe("bot announcements", () => {
-    it("retains pending announcements across retries and only discovers new usernames", async () => {
+    it("retains pending announcements and skips announced usernames", async () => {
       const first = await getPendingBotAnnouncements(db, ["bot_a"]);
       expect(first.map((row) => row.botUsername)).toEqual(["bot_a"]);
       expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual(first);
@@ -77,7 +77,7 @@ describeWithDb("database", () => {
       expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual([]);
       expect((await getPendingBotAnnouncements(db, ["bot_a", "bot_b"]))
         .map((row) => row.botUsername)).toEqual(["bot_b"]);
-      // Removed bots aren't announced, but their state survives a later re-add.
+      // Re-adding a bot does not repeat its announcement.
       expect(await getPendingBotAnnouncements(db, [])).toEqual([]);
       expect(await getPendingBotAnnouncements(db, ["bot_a"])).toEqual([]);
     });

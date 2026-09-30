@@ -87,31 +87,36 @@ bots:
     ).toThrow();
   });
 
-  it("accepts a meta bot without a feed and rejects one with a feed", () => {
+  it("enables the fixed meta bot with a boolean", () => {
     const yaml = `
 bots:
-  meta:
-    type: meta
-    display_name: Meta
-    summary: Announces new accounts
+  news:
+    feed_url: https://example.com/rss
+    display_name: News
+    summary: A feed
 `;
-    expect(parseConfig(yaml).bots.meta.type).toBe("meta");
-    expect(() => parseConfig(`${yaml}    feed_url: https://example.com/rss\n`)).toThrow();
-    expect(() => parseConfig(yaml.replace("type: meta", "type: unknown"))).toThrow();
+    const enabled = parseConfig(`${yaml}meta: true\n`);
+    expect(enabled.bots.meta).toEqual({
+      display_name: "robot.villas Meta",
+      summary: "New bot accounts on robot.villas.",
+    });
+    expect(getRelaySubscriptionBot(enabled)).toBe("news");
+    expect(parseConfig(yaml).meta).toBe(false);
+    expect(parseConfig(yaml).bots.meta).toBeUndefined();
+    expect(parseConfig(`${yaml}meta: false\n`).bots.meta).toBeUndefined();
+    expect(() => parseConfig(`${yaml}meta: "true"\n`)).toThrow();
+    expect(() => parseConfig(`${yaml}meta: { display_name: Custom }\n`)).toThrow();
   });
 
-  it("rejects multiple meta bots", () => {
+  it("rejects a username collision", () => {
     expect(() => parseConfig(`
+meta: true
 bots:
   meta:
-    type: meta
-    display_name: Meta
-    summary: Announcements
-  other:
-    type: meta
-    display_name: Other
-    summary: Announcements
-`)).toThrow("At most one meta bot");
+    feed_url: https://example.com/rss
+    display_name: Custom
+    summary: A feed
+`)).toThrow("meta is reserved");
   });
 
   it("rejects bot usernames with uppercase letters", () => {
@@ -197,8 +202,8 @@ describe("loadConfig", () => {
   it("loads the example feeds.yml", () => {
     const config = loadConfig(join(import.meta.dirname!, "..", "..", "..", "feeds.yml"));
     expect(Object.keys(config.bots).length).toBeGreaterThanOrEqual(1);
-    for (const bot of Object.values(config.bots)) {
-      if (bot.type !== "meta") {
+    for (const [username, bot] of Object.entries(config.bots)) {
+      if (username !== "meta") {
         expect(bot.feed_url).toMatch(/^https?:\/\//);
       }
       expect(bot.display_name.length).toBeGreaterThan(0);
@@ -247,11 +252,7 @@ describe("loadConfig", () => {
         expect(bot[field]).toBeDefined();
       }
 
-      if (bot.type === "meta") {
-        expect(bot.feed_url).toBeUndefined();
-      } else {
-        expect(isUri(bot.feed_url)).toBe(true);
-      }
+      expect(isUri(bot.feed_url)).toBe(true);
       expect(typeof bot.display_name).toBe("string");
       expect((bot.display_name as string).length).toBeGreaterThanOrEqual(1);
       expect((bot.display_name as string).length).toBeLessThanOrEqual(100);

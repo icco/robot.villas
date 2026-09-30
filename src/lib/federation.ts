@@ -140,9 +140,7 @@ async function buildActor(
   const profileUrl = new URL(`/@${identifier}`, actorUri);
   const enrichedSummary =
     `<p>${escapeHtml(bot.summary)}</p>` +
-    (bot.type === "meta"
-      ? `<p>I am a bot that announces new accounts.</p>`
-      : `<p>I am a bot that mirrors an RSS feed.</p>`);
+    (bot.feed_url ? `<p>I am a bot that mirrors an RSS feed.</p>` : "");
   return new Application({
     id: actorUri,
     preferredUsername: identifier,
