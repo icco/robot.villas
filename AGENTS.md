@@ -4,28 +4,29 @@ Guidance for coding agents working on robot.villas.
 
 ## Project Overview
 
-ActivityPub / Fediverse server built with Fedify, Next.js 16 (App Router), Drizzle ORM + PostgreSQL, Tailwind CSS 4 + DaisyUI 5, and Google GenAI (Gemini).
-- App routes: `src/app/`
-- Fediverse integration: `src/lib/federation.ts` (initialized from `src/instrumentation.ts`)
-- Database schema & migrations: Drizzle schema/DB helpers in `src/lib/schema.ts` and `src/lib/db.ts`; SQL migrations in `drizzle/`
-- Scripts & validation: `scripts/validate-feeds.ts`
+ActivityPub / fediverse server built with Fedify 2.4, Next.js 16 (App Router), Drizzle ORM + PostgreSQL, Tailwind CSS 4 + DaisyUI 5, and optional Google GenAI (Gemini) hashtags.
+- App routes: `src/app/`; federation request routing: `src/proxy.ts`
+- Federation: `src/lib/federation.ts` (inbox state in `inbox-state.ts`), started from `src/instrumentation.ts`
+- Schema & migrations: `src/lib/schema.ts`, `src/lib/db.ts`; SQL in `drizzle/` (generate with `pnpm db:generate`, never hand-edit)
+- Delivery, retries, and limits: `docs/operations.md`
 
 ## Commands
 
 Use pnpm (Node >= 26):
-- `pnpm dev` — Start Next.js development server
-- `pnpm build` — Build production application
-- `pnpm start` — Run production server
-- `pnpm test` — Run Vitest suite once (`pnpm test:watch` for watch mode)
-- `pnpm lint` — Run ESLint with auto-fix, format YAML, and run typecheck
-- `pnpm typecheck` — Run TypeScript compiler check (`tsc --noEmit`)
-- `pnpm db:generate` / `pnpm db:push` — Generate or push Drizzle schema changes
+- `pnpm dev` / `pnpm build` / `pnpm start`
+- `pnpm test` — Vitest; DB-backed tests need `DATABASE_URL` pointing at a disposable PostgreSQL database
+- `pnpm lint:check` — what CI runs (ESLint incl. `@fedify/lint`, YAML format, typecheck); `pnpm lint` fixes
+- `pnpm typecheck` — `tsc --noEmit`
+- `pnpm validate-feeds --skip-network` — validate `feeds.yml`
 
 ## Conventions
 
 - TypeScript everywhere, strict type checking.
 - Conventional Commits with lowercase subjects (e.g. `feat(actor): handle follow activity`).
 - Keep Next.js 16 App Router patterns and server/client boundaries clear.
+- Use `^` ranges for dependencies.
+- Build actors inline in the actor dispatcher so `@fedify/lint` can check them; don't disable its rules.
+- Inbox handlers must check that the sender owns what it changes, and must be safe to run twice.
 
 <!-- BEGIN:nextjs-agent-rules -->
 
