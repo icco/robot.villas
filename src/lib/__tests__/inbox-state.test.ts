@@ -5,7 +5,7 @@ import { createFederation } from "@fedify/testing";
 import { Application, Delete, Follow, Like, Note, Undo } from "@fedify/vocab";
 import { createDb, migrate, insertEntry, addFollower, getFollowers, upsertFollowing, getAllFollowing, upsertRelay, getAllRelays } from "../db";
 import { receiveFollowResponse, receiveReaction, type ReactionInput } from "../inbox-state";
-import { handleDelete, handleFollow, handleUndo } from "../federation";
+import { handleDelete, handleFollow, handleReaction, handleUndo, isPgIntegerId } from "../federation";
 import * as schema from "../schema";
 
 const databaseUrl = process.env.DATABASE_URL;
@@ -75,6 +75,14 @@ describe.skipIf(!databaseUrl)("inbox authorization and idempotency", () => {
     expect(await getFollowers(db, bot)).toContain(alice.href);
     await handleDelete(new Delete({ actor: alice, object: alice }), db);
     expect(await getFollowers(db, bot)).not.toContain(alice.href);
+  });
+
+  it("ignores reactions to IDs outside PostgreSQL's integer range", async () => {
+    expect(isPgIntegerId("2147483647")).toBe(true);
+    expect(isPgIntegerId("2147483648")).toBe(false);
+    expect(isPgIntegerId("9007199254740991")).toBe(false);
+    await handleReaction(ctx, new Like({ id: new URL(`${alice}/likes/big`), actor: alice, object: ctx.getObjectUri(Note, { identifier: bot, id: "2147483648" }) }), db, [bot]);
+    expect(await count()).toBe(0);
   });
 
   it("retries Follow with the same response identity and completes Undo", async () => {

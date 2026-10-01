@@ -173,6 +173,13 @@ async function buildActor(
   });
 }
 
+const PG_INTEGER_MAX = 2_147_483_647;
+
+/** Entry IDs are PostgreSQL `integer`s; larger values would error in the query. */
+export function isPgIntegerId(id: string): boolean {
+  return /^[1-9]\d{0,9}$/.test(id) && Number(id) <= PG_INTEGER_MAX;
+}
+
 /**
  * Parses an activity's objectId into a bot identifier and entry ID,
  * returning null (with debug logging) if any step fails.
@@ -201,7 +208,7 @@ function parseNoteRef(
     return null;
   }
   const entryId = Number(id);
-  if (!/^[1-9]\d*$/.test(id) || !Number.isSafeInteger(entryId)) {
+  if (!isPgIntegerId(id)) {
     logger.debug("{label} ignored: non-numeric entry id {id}", { label, id });
     return null;
   }
@@ -468,7 +475,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         return null;
       }
       const entryId = Number(id);
-      if (!/^[1-9]\d*$/.test(id) || !Number.isSafeInteger(entryId)) {
+      if (!isPgIntegerId(id)) {
         return null;
       }
       const entry = await getEntryById(db, identifier, entryId);
