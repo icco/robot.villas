@@ -28,12 +28,12 @@ export async function register() {
 
   const fedCtx = federation.createContext(new URL(`https://${domain}`));
   // A new image or config produces a new key, so changed config re-runs the jobs.
-  const { createHash } = await import("node:crypto");
-  const deployment = createHash("sha256")
-    .update(process.env.SOURCE_COMMIT ?? process.env.GIT_SHA ?? "")
-    .update(JSON.stringify(config))
-    .digest("hex")
-    .slice(0, 16);
+  // Web Crypto, not node:crypto: this file is also compiled for the Edge runtime.
+  const digest = await crypto.subtle.digest(
+    "SHA-256",
+    new TextEncoder().encode(`${process.env.SOURCE_COMMIT ?? process.env.GIT_SHA ?? ""}\n${JSON.stringify(config)}`),
+  );
+  const deployment = Buffer.from(digest).toString("hex").slice(0, 16);
   enqueueStartupMaintenance(fedCtx, deployment).catch((err) => {
     logger.error("Could not enqueue maintenance jobs: {error}", { error: err });
   });
