@@ -1,6 +1,6 @@
 import type { Context } from "@fedify/fedify";
 import type { Recipient } from "@fedify/vocab";
-import { and, asc, eq, isNull, lte, sql } from "drizzle-orm";
+import { and, asc, eq, gt, isNull, lt, lte, or, sql } from "drizzle-orm";
 import { insertEntry, type Db } from "./db";
 import { feedEntries, publications } from "./schema";
 import { buildCreateActivity } from "./publisher";
@@ -81,4 +81,35 @@ export async function submitPendingPublications(
     });
   }
   return result;
+}
+
+export interface PublicationSummary {
+  pending: number;
+  failing: number;
+  oldestPendingAt: Date | null;
+  queuedLastDay: number;
+}
+
+/** Pending rows use the partial pending index; recent rows use the queued_at index. */
+export async function getPublicationSummary(db: Db, now = new Date()): Promise<PublicationSummary> {
+  const pendingWhere = and(isNull(publications.queuedAt), isNull(publications.cancelledAt));
+  const [[pending], [recent]] = await Promise.all([
+    db.select({
+      pending: sql<number>`count(*)`.mapWith(Number),
+      failing: sql<number>`count(*) filter (where ${publications.attempts} > 0)`.mapWith(Number),
+      oldestPendingAt: sql<string | null>`min(${publications.createdAt})`,
+    }).from(publications).where(pendingWhere),
+    db.select({ queuedLastDay: sql<number>`count(*)`.mapWith(Number) }).from(publications)
+      .where(gt(publications.queuedAt, new Date(now.getTime() - 86_400_000))),
+  ]);
+  return { ...pending, ...recent, oldestPendingAt: pending.oldestPendingAt ? new Date(pending.oldestPendingAt) : null };
+}
+
+/** Finished rows are only needed for recent status; drop them after 30 days. */
+export async function prunePublications(db: Db, now = new Date()): Promise<number> {
+  const cutoff = new Date(now.getTime() - 30 * 86_400_000);
+  const rows = await db.delete(publications)
+    .where(or(lt(publications.queuedAt, cutoff), lt(publications.cancelledAt, cutoff)))
+    .returning({ id: publications.id });
+  return rows.length;
 }

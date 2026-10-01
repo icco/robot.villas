@@ -32,6 +32,7 @@ import {
   PUBLIC_COLLECTION,
   type Recipient,
   Reject,
+  Tombstone,
   Undo,
   Update,
 } from "@fedify/vocab";
@@ -57,7 +58,8 @@ import {
   getAllFollowing,
   getAllRelays,
   getEntriesPage,
-  getEntryById,
+  getActorDeletedAt,
+  getEntryForDispatch,
   getFollowerRecipients,
   getFollowersWithNullInbox,
   getAcceptedFollowingActorIds,
@@ -82,6 +84,7 @@ import {
   type Db,
 } from "./db";
 import { hashtagsForNoteBody } from "./hashtags";
+import { recordInboxReport } from "./inbox-reports";
 import { buildCreateActivity, formatContent, safeParseUrl } from "./publisher";
 
 export interface FederationDeps {
@@ -89,11 +92,17 @@ export interface FederationDeps {
   db: Db;
   kvStore: KvStore;
   messageQueue: MessageQueue;
+  /** Separate queue for maintenance tasks so they never wait behind delivery. */
+  taskQueue?: MessageQueue;
   origin: string;
   blockedInstances?: ReadonlySet<string>;
 }
 
 const logger = getLogger(["robot-villas", "federation"]);
+
+function toInstant(date: Date): Temporal.Instant {
+  return TemporalPolyfill.Instant.from(date.toISOString()) as unknown as Temporal.Instant;
+}
 
 const IMAGE_MEDIA_TYPES: Record<string, string> = {
   ".png": "image/png",
@@ -302,12 +311,15 @@ export async function handleDelete(del: Delete, db: Db): Promise<void> {
 }
 
 export function setupFederation(deps: FederationDeps): Federation<void> {
-  const { config, db, kvStore, messageQueue, origin, blockedInstances = new Set() } = deps;
+  const { config, db, kvStore, messageQueue, taskQueue, origin, blockedInstances = new Set() } = deps;
   const botUsernames = Object.keys(config.bots);
 
   const federation = createFederation<void>({
     kv: kvStore,
-    queue: messageQueue,
+    queue: taskQueue
+      ? { inbox: messageQueue, outbox: messageQueue, fanout: messageQueue, task: taskQueue }
+      : messageQueue,
+    taskQueueResolution: taskQueue ? "strict" : "fallback",
     manuallyStartQueue: true,
     origin,
     maxHttpSignatures: 3,
@@ -322,7 +334,8 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       "/users/{identifier}",
       async (ctx, identifier) => {
         if (!botUsernames.includes(identifier)) {
-          return null;
+          const deleted = await getActorDeletedAt(db, identifier);
+          return deleted ? new Tombstone({ id: ctx.getActorUri(identifier), formerType: Application, deleted: toInstant(deleted) }) : null;
         }
         const keys = await ctx.getActorKeyPairs(identifier);
         return new Application({
@@ -460,16 +473,20 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     "/users/{identifier}/posts/{id}",
     async (ctx, values) => {
       const { identifier, id } = values;
-      if (!botUsernames.includes(identifier)) {
-        return null;
-      }
-      const entryId = Number(id);
       if (!isPgIntegerId(id)) {
         return null;
       }
-      const entry = await getEntryById(db, identifier, entryId);
+      const entryId = Number(id);
+      const entry = await getEntryForDispatch(db, identifier, entryId);
       if (!entry) {
         return null;
+      }
+      if (entry.deletedAt || !botUsernames.includes(identifier)) {
+        return new Tombstone({
+          id: ctx.getObjectUri(Note, values),
+          formerType: Note,
+          deleted: toInstant(entry.deletedAt ?? entry.createdAt),
+        });
       }
       const hashtags = hashtagsForNoteBody(entry.hashtags);
       const content = formatContent(
@@ -690,6 +707,15 @@ export function registerInboxListeners(
         object: add.objectId?.href ?? null,
         target: add.targetId?.href ?? null,
       });
+    })
+    .onRequestFinished((_ctx, report) => {
+      const key = recordInboxReport(report);
+      if (report.authentication.status === "rejected" || report.outcome.type === "exception") {
+        logger.info("Inbox request {result} from {actor}", {
+          result: key,
+          actor: report.activity?.actorId?.href ?? null,
+        });
+      }
     })
     .onError((_ctx, error) => {
       logger.error("Inbox listener error: {error}", { error });
@@ -1178,6 +1204,7 @@ export async function sendDeletedBotActivities(
   const dbBots = await getAllBotUsernames(db);
   const configBots = new Set(Object.keys(config.bots));
   const deletedBots = dbBots.filter((b) => !configBots.has(b));
+  const failed: string[] = [];
 
   for (const botUsername of deletedBots) {
     logger.info("Detected deleted bot {identifier}, sending Delete activities", {
@@ -1211,7 +1238,8 @@ export async function sendDeletedBotActivities(
 
     if (recipients.length > 0) {
       const deleteActivity = new Delete({
-        id: new URL(`${actorUri.href}#delete-${Date.now()}`),
+        // Stable so a retried deletion is recognizable as the same activity.
+        id: new URL(`${actorUri.href}#delete`),
         actor: actorUri,
         to: PUBLIC_COLLECTION,
         object: actorUri,
@@ -1228,10 +1256,13 @@ export async function sendDeletedBotActivities(
           { identifier: botUsername, count: recipients.length },
         );
       } catch (error) {
-        logger.error("Failed to send Delete for {identifier}: {error}", {
+        // Keep keys and followers so the next run can sign and address a retry.
+        logger.error("Failed to send Delete for {identifier}, will retry: {error}", {
           identifier: botUsername,
           error,
         });
+        failed.push(botUsername);
+        continue;
       }
     } else {
       logger.info("No followers with inbox for deleted bot {identifier}", {
@@ -1247,5 +1278,8 @@ export async function sendDeletedBotActivities(
     logger.info("Cleaned up database for deleted bot {identifier}", {
       identifier: botUsername,
     });
+  }
+  if (failed.length > 0) {
+    throw new Error(`Delete not queued for: ${failed.join(", ")}`);
   }
 }

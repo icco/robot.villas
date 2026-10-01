@@ -1,10 +1,10 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import postgres from "postgres";
 import { MemoryKvStore, InProcessMessageQueue } from "@fedify/fedify";
-import { addFollower, createDb, insertEntry, migrate } from "../db";
+import { addFollower, createDb, insertEntry, migrate, removeKeypairs, saveKeypairs } from "../db";
 import { parseConfig } from "../config";
 import { setupFederation } from "../federation";
-import { feedEntries, followers } from "../schema";
+import { actorKeypairs, feedEntries, followers } from "../schema";
 import { eq } from "drizzle-orm";
 
 const databaseUrl = process.env.DATABASE_URL;
@@ -83,5 +83,19 @@ bots:
     expect(JSON.stringify(all)).toContain("b.example");
     expect(JSON.stringify(only)).toContain("https://a.example/users/1");
     expect(JSON.stringify(only)).not.toContain("b.example");
+  });
+
+  it("answers 410 with a Tombstone for deleted posts and removed bots", async () => {
+    await db.update(feedEntries).set({ deletedAt: new Date() }).where(eq(feedEntries.id, entryId));
+    const note = await get(`/users/protocol_test/posts/${entryId}`);
+    expect(note.status).toBe(410);
+    expect(await note.json()).toMatchObject({ type: "Tombstone", formerType: "as:Note" });
+
+    await saveKeypairs(db, "removed_bot", [{ publicKey: {}, privateKey: {} }]);
+    await removeKeypairs(db, "removed_bot");
+    const actor = await get("/users/removed_bot");
+    expect(actor.status).toBe(410);
+    expect(await actor.json()).toMatchObject({ type: "Tombstone", formerType: "as:Application" });
+    await db.delete(actorKeypairs).where(eq(actorKeypairs.botUsername, "removed_bot"));
   });
 });

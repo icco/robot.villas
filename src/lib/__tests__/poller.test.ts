@@ -7,15 +7,21 @@ vi.mock("../rss", () => ({
 vi.mock("../publisher", () => ({
   publishNewEntries: vi.fn(),
 }));
-vi.mock("../publications", () => ({ submitPendingPublications: vi.fn().mockResolvedValue({ queued: 0, failed: 0, cancelled: 0 }) }));
+vi.mock("../publications", () => ({
+  submitPendingPublications: vi.fn().mockResolvedValue({ queued: 0, failed: 0, cancelled: 0 }),
+  prunePublications: vi.fn().mockResolvedValue(0),
+}));
 
 vi.mock("../meta-bot", () => ({
   announceNewBots: vi.fn().mockResolvedValue(undefined),
 }));
 
 vi.mock("../db", () => ({
-  upsertFeedPollStatus: vi.fn().mockResolvedValue(undefined),
+  upsertFeedPollStatus: vi.fn().mockResolvedValue(true),
   getFeedPollStatusMap: vi.fn().mockResolvedValue(new Map()),
+  claimFeedPoll: vi.fn().mockResolvedValue("token"),
+  releaseFeedPoll: vi.fn().mockResolvedValue(undefined),
+  renewFeedPoll: vi.fn().mockResolvedValue(true),
 }));
 
 import { fetchFeedWithHttpResult, type FeedFetchResult } from "../rss";
@@ -23,7 +29,7 @@ import { publishNewEntries } from "../publisher";
 import { submitPendingPublications } from "../publications";
 import { announceNewBots } from "../meta-bot";
 import { startPoller } from "../poller";
-import { getFeedPollStatusMap, upsertFeedPollStatus, type FeedPollStatusRow } from "../db";
+import { claimFeedPoll, getFeedPollStatusMap, releaseFeedPoll, upsertFeedPollStatus, type FeedPollStatusRow } from "../db";
 import type { FeedsConfig } from "../config";
 
 const mockFetchFeed = vi.mocked(fetchFeedWithHttpResult);
@@ -361,5 +367,43 @@ describe("startPoller conditional GET and rate limiting", () => {
       expect(mockFetchFeed).toHaveBeenCalledTimes(1);
     });
     poller.stop();
+  });
+});
+
+describe("startPoller replica leases", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockGetStatusMap.mockResolvedValue(new Map());
+    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0 });
+    mockFetchFeed.mockResolvedValue(okFetch());
+  });
+
+  function start() {
+    return startPoller({
+      config: makeConfig(1), db: {} as never, domain: "robot.villas", intervalMs: 10_000_000, getContext: () => ({}) as never,
+    });
+  }
+
+  it("does not fetch a feed claimed by another replica", async () => {
+    vi.mocked(claimFeedPoll).mockResolvedValueOnce(null);
+    const poller = start();
+    try {
+      await vi.waitFor(() => expect(claimFeedPoll).toHaveBeenCalledTimes(1));
+      await new Promise((resolve) => setTimeout(resolve, 20));
+      expect(mockFetchFeed).not.toHaveBeenCalled();
+    } finally {
+      poller.stop();
+    }
+  });
+
+  it("releases the lease when ingestion fails before status is recorded", async () => {
+    mockPublishNewEntries.mockRejectedValueOnce(new Error("db down"));
+    const poller = start();
+    try {
+      await vi.waitFor(() => expect(releaseFeedPoll).toHaveBeenCalledWith({}, "bot0", "token"));
+      expect(mockUpsertStatus).not.toHaveBeenCalled();
+    } finally {
+      poller.stop();
+    }
   });
 });

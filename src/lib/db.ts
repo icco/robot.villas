@@ -1,4 +1,4 @@
-import { and, asc, count, desc, eq, inArray, isNotNull, isNull, ne, or, sql } from "drizzle-orm";
+import { and, asc, count, desc, eq, inArray, isNotNull, isNull, lte, ne, or, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
 import type postgres from "postgres";
@@ -269,6 +269,21 @@ export async function getEntryById(
     .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId), isNull(schema.feedEntries.deletedAt)))
     .limit(1);
   return rows[0] ?? null;
+}
+
+/** Includes soft-deleted rows so object requests can answer 410 instead of 404. */
+export async function getEntryForDispatch(db: Db, botUsername: string, entryId: number) {
+  const rows = await db.select().from(schema.feedEntries)
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
+/** When a bot that once existed was removed; null if it never existed or is live. */
+export async function getActorDeletedAt(db: Db, botUsername: string): Promise<Date | null> {
+  const rows = await db.select({ deletedAt: schema.actorKeypairs.deletedAt }).from(schema.actorKeypairs)
+    .where(eq(schema.actorKeypairs.botUsername, botUsername)).limit(1);
+  return rows[0]?.deletedAt ?? null;
 }
 
 export async function getEntryByGuid(db: Db, botUsername: string, guid: string) {
@@ -1016,20 +1031,66 @@ export interface FeedPollStatusRow {
   etag: string | null;
   lastModified: string | null;
   nextPollAt: Date | null;
+  lastSuccessAt?: Date | null;
 }
 
+/**
+ * Records a poll result and releases the lease. With `claimToken`, the write
+ * only applies while this worker still owns the lease, so a worker whose lease
+ * expired cannot overwrite a newer owner's status or validators.
+ */
 export async function upsertFeedPollStatus(
   db: Db,
   status: FeedPollStatusRow,
-): Promise<void> {
-  const { lastCheckedAt, lastHttpStatus, lastError, etag, lastModified, nextPollAt } = status;
+  claimToken?: string,
+): Promise<boolean> {
+  const { botUsername, lastCheckedAt, lastHttpStatus, lastError, etag, lastModified, nextPollAt } = status;
+  // Keep the previous success time on failure.
+  const lastSuccessAt = lastError == null ? lastCheckedAt : sql`${schema.feedPollStatus.lastSuccessAt}`;
+  const set = { lastCheckedAt, lastHttpStatus, lastError, etag, lastModified, nextPollAt, lastSuccessAt, claimedUntil: null, claimToken: null };
+  if (claimToken) {
+    const rows = await db.update(schema.feedPollStatus).set(set)
+      .where(and(eq(schema.feedPollStatus.botUsername, botUsername), eq(schema.feedPollStatus.claimToken, claimToken)))
+      .returning({ botUsername: schema.feedPollStatus.botUsername });
+    return rows.length > 0;
+  }
   await db
     .insert(schema.feedPollStatus)
-    .values(status)
+    .values({ ...status, lastSuccessAt: lastError == null ? lastCheckedAt : null, claimedUntil: null })
+    .onConflictDoUpdate({ target: schema.feedPollStatus.botUsername, set });
+  return true;
+}
+
+/**
+ * Claims one feed for this replica, returning a token for renewal and
+ * completion, or null while another replica holds an unexpired lease.
+ */
+export async function claimFeedPoll(db: Db, botUsername: string, now: Date, leaseMs: number): Promise<string | null> {
+  const claimedUntil = new Date(now.getTime() + leaseMs);
+  const claimToken = crypto.randomUUID();
+  const rows = await db
+    .insert(schema.feedPollStatus)
+    .values({ botUsername, lastCheckedAt: now, claimedUntil, claimToken })
     .onConflictDoUpdate({
       target: schema.feedPollStatus.botUsername,
-      set: { lastCheckedAt, lastHttpStatus, lastError, etag, lastModified, nextPollAt },
-    });
+      set: { claimedUntil, claimToken },
+      setWhere: or(isNull(schema.feedPollStatus.claimedUntil), lte(schema.feedPollStatus.claimedUntil, now)),
+    })
+    .returning({ botUsername: schema.feedPollStatus.botUsername });
+  return rows.length > 0 ? claimToken : null;
+}
+
+/** Extends a held lease; false means it was lost and the worker should stop. */
+export async function renewFeedPoll(db: Db, botUsername: string, claimToken: string, until: Date): Promise<boolean> {
+  const rows = await db.update(schema.feedPollStatus).set({ claimedUntil: until })
+    .where(and(eq(schema.feedPollStatus.botUsername, botUsername), eq(schema.feedPollStatus.claimToken, claimToken)))
+    .returning({ botUsername: schema.feedPollStatus.botUsername });
+  return rows.length > 0;
+}
+
+export async function releaseFeedPoll(db: Db, botUsername: string, claimToken: string): Promise<void> {
+  await db.update(schema.feedPollStatus).set({ claimedUntil: null, claimToken: null })
+    .where(and(eq(schema.feedPollStatus.botUsername, botUsername), eq(schema.feedPollStatus.claimToken, claimToken)));
 }
 
 export async function getFeedPollStatusMap(
@@ -1048,6 +1109,7 @@ export async function getFeedPollStatusMap(
       etag: schema.feedPollStatus.etag,
       lastModified: schema.feedPollStatus.lastModified,
       nextPollAt: schema.feedPollStatus.nextPollAt,
+      lastSuccessAt: schema.feedPollStatus.lastSuccessAt,
     })
     .from(schema.feedPollStatus)
     .where(inArray(schema.feedPollStatus.botUsername, botUsernames));

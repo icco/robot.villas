@@ -8,6 +8,8 @@ import {
 } from "@heroicons/react/24/outline";
 import { getGlobals } from "@/lib/globals";
 import { getFeedPollStatusMap, getRelayStatusSummary, getFollowingStatusSummary } from "@/lib/db";
+import { getPublicationSummary } from "@/lib/publications";
+import { getInboxReportSummary } from "@/lib/inbox-reports";
 
 export const dynamic = "force-dynamic";
 
@@ -72,11 +74,13 @@ export default async function StatusPage() {
   const { config, db } = getGlobals();
   const botCount = Object.keys(config.bots).length;
   const botUsernames = Object.keys(config.bots).sort((a, b) => a.localeCompare(b));
-  const [relaySummary, followingSummary, feedPollMap] = await Promise.all([
+  const [relaySummary, followingSummary, feedPollMap, publications] = await Promise.all([
     getRelayStatusSummary(db),
     getFollowingStatusSummary(db),
     getFeedPollStatusMap(db, botUsernames),
+    getPublicationSummary(db),
   ]);
+  const inbox = getInboxReportSummary();
 
   const configuredRelays = config.relays ?? [];
   const configuredFollows = (config.follows ?? []).map((h) => h.replace(/^@/, ""));
@@ -91,6 +95,30 @@ export default async function StatusPage() {
       <p className="text-base-content/60 text-sm mb-8">
         Live view of relay subscriptions, account follows, and configured RSS feeds.
       </p>
+
+      <section className="mb-10">
+        <h2 className="text-xl font-display font-bold mb-3">Publishing</h2>
+        <p className="text-base-content/50 text-sm mb-3">
+          Queued means handed to the delivery queue, which then retries each remote server on its own.
+        </p>
+        <div className="stats stats-vertical sm:stats-horizontal shadow-sm w-full">
+          <div className="stat">
+            <div className="stat-title">Waiting to queue</div>
+            <div className={`stat-value text-2xl ${publications.pending > 0 ? "text-warning" : ""}`}>{publications.pending}</div>
+            <div className="stat-desc">
+              {publications.oldestPendingAt ? `oldest since ${formatDate(publications.oldestPendingAt)}` : "nothing waiting"}
+            </div>
+          </div>
+          <div className="stat">
+            <div className="stat-title">Retrying after an error</div>
+            <div className={`stat-value text-2xl ${publications.failing > 0 ? "text-error" : ""}`}>{publications.failing}</div>
+          </div>
+          <div className="stat">
+            <div className="stat-title">Queued, last 24h</div>
+            <div className="stat-value text-2xl">{publications.queuedLastDay}</div>
+          </div>
+        </div>
+      </section>
 
       {/* Relay Subscriptions */}
       <section className="mb-10">
@@ -186,6 +214,7 @@ export default async function StatusPage() {
                 <th className="hidden sm:table-cell">Name</th>
                 <th>Feed URL</th>
                 <th className="whitespace-nowrap">Last HTTP check</th>
+                <th className="hidden lg:table-cell whitespace-nowrap">Last success</th>
                 <th className="text-right whitespace-nowrap">HTTP</th>
                 <th className="hidden md:table-cell">Last error</th>
               </tr>
@@ -223,6 +252,9 @@ export default async function StatusPage() {
                         })
                         : "—"}
                     </td>
+                    <td className="hidden lg:table-cell text-xs text-base-content/80 whitespace-nowrap">
+                      {poll?.lastSuccessAt ? formatDate(poll.lastSuccessAt) : "—"}
+                    </td>
                     <td className="text-right font-mono text-xs">
                       {!poll ? (
                         <span className="text-base-content/40">—</span>
@@ -234,6 +266,9 @@ export default async function StatusPage() {
                     </td>
                     <td className="hidden md:table-cell text-xs text-error break-all max-w-xs">
                       {poll?.lastError ?? ""}
+                      {poll?.nextPollAt && poll.nextPollAt > new Date() && (
+                        <span className="block text-warning">backing off until {formatDate(poll.nextPollAt)}</span>
+                      )}
                     </td>
                   </tr>
                 );
@@ -241,6 +276,33 @@ export default async function StatusPage() {
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-xl font-display font-bold mb-3">Incoming activities</h2>
+        <p className="text-base-content/50 text-sm mb-3">
+          Signature check and result for each delivery to this server&apos;s inboxes since {formatDate(inbox.since)}.
+        </p>
+        {inbox.rows.length === 0 ? (
+          <p className="text-base-content/50 text-sm">None received since the last restart.</p>
+        ) : (
+          <table className="table table-sm w-auto">
+            <thead>
+              <tr>
+                <th>Signature / result</th>
+                <th className="text-right">Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              {inbox.rows.map(({ key, count }) => (
+                <tr key={key}>
+                  <td className="font-mono text-xs">{key}</td>
+                  <td className="text-right text-xs">{count}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </section>
     </>
   );

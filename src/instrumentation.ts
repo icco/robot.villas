@@ -5,7 +5,7 @@ export async function register() {
 
   const { getGlobals } = await import("@/lib/globals");
   const globals = getGlobals();
-  const { db, federation, config, domain } = globals;
+  const { db, federation, config, domain, enqueueStartupMaintenance } = globals;
 
   const { setupLogging } = await import("@/lib/logging");
   await setupLogging();
@@ -26,35 +26,16 @@ export async function register() {
   federation.startQueue();
   logger.info("Fedify message queue worker started");
 
-  const {
-    subscribeToRelays,
-    followAccounts,
-    sendProfileUpdates,
-    sendDeletedBotActivities,
-    repairFollowerInboxes,
-  } = await import("@/lib/federation");
-
   const fedCtx = federation.createContext(new URL(`https://${domain}`));
-  const botUsernames = Object.keys(config.bots);
-
-  repairFollowerInboxes(fedCtx, db, botUsernames).catch((err) => {
-    logger.error("Follower inbox repair failed: {error}", { error: err });
-  });
-
-  subscribeToRelays(fedCtx, db, config).catch((err) => {
-    logger.error("Relay subscription failed: {error}", { error: err });
-  });
-
-  followAccounts(fedCtx, db, config).catch((err) => {
-    logger.error("Follow accounts failed: {error}", { error: err });
-  });
-
-  sendProfileUpdates(fedCtx, db, config).catch((err) => {
-    logger.error("Profile update failed: {error}", { error: err });
-  });
-
-  sendDeletedBotActivities(fedCtx, db, config).catch((err) => {
-    logger.error("Deleted bot cleanup failed: {error}", { error: err });
+  // A new image or config produces a new key, so changed config re-runs the jobs.
+  // Web Crypto, not node:crypto: this file is also compiled for the Edge runtime.
+  const digest = await crypto.subtle.digest(
+    "SHA-256",
+    new TextEncoder().encode(`${process.env.SOURCE_COMMIT ?? process.env.GIT_SHA ?? ""}\n${JSON.stringify(config)}`),
+  );
+  const deployment = Buffer.from(digest).toString("hex").slice(0, 16);
+  enqueueStartupMaintenance(fedCtx, deployment).catch((err) => {
+    logger.error("Could not enqueue maintenance jobs: {error}", { error: err });
   });
 
   const { startPoller } = await import("@/lib/poller");
