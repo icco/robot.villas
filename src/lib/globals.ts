@@ -3,6 +3,7 @@ import postgres from "postgres";
 import { loadConfig, resolveBlockedInstances } from "./config";
 import { createDb } from "./db";
 import { setupFederation } from "./federation";
+import { defineMaintenanceTasks } from "./maintenance";
 
 type Globals = ReturnType<typeof initGlobals>;
 
@@ -27,16 +28,22 @@ function initGlobals() {
   const config = loadConfig("feeds.yml");
   const kvStore = new PostgresKvStore(sql);
   const messageQueue = new PostgresMessageQueue(sql);
+  const taskQueue = new PostgresMessageQueue(sql, {
+    tableName: "fedify_task_message_v2",
+    channelName: "fedify_task_channel",
+  });
   const blockedInstances = resolveBlockedInstances(config);
   const federation = setupFederation({
     config,
     db,
     kvStore,
     messageQueue,
+    taskQueue,
     origin: `https://${domain}`,
     blockedInstances,
   });
-  return { sql, db, config, federation, kvStore, messageQueue, domain };
+  const enqueueStartupMaintenance = defineMaintenanceTasks(federation, db, config);
+  return { sql, db, config, federation, kvStore, messageQueue, domain, enqueueStartupMaintenance };
 }
 
 export function getGlobals(): Globals {

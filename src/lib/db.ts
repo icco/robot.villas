@@ -1,4 +1,4 @@
-import { and, asc, count, desc, eq, inArray, isNotNull, isNull, ne, or, sql } from "drizzle-orm";
+import { and, asc, count, desc, eq, inArray, isNotNull, isNull, lte, ne, or, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/postgres-js";
 import { migrate as runMigrations } from "drizzle-orm/postgres-js/migrator";
 import type postgres from "postgres";
@@ -269,6 +269,21 @@ export async function getEntryById(
     .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId), isNull(schema.feedEntries.deletedAt)))
     .limit(1);
   return rows[0] ?? null;
+}
+
+/** Includes soft-deleted rows so object requests can answer 410 instead of 404. */
+export async function getEntryForDispatch(db: Db, botUsername: string, entryId: number) {
+  const rows = await db.select().from(schema.feedEntries)
+    .where(and(eq(schema.feedEntries.botUsername, botUsername), eq(schema.feedEntries.id, entryId)))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
+/** When a bot that once existed was removed; null if it never existed or is live. */
+export async function getActorDeletedAt(db: Db, botUsername: string): Promise<Date | null> {
+  const rows = await db.select({ deletedAt: schema.actorKeypairs.deletedAt }).from(schema.actorKeypairs)
+    .where(eq(schema.actorKeypairs.botUsername, botUsername)).limit(1);
+  return rows[0]?.deletedAt ?? null;
 }
 
 export async function getEntryByGuid(db: Db, botUsername: string, guid: string) {
@@ -1016,6 +1031,7 @@ export interface FeedPollStatusRow {
   etag: string | null;
   lastModified: string | null;
   nextPollAt: Date | null;
+  lastSuccessAt?: Date | null;
 }
 
 export async function upsertFeedPollStatus(
@@ -1023,13 +1039,37 @@ export async function upsertFeedPollStatus(
   status: FeedPollStatusRow,
 ): Promise<void> {
   const { lastCheckedAt, lastHttpStatus, lastError, etag, lastModified, nextPollAt } = status;
+  // The fetch is done; release the lease. Keep the previous success time on failure.
+  const lastSuccessAt = lastError == null ? lastCheckedAt : sql`${schema.feedPollStatus.lastSuccessAt}`;
   await db
     .insert(schema.feedPollStatus)
-    .values(status)
+    .values({ ...status, lastSuccessAt: lastError == null ? lastCheckedAt : null, claimedUntil: null })
     .onConflictDoUpdate({
       target: schema.feedPollStatus.botUsername,
-      set: { lastCheckedAt, lastHttpStatus, lastError, etag, lastModified, nextPollAt },
+      set: { lastCheckedAt, lastHttpStatus, lastError, etag, lastModified, nextPollAt, lastSuccessAt, claimedUntil: null },
     });
+}
+
+/**
+ * Claims one feed for this replica. Returns false if another replica holds an
+ * unexpired lease, so replicas never fetch and ingest the same feed together.
+ */
+export async function claimFeedPoll(db: Db, botUsername: string, now: Date, leaseMs: number): Promise<boolean> {
+  const claimedUntil = new Date(now.getTime() + leaseMs);
+  const rows = await db
+    .insert(schema.feedPollStatus)
+    .values({ botUsername, lastCheckedAt: now, claimedUntil })
+    .onConflictDoUpdate({
+      target: schema.feedPollStatus.botUsername,
+      set: { claimedUntil },
+      setWhere: or(isNull(schema.feedPollStatus.claimedUntil), lte(schema.feedPollStatus.claimedUntil, now)),
+    })
+    .returning({ botUsername: schema.feedPollStatus.botUsername });
+  return rows.length > 0;
+}
+
+export async function releaseFeedPoll(db: Db, botUsername: string): Promise<void> {
+  await db.update(schema.feedPollStatus).set({ claimedUntil: null }).where(eq(schema.feedPollStatus.botUsername, botUsername));
 }
 
 export async function getFeedPollStatusMap(
@@ -1048,6 +1088,7 @@ export async function getFeedPollStatusMap(
       etag: schema.feedPollStatus.etag,
       lastModified: schema.feedPollStatus.lastModified,
       nextPollAt: schema.feedPollStatus.nextPollAt,
+      lastSuccessAt: schema.feedPollStatus.lastSuccessAt,
     })
     .from(schema.feedPollStatus)
     .where(inArray(schema.feedPollStatus.botUsername, botUsernames));

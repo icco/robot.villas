@@ -134,6 +134,13 @@
       "when": 1790842763965,
       "tag": "0018_aspiring_changeling",
       "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "7",
+      "when": 1790843425059,
+      "tag": "0019_wild_revanche",
+      "breakpoints": true
     }
   ]
 }

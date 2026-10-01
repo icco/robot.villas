@@ -139,4 +139,8 @@ export const feedPollStatus = pgTable("feed_poll_status", {
   lastModified: text("last_modified"),
   /** Set from a 429 `Retry-After`; the poller skips this feed until it passes. */
   nextPollAt: timestamp("next_poll_at", { withTimezone: true, mode: "date" }),
+  /** Last fetch that parsed (or 304'd) and committed every new entry. */
+  lastSuccessAt: timestamp("last_success_at", { withTimezone: true, mode: "date" }),
+  /** Lease so only one replica fetches a feed at a time. */
+  claimedUntil: timestamp("claimed_until", { withTimezone: true, mode: "date" }),
 });

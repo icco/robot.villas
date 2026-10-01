@@ -16,6 +16,8 @@ vi.mock("../meta-bot", () => ({
 vi.mock("../db", () => ({
   upsertFeedPollStatus: vi.fn().mockResolvedValue(undefined),
   getFeedPollStatusMap: vi.fn().mockResolvedValue(new Map()),
+  claimFeedPoll: vi.fn().mockResolvedValue(true),
+  releaseFeedPoll: vi.fn().mockResolvedValue(undefined),
 }));
 
 import { fetchFeedWithHttpResult, type FeedFetchResult } from "../rss";
@@ -23,7 +25,7 @@ import { publishNewEntries } from "../publisher";
 import { submitPendingPublications } from "../publications";
 import { announceNewBots } from "../meta-bot";
 import { startPoller } from "../poller";
-import { getFeedPollStatusMap, upsertFeedPollStatus, type FeedPollStatusRow } from "../db";
+import { claimFeedPoll, getFeedPollStatusMap, releaseFeedPoll, upsertFeedPollStatus, type FeedPollStatusRow } from "../db";
 import type { FeedsConfig } from "../config";
 
 const mockFetchFeed = vi.mocked(fetchFeedWithHttpResult);
@@ -361,5 +363,43 @@ describe("startPoller conditional GET and rate limiting", () => {
       expect(mockFetchFeed).toHaveBeenCalledTimes(1);
     });
     poller.stop();
+  });
+});
+
+describe("startPoller replica leases", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+    mockGetStatusMap.mockResolvedValue(new Map());
+    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0 });
+    mockFetchFeed.mockResolvedValue(okFetch());
+  });
+
+  function start() {
+    return startPoller({
+      config: makeConfig(1), db: {} as never, domain: "robot.villas", intervalMs: 10_000_000, getContext: () => ({}) as never,
+    });
+  }
+
+  it("does not fetch a feed claimed by another replica", async () => {
+    vi.mocked(claimFeedPoll).mockResolvedValueOnce(false);
+    const poller = start();
+    try {
+      await vi.waitFor(() => expect(claimFeedPoll).toHaveBeenCalledTimes(1));
+      await new Promise((resolve) => setTimeout(resolve, 20));
+      expect(mockFetchFeed).not.toHaveBeenCalled();
+    } finally {
+      poller.stop();
+    }
+  });
+
+  it("releases the lease when ingestion fails before status is recorded", async () => {
+    mockPublishNewEntries.mockRejectedValueOnce(new Error("db down"));
+    const poller = start();
+    try {
+      await vi.waitFor(() => expect(releaseFeedPoll).toHaveBeenCalledWith({}, "bot0"));
+      expect(mockUpsertStatus).not.toHaveBeenCalled();
+    } finally {
+      poller.stop();
+    }
   });
 });

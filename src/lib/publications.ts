@@ -82,3 +82,20 @@ export async function submitPendingPublications(
   }
   return result;
 }
+
+export interface PublicationSummary {
+  pending: number;
+  failing: number;
+  oldestPendingAt: Date | null;
+  queuedLastDay: number;
+}
+
+export async function getPublicationSummary(db: Db, now = new Date()): Promise<PublicationSummary> {
+  const [row] = await db.select({
+    pending: sql<number>`count(*) filter (where ${publications.queuedAt} is null and ${publications.cancelledAt} is null)`.mapWith(Number),
+    failing: sql<number>`count(*) filter (where ${publications.queuedAt} is null and ${publications.cancelledAt} is null and ${publications.attempts} > 0)`.mapWith(Number),
+    oldestPendingAt: sql<string | null>`min(${publications.createdAt}) filter (where ${publications.queuedAt} is null and ${publications.cancelledAt} is null)`,
+    queuedLastDay: sql<number>`count(*) filter (where ${publications.queuedAt} > ${new Date(now.getTime() - 86_400_000)})`.mapWith(Number),
+  }).from(publications);
+  return { ...row, oldestPendingAt: row.oldestPendingAt ? new Date(row.oldestPendingAt) : null };
+}

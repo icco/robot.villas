@@ -2,7 +2,7 @@ import type { Context } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
 import { resolveBlockedInstances, type RssBotConfig, type FeedsConfig } from "./config";
 import { mapWithConcurrency } from "./concurrency";
-import { getFeedPollStatusMap, upsertFeedPollStatus, type Db, type FeedPollStatusRow } from "./db";
+import { claimFeedPoll, getFeedPollStatusMap, releaseFeedPoll, upsertFeedPollStatus, type Db, type FeedPollStatusRow } from "./db";
 import { parsePositiveInt } from "./env";
 import { fetchFeedWithHttpResult } from "./rss";
 import { publishNewEntries } from "./publisher";
@@ -15,6 +15,8 @@ const DEFAULT_INTERVAL_MS = 15 * 60 * 1000;
  * poll cycle run far longer than intervalMs when polled fully sequentially. */
 const DEFAULT_CONCURRENCY = 10;
 const logger = getLogger(["robot-villas", "poller"]);
+/** Covers fetch plus ingestion (including hashtag generation); expires if a replica dies. */
+const FEED_LEASE_MS = 10 * 60 * 1000;
 
 export interface PollerOptions {
   config: FeedsConfig;
@@ -51,6 +53,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
     previous: FeedPollStatusRow | undefined,
   ): Promise<void> {
     const checkedAt = new Date();
+    let claimed = false;
     try {
       // Don't touch the status row while backing off, so /status keeps showing the 429.
       if (previous?.nextPollAt && previous.nextPollAt.getTime() > checkedAt.getTime()) {
@@ -69,6 +72,11 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         });
         return;
       }
+      if (!(await claimFeedPoll(db, username, checkedAt, FEED_LEASE_MS))) {
+        logger.debug("Skipping {username}: another replica is polling it", { username });
+        return;
+      }
+      claimed = true;
       const fetchResult = await fetchFeedWithHttpResult(bot.feed_url, {
         etag: previous?.etag ?? null,
         lastModified: previous?.lastModified ?? null,
@@ -93,6 +101,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
             ? null
             : new Date(checkedAt.getTime() + fetchResult.retryAfterMs),
       });
+      claimed = false;
       if (fetchResult.errorMessage) {
         logger.warn("Feed poll failed for {username}: {message}", {
           username,
@@ -106,6 +115,12 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
       }
     } catch (err) {
       logger.error("Error polling {username}: {error}", { username, error: err });
+    } finally {
+      if (claimed) {
+        await releaseFeedPoll(db, username).catch((error) => {
+          logger.warn("Could not release poll lease for {username}: {error}", { username, error });
+        });
+      }
     }
   }
 
