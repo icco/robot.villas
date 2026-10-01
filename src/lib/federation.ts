@@ -240,13 +240,15 @@ export async function handleFollow(
     });
     return;
   }
-  // Same predicate as outbound delivery, so a domain block covers subdomains
-  // here too and the two directions cannot disagree about what is blocked.
-  const followerHost = normalizeHost(follower.id.hostname);
-  if (isBlockedHost(followerHost, blockedInstances)) {
-    logger.info("Rejected follow from blocked instance {host}", {
-      host: followerHost,
-    });
+  // Same predicate as outbound delivery: the actor and every inbox it would be
+  // delivered through must be allowed, so a follower cannot route around a block.
+  const deliveryHosts = [follower.id, follower.inboxId, follower.endpoints?.sharedInbox]
+    .filter((u): u is URL => u != null)
+    .map((u) => normalizeHost(u.hostname));
+  const blockedHost = deliveryHosts.find((host) => isBlockedHost(host, blockedInstances));
+  if (blockedHost) {
+    logger.info("Rejected follow from blocked instance {host}", { host: blockedHost });
+    // The one delivery to a blocked host: it tells the remote the follow failed.
     await ctx.sendActivity(
       { identifier: parsed.identifier },
       follower,
@@ -606,11 +608,27 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     };
   });
 
+  registerInboxListeners(federation, db, botUsernames, blockedInstances);
+
+  return federation;
+}
+
+/**
+ * Inbox listeners, separate so tests can drive them through a mock federation.
+ * Accept, Reject, and reactions from blocked hosts change no state; Undo and
+ * Delete are honored because they only remove state.
+ */
+export function registerInboxListeners(
+  federation: Pick<Federation<void>, "setInboxListeners">,
+  db: Db,
+  botUsernames: string[],
+  blockedInstances: ReadonlySet<string>,
+) {
   const fromAllowedHost = (activity: { actorId: URL | null }) =>
     !activity.actorId || !isBlockedHost(activity.actorId.hostname, blockedInstances);
 
   // --- Inbox listeners ---
-  federation
+  return federation
     .setInboxListeners("/users/{identifier}/inbox", "/inbox")
     .setSharedKeyDispatcher(() => ({ identifier: botUsernames[0] }))
     .on(Follow, (ctx, follow) => handleFollow(ctx, follow, db, botUsernames, blockedInstances))
@@ -687,8 +705,6 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     .onError((_ctx, error) => {
       logger.error("Inbox listener error: {error}", { error });
     });
-
-  return federation;
 }
 
 /**
