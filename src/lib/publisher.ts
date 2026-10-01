@@ -5,7 +5,8 @@ import escapeHtml from "escape-html";
 import { getLogger } from "@logtape/logtape";
 import { partitionBlockedRecipients } from "./blocklist";
 import type { BotConfig } from "./config";
-import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, insertEntry, type Db } from "./db";
+import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, type Db } from "./db";
+import { storeEntryWithPublications } from "./publications";
 import { resolveHashtags } from "./hashtags";
 import type { FeedEntry } from "./rss";
 
@@ -80,7 +81,7 @@ export function buildCreateActivity(
 }
 
 export interface PublishResult {
-  published: number;
+  stored: number;
   skipped: number;
 }
 
@@ -154,18 +155,17 @@ export async function sendCreateActivity(
 }
 
 export async function publishNewEntries(
-  ctx: Context<void>,
+  _ctx: Context<void>,
   db: Db,
   botUsername: string,
-  domain: string,
+  _domain: string,
   entries: FeedEntry[],
   bot: BotConfig,
   blockedInstances: ReadonlySet<string> = new Set(),
 ): Promise<PublishResult> {
-  let published = 0;
+  let stored = 0;
   let skipped = 0;
   const recipients = await getPublishRecipients(db, botUsername, blockedInstances);
-  const hasRecipients = recipients.followerRecipients.length > 0 || recipients.relayRecipients.length > 0;
 
   const truncatedEntries = entries.map((entry) => ({
     entry,
@@ -196,7 +196,7 @@ export async function publishNewEntries(
       bot,
     );
 
-    const entryId = await insertEntry(
+    const entryId = await storeEntryWithPublications(
       db,
       botUsername,
       guid,
@@ -204,6 +204,7 @@ export async function publishNewEntries(
       title,
       entry.publishedAt,
       [...hashtags],
+      [...recipients.followerRecipients, ...recipients.relayRecipients],
     );
 
     if (entryId === null) {
@@ -211,23 +212,10 @@ export async function publishNewEntries(
       continue;
     }
 
-    if (!hasRecipients) {
-      skipped++;
-      continue;
-    }
-
-    const create = buildCreateActivity(
-      botUsername,
-      entryId,
-      { title, link: url, publishedAt: entry.publishedAt, hashtags },
-      `https://${domain}`,
-    );
-
-    await sendCreateActivity(ctx, botUsername, create, recipients);
-    published++;
+    stored++;
   }
 
-  return { published, skipped };
+  return { stored, skipped };
 }
 
 export function safeParseUrl(link: string | undefined): URL | undefined {

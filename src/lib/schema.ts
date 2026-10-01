@@ -46,6 +46,23 @@ export const reactions = pgTable("reactions", {
   uniqueIndex("reactions_active_unique").on(t.actorId, t.entryId, t.kind, t.content).where(sql`${t.undoneAt} IS NULL`),
 ]);
 
+/** Transactional intent to submit one immutable post to one destination inbox. */
+export const publications = pgTable("publications", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  entryId: integer("entry_id").notNull().references(() => feedEntries.id),
+  actorId: text("actor_id").notNull(),
+  inboxUrl: text("inbox_url").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+  queuedAt: timestamp("queued_at", { withTimezone: true, mode: "date" }),
+  cancelledAt: timestamp("cancelled_at", { withTimezone: true, mode: "date" }),
+  attempts: integer().notNull().default(0),
+  lastError: text("last_error"),
+  nextAttemptAt: timestamp("next_attempt_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+}, (t) => [
+  unique().on(t.entryId, t.inboxUrl),
+  index("publications_pending_idx").on(t.nextAttemptAt).where(sql`${t.queuedAt} IS NULL AND ${t.cancelledAt} IS NULL`),
+]);
+
 /** Retained after removal to avoid repeat announcements. */
 export const botRegistrations = pgTable("bot_registrations", {
   botUsername: text("bot_username").primaryKey(),

@@ -7,6 +7,7 @@ import { parsePositiveInt } from "./env";
 import { fetchFeedWithHttpResult } from "./rss";
 import { publishNewEntries } from "./publisher";
 import { announceNewBots } from "./meta-bot";
+import { submitPendingPublications } from "./publications";
 
 /** Not configurable: a 429 backs a slow-polling host off on its own. */
 const DEFAULT_INTERVAL_MS = 15 * 60 * 1000;
@@ -72,6 +73,12 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         etag: previous?.etag ?? null,
         lastModified: previous?.lastModified ?? null,
       });
+      if (!fetchResult.errorMessage && !fetchResult.notModified) {
+        // Advancing validators is safe only after every entry and submission
+        // intent is committed. Partial ingestion retries using the old validators.
+        const result = await publishNewEntries(ctx, db, username, domain, fetchResult.entries, bot, blockedInstances);
+        logger.info("Ingested {stored} posts for {username}, skipped {skipped}", { username, ...result });
+      }
       await upsertFeedPollStatus(db, {
         botUsername: username,
         lastCheckedAt: checkedAt,
@@ -97,16 +104,6 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         logger.info("Feed unchanged for {username} (HTTP 304)", { username });
         return;
       }
-      const result = await publishNewEntries(ctx, db, username, domain, fetchResult.entries, bot, blockedInstances);
-      logger.info(
-        "Fetched {entryCount} entries for {username}, published {published}, skipped {skipped}",
-        {
-          username,
-          entryCount: fetchResult.entries.length,
-          published: result.published,
-          skipped: result.skipped,
-        },
-      );
     } catch (err) {
       logger.error("Error polling {username}: {error}", { username, error: err });
     }
@@ -115,6 +112,12 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   async function poll(): Promise<void> {
     logger.info("Poll cycle starting");
     const ctx = getContext();
+    try {
+      const submissions = await submitPendingPublications(ctx, db, domain, Object.keys(config.bots), blockedInstances);
+      logger.info("Publication submissions: {queued} queued, {failed} failed, {cancelled} cancelled", submissions);
+    } catch (error) {
+      logger.error("Publication retry failed: {error}", { error });
+    }
     try {
       await announceNewBots(ctx, db, config, domain);
     } catch (err) {
@@ -133,6 +136,11 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
       concurrency,
       ([username, bot]) => pollBot(ctx, username, bot, statuses.get(username)),
     );
+    try {
+      await submitPendingPublications(ctx, db, domain, Object.keys(config.bots), blockedInstances);
+    } catch (error) {
+      logger.error("Publication submission failed: {error}", { error });
+    }
     logger.info("Poll cycle complete");
   }
 
