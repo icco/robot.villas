@@ -97,6 +97,7 @@ jobs:
       - name: Check health, WebFinger, and actor
         run: |
           for _ in $(seq 1 30); do curl -fsS http://127.0.0.1:8080/healthcheck && break; sleep 2; done
+          curl -fsS http://127.0.0.1:8080/healthcheck
           bot=$(yq '.bots | keys | .[0]' feeds.yml)
           curl -fsS "http://127.0.0.1:8080/.well-known/webfinger?resource=acct:${bot}@robot.villas" | grep -q '"subject"'
           curl -fsS -H 'Accept: application/activity+json' "http://127.0.0.1:8080/users/${bot}" | grep -q '"inbox"'
