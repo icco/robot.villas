@@ -190,6 +190,7 @@ function InstancePickerDialog({
                   type="button"
                   id={`${ids.list}-${i}`}
                   role="option"
+                  tabIndex={-1}
                   aria-selected={i === selectedIndex}
                   className={i === selectedIndex ? "active" : ""}
                   onClick={() => submit(s)}
@@ -233,13 +234,20 @@ function InstancePickerDialog({
   );
 }
 
-function openInteraction(instance: string, uri: string, fallback: () => void) {
-  const popup = window.open(interactionUrl(instance, uri), "_blank", "noopener,noreferrer");
-  // With noopener most browsers return null even on success, so only fall
-  // back when the page is still focused (the popup was blocked).
-  if (!popup && document.hasFocus()) {
-    fallback();
+/**
+ * Opens a blank tab first: with `noopener`, `window.open()` returns null even
+ * on success, so it could not tell a blocked popup apart. Falls back to
+ * navigating this tab only when the popup really was blocked.
+ */
+function openInteraction(instance: string, uri: string) {
+  const url = interactionUrl(instance, uri);
+  const popup = window.open("", "_blank");
+  if (!popup) {
+    window.location.assign(url);
+    return;
   }
+  popup.opener = null;
+  popup.location.href = url;
 }
 
 export function FollowButton({
@@ -254,7 +262,7 @@ export function FollowButton({
   const handlePick = useCallback(
     (instance: string) => {
       setOpen(false);
-      openInteraction(instance, handle, () => window.location.assign(interactionUrl(instance, handle)));
+      openInteraction(instance, handle);
     },
     [handle],
   );
@@ -295,7 +303,7 @@ export function InteractButton({
   const handlePick = useCallback(
     (instance: string) => {
       setOpen(false);
-      openInteraction(instance, uri, () => window.location.assign(interactionUrl(instance, uri)));
+      openInteraction(instance, uri);
     },
     [uri],
   );

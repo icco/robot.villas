@@ -11,7 +11,7 @@ describe("normalizeInstance", () => {
     ["example.com:8443", "example.com:8443"],
   ])("accepts %j", (input, host) => expect(normalizeInstance(input)).toBe(host));
 
-  it.each(["", "localhost", "javascript:alert(1)", "https://u:p@example.com", "example.com/path", "example.com?x=1", "evil.com#frag"])(
+  it.each(["", "localhost", "http://mastodon.social", "javascript:alert(1)", "https://u:p@example.com", "example.com/path", "example.com?x=1", "evil.com#frag"])(
     "rejects %j",
     (input) => expect(normalizeInstance(input)).toBeNull(),
   );

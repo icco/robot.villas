@@ -15,7 +15,8 @@ export function normalizeInstance(input: string): string | null {
     return null;
   }
   if (
-    (url.protocol !== "https:" && url.protocol !== "http:") ||
+    // interactionUrl() always uses https, so accept only https input.
+    url.protocol !== "https:" ||
     url.username || url.password || url.search || url.hash ||
     (url.pathname !== "/" && url.pathname !== "") ||
     !url.hostname.includes(".")
