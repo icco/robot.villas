@@ -35,7 +35,7 @@ URLs must be HTTP(S). Feeds are polled every 15 minutes with conditional request
 | `BLOCKED_INSTANCES` | Comma-separated hosts added to `blocked_instances` | |
 | `POLL_CONCURRENCY` | Feeds fetched at once | `10` |
 | `DISABLE_BACKGROUND` | `true` serves HTTP only (no queue, jobs, or poller) | |
-| `SOURCE_COMMIT` or `GIT_SHA` | Build ID; startup jobs run once per build and config | |
+| `SOURCE_COMMIT` or `GIT_SHA` | Build ID; startup jobs run once per build and config | `GIT_SHA` is set in published images |
 | `GEMINI_API_KEY` or `GEMINI_PROJECT` | Enables AI hashtag suggestions (API key or Vertex AI) | |
 | `GEMINI_LOCATION` | Vertex AI region | `us-central1` |
 | `GEMINI_MODEL` | Gemini model | `gemini-2.5-flash-lite` |

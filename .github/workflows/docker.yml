@@ -20,7 +20,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   image:
-    if: github.event_name == 'pull_request' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push')
+    if: github.event_name == 'pull_request' || (github.event.workflow_run.conclusion == 'success' && (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch') && github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
@@ -67,6 +67,8 @@ jobs:
           context: .
           load: true
           tags: robot-villas:smoke
+          build-args: |
+            GIT_SHA=${{ github.event.workflow_run.head_sha || github.sha }}
           secrets: |
             npm_token=${{ secrets.GITHUB_TOKEN }}
       # Main pushes only an immutable sha tag. The smoke test then runs that
@@ -80,6 +82,8 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            GIT_SHA=${{ github.event.workflow_run.head_sha || github.sha }}
           secrets: |
             npm_token=${{ secrets.GITHUB_TOKEN }}
       - name: Pull the pushed digest

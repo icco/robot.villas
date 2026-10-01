@@ -23,6 +23,9 @@ LABEL org.opencontainers.image.description="RSS to Mastodon Bridge"
 WORKDIR /app
 
 ENV NODE_ENV=production
+# Startup jobs run once per build; this identifies the build.
+ARG GIT_SHA=""
+ENV GIT_SHA=$GIT_SHA
 ENV PORT=8080
 ENV HOSTNAME="0.0.0.0"
 
