@@ -108,8 +108,8 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
           )}
           <div className="flex flex-col items-stretch gap-3 mt-3 sm:flex-row sm:flex-wrap sm:items-center">
             <FollowButton account={`${username}@${domain}`}>
-              <button type="button" className="btn btn-primary btn-sm">
-                Follow on Mastodon
+              <button type="button" className="btn btn-primary btn-sm" aria-haspopup="dialog">
+                Follow on the fediverse
               </button>
             </FollowButton>
             <div className="stats stats-horizontal shadow bg-base-200">
