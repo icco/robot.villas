@@ -15,17 +15,17 @@ importers:
   .:
     dependencies:
       '@fedify/fedify':
-        specifier: ^2.3.8
-        version: 2.3.8
+        specifier: ^2.3.9
+        version: 2.3.9
       '@fedify/next':
-        specifier: ^2.3.8
-        version: 2.3.8(@fedify/fedify@2.3.8)(next@16.3.6(@opentelemetry/api@1.9.1)(@types/node@26.6.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))
+        specifier: ^2.3.9
+        version: 2.3.9(@fedify/fedify@2.3.9)(next@16.3.6(@opentelemetry/api@1.9.1)(@types/node@26.6.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))
       '@fedify/postgres':
-        specifier: ^2.3.8
-        version: 2.3.8(@fedify/fedify@2.3.8)(postgres@3.4.9)
+        specifier: ^2.3.9
+        version: 2.3.9(@fedify/fedify@2.3.9)(postgres@3.4.9)
       '@fedify/vocab':
-        specifier: ^2.3.8
-        version: 2.3.8
+        specifier: ^2.3.9
+        version: 2.3.9
       '@google/genai':
         specifier: ^2.24.0
         version: 2.24.0
@@ -39,11 +39,11 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1
       '@logtape/logtape':
-        specifier: ^2.3.9
-        version: 2.3.9
+        specifier: ^2.3.10
+        version: 2.3.10
       daisyui:
-        specifier: ^5.7.46
-        version: 5.7.46
+        specifier: ^5.7.47
+        version: 5.7.47
       drizzle-orm:
         specifier: ^0.45.3
         version: 0.45.3(@opentelemetry/api@1.9.1)(postgres@3.4.9)
@@ -79,8 +79,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.11.0(jiti@2.7.0))
       '@next/eslint-plugin-next':
-        specifier: ^16.3.6
-        version: 16.3.6(eslint@10.11.0(jiti@2.7.0))
+        specifier: ^16.3.7
+        version: 16.3.7(eslint@10.11.0(jiti@2.7.0))
       '@stylistic/eslint-plugin':
         specifier: ^5.10.0
         version: 5.10.0(eslint@10.11.0(jiti@2.7.0))
@@ -415,40 +415,40 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@fedify/fedify@2.3.8':
-    resolution: {integrity: sha512-a+nHqKe/yk9NKfB1nhXCcjPWv1XPIqJNKaNWiOfbXyb+5fFGFdYxtmKGwTMWj36GMLmRLedSXkJllkjbDQW2jw==}
+  '@fedify/fedify@2.3.9':
+    resolution: {integrity: sha512-KqZEYroxs0d0+cuiV/3Rj5IymR2vYJbLvo+ODfvaJuNp5Tr/POTTmYVk7ubo6OwmX4OnJddeveoCmacTN+WhSA==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/next@2.3.8':
-    resolution: {integrity: sha512-N2WpLRg5Ckt2MUQqIlpLB4MasdJI9arLmKSp8gJgu7rt+0Ow7+H1r86phRuFJ/nUQA9LqOsePCTkcuZo4wd6wQ==}
+  '@fedify/next@2.3.9':
+    resolution: {integrity: sha512-hbZUWXBdSLNBTBGNrxoMU3I0/TKka/3ID2VFdxA8x1I6dpYBuPNPl/CDPx9aH1li8BiOTZg1ytYN59B/Z1lVEQ==}
     peerDependencies:
-      '@fedify/fedify': ^2.3.8
+      '@fedify/fedify': ^2.3.9
       next: '>=15.4.6 <17'
 
-  '@fedify/postgres@2.3.8':
-    resolution: {integrity: sha512-iQWtH8q8hl/1wJDZcxVwGf4yXro08d7xxTuhwNNaHiy2JpbeR2wejn/ykHIl/kT9Z9gVUf/fyDCSCwsuMM+LrA==}
+  '@fedify/postgres@2.3.9':
+    resolution: {integrity: sha512-cMqQbuXpN6QOMd/di/nwMPH97Aamh3Bw4wPrsotLz02UWI9d0N4Mey8iyrBqP62HnHIuImeVwdSDqonKIL4XjQ==}
     peerDependencies:
-      '@fedify/fedify': ^2.3.8
+      '@fedify/fedify': ^2.3.9
       postgres: ^3.4.7
 
-  '@fedify/uri-template@2.3.8':
-    resolution: {integrity: sha512-7tK3PY/YDQADwCt1aDQ0JWky4f4Mvm4X0wzD/n/jhfq8Vzo/VPNmFfEynHSvnWqka9yGHlJ0m4nhoTi4MTzFrg==}
+  '@fedify/uri-template@2.3.9':
+    resolution: {integrity: sha512-uDj4bcr4zGBGzqSDO73N3r/v9hoDsJ4GXGY+xsAM3fGtZswK8fEDWtf7KxKXHUYqDvlRS9arxUWwpOtv2j4Oeg==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab-runtime@2.3.8':
-    resolution: {integrity: sha512-EyWmYhMC7oB4wTblshZMsQAGp3ADbSU3xy4r2Ybc1l2sdRbn1A/4n9u9HUnYzVsOU2v8pP9BuivFt0FSOfn+dA==}
+  '@fedify/vocab-runtime@2.3.9':
+    resolution: {integrity: sha512-ka6eq5Hy//51q3jJ07ZAUOGqoPQjRgn+IMAvu/AF/uAqA8zevL9kb9iCyHd0pWzL++8S1t7DWDR/TTgPoLgcUw==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab-tools@2.3.8':
-    resolution: {integrity: sha512-yq8c7bg8/8Cz/yknryNkGbauuwez9wO1eHYzzdXj8+iVa4bB6Ty27r3Ccqp21p6479imP/vZVE5+B9t83P7SWg==}
+  '@fedify/vocab-tools@2.3.9':
+    resolution: {integrity: sha512-lNbY2tCjYvuju9v6Na9BhEo8L4V2tUNcL4BTBVUDHtOezlF1J41YsOoGTWGVIdCu48ZYgTJNdc3eqYv/VMAIbQ==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab@2.3.8':
-    resolution: {integrity: sha512-UgNpKSuM1vZp+ZzsUSN5Y9me6Gb+Nkee2cGC5xOPBSO20Z7h55QmucmWPFSPW+mUFVyeECBcc5CMHGTFI/lhjg==}
+  '@fedify/vocab@2.3.9':
+    resolution: {integrity: sha512-CLWu9WxgMGaZARrJopZE/InbptiwMQFxdXsVdZon88T3xs6n0ZT45k7OJ9Qy65QCmim8ORBHEQkO1lojUqhqag==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/webfinger@2.3.8':
-    resolution: {integrity: sha512-veks2AS2Isco29G12lBP0k/mVgfsU0TaNyPprAN8AnZF8h+7eeJ+Baj0apdHWbtfbE6tD9s7Kqdd532w6xs+zg==}
+  '@fedify/webfinger@2.3.9':
+    resolution: {integrity: sha512-kQw7uxlPD2IVzmZY0nhHxHmbO9zHcuGH0RzJn23lH2T7OUGgZdC+5rF1J+i7SkfiH0dF4cgj2A8A40xqMvWXtg==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
   '@google/genai@2.24.0':
@@ -685,8 +685,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@logtape/logtape@2.3.9':
-    resolution: {integrity: sha512-VwrfX+GSWEtk+v17nQzANwt3/8iAZw1Kbk6HvwPiKHadrAv/P/AiDTTxar1l1XNkSmkRZICfPEUBdxTPRDLcHQ==}
+  '@logtape/logtape@2.3.10':
+    resolution: {integrity: sha512-IdOrFCHMSGYz+fq7xrxKCjXxItHHdiVenNaHeFJhXOkaVXFAHCdrPPBQJvJVmYbAUY5PCP8kSMxY+GIoxkmwHA==}
 
   '@multiformats/base-x@4.0.1':
     resolution: {integrity: sha512-eMk0b9ReBbV23xXU693TAIrLyeO5iTgBZGSJfpqriG8UkYvr/hC9u9pyMlAakDNHWmbhMZCDs6KQO0jzKD8OTw==}
@@ -694,8 +694,8 @@ packages:
   '@next/env@16.3.6':
     resolution: {integrity: sha512-x9Vblze1EbtltQYnNH38xCPWU3TVfBd1eXqA3+w9+BTpedkkdNpAaltXlGQ/nsc1+E0mVTNrtcbX3GoO09zeLQ==}
 
-  '@next/eslint-plugin-next@16.3.6':
-    resolution: {integrity: sha512-jowwDX+7DOlDIjJLgTMxudw+k37QnWu1JkZLkSi9MaJBfDYcfhAPMKBhXL0idYzFN/AGg//axnOR4cLkHX/Rng==}
+  '@next/eslint-plugin-next@16.3.7':
+    resolution: {integrity: sha512-ZQwUKBxqKAasarxLHJkkIv0cuG80pJ7TKvCUcFvlKewkuzYkL+Lsxb++DQlcBnY4uT0kOazDye4j1pyDPlDcDQ==}
 
   '@next/swc-darwin-arm64@16.3.6':
     resolution: {integrity: sha512-E/7GEqaUkt8mk/T8v9lAnrhzR06kdq1ZBkC12F8tAMkdIadwNp3H1KqHynDHrpcTlGCUdq/qu6vUL2aYVyYBdw==}
@@ -1244,8 +1244,8 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  daisyui@5.7.46:
-    resolution: {integrity: sha512-z/tfVXLpLRe1ojGeokzxauHA9Ij5CGfk+83EdatQbFSVr02h5mUcp4nkgQJOw68wH1wAAPu/SY+MWbDdJG2R4w==}
+  daisyui@5.7.47:
+    resolution: {integrity: sha512-NOl4vPifelRqB3CMzoU751zc44KCDD9HdHMTTqQ30uiYVpIyK7+s94/ySDWgYqjdl1tQCaCrgGBx4KCizm+a3Q==}
 
   data-uri-to-buffer@4.0.1:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
@@ -1376,8 +1376,8 @@ packages:
   ecdsa-sig-formatter@1.0.11:
     resolution: {integrity: sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==}
 
-  enhanced-resolve@5.25.1:
-    resolution: {integrity: sha512-nGXts5znJzmWPu+mIE9izCOzdg63oJca2mDzGWWTth7sr4aCToKcoyFVBQwN75Ij5Pf6p510EwkTqViTRzDV+w==}
+  enhanced-resolve@5.26.0:
+    resolution: {integrity: sha512-9vhedylFonb2YGogzUKX6+Ja72gOJbN1QHAqdrvqLwhdl/QWbKopzoUC9EbQNVsAns/bx/4uyqalrQAoy1IByw==}
     engines: {node: '>=10.13.0'}
 
   entities@2.2.0:
@@ -2045,8 +2045,8 @@ packages:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
 
-  std-env@4.2.0:
-    resolution: {integrity: sha512-oCUKSupKTHX53EyjDtuZQ64pjLJ6yYCtpmEw0goYxtjG9KpbRe8KAsl2tBUGU9DyMcJ0RwJ8GqJAFzMXcXW1Rw==}
+  std-env@4.3.0:
+    resolution: {integrity: sha512-OtU/EgQ1kIm5KwqQpBC6ZEMXrZRui11w8zgfTWp8cdO9B8OaPsbA8bTHO2P+HNo1VlUTGMVBwPhydu6poeXiag==}
 
   structured-field-values@2.0.4:
     resolution: {integrity: sha512-5zpJXYLPwW3WYUD/D58tQjIBs10l3Yx64jZfcKGs/RH79E2t9Xm/b9+ydwdMNVSksnsIY+HR/2IlQmgo0AcTAg==}
@@ -2523,14 +2523,14 @@ snapshots:
     optionalDependencies:
       '@noble/hashes': 1.8.0
 
-  '@fedify/fedify@2.3.8':
+  '@fedify/fedify@2.3.9':
     dependencies:
-      '@fedify/uri-template': 2.3.8
-      '@fedify/vocab': 2.3.8
-      '@fedify/vocab-runtime': 2.3.8
-      '@fedify/webfinger': 2.3.8
+      '@fedify/uri-template': 2.3.9
+      '@fedify/vocab': 2.3.9
+      '@fedify/vocab-runtime': 2.3.9
+      '@fedify/webfinger': 2.3.9
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.9
+      '@logtape/logtape': 2.3.10
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.11.0(@opentelemetry/api@1.9.1)
       '@opentelemetry/sdk-metrics': 2.11.0(@opentelemetry/api@1.9.1)
@@ -2543,24 +2543,24 @@ snapshots:
       structured-field-values: 2.0.4
       urlpattern-polyfill: 10.1.0
 
-  '@fedify/next@2.3.8(@fedify/fedify@2.3.8)(next@16.3.6(@opentelemetry/api@1.9.1)(@types/node@26.6.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))':
+  '@fedify/next@2.3.9(@fedify/fedify@2.3.9)(next@16.3.6(@opentelemetry/api@1.9.1)(@types/node@26.6.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))':
     dependencies:
-      '@fedify/fedify': 2.3.8
+      '@fedify/fedify': 2.3.9
       next: 16.3.6(@opentelemetry/api@1.9.1)(@types/node@26.6.3)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
 
-  '@fedify/postgres@2.3.8(@fedify/fedify@2.3.8)(postgres@3.4.9)':
+  '@fedify/postgres@2.3.9(@fedify/fedify@2.3.9)(postgres@3.4.9)':
     dependencies:
-      '@fedify/fedify': 2.3.8
+      '@fedify/fedify': 2.3.9
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.9
+      '@logtape/logtape': 2.3.10
       postgres: 3.4.9
 
-  '@fedify/uri-template@2.3.8': {}
+  '@fedify/uri-template@2.3.9': {}
 
-  '@fedify/vocab-runtime@2.3.8':
+  '@fedify/vocab-runtime@2.3.9':
     dependencies:
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.9
+      '@logtape/logtape': 2.3.10
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2568,20 +2568,20 @@ snapshots:
       jsonld: 9.0.0
       pkijs: 3.4.1
 
-  '@fedify/vocab-tools@2.3.8':
+  '@fedify/vocab-tools@2.3.9':
     dependencies:
       '@cfworker/json-schema': 4.1.1
       byte-encodings: 1.0.11
       es-toolkit: 1.46.1
       yaml: 2.9.1
 
-  '@fedify/vocab@2.3.8':
+  '@fedify/vocab@2.3.9':
     dependencies:
-      '@fedify/vocab-runtime': 2.3.8
-      '@fedify/vocab-tools': 2.3.8
-      '@fedify/webfinger': 2.3.8
+      '@fedify/vocab-runtime': 2.3.9
+      '@fedify/vocab-tools': 2.3.9
+      '@fedify/webfinger': 2.3.9
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.3.9
+      '@logtape/logtape': 2.3.10
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2589,10 +2589,10 @@ snapshots:
       jsonld: 9.0.0
       pkijs: 3.4.1
 
-  '@fedify/webfinger@2.3.8':
+  '@fedify/webfinger@2.3.9':
     dependencies:
-      '@fedify/vocab-runtime': 2.3.8
-      '@logtape/logtape': 2.3.9
+      '@fedify/vocab-runtime': 2.3.9
+      '@logtape/logtape': 2.3.10
       '@opentelemetry/api': 1.9.1
       es-toolkit: 1.46.1
 
@@ -2777,13 +2777,13 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@logtape/logtape@2.3.9': {}
+  '@logtape/logtape@2.3.10': {}
 
   '@multiformats/base-x@4.0.1': {}
 
   '@next/env@16.3.6': {}
 
-  '@next/eslint-plugin-next@16.3.6(eslint@10.11.0(jiti@2.7.0))':
+  '@next/eslint-plugin-next@16.3.7(eslint@10.11.0(jiti@2.7.0))':
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@10.11.0(jiti@2.7.0))
       fast-glob: 3.3.1
@@ -2950,7 +2950,7 @@ snapshots:
   '@tailwindcss/node@4.3.3':
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      enhanced-resolve: 5.25.1
+      enhanced-resolve: 5.26.0
       jiti: 2.7.0
       lightningcss: 1.32.0
       magic-string: 0.30.21
@@ -3237,7 +3237,7 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  daisyui@5.7.46: {}
+  daisyui@5.7.47: {}
 
   data-uri-to-buffer@4.0.1: {}
 
@@ -3274,7 +3274,7 @@ snapshots:
     dependencies:
       safe-buffer: 5.2.1
 
-  enhanced-resolve@5.25.1:
+  enhanced-resolve@5.26.0:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.3
@@ -3980,7 +3980,7 @@ snapshots:
 
   source-map@0.6.1: {}
 
-  std-env@4.2.0: {}
+  std-env@4.3.0: {}
 
   structured-field-values@2.0.4: {}
 
@@ -4088,7 +4088,7 @@ snapshots:
       magic-string: 1.4.2
       obug: 2.2.1
       picomatch: 4.0.7
-      std-env: 4.2.0
+      std-env: 4.3.0
       tinybench: 6.2.0
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
