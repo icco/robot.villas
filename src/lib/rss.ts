@@ -211,13 +211,17 @@ export async function parseFeedXml(xml: string): Promise<FeedEntry[]> {
   let depth = 0;
   let nodes = 0;
   const guard = new SaxesParser();
-  guard.on("doctype", () => { throw new Error("Feed DTDs are not supported"); });
+  guard.on("doctype", () => {
+ throw new Error("Feed DTDs are not supported"); 
+});
   guard.on("opentag", () => {
     if (++depth > 64 || ++nodes > 50_000) {
       throw new Error("Feed XML complexity limit exceeded");
     }
   });
-  guard.on("closetag", () => { depth--; });
+  guard.on("closetag", () => {
+ depth--; 
+});
   guard.write(xml).close();
   const feed = await parser.parseString(xml);
   return feed.items.slice(0, MAX_ITEMS_PER_POLL).map(normalizeFeedItem);

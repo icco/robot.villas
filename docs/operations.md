@@ -38,3 +38,17 @@ it. Fedify owns subsequent network retries. A connection loss after enqueue can
 resubmit the same stable ActivityPub ID: this is at-least-once submission, not
 exactly-once delivery. Existing posts are not backfilled into the publication
 outbox, avoiding an unsolicited replay of the entire archive.
+
+## Remote fetch limits
+
+RSS fetches accept only public HTTP(S) destinations without credentials. DNS is
+checked at socket connection time, so a hostname cannot pass a preflight check
+and then rebind to a private address. Each redirect hop is checked again, with a
+limit of five. Conditional-request validators are dropped on cross-origin hops.
+Bodies are streamed with a 5 MiB limit. Feeds with DTDs, nesting deeper than 64,
+or more than 50,000 elements are rejected before the full parse.
+
+`blocked_instances` applies to actor and inbox hosts for posts, profile updates,
+deletion notices, follows, and relay subscriptions. Inbound Accept, Reject, Like,
+Announce, and EmojiReact from blocked hosts are ignored. Undo and Delete are still
+honored because they only remove state.
