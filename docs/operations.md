@@ -58,13 +58,17 @@ honored because they only remove state.
 Startup maintenance (inbox repair, relay and account follows, profile updates,
 removed-bot deletion) runs as the `maintenance.v1` Fedify task on its own
 PostgreSQL queue table, `fedify_task_message_v2`. Jobs retry with backoff, up to
-five attempts. Each job is deduplicated per deployment key, which hashes
-`SOURCE_COMMIT`/`GIT_SHA` with the parsed config. Restarts of the same build
-within an hour therefore do not repeat the jobs, and replicas do not run them
-twice.
+five attempts. The `maintenance_runs` table records each job once per
+deployment key, which hashes `SOURCE_COMMIT`/`GIT_SHA` with the parsed config.
+Restarts and additional replicas of the same build therefore never repeat the
+jobs. If enqueueing fails, the record is removed so the next start retries.
 
-Each feed is polled under a 10-minute database lease, so only one replica fetches
-and ingests it at a time. A crashed replica's lease expires on its own.
+Each feed is polled under a 10-minute lease that is renewed while work
+continues. A tokened claim fences status and validator writes, so a worker that
+loses its lease cannot overwrite the new owner. Entry inserts are already
+idempotent per GUID. A crashed replica's lease expires on its own.
+
+Queued and cancelled publication rows are deleted after 30 days.
 
 A removed bot keeps its keys and followers until its `Delete` is queued, so a
 failed attempt can be retried and signed. After cleanup, its actor URL and
@@ -73,7 +77,7 @@ posts answer `410 Gone` with a `Tombstone`.
 ## Health and status
 
 - `/healthcheck` is liveness. It returns 200 whenever the process can serve HTTP.
-- `/readyz` is readiness. It returns 503 if PostgreSQL does not answer within three seconds.
+- `/readyz` is readiness. It returns 503 if PostgreSQL does not answer within three seconds; the query is cancelled at that point.
 - `/status` shows publication backlog and failures, last successful poll and
   backoff per feed, and counts of inbox authentication results and outcomes
   since the last restart.
