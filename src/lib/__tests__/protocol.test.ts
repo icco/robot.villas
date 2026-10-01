@@ -1,10 +1,10 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import postgres from "postgres";
 import { MemoryKvStore, InProcessMessageQueue } from "@fedify/fedify";
-import { createDb, insertEntry, migrate } from "../db";
+import { addFollower, createDb, insertEntry, migrate } from "../db";
 import { parseConfig } from "../config";
 import { setupFederation } from "../federation";
-import { feedEntries } from "../schema";
+import { feedEntries, followers } from "../schema";
 import { eq } from "drizzle-orm";
 
 const databaseUrl = process.env.DATABASE_URL;
@@ -29,6 +29,7 @@ bots:
   beforeAll(async () => {
     await migrate(db);
     await db.delete(feedEntries).where(eq(feedEntries.botUsername, "protocol_test"));
+    await db.delete(followers).where(eq(followers.botUsername, "protocol_test"));
     entryId = (await insertEntry(db, "protocol_test", "p1", "https://example.com/p1", "Hello", new Date(), []))!;
   });
   afterAll(() => client.end());
@@ -72,5 +73,15 @@ bots:
 
   it("does not serve unknown actors", async () => {
     expect((await get("/users/nobody")).status).toBe(404);
+  });
+
+  it("filters followers to the requesting server for followers synchronization", async () => {
+    await addFollower(db, "protocol_test", "https://a.example/users/1", "https://a.example/f/1");
+    await addFollower(db, "protocol_test", "https://b.example/users/2", "https://b.example/f/2");
+    const all = await (await get("/users/protocol_test/followers")).json();
+    const only = await (await get(`/users/protocol_test/followers?base-url=${encodeURIComponent("https://a.example/")}`)).json();
+    expect(JSON.stringify(all)).toContain("b.example");
+    expect(JSON.stringify(only)).toContain("https://a.example/users/1");
+    expect(JSON.stringify(only)).not.toContain("b.example");
   });
 });
