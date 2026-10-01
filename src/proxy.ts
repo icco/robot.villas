@@ -1,18 +1,31 @@
-import { fedifyWith } from "@fedify/next";
+import { fedifyWith, integrateFederation } from "@fedify/next";
+import { NextResponse } from "next/server";
 import { getGlobals } from "@/lib/globals";
 
-let handler: ((request: Request) => unknown) | null = null;
+type Handler = (request: Request) => unknown;
+let handlers: { federation: Handler; webfinger: Handler } | null = null;
 
-function getHandler(): (request: Request) => unknown {
-  if (!handler) {
+function getHandlers() {
+  if (!handlers) {
     const { federation } = getGlobals();
-    handler = fedifyWith(federation)();
+    handlers = {
+      federation: fedifyWith(federation)(),
+      // fedifyWith() only handles requests with federation Accept headers, but
+      // WebFinger clients commonly send `Accept: */*`.
+      webfinger: integrateFederation(federation, () => undefined),
+    };
   }
-  return handler;
+  return handlers;
 }
 
 export default function proxy(request: Request) {
-  return getHandler()(request);
+  const { pathname } = new URL(request.url);
+  if (pathname === "/.well-known/webfinger") {
+    return request.method === "GET" || request.method === "HEAD"
+      ? getHandlers().webfinger(request)
+      : NextResponse.next();
+  }
+  return getHandlers().federation(request);
 }
 
 export const config = {
@@ -38,6 +51,7 @@ export const config = {
       ],
     },
     { source: "/.well-known/nodeinfo" },
+    { source: "/.well-known/webfinger" },
     { source: "/.well-known/x-nodeinfo2" },
     { source: "/nodeinfo/2.1" },
   ],

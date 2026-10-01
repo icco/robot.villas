@@ -8,6 +8,7 @@ import * as schema from "./schema";
 import { summarizeRelaySubscription, type RelaySubscriptionState } from "./subscriptions";
 
 export type Db = ReturnType<typeof createDb>;
+export type DbExecutor = Pick<Db, "select" | "insert" | "update" | "delete" | "execute">;
 
 export function createDb(client: postgres.Sql) {
   return drizzle({ client, schema });
@@ -160,11 +161,11 @@ export async function addFollower(
     });
 }
 
-export async function removeFollower(db: Db, botUsername: string, followerId: string): Promise<void> {
+export async function removeFollower(db: Db, botUsername: string, followerId: string, followId?: string): Promise<void> {
   await db
     .update(schema.followers)
     .set({ deletedAt: new Date() })
-    .where(and(eq(schema.followers.botUsername, botUsername), eq(schema.followers.followerId, followerId), isNull(schema.followers.deletedAt)));
+    .where(and(eq(schema.followers.botUsername, botUsername), eq(schema.followers.followerId, followerId), isNull(schema.followers.deletedAt), followId ? eq(schema.followers.followId, followId) : undefined));
 }
 
 export async function getFollowersWithNullInbox(db: Db): Promise<{ followerId: string }[]> {
@@ -411,7 +412,7 @@ export async function getTagsPage(db: Db, limit: number, offset: number): Promis
  * format and the new array-of-JWKs format (for dual RSA + Ed25519 keys).
  */
 export async function getKeypairs(
-  db: Db,
+  db: DbExecutor,
   botUsername: string,
 ): Promise<Array<{ publicKey: JsonWebKey; privateKey: JsonWebKey }> | null> {
   const rows = await db
@@ -439,7 +440,7 @@ export async function getKeypairs(
  * alongside existing RSA keys without losing them.
  */
 export async function saveKeypairs(
-  db: Db,
+  db: DbExecutor,
   botUsername: string,
   keypairs: Array<{ publicKey: JsonWebKey; privateKey: JsonWebKey }>,
 ): Promise<void> {
