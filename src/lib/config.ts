@@ -2,18 +2,20 @@ import { readFileSync } from "node:fs";
 import { load as parseYaml } from "js-yaml";
 import { z } from "zod";
 import { buildBlocklist } from "./blocklist";
+import { safeParseUrl } from "./urls";
 
 const MAX_DISPLAY_NAME_LENGTH = 100;
 const MAX_SUMMARY_LENGTH = 500;
 /** Max characters per hashtag; longer candidates are dropped, not truncated. */
 export const MAX_TAG_LEN = 32;
 
+const HttpUrl = z.string().url().refine((url) => safeParseUrl(url) != null, "Use an HTTP(S) URL without credentials");
 const BotSchema = z.object({
-  feed_url: z.string().url(),
+  feed_url: HttpUrl,
   display_name: z.string().min(1).max(MAX_DISPLAY_NAME_LENGTH),
   summary: z.string().min(1).max(MAX_SUMMARY_LENGTH),
-  profile_photo: z.string().url().optional(),
-  homepage_url: z.string().url().optional(),
+  profile_photo: HttpUrl.optional(),
+  homepage_url: HttpUrl.optional(),
   /** Up to three default hashtags (no #); merged with feed categories before optional Gemini. */
   default_hashtags: z.array(z.string().min(1).max(MAX_TAG_LEN)).max(3).optional(),
 });
@@ -31,7 +33,7 @@ export const FeedsConfigSchema = z
       )
       .refine((bots) => Object.keys(bots).length > 0, "At least one bot must be defined"),
     follows: z.array(z.string().min(3)).optional().default([]),
-    relays: z.array(z.string().url()).optional().default([]),
+    relays: z.array(HttpUrl).optional().default([]),
     /**
      * Instances we refuse to federate with, in both directions: their Follows
      * are Rejected and they are dropped from every delivery. Hostnames, not

@@ -38,8 +38,8 @@ import {
 import escapeHtml from "escape-html";
 import { sql } from "drizzle-orm";
 import { receiveFollowResponse, receiveReaction } from "./inbox-state";
-import { isBlockedHost, normalizeHost } from "./blocklist";
-import { getRelaySubscriptionBot, type BotConfig, type FeedsConfig } from "./config";
+import { isBlockedHost, normalizeHost, partitionBlockedRecipients } from "./blocklist";
+import { getRelaySubscriptionBot, resolveBlockedInstances, type BotConfig, type FeedsConfig } from "./config";
 import {
   findLostAccepts,
   isRelayTerminal,
@@ -606,6 +606,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     };
   });
 
+  const fromAllowedHost = (activity: { actorId: URL | null }) =>
+    !activity.actorId || !isBlockedHost(activity.actorId.hostname, blockedInstances);
+
   // --- Inbox listeners ---
   federation
     .setInboxListeners("/users/{identifier}/inbox", "/inbox")
@@ -613,6 +616,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     .on(Follow, (ctx, follow) => handleFollow(ctx, follow, db, botUsernames, blockedInstances))
     .on(Undo, (ctx, undo) => handleUndo(ctx, undo, db, botUsernames))
     .on(Accept, async (ctx, accept) => {
+      if (!fromAllowedHost(accept)) {
+        return;
+      }
       const object = await accept.getObject(ctx);
       if (!(object instanceof Follow) || !object.id) {
         logger.debug("Accept (no local action): not a Follow with id (accept {acceptId} actor {actor} got {got})", {
@@ -629,6 +635,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       logger.info("Accepted Follow {followId}", { followId: followIdHref });
     })
     .on(Reject, async (ctx, reject) => {
+      if (!fromAllowedHost(reject)) {
+        return;
+      }
       const object = await reject.getObject(ctx);
       if (!(object instanceof Follow) || !object.id) {
         logger.debug("Reject (no local action): not a Follow with id (reject {rejectId} actor {actor} got {got})", {
@@ -647,9 +656,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         actor: reject.actorId?.href,
       });
     })
-    .on(Announce, (ctx, activity) => handleReaction(ctx, activity, db, botUsernames))
-    .on(Like, (ctx, activity) => handleReaction(ctx, activity, db, botUsernames))
-    .on(EmojiReact, (ctx, activity) => handleReaction(ctx, activity, db, botUsernames))
+    .on(Announce, (ctx, activity) => fromAllowedHost(activity) ? handleReaction(ctx, activity, db, botUsernames) : undefined)
+    .on(Like, (ctx, activity) => fromAllowedHost(activity) ? handleReaction(ctx, activity, db, botUsernames) : undefined)
+    .on(EmojiReact, (ctx, activity) => fromAllowedHost(activity) ? handleReaction(ctx, activity, db, botUsernames) : undefined)
     .on(Delete, (_ctx, del) => handleDelete(del, db))
     .on(Update, async (_ctx, activity) => {
       logger.debug("Update (no local action): id={id} actor={actor} object={object} target={target}", {
@@ -693,13 +702,13 @@ export async function sendProfileUpdates(
 ): Promise<void> {
   for (const identifier of Object.keys(config.bots)) {
     const followerRows = await getFollowerRecipients(db, identifier);
-    const recipients = followerRows
+    const recipients = partitionBlockedRecipients(followerRows
       .filter((f) => f.sharedInboxUrl)
       .map((f) => ({
         id: new URL(f.followerId),
         inboxId: new URL(f.sharedInboxUrl!),
         endpoints: null,
-      }));
+      })), resolveBlockedInstances(config)).allowed;
     if (recipients.length === 0) {
       logger.info("Skipping profile update for {identifier}: no followers with inbox", {
         identifier,
@@ -867,6 +876,10 @@ export async function followAccounts(
     }
 
     for (const botUsername of botUsernames) {
+      if (partitionBlockedRecipients([targetActor], resolveBlockedInstances(config)).allowed.length === 0) {
+        logger.info("Skipping follow of blocked account {handle}", { handle });
+        break;
+      }
       if (existingSet.has(`${botUsername}:${handle}`)) {
         logger.info("Bot {bot} follow of {handle} already accepted/rejected, skipping", {
           bot: botUsername,
@@ -1079,6 +1092,10 @@ export async function subscribeToRelays(
   }
 
   for (const { relayUrl, recipient } of resolvedRelays) {
+    if (partitionBlockedRecipients([recipient], resolveBlockedInstances(config)).allowed.length === 0) {
+      logger.info("Skipping blocked relay {url}", { url: relayUrl });
+      continue;
+    }
     if (hasAcceptedForInstance(relayUrl)) {
       logger.info("Instance already has an accepted relay subscription for {url}, skipping", {
         url: relayUrl,
@@ -1175,13 +1192,13 @@ export async function sendDeletedBotActivities(
     );
 
     const followerRows = await getFollowerRecipients(db, botUsername);
-    const recipients = followerRows
+    const recipients = partitionBlockedRecipients(followerRows
       .filter((f) => f.sharedInboxUrl)
       .map((f) => ({
         id: new URL(f.followerId),
         inboxId: new URL(f.sharedInboxUrl!),
         endpoints: null,
-      }));
+      })), resolveBlockedInstances(config)).allowed;
 
     if (recipients.length > 0) {
       const deleteActivity = new Delete({

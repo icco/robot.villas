@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Link from "next/link";
 import { type FeedEntry, entryObjectUrl } from "@/lib/feed-entry";
 import { EntryInteractButtons } from "./entry-interact-buttons";
+import { safeParseUrl } from "@/lib/urls";
 
 const DATE: Intl.DateTimeFormatOptions = {
   year: "numeric",
@@ -53,8 +54,8 @@ export function PostFeed({
                 </Link>{" "}
               </>
             )}
-            {e.url ? (
-              <a href={e.url} className="link link-hover font-medium">
+            {safeParseUrl(e.url) ? (
+              <a href={safeParseUrl(e.url)?.href} className="link link-hover font-medium">
                 {e.title}
               </a>
             ) : (
