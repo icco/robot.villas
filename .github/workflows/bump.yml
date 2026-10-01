@@ -4,24 +4,46 @@ on:
   schedule:
     # UTC
     - cron: 12 5 * * *
+permissions:
+  contents: read
+concurrency:
+  group: bump
+  cancel-in-progress: false
 jobs:
   bump:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
       packages: read
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+          POSTGRES_DB: robot_villas_test
+        ports:
+          - 5432:5432
+        options: --health-cmd "pg_isready -U test" --health-interval 10s --health-timeout 5s --health-retries 5
+    env:
+      DATABASE_URL: postgres://test:test@localhost:5432/robot_villas_test
+      DOMAIN: test.robot.villas
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Install zsh
         run: sudo apt-get update; sudo apt-get install zsh
-      - uses: pnpm/action-setup@v6
+      - uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.1.0
       - name: Set up Node.js
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version-file: .nvmrc
           cache: pnpm
+      - uses: mikefarah/yq@504fc38780cc46be8444ea1b72fb55919fc0bfb0 # v4.54.1
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
       - run: git config user.email "nat@natwelch.com"
       - run: git config user.name "Nat Welch"
-      - run: ./update.sh
+      # update.sh commits locally; nothing reaches main unless tests pass.
+      - run: SKIP_PUSH=1 ./update.sh
+      - run: pnpm test
       - run: git push

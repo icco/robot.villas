@@ -17,4 +17,6 @@ pnpm run build
 
 git commit --allow-empty -m 'chore: redeploy'
 
-git push -u
+if [[ -z "$SKIP_PUSH" ]]; then
+  git push -u
+fi

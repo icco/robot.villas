@@ -126,51 +126,26 @@ function buildFieldLink(href: string): string {
   return `<a href="${escapeHtml(url.href)}">${escapeHtml(url.href)}</a>`;
 }
 
-async function buildActor(
-  ctx: Context<void>,
-  identifier: string,
-  bot: BotConfig,
-): Promise<Application> {
-  const keys = await ctx.getActorKeyPairs(identifier);
-  const actorUri = ctx.getActorUri(identifier);
+/** Display fields; the protocol fields stay inline in the actor dispatcher, where @fedify/lint checks them. */
+function actorProfile(identifier: string, bot: BotConfig, actorUri: URL) {
   const profileUrl = new URL(`/@${identifier}`, actorUri);
-  const enrichedSummary =
-    `<p>${escapeHtml(bot.summary)}</p>` +
-    (bot.feed_url ? `<p>I am a bot that mirrors an RSS feed.</p>` : "");
-  return new Application({
-    id: actorUri,
-    preferredUsername: identifier,
+  return {
     name: bot.display_name,
-    summary: enrichedSummary,
+    summary:
+      `<p>${escapeHtml(bot.summary)}</p>` +
+      (bot.feed_url ? `<p>I am a bot that mirrors an RSS feed.</p>` : ""),
     icon: bot.profile_photo ? buildIcon(bot.profile_photo) : null,
-    inbox: ctx.getInboxUri(identifier),
-    outbox: ctx.getOutboxUri(identifier),
-    followers: ctx.getFollowersUri(identifier),
-    following: ctx.getFollowingUri(identifier),
-    endpoints: new Endpoints({
-      sharedInbox: ctx.getInboxUri(),
-    }),
     attachments: [
       ...(bot.feed_url
         ? [new PropertyValue({ name: "source", value: buildFieldLink(bot.feed_url) })]
         : []),
       ...(bot.homepage_url
-        ? [
-            new PropertyValue({
-              name: "homepage",
-              value: buildFieldLink(bot.homepage_url),
-            }),
-          ]
+        ? [new PropertyValue({ name: "homepage", value: buildFieldLink(bot.homepage_url) })]
         : []),
-      new PropertyValue({
-        name: "old posts",
-        value: buildFieldLink(profileUrl.href),
-      }),
+      new PropertyValue({ name: "old posts", value: buildFieldLink(profileUrl.href) }),
     ],
-    url: new URL(`/@${identifier}`, actorUri),
-    publicKey: keys[0]?.cryptographicKey,
-    assertionMethods: keys.map((k) => k.multikey),
-  });
+    url: profileUrl,
+  };
 }
 
 const PG_INTEGER_MAX = 2_147_483_647;
@@ -349,7 +324,19 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         if (!botUsernames.includes(identifier)) {
           return null;
         }
-        return buildActor(ctx, identifier, config.bots[identifier]);
+        const keys = await ctx.getActorKeyPairs(identifier);
+        return new Application({
+          ...actorProfile(identifier, config.bots[identifier], ctx.getActorUri(identifier)),
+          id: ctx.getActorUri(identifier),
+          preferredUsername: identifier,
+          inbox: ctx.getInboxUri(identifier),
+          outbox: ctx.getOutboxUri(identifier),
+          followers: ctx.getFollowersUri(identifier),
+          following: ctx.getFollowingUri(identifier),
+          endpoints: new Endpoints({ sharedInbox: ctx.getInboxUri() }),
+          publicKey: keys[0]?.cryptographicKey,
+          assertionMethods: keys.map((k) => k.multikey),
+        });
       },
     )
     .mapHandle((_ctx, handle) => handle);
@@ -558,13 +545,15 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
   // --- Followers collection dispatcher ---
   federation.setFollowersDispatcher(
     "/users/{identifier}/followers",
-    async (_ctx, identifier) => {
+    async (_ctx, identifier, _cursor, filter?: URL) => {
       if (!botUsernames.includes(identifier)) {
         return null;
       }
       const followerIds = await getFollowers(db, identifier);
+      // FEP-8fcf followers synchronization: a server asks only for its own users.
+      const visible = filter ? followerIds.filter((id) => URL.parse(id)?.origin === filter.origin) : followerIds;
       return {
-        items: followerIds.map((id) => ({
+        items: visible.map((id) => ({
           id: new URL(id),
           inboxId: null,
           endpoints: null,
@@ -732,8 +721,12 @@ export async function sendProfileUpdates(
       continue;
     }
 
-    const bot = config.bots[identifier];
-    const actor = await buildActor(ctx, identifier, bot);
+    // Built by the actor dispatcher, so the Update matches what peers fetch.
+    const actorUri = ctx.getActorUri(identifier);
+    const actor = await ctx.federation.createContext(new Request(actorUri), undefined).getActor(identifier);
+    if (!actor) {
+      continue;
+    }
 
     const update = new Update({
       id: new URL(

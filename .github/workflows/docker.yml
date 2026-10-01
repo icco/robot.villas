@@ -1,49 +1,119 @@
 name: Create and publish Docker image
 on:
-  push:
+  pull_request:
+  workflow_run:
+    workflows:
+      - CI
+    types:
+      - completed
     branches:
       - main
-  pull_request:
+permissions:
+  contents: read
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+# One group for main so a newer successful run supersedes an older one and
+# can never be overwritten by it.
+concurrency:
+  group: docker-${{ github.event.pull_request.number || 'main' }}
+  cancel-in-progress: true
 jobs:
-  build-and-push-image:
+  image:
+    if: github.event_name == 'pull_request' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'push')
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: read
       packages: write
       attestations: write
       id-token: write
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: smoke
+          POSTGRES_PASSWORD: smoke
+          POSTGRES_DB: robot_villas
+        ports:
+          - 5432:5432
+        options: --health-cmd "pg_isready -U smoke" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      PUBLISH: ${{ github.event_name == 'workflow_run' }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          lfs: true
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          persist-credentials: false
+      - uses: docker/setup-buildx-action@f87e5991a6d7451dcb8d9637bfbc97413f497069 # v4.4.1
       - name: Log in to the Container registry
-        uses: docker/login-action@v4
+        if: env.PUBLISH == 'true'
+        uses: docker/login-action@dbcb813823bdd20940b903addbd779551569679f # v4.6.0
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@v6
+        uses: docker/metadata-action@dc802804100637a589fabce1cb79ff13a1411302 # v6.2.0
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-      - name: Build and push Docker image
-        id: push
-        uses: docker/build-push-action@v7
+          tags: |
+            type=sha,format=long
+      - name: Build image for pull request
+        if: env.PUBLISH != 'true'
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7.4.0
         with:
           context: .
-          push: ${{ github.ref == 'refs/heads/main' }}
+          load: true
+          tags: robot-villas:smoke
+          secrets: |
+            npm_token=${{ secrets.GITHUB_TOKEN }}
+      # Main pushes only an immutable sha tag. The smoke test then runs that
+      # exact digest, and `main` moves to it only if the test passes.
+      - name: Build and push sha-tagged image
+        if: env.PUBLISH == 'true'
+        id: build
+        uses: docker/build-push-action@c3c9e263c25d99ce0380d002d59b67737d91b0dc # v7.4.0
+        with:
+          context: .
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           secrets: |
             npm_token=${{ secrets.GITHUB_TOKEN }}
+      - name: Pull the pushed digest
+        if: env.PUBLISH == 'true'
+        run: |
+          image="${REGISTRY}/${IMAGE_NAME}@${{ steps.build.outputs.digest }}"
+          docker pull "$image"
+          docker tag "$image" robot-villas:smoke
+      - name: Start container
+        run: |
+          docker run -d --name app --network host \
+            -e DATABASE_URL=postgres://smoke:smoke@127.0.0.1:5432/robot_villas \
+            -e DOMAIN=robot.villas -e PORT=8080 -e DISABLE_BACKGROUND=true \
+            robot-villas:smoke
+      - name: Check health, WebFinger, and actor
+        run: |
+          for _ in $(seq 1 30); do curl -fsS http://127.0.0.1:8080/healthcheck && break; sleep 2; done
+          curl -fsS http://127.0.0.1:8080/healthcheck
+          bot=$(yq '.bots | keys | .[0]' feeds.yml)
+          curl -fsS "http://127.0.0.1:8080/.well-known/webfinger?resource=acct:${bot}@robot.villas" | grep -q '"subject"'
+          curl -fsS -H 'Accept: application/activity+json' "http://127.0.0.1:8080/users/${bot}" | grep -q '"inbox"'
+      - name: Container logs
+        if: failure()
+        run: docker logs app
+      - name: Move main to the tested digest
+        if: env.PUBLISH == 'true'
+        run: |
+          docker buildx imagetools create \
+            --tag "${REGISTRY}/${IMAGE_NAME}:main" \
+            "${REGISTRY}/${IMAGE_NAME}@${{ steps.build.outputs.digest }}"
       - name: Generate artifact attestation
-        uses: actions/attest-build-provenance@v4
+        if: env.PUBLISH == 'true'
+        uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
         with:
-          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
-          subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: ${{ github.ref == 'refs/heads/main' }}
+          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          subject-digest: ${{ steps.build.outputs.digest }}
+          push-to-registry: true

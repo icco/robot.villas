@@ -3,10 +3,12 @@ import js from "@eslint/js";
 import tseslint from "typescript-eslint";
 import nextPlugin from "@next/eslint-plugin-next";
 import stylistic from "@stylistic/eslint-plugin";
+import fedifyLint from "@fedify/lint";
 
 export default defineConfig([
   js.configs.recommended,
   tseslint.configs.recommended,
+  { ...fedifyLint, files: ["src/lib/federation.ts"] },
   {
     plugins: {
       "@next/next": nextPlugin,
