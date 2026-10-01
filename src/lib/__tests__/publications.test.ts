@@ -60,6 +60,16 @@ describe.skipIf(!process.env.DATABASE_URL)("durable publication", () => {
     expect(new Set(ctx.getSentActivities().map((a) => a.activity.id?.href)).size).toBe(1);
   });
 
+  it("resends a revived entry instead of failing on its old intent", async () => {
+    const id = await store();
+    await submitPendingPublications(ctx, db, "robot.test", [bot]);
+    await db.update(feedEntries).set({ deletedAt: new Date() }).where(eq(feedEntries.id, id!));
+    expect(await store()).toBe(id);
+    const rows = await db.select().from(publications).where(eq(publications.entryId, id!));
+    expect(rows).toHaveLength(2);
+    expect(rows.every((r) => r.queuedAt == null && r.attempts === 0)).toBe(true);
+  });
+
   it("prevents concurrent workers from submitting the same destination and honors new blocks", async () => {
     await store();
     await Promise.all([

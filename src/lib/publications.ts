@@ -1,6 +1,6 @@
 import type { Context } from "@fedify/fedify";
 import type { Recipient } from "@fedify/vocab";
-import { and, asc, eq, isNull, lte } from "drizzle-orm";
+import { and, asc, eq, isNull, lte, sql } from "drizzle-orm";
 import { insertEntry, type Db } from "./db";
 import { feedEntries, publications } from "./schema";
 import { buildCreateActivity } from "./publisher";
@@ -19,7 +19,18 @@ export async function storeEntryWithPublications(
     if (destinations.size) {
       await tx.insert(publications).values([...destinations.values()].map((r) => ({
         entryId: id, actorId: r.id!.href, inboxUrl: r.inboxId!.href,
-      })));
+      }))).onConflictDoUpdate({
+        // A revived entry (re-added bot) reuses its ID; reset the old intent so it is sent again.
+        target: [publications.entryId, publications.inboxUrl],
+        set: {
+          actorId: sql`excluded.actor_id`,
+          queuedAt: null,
+          cancelledAt: null,
+          attempts: 0,
+          lastError: null,
+          nextAttemptAt: sql`now()`,
+        },
+      });
     }
     return id;
   });
