@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
+      actions: write
       contents: write
       packages: read
     services:
@@ -47,3 +48,8 @@ jobs:
       - run: SKIP_PUSH=1 ./update.sh
       - run: pnpm test
       - run: git push
+      # The push above does not trigger workflows, so start CI explicitly;
+      # a successful run then publishes the image.
+      - run: gh workflow run ci.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
