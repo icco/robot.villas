@@ -36,6 +36,8 @@ import {
   Update,
 } from "@fedify/vocab";
 import escapeHtml from "escape-html";
+import { sql } from "drizzle-orm";
+import { receiveFollowResponse, receiveReaction } from "./inbox-state";
 import { isBlockedHost, normalizeHost } from "./blocklist";
 import { getRelaySubscriptionBot, type BotConfig, type FeedsConfig } from "./config";
 import {
@@ -51,8 +53,6 @@ import {
   countEntriesForBots,
   countAcceptedFollowing,
   countFollowers,
-  decrementBoostCount,
-  decrementLikeCount,
   getAllBotUsernames,
   getAllFollowing,
   getAllRelays,
@@ -65,9 +65,7 @@ import {
   getFollowingByActivityId,
   getRelayByActivityId,
   getKeypairs,
-  incrementBoostCount,
   markFollowingAccepted,
-  incrementLikeCount,
   pruneRedundantRelaySubscriptions,
   removeRelay,
   removeAllEntries,
@@ -79,8 +77,6 @@ import {
   removeKeypairs,
   saveKeypairs,
   updateFollowerInboxUrl,
-  updateFollowingStatus,
-  updateRelayStatus,
   upsertFollowing,
   upsertRelay,
   type Db,
@@ -204,15 +200,15 @@ function parseNoteRef(
     logger.debug("{label} ignored: unknown bot {identifier}", { label, identifier });
     return null;
   }
-  const entryId = parseInt(id, 10);
-  if (Number.isNaN(entryId)) {
+  const entryId = Number(id);
+  if (!/^[1-9]\d*$/.test(id) || !Number.isSafeInteger(entryId)) {
     logger.debug("{label} ignored: non-numeric entry id {id}", { label, id });
     return null;
   }
   return { identifier, entryId };
 }
 
-async function handleFollow(
+export async function handleFollow(
   ctx: Context<void>,
   follow: Follow,
   db: Db,
@@ -247,7 +243,7 @@ async function handleFollow(
     await ctx.sendActivity(
       { identifier: parsed.identifier },
       follower,
-      new Reject({ actor: follow.objectId, object: follow }),
+      new Reject({ id: await responseId(follow.objectId, follow.id, "reject"), actor: follow.objectId, object: follow.id }),
     );
     return;
   }
@@ -260,19 +256,27 @@ async function handleFollow(
   await ctx.sendActivity(
     { identifier: parsed.identifier },
     follower,
-    new Accept({ actor: follow.objectId, object: follow }),
+    new Accept({ id: await responseId(follow.objectId, follow.id, "accept"), actor: follow.objectId, object: follow.id }),
   );
 }
 
-async function handleUndo(
+async function responseId(actor: URL, activity: URL, kind: string): Promise<URL> {
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(activity.href));
+  return new URL(`#${kind}-${Buffer.from(digest).toString("hex")}`, actor);
+}
+
+export async function handleUndo(
   ctx: Context<void>,
   undo: Undo,
   db: Db,
   botUsernames: string[],
 ): Promise<void> {
   const object = await undo.getObject(ctx);
+  if (!undo.actorId || !(object instanceof Follow || object instanceof Like || object instanceof EmojiReact || object instanceof Announce) || object.actorId?.href !== undo.actorId.href) {
+    return;
+  }
   if (object instanceof Follow) {
-    if (!object.objectId || !undo.actorId) {
+    if (!object.id || !object.objectId) {
       logger.debug("Undo (no local action): Follow missing objectId or actor on undo {undoId}", {
         undoId: undo.id?.href ?? null,
       });
@@ -286,27 +290,30 @@ async function handleUndo(
       });
       return;
     }
-    await removeFollower(db, parsed.identifier, undo.actorId.href);
+    await removeFollower(db, parsed.identifier, undo.actorId.href, object.id.href);
   } else if (object instanceof Like || object instanceof EmojiReact) {
-    const ref = parseNoteRef(ctx, object.objectId, botUsernames, "Undo Like");
-    if (!ref) {
-      return;
-    }
-    await decrementLikeCount(db, ref.identifier, ref.entryId);
-    logger.info("Undo Like on {identifier}/posts/{entryId}", ref);
+    await handleReaction(ctx, object, db, botUsernames, true);
   } else if (object instanceof Announce) {
-    const ref = parseNoteRef(ctx, object.objectId, botUsernames, "Undo Announce");
-    if (!ref) {
-      return;
-    }
-    await decrementBoostCount(db, ref.identifier, ref.entryId);
-    logger.info("Undo Boost on {identifier}/posts/{entryId}", ref);
-  } else {
-    logger.debug("Undo (no local action): unhandled object {objectType} id={objectId} (undo {undoId})", {
-      objectType: object == null ? "null" : object.constructor.name,
-      objectId: object?.id?.href ?? null,
-      undoId: undo.id?.href ?? null,
-    });
+    await handleReaction(ctx, object, db, botUsernames, true);
+  }
+}
+
+export async function handleReaction(ctx: Context<void>, activity: Like | EmojiReact | Announce, db: Db, bots: string[], undo = false) {
+  const ref = parseNoteRef(ctx, activity.objectId, bots, "reaction");
+  if (!ref || !activity.id || !activity.actorId) {
+    return;
+  }
+  await receiveReaction(db, {
+    activityId: activity.id.href, actorId: activity.actorId.href,
+    botUsername: ref.identifier, entryId: ref.entryId,
+    kind: activity instanceof Announce ? "boost" : activity instanceof EmojiReact ? "emoji" : "like",
+    content: activity instanceof EmojiReact ? String(activity.content ?? "").slice(0, 256) : "",
+  }, undo);
+}
+
+export async function handleDelete(del: Delete, db: Db): Promise<void> {
+  if (del.actorId && del.objectId?.href === del.actorId.href) {
+    await removeFollowerFromAll(db, del.actorId.href);
   }
 }
 
@@ -319,6 +326,10 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     queue: messageQueue,
     manuallyStartQueue: true,
     origin,
+    maxHttpSignatures: 3,
+    documentLoaderTimeout: { seconds: 10 },
+    publicKeyTtl: { days: 30 },
+    httpMessageSignaturesSpecTtl: { days: 90 },
   });
 
   // --- Actor dispatcher (following the Fedify microblog tutorial pattern) ---
@@ -339,8 +350,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     if (!botUsernames.includes(identifier)) {
       return [];
     }
-    try {
-      const existing = await getKeypairs(db, identifier);
+    return db.transaction(async (tx) => {
+      await tx.execute(sql`SELECT pg_advisory_xact_lock(hashtext('actor-keys'), hashtext(${identifier}))`);
+      const existing = await getKeypairs(tx, identifier);
       if (existing && existing.length >= 2) {
         logger.info("Loaded {count} existing key pairs for {identifier}", {
           count: existing.length,
@@ -364,7 +376,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
           }
         : await generateCryptoKeyPair("RSASSA-PKCS1-v1_5");
       const ed25519Pair = await generateCryptoKeyPair("Ed25519");
-      await saveKeypairs(db, identifier, [
+      await saveKeypairs(tx, identifier, [
         {
           publicKey: await exportJwk(rsaPair.publicKey),
           privateKey: await exportJwk(rsaPair.privateKey),
@@ -376,13 +388,13 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       ]);
       logger.info("Saved new key pairs for {identifier}", { identifier });
       return [rsaPair, ed25519Pair];
-    } catch (error) {
+    }).catch((error) => {
       logger.error("Key pairs dispatcher failed for {identifier}: {error}", {
         identifier,
         error,
       });
       throw error;
-    }
+    });
   });
 
   // --- Outbox dispatcher ---
@@ -395,7 +407,10 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         if (!botUsernames.includes(identifier)) {
           return null;
         }
-        const offset = cursor ? parseInt(cursor, 10) : 0;
+        const offset = cursor == null ? 0 : Number(cursor);
+        if (cursor != null && (!/^\d+$/.test(cursor) || !Number.isSafeInteger(offset) || offset > 2_147_483_647)) {
+          return null;
+        }
         const entries = await getEntriesPage(db, identifier, OUTBOX_PAGE_SIZE, offset);
         const total = await countEntries(db, identifier);
         const nextOffset = offset + entries.length;
@@ -452,8 +467,8 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       if (!botUsernames.includes(identifier)) {
         return null;
       }
-      const entryId = parseInt(id, 10);
-      if (Number.isNaN(entryId)) {
+      const entryId = Number(id);
+      if (!/^[1-9]\d*$/.test(id) || !Number.isSafeInteger(entryId)) {
         return null;
       }
       const entry = await getEntryById(db, identifier, entryId);
@@ -601,8 +616,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         return;
       }
       const followIdHref = object.id.href;
-      await updateRelayStatus(db, followIdHref, "accepted");
-      await updateFollowingStatus(db, followIdHref, "accepted");
+      if (accept.actorId) {
+        await receiveFollowResponse(db, followIdHref, accept.actorId.href, "accepted");
+      }
       logger.info("Accepted Follow {followId}", { followId: followIdHref });
     })
     .on(Reject, async (ctx, reject) => {
@@ -616,57 +632,18 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         return;
       }
       const followIdHref = object.id.href;
-      await updateRelayStatus(db, followIdHref, "rejected");
-      await updateFollowingStatus(db, followIdHref, "rejected");
+      if (reject.actorId) {
+        await receiveFollowResponse(db, followIdHref, reject.actorId.href, "rejected");
+      }
       logger.warn("Follow {followId} was rejected by {actor}", {
         followId: followIdHref,
         actor: reject.actorId?.href,
       });
     })
-    .on(Announce, async (ctx, announce) => {
-      const ref = parseNoteRef(ctx, announce.objectId, botUsernames, "Announce");
-      if (!ref) {
-        return;
-      }
-      await incrementBoostCount(db, ref.identifier, ref.entryId);
-      logger.info("Boost on {identifier}/posts/{entryId}", ref);
-    })
-    .on(Like, async (ctx, like) => {
-      const ref = parseNoteRef(ctx, like.objectId, botUsernames, "Like");
-      if (!ref) {
-        return;
-      }
-      await incrementLikeCount(db, ref.identifier, ref.entryId);
-      logger.info("Like on {identifier}/posts/{entryId}", ref);
-    })
-    .on(EmojiReact, async (ctx, react) => {
-      const ref = parseNoteRef(ctx, react.objectId, botUsernames, "EmojiReact");
-      if (!ref) {
-        return;
-      }
-      await incrementLikeCount(db, ref.identifier, ref.entryId);
-      logger.info("EmojiReact on {identifier}/posts/{entryId}", ref);
-    })
-    .on(Delete, async (_ctx, del) => {
-      if (!del.actorId) {
-        logger.debug("Delete (no local action): missing actorId (delete {deleteId} object {objectId})", {
-          deleteId: del.id?.href ?? null,
-          objectId: del.objectId?.href ?? null,
-        });
-        return;
-      }
-      const removed = await removeFollowerFromAll(db, del.actorId.href);
-      if (removed > 0) {
-        logger.info("Removed deleted actor {actorId} from {count} bot(s)", {
-          actorId: del.actorId.href,
-          count: removed,
-        });
-      } else {
-        logger.debug("Delete (no local action): actor was not a stored follower ({actorId})", {
-          actorId: del.actorId.href,
-        });
-      }
-    })
+    .on(Announce, (ctx, activity) => handleReaction(ctx, activity, db, botUsernames))
+    .on(Like, (ctx, activity) => handleReaction(ctx, activity, db, botUsernames))
+    .on(EmojiReact, (ctx, activity) => handleReaction(ctx, activity, db, botUsernames))
+    .on(Delete, (_ctx, del) => handleDelete(del, db))
     .on(Update, async (_ctx, activity) => {
       logger.debug("Update (no local action): id={id} actor={actor} object={object} target={target}", {
         id: activity.id?.href ?? null,

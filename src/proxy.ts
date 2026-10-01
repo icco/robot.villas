@@ -38,6 +38,7 @@ export const config = {
       ],
     },
     { source: "/.well-known/nodeinfo" },
+    { source: "/.well-known/webfinger" },
     { source: "/.well-known/x-nodeinfo2" },
     { source: "/nodeinfo/2.1" },
   ],

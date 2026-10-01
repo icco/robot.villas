@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { index, integer, jsonb, pgEnum, pgTable, text, timestamp, unique } from "drizzle-orm/pg-core";
+import { index, integer, jsonb, pgEnum, pgTable, text, timestamp, unique, uniqueIndex } from "drizzle-orm/pg-core";
 
 export const feedEntries = pgTable(
   "feed_entries",
@@ -33,6 +33,18 @@ export const actorKeypairs = pgTable("actor_keypairs", {
   createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
   deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
 });
+
+/** Activity IDs remain recorded after Undo so delayed/replayed deliveries cannot revive them. */
+export const reactions = pgTable("reactions", {
+  activityId: text("activity_id").primaryKey(),
+  actorId: text("actor_id").notNull(),
+  entryId: integer("entry_id").notNull().references(() => feedEntries.id),
+  kind: text().$type<"like" | "boost" | "emoji">().notNull(),
+  content: text().notNull().default(""),
+  undoneAt: timestamp("undone_at", { withTimezone: true, mode: "date" }),
+}, (t) => [
+  uniqueIndex("reactions_active_unique").on(t.actorId, t.entryId, t.kind, t.content).where(sql`${t.undoneAt} IS NULL`),
+]);
 
 /** Retained after removal to avoid repeat announcements. */
 export const botRegistrations = pgTable("bot_registrations", {
