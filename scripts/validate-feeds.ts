@@ -9,6 +9,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { load as parseYaml } from "js-yaml";
 import { FeedsConfigSchema } from "../src/lib/config";
+import { mapWithConcurrency } from "../src/lib/concurrency";
 
 const VALID_MIME_TYPES = new Set([
   "image/png",
@@ -84,6 +85,9 @@ async function main() {
   }
   const config = result.data;
   console.log(`✓ Schema valid — ${Object.keys(config.bots).length} bots`);
+  if (process.argv.includes("--skip-network")) {
+    return;
+  }
 
   // Check RSS avatars; the built-in icon is generated during the build.
   const bots = Object.entries(config.bots).filter(([, b]) => b.feed_url && b.profile_photo);
@@ -92,8 +96,10 @@ async function main() {
   const errors: string[] = [];
   const warnings: string[] = [];
 
-  await Promise.all(
-    bots.map(async ([name, bot]) => {
+  await mapWithConcurrency(
+    bots,
+    8,
+    async ([name, bot]) => {
       const url = bot.profile_photo!;
       let r = await probeUrl(url);
 
@@ -118,7 +124,7 @@ async function main() {
       } else if (r.kind === "network_error") {
         errors.push(`[${name}] unreachable — ${r.detail}\n    ${url}`);
       }
-    }),
+    },
   );
 
   if (warnings.length > 0) {
