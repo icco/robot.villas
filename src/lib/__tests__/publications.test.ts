@@ -3,7 +3,7 @@ import postgres from "postgres";
 import { eq } from "drizzle-orm";
 import { createFederation } from "@fedify/testing";
 import { createDb, migrate } from "../db";
-import { storeEntryWithPublications, submitPendingPublications } from "../publications";
+import { getPublicationSummary, prunePublications, storeEntryWithPublications, submitPendingPublications } from "../publications";
 import { feedEntries, publications } from "../schema";
 
 describe.skipIf(!process.env.DATABASE_URL)("durable publication", () => {
@@ -68,6 +68,18 @@ describe.skipIf(!process.env.DATABASE_URL)("durable publication", () => {
     const rows = await db.select().from(publications).where(eq(publications.entryId, id!));
     expect(rows).toHaveLength(2);
     expect(rows.every((r) => r.queuedAt == null && r.attempts === 0)).toBe(true);
+  });
+
+  it("summarizes the backlog and prunes only old finished rows", async () => {
+    const id = await store();
+    let summary = await getPublicationSummary(db);
+    expect(summary.pending).toBeGreaterThanOrEqual(2);
+    await submitPendingPublications(ctx, db, "robot.test", [bot]);
+    summary = await getPublicationSummary(db);
+    expect(summary.queuedLastDay).toBeGreaterThanOrEqual(2);
+    expect(await prunePublications(db)).toBe(0);
+    await prunePublications(db, new Date(Date.now() + 31 * 86_400_000));
+    expect(await db.select().from(publications).where(eq(publications.entryId, id!))).toHaveLength(0);
   });
 
   it("prevents concurrent workers from submitting the same destination and honors new blocks", async () => {

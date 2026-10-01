@@ -1,7 +1,9 @@
 import type { Context, Federation } from "@fedify/fedify";
 import { createExponentialBackoffPolicy } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
+import { and, eq } from "drizzle-orm";
 import { z } from "zod";
+import { maintenanceRuns } from "./schema";
 import type { FeedsConfig } from "./config";
 import type { Db } from "./db";
 import {
@@ -48,10 +50,24 @@ export function defineMaintenanceTasks(federation: Federation<void>, db: Db, con
     },
   });
 
-  /** Deduplicated per deployment, so restarts of one version do not repeat work. */
+  /**
+   * Once per deployment: a database row claims each job durably (the queue's
+   * own deduplication only lasts an hour), and is removed if enqueueing fails
+   * so a later start can retry.
+   */
   return async function enqueueStartupMaintenance(ctx: Context<void>, deployment: string): Promise<void> {
     for (const job of MAINTENANCE_JOBS) {
-      await ctx.enqueueTask(task, { job, deployment }, { deduplicationKey: `${deployment}:${job}` });
+      const claimed = await db.insert(maintenanceRuns).values({ deployment, job }).onConflictDoNothing()
+        .returning({ job: maintenanceRuns.job });
+      if (claimed.length === 0) {
+        continue;
+      }
+      try {
+        await ctx.enqueueTask(task, { job, deployment }, { deduplicationKey: `${deployment}:${job}` });
+      } catch (error) {
+        await db.delete(maintenanceRuns).where(and(eq(maintenanceRuns.deployment, deployment), eq(maintenanceRuns.job, job)));
+        throw error;
+      }
     }
   };
 }

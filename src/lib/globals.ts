@@ -23,7 +23,8 @@ function initGlobals() {
   const databaseUrl = requireEnv("DATABASE_URL");
   const domain = requireEnv("DOMAIN");
 
-  const sql = postgres(databaseUrl);
+  // Bounded connect time so readiness probes and startup fail fast during an outage.
+  const sql = postgres(databaseUrl, { connect_timeout: 10 });
   const db = createDb(sql);
   const config = loadConfig("feeds.yml");
   const kvStore = new PostgresKvStore(sql);

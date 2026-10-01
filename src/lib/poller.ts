@@ -2,12 +2,12 @@ import type { Context } from "@fedify/fedify";
 import { getLogger } from "@logtape/logtape";
 import { resolveBlockedInstances, type RssBotConfig, type FeedsConfig } from "./config";
 import { mapWithConcurrency } from "./concurrency";
-import { claimFeedPoll, getFeedPollStatusMap, releaseFeedPoll, upsertFeedPollStatus, type Db, type FeedPollStatusRow } from "./db";
+import { claimFeedPoll, getFeedPollStatusMap, releaseFeedPoll, renewFeedPoll, upsertFeedPollStatus, type Db, type FeedPollStatusRow } from "./db";
 import { parsePositiveInt } from "./env";
 import { fetchFeedWithHttpResult } from "./rss";
 import { publishNewEntries } from "./publisher";
 import { announceNewBots } from "./meta-bot";
-import { submitPendingPublications } from "./publications";
+import { prunePublications, submitPendingPublications } from "./publications";
 
 /** Not configurable: a 429 backs a slow-polling host off on its own. */
 const DEFAULT_INTERVAL_MS = 15 * 60 * 1000;
@@ -53,7 +53,8 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
     previous: FeedPollStatusRow | undefined,
   ): Promise<void> {
     const checkedAt = new Date();
-    let claimed = false;
+    let claimToken: string | null = null;
+    let renewal: ReturnType<typeof setInterval> | undefined;
     try {
       // Don't touch the status row while backing off, so /status keeps showing the 429.
       if (previous?.nextPollAt && previous.nextPollAt.getTime() > checkedAt.getTime()) {
@@ -72,11 +73,22 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         });
         return;
       }
-      if (!(await claimFeedPoll(db, username, checkedAt, FEED_LEASE_MS))) {
+      claimToken = await claimFeedPoll(db, username, checkedAt, FEED_LEASE_MS);
+      if (!claimToken) {
         logger.debug("Skipping {username}: another replica is polling it", { username });
         return;
       }
-      claimed = true;
+      const token = claimToken;
+      // Renew while working; ingestion (with hashtag generation) can outlast one lease.
+      renewal = setInterval(() => {
+        renewFeedPoll(db, username, token, new Date(Date.now() + FEED_LEASE_MS))
+          .then((held) => {
+            if (!held) {
+              logger.warn("Lost poll lease for {username}; its result will be discarded", { username });
+            }
+          })
+          .catch((error) => logger.warn("Could not renew poll lease for {username}: {error}", { username, error }));
+      }, FEED_LEASE_MS / 3);
       const fetchResult = await fetchFeedWithHttpResult(bot.feed_url, {
         etag: previous?.etag ?? null,
         lastModified: previous?.lastModified ?? null,
@@ -87,7 +99,9 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         const result = await publishNewEntries(ctx, db, username, domain, fetchResult.entries, bot, blockedInstances);
         logger.info("Ingested {stored} posts for {username}, skipped {skipped}", { username, ...result });
       }
-      await upsertFeedPollStatus(db, {
+      // Fenced by the token: entry inserts are idempotent per guid, but only the
+      // current lease holder may advance validators and status.
+      const recorded = await upsertFeedPollStatus(db, {
         botUsername: username,
         lastCheckedAt: checkedAt,
         lastHttpStatus: fetchResult.httpStatus,
@@ -100,8 +114,12 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
           fetchResult.retryAfterMs == null
             ? null
             : new Date(checkedAt.getTime() + fetchResult.retryAfterMs),
-      });
-      claimed = false;
+      }, claimToken);
+      claimToken = null;
+      if (!recorded) {
+        logger.warn("Discarded poll status for {username}: lease was taken over", { username });
+        return;
+      }
       if (fetchResult.errorMessage) {
         logger.warn("Feed poll failed for {username}: {message}", {
           username,
@@ -116,8 +134,9 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
     } catch (err) {
       logger.error("Error polling {username}: {error}", { username, error: err });
     } finally {
-      if (claimed) {
-        await releaseFeedPoll(db, username).catch((error) => {
+      clearInterval(renewal);
+      if (claimToken) {
+        await releaseFeedPoll(db, username, claimToken).catch((error) => {
           logger.warn("Could not release poll lease for {username}: {error}", { username, error });
         });
       }
@@ -130,6 +149,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
     try {
       const submissions = await submitPendingPublications(ctx, db, domain, Object.keys(config.bots), blockedInstances);
       logger.info("Publication submissions: {queued} queued, {failed} failed, {cancelled} cancelled", submissions);
+      await prunePublications(db);
     } catch (error) {
       logger.error("Publication retry failed: {error}", { error });
     }

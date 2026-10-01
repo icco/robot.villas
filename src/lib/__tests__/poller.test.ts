@@ -7,17 +7,21 @@ vi.mock("../rss", () => ({
 vi.mock("../publisher", () => ({
   publishNewEntries: vi.fn(),
 }));
-vi.mock("../publications", () => ({ submitPendingPublications: vi.fn().mockResolvedValue({ queued: 0, failed: 0, cancelled: 0 }) }));
+vi.mock("../publications", () => ({
+  submitPendingPublications: vi.fn().mockResolvedValue({ queued: 0, failed: 0, cancelled: 0 }),
+  prunePublications: vi.fn().mockResolvedValue(0),
+}));
 
 vi.mock("../meta-bot", () => ({
   announceNewBots: vi.fn().mockResolvedValue(undefined),
 }));
 
 vi.mock("../db", () => ({
-  upsertFeedPollStatus: vi.fn().mockResolvedValue(undefined),
+  upsertFeedPollStatus: vi.fn().mockResolvedValue(true),
   getFeedPollStatusMap: vi.fn().mockResolvedValue(new Map()),
-  claimFeedPoll: vi.fn().mockResolvedValue(true),
+  claimFeedPoll: vi.fn().mockResolvedValue("token"),
   releaseFeedPoll: vi.fn().mockResolvedValue(undefined),
+  renewFeedPoll: vi.fn().mockResolvedValue(true),
 }));
 
 import { fetchFeedWithHttpResult, type FeedFetchResult } from "../rss";
@@ -381,7 +385,7 @@ describe("startPoller replica leases", () => {
   }
 
   it("does not fetch a feed claimed by another replica", async () => {
-    vi.mocked(claimFeedPoll).mockResolvedValueOnce(false);
+    vi.mocked(claimFeedPoll).mockResolvedValueOnce(null);
     const poller = start();
     try {
       await vi.waitFor(() => expect(claimFeedPoll).toHaveBeenCalledTimes(1));
@@ -396,7 +400,7 @@ describe("startPoller replica leases", () => {
     mockPublishNewEntries.mockRejectedValueOnce(new Error("db down"));
     const poller = start();
     try {
-      await vi.waitFor(() => expect(releaseFeedPoll).toHaveBeenCalledWith({}, "bot0"));
+      await vi.waitFor(() => expect(releaseFeedPoll).toHaveBeenCalledWith({}, "bot0", "token"));
       expect(mockUpsertStatus).not.toHaveBeenCalled();
     } finally {
       poller.stop();

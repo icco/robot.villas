@@ -60,6 +60,7 @@ export const publications = pgTable("publications", {
   nextAttemptAt: timestamp("next_attempt_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
 }, (t) => [
   unique().on(t.entryId, t.inboxUrl),
+  index("publications_queued_at_idx").on(t.queuedAt).where(sql`${t.queuedAt} IS NOT NULL`),
   index("publications_pending_idx").on(t.nextAttemptAt).where(sql`${t.queuedAt} IS NULL AND ${t.cancelledAt} IS NULL`),
 ]);
 
@@ -143,4 +144,13 @@ export const feedPollStatus = pgTable("feed_poll_status", {
   lastSuccessAt: timestamp("last_success_at", { withTimezone: true, mode: "date" }),
   /** Lease so only one replica fetches a feed at a time. */
   claimedUntil: timestamp("claimed_until", { withTimezone: true, mode: "date" }),
+  /** Identifies the lease holder so a stale worker cannot write after losing it. */
+  claimToken: text("claim_token"),
 });
+
+/** Durable record that a deployment's startup job was enqueued, beyond the queue's dedup window. */
+export const maintenanceRuns = pgTable("maintenance_runs", {
+  deployment: text().notNull(),
+  job: text().notNull(),
+  enqueuedAt: timestamp("enqueued_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
+}, (t) => [unique().on(t.deployment, t.job)]);
