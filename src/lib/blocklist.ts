@@ -70,7 +70,7 @@ export function isBlockedHost(host: string, blocked: ReadonlySet<string>): boole
  * the right place to reject malformed rows, and swallowing them here would
  * hide them from whatever does.
  */
-export function partitionBlockedRecipients<T extends { inboxId?: URL | null }>(
+export function partitionBlockedRecipients<T extends { id?: URL | null; inboxId?: URL | null }>(
   recipients: ReadonlyArray<T>,
   blocked: ReadonlySet<string>,
 ): { allowed: T[]; blockedHosts: string[] } {
@@ -81,8 +81,9 @@ export function partitionBlockedRecipients<T extends { inboxId?: URL | null }>(
   const blockedHosts: string[] = [];
   for (const r of recipients) {
     const host = r.inboxId ? normalizeHost(r.inboxId.hostname) : "";
-    if (host !== "" && isBlockedHost(host, blocked)) {
-      blockedHosts.push(host);
+    const actorHost = r.id ? normalizeHost(r.id.hostname) : "";
+    if (isBlockedHost(host, blocked) || isBlockedHost(actorHost, blocked)) {
+      blockedHosts.push(isBlockedHost(actorHost, blocked) ? actorHost : host);
     } else {
       allowed.push(r);
     }

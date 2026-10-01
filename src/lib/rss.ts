@@ -1,4 +1,6 @@
 import Parser from "rss-parser";
+import { SaxesParser } from "saxes";
+import { fetchRemote, readLimitedText } from "./remote-fetch";
 
 const parser = new Parser({ timeout: 10_000 });
 
@@ -17,11 +19,9 @@ const NAMED_ENTITIES: Record<string, string> = {
  */
 export function decodeHtmlEntities(str: string): string {
   return str.replace(/&(?:#(\d+)|#x([0-9a-fA-F]+)|([a-zA-Z]+));/gi, (match, dec, hex, name) => {
-    if (dec) {
-      return String.fromCodePoint(parseInt(dec, 10));
-    }
-    if (hex) {
-      return String.fromCodePoint(parseInt(hex, 16));
+    if (dec || hex) {
+      const point = parseInt(dec || hex, dec ? 10 : 16);
+      return point > 0 && point <= 0x10ffff && !(point >= 0xd800 && point <= 0xdfff) ? String.fromCodePoint(point) : "\uFFFD";
     }
     return NAMED_ENTITIES[name.toLowerCase()] ?? match;
   });
@@ -39,6 +39,7 @@ export function normalizeTypography(str: string): string {
 }
 
 const FEED_FETCH_TIMEOUT_MS = 10_000;
+export const MAX_FEED_BYTES = 5 * 1024 * 1024;
 
 /** Max items to process per feed per poll; limits DoS from huge feeds. */
 export const MAX_ITEMS_PER_POLL = 100;
@@ -125,13 +126,13 @@ export async function fetchFeedWithHttpResult(
       if (cached.lastModified) {
         headers["If-Modified-Since"] = cached.lastModified;
       }
-      const res = await fetch(feedUrl, {
+      const res = await fetchRemote(feedUrl, {
         signal: controller.signal,
-        redirect: "follow",
         headers,
       });
       const httpStatus = res.status;
       if (httpStatus === 304) {
+        await res.body?.cancel();
         // A 304 may repeat or omit the validators we sent.
         return {
           entries: [],
@@ -146,6 +147,7 @@ export async function fetchFeedWithHttpResult(
         };
       }
       if (!res.ok) {
+        await res.body?.cancel();
         const retryAfterMs =
           httpStatus === 429
             ? (parseRetryAfterMs(res.headers.get("retry-after")) ?? DEFAULT_RATE_LIMIT_BACKOFF_MS)
@@ -159,7 +161,7 @@ export async function fetchFeedWithHttpResult(
           retryAfterMs,
         };
       }
-      const text = await res.text();
+      const text = await readLimitedText(res, MAX_FEED_BYTES);
       try {
         const entries = await parseFeedXml(text);
         return {
@@ -201,9 +203,28 @@ export async function fetchFeedWithHttpResult(
 }
 
 export async function parseFeedXml(xml: string): Promise<FeedEntry[]> {
+  if (Buffer.byteLength(xml) > MAX_FEED_BYTES) {
+    throw new Error("Feed exceeds byte limit");
+  }
+  // Reject entity declarations and excessive nesting before the object-building
+  // parser allocates an unbounded tree. CDATA remains text in this pass.
+  let depth = 0;
+  let nodes = 0;
+  const guard = new SaxesParser();
+  guard.on("doctype", () => {
+ throw new Error("Feed DTDs are not supported"); 
+});
+  guard.on("opentag", () => {
+    if (++depth > 64 || ++nodes > 50_000) {
+      throw new Error("Feed XML complexity limit exceeded");
+    }
+  });
+  guard.on("closetag", () => {
+ depth--; 
+});
+  guard.write(xml).close();
   const feed = await parser.parseString(xml);
-  const items = feed.items.map(normalizeFeedItem);
-  return items.slice(0, MAX_ITEMS_PER_POLL);
+  return feed.items.slice(0, MAX_ITEMS_PER_POLL).map(normalizeFeedItem);
 }
 
 function flattenCategoryValue(c: unknown): string[] {
@@ -322,6 +343,7 @@ function normalizeFeedItem(item: Parser.Item): FeedEntry {
     ? unwrapped.title
     : normalizeTypography(decodeHtmlEntities(itemTitle || "(untitled)"));
   const link = unwrapped ? unwrapped.link : itemLink;
-  const publishedAt = item.isoDate ? new Date(item.isoDate) : null;
+  const parsedDate = item.isoDate ? new Date(item.isoDate) : null;
+  const publishedAt = parsedDate && Number.isFinite(parsedDate.getTime()) ? parsedDate : null;
   return { guid, title, link, publishedAt, feedCategories: extractFeedCategories(item) };
 }

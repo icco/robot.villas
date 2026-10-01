@@ -9,6 +9,8 @@ import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, type Db } f
 import { storeEntryWithPublications } from "./publications";
 import { resolveHashtags } from "./hashtags";
 import type { FeedEntry } from "./rss";
+import { safeParseUrl } from "./urls";
+export { safeParseUrl } from "./urls";
 
 const logger = getLogger(["robot-villas", "publisher"]);
 
@@ -216,21 +218,6 @@ export async function publishNewEntries(
   }
 
   return { stored, skipped };
-}
-
-export function safeParseUrl(link: string | undefined): URL | undefined {
-  if (!link) {
-    return undefined;
-  }
-  try {
-    const url = new URL(link);
-    if (url.protocol === "http:" || url.protocol === "https:") {
-      return url;
-    }
-    return undefined;
-  } catch {
-    return undefined;
-  }
 }
 
 export function formatContent(entry: EntryLike, baseUrl?: string | URL): string {
