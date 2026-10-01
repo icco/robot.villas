@@ -15,7 +15,12 @@ export function createDb(client: postgres.Sql) {
 }
 
 export async function migrate(db: Db): Promise<void> {
-  await runMigrations(db, { migrationsFolder: "./drizzle" });
+  await db.transaction(async (tx) => {
+    await tx.execute(sql`SELECT pg_advisory_xact_lock(hashtext('robot.villas'), hashtext('migrations'))`);
+    // The migrator opens its own transaction; postgres-js cannot begin one on
+    // an existing transaction client. Hold the cross-process lock separately.
+    await runMigrations(db, { migrationsFolder: "./drizzle" });
+  });
 }
 
 /** Backoff before each retry; ~30s total. Longer outages are covered by exiting and restarting. */
@@ -91,7 +96,7 @@ export async function getExistingGuids(
  * entry already existed (dedup by bot + guid). Use the returned id for Note URIs.
  */
 export async function insertEntry(
-  db: Db,
+  db: DbExecutor,
   botUsername: string,
   guid: string,
   url: string,

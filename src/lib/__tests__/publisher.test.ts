@@ -7,12 +7,14 @@ vi.mock("../db", () => ({
   getFollowerRecipients: vi.fn(),
   getAcceptedRelays: vi.fn(),
 }));
+vi.mock("../publications", () => ({ storeEntryWithPublications: vi.fn() }));
 
 vi.mock("../hashtags", () => ({
   resolveHashtags: vi.fn().mockResolvedValue(["T1", "T2", "T3"]),
 }));
 
-import { insertEntry, getExistingGuids, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db";
+import { getExistingGuids, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db";
+import { storeEntryWithPublications } from "../publications";
 import { resolveHashtags } from "../hashtags";
 import {
   buildCreateActivity,
@@ -26,7 +28,7 @@ import {
 } from "../publisher";
 import type { FeedEntry } from "../rss";
 
-const mockInsertEntry = vi.mocked(insertEntry);
+const mockInsertEntry = vi.mocked(storeEntryWithPublications);
 const mockGetExistingGuids = vi.mocked(getExistingGuids);
 const mockGetFollowers = vi.mocked(getFollowers);
 const mockGetFollowerRecipients = vi.mocked(getFollowerRecipients);
@@ -87,9 +89,9 @@ describe("publishNewEntries", () => {
     );
 
     expect(result.skipped).toBe(1);
-    expect(result.published).toBe(2);
+    expect(result.stored).toBe(2);
     expect(mockInsertEntry).toHaveBeenCalledTimes(2);
-    expect(mockCtx.sendActivity).toHaveBeenCalledTimes(2);
+    expect(mockCtx.sendActivity).not.toHaveBeenCalled();
   });
 
   it("inserts entries but does not send when there are no followers", async () => {
@@ -106,8 +108,8 @@ describe("publishNewEntries", () => {
       testBotConfig,
     );
 
-    expect(result.published).toBe(0);
-    expect(result.skipped).toBe(3);
+    expect(result.stored).toBe(3);
+    expect(result.skipped).toBe(0);
     expect(mockInsertEntry).toHaveBeenCalledTimes(3);
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
   });
@@ -124,7 +126,7 @@ describe("publishNewEntries", () => {
       testBotConfig,
     );
 
-    expect(result.published).toBe(0);
+    expect(result.stored).toBe(0);
     expect(result.skipped).toBe(3);
     expect(mockInsertEntry).not.toHaveBeenCalled();
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
@@ -146,12 +148,12 @@ describe("publishNewEntries", () => {
       testBotConfig,
     );
 
-    expect(result.published).toBe(2);
+    expect(result.stored).toBe(2);
     expect(mockInsertEntry).toHaveBeenCalledTimes(2);
-    expect(mockCtx.sendActivity).toHaveBeenCalledTimes(2);
+    expect(mockCtx.sendActivity).not.toHaveBeenCalled();
   });
 
-  it("continues publishing remaining entries if follower send throws", async () => {
+  it("stores publication intent without attempting network submission", async () => {
     mockInsertEntry.mockResolvedValueOnce(1).mockResolvedValueOnce(2).mockResolvedValueOnce(3);
     mockCtx.sendActivity.mockRejectedValueOnce(new Error("network error")).mockResolvedValue(undefined);
 
@@ -164,10 +166,10 @@ describe("publishNewEntries", () => {
       testBotConfig,
     );
 
-    // All three entries should be marked published (error is caught, not propagated)
-    expect(result.published).toBe(3);
+    expect(result.stored).toBe(3);
     expect(result.skipped).toBe(0);
-    expect(mockCtx.sendActivity).toHaveBeenCalledTimes(3);
+    expect(mockCtx.sendActivity).not.toHaveBeenCalled();
+    expect(mockInsertEntry.mock.calls[0][7][0].inboxId?.href).toBe("https://remote.example/inbox");
   });
 
   it("handles empty entries array", async () => {
@@ -180,7 +182,7 @@ describe("publishNewEntries", () => {
       testBotConfig,
     );
 
-    expect(result.published).toBe(0);
+    expect(result.stored).toBe(0);
     expect(result.skipped).toBe(0);
   });
 });
@@ -321,12 +323,7 @@ describe("publishNewEntries with length limits", () => {
     expect(guid).toHaveLength(MAX_GUID_LENGTH);
     expect(url).toHaveLength(MAX_URL_LENGTH);
     expect(title).toHaveLength(MAX_TITLE_LENGTH);
-    expect(mockCtx.sendActivity).toHaveBeenCalledTimes(1);
-    const create = mockCtx.sendActivity.mock.calls[0]![2] as { getObject?: () => Promise<{ content?: string }> };
-    const note = create.getObject ? await create.getObject() : null;
-    expect(note?.content).toBeDefined();
-    expect(note!.content).toContain("a".repeat(MAX_TITLE_LENGTH).slice(0, 50));
-    expect(note!.content).toContain("https://example.com/");
+    expect(mockCtx.sendActivity).not.toHaveBeenCalled();
 
     // The dedup check must run against the truncated guid (what's actually stored),
     // not the raw feed-supplied guid.
@@ -380,11 +377,8 @@ describe("publishNewEntries dedup batching", () => {
     // in-memory without a wasted resolveHashtags (e.g. Gemini) call.
     expect(mockResolveHashtags).toHaveBeenCalledTimes(1);
     expect(mockInsertEntry).toHaveBeenCalledTimes(1);
-    // This describe block configures no followers/relays, so the one
-    // processed entry is inserted but marked skipped (no recipients) rather
-    // than published - the point here is the *count* of processed entries.
-    expect(result.published).toBe(0);
-    expect(result.skipped).toBe(2);
+    expect(result.stored).toBe(1);
+    expect(result.skipped).toBe(1);
   });
 });
 

@@ -7,6 +7,7 @@ vi.mock("../rss", () => ({
 vi.mock("../publisher", () => ({
   publishNewEntries: vi.fn(),
 }));
+vi.mock("../publications", () => ({ submitPendingPublications: vi.fn().mockResolvedValue({ queued: 0, failed: 0, cancelled: 0 }) }));
 
 vi.mock("../meta-bot", () => ({
   announceNewBots: vi.fn().mockResolvedValue(undefined),
@@ -19,6 +20,7 @@ vi.mock("../db", () => ({
 
 import { fetchFeedWithHttpResult, type FeedFetchResult } from "../rss";
 import { publishNewEntries } from "../publisher";
+import { submitPendingPublications } from "../publications";
 import { announceNewBots } from "../meta-bot";
 import { startPoller } from "../poller";
 import { getFeedPollStatusMap, upsertFeedPollStatus, type FeedPollStatusRow } from "../db";
@@ -71,7 +73,7 @@ function makeConfig(botCount: number): FeedsConfig {
 describe("startPoller concurrency", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mockPublishNewEntries.mockResolvedValue({ published: 0, skipped: 0 });
+    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0 });
     mockGetStatusMap.mockResolvedValue(new Map());
   });
 
@@ -202,7 +204,7 @@ describe("startPoller concurrency", () => {
 describe("startPoller conditional GET and rate limiting", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mockPublishNewEntries.mockResolvedValue({ published: 0, skipped: 0 });
+    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0 });
     mockGetStatusMap.mockResolvedValue(new Map());
   });
 
@@ -245,6 +247,7 @@ describe("startPoller conditional GET and rate limiting", () => {
     poller.stop();
 
     expect(mockPublishNewEntries).not.toHaveBeenCalled();
+    expect(submitPendingPublications).toHaveBeenCalled();
     expect(mockUpsertStatus.mock.calls[0][1]).toMatchObject({ lastError: null, lastHttpStatus: 304 });
   });
 
@@ -267,6 +270,18 @@ describe("startPoller conditional GET and rate limiting", () => {
       lastModified: "yesterday",
       nextPollAt: null,
     });
+  });
+
+  it("does not advance validators when durable ingestion fails", async () => {
+    mockFetchFeed.mockResolvedValue(okFetch({ validators: { etag: '"new"', lastModified: null } }));
+    mockPublishNewEntries.mockRejectedValueOnce(new Error("transaction failed"));
+    const poller = startOneBot();
+    try {
+      await vi.waitFor(() => expect(mockPublishNewEntries).toHaveBeenCalledTimes(1));
+      expect(mockUpsertStatus).not.toHaveBeenCalled();
+    } finally {
+      poller.stop();
+    }
   });
 
   it("records a backoff deadline when the server rate limits us", async () => {
