@@ -36,7 +36,7 @@
     "escape-html": "^1.0.3",
     "ipaddr.js": "^2.5.0",
     "js-yaml": "^5.4.3",
-    "next": "16.3.6",
+    "next": "16.3.8",
     "postgres": "^3.4.9",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
