@@ -303,6 +303,13 @@ export async function getEntryByGuid(db: Db, botUsername: string, guid: string) 
   return rows[0] ?? null;
 }
 
+// Use the time we grabbed an entry when its feed omits the publication date.
+// The ID breaks ties so pagination has a stable order.
+const ENTRY_ORDER = [
+  desc(sql`coalesce(${schema.feedEntries.publishedAt}, ${schema.feedEntries.createdAt})`),
+  desc(schema.feedEntries.id),
+];
+
 export async function getEntriesPage(
   db: Db,
   botUsername: string,
@@ -322,7 +329,7 @@ export async function getEntriesPage(
     })
     .from(schema.feedEntries)
     .where(and(eq(schema.feedEntries.botUsername, botUsername), isNull(schema.feedEntries.deletedAt)))
-    .orderBy(desc(schema.feedEntries.publishedAt))
+    .orderBy(...ENTRY_ORDER)
     .limit(limit)
     .offset(offset);
 }
@@ -361,7 +368,7 @@ export async function getEntriesByTag(
     .select(TAG_ENTRY_FIELDS)
     .from(schema.feedEntries)
     .where(and(tagFilter(tag), isNull(schema.feedEntries.deletedAt)))
-    .orderBy(desc(schema.feedEntries.publishedAt))
+    .orderBy(...ENTRY_ORDER)
     .limit(limit)
     .offset(offset);
 }
@@ -383,7 +390,7 @@ export async function getAllEntries(
     .select(TAG_ENTRY_FIELDS)
     .from(schema.feedEntries)
     .where(isNull(schema.feedEntries.deletedAt))
-    .orderBy(desc(schema.feedEntries.publishedAt))
+    .orderBy(...ENTRY_ORDER)
     .limit(limit)
     .offset(offset);
 }

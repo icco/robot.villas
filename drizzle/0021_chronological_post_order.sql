@@ -1,0 +1,2 @@
+DROP INDEX "feed_entries_published_at_idx";--> statement-breakpoint
+CREATE INDEX "feed_entries_published_at_idx" ON "feed_entries" USING btree (coalesce("published_at", "created_at") desc,"id" DESC NULLS FIRST) WHERE "feed_entries"."deleted_at" IS NULL;

@@ -22,7 +22,9 @@ export const feedEntries = pgTable(
     // GIN index for fast JSONB array element lookups (tag filter + tag aggregation)
     index("feed_entries_hashtags_gin_idx").using("gin", t.hashtags).where(sql`${t.deletedAt} IS NULL`),
     // Partial index for chronological pagination across all non-deleted posts
-    index("feed_entries_published_at_idx").on(t.publishedAt).where(sql`${t.deletedAt} IS NULL`),
+    index("feed_entries_published_at_idx")
+      .on(sql`coalesce(${t.publishedAt}, ${t.createdAt}) desc`, t.id.desc().nullsFirst())
+      .where(sql`${t.deletedAt} IS NULL`),
   ],
 );
 

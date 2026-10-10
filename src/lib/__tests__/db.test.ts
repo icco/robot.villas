@@ -8,6 +8,9 @@ import {
   hasEntry,
   getExistingGuids,
   getEntryByGuid,
+  getAllEntries,
+  getEntriesPage,
+  getEntriesByTag,
   insertEntry,
   countEntriesForBots,
   getTagsPage,
@@ -135,6 +138,49 @@ describeWithDb("database", () => {
   });
 
   describe("feed_entries", () => {
+    it("paginates by publication date with a grabbed-date fallback in every feed", async () => {
+      const oldDate = new Date("2026-10-01T12:00:00Z");
+      const newDate = new Date("2026-10-10T12:00:00Z");
+      const grabbedAt = new Date("2026-10-09T12:00:00Z");
+      const entries = await db.insert(schema.feedEntries).values(
+        [
+          { publishedAt: null, createdAt: oldDate },
+          { publishedAt: oldDate, createdAt: newDate },
+          { publishedAt: newDate, createdAt: grabbedAt },
+          { publishedAt: newDate, createdAt: newDate },
+          { publishedAt: null, createdAt: grabbedAt },
+          { publishedAt: null, createdAt: new Date("2026-10-11T12:00:00Z") },
+        ].map((dates, i) => ({
+          botUsername: "testbot", guid: `order-${i}`, url: `https://example.com/${i}`,
+          title: `Post ${i}`, hashtags: ["zzorderfixture"], ...dates,
+        })),
+      ).returning({ id: schema.feedEntries.id });
+      const ids = entries.map((entry) => entry.id);
+      await db.insert(schema.feedEntries).values({
+        botUsername: "testbot", guid: "order-deleted", url: "https://example.com/deleted",
+        title: "Deleted", publishedAt: new Date("2026-10-11T12:00:00Z"),
+        hashtags: ["zzorderfixture"], deletedAt: new Date(),
+      });
+
+      const expected = [ids[5], ids[3], ids[2], ids[4], ids[1], ids[0]];
+      const readers = [
+        (limit: number, offset: number) => getAllEntries(db, limit, offset),
+        (limit: number, offset: number) => getEntriesPage(db, "testbot", limit, offset),
+        (limit: number, offset: number) => getEntriesByTag(db, "zzorderfixture", limit, offset),
+      ];
+      for (const readPage of readers) {
+        const collected: number[] = [];
+        for (let offset = 0; ; offset += 2) {
+          const page = await readPage(2, offset);
+          collected.push(...page.filter((entry) => entry.botUsername === "testbot").map((entry) => entry.id));
+          if (page.length < 2) {
+            break;
+          }
+        }
+        expect(collected).toEqual(expected);
+      }
+    });
+
     it("inserts and detects entries", async () => {
       expect(await hasEntry(db, "testbot", "guid-1")).toBe(false);
       await insertEntry(db, "testbot", "guid-1", "https://example.com/1", "Title 1", new Date(), [
