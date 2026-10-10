@@ -1450,6 +1450,7 @@ bots:
     homepage_url: https://joho-todai.com/
     display_name: 情報の灯台 (Joho no Todai)
     summary: Japanese-language technology news covering AI, computing, semiconductors, cybersecurity and software.
+    profile_photo: https://joho-todai.com/favicon.png
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
