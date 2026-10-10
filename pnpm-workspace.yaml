@@ -1,7 +1,6 @@
 overrides:
   '@opentelemetry/sdk-metrics': ^2.10.0
   esbuild: ^0.28.0
-  postcss: ^8.5.28
   sharp: ^0.35.3
 allowBuilds:
   '@google/genai': true
@@ -10,13 +9,3 @@ allowBuilds:
   sharp: true
 minimumReleaseAgeExclude:
   - '@icco/react-common'
-  - '@fedify/fedify@2.4.0'
-  - '@fedify/next@2.4.0'
-  - '@fedify/postgres@2.4.0'
-  - '@fedify/uri-template@2.4.0'
-  - '@fedify/vocab-runtime@2.4.0'
-  - '@fedify/vocab-tools@2.4.0'
-  - '@fedify/vocab@2.4.0'
-  - '@fedify/webfinger@2.4.0'
-  - '@fedify/lint@2.4.0'
-  - '@fedify/testing@2.4.0'
