@@ -1440,6 +1440,11 @@ bots:
     default_hashtags:
       - SRE
       - ProgramManagement
+  counterpunch:
+    feed_url: https://www.counterpunch.org/feed/
+    homepage_url: https://www.counterpunch.org/
+    display_name: CounterPunch
+    summary: Independent journalism and political commentary.
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
