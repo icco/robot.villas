@@ -2109,253 +2109,287 @@ bots:
   "2600":
     feed_url: https://www.2600.com/rss.xml
     homepage_url: https://www.2600.com
-    display_name: '2600 - 2600: The Hacker Quarterly'
-    summary: 2600 News Feed
-  strugee:
+    display_name: '2600: The Hacker Quarterly'
+    summary: 'News from 2600: The Hacker Quarterly, including magazine releases, HOPE events, and Off The Hook and Off The Wall radio updates.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.2600.com&size=128
+  aj_jordan:
     feed_url: https://strugee.net/blog/index.rss
     homepage_url: https://strugee.net/blog
-    display_name: strugee.net blog
-    summary: strugee.net blog
-  sysadvent_blogspot:
-    feed_url: http://feeds.feedburner.com/sysadvent
-    homepage_url: http://sysadvent.blogspot.com
-    display_name: sysadvent
-    summary: Updates from sysadvent.
+    display_name: AJ Jordan (archive)
+    summary: 'AJ Jordan''s archived strugee.net blog on open-source software, pump.io, systems administration, privacy, and personal writing. Latest feed post: December 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstrugee.net%2Fblog&size=128
+  sysadvent:
+    feed_url: https://feeds.feedburner.com/sysadvent
+    homepage_url: https://sysadvent.blogspot.com
+    display_name: Sysadvent (archive)
+    summary: 'Archived Systems Administration Advent Calendar with community articles on systems administration, DevOps, reliability, and infrastructure. Latest feed post: December 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fsysadvent.blogspot.com&size=128
   andscape:
-    feed_url: https://andscape.com/feed/
+    feed_url: https://andscape.com/features/feed/
     homepage_url: https://andscape.com
     display_name: Andscape
-    summary: Andscape -- Sports, Race, Culture, HBCUs and More
+    summary: Andscape features and commentary exploring race, sports, culture, and HBCUs. Formerly The Undefeated. Uses the features feed to avoid broken untitled podcast entries.
+    profile_photo: https://andscape.com/wp-content/themes/espn-theundefeated/assets/images/andscape-square-192.png?v=1.1.3
   thinkprogress:
     feed_url: https://archive.thinkprogress.org/links/feed.xml
-    homepage_url: https://thinkprogress.org
-    display_name: ThinkProgress
-    summary: Updates from ThinkProgress.
-  thisamericanlife:
+    homepage_url: https://archive.thinkprogress.org
+    display_name: ThinkProgress (archive)
+    summary: 'Archived ThinkProgress progressive reporting on politics, climate, immigration, health care, and civil rights, maintained by the Center for American Progress Action Fund. Latest feed posts: September 2019.'
+    profile_photo: https://archive.thinkprogress.org/uploads/2018/04/cropped-favicon-512.png?w=180
+  this_american_life:
     feed_url: https://www.thisamericanlife.org/podcast/rss.xml
     homepage_url: https://www.thisamericanlife.org
     display_name: This American Life
-    summary: Each week we choose a theme. Then anything can happen. This American Life is true stories that unfold like little movies for radio. Personal stories with funny moments, big feelings, and surprising plot twists. Newsy stories that try to capture what it’s like to be alive right now. It’s the most popular weekly podcast in the world, and winner of the first ever Pulitzer Prize for a radio show or podcast. Hosted by Ira Glass and produced in collaboration with WBEZ Chicago.
-  thisisnthappiness:
+    summary: Weekly public-radio storytelling and podcast hosted by Ira Glass, with themed true stories, reruns, occasional bonus episodes, and show announcements.
+    profile_photo: https://www.thisamericanlife.org/sites/all/themes/thislife/favicons/apple-touch-icon.png?v=2
+  this_isnt_happiness:
     feed_url: https://thisisnthappiness.com/rss
     homepage_url: https://thisisnthappiness.com
     display_name: this isn't happiness.
-    summary: ART, PHOTOGRAPHY, DESIGN & DISAPPOINTMENT RSS ★ INSTAGRAM ★ MORE
+    summary: Curated art, photography, illustration, design, and occasional text posts from this isn't happiness. Hosted on Tumblr; not a general news feed.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthisisnthappiness.com&size=128
   tom_preston_werner:
-    feed_url: https://feeds.feedburner.com/tom-preston-werner
+    feed_url: https://tom.preston-werner.com/atom.xml
     homepage_url: https://tom.preston-werner.com
     display_name: Tom Preston-Werner
-    summary: Updates from Tom Preston-Werner.
-  tomsguide:
+    summary: 'Tom Preston-Werner''s personal essays and announcements about software, open source, startups, investing, and philanthropy. Latest feed post: October 2025.'
+    profile_photo: https://github.com/mojombo.png?size=200
+  toms_guide_news:
     feed_url: https://www.tomsguide.com/feeds/articletype/news
     homepage_url: https://www.tomsguide.com/news
-    display_name: Latest from Tom's Guide in News
-    summary: All the latest news content from the Tom's Guide team
+    display_name: Tom's Guide News
+    summary: Tom's Guide news-feed articles on consumer technology, AI, entertainment and streaming, sports viewing, home products, and shopping advice.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.tomsguide.com%2Fnews&size=128
   tynan:
     feed_url: https://tynan.com/feed
     homepage_url: https://tynan.com
     display_name: Tynan
-    summary: Life Outside the Box
+    summary: Tynan's personal blog about travel, hiking, technology, gear, projects, and approaches to everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftynan.com&size=128
   uproxx:
     feed_url: https://uproxx.com/feed/
     homepage_url: https://uproxx.com
     display_name: UPROXX
-    summary: Music Television and Culture
+    summary: UPROXX music, artist interviews and performances, television, film, culture, travel, and lifestyle coverage, including branded and sponsored projects.
+    profile_photo: https://uproxx.com/wp-content/themes/uproxx/assets/images/favicon.png
   vg247:
     feed_url: https://www.vg247.com/feed
     homepage_url: https://www.vg247.com
-    display_name: VG247 Latest Articles Feed
-    summary: This is a feed of the latest articles from VG247.
-  wilwheaton_tumblr:
+    display_name: VG247
+    summary: VG247 video-game news, reviews, previews, guides, and gaming deals. Latest feed article dated June 2026.
+    profile_photo: https://www.vg247.com/static/41efe2d416e63aeafb87fefaa439a6c9/icon/apple-touch-icon.png
+  wil_wheaton_tumblr:
     feed_url: https://wilwheaton.tumblr.com/rss
     homepage_url: https://wilwheaton.tumblr.com
-    display_name: WIL WHEATON dot TUMBLR dot COM
-    summary: Hi. I’m Wil, and this is my Tumblr thing. Yay.
-  yehudakatz:
+    display_name: Wil Wheaton (Tumblr)
+    summary: Wil Wheaton's Tumblr posts and reblogs on art, science fiction, comics, politics, and personal interests.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwilwheaton.tumblr.com&size=128
+  yehuda_katz:
     feed_url: https://yehudakatz.com/rss/
     homepage_url: https://yehudakatz.com
-    display_name: Katz Got Your Tongue
-    summary: Long-form writing by Yehuda Katz, co-creator of Ember.js and serial Open Sourcerer.
-  aaronparecki:
+    display_name: Yehuda Katz - Katz Got Your Tongue
+    summary: 'Long-form writing by Yehuda Katz on Ember.js, Glimmer, JavaScript, open-source development, and PowerShell. Latest feed post: October 2024.'
+    profile_photo: https://storage.ghost.io/c/c4/ad/c4ad764b-2003-4f69-a13f-cb084bf35ca5/content/images/2024/08/yehuda-square.png
+  aaron_parecki:
     feed_url: https://aaronparecki.com/feed.xml
     homepage_url: https://aaronparecki.com
-    display_name: Articles by Aaron Parecki
-    summary: Updates from Articles by Aaron Parecki.
+    display_name: Aaron Parecki
+    summary: Articles by Aaron Parecki on OAuth, identity standards, IndieWeb, and owning your data. This feed contains articles, not his notes, check-ins, or bookmarks.
+    profile_photo: https://aaronparecki.com/images/profile.jpg
   abduzeedo:
     feed_url: https://abduzeedo.com/rss.xml
     homepage_url: https://abduzeedo.com
     display_name: Abduzeedo
-    summary: Design inspiration and tutorials.
-  sourcegraph:
+    summary: Design inspiration, featured creative projects, and tutorials covering branding, typography, packaging, photography, and digital design.
+    profile_photo: https://abduzeedo.com/apple-touch-icon.png
+  sourcegraph_blog:
     feed_url: https://sourcegraph.com/blog/feed.rss
     homepage_url: https://sourcegraph.com/blog
     display_name: Sourcegraph Blog
     summary: Engineering posts, product updates, and announcements from Sourcegraph.
-  andrewchen:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsourcegraph.com%2Fblog&size=128
+  andrew_chen:
     feed_url: https://andrewchen.com/feed/
     homepage_url: https://andrewchen.com
-    display_name: andrewchen
-    summary: Growth, startups, and tech products
-  blog_apps_npr:
+    display_name: Andrew Chen (archive)
+    summary: 'Andrew Chen''s archived essays on startups, user growth, and network effects. Last feed post: February 2024; new writing has moved to his Substack.'
+    profile_photo: https://andrewchen.co/wp-content/uploads/2015/05/favicon.png
+  npr_visuals_team_blog:
     feed_url: https://blog.apps.npr.org/atom.xml
     homepage_url: https://blog.apps.npr.org
-    display_name: NPR visuals team blog
-    summary: Updates from NPR visuals team blog.
-  azure_microsoft:
+    display_name: NPR Visuals + Editorial Graphics
+    summary: 'NPR newsroom team blog about visual journalism, data graphics, photography, video, and newsroom development tools. Latest feed post: January 2025; some older external NPR Training links are unavailable.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.apps.npr.org&size=128
+  microsoft_azure_blog:
     feed_url: https://azure.microsoft.com/en-us/blog/feed/
     homepage_url: https://azure.microsoft.com/en-us/blog
     display_name: Microsoft Azure Blog
-    summary: Get the latest Azure news, updates, and announcements from the Azure blog. From product updates to hot topics, hear from the Azure experts.
-  ben_evans:
+    summary: 'Official Microsoft Azure blog: cloud infrastructure, AI, security, engineering, customer stories, and product announcements.'
+    profile_photo: https://azure.microsoft.com/en-us/blog/wp-content/uploads/2024/06/microsoft_logo-150x150.webp
+  benedict_evans:
     feed_url: https://www.ben-evans.com/benedictevans?format=rss
     homepage_url: https://www.ben-evans.com/benedictevans
-    display_name: Essays - Benedict Evans
-    summary: Updates from Essays - Benedict Evans.
-  1password:
+    display_name: Benedict Evans
+    summary: Essays by Benedict Evans analyzing technology, AI, markets, and how businesses and industries change.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.ben-evans.com%2Fbenedictevans&size=128
+  1password_blog:
     feed_url: https://1password.com/blog/index.xml
     homepage_url: https://1password.com/blog
-    display_name: Blog on 1Password Blog
-    summary: Recent content in Blog on 1Password Blog
-  apollographql:
+    display_name: 1Password Blog
+    summary: 1Password product updates, security research, engineering articles, and interviews about password management, identity, SaaS, and AI access.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2F1password.com%2Fblog&size=128
+  apollo_graphql_blog:
     feed_url: https://www.apollographql.com/blog/rss.xml
-    homepage_url: https://www.apollographql.com
-    display_name: apollographql.com
-    summary: Apollo GraphQL blog posts
-  blog_archive:
+    homepage_url: https://www.apollographql.com/blog
+    display_name: Apollo GraphQL Blog
+    summary: Apollo GraphQL engineering articles, GraphOS and client releases, API architecture, AI integrations, and company announcements.
+    profile_photo: https://www.apollographql.com/favicon/lightfall/apple-icon-180x180.png
+  internet_archive_blogs:
     feed_url: https://blog.archive.org/feed/
     homepage_url: https://blog.archive.org
     display_name: Internet Archive Blogs
-    summary: Updates from the Internet Archive
-  blog_cryptographyengineering:
+    summary: News and projects from the Internet Archive on digital preservation, the Wayback Machine, collections, access, events, and fundraising.
+    profile_photo: https://blog.archive.org/wp-content/uploads/2023/03/ia-logo-sq-300x300.png
+  matthew_green:
     feed_url: https://blog.cryptographyengineering.com/feed/
     homepage_url: https://blog.cryptographyengineering.com
-    display_name: A Few Thoughts on Cryptographic Engineering
-    summary: Some random thoughts about crypto. Notes from a course I teach. Pictures of my dachshunds.
-  blog_erratasec:
+    display_name: Matthew Green - Cryptographic Engineering
+    summary: Matthew Green's blog on cryptography, computer security, privacy, and cryptographic engineering.
+    profile_photo: https://blog.cryptographyengineering.com/wp-content/uploads/2016/08/matthew-green.jpg?w=200
+  errata_security:
     feed_url: https://blog.erratasec.com/feeds/posts/default
     homepage_url: https://blog.erratasec.com
     display_name: Errata Security
-    summary: Updates from Errata Security.
-  words_filippo:
+    summary: 'Errata Security''s archived blog, chiefly by Robert Graham, on computer security, systems, technology, and commentary. Latest feed post: February 2024.'
+  filippo_valsorda:
     feed_url: https://words.filippo.io/rss/
     homepage_url: https://words.filippo.io
     display_name: Filippo Valsorda
-    summary: Updates from Filippo Valsorda.
-  blog_fogus_me:
+    summary: Filippo Valsorda writes about cryptography, Go, software security, and open-source maintenance.
+    profile_photo: https://assets.buttondown.email/images/1e8b4251-b3e2-4de1-9b95-9f5d0447644d.png
+  fogus:
     feed_url: https://blog.fogus.me/feed.xml
     homepage_url: https://blog.fogus.me
-    display_name: Send More Paramedics
-    summary: λ λ λ
-  blog_jgc:
+    display_name: Fogus - Send More Paramedics
+    summary: Fogus writes about programming languages, functional programming, software, books, games, and personal interests.
+  john_graham_cumming:
     feed_url: https://blog.jgc.org/feeds/posts/default
-    homepage_url: http://blog.jgc.org
+    homepage_url: https://blog.jgc.org
     display_name: John Graham-Cumming's blog
-    summary: Updates from John Graham-Cumming's blog.
-  blog_sanctum_geek_nz:
+    summary: John Graham-Cumming's personal blog on computing, electronics, technology history, hardware projects, and everyday observations.
+  tom_ryder_arabesque:
     feed_url: https://blog.sanctum.geek.nz/feed/
     homepage_url: https://blog.sanctum.geek.nz
-    display_name: Arabesque
-    summary: Systems, Tools, and Terminal Science
-  blog_torproject:
+    display_name: Arabesque - Tom Ryder (archive)
+    summary: 'Tom Ryder''s systems administration and programming blog about Unix, GNU/Linux, shell scripting, Vim, and command-line tools. Latest feed post: May 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.sanctum.geek.nz&size=128
+  tor_project_blog:
     feed_url: https://blog.torproject.org/feed.xml
     homepage_url: https://blog.torproject.org
-    display_name: Tor Project blog
-    summary: Updates from Tor Project blog.
-  byrslf_co:
+    display_name: Tor Project Blog
+    summary: Official Tor Project announcements, privacy and censorship news, and releases of Tor Browser, Arti, Tails, and Tor VPN.
+    profile_photo: https://blog.torproject.org/static/images/favicon/favicon.png
+  byrslf:
     feed_url: https://byrslf.co/feed
     homepage_url: https://byrslf.co
-    display_name: How “Free-to-Play” Games Still Make Money
-    summary: Updates from How “Free-to-Play” Games Still Make Money.
-  caranddriver:
+    display_name: BYRSLF
+    summary: 'BYRSLF articles on video games, esports, technology, and gambling behavior, regulation, and harm. Latest feed posts: August 2025. This is the current publication, not the former Be Yourself Medium publication.'
+    profile_photo: https://byrslf.co/wp-content/uploads/2025/07/cropped-favicon-1-180x180.png
+  car_and_driver_news:
     feed_url: https://www.caranddriver.com/rss/news.xml
     homepage_url: https://www.caranddriver.com/news
-    display_name: News - Car and Driver
-    summary: RSS feed for News - Car and Driver
-  cargo_site:
+    display_name: Car and Driver News
+    summary: 'Car and Driver''s automotive news: new models, industry developments, recalls, motorsport, and collector-car auctions.'
+    profile_photo: https://www.caranddriver.com/_assets/design-tokens/caranddriver/static/images/apple-touch-icon.57b92b6.png
+  xarene_eskandar_time_pieces:
     feed_url: https://cargocollective.com/rss/Waters
-    homepage_url: https://cargo.site
-    display_name: 'Atelier XE: Realtime Lapse'
-    summary: 'Atelier XE: Realtime Lapse'
-  catonmat:
-    feed_url: https://catonmat.net/feed
-    homepage_url: https://catonmat.net
-    display_name: catonmat.net
-    summary: catonmat.net
+    homepage_url: https://cargocollective.com/Waters
+    display_name: Atelier XE - Xarene Eskandar
+    summary: Xarene Eskandar's archived Realtime Lapse / Time Pieces photography, video, and sound projects at California bodies of water. Works date from 2009-2013; latest feed entry dated August 2022.
   cinemablend:
     feed_url: https://www.cinemablend.com/feeds.xml
     homepage_url: https://www.cinemablend.com
-    display_name: Latest from CinemaBlend
-    summary: All the latest content from the CinemaBlend team
-  cntraveller:
+    display_name: CinemaBlend
+    summary: CinemaBlend news, interviews, reviews, and commentary on movies, television, celebrities, and entertainment.
+    profile_photo: https://cdn.mos.cms.futurecdn.net/flexiimages/tbhqzd9bso1619422461.png
+  conde_nast_traveller_uk:
     feed_url: https://www.cntraveller.com/feed/rss
     homepage_url: https://www.cntraveller.com
-    display_name: Condé Nast Traveler UK
-    summary: The latest from www.cntraveller.com
+    display_name: Conde Nast Traveller UK
+    summary: 'The UK edition of Conde Nast Traveller: destination guides, hotels, restaurants, travel features, photography, and recommendations.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.cntraveller.com&size=128
   comicsalliance:
     feed_url: https://comicsalliance.com/feed/
     homepage_url: https://comicsalliance.com
-    display_name: ComicsAlliance - Comic book culture, news, humor and commentary.
-    summary: Updates from ComicsAlliance - Comic book culture, news, humor and commentary..
-  corte_si:
+    display_name: ComicsAlliance
+    summary: ComicsAlliance's current feed carries ScreenCrush movie, TV, streaming, Marvel, and DC coverage syndicated by Townsquare Media; not just comic-book news.
+    profile_photo: https://townsquare.media/wp-content/uploads/2019/05/comicsalliance.png?w=144&h=144
+  aldo_cortesi:
     feed_url: https://corte.si/atom.xml
     homepage_url: https://corte.si
-    display_name: corte.si
-    summary: Updates from corte.si.
+    display_name: Aldo Cortesi
+    summary: Aldo Cortesi's blog on software, security, data visualization, open-source tools, and personal interests, including mitmproxy and space-filling curves.
+    profile_photo: https://corte.si/apple-touch-icon.png
   css_tricks:
     feed_url: https://css-tricks.com/feed/
     homepage_url: https://css-tricks.com
     display_name: CSS-Tricks
     summary: A learning community for front-end designers and developers
-  dailykos:
+    profile_photo: https://css-tricks.com/apple-touch-icon.png
+  daily_kos_staff:
     feed_url: https://www.dailykos.com/blogs/main.rss
     homepage_url: https://www.dailykos.com
-    display_name: Staff Stories – Daily Kos
-    summary: The Liberal Media
-  darkreading:
+    display_name: Daily Kos - Staff Stories
+    summary: Daily Kos staff-feed news, progressive political commentary, cartoons, and syndicated reporting. This is not the full community diary feed.
+    profile_photo: https://www.dailykos.com/wp-content/uploads/sites/2/2025/09/cropped-daily-kos-logo-square.jpg?w=180
+  dark_reading:
     feed_url: https://www.darkreading.com/rss.xml
     homepage_url: https://www.darkreading.com
-    display_name: darkreading
-    summary: Public RSS feed
-  datadoghq:
-    feed_url: https://www.datadoghq.com/index.xml
-    homepage_url: https://www.datadoghq.com
-    display_name: Cloud monitoring as a service
-    summary: Recent content in Cloud monitoring as a service on Modern monitoring & security
-  designshack:
+    display_name: Dark Reading
+    summary: Cybersecurity news, threat and vulnerability analysis, industry commentary, and press releases from Dark Reading.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.darkreading.com&size=128
+  datadog_blog:
+    feed_url: https://www.datadoghq.com/blog/index.xml
+    homepage_url: https://www.datadoghq.com/blog/
+    display_name: Datadog - The Monitor
+    summary: 'Datadog''s The Monitor blog: observability, cloud infrastructure, security, engineering, monitoring guides, and product announcements.'
+    profile_photo: https://corp.dd-static.net/img/favicons/apple-touch-icon.png
+  design_shack:
     feed_url: https://designshack.net/feed/
     homepage_url: https://designshack.net
     display_name: Design Shack
-    summary: Design Articles, Inspiration & Guides
-  developer_android:
-    feed_url: https://developer.android.com/static/blog/atom.xml
-    homepage_url: https://developer.android.com/blog
-    display_name: Android Developers' Blog
-    summary: Updates from Android Developers' Blog.
-  eev_ee:
+    summary: Design Shack articles, design inspiration, tutorials, and curated resources such as fonts, templates, mockups, and presets, including commercial recommendations.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdesignshack.net&size=128
+  eevee_fuzzy_notepad:
     feed_url: https://eev.ee/feeds/atom.xml
     homepage_url: https://eev.ee
-    display_name: fuzzy notepad
-    summary: Updates from fuzzy notepad.
+    display_name: Eevee - fuzzy notepad
+    summary: 'Eevee''s personal blog on programming, game development, web technology, games, and life. Includes occasional adult material; latest feed post: July 2025.'
+    profile_photo: https://eev.ee/favicon.png
   emptywheel:
     feed_url: https://emptywheel.net/feed/
     homepage_url: https://emptywheel.net
     display_name: emptywheel
-    summary: emptywheel
-  en_wikiquote:
+    summary: Legal, national-security, and political reporting and analysis from emptywheel, led by Marcy Wheeler, with contributing writers.
+    profile_photo: https://emptywheel.net/wp-content/uploads/2025/09/cropped-emptywheel-favicon-180x180.png
+  wikiquote_recent_changes:
     feed_url: https://en.wikiquote.org/w/api.php?hidebots=1&hidecategorization=1&hideWikibase=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom
     homepage_url: https://en.wikiquote.org/wiki/Special:RecentChanges
-    display_name: Wikiquote - Recent changes [en]
-    summary: Updates from Wikiquote - Recent changes [en].
-  fastly:
+    display_name: Wikiquote - English Recent Changes
+    summary: Recent edits to English Wikiquote, including article, user, talk, and project pages. Links are revision diffs, not a curated quotation-of-the-day feed.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fen.wikiquote.org%2Fwiki%2FSpecial%3ARecentChanges&size=128
+  fastly_blog:
     feed_url: https://www.fastly.com/blog_rss.xml
     homepage_url: https://www.fastly.com/blog
     display_name: Fastly Blog
-    summary: Fastly's edge cloud platform helps the world's most popular digital businesses keep pace with their customer expectations by delivering fast, secure, and scalable online experiences.
+    summary: Fastly engineering, CDN and edge computing, performance, security research, product releases, and company news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.fastly.com%2Fblog&size=128
   flowingdata:
     feed_url: https://flowingdata.com/feed/
     homepage_url: https://flowingdata.com
     display_name: FlowingData
-    summary: Strength in Numbers
+    summary: Nathan Yau's FlowingData blog on data visualization, statistics, charts, interactive projects, and visualization tutorials. Some posts require membership.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fflowingdata.com&size=128
   cloudflare:
     feed_url: https://blog.cloudflare.com/rss/
     homepage_url: https://blog.cloudflare.com
