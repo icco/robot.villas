@@ -525,6 +525,256 @@ bots:
     display_name: The Washington Post — World
     summary: Breaking world news, analysis, and the Post’s international reporting.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.washingtonpost.com&size=128
+  betanews:
+    feed_url: https://betanews.com/feed/
+    homepage_url: https://betanews.com
+    display_name: BetaNews
+    summary: Technology News and Analysis
+  betternotesapp:
+    feed_url: http://www.betternotesapp.com/feed.xml
+    homepage_url: http://www.betternotesapp.com
+    display_name: Better Notes — Stupid-simple notes for your phone.
+    summary: Better notes.
+  betterthangrep:
+    feed_url: https://betterthangrep.com/feed/
+    homepage_url: https://betterthangrep.com
+    display_name: Better Than Grep
+    summary: The Most Opinionated Linux Blog
+  bevsi_tumblr:
+    feed_url: https://bevsi.tumblr.com/rss
+    homepage_url: https://bevsi.tumblr.com
+    display_name: bevsi
+    summary: portfolio / patreon / art / redbubble / instagram / behance / prints Bev Johnson / character designer and illustrator - beverly.blue88 @ gmail. com
+  bevstohl_blogspot:
+    feed_url: https://bevstohl.blogspot.com/feeds/posts/default
+    homepage_url: https://bevstohl.blogspot.com
+    display_name: Bev Stohl's Stata Confusion
+    summary: Updates from Bev Stohl's Stata Confusion.
+  bhc3:
+    feed_url: https://bhc3.com/feed/
+    homepage_url: https://bhc3.com
+    display_name: I'm Not Actually a Geek
+    summary: Observations on technology and business from someone who should know better
+  bidnessetc:
+    feed_url: https://www.bidnessetc.com/feed/
+    homepage_url: https://www.bidnessetc.com
+    display_name: BidnessETC
+    summary: Dominating The Web; One Step At A Time
+  bieberlabs:
+    feed_url: https://bieberlabs.com/feed/
+    homepage_url: https://bieberlabs.com
+    display_name: Bieber Labs
+    summary: Updates from Bieber Labs.
+  bigdata_2minutestreaming:
+    feed_url: https://bigdata.2minutestreaming.com/feed
+    homepage_url: https://bigdata.2minutestreaming.com
+    display_name: Stanislav’s Big Data Stream
+    summary: "A stream of all the highly-technical viral posts I do surrounding big data and tech. Same high quality in a less distracting format. \U0001F44C"
+  bigmachine:
+    feed_url: https://bigmachine.io/feed.xml
+    homepage_url: https://bigmachine.io
+    display_name: Big Machine
+    summary: Essays, notes, and field reports on AI and agentic engineering, databases, and the craft of writing software.
+  bikesnobnyc_blogspot:
+    feed_url: http://feeds.feedburner.com/blogspot/arls
+    homepage_url: http://bikesnobnyc.blogspot.com
+    display_name: Bike Snob NYC
+    summary: Updates from Bike Snob NYC.
+  bilalquadri:
+    feed_url: https://bilalquadri.com/feed.xml
+    homepage_url: http://bilalquadri.com
+    display_name: Bilal Quadri
+    summary: The personal site & blog of Bilal Quadri
+  bing:
+    feed_url: https://blogs.bing.com/feed/
+    homepage_url: https://www.bing.com
+    display_name: Bing Blogs
+    summary: This is a place devoted to giving you deeper insight into the news, trends, people and technology behind Bing.
+  binpress:
+    feed_url: https://www.binpress.com/feed/
+    homepage_url: https://www.binpress.com
+    display_name: binPress
+    summary: Updates from binPress.
+  bioware:
+    feed_url: https://www.bioware.com/feed/
+    homepage_url: https://www.bioware.com
+    display_name: BioWare
+    summary: Rich Stories, Unforgettable Characters, And Vast Worlds
+  birch_co:
+    feed_url: https://birch.co/rss
+    homepage_url: https://birch.co
+    display_name: My musepad
+    summary: Writings and musings from a startup guy. Talk about tech, startups, innovation, investing, food, travel, and other random thoughts.
+  birchtree_me:
+    feed_url: https://birchtree.me/rss/
+    homepage_url: https://birchtree.me
+    display_name: Birchtree
+    summary: Tech, Apple, and the vast grey area that is AI
+  bisexual_books_tumblr:
+    feed_url: https://bisexual-books.tumblr.com/rss
+    homepage_url: https://bisexual-books.tumblr.com
+    display_name: Bisexual Books
+    summary: Welcome to Bisexual Books. Here you’ll find views and reviews on books from multiple genres and for all ages from the bisexual perspective. Be warned this site contains spoilers and reviews of erotica and other sexual material. Questions or comments?…
+  bisnow:
+    feed_url: https://www.bisnow.com/rss/all
+    homepage_url: https://www.bisnow.com
+    display_name: Bisnow Latest News Feed
+    summary: Latest Bisnow articles across all markets
+  mo:
+    feed_url: https://mo.io/rss.xml
+    homepage_url: https://mo.io
+    display_name: Mo — mough.xyz
+    summary: Working on Enjoy. Previously built Standard Notes.
+  bitcannon:
+    feed_url: https://bitcannon.net/index.xml
+    homepage_url: https://bitcannon.net
+    display_name: Bit Cannon
+    summary: Recent posts on Bit Cannon
+  bitcoin:
+    feed_url: https://bitcoin.org/en/rss/alerts.rss
+    homepage_url: https://bitcoin.org/en/alerts
+    display_name: Bitcoin network status and alerts
+    summary: This RSS feed allows to follow events and alerts surrounding the Bitcoin network and software.
+  bitcoinist:
+    feed_url: https://bitcoinist.com/feed/
+    homepage_url: https://bitcoinist.com
+    display_name: Bitcoinist.com
+    summary: Updates from Bitcoinist.com.
+  bitlbee:
+    feed_url: https://www.bitlbee.org/news.r.html.rss
+    homepage_url: http://www.bitlbee.org/main.php/news.html
+    display_name: BitlBee - News
+    summary: Updates from BitlBee - News.
+  bitrebels:
+    feed_url: https://bitrebels.com/feed/
+    homepage_url: https://bitrebels.com
+    display_name: Bit Rebels
+    summary: Technology, Social Media, Business, Geek News
+  bitsnpieces_dev:
+    feed_url: https://bitsnpieces.dev/feed.xml
+    homepage_url: https://bitsnpieces.dev
+    display_name: bitsnpieces.dev
+    summary: Updates from bitsnpieces.dev.
+  bitsup_blogspot:
+    feed_url: https://bitsup.blogspot.com/feeds/posts/default
+    homepage_url: https://bitsup.blogspot.com
+    display_name: Bits Up!
+    summary: Updates from Bits Up!.
+  bklyner:
+    feed_url: https://bklyner.com/rss/
+    homepage_url: https://bklyner.com
+    display_name: Bklyner
+    summary: News from Brooklyn
+  bkmag:
+    feed_url: https://www.bkmag.com/feed/
+    homepage_url: https://www.bkmag.com
+    display_name: BKMAG
+    summary: Brooklyn's guide to local news, music, bars, restaurants, books, sex, real estate and events.
+  blackhole12_blogspot:
+    feed_url: https://blackhole12.blogspot.com/feeds/posts/default
+    homepage_url: https://blackhole12.blogspot.com
+    display_name: Erik McClure
+    summary: Updates from Erik McClure.
+  blackthorn:
+    feed_url: https://blackthorn.io/feed/
+    homepage_url: https://blackthorn.io
+    display_name: Blackthorn
+    summary: Event Management, Native to Salesforce.com
+  blackwoodspress:
+    feed_url: https://blackwoodspress.com/sitemap.rss
+    homepage_url: https://blackwoodspress.com
+    display_name: Blackwoods Press
+    summary: Blackwoods Press
+  jip_dev:
+    feed_url: https://jip.dev/index.xml
+    homepage_url: https://www.jip.dev
+    display_name: Jorge Israel Peña
+    summary: Recent content on Jorge Israel Peña
+  blainsmith:
+    feed_url: https://blainsmith.com/rss.xml
+    homepage_url: https://blainsmith.com
+    display_name: Blain Smith
+    summary: Updates from Blain Smith.
+  blakesmith_me:
+    feed_url: https://blakesmith.me/atom.xml
+    homepage_url: https://blakesmith.me
+    display_name: create. code. learn.
+    summary: Updates from create. code. learn..
+  syfy:
+    feed_url: https://www.syfy.com/syfy-wire/feed
+    homepage_url: https://www.syfy.com
+    display_name: SYFY WIRE
+    summary: Science Fiction, Fantasy, Horror News
+  blavity:
+    feed_url: https://blavity.com/rss.xml
+    homepage_url: https://blavity.com
+    display_name: Blavity
+    summary: Blavity is a tech company for forward thinking Black millennials pushing the boundaries of culture and the status quo.
+  bldgblog_blogspot:
+    feed_url: http://www.blogger.com/feeds/8663346/posts/default
+    homepage_url: http://bldgblog.blogspot.com
+    display_name: BLDGBLOG
+    summary: Updates from BLDGBLOG.
+  blender:
+    feed_url: https://www.blender.org/feed/
+    homepage_url: https://www.blender.org
+    display_name: Blender
+    summary: The Free and Open Source 3D Creation Software — blender.org
+  blessthisstuff:
+    feed_url: https://www.blessthisstuff.com/rss/
+    homepage_url: https://www.blessthisstuff.com
+    display_name: Bless This Stuff
+    summary: Web Magazine for guys. Men’s Style, gadgets, gear, technology, vehicles and more.
+  blinry:
+    feed_url: https://blinry.org/feed/
+    homepage_url: https://blinry.org
+    display_name: blinry's homepage
+    summary: Updates from blinry's homepage.
+  blog_0x1fff:
+    feed_url: https://blog.0x1fff.com/blog/atom.xml
+    homepage_url: https://blog.0x1fff.com
+    display_name: 0x1fff.com blog Blog
+    summary: Updates from 0x1fff.com blog Blog.
+  blog_0xbadc0de_be:
+    feed_url: https://blog.0xbadc0de.be/feed
+    homepage_url: https://blog.0xbadc0de.be
+    display_name: Aris' Blog
+    summary: Computers, ssh and rock'n roll
+  abevoelker:
+    feed_url: https://abevoelker.com/feed.xml
+    homepage_url: https://abevoelker.com
+    display_name: Abe Voelker
+    summary: Updates from Abe Voelker.
+  aboutamazon:
+    feed_url: https://www.aboutamazon.com/rss/feed.rss
+    homepage_url: https://www.aboutamazon.com/amazon-news-today
+    display_name: Amazon News
+    summary: Amazon News RSS Feed
+  blog_achernya:
+    feed_url: https://blog.achernya.com/feeds/posts/default
+    homepage_url: https://blog.achernya.com
+    display_name: Alex Chernyakhovsky
+    summary: Updates from Alex Chernyakhovsky.
+  blog_acolyer:
+    feed_url: https://blog.acolyer.org/feed/
+    homepage_url: https://blog.acolyer.org
+    display_name: the morning paper
+    summary: a random walk through Computer Science research, by Adrian Colyer
+  blog_acrosspolyethylene:
+    feed_url: https://blog.acrosspolyethylene.com/rss.xml
+    homepage_url: https://blog.acrosspolyethylene.com
+    display_name: Epistolary Purgatory
+    summary: A little cabin in the world wide woods
+  blog_andrewcantino:
+    feed_url: https://blog.andrewcantino.com/feed.xml
+    homepage_url: https://blog.andrewcantino.com
+    display_name: andrew makes things
+    summary: Updates from andrew makes things.
+  blog_angryasianman:
+    feed_url: http://feeds.feedburner.com/angryasianman/hMam
+    homepage_url: http://blog.angryasianman.com
+    display_name: Angry Asian Man
+    summary: Updates from Angry Asian Man.
   techcrunch:
     feed_url: https://techcrunch.com/feed/
     homepage_url: https://techcrunch.com
