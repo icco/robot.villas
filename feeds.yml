@@ -1446,7 +1446,7 @@ bots:
     display_name: CounterPunch
     summary: Independent journalism and political commentary.
   joho_todai:
-    feed_url: https://joho-todai.com/rss/
+    feed_url: https://joho-todai.com/pinterest-rss/
     homepage_url: https://joho-todai.com/
     display_name: 情報の灯台 (Joho no Todai)
     summary: Japanese-language technology news covering AI, computing, semiconductors, cybersecurity and software.
