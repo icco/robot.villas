@@ -1425,6 +1425,256 @@ bots:
     display_name: Brian Abelson
     summary: Code, writing, and music.
     profile_photo: https://brian.abelson.live/assets/img/apple-touch-icon.png
+  theplayerstribune:
+    feed_url: https://www.theplayerstribune.com/feed
+    homepage_url: https://www.theplayerstribune.com
+    display_name: The Players Tribune Feed
+    summary: Updates from The Players Tribune Feed.
+  therecord_media:
+    feed_url: https://therecord.media/feed
+    homepage_url: https://therecord.media
+    display_name: The Record from Recorded Future News
+    summary: The Record by Recorded Future News gives exclusive, behind-the-scenes access to leaders, policymakers, researchers, and the shadows of the cyber underground.
+  therecount:
+    feed_url: https://www.therecount.com/feed
+    homepage_url: https://therecount.com/show/index
+    display_name: Recount Media
+    summary: Recount Media is a new approach to video about politics that won't waste your time or insult your intelligence.
+  therepublicofletters_substack:
+    feed_url: https://therepublicofletters.substack.com/feed
+    homepage_url: https://therepublicofletters.substack.com
+    display_name: The Republic of Letters
+    summary: The Republic of Letters is a hub for literary and cultural writing; and a new, genuinely democratic type of digital publication.
+  thereviewsarein_wordpress:
+    feed_url: https://thereviewsarein.wordpress.com/feed/
+    homepage_url: https://thereviewsarein.wordpress.com
+    display_name: The Reviews Are In
+    summary: Updates from The Reviews Are In.
+  therightscoop:
+    feed_url: https://therightscoop.com/feed/
+    homepage_url: https://therightscoop.com
+    display_name: The Right Scoop
+    summary: Updates from The Right Scoop.
+  theriverbend:
+    feed_url: https://theriverbend.co.uk/feed/
+    homepage_url: https://theriverbend.co.uk
+    display_name: River Bend
+    summary: Fish it properly.
+  therussiansusedapencil:
+    feed_url: https://therussiansusedapencil.com/rss
+    homepage_url: https://therussiansusedapencil.com
+    display_name: The Russians Used a Pencil
+    summary: 'var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src=''" + gaJsHost + "google-analytics.com/ga.js'' type=''text/javascript''%3E%3C/script%3E")); try { var pageTracker = _gat._getTracker("UA-2660607-10"); pageTracker._trackPageview(); } catch(err) {}'
+  thesash_me:
+    feed_url: https://thesash.me/posts.atom
+    homepage_url: https://thesash.me
+    display_name: Sash!
+    summary: Updates from Sash!.
+  thesixthaxis:
+    feed_url: https://www.thesixthaxis.com/feed/
+    homepage_url: https://www.thesixthaxis.com
+    display_name: TheSixthAxis
+    summary: Video Gaming News & Reviews
+  thesmokinggun:
+    feed_url: http://www.thesmokinggun.com/rss
+    homepage_url: https://www.thesmokinggun.com/documents
+    display_name: The Smoking Gun RSS
+    summary: Updates from The Smoking Gun RSS.
+  thespaces:
+    feed_url: https://thespaces.com/feed/
+    homepage_url: https://thespaces.com
+    display_name: The Spaces
+    summary: A digital magazine exploring new ways to live and work. Architecture, property + art
+  thestarwarstrilogy:
+    feed_url: https://www.thestarwarstrilogy.com/feed/
+    homepage_url: https://www.thestarwarstrilogy.com
+    display_name: The Star Wars Trilogy
+    summary: A Digital Star Wars Scrap book.
+  thetab:
+    feed_url: https://thetab.com/feed
+    homepage_url: https://thetab.com
+    display_name: The Tab
+    summary: Stories you care about
+  thetech:
+    feed_url: https://thetech.com/feed
+    homepage_url: https://thetech.com
+    display_name: The MIT Tech
+    summary: MIT's oldest and largest newspaper, providing MIT faculty, staff, and students with continuous news service since 1881.
+  thetechblock:
+    feed_url: https://thetechblock.com/feed/
+    homepage_url: https://thetechblock.com
+    display_name: The Tech Block
+    summary: tech tips from tim the techie
+  thetinylife:
+    feed_url: https://thetinylife.com/feed/
+    homepage_url: https://thetinylife.com
+    display_name: The Tiny LIfe
+    summary: Updates from The Tiny LIfe.
+  thetrek_co:
+    feed_url: https://thetrek.co/feed/
+    homepage_url: https://thetrek.co
+    display_name: The Trek
+    summary: Appalachian Trail, Pacific Crest Trail, and All Things Thru-Hiking
+  theurbandaily:
+    feed_url: https://theurbandaily.com/feed/
+    homepage_url: https://theurbandaily.com
+    display_name: The Urban Daily
+    summary: Black Music, Movies, Urban Lifestyle, Celebrity News, and Hip-Hop and R&B News.
+  thewalrus_ca:
+    feed_url: https://thewalrus.ca/feed/
+    homepage_url: https://thewalrus.ca
+    display_name: The Walrus
+    summary: Fact-based journalism that sparks the Canadian conversation
+  thewhitepages:
+    feed_url: https://thewhitepages.net/feed
+    homepage_url: https://thewhitepages.net
+    display_name: The White Pages
+    summary: What if we could build something better?
+  thewoksoflife:
+    feed_url: https://thewoksoflife.com/feed/
+    homepage_url: https://thewoksoflife.com
+    display_name: The Woks of Life
+    summary: a culinary genealogy
+  theybf:
+    feed_url: https://theybf.com/feed/
+    homepage_url: https://theybf.com
+    display_name: The YBF
+    summary: Celebrity News Never Looked So Good. | The Young, Black and Fabulous®
+  theyearofmud:
+    feed_url: https://theyearofmud.com/feed/
+    homepage_url: https://theyearofmud.com
+    display_name: The Year of Mud
+    summary: Your Natural Building Journey Starts Here
+  thirtybees:
+    feed_url: https://thirtybees.com/feed/
+    homepage_url: https://thirtybees.com
+    display_name: thirty bees
+    summary: thirty bees e-commerce platform
+  thisanimatedlife_blogspot:
+    feed_url: https://thisanimatedlife.blogspot.com/feeds/posts/default
+    homepage_url: https://thisanimatedlife.blogspot.com
+    display_name: This Animated Life
+    summary: Updates from This Animated Life.
+  thisisadynasty_tumblr:
+    feed_url: https://thisisadynasty.tumblr.com/rss
+    homepage_url: https://thisisadynasty.tumblr.com
+    display_name: KASKADE
+    summary: THIS IS A DYNASTY
+  thisismoney:
+    feed_url: https://www.dailymail.com/money/index.rss
+    homepage_url: https://www.thisismoney.co.uk/money/index.html
+    display_name: Money | Mail Online
+    summary: Your complete guide to personal finance and investing with news, predictions, advice, guides and opinion from the financial website of the year.
+  thisoldcity:
+    feed_url: https://thisoldcity.com/feed/
+    homepage_url: https://thisoldcity.com
+    display_name: This Old City
+    summary: 'Building Wealth through Real Estate: Your Path to Investment Success'
+  thokamaer:
+    feed_url: https://thokamaer.com/rss
+    homepage_url: https://thokamaer.com
+    display_name: thokamaer
+    summary: thokamaer
+  thomashawk:
+    feed_url: https://thomashawk.com/feed
+    homepage_url: https://thomashawk.com
+    display_name: Thomas Hawk Digital Connection
+    summary: Updates from Thomas Hawk Digital Connection.
+  thomashunter_name:
+    feed_url: https://thomashunter.name/feed.rss
+    homepage_url: https://thomashunter.name
+    display_name: Thomas Hunter II
+    summary: I came here to kick ass, build web applications, and chew bubble gum. And I'm all out of gum.
+  thomaslarock:
+    feed_url: https://thomaslarock.com/feed.xml
+    homepage_url: https://thomaslarock.com
+    display_name: Thomas LaRock
+    summary: Updates from Thomas LaRock.
+  thomaspark_co:
+    feed_url: https://thomaspark.co/feed/
+    homepage_url: https://thomaspark.co
+    display_name: Thomas Park
+    summary: On web development, interface design, user research, and all the rest
+  thorstenball:
+    feed_url: https://thorstenball.com/atom.xml
+    homepage_url: https://thorstenball.com
+    display_name: Thorsten Ball
+    summary: Updates from Thorsten Ball.
+  thoughtfuleng_substack:
+    feed_url: https://thoughtfuleng.substack.com/feed
+    homepage_url: https://thoughtfuleng.substack.com
+    display_name: Thoughtful Engineering
+    summary: (Responsibly) contrarian takes on modern software engineering.
+  mattandrews_info:
+    feed_url: https://mattandrews.info/posts.xml
+    homepage_url: https://mattandrews.info
+    display_name: Matt Andrews | Threechords
+    summary: Updates from Matt Andrews | Threechords.
+  threerings_org_uk:
+    feed_url: https://threerings.org.uk/feed/
+    homepage_url: https://threerings.org.uk
+    display_name: Three Rings
+    summary: Updates from Three Rings.
+  through_voidness_blogspot:
+    feed_url: https://through-voidness.blogspot.com/feeds/posts/default
+    homepage_url: https://through-voidness.blogspot.com
+    display_name: Through Voidness
+    summary: Updates from Through Voidness.
+  thume_ca:
+    feed_url: https://thume.ca/atom.xml
+    homepage_url: https://thume.ca
+    display_name: Tristan Hume
+    summary: Updates from Tristan Hume.
+  thunderboltlabs:
+    feed_url: https://www.thunderboltlabs.com/feed.xml
+    homepage_url: https://www.thunderboltlabs.com
+    display_name: thunderboltlabs.com
+    summary: Updates from thunderboltlabs.com.
+  thurrott:
+    feed_url: https://www.thurrott.com/blog/feed
+    homepage_url: https://www.thurrott.com/blog
+    display_name: Blog - Thurrott.com
+    summary: Updates from Blog - Thurrott.com.
+  tia_mat_br:
+    feed_url: https://tia.mat.br/posts/rss.xml
+    homepage_url: https://tia.mat.br
+    display_name: L. Pereira
+    summary: Updates from L. Pereira.
+  tiamat_tsotech:
+    feed_url: https://tiamat.tsotech.com/tiamat.rss
+    homepage_url: http://tiamat.tsotech.com
+    display_name: Tiamat
+    summary: Tiamat is rants from Brian Hauer.
+  tidalcycles:
+    feed_url: https://tidalcycles.org/blog/rss.xml
+    homepage_url: https://tidalcycles.org/blog
+    display_name: Tidal Cycles Blog
+    summary: Tidal Cycles Blog
+  til_codeinthehole:
+    feed_url: https://til.codeinthehole.com/posts/index.xml
+    homepage_url: https://til.codeinthehole.com/posts
+    display_name: David Winterbottom's TILs
+    summary: All TILs - David Winterbottom
+  tilde_club__mathowie:
+    feed_url: https://tilde.club/~mathowie/files/feed.xml
+    homepage_url: http://tilde.club/~mathowie/index.html
+    display_name: ~mathowie blog feed
+    summary: updates from the mathowie tildeverse
+  tilvim:
+    feed_url: https://tilvim.com/files/feed.xml
+    homepage_url: http://www.tilvim.com
+    display_name: 'Today I learned: Vim'
+    summary: A blog documenting things I learn about Vim, on a (mostly) daily basis
+  time_is:
+    feed_url: https://rss.time.is/time_zone_news.rss
+    homepage_url: https://time.is/time_zone_news
+    display_name: Time Zone News from Time.is
+    summary: Brief news related to time zones
+  timely:
+    feed_url: https://www.timely.com/blog/rss.xml
+    homepage_url: https://www.timely.com
+    display_name: Timely Blog
+    summary: Insights on time tracking, productivity, project management, and building better work habits from the Timely team.
   robbie_lyman:
     feed_url: https://www.robbielyman.com/blog/index.xml
     homepage_url: https://www.robbielyman.com/
