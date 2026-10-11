@@ -1242,252 +1242,255 @@ bots:
     feed_url: https://www.bustle.com/rss
     homepage_url: https://www.bustle.com
     display_name: Bustle
-    summary: Bustle is for and by women who are moving forward as fast as you are.
-  comicbook:
+    summary: Entertainment, fashion, beauty, relationships, lifestyle, and shopping articles from Bustle.
+    profile_photo: https://cdn2.bustle.com/2026/bustle/icon-7a15f9b79b.png
+  comicbook_com:
     feed_url: https://comicbook.com/feed/
     homepage_url: https://comicbook.com
     display_name: ComicBook.com
-    summary: Comic Book Movies, News, & Digital Comic Books
-  cultofmac:
+    summary: News, reviews, and features about comics, movies, television, anime, and video games.
+    profile_photo: https://comicbook.com/wp-content/uploads/sites/4/2024/10/cropped-ComicBook-icon_808e20.png?w=180
+  cult_of_mac:
     feed_url: https://www.cultofmac.com/feed
     homepage_url: https://www.cultofmac.com
     display_name: Cult of Mac
-    summary: Your source for the latest Apple news, rumors, analysis, reviews, how-tos and deals.
-  elle:
+    summary: Apple news, rumors, analysis, reviews, how-to guides, history, and deals.
+    profile_photo: https://www.cultofmac.com/wp-content/uploads/2026/06/cultofmac-site-icon-192.png
+  elle_culture:
     feed_url: https://www.elle.com/rss/culture.xml
     homepage_url: https://www.elle.com/culture
-    display_name: Culture - ELLE
-    summary: RSS feed for Culture - ELLE
-  ethanmarcotte:
+    display_name: ELLE Culture
+    summary: 'ELLE''s culture coverage: celebrity news, entertainment, film, television, and interviews.'
+    profile_photo: https://www.elle.com/_assets/design-tokens/elle/static/images/apple-touch-icon.0dd915e.png
+  ethan_marcotte:
     feed_url: https://ethanmarcotte.com/wrote/feed.xml
-    homepage_url: https://ethanmarcotte.com
-    display_name: My journal — Ethan Marcotte’s website
-    summary: Updates from My journal — Ethan Marcotte’s website.
+    homepage_url: https://ethanmarcotte.com/wrote/
+    display_name: Ethan Marcotte
+    summary: Ethan Marcotte's journal about design, labor, technology, writing, and personal life.
+    profile_photo: https://ethanmarcotte.com/ico/apple-touch-icon.png
   eurogamer:
     feed_url: https://www.eurogamer.net/feed
     homepage_url: https://www.eurogamer.net
-    display_name: Eurogamer.net Latest Articles Feed
-    summary: This is a feed of the latest articles from Eurogamer.net.
-  funnyordie:
+    display_name: Eurogamer
+    summary: Video game news, reviews, features, and guides from Eurogamer.
+    profile_photo: https://www.eurogamer.net/static/5081ecad53d4fd5d2c4079bfdd51977a/icon/apple-touch-icon-152x152.png
+  funny_or_die:
     feed_url: https://funnyordie.com/feed/
     homepage_url: https://funnyordie.com
-    display_name: Page 182762 – Funny Or Die
-    summary: We love to make you laugh.
+    display_name: Funny Or Die
+    summary: Comedy, entertainment commentary, and humorous articles about film, television, and pop culture.
+    profile_photo: https://i0.wp.com/fod-wp-media-library.s3-accelerate.amazonaws.com/2021/07/cropped-fod_icon120.png?fit=180%2C180&ssl=1
   hodinkee:
     feed_url: https://www.hodinkee.com/articles/rss.xml
     homepage_url: https://www.hodinkee.com
     display_name: Hodinkee
-    summary: Updates from Hodinkee.
+    summary: Wristwatch news, reviews, collecting, watch-industry reporting, and original stories.
+    profile_photo: https://www.hodinkee.com/apple-touch-icon.png
   ilya_grigorik:
     feed_url: https://ilya.grigorik.com/essays/rss/
     homepage_url: https://ilya.grigorik.com
     display_name: Ilya Grigorik
-    summary: Distinguished Engineer and Technical Advisor to the CEO at Shopify, on a mission to make commerce better for everyone.
+    summary: 'Ilya Grigorik''s essays on engineering leadership, meetings, decisions, and teamwork. Latest feed post: August 2024; this is his newer essays feed, not the older igvita.com technical archive.'
+    profile_photo: https://ilya.grigorik.com/favicon.png
   inverse:
     feed_url: https://www.inverse.com/rss
     homepage_url: https://www.inverse.com
     display_name: Inverse
-    summary: 'Inverse covers the latest news on science, innovation, entertainment, technology and culture by asking: What could happen next?'
-  newatlas:
+    summary: Entertainment, gaming, science, technology, and innovation coverage, alongside shopping and product recommendations.
+    profile_photo: https://cdn2.bustle.com/2026/inverse/icon-d6bd40bd58.png
+  new_atlas:
     feed_url: https://newatlas.com/index.rss
     homepage_url: https://newatlas.com
-    display_name: 'New Atlas: Technology-Innovation-Outdoor News'
-    summary: Extraordinary ideas and innovations moving the world forward.
-  openculture:
+    display_name: New Atlas
+    summary: Science, technology, engineering, transport, outdoor equipment, and new inventions from New Atlas.
+    profile_photo: https://newatlas.com/apple-touch-icon.png
+  open_culture:
     feed_url: https://www.openculture.com/feed
     homepage_url: https://www.openculture.com
     display_name: Open Culture
-    summary: The best free cultural & educational media on the web
-  pastemagazine:
+    summary: Articles and curated links about art, literature, music, film, history, and free cultural and educational resources.
+    profile_photo: https://www.openculture.com/wp-content/themes/openculture_v4a/images/apple_icon_new.png
+  paste_magazine:
     feed_url: https://www.pastemagazine.com/rss.xml
     homepage_url: https://www.pastemagazine.com
     display_name: Paste Magazine
-    summary: Paste Magazine is your source for the best music, movies, TV, comedy, videogames, books and culture.
-  teenvogue:
+    summary: Music, film, television, comedy, games, books, and culture news, criticism, and features.
+    profile_photo: https://www.pastemagazine.com/wp-content/themes/pastemagazine/img/mobile-icon-196.png
+  teen_vogue:
     feed_url: https://www.teenvogue.com/feed/rss
     homepage_url: https://www.teenvogue.com
     display_name: Teen Vogue
-    summary: The latest from www.teenvogue.com
-  theweek:
-    feed_url: https://theweek.com/feeds.xml
-    homepage_url: https://theweek.com
-    display_name: TheWeek feed
-    summary: Updates from TheWeek feed.
-  alicja_dev:
+    summary: Fashion, beauty, entertainment, culture, and issues affecting young people from Teen Vogue.
+  alicja_laszuk:
     feed_url: https://alicja.dev/feed.xml
     homepage_url: https://alicja.dev
-    display_name: Alicja’s thoughts
-    summary: Updates from Alicja’s thoughts.
+    display_name: Alicja Laszuk
+    summary: 'Alicja Laszuk''s archived notes on programming, learning, languages, writing, and creative projects. Latest feed post: August 2019.'
+    profile_photo: https://avatars.githubusercontent.com/trueskawka?s=200
   usenix:
     feed_url: https://www.usenix.org/rss.xml
     homepage_url: https://www.usenix.org/frontpage
-    display_name: USENIX - The Advanced Computing Systems Association
-    summary: Updates from USENIX - The Advanced Computing Systems Association.
-  werd:
+    display_name: USENIX — Front Page
+    summary: 'USENIX''s front-page feed of conference entries and computing-research bibliography records. Latest feed entry: March 2025.'
+  ben_werdmuller:
     feed_url: https://werd.io/rss/
     homepage_url: https://werd.io
     display_name: Ben Werdmuller
-    summary: Writing at the intersection of technology, journalism, and community.
-  alexbaldwin:
+    summary: Ben Werdmuller's essays, links, and personal reflections on technology, journalism, society, and community.
+    profile_photo: https://storage.ghost.io/c/18/7c/187cc681-d3f3-49fc-87de-b01d06b76821/content/images/size/w256h256/format/png/2025/06/thumb.webp
+  alex_baldwin:
     feed_url: https://www.alexbaldwin.com/feed.xml
     homepage_url: https://www.alexbaldwin.com
     display_name: Alex Baldwin
-    summary: Designer, developer, and entrepreneur sharing thoughts on product design, technology, and startup culture.
-  news_wirefly:
-    feed_url: https://news.wirefly.com/rss.xml
-    homepage_url: https://news.wirefly.com
-    display_name: News.Wirefly
-    summary: PhoneDog.com - Latest videos, reviews, articles, news and posts
-  bensweedler:
+    summary: 'Alex Baldwin''s archived writing on product design, CSS, technology, and startup outreach. Latest feed post: September 2017.'
+    profile_photo: https://www.alexbaldwin.com/apple-touch-icon.png
+  benjamin_sweedler:
     feed_url: https://www.bensweedler.com/feed/
     homepage_url: https://www.bensweedler.com
     display_name: Benjamin Sweedler
-    summary: Updates from Benjamin Sweedler.
-  cdixon:
-    feed_url: https://cdixon.org/rss.xml
-    homepage_url: https://cdixon.org
-    display_name: cdixon
-    summary: programming, philosophy, history, internet, startups
-  dev_to:
+    summary: 'Benjamin Sweedler''s personal writing, software projects, music arrangements, and yearly reflections. Latest feed post: January 2024.'
+  dev_community:
     feed_url: https://dev.to/feed
     homepage_url: https://dev.to
     display_name: DEV Community
-    summary: The most recent home feed on DEV Community.
-  devcenter_heroku:
+    summary: Recent community-authored software-development tutorials, project posts, career discussions, and product promotions from DEV Community.
+    profile_photo: https://media2.dev.to/dynamic/image/width=180,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png
+  heroku_dev_center_articles:
     feed_url: https://devcenter.heroku.com/articles/feed
     homepage_url: https://devcenter.heroku.com
     display_name: Heroku Dev Center Articles
-    summary: Updates from Heroku Dev Center Articles.
-  developer_mozilla:
+    summary: Recently published Heroku Dev Center documentation on deploying, managing, and operating applications and data services.
+    profile_photo: https://www.herokucdn.com/favicons/apple-touch-icon.png
+  mdn_blog:
     feed_url: https://developer.mozilla.org/en-US/blog/rss.xml
     homepage_url: https://developer.mozilla.org/en-US/blog
     display_name: MDN Blog
-    summary: The MDN Web Docs blog publishes articles about web development, open source software, web platform updates, tutorials, changes and updates to MDN, and more.
+    summary: MDN Web Docs articles on web development, browser technologies, tutorials, and updates to MDN.
+    profile_photo: https://developer.mozilla.org/apple-touch-icon.png
   dpreview:
     feed_url: https://www.dpreview.com/feed/
     homepage_url: https://www.dpreview.com
     display_name: DPReview
-    summary: Photography News, Gear Reviews & Community
-  freedom_press:
+    summary: Photography news, camera and lens reviews, gear guides, and photographic techniques from Digital Photography Review.
+    profile_photo: https://www.dpreview.com/wp-content/themes/dpreview/dist/images/favicon-180x180.png
+  freedom_of_the_press_foundation:
     feed_url: https://freedom.press/issues/feed/
-    homepage_url: http://freedom.press/issues
-    display_name: The Latest
-    summary: Updates from The Latest.
-  about_gitlab:
-    feed_url: https://docs.gitlab.com/releases/releases.xml
-    homepage_url: https://about.gitlab.com
-    display_name: GitLab Monthly Releases
-    summary: Updates from GitLab Monthly Releases.
-  hanselman:
-    feed_url: http://feeds.hanselman.com/ScottHanselman
+    homepage_url: https://freedom.press/issues/
+    display_name: Freedom of the Press Foundation
+    summary: Reporting, analysis, and advocacy on press freedom, journalists' rights, surveillance, and government accountability.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Ffreedom.press%2Fissues&size=128
+  scott_hanselman:
+    feed_url: https://www.hanselman.com/blog/feed/rss
     homepage_url: https://www.hanselman.com/blog
-    display_name: Scott Hanselman's Blog
-    summary: Scott Hanselman on Programming, User Experience, The Zen of Computers and Life in General
+    display_name: Scott Hanselman
+    summary: Scott Hanselman's writing about programming, open source, .NET, cloud computing, homelabs, and everyday life.
+    profile_photo: https://images.hanselman.com/main/apple-touch-icon.png
   indiewire:
     feed_url: https://www.indiewire.com/feed/
     homepage_url: https://www.indiewire.com
     display_name: IndieWire
-    summary: The Voice of Creative Independence
-  japantimes_co_jp:
+    summary: Film and television news, reviews, interviews, awards coverage, and entertainment-industry reporting.
+    profile_photo: https://www.indiewire.com/wp-content/uploads/2018/04/cropped-iw_favicon.png?w=180
+  the_japan_times:
     feed_url: https://www.japantimes.co.jp/feed/
     homepage_url: https://www.japantimes.co.jp
-    display_name: Latest articles - The Japan Times
-    summary: News on Japan, Business News, Opinion, Sports, Entertainment and More
+    display_name: The Japan Times
+    summary: English-language reporting on Japan and world news, business, politics, culture, sports, and life in Japan.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.japantimes.co.jp&size=128
   longform:
     feed_url: https://longform.org/feed.rss
     homepage_url: https://longform.org
     display_name: Longform
-    summary: The best non-fiction, past and present.
+    summary: Archive of Longform's nonfiction recommendations and interviews with writers. Article curation ended December 2022; the podcast ended June 2024.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flongform.org&size=128
   makeuseof:
     feed_url: https://www.makeuseof.com/feed/
     homepage_url: https://www.makeuseof.com
     display_name: MakeUseOf
-    summary: MUO is your guide to modern tech. Learn how to make use of the tech and gadgets around you, and discover cool stuff on the internet.
-  makezine:
+    summary: Consumer-technology tutorials, software tips, gadget reviews, and practical computing advice from MakeUseOf.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.makeuseof.com&size=128
+  make_magazine:
     feed_url: https://makezine.com/feed/
     homepage_url: https://makezine.com
-    display_name: 'Make: DIY Projects and Ideas for Makers'
-    summary: 'Updates from Make: DIY Projects and Ideas for Makers.'
-  mymodernmet:
-    feed_url: https://mymodernmet.com/feed/
-    homepage_url: https://mymodernmet.com
-    display_name: My Modern Met
-    summary: The Big City That Celebrates Creative Ideas
-  myntcondition_tumblr:
+    display_name: 'Make:'
+    summary: 'DIY projects, electronics, digital fabrication, tools, and maker-community news from Make: magazine.'
+    profile_photo: https://makezine.com/apple-touch-icon.png
+  mynt_condition:
     feed_url: https://myntcondition.tumblr.com/rss
-    homepage_url: https://myntcondition.tumblr.com
+    homepage_url: https://www.tumblr.com/myntcondition
     display_name: Mynt Condition
-    summary: Draw. Every. Day.
-  nbcnewyork:
+    summary: 'Nick Trujillo''s Mynt Condition archive of digital art, illustration, sketches, and personal artwork. Latest feed post: July 2018.'
+    profile_photo: https://api.tumblr.com/v2/blog/myntcondition.tumblr.com/avatar/128
+  nbc_new_york:
     feed_url: https://www.nbcnewyork.com/?rss=y
     homepage_url: https://www.nbcnewyork.com
     display_name: NBC New York
-    summary: Updates from NBC New York.
-  opensource_googleblog:
+    summary: New York and New Jersey local news and weather, alongside national and international reporting from NBC New York.
+    profile_photo: https://media.nbcnewyork.com/2019/09/cropped-NBC_New-York-1.png?fit=180%2C180&quality=85&strip=all
+  google_open_source_blog:
     feed_url: https://opensource.googleblog.com/feeds/posts/default
     homepage_url: https://opensource.googleblog.com
     display_name: Google Open Source Blog
-    summary: Updates from Google Open Source Blog.
-  osxdaily:
+    summary: Official news about Google's open-source projects, developer tools, community programs, and contributions.
+  os_x_daily:
     feed_url: https://osxdaily.com/feed/
     homepage_url: https://osxdaily.com
     display_name: OS X Daily
-    summary: News, tips, tricks, apps, and more for Mac, iPhone, iPad, and the entire Apple ecosystem
-  papermag:
+    summary: Mac, iPhone, and iPad news, troubleshooting, software tips, applications, and deals.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fosxdaily.com&size=128
+  paper_magazine:
     feed_url: https://www.papermag.com/feeds/feed.rss
     homepage_url: https://www.papermag.com
     display_name: PAPER Magazine
-    summary: PAPER Magazine
+    summary: Music, fashion, art, nightlife, entertainment, internet culture, and LGBTQ coverage from PAPER, including Spanish-language articles.
+    profile_photo: https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xNzQ1MDY2MC8yMDAweC5wbmciLCJleHBpcmVzX2F0IjoxODUxMDU3MTg0fQ.FN4D_pbYvIRORfjuMuZ4-NWhC2oN2BLeYzDXP5DU3AE/img.png?width=192&height=192
   politifact:
     feed_url: https://politifact.com/feed/
     homepage_url: https://politifact.com
     display_name: PolitiFact
-    summary: Updates from PolitiFact.
-  popularmechanics:
-    feed_url: https://www.popularmechanics.com/rss/all.xml/
-    homepage_url: https://www.popularmechanics.com
-    display_name: Latest Content - Popular Mechanics
-    summary: RSS feed for Latest Content - Popular Mechanics
-  actblue:
-    feed_url: https://www.actblue.com/feed/
-    homepage_url: https://www.actblue.com
-    display_name: ActBlue
-    summary: Elevate Your Fundraising - Create Campaigns for Political Offices, Charities & Nonprofits
-  smashingmagazine:
+    summary: Fact-checks and reporting on political claims, public statements, and misinformation.
+    profile_photo: https://politifact.com/wp-content/uploads/2026/07/cropped-favicon-180x180.png
+  smashing_magazine:
     feed_url: https://www.smashingmagazine.com/feed/
     homepage_url: https://www.smashingmagazine.com
-    display_name: Articles on Smashing Magazine — For Web Designers And Developers
-    summary: Recent content in Articles on Smashing Magazine — For Web Designers And Developers
-  status_cloud_google:
+    display_name: Smashing Magazine
+    summary: Web design and development articles on CSS, JavaScript, accessibility, frontend engineering, and user experience, plus design resources.
+    profile_photo: https://www.smashingmagazine.com/images/favicon/apple-touch-icon.png
+  google_cloud_status:
     feed_url: https://status.cloud.google.com/en/feed.atom
     homepage_url: https://status.cloud.google.com
-    display_name: Google Cloud Service Health Updates
-    summary: Updates from Google Cloud Service Health Updates.
+    display_name: Google Cloud Service Health
+    summary: Official Google Cloud service incident reports, disruption updates, and resolution notices.
+    profile_photo: https://status.cloud.google.com/images/google-cloud-favicon.png
   technical_ly:
     feed_url: https://technical.ly/rss/
     homepage_url: https://technical.ly
     display_name: Technical.ly
-    summary: REPORTED BY HUMANS SINCE 2009
-  themarysue:
+    summary: Reporting on local technology communities, startups, entrepreneurship, civic issues, and economic development, including sponsored articles.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftechnical.ly&size=128
+  the_mary_sue:
     feed_url: https://www.themarysue.com/feed/
     homepage_url: https://www.themarysue.com
     display_name: The Mary Sue
-    summary: The Nexus of Pop Culture and the Uncharted Universe
-  travelsmake_tumblr:
+    summary: Pop-culture, film, television, gaming, social issues, and viral internet-story coverage from The Mary Sue.
+    profile_photo: https://www.themarysue.com/wp-content/uploads/2022/11/cropped-tms-icon-square.png?fit=180%2C180
+  travelsmake:
     feed_url: https://travelsmake.tumblr.com/rss
-    homepage_url: https://travelsmake.tumblr.com
+    homepage_url: https://www.tumblr.com/travelsmake
     display_name: Travelsmake
-    summary: Updates from Travelsmake.
-  waitbutwhy:
+    summary: 'Archived personal travel essays, photographs, and reflections from a round-the-world journey. Latest feed post: November 2015.'
+    profile_photo: https://api.tumblr.com/v2/blog/travelsmake.tumblr.com/avatar/128
+  wait_but_why:
     feed_url: https://waitbutwhy.com/feed
     homepage_url: https://waitbutwhy.com
     display_name: Wait But Why
-    summary: Updates from Wait But Why.
-  wiki_xxiivv:
+    summary: 'Tim Urban''s illustrated long-form essays on technology, society, psychology, travel, and personal life. Latest feed post: November 2025.'
+  xxiivv:
     feed_url: https://wiki.xxiivv.com/links/img.xml
-    homepage_url: https://wiki.xxiivv.com
-    display_name: XXIIVV
-    summary: Journal Images
+    homepage_url: https://wiki.xxiivv.com/site/journal.html
+    display_name: XXIIVV — Journal Images
+    summary: 'Devine Lu Linvega''s visual journal: images, drawings, and artwork from the XXIIVV wiki. This is the image feed, not the separate text-log feed.'
+    profile_photo: https://wiki.xxiivv.com/media/services/icon.png
   danluu:
     feed_url: https://danluu.com/atom.xml
     homepage_url: https://danluu.com
