@@ -18413,256 +18413,274 @@ bots:
     profile_photo: https://en.wikipedia.org/static/apple-touch/wikipedia.png
     default_hashtags:
       - Wikipedia
-  news_xbox:
+  xbox_wire:
     feed_url: https://news.xbox.com/en-us/feed/
     homepage_url: https://news.xbox.com/en-us
     display_name: XBOX Wire
-    summary: Your source for news, information, product releases, events, sports, entertainment & exclusive content relating to Xbox
+    summary: Official Xbox news, game announcements, product updates, and developer features from XBOX Wire.
+    profile_photo: https://xboxwire.thesourcemediaassets.com/sites/2/2019/12/Nexus_GRN_on_WHT2.png
   newsbusters:
     feed_url: https://www.newsbusters.org/blog/feed
     homepage_url: https://www.newsbusters.org
-    display_name: Newsbusters - Welcome to NewsBusters, a project of the Media Research Center (MRC), America’s leadin
-    summary: Updates from Newsbusters - Welcome to NewsBusters, a project of the Media Research Center (MRC), America’s leading media watchdog in documenting, exposing.
-  newsmap_jp:
-    feed_url: https://newsmap.jp/feed/
-    homepage_url: https://newsmap.jp
-    display_name: ニュースマップカジノ
-    summary: ランドカジノの最新ニュースをお届けします。
-  cuimc_columbia_edu:
+    display_name: NewsBusters
+    summary: Conservative media criticism and political commentary from NewsBusters, a project of the Media Research Center.
+    profile_photo: https://www.newsbusters.org/themes/custom/bootstrap_custom/images/nbfavicon.png
+  columbia_university_irving_medical_center:
     feed_url: https://www.cuimc.columbia.edu/rss.xml
     homepage_url: https://www.cuimc.columbia.edu
     display_name: Columbia University Irving Medical Center
-    summary: Updates from Columbia University Irving Medical Center.
+    summary: Archived Columbia University Irving Medical Center news feed, currently containing one March 2019 article about aortic-stenosis treatment.
+    profile_photo: https://www.cuimc.columbia.edu/apple-touch-icon.png
   nextbigwhat:
     feed_url: https://nextbigwhat.com/feed/
     homepage_url: https://nextbigwhat.com
-    display_name: nextbigwhat
-    summary: we heart startups
+    display_name: NextBigWhat
+    summary: AI tools, startup products, business ideas, market research, and curated technology commentary from NextBigWhat.
+    profile_photo: https://i0.wp.com/nextbigwhat.com/wp-content/uploads/2024/02/18ec0-cropped-nbw-icon-2022.png?fit=180%2C180&ssl=1
   nextdraft:
     feed_url: https://nextdraft.com/archives/feed/
     homepage_url: https://nextdraft.com
-    display_name: 'NextDraft: The Day''s Most Fascinating News'
-    summary: Real News Daily by Dave Pell, Managing Editor, Internet
-  nextplatform:
+    display_name: NextDraft
+    summary: Dave Pell's daily selection of news stories, with commentary on politics, technology, culture, and current events.
+    profile_photo: https://nextdraft.com/wp-content/themes/nextdraft-2024/images/favicons/apple-icon-200.png
+  the_next_platform:
     feed_url: https://www.nextplatform.com/?lab_viewport=rss
     homepage_url: https://www.nextplatform.com
-    display_name: 'The Next Platform: In-depth coverage of high end computing'
-    summary: 'Articles from The Next Platform: In-depth coverage of high end computing'
-  ngrok:
+    display_name: The Next Platform
+    summary: Reporting and analysis on high-end computing, AI infrastructure, servers, storage, networking, supercomputing, and cloud datacenters.
+    profile_photo: https://www.nextplatform.com/view-resources/dachser2/public/nextplatform/favicons/apple-touch-icon.png
+  ngrok_news:
     feed_url: https://ngrok.com/blog/rss.xml
     homepage_url: https://ngrok.com/blog
-    display_name: '[ngrok news]'
-    summary: ngrok is a globally distributed reverse proxy that secures, protects and accelerates your applications and network services, no matter where you run them.
-  nhpr:
+    display_name: ngrok Blog
+    summary: Product updates, engineering articles, and tutorials from ngrok on networking, APIs, application gateways, and developer tools.
+    profile_photo: https://ngrok.com/assets/apple-touch-icon.png
+  new_hampshire_public_radio:
     feed_url: https://www.nhpr.org/latest-from-nhpr-rss.rss
     homepage_url: https://www.nhpr.org
-    display_name: Latest from NHPR RSS
-    summary: Latest from NHPR RSS
-  nicchan_me:
+    display_name: New Hampshire Public Radio
+    summary: New Hampshire Public Radio's local news, reporting, programs, and community features.
+    profile_photo: https://www.nhpr.org/apple-touch-icon.png
+  nic_chan:
     feed_url: https://nicchan.me/feed.xml
     homepage_url: https://www.nicchan.me
     display_name: Nic Chan
-    summary: Updates from Nic Chan.
-  niccrane:
+    summary: Nic Chan's writing on frontend development, accessibility, design systems, Shopify, and personal life.
+  nic_crane:
     feed_url: https://niccrane.com/blog.xml
     homepage_url: https://niccrane.com/blog.html
     display_name: Nic Crane
-    summary: Updates from Nic Crane.
-  nickbentleygames_wordpress:
+    summary: Nic Crane's articles on R, Apache Arrow, data engineering, open source, and AI-assisted development.
+    profile_photo: https://niccrane.com/niccrane.png
+  nick_bentley_games:
     feed_url: https://nickbentleygames.wordpress.com/feed/
     homepage_url: https://nickbentleygames.wordpress.com
     display_name: Nick Bentley Games
-    summary: perfectly simple games
-  nickoneill:
+    summary: 'Nick Bentley''s archived writing on board-game design, abstract strategy games, and his game inventions. Latest feed post: June 2018.'
+  nick_oneill:
     feed_url: https://www.nickoneill.com/feed.xml
     homepage_url: https://www.nickoneill.com
     display_name: Nick O'Neill
-    summary: Nick O'Neill's personal website.
-  nickyt_co:
+    summary: 'Nick O''Neill''s archived essays on software products, entrepreneurship, leadership, and remote management. Latest feed post: April 2020.'
+  nick_taylor:
     feed_url: https://www.nickyt.co/feed.xml
     homepage_url: https://www.nickyt.co
     display_name: Nick Taylor
-    summary: Nick Taylor is a developer advocate at the intersection of AI, security, and software, building and teaching practical approaches to MCP, AI agents, Zero Trust, and developer infrastructure.
-  nicolaerusan_tumblr:
-    feed_url: https://nicolaerusan.tumblr.com/rss
-    homepage_url: https://nicolaerusan.tumblr.com
-    display_name: how to get your followers up on instagram
-    summary: Both of these sets of users have a lot at stake whenever Insta-gram’s algorithm changes, since they both use the stage to bring in revenue. Getting genuine buy instagram followers cheap 10k is very important, we don’t recommend Fa-Ke instagram followers and engagements. The service team plays an important job for every service. Especially before and after earnings, our specialist service team in our own subjects will be ready to help you every step along the method. Continue Reading
-  nicole_pizza:
+    summary: Nick Taylor's articles, videos, and interviews on open source, web development, AI, security, and developer communities.
+  nicole_he:
     feed_url: https://nicole.pizza/rss
     homepage_url: https://nicole.pizza
-    display_name: NICOLE HE'S INTERNET REALM
-    summary: NICOLE HE'S INTERNET REALM
-  niels_ole:
+    display_name: Nicole He
+    summary: Game designer Nicole He's portfolio feed, featuring games, creative-technology projects, and interactive art. Entries are not ordered chronologically.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnicole.pizza&size=128
+  niels_ole_project_blog:
     feed_url: https://niels-ole.com/feed.xml
     homepage_url: https://niels-ole.com
     display_name: Project Blog
-    summary: Focus on AI, Cloud Infrastructure, Linux, Maker Stuff
-  nielsenhayden:
+    summary: Niels-Ole's Project Blog on AI, cloud infrastructure, Linux, programming, and maker projects.
+    profile_photo: https://github.com/nielsole.png?size=200
+  making_light:
     feed_url: https://www.nielsenhayden.com/makinglight/feed/
-    homepage_url: https://www.nielsenhayden.com
-    display_name: Making Light – Making Light
-    summary: IncoRporating Electrolite
+    homepage_url: https://www.nielsenhayden.com/makinglight/
+    display_name: Making Light
+    summary: 'Teresa and Patrick Nielsen Hayden''s archived Making Light weblog on science fiction, publishing, politics, poetry, and community. Latest feed post: December 2023.'
+    profile_photo: https://i0.wp.com/www.nielsenhayden.com/wp-content/uploads/2026/08/cropped-domain_favicon.png?fit=180%2C180&quality=80&ssl=1
   nightlycoding:
     feed_url: https://nightlycoding.com/feed/
     homepage_url: https://nightlycoding.com
     display_name: NightlyCoding
-    summary: Coding in the long hours...
+    summary: NightlyCoding's restarted programming blog, currently containing one introductory Hello world post from July 2020. The earlier coding articles are not in this feed.
   nik_art:
     feed_url: https://nik.art/feed/
     homepage_url: https://nik.art
     display_name: nik.art
-    summary: I write for dreamers, doers, and unbroken optimists.
-  nikofischer:
+    summary: Niklas Goke's daily essays on personal growth, creativity, books, optimism, and everyday life.
+    profile_photo: https://i0.wp.com/nik.art/wp-content/uploads/2016/01/favicon-2016-1.png?fit=180%2C180&ssl=1
+  niko_fischer:
     feed_url: https://nikofischer.com/rss.xml
     homepage_url: https://nikofischer.com
-    display_name: NikoFischer.com
-    summary: Updates from NikoFischer.com.
-  nattoli:
-    feed_url: http://www.nattoli.net/rss/blog/nattoli
-    homepage_url: http://www.nattoli.net/blog/nattoli
-    display_name: 'nattoli.net Blog: Nattoli''s blog'
-    summary: Nattoli's blog Blog
-  nirandfar:
+    display_name: Niko Fischer
+    summary: Niko Fischer's German- and English-language writing on SEO, Drupal, Supabase, software projects, entrepreneurship, and personal development.
+    profile_photo: https://nikofischer.com/apple-touch-icon.png
+  nir_and_far:
     feed_url: https://www.nirandfar.com/feed/
     homepage_url: https://www.nirandfar.com
     display_name: Nir and Far
-    summary: Creating habits and controlling distraction
+    summary: 'Nir Eyal''s Nir and Far articles on behavioral design, habits, psychology, and distraction. Latest feed post: October 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.nirandfar.com&size=128
   nlihc:
     feed_url: https://nlihc.org/rss.xml
     homepage_url: https://nlihc.org
     display_name: National Low Income Housing Coalition
-    summary: Updates from National Low Income Housing Coalition.
-  nnix:
+    summary: Affordable-housing policy, research reports, events, and advocacy resources from the National Low Income Housing Coalition.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnlihc.org&size=128
+  nnix_com:
     feed_url: https://nnix.com/rss.xml
     homepage_url: https://nnix.com
     display_name: nnix.com
-    summary: 'novo nilbud by swamplight: coal’s short but we''ve got plenty of bog in the yard'
-  no_spec:
-    feed_url: https://no-spec.com/feed.xml
-    homepage_url: https://no-spec.com
-    display_name: no-spec
-    summary: Practical advocacy for working designers. Against spec work, against AI-as-shortcut, for fair rates, clear contracts and proof of work.
-  noahpinion_blog:
+    summary: David Emerson's personal projects, programming notes, reading, food, and other interests at nnix.com. Feed entries are not ordered chronologically.
+    profile_photo: https://nnix.com/apple-touch-icon.png
+  noahpinion:
     feed_url: https://www.noahpinion.blog/feed
     homepage_url: https://www.noahpinion.blog
     display_name: Noahpinion
-    summary: Economics and other interesting stuff
-  nocsdegree:
+    summary: Noah Smith's essays on economics, politics, technology, international affairs, and society.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!_Xky!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa242bd04-28e0-4418-8968-e96e069a8358%2Fapple-touch-icon-57x57.png
+  no_cs_degree:
     feed_url: https://www.nocsdegree.com/rss/
     homepage_url: https://www.nocsdegree.com
-    display_name: Learn to code without a CS degree
-    summary: Read 200+ interviews with self-taught and bootcamp-trained developers
-  blog_nocturnalmonkey:
+    display_name: No CS Degree
+    summary: Interviews with self-taught and bootcamp-trained developers about learning to code, finding work, and building software careers.
+    profile_photo: https://storage.ghost.io/c/06/cd/06cd2a4d-f611-4996-a33a-2853a20634c0/content/images/size/w256h256/2021/10/symbol-only.png
+  sam_hardacre:
     feed_url: https://blog.nocturnalmonkey.com/rss/
     homepage_url: https://blog.nocturnalmonkey.com
     display_name: Sam Hardacre
-    summary: Semi-coherent thoughts
-  nodejs:
+    summary: Sam Hardacre's personal writing on family, social media, drawing, running, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.nocturnalmonkey.com&size=128
+  node_js_blog:
     feed_url: https://nodejs.org/en/feed/blog.xml
-    homepage_url: https://nodejs.org/en
+    homepage_url: https://nodejs.org/en/blog
     display_name: Node.js Blog
-    summary: Updates from Node.js Blog.
-  nodesource:
+    summary: Official Node.js releases, security updates, project announcements, migration guides, and community news.
+    profile_photo: https://nodejs.org/static/images/favicons/favicon.png
+  the_nodesource_blog:
     feed_url: https://nodesource.com/blog/rss
     homepage_url: https://nodesource.com/blog
     display_name: The NodeSource Blog
-    summary: Node.js Support, Training and Consulting for the Enterprise, Worldwide
-  noidea_dog:
+    summary: NodeSource's articles and tutorials on Node.js, JavaScript, runtime upgrades, observability, and its developer tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnodesource.com%2Fblog&size=128
+  no_idea_blog:
     feed_url: https://www.noidea.dog/blog?format=rss
     homepage_url: https://www.noidea.dog/blog
-    display_name: Blog - No Idea Blog
-    summary: Posts about things.
-  nonscamera:
+    display_name: No Idea Blog
+    summary: 'Tanya Reilly''s archived No Idea Blog on staff engineering, software development, technical communities, and work. Latest feed post: January 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.noidea.dog%2Fblog&size=128
+  nons_camera:
     feed_url: https://nonscamera.com/blogs/news.atom
     homepage_url: https://nonscamera.com/blogs/news
-    display_name: NONS CAMERA - News
-    summary: Updates from NONS CAMERA - News.
+    display_name: NONS CAMERA
+    summary: 'NONS CAMERA product announcements, reviews, and sample photography for instant cameras and Hasselblad instant backs. Latest feed post: December 2024.'
+    profile_photo: https://nonscamera.com/cdn/shop/files/nons_sq_060724.png?crop=center&height=32&v=1717729220&width=32
   noodlesoft:
     feed_url: https://www.noodlesoft.com/feed/
     homepage_url: https://www.noodlesoft.com
     display_name: Noodlesoft
-    summary: Noodlesoft - Simply Useful Software
+    summary: Hazel release notes, automation tutorials, and linked reviews from Noodlesoft, maker of Mac file-organization software.
+    profile_photo: https://www.noodlesoft.com/favicon.png.pagespeed.ce.MLvWZiLaSL.png
   noozhawk:
     feed_url: https://www.noozhawk.com/feed/
     homepage_url: https://www.noozhawk.com
     display_name: Noozhawk
-    summary: The freshest news in Santa Barbara County
+    summary: Local news, sports, business, schools, arts, community stories, and opinion from Santa Barbara County's Noozhawk.
+    profile_photo: https://i0.wp.com/www.noozhawk.com/wp-content/uploads/2022/12/cropped-Noozhawk_Favicon.png?fit=180%2C180&ssl=1
   noppanit:
     feed_url: https://www.noppanit.com/feed.xml
     homepage_url: https://www.noppanit.com
     display_name: Noppanit
-    summary: My personal adventure
-  norasamaran:
+    summary: Noppanit's personal writing on programming, software projects, travel, habits, and returning to independent building.
+    profile_photo: https://www.noppanit.com/images/fav.png
+  nora_samaran:
     feed_url: https://norasamaran.com/feed/
     homepage_url: https://norasamaran.com
     display_name: Dating Tips for the Feminist Man
-    summary: Updates from Dating Tips for the Feminist Man.
-  northeastshooters:
+    summary: Nora Samaran's Dating Tips for the Feminist Man essays on nurturance culture, feminism, trauma, accountability, and community care.
+    profile_photo: https://i0.wp.com/norasamaran.com/wp-content/uploads/2017/10/cropped-puuung-couple-square-icon.jpg?fit=180%2C180&ssl=1
+  northeastshooters_forums:
     feed_url: https://www.northeastshooters.com/xen/ewr-porta/index.rss
     homepage_url: https://www.northeastshooters.com/xen
     display_name: Northeastshooters.com Forums
-    summary: Northeastshooters.com - New England's Premier Shooting forum. Discussion on firearm related issues specific to the New England area.
-  norwegianrain:
+    summary: Featured community discussions and announcements on firearms, shooting, laws, and clubs in New England.
+    profile_photo: https://www.northeastshooters.com/xen/data/assets/logo/nes_192.png
+  norwegian_rain:
     feed_url: https://norwegianrain.com/feed/
     homepage_url: https://norwegianrain.com
     display_name: Norwegian Rain
-    summary: Updates from Norwegian Rain.
-  nostarch:
+    summary: 'Norwegian Rain''s fashion, design, craftsmanship, and waterproof-outerwear stories. Latest feed post: August 2025.'
+    profile_photo: https://norwegianrain.com/wp-content/uploads/2021/01/NR_favicon_228x228.png
+  no_starch_press:
     feed_url: https://nostarch.com/rss.xml
     homepage_url: https://nostarch.com
     display_name: No Starch Press
-    summary: Updates from No Starch Press.
-  notboring_co:
+    summary: Book listings and upcoming titles from No Starch Press on programming, cybersecurity, Linux, science, and technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnostarch.com&size=128
+  not_boring:
     feed_url: https://www.notboring.co/feed
     homepage_url: https://www.notboring.co
     display_name: Not Boring by Packy McCormick
-    summary: Tech strategy, analysis, and philosophy, but not boring.
-  notemagnet_blogspot:
+    summary: Packy McCormick's Not Boring essays on technology, business strategy, startups, investing, and scientific progress.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!thcX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5ec10a31-1fa7-415a-b2ae-53a71f17baed%2Fapple-touch-icon-57x57.png
+  greg_smiths_note_magnet:
     feed_url: https://notemagnet.blogspot.com/feeds/posts/default
     homepage_url: https://notemagnet.blogspot.com
     display_name: Greg Smith's Note Magnet
-    summary: Updates from Greg Smith's Note Magnet.
-  notes_jerzygangi:
+    summary: 'Greg Smith''s archived notes on Linux, databases, music, comics, technology, and politics. Latest feed post: July 2012.'
+  jerzys_notes:
     feed_url: https://notes.jerzygangi.com/index.xml
-    homepage_url: http://notes.jerzygangi.com
+    homepage_url: https://notes.jerzygangi.com
     display_name: Jerzy's Notes
-    summary: Recent content on Jerzy's Notes
+    summary: 'Jerzy Gangi''s archived notes on Linux, programming, startups, business, and life. Latest feed post: May 2016.'
   notes_mrjon_es:
     feed_url: http://notes.mrjon.es/feeds/posts/default
     homepage_url: http://notes.mrjon.es
     display_name: notes.mrjon.es
-    summary: Updates from notes.mrjon.es.
-  notfunatparties_substack:
+    summary: 'Matt Jones''s archived notes on Arduino projects, software, algorithms, web products, and music. Latest feed post: January 2013.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fnotes.mrjon.es&size=128
+  not_fun_at_parties:
     feed_url: https://notfunatparties.substack.com/feed
     homepage_url: https://notfunatparties.substack.com
     display_name: Not Fun at Parties
-    summary: Stupid memes and ramblings about data, tech & economics. The kind of things that make the wrong kind of people's eyes glaze over.
-  notquitewrong:
-    feed_url: http://feeds.feedburner.com/systemcomic
-    homepage_url: https://www.notquitewrong.com
+    summary: 'Tom''s archived Not Fun at Parties essays and projects about data, technology, economics, and internet culture. Latest feed post: February 2024.'
+    profile_photo: https://substackcdn.com/image/fetch/$s_!XbdW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F048230d0-ed05-4fba-ba44-d5b75a2b5577%2Fapple-touch-icon-57x57.png
+  the_system:
+    feed_url: https://feeds.feedburner.com/systemcomic
+    homepage_url: https://www.systemcomic.com/
     display_name: The System
-    summary: Comics will be posted until morale improves.
-  now_lectronice:
+    summary: 'Rosscott''s archived The System webcomic, using symbol-sign characters for humor about work, technology, and everyday life. Latest feed post: April 2020.'
+    profile_photo: http://www.systemcomic.com/comics/2008/03/ross_america.jpg
+  lectronice_now:
     feed_url: https://now.lectronice.com/feed.xml
     homepage_url: https://now.lectronice.com
     display_name: 'lectronice :: now'
-    summary: 'Updates from lectronice :: now.'
+    summary: 'Archived weekly personal updates from lectronice on game design, music, conlangs, books, and creative projects. Latest feed post: August 2022.'
   circana:
     feed_url: https://www.circana.com/blog-feed.xml
-    homepage_url: https://www.circana.com/blog
+    homepage_url: https://www.circana.com/news
     display_name: Circana
-    summary: Circana
-  npf:
+    summary: Consumer behavior, retail trends, market research, and company news from Circana, formed from IRI and The NPD Group.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.circana.com%2Fblog&size=128
+  nate_finch:
     feed_url: https://npf.io/index.xml
     homepage_url: https://npf.io
-    display_name: npf.io
-    summary: Updates from npf.io.
-  nrkbeta_no:
+    display_name: Nate Finch (npf.io)
+    summary: Nate Finch's articles on Go, programming tools, code review, testing, and software development.
+    profile_photo: https://npf.io/apple-touch-icon.png
+  nrkbeta:
     feed_url: https://nrkbeta.no/feed/
     homepage_url: https://nrkbeta.no
     display_name: NRKbeta
-    summary: NRKs sandkasse for teknologi og nye medier
+    summary: Norwegian-language articles from NRKbeta on technology, digital media, and NRK's broadcasting products and development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnrkbeta.no&size=128
   fractal_kitty:
     feed_url: https://www.fractalkitty.com/rss/
     homepage_url: https://www.fractalkitty.com/
