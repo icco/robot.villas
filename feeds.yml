@@ -1322,6 +1322,256 @@ bots:
     homepage_url: https://iafisher.com/
     display_name: iafisher.com
     summary: Systems programming and backend development from Ian Fisher.
+  serverfault:
+    feed_url: https://serverfault.com/feeds
+    homepage_url: https://serverfault.com/questions
+    display_name: Recent Questions - Server Fault
+    summary: Updates from Recent Questions - Server Fault.
+  serverlesshorrors:
+    feed_url: https://serverlesshorrors.com/rss.xml
+    homepage_url: https://serverlesshorrors.com
+    display_name: ServerlessHorrors | Blog
+    summary: Stories you never want to feel on your own skin
+  sexpigeon_tumblr:
+    feed_url: https://sexpigeon.tumblr.com/rss
+    homepage_url: https://sexpigeon.tumblr.com
+    display_name: The Mid-Life Crisis Of Sexpigeon
+    summary: Tight white shirt tucked in no belt
+  sexyvideogameland_blogspot:
+    feed_url: https://sexyvideogameland.blogspot.com/feeds/posts/default
+    homepage_url: https://sexyvideogameland.blogspot.com
+    display_name: SVGL
+    summary: Updates from SVGL.
+  sfbags:
+    feed_url: https://www.sfbags.com/collections/shoulder-messenger-bags.atom
+    homepage_url: https://www.sfbags.com/collections/all
+    display_name: WaterField Designs
+    summary: Updates from WaterField Designs.
+  sfbg:
+    feed_url: https://www.sfbg.com/feed/
+    homepage_url: https://www.sfbg.com
+    display_name: San Francisco Bay Guardian
+    summary: Home of the Best of the Bay, Clean Slate election endorsements, and the Bay Guardian Archives (coming soon).
+  sfgiants_tumblr:
+    feed_url: https://sfgiants.tumblr.com/rss
+    homepage_url: https://sfgiants.tumblr.com
+    display_name: https://sfgiants.tumblr.com/
+    summary: The official tumblr account of the San Francisco Giants
+  sfmade:
+    feed_url: https://www.sfmade.org/blog-feed.xml
+    homepage_url: https://www.sfmade.org/blog
+    display_name: SFMade
+    summary: SFMade
+  sfrapoport_github:
+    feed_url: http://sfrapoport.github.io/feed.xml
+    homepage_url: http://sfrapoport.github.io
+    display_name: Sophie Rapoport
+    summary: Sophie Rapoport's website
+  sfstandard:
+    feed_url: https://sfstandard.com/feed/
+    homepage_url: https://sfstandard.com
+    display_name: The San Francisco Standard
+    summary: The San Francisco Bay Area's essential source for daily news, politics, business, food, tech, culture and more
+  sfstation:
+    feed_url: https://www.sfstation.com/feed/
+    homepage_url: https://www.sfstation.com
+    display_name: SF Station | San Francisco's City Guide
+    summary: The best events happening right now in the SF Bay Area.
+  sfwa:
+    feed_url: https://sfwa.org/feed/
+    homepage_url: https://sfwa.org
+    display_name: SFWA – The Science Fiction & Fantasy Writers Association
+    summary: Updates from SFWA – The Science Fiction & Fantasy Writers Association.
+  shadowproof:
+    feed_url: https://shadowproof.com/feed/
+    homepage_url: https://shadowproof.com
+    display_name: Shadowproof
+    summary: Updates from Shadowproof.
+  shagbark_substack:
+    feed_url: https://shagbark.substack.com/feed
+    homepage_url: https://shagbark.substack.com
+    display_name: Hickman's Hinterlands
+    summary: A ledger of obscure travels, backwoods rambles, rough bivouacs, and cackling cartographies.
+  shakedko:
+    feed_url: https://shakedko.com/feed.xml
+    homepage_url: https://shakedko.com
+    display_name: Shaked Klein Orbach
+    summary: Updates from Shaked Klein Orbach.
+  shareably_co:
+    feed_url: https://shareably.co/feed/
+    homepage_url: https://shareably.co
+    display_name: Shareably
+    summary: We're the next generation of story-tellers.
+  shayfrendt:
+    feed_url: https://shayfrendt.com/feed/
+    homepage_url: https://shayfrendt.com
+    display_name: Pusat Informasi Sebuah Kerangka Kerja Web Apps dalam Pemrograman
+    summary: Sebuah pusat informasi mengenai tentang program-program web apps dan cara kerjanya yang dapat anda ketahui disini
+  sheldonbrown:
+    feed_url: https://sheldonbrown.com/blog/feed/
+    homepage_url: https://sheldonbrown.com/blog
+    display_name: SheldonBrown
+    summary: What's new at sheldonbrown.com
+  shell_tips:
+    feed_url: https://www.shell-tips.com/rss.xml
+    homepage_url: https://www.shell-tips.com
+    display_name: Shell Tips!
+    summary: The one stop for hands-on people who love Scripting, Programming and other technical tidbits.
+  shi_foo:
+    feed_url: https://shi.foo/rss/
+    homepage_url: https://shi.foo/weblog
+    display_name: Shifoo
+    summary: RSS Feed for Shifoo's Weblog
+  shiftyjelly_wordpress:
+    feed_url: https://shiftyjelly.wordpress.com/feed/
+    homepage_url: https://shiftyjelly.wordpress.com
+    display_name: Shifty Jelly's blog of mystery
+    summary: because some things were meant to be shifty...
+  shippouchan_tumblr:
+    feed_url: https://shippouchan.tumblr.com/rss
+    homepage_url: https://shippouchan.tumblr.com
+    display_name: Dreaming in Technicolor
+    summary: Amid the crazy happenstances of life, we still have time to dream. In technicolor, of course.
+  shlomoswidler:
+    feed_url: https://shlomoswidler.com/index.xml
+    homepage_url: https://shlomoswidler.com
+    display_name: Shlomo Swidler
+    summary: Recent content on Shlomo Swidler
+  shop_bubblesort:
+    feed_url: https://shop.bubblesort.io/blogs/news.atom
+    homepage_url: https://shop.bubblesort.io/blogs/news
+    display_name: BubbleSort Zines - News
+    summary: Updates from BubbleSort Zines - News.
+  shop_darksiderecords:
+    feed_url: https://shop.darksiderecords.com/blogs/news.atom
+    homepage_url: https://shop.darksiderecords.com/blogs/news
+    display_name: Darkside Records - News
+    summary: Updates from Darkside Records - News.
+  shop_havenshop:
+    feed_url: https://shop.havenshop.com/collections/all.atom
+    homepage_url: https://shop.havenshop.com/collections/all
+    display_name: HAVEN
+    summary: Updates from HAVEN.
+  sifterapp:
+    feed_url: https://sifterapp.com/feeds/blog.xml
+    homepage_url: https://sifterapp.com
+    display_name: Sifter Blog
+    summary: Updates from Sifter Blog.
+  signadot:
+    feed_url: https://www.signadot.com/rss.xml
+    homepage_url: https://www.signadot.com
+    display_name: Signadot Blog RSS
+    summary: Microservices testing, ephemeral environments, and agent-native development from the Signadot team.
+  siliconsasquatch:
+    feed_url: https://www.siliconsasquatch.com/blog?format=rss
+    homepage_url: https://www.siliconsasquatch.com
+    display_name: Silicon Sasquatch
+    summary: An independent podcast covering the cultural significance of games.
+  simogo:
+    feed_url: https://simogo.com/feed/
+    homepage_url: https://simogo.com
+    display_name: Simogo
+    summary: Updates from Simogo.
+  simoncpage:
+    feed_url: https://simoncpage.co.uk/blog/feed/
+    homepage_url: https://simoncpage.co.uk/blog
+    display_name: simoncpage.com
+    summary: Official website of designer and illustrator Simon C Page
+  simonholywell:
+    feed_url: https://www.simonholywell.com/feed.xml
+    homepage_url: https://www.simonholywell.com
+    display_name: Home · Simon Holywell on Simon Holywell
+    summary: Updates from Home · Simon Holywell on Simon Holywell.
+  simonschreibt_de:
+    feed_url: https://simonschreibt.de/feed/
+    homepage_url: https://simonschreibt.de
+    display_name: Simonschreibt.
+    summary: Updates from Simonschreibt..
+  simpledesktops:
+    feed_url: https://feeds.feedburner.com/simpledesktops
+    homepage_url: https://simpledesktops.com
+    display_name: Simple Desktops
+    summary: 'Simple Desktops: a collection of bling, drop shadow, and gradient free desktops to help keep you stay focused but also provide just enough eye candy to not be bored.'
+  simplehelp:
+    feed_url: https://feeds.feedburner.com/simplehelp/
+    homepage_url: https://www.simplehelp.net
+    display_name: Simple Help
+    summary: Common Questions, Simple Answers
+  scrippsnews:
+    feed_url: https://www.scrippsnews.com/life.rss
+    homepage_url: https://www.scrippsnews.com/life
+    display_name: Scripps News Life
+    summary: Scripps News Life
+  simplexify:
+    feed_url: http://simplexify.net/blog/atom.xml
+    homepage_url: http://simplexify.net/blog
+    display_name: Simplexify
+    summary: Updates from Simplexify.
+  simplifilm:
+    feed_url: https://simplifilm.com/feed/
+    homepage_url: https://simplifilm.com
+    display_name: Simplifilm-Video Production Agency In Austin Texas
+    summary: Video Sales Funnels. Explainer Videos. Book trailers. Brand Films.
+  simplyquinoa:
+    feed_url: https://www.simplyquinoa.com/feed/
+    homepage_url: https://www.simplyquinoa.com
+    display_name: Simply Quinoa
+    summary: Healthy Quinoa Recipes Made Simple
+  singlebrook:
+    feed_url: https://singlebrook.com/feed.xml
+    homepage_url: https://singlebrook.com
+    display_name: Singlebrook - App developers
+    summary: Singlebrook builds custom web and mobile apps for businesses and startups. We love Javascript, Ruby on Rails, and React. Code with love!
+  singleguysrockclimbing_tumblr:
+    feed_url: https://singleguysrockclimbing.tumblr.com/rss
+    homepage_url: https://singleguysrockclimbing.tumblr.com
+    display_name: Single Guys Rock Climbing
+    summary: Recently single and considering online dating? Maybe you should take up rock climbing. The universal hobby of undateable men.
+  singletracks:
+    feed_url: https://www.singletracks.com/feed/
+    homepage_url: https://www.singletracks.com
+    display_name: Singletracks Mountain Bike News
+    summary: Mountain bike news, bike reviews, trail information, and tips for better riding.
+  singularityhub:
+    feed_url: https://singularityhub.com/feed/
+    homepage_url: https://singularityhub.com
+    display_name: SingularityHub
+    summary: SingularityHub chronicles the technological frontier with coverage of the breakthroughs, players, and issues shaping the future.
+  sirupsen:
+    feed_url: https://sirupsen.com/atom.xml
+    homepage_url: https://sirupsen.com
+    display_name: Simon Eskildsen
+    summary: Updates from Simon Eskildsen.
+  siteleaf:
+    feed_url: https://www.siteleaf.com/feed.xml
+    homepage_url: https://www.siteleaf.com
+    display_name: Siteleaf
+    summary: Built for developers, Loved by everyone. Supports Jekyll, user collaboration, publishing to AWS S3, GitHub Pages, FTP, and more.
+  sites_duke_edu:
+    feed_url: https://sites.duke.edu/feed/
+    homepage_url: https://sites.duke.edu
+    display_name: Sites@Duke Express
+    summary: sites.duke.edu
+  sixcolors:
+    feed_url: http://feedpress.me/sixcolors
+    homepage_url: https://sixcolors.com
+    display_name: Six Colors
+    summary: Apple, technology, and other stuff
+  sixscape:
+    feed_url: https://sixscape.com/feed/
+    homepage_url: https://sixscape.com
+    display_name: Sixscape
+    summary: Cryptographic Identity & Authentication
+  sixthtone:
+    feed_url: https://api.sixthtone.com/cont/output/rssApi
+    homepage_url: https://www.sixthtone.com
+    display_name: Sixth Tone RSS
+    summary: Sixth Tone RSS
+  skarlso_github:
+    feed_url: https://skarlso.github.io/index.xml
+    homepage_url: https://skarlso.github.io
+    display_name: Ramblings of a cloud engineer
+    summary: Recent content on Ramblings of a cloud engineer
   greg_sadetsky:
     feed_url: https://blog.greg.technology/feed.xml
     homepage_url: https://blog.greg.technology/
