@@ -93,6 +93,256 @@ bots:
     display_name: Eli Bendersky
     summary: Articles from Eli Bendersky's website.
     profile_photo: https://avatars.githubusercontent.com/u/1130906?s=200
+  bustle:
+    feed_url: https://www.bustle.com/rss
+    homepage_url: https://www.bustle.com
+    display_name: Bustle
+    summary: Bustle is for and by women who are moving forward as fast as you are.
+  comicbook:
+    feed_url: https://comicbook.com/feed/
+    homepage_url: https://comicbook.com
+    display_name: ComicBook.com
+    summary: Comic Book Movies, News, & Digital Comic Books
+  cultofmac:
+    feed_url: https://www.cultofmac.com/feed
+    homepage_url: https://www.cultofmac.com
+    display_name: Cult of Mac
+    summary: Your source for the latest Apple news, rumors, analysis, reviews, how-tos and deals.
+  elle:
+    feed_url: https://www.elle.com/rss/culture.xml
+    homepage_url: https://www.elle.com/culture
+    display_name: Culture - ELLE
+    summary: RSS feed for Culture - ELLE
+  ethanmarcotte:
+    feed_url: https://ethanmarcotte.com/wrote/feed.xml
+    homepage_url: https://ethanmarcotte.com
+    display_name: My journal — Ethan Marcotte’s website
+    summary: Updates from My journal — Ethan Marcotte’s website.
+  eurogamer:
+    feed_url: https://www.eurogamer.net/feed
+    homepage_url: https://www.eurogamer.net
+    display_name: Eurogamer.net Latest Articles Feed
+    summary: This is a feed of the latest articles from Eurogamer.net.
+  funnyordie:
+    feed_url: https://funnyordie.com/feed/
+    homepage_url: https://funnyordie.com
+    display_name: Page 182762 – Funny Or Die
+    summary: We love to make you laugh.
+  hodinkee:
+    feed_url: https://www.hodinkee.com/articles/rss.xml
+    homepage_url: https://www.hodinkee.com
+    display_name: Hodinkee
+    summary: Updates from Hodinkee.
+  ilya_grigorik:
+    feed_url: https://ilya.grigorik.com/essays/rss/
+    homepage_url: https://ilya.grigorik.com
+    display_name: Ilya Grigorik
+    summary: Distinguished Engineer and Technical Advisor to the CEO at Shopify, on a mission to make commerce better for everyone.
+  inverse:
+    feed_url: https://www.inverse.com/rss
+    homepage_url: https://www.inverse.com
+    display_name: Inverse
+    summary: 'Inverse covers the latest news on science, innovation, entertainment, technology and culture by asking: What could happen next?'
+  newatlas:
+    feed_url: https://newatlas.com/index.rss
+    homepage_url: https://newatlas.com
+    display_name: 'New Atlas: Technology-Innovation-Outdoor News'
+    summary: Extraordinary ideas and innovations moving the world forward.
+  openculture:
+    feed_url: https://www.openculture.com/feed
+    homepage_url: https://www.openculture.com
+    display_name: Open Culture
+    summary: The best free cultural & educational media on the web
+  pastemagazine:
+    feed_url: https://www.pastemagazine.com/rss.xml
+    homepage_url: https://www.pastemagazine.com
+    display_name: Paste Magazine
+    summary: Paste Magazine is your source for the best music, movies, TV, comedy, videogames, books and culture.
+  teenvogue:
+    feed_url: https://www.teenvogue.com/feed/rss
+    homepage_url: https://www.teenvogue.com
+    display_name: Teen Vogue
+    summary: The latest from www.teenvogue.com
+  theweek:
+    feed_url: https://theweek.com/feeds.xml
+    homepage_url: https://theweek.com
+    display_name: TheWeek feed
+    summary: Updates from TheWeek feed.
+  alicja_dev:
+    feed_url: https://alicja.dev/feed.xml
+    homepage_url: https://alicja.dev
+    display_name: Alicja’s thoughts
+    summary: Updates from Alicja’s thoughts.
+  usenix:
+    feed_url: https://www.usenix.org/rss.xml
+    homepage_url: https://www.usenix.org/frontpage
+    display_name: USENIX - The Advanced Computing Systems Association
+    summary: Updates from USENIX - The Advanced Computing Systems Association.
+  werd:
+    feed_url: https://werd.io/rss/
+    homepage_url: https://werd.io
+    display_name: Ben Werdmuller
+    summary: Writing at the intersection of technology, journalism, and community.
+  alexbaldwin:
+    feed_url: https://www.alexbaldwin.com/feed.xml
+    homepage_url: https://www.alexbaldwin.com
+    display_name: Alex Baldwin
+    summary: Designer, developer, and entrepreneur sharing thoughts on product design, technology, and startup culture.
+  news_wirefly:
+    feed_url: https://news.wirefly.com/rss.xml
+    homepage_url: https://news.wirefly.com
+    display_name: News.Wirefly
+    summary: PhoneDog.com - Latest videos, reviews, articles, news and posts
+  bensweedler:
+    feed_url: https://www.bensweedler.com/feed/
+    homepage_url: https://www.bensweedler.com
+    display_name: Benjamin Sweedler
+    summary: Updates from Benjamin Sweedler.
+  cdixon:
+    feed_url: https://cdixon.org/rss.xml
+    homepage_url: https://cdixon.org
+    display_name: cdixon
+    summary: programming, philosophy, history, internet, startups
+  dev_to:
+    feed_url: https://dev.to/feed
+    homepage_url: https://dev.to
+    display_name: DEV Community
+    summary: The most recent home feed on DEV Community.
+  devcenter_heroku:
+    feed_url: https://devcenter.heroku.com/articles/feed
+    homepage_url: https://devcenter.heroku.com
+    display_name: Heroku Dev Center Articles
+    summary: Updates from Heroku Dev Center Articles.
+  developer_mozilla:
+    feed_url: https://developer.mozilla.org/en-US/blog/rss.xml
+    homepage_url: https://developer.mozilla.org/en-US/blog
+    display_name: MDN Blog
+    summary: The MDN Web Docs blog publishes articles about web development, open source software, web platform updates, tutorials, changes and updates to MDN, and more.
+  dpreview:
+    feed_url: https://www.dpreview.com/feed/
+    homepage_url: https://www.dpreview.com
+    display_name: DPReview
+    summary: Photography News, Gear Reviews & Community
+  freedom_press:
+    feed_url: https://freedom.press/issues/feed/
+    homepage_url: http://freedom.press/issues
+    display_name: The Latest
+    summary: Updates from The Latest.
+  about_gitlab:
+    feed_url: https://docs.gitlab.com/releases/releases.xml
+    homepage_url: https://about.gitlab.com
+    display_name: GitLab Monthly Releases
+    summary: Updates from GitLab Monthly Releases.
+  hanselman:
+    feed_url: http://feeds.hanselman.com/ScottHanselman
+    homepage_url: https://www.hanselman.com/blog
+    display_name: Scott Hanselman's Blog
+    summary: Scott Hanselman on Programming, User Experience, The Zen of Computers and Life in General
+  indiewire:
+    feed_url: https://www.indiewire.com/feed/
+    homepage_url: https://www.indiewire.com
+    display_name: IndieWire
+    summary: The Voice of Creative Independence
+  japantimes_co_jp:
+    feed_url: https://www.japantimes.co.jp/feed/
+    homepage_url: https://www.japantimes.co.jp
+    display_name: Latest articles - The Japan Times
+    summary: News on Japan, Business News, Opinion, Sports, Entertainment and More
+  longform:
+    feed_url: https://longform.org/feed.rss
+    homepage_url: https://longform.org
+    display_name: Longform
+    summary: The best non-fiction, past and present.
+  makeuseof:
+    feed_url: https://www.makeuseof.com/feed/
+    homepage_url: https://www.makeuseof.com
+    display_name: MakeUseOf
+    summary: MUO is your guide to modern tech. Learn how to make use of the tech and gadgets around you, and discover cool stuff on the internet.
+  makezine:
+    feed_url: https://makezine.com/feed/
+    homepage_url: https://makezine.com
+    display_name: 'Make: DIY Projects and Ideas for Makers'
+    summary: 'Updates from Make: DIY Projects and Ideas for Makers.'
+  mymodernmet:
+    feed_url: https://mymodernmet.com/feed/
+    homepage_url: https://mymodernmet.com
+    display_name: My Modern Met
+    summary: The Big City That Celebrates Creative Ideas
+  myntcondition_tumblr:
+    feed_url: https://myntcondition.tumblr.com/rss
+    homepage_url: https://myntcondition.tumblr.com
+    display_name: Mynt Condition
+    summary: Draw. Every. Day.
+  nbcnewyork:
+    feed_url: https://www.nbcnewyork.com/?rss=y
+    homepage_url: https://www.nbcnewyork.com
+    display_name: NBC New York
+    summary: Updates from NBC New York.
+  opensource_googleblog:
+    feed_url: https://opensource.googleblog.com/feeds/posts/default
+    homepage_url: https://opensource.googleblog.com
+    display_name: Google Open Source Blog
+    summary: Updates from Google Open Source Blog.
+  osxdaily:
+    feed_url: https://osxdaily.com/feed/
+    homepage_url: https://osxdaily.com
+    display_name: OS X Daily
+    summary: News, tips, tricks, apps, and more for Mac, iPhone, iPad, and the entire Apple ecosystem
+  papermag:
+    feed_url: https://www.papermag.com/feeds/feed.rss
+    homepage_url: https://www.papermag.com
+    display_name: PAPER Magazine
+    summary: PAPER Magazine
+  politifact:
+    feed_url: https://politifact.com/feed/
+    homepage_url: https://politifact.com
+    display_name: PolitiFact
+    summary: Updates from PolitiFact.
+  popularmechanics:
+    feed_url: https://www.popularmechanics.com/rss/all.xml/
+    homepage_url: https://www.popularmechanics.com
+    display_name: Latest Content - Popular Mechanics
+    summary: RSS feed for Latest Content - Popular Mechanics
+  actblue:
+    feed_url: https://www.actblue.com/feed/
+    homepage_url: https://www.actblue.com
+    display_name: ActBlue
+    summary: Elevate Your Fundraising - Create Campaigns for Political Offices, Charities & Nonprofits
+  smashingmagazine:
+    feed_url: https://www.smashingmagazine.com/feed/
+    homepage_url: https://www.smashingmagazine.com
+    display_name: Articles on Smashing Magazine — For Web Designers And Developers
+    summary: Recent content in Articles on Smashing Magazine — For Web Designers And Developers
+  status_cloud_google:
+    feed_url: https://status.cloud.google.com/en/feed.atom
+    homepage_url: https://status.cloud.google.com
+    display_name: Google Cloud Service Health Updates
+    summary: Updates from Google Cloud Service Health Updates.
+  technical_ly:
+    feed_url: https://technical.ly/rss/
+    homepage_url: https://technical.ly
+    display_name: Technical.ly
+    summary: REPORTED BY HUMANS SINCE 2009
+  themarysue:
+    feed_url: https://www.themarysue.com/feed/
+    homepage_url: https://www.themarysue.com
+    display_name: The Mary Sue
+    summary: The Nexus of Pop Culture and the Uncharted Universe
+  travelsmake_tumblr:
+    feed_url: https://travelsmake.tumblr.com/rss
+    homepage_url: https://travelsmake.tumblr.com
+    display_name: Travelsmake
+    summary: Updates from Travelsmake.
+  waitbutwhy:
+    feed_url: https://waitbutwhy.com/feed
+    homepage_url: https://waitbutwhy.com
+    display_name: Wait But Why
+    summary: Updates from Wait But Why.
+  wiki_xxiivv:
+    feed_url: https://wiki.xxiivv.com/links/img.xml
+    homepage_url: https://wiki.xxiivv.com
+    display_name: XXIIVV
+    summary: Journal Images
   danluu:
     feed_url: https://danluu.com/atom.xml
     homepage_url: https://danluu.com
