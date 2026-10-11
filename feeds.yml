@@ -996,6 +996,256 @@ bots:
     display_name: antirez
     summary: Systems programming, C, databases, and notes from the creator of Redis.
     profile_photo: https://avatars.githubusercontent.com/u/65632?s=200
+  journalstar:
+    feed_url: https://journalstar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
+    homepage_url: https://journalstar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
+    display_name: 'journalstar.com - RSS Results of type article with keyword(s) of #topstory'
+    summary: 'journalstar.com - RSS Results only for asset type(s) of article with keyword(s) of #topstory'
+  gamesindustry_biz:
+    feed_url: https://www.gamesindustry.biz/feed
+    homepage_url: https://www.gamesindustry.biz
+    display_name: GamesIndustry.biz Latest Articles Feed
+    summary: This is a feed of the latest articles from GamesIndustry.biz.
+  jp_ign:
+    feed_url: https://jp.ign.com/feed.xml
+    homepage_url: https://jp.ign.com
+    display_name: IGN Japan
+    summary: Updates from IGN Japan.
+  jpichon:
+    feed_url: https://www.jpichon.net/feeds/all.atom.xml
+    homepage_url: https://www.jpichon.net
+    display_name: jpichon.net
+    summary: Updates from jpichon.net.
+  jquerymobile:
+    feed_url: https://blog.jquerymobile.com/feed/
+    homepage_url: https://jquerymobile.com
+    display_name: jQuery Mobile Blog
+    summary: Updates from jQuery Mobile Blog.
+  js13kgames:
+    feed_url: https://js13kgames.com/rss.xml
+    homepage_url: https://js13kgames.com
+    display_name: js13kGames Blog
+    summary: Latest blog posts from the js13kGames competition.
+  jsomers:
+    feed_url: https://jsomers.net/blog/feed
+    homepage_url: https://jsomers.net/blog
+    display_name: the jsomers.net blog
+    summary: the jsomers.net blog
+  jsplumbtoolkit:
+    feed_url: https://jsplumbtoolkit.com/blog/rss.xml
+    homepage_url: https://jsplumbtoolkit.com/blog
+    display_name: Diagram and visual applications builder - JsPlumb Toolkit Blog
+    summary: Diagram and visual applications builder - JsPlumb Toolkit Blog
+  majd_blog:
+    feed_url: https://majd.blog/feed/
+    homepage_url: https://majd.blog
+    display_name: Majd Taby
+    summary: Updates from Majd Taby.
+  jtibs_substack:
+    feed_url: https://jtibs.substack.com/feed
+    homepage_url: https://jtibs.substack.com
+    display_name: Julie’s Substack
+    summary: Some thoughts on software and how we make it.
+  jtolio:
+    feed_url: https://www.jtolio.com/rss.xml
+    homepage_url: https://www.jtolio.com
+    display_name: jtolio.com
+    summary: Recent content on jtolio.com
+  judgmentalmaps:
+    feed_url: https://judgmentalmaps.com/rss
+    homepage_url: https://judgmentalmaps.com
+    display_name: JUDGMENTAL MAPS
+    summary: YOUR CITY. JUDGED. (adsbygoogle = window.adsbygoogle || []).push({}); window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-38090696-1');
+  jukie_net__bart:
+    feed_url: http://www.jukie.net/~bart/index.xml
+    homepage_url: http://www.jukie.net/~bart
+    display_name: bartman's blog
+    summary: Recent content on bartman's blog
+  juliansimioni:
+    feed_url: https://juliansimioni.com/atom.xml
+    homepage_url: https://juliansimioni.com
+    display_name: Julian Simioni
+    summary: Updates from Julian Simioni.
+  julianyap:
+    feed_url: https://julianyap.com/index.xml
+    homepage_url: https://julianyap.com
+    display_name: Wilderness Downtown
+    summary: Recent content on Wilderness Downtown
+  jumpcloud:
+    feed_url: https://jumpcloud.com/feed
+    homepage_url: https://jumpcloud.com
+    display_name: JumpCloud
+    summary: Daily insights on directory services, IAM, LDAP, identity security, SSO, system management (Mac, Windows, Linux), networking, and the cloud.
+  juniperarts_tumblr:
+    feed_url: https://juniperarts.tumblr.com/rss
+    homepage_url: https://juniperarts.tumblr.com
+    display_name: https://juniperarts.tumblr.com/
+    summary: '- 2018 BYU Animation Graduate - - Link to all my socials and store - - Multi-fandom artist & multi-shipper -'
+  justagirlandherblog:
+    feed_url: https://justagirlandherblog.com/feed/
+    homepage_url: https://justagirlandherblog.com
+    display_name: Abby Organizes
+    summary: Let's create a beautiful, organized home where you and your family can thrive.
+  justgetflux:
+    feed_url: https://justgetflux.com/news/atom.xml
+    homepage_url: https://justgetflux.com
+    display_name: f.lux news
+    summary: Updates from f.lux news.
+  justinsteven:
+    feed_url: https://www.justinsteven.com/index.xml
+    homepage_url: https://www.justinsteven.com
+    display_name: justinsteven
+    summary: Recent content on justinsteven
+  jx0:
+    feed_url: https://www.jx0.org/feeds/posts/default
+    homepage_url: http://www.jx0.org
+    display_name: Jx0.org
+    summary: Updates from Jx0.org.
+  jyn_dev:
+    feed_url: https://jyn.dev/atom.xml
+    homepage_url: https://jyn.dev
+    display_name: the website of jyn
+    summary: Updates from the website of jyn.
+  k7r_eu:
+    feed_url: https://k7r.eu/feed.xml
+    homepage_url: https://k7r.eu
+    display_name: Matthias Kirschner's Web log
+    summary: Updates from Matthias Kirschner's Web log.
+  kablamo_com_au:
+    feed_url: https://www.kablamo.com.au/feed.xml
+    homepage_url: https://www.kablamo.com.au
+    display_name: Kablamo — Intelligent Software & Solutions
+    summary: Blog posts, case studies, and technology insights from Kablamo.
+  kadavy:
+    feed_url: https://kadavy.net/feed/
+    homepage_url: https://kadavy.net
+    display_name: kadavy.net
+    summary: Get to know David Kadavy
+  kaiwern:
+    feed_url: https://kaiwern.com/index.xml
+    homepage_url: http://kaiwern.com
+    display_name: kaiwern.com
+    summary: Recent content in Home on
+  kaizoku_dev:
+    feed_url: https://kaizoku.dev/rss.xml
+    homepage_url: https://kaizoku.dev
+    display_name: Kaizoku Dev
+    summary: Kaizoku Dev
+  kamilszymanski_github:
+    feed_url: https://kamilszymanski.github.io/feed.xml
+    homepage_url: https://kamilszymanski.github.io
+    display_name: Under the hood
+    summary: Updates from Under the hood.
+  kamran_fyi:
+    feed_url: https://kamran.fyi/feed.xml
+    homepage_url: https://kamran.fyi
+    display_name: Kamran Ahmed
+    summary: Articles, videos and visual explainers on engineering, products and the things I learn while building.
+  kanyepluscomics_tumblr:
+    feed_url: https://kanyepluscomics.tumblr.com/rss
+    homepage_url: https://kanyepluscomics.tumblr.com
+    display_name: Kanye + Comics
+    summary: ‘Cause who the kids gonna listen to? Huh? I guess me if it isn’t you. My name is Chris Haley. I love comics. I love Kanye West. I had to do something, so I started this. Please tag your submissions with Kanye + Comics or kanyepluscomics or tweet them at me @thechrishaley
+  karastonesite:
+    feed_url: https://karastonesite.com/feed/
+    homepage_url: https://karastonesite.com
+    display_name: KARA STONE
+    summary: Updates from KARA STONE.
+  kareprints:
+    feed_url: https://kareprints.com/blogs/news.atom
+    homepage_url: https://kareprints.com/blogs/news
+    display_name: Kare Prints - News
+    summary: Updates from Kare Prints - News.
+  karmi_tumblr:
+    feed_url: https://karmi.tumblr.com/rss
+    homepage_url: https://karmi.tumblr.com
+    display_name: İsimsiz
+    summary: Updates from İsimsiz.
+  karpathy_github:
+    feed_url: https://karpathy.github.io/feed.xml
+    homepage_url: http://karpathy.github.io
+    display_name: Andrej Karpathy blog
+    summary: Musings of a Computer Scientist.
+  kashflow:
+    feed_url: https://www.kashflow.com/feed/
+    homepage_url: https://www.kashflow.com
+    display_name: IRIS KashFlow
+    summary: Accounting & Payroll | Free Trial - No Card Required‎
+  kaspersky_ca:
+    feed_url: https://www.kaspersky.com/blog/feed/
+    homepage_url: https://www.kaspersky.ca
+    display_name: Kaspersky official blog
+    summary: The Official Blog from Kaspersky covers information to help protect you against viruses, spyware, hackers, spam & other forms of malware.
+  kassner_com_br:
+    feed_url: https://www.kassner.com.br/atom.xml
+    homepage_url: https://www.kassner.com.br
+    display_name: Rafael Kassner
+    summary: Updates from Rafael Kassner.
+  katewillaert_tumblr:
+    feed_url: https://katewillaert.tumblr.com/rss
+    homepage_url: https://katewillaert.tumblr.com
+    display_name: '"Critical Kate" Willært'
+    summary: 'Creator of Video Dames, researcher of forgotten geek history | Asexual, autistic, trans | Link Tree: http://katewillaert.com/link-tree'
+  katherineerickson:
+    feed_url: https://katherineerickson.com/feed.xml
+    homepage_url: http://katherineerickson.com
+    display_name: Katherine Erickson
+    summary: Personal website of Katherine Erickson
+  kausal_co:
+    feed_url: https://kausal.co/index.xml
+    homepage_url: https://kausal.co
+    display_name: Kausal
+    summary: Recent content on Kausal
+  kaylees_site:
+    feed_url: https://kaylees.site/feed.xml
+    homepage_url: https://kaylees.site/
+    display_name: Kaylee’s Apps
+    summary: Updates from Kaylee’s Apps.
+  kaylinpavlik:
+    feed_url: https://www.kaylinpavlik.com/rss/
+    homepage_url: https://www.kaylinpavlik.com
+    display_name: Kaylin Pavlik
+    summary: pop culture + data science
+  kazushigemiyake:
+    feed_url: https://www.kazushigemiyake.com/sitemap.rss
+    homepage_url: https://www.kazushigemiyake.com
+    display_name: Kazushige Miyake
+    summary: Kazushige Miyake
+  kb_cert:
+    feed_url: https://www.kb.cert.org/vuls/atomfeed/
+    homepage_url: https://kb.cert.org/vuls
+    display_name: CERT Recently Published Vulnerability Notes
+    summary: Updates from CERT Recently Published Vulnerability Notes.
+  kcymaerxthaere:
+    feed_url: https://kcymaerxthaere.com/feed/
+    homepage_url: https://kcymaerxthaere.com
+    display_name: Kcymaerxthaere
+    summary: Updates from Kcymaerxthaere.
+  kdnuggets:
+    feed_url: https://www.kdnuggets.com/feed/
+    homepage_url: https://www.kdnuggets.com
+    display_name: KDnuggets
+    summary: Data Science, Machine Learning, AI & Analytics
+  kenneth:
+    feed_url: https://kenneth.io/api/feed.xml
+    homepage_url: https://kenneth.io
+    display_name: Kenneth Auchenberg's Blog
+    summary: Thoughts on technology, software, and innovation
+  avizurel:
+    feed_url: https://www.avizurel.com/index.xml
+    homepage_url: https://www.avizurel.com
+    display_name: Avi Zurel - Technical Leadership & Engineering
+    summary: Recent content on Avi Zurel - Technical Leadership & Engineering
+  kentishtowner:
+    feed_url: https://www.kentishtowner.co.uk/feed/
+    homepage_url: https://www.kentishtowner.co.uk
+    display_name: Kentishtowner
+    summary: North London's award-winning print & online cultural guide
+  kevin_deldycke:
+    feed_url: https://kevin.deldycke.com/feed.atom
+    homepage_url: https://kevin.deldycke.com
+    display_name: Kevin Deldycke
+    summary: Updates from Kevin Deldycke.
   fly_io:
     feed_url: https://fly.io/blog/feed.xml
     homepage_url: https://fly.io
