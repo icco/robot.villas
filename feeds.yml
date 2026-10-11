@@ -11457,6 +11457,258 @@ bots:
     display_name: Mark Mosher
     summary: Experimental electronic music, synthesis, dark ambient, cinematic music, glitch, and multimedia.
     profile_photo: https://i0.wp.com/markmoshermusic.com/wp-content/uploads/2022/02/cropped-2da15-cropped-snapshot-06-06-2021-0917-1.png?fit=180%2C180&ssl=1
+  definite_blog:
+    feed_url: https://www.definite.app/rss.xml
+    homepage_url: https://definite.app
+    display_name: Definite Blog
+    summary: Data engineering, analytics, data platforms, and product guides from Definite.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdefinite.app&size=128
+  defn_io:
+    feed_url: https://defn.io/index.xml
+    homepage_url: https://defn.io
+    display_name: defn.io
+    summary: Bogdan Popa writes about programming, Racket, Python, macOS, and his software projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdefn.io&size=128
+  insanlik_hali:
+    feed_url: https://defnesumanblogs.com/feed/
+    homepage_url: https://defnesumanblogs.com
+    display_name: İnsanlık Hâlİ
+    summary: Defne Suman writes in Turkish and English about literature, life, belonging, and the human condition.
+    profile_photo: https://defnesumanblogs.com/wp-content/uploads/2018/04/cropped-dslogo_02.jpg?w=180
+  delbius_com:
+    feed_url: https://delbius.com/feed/
+    homepage_url: https://delbius.com
+    display_name: delbius.com
+    summary: Del Harvey writes about trust and safety, platform accountability, incident analysis, and online communities.
+    profile_photo: https://i0.wp.com/delbius.com/wp/wp-content/uploads/2022/09/dh-square-transparent.png?fit=180%2C180&ssl=1
+  demilked:
+    feed_url: https://www.demilked.com/rss.xml
+    homepage_url: https://www.demilked.com
+    display_name: Demilked
+    summary: Creator software reviews, workflow guides, and digital business tools from Demilked, with an archive of art and design inspiration.
+    profile_photo: https://www.demilked.com/apple-icon.png?apple-icon.00xm1z7d0qdi..png
+  democrats:
+    feed_url: https://democrats.org/feed/
+    homepage_url: https://democrats.org
+    display_name: Democrats
+    summary: News, press releases, and political statements from the Democratic National Committee.
+    profile_photo: https://democrats.org/wp-content/uploads/2026/06/cropped-DNC-Favicon.png?w=180
+  cooper_center:
+    feed_url: https://www.coopercenter.org/rss.xml
+    homepage_url: https://www.coopercenter.org
+    display_name: Cooper Center
+    summary: Population research from the Weldon Cooper Center for Public Service; this available feed contains one 2023 Virginia population-projections article.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.coopercenter.org&size=128
+  dendory_network:
+    feed_url: https://dendory.net/rss.xml
+    homepage_url: https://dendory.net
+    display_name: Dendory Network
+    summary: Personal essays about gaming, technology, software, and art from Dendory Network.
+    profile_photo: https://dendory.net/images/profile.jpg
+  denilson_sa:
+    feed_url: https://denilson.sa.nom.br/atom.xml
+    homepage_url: https://denilson.sa.nom.br
+    display_name: Denilson Sá
+    summary: Denilson Sa writes about Linux, programming, audio configuration, and personal software projects; the available feed ends in 2023.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdenilson.sa.nom.br&size=128
+  deno:
+    feed_url: https://deno.com/feed
+    homepage_url: https://deno.com/blog
+    display_name: Deno
+    summary: Official Deno blog posts about runtime releases, JavaScript and TypeScript, web development, and company news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdeno.com%2Fblog&size=128
+  den_odells_journal:
+    feed_url: https://denodell.com/rss.xml
+    homepage_url: https://denodell.com
+    display_name: Den Odell’s Journal
+    summary: Den Odell writes about web performance, accessibility, browser behavior, and resilient frontend development.
+    profile_photo: https://denodell.com/images/icons/favicon.png
+  deps_blog:
+    feed_url: https://www.deps.co/blog/index.xml
+    homepage_url: https://www.deps.co/blog/
+    display_name: Deps Blog
+    summary: Archived Deps articles about Clojure, Java, dependency management, and cloud infrastructure; the available blog feed ends in 2018.
+  derek_thompson:
+    feed_url: https://www.derekthompson.org/feed
+    homepage_url: https://www.derekthompson.org
+    display_name: Derek Thompson
+    summary: Derek Thompson writes about economics, technology, culture, abundance, and building a better world.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!XPzQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F12efc79e-ae90-4f01-8883-03a7c09ee69e%2Fapple-touch-icon-57x57.png
+  thinking_in_public:
+    feed_url: https://dergigi.com/thoughts.xml
+    homepage_url: https://dergigi.com/
+    display_name: Thinking in Public
+    summary: Gigi writes about Bitcoin, privacy, technology, and thinking in public.
+  deseret_news:
+    feed_url: https://www.deseret.com/rss/latest.rss
+    homepage_url: https://www.deseret.com
+    display_name: Deseret News
+    summary: Utah and national news, politics, religion, sports, opinion, and culture from Deseret News.
+    profile_photo: https://www.deseret.com/pf/resources/deseretnews/assets/images/deseret-180.png?d=399
+  designer_daily:
+    feed_url: https://www.designer-daily.com/feed
+    homepage_url: https://www.designer-daily.com
+    display_name: Designer Daily
+    summary: Graphic and web design inspiration, resources, typography, product design, and marketing articles from Designer Daily.
+    profile_photo: https://www.designer-daily.com/apple-touch-icon-57x57.png
+  design_sponge:
+    feed_url: https://designsponge.blogspot.com/feeds/posts/default
+    homepage_url: https://designsponge.blogspot.com
+    display_name: Design*Sponge (Blogger Archive)
+    summary: Archived Design*Sponge posts about interiors, independent designers, products, and shopping; this original Blogger feed ends in 2007.
+  destination_luxury:
+    feed_url: https://destinationluxury.com/feed/
+    homepage_url: https://destinationluxury.com
+    display_name: Destination Luxury
+    summary: Luxury travel, lifestyle, hotels, fashion, design, and automobile articles; the available Destination Luxury feed ends in 2024.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdestinationluxury.com&size=128
+  dbo:
+    feed_url: https://destiny.bungie.org/rss.xml
+    homepage_url: http://destiny.bungie.org
+    display_name: DBO
+    summary: Community news and archived Bungie updates about Destiny from destiny.bungie.org; this is a fan site, not Bungie.
+    profile_photo: https://destiny.bungie.org/apple-touch-icon.png
+  blueberriesgg:
+    feed_url: https://www.blueberries.gg/feed/
+    homepage_url: https://www.blueberries.gg
+    display_name: BlueberriesGG
+    summary: Destiny 2 guides, weapon rolls, builds, loot tables, and weekly rotations from BlueberriesGG.
+    profile_photo: https://www.blueberries.gg/wp-content/uploads/2023/04/cropped-Favicon-180x180.png
+  destroy_all_software_blog:
+    feed_url: https://www.destroyallsoftware.com/blog/index.xml
+    homepage_url: https://www.destroyallsoftware.com/blog
+    display_name: Destroy All Software Blog
+    summary: Archived Gary Bernhardt articles about programming, software design, and open source from Destroy All Software; the blog feed ends in 2018.
+    profile_photo: https://www.destroyallsoftware.com/favicon.png
+  destroytoday:
+    feed_url: https://destroytoday.com/feeds/all
+    homepage_url: https://destroytoday.com/
+    display_name: Jonnie Hallman (@destroytoday)
+    summary: Jonnie Hallman writes about independent design engineering, web animations, freelancing, and building Cushion.
+  development_answers_no_questions:
+    feed_url: https://dev-answers.blogspot.com/feeds/posts/default
+    homepage_url: https://dev-answers.blogspot.com
+    display_name: Development Answers (No Questions)
+    summary: Archived Java and web-development troubleshooting notes from Development Answers (No Questions); the available feed ends in 2018.
+  arie_bovenberg:
+    feed_url: https://dev.arie.bovenberg.net/feed.xml
+    homepage_url: https://dev.arie.bovenberg.net
+    display_name: Arie Bovenberg
+    summary: Arie Bovenberg writes about Python, datetime behavior, libraries, and software engineering.
+    profile_photo: https://dev.arie.bovenberg.net/assets/favicons/apple-touch-icon.png
+  typescript:
+    feed_url: https://devblogs.microsoft.com/typescript/feed/
+    homepage_url: https://devblogs.microsoft.com/typescript
+    display_name: TypeScript
+    summary: The official blog of the TypeScript team.
+    profile_photo: https://devblogs.microsoft.com/typescript/wp-content/themes/devblogs-evo/images/favicon/apple-touch-icon-180.png?ver=1789493481
+  devconnected:
+    feed_url: https://devconnected.com/feed/
+    homepage_url: https://devconnected.com
+    display_name: devconnected
+    summary: Archived Linux, Git, system administration, and software engineering tutorials from devconnected; the available feed ends in 2021.
+  devdocs:
+    feed_url: https://devdocs.io/feed
+    homepage_url: https://devdocs.io
+    display_name: DevDocs
+    summary: Updates announcing new and changed API documentation available in DevDocs.
+    profile_photo: https://devdocs.io/images/apple-icon-72.png
+  devel_tech:
+    feed_url: https://devel.tech/rss.xml
+    homepage_url: https://devel.tech
+    display_name: devel.tech
+    summary: Archived technical articles and tips by Tony Narlock about programming, Python, Django, tmux, and Vim; the available feed ends in 2017.
+    profile_photo: https://devel.tech/img/logo.png
+  mcv_develop:
+    feed_url: https://mcvuk.com/feed/
+    homepage_url: https://mcvuk.com
+    display_name: MCV/DEVELOP
+    summary: Games industry news and analysis covering development, publishing, platforms, marketing, and retail from MCV/DEVELOP.
+    profile_photo: https://mcvuk.com/wp-content/uploads/Favicon-black-mcvdevelop.jpg
+  chrome_for_developers:
+    feed_url: https://developer.chrome.com/blog/feed.xml
+    homepage_url: https://developer.chrome.com/blog
+    display_name: Chrome for Developers
+    summary: Official Chrome for Developers blog posts about Chrome, DevTools, web platform features, and developer tooling.
+    profile_photo: https://www.gstatic.com/devrel-devsite/prod/v097103d8ccd7b257790809ea4cc5e5fee6daa6e24890a4af388296e58364bc31/chrome/images/touchicon-180.png
+  dev_null_as_a_service:
+    feed_url: https://devnull-as-a-service.com/index.xml
+    homepage_url: https://devnull-as-a-service.com
+    display_name: /dev/null as a Service
+    summary: Archived pages from a satirical cloud service for discarding data into /dev/null; the available feed ends in 2016.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdevnull-as-a-service.com&size=128
+  devo_ps:
+    feed_url: https://devo.ps/atom.xml
+    homepage_url: https://devo.ps
+    display_name: devo.ps
+    summary: Archived devo.ps release notes and articles about server automation, deployment, Docker, Ansible, and backups; the available feed ends in 2014.
+    profile_photo: https://devo.ps/assets/favicons/apple-touch-icon-57x57.png
+  devon_zuegel:
+    feed_url: https://devonzuegel.com/feed.xml
+    homepage_url: https://devonzuegel.com
+    display_name: Devon Zuegel
+    summary: Devon Zuegel writes about cities, zoning, land use, economics, and technology; the available feed ends in 2024.
+  devopsanywhere:
+    feed_url: https://devopsanywhere.blogspot.com/feeds/posts/default?alt=rss
+    homepage_url: https://devopsanywhere.blogspot.com/
+    display_name: devopsanywhere
+    summary: Archived essays about system administration, configuration management, Chef, and command-line tools; the available devopsanywhere feed ends in 2016.
+  devs_security:
+    feed_url: http://devs.cloudimmunity.com/rss/
+    homepage_url: http://devs.cloudimmunity.com
+    display_name: Devs ♥ Security
+    summary: Archived Kyle Quest articles about Go, cloud password security, and web security, alongside three unfinished draft posts; the feed ends in 2015.
+    profile_photo: http://devs.cloudimmunity.com/content/images/2014/12/CI_LOGO_no_shadow_smaller-2.png
+  the_developers_tidbits:
+    feed_url: https://devtidbits.com/index.xml
+    homepage_url: https://devtidbits.com
+    display_name: The Developer's Tidbits
+    summary: Software development, Linux administration, and troubleshooting tips from The Developer's Tidbits.
+    profile_photo: https://devtidbits.com/img/apple-touch-icon.686a2f4d2f4158d5eac4b462587890170fb90d7690c554c4752d86b3e7faee1e.png
+  dgl_cx:
+    feed_url: https://dgl.cx/feed
+    homepage_url: https://dgl.cx
+    display_name: dgl.cx
+    summary: David Leadbeater writes about security research, terminals, SSH, Unix systems, and programming.
+    profile_photo: https://dgl.cx/favicon.ico
+  daniel_dersch_programming_blog:
+    feed_url: https://dhdersch.github.io/feed.xml
+    homepage_url: https://dhdersch.github.io
+    display_name: Programming Blog
+    summary: Daniel Dersch's Programming Blog, with archived Go programming articles; the available feed ends in 2022.
+    profile_photo: https://github.com/dhdersch.png?size=200
+  diabettech:
+    feed_url: https://www.diabettech.com/feed/
+    homepage_url: https://www.diabettech.com
+    display_name: Diabettech
+    summary: Diabetes technology, glucose monitoring, automated insulin delivery, treatments, and personal analysis from Diabettech.
+    profile_photo: https://i0.wp.com/www.diabettech.com/wp-content/uploads/2017/11/cropped-Pumpkin1.jpg?fit=180%2C180&ssl=1
+  diamond_geezer:
+    feed_url: https://diamondgeezer.blogspot.com/feeds/posts/default?alt=rss
+    homepage_url: https://diamondgeezer.blogspot.com/
+    display_name: diamond geezer
+    summary: Daily observations, local history, London walks, transport, and places from diamond geezer.
+  diary_of_dennis:
+    feed_url: https://diaryofdennis.com/feed/
+    homepage_url: https://diaryofdennis.com
+    display_name: Diary of Dennis
+    summary: Personal essays, photography, technology, PC gaming, and tutorials from Diary of Dennis; the available feed ends in 2023.
+    profile_photo: https://secure.gravatar.com/blavatar/7d3a8187c003fe2f6cad29856cca43d6e0fc606dbd69b778a1be3d2aca76ba8d?s=114
+  chris_dickinson:
+    feed_url: https://www.neversaw.us/rss.xml
+    homepage_url: https://www.neversaw.us/
+    display_name: Chris Dickinson
+    summary: Chris Dickinson writes about programming, systems, the web, and software engineering, with personal link commentary.
+  diego_basch:
+    feed_url: https://diegobasch.com/feed
+    homepage_url: https://diegobasch.com
+    display_name: Diego Basch
+    summary: Diego Basch writes about technology, software, business, and personal experiences.
+  die_workwear:
+    feed_url: https://dieworkwear.com/feed/
+    homepage_url: https://dieworkwear.com
+    display_name: Die, Workwear!
+    summary: Classic menswear, clothing history, personal style, and shopping guides from Die, Workwear!.
   jondent:
     feed_url: https://djjondent.blogspot.com/feeds/posts/default?alt=rss
     homepage_url: https://djjondent.blogspot.com
