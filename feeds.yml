@@ -75,6 +75,256 @@ bots:
     display_name: McSweeney's
     summary: Timothy McSweeney's Internet Tendency.
     profile_photo: https://www.mcsweeneys.net/assets/chair-white-b56c46cc6ff30c7d87e754d65dd4f170f7681164c08c91142962b746e0261e19.png
+  oreilly:
+    feed_url: https://www.oreilly.com/radar/feed/
+    homepage_url: https://www.oreilly.com/radar
+    display_name: Radar
+    summary: 'Now, next, and beyond: Tracking need-to-know trends at the intersection of business and technology'
+  rockpapershotgun:
+    feed_url: https://www.rockpapershotgun.com/feed
+    homepage_url: https://www.rockpapershotgun.com
+    display_name: Rock Paper Shotgun Latest Articles Feed
+    summary: This is a feed of the latest articles from Rock Paper Shotgun.
+  stereogum:
+    feed_url: https://stereogum.com/feed
+    homepage_url: https://stereogum.com
+    display_name: Stereogum
+    summary: The world's best music blog.
+  troyhunt:
+    feed_url: https://www.troyhunt.com/rss/
+    homepage_url: https://www.troyhunt.com
+    display_name: Troy Hunt
+    summary: Hi, I'm Troy Hunt, I write this blog, run "Have I Been Pwned" and am a Microsoft Regional Director who travels the world speaking at events and training technology professionals
+  9to5mac:
+    feed_url: https://9to5mac.com/feed/
+    homepage_url: https://9to5mac.com
+    display_name: 9to5Mac
+    summary: Apple News & Mac Rumors Breaking All Day
+  architizer:
+    feed_url: https://architizer.com/blog/feed/
+    homepage_url: https://architizer.com/blog
+    display_name: Journal
+    summary: Inspiration and Tools for Architects
+  billboard:
+    feed_url: https://www.billboard.com/feed/
+    homepage_url: https://www.billboard.com
+    display_name: Billboard
+    summary: Music Charts, News, Photos & Video
+  blog_jessfraz:
+    feed_url: https://blog.jessfraz.com/index.xml
+    homepage_url: https://blog.jessfraz.com
+    display_name: Ramblings from Jessie
+    summary: Recent content on Ramblings from Jessie
+  coindesk:
+    feed_url: https://www.coindesk.com/arc/outboundfeeds/rss
+    homepage_url: https://www.coindesk.com
+    display_name: 'CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data'
+    summary: Leader in cryptocurrency, Bitcoin, Ethereum, XRP, blockchain, DeFi, digital finance and Web 3.0 news with analysis, video and live price updates.
+  computerworld:
+    feed_url: https://www.computerworld.com/feed/
+    homepage_url: https://www.computerworld.com
+    display_name: Computerworld
+    summary: Making technology work for business
+  daniel_haxx_se:
+    feed_url: https://daniel.haxx.se/blog/feed/
+    homepage_url: https://daniel.haxx.se/blog
+    display_name: daniel.haxx.se
+    summary: curl, open source and networking
+  dcurt_is:
+    feed_url: https://dcurt.is/feed
+    homepage_url: https://dcurt.is
+    display_name: Dustin Curtis
+    summary: Updates from Dustin Curtis.
+  howtogeek:
+    feed_url: https://www.howtogeek.com/feed/
+    homepage_url: https://www.howtogeek.com
+    display_name: How-To Geek
+    summary: We explain technology. Learn more with our articles, reviews, tips, and the best answers to your most pressing tech questions.
+  kamalmarhubi:
+    feed_url: https://kamalmarhubi.com/blog/feed.xml
+    homepage_url: http://kamalmarhubi.com
+    display_name: Kamal Marhubi
+    summary: Updates from Kamal Marhubi.
+  newstatesman:
+    feed_url: https://www.newstatesman.com/feed
+    homepage_url: https://www.newstatesman.com
+    display_name: New Statesman
+    summary: New Times, New Ideas, New Statesman
+  popsci:
+    feed_url: https://www.popsci.com/feed/
+    homepage_url: https://www.popsci.com
+    display_name: Popular Science
+    summary: Awe-inspiring science reporting, technology news, and DIY projects. Skunks to space robots, primates to climates. That's Popular Science, 150 years strong.
+  sive_rs:
+    feed_url: https://sive.rs/feed.xml
+    homepage_url: https://sive.rs
+    display_name: Derek Sivers
+    summary: Updates from Derek Sivers.
+  spectrum_ieee:
+    feed_url: https://spectrum.ieee.org/feeds/feed.rss
+    homepage_url: https://spectrum.ieee.org
+    display_name: IEEE Spectrum
+    summary: IEEE Spectrum
+  techradar:
+    feed_url: https://www.techradar.com/feeds.xml
+    homepage_url: https://www.techradar.com
+    display_name: Latest from TechRadar
+    summary: All the latest content from the TechRadar team
+  tomshardware:
+    feed_url: https://www.tomshardware.com/feeds.xml
+    homepage_url: https://www.tomshardware.com
+    display_name: Latest from Tom's Hardware
+    summary: All the latest content from the Tom's Hardware team
+  androidcentral:
+    feed_url: https://www.androidcentral.com/feeds.xml
+    homepage_url: https://www.androidcentral.com
+    display_name: Latest from Android Central
+    summary: All the latest content from the Android Central team
+  animenewsnetwork:
+    feed_url: https://www.animenewsnetwork.com/all/rss.xml?ann-edition=us
+    homepage_url: https://www.animenewsnetwork.com
+    display_name: Anime News Network
+    summary: ANN RSS feed
+  complex:
+    feed_url: https://www.complex.com/index.xml
+    homepage_url: https://www.complex.com/index
+    display_name: Complex | Music, Sneakers, Pop Culture, News & Shows
+    summary: Making Culture Pop. Find the latest entertainment news and the best in music, pop culture, sneakers, style, exclusive interviews, features, and original shows.
+  cooking_nytimes:
+    feed_url: https://cooking.nytimes.com/next/api/v1/rss/recipes
+    homepage_url: https://cooking.nytimes.com/68861692-nyt-cooking/32998034-our-newest-recipes
+    display_name: 'NYT Cooking: Latest Recipes'
+    summary: 'NYT Cooking: Latest Recipes'
+  hacks_mozilla:
+    feed_url: https://hacks.mozilla.org/feed/
+    homepage_url: https://hacks.mozilla.org
+    display_name: Mozilla Hacks – the Web developer blog
+    summary: hacks.mozilla.org
+  linux:
+    feed_url: https://www.linux.com/feed/
+    homepage_url: https://www.linux.com
+    display_name: Linux.com
+    summary: News For Open Source Professionals
+  paulstamatiou:
+    feed_url: https://paulstamatiou.com/posts.xml
+    homepage_url: https://paulstamatiou.com
+    display_name: Paul Stamatiou
+    summary: PaulStamatiou.com - Technology, Design and Photography
+  ruby_lang:
+    feed_url: https://www.ruby-lang.org/en/feeds/news.rss
+    homepage_url: https://www.ruby-lang.org
+    display_name: Ruby News
+    summary: The latest news from ruby-lang.org.
+  underconsideration:
+    feed_url: https://www.underconsideration.com/brandnew/feed/thefollowup/the_follow_up/
+    homepage_url: https://www.underconsideration.com/brandnew/archives/series/the_follow_up
+    display_name: The Follow-up
+    summary: A bi-weekly podcast that goes in depth into projects recently reviewed on Brand New, featuring conversations with the designers — and sometimes their clients — uncovering the context, background, and design decisions behind the work.
+  redditinc:
+    feed_url: https://redditinc.com/news/rss.xml
+    homepage_url: https://redditinc.com/news
+    display_name: Reddit Inc Blog Homepage
+    summary: Get the latest product news, company announcements, and user insights from the official Reddit blog.
+  xlr8r:
+    feed_url: https://xlr8r.com/feed/
+    homepage_url: https://xlr8r.com
+    display_name: XLR8R
+    summary: Accelerating music & culture
+  yankodesign:
+    feed_url: https://www.yankodesign.com/feed/
+    homepage_url: https://www.yankodesign.com
+    display_name: Yanko Design
+    summary: Modern Industrial Design News
+  journal_burningman:
+    feed_url: https://journal.burningman.org/feed/
+    homepage_url: https://journal.burningman.org
+    display_name: Burning Man Journal
+    summary: Updates from Burning Man Journal.
+  blog_last_fm:
+    feed_url: https://blog.last.fm/atom/index.html
+    homepage_url: http://blog.last.fm
+    display_name: Last.fm – the Blog
+    summary: Updates from Last.fm – the Blog.
+  blog_pinboard_in:
+    feed_url: https://blog.pinboard.in/feed/
+    homepage_url: https://blog.pinboard.in
+    display_name: Pinboard - bookmarking for introverts
+    summary: Public weblog for Pinboard
+  consequence:
+    feed_url: https://consequence.net/feed/
+    homepage_url: https://consequence.net
+    display_name: Consequence
+    summary: Music, Film, TV and Pop Culture News for the Mainstream and Underground
+  cosmopolitan:
+    feed_url: https://www.cosmopolitan.com/rss/all.xml
+    homepage_url: https://www.cosmopolitan.com
+    display_name: Latest Content - Cosmopolitan
+    summary: RSS feed for Latest Content - Cosmopolitan
+  davidwalsh_name:
+    feed_url: https://davidwalsh.name/feed/atom
+    homepage_url: https://davidwalsh.name
+    display_name: David Walsh Blog
+    summary: Updates from David Walsh Blog.
+  factmag:
+    feed_url: https://www.factmag.com/feed/
+    homepage_url: https://www.factmag.com
+    display_name: Fact Magazine
+    summary: Championing the new wave of electronic art
+  hiconsumption:
+    feed_url: https://hiconsumption.com/feed/
+    homepage_url: https://hiconsumption.com
+    display_name: HiConsumption
+    summary: HICONSUMPTION is a passionate team of gear enthusiasts, reviewing the best products in adventure, tech, motoring, watches, and style.
+  honeycomb:
+    feed_url: https://www.honeycomb.io/rss/blog.xml
+    homepage_url: https://www.honeycomb.io/blog
+    display_name: Honeycomb Blog
+    summary: Latest blog posts from Honeycomb.
+  jxnblk:
+    feed_url: https://jxnblk.com/rss.xml
+    homepage_url: https://jxnblk.com
+    display_name: Jxnblk Blog
+    summary: Brent Jackson - design engineer and aspiring indie game dev
+  knowyourmeme:
+    feed_url: https://knowyourmeme.com/newsfeed.rss
+    homepage_url: https://knowyourmeme.com
+    display_name: Know Your Meme Newsfeed
+    summary: New items added to the News Feed
+  musicradar:
+    feed_url: https://www.musicradar.com/feeds.xml
+    homepage_url: https://www.musicradar.com
+    display_name: Latest from MusicRadar
+    summary: All the latest content from the MusicRadar team
+  priceonomics:
+    feed_url: https://priceonomics.com/feed/
+    homepage_url: https://priceonomics.com
+    display_name: Priceonomics
+    summary: In Data We Trust
+  thenation:
+    feed_url: https://www.thenation.com/feed/?post_type=article
+    homepage_url: https://www.thenation.com/article
+    display_name: Article | The Nation
+    summary: The Nation Magazine
+  aphyr:
+    feed_url: https://aphyr.com/posts.atom
+    homepage_url: https://aphyr.com
+    display_name: 'Aphyr: Posts'
+    summary: 'Updates from Aphyr: Posts.'
+  archive_is:
+    feed_url: https://archive.is/rss
+    homepage_url: https://archive.is
+    display_name: archive.is
+    summary: archive.is, webpage capture, 网页存档, 웹페이지 캡쳐, salvaguardar la web, сохранить страницы, screenshot, link rot, freezepage, webcite
+  blog_codinghorror:
+    feed_url: https://blog.codinghorror.com/rss/
+    homepage_url: https://blog.codinghorror.com
+    display_name: Coding Horror
+    summary: programming and human factors
+  blog_playstation:
+    feed_url: http://feeds.feedburner.com/psblog
+    homepage_url: https://blog.playstation.com
+    display_name: PlayStation.Blog
+    summary: Official PlayStation Blog for news and video updates on PlayStation, PS5, PS4, PS VR, PlayStation Plus and more.
   drew_devault:
     feed_url: https://drewdevault.com/blog/index.xml
     homepage_url: https://drewdevault.com
