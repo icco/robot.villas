@@ -7456,256 +7456,261 @@ bots:
     display_name: NPR Politics Podcast
     summary: Weekly roundups and deep dives on politics from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
-  alephzarro:
-    feed_url: https://www.alephzarro.com/feed/
-    homepage_url: https://www.alephzarro.com
-    display_name: Aleph Zarro
-    summary: News
-  aless_co:
+  alessia_bellisario:
     feed_url: https://aless.co/rss.xml
     homepage_url: https://aless.co
     display_name: Alessia Bellisario
-    summary: alessia bellisario's blog
-  alexbaldwin_tumblr:
+    summary: Personal writing and software engineering posts by Alessia Bellisario.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Faless.co&size=128
+  alex_baldwin_tumblr:
     feed_url: https://alexbaldwin.tumblr.com/rss
     homepage_url: https://alexbaldwin.tumblr.com
-    display_name: Alex Baldwin
-    summary: http://alexbaldwin.com
-  alexbuga:
+    display_name: Alex Baldwin - Tumblr
+    summary: Archived photography posts from Alex Baldwin's Tumblr.
+    profile_photo: https://api.tumblr.com/v2/blog/alexbaldwin.tumblr.com/avatar/128
+  alex_buga:
     feed_url: https://alexbuga.com/rss
     homepage_url: https://alexbuga.com
-    display_name: Alex Buga - UI Designer / Mobile Developer
-    summary: Homepage of Alex Buga, a designer / mobile developer living and working in Bucharest, Romania. Mobile Developer at GrubHub.
-  alexcsantos_wordpress:
+    display_name: Alex Buga
+    summary: Archived photography and personal posts by designer and mobile developer Alex Buga.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Falexbuga.com&size=128
+  hello_im_alex:
     feed_url: https://alexcsantos.wordpress.com/feed/
     homepage_url: https://alexcsantos.wordpress.com
     display_name: Hello, I'm Alex
-    summary: A misleading blog about engineering
-  alexking:
+    summary: Archived software engineering posts by Alex Correia, covering AWS and web event tracking.
+    profile_photo: https://secure.gravatar.com/blavatar/0d28b975ffe19157cd28420948dd87eccafbac3522f1c9f73843bc33e318e1ce?s=114
+  alex_king:
     feed_url: https://alexking.org/feed
     homepage_url: https://alexking.org
-    display_name: alexking.org
-    summary: Alex King, Denver Web Developer
-  alexlod:
-    feed_url: https://alexlod.com/feed.xml
-    homepage_url: https://alexlod.com
-    display_name: Alex’s Personal Website
-    summary: Updates from Alex’s Personal Website.
-  alexn:
+    display_name: Alex King
+    summary: Alex King's archived blog about WordPress, web development, photography, and personal life.
+  alexandru_nedelcu:
     feed_url: https://alexn.org/feeds/blog.xml
     homepage_url: https://alexn.org
-    display_name: Alexandru Nedelcu - Blog
-    summary: Feed of blog articles, published at alexn.org/blog/
-  alexolivier_me:
+    display_name: Alexandru Nedelcu
+    summary: Programming, software engineering, personal projects, and technology commentary by Alexandru Nedelcu.
+    profile_photo: https://alexn.org/assets/logo/180px.png
+  alex_olivier:
     feed_url: https://alexolivier.me/rss.xml
     homepage_url: https://alexolivier.me
     display_name: Alex Olivier
-    summary: Alex Olivier
-  alexpeattie:
+    summary: Writing by Alex Olivier about software authorization, TypeScript, cloud deployment, and smart homes.
+    profile_photo: https://alexolivier.me/icons/icon-48x48.png?v=2b8f812cc5776703f623a7e27c462f34
+  alex_peattie:
     feed_url: https://alexpeattie.com/feed.atom
     homepage_url: https://alexpeattie.com
-    display_name: Alex Peattie – Engineering leader and former founder, based in Paris
+    display_name: Alex Peattie
     summary: Updates from Alex Peattie – Engineering leader and former founder, based in Paris.
-  alexschapiro:
+    profile_photo: https://alexpeattie.com/apple-touch-icon.png
+  alex_schapiro:
     feed_url: https://alexschapiro.com/feed.xml
     homepage_url: https://alexschapiro.com
     display_name: Alex Schapiro
-    summary: Updates from Alex Schapiro.
-  alexselimov:
+    summary: Security research and responsible vulnerability disclosures by Alex Schapiro.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Falexschapiro.com&size=128
+  alex_selimov:
     feed_url: https://alexselimov.com/index.xml
-    homepage_url: https://www.alexselimov.com
+    homepage_url: https://alexselimov.com
     display_name: Alex Selimov
-    summary: Recent content on Alex Selimov
-  alfy_blog:
+    summary: Personal writing and software development projects by Alex Selimov.
+    profile_photo: https://www.alexselimov.com/favicon.png
+  ahmad_alfy:
     feed_url: https://alfy.blog/feed.xml
     homepage_url: https://alfy.blog
     display_name: Ahmad Alfy
-    summary: Updates from Ahmad Alfy.
-  alicegrove:
+    summary: Front-end development and web platform posts by Ahmad Alfy.
+  alice_grove:
     feed_url: https://www.alicegrove.com/rss
     homepage_url: https://www.alicegrove.com
     display_name: Alice Grove
-    summary: Alice Grove is a comic by Jeph Jacques. It updates once a week right now.
-  scottmurray:
+    summary: Archived posts and pages from Alice Grove, Jeph Jacques' completed science-fiction webcomic.
+  d3_tutorials:
     feed_url: https://scottmurray.org/tutorials/d3/feed
-    homepage_url: https://scottmurray.org
+    homepage_url: https://scottmurray.org/tutorials/d3/
     display_name: D3 Tutorials
-    summary: Additions and updates to the D3 tutorials by Scott Murray on alignedleft.com
-  alittlebeaconblog:
+    summary: Archived D3 3.x data visualization tutorials by Scott Murray. These tutorials are no longer updated.
+  a_little_beacon_blog:
     feed_url: https://www.alittlebeaconblog.com/blog?format=rss
     homepage_url: https://www.alittlebeaconblog.com/blog
-    display_name: Articles - A Little Beacon Blog
-    summary: Updates from Articles - A Little Beacon Blog.
-  aljazeera:
+    display_name: A Little Beacon Blog
+    summary: Local news, community events, and guides for Beacon, New York, and the Hudson Valley.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.alittlebeaconblog.com%2Fblog&size=128
+  al_jazeera:
     feed_url: https://www.aljazeera.com/xml/rss/all.xml
     homepage_url: https://www.aljazeera.com
-    display_name: Al Jazeera – Breaking News, World News and Video from Al Jazeera
+    display_name: Al Jazeera
     summary: Breaking News, World News and Video from Al Jazeera
+    profile_photo: https://www.aljazeera.com/images/logo_aje.png
   all_things_andy_gavin:
     feed_url: https://all-things-andy-gavin.com/feed/
     homepage_url: https://all-things-andy-gavin.com
     display_name: All Things Andy Gavin
     summary: Writing, Food, Technology, and Entertainment shoved in the blender
-  allaboutstevejobs:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fall-things-andy-gavin.com&size=128
+  all_about_steve_jobs:
     feed_url: https://allaboutstevejobs.com/blog/feed/
     homepage_url: https://allaboutstevejobs.com/blog
-    display_name: all about Steve Jobs.com
+    display_name: All About Steve Jobs
     summary: Blog dedicated to all things Steve Jobs
+    profile_photo: https://allaboutstevejobs.com/resources/img/favicons/apple-icon-57x57.png
   alleywatch:
     feed_url: https://www.alleywatch.com/feed/
     homepage_url: https://www.alleywatch.com
     display_name: AlleyWatch
     summary: The Pulse of New York Tech
+    profile_photo: https://www.alleywatch.com/wp-content/uploads/2022/11/cropped-AlleyWatch-Logo-AW-180x180.png
   allhiphop:
     feed_url: https://allhiphop.com/feed/
     homepage_url: https://allhiphop.com
     display_name: AllHipHop
     summary: Hip Hop Culture Without Boundaries
+    profile_photo: https://allhiphop.com/wp-content/uploads/2020/08/cropped-allhiphop-insignia-300x300.png
   alonso_network:
     feed_url: https://alonso.network/rss/
     homepage_url: https://alonso.network
     display_name: Alonso Network
-    summary: The End (Your Purpose) is the Beginning
-  alysonshane:
+    summary: Software engineering, TypeScript, and open-source project writing by Danilo Alonso.
+    profile_photo: https://alonso.network/content/images/size/w256h256/2025/05/favicon@2x.png
+  alyson_shane:
     feed_url: https://www.alysonshane.com/blog/rss
-    homepage_url: http://www.alysonshane.com/blog
-    display_name: Alyson Shane blog
-    summary: www.alysonshane.com official blog.
-  amberwilson:
+    homepage_url: https://www.alysonshane.com/blog
+    display_name: Alyson Shane
+    summary: Personal essays, poetry, travel, and reflections by writer Alyson Shane.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.alysonshane.com%2Fblog&size=128
+  amber_wilson:
     feed_url: https://amberwilson.co.uk/rss.xml
     homepage_url: https://amberwilson.co.uk
-    display_name: 'Amber: Blog'
-    summary: 'Updates from Amber: Blog.'
-  americanbanker:
+    display_name: Amber Wilson
+    summary: Web development, community, and personal writing by Amber Wilson.
+    profile_photo: https://amberwilson.co.uk/img/favicon/apple-touch-icon.png
+  american_banker:
     feed_url: https://www.americanbanker.com/feed?rss=true
     homepage_url: https://www.americanbanker.com
-    display_name: The Latest
-    summary: The Latest
-  americansongwriter:
+    display_name: American Banker
+    summary: Banking industry news and analysis, including regulation, financial technology, and credit unions.
+    profile_photo: https://www.americanbanker.com/apple-touch-icon.png
+  american_songwriter:
     feed_url: https://americansongwriter.com/feed/
     homepage_url: https://americansongwriter.com
     display_name: American Songwriter
-    summary: American Songwriter
+    summary: Music news, songwriting, artist interviews, and song and album features.
+    profile_photo: https://americansongwriter.com/wp-content/uploads/sites/7/2026/05/cropped-site-icon_883d8c.png?w=180
   ameyama:
     feed_url: https://ameyama.com/rss.xml
     homepage_url: https://ameyama.com
     display_name: 雨山
     summary: Josh's website
-  amisometimes_tumblr:
+  butt_blog:
     feed_url: https://amisometimes.tumblr.com/rss
     homepage_url: https://amisometimes.tumblr.com
     display_name: Butt Blog
-    summary: 642. Everybody poops guys.
-  ammunitiongroup:
-    feed_url: https://ammunitiongroup.com/feed/
-    homepage_url: https://ammunitiongroup.com
-    display_name: Ammunition
-    summary: We’re a design studio dedicated to bringing products and services that matter to market.
-  anatomyofahoax_tumblr:
-    feed_url: https://anatomyofahoax.tumblr.com/rss
-    homepage_url: https://anatomyofahoax.tumblr.com
-    display_name: Calça Jeans Preta
-    summary: "\U0001F456✨ Descubra a essência do estilo com a Empresa Calça Jeans Preta, sua parceira fashion que te conecta com o melhor da moda em calça Jeans! \U0001F4BC\U0001F4AB Se você busca peças que combinem qualidade, conforto e muito estilo, você está no lugar certo! E o melhor de tudo? Nós somos revendedores exclusivos da marca Use Criativa! \U0001F31F Na Use Criativa, a moda Jeans ganha vida de uma forma única e apaixonante! \U0001F499 Desde até shorts, bermudas e jaquetas, cada peça é pensada para refletir personalidade e atitude. E ad"
-  andreasgal:
+    summary: Archived personal posts, Final Fantasy XIV art, and screenshots from the Butt Blog Tumblr. Includes adult artwork.
+    profile_photo: https://api.tumblr.com/v2/blog/amisometimes.tumblr.com/avatar/128
+  andreas_gal:
     feed_url: https://andreasgal.com/feed/
     homepage_url: https://andreasgal.com
     display_name: Andreas Gal
-    summary: Entrepreneur. Technologist. Former CTO Mozilla, CEO Silk Labs. Now 
-  andregarzia:
+    summary: Archived technology and browser-industry commentary by Andreas Gal, former Mozilla CTO and Silk Labs co-founder.
+  andre_garzia:
     feed_url: https://andregarzia.com/feeds/all.atom.xml
     homepage_url: https://andregarzia.com
-    display_name: AndreGarzia.com
-    summary: Updates from AndreGarzia.com.
+    display_name: André Garzia
+    summary: Personal writing, programming, decentralization, creative projects, and photography by Andre Garzia.
+    profile_photo: https://github.com/soapdog.png?size=200
   andrew_yurisich:
     feed_url: https://andrew.yurisich.com/atom.xml
     homepage_url: https://andrew.yurisich.com
     display_name: Andrew Yurisich
-    summary: Updates from Andrew Yurisich.
-  andrewducker_livejournal:
+    summary: Archived software development notes, book and music reviews, and personal writing by Andrew Yurisich.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fandrew.yurisich.com&size=128
+  made_from_truth_and_lies:
     feed_url: https://andrewducker.livejournal.com/data/rss
     homepage_url: https://andrewducker.livejournal.com
     display_name: Made from Truth and Lies
-    summary: Made from Truth and Lies - LiveJournal.com
-  andrewmunsell:
-    feed_url: https://www.andrewmunsell.com/feed.xml
-    homepage_url: https://www.andrewmunsell.com
-    display_name: Statamic
-    summary: I am a software engineer based out of Seattle, WA
-  androiddevelopmentexperts_blogspot:
+    summary: Andrew Ducker's archived LiveJournal posts and former Dreamwidth cross-posts, including personal writing and technology commentary.
+    profile_photo: https://l-userpic.livejournal.com/91817750/413999
+  android_development_experts:
     feed_url: https://androiddevelopmentexperts.blogspot.com/feeds/posts/default
     homepage_url: https://androiddevelopmentexperts.blogspot.com
     display_name: Android Development Experts
-    summary: Updates from Android Development Experts.
-  androidniceties_tumblr:
+    summary: Archived Android device news, app roundups, and tutorials from 2014.
+  android_niceties:
     feed_url: https://androidniceties.tumblr.com/rss
     homepage_url: https://androidniceties.tumblr.com
     display_name: Android Niceties
-    summary: Beautiful, well-built Android apps. Inspiration and insight into Android UI conventions. Feel free to tweet a suggestion. By @c0up.
-  andymatuschak:
+    summary: Archived examples of Android app interface design, curated by @c0up.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fandroidniceties.tumblr.com&size=128
+  square_signals:
     feed_url: https://blog.andymatuschak.org/rss
-    homepage_url: https://andymatuschak.org
+    homepage_url: https://blog.andymatuschak.org
     display_name: Square Signals
-    summary: Tidbits on software, music, food, design, and life.
-  anediblemosaic:
+    summary: Square Signals, Andy Matuschak's archived essays on software, learning, creative work, music, and life.
+  an_edible_mosaic:
     feed_url: https://www.anediblemosaic.com/feed/
     homepage_url: https://www.anediblemosaic.com
-    display_name: An Edible Mosaic™
-    summary: Everyday Fare With Extraordinary Flair
-  anewdomain:
-    feed_url: https://anewdomain.net/feed/
-    homepage_url: https://anewdomain.net
-    display_name: aNewDomain
-    summary: Tech. Science. Politics. Now.
+    display_name: An Edible Mosaic
+    summary: Recipes, international cooking, and restaurant reviews by Faith Gorsky.
+    profile_photo: https://www.anediblemosaic.com/wp-content/uploads//2024/05/favicon-300x300.png
   angelpad:
     feed_url: https://angelpad.com/feed/
     homepage_url: https://angelpad.com
     display_name: AngelPad
-    summary: '#1 U.S Accelerator based in SF and NYC'
-  angelscup:
+    summary: News about AngelPad's seed-stage startup accelerator and its portfolio companies.
+    profile_photo: https://angelpad.com/wp-content/uploads/cropped-angelpad-logo-1-180x180.jpg
+  angels_cup:
     feed_url: https://angelscup.com/blogs/blog.atom
     homepage_url: https://angelscup.com/blogs/blog
-    display_name: Angels' Cup - Blog
-    summary: Updates from Angels' Cup - Blog.
+    display_name: Angels' Cup
+    summary: Coffee tasting guides and featured coffees from the Angels' Cup subscription team.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fangelscup.com%2Fblogs%2Fblog&size=128
   anglotopia:
     feed_url: https://anglotopia.net/feed/
     homepage_url: https://anglotopia.net
-    display_name: Anglotopia.net
+    display_name: Anglotopia
     summary: The Website for Anglophiles
-  animalchannel_co:
+    profile_photo: https://i0.wp.com/anglotopia.net/wp-content/uploads/2018/12/cropped-Anglotopia-logo-2-copy-nobg.png?fit=180%2C180&ssl=1
+  animal_channel:
     feed_url: https://animalchannel.co/feed/
     homepage_url: https://animalchannel.co
     display_name: Animal Channel
-    summary: We’re all animals, if you think about it
+    summary: Animal and pet stories, rescues, and viral animal videos from Animal Channel.
+    profile_photo: https://cdn.animalchannel.co/wp-content/themes/sbly-media/assets/img/logos/profile_animal_32x32.png
   animananime:
     feed_url: https://animananime.com/feed/
     homepage_url: https://animananime.com
     display_name: animananime
-    summary: Too many thoughts on Japanese Animation
-  animationobsessive_substack:
+    summary: Archived anime reviews, essays, and Japanese-language translation commentary by edsamac.
+    profile_photo: https://secure.gravatar.com/blavatar/a48d1011702d3c6b6b05a1735ce73aeda7b5d7d981a73100c59925dd247fd4d4?s=114
+  animation_obsessive:
     feed_url: https://animationobsessive.substack.com/feed
     homepage_url: https://animationobsessive.substack.com
     display_name: Animation Obsessive
     summary: Exploring the best in animation from all around the world — part investigation, part treasure hunt.
-  anishathalye:
+    profile_photo: https://substackcdn.com/image/fetch/$s_!U9aQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fad31c56d-981c-402b-966a-3ed74992a19e%2Fapple-touch-icon-57x57.png
+  anish_athalye:
     feed_url: https://anishathalye.com/feed.xml
     homepage_url: https://anishathalye.com
     display_name: Anish Athalye
     summary: Anish Athalye's blog. I write about math, computer science, programming, and software and hardware hacks.
-  ankursethi:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fanishathalye.com&size=128
+  ankur_sethis_lab_notebook:
     feed_url: https://ankursethi.com/feeds/index.xml
     homepage_url: https://ankursethi.com
     display_name: Ankur Sethi's Lab Notebook
     summary: Personal website of Ankur Sethi, writer and independent frontend engineer living in Bangalore, India.
-  anna_ps:
+    profile_photo: https://ankursethi.com/static/favicon/apple-touch-icon.5008fe5d23c7.png
+  anna_powell_smith:
     feed_url: https://anna.ps/blog/feed
     homepage_url: https://anna.ps/blog
-    display_name: Anna’s blog
-    summary: Updates from Anna’s blog.
-  annehelen_substack:
+    display_name: Anna Powell-Smith
+    summary: Personal essays and public-interest data projects by Anna Powell-Smith.
+  culture_study:
     feed_url: https://annehelen.substack.com/feed
     homepage_url: https://annehelen.substack.com
     display_name: Culture Study
-    summary: Think more about the culture that surrounds you
+    summary: Anne Helen Petersen's Culture Study Substack archive, with occasional updates directing readers to its current publication on Patreon.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!oYuC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F82795289-5bc8-4397-a1e1-180c6992c804%2Fapple-touch-icon-57x57.png
   npr_code_switch:
     feed_url: https://feeds.npr.org/510312/podcast.xml
     homepage_url: https://www.npr.org/codeswitch
