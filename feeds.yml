@@ -15464,6 +15464,279 @@ bots:
     display_name: Fabien Sanglard
     summary: Game engine archaeology, graphics programming, hardware teardowns, and code review of classic software.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://fabiensanglard.net&size=128
+  nackblog:
+    feed_url: http://jnack.com/blog/feed/
+    homepage_url: http://jnack.com/blog
+    display_name: Nackblog
+    summary: John Nack's commentary and links on photography, illustration, creative software, mobile apps, and AI.
+  joan_ganz_cooney_center:
+    feed_url: https://joanganzcooneycenter.org/feed/
+    homepage_url: https://joanganzcooneycenter.org
+    display_name: Joan Ganz Cooney Center
+    summary: Research, publications, initiatives, and commentary from the Joan Ganz Cooney Center on children's learning and digital media.
+    profile_photo: https://joanganzcooneycenter.org/wp-content/uploads/2025/10/cropped-favicon-180x180.png
+  westenberg:
+    feed_url: https://www.joanwestenberg.com/feed
+    homepage_url: https://www.joanwestenberg.com
+    display_name: WESTENBERG
+    summary: JA Westenberg's essays on technology, AI, culture, work, and life, published as WESTENBERG.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!Li9m!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9957195b-8502-4f6d-a807-6aa1895d34de%2Fapple-touch-icon-57x57.png
+  joel_drapper:
+    feed_url: https://joel.drapper.me/rss.xml
+    homepage_url: https://joel.drapper.me
+    display_name: Joel Drapper
+    summary: Joel Drapper's software development articles on Ruby, types, HTML, Phlex, and open-source projects.
+  joel_franusic:
+    feed_url: https://joel.franusic.com/rss.xml
+    homepage_url: https://joel.franusic.com
+    display_name: Joël Franusic
+    summary: Joel Franusic's posts on programming, creative technology projects, games, and community events.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjoel.franusic.com&size=128
+  joel_gascoigne:
+    feed_url: https://joel.is/rss/
+    homepage_url: https://joel.is
+    display_name: Joel Gascoigne
+    summary: Joel Gascoigne's articles, notes, quotes, and links on building Buffer, entrepreneurship, personal growth, and work.
+    profile_photo: https://joel.is/cdn-cgi/imagedelivery/8UsJNwl0JNE30EmncpA2bw/images/joel.jpg/favicon
+  joe_lambert:
+    feed_url: https://www.joelambert.co.uk/feed/
+    homepage_url: https://www.joelambert.co.uk
+    display_name: Joe Lambert
+    summary: 'Joe Lambert''s archived web development and UX articles, including offline apps, WordPress, and testing. Latest feed post: October 2016.'
+  the_artist_economy:
+    feed_url: https://joelgouveia.substack.com/feed
+    homepage_url: https://joelgouveia.substack.com
+    display_name: The Artist Economy
+    summary: Joel Gouveia's commentary on the music industry, artist economics, owned audiences, streaming, and AI.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!bJ0a!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F19f718c8-e955-44f1-b152-2b46a3430b2c%2Fapple-touch-icon-57x57.png
+  joel_grus:
+    feed_url: https://joelgrus.com/feeds/atom.xml
+    homepage_url: https://joelgrus.com
+    display_name: Joel Grus
+    summary: Joel Grus writes about software engineering, data science, machine learning, AI experiments, and personal projects.
+    profile_photo: https://joelgrus.com/images/apple-touch-icon.png
+  sliding_up_the_banister:
+    feed_url: https://joelneely.wordpress.com/feed/
+    homepage_url: https://joelneely.wordpress.com
+    display_name: Sliding up the banister
+    summary: 'Joel Neely''s archived essays on functional programming, data structures, and programming languages. Latest feed post: July 2012.'
+  joel_oliveira:
+    feed_url: https://joeloliveira.com/rss.xml
+    homepage_url: https://joeloliveira.com
+    display_name: Joel Oliveira
+    summary: Joel Oliveira's software development and personal posts, covering Ruby, self-hosting, web projects, and family life.
+    profile_photo: https://joeloliveira.com/images/ico/apple-touch-icon.png
+  joel_meyer:
+    feed_url: https://joelpm.com/atom.xml
+    homepage_url: https://joelpm.com
+    display_name: Joel Meyer
+    summary: 'Joel Meyer''s archived thoughts on software and people, including curl, Amazon EC2, and JavaScript tooling. Latest feed post: June 2010.'
+  joe_mcnally_photography:
+    feed_url: https://joemcnally.com/feed/
+    homepage_url: https://joemcnally.com
+    display_name: Joe McNally Photography
+    summary: Joe McNally's photography blog, featuring assignments, lighting techniques, workshops, travel, and visual storytelling.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjoemcnally.com&size=128
+  joe_miller:
+    feed_url: https://joemiller.me/index.xml
+    homepage_url: https://joemiller.me
+    display_name: Joe Miller
+    summary: 'Joe Miller''s archived infrastructure engineering articles on release signing, logging, and monitoring. Latest feed post: July 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fjoemiller.me&size=128
+  john_onolan:
+    feed_url: https://john.onolan.org/rss/
+    homepage_url: https://john.onolan.org
+    display_name: John O'Nolan
+    summary: John O'Nolan's writing on Ghost, independent publishing, open-source software, business, and travel.
+    profile_photo: https://storage.ghost.io/c/ea/8b/ea8b2b53-5dd6-4318-90a8-6ae8fcf8239f/content/images/size/w256h256/format/jpeg/2024/03/gravatar-j10-square.jpg
+  the_grumpy_economist:
+    feed_url: https://johnhcochrane.blogspot.com/feeds/posts/default
+    homepage_url: https://johnhcochrane.blogspot.com
+    display_name: The Grumpy Economist
+    summary: 'John Cochrane''s archived economics and policy blog. Latest Blogger post: February 2024; recent entries point to his Substack.'
+  john_james:
+    feed_url: https://johnjames.blog/rss.xml
+    homepage_url: https://johnjames.blog
+    display_name: John James
+    summary: John James's engineering notes on web development, JavaScript, TypeScript, monorepos, dependencies, and CI/CD.
+    profile_photo: https://johnjames.blog/icon.png
+  john_keefe:
+    feed_url: https://johnkeefe.net/posts.atom
+    homepage_url: https://johnkeefe.net
+    display_name: John Keefe
+    summary: John Keefe's posts on journalism, data visualization, mapping, and DIY technology projects.
+  don_kenn_gallery:
+    feed_url: https://johnkenn.blogspot.com/feeds/posts/default
+    homepage_url: https://johnkenn.blogspot.com
+    display_name: Don Kenn Gallery
+    summary: 'John Kenn''s archived gallery of monster drawings on sticky notes. Latest feed post: July 2016.'
+  john_myles_white:
+    feed_url: https://www.johnmyleswhite.com/index.xml
+    homepage_url: https://www.johnmyleswhite.com
+    display_name: John Myles White
+    summary: 'John Myles White''s archived notebook on statistics, machine learning, scientific computing, and programming. Latest feed post: December 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.johnmyleswhite.com&size=128
+  johnny_rodgers:
+    feed_url: https://www.johnnyrodgers.is/rss/
+    homepage_url: https://www.johnnyrodgers.is
+    display_name: Johnny Rodgers
+    summary: Johnny Rodgers writes about software, technology design, building a home, woodworking, investing, and life.
+    profile_photo: https://storage.ghost.io/c/aa/2b/aa2bd887-d7c1-42e6-9913-38e4aa2b1099/content/images/size/w256h256/format/png/2024/12/bicycle.webp
+  john_pavlus:
+    feed_url: https://johnpavlus.wordpress.com/feed/
+    homepage_url: https://johnpavlus.wordpress.com
+    display_name: John Pavlus
+    summary: 'John Pavlus''s archived personal essays on technology, design, books, and life. Latest feed post: September 2013; the homepage announces a blog move.'
+  dave_johnston:
+    feed_url: https://www.johnsto.co.uk/blog/index.xml
+    homepage_url: https://www.johnsto.co.uk
+    display_name: Dave Johnston
+    summary: Dave Johnston's blog on software projects, game development, Counter-Strike level design, and personal technology.
+    profile_photo: https://www.johnsto.co.uk/i/favicon-avatar.png
+  joi_itos_web:
+    feed_url: https://feeds.feedburner.com/joi-ito/weblog
+    homepage_url: https://joi.ito.com
+    display_name: Joi Ito's Web
+    summary: Joi Ito's weblog on technology, AI, social software, culture, and personal life, including guest posts.
+    profile_photo: https://joi.ito.com/favicon.png
+  johanna_larsson:
+    feed_url: https://jola.dev/rss.xml
+    homepage_url: https://jola.dev
+    display_name: Johanna Larsson
+    summary: Johanna Larsson's articles on software engineering, Elixir, open-source projects, atproto, and technology.
+    profile_photo: https://jola.dev/images/logo.png
+  juan_olvera:
+    feed_url: https://jolvera.dev/feed.xml
+    homepage_url: https://jolvera.dev
+    display_name: Juan Olvera
+    summary: 'Juan Olvera''s archived articles on accessible web development, personal websites, writing, and frontend technology. Latest dated feed entry: March 2020.'
+  jonathan_hedley:
+    feed_url: https://jhedley.com/feed.xml
+    homepage_url: https://jhedley.com
+    display_name: Jonathan Hedley
+    summary: Jonathan Hedley's software engineering notes, jsoup development updates, and web tools.
+    profile_photo: https://jhedley.com/rez/jh-badge-512.png
+  what_i_couldnt_say:
+    feed_url: https://jonathanischwartz.wordpress.com/feed/
+    homepage_url: https://jonathanischwartz.wordpress.com
+    display_name: What I Couldn't Say…
+    summary: 'Jonathan Schwartz''s archived essays on technology businesses, leadership, software, and CareZone. Latest feed post: December 2012.'
+    profile_photo: https://secure.gravatar.com/blavatar/84aa8e3298208f625142619be58d01302d5627807b50bd856ee8d6f3733ea720?s=114
+  jonathanmh:
+    feed_url: https://jonathanmh.com/feed/feed.xml
+    homepage_url: https://jonathanmh.com
+    display_name: JonathanMH
+    summary: Jonathan M. Hethey's programming tutorials, technology commentary, photography, and personal adventures.
+    profile_photo: https://jonathanmh.com/assets/jonathan.webp
+  jonathan_w_stokes:
+    feed_url: https://www.jonathanwstokes.com/blog?format=rss
+    homepage_url: https://www.jonathanwstokes.com/blog
+    display_name: Jonathan W. Stokes
+    summary: Jonathan W. Stokes's blog on books, writing, films, creative projects, and annual reading recommendations.
+  jonathas_ribeiro:
+    feed_url: https://jonathas.com/feed.xml
+    homepage_url: https://jonathas.com
+    display_name: Jonathas Ribeiro
+    summary: Jonathas Ribeiro's software engineering articles on Linux, cloud services, home automation, and personal technology projects.
+    profile_photo: https://jonathas.com/images/apple-touch-icon-precomposed.png
+  jon_kuperman:
+    feed_url: https://jonkuperman.com/feed/feed.xml
+    homepage_url: https://jonkuperman.com
+    display_name: Jon Kuperman
+    summary: Jon Kuperman's writing on programming, web development, software projects, and personal life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjonkuperman.com&size=128
+  dissension:
+    feed_url: https://jonpeck.blogspot.com/feeds/posts/default
+    homepage_url: https://jonpeck.blogspot.com
+    display_name: dissension
+    summary: 'Jon Peck''s archived writing on web programming, Drupal, open-source software, and other technology. Latest feed post: March 2012.'
+  jonathon_ready_blog:
+    feed_url: https://jonready.com/blog/feed.xml
+    homepage_url: https://jonready.com/blog
+    display_name: Jonathon Ready Blog
+    summary: Jonathon Ready's posts on local AI, software projects, agent systems, and building technology products.
+  joses_blog:
+    feed_url: https://jootse84.github.io/feed.xml
+    homepage_url: https://jootse84.github.io
+    display_name: Jose's blog
+    summary: 'Jose''s archived computer science blog on coding, data analysis, blockchain, and personal projects. Latest feed post: November 2017.'
+    profile_photo: https://jootse84.github.io/assets/profile.jpg
+  jose_diaz_gonzalez:
+    feed_url: https://josediazgonzalez.com/atom.xml
+    homepage_url: https://josediazgonzalez.com
+    display_name: Jose Diaz-Gonzalez
+    summary: Jose Diaz-Gonzalez's software development and operations notes on CakePHP, deployment, AWS, and handheld gaming projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjosediazgonzalez.com&size=128
+  josef_baciks_blog:
+    feed_url: https://josefbacik.github.io/feed.xml
+    homepage_url: https://josefbacik.github.io
+    display_name: Josef Bacik’s Blog
+    summary: Josef Bacik's Linux kernel development notes on Btrfs, scheduling, performance debugging, and systing.
+    profile_photo: https://github.com/josefbacik.png?size=200
+  seph:
+    feed_url: https://josephg.com/blog/rss/
+    homepage_url: https://josephg.com/blog
+    display_name: Seph
+    summary: 'Joseph Gentle''s programming essays on Rust, collaborative editing, CRDTs, software performance, and security. Latest feed post: September 2024.'
+  joseph_thacker:
+    feed_url: https://josephthacker.com/feed.xml
+    homepage_url: https://josephthacker.com
+    display_name: Joseph Thacker
+    summary: Joseph Thacker's writing on security research, hacking, AI, faith, and personal life.
+    profile_photo: https://josephthacker.com/apple-touch-icon.png
+  startup_thoughts:
+    feed_url: https://josephwalla.com/posts.atom
+    homepage_url: https://josephwalla.com
+    display_name: startup thoughts
+    summary: 'Joseph Walla''s archived essays on startups, entrepreneurship, company growth, and civic issues. Latest feed post: October 2018.'
+  just_joshing:
+    feed_url: https://www.josh.ing/blog/rss.xml
+    homepage_url: https://www.josh.ing/blog
+    display_name: Just Joshing
+    summary: Just Joshing's posts on building software, investing, AI experiments, and creative projects.
+    profile_photo: https://www.josh.ing/jj-jesterhat.png
+  joshua_tauberers_archived_blog:
+    feed_url: https://joshdata.wordpress.com/feed/
+    homepage_url: https://joshdata.wordpress.com
+    display_name: Joshua Tauberer's Archived Blog
+    summary: Joshua Tauberer's archived blog on civic technology, open government data, software projects, and personal life, covering 2004-2015.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjoshdata.me&size=128
+  notes_josh_mcarthur:
+    feed_url: https://www.joshmcarthur.com/feed/
+    homepage_url: https://joshmcarthur.com
+    display_name: 'Notes: Josh McArthur'
+    summary: Josh McArthur's web development notes, technology projects, and hiking posts, with a focus on Ruby on Rails.
+    profile_photo: https://github.com/joshmcarthur.png?size=200
+  joshtronic:
+    feed_url: https://joshtronic.com/rss.xml
+    homepage_url: https://joshtronic.com
+    display_name: Joshtronic
+    summary: Josh Sherman's weekly programming tutorials, software projects, technology commentary, and personal essays.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjoshtronic.com&size=128
+  joshua_rogers_scribbles:
+    feed_url: https://joshua.hu/feed.xml
+    homepage_url: https://joshua.hu
+    display_name: Joshua Rogers’ Scribbles
+    summary: Joshua Rogers's security research, systems engineering articles, browser tooling, game history, and personal essays.
+    profile_photo: https://joshua.hu/apple-touch-icon.png
+  james_zhan_in_real_life:
+    feed_url: https://journal.james-zhan.com/feed/
+    homepage_url: https://journal.james-zhan.com
+    display_name: James Zhan in real life.
+    summary: James Zhan's personal essays and weeknotes on technology, design, society, coffee, and life.
+    profile_photo: https://bear-images.sfo2.cdn.digitaloceanspaces.com/jameszhanirl/james-avatar-square.webp
+  pauls_journal:
+    feed_url: https://paul.querna.org/atom.xml
+    homepage_url: https://paul.querna.org
+    display_name: Paul's Journal
+    summary: 'Paul Querna''s archived engineering articles on infrastructure, Go, security, cloud computing, and open-source software. Latest feed post: October 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpaul.querna.org&size=128
+  journalism_uk:
+    feed_url: https://www.journalism.co.uk/tag/news/rss/
+    homepage_url: https://www.journalism.co.uk
+    display_name: Journalism UK
+    summary: Journalism UK's editorial reporting, interviews, tools, and practical advice for journalists and newsrooms.
+    profile_photo: https://storage.ghost.io/c/5c/e7/5ce74819-ead9-4ef3-8ecc-47e8bfde5535/content/images/size/w256h256/2025/10/Untitled-design--6-.png
   ben_kuhn:
     feed_url: https://www.benkuhn.net/rss/
     homepage_url: https://www.benkuhn.net
