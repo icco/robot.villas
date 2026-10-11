@@ -655,256 +655,288 @@ bots:
     display_name: The Current
     summary: News for Philipstown and Beacon, New York.
     profile_photo: https://highlandscurrent.org/wp-content/uploads/2018/04/cropped-HC-circle-new-180x180.png
-  smbc_comics:
+  smbc:
     feed_url: https://www.smbc-comics.com/comic/rss
     homepage_url: https://www.smbc-comics.com
     display_name: Saturday Morning Breakfast Cereal
-    summary: Latest Saturday Morning Breakfast Cereal comics and news
-  brianmichaelbendis_tumblr:
+    summary: Zach Weinersmith's Saturday Morning Breakfast Cereal comics about science, mathematics, philosophy, and life.
+  brian_michael_bendis:
     feed_url: https://brianmichaelbendis.tumblr.com/rss
     homepage_url: https://brianmichaelbendis.tumblr.com
-    display_name: BENDIS!
-    summary: The official internet toilet of the most humble comics legend and globe hopping adventurer Brian Michael Bendis
-  dailymail:
+    display_name: Brian Michael Bendis
+    summary: Comics artwork, reblogs, and project updates from Brian Michael Bendis's Tumblr blog, BENDIS! This feed has been inactive since October 2023.
+    profile_photo: https://api.tumblr.com/v2/blog/brianmichaelbendis.tumblr.com/avatar/128
+  daily_mail_us:
     feed_url: https://www.dailymail.com/ushome/index.rss
-    homepage_url: https://www.dailymail.com?ns_mchannel=rss&ns_campaign=1490&ito=1490
-    display_name: U.S. Home | Mail Online
-    summary: Daily Mail - get the latest breaking news, celebrity photos, viral videos, science & tech news, and top stories from Daily Mail and the Daily Mail newspaper.
-  ft:
+    homepage_url: https://www.dailymail.com/ushome/index.html
+    display_name: Daily Mail US
+    summary: News, politics, celebrity coverage, sport, health, and lifestyle stories from the Daily Mail's U.S. homepage feed.
+    profile_photo: https://www.dailymail.com/static/icons/180.png
+  financial_times_international:
     feed_url: https://www.ft.com/rss/home/international
     homepage_url: https://www.ft.com
-    display_name: International homepage
-    summary: International homepage
+    display_name: Financial Times International
+    summary: World news, business, finance, and analysis selected for the Financial Times international homepage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.ft.com&size=128
   gamespot:
     feed_url: https://www.gamespot.com/feeds/mashup/
-    homepage_url: https://www.gamespot.com/feeds/mashup
-    display_name: GameSpot - All Content
-    summary: GameSpot's Everything Feed! All the latest from GameSpot
-  ma_tt:
+    homepage_url: https://www.gamespot.com/
+    display_name: GameSpot
+    summary: Video game news, reviews, features, and videos from GameSpot's all-content feed.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.gamespot.com%2Ffeeds%2Fmashup&size=128
+  matt_mullenweg:
     feed_url: https://ma.tt/feed/
     homepage_url: https://ma.tt
     display_name: Matt Mullenweg
-    summary: Unlucky in Cards
-  thenewstack:
-    feed_url: https://thenewstack.io/blog/feed/
-    homepage_url: https://thenewstack.io/blog
-    display_name: The New Stack | DevOps, Open Source, and Cloud Native News
-    summary: Updates from The New Stack | DevOps, Open Source, and Cloud Native News.
-  37signals:
+    summary: Matt Mullenweg's personal blog about WordPress, open source, technology, music, and life.
+    profile_photo: https://i0.wp.com/ma.tt/files/2024/01/cropped-matt-favicon.png?fit=180%2C180&quality=80&ssl=1
+  the_new_stack:
+    feed_url: https://thenewstack.io/feed/
+    homepage_url: https://thenewstack.io/
+    display_name: The New Stack
+    summary: News and analysis about software engineering, cloud native infrastructure, DevOps, open source, and AI from The New Stack.
+    profile_photo: https://thenewstack.io/apple-touch-icon.png?v=20260605
+  signal_v_noise:
     feed_url: https://signalvnoise.com/posts.rss
-    homepage_url: https://37signals.com
+    homepage_url: https://signalvnoise.com/svn3/
     display_name: Signal v. Noise
-    summary: Strong opinions and shared thoughts on design, business, and tech. By the makers (and friends) of Basecamp. Since 1999.
-  apple:
+    summary: Archived essays on design, business, and technology by the makers and friends of Basecamp. Signal v. Noise closed in 2021.
+    profile_photo: https://signalvnoise.com/assets/icons/favicon-196x196.png
+  apple_newsroom:
     feed_url: https://www.apple.com/newsroom/rss-feed.rss
-    homepage_url: https://www.apple.com
+    homepage_url: https://www.apple.com/newsroom/
     display_name: Apple Newsroom
-    summary: Updates from Apple Newsroom.
-  bonappetit:
+    summary: Press releases, product announcements, company news, and stories from Apple Newsroom.
+    profile_photo: https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png
+  bon_appetit:
     feed_url: https://www.bonappetit.com/feed/rss
     homepage_url: https://www.bonappetit.com
     display_name: Bon Appétit
-    summary: The latest from www.bonappetit.com
-  cbsnews:
+    summary: Recipes, cooking advice, restaurant coverage, and food culture from Bon Appétit.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.bonappetit.com&size=128
+  cbs_news:
     feed_url: https://www.cbsnews.com/latest/rss/main
     homepage_url: https://www.cbsnews.com
-    display_name: Home - CBSNews.com
-    summary: Headlines From CBSNews.com
-  theawl:
+    display_name: CBS News
+    summary: Breaking news, U.S. and world headlines, and reporting from CBS News.
+    profile_photo: https://www.cbsnews.com/fly/bundles/cbsnewscore/icons/icon-192x192.png
+  the_awl:
     feed_url: https://www.theawl.com/feed/
     homepage_url: https://www.theawl.com
     display_name: The Awl
-    summary: Be Less Stupid
-  70sscifiart_tumblr:
+    summary: Archived essays, cultural criticism, humor, and reporting from The Awl, which published from 2009 to 2018.
+    profile_photo: https://www.theawl.com/wp-content/themes/theawl/images/icon-white-152.png
+  70s_sci_fi_art:
     feed_url: https://70sscifiart.tumblr.com/rss
     homepage_url: https://70sscifiart.tumblr.com
     display_name: 70s Sci-Fi Art
-    summary: Art. Sci-fi art. From the 70s.
-  heroku:
+    summary: Science-fiction and fantasy illustration, book covers, and retro artwork curated by 70s Sci-Fi Art.
+    profile_photo: https://api.tumblr.com/v2/blog/70sscifiart.tumblr.com/avatar/128
+  heroku_blog:
     feed_url: https://www.heroku.com/feed/
-    homepage_url: https://www.heroku.com
-    display_name: Heroku
-    summary: Cloud Application Platform
+    homepage_url: https://www.heroku.com/blog/
+    display_name: Heroku Blog
+    summary: Product announcements, platform updates, and articles about building and deploying applications on Heroku.
+    profile_photo: https://www.heroku.com/wp-content/uploads/2025/01/apple-touch-icon-180x180-1.png?w=180
   carryology:
     feed_url: https://www.carryology.com/feed/
     homepage_url: https://www.carryology.com
     display_name: Carryology
-    summary: Exploring better ways to carry bags, wallets & more.
+    summary: Reviews, design insights, and news about bags, luggage, wallets, and everyday-carry gear from Carryology.
+    profile_photo: https://www.carryology.com/wp-content/uploads/2023/12/cropped-C-Favicon-180x180.png
   contemporist:
     feed_url: https://feeds.feedburner.com/contemporist
-    homepage_url: https://contemporist.com/custom-rss-768-width-images
-    display_name: Contemporist Newsletter
-    summary: Contemporist is an online community that celebrates contemporary culture, focused on architecture, interiors, design, art and travel.
+    homepage_url: https://www.contemporist.com/
+    display_name: Contemporist
+    summary: Contemporary architecture, interiors, furniture, lighting, landscape design, and art featured by Contemporist.
+    profile_photo: https://www.contemporist.com/apple-touch-icon.png
   deadline:
     feed_url: https://deadline.com/feed/
     homepage_url: https://deadline.com
     display_name: Deadline
     summary: Hollywood Entertainment Breaking News
-  digitalocean:
+    profile_photo: https://deadline.com/wp-content/themes/pmc-deadline-2019/assets/app/icons/apple-touch-icon.png
+  digitalocean_blog:
     feed_url: https://www.digitalocean.com/rss/blog.atom
     homepage_url: https://www.digitalocean.com/blog
     display_name: DigitalOcean Blog
-    summary: Updates from DigitalOcean Blog.
+    summary: Product updates, company news, and cloud-development articles from DigitalOcean.
+    profile_photo: https://www.digitalocean.com/_do-www-marketing/2f50be18/_next/static/media/apple-touch-icon.9537f22a.png
   eater:
     feed_url: https://www.eater.com/rss/index.xml
     homepage_url: https://www.eater.com
     display_name: Eater
-    summary: Updates from Eater.
-  hunterwalk:
+    summary: Restaurant news, dining guides, and food culture from Eater's national edition.
+    profile_photo: https://www.eater.com/static-assets/icons/apple-touch-icon.png
+  hunter_walk:
     feed_url: https://hunterwalk.com/feed/
     homepage_url: https://hunterwalk.com
     display_name: Hunter Walk
-    summary: Self-Aware Self-Promotion
+    summary: Essays on startups, venture capital, technology, and product building by Homebrew partner Hunter Walk.
   jwz:
     feed_url: https://cdn.jwz.org/blog/feed/
     homepage_url: https://www.jwz.org/blog
     display_name: jwz
-    summary: Updates from jwz.
+    summary: Jamie Zawinski's blog about software, technology, politics, music, and San Francisco's DNA Lounge.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.jwz.org%2Fblog&size=128
   killscreen:
     feed_url: https://www.killscreen.com/rss/
     homepage_url: https://www.killscreen.com
     display_name: Killscreen
     summary: Games, play, and culture with Jamin Warren
-  threadreaderapp:
-    feed_url: https://threadreaderapp.com/rss.xml
-    homepage_url: https://threadreaderapp.com
-    display_name: Discover and Read the Best of Twitter Threads
-    summary: Thread Reader helps you discover and read the best of Twitter Threads
-  wizardzines:
+    profile_photo: https://storage.ghost.io/c/25/84/2584b75d-4bd6-4cce-8259-f1d1c65abbb5/content/images/size/w256h256/2026/08/killscreen-avatar-ghost-icon-512.png
+  wizard_zines_comics:
     feed_url: https://wizardzines.com/comics/index.xml
     homepage_url: https://wizardzines.com/comics
-    display_name: Wizard Zines - Comics on wizard zines
-    summary: Recent content in Wizard Zines - Comics on wizard zines
+    display_name: Wizard Zines Comics
+    summary: Illustrated explanations of programming, Unix tools, networking, and other computing topics by Julia Evans.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwizardzines.com%2Fcomics&size=128
   dwell:
     feed_url: https://www.dwell.com/@dwell/rss
     homepage_url: https://www.dwell.com
-    display_name: Dwell.com
-    summary: Dwell.com
+    display_name: Dwell
+    summary: Modern architecture, home tours, interior design, and housing stories from Dwell.
+    profile_photo: https://assets.dwell.com/web/master/504.tar.gz/static/favicons/apple-touch-icon-152x152.png
   jalopnik:
     feed_url: https://www.jalopnik.com/feed/
     homepage_url: https://www.jalopnik.com
-    display_name: Jalopnik - Obsessed with the culture of cars
-    summary: From cars to motorcycles, Jalopnik is your go-to site covering everything with an engine—including automotive news, buying guides, and expert commentary from our staff.
-  learn_adafruit:
+    display_name: Jalopnik
+    summary: Automotive news, reviews, buying guides, and commentary about cars, motorcycles, and transportation from Jalopnik.
+    profile_photo: https://www.jalopnik.com/img/jalopnik-favicon.png
+  adafruit_learning_system:
     feed_url: https://learn.adafruit.com/feed
     homepage_url: https://learn.adafruit.com
-    display_name: Adafruit Learning System | Latest Published Guides
-    summary: Updates from Adafruit Learning System | Latest Published Guides.
-  freecodecamp:
+    display_name: Adafruit Learning System
+    summary: Newly published electronics, microcontroller, coding, and maker-project tutorials from the Adafruit Learning System.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flearn.adafruit.com&size=128
+  freecodecamp_news:
     feed_url: https://www.freecodecamp.org/news/rss/
     homepage_url: https://www.freecodecamp.org/news
-    display_name: 'freeCodeCamp Programming Tutorials: Python, JavaScript, Git & More'
-    summary: Browse thousands of programming tutorials written by experts. Learn Web Development, Data Science, DevOps, Security, and get developer career advice.
+    display_name: freeCodeCamp News
+    summary: Programming tutorials and developer career advice covering web development, data science, DevOps, and security from freeCodeCamp.
+    profile_photo: https://cdn.freecodecamp.org/universal/favicons/favicon.png
   slashfilm:
     feed_url: https://www.slashfilm.com/feed/
     homepage_url: https://www.slashfilm.com
-    display_name: /Film - Movie & TV News, Trailers, Interviews, & Reviews
+    display_name: /Film
     summary: The latest movie and television news, reviews, film trailers, exclusive interviews, and opinions - since 2005.
-  tbray:
+    profile_photo: https://www.slashfilm.com/img/slashfilm-favicon.png
+  ongoing_by_tim_bray:
     feed_url: https://www.tbray.org/ongoing/ongoing.atom
-    homepage_url: https://www.tbray.org
+    homepage_url: https://www.tbray.org/ongoing/
     display_name: ongoing by Tim Bray
-    summary: Updates from ongoing by Tim Bray.
-  theoatmeal:
+    summary: Tim Bray's essays on software, the web, technology, photography, politics, and everyday life.
+  the_oatmeal:
     feed_url: https://theoatmeal.com/feed/rss
-    homepage_url: http://theoatmeal.com
-    display_name: The Oatmeal - Comics by Matthew Inman
-    summary: I make comics about science, cats, social media, and sometimes goats.
-  zenpencils:
-    feed_url: https://www.zenpencils.com/feed/
-    homepage_url: https://www.zenpencils.com
-    display_name: ZEN PENCILS
-    summary: Cartoon quotes from inspirational folks
-  aclu:
+    homepage_url: https://theoatmeal.com/
+    display_name: The Oatmeal
+    summary: Comics and updates by Matthew Inman about science, animals, relationships, and everyday absurdities.
+    profile_photo: https://s3.amazonaws.com/theoatmeal-img/favicons/apple-icon-180x180.png
+  american_civil_liberties_union:
     feed_url: https://www.aclu.org/feed
     homepage_url: https://www.aclu.org
     display_name: American Civil Liberties Union
-    summary: The ACLU dares to create a more perfect union — beyond one person, party, or side. Our mission is to realize this promise of the United States Constitution for all and expand the reach of its guarantees.
+    summary: Civil liberties news, legal analysis, and advocacy updates from the American Civil Liberties Union.
+    profile_photo: https://assets.aclu.org/live/uploads/2024/11/apple-touch-icon.png@2x-300x300.png
   lifehack:
     feed_url: https://www.lifehack.org/feed.xml
     homepage_url: https://www.lifehack.org
     display_name: LifeHack
     summary: Latest LifeHack articles on productivity, health, relationships, and better living.
-  lwn:
+    profile_photo: https://www.lifehack.org/apple-touch-icon.png
+  lwn_net:
     feed_url: https://lwn.net/headlines/rss
     homepage_url: https://lwn.net
     display_name: LWN.net
     summary: LWN.net is a comprehensive source of news and opinions from and about the Linux community. This is the main LWN.net feed, listing all articles which are posted to the site front page.
-  pcgamer:
+    profile_photo: https://static.lwn.net/images/favicon.png
+  pc_gamer:
     feed_url: https://www.pcgamer.com/feeds.xml
     homepage_url: https://www.pcgamer.com
-    display_name: Latest from PC Gamer
-    summary: All the latest content from the PC Gamer team
-  rawstory:
+    display_name: PC Gamer
+    summary: PC gaming news, reviews, features, guides, and hardware coverage from PC Gamer.
+  raw_story:
     feed_url: https://www.rawstory.com/feeds/feed.rss
     homepage_url: https://www.rawstory.com
     display_name: Raw Story
-    summary: Raw Story
+    summary: Breaking news, political reporting, commentary, and investigations from Raw Story.
+    profile_photo: https://assets.rbl.ms/24987667/origin.png
   techdirt:
-    feed_url: http://www.techdirt.com/feed/
-    homepage_url: http://www.techdirt.com
+    feed_url: https://www.techdirt.com/feed/
+    homepage_url: https://www.techdirt.com/
     display_name: Techdirt
-    summary: Updates from Techdirt.
-  thoughtcatalog:
+    summary: News and analysis about technology policy, copyright, privacy, free speech, and internet culture from Techdirt.
+    profile_photo: https://i0.wp.com/www.techdirt.com/wp-content/uploads/2022/02/cropped-techdirt-square-512x512-1.png?fit=180%2C180
+  thought_catalog:
     feed_url: https://thoughtcatalog.com/feed/
     homepage_url: https://thoughtcatalog.com
     display_name: Thought Catalog
-    summary: Thought Catalog is a digital youth culture magazine dedicated to your stories and ideas.
-  xda_developers:
+    summary: Personal essays, relationships, entertainment, and youth-culture stories from Thought Catalog.
+    profile_photo: https://thoughtcatalog.com/wp-content/uploads/2020/09/cropped-favicon-512x512-1-1.png?w=180
+  xda:
     feed_url: https://www.xda-developers.com/feed/
     homepage_url: https://www.xda-developers.com
     display_name: XDA
-    summary: The world’s best source for computing news, reviews, editorials guides, and more.
-  24ways:
+    summary: Computing and mobile technology news, reviews, tutorials, and commentary from XDA.
+    profile_photo: https://www.xda-developers.com/public/build/images/favicon-240x240.png
+  24_ways:
     feed_url: https://feeds.feedburner.com/24ways
     homepage_url: https://24ways.org
     display_name: 24 ways
-    summary: Web design and development articles and tutorials for advent.
+    summary: Archived Advent-calendar articles and tutorials about web design and development; the final edition was published in December 2019.
+    profile_photo: https://24ways.org/assets/icons/icon.png
   adweek:
     feed_url: https://www.adweek.com/feed/
     homepage_url: https://www.adweek.com
-    display_name: Adweek Feed
+    display_name: Adweek
     summary: Breaking News in Advertising, Media and Technology
-  archdaily:
-    feed_url: http://feeds.feedburner.com/Archdaily
+    profile_photo: https://static-www.adweek.com/wp-content/uploads/2025/03/cropped-image-6.png?w=180
+  archdaily_global:
+    feed_url: https://feeds.feedburner.com/Archdaily
     homepage_url: https://www.archdaily.com
     display_name: ArchDaily Global
-    summary: ArchDaily | Broadcasting Architecture Worldwide
-  elitedaily:
+    summary: Architecture projects, design news, interviews, and competitions from ArchDaily's global English-language edition.
+    profile_photo: https://assets.adsttc.com/doodles/flat/favicons/square/Favicon180x180.png
+  elite_daily:
     feed_url: https://www.elitedaily.com/rss
     homepage_url: https://www.elitedaily.com
     display_name: Elite Daily
-    summary: Elite Daily is a site for and by women who are discovering the world, and themselves in the process.
+    summary: Entertainment, dating, lifestyle, travel, astrology, fashion, beauty, and shopping stories for Gen Z women from Elite Daily.
+    profile_photo: https://cdn2.bustle.com/2026/elitedaily/icon-8652ca414f.png
   fashionista:
     feed_url: https://fashionista.com/.rss/feed/28e21eb8-20ac-4617-a448-e845081591ca.xml
     homepage_url: https://fashionista.com
-    display_name: Fashionista Full
-    summary: Fashionista Full
-  harihareswara:
-    feed_url: https://www.harihareswara.net/rss/
+    display_name: Fashionista
+    summary: Fashion industry news, runway coverage, beauty, designer interviews, and career opportunities from Fashionista.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffashionista.com&size=128
+  cogito_ergo_sumana:
+    feed_url: https://www.harihareswara.net/atom/
     homepage_url: https://www.harihareswara.net
     display_name: Cogito, Ergo Sumana
-    summary: Latest posts
-  jacquesmattheij:
+    summary: Sumana Harihareswara's blog about open source, software, politics, culture, and personal life.
+  jacques_mattheij:
     feed_url: https://jacquesmattheij.com/rss.xml
     homepage_url: https://jacquesmattheij.com
     display_name: Jacques Mattheij
-    summary: Recent content on Jacques Mattheij
-  joelonsoftware:
+    summary: Essays and projects about software, electronics, engineering, and technology by Jacques Mattheij.
+  joel_on_software:
     feed_url: https://www.joelonsoftware.com/feed/
     homepage_url: https://www.joelonsoftware.com
     display_name: Joel on Software
-    summary: Updates from Joel on Software.
-  keen:
+    summary: Joel Spolsky's essays on software development and software companies. This feed has been inactive since December 2022.
+    profile_photo: https://i0.wp.com/www.joelonsoftware.com/wp-content/uploads/2016/12/11969842.jpg?fit=180%2C180&ssl=1
+  keen_blog:
     feed_url: https://keen.io/blog/feed/
     homepage_url: https://keen.io/blog
-    display_name: Blog - Keen - Event Streaming Platform
-    summary: Event Streaming Platform
-  letsencrypt:
+    display_name: Keen Blog
+    summary: Archived product updates and articles about event streaming, analytics, and customer-facing metrics from Keen. This feed has been inactive since November 2021.
+    profile_photo: https://keen.io/wp-content/uploads/2020/02/favicon-32x32-1.png
+  lets_encrypt:
     feed_url: https://letsencrypt.org/feed.xml
     homepage_url: https://letsencrypt.org
     display_name: Let's Encrypt
-    summary: Let's Encrypt is a free, automated, and open Certificate Authority brought to you by the nonprofit Internet Security Research Group (ISRG). Read all about our work in our Annual Report.
+    summary: News and engineering updates from Let's Encrypt, the free, automated certificate authority operated by the Internet Security Research Group.
+    profile_photo: https://letsencrypt.org/images/le-logo-standard.png
   the_verge:
     feed_url: https://www.theverge.com/rss/index.xml
     homepage_url: https://www.theverge.com
