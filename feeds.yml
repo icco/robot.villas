@@ -447,12 +447,6 @@ bots:
     display_name: HackerNoon
     summary: Community-written technology stories, tutorials, opinions, and commentary from HackerNoon.
     profile_photo: https://hackernoon.com/hn-icon.png
-  readwrite:
-    feed_url: https://readwrite.com/feed/
-    homepage_url: https://readwrite.com
-    display_name: ReadWrite
-    summary: Gambling and iGaming news, betting and casino coverage, reviews, and strategy guides from ReadWrite.
-    profile_photo: https://readwrite.com/wp-content/uploads/2024/10/cropped-readwrite-favicon-180x180.png
   pam_the_webivore:
     feed_url: https://thewebivore.com/feed/
     homepage_url: https://thewebivore.com
