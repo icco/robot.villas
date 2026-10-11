@@ -1225,6 +1225,256 @@ bots:
     homepage_url: https://approximateknowledge.net/
     display_name: Approximate Knowledge
     summary: Etymology, video games, and curious observations.
+  piratebox_cc:
+    feed_url: https://piratebox.cc/feed.php
+    homepage_url: https://piratebox.cc
+    display_name: PIRATEBOX
+    summary: Updates from PIRATEBOX.
+  piratpartiet_se:
+    feed_url: https://piratpartiet.se/feed/
+    homepage_url: https://piratpartiet.se
+    display_name: Piratpartiet
+    summary: Den digitala tidsålderns politiska kraft
+  pirorant_tumblr:
+    feed_url: https://pirorant.tumblr.com/rss
+    homepage_url: https://pirorant.tumblr.com
+    display_name: 'function: rant[piro]'
+    summary: Piro tumblr chibi-rant space, and a place to dump images and sketches and drawings and stuff. Also a repository of all the signed sketches i’ve been doing for people. Whee :)
+  pixelgraphix_de:
+    feed_url: https://pixelgraphix.de/feed.rss
+    homepage_url: https://pixelgraphix.de
+    display_name: pixelgraphix
+    summary: Zeichnungen, Drucksachen, Projekte, Worte & Bilder von Manuela Hoffmann
+  amontalenti:
+    feed_url: https://amontalenti.com/feed
+    homepage_url: https://amontalenti.com
+    display_name: Andrew Montalenti
+    summary: '@amontalenti - Founder/CTO. Coding in: Python, JavaScript, Zig.'
+  pixln_wordpress:
+    feed_url: https://pixln.wordpress.com/feed/
+    homepage_url: https://pixln.wordpress.com
+    display_name: Pixln
+    summary: Spielen mit Pixeln. :)
+  pketh:
+    feed_url: https://pketh.org/feed.xml
+    homepage_url: https://pketh.org
+    display_name: pketh.org
+    summary: Making things simple, radical and beautiful
+  pkp_sfu_ca:
+    feed_url: https://pkp.sfu.ca/feed/
+    homepage_url: https://pkp.sfu.ca
+    display_name: Public Knowledge Project
+    summary: Updates from Public Knowledge Project.
+  placeholder_vc:
+    feed_url: https://www.placeholder.vc/blog?format=rss
+    homepage_url: https://www.placeholder.vc/blog
+    display_name: Placeholder Blog - Placeholder
+    summary: Placeholder Blog
+  plagiarismtoday:
+    feed_url: https://www.plagiarismtoday.com/feed/
+    homepage_url: https://www.plagiarismtoday.com
+    display_name: Plagiarism Today
+    summary: Content Theft, Plagiarism, Copyright Infringement
+  plainenglish:
+    feed_url: https://plainenglish.io/feed.xml
+    homepage_url: https://plainenglish.io
+    display_name: In Plain English
+    summary: In Plain English is a tech-focused media company founded in 2018. We are home to some of the world's most recognisable tech publications, such as JavaScript In Plain English, Python In Plain English, and Stackademic. Over 25,000 writers have helped to educate the world by contributing over 40,000 articles to the platform.
+  plainwhite_co:
+    feed_url: https://plainwhite.co/feed/
+    homepage_url: https://plainwhite.co
+    display_name: Plainwhite.co – Adult Dating
+    summary: Updates from Plainwhite.co – Adult Dating.
+  planetscale:
+    feed_url: https://planetscale.com/blog/feed.atom
+    homepage_url: https://planetscale.com/blog
+    display_name: Blog — PlanetScale
+    summary: Updates from Blog — PlanetScale.
+  planetware:
+    feed_url: https://www.planetware.com/feed/
+    homepage_url: https://www.planetware.com
+    display_name: PlanetWare - Travel guides by the experts
+    summary: Travel insights and practical tips for turning every trip into an unforgettable adventure from the experts at PlanetWare.
+  platformer_news:
+    feed_url: https://www.platformer.news/rss/
+    homepage_url: https://www.platformer.news
+    display_name: Platformer
+    summary: Independent reporting on AI, social platforms, and the people shaping technology.
+  playbook:
+    feed_url: https://www.playbook.com/blog/rss/
+    homepage_url: https://www.playbook.com
+    display_name: Playbook
+    summary: 'Your all-in-one media management solution: store, search, and collaborate on photos, video, and design files in one centralized hub.'
+  playbutton_co:
+    feed_url: https://playbutton.co/feed/
+    homepage_url: https://playbutton.co
+    display_name: Playbutton
+    summary: Your Friendly Site About Great Audio
+  player_one:
+    feed_url: https://www.player.one/rss/
+    homepage_url: https://www.player.one
+    display_name: Player One
+    summary: Latest News
+  playstationlifestyle:
+    feed_url: https://www.playstationlifestyle.net/feed
+    homepage_url: https://www.playstationlifestyle.net
+    display_name: PlayStation LifeStyle
+    summary: PS5, PS4, PS Plus, and PSN News, Guides, Trophies, Reviews, and More!
+  plover_co:
+    feed_url: http://www.plover.co/feed/
+    homepage_url: https://www.plover.co
+    display_name: Plover.co
+    summary: Corporate Travel & Technology. Simplified.
+  plumatic_github:
+    feed_url: https://plumatic.github.io//feed.xml
+    homepage_url: https://plumatic.github.io
+    display_name: Plumatic Blog
+    summary: Updates from Plumatic Blog.
+  plus_maths:
+    feed_url: https://plus.maths.org/rss.xml
+    homepage_url: https://plus.maths.org
+    display_name: plus.maths.org
+    summary: Updates from plus.maths.org.
+  pmav_eu:
+    feed_url: https://pmav.eu/rss
+    homepage_url: http://pmav.eu
+    display_name: pmav.eu
+    summary: 'pmav.eu: new projects'
+  pocket_lint:
+    feed_url: https://www.pocket-lint.com/feed/
+    homepage_url: https://www.pocket-lint.com
+    display_name: Pocket-lint
+    summary: Welcome to Pocket-lint, for the latest product reviews, including news on gadgets, digital cameras, home cinema, audio, cars and mobile phones.
+  poignantguide:
+    feed_url: https://poignantguide.net/feed.xml
+    homepage_url: https://poignantguide.net
+    display_name: Poignant Guide — AI Detection Intelligence
+    summary: Independent benchmarks for AI text detection tools. Systematic, reproducible testing of every major AI text detector.
+  poincare101_blogspot:
+    feed_url: https://poincare101.blogspot.com/feeds/posts/default
+    homepage_url: https://poincare101.blogspot.com
+    display_name: Computer Science, Math and Clever Dolphins
+    summary: Updates from Computer Science, Math and Clever Dolphins.
+  pointersgonewild:
+    feed_url: https://pointersgonewild.com/rss.xml
+    homepage_url: https://pointersgonewild.com
+    display_name: Pointers Gone Wild
+    summary: Latest Posts from Pointers Gone Wild
+  politicalwire:
+    feed_url: https://politicalwire.com/feed/
+    homepage_url: https://politicalwire.com
+    display_name: Political Wire
+    summary: All the political news in one place
+  poolp:
+    feed_url: https://poolp.org/index.xml
+    homepage_url: https://poolp.org
+    display_name: poolp.org
+    summary: Recent content on poolp.org
+  popdust:
+    feed_url: https://www.popdust.com/feed
+    homepage_url: https://www.popdust.com
+    display_name: popdust
+    summary: Updates from popdust.
+  popular_info:
+    feed_url: https://popular.info/feed
+    homepage_url: https://popular.info
+    display_name: Popular Information
+    summary: Independent accountability journalism.
+  port3000:
+    feed_url: https://port3000.co.uk/feed/
+    homepage_url: https://port3000.co.uk
+    display_name: PORT3000
+    summary: Online tech news for Geeks
+  portkey_ai:
+    feed_url: https://portkey.ai/blog/rss/
+    homepage_url: https://portkey.ai/blog
+    display_name: Portkey Blog
+    summary: Reports, Benchmarks, and Guides for AI in Prod
+  portlandmercury:
+    feed_url: https://www.portlandmercury.com/feed/
+    homepage_url: https://www.portlandmercury.com
+    display_name: Portland Mercury
+    summary: Updates from Portland Mercury.
+  portrait_coffee:
+    feed_url: https://portrait.coffee/blogs/news.atom
+    homepage_url: https://portrait.coffee/blogs/news
+    display_name: Portrait Coffee - News
+    summary: Updates from Portrait Coffee - News.
+  posener_github:
+    feed_url: https://posener.github.io/feed.xml
+    homepage_url: https://posener.github.io
+    display_name: Eyal Posener
+    summary: Updates from Eyal Posener.
+  post_intrapology:
+    feed_url: https://post.intrapology.com/feed.xml
+    homepage_url: https://post.intrapology.com
+    display_name: Intrapology posts
+    summary: Updates from Intrapology posts.
+  postgis:
+    feed_url: https://postgis.net/feed.xml
+    homepage_url: https://postgis.net
+    display_name: PostGIS
+    summary: Recent content on PostGIS
+  specterops:
+    feed_url: https://specterops.io/feed/podcast/the-state-of-apm/
+    homepage_url: https://specterops.io/podcast-series/the-state-of-apm
+    display_name: Know Your Adversary
+    summary: Updates from Know Your Adversary.
+  postsecret_blogspot:
+    feed_url: https://postsecret.blogspot.com/feeds/posts/default
+    homepage_url: https://postsecret.blogspot.com
+    display_name: PostSecret
+    summary: Updates from PostSecret.
+  powerlinesinanime_tumblr:
+    feed_url: https://powerlinesinanime.tumblr.com/rss
+    homepage_url: https://powerlinesinanime.tumblr.com
+    display_name: Power Lines in Anime
+    summary: Dedicated to power lines, power line support poles and lattices, and rail overhead lines
+  powerpufferrors_tumblr:
+    feed_url: https://powerpufferrors.tumblr.com/rss
+    homepage_url: https://powerpufferrors.tumblr.com
+    display_name: The Powerpuff Girls (2016) Animation Error Archive
+    summary: An archive of animation errors for the Reboot to The Powerpuff Girls. Also owner of the Gravity Falls Archive of Animation Errors blog, but unlike that one, this is more or less an example of how to not do a series.
+  pozdeev:
+    feed_url: http://feeds.feedburner.com/MaxPozdeevBlogspot
+    homepage_url: https://www.pozdeev.com
+    display_name: My Apps
+    summary: Updates from My Apps.
+  ppooll_klingt:
+    feed_url: https://ppooll.klingt.org/feed/
+    homepage_url: https://ppooll.klingt.org
+    display_name: ppooll
+    summary: a DSP environment for Max
+  pracucci:
+    feed_url: https://pracucci.com/feed.xml
+    homepage_url: https://pracucci.com
+    display_name: Marco Pracucci
+    summary: Updates from Marco Pracucci.
+  prairiewires_ca:
+    feed_url: https://www.prairiewires.ca/feed/
+    homepage_url: https://www.prairiewires.ca
+    display_name: Prairie Wires Modular
+    summary: Brandon Manitoba Canada
+  fortelabs:
+    feed_url: https://fortelabs.com/feed/
+    homepage_url: https://fortelabs.com
+    display_name: Forte Labs
+    summary: Updates from Forte Labs.
+  presh_it:
+    feed_url: https://presh.it/feed/
+    homepage_url: https://presh.it
+    display_name: Presh per te
+    summary: Updates from Presh per te.
+  press_futurefire:
+    feed_url: http://press.futurefire.net/feeds/posts/default
+    homepage_url: http://press.futurefire.net
+    display_name: News & Press from The Future Fire
+    summary: Updates from News & Press from The Future Fire.
+  pressherald:
+    feed_url: https://www.pressherald.com/feed/
+    homepage_url: https://www.pressherald.com
+    display_name: The Portland Press Herald
+    summary: Maine’s top source for news and information.
   minireference:
     feed_url: https://minireference.com/blog/feed/
     homepage_url: https://minireference.com/blog/
