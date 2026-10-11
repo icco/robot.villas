@@ -22,6 +22,256 @@ bots:
     display_name: CDM Create Digital Music
     summary: Create digital music, motion, and more.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://cdm.link&size=128
+  polygon:
+    feed_url: https://www.polygon.com/feed/
+    homepage_url: https://www.polygon.com
+    display_name: Polygon.com
+    summary: Your source for the latest in video games, sci-fi, fantasy, tabletop games, anime, horror, books, and comics.
+  pitchfork:
+    feed_url: https://pitchfork.com/feed/rss
+    homepage_url: https://pitchfork.com
+    display_name: Pitchfork
+    summary: The latest from pitchfork.com
+  buzzfeed:
+    feed_url: https://www.buzzfeed.com/index.xml
+    homepage_url: https://www.buzzfeed.com/index
+    display_name: BuzzFeed - Latest
+    summary: BuzzFeed has breaking news, vital journalism, quizzes, videos, celeb news, Tasty food videos, recipes, DIY hacks, and all the trending buzz you’ll want to share with your friends. Copyright BuzzFeed, Inc. All rights reserved.
+  boingboing:
+    feed_url: https://boingboing.net/feed
+    homepage_url: https://boingboing.net
+    display_name: Boing Boing
+    summary: A directory of mostly wonderful things
+  theintercept:
+    feed_url: https://theintercept.com/feed/
+    homepage_url: https://theintercept.com
+    display_name: The Intercept
+    summary: Independent investigative journalism covering politics, national security, civil liberties, and the environment.
+  kotaku:
+    feed_url: https://kotaku.com/feed
+    homepage_url: https://kotaku.com
+    display_name: Kotaku
+    summary: Gaming Reviews, News, Tips and More.
+  businessinsider:
+    feed_url: https://feeds.businessinsider.com/custom/all
+    homepage_url: https://www.businessinsider.com
+    display_name: Business Insider
+    summary: Updates from All Content from Business Insider.
+  thenib:
+    feed_url: https://thenib.com/feed/
+    homepage_url: https://thenib.com
+    display_name: The Nib
+    summary: Political satire, journalism and non-fiction on what is going down in the world. All in comics form, the best medium.
+  newyorker:
+    feed_url: https://www.newyorker.com/feed/rss
+    homepage_url: https://www.newyorker.com
+    display_name: The New Yorker
+    summary: The latest from www.newyorker.com
+  mashable:
+    feed_url: https://mashable.com/feeds/rss/all
+    homepage_url: https://mashable.com
+    display_name: Mashable
+    summary: Mashable is a global, multi-platform media and entertainment company.
+  ign:
+    feed_url: https://www.ign.com/rss/v2/articles/feed
+    homepage_url: https://www.ign.com/articles
+    display_name: The Latest Articles from IGN
+    summary: This feed contains the latest 20 articles from IGN sorted by publishDate
+  avclub:
+    feed_url: https://www.avclub.com/feed
+    homepage_url: https://www.avclub.com
+    display_name: AV Club
+    summary: Pop culture obsessives writing for the pop culture obsessed.
+  vox:
+    feed_url: https://www.vox.com/rss/index.xml
+    homepage_url: https://www.vox.com
+    display_name: Vox
+    summary: Updates from Vox.
+  vogue:
+    feed_url: https://www.vogue.com/feed/rss
+    homepage_url: https://www.vogue.com
+    display_name: Vogue
+    summary: The latest from www.vogue.com
+  androidpolice:
+    feed_url: https://www.androidpolice.com/feed/
+    homepage_url: https://www.androidpolice.com
+    display_name: Android Police
+    summary: All the latest mobile tech news, deals, reviews, guides, editorials, and more. Embracing the green bubble since 2009.
+  penny_arcade:
+    feed_url: https://www.penny-arcade.com/feed
+    homepage_url: https://www.penny-arcade.com
+    display_name: Penny Arcade
+    summary: Penny Arcade comics and news.
+  thenextweb:
+    feed_url: https://thenextweb.com/feed
+    homepage_url: https://thenextweb.com
+    display_name: The Next Web
+    summary: Original and proudly opinionated perspectives for Generation T
+  torrentfreak:
+    feed_url: https://torrentfreak.com/feed/
+    homepage_url: https://torrentfreak.com
+    display_name: TorrentFreak
+    summary: Breaking File-sharing, Copyright and Privacy News
+  latimes:
+    feed_url: https://www.latimes.com/index.rss
+    homepage_url: https://www.latimes.com
+    display_name: Los Angeles Times
+    summary: The L.A. Times is a leading source of breaking news, entertainment, sports, politics, and more for Southern California and the world.
+  sfgate:
+    feed_url: https://www.sfgate.com/default/feed/sfgate-culture-channel-rss-4239.php
+    homepage_url: https://www.sfgate.com
+    display_name: SFGATE Culture Channel RSS
+    summary: Updates from SFGATE Culture Channel RSS.
+  gigaom:
+    feed_url: https://gigaom.com/feed/
+    homepage_url: https://gigaom.com
+    display_name: Gigaom
+    summary: Two Decades. Ahead Of The Curve.
+  zachholman:
+    feed_url: https://zachholman.com/atom.xml
+    homepage_url: https://zachholman.com
+    display_name: Zach Holman
+    summary: Updates from Zach Holman.
+  recurse:
+    feed_url: https://www.recurse.com/blog.rss
+    homepage_url: https://www.recurse.com/blog
+    display_name: The Recurse Center Blog
+    summary: A blog about programming, education, and the Recurse Center
+  thehill:
+    feed_url: https://thehill.com/feed/?feed=partnerfeed-news-feed&format=rss
+    homepage_url: https://thehill.com
+    display_name: The Hill News
+    summary: Unbiased Politics News
+  eff:
+    feed_url: https://www.eff.org/rss.xml
+    homepage_url: https://www.eff.org
+    display_name: Electronic Frontier Foundation
+    summary: Updates from Electronic Frontier Foundation.
+  gq:
+    feed_url: https://www.gq.com/feed/rss
+    homepage_url: https://www.gq.com
+    display_name: GQ
+    summary: The latest from www.gq.com
+  thebolditalic:
+    feed_url: https://www.thebolditalic.com/rss/
+    homepage_url: https://www.thebolditalic.com
+    display_name: The Bold Italic
+    summary: The Bold Italic
+  cloud_google:
+    feed_url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/
+    homepage_url: https://cloud.google.com/blog/topics/threat-intelligence
+    display_name: Threat Intelligence
+    summary: Threat Intelligence
+  rollingstone:
+    feed_url: https://www.rollingstone.com/feed/
+    homepage_url: https://www.rollingstone.com
+    display_name: Rolling Stone
+    summary: Music, Film, TV and Political News Coverage
+  sfist:
+    feed_url: https://sfist.com/rss/
+    homepage_url: https://sfist.com
+    display_name: SFist - San Francisco News, Restaurants, Events, & Sports
+    summary: SFist is San Francisco's source for fun, witty, & serious news. With updates about restaurants, events, sports, politics & more, SFist reaches millions of users in California.
+  independent:
+    feed_url: https://www.independent.co.uk/us/rss
+    homepage_url: https://www.independent.co.uk/us
+    display_name: The Independent US
+    summary: Visit now for the latest news direct from The Independent US and updated throughout the day
+  ny_eater:
+    feed_url: https://ny.eater.com/rss/index.xml
+    homepage_url: https://ny.eater.com
+    display_name: Eater NY
+    summary: Updates from Eater NY.
+  randsinrepose:
+    feed_url: https://randsinrepose.com/feed/
+    homepage_url: https://randsinrepose.com
+    display_name: Rands in Repose
+    summary: Stories about the humans who build software
+  time:
+    feed_url: https://time.com/feed/
+    homepage_url: https://time.com
+    display_name: TIME
+    summary: Breaking news and analysis from TIME.com. Politics, world news, photos, video, tech reviews, health, science and entertainment news.
+  technologyreview:
+    feed_url: https://www.technologyreview.com/feed/
+    homepage_url: https://www.technologyreview.com
+    display_name: MIT Technology Review
+    summary: Updates from MIT Technology Review.
+  salon:
+    feed_url: https://www.salon.com/feed
+    homepage_url: https://www.salon.com
+    display_name: Salon.com
+    summary: In-depth news, politics, business, technology & culture
+  nbcnews:
+    feed_url: https://feeds.nbcnews.com/nbcnews/public/news
+    homepage_url: https://www.nbcnews.com
+    display_name: NBC News Top Stories
+    summary: NBC News Top Stories
+  newrepublic:
+    feed_url: https://newrepublic.com/rss.xml
+    homepage_url: https://newrepublic.com
+    display_name: The New Republic
+    summary: The New Republic
+  ycombinator:
+    feed_url: https://www.ycombinator.com/blog/feed
+    homepage_url: https://www.ycombinator.com/blog
+    display_name: Y Combinator Blog
+    summary: Y Combinator Blog
+  bgr:
+    feed_url: https://www.bgr.com/feed/
+    homepage_url: https://www.bgr.com
+    display_name: BGR - Industry-Leading Insights In Tech And Entertainment
+    summary: Expert analysis of the leading stories in tech and entertainment plus reviews of the latest gadgets.
+  design_milk:
+    feed_url: https://design-milk.com/feed/
+    homepage_url: https://design-milk.com
+    display_name: Design Milk
+    summary: Dedicated to modern design
+  xkcd:
+    feed_url: https://xkcd.com/atom.xml
+    homepage_url: https://xkcd.com
+    display_name: xkcd.com
+    summary: Updates from xkcd.com.
+  blog_flickr:
+    feed_url: https://blog.flickr.net/feed
+    homepage_url: https://blog.flickr.net
+    display_name: Flickr Blog
+    summary: Updates from Flickr Blog.
+  bringatrailer:
+    feed_url: https://bringatrailer.com/feed/
+    homepage_url: https://bringatrailer.com
+    display_name: The best vintage and classic cars for sale online | Bring a Trailer
+    summary: Barn finds, rally cars, and needles in the haystack.
+  fortune:
+    feed_url: https://fortune.com/feed/fortune-feeds/?id=3230629
+    homepage_url: https://fortune.com
+    display_name: Fortune
+    summary: Fortune 500 Daily & Breaking Business News
+  refinery29:
+    feed_url: https://www.refinery29.com/rss.xml
+    homepage_url: https://www.refinery29.com
+    display_name: Refinery29
+    summary: Refinery29
+  variety:
+    feed_url: https://variety.com/feed/
+    homepage_url: https://variety.com
+    display_name: Variety
+    summary: Entertainment news, film reviews, awards, film festivals, box office, entertainment industry conferences
+  9to5google:
+    feed_url: https://9to5google.com/feed/
+    homepage_url: https://9to5google.com
+    display_name: 9to5Google
+    summary: Google news, Pixel, Android, Gemini, Home, more
+  aws_amazon:
+    feed_url: https://aws.amazon.com/blogs/aws/feed/
+    homepage_url: https://aws.amazon.com/blogs/aws
+    display_name: AWS News Blog
+    summary: Announcements, updates, and launches from Amazon Web Services.
+  joy_recurse:
+    feed_url: https://joy.recurse.com/feed.atom
+    homepage_url: https://joy.recurse.com
+    display_name: Joy of Computing
+    summary: Updates from Joy of Computing.
   synthtopia:
     feed_url: https://www.synthtopia.com/feed/
     homepage_url: https://www.synthtopia.com
