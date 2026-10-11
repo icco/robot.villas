@@ -24,7 +24,7 @@ function getSigningKey() {
 
 function signHeaders(headers: Headers, components: Array<[string, string]>, tag: string, signing: NonNullable<ReturnType<typeof getSigningKey>>) {
   const created = Math.floor(Date.now() / 1000);
-  const params = `(${components.map(([name]) => name).join(" ")});created=${created};expires=${created + 60};keyid="${signing.keyid}";alg="ed25519";nonce="${randomBytes(16).toString("base64url")}";tag="${tag}"`;
+  const params = `(${components.map(([name]) => name).join(" ")});created=${created};expires=${created + 60};keyid="${signing.keyid}";alg="ed25519";nonce="${randomBytes(64).toString("base64url")}";tag="${tag}"`;
   const base = [...components.map(([name, value]) => `${name}: ${value}`), `"@signature-params": ${params}`].join("\n");
   headers.set("Signature-Input", `sig1=${params}`);
   headers.set("Signature", `sig1=:${sign(null, Buffer.from(base), signing.key).toString("base64")}:`);

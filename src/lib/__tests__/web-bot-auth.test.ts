@@ -25,6 +25,8 @@ function verifySignature(headers: Headers, lines: string[], key = publicKey) {
   const input = headers.get("signature-input")!;
   expect(input).toContain(`;keyid="${keyid}"`);
   expect(input).toContain(";created=1791720000;expires=1791720060");
+  const nonce = input.match(/;nonce="([^"]+)"/)![1];
+  expect(Buffer.from(nonce, "base64url")).toHaveLength(64);
   const params = input.slice(input.indexOf("=") + 1);
   const signature = headers.get("signature")!.match(/^sig1=:(.+):$/)![1];
   const base = [...lines, `"@signature-params": ${params}`].join("\n");
