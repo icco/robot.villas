@@ -10645,6 +10645,262 @@ bots:
     display_name: Stripe Engineering
     summary: Engineering, APIs, infrastructure, and building reliable financial software.
     profile_photo: https://images.stripeassets.com/fzn2n1nzq965/4vVgZi0ZMoEzOhkcv7EVwK/8cce6fdcf2733b2ec8e99548908847ed/favicon.png?w=180&h=180
+  flickr_developer_blog:
+    feed_url: https://code.flickr.net/feed/
+    homepage_url: https://code.flickr.net
+    display_name: Flickr Developer Blog
+    summary: Archived technical articles from Flickr's engineering team about APIs, infrastructure, observability, and open source; the available feed ends in 2022.
+  recollect_engineering:
+    feed_url: https://code.recollect.com/rss
+    homepage_url: https://code.recollect.com
+    display_name: Recollect Engineering
+    summary: Archived engineering posts from Recollect about queues, social-graph data, and crowdsourced image reconstruction; the available feed ends in 2012.
+  visual_studio_code:
+    feed_url: https://code.visualstudio.com/feed.xml
+    homepage_url: https://code.visualstudio.com
+    display_name: Visual Studio Code
+    summary: Official release notes for Visual Studio Code, covering editor features, extensions, development tools, and AI-assisted workflows.
+    profile_photo: https://code.visualstudio.com/assets/apple-touch-icon.png
+  codeartists:
+    feed_url: https://codeartists.com/rss
+    homepage_url: https://codeartists.com
+    display_name: CodeArtists
+    summary: Archived web-development tutorials from CodeArtists about JavaScript, Backbone, browser APIs, and Amazon S3; the available feed ends in 2012.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcodeartists.com&size=128
+  codecondo:
+    feed_url: https://codecondo.com/feed/
+    homepage_url: https://codecondo.com
+    display_name: CodeCondo
+    summary: Articles and tutorials about programming, software development, AI tools, and technology from CodeCondo.
+    profile_photo: https://codecondo.com/wp-content/themes/reco/favicon.png
+  octopus_blog:
+    feed_url: https://octopus.com/blog/feed.xml
+    homepage_url: https://octopus.com/blog
+    display_name: Octopus Deploy Blog
+    summary: Official Octopus Deploy articles about continuous delivery, deployment automation, Kubernetes, Argo CD, and software engineering; Codefresh's site and content have been integrated into Octopus.
+    profile_photo: https://octopus.com/octopus-public/images/(global)/apple-touch-icon.png
+  codefriars_blog:
+    feed_url: https://codefriar.com/rss.xml
+    homepage_url: https://codefriar.com
+    display_name: CodeFriar
+    summary: Kevin Poorman writes about Salesforce development, JavaScript, async/await, and reusable automation at CodeFriar.
+    profile_photo: https://cdn.hashnode.com/res/hashnode/image/upload/v1695448899623/2lZl2od4N.png
+  graham_sutherland:
+    feed_url: https://blog.poly.nomial.co.uk/feed.xml
+    homepage_url: https://blog.poly.nomial.co.uk/
+    display_name: Graham Sutherland's Blog
+    summary: Graham Sutherland writes about electronics, hardware, software security, reverse engineering, programming, and personal topics; the successor to codeinsecurity.
+    profile_photo: https://codeinsecurity.files.wordpress.com/2023/02/ci-1.png?w=180
+  codelitt:
+    feed_url: https://www.codelitt.com/blog-feed.xml
+    homepage_url: https://www.codelitt.com/blog
+    display_name: Codelitt
+    summary: Codelitt's articles about product engineering, software design, enterprise AI, technical hiring, and building development teams.
+    profile_photo: https://static.wixstatic.com/media/49c7e2_ce13a292318f405cb1e73ff4d0ef4736%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/49c7e2_ce13a292318f405cb1e73ff4d0ef4736%7Emv2.png
+  code_of_honor:
+    feed_url: https://www.codeofhonor.com/atom.xml
+    homepage_url: https://www.codeofhonor.com
+    display_name: Code of Honor
+    summary: Patrick Wyatt writes about game development and design, programming, software tools, and the history of games he helped create.
+    profile_photo: https://www.codeofhonor.com/favicon-180.png
+  christopher_sexton:
+    feed_url: https://www.codeography.com/atom.xml
+    homepage_url: https://www.codeography.com
+    display_name: Codeography - Christopher Sexton
+    summary: Christopher Sexton's programming archive covers Ruby, Rails, Vim, tmux, Heroku, and developer tools; the available feed ends in 2019.
+  noah_kantrowitz:
+    feed_url: https://coderanger.net/atom.xml
+    homepage_url: https://coderanger.net
+    display_name: Noah Kantrowitz
+    summary: Noah Kantrowitz writes about software development, DevOps, Kubernetes, infrastructure, and open-source communities; the available feed ends in 2020.
+    profile_photo: https://coderanger.net/apple-touch-icon.png
+  yield_thought:
+    feed_url: https://yieldthought.com/rss
+    homepage_url: https://yieldthought.com/
+    display_name: Yield Thought - Mark O'Connor
+    summary: Mark O'Connor writes about programming, artificial intelligence, research, productivity, and personal reflections at Yield Thought, the announced successor to his coderoom blog.
+  codesmash:
+    feed_url: https://codesmash.dev/rss.xml
+    homepage_url: https://codesmash.dev
+    display_name: CodeSmash
+    summary: Dominik Szymanski writes about software architecture, frontend development, containers, technical debt, and development-team practices at CodeSmash.
+    profile_photo: https://cdn.hashnode.com/res/hashnode/image/upload/v1698096678757/YEPAyGfZD.png
+  code_without_rules:
+    feed_url: https://codewithoutrules.com/atom.xml
+    homepage_url: https://codewithoutrules.com
+    display_name: Code Without Rules
+    summary: Archived advice from Itamar Turner-Trauring about productive programming, debugging, career decisions, and work-life balance; the available feed ends in 2020.
+    profile_photo: https://codewithoutrules.com/assets/card_image.jpg
+  cody_soyland:
+    feed_url: https://www.codysoyland.com/index.xml
+    homepage_url: https://www.codysoyland.com
+    display_name: Cody Soyland
+    summary: Cody Soyland's programming archive covers Python, Django, concurrency, SSH, and developer tooling; its last technical posts are from 2013.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.codysoyland.com&size=128
+  pdf2xl:
+    feed_url: https://www.pdf2xl.com/feed/
+    homepage_url: https://www.pdf2xl.com
+    display_name: PDF2XL
+    summary: PDF2XL product tutorials and workflow advice about extracting PDF data, converting tables to Excel, and automating office tasks; Cogniview redirects to PDF2XL.
+    profile_photo: https://www.pdf2xl.com/wp-content/themes/pdf2xl/favicon.png
+  coinspeaker:
+    feed_url: https://www.coinspeaker.com/news/feed/
+    homepage_url: https://www.coinspeaker.com/news
+    display_name: Coinspeaker
+    summary: Cryptocurrency news, market analysis, price forecasts, and blockchain-industry coverage from Coinspeaker.
+    profile_photo: https://www.coinspeaker.com/wp-content/uploads/2020/03/cropped-favicon-180x180.png
+  a_foo_walks_into_a_bar:
+    feed_url: https://coldattic.info/index.xml
+    homepage_url: https://coldattic.info
+    display_name: A Foo walks into a Bar...
+    summary: Paul Shved writes about programming, machine learning, computer science, and hardware projects at A Foo walks into a Bar; the available feed ends in 2023.
+    profile_photo: https://coldattic.info/apple-touch-icon.png
+  collaborative_fund:
+    feed_url: https://feeds.feedburner.com/collabfund
+    homepage_url: https://collabfund.com
+    display_name: Collaborative Fund
+    summary: Essays about investing, business, economics, and entrepreneurship, plus portfolio announcements from Collaborative Fund.
+    profile_photo: https://collabfund.com/assets/images/apple-touch-icon.png
+  collectors_weekly_articles_and_interviews:
+    feed_url: https://www.collectorsweekly.com/articles/feed/
+    homepage_url: https://www.collectorsweekly.com/articles
+    display_name: Collectors Weekly Articles and Interviews
+    summary: Articles and interviews about antiques, vintage objects, collecting, and the history of everyday material culture from Collectors Weekly.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.collectorsweekly.com%2Farticles&size=128
+  colorado_newsline:
+    feed_url: https://coloradonewsline.com/feed/
+    homepage_url: https://coloradonewsline.com
+    display_name: Colorado Newsline
+    summary: Colorado Newsline reports on Colorado government, politics, elections, public policy, and related national issues.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcoloradonewsline.com&size=128
+  comediva:
+    feed_url: https://comediva.com/feed/
+    homepage_url: https://comediva.com
+    display_name: Comediva
+    summary: Archived comedy, pop-culture satire, humorous lists, and videos from Comediva; the available feed ends in 2015.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcomediva.com&size=128
+  comedy_central:
+    feed_url: https://comedycentral.tumblr.com/rss
+    homepage_url: https://comedycentral.tumblr.com
+    display_name: Comedy Central
+    summary: The archived official Comedy Central Tumblr shares comedy clips, promotional videos, and humorous posts; the available feed ends in 2019.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcomedycentral.tumblr.com&size=128
+  the_beat:
+    feed_url: https://www.comicsbeat.com/feed/
+    homepage_url: https://www.comicsbeat.com
+    display_name: The Beat - ComicsBeat
+    summary: Comic-book and graphic-novel news, reviews, convention reporting, and comics-industry coverage from The Beat.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.comicsbeat.com&size=128
+  commitstrip:
+    feed_url: https://www.commitstrip.com/en/feed/?
+    homepage_url: https://www.commitstrip.com
+    display_name: CommitStrip
+    summary: Archived comic strips about programmers, web agencies, software projects, and developer life; the available feed ends in 2022.
+    profile_photo: https://www.commitstrip.com/wp-content/themes/krds_blog/favicon.png?v=5
+  wbur_health:
+    feed_url: https://rss.wbur.org/health/rss
+    homepage_url: https://www.wbur.org/news/section/health
+    display_name: WBUR Health
+    summary: WBUR's health reporting covers medicine, public health, hospitals, and health policy in Massachusetts and beyond; CommonHealth redirects to this section.
+    profile_photo: https://static.wbur.org/images/wbur-logo/apple-touch-icon.png
+  lets_encrypt_community_support:
+    feed_url: https://community.letsencrypt.org/posts.rss
+    homepage_url: https://community.letsencrypt.org
+    display_name: Let's Encrypt Community Support
+    summary: Latest community-support forum posts about Let's Encrypt certificates, ACME clients, HTTPS configuration, troubleshooting, and service incidents.
+    profile_photo: https://global.discourse-cdn.com/letsencrypt/optimized/3X/c/a/ca6c06ea1ea201324bba7048c6841ce60236468d_2_180x180.png
+  central_station:
+    feed_url: https://thisiscentralstation.com/feed/
+    homepage_url: https://thisiscentralstation.com
+    display_name: Central Station
+    summary: Archived Central Station articles, creative opportunities, exhibitions, events, and community projects; the available feed ends in 2017.
+  windy_decarbonization_discussion:
+    feed_url: https://community.windy.com/topic/8804.rss
+    homepage_url: https://community.windy.com/topic/8804/the-next-big-thing
+    display_name: Windy Community - The next BIG THING
+    summary: Archived replies to Windy staff member ivo's 2019 discussion about decarbonization, climate change, and its possible social and economic effects; this is a single forum-thread feed.
+    profile_photo: https://community.windy.com/assets/uploads/system/touchicon-orig.png
+  iccc21:
+    feed_url: https://computationalcreativity.net/iccc21/feed/
+    homepage_url: https://computationalcreativity.net/iccc21
+    display_name: ICCC 2021
+    summary: Archived announcements, proceedings, award results, and conference information for the 2021 International Conference on Computational Creativity.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcomputationalcreativity.net%2Ficcc21&size=128
+  computing_ed_research:
+    feed_url: https://computinged.wordpress.com/feed/
+    homepage_url: https://computinged.wordpress.com
+    display_name: Computing Ed Research - Guzdial's Take
+    summary: Mark Guzdial writes about computing-education research, teaching programming, computer-science curricula, and how people learn computing.
+    profile_photo: https://secure.gravatar.com/blavatar/bc2fbce8b69169c201a94a4e850b366e347435c39a530b70cc1f08cbcda0df3d?s=114
+  concept_cars:
+    feed_url: https://www.concept-cars.org/feed
+    homepage_url: https://www.concept-cars.org
+    display_name: Concept Cars
+    summary: Archived articles about concept cars, unusual vehicles, automotive design, and practical car advice; the available feed ends in 2021.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.concept-cars.org&size=128
+  connected_comedy:
+    feed_url: https://connectedcomedy.com/feed/
+    homepage_url: https://connectedcomedy.com
+    display_name: Connected Comedy
+    summary: Archived advice from Josh Spector for comedians about creating content, building an audience, social media, promotion, and the comedy business; the available feed ends in 2015.
+  conor_neill:
+    feed_url: https://conorneill.com/feed/
+    homepage_url: https://conorneill.com
+    display_name: Conor Neill - Moving People to Action
+    summary: Conor Neill writes about leadership, communication, public speaking, sales, decision-making, and personal development.
+    profile_photo: https://i0.wp.com/conorneill.com/wp-content/uploads/2020/04/cropped-Screenshot-2020-04-05-00.43.32.png?fit=180%2C180&ssl=1
+  the_western_journal:
+    feed_url: https://www.westernjournal.com/feed/
+    homepage_url: https://www.westernjournal.com
+    display_name: The Western Journal
+    summary: News and conservative commentary about U.S. politics, culture, religion, and current events from The Western Journal, which absorbed Conservative Tribune.
+    profile_photo: https://www.westernjournal.com/wp-content/uploads/2021/05/cropped-Group-3-180x180.png
+  container_solutions_blog:
+    feed_url: https://blog.container-solutions.com/rss.xml
+    homepage_url: https://blog.container-solutions.com/
+    display_name: Container Solutions Blog
+    summary: Container Solutions' technical articles and commentary about cloud-native engineering, Kubernetes, software architecture, open source, and development practices.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.container-solutions.com&size=128
+  content_with_style:
+    feed_url: https://contentwithstyle.co.uk/atom.xml
+    homepage_url: https://contentwithstyle.co.uk
+    display_name: Content with Style
+    summary: Archived web-development articles about HTML, CSS, JavaScript, PHP, web standards, and developer tools; the available feed ends in 2011.
+  cool_hunting:
+    feed_url: https://coolhunting.com/feed/
+    homepage_url: https://coolhunting.com
+    display_name: COOL HUNTING
+    summary: COOL HUNTING covers design, art, culture, technology, travel, fashion, and noteworthy products.
+    profile_photo: https://coolhunting.com/wp-content/uploads/2023/06/ch-favicon.png
+  cool_mom_picks:
+    feed_url: https://coolmompicks.com/feed
+    homepage_url: https://coolmompicks.com
+    display_name: Cool Mom Picks
+    summary: Recommendations and reviews for family life, including gifts, parenting, home goods, technology, travel, and everyday products.
+    profile_photo: https://coolmompicks.com/apple-touch-icon.png?v=cmp-brand-2
+  the_co_op_cloud:
+    feed_url: https://coopcloud.tech/index.xml
+    homepage_url: https://coopcloud.tech
+    display_name: The Co-op Cloud
+    summary: Project and community updates from Co-op Cloud, a cooperative platform for deploying and maintaining self-hosted services.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcoopcloud.tech&size=128
+  us_copyright_office:
+    feed_url: https://www.copyright.gov/rss/newsnet.xml
+    homepage_url: https://www.copyright.gov/newsnet/
+    display_name: U.S. Copyright Office NewsNet
+    summary: Official U.S. Copyright Office NewsNet notices about copyright policy, registration, rulemakings, events, and reports; the linked RSS currently ends in January 2025.
+    profile_photo: https://www.copyright.gov/about/images/apple-icon-180x180.png
+  coral_by_vox_media:
+    feed_url: https://coralproject.net/feed/
+    homepage_url: https://coralproject.net
+    display_name: Coral by Vox Media
+    summary: Archived articles from Coral by Vox Media about online commenting, moderation, community design, and its commenting platform; the available feed ends in 2020.
+    profile_photo: https://coralproject.net/wp-content/uploads/2019/09/cropped-coral_logo_mark.png?w=180
+  cordless_blog:
+    feed_url: https://cordlessdog.com/blog/feed/atom/
+    homepage_url: https://cordlessdog.com/blog
+    display_name: Cordless Blog
+    summary: Archived Cordless Dog release announcements and support notes for Stay and related macOS software; the available feed ends in 2021.
   github_engineering:
     feed_url: https://github.blog/engineering/feed/
     homepage_url: https://github.blog
