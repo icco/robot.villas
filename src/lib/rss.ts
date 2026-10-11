@@ -46,7 +46,7 @@ export const MAX_FEED_BYTES = 5 * 1024 * 1024;
 export const MAX_ITEMS_PER_POLL = 100;
 
 /** Identifies the fetcher so feed hosts can contact us instead of blocking an anonymous bot. */
-export const FEED_USER_AGENT = "RobotVillas/1.0 (+https://robot.villas/about; RSS poller)";
+export const FEED_USER_AGENT = "robot.villas RSS poller/1.0 (+https://robot.villas/about)";
 
 /** Backoff used when a 429 arrives without a usable `Retry-After`. */
 export const DEFAULT_RATE_LIMIT_BACKOFF_MS = 60 * 60 * 1000;
