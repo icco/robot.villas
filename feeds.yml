@@ -7171,256 +7171,273 @@ bots:
     display_name: Fresh Air
     summary: Interviews and reviews with Terry Gross and the Fresh Air team.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
-  aaronlam:
+  aaron_lam_life_through_the_lens:
     feed_url: https://www.aaronlam.com/blog/feed/
     homepage_url: https://www.aaronlam.com/blog
     display_name: aaron lam • life through the lens
-    summary: aaron lam photography
-  aaronson:
+    summary: 'Aaron Lam''s archived photography and personal blog, including bags, camera gear, travel, and everyday life. Latest feed post: May 2020.'
+    profile_photo: https://www.aaronlam.com/blog/wp-content/uploads/2019/09/cropped-1257B7C4-9006-4105-9B6C-C451E02D36FA-180x180.png
+  adam_aaronson:
     feed_url: https://aaronson.org/feed.xml
     homepage_url: https://aaronson.org
     display_name: Adam Aaronson
-    summary: Updates from Adam Aaronson.
+    summary: Adam Aaronson writes about puzzles, software, mathematics, travel, cocktails, and personal projects.
+    profile_photo: https://aaronson.org/apple-touch-icon.png
   abc13:
     feed_url: https://abc13.com/feed/
     homepage_url: https://abc13.com
-    display_name: ABC13 RSS Feed
-    summary: Keep up with news from your local ABC station.
-  abc4:
+    display_name: ABC13
+    summary: Houston and Southeast Texas news, weather, traffic, sports, and community coverage from ABC13 KTRK.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fabc13.com&size=128
+  abc4_utah:
     feed_url: https://www.abc4.com/feed/
     homepage_url: https://www.abc4.com
     display_name: ABC4 Utah
-    summary: Utah's First TV Station and your destination for news, sports, weather and more across Utah
-  abehmiel:
+    summary: Utah news, weather, politics, sports, and community reporting from ABC4 Utah.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.abc4.com&size=128
+  abe_hmiel:
     feed_url: https://abehmiel.net/rss.xml
     homepage_url: https://abehmiel.net
-    display_name: abehmiel.net
-    summary: Abe Hmiel — physicist, musician, developer.
+    display_name: Abe Hmiel
+    summary: Abe Hmiel's writing on mathematics, software projects, physics, music, and personal life, including his earlier blog archive.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fabehmiel.net&size=128
   aboard:
     feed_url: https://aboard.com/feed/
     homepage_url: https://aboard.com
     display_name: Aboard
-    summary: Business Software. Built by AI. Perfected by People
+    summary: Aboard's perspectives on AI, software development, organizational change, and building useful tools.
+    profile_photo: https://aboard.com/wp-content/uploads/2026/04/favicon-150x150.png
   meta_newsroom:
     feed_url: https://about.fb.com/feed/
-    homepage_url: https://www.meta.com/about/?utm_source=about.facebook.com&utm_medium=redirect
+    homepage_url: https://about.fb.com/news/
     display_name: Meta Newsroom
-    summary: Updates from Meta Newsroom.
+    summary: Official Meta Newsroom announcements about its products, AI, company activities, safety, and partnerships.
+    profile_photo: https://static.xx.fbcdn.net/rsrc.php/yQ/r/0eWKxz9kEoF.webp
   about_jstor:
     feed_url: https://about.jstor.org/feed/
     homepage_url: https://about.jstor.org
     display_name: About JSTOR
-    summary: Updates from About JSTOR.
-  about_radiopublic:
+    summary: JSTOR news about scholarly access, digital collections, accessibility, publishing, and library partnerships.
+    profile_photo: https://about.jstor.org/wp-content/uploads/2017/05/j_favicon_512x512.png
+  radiopublic:
     feed_url: https://about.radiopublic.com/feed/
     homepage_url: https://about.radiopublic.com
     display_name: RadioPublic
-    summary: We help podcasters build their business and listeners discover great stories
-  abrah_am:
+    summary: 'Archived RadioPublic product news, podcasting advice, listener discovery, and creator interviews. Latest feed post: February 2020.'
+    profile_photo: https://i0.wp.com/about.radiopublic.com/wp-content/uploads/2018/08/rp-logo.png?fit=120%2C120&ssl=1
+  abraham_williams_blog:
     feed_url: https://blog.abrah.am/feeds/posts/default
-    homepage_url: https://abrah.am
-    display_name: The blog of Abraham Williams
-    summary: Updates from The blog of Abraham Williams.
-  abseil:
+    homepage_url: https://blog.abrah.am/
+    display_name: Abraham Williams - Blog
+    summary: 'Abraham Williams''s archived software-development blog, including his A Month of Flutter tutorial series. Latest feed post: December 2018.'
+    profile_photo: https://abrah.am/img/abraham-180.jpg
+  abseil_blog_and_tips:
     feed_url: https://abseil.io/feed.xml
     homepage_url: https://abseil.io
     display_name: Abseil Blog & Tips
-    summary: An open-source collection of C++ library code designed to augment the C++ standard library
-  abstractfactory_blogspot:
+    summary: Official Abseil announcements, C++ programming tips, performance engineering, and library guidance.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fabseil.io&size=128
+  the_abstract_factory:
     feed_url: https://abstractfactory.blogspot.com/feeds/posts/default
     homepage_url: https://abstractfactory.blogspot.com
     display_name: The Abstract Factory
-    summary: Updates from The Abstract Factory.
-  accordingtodevin_tumblr:
+    summary: 'Keunwoo Lee''s retired blog about software, technology, politics, and culture. Final post: May 2022, pointing readers to keunwoo.com.'
+  according_to_devin:
     feed_url: https://accordingtodevin.tumblr.com/rss
     homepage_url: https://accordingtodevin.tumblr.com
     display_name: According to Devin
-    summary: 'Devin. 21. SoCal. UCLA. Cat daddy. Tacos enthusiast. I say and draw a lot of stupid things. My main comic site: Click Here :D Follow me on Instagram! accordingtodevin.ig'
+    summary: 'Devin''s archived original comics and illustrated observations about everyday life, relationships, and humor. Latest feed post: April 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Faccordingtodevin.tumblr.com&size=128
   acidcow:
-    feed_url: http://feeds.feedburner.com/acidcow_com
+    feed_url: https://feeds.feedburner.com/acidcow_com
     homepage_url: https://acidcow.com
-    display_name: AcidCow.com - The One and Only
-    summary: AcidCow.com - The One and Only
-  acloserlisten:
+    display_name: AcidCow
+    summary: Photo collections, GIFs, memes, curiosities, and adult-oriented glamour galleries from AcidCow, with occasional sponsored posts.
+    profile_photo: https://acidcow.com/favicons/72x72.png
+  a_closer_listen:
     feed_url: https://acloserlisten.com/feed/
     homepage_url: https://acloserlisten.com
     display_name: a closer listen
-    summary: a home for instrumental and experimental music
-  actionmethod:
+    summary: Reviews, interviews, mixes, and features on instrumental and experimental music, ambient sound, field recordings, and modern composition.
+    profile_photo: https://secure.gravatar.com/blavatar/faa8118125b255f15fcc8e033e910e3e2d8a04f1a6a43af050cb8b8b79b6fec0?s=114
+  action_method:
     feed_url: https://actionmethod.com/blogs/news.atom
     homepage_url: https://actionmethod.com/blogs/news
-    display_name: Action Method - News
-    summary: Updates from Action Method - News.
-  actonglobal:
-    feed_url: https://www.actonglobal.com/feed/
-    homepage_url: https://www.actonglobal.com
-    display_name: actonglobal
-    summary: Updates from actonglobal.
-  acuriousidea_tumblr:
+    display_name: Action Method
+    summary: 'Action Method''s archived interviews and advice on creative work, productivity, and making ideas happen. Latest feed post: December 2023.'
+    profile_photo: https://actionmethod.com/cdn/shop/files/favicon_32x32.jpg?v=1613158151
+  pink_a_curious_idea:
     feed_url: https://acuriousidea.tumblr.com/rss
     homepage_url: https://acuriousidea.tumblr.com
-    display_name: ＰＩＮＫ。
-    summary: jfashion ❀ anime ❀ kawaii ❀ pinkHi I’m Ann, 27 years old, and currently living in Maine, the land of lobsters and lighthouses. ❀ var ref = (''+document.referrer+''); var w_h = window.screen.width + " x " + window.screen.height; document.write(''); For business inquiries:acuriousidea.tumblr@gmail.com❀ Please enjoy your stay ❀Personal My face My outfits if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Mobile|Opera Mini/i.test(navigator.userAgent) ) { document.getElementById('content').style.disp
-  adammatthews:
+    display_name: PINK - A Curious Idea
+    summary: 'Archived Japanese fashion, pastel and pink aesthetics, anime, and outfit posts from A Curious Idea''s PINK Tumblr. Latest feed post: October 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Facuriousidea.tumblr.com&size=128
+  adam_matthews:
     feed_url: https://adammatthews.co.uk/feed/
     homepage_url: https://adammatthews.co.uk
     display_name: Adam Matthews
-    summary: Technology // IAM // EUC // Random Rubbish
-  adaptivecapacitylabs:
+    summary: 'Adam Matthews''s technology blog on identity management, end-user computing, VMware, macOS, and automation. Latest feed post: December 2022.'
+  adaptive_capacity_labs:
     feed_url: https://www.adaptivecapacitylabs.com/blog/feed/
     homepage_url: https://www.adaptivecapacitylabs.com
-    display_name: ACL Blog
-    summary: We are experts in trouble.
-  addyo_substack:
+    display_name: Adaptive Capacity Labs
+    summary: Adaptive Capacity Labs writes about incident analysis, resilience engineering, cognitive work, and organizational learning in complex systems.
+    profile_photo: https://www.adaptivecapacitylabs.com/wp-content/uploads/2023/07/cropped-cropped-ACL-favicon-1-180x180.png
+  elevate:
     feed_url: https://addyo.substack.com/feed
     homepage_url: https://addyo.substack.com
     display_name: Elevate
-    summary: Addy Osmani's newsletter on elevating your effectiveness. Join his community of 600,000 readers across social media.
-  adereth_github:
+    summary: Addy Osmani's Elevate newsletter on effective software engineering, AI coding agents, technical judgment, and productivity.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!m9vt!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5461e150-2b93-418a-b0b7-0499a1a2ac22%2Fapple-touch-icon-57x57.png
+  matt_adereth:
     feed_url: https://adereth.github.io/feed.xml
-    homepage_url: http://adereth.github.io
+    homepage_url: https://adereth.github.io
     display_name: Matt Adereth
-    summary: A blog about programming, mathematics, and making things
-  adlrocha_substack:
+    summary: 'Matt Adereth''s archived blog on programming, Clojure, statistics, mathematics, games, and custom keyboards. Latest feed post: July 2021.'
+    profile_photo: https://adereth.github.io/images/aleph.png
+  adlrocha_beyond_the_code:
     feed_url: https://adlrocha.substack.com/feed
     homepage_url: https://adlrocha.substack.com
     display_name: '@adlrocha Beyond The Code'
-    summary: My personal public journal. Reflections on cutting-edge systems, career pivots, and the mindset of an engineer in the age of AI.
-  adplist:
+    summary: adlrocha's engineering journal on AI systems, distributed computing, software design, career decisions, and personal reflections.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!4u58!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2ad181f-d906-4fc3-b332-7846a5548266%2Fapple-touch-icon-57x57.png
+  adplist_blog:
     feed_url: https://adplist.org/blog/feed.xml
     homepage_url: https://adplist.org/blog
     display_name: ADPList Blog
-    summary: Career advice, design insights, and stories from the ADPList community.
-  adsumnyc:
+    summary: ADPList's official community blog on mentorship, design, career development, software, and product announcements.
+    profile_photo: https://adplist.org/apple-touch-icon.png
+  adsum:
     feed_url: https://adsumnyc.com/blogs/news.atom
     homepage_url: https://adsumnyc.com/blogs/news
-    display_name: Adsum - News
-    summary: Updates from Adsum - News.
-  aiptcomics:
+    display_name: Adsum
+    summary: Adsum's journal of clothing collections, collaborations, design, music, sport, places, and cultural history.
+    profile_photo: https://cdn.shopify.com/s/files/1/0664/2387/files/apple-touch-icon-57x57.png?285464261536098351
+  aipt:
     feed_url: https://aiptcomics.com/feed/
     homepage_url: https://aiptcomics.com
     display_name: AIPT
-    summary: The most comic reviews anywhere every Wednesday, gaming, movies, pro wrestling and more
-  advocate:
+    summary: AIPT's comics, gaming, film, television, and wrestling news, reviews, interviews, and previews.
+    profile_photo: https://i0.wp.com/aiptcomics.com/wp-content/uploads/2020/03/cropped-favicon.png?fit=180%2C180&ssl=1
+  the_advocate:
     feed_url: https://www.advocate.com/feeds/feed.rss
     homepage_url: https://www.advocate.com
-    display_name: Advocate.com
-    summary: Advocate.com
-  aei:
+    display_name: The Advocate
+    summary: LGBTQ+ news, politics, culture, health, history, and opinion from The Advocate.
+    profile_photo: https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8zMjYzODM2OS9vcmlnaW4ucG5nIiwiZXhwaXJlc19hdCI6MTgwMDkwODUyN30.lgnjo0zcghls8ByXgYOw2uy1lhSjH5ofwi9y85yZIR4/img.png?width=192&height=192
+  american_enterprise_institute:
     feed_url: https://www.aei.org/feed/
     homepage_url: https://www.aei.org
-    display_name: American Enterprise Institute – AEI
-    summary: The American Enterprise Institute, AEI, is a nonpartisan public policy research institute with a community of scholars and supporters committed to expanding liberty, increasing individual opportunity and strengthening free enterprise.
-  aella_substack:
+    display_name: American Enterprise Institute
+    summary: Research and commentary from the American Enterprise Institute on economics, domestic policy, foreign affairs, defense, and society.
+    profile_photo: https://www.aei.org/wp-content/uploads/fbrfg/apple-touch-icon.png?x92559&v=69BgboyWbL
+  knowingless:
     feed_url: https://aella.substack.com/feed
     homepage_url: https://aella.substack.com
     display_name: Knowingless
-    summary: sex, psychedelics, and social analysis
+    summary: Aella's Knowingless newsletter on sexuality, psychedelics, relationships, surveys, and social analysis; includes explicit adult topics.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!rB-2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffea5e111-ca53-4b78-ae58-92d478ba5901%2Fapple-touch-icon-57x57.png
   aeracode:
     feed_url: https://www.aeracode.org/feed/rss2/
     homepage_url: https://www.aeracode.org
     display_name: Aeracode
-    summary: The latest blog entries from Aeracode
-  aeriform_itch:
+    summary: Andrew Godwin's blog on software engineering, infrastructure, electronics, making things, and ActivityPub projects.
+    profile_photo: https://github.com/andrewgodwin.png?size=200
+  tape_devlog:
     feed_url: https://aeriform.itch.io/tape/devlog.rss
     homepage_url: https://aeriform.itch.io/tape
-    display_name: Tape Devlog - itch.io
-    summary: Offline-first project management designed for artists and designers
-  aestheticsofjoy:
+    display_name: Tape Devlog
+    summary: 'Archived development updates for Tape, Aeriform''s project-management tool for artists and designers. Latest feed post: May 2022.'
+    profile_photo: https://img.itch.zone/aW1nLzcwMzkxNTMuanBn/32x32%23/VUUzQf.jpg
+  the_aesthetics_of_joy:
     feed_url: https://aestheticsofjoy.com/feed/
     homepage_url: https://aestheticsofjoy.com
     display_name: The Aesthetics of Joy
-    summary: The Aesthetics of Joy by Ingrid Fetell Lee
-  aftermath_site:
+    summary: Ingrid Fetell Lee explores how design, surroundings, psychology, and everyday practices can bring more joy to life and work.
+    profile_photo: https://aestheticsofjoy.com/wp-content/uploads/2020/01/cropped-cropped-android-chrome-512x512-1-180x180.png
+  aftermath:
     feed_url: https://aftermath.site/rss/
     homepage_url: https://aftermath.site
     display_name: Aftermath
-    summary: Video games, the internet and what comes after
-  theamericangenius:
+    summary: Independent reporting and commentary on video games, the internet, media, technology, and labor from Aftermath.
+    profile_photo: https://storage.ghost.io/c/30/f5/30f5b1bb-84ee-4c26-b446-fb9a5e512994/content/images/size/w256h256/2025/08/favicon4.png
+  the_american_genius:
     feed_url: https://theamericangenius.com/feed/
     homepage_url: https://theamericangenius.com
     display_name: The American Genius
-    summary: News for business & entrepreneurs in tech
-  agiletesting_blogspot:
+    summary: The American Genius covers business, technology, marketing, careers, entrepreneurship, and workplace strategy.
+    profile_photo: https://theamericangenius.com/wp-content/uploads/2025/04/cropped-logos-3-180x180.png
+  agile_testing:
     feed_url: https://agiletesting.blogspot.com/feeds/posts/default
     homepage_url: https://agiletesting.blogspot.com
     display_name: Agile Testing
-    summary: Updates from Agile Testing.
-  agwa_name:
+    summary: 'Grig Gheorghiu''s archived notes on software testing, cloud infrastructure, deployment, Linux, and automation. Latest feed post: January 2018.'
+    profile_photo: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5SSw36UvaQVAwHb3-ftOcKQfvwQ2Er5cXQdSKxiFtlFSAoDL5tDUvBbEwr3TAaiEt206FVlXTaYiHuufTrKEWDD6mEmlo-_ka3a-pMTtRuHf__lXa4TkJNgGpZCcUnaQ/s220/griggheo2.png
+  andrew_ayer:
     feed_url: https://www.agwa.name/blog/feed
     homepage_url: https://www.agwa.name/blog
-    display_name: Andrew Ayer - Blog
-    summary: Updates from Andrew Ayer - Blog.
-  aigany:
-    feed_url: https://aigany.org/feed/
-    homepage_url: https://aigany.org
-    display_name: AIGA NY
-    summary: Championing the future of design for all.
-  aintitcool:
+    display_name: Andrew Ayer
+    summary: Andrew Ayer's technical writing on TLS, certificate authorities, security, Go, networking, and software infrastructure.
+    profile_photo: https://www.agwa.name/art/appleicon-lightbg-152x152.png
+  aint_it_cool_news:
     feed_url: https://www.aintitcool.com/node/feed/
-    homepage_url: http://www.aintitcool.com
-    display_name: Ain't It Cool News Feed
-    summary: The best in movie, TV, DVD and comic book news.
-  aip:
+    homepage_url: https://www.aintitcool.com/
+    display_name: Ain't It Cool News
+    summary: Film and television news, reviews, interviews, and entertainment commentary from Ain't It Cool News.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.aintitcool.com&size=128
+  american_institute_of_physics:
     feed_url: https://www.aip.org/index.rss
     homepage_url: https://www.aip.org
-    display_name: Homepage aip.org
-    summary: Homepage aip.org
-  airs:
-    feed_url: http://feeds.feedburner.com/Airs-IanLanceTaylor
+    display_name: American Institute of Physics
+    summary: AIP's cross-publication feed of physical-sciences news, Physics Today stories, careers, and community updates.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.aip.org&size=128
+  ian_lance_taylor_airs:
+    feed_url: https://www.airs.com/blog/feed/
     homepage_url: https://www.airs.com/blog
-    display_name: Airs – Ian Lance Taylor
-    summary: Ian Lance Taylor
-  aitp:
-    feed_url: https://www.aitp.org/feed/rss2
-    homepage_url: https://www.aitp.org
-    display_name: aitp
-    summary: Updates from aitp.
-  aiweirdness:
-    feed_url: https://www.aiweirdness.com/rss/
-    homepage_url: https://www.aiweirdness.com
-    display_name: AI Weirdness
-    summary: 'AI Weirdness: the strange side of machine learning'
-  ajdesignco:
+    display_name: Airs - Ian Lance Taylor
+    summary: Ian Lance Taylor's Airs blog on programming, Go, technology, and personal observations.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.airs.com%2Fblog&size=128
+  aj_design:
     feed_url: https://ajdesignco.com/feed
     homepage_url: https://ajdesignco.com/home
-    display_name: Graphic Design & Marketing Services in Upstate SC | AJ Design
-    summary: Business-Friendly Graphic Design
-  ajohnstone:
+    display_name: AJ Design
+    summary: 'AJ Design''s archived writing on graphic design, branding, web hosting, creative work, and business. Latest feed post: October 2021.'
+    profile_photo: https://ajdesignco.com/wp-content/uploads/2015/07/ajdesign-site-icon-559528a9v1_site_icon-180x180.png
+  development_analysis_and_research:
     feed_url: https://www.ajohnstone.com/feed/
     homepage_url: https://www.ajohnstone.com
     display_name: Development, Analysis And Research
-    summary: by Andrew Johnstone
+    summary: 'Andrew Johnstone''s archived software-development notes on Linux, AWS, infrastructure, databases, and web programming. Latest feed post: September 2020.'
   akismet:
     feed_url: https://akismet.com/feed/
-    homepage_url: https://akismet.com
+    homepage_url: https://akismet.com/blog/
     display_name: Akismet
-    summary: Spam Protection for Websites
-  akivaforthepeople:
-    feed_url: https://akivaforthepeople.com/feed.xml
-    homepage_url: https://akivaforthepeople.com/podcast
-    display_name: I'm Running for President
-    summary: My name is Akiva and I’m running for president. I’m 35, I have bright blue hair, and I have no idea what I’m doing. Come along with me on my surely doomed presidential run. We’ll talk about issues, explore strange new state and federal bureaucracies, navigate the nomination process, and find out just what the heck you actually have to do to run for president. It’s gonna be great.
-  akorotkov_github:
+    summary: Official Akismet product releases, integrations, developer tools, and advice on preventing website spam.
+    profile_photo: https://akismet.com/wp-content/uploads/2022/07/cropped-709f2-frame-874.png?w=180
+  alexander_korotkovs_blog:
     feed_url: https://akorotkov.github.io/atom.xml
     homepage_url: https://akorotkov.github.io
     display_name: Alexander Korotkov's blog
-    summary: Updates from Alexander Korotkov's blog.
-  alanany:
+    summary: 'Alexander Korotkov''s archived technical blog on PostgreSQL internals, indexing, full-text search, performance, and tooling. Latest feed post: May 2021.'
+    profile_photo: https://akorotkov.github.io/favicon.png
+  al_anany:
     feed_url: https://www.alanany.com/feed
     homepage_url: https://www.alanany.com
     display_name: Al Anany
-    summary: 51,000 business enthusiasts get my weekly digests. It could connect you with an investor or poke your business mindset (1.4M+ views.)
-  alearningaday_blog:
+    summary: Al Anany's business newsletter on AI, technology companies, entrepreneurship, investing, and consulting.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!Jy0s!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F51b8d8a9-9393-4be6-b3ac-fca4f613d2ae%2Fapple-touch-icon-57x57.png
+  a_learning_a_day:
     feed_url: https://alearningaday.blog/feed/
     homepage_url: https://alearningaday.blog
     display_name: A Learning a Day
-    summary: Updates from A Learning a Day.
-  alecmuffett:
+    summary: Daily reflections on learning, work, relationships, health, leadership, and personal growth from A Learning a Day.
+    profile_photo: https://alearningaday.blog/wp-content/uploads/2017/05/cropped-alearningadaylogov6.png?w=180
+  dropsafe:
     feed_url: https://alecmuffett.com/feed
     homepage_url: https://alecmuffett.com
     display_name: Dropsafe
-    summary: by Alec Muffett
+    summary: Alec Muffett's Dropsafe blog on privacy, encryption, security, censorship, internet policy, and personal interests.
+    profile_photo: https://alecmuffett.com/wp-content/uploads/2025/01/dropsafe-square.jpg
   npr_ted_radio_hour:
     feed_url: https://feeds.npr.org/510298/podcast.xml
     homepage_url: https://www.npr.org/programs/ted-radio-hour
