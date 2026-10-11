@@ -6593,256 +6593,284 @@ bots:
     display_name: 'NPR Topics: Technology'
     summary: Technology news from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
-  tkkader:
+  tk_kader:
     feed_url: https://www.tkkader.com/feed/
     homepage_url: https://www.tkkader.com
-    display_name: TK Kader | Unstoppable
-    summary: belief x discipline makes you unstoppable
-  taylorstitch:
+    display_name: TK Kader
+    summary: TK Kader writes about SaaS startups, fundraising, sales, business growth, and entrepreneurship.
+    profile_photo: https://www.tkkader.com/wp-content/uploads/cropped-TK-Kader-Brand-Favicon-180x180.png
+  taylor_stitch_journal:
     feed_url: https://www.taylorstitch.com/blogs/archive.atom
     homepage_url: https://www.taylorstitch.com/blogs/archive
-    display_name: Taylor Stitch - Taylor Stitch Journal
-    summary: Updates from Taylor Stitch - Taylor Stitch Journal.
+    display_name: Taylor Stitch Journal
+    summary: Taylor Stitch Journal articles about clothing, fabrics, menswear, styling, and the brand's products.
+    profile_photo: https://www.taylorstitch.com/cdn/shop/t/12/assets/apple-touch-icon.png?v=16187803519421863921765309372
   tbaggery:
     feed_url: http://feeds.feedburner.com/tpope
     homepage_url: https://tbaggery.com
     display_name: tbaggery
-    summary: Updates from tbaggery.
-  tech_paulcz:
+    summary: Tim Pope's archived programming blog about Git, Vim, Ruby, and Rails. The latest feed posts are dated 2011.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftbaggery.com&size=128
+  paul_czarkowski:
     feed_url: https://tech.paulcz.net/index.xml
     homepage_url: https://tech.paulcz.net
     display_name: Paul Czarkowski
-    summary: Recent content on Paul Czarkowski
+    summary: Paul Czarkowski writes about DevOps, Kubernetes, cloud infrastructure, and livestreaming. The feed includes a 2025 biography and older technical articles.
+    profile_photo: https://tech.paulcz.net/img/profile.jpg
   techeblog:
     feed_url: https://www.techeblog.com/feed/
     homepage_url: https://www.techeblog.com
     display_name: TechEBlog
-    summary: Updates from TechEBlog.
+    summary: Technology, gadgets, robotics, engineering projects, and product deals from TechEBlog.
+    profile_photo: https://www.techeblog.com/wp-content/uploads/2018/11/cropped-Untitled-1-180x180.png
   techmeme:
     feed_url: https://www.techmeme.com/feed.xml
     homepage_url: https://www.techmeme.com
     display_name: Techmeme
-    summary: Top news and commentary for technology's leaders, from all around the web
-  techstars:
-    feed_url: https://techstars.org/feed/
-    homepage_url: https://techstars.org
-    display_name: Techstars Foundation
-    summary: We’re here to start a movement that makes innovation accessible to anyone, anywhere.
-  techtrenches_dev:
+    summary: Techmeme aggregates technology news and commentary, linking to original reporting and related coverage across the web.
+    profile_photo: https://www.techmeme.com/m/config/tech/iicon.gif
+  from_the_trenches:
     feed_url: https://techtrenches.dev/feed
     homepage_url: https://techtrenches.dev
     display_name: From the Trenches
-    summary: Practical engineering management lessons learned in the trenches of scaling tech teams.
-  tegabrain:
+    summary: Denis Stetskov writes about engineering management, software teams, AI coding tools, and the technology industry.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!xMta!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F33eb400b-a646-40aa-9282-87fc2dadfc5e%2Fapple-touch-icon-57x57.png
+  tega_brain:
     feed_url: https://tegabrain.com/rss
     homepage_url: https://tegabrain.com
     display_name: Tega Brain
-    summary: Tega Brain
-  terriblesoftware:
+    summary: Tega Brain's artist portfolio, biography, exhibitions, talks, press, and writing about art, environmental engineering, and critical technology. The feed indexes site pages rather than chronological news.
+  terrible_software:
     feed_url: https://terriblesoftware.org/feed/
     homepage_url: https://terriblesoftware.org
     display_name: Terrible Software
-    summary: Software | Engineering Leadership | Tech
-  testing_googleblog:
-    feed_url: http://feeds.feedburner.com/blogspot/RLXA
-    homepage_url: http://testing.googleblog.com
+    summary: Essays about software engineering, engineering leadership, workplace communication, and working with AI.
+    profile_photo: https://i0.wp.com/terriblesoftware.org/wp-content/uploads/2024/12/android-chrome-512x512-2.png?fit=180%2C180&ssl=1
+  google_testing_blog:
+    feed_url: https://feeds.feedburner.com/blogspot/RLXA
+    homepage_url: https://testing.googleblog.com/
     display_name: Google Testing Blog
-    summary: Updates from Google Testing Blog.
-  textslashplain:
+    summary: Software testing, code review, design, and maintainability advice from Google engineers.
+    profile_photo: https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png
+  text_plain:
     feed_url: https://textslashplain.com/feed/
     homepage_url: https://textslashplain.com
     display_name: text/plain
-    summary: ericlaw talks about security, the web, and software in general
-  thatdragoncancer:
+    summary: Eric Lawrence writes about browser security, networking, Windows, web technology, and software development.
+    profile_photo: https://i0.wp.com/textslashplain.com/wp-content/uploads/2026/02/cropped-fb_img_1677942992666.jpg?fit=180%2C180&ssl=1
+  that_dragon_cancer:
     feed_url: http://www.thatdragoncancer.com/thatdragoncancer?format=rss
     homepage_url: http://www.thatdragoncancer.com/thatdragoncancer
-    display_name: Blog - That Dragon, Cancer
-    summary: '"That Dragon, Cancer" is currently being developed by Ryan & Amy Green and Josh Larson along with five others at their new studio Numinous Games. A videogame developer''s love letter to his son; an immersive adventure game to inspire love for others; a memorial for hundreds who have fought cancer. “That Dragon, Cancer” is a poetic and playful interactive retelling of Joel Green’s 4-year fight against cancer, and an autobiographical memoir of how parents Ryan and Amy embrace hope in the face of de'
-  sarahcpr_substack:
+    display_name: That Dragon, Cancer
+    summary: Archived development and release posts for That Dragon, Cancer, an autobiographical game about a family's experience of childhood cancer. The latest feed posts are dated 2016.
+  sarah_cooper:
     feed_url: https://sarahcpr.substack.com/feed
     homepage_url: https://sarahcpr.substack.com
-    display_name: sarahcpr
-    summary: Stories and other chicken scratch from Sarah Cooper.
-  thedailywtf:
+    display_name: Sarah Cooper - sarahcpr
+    summary: Sarah Cooper shares comedy sketches, personal essays, writing projects, and observations about work, relationships, and politics.
+    profile_photo: https://substack-post-media.s3.amazonaws.com/public/images/4fa6de4e-2a8b-4014-a84f-a5698f154d08_1193x1193.png
+  the_daily_wtf:
     feed_url: https://feeds.feedburner.com/TheDailyWtf
     homepage_url: http://thedailywtf.com
     display_name: The Daily WTF
-    summary: Curious Perversions in Information Technology
-  thedeletedscenes:
+    summary: Stories about software failures, questionable code, IT mishaps, and technology-related absurdities.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fthedailywtf.com&size=128
+  the_deleted_scenes:
     feed_url: https://www.thedeletedscenes.com/feed
     homepage_url: https://www.thedeletedscenes.com
     display_name: The Deleted Scenes
-    summary: Urbanism, culture, idiosyncrasy
-  thedrive:
+    summary: Addison Del Mastro writes about urbanism, housing, food, architecture, culture, and overlooked places, with annotated links.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!pkaK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F17c02b81-e469-498e-a8e7-18d49be440c4%2Fapple-touch-icon-57x57.png
+  the_drive:
     feed_url: https://www.thedrive.com/feed
     homepage_url: https://www.thedrive.com
     display_name: The Drive
-    summary: Car News, Reviews, and Culture
-  thehackernews:
+    summary: Automotive news, car reviews, driving culture, transportation infrastructure, and vehicle technology.
+    profile_photo: https://www.thedrive.com/wp-content/uploads/2024/07/cropped-drive_favicon-1.png?quality=85&w=180
+  the_hacker_news:
     feed_url: https://feeds.feedburner.com/TheHackersNews
     homepage_url: https://thehackernews.com
     display_name: The Hacker News
-    summary: Most trusted, widely-read independent cybersecurity news source for everyone; supported by hackers and IT professionals — Send TIPs to admin@thehackernews.com
+    summary: Cybersecurity news about malware, vulnerabilities, cyberattacks, threat research, and security tools, with sponsored industry articles.
+    profile_photo: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQQyjwPYjJP0wddSEB8Dlpr3dlnQUs52-WmlrZfqJoBPeOvv2Zoqlq-FhEAz_Xeprj_mtrI1MGCW1JS840JUjVEK6VoNe6zCNNTw_7YmyvNmf3E5pprZ3zqP8lszq74Wt97SvbJo5yeuyep0U6-nGs0vdarg4_WUrc5r6L0ML0xE-BsPipJd2-1PMHTvO1/s76-e365/thn.jpg
   thejournal_ie:
     feed_url: https://www.thejournal.ie/feed/
     homepage_url: https://www.thejournal.ie
     display_name: TheJournal.ie
-    summary: Ireland's Internet Newspaper
-  thenewinquiry:
+    summary: Irish and international news, politics, investigations, sports, culture, quizzes, and personal-finance features.
+    profile_photo: https://b0.thejournal.ie/redesign/i/thejournal/apple-touch-icon.png
+  the_new_inquiry:
     feed_url: https://thenewinquiry.com/feed/
     homepage_url: https://thenewinquiry.com
     display_name: The New Inquiry
-    summary: modern scholarship
+    summary: Essays, reviews, and cultural criticism about politics, history, society, art, and contemporary life.
+    profile_photo: https://thenewinquiry.com/app/uploads/2017/04/cropped-head-180x180.png
   therichest:
     feed_url: https://www.therichest.com/feed/
     homepage_url: https://www.therichest.com
     display_name: TheRichest
-    summary: TheRichest covers the wealth, net worth, and the luxurious lifestyles of the richest people in the world.
-  thesarcasmsociety_tumblr:
+    summary: Celebrity news, wealth and net worth, auctions, entertainment, and luxury lifestyles.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.therichest.com&size=128
+  the_sarcasm_society:
     feed_url: https://thesarcasmsociety.tumblr.com/rss
     homepage_url: https://thesarcasmsociety.tumblr.com
-    display_name: 404 Error - Not Found
-    summary: I’d like to look after myself before anyone else; But people say that’s selfish. So I don’t. zomgilyandshithahalolxx. FB > Recommend to have me featured
-  thesun:
+    display_name: The Sarcasm Society - 404 Error
+    summary: Archived personal Tumblr posts, photographs, music, and reblogs from The Sarcasm Society. The latest feed post is dated 2016 and says the blog is no longer used.
+  the_sun:
     feed_url: https://www.thesun.co.uk/feed/
     homepage_url: https://www.thesun.co.uk
     display_name: The Sun
-    summary: The Best for News, Sport, Showbiz, Celebrities
-  thesweetsetup:
+    summary: UK and international tabloid news, politics, sport, entertainment, celebrities, and lifestyle coverage.
+    profile_photo: https://www.thesun.co.uk/wp-content/themes/thesun/static/images/apple-icons/apple-icon.png
+  the_sweet_setup:
     feed_url: https://thesweetsetup.com/feed/
     homepage_url: https://thesweetsetup.com
     display_name: The Sweet Setup
-    summary: The best apps and workflows for your iPhone, iPad, and Mac
-  theunconventionalroute:
+    summary: Productivity, focus, scheduling, apps, and Apple-device workflows from The Sweet Setup, including course announcements. The latest feed posts are dated 2025.
+    profile_photo: https://thesweetsetup.com/apple-touch-icon.png
+  the_unconventional_route:
     feed_url: https://www.theunconventionalroute.com/feed/
     homepage_url: https://www.theunconventionalroute.com
     display_name: The Unconventional Route
-    summary: Make the most of your trip through life.
-  tholman:
+    summary: Travel guides, independent itineraries, outdoor adventures, and practical ideas for memorable experiences. The latest feed posts are dated 2025.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.theunconventionalroute.com&size=128
+  tim_holman:
     feed_url: https://tholman.com/feed.xml
     homepage_url: https://tholman.com
-    display_name: The Curious Creations of Tim Holman
-    summary: Updates from The Curious Creations of Tim Holman.
+    display_name: Tim Holman - Curious Creations
+    summary: Tim Holman's playful websites, JavaScript experiments, creative coding projects, and talks. The latest feed posts are dated 2020.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftholman.com&size=128
   tickld:
     feed_url: https://www.tickld.com/feed/
     homepage_url: https://www.tickld.com
     display_name: Tickld
-    summary: Here at Kabazi, we know what you crave! Our editorial team aims to humor, surprise and delight you with our daily content. They scour the internet for the hidden gems, keeping a keen eye on what’s trending, and serve you only the best of the best. So, keep calm and scroll on!
-  tindie:
+    summary: Archived unusual news, humor, human-interest stories, and internet entertainment from Tickld. The latest feed posts are dated 2021.
+    profile_photo: https://www.tickld.com/wp-content/uploads/2022/04/Quillt-Favicons_Tickld.png?fit=180%2C180
+  tindie_products:
     feed_url: https://www.tindie.com/feed/
     homepage_url: https://www.tindie.com
-    display_name: Tindie product feed
-    summary: This is the Tindie feed for new products.
-  tisiphone:
+    display_name: Tindie Products
+    summary: New DIY electronics, maker hardware, development boards, kits, and other products listed on the Tindie marketplace.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.tindie.com&size=128
+  lesley_carharts_cybersecurity_blog:
     feed_url: https://tisiphone.net/feed/
     homepage_url: https://tisiphone.net
     display_name: Lesley Carhart's Cybersecurity Blog
-    summary: '[Lesley Carhart, Public Universal Cyber-Pal]'
+    summary: Lesley Carhart writes about incident response, digital forensics, industrial and operational-technology security, careers, education, and community projects.
+    profile_photo: https://tisiphone.net/wp-content/uploads/2016/09/cropped-cropped-header12-1.png?w=180
   tmm1:
     feed_url: http://tmm1.net/atom.xml
     homepage_url: http://tmm1.net
     display_name: '@tmm1'
-    summary: Updates from @tmm1.
-  toddwschneider:
+    summary: Archived technical articles from @tmm1 about Ruby internals, garbage collection, memory, and profiling. The latest feed posts are dated 2014.
+  todd_w_schneider:
     feed_url: https://toddwschneider.com/atom.xml
     homepage_url: https://toddwschneider.com
     display_name: Todd W. Schneider
-    summary: Updates from Todd W. Schneider.
-  toolsandtoys:
+    summary: Todd W. Schneider's data analysis and interactive visualizations about transportation, cities, sports, and other subjects. The latest feed posts are dated 2020.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftoddwschneider.com&size=128
+  tools_and_toys:
     feed_url: https://toolsandtoys.net/feed/
     homepage_url: https://toolsandtoys.net
     display_name: Tools and Toys
-    summary: Hand-Picked for Work and Play
+    summary: Selected gadgets, software, tools, and everyday gear, with product recommendations, reviews, and guides. The latest feed posts are dated 2024.
+    profile_photo: https://toolsandtoys.net/wp-content/themes/toolsandtoys/images/iphone.png
   trac_hacks:
     feed_url: https://trac-hacks.org/blog?format=rss
     homepage_url: https://trac-hacks.org/blog
-    display_name: Trac Hacks - Plugins Macros etc. - Blog
-    summary: trac-hacks.org Blog
-  home_treasury_gov:
+    display_name: Trac Hacks
+    summary: Archived Trac Hacks site announcements about Trac upgrades, authentication, permissions, and plugin-community operations. The latest feed posts are dated 2017.
+    profile_photo: https://trac-hacks.org/chrome/hacks/png/trachacks_banner.png
+  u_s_department_of_the_treasury:
     feed_url: https://home.treasury.gov/rss.xml
     homepage_url: https://home.treasury.gov
     display_name: U.S. Department of the Treasury
-    summary: Updates from U.S. Department of the Treasury.
+    summary: U.S. Treasury website updates, including small-business financing guidance, program information, careers, and financial-policy resources.
+    profile_photo: https://home.treasury.gov/images/favicon.png
   trendir:
     feed_url: https://www.trendir.com/feed/
     homepage_url: https://www.trendir.com
     display_name: Trendir
-    summary: The Latest Trends in Modern House Design and Decorating
-  texasdemocrats:
+    summary: Modern home design, interior decorating, furniture, architecture, and room-by-room inspiration.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.trendir.com&size=128
+  texas_democratic_party:
     feed_url: https://www.texasdemocrats.org/blog-feed.xml
     homepage_url: https://www.texasdemocrats.org/blog
-    display_name: The Texas Democratic Party
-    summary: Texas Democratic Party
-  tylergaw:
+    display_name: Texas Democratic Party
+    summary: Official Texas Democratic Party statements, campaign news, policy positions, and political commentary.
+    profile_photo: https://static.wixstatic.com/media/a86359_55e51b3a360e4488be5a8e133385879b%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/a86359_55e51b3a360e4488be5a8e133385879b%7Emv2.png
+  tyler_gaw:
     feed_url: https://tylergaw.com/rss.xml
     homepage_url: https://tylergaw.com
-    display_name: Tyler Gaw's blog
-    summary: Updates from Tyler Gaw's blog.
+    display_name: Tyler Gaw
+    summary: Tyler Gaw writes about web design, browser behavior, CSS, creative projects, and the internet.
+    profile_photo: https://tylergaw.com/images/favicon.png
   typographica:
     feed_url: https://typographica.org/feed/
     homepage_url: https://typographica.org
     display_name: Typographica
-    summary: A review of typefaces and typography books, with occasional commentary on fonts and typographic design.
-  typography:
+    summary: Typeface and typography-book reviews, font-design commentary, and news about type designers. The latest feed posts are dated 2025.
+    profile_photo: https://typographica.org/wp-content/uploads/2016/02/cropped-typo-logo-tissi-stripes-redear-1-180x180.png
+  hoefler_and_co_news:
     feed_url: https://www.typography.com/rss/blog
     homepage_url: https://www.typography.com/blog
-    display_name: H&Co News
-    summary: H&Co designs fonts for print, web, and mobile environments.
+    display_name: Hoefler&Co News
+    summary: Archived Hoefler&Co news about typefaces, lettering, typography, and design projects. The latest feed posts are dated 2022.
+    profile_photo: https://d31td5fkd89rr1.cloudfront.net/social/global.png
   uberlin:
     feed_url: https://uberlin.co.uk/feed/
     homepage_url: https://uberlin.co.uk
     display_name: überlin
-    summary: Life in Berlin
-  universetoday:
+    summary: Archived stories, photography, interviews, music, coworking news, and everyday life in Berlin. The latest feed posts are dated 2016.
+    profile_photo: https://uberlin.co.uk/wp-content/themes/uberlin-child/favicon.png
+  universe_today:
     feed_url: https://www.universetoday.com/rss.xml
     homepage_url: https://www.universetoday.com
     display_name: Universe Today
-    summary: Space and Astronomy News from Universe Today
-  commons_wikimedia:
+    summary: Space exploration and astronomy news, research, missions, and explainers from Universe Today.
+    profile_photo: https://www.universetoday.com/apple-touch-icon.png
+  wikimedia_commons_picture_of_the_day:
     feed_url: https://commons.wikimedia.org/w/api.php?action=featuredfeed&feed=potd&feedformat=atom
     homepage_url: https://commons.wikimedia.org/wiki/Main_Page
-    display_name: Wikimedia Commons picture of the day feed
-    summary: Updates from Wikimedia Commons picture of the day feed.
-  urbandictionary:
+    display_name: Wikimedia Commons - Picture of the Day
+    summary: Featured photographs and illustrations selected as Wikimedia Commons Picture of the Day.
+    profile_photo: https://commons.wikimedia.org/static/apple-touch/commons.png
+  urban_word_of_the_day:
     feed_url: https://www.urbandictionary.com/daily.rss
-    homepage_url: http://www.urbandictionary.com
+    homepage_url: https://www.urbandictionary.com/
     display_name: Urban Word of the Day
-    summary: A new definition every day from Urban Dictionary
-  urbanhonking:
-    feed_url: http://www.urbanhonking.com/section/index19b5.html?feed=fullfeed
-    homepage_url: http://urbanhonking.com/section
-    display_name: Urban Honking
-    summary: Updates from Urban Honking.
+    summary: Urban Dictionary's daily selection of user-submitted slang definitions and usage examples.
+    profile_photo: https://static.urbandictionary.com/apple-touch-icon.ebeab9a275ed.png
   ux_stackexchange:
     feed_url: https://ux.stackexchange.com/feeds
-    homepage_url: https://ux.stackexchange.com/questions
-    display_name: Recent Questions - User Experience Stack Exchange
-    summary: Updates from Recent Questions - User Experience Stack Exchange.
-  uxmag:
+    homepage_url: https://ux.stackexchange.com/
+    display_name: User Experience Stack Exchange
+    summary: Recent questions about user experience, interface design, interaction, usability, and accessibility from User Experience Stack Exchange.
+    profile_photo: https://cdn.sstatic.net/Sites/ux/Img/apple-touch-icon.png
+  ux_magazine:
     feed_url: https://uxmag.com/feed
     homepage_url: https://uxmag.com
     display_name: UX Magazine
-    summary: UX Magazine is a central, one-stop resource for everything related to user experience. We provide a steady stream of current, informative, and credible information about UX and related fields to enhance the professional and creative lives of UX practitioners and those exploring the field. Our content is driven and created by an impressive roster of experienced professionals
+    summary: Articles and podcasts about user experience, design practice, human behavior, and AI-assisted products and workflows.
+    profile_photo: https://uxmag.com/wp-content/uploads/2021/07/cropped-android-chrome-512x512-1-1.png
   vibe:
     feed_url: https://www.vibe.com/feed/
     homepage_url: https://www.vibe.com
-    display_name: VIBE.com
-    summary: Hip-Hop, R&B, Style, and Black Culture
-  villagevoice:
-    feed_url: https://www.villagevoice.com/feed/
+    display_name: VIBE
+    summary: Hip-hop and R&B news, interviews, music releases, entertainment, style, and Black culture.
+    profile_photo: https://www.vibe.com/wp-content/themes/vip/pmc-vibe-2021/assets/app/icons/apple-touch-icon.png
+  the_village_voice:
+    feed_url: https://www.villagevoice.com/feed/?category_name=the-front,culture-village-voice,new-york-village-voice
     homepage_url: https://www.villagevoice.com
     display_name: The Village Voice
-    summary: Updates from The Village Voice.
+    summary: The Village Voice's editorial coverage of New York, arts, music, culture, politics, and historical archives. This feed combines its editorial categories rather than affiliate-listicle sections.
+    profile_photo: https://www.villagevoice.com/wp-content/smush-webp/2024/06/cropped-vv-favicon-cropped-512x512-1-180x180.png.webp?x85133
   viralnova:
     feed_url: https://viralnova.com/feed/
     homepage_url: https://viralnova.com
     display_name: ViralNova
-    summary: Get all the latest interesting, hilarious, and mind-blowing stories on the Web. This is the stuff everyone's talking about.
-  visualidiot:
-    feed_url: https://www.visualidiot.com/feed/
-    homepage_url: https://www.visualidiot.com
-    display_name: VI-Designs
-    summary: Amazing Websites for Businesses and Professionals
+    summary: ViralNova articles about everyday life, home and garden, culture, unusual stories, and practical tips.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fviralnova.com&size=128
   npr_movies:
     feed_url: https://feeds.npr.org/1045/rss.xml
     homepage_url: https://www.npr.org
