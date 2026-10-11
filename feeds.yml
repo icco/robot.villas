@@ -783,6 +783,256 @@ bots:
     display_name: SoundCloud Backstage
     summary: Developer infrastructure, distributed systems, APIs, and engineering at SoundCloud.
     profile_photo: https://soundcloud.com/pwa-round-icon-512x512.png
+  empireonline:
+    feed_url: https://rss.onebauer.media/api/feed-aggregator?hostname=https://www.empireonline.com
+    homepage_url: https://www.empireonline.com
+    display_name: Latest news and content from www.empireonline.com
+    summary: Latest news and content from www.empireonline.com
+  emshort_blog:
+    feed_url: https://emshort.blog/feed/
+    homepage_url: https://emshort.blog
+    display_name: Emily Short's Interactive Storytelling
+    summary: Narrative in games and new media
+  en_interfax_com_ua:
+    feed_url: https://en.interfax.com.ua/news/last.rss
+    homepage_url: https://en.interfax.com.ua
+    display_name: Interfax-Ukraine
+    summary: Information about recent political developments in Ukraine, key Ukrainian economic news and major current events in the CIS and the rest of the world.
+  en_wikisource:
+    feed_url: https://en.wikisource.org/w/api.php?hidebots=1&hidecategorization=1&hideWikibase=1&urlversion=1&days=1&limit=50&action=feedrecentchanges&feedformat=atom
+    homepage_url: https://en.wikisource.org/wiki/Special:RecentChanges
+    display_name: Wikisource - Recent changes [en]
+    summary: Updates from Wikisource - Recent changes [en].
+  enekoalonso:
+    feed_url: https://www.enekoalonso.com/feed.xml
+    homepage_url: https://www.enekoalonso.com
+    display_name: enekoalonso.com
+    summary: This is the personal site of Eneko Alonso, a software engineer in California. All content included and opinions expressed on this site are personal and do not represent any of his current or past employers.
+  energyvanguard:
+    feed_url: https://www.energyvanguard.com/feed/
+    homepage_url: https://www.energyvanguard.com
+    display_name: Energy Vanguard
+    summary: Building science knowledge, HVAC design, & fun
+  eng_cam_ac_uk:
+    feed_url: https://www.eng.cam.ac.uk/rss.xml
+    homepage_url: https://www.eng.cam.ac.uk
+    display_name: Department of Engineering
+    summary: Updates from Department of Engineering.
+  engineering_khanacademy:
+    feed_url: https://engineering.khanacademy.org/rss.xml
+    homepage_url: http://engineering.khanacademy.org
+    display_name: KA Engineering
+    summary: Khan Academy Engineering's blog
+  english_elpais:
+    feed_url: https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada
+    homepage_url: https://english.elpais.com
+    display_name: EL PAÍS in English
+    summary: 'English version of EL PAÍS to read online: breaking news, opinion and editorial, reviews, features, science, business, culture, sports, travel, education & more with EL PAÍS.'
+  english_martinvarsavsky:
+    feed_url: https://feeds.feedburner.com/martinvarsavsky/english
+    homepage_url: https://english.martinvarsavsky.net
+    display_name: Martin Varsavsky | English
+    summary: Blog of an entrepreneur
+  envox_eu:
+    feed_url: https://www.envox.eu/feed/
+    homepage_url: https://www.envox.eu
+    display_name: EEZ
+    summary: Low-code GUI • T&M automation
+  envoy:
+    feed_url: https://envoy.com/workplace-compliance-security-safety/rss.xml
+    homepage_url: https://envoy.com
+    display_name: Envoy's workplace compliance, security & safety blog
+    summary: Envoy's coverage of workplace safety, security, and compliance — including access control, emergency notifications, audit-ready recordkeeping, regulatory requirements, and tools to keep your people and facilities protected.
+  eod:
+    feed_url: https://www.eod.com/meta/full.xml
+    homepage_url: https://www.eod.com/blog
+    display_name: 'An Entirely Other Day: Full Feed'
+    summary: 'Updates from An Entirely Other Day: Full Feed.'
+  epicdash:
+    feed_url: http://www.epicdash.com/feed/
+    homepage_url: http://www.epicdash.com
+    display_name: EpicDash
+    summary: Updates from EpicDash.
+  epicurious:
+    feed_url: https://www.epicurious.com/feed/rss
+    homepage_url: https://www.epicurious.com
+    display_name: Epicurious
+    summary: The latest from www.epicurious.com
+  equalitie:
+    feed_url: https://equalitie.org/feed/
+    homepage_url: https://equalitie.org
+    display_name: eQualitie
+    summary: eQuitable technologies for resilient communities
+  ergosphere_blog:
+    feed_url: https://ergosphere.blog/atom.xml
+    homepage_url: https://ergosphere.blog
+    display_name: ergosphere.blog
+    summary: Updates from ergosphere.blog.
+  ericbidelman_tumblr:
+    feed_url: https://ericbidelman.tumblr.com/rss
+    homepage_url: https://ericbidelman.tumblr.com
+    display_name: Eric Bidelman
+    summary: 'Engineer @ Google. Working on Chrome & the web. Github: github.com/ebidel | Twitter: @ebidel'
+  ericclapp:
+    feed_url: https://ericclapp.org/feed/
+    homepage_url: https://ericclapp.org
+    display_name: Eric Clap
+    summary: Blog personnel
+  ericlippert:
+    feed_url: https://ericlippert.com/feed/
+    homepage_url: https://ericlippert.com
+    display_name: Fabulous adventures in coding
+    summary: Eric Lippert's blog
+  ericmigi:
+    feed_url: https://ericmigi.com/rss.xml
+    homepage_url: https://ericmigi.com
+    display_name: Eric Migicovsky's Blog RSS Feed
+    summary: Personal blog and portfolio
+  erikbern:
+    feed_url: https://erikbern.com/index.xml
+    homepage_url: https://erikbern.com/index.html
+    display_name: Home on Erik Bernhardsson
+    summary: Recent content in Home on Erik Bernhardsson
+  eriwen:
+    feed_url: http://feeds.feedburner.com/EricWendelin
+    homepage_url: https://www.eriwen.com
+    display_name: Test early; Refactor often; Make things
+    summary: Updates from Test early; Refactor often; Make things.
+  erlang_solutions:
+    feed_url: https://www.erlang-solutions.com/feed/
+    homepage_url: https://www.erlang-solutions.com
+    display_name: Erlang Solutions
+    summary: Building Transformative Solutions
+  eschnou:
+    feed_url: https://eschnou.com/index.xml
+    homepage_url: https://eschnou.com
+    display_name: eschnou on Eschnou
+    summary: Recent content in eschnou on Eschnou
+  lespresso_it:
+    feed_url: https://lespresso.it/feed/
+    homepage_url: https://lespresso.it
+    display_name: L'espresso
+    summary: L'Espresso è la testata che dal 1955 si occupa di politica, cultura ed economia con inchieste e approfondimenti esclusivi.
+  esr_ibiblio:
+    feed_url: http://esr.ibiblio.org/?feed=rss2
+    homepage_url: http://esr.ibiblio.org
+    display_name: Armed and Dangerous
+    summary: Sex, software, politics, and firearms. Life's simple pleasures...
+  essays_johnloeber:
+    feed_url: https://essays.johnloeber.com/feed
+    homepage_url: https://essays.johnloeber.com
+    display_name: Loeber on Substack
+    summary: On interactions between people, markets, and technology.
+  etch_co:
+    feed_url: https://etch.co/feed.xml
+    homepage_url: https://etch.co
+    display_name: Etch Software Studio Blog
+    summary: Hardworking team of Designers and Developers. Our services include UX Consultancy, UI Design, Front-end Development, Software Engineering, Maintenance and Support.
+  ethanding_substack:
+    feed_url: https://ethanding.substack.com/feed
+    homepage_url: https://ethanding.substack.com
+    display_name: mandates
+    summary: all content here is generated by ai
+  ethanheilman_tumblr:
+    feed_url: https://ethanheilman.tumblr.com/rss
+    homepage_url: https://ethanheilman.tumblr.com
+    display_name: Ethan Heilman
+    summary: Security, Design and Games. Updated second Wednesday of every month.
+  ethicalads:
+    feed_url: https://www.ethicalads.io/feeds/all.atom.xml
+    homepage_url: https://www.ethicalads.io
+    display_name: EthicalAds
+    summary: Updates from EthicalAds.
+  etirabys_tumblr:
+    feed_url: https://etirabys.tumblr.com/rss
+    homepage_url: https://etirabys.tumblr.com
+    display_name: the akratic socratic
+    summary: radical skepticism bot; fandom crone; meme junkie; code monkey; bayesian asian “I have never in my life loved any people or collective – neither the German people nor the French nor the American nor the working class or anything of that. I indeed only love my friends, and the only kind of love I know of or believe in, is the love of persons.” - Hannah Arendt “keep forgetting that you’re not American originally and that makes the Amish fetishism so much funnier” – tumblr user discoursedrome
+  eugenioz_blogspot:
+    feed_url: https://eugenioz.blogspot.com/feeds/posts/default
+    homepage_url: https://eugenioz.blogspot.com
+    display_name: Web-developer's notes
+    summary: Updates from Web-developer's notes.
+  eurozine:
+    feed_url: https://www.eurozine.com/feed/
+    homepage_url: https://www.eurozine.com
+    display_name: Eurozine
+    summary: 'Eurozine: Europe''s leading cultural journals at your fingertips'
+  evandahm_tumblr:
+    feed_url: https://evandahm.tumblr.com/rss
+    homepage_url: https://evandahm.tumblr.com
+    display_name: Evan Dahm
+    summary: rice-boy.com
+  everlane:
+    feed_url: https://www.everlane.com/collections/mens-sweaters.atom
+    homepage_url: https://www.everlane.com/collections/all
+    display_name: Everlane
+    summary: Updates from Everlane.
+  evertpot:
+    feed_url: https://evertpot.com/atom.xml
+    homepage_url: https://evertpot.com
+    display_name: Evert Pot's blog
+    summary: Updates from Evert Pot's blog.
+  everydayastronaut:
+    feed_url: https://everydayastronaut.com/feed/
+    homepage_url: https://everydayastronaut.com
+    display_name: Everyday Astronaut
+    summary: Updates from Everyday Astronaut.
+  everyday_app:
+    feed_url: https://everyday.app/blog/rss/
+    homepage_url: http://everyday.app/blog
+    display_name: everyday
+    summary: Simple and beautiful habit tracker
+  everything2:
+    feed_url: https://everything2.com/node/ticker/New+Writeups+Atom+Feed
+    homepage_url: https://everything2.com/node/superdoc/Writeups+by+Type
+    display_name: Everything2 New Writeups
+    summary: Updates from Everything2 New Writeups.
+  everytown:
+    feed_url: https://www.everytown.org/feed/
+    homepage_url: https://www.everytown.org
+    display_name: Everytown
+    summary: We have a plan to end gun violence.
+  eves_e_den_tumblr:
+    feed_url: https://eves-e-den.tumblr.com/rss
+    homepage_url: https://eves-e-den.tumblr.com
+    display_name: Eve's-e-den
+    summary: Ieva • 23 • LT-IRL • ♊
+  evilmartians:
+    feed_url: https://evilmartians.com/chronicles.atom
+    homepage_url: https://evilmartians.com/chronicles
+    display_name: Evil Martians
+    summary: Updates from Evil Martians.
+  evincarofautumn_blogspot:
+    feed_url: https://evincarofautumn.blogspot.com/feeds/posts/default
+    homepage_url: https://evincarofautumn.blogspot.com
+    display_name: The Big Mud Puddle
+    summary: Updates from The Big Mud Puddle.
+  eweek:
+    feed_url: https://www.eweek.com/feed/
+    homepage_url: https://www.eweek.com
+    display_name: eWeek
+    summary: Updates from eWeek.
+  examiner:
+    feed_url: https://examiner.com/feed/
+    homepage_url: https://examiner.com
+    display_name: Examiner.com
+    summary: Latest news in bite-sized portions!
+  excid3:
+    feed_url: https://excid3.com/feed.xml
+    homepage_url: http://excid3.com
+    display_name: Chris Oliver
+    summary: Chris Oliver specializes in web development with Ruby on Rails, Javascript, HTML5, and CSS3
+  expatsoftware:
+    feed_url: https://www.expatsoftware.com/blog/rss.aspx
+    homepage_url: https://www.expatsoftware.com/articles
+    display_name: Code on the Road - The Expat Software blog
+    summary: A laptop, some ideas, and a one-way ticket.
+  tomstu_art:
+    feed_url: https://tomstu.art/feed.atom
+    homepage_url: https://tomstu.art
+    display_name: Tom Stuart
+    summary: Updates from Tom Stuart.
   hugging_face:
     feed_url: https://huggingface.co/blog/feed.xml
     homepage_url: https://huggingface.co
