@@ -1068,6 +1068,256 @@ bots:
     display_name: Streetsblog NYC
     summary: Transportation policy, cycling, transit, street safety, and car culture in New York City.
     profile_photo: https://nyc.streetsblog.org/wp-content/uploads/sites/9/2023/10/cropped-Round-SB-NYC-Stroke-2160px.png?w=192
+  lwgmnz_me:
+    feed_url: https://lwgmnz.me/feed/
+    homepage_url: https://lwgmnz.me
+    display_name: Law Gimenez
+    summary: Updates from Law Gimenez.
+  wikihow:
+    feed_url: https://www.wikihow.com/Feeds/main.xml
+    homepage_url: https://www.wikihow.com
+    display_name: wikiHow - All New Content
+    summary: Get our newest articles, quizzes, videos, and more
+  pixietrixcomix:
+    feed_url: https://pixietrixcomix.com/pixie-trix-comix/rss
+    homepage_url: https://pixietrixcomix.com
+    display_name: Pixie Trix Comix
+    summary: Latest Pixie Trix Comix comics and news
+  mac4n6:
+    feed_url: http://www.mac4n6.com/blog?format=rss
+    homepage_url: http://www.mac4n6.com
+    display_name: mac4n6.com
+    summary: Updates from mac4n6.com.
+  macchaffee:
+    feed_url: https://www.macchaffee.com/blog/atom.xml
+    homepage_url: https://www.macchaffee.com/blog
+    display_name: Mac's Tech Blog
+    summary: Updates from Mac's Tech Blog.
+  macetech:
+    feed_url: https://macetech.com/blog/rss.xml
+    homepage_url: http://macetech.com/blog
+    display_name: macetech.com -
+    summary: Updates from macetech.com -.
+  machinepix:
+    feed_url: https://www.machinepix.com/feed
+    homepage_url: https://www.machinepix.com
+    display_name: MachinePix Weekly
+    summary: Amazing feats of engineering, delivered weekly. Bonus content beyond the @machinepix Twitter and Instagram. By Kane Hsieh.
+  macleodsawyer:
+    feed_url: https://macleodsawyer.com/feed.xml
+    homepage_url: https://macleodsawyer.com
+    display_name: Macleod Sawyer | Web Portal Feed
+    summary: Updates from Macleod Sawyer | Web Portal Feed.
+  macmenubar:
+    feed_url: https://macmenubar.com/feed/
+    homepage_url: https://macmenubar.com
+    display_name: MacMenuBar.com
+    summary: A curated directory of 1600+ Mac menu bar apps
+  macournoyer:
+    feed_url: https://macournoyer.com/feed.xml
+    homepage_url: https://macournoyer.com
+    display_name: Marc-André Cournoyer
+    summary: Updates from Marc-André Cournoyer.
+  macpablodesigns_wordpress:
+    feed_url: https://macpablodesigns.wordpress.com/feed/
+    homepage_url: https://macpablodesigns.wordpress.com
+    display_name: Macpablo's ramblings
+    summary: Just random stuff I find interesting
+  macstories:
+    feed_url: https://www.macstories.net/feed/
+    homepage_url: https://www.macstories.net
+    display_name: MacStories
+    summary: Apple news, app reviews, and stories by Federico Viticci and John Voorhees.
+  macwright:
+    feed_url: https://macwright.com/rss.xml
+    homepage_url: https://macwright.com
+    display_name: macwright.com
+    summary: JavaScript, math, maps, etc
+  madamearchitect:
+    feed_url: https://www.madamearchitect.org/interviews?format=rss
+    homepage_url: https://www.madamearchitect.org/interviews
+    display_name: Interviews - Madame Architect
+    summary: Updates from Interviews - Madame Architect.
+  maddin:
+    feed_url: https://maddin.io/feed.xml
+    homepage_url: https://maddin.io
+    display_name: Gestimer
+    summary: Updates from Gestimer.
+  madebynathan:
+    feed_url: https://madebynathan.com/rss/
+    homepage_url: https://madebynathan.com
+    display_name: Made By Nathan
+    summary: 'Hi, I''m Nathan! Here''s a few of my projects:'
+  madhadron:
+    feed_url: https://madhadron.com/atom.xml
+    homepage_url: https://madhadron.com
+    display_name: madhadron
+    summary: Updates from madhadron.
+  magoz:
+    feed_url: https://magoz.com/feed
+    homepage_url: https://magoz.com
+    display_name: Magoz
+    summary: Updates from Magoz.
+  mairin_wordpress:
+    feed_url: https://mairin.wordpress.com/feed/
+    homepage_url: https://mairin.wordpress.com
+    display_name: Máirín Duffy
+    summary: Open design forever.
+  makandracards:
+    feed_url: https://makandracards.com/makandra/rss
+    homepage_url: https://makandracards.com/makandra
+    display_name: 'makandra cards: makandra dev (public cards)'
+    summary: 'Updates from makandra cards: makandra dev (public cards).'
+  makegames_tumblr:
+    feed_url: https://makegames.tumblr.com/rss
+    homepage_url: https://makegames.tumblr.com
+    display_name: Make Games
+    summary: I’m Derek! I’m thinkin’ about game creation.
+  makertube:
+    feed_url: https://makertube.net/feeds/videos.xml
+    homepage_url: https://makertube.net
+    display_name: MakerTube
+    summary: A home for makers, musicians, artists and DIY folks
+  makikoitoh:
+    feed_url: https://www.makikoitoh.com/rss.xml
+    homepage_url: https://www.makikoitoh.com
+    display_name: 'Makiko Itoh : Not a nameless cat.'
+    summary: Makiko Itoh's personal site.
+  makinaro_tumblr:
+    feed_url: https://makinaro.tumblr.com/rss
+    homepage_url: https://makinaro.tumblr.com
+    display_name: Draw, O Coward
+    summary: 'Award-winning cartoonist. I draw Boxplot and Sufficiently Remarkable. If you like science, you should follow me on twitter: @sciencecomic'
+  malcolmocean:
+    feed_url: https://malcolmocean.com/feed/
+    homepage_url: https://malcolmocean.com
+    display_name: Malcolm Ocean
+    summary: culture, change, and mental models
+  malicious_link:
+    feed_url: https://malicious.link/posts/index.xml
+    homepage_url: https://malicious.link/posts
+    display_name: All Posts - Malicious Link - Blog by mubix - Rob Fuller
+    summary: All Posts | Malicious Link - Blog by mubix - Rob Fuller
+  silentpush:
+    feed_url: https://www.silentpush.com/feed/
+    homepage_url: https://www.silentpush.com
+    display_name: Silent Push
+    summary: Neutralize Before Compromise
+  malisper_me:
+    feed_url: https://malisper.me/feed/
+    homepage_url: https://malisper.me
+    display_name: malisper.me
+    summary: malisper.me
+  mames_tumblr:
+    feed_url: https://mamierheingold.com/rss
+    homepage_url: https://mames.tumblr.com
+    display_name: Mamie's bins in the cloud
+    summary: Updates from Mamie's bins in the cloud.
+  managewp:
+    feed_url: https://managewp.com/blog/feed/
+    homepage_url: https://managewp.com/blog
+    display_name: Blog - ManageWP
+    summary: Manage WordPress Sites from One Dashboard
+  manmadediy:
+    feed_url: https://www.manmadediy.com/feed/
+    homepage_url: https://www.manmadediy.com
+    display_name: manmadediy
+    summary: Creativity and the Handmade Life for the Postmodern Male
+  manservants_co:
+    feed_url: https://manservants.co/blogs/news.atom
+    homepage_url: https://manservants.co/blogs/news
+    display_name: ManServants Inc - At Your Nonsexual Service
+    summary: Updates from ManServants Inc - At Your Nonsexual Service.
+  manuela_hoffmann_info:
+    feed_url: https://www.manuela-hoffmann.info/feed/
+    homepage_url: https://www.manuela-hoffmann.info
+    display_name: MH Marketing Inc.
+    summary: Updates from MH Marketing Inc..
+  ignitetech_ai:
+    feed_url: https://ignitetech.ai/feed/
+    homepage_url: https://ignitetech.ai
+    display_name: The AI Enterprise Software Company
+    summary: The AI Enterprise Software Company.
+  manybooks:
+    feed_url: https://manybooks.net/rss.xml
+    homepage_url: https://manybooks.net
+    display_name: ManyBooks
+    summary: Updates from ManyBooks.
+  manytricks:
+    feed_url: https://manytricks.com/blog/?feed=rss2
+    homepage_url: https://manytricks.com/blog
+    display_name: Tales of a Running Bird
+    summary: Many Tricks Musings
+  mapsbynik_tumblr:
+    feed_url: https://tumblr.mapsbynik.com/rss
+    homepage_url: https://mapsbynik.tumblr.com
+    display_name: mapsbynik
+    summary: occasional geographic visualizations and cartographic musings
+  mapzen:
+    feed_url: https://www.mapzen.com/atom.xml
+    homepage_url: https://mapzen.com
+    display_name: Mapzen
+    summary: Updates from Mapzen.
+  marctenbosch:
+    feed_url: http://feeds.feedburner.com/marctenbosch
+    homepage_url: https://marctenbosch.com/news
+    display_name: mtbdesignworks Blog [Miegakure, 4D Toys, Marc ten Bosch]
+    summary: Updates from mtbdesignworks Blog [Miegakure, 4D Toys, Marc ten Bosch].
+  mariancall:
+    feed_url: https://mariancall.com/feed/
+    homepage_url: https://mariancall.com
+    display_name: Marian Call
+    summary: Music
+  marianogappa_github:
+    feed_url: https://marianogappa.github.io/index.xml
+    homepage_url: https://marianogappa.github.io
+    display_name: Mariano Gappa's Blog
+    summary: Recent content on Mariano Gappa's Blog
+  markdalgleish:
+    feed_url: https://markdalgleish.com/atom.xml
+    homepage_url: https://markdalgleish.com
+    display_name: Mark Dalgleish
+    summary: Updates from Mark Dalgleish.
+  markgius:
+    feed_url: http://markgius.com/feed.xml
+    homepage_url: http://markgius.com
+    display_name: markgius.com
+    summary: Updates from markgius.com.
+  markjaquith_wordpress:
+    feed_url: https://markjaquith.wordpress.com/feed/
+    homepage_url: https://markjaquith.wordpress.com
+    display_name: Mark on WordPress
+    summary: Thoughts on WordPress
+  markosaric:
+    feed_url: https://markosaric.com/feed/
+    homepage_url: https://markosaric.com
+    display_name: Marko Saric
+    summary: Updates from Marko Saric.
+  mars_college:
+    feed_url: https://marscollege.substack.com/feed
+    homepage_url: https://mars.college
+    display_name: Mars College
+    summary: Mars College is an educational program, R&D lab, and residential community dedicated to cultivating a low-cost, high-tech lifestyle. Next cohort, Jan 11 - March 29, 2027.
+  marset:
+    feed_url: https://www.marset.com/feed/
+    homepage_url: https://www.marset.com/usa
+    display_name: USA
+    summary: Lámparas e Iluminación de Diseño
+  martiancraft:
+    feed_url: https://martiancraft.com/feed.xml
+    homepage_url: https://martiancraft.com
+    display_name: The Syndicate
+    summary: A weekly publication on topics that matter covering interface design, software development, and business strategy. Features original writing, design and illustration from MartianCraft.
+  martin_kleppmann:
+    feed_url: https://feeds.feedburner.com/martinkl?format=xml
+    homepage_url: http://martin.kleppmann.com
+    display_name: Martin Kleppmann's blog
+    summary: Updates from Martin Kleppmann's blog.
+  martinbean_dev:
+    feed_url: https://martinbean.dev/feed.xml
+    homepage_url: https://martinbean.dev
+    display_name: Martin Bean
+    summary: Updates from Martin Bean.
   hudson_valley_one:
     feed_url: https://hudsonvalleyone.com/feed/
     homepage_url: https://hudsonvalleyone.com
