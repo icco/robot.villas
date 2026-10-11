@@ -12567,6 +12567,269 @@ bots:
     display_name: Josh Comeau
     summary: Frontend development, CSS, JavaScript, animation, and interactive web design.
     profile_photo: https://www.joshwcomeau.com/favicon.png
+  mike_hoye_blarg:
+    feed_url: https://exple.tive.org/blarg/feed/
+    homepage_url: https://exple.tive.org/blarg
+    display_name: blarg
+    summary: Mike Hoye's personal essays and commentary about software, the web, open source, technology policy, and society.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fexple.tive.org%2Fblarg&size=128
+  explique_me:
+    feed_url: http://explique.me/feed.xml
+    homepage_url: http://explique.me
+    display_name: Explique-me
+    summary: Archived posts about learning programming, contributing to open source, Mozilla tooling, and Outreachy; feed entries end in December 2015.
+  exploring_binary:
+    feed_url: http://feeds.exploringbinary.com/exploringbinary
+    homepage_url: https://www.exploringbinary.com
+    display_name: Exploring Binary
+    summary: Rick Regan's technical articles about binary numbers, floating-point arithmetic, numeric conversions, and implementation bugs; latest feed entries are from April 2024.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.exploringbinary.com&size=128
+  exponents:
+    feed_url: https://exponents.co/feed/
+    homepage_url: https://exponents.co
+    display_name: Exponents
+    summary: Archived essays and analysis about technology businesses, entrepreneurship, AI, and virtual and augmented reality; feed entries end in July 2020.
+    profile_photo: https://i0.wp.com/exponents.co/wp-content/uploads/2017/04/cropped-Planet.jpg?fit=32%2C32&ssl=1
+  exposing_gotchas:
+    feed_url: https://exposinggotchas.blogspot.com/feeds/posts/default
+    homepage_url: https://exposinggotchas.blogspot.com
+    display_name: Exposing Gotchas
+    summary: Archived Ruby application-development notes, benchmarking experiments, Rails and ActiveRecord tips, and coding exercises; feed entries end in April 2011.
+  extracurricular_press:
+    feed_url: https://extracurricularpress.com/blogs/news.atom
+    homepage_url: https://extracurricularpress.com/blogs/news
+    display_name: ExtraCurricular Press
+    summary: News from ExtraCurricular Press, an independent publisher founded by designer Brian Scott; this feed contains one website-update post from April 2022.
+  extra_tv:
+    feed_url: https://feeds.extratv.com/rss/
+    homepage_url: https://extratv.com
+    display_name: Extra
+    summary: Celebrity interviews, entertainment news, television and film coverage, and pop-culture stories from Extra.
+    profile_photo: https://static.extratv.com/extra-web/icons/apple-touch-icon-v3.png
+  f_droid:
+    feed_url: https://f-droid.org/feed.xml
+    homepage_url: https://f-droid.org
+    display_name: F-Droid
+    summary: Project news, community reports, release announcements, and free and open source Android app roundups from F-Droid.
+    profile_photo: https://f-droid.org/assets/apple-touch-icon_ypJwtCrcixeH_qV6LdcMYk1anFIR9o-_ufR__1wNdJY=.png
+  fabcapo_social_tv:
+    feed_url: http://www.fabcapo.com/feeds/posts/default
+    homepage_url: http://www.fabcapo.com
+    display_name: TV is SOCIAL, again
+    summary: Archived personal commentary about social television, advertising, mobile technology, and startups; feed entries end in August 2014.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.fabcapo.com&size=128
+  fabien_potencier:
+    feed_url: https://fabien.potencier.org/index.xml
+    homepage_url: https://fabien.potencier.org
+    display_name: Fabien Potencier
+    summary: Archived articles by Fabien Potencier about PHP, Symfony, web development, framework design, and personal projects; feed entries end in March 2020.
+    profile_photo: https://fabien.potencier.org/favicon/apple-icon-57x57.png
+  fabio_moon_gabriel_ba:
+    feed_url: https://fabioandgabriel.blogspot.com/feeds/posts/default
+    homepage_url: https://fabioandgabriel.blogspot.com
+    display_name: Fabio Moon and Gabriel Ba's Blog
+    summary: Archived comics news, artwork, convention schedules, and project announcements from cartoonists Fabio Moon and Gabriel Ba; feed entries end in May 2019.
+  faces_of_open_source:
+    feed_url: https://www.facesofopensource.com/blog/feed/
+    homepage_url: https://www.facesofopensource.com/blog
+    display_name: Faces of Open Source
+    summary: Project updates, interviews, computing-history stories, and photography notes from Faces of Open Source, documenting people behind open source software.
+    profile_photo: https://cdn.facesofopensource.com/wp-content/uploads/2018/01/31234204/Faces-square-logo.jpg
+  facility_executive_magazine:
+    feed_url: https://facilityexecutive.com/feed/
+    homepage_url: https://facilityexecutive.com
+    display_name: Facility Executive Magazine
+    summary: Facility-management reporting and practical articles about building operations, maintenance, security, energy, grounds, and workplace technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffacilityexecutive.com&size=128
+  factcheck_org:
+    feed_url: https://www.factcheck.org/feed/
+    homepage_url: https://www.factcheck.org
+    display_name: FactCheck.org
+    summary: Fact-checking and analysis of political claims, public policy, science, and viral misinformation from the Annenberg Public Policy Center.
+    profile_photo: https://www.factcheck.org/apple-icon-57x57.png
+  usps_postal_facts:
+    feed_url: https://facts.usps.com/feed/
+    homepage_url: https://facts.usps.com
+    display_name: Postal Facts
+    summary: Facts and statistics about U.S. Postal Service operations, history, workers, mail delivery, and post offices.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffacts.usps.com&size=128
+  faircamp:
+    feed_url: https://faircamp.org/changes/feed.rss
+    homepage_url: https://faircamp.org
+    display_name: Faircamp
+    summary: Release notes and development changes for Faircamp, a free static website generator for musicians, labels, podcasters, and other audio producers.
+    profile_photo: https://faircamp.org/favicon_light.png
+  tim_manley_fairy_tales:
+    feed_url: https://fairytalesfor20somethings.tumblr.com/rss
+    homepage_url: https://fairytalesfor20somethings.tumblr.com
+    display_name: fairy tales for twenty-somethings
+    summary: Archived illustrated fairy-tale humor and creative-project updates by Tim Manley, including his book and The Feels; feed entries end in June 2017.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffairytalesfor20somethings.tumblr.com&size=128
+  faith_erin_hicks_tumblr:
+    feed_url: https://faitherinhicks.tumblr.com/rss
+    homepage_url: https://faitherinhicks.tumblr.com
+    display_name: Everything is Comics
+    summary: Cartoonist Faith Erin Hicks's artwork, comics, fan art, process notes, and personal updates on Everything is Comics.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffaitherinhicks.tumblr.com&size=128
+  falkvinge_on_liberty:
+    feed_url: http://feeds.falkvinge.net/Falkvinge-on-Infopolicy
+    homepage_url: https://falkvinge.net
+    display_name: Falkvinge on Liberty
+    summary: Rick Falkvinge's essays about civil liberties, information policy, politics, copyright, privacy, and cryptocurrency; latest feed entries are from June 2024.
+    profile_photo: https://falkvinge.net/wp-content/uploads/2016/12/Falkvinge-blog-icon-214x120.png
+  fangamer:
+    feed_url: https://www.fangamer.com/blogs/news.atom
+    homepage_url: https://www.fangamer.com/blogs/news
+    display_name: Fangamer
+    summary: New video-game merchandise, artist collaborations, product releases, and sales from Fangamer.
+    profile_photo: https://www.fangamer.com/cdn/shop/t/59/assets/apple-touch-icon.png?v=17250463774996058071692224301
+  farmbot:
+    feed_url: https://farm.bot/blogs/news.atom
+    homepage_url: https://farm.bot/blogs/news
+    display_name: FarmBot
+    summary: Software releases, hardware updates, product announcements, and company news from FarmBot, the open source farming and gardening robot project.
+    profile_photo: https://farm.bot/cdn/shop/files/FarmBot.io_Favicon_Gray_on_Transparent_4e11c384-4d98-48f9-a7f2-332bae819f69_32x32.png?v=1614326948
+  farnam_street:
+    feed_url: https://fs.blog/feed/
+    homepage_url: https://fs.blog
+    display_name: Farnam Street
+    summary: Essays and The Knowledge Project interviews about decision making, mental models, learning, business, and personal development from Farnam Street.
+    profile_photo: https://fs.blog/wp-content/uploads/2015/06/cropped-farnamstreet-300x300.png
+  fathom_information_design:
+    feed_url: https://www.fathom.info/notebook/feed.xml
+    homepage_url: https://www.fathom.info/notebook/
+    display_name: Fathom Information Design
+    summary: Project stories and technical explanations about data visualization, information design, software, and research from Fathom Information Design.
+    profile_photo: https://www.fathom.info/favicon.png
+  infer_blog:
+    feed_url: https://fbinfer.com/blog/rss.xml
+    homepage_url: https://fbinfer.com/blog
+    display_name: Infer Blog
+    summary: Archived engineering articles, tool announcements, and conference talks about Infer static analysis and OCaml tooling; feed entries end in October 2017.
+    profile_photo: https://fbinfer.com/img/favicon.png
+  nextgov_fcw:
+    feed_url: https://www.nextgov.com/rss/all/
+    homepage_url: https://www.nextgov.com
+    display_name: Nextgov/FCW
+    summary: Federal technology and cybersecurity news, policy analysis, procurement reporting, and IT modernization coverage from Nextgov/FCW, the combined successor to FCW and Nextgov.
+    profile_photo: https://www.nextgov.com/apple-touch-icon.png
+  fediverse_party:
+    feed_url: https://fediverse.party/atom.xml
+    homepage_url: https://fediverse.party
+    display_name: Fediverse.Party
+    summary: Archived guides, project news, and explainers about federated social networks and decentralized free software; feed entries end in October 2023.
+    profile_photo: https://fediverse.party/img/touch/apple-icon-152x152.png
+  fedscoop:
+    feed_url: https://fedscoop.com/feed/
+    homepage_url: https://fedscoop.com
+    display_name: FedScoop
+    summary: Federal government technology reporting about cybersecurity, AI, IT modernization, procurement, digital services, and agency policy.
+    profile_photo: https://fedscoop.com/wp-content/uploads/sites/5/2023/01/cropped-fs_favicon-3.png?w=180
+  feefighters:
+    feed_url: https://feefighters.com/rss.xml
+    homepage_url: https://feefighters.com
+    display_name: FeeFighters
+    summary: Archived articles about merchant payment processing, fees, chargebacks, and payment providers from FeeFighters; feed entries end in January 2020.
+    profile_photo: https://feefighters.com/ninja-icon.png
+  feld_thoughts:
+    feed_url: https://feld.com/index.xml
+    homepage_url: https://feld.com
+    display_name: Feld Thoughts
+    summary: Brad Feld's personal writing about entrepreneurship, venture capital, startup communities, books, and life.
+    profile_photo: https://feld.com/apple-touch-icon.png
+  felix_rieseberg:
+    feed_url: https://felixrieseberg.com/rss/
+    homepage_url: https://felixrieseberg.com
+    display_name: Felix Rieseberg
+    summary: Felix Rieseberg's writing about Electron, desktop software, open source projects, retro computing, and creative technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffelixrieseberg.com&size=128
+  ryan_singer:
+    feed_url: https://www.ryansinger.co/rss/
+    homepage_url: https://www.ryansinger.co
+    display_name: Ryan Singer
+    summary: Ryan Singer's essays about product strategy, software design, shaping projects, and the Shape Up approach to product development.
+    profile_photo: https://storage.ghost.io/c/03/7b/037bc3be-8be9-49fa-92a5-114056526a14/content/images/size/w256h256/2023/07/fp_icon.png
+  feltron_tumblr:
+    feed_url: https://feltron.tumblr.com/rss
+    homepage_url: https://feltron.tumblr.com
+    display_name: feltron
+    summary: Archived visual inspiration, information design, data visualization, art, architecture, and project updates on Feltron's Tumblr; feed entries end in November 2018.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffeltron.tumblr.com&size=128
+  feminist_frequency_tumblr:
+    feed_url: https://femfreq.tumblr.com/rss
+    homepage_url: https://femfreq.tumblr.com
+    display_name: Feminist Frequency
+    summary: Archived Feminist Frequency film and pop-culture criticism, podcast updates, and discussion of representation and online harassment; feed entries end in February 2021.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffemfreq.tumblr.com&size=128
+  the_femtech_design_desk:
+    feed_url: https://femtechdesigndesk.substack.com/feed
+    homepage_url: https://femtechdesigndesk.substack.com
+    display_name: The Femtech Design Desk
+    summary: Emily Flynn's newsletter about femtech, design, reproductive-health technology, privacy, AI, and women's experiences with digital products.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!bhbL!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54a7fafc-1f51-4746-b021-8d61b3d3ed0e_806x806.jpeg
+  luciano_fiandesio:
+    feed_url: https://fiandes.io/feed.xml
+    homepage_url: https://fiandes.io/
+    display_name: Luciano Fiandesio
+    summary: Archived notes by Luciano Fiandesio about self-hosting, Mutt on macOS, and developer tooling; feed entries end in September 2016.
+    profile_photo: https://fiandes.io/assets/images/apple-touch-icon.png
+  ian_dunn_personal_blog:
+    feed_url: https://fightingforalostcause.net/feed
+    homepage_url: https://fightingforalostcause.net
+    display_name: Fighting for a Lost Cause.net
+    summary: Archived personal reflections and selected quotations about faith, doubt, hope, and life from Ian Dunn; feed entries end in July 2017.
+  figsoku:
+    feed_url: https://figsoku.net/feed
+    homepage_url: https://figsoku.net
+    display_name: figsoku
+    summary: Japanese-language news about collectible figures, Gunpla, plastic models, new hobby products, and events such as Wonder Festival.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffigsoku.net&size=128
+  filip_nikolovski:
+    feed_url: https://filipnikolovski.com/index.xml
+    homepage_url: https://filipnikolovski.com
+    display_name: Filip Nikolovski
+    summary: Archived programming and open source articles by Filip Nikolovski about cloud security, microservices, databases, and eBPF; feed entries end in November 2022.
+  fill_the_memory:
+    feed_url: https://fillmem.com/index.xml
+    homepage_url: https://fillmem.com
+    display_name: Fill the memory
+    summary: Archived programming notes about Go, JavaScript, static websites, editors, and development tools on Fill the memory; feed entries end in April 2022.
+  fin_ai_research:
+    feed_url: https://fin.ai/research/feed
+    homepage_url: https://fin.ai/research
+    display_name: Fin AI Research
+    summary: Research and engineering articles from the team building Intercom's Fin AI customer-service agent, covering language models, retrieval, evaluation, and reliability.
+    profile_photo: https://fin.ai/favicons/favicon-black-96x96.png
+  finestructure:
+    feed_url: https://finestructure.co/blog?format=rss
+    homepage_url: https://finestructure.co
+    display_name: finestructure
+    summary: Software-development articles and project updates about Swift, developer tools, containers, monitoring, and AI from finestructure.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffinestructure.co&size=128
+  finger_guns:
+    feed_url: https://fingerguns.net/feed/
+    homepage_url: https://fingerguns.net
+    display_name: Finger Guns
+    summary: Video-game reviews, news, opinion, indie-game coverage, and the Finger Guns podcast.
+    profile_photo: https://fingerguns.net/wp-content/uploads/2022/09/cropped-icon2-180x180.png
+  firebase_blog_archive:
+    feed_url: https://feeds.feedburner.com/FirebaseBlog
+    homepage_url: https://firebase.googleblog.com/
+    display_name: The Firebase Blog
+    summary: Archived official Firebase announcements and engineering articles about app development, databases, performance, and machine learning; this feed ends in March 2022.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Ffirebase.googleblog.com&size=128
+  firehydrant:
+    feed_url: https://firehydrant.com/rss.xml
+    homepage_url: https://firehydrant.com
+    display_name: FireHydrant
+    summary: Product changelog entries and incident-management articles from FireHydrant about alerting, on-call schedules, reliability, and incident response.
+    profile_photo: https://firehydrant.com/apple-touch-icon.png
+  binaryage_blog:
+    feed_url: https://blog.binaryage.com/atom.xml
+    homepage_url: https://blog.binaryage.com/
+    display_name: BinaryAge Blog
+    summary: Archived BinaryAge product announcements and technical posts about TotalFinder, TotalSpaces, Firebug extensions, and macOS compatibility; feed entries end in January 2021.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffirerainbow.binaryage.com&size=128
   overreacted:
     feed_url: https://overreacted.io/rss.xml
     homepage_url: https://overreacted.io
