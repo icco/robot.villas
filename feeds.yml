@@ -639,6 +639,256 @@ bots:
     display_name: Martin Fowler
     summary: Software architecture, design, refactoring, and engineering practice.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://martinfowler.com&size=128
+  bytemash:
+    feed_url: https://bytemash.net/rss.xml
+    homepage_url: https://bytemash.net
+    display_name: Bytemash
+    summary: Thoughts on software engineering, and building better web applications.
+  caavadesign:
+    feed_url: https://caavadesign.com/feed/
+    homepage_url: https://caavadesign.com
+    display_name: Caava Design
+    summary: Strategy-led branding and packaging design studio in Coeur d’Alene, Idaho.
+  cabal_chat:
+    feed_url: https://cabal.chat/posts/posts.xml
+    homepage_url: https://cabal.chat/?
+    display_name: cabal p2p chat
+    summary: project updates from the cabal club
+  cabinporn:
+    feed_url: https://www.cabinporn.com/feed
+    homepage_url: https://www.cabinporn.com
+    display_name: Cabin Porn ®
+    summary: 'Inspiration for your quiet place somewhere: cabins, cottages, tiny homes, houseboats, shelters, saunas and vans.'
+  cabledrum:
+    feed_url: https://cabledrum.net/feed/
+    homepage_url: https://cabledrum.net
+    display_name: powerfull blog
+    summary: Updates from powerfull blog.
+  cadasta:
+    feed_url: https://cadasta.org/feed/
+    homepage_url: https://cadasta.org
+    display_name: Cadasta Foundation
+    summary: Land Matters
+  caddy_community:
+    feed_url: https://caddy.community/posts.rss
+    homepage_url: https://caddy.community
+    display_name: Caddy Community - Latest posts
+    summary: Latest posts
+  cah_tumblr:
+    feed_url: https://cah.tumblr.com/rss
+    homepage_url: https://cah.tumblr.com
+    display_name: Cards Against Humanity
+    summary: A party game for horrible people.
+  caiustheory:
+    feed_url: https://caiustheory.com/feed.xml
+    homepage_url: https://caiustheory.com
+    display_name: Caius Theory
+    summary: Recent content on Caius Theory
+  calcoastnews:
+    feed_url: https://feeds.feedburner.com/CalCoastNews
+    homepage_url: https://calcoastnews.com
+    display_name: Cal Coast News
+    summary: San Luis Obispo County’s on-line independent news source producing in-depth investigative news in the public interest.
+  calculatedriskblog:
+    feed_url: http://feeds.feedburner.com/CalculatedRisk
+    homepage_url: http://www.calculatedriskblog.com
+    display_name: Calculated Risk
+    summary: Updates from Calculated Risk.
+  calhoun:
+    feed_url: https://www.calhoun.io/rss/index.xml
+    homepage_url: https://www.calhoun.io
+    display_name: Calhoun.io - Go for Everyone
+    summary: Recent content on Calhoun.io - Go for Everyone
+  calm:
+    feed_url: https://www.calm.com/blog/blog?format=rss
+    homepage_url: https://www.calm.com
+    display_name: Calm Blog | Calm your mind. Change your life.
+    summary: Updates from Calm Blog | Calm your mind. Change your life..
+  calperformances:
+    feed_url: https://calperformances.org/feed/
+    homepage_url: https://calperformances.org
+    display_name: Cal Performances
+    summary: University of California Berkeley
+  cambridge_fpas:
+    feed_url: https://cambridge-fpas.co.uk/feed/
+    homepage_url: https://cambridge-fpas.co.uk
+    display_name: Cambridge Fish Preservation and Angling Society
+    summary: Updates from Cambridge Fish Preservation and Angling Society.
+  dataorigami:
+    feed_url: https://dataorigami.net/feed.xml
+    homepage_url: https://dataorigami.net
+    display_name: Data Origami
+    summary: Updates from Data Origami.
+  campaignofshockandawe_wordpress:
+    feed_url: https://campaignofshockandawe.wordpress.com/feed/
+    homepage_url: https://campaignofshockandawe.wordpress.com
+    display_name: A Campaign of Shock and Awe
+    summary: Here exists a campaign to suss out the shocking and awe-inspiring weirdness of the internet and its related world.
+  candychang:
+    feed_url: https://www.candychang.com/rss/
+    homepage_url: https://www.candychang.com
+    display_name: Candy Chang
+    summary: Thoughts, stories and ideas.
+  carcinisation:
+    feed_url: https://carcinisation.com/feed/
+    homepage_url: https://carcinisation.com
+    display_name: Carcinisation
+    summary: One of nature's many attempts to evolve a crab.
+  cardinalnews:
+    feed_url: https://cardinalnews.org/feed/
+    homepage_url: https://cardinalnews.org
+    display_name: Cardinal News
+    summary: Serving Southwest and Southside Virginia
+  gayle:
+    feed_url: https://www.gayle.com/blog?format=rss
+    homepage_url: https://www.gayle.com/blog
+    display_name: Blog - Gayle Laakmann McDowell
+    summary: Gayle Laakmann McDowell
+  redfloatplane_lol:
+    feed_url: https://redfloatplane.lol/blog/rss.xml
+    homepage_url: https://redfloatplane.lol
+    display_name: Carl Lange's Blog
+    summary: People still have these??
+  carolynvanslyck:
+    feed_url: https://carolynvanslyck.com/index.xml
+    homepage_url: https://carolynvanslyck.com
+    display_name: Carolyn Van Slyck
+    summary: Recent content on Carolyn Van Slyck
+  carrot:
+    feed_url: https://carrot.io/feed/
+    homepage_url: https://carrot.io
+    display_name: Carrot (formerly Virtual Field)
+    summary: Automated VR Visual Diagnostics Platform
+  caseyfiesler:
+    feed_url: https://caseyfiesler.com/feed/
+    homepage_url: https://caseyfiesler.com
+    display_name: Casey Fiesler
+    summary: '#computing #ethics #law #feminism #geek'
+  caseyliss:
+    feed_url: https://www.caseyliss.com/rss
+    homepage_url: https://www.caseyliss.com
+    display_name: Liss is More
+    summary: Posts to Liss is More
+  castyour:
+    feed_url: https://castyour.net/rss.xml
+    homepage_url: http://castyour.net
+    display_name: Las Ruinas de Gringobamba
+    summary: Updates from Las Ruinas de Gringobamba.
+  caterina:
+    feed_url: https://caterina.net/feed/
+    homepage_url: https://caterina.net
+    display_name: Caterina.net
+    summary: Updates from Caterina.net.
+  catskull:
+    feed_url: https://catskull.net/feed.xml
+    homepage_url: https://catskull.net
+    display_name: catskull.net
+    summary: Updates from catskull.net.
+  cattsmall:
+    feed_url: https://cattsmall.com/feed.xml
+    homepage_url: http://cattsmall.com
+    display_name: Catt Small
+    summary: Product Designer, UX Designer, Game Designer, Public Speaker, Writer, and Creative Technologist
+  cbldf:
+    feed_url: https://cbldf.org/feed/
+    homepage_url: https://cbldf.org
+    display_name: Comic Book Legal Defense Fund
+    summary: Updates from Comic Book Legal Defense Fund.
+  cblgh:
+    feed_url: https://cblgh.org/all.xml
+    homepage_url: https://cblgh.org
+    display_name: cblgh.org - all
+    summary: all of https://cblgh.org
+  ccc_de:
+    feed_url: https://www.ccc.de/rss/updates.xml
+    homepage_url: https://www.ccc.de
+    display_name: Chaos Computer Club Updates
+    summary: Updates from Chaos Computer Club Updates.
+  cdevroe:
+    feed_url: https://cdevroe.com/feed/
+    homepage_url: https://cdevroe.com
+    display_name: Colin Devroe
+    summary: Head of AI & Product at NerdPress. Photographer. Darkroom printer. Blogger. Antiquarian. Reverse Engineer. Art curator.
+  cedwards_xyz:
+    feed_url: https://cedwards.xyz/index.xml
+    homepage_url: https://cedwards.xyz
+    display_name: Connor's Blog
+    summary: Recent content on Connor's Blog
+  celebitchy:
+    feed_url: https://www.celebitchy.com/feed/
+    homepage_url: https://www.celebitchy.com
+    display_name: Cele|bitchy
+    summary: escapism can be smart
+  celebritynetworth:
+    feed_url: https://www.celebritynetworth.com/feed/
+    homepage_url: https://www.celebritynetworth.com
+    display_name: Celebrity Net Worth
+    summary: Richest Rappers, Celebrity Houses and Salary
+  centreon:
+    feed_url: https://www.centreon.com/feed/
+    homepage_url: https://www.centreon.com/blog
+    display_name: Centreon Blog | IT Monitoring & Observability Insights
+    summary: Best practices, tutorials and expert insights on IT monitoring, observability, web performance and log management, from Centreon.
+  cert_pl:
+    feed_url: https://cert.pl/atom.xml
+    homepage_url: https://cert.pl
+    display_name: CERT Polska
+    summary: Updates from CERT Polska.
+  chad_is:
+    feed_url: https://www.chad.is/rss.xml
+    homepage_url: https://www.chad.is
+    display_name: Chad Mazzola
+    summary: Writing by Chad Mazzola
+  chanian:
+    feed_url: https://chanian.com/feed/
+    homepage_url: https://chanian.com
+    display_name: Ian Chan's Blog
+    summary: Ian on movies, software, ux and everything else
+  char_gd:
+    feed_url: https://anchor.fm/s/c5e3024/podcast/rss
+    homepage_url: https://char.gd/podcast
+    display_name: Charged Tech Podcast
+    summary: Cut through the technology news noise and hear about only the stuff that matters, and what it means. Join your hosts Owen, Frederique and Zach every week to get the lowdown on the biggest stories – including some you might not have heard anything about. We're based in Amsterdam, The Netherlands and Toronto, Canada, with a different perspective on what's happening in the technology industry.
+  charlesleifer:
+    feed_url: https://charlesleifer.com/blog/rss/
+    homepage_url: http://charlesleifer.com
+    display_name: charlesleifer.com
+    summary: Updates from charlesleifer.com.
+  charlietran:
+    feed_url: https://charlietran.com/feed.xml
+    homepage_url: https://charlietran.com
+    display_name: Charlie Tran
+    summary: Updates from Charlie Tran.
+  chartbeat:
+    feed_url: https://chartbeat.com/feed/
+    homepage_url: https://chartbeat.com
+    display_name: Chartbeat
+    summary: Updates from Chartbeat.
+  chartfag_wordpress:
+    feed_url: https://chartfag.wordpress.com/feed/
+    homepage_url: https://chartfag.wordpress.com
+    display_name: Chartfag's Den of Lesbian Enterprise
+    summary: A perhaps better structured look into the future
+  chartio:
+    feed_url: https://chartio.com/blog/feed.xml
+    homepage_url: https://chartio.com
+    display_name: Chartio | Blog
+    summary: Updates from Chartio | Blog.
+  chartporn:
+    feed_url: https://chartporn.org/feed/
+    homepage_url: https://chartporn.org
+    display_name: Chart Porn
+    summary: charts you just gotta love
+  peterrcook:
+    feed_url: https://www.peterrcook.com/feed.xml
+    homepage_url: https://www.peterrcook.com/animated-data
+    display_name: Peter Cook
+    summary: Updates from Peter Cook.
+  chsmc:
+    feed_url: https://chsmc.org/feed.xml
+    homepage_url: https://chsmc.org
+    display_name: Chase McCoy
+    summary: Chase McCoy explores, builds, & writes about the web
   pragmatic_engineer:
     feed_url: https://blog.pragmaticengineer.com/rss/
     homepage_url: https://blog.pragmaticengineer.com
