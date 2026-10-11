@@ -1,0 +1,41 @@
+import { getLogger } from "@logtape/logtape";
+import robotsParser from "robots-parser";
+import { fetchRemote, readLimitedText } from "./remote-fetch";
+
+const logger = getLogger(["robot-villas", "robots"]);
+
+export function createRobotsCheck(userAgent: string): (url: URL) => Promise<void> {
+  const policies = new Map<string, ReturnType<typeof robotsParser> | null>();
+  return async (url) => {
+    if (url.pathname === "/robots.txt") {
+      return;
+    }
+    const robotsUrl = new URL("/robots.txt", url);
+    if (!policies.has(url.origin)) {
+      let policy: ReturnType<typeof robotsParser> | null = null;
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 2_000);
+      try {
+        const response = await fetchRemote(robotsUrl, {
+          signal: controller.signal,
+          headers: { Accept: "text/plain", "User-Agent": userAgent },
+          cache: "no-store",
+        });
+        if (response.ok) {
+          policy = robotsParser(robotsUrl.href, await readLimitedText(response, 500 * 1024));
+        } else {
+          await response.body?.cancel();
+          logger.debug("Ignoring robots.txt HTTP {status} for {origin}", { status: response.status, origin: url.origin });
+        }
+      } catch (error) {
+        logger.warn("Could not check robots.txt for {origin}: {error}", { origin: url.origin, error });
+      } finally {
+        clearTimeout(timeout);
+      }
+      policies.set(url.origin, policy);
+    }
+    if (policies.get(url.origin)?.isAllowed(url.href, "robot.villas") === false) {
+      throw new Error(`Blocked by robots.txt: ${url.href}`);
+    }
+  };
+}

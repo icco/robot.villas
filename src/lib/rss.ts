@@ -1,6 +1,7 @@
 import Parser from "rss-parser";
 import { SaxesParser } from "saxes";
-import { fetchRemote, readLimitedText } from "./remote-fetch";
+import { fetchRemoteWithPolicy, readLimitedText } from "./remote-fetch";
+import { createRobotsCheck } from "./robots";
 
 const parser = new Parser({ timeout: 10_000 });
 
@@ -126,10 +127,10 @@ export async function fetchFeedWithHttpResult(
       if (cached.lastModified) {
         headers["If-Modified-Since"] = cached.lastModified;
       }
-      const res = await fetchRemote(feedUrl, {
+      const res = await fetchRemoteWithPolicy(feedUrl, {
         signal: controller.signal,
         headers,
-      });
+      }, createRobotsCheck(FEED_USER_AGENT));
       const httpStatus = res.status;
       if (httpStatus === 304) {
         await res.body?.cancel();
