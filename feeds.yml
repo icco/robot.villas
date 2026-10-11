@@ -183,6 +183,256 @@ bots:
     display_name: TigerBeetle
     summary: Engineering a high-performance, safety-critical financial database.
     profile_photo: https://framerusercontent.com/images/GMJ8d83FjKzitkLWA3knVLO5HQ.png
+  zeldman:
+    feed_url: https://zeldman.com/feed/
+    homepage_url: https://zeldman.com
+    display_name: Jeffrey Zeldman Presents
+    summary: Keeping you informed since 1995
+  3lix13_tumblr:
+    feed_url: https://3lix13.tumblr.com/rss
+    homepage_url: https://3lix13.tumblr.com
+    display_name: Project 2501
+    summary: Updates from Project 2501.
+  a_wholelottanothing:
+    feed_url: https://a.wholelottanothing.org/rss/
+    homepage_url: https://a.wholelottanothing.org
+    display_name: A Whole Lotta Nothing
+    summary: Matthew Haughey's personal blog
+  abc7:
+    feed_url: https://abc7.com/feed/
+    homepage_url: https://abc7.com
+    display_name: ABC7 RSS Feed
+    summary: Keep up with news from your local ABC station.
+  ableton:
+    feed_url: https://www.ableton.com/en/blog/feeds/latest/
+    homepage_url: https://www.ableton.com/en/blog
+    display_name: Latest entries for ableton.com
+    summary: Latest entries for ableton.com
+  abookapart:
+    feed_url: https://feeds.feedburner.com/a-book-apart
+    homepage_url: https://abookapart.com/blogs/press
+    display_name: A Book Apart - Press
+    summary: Updates from A Book Apart - Press.
+  addyosmani:
+    feed_url: https://addyosmani.com/rss.xml
+    homepage_url: https://addyosmani.com
+    display_name: AddyOsmani.com
+    summary: Addy Osmani is an engineering and evangelism leader and a Member of Technical Staff at Anthropic, where he works on Claude Code. He spent over 14 years at Google leading developer experience across Chrome and, in recent years, AI (Gemini, coding agents, and agentic engineering), most recently as a Director at Google Cloud AI.
+  adland_tv:
+    feed_url: https://adland.tv/rss.xml
+    homepage_url: https://adland.tv
+    display_name: AdLand.tv
+    summary: The world's largest ad repository - commercials, campaigns, and advertising news
+  akimbocomics:
+    feed_url: https://www.akimbocomics.com/?feed=rss2
+    homepage_url: https://www.akimbocomics.com
+    display_name: Akimbo Comics – Comics Everyone Can Hate
+    summary: Updates from Akimbo Comics – Comics Everyone Can Hate.
+  apartmenttherapy:
+    feed_url: https://www.apartmenttherapy.com/main.rss
+    homepage_url: https://www.apartmenttherapy.com
+    display_name: Apartment Therapy| Saving the world, one room at a time
+    summary: Saving the world, one room at a time
+  artofmanliness:
+    feed_url: https://www.artofmanliness.com/feed/
+    homepage_url: https://www.artofmanliness.com
+    display_name: The Art of Manliness
+    summary: Men's Interest and Lifestyle
+  automato_farm:
+    feed_url: http://automato.farm/index.xml
+    homepage_url: http://www.automato.farm
+    display_name: automato.farm
+    summary: Recent content on automato.farm
+  bikeexif:
+    feed_url: https://www.bikeexif.com/feed
+    homepage_url: https://www.bikeexif.com
+    display_name: BikeEXIF
+    summary: Latest updates from BikeEXIFBikeEXIF
+  binarybonsai:
+    feed_url: https://binarybonsai.com/blog?format=rss
+    homepage_url: https://binarybonsai.com
+    display_name: Michael Heilemann
+    summary: Increasingly dated
+  bleacherreport:
+    feed_url: https://feeds.bleacherreport.com/articles
+    homepage_url: https://bleacherreport.com
+    display_name: Bleacher Report - Front Page
+    summary: Bleacher Report - The latest articles about sports news, rumors, teams, events, and more.
+  bleedingcool:
+    feed_url: https://bleedingcool.com/feed/
+    homepage_url: https://bleedingcool.com
+    display_name: Bleeding Cool News
+    summary: Comics, Movies, TV, Games
+  blog_asmartbear:
+    feed_url: https://blog.asmartbear.com/feed/
+    homepage_url: https://blog.asmartbear.com
+    display_name: '@ASmartBear'
+    summary: Startups + Marketing + Geekery
+  doit:
+    feed_url: https://www.doit.com/blog/feed.xml
+    homepage_url: https://www.doit.com/blog
+    display_name: Cloud Intelligence™ Blog
+    summary: Insights, guides, and product updates from Cloud Intelligence™.
+  blog_doppler_photo:
+    feed_url: https://blog.doppler-photo.net/rss/
+    homepage_url: https://blog.doppler-photo.net
+    display_name: Doppler Photo
+    summary: Photos and stories by Omari Stephens
+  blog_eladgil:
+    feed_url: https://blog.eladgil.com/feed
+    homepage_url: https://blog.eladgil.com
+    display_name: Elad Blog
+    summary: I am a serial entrepreneur obsessed with technology and startups.
+  blog_hatnote:
+    feed_url: https://blog.hatnote.com/rss
+    homepage_url: https://blog.hatnote.com
+    display_name: '{{Hatnote}}'
+    summary: A collection of perspectives on wiki life. listen to wikipedia | top 100 | weeklypedia | recent changes map | see also our story | finfam | questions/contact | twitter | source | RSS
+  blog_jayfields:
+    feed_url: http://feeds.feedburner.com/jayfields/mjKQ
+    homepage_url: http://blog.jayfields.com
+    display_name: Jay Fields' Thoughts
+    summary: Updates from Jay Fields' Thoughts.
+  blog_lazerwalker:
+    feed_url: https://blog.lazerwalker.com/atom.xml
+    homepage_url: https://blog.lazerwalker.com
+    display_name: Emilia Lazer-Walker
+    summary: Emilia is a Toronto-based game designer, conceptual artist, and software engineer.
+  blog_notdot:
+    feed_url: http://blog.notdot.net/feeds/atom.xml
+    homepage_url: http://blog.notdot.net
+    display_name: Nick's Blog
+    summary: Updates from Nick's Blog.
+  blog_ntpsec:
+    feed_url: https://blog.ntpsec.org/feed.xml
+    homepage_url: https://blog.ntpsec.org
+    display_name: NTPsec Project Blog
+    summary: The blog for the NTPsec Project. NTPsec is a secure, hardened, and improved implementation of Network Time Protocol derived from NTP Classic, Dr. David Mills’s original. Our goal is to deliver code that can be used with confidence in deployments with the most stringent security, availability, and assurance requirements.
+  blog_totallynotmalware:
+    feed_url: http://blog.totallynotmalware.net/?feed=rss2
+    homepage_url: http://blog.totallynotmalware.net
+    display_name: Totally Not Malware
+    summary: Exactly What It Says On The Tin
+  travis_ci:
+    feed_url: https://www.travis-ci.com/feed/
+    homepage_url: https://www.travis-ci.com
+    display_name: Travis CI
+    summary: Updates from Travis CI.
+  blog_typekit:
+    feed_url: https://blog.typekit.com/feed/
+    homepage_url: http://blog.typekit.com
+    display_name: The Typekit Blog
+    summary: News about Typekit
+  blog_uchujin:
+    feed_url: https://blog.uchujin.co.uk/feed/
+    homepage_url: https://blog.uchujin.co.uk
+    display_name: Uchujin -The Blog
+    summary: 宇宙人 a.k.a. Adrian Storey, UK Based Self-shooting Director/Documentary DOP & Editor
+  blog_vrypan:
+    feed_url: https://blog.vrypan.net/rss.xml
+    homepage_url: https://blog.vrypan.net
+    display_name: blog.vrypan.net
+    summary: blog.vrypan.net
+  blog_wesleyac:
+    feed_url: https://blog.wesleyac.com/feed.xml
+    homepage_url: https://blog.wesleyac.com
+    display_name: Wesley Aptekar-Cassels
+    summary: Updates from Wesley Aptekar-Cassels.
+  blog_wilshipley:
+    feed_url: http://blog.wilshipley.com/feeds/posts/default
+    homepage_url: http://blog.wilshipley.com
+    display_name: Call Me Fishmeal.
+    summary: Updates from Call Me Fishmeal..
+  learn_microsoft:
+    feed_url: https://devblogs.microsoft.com/python/feed/
+    homepage_url: https://learn.microsoft.com
+    display_name: Microsoft for Python Developers Blog
+    summary: Read the latest updates about all things Python at Microsoft
+  bookriot:
+    feed_url: https://bookriot.com/feed/
+    homepage_url: https://bookriot.com
+    display_name: BOOK RIOT
+    summary: Book Recommendations and Reviews
+  borretti_me:
+    feed_url: https://borretti.me/feed.xml
+    homepage_url: https://borretti.me
+    display_name: Fernando Borretti
+    summary: Personal website
+  bradfrost:
+    feed_url: https://bradfrost.com/feed/feed.xml
+    homepage_url: https://bradfrost.com
+    display_name: Brad Frost
+    summary: Updates from Brad Frost.
+  brave:
+    feed_url: https://brave.com/index.xml
+    homepage_url: https://brave.com
+    display_name: The browser that puts you first on Brave
+    summary: Recent content in The browser that puts you first on Brave
+  brettterpstra:
+    feed_url: https://brett.trpstra.net/brettterpstra
+    homepage_url: https://brettterpstra.com
+    display_name: BrettTerpstra.com - The Mad Science of Brett Terpstra
+    summary: Updates from BrettTerpstra.com - The Mad Science of Brett Terpstra.
+  brew_sh:
+    feed_url: https://brew.sh/atom.xml
+    homepage_url: https://brew.sh
+    display_name: Homebrew
+    summary: Updates from Homebrew.
+  brooklynpaper:
+    feed_url: https://www.brooklynpaper.com/feed/
+    homepage_url: https://www.brooklynpaper.com
+    display_name: Brooklyn Paper
+    summary: Brooklyn Daily News & Crime
+  bustedtees:
+    feed_url: https://www.bustedtees.com/blogs/news.atom
+    homepage_url: https://www.bustedtees.com/blogs/news
+    display_name: BustedTees.com - News
+    summary: Updates from BustedTees.com - News.
+  calnewport:
+    feed_url: https://calnewport.com/feed/
+    homepage_url: https://calnewport.com
+    display_name: Cal Newport
+    summary: Computer Scientist & Bestselling Author
+  charity_wtf:
+    feed_url: https://charity.wtf/feed
+    homepage_url: https://charity.wtf
+    display_name: charity.wtf
+    summary: observability, tech advice, honeycomb.io, etc
+  chrismessina_me:
+    feed_url: https://www.chrismessina.me/blog/rss/
+    homepage_url: https://www.chrismessina.me
+    display_name: Chris Messina
+    summary: Inventor of the hashtag. Product Hunt insider. Helping founders nail their launches.
+  cntraveler:
+    feed_url: https://www.cntraveler.com/feed/rss
+    homepage_url: https://www.cntraveler.com
+    display_name: Condé Nast Traveler
+    summary: The latest from www.cntraveler.com
+  codeberg:
+    feed_url: https://codeberg.org/koharu/noirpass
+    homepage_url: https://codeberg.org/koharu/noirpass/branch/main
+    display_name: Latest commits for branch main
+    summary: Minimal on-demand GPG-backed freedesktop Secret Service
+  codecademy:
+    feed_url: https://www.codecademy.com/resources/blog/feed
+    homepage_url: https://www.codecademy.com/resources/blog
+    display_name: Codecademy Blog
+    summary: Stories, advice, & news from Codecademy
+  cooperhewitt:
+    feed_url: https://www.cooperhewitt.org/feed/
+    homepage_url: https://www.cooperhewitt.org
+    display_name: Cooper Hewitt, Smithsonian Design Museum
+    summary: 2 East 91st New York, New York
+  coredns:
+    feed_url: https://coredns.io/index.xml
+    homepage_url: https://coredns.io
+    display_name: 'CoreDNS: DNS and Service Discovery'
+    summary: 'Recent content on CoreDNS: DNS and Service Discovery'
+  developer_squareup:
+    feed_url: https://developer.squareup.com/blog/rss.xml
+    homepage_url: https://developer.squareup.com
+    display_name: Square Corner Blog RSS Feed
+    summary: Buying and selling sound like simple things - and they should be. Somewhere along the way, they got complicated. At Square, we're working hard to make commerce easy for everyone.
   kottke:
     feed_url: https://feeds.kottke.org/main
     homepage_url: https://kottke.org
