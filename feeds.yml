@@ -9473,6 +9473,279 @@ bots:
     display_name: Lydia Dehn — and then
     summary: Lydia Dehn's blog on painting, textiles, art history, fashion, and creative practice.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.lydiadehn.com&size=128
+  videah:
+    feed_url: https://videah.net/feed.xml
+    homepage_url: https://videah.net
+    display_name: videah
+    summary: Personal writing by videah about technology, software, photography, games, and life online.
+    profile_photo: https://videah.net/assets/img/favicon/apple-touch-icon.png
+  vivek_haldar:
+    feed_url: https://blog.vivekhaldar.com/rss
+    homepage_url: https://blog.vivekhaldar.com
+    display_name: Vivek Haldar
+    summary: Archived personal essays by Vivek Haldar on programming, computer science, productivity, and technology; the available feed ends in 2020.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.vivekhaldar.com&size=128
+  vllm_blog:
+    feed_url: https://vllm.ai/blog/rss.xml
+    homepage_url: https://vllm.ai/blog
+    display_name: vLLM Blog
+    summary: Technical articles, release announcements, model guides, and community updates from the vLLM project.
+    profile_photo: https://vllm.ai/vLLM-Logo.png
+  wealthfront_blog:
+    feed_url: https://www.wealthfront.com/blog/feed/
+    homepage_url: https://www.wealthfront.com/blog
+    display_name: Wealthfront Blog
+    summary: Personal finance, saving, investing, and product updates from Wealthfront.
+    profile_photo: https://www.wealthfront.com/blog/wp-content/uploads/2019/09/cropped-wave-logo-transparent-hi-res-500x500.png
+  the_whatwg_blog:
+    feed_url: https://blog.whatwg.org/feed
+    homepage_url: https://blog.whatwg.org
+    display_name: The WHATWG Blog
+    summary: Announcements and technical discussions from the WHATWG about HTML, web APIs, and living web standards.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.whatwg.org&size=128
+  wido_den_hollander:
+    feed_url: https://wido.blog/feed/
+    homepage_url: https://wido.blog/
+    display_name: Wido den Hollander
+    summary: Wido den Hollander writes about Linux, networking, IPv6, routing, storage, and virtualization.
+  the_official_wireshark_blog:
+    feed_url: https://blog.wireshark.org/index.xml
+    homepage_url: https://blog.wireshark.org
+    display_name: The Official Wireshark Blog
+    summary: Official Wireshark announcements and technical articles about packet analysis, releases, and related tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.wireshark.org&size=128
+  wolfram_blog:
+    feed_url: https://blog.wolfram.com/feed/
+    homepage_url: https://blog.wolfram.com
+    display_name: Wolfram Blog
+    summary: News, announcements, and technical articles about Wolfram technologies, computation, research, and education.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.wolfram.com&size=128
+  workflowy:
+    feed_url: https://blog.workflowy.com/feed/
+    homepage_url: https://blog.workflowy.com
+    display_name: Workflowy
+    summary: Product updates, tutorials, and organization tips from the Workflowy outlining and note-taking app.
+    profile_photo: https://blog.workflowy.com/wp-content/uploads/2018/04/desktop-icon-unprocessed.png
+  worldbuilders:
+    feed_url: https://worldbuilders.org/feed/
+    homepage_url: https://worldbuilders.org
+    display_name: Worldbuilders
+    summary: Archived Worldbuilders posts about geek-community fundraising and humanitarian charities; the available feed ends in 2021.
+    profile_photo: https://worldbuilders.org/wp-content/uploads/2017/09/cropped-wb-favicon2-180x180.png
+  enosuchblog:
+    feed_url: https://blog.yossarian.net/feed.xml
+    homepage_url: https://blog.yossarian.net
+    display_name: ENOSUCHBLOG
+    summary: William Woodruff writes about programming, software security, open source, and technology at ENOSUCHBLOG.
+    profile_photo: https://blog.yossarian.net/icon/apple-icon-57x57.png
+  zarf_updates:
+    feed_url: https://blog.zarfhome.com/feeds/posts/default
+    homepage_url: https://blog.zarfhome.com
+    display_name: Zarf Updates
+    summary: Andrew Plotkin writes about interactive fiction, narrative in games, game reviews, and his software projects.
+    profile_photo: https://blog.zarfhome.com/pic/zarfmask-32.png
+  jeremy_zawodnys_blog:
+    feed_url: https://blog.zawodny.com/feed/
+    homepage_url: https://blog.zawodny.com
+    display_name: Jeremy Zawodny's blog
+    summary: Personal posts by Jeremy Zawodny about technology, aviation, reading, and life.
+  zenkit_blog:
+    feed_url: https://zenkit.com/en/feed/
+    homepage_url: https://zenkit.com/en/blog/
+    display_name: Zenkit Blog
+    summary: Project management, productivity, collaboration, and product articles from Zenkit.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fzenkit.com%2Fen&size=128
+  zoom_blog:
+    feed_url: https://www.zoom.com/en/feed/?cms_guid=false
+    homepage_url: https://www.zoom.com/en/blog/?cms_guid=false
+    display_name: Zoom Blog
+    summary: Official Zoom articles about collaboration, meetings, communication, and product updates.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.zoom.com&size=128
+  zoyander_street:
+    feed_url: https://blog.zoyander.cc/feed.xml
+    homepage_url: https://blog.zoyander.cc
+    display_name: Zoyander Street
+    summary: Art, games, creative coding, and personal writing by Zoyander Street.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.zoyander.cc&size=128
+  bloggeroo_dev:
+    feed_url: https://bloggeroo.dev/rss.xml
+    homepage_url: https://bloggeroo.dev
+    display_name: Bloggeroo.dev
+    summary: Bloggeroo covers software development and technology, including NixOS, servers, webhooks, and personal programming projects.
+  blog_of_holding:
+    feed_url: https://www.blogofholding.com/?feed=rss2
+    homepage_url: https://www.blogofholding.com
+    display_name: Blog of Holding
+    summary: Tabletop role-playing game design, Dungeons & Dragons, Draw Steel, and gaming ideas from Blog of Holding.
+  google_blogoscoped:
+    feed_url: https://blogoscoped.com/rss.xml
+    homepage_url: https://blogoscoped.com/
+    display_name: Google Blogoscoped
+    summary: Archived independent coverage of Google, search, and web technology; the available feed ends in 2011.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fblogoscoped.com&size=128
+  blogrium:
+    feed_url: https://blogrium.wordpress.com/feed/
+    homepage_url: https://blogrium.wordpress.com
+    display_name: blogrium
+    summary: Archived writing by Jeff Lindsay on web development, webhooks, hacker culture, and software projects; the available feed ends in 2010.
+    profile_photo: https://secure.gravatar.com/blavatar/b88d84e0916c0cc4b5c2bee1dada738a676d623ddf5eed1bdc10020b2faaae66?s=114
+  duane_morris_capital_markets:
+    feed_url: https://blogs.duanemorris.com/capitalmarkets/feed/
+    homepage_url: https://blogs.duanemorris.com/capitalmarkets/
+    display_name: Duane Morris on Capital Markets
+    summary: Duane Morris lawyers discuss capital markets, mergers and acquisitions, corporate governance, and securities law.
+  matthias_clasen:
+    feed_url: https://blogs.gnome.org/mclasen/feed/
+    homepage_url: https://blogs.gnome.org/mclasen
+    display_name: Goings on - Matthias Clasen
+    summary: Matthias Clasen writes about GNOME, GTK, Pango, fonts, and desktop development; the available feed ends in 2022.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblogs.gnome.org%2Fmclasen&size=128
+  marks_blog:
+    feed_url: https://blogs.halibut.com/mark/atom.xml
+    homepage_url: https://blogs.halibut.com/mark/
+    display_name: Mark's Blog
+    summary: Archived personal posts by Mark about barbecue, travel, technology, and everyday life; the available feed ends in 2015.
+  kde_blogs:
+    feed_url: https://blogs.kde.org/index.xml
+    homepage_url: https://blogs.kde.org
+    display_name: KDE Blogs
+    summary: Articles from KDE contributors about Plasma, applications, development, releases, and community events.
+    profile_photo: https://blogs.kde.org/apple-touch-icon.png
+  philip_greenspun:
+    feed_url: https://philip.greenspun.com/blog/feed/
+    homepage_url: https://philip.greenspun.com/blog/
+    display_name: Philip Greenspun's Weblog
+    summary: Personal commentary by Philip Greenspun on technology, aviation, business, politics, and everyday life.
+    profile_photo: https://philip.greenspun.com/blog/wp-content/uploads/2019/02/cropped-DSC07153-180x180.jpg
+  duke_bitstreams:
+    feed_url: https://blogs.library.duke.edu/bitstreams/feed/
+    homepage_url: https://blogs.library.duke.edu/bitstreams/
+    display_name: 'Bitstreams: The Digital Collections Blog'
+    summary: Notes from the Duke University Libraries Digital Projects Team on digital collections, library technology, and project workflows; the available feed ends in 2023.
+  presidential_power:
+    feed_url: https://sites.middlebury.edu/presidentialpower/feed/
+    homepage_url: https://sites.middlebury.edu/presidentialpower/
+    display_name: Presidential Power
+    summary: Matthew Dickinson's political-science analysis of presidential elections and politics; the available feed ends in 2020.
+  blogs_perl_org:
+    feed_url: https://blogs.perl.org/atom.xml
+    homepage_url: https://blogs.perl.org
+    display_name: blogs.perl.org
+    summary: Community blogs about Perl programming, CPAN modules, projects, and events.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblogs.perl.org&size=128
+  windows_blog:
+    feed_url: https://blogs.windows.com/feed/
+    homepage_url: https://blogs.windows.com
+    display_name: Windows Blog
+    summary: Official Microsoft news about Windows, Surface devices, Windows Insider builds, and Windows development.
+    profile_photo: https://blogs.windows.com/wp-content/uploads/2022/09/cropped-Windows11IconTransparent512-32x32.png
+  blogsuki:
+    feed_url: http://blogsuki.com/feed/
+    homepage_url: http://blogsuki.com
+    display_name: blogsuki
+    summary: Archived anime reviews and seasonal viewing commentary from blogsuki; the available feed ends in 2022.
+  blog_title:
+    feed_url: https://blogtitle.github.io/index.xml
+    homepage_url: https://blogtitle.github.io
+    display_name: Blog Title
+    summary: Programming and technology articles by Anna and Rob, with a focus on Go, concurrency, and software security.
+    profile_photo: https://blogtitle.github.io/images/dotstar.png
+  blowmage:
+    feed_url: https://blowmage.com/feed.atom
+    homepage_url: https://blowmage.com
+    display_name: blowmage
+    summary: Mike Moore writes about software development, Ruby on Rails, testing, and engineering practice at blowmage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblowmage.com&size=128
+  bluehost_blog:
+    feed_url: https://www.bluehost.com/blog/feed/
+    homepage_url: https://www.bluehost.com/blog/
+    display_name: Bluehost Blog
+    summary: Official Bluehost articles on web hosting, WordPress, website building, and online business.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbluehost.com&size=128
+  winblues:
+    feed_url: https://blues.win/index.xml
+    homepage_url: https://blues.win
+    display_name: Winblues
+    summary: Winblues covers Linux desktop customization, Blue95, Bazzite, KDE, and bootable-container systems.
+    profile_photo: https://blues.win/favicon.png
+  sylvain_wallez:
+    feed_url: https://www.bluxte.net/rss.xml
+    homepage_url: https://www.bluxte.net/
+    display_name: Sylvain Wallez
+    summary: Sylvain Wallez writes about programming languages, software engineering, and technology.
+    profile_photo: https://github.com/swallez.png?size=200
+  without_boats:
+    feed_url: https://without.boats/index.xml
+    homepage_url: https://without.boats/blog/
+    display_name: Without boats, dreams dry up
+    summary: Technical essays by boats about Rust, asynchronous programming, language design, and systems software.
+    profile_photo: https://github.com/withoutboats.png?size=200
+  bobo_and_chichi:
+    feed_url: https://www.boboandchichi.com/feed/
+    homepage_url: https://www.boboandchichi.com
+    display_name: Bobo and ChiChi
+    summary: Travel guides, itineraries, and photography from the couple behind Bobo and ChiChi.
+    profile_photo: https://www.boboandchichi.com/wp-content/uploads/cropped-bobo-and-chichi-square-180x180.png
+  bob_somers:
+    feed_url: https://bobsomers.com/feed.xml
+    homepage_url: https://bobsomers.com
+    display_name: Bob Somers
+    summary: Bob Somers writes about programming and personal projects; the available feed contains two posts from 2019.
+    profile_photo: https://github.com/bobsomers.png?size=200
+  bodhi_linux:
+    feed_url: https://www.bodhilinux.com/feed/
+    homepage_url: https://www.bodhilinux.com
+    display_name: Bodhi Linux
+    summary: Official news, development updates, and community announcements from the Bodhi Linux distribution.
+    profile_photo: https://www.bodhilinux.com/trial/wp-content/uploads/2020/12/cropped-LeafLogo_512x512-3-180x180.png?x44384
+  chris_aldrich:
+    feed_url: https://boffosocko.com/feed/
+    homepage_url: https://boffosocko.com
+    display_name: Chris Aldrich
+    summary: Chris Aldrich's digital commonplace book about note-taking, typewriters, the IndieWeb, and other interests.
+    profile_photo: https://i0.wp.com/boffosocko.com/wp-content/uploads/2015/04/LAAC-rooftop-cropped512x512-551cdb03v1_site_icon.png?fit=180%2C180&ssl=1
+  boiling_steam:
+    feed_url: https://boilingsteam.com/feed/rss-feed.xml
+    homepage_url: https://boilingsteam.com
+    display_name: Boiling Steam
+    summary: News, reviews, hardware coverage, and game-release roundups about Linux gaming and the Steam Deck.
+    profile_photo: https://boilingsteam.com/apple-touch-icon.png
+  andreas_fuchs_journal:
+    feed_url: https://boinkor.net/index.xml
+    homepage_url: https://boinkor.net
+    display_name: Andreas Fuchs' Journal
+    summary: Andreas Fuchs writes about programming, Nix, Rust, systems software, and personal projects.
+    profile_photo: https://boinkor.net/favicon.png
+  bokardo:
+    feed_url: http://bokardo.com/feed/
+    homepage_url: http://bokardo.com
+    display_name: Bokardo
+    summary: Joshua Porter's blog about interface and product design; the available feed ends in 2018.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fbokardo.com&size=128
+  boldport:
+    feed_url: https://boldport.com/blog?format=rss
+    homepage_url: https://boldport.com/blog
+    display_name: Boldport
+    summary: Boldport articles about electronics design, circuit boards, hardware projects, and the Boldport Club; the available feed ends in 2019.
+    profile_photo: https://static1.squarespace.com/static/539604e8e4b0d1f9ffe9ff0b/t/56461f23e4b0a44127f69500/1447436068811/logo-favicon-400x400.png?format=1500w
+  bombing_science:
+    feed_url: https://www.bombingscience.com/feed/
+    homepage_url: https://www.bombingscience.com
+    display_name: Bombing Science
+    summary: Graffiti artist interviews, artwork, supplies, and community news from Bombing Science.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.bombingscience.com&size=128
+  bonsai_tonight:
+    feed_url: https://bonsaitonight.com/feed/
+    homepage_url: https://bonsaitonight.com
+    display_name: Bonsai Tonight
+    summary: Bonsai cultivation techniques, development updates, and educational articles by Jonas Dupuich.
+    profile_photo: https://bonsaitonight.com/wp-content/uploads/2017/07/cropped-hornbeam-foliage-32x32.jpg
+  book_pickings:
+    feed_url: https://bookpickings.themarginalian.org/rss
+    homepage_url: https://bookpickings.themarginalian.org/
+    display_name: book pickings
+    summary: Archived book recommendations and literary selections from book pickings, associated with Maria Popova's Brain Pickings and The Marginalian; the available feed ends in 2021.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbookpickings.brainpickings.org&size=128
   liliputing:
     feed_url: https://liliputing.com/feed/
     homepage_url: https://liliputing.com
