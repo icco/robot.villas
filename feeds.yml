@@ -273,6 +273,256 @@ bots:
     display_name: NYT > U.S.
     summary: U.S. news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  blog_alexellis:
+    feed_url: https://blog.alexellis.io/rss/
+    homepage_url: https://blog.alexellis.io
+    display_name: Alex Ellis' Blog
+    summary: OSS, Cloud Native & Raspberry Pi
+  blog_arkency:
+    feed_url: https://blog.arkency.com/feed.xml
+    homepage_url: https://blog.arkency.com
+    display_name: Hi, we're Arkency
+    summary: Updates from Hi, we're Arkency.
+  chasejarvis:
+    feed_url: https://chasejarvis.com/feed/
+    homepage_url: https://chasejarvis.com
+    display_name: Chase Jarvis
+    summary: Updates from Chase Jarvis.
+  blog_checkpoint:
+    feed_url: https://blog.checkpoint.com/feed/
+    homepage_url: https://blog.checkpoint.com
+    display_name: Check Point Blog
+    summary: Blog
+  blog_discourse:
+    feed_url: https://blog.discourse.org/rss/
+    homepage_url: https://blog.discourse.org
+    display_name: Discourse
+    summary: Learn about the powerful, open source community platform.
+  dribbble:
+    feed_url: https://dribbble.com/stories.rss
+    homepage_url: https://dribbble.com/stories
+    display_name: Courtside
+    summary: Show and tell for designers.
+  blog_dustinkirkland:
+    feed_url: http://feeds.feedburner.com/FromTheCanyonEdge--DustinKirkland
+    homepage_url: http://blog.dustinkirkland.com
+    display_name: From the Canyon Edge
+    summary: Updates from From the Canyon Edge.
+  blog_ezyang:
+    feed_url: https://blog.ezyang.com/feed.xml
+    homepage_url: https://blog.ezyang.com
+    display_name: ezyang's blog
+    summary: Recent content on ezyang's blog
+  blog_garrytan:
+    feed_url: https://blog.garrytan.com/posts.atom
+    homepage_url: https://blog.garrytan.com
+    display_name: garry's posthaven
+    summary: Updates from garry's posthaven.
+  blog_garychou:
+    feed_url: https://blog.garychou.com/rss
+    homepage_url: https://blog.garychou.com
+    display_name: Gary Chou
+    summary: About Me
+  blog_gopheracademy:
+    feed_url: https://blog.gopheracademy.com/index.xml
+    homepage_url: https://blog.gopheracademy.com
+    display_name: Gopher Academy Blog
+    summary: Recent content on Gopher Academy Blog
+  blog_haschek_at:
+    feed_url: https://blog.haschek.at/rss.xml
+    homepage_url: https://blog.haschek.at
+    display_name: Christian Hascheks blog
+    summary: A blog about projects, teaching, programming and other stuff
+  blog_iron:
+    feed_url: https://blog.iron.io/feed/
+    homepage_url: https://blog.iron.io
+    display_name: The Iron.io Blog
+    summary: Scalable serverless application tools to run background tasks with Docker containers and manage messaging queues with cloud elasticity and handheld customer support.
+  blog_jcoglan:
+    feed_url: http://feeds.feedburner.com/theifworks
+    homepage_url: https://blog.jcoglan.com
+    display_name: The If Works
+    summary: Updates from The If Works.
+  blog_jfo_click:
+    feed_url: https://blog.jfo.click/feed.xml
+    homepage_url: https://blog.jfo.click
+    display_name: blog.jfo.click
+    summary: Recent content on blog.jfo.click
+  blog_leahhanson_us:
+    feed_url: http://blog.leahhanson.us/index.xml
+    homepage_url: http://blog.leahhanson.us
+    display_name: Leah Hanson
+    summary: Recent content on Leah Hanson
+  about_netflix:
+    feed_url: https://about.netflix.com/en/feed.xml
+    homepage_url: https://about.netflix.com
+    display_name: Netflix Press Site
+    summary: Latest publications from Netflix Press Site
+  blog_parkermoore_de:
+    feed_url: https://blog.parkermoore.de/atom.xml
+    homepage_url: https://blog.parkermoore.de
+    display_name: Hey, I’m Parker.
+    summary: Updates from Hey, I’m Parker..
+  parse_ly:
+    feed_url: https://www.parse.ly/feed/
+    homepage_url: https://www.parse.ly
+    display_name: Parse.ly
+    summary: Content analytics for everyone.
+  news_patreon:
+    feed_url: https://news.patreon.com/feed.xml
+    homepage_url: https://news.patreon.com
+    display_name: Patreon | News
+    summary: Patreon is the best place for creators to build memberships by providing exclusive access to their work and a deeper connection with their communities.
+  blog_patrickrothfuss:
+    feed_url: https://blog.patrickrothfuss.com/feed/
+    homepage_url: https://blog.patrickrothfuss.com
+    display_name: Patrick Rothfuss – Blog
+    summary: Author of the Kingkiller Chronicle
+  blog_rossry:
+    feed_url: https://blog.rossry.net/rss/
+    homepage_url: https://blog.rossry.net
+    display_name: Icosian Reflections
+    summary: Ross Rheingans-Yoo writes on things of int­erest.
+  blog_sophaskins:
+    feed_url: https://blog.sophaskins.net/index.xml
+    homepage_url: https://blog.sophaskins.net
+    display_name: blog.sophaskins.net
+    summary: Recent content on blog.sophaskins.net
+  blog_stephanbehnke:
+    feed_url: https://blog.stephanbehnke.com/index.xml
+    homepage_url: https://blog.stephanbehnke.com
+    display_name: This Programming Life
+    summary: Recent content on This Programming Life
+  blog_the_ebook_reader:
+    feed_url: https://blog.the-ebook-reader.com/feed/
+    homepage_url: https://blog.the-ebook-reader.com
+    display_name: The eBook Reader
+    summary: The eBook Reader Blog
+  blog_watsi:
+    feed_url: https://blog.watsi.org/rss/
+    homepage_url: https://blog.watsi.org
+    display_name: Watsi
+    summary: We're sharing stories, news, and opinions from our journey to bring healthcare to every person on the planet.
+  diff_wikimedia:
+    feed_url: https://diff.wikimedia.org/feed/
+    homepage_url: https://diff.wikimedia.org
+    display_name: Diff
+    summary: News from the Wikimedia movement
+  blog_zulip:
+    feed_url: https://blog.zulip.com/rss.xml
+    homepage_url: https://blog.zulip.com
+    display_name: The Zulip Blog
+    summary: Open-source threaded team chat that helps teams stay productive and focused.
+  blogmaverick:
+    feed_url: https://blogmaverick.com/feed/
+    homepage_url: https://blogmaverick.com
+    display_name: blog maverick
+    summary: the mark cuban weblog
+  bls_gov:
+    feed_url: https://www.bls.gov/feed/bls_latest.rss
+    homepage_url: https://www.bls.gov/bls
+    display_name: Major Economic Indicators Latest Numbers
+    summary: Latest Numbers for Major Economic Indicators, U.S. Bureau of Labor Statistics
+  bonkersworld:
+    feed_url: https://bonkersworld.net/feed.xml
+    homepage_url: https://bonkersworld.net
+    display_name: Bonkers World
+    summary: Repository for bonkersworld.net
+  books_slashdot:
+    feed_url: https://rss.slashdot.org/Slashdot/slashdotBookReviews
+    homepage_url: https://books.slashdot.org
+    display_name: 'Slashdot: Book Reviews'
+    summary: News for nerds, stuff that matters
+  bootswatch:
+    feed_url: https://blog.bootswatch.com/rss/
+    homepage_url: https://bootswatch.com
+    display_name: Bootswatch
+    summary: Free themes for Bootstrap
+  bramknaapen:
+    feed_url: https://www.bramknaapen.com/feed/
+    homepage_url: https://www.bramknaapen.com
+    display_name: Bram Knaapen
+    summary: Updates from Bram Knaapen.
+  brendaneich:
+    feed_url: https://brendaneich.com/feed/
+    homepage_url: https://brendaneich.com
+    display_name: Brendan Eich
+    summary: Updates from Brendan Eich.
+  brkwydln_tumblr:
+    feed_url: https://brkwydln.tumblr.com/rss
+    homepage_url: https://brkwydln.tumblr.com
+    display_name: Boiler Room knows what you did last night.
+    summary: BRKWYDLN
+  brooklynvegan:
+    feed_url: https://www.brooklynvegan.com/feed/
+    homepage_url: https://www.brooklynvegan.com
+    display_name: BrooklynVegan
+    summary: Music, Photos, News and more
+  brooksreview:
+    feed_url: https://brooksreview.net/feed/
+    homepage_url: https://brooksreview.net
+    display_name: The Brooks Review
+    summary: Updates from The Brooks Review.
+  brudtkuhl:
+    feed_url: https://brudtkuhl.com/blog/feed.atom
+    homepage_url: https://brudtkuhl.com
+    display_name: Andy Brudtkuhl
+    summary: Updates from Andy Brudtkuhl.
+  butdoesitfloat:
+    feed_url: https://butdoesitfloat.com/rss
+    homepage_url: https://butdoesitfloat.com
+    display_name: but does it float
+    summary: but does it float
+  cad_comic:
+    feed_url: https://cad-comic.com/feed/
+    homepage_url: https://cad-comic.com
+    display_name: Ctrl+Alt+Del Comic
+    summary: A comic about video games!
+  caffeine_wiki:
+    feed_url: https://caffeine.wiki/atom.xml
+    homepage_url: https://caffeine.wiki
+    display_name: caffeine.wiki
+    summary: Updates from caffeine.wiki.
+  camelcamelcamel:
+    feed_url: https://camelcamelcamel.com/top_drops/feed
+    homepage_url: https://camelcamelcamel.com/top_drops?
+    display_name: Top Amazon Price Drops
+    summary: Amazon top price drops list by camelcamelcamel.com
+  capnfabs:
+    feed_url: https://capnfabs.net/posts/index.xml
+    homepage_url: https://capnfabs.net/posts
+    display_name: fabian writes.
+    summary: Recent posts on capnfabs.net
+  cartoonbrew:
+    feed_url: https://www.cartoonbrew.com/feed
+    homepage_url: https://www.cartoonbrew.com
+    display_name: Cartoon Brew
+    summary: Animation News, Animated Cartoons
+  books_catapult_co:
+    feed_url: https://books.catapult.co/feed/
+    homepage_url: https://books.catapult.co
+    display_name: Catapult Books
+    summary: Just another Catapult Sites site
+  cbinsights:
+    feed_url: https://www.cbinsights.com/research/feed/
+    homepage_url: https://www.cbinsights.com/research
+    display_name: CB Insights Research
+    summary: Updates from CB Insights Research.
+  cbr:
+    feed_url: https://www.cbr.com/feed/
+    homepage_url: https://www.cbr.com
+    display_name: CBR
+    summary: Covering comics, movies, TV like no other in the world. CBR.com is all you need!
+  celebuzz:
+    feed_url: https://www.celebuzz.com/feed/
+    homepage_url: https://www.celebuzz.com
+    display_name: Celebuzz
+    summary: Celebuzz
+  chris_granger:
+    feed_url: http://feeds.feedburner.com/ChrisGranger
+    homepage_url: https://chris-granger.com
+    display_name: chris-granger.com
+    summary: Updates from chris-granger.com.
   nyt_politics:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml
     homepage_url: https://www.nytimes.com/section/politics
