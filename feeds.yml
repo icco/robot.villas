@@ -1140,6 +1140,256 @@ bots:
     display_name: Military Times
     summary: Independent news about service members at home and deployed around the world.
     profile_photo: https://www.militarytimes.com/pf/resources/img/favicons/mil/apple-touch-icon.png?d=143
+  narrativemagazine:
+    feed_url: https://www.narrativemagazine.com/rss.xml
+    homepage_url: https://www.narrativemagazine.com
+    display_name: Narrative Magazine
+    summary: Updates from Narrative Magazine.
+  natalieblack_github:
+    feed_url: https://natalieblack.github.io/atom.xml
+    homepage_url: https://natalieblack.github.io
+    display_name: You'll know Her - by Her Blog -
+    summary: Updates from You'll know Her - by Her Blog -.
+  nateberkopec:
+    feed_url: https://www.nateberkopec.com/feed.xml
+    homepage_url: https://www.nateberkopec.com
+    display_name: Nate Berkopec
+    summary: The blog of Nate Berkopec, Ruby on Rails programmer.
+  nateliason:
+    feed_url: https://www.nateliason.com/api/rss
+    homepage_url: https://nateliason.com/blog
+    display_name: Nat Eliason's Blog
+    summary: Articles by Nat Eliason
+  natethayer_wordpress:
+    feed_url: https://natethayer.wordpress.com/feed/
+    homepage_url: https://natethayer.wordpress.com
+    display_name: natethayer
+    summary: A compilation of current reporting and archived published work of journalist Nate Thayer
+  nathangrigg:
+    feed_url: https://nathangrigg.com/feed.xml
+    homepage_url: https://nathangrigg.com
+    display_name: Nathan Grigg
+    summary: Recent content for Nathan Grigg
+  nathanmarz:
+    feed_url: http://feeds.feedburner.com/ThoughtsFromTheRedPlanet
+    homepage_url: http://nathanmarz.com/blog
+    display_name: thoughts from the red planet
+    summary: Updates from thoughts from the red planet.
+  nathantankus_substack:
+    feed_url: https://nathantankus.substack.com/feed
+    homepage_url: https://nathantankus.substack.com
+    display_name: Notes on the Crises
+    summary: The Pandemic-Induced Depression from a Monetary Political Economy perspective.
+  nathany:
+    feed_url: https://nathany.com/articles.xml
+    homepage_url: https://nathany.com
+    display_name: Nathan Youngman
+    summary: Recent content on Nathan Youngman
+  nationalpost:
+    feed_url: https://nationalpost.com/feed/atom
+    homepage_url: https://nationalpost.com
+    display_name: National Post
+    summary: Updates from National Post.
+  nationalreview:
+    feed_url: https://www.nationalreview.com/feed/
+    homepage_url: https://www.nationalreview.com
+    display_name: National Review
+    summary: Updates from National Review.
+  nationaltrail:
+    feed_url: https://www.nationaltrail.co.uk/feed/
+    homepage_url: https://www.nationaltrail.co.uk/en_GB
+    display_name: National Trails
+    summary: Updates from National Trails.
+  naval_technology:
+    feed_url: https://www.naval-technology.com/feed/
+    homepage_url: https://www.naval-technology.com
+    display_name: Naval Technology
+    summary: The leading site for news and procurement in the naval defence industry
+  navidrome:
+    feed_url: https://www.navidrome.org/index.xml
+    homepage_url: https://www.navidrome.org
+    display_name: Navidrome
+    summary: Recent content on Navidrome
+  nazavo:
+    feed_url: https://nazavo.com/rss/
+    homepage_url: https://nazavo.com
+    display_name: Tech, nomadic lifestyle, and financial independence
+    summary: Writings about living an sovereign nomadic life, tech, and sprinkles of Eastern European humor
+  nbashaw:
+    feed_url: http://nbashaw.com/feed.xml
+    homepage_url: http://nbashaw.com
+    display_name: Nathan's Blog
+    summary: Thinking about how things work.
+  nbcdfw:
+    feed_url: https://www.nbcdfw.com/?rss=y
+    homepage_url: https://www.nbcdfw.com
+    display_name: NBC 5 Dallas-Fort Worth
+    summary: Updates from NBC 5 Dallas-Fort Worth.
+  nbcsports:
+    feed_url: https://www.nbcsports.com/index.atom
+    homepage_url: https://www.nbcsports.com
+    display_name: NBC Sports - news, scores, stats, rumors, videos, and more
+    summary: Updates from NBC Sports - news, scores, stats, rumors, videos, and more.
+  nbcwashington:
+    feed_url: https://www.nbcwashington.com/?rss=y
+    homepage_url: https://www.nbcwashington.com
+    display_name: NBC4 Washington
+    summary: Updates from NBC4 Washington.
+  nationalboardofreview:
+    feed_url: https://nationalboardofreview.org/feed/
+    homepage_url: https://nationalboardofreview.org
+    display_name: National Board of Review
+    summary: Updates from National Board of Review.
+  humanwhocodes:
+    feed_url: https://humanwhocodes.com/feeds/blog.xml
+    homepage_url: https://humanwhocodes.com
+    display_name: Human Who Codes
+    summary: The Official Web Site of Nicholas C. Zakas
+  neatnik:
+    feed_url: https://neatnik.net/feed.xml
+    homepage_url: https://www.neatnik.net
+    display_name: Neatnik
+    summary: Updates from Neatnik.
+  neil_computer:
+    feed_url: https://neil.computer/rss/
+    homepage_url: https://neil.computer
+    display_name: Neil Panchal
+    summary: Neil's blog
+  neilkakkar:
+    feed_url: https://neilkakkar.com/feed.xml
+    homepage_url: https://neilkakkar.com
+    display_name: Neil Kakkar
+    summary: Updates from Neil Kakkar.
+  neilkodner:
+    feed_url: https://neilkodner.com/feed.xml
+    homepage_url: https://neilkodner.com
+    display_name: Photography by Neil Kodner
+    summary: Updates from Photography by Neil Kodner.
+  nelsonslog_wordpress:
+    feed_url: https://nelsonslog.wordpress.com/feed/
+    homepage_url: https://nelsonslog.wordpress.com
+    display_name: Nelson's log
+    summary: A personal work journal
+  neo900:
+    feed_url: https://neo900.org/feeds/all.atom.xml
+    homepage_url: https://neo900.org
+    display_name: Neo900
+    summary: Updates from Neo900.
+  nerderati:
+    feed_url: https://nerderati.com/atom.xml
+    homepage_url: https://nerderati.com
+    display_name: Nerderati
+    summary: Updates from Nerderati.
+  nerdy_dev:
+    feed_url: https://nerdy.dev/rss.xml
+    homepage_url: https://nerdy.dev
+    display_name: Adam Argyle
+    summary: 'RSS Feed for Adam Argyle: Web design & development tips & tricks: CSS, JS, HTML, Design, & UX.'
+  nerfnow:
+    feed_url: https://feeds.feedburner.com/nerfnow/full
+    homepage_url: https://www.nerfnow.com
+    display_name: Nerf NOW!!
+    summary: Updates from Nerf NOW!!.
+  netboot_xyz:
+    feed_url: https://netboot.xyz/blog/rss.xml
+    homepage_url: https://netboot.xyz/blog
+    display_name: netboot.xyz Blog
+    summary: netboot.xyz Blog
+  netdata_cloud:
+    feed_url: https://www.netdata.cloud/index.xml
+    homepage_url: https://www.netdata.cloud
+    display_name: 'Netdata: Monitoring and troubleshooting transformed on Netdata'
+    summary: 'Recent content in Netdata: Monitoring and troubleshooting transformed on Netdata'
+  netgrind_tumblr:
+    feed_url: https://netgrind.tumblr.com/rss
+    homepage_url: https://netgrind.tumblr.com
+    display_name: third eye tie-dye
+    summary: cale bradbury’s gifs, games, experiments, mostly gifs…
+  netjeff:
+    feed_url: https://www.netjeff.com/wp/?feed=rss2
+    homepage_url: https://www.netjeff.com/wp
+    display_name: netjeff.com
+    summary: Updates from netjeff.com.
+  netlify:
+    feed_url: https://www.netlify.com/feed.xml
+    homepage_url: https://www.netlify.com
+    display_name: Netlify Blog
+    summary: The latest from the Netlify blog — product news, tutorials, and stories from the web platform.
+  netresec:
+    feed_url: https://www.netresec.com/rss.ashx
+    homepage_url: https://www.netresec.com/?page=Blog
+    display_name: NETRESEC Network Security Blog
+    summary: Network Security Monitoring and Network Forensics
+  newartisans:
+    feed_url: https://newartisans.com/rss.xml
+    homepage_url: http://newartisans.com
+    display_name: Lost in Technopolis
+    summary: RSS feed for John Wiegley's blog
+  newharbinger:
+    feed_url: https://www.newharbinger.com/feed/
+    homepage_url: https://www.newharbinger.com
+    display_name: New Harbinger Publications, Inc
+    summary: REAL TOOLS for REAL CHANGE
+  news_web_php:
+    feed_url: https://news-web.php.net/group.php?group=php.announce&format=rss
+    homepage_url: https://news-web.php.net/group.php?group=php.announce
+    display_name: 'news-web.php.net: php.announce'
+    summary: 'Updates from news-web.php.net: php.announce.'
+  news_bitcoin:
+    feed_url: https://news.bitcoin.com/feed/
+    homepage_url: https://news.bitcoin.com
+    display_name: Bitcoin News
+    summary: Daily Bitcoin News
+  news_caloes_ca_gov:
+    feed_url: https://www.news.caloes.ca.gov/feed/
+    homepage_url: https://www.news.caloes.ca.gov
+    display_name: Cal OES News
+    summary: NEWSROOM | Multimedia | California Governor's Office of Emergency Services
+  news_dartlang:
+    feed_url: https://news.dartlang.org/feeds/posts/default
+    homepage_url: https://news.dartlang.org
+    display_name: Dart News & Updates
+    summary: Updates from Dart News & Updates.
+  news_delta:
+    feed_url: https://news.delta.com/rss.xml
+    homepage_url: https://news.delta.com
+    display_name: Delta News Hub
+    summary: The latest Delta Air Lines news covering business, health and safety, leadership, routes and waivers, Delta people, our values and more.
+  news_designlanguage:
+    feed_url: https://news.designlanguage.com/rss
+    homepage_url: https://news.designlanguage.com
+    display_name: Design Language News
+    summary: 'MAKING VISUAL SENSE OF NONSENSE var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src=''" + gaJsHost + "google-analytics.com/ga.js'' type=''text/javascript''%3E%3C/script%3E")); try { var pageTracker = _gat._getTracker("UA-15978636-1"); pageTracker._setDomainName(".designlanguage.com"); pageTracker._trackPageview(); } catch(err) {}'
+  news_gandi:
+    feed_url: https://news.gandi.net/fr/feed/
+    homepage_url: https://news.gandi.net
+    display_name: Gandi News
+    summary: 'Official Gandi news: domain name registration, web hosting, cloud VPS and industry practices.'
+  news_harvard_edu:
+    feed_url: https://news.harvard.edu/gazette/feed/
+    homepage_url: https://news.harvard.edu/gazette
+    display_name: Harvard Gazette
+    summary: Official news from Harvard University covering innovation in teaching, learning, and research
+  news_illinois_edu:
+    feed_url: https://news.illinois.edu/feed/
+    homepage_url: https://news.illinois.edu
+    display_name: News Bureau
+    summary: The News Bureau works with faculty and researchers to produce news about the innovative research and expertise at the University of Illinois Urbana-Champaign.
+  news_microsoft:
+    feed_url: https://news.microsoft.com/source/feed/
+    homepage_url: https://news.microsoft.com/source
+    display_name: Source
+    summary: Updates from Source.
+  news_ncsu_edu:
+    feed_url: https://news.ncsu.edu/feed/
+    homepage_url: https://news.ncsu.edu
+    display_name: NC State News
+    summary: News from NC State University
+  news_techmeme:
+    feed_url: https://news.techmeme.com/index.xml
+    homepage_url: https://news.techmeme.com
+    display_name: Techmeme News
+    summary: Updates on Techmeme and its sister sites
   horn_gg:
     feed_url: https://horn.gg/feed.xml
     homepage_url: https://horn.gg
