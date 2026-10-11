@@ -13148,6 +13148,265 @@ bots:
     display_name: Public Books
     summary: Literature, culture, politics, criticism, and ideas from scholars and writers.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.publicbooks.org&size=128
+  superhouse_automation:
+    feed_url: https://www.superhouse.tv/feed/
+    homepage_url: https://www.superhouse.tv
+    display_name: SuperHouse Automation
+    summary: Jonathan Oxer's electronics, home automation projects, videos, and product news. Freetronics products moved into SuperHouse in December 2025.
+    profile_photo: https://i0.wp.com/www.superhouse.tv/wp-content/uploads/2016/01/cropped-SuperHouse-LogoOnly-512x512.jpg?fit=180%2C180&ssl=1
+  freshpaint_blog:
+    feed_url: https://www.freshpaint.io/blog/rss.xml
+    homepage_url: https://www.freshpaint.io/blog
+    display_name: Freshpaint Blog
+    summary: Healthcare marketing, analytics, privacy compliance, and product news from Freshpaint.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.freshpaint.io&size=128
+  fresh_tilled_soil:
+    feed_url: https://medium.com/feed/fresh-tilled-soil
+    homepage_url: https://www.freshtilledsoil.com
+    display_name: Fresh Tilled Soil
+    summary: 'Fresh Tilled Soil''s archived articles on UX, digital product design, strategy, and product management. Latest feed post: November 2018.'
+    profile_photo: https://www.freshtilledsoil.com/wp-content/themes/fts-2017/assets/images/browser-icons/apple-touch-icon.png
+  fribbledoms_journal:
+    feed_url: https://fribbledom.com/index.xml
+    homepage_url: https://fribbledom.com
+    display_name: fribbledom's Journal
+    summary: 'fribbledom''s archived software and Linux notes, including self-hosting, encrypted installations, and Go projects. Latest feed post: June 2021.'
+    profile_photo: https://github.com/muesli.png?size=200
+  thoughts_from_inside_the_box:
+    feed_url: https://frominsidethebox.com/index.xml
+    homepage_url: https://frominsidethebox.com
+    display_name: Thoughts from Inside The Box
+    summary: Personal writing about living in a box truck, housing, work, financial independence, and life afterward.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffrominsidethebox.com&size=128
+  unpacked:
+    feed_url: https://unpacked.media/feed/
+    homepage_url: https://unpacked.media
+    display_name: Unpacked
+    summary: Jewish and Israeli news, culture, history, religion, opinion, and food from Unpacked, the successor to From the Grapevine.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Funpacked.media&size=128
+  fryda_wolff:
+    feed_url: https://frydawolff.com/feed/
+    homepage_url: https://frydawolff.com
+    display_name: Fryda Wolff
+    summary: Voice actor Fryda Wolff's work announcements, performances, and professional advice.
+    profile_photo: https://secure.gravatar.com/blavatar/8316c8922965e712b4aa0b3a073c0528302496fa7ceb0d36266228ac9f108432?s=114
+  fstoppers:
+    feed_url: https://fstoppers.com/feed
+    homepage_url: https://fstoppers.com
+    display_name: Fstoppers
+    summary: Photography news, camera and lighting reviews, editing tutorials, and creative business advice.
+    profile_photo: https://fstoppers.com/favicon/apple-touch-icon.png
+  ft_alphaville:
+    feed_url: https://www.ft.com/alphaville?format=rss
+    homepage_url: https://www.ft.com/alphaville
+    display_name: FT Alphaville
+    summary: Financial Times commentary and analysis on finance, markets, economics, and investing.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fftalphaville.ft.com&size=128
+  fubiz_media:
+    feed_url: https://www.fubiz.net/feed/
+    homepage_url: https://www.fubiz.net
+    display_name: Fubiz Media
+    summary: Art, design, photography, film, and creative culture from Fubiz Media.
+    profile_photo: https://www.fubiz.net/wp-content/themes/fubiz/assets/images/favicons/news-152x152.png
+  fuck_your_noguchi_coffee_table:
+    feed_url: https://fuckyournoguchicoffeetable.tumblr.com/rss
+    homepage_url: https://fuckyournoguchicoffeetable.tumblr.com
+    display_name: Fuck Your Noguchi Coffee Table
+    summary: 'Archived satirical photo captions mocking interior-design trends. Latest feed post: November 2015.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffuckyournoguchicoffeetable.tumblr.com&size=128
+  fullcontact:
+    feed_url: https://www.fullcontact.com/feed/
+    homepage_url: https://www.fullcontact.com
+    display_name: FullContact
+    summary: Identity resolution, customer data enrichment, marketing analytics, privacy, and company updates from FullContact.
+    profile_photo: https://www.fullcontact.com/wp-content/uploads/2026/05/cropped-fc-favicon-512x512-1-150x150.png
+  fuma_nama:
+    feed_url: https://www.fuma-nama.dev/rss.xml
+    homepage_url: https://www.fuma-nama.dev
+    display_name: Fuma Nama
+    summary: Fuma Nama writes about software development, web design, open-source projects, and personal experiences.
+    profile_photo: https://fuma-nama.vercel.app/banner.png
+  funkatron_dead_agent:
+    feed_url: https://www.funkatron.com/rss/
+    homepage_url: https://www.funkatron.com
+    display_name: funkatron + dead_agent
+    summary: Ed Finkler's writing about software, technology, mental health, art, and personal life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.funkatron.com&size=128
+  funkwhale_blog:
+    feed_url: https://blog.funkwhale.audio/feeds/all.atom.xml
+    homepage_url: https://blog.funkwhale.audio
+    display_name: Funkwhale Blog
+    summary: Official Funkwhale release announcements, community news, and guides to its federated audio platform.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.funkwhale.audio&size=128
+  fun_on_rails:
+    feed_url: http://funonrails.com/feed.xml
+    homepage_url: http://funonrails.com
+    display_name: Fun On Rails
+    summary: 'Archived Ruby on Rails, JavaScript, deployment, and web API tutorials. Latest feed post: March 2014.'
+    profile_photo: http://funonrails.com/assets/images/favicon.png
+  furbo_craig_hockenberry:
+    feed_url: https://furbo.org/feed/
+    homepage_url: https://furbo.org
+    display_name: furbo.org - Craig Hockenberry
+    summary: Craig Hockenberry writes about Apple platforms, app development, software, design, and technology.
+    profile_photo: https://furbo.org/wp-content/uploads/2023/04/furbo.png
+  future_of_life_institute:
+    feed_url: https://futureoflife.org/feed/
+    homepage_url: https://futureoflife.org
+    display_name: Future of Life Institute
+    summary: Future of Life Institute research, policy, statements, and news about risks from AI, biotechnology, and nuclear weapons.
+    profile_photo: https://futureoflife.org/wp-content/uploads/2022/09/favicon.png
+  futurice:
+    feed_url: https://www.futurice.com/rss.xml
+    homepage_url: https://futurice.com
+    display_name: Futurice
+    summary: Digital product design, software engineering, AI, business transformation, and company perspectives from Futurice.
+    profile_photo: https://www.futurice.com/apple-touch-icon.png
+  fxguide:
+    feed_url: https://www.fxguide.com/feed/
+    homepage_url: https://www.fxguide.com
+    display_name: fxguide
+    summary: Visual effects, animation, 3D technology, filmmaking, production interviews, and podcasts.
+    profile_photo: https://www.fxguide.com/wp-content/uploads/2026/08/cropped-fx-icon-180x180.png
+  fxstreet_forex_and_commodities_news:
+    feed_url: https://www.fxstreet.com/rss
+    homepage_url: https://www.fxstreet.com
+    display_name: FXStreet Forex & Commodities News
+    summary: Forex and commodities news, market analysis, trading commentary, and financial education from FXStreet.
+    profile_photo: https://staticcontent.fxsstatic.com/website/img/icons/fxs-180.png
+  gervasio_marchand:
+    feed_url: https://g3rv4.com/atom.xml
+    homepage_url: https://g3rv4.com
+    display_name: g3rv4 - Gervasio Marchand
+    summary: 'Gervasio Marchand''s archived software development, infrastructure, and fediverse notes. Latest feed post: July 2023.'
+    profile_photo: https://g3rv4.com/public/favicon.png
+  gadget_review:
+    feed_url: https://www.gadgetreview.com/feed
+    homepage_url: https://www.gadgetreview.com
+    display_name: Gadget Review
+    summary: Technology and science news, consumer electronics and appliance reviews, buying guides, and deals.
+    profile_photo: https://www.gadgetreview.com/wp-content/uploads/GR-Favicon-1-240x240.png
+  galerie_magazine:
+    feed_url: https://galeriemagazine.com/feed/
+    homepage_url: https://galeriemagazine.com
+    display_name: Galerie Magazine
+    summary: Art, design, architecture, interiors, travel, collecting, and luxury style from Galerie.
+    profile_photo: https://cdn.galeriemagazine.com/wp-content/uploads/2025/04/cropped-Galerie-Favicon-1.png?strip=all&quality=92&webp=92&sharp=1&resize=32%2C32
+  game_icons:
+    feed_url: https://game-icons.net/feeds/icons.xml
+    homepage_url: https://game-icons.net
+    display_name: Game-icons.net
+    summary: Recently added free SVG and PNG icons for games and applications.
+  gamerant:
+    feed_url: https://gamerant.com/feed/
+    homepage_url: https://gamerant.com
+    display_name: GameRant
+    summary: Video game news, reviews, guides, features, and entertainment coverage from GameRant.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgamerant.com&size=128
+  slashdot_games:
+    feed_url: https://rss.slashdot.org/Slashdot/slashdotGames
+    homepage_url: https://games.slashdot.org
+    display_name: 'Slashdot: Games'
+    summary: Slashdot's video game industry news and discussions.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgames.slashdot.org&size=128
+  gametrailers:
+    feed_url: https://www.youtube.com/feeds/videos.xml?channel_id=UCJx5KP-pCUmL9eZUv-mIcNw
+    homepage_url: https://www.youtube.com/channel/UCJx5KP-pCUmL9eZUv-mIcNw
+    display_name: GameTrailers
+    summary: IGN's GameTrailers YouTube channel for game trailers, gameplay reveals, cinematics, and announcements.
+    profile_photo: https://yt3.googleusercontent.com/ytc/AIdro_mACNHzO2hXRkyYsbaZtmgKOxnHfIdnHSg3D_aWRK3mcoAU=s900-c-k-c0x00ffffff-no-rj
+  gamingonlinux:
+    feed_url: https://www.gamingonlinux.com/article_rss.php
+    homepage_url: https://www.gamingonlinux.com
+    display_name: GamingOnLinux
+    summary: Linux, SteamOS, Steam Deck, Proton, and PC gaming news, reviews, and guides.
+    profile_photo: https://www.gamingonlinux.com//templates/default/images/favicons/apple-touch-icon-180x180.png
+  gaming_the_classroom:
+    feed_url: https://gamingtheclassroom.wordpress.com/feed/atom/
+    homepage_url: https://gamingtheclassroom.wordpress.com
+    display_name: Gaming the Classroom
+    summary: 'Archived posts about game-based teaching and The Multiplayer Classroom. Latest feed posts: May 2011.'
+  gapminder:
+    feed_url: https://www.gapminder.org/feed/
+    homepage_url: https://www.gapminder.org
+    display_name: Gapminder
+    summary: 'Gapminder news and educational resources on global development, statistics, and misconceptions about the world. Latest feed post: December 2023.'
+    profile_photo: https://www.gapminder.org/icn/apple-touch-icon-57x57.png
+  philipp_garbe:
+    feed_url: https://garbe.io/atom.xml
+    homepage_url: https://garbe.io
+    display_name: Philipps Blog - Philipp Garbe
+    summary: Philipp Garbe writes about AWS, Docker, cloud infrastructure, and continuous delivery.
+    profile_photo: https://garbe.io/assets/icons/apple-touch-icon.png.pagespeed.ce.1hkSEnDbm9.png
+  gareth_rees:
+    feed_url: https://www.garethrees.co.uk/feed.xml
+    homepage_url: https://www.garethrees.co.uk
+    display_name: Gareth Rees
+    summary: Gareth Rees's software development notes, product management writing, and book summaries.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.garethrees.co.uk&size=128
+  guillermo_garron:
+    feed_url: https://www.garron.me/en/feed.xml
+    homepage_url: https://www.garron.me/en
+    display_name: garron.me - Guillermo Garron
+    summary: Guillermo Garron's English-language Linux tutorials, computing notes, software guides, and personal writing.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.garron.me%2Fen&size=128
+  garry_newmans_blog:
+    feed_url: https://garry.net/posts/rss/
+    homepage_url: https://garry.net
+    display_name: Garry Newman's Blog
+    summary: Garry Newman's writing about game development, Facepunch, software, work, and everyday life.
+    profile_photo: https://garry.net/favicon-32x32.png
+  marcus_on_ai:
+    feed_url: https://garymarcus.substack.com/feed
+    homepage_url: https://garymarcus.substack.com
+    display_name: Marcus on AI
+    summary: Gary Marcus's commentary on artificial intelligence research, industry claims, safety, and policy.
+  gary_sieling:
+    feed_url: https://www.garysieling.com/blog/feed/
+    homepage_url: https://www.garysieling.com/blog
+    display_name: Gary Sieling
+    summary: Gary Sieling writes about software engineering, machine learning, data science, full-text search, and developer tools.
+  coolstuffinc_articles:
+    feed_url: https://www.coolstuffinc.com/articles_feed.rss
+    homepage_url: https://www.coolstuffinc.com/a/
+    display_name: CoolStuffInc Articles
+    summary: 'Magic: The Gathering and other trading card game strategy, rules, deckbuilding, set reviews, and news from CoolStuffInc, formerly GatheringMagic.'
+  gears2gnomes:
+    feed_url: https://gears2gnomes.tumblr.com/rss
+    homepage_url: https://gears2gnomes.tumblr.com
+    display_name: gears2gnomes
+    summary: Knight-mj's sketches, comics, original artwork, and game fan art, including Guild Wars 2.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgears2gnomes.tumblr.com&size=128
+  geckoboard_blog:
+    feed_url: https://www.geckoboard.com/blog/rss/
+    homepage_url: https://www.geckoboard.com/blog
+    display_name: Geckoboard Blog
+    summary: Geckoboard guides to dashboards, metrics, KPIs, customer support reporting, and team performance.
+    profile_photo: https://www.geckoboard.com/blog/assets/favicon/icon-512x512.png?v=UuptxsqND3-5v7F9
+  geek_art:
+    feed_url: https://geek-art.net/blog/feed/
+    homepage_url: https://geek-art.net
+    display_name: Geek-Art
+    summary: Geek-Art's illustration agency, exhibition curation, art prints, and creative services. This feed contains five service posts from December 2024.
+    profile_photo: https://geek-art.net/wp-content/uploads/2024/12/logo-geek-art-carre-square-nb.png?w=180
+  geekflare:
+    feed_url: https://geekflare.com/feed/
+    homepage_url: https://geekflare.com
+    display_name: Geekflare
+    summary: 'Geekflare''s archived business software reviews and technology guides. Latest feed publication date: November 2025.'
+    profile_photo: https://cdn.geekflare.com/general/apple-icon.png
+  geeks_are_sexy:
+    feed_url: https://feeds.feedburner.com/geeksAreSexyTechnologyNews
+    homepage_url: https://www.geeksaresexy.net
+    display_name: Geeks are Sexy
+    summary: Geek culture, technology, science, gaming, comics, and cosplay from Geeks are Sexy.
+    profile_photo: https://i0.wp.com/www.geeksaresexy.net/wp-content/uploads/2020/11/cropped-gaslogo2.png?fit=32%2C32&ssl=1
+  geekwagon:
+    feed_url: https://geekwagon.games/index.xml
+    homepage_url: https://geekwagon.games
+    display_name: Geekwagon
+    summary: Geekwagon's indie game development updates, game jam projects, streaming, and software experiments.
+    profile_photo: https://geekwagon.games/images/favicon.png
   paris_review:
     feed_url: https://www.theparisreview.org/blog/feed/
     homepage_url: https://www.theparisreview.org
