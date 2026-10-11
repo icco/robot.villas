@@ -872,6 +872,256 @@ bots:
     display_name: LensCulture
     summary: Contemporary photography, photographers, visual culture, and photography criticism.
     profile_photo: https://www.lensculture.com/icon.png
+  golduck_tumblr:
+    feed_url: https://golduck.tumblr.com/rss
+    homepage_url: https://golduck.tumblr.com
+    display_name: silent sobbing
+    summary: Hello. I am webcammodel and here you Will see all my Free horny vids, pics. hope you like it ❤❤❤. link - http://
+  gomakethings:
+    feed_url: https://gomakethings.com/feed/index.xml
+    homepage_url: https://gomakethings.com/articles
+    display_name: Go Make Things
+    summary: Chris Ferdinandi is a web developer with ADHD, helping people build the web better.
+  goodereader:
+    feed_url: https://goodereader.com/blog/feed/podcast
+    homepage_url: https://goodereader.com/blog/category/e-reader-radio
+    display_name: Good e-Reader Radio
+    summary: Good e-Reader Radio covers the latest occurrences in the audiobook, e-Reader, e-paper and digital publishing industry.
+  goodmenproject:
+    feed_url: https://goodmenproject.com/feed/
+    homepage_url: https://goodmenproject.com
+    display_name: The Good Men Project
+    summary: The Conversation No One Else Is Having
+  goodnewsnetwork:
+    feed_url: https://www.goodnewsnetwork.org/feed/
+    homepage_url: https://www.goodnewsnetwork.org
+    display_name: Good News Network
+    summary: A Daily Dose of Positive News to Enthuse
+  kk4vcz:
+    feed_url: https://kk4vcz.com/index.xml
+    homepage_url: https://kk4vcz.com
+    display_name: KK4VCZ
+    summary: Recent content on KK4VCZ
+  googlemapsmania_blogspot:
+    feed_url: http://feeds.feedburner.com/GoogleMapsMania
+    homepage_url: http://googlemapsmania.blogspot.com
+    display_name: Maps Mania
+    summary: Updates from Maps Mania.
+  gordonbrander:
+    feed_url: https://gordonbrander.com/feed/notes.xml
+    homepage_url: https://gordonbrander.com
+    display_name: gordonbrander.com
+    summary: Learning to build living software
+  gorilla_github:
+    feed_url: https://gorilla.github.io/index.xml
+    homepage_url: https://gorilla.github.io
+    display_name: Gorilla Web Toolkit
+    summary: Recent content on Gorilla Web Toolkit
+  goshacmd:
+    feed_url: http://feeds.feedburner.com/GoshaArinich
+    homepage_url: https://goshacmd.com
+    display_name: Gosha Spark
+    summary: Updates from Gosha Spark.
+  sphero:
+    feed_url: https://sphero.com/blogs/news.atom
+    homepage_url: https://sphero.com/blogs/news
+    display_name: Sphero - Sphero STEM Education Blog
+    summary: Updates from Sphero - Sphero STEM Education Blog.
+  e_pluribusunum:
+    feed_url: https://e-pluribusunum.org/feed/
+    homepage_url: https://e-pluribusunum.org
+    display_name: E Pluribus Unum
+    summary: We shine a light on the intersection of technology, government, media and society with research, trusted analysis, and public interest advocacy.
+  gowebexamples:
+    feed_url: https://gowebexamples.com/index.xml
+    homepage_url: https://gowebexamples.com
+    display_name: Learn Web Programming in Go by Examples on Go Web Examples
+    summary: Recent content in Learn Web Programming in Go by Examples on Go Web Examples
+  gq_magazine:
+    feed_url: https://www.gq-magazine.co.uk/feed/rss
+    homepage_url: https://www.gq-magazine.co.uk
+    display_name: GQ UK
+    summary: The latest from www.gq-magazine.co.uk
+  grahamcluley:
+    feed_url: https://grahamcluley.com/feed/
+    homepage_url: https://grahamcluley.com
+    display_name: GRAHAM CLULEY
+    summary: Cybersecurity keynote speaker
+  grammarist:
+    feed_url: https://grammarist.com/feed/
+    homepage_url: https://grammarist.com
+    display_name: GRAMMARIST
+    summary: English grammar, usage, and style blog
+  grammarphobia:
+    feed_url: https://grammarphobia.com/feed
+    homepage_url: https://grammarphobia.com
+    display_name: Grammarphobia
+    summary: Grammar, etymology, usage, and more, brought to you by Patricia T. O’Conner and Stewart Kellerman
+  grapee_jp:
+    feed_url: https://grapee.jp/feed
+    homepage_url: https://grapee.jp
+    display_name: ライフスタイルメディア『grape』
+    summary: Updates from ライフスタイルメディア『grape』.
+  graphite:
+    feed_url: https://graphite.com/feed.xml
+    homepage_url: https://graphite.com
+    display_name: Graphite blog
+    summary: Graphite blog
+  gravityblast:
+    feed_url: https://gravityblast.com/feed.xml
+    homepage_url: http://gravityblast.com
+    display_name: Andrea Franz
+    summary: Updates from Andrea Franz.
+  grayarea:
+    feed_url: https://grayarea.org/feed/
+    homepage_url: https://grayarea.org
+    display_name: Gray Area
+    summary: We apply culture and technology for social good.
+  graz:
+    feed_url: https://www.graz.io/rss.xml
+    homepage_url: https://www.graz.io
+    display_name: Sebastian Graz · Articles
+    summary: Independent design consultancy focused on branding, digital design and beautiful implementation.
+  green_beast:
+    feed_url: http://feeds.feedburner.com/Beast-Blog
+    homepage_url: http://green-beast.com/blog
+    display_name: Beast-Blog.com
+    summary: Mike Cherim's Professional and Personal Web Log
+  greenandblue:
+    feed_url: https://www.greenandblue.co.uk/collections/shop-bee-houses.atom
+    homepage_url: https://www.greenandblue.co.uk/collections/all
+    display_name: Green&Blue
+    summary: Updates from Green&Blue.
+  greenbot:
+    feed_url: https://www.greenbot.com/feed/
+    homepage_url: https://www.greenbot.com
+    display_name: GreenBot | AI News, Hacks, Apps, Tips & Reviews Blog
+    summary: 'Take a look at the best AI coverage: All phone, tablets & wearables models news, reviews, specs & apps with our articles, photos & videos.'
+  greendiary:
+    feed_url: https://greendiary.com/feed/
+    homepage_url: https://greendiary.com
+    display_name: Green Diary – A comprehensive guide to sustainable hacks, green tips, and eco suggestions
+    summary: Go green with our guides, hacks, suggestions, and eco updates on renewable energy, green design, and eco technology.
+  greenheartgames:
+    feed_url: https://www.greenheartgames.com/feed/
+    homepage_url: https://www.greenheartgames.com/app/game-dev-tycoon
+    display_name: Greenheart Games
+    summary: Less Social. Less Ville. More Game.
+  gsap:
+    feed_url: https://gsap.com/blog/rss.xml
+    homepage_url: https://gsap.com/blog
+    display_name: GSAP | Docs & Learning Blog
+    summary: GSAP | Docs & Learning Blog
+  greenwald_substack:
+    feed_url: https://greenwald.substack.com/feed
+    homepage_url: https://greenwald.substack.com
+    display_name: Glenn Greenwald
+    summary: Independent, unencumbered analysis and investigative reporting, captive to no dogma or faction.
+  gregable:
+    feed_url: https://gregable.com/feed.xml
+    homepage_url: https://gregable.com
+    display_name: Gregable
+    summary: Updates from Gregable.
+  oldblog_gregdetre:
+    feed_url: http://oldblog.gregdetre.co.uk/feeds/posts/default
+    homepage_url: http://oldblog.gregdetre.co.uk
+    display_name: Greg Detre
+    summary: Updates from Greg Detre.
+  gregfallis:
+    feed_url: https://gregfallis.com/feed/
+    homepage_url: https://gregfallis.com
+    display_name: gregfallis.com
+    summary: it's this or get a real job
+  greggkellogg:
+    feed_url: https://greggkellogg.net/feed.xml
+    homepage_url: https://greggkellogg.net
+    display_name: Gregg Kellogg
+    summary: Gregg's Personal Blog
+  grepular:
+    feed_url: https://www.grepular.com/rss
+    homepage_url: https://www.grepular.com
+    display_name: grepular.com
+    summary: Mike Cardwell's tech blog
+  grex_substack:
+    feed_url: https://grex.substack.com/feed
+    homepage_url: https://grex.substack.com
+    display_name: grex
+    summary: Subscribe for short announcements about my new projects
+  grisk_itch:
+    feed_url: https://grisk.itch.io/dain-app/devlog.rss
+    homepage_url: https://grisk.itch.io/dain-app
+    display_name: Dain-App 1.0 [Nvidia Only] Devlog - itch.io
+    summary: Animation Interpolation powered by AI
+  grokcode:
+    feed_url: http://www.grokcode.com/feed.xml
+    homepage_url: http://www.grokcode.com
+    display_name: GrokCode
+    summary: Grok some code. Programming tutorials, long form articles, and opinion pieces about building things on the internet.
+  grouspawn:
+    feed_url: https://grouspawn.com/feed/
+    homepage_url: https://grouspawn.com
+    display_name: GrouSpawn.com
+    summary: Updates from GrouSpawn.com.
+  grpc:
+    feed_url: https://grpc.io/index.xml
+    homepage_url: https://grpc.io
+    display_name: gRPC – gRPC
+    summary: The gRPC blog
+  grrm_livejournal:
+    feed_url: https://grrm.livejournal.com/data/rss
+    homepage_url: https://grrm.livejournal.com
+    display_name: Not A Blog
+    summary: Not A Blog - LiveJournal.com
+  grugq_tumblr:
+    feed_url: https://grugq.tumblr.com/rss
+    homepage_url: https://grugq.tumblr.com
+    display_name: Underground Tradecraft
+    summary: Counterintelligence, OPSEC and Tradecraft for everyone. https://gru.gq
+  gruntjs:
+    feed_url: https://gruntjs.com/rss
+    homepage_url: https://gruntjs.com
+    display_name: Grunt Blog Feed
+    summary: Updates from Grunt Blog Feed.
+  workspaceupdates_googleblog:
+    feed_url: http://feeds.feedburner.com/GoogleAppsUpdates
+    homepage_url: http://workspaceupdates.googleblog.com
+    display_name: Google Workspace Updates
+    summary: Updates from Google Workspace Updates.
+  guides_coralproject:
+    feed_url: https://guides.coralproject.net/feed/
+    homepage_url: https://guides.coralproject.net
+    display_name: Coral by Vox Media Guides
+    summary: Because journalism needs everyone
+  guigrpa_github:
+    feed_url: https://guigrpa.github.io/feed.xml
+    homepage_url: https://guigrpa.github.io
+    display_name: Math.random()
+    summary: Updates from Math.random().
+  guitar:
+    feed_url: https://guitar.com/feed/
+    homepage_url: https://guitar.com
+    display_name: Guitar.com | All Things Guitar
+    summary: The destination for all things guitar
+  guitarplayer:
+    feed_url: https://www.guitarplayer.com/feeds.xml
+    homepage_url: https://www.guitarplayer.com
+    display_name: Latest from Guitar Player
+    summary: All the latest content from the Guitar Player team
+  guitarworld:
+    feed_url: https://www.guitarworld.com/feeds.xml
+    homepage_url: https://www.guitarworld.com
+    display_name: Latest from Guitar World
+    summary: All the latest content from the Guitar World team
+  gwan:
+    feed_url: http://www.gwan.com/trustleap.xml
+    homepage_url: http://www.gwan.com
+    display_name: TrustLeap G-WAN RSS Feed
+    summary: TrustLeap G-WAN Web Server with Java, C/C++, Objective-C and D scripts, faster than all others
+  gwu_edu__nsarchiv:
+    feed_url: https://nsarchive2.gwu.edu/feed.xml
+    homepage_url: https://nsarchive2.gwu.edu
+    display_name: The National Security Archive
+    summary: An independent non-governmental research institute and library located at The George Washington University.
   petapixel:
     feed_url: https://petapixel.com/feed/
     homepage_url: https://petapixel.com
