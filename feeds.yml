@@ -18697,6 +18697,272 @@ bots:
     homepage_url: https://cceckman.com/
     display_name: Hi, I'm cceckman. on cceckman.com
     summary: Photography, software, and personal projects.
+  nicole_tietz:
+    feed_url: https://ntietz.com/atom.xml
+    homepage_url: https://ntietz.com
+    display_name: Nicole Tietz
+    summary: Nicole Tietz on software engineering, programming, accessibility, writing, career development, and personal life.
+    profile_photo: https://ntietz.com/apple-touch-icon.png
+  the_nuclear_squid:
+    feed_url: https://nuclearsquid.com/feed.xml
+    homepage_url: https://nuclearsquid.com
+    display_name: The Nuclear Squid
+    summary: 'Archived programming articles and tutorials on Git, Ruby, Rust, terminal tools, and software craftsmanship. Latest feed post: October 2016.'
+    profile_photo: https://github.com/cypher.png?size=200
+  null_program:
+    feed_url: https://nullprogram.com/feed/
+    homepage_url: https://nullprogram.com
+    display_name: null program
+    summary: Chris Wellons on systems programming, C, software tools, security, games, and practical computing.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnullprogram.com&size=128
+  null_sweep:
+    feed_url: https://nullsweep.com/rss/
+    homepage_url: https://nullsweep.com
+    display_name: Null Sweep
+    summary: 'Archived security tutorials and tools covering penetration testing, NoSQL injection, cloud architecture, privacy, and DevSecOps. Latest feed post: June 2021.'
+    profile_photo: https://nullsweep.com/content/images/size/w256h256/2020/09/logov3_256.png
+  nulogy:
+    feed_url: https://nulogy.com/feed/
+    homepage_url: https://nulogy.com
+    display_name: Nulogy
+    summary: Nulogy product news and guidance on manufacturing, packaging supply chains, production monitoring, maintenance, and factory software.
+    profile_photo: https://nulogy.com/wp-content/uploads/2025/08/nu-faviconV2-150x150.png
+  nw_js_blog:
+    feed_url: https://nwjs.io/feed/blog.xml
+    homepage_url: https://nwjs.io/
+    display_name: NW.js Blog
+    summary: Official NW.js release announcements and project news for the Chromium- and Node.js-based desktop application runtime.
+    profile_photo: https://nwjs.io/img/logo.png
+  jonathan_lee_martin:
+    feed_url: https://jonathanleemartin.com/rss/
+    homepage_url: https://jonathanleemartin.com/tldr/
+    display_name: Jonathan Lee Martin - TL;DR
+    summary: 'Jonathan Lee Martin''s archived JavaScript codecasts and articles on functional programming, design patterns, and software craftsmanship. Latest feed post: October 2019.'
+    profile_photo: https://jonathanleemartin.com/img/favicon.png
+  nycemf:
+    feed_url: https://nycemf.org/feed/
+    homepage_url: https://nycemf.org
+    display_name: New York City Electroacoustic Music Festival
+    summary: New York City Electroacoustic Music Festival announcements, accepted works, and historical festival pages. The feed mixes current announcements with older and empty schedule entries.
+    profile_photo: https://nycemf.org/wp-content/uploads/2014/10/NYCEMF_logo_w-small.png
+  new_york_nightowls:
+    feed_url: https://nynightowls.tumblr.com/rss
+    homepage_url: https://nynightowls.tumblr.com
+    display_name: New York Nightowls
+    summary: 'Archived photos and updates from New York Nightowls, a late-night coworking club. Latest feed post: May 2010.'
+    profile_photo: https://api.tumblr.com/v2/blog/nynightowls.tumblr.com/avatar/128
+  ny_skateboarding:
+    feed_url: https://nyskateboarding.com/feed/
+    homepage_url: https://nyskateboarding.com
+    display_name: NY Skateboarding
+    summary: Archived New York skateboarding videos, events, skate spots, and culture coverage. The publication closed in 2021; its final feed post is a January 2022 farewell.
+    profile_photo: https://nyskateboarding.com/wp/wp-content/uploads/2016/05/cropped-NYSB-logo-400x400.jpeg
+  nyxt_browser:
+    feed_url: https://nyxt-browser.com/feed
+    homepage_url: https://nyxt-browser.com/
+    display_name: Nyxt Browser
+    summary: 'Nyxt browser release announcements, tutorials, customization guides, and Lisp-based browsing workflows. Latest feed article: December 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnyxt.atlas.engineer&size=128
+  antarctic_heritage_trust:
+    feed_url: https://nzaht.org/feed/
+    homepage_url: https://nzaht.org/
+    display_name: Antarctic Heritage Trust
+    summary: New Zealand Antarctic Heritage Trust news on historic-hut and artefact conservation, Antarctic expeditions, education, and public outreach.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnzaht.org%2Fnew-home&size=128
+  oakland_review_of_books:
+    feed_url: https://www.oaklandreviewofbooks.org/rss/
+    homepage_url: https://www.oaklandreviewofbooks.org
+    display_name: Oakland Review of Books
+    summary: Literary criticism, essays, cultural commentary, interviews, and Oakland-area literary events from Oakland Review of Books.
+    profile_photo: https://storage.ghost.io/c/e9/74/e974aa4e-486e-454e-a8c5-2af4d8741ff1/content/images/size/w256h256/2026/03/favicon.png
+  oleg_bartunov:
+    feed_url: https://obartunov.livejournal.com/data/rss
+    homepage_url: https://obartunov.livejournal.com
+    display_name: Oleg Bartunov
+    summary: Oleg Bartunov's English- and Russian-language posts on PostgreSQL, databases, AI, astronomy, travel, and personal life.
+    profile_photo: https://l-userpic.livejournal.com/96063716/24248903
+  objective_developments_blog:
+    feed_url: https://obdev.at/rss/
+    homepage_url: https://obdev.at/blog/
+    display_name: Objective Development's Blog
+    summary: Official Objective Development articles and product news about Little Snitch, LaunchBar, privacy, security, and software engineering.
+    profile_photo: https://obdev.at/apple-touch-icon.png
+  obfuscurity:
+    feed_url: http://obfuscurity.com/rss.xml
+    homepage_url: http://obfuscurity.com
+    display_name: obfuscurity.
+    summary: 'Jason Dixon''s archived writing on monitoring, Graphite, infrastructure, operations, hardware, and technology events. Latest feed post: December 2016.'
+  objc_io:
+    feed_url: https://www.objc.io/feed.xml
+    homepage_url: https://www.objc.io
+    display_name: objc.io
+    summary: objc.io announcements and articles about Swift, SwiftUI, iOS and macOS development, books, and Swift Talk.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.objc.io&size=128
+  object_io:
+    feed_url: https://object.io/feed.xml
+    homepage_url: https://object.io
+    display_name: object.io
+    summary: Laust Rud Jacobsen's programming notes on Ruby, Rails, PostgreSQL, Git, developer tools, and hardware projects.
+    profile_photo: https://github.com/rud.png?size=200
+  the_obscuritory:
+    feed_url: https://obscuritory.com/feed/
+    homepage_url: https://obscuritory.com
+    display_name: The Obscuritory
+    summary: Phil Salvador's research and essays on obscure computer games, game preservation, recovered software, and gaming history.
+    profile_photo: https://obscuritory.com/wp-content/uploads/2020/02/cropped-obscuritory_icon-180x180.png
+  obs_project_news:
+    feed_url: https://obsproject.com/blog/rss
+    homepage_url: https://obsproject.com/blog
+    display_name: OBS Project News
+    summary: Official OBS Studio release notes, development news, engineering articles, and community announcements.
+    profile_photo: https://obsproject.com/favicon-32x32.png
+  something_odd:
+    feed_url: https://odd.blog/feed/
+    homepage_url: https://odd.blog
+    display_name: Something Odd!
+    summary: Donncha O Caoimh's personal blog on technology, WordPress, photography, security, and everyday life; formerly published at ocaoimh.ie.
+    profile_photo: https://odd.blog/files/2019/11/cropped-2017-12-02-IMG_4918-m-180x180.jpg
+  github_octodex:
+    feed_url: https://octodex.github.com/atom.xml
+    homepage_url: https://octodex.github.com
+    display_name: GitHub Octodex
+    summary: GitHub's official Octocat illustration gallery, including new characters and themed artwork.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Foctodex.github.com&size=128
+  odbms_industry_watch:
+    feed_url: https://www.odbms.org/blog/feed/
+    homepage_url: https://www.odbms.org/blog/
+    display_name: ODBMS Industry Watch
+    summary: Roberto V. Zicari's interviews and analysis on databases, data management, AI, open source, and the software industry.
+  oert:
+    feed_url: https://www.oert.org/feed/
+    homepage_url: https://www.oert.org
+    display_name: OERT
+    summary: 'Open Educational Resources for Typography: Spanish-language articles on type, letterforms, information design, text animation, and visual communication. Latest feed post: October 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.oert.org&size=128
+  offf_barcelona:
+    feed_url: https://www.offf.barcelona/blog-feed.xml
+    homepage_url: https://www.offf.barcelona/blog
+    display_name: OFFF Barcelona
+    summary: OFFF Barcelona festival news, creative campaigns, schedules, artists, and event announcements.
+    profile_photo: https://static.wixstatic.com/media/05766b_f7d60eaf07c44f96aa42d22b89fed0b2%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/05766b_f7d60eaf07c44f96aa42d22b89fed0b2%7Emv2.png
+  oggcamp:
+    feed_url: https://www.oggcamp.org/index.xml
+    homepage_url: https://www.oggcamp.org
+    display_name: OggCamp
+    summary: OggCamp news, schedules, talks, venue information, and community updates for the open-source and open-culture festival.
+    profile_photo: https://www.oggcamp.org/icons/apple-touch-icon.png
+  oh_totoro:
+    feed_url: https://oh-totoro.com/rss
+    homepage_url: https://oh-totoro.com
+    display_name: Oh Totoro - Studio Ghibli Fan Blog
+    summary: Unofficial Studio Ghibli fan blog sharing film artwork, GIFs, scenes, and other fan posts; not the animation studio's official account.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Foh-totoro.com&size=128
+  oh_joy_sex_toy:
+    feed_url: https://www.ohjoysextoy.com/feed/
+    homepage_url: https://www.ohjoysextoy.com
+    display_name: Oh Joy Sex Toy
+    summary: Sex-education, sexuality, relationships, community, and sex-toy review comics by Erika Moen, Matthew Nolan, and guest artists.
+    profile_photo: https://www.ohjoysextoy.com/apple-touch-icon.png
+  oh_my_veggies:
+    feed_url: https://ohmyveggies.com/feed/
+    homepage_url: https://ohmyveggies.com
+    display_name: Oh My Veggies
+    summary: Vegetarian and vegan recipes, cooking tips, meal ideas, and kitchen product recommendations.
+    profile_photo: https://ohmyveggies.com/wp-content/uploads/2021/09/cropped-omv-favicon-180x180.png
+  olivia_jack:
+    feed_url: https://ojack.xyz/index.xml
+    homepage_url: https://ojack.xyz
+    display_name: Olivia Jack
+    summary: 'Olivia Jack''s creative-coding portfolio, including Hydra, PIXELSYNTH, live visual systems, and experimental audio projects. Site-wide feed includes project pages; latest listed update: December 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fojack.xyz&size=128
+  ok_magazine:
+    feed_url: https://www.ok.co.uk/?service=rss
+    homepage_url: https://www.ok.co.uk
+    display_name: OK! Magazine
+    summary: UK celebrity news, television coverage, entertainment, lifestyle, and photographs from OK! Magazine.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.ok.co.uk&size=128
+  noah_kagan:
+    feed_url: https://noahkagan.com/feed/
+    homepage_url: https://noahkagan.com
+    display_name: Noah Kagan
+    summary: Noah Kagan on starting and growing businesses, marketing, entrepreneurship, and personal development.
+    profile_photo: https://noahkagan.com/wp-content/uploads/2017/02/cropped-okdork-2017-favicon-128x128-180x180.png
+  okhell:
+    feed_url: https://okhell.tumblr.com/rss
+    homepage_url: https://okhell.tumblr.com
+    display_name: OkHell
+    summary: 'Archived screenshots and commentary on awkward online-dating profiles and messages. Latest feed post: March 2015.'
+  olark_blog:
+    feed_url: https://blog.olark.com/rss.xml
+    homepage_url: https://blog.olark.com/
+    display_name: Olark Blog
+    summary: 'Olark''s archived articles on live chat, customer service, sales, accessibility, and higher-education admissions. Latest feed post: May 2022.'
+    profile_photo: https://www.olark.com/favicon-120.png
+  old_jewish_men:
+    feed_url: https://oldjewishmen.substack.com/feed
+    homepage_url: https://oldjewishmen.substack.com
+    display_name: OLD JEWISH MEN
+    summary: Old Jewish Men stories, interviews, humor, food, community memories, and reflections on everyday Jewish life.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!MdfU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5cd821f3-4ed8-4504-ae58-599b269593f7%2Fapple-touch-icon-57x57.png
+  old_school_frp:
+    feed_url: https://oldschoolfrp.tumblr.com/rss
+    homepage_url: https://oldschoolfrp.tumblr.com
+    display_name: Old School FRP
+    summary: Vintage fantasy role-playing game illustrations, dungeon art, monsters, maps, miniatures, and tabletop gaming history.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Foldschoolfrp.tumblr.com&size=128
+  olivier_lacan:
+    feed_url: https://feed.olivierlacan.com/
+    homepage_url: https://olivierlacan.com
+    display_name: Olivier Lacan
+    summary: Olivier Lacan's essays on programming, Ruby, open-source software, developer tools, photography, and personal life.
+    profile_photo: https://olivierlacan.com/assets/icon-300x300.png
+  oliver_smith_ollieparanoid:
+    feed_url: https://ollieparanoid.github.io/feed.xml
+    homepage_url: https://ollieparanoid.github.io
+    display_name: Oliver Smith (ollieparanoid)
+    summary: Oliver Smith's archived posts on postmarketOS, smartphone longevity, Linux, and security. Posts span 2017-2019; the feed is not chronologically ordered.
+    profile_photo: https://github.com/ollieparanoid.png?size=200
+  ictworks:
+    feed_url: https://www.ictworks.org/feed/
+    homepage_url: https://www.ictworks.org
+    display_name: ICTworks
+    summary: ICTworks reporting and analysis on digital development, technology policy, AI, education, and funding opportunities. OLPC News now redirects here; this is not an OLPC-specific archive feed.
+  omar_rizwan:
+    feed_url: https://omar.website/posts/index.xml
+    homepage_url: https://omar.website/
+    display_name: Omar Rizwan
+    summary: 'Omar Rizwan''s archived essays and experiments on computing history, programming environments, interfaces, and Dynamicland. Latest feed post: October 2021.'
+    profile_photo: https://omar.website/favicon-96x96.png
+  the_dot_dot_dot:
+    feed_url: https://omc345.substack.com/feed
+    homepage_url: https://omc345.substack.com
+    display_name: the dot dot dot
+    summary: 'OMC''s essays on technology, business, AI, interface design, power, and digital dark patterns. Latest feed post: August 2025; casino comparisons are technology criticism, not gambling promotion.'
+    profile_photo: https://substackcdn.com/image/fetch/$s_!fhC2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F279d05cd-4044-49cf-926d-de3f05e11769%2Fapple-touch-icon-57x57.png
+  campfire_changelog:
+    feed_url: https://once.com/campfire/changelog.atom
+    homepage_url: https://once.com/campfire/changelog
+    display_name: Campfire Changelog
+    summary: Official release notes, fixes, and feature changes for ONCE Campfire, the self-hosted group chat application.
+    profile_photo: https://once.com/assets/images/apple-touch-icon.png
+  thomas_parisot:
+    feed_url: https://thom4.net/feed/
+    homepage_url: https://thom4.net
+    display_name: Thomas Parisot
+    summary: Thomas Parisot's French- and English-language personal writing on software, self-hosting, travel, walking, sustainability, and everyday life; formerly oncletom.io.
+    profile_photo: https://thom4.net/assets/apple-touch-icon.png
+  one_good_thing_by_jillee:
+    feed_url: https://www.onegoodthingbyjillee.com/feed/
+    homepage_url: https://www.onegoodthingbyjillee.com
+    display_name: One Good Thing by Jillee
+    summary: Jillee's practical household tips for cleaning, organizing, laundry, cooking, DIY projects, and everyday problem-solving.
+    profile_photo: https://assets.onegoodthingbyjillee.com/wp-content/uploads/20200128221811/favicon-1.png
+  diego_ongaro:
+    feed_url: https://ongardie.net/blog/rss.xml
+    homepage_url: https://ongardie.net/blog/
+    display_name: Diego Ongaro
+    summary: Diego Ongaro's programming and computing notes on databases, Git, Linux, virtual machines, shells, and software tools.
+    profile_photo: https://ongardie.net/var/favicon.png
   occasionally_cogent:
     feed_url: https://occasionallycogent.com/feed.xml
     homepage_url: https://occasionallycogent.com/
