@@ -801,6 +801,256 @@ bots:
     display_name: Josh Comeau
     summary: Frontend development, CSS, JavaScript, animation, and interactive web design.
     profile_photo: https://www.joshwcomeau.com/favicon.png
+  exple_tive:
+    feed_url: https://exple.tive.org/blarg/feed/
+    homepage_url: https://exple.tive.org/blarg
+    display_name: blarg
+    summary: a message, and part of a system of messages
+  explique_me:
+    feed_url: http://explique.me/feed.xml
+    homepage_url: http://explique.me
+    display_name: Explique-me
+    summary: a blog about my programming journey
+  exploringbinary:
+    feed_url: http://feeds.exploringbinary.com/exploringbinary
+    homepage_url: https://www.exploringbinary.com
+    display_name: Exploring Binary
+    summary: Binary Numbers, Binary Code, and Binary Logic
+  exponents_co:
+    feed_url: https://exponents.co/feed/
+    homepage_url: https://exponents.co
+    display_name: Exponents
+    summary: Helping world-changing entrepreneurs tell their stories
+  exposinggotchas_blogspot:
+    feed_url: https://exposinggotchas.blogspot.com/feeds/posts/default
+    homepage_url: https://exposinggotchas.blogspot.com
+    display_name: Exposing Gotchas
+    summary: Updates from Exposing Gotchas.
+  extracurricularpress:
+    feed_url: https://extracurricularpress.com/blogs/news.atom
+    homepage_url: https://extracurricularpress.com/blogs/news
+    display_name: ExtraCurricular Press - News
+    summary: Updates from ExtraCurricular Press - News.
+  extratv:
+    feed_url: https://feeds.extratv.com/rss/
+    homepage_url: https://extratv.com
+    display_name: Full Feed | extratv.com
+    summary: Extra has the hottest celebrity and entertainment news, photos, gossip, scandals, videos, games, music, movies, television, star sightings and more!
+  f_droid:
+    feed_url: https://f-droid.org/feed.xml
+    homepage_url: https://f-droid.org
+    display_name: F-Droid - Free and Open Source Android App Repository
+    summary: Updates from F-Droid - Free and Open Source Android App Repository.
+  fabcapo:
+    feed_url: http://www.fabcapo.com/feeds/posts/default
+    homepage_url: http://www.fabcapo.com
+    display_name: TV is SOCIAL, again
+    summary: Updates from TV is SOCIAL, again.
+  fabien_potencier:
+    feed_url: https://fabien.potencier.org/index.xml
+    homepage_url: https://fabien.potencier.org
+    display_name: Fabien Potencier
+    summary: Recent content on Fabien Potencier
+  fabioandgabriel_blogspot:
+    feed_url: https://fabioandgabriel.blogspot.com/feeds/posts/default
+    homepage_url: https://fabioandgabriel.blogspot.com
+    display_name: Fábio Moon and Gabriel Bá's blog
+    summary: Updates from Fábio Moon and Gabriel Bá's blog.
+  facesofopensource:
+    feed_url: https://www.facesofopensource.com/blog/feed/
+    homepage_url: https://www.facesofopensource.com/blog
+    display_name: Blog - Faces of Open Source
+    summary: Updates from Blog - Faces of Open Source.
+  facilityexecutive:
+    feed_url: https://facilityexecutive.com/feed/
+    homepage_url: https://facilityexecutive.com
+    display_name: Facility Executive Magazine
+    summary: Facility Executive Magazine (formerly Today’s Facility Manager) is the trusted source for senior-level facility management professionals across all industries.
+  factcheck:
+    feed_url: https://www.factcheck.org/feed/
+    homepage_url: https://www.factcheck.org
+    display_name: FactCheck.org
+    summary: A Project of The Annenberg Public Policy Center
+  facts_usps:
+    feed_url: https://facts.usps.com/feed/
+    homepage_url: https://facts.usps.com
+    display_name: Postal Facts – U.S. Postal Service
+    summary: Updates from Postal Facts – U.S. Postal Service.
+  faircamp:
+    feed_url: https://faircamp.org/changes/feed.rss
+    homepage_url: https://faircamp.org
+    display_name: Faircamp
+    summary: Release notes generated with TSRJG (Beta)
+  fairytalesfor20somethings_tumblr:
+    feed_url: https://fairytalesfor20somethings.tumblr.com/rss
+    homepage_url: https://fairytalesfor20somethings.tumblr.com
+    display_name: fairy tales for twenty-somethings
+    summary: Book | Excerpt | Press | Tim Manley Tumblr | Popular posts
+  faitherinhicks_tumblr:
+    feed_url: https://faitherinhicks.tumblr.com/rss
+    homepage_url: https://faitherinhicks.tumblr.com
+    display_name: Everything is Comics
+    summary: tumblr for Faith Erin Hicks, a cartoonist. I write and draw comic books for a living. Check out the About Me page for more info. Art Tag Website How I Make The Comics Twitter Instagram
+  falkvinge:
+    feed_url: http://feeds.falkvinge.net/Falkvinge-on-Infopolicy
+    homepage_url: https://falkvinge.net
+    display_name: Falkvinge on Liberty
+    summary: Updates from Falkvinge on Liberty.
+  fallabs:
+    feed_url: https://fallabs.com/feed
+    homepage_url: https://fallabs.com
+    display_name: fallabs tech
+    summary: ITエンジニア＆エンジニア未経験者のためのキャリア戦略【市場価値向上と理想のライフスタイル実現を描く】
+  falseknees:
+    feed_url: https://www.falseknees.com/rss.xml
+    homepage_url: https://www.falseknees.com
+    display_name: False Knees Comics
+    summary: For a more direct line from my fingers to your face!
+  fangamer:
+    feed_url: https://www.fangamer.com/blogs/news.atom
+    homepage_url: https://www.fangamer.com/blogs/news
+    display_name: Fangamer - News
+    summary: Updates from Fangamer - News.
+  farm_bot:
+    feed_url: https://farm.bot/blogs/news.atom
+    homepage_url: https://farm.bot/blogs/news
+    display_name: FarmBot - Blog
+    summary: Updates from FarmBot - Blog.
+  fs_blog:
+    feed_url: https://fs.blog/feed/
+    homepage_url: https://fs.blog
+    display_name: Farnam Street
+    summary: Mastering the best of what other people have already figured out
+  fathom_info:
+    feed_url: https://www.fathom.info/notebook/feed.xml
+    homepage_url: https://fathom.info
+    display_name: Fathom Information Design | Notebook
+    summary: Updates from Fathom Information Design | Notebook.
+  faun_me:
+    feed_url: https://www.faun.me/feed.xml
+    homepage_url: https://www.faun.me
+    display_name: faun.me
+    summary: Updates from faun.me.
+  fbinfer:
+    feed_url: https://fbinfer.com/blog/rss.xml
+    homepage_url: https://fbinfer.com/blog
+    display_name: Infer Blog
+    summary: Infer Blog
+  nextgov:
+    feed_url: https://www.nextgov.com/rss/all/
+    homepage_url: https://www.nextgov.com
+    display_name: Nextgov/FCW - All Content
+    summary: Federal technology and cybersecurity news and best practices.
+  fediverse_party:
+    feed_url: https://fediverse.party/atom.xml
+    homepage_url: https://fediverse.party
+    display_name: Fediverse.Party - explore federated networks
+    summary: Updates from Fediverse.Party - explore federated networks.
+  fedscoop:
+    feed_url: https://fedscoop.com/feed/
+    homepage_url: https://fedscoop.com
+    display_name: FedScoop
+    summary: FedScoop delivers up-to-the-minute breaking government tech news and is the government IT community's platform for education and collaboration through news, events, radio and TV. FedScoop engages top leaders from the White House, federal agencies, academia and the tech industry both online and in person to discuss ways technology can improve government, and to exchange best practices and identify how to achieve common goals.
+  feefighters:
+    feed_url: https://feefighters.com/rss.xml
+    homepage_url: https://feefighters.com
+    display_name: FeeFighters
+    summary: Chargebacks, processing fees and the fine print - for merchants.
+  feld:
+    feed_url: https://feld.com/index.xml
+    homepage_url: https://feld.com
+    display_name: Feld Thoughts
+    summary: Recent content on Feld Thoughts
+  felixrieseberg:
+    feed_url: https://felixrieseberg.com/rss/
+    homepage_url: https://felixrieseberg.com
+    display_name: Felix Rieseberg
+    summary: I work on Claude at Anthropic. Electron co-maintainer. Maintainer of too many little open source projects.
+  ryansinger_co:
+    feed_url: https://www.ryansinger.co/rss/
+    homepage_url: https://www.ryansinger.co
+    display_name: Ryan Singer
+    summary: 'Author of Shape Up, Fractional CPO, 20+ Years in Design, Code, Management, prev: Head of Strategy at 37signals'
+  feltron_tumblr:
+    feed_url: https://feltron.tumblr.com/rss
+    homepage_url: https://feltron.tumblr.com
+    display_name: feltron
+    summary: Updates from feltron.
+  femfreq_tumblr:
+    feed_url: https://femfreq.tumblr.com/rss
+    homepage_url: https://femfreq.tumblr.com
+    display_name: Feminist Frequency
+    summary: Follow our latest initiative - The Games and Online Harassment Hotline - a text-based, confidential, emotional support line for people who make and play games. Text SUPPORT to 23368. https://gameshotline.org
+  femtechdesigndesk_substack:
+    feed_url: https://femtechdesigndesk.substack.com/feed
+    homepage_url: https://femtechdesigndesk.substack.com
+    display_name: The Femtech Design Desk
+    summary: A newsletter about all things femtech.
+  fiandes:
+    feed_url: https://fiandes.io/feed.xml
+    homepage_url: http://fiandes.io
+    display_name: '> fiandes.io'
+    summary: Updates from > fiandes.io.
+  fightingforalostcause:
+    feed_url: https://fightingforalostcause.net/feed
+    homepage_url: https://fightingforalostcause.net
+    display_name: Fighting for a Lost Cause.net
+    summary: Ian Dunn's personal blog
+  figsoku:
+    feed_url: https://figsoku.net/feed
+    homepage_url: https://figsoku.net
+    display_name: fig速
+    summary: フィギュアやガンプラほか新作ホビー情報ブログ、ワンフェスなどのイベント記事も掲載しています
+  filipnikolovski:
+    feed_url: https://filipnikolovski.com/index.xml
+    homepage_url: https://filipnikolovski.com
+    display_name: Filip Nikolovski
+    summary: Recent content on Filip Nikolovski
+  fillmem:
+    feed_url: https://fillmem.com/index.xml
+    homepage_url: https://fillmem.com
+    display_name: Fill the memory
+    summary: Recent content on Fill the memory
+  fillmurray:
+    feed_url: https://fillmurray.com/feed/
+    homepage_url: https://fillmurray.com
+    display_name: The Bundesliga Desk
+    summary: Measured coverage of Germany’s top flight and the stories around it
+  fin_ai:
+    feed_url: https://fin.ai/research/feed
+    homepage_url: https://fin.ai/research
+    display_name: /research
+    summary: Insights and blogs from the AI Group building Fin
+  finestructure_co:
+    feed_url: https://finestructure.co/blog?format=rss
+    homepage_url: https://finestructure.co
+    display_name: finestructure
+    summary: Updates from finestructure.
+  fingerguns:
+    feed_url: https://fingerguns.net/feed/
+    homepage_url: https://fingerguns.net
+    display_name: Finger Guns
+    summary: Video Game Reviews, Opinion and News
+  firebase_googleblog:
+    feed_url: http://feeds.feedburner.com/FirebaseBlog
+    homepage_url: http://firebase.googleblog.com
+    display_name: The Firebase Blog
+    summary: Updates from The Firebase Blog.
+  firehydrant:
+    feed_url: https://firehydrant.com/rss.xml
+    homepage_url: https://firehydrant.com
+    display_name: FireHydrant's RSS Feed X
+    summary: Incident Management for every developer
+  firerainbow_binaryage:
+    feed_url: https://feeds.feedburner.com/binaryage-blog
+    homepage_url: https://firerainbow.binaryage.com
+    display_name: The ideas from BinaryAge
+    summary: Updates from The ideas from BinaryAge.
+  firstimage12_blogspot:
+    feed_url: https://firstimage12.blogspot.com/feeds/posts/default
+    homepage_url: https://firstimage12.blogspot.com
+    display_name: First Image
+    summary: Updates from First Image.
   overreacted:
     feed_url: https://overreacted.io/rss.xml
     homepage_url: https://overreacted.io
