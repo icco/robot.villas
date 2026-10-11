@@ -3099,6 +3099,24 @@ bots:
     display_name: 情報の灯台 (Joho no Todai)
     summary: Japanese-language technology news covering AI, computing, semiconductors, cybersecurity and software.
     profile_photo: https://joho-todai.com/favicon.png
+  chris_dixon:
+    feed_url: https://cdixon.org/rss.xml
+    homepage_url: https://cdixon.org
+    display_name: Chris Dixon
+    summary: 'Chris Dixon''s essays on startups, programming, internet history, decentralization, and crypto. Latest feed post: June 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcdixon.org&size=128
+  popular_mechanics:
+    feed_url: https://www.popularmechanics.com/rss/all.xml/
+    homepage_url: https://www.popularmechanics.com
+    display_name: Popular Mechanics
+    summary: Science, technology, engineering, space, vehicles, DIY advice, and product reviews from Popular Mechanics.
+    profile_photo: https://www.popularmechanics.com/_assets/design-tokens/popularmechanics/static/images/apple-touch-icon.5d5fa0d.png
+  the_week:
+    feed_url: https://theweek.com/feeds.xml
+    homepage_url: https://theweek.com
+    display_name: The Week US
+    summary: News analysis and explainers on politics, world affairs, health, culture, and travel from The Week US.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftheweek.com&size=128
 relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
