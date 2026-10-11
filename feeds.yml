@@ -16647,6 +16647,271 @@ bots:
     display_name: Gothamist
     summary: News, politics, transit, food, and culture in New York City.
     profile_photo: https://gothamist.com/android-chrome-512x512.png
+  always_trying_things:
+    feed_url: https://liquidx.substack.com/feed
+    homepage_url: https://liquidx.substack.com
+    display_name: Always Trying Things
+    summary: 'Alastair Tse''s archived newsletter about personal projects, experiments, travel, and life. Latest feed post: May 2022.'
+    profile_photo: https://substackcdn.com/image/fetch/$s_!2fml!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2a5a104f-bba8-455e-a3ec-e84f7d57f456%2Fapple-touch-icon-57x57.png
+  lisa_charlotte_muth:
+    feed_url: https://lisacharlottemuth.com/feed.xml
+    homepage_url: https://lisacharlottemuth.com
+    display_name: Lisa Charlotte Muth
+    summary: Lisa Charlotte Muth's writing, projects, and talks on data visualization, charting, design, and publishing.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flisacharlottemuth.com&size=128
+  eric_normand:
+    feed_url: https://ericnormand.me/rss.xml
+    homepage_url: https://ericnormand.me
+    display_name: Eric Normand
+    summary: Eric Normand writes about functional programming and Clojure.
+    profile_photo: https://ericnormand.me/apple-touch-icon.png
+  litigation_and_trial:
+    feed_url: https://www.litigationandtrial.com/feed/
+    homepage_url: https://www.litigationandtrial.com
+    display_name: Litigation & Trial
+    summary: 'Max Kennerly''s archived legal analysis on civil litigation, injury and malpractice claims, courts, and plaintiffs'' rights. Latest feed post: May 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.litigationandtrial.com&size=128
+  little_gamers_comic:
+    feed_url: https://feeds.feedburner.com/LittleGamers-HotSwedishLove
+    homepage_url: https://www.little-gamers.com
+    display_name: Little Gamers Comic
+    summary: 'Little Gamers webcomics and creator notes about games, life, and the internet. Latest public feed posts: February 2025; the site directs new comics to Patreon.'
+    profile_photo: https://www.little-gamers.com/assets/img/ico/apple-touch-icon.png
+  little_big_details:
+    feed_url: https://littlebigdetails.com/rss
+    homepage_url: https://littlebigdetails.com
+    display_name: Little Big Details
+    summary: 'Archived examples of thoughtful user-interface details and interaction design. Latest feed post: October 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flittlebigdetails.com&size=128
+  little_plastic_things:
+    feed_url: https://littleplasticthings.tumblr.com/rss
+    homepage_url: https://littleplasticthings.tumblr.com
+    display_name: Little Plastic Things
+    summary: Curated music, experimental films, vintage cinema, and visual inspiration from Little Plastic Things.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flittleplasticthings.tumblr.com&size=128
+  littlethings:
+    feed_url: https://littlethings.com/feed
+    homepage_url: https://littlethings.com
+    display_name: LittleThings
+    summary: LittleThings articles on family, parenting, pets, lifestyle, celebrity news, and human-interest stories.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flittlethings.com&size=128
+  live_and_lets_fly:
+    feed_url: https://liveandletsfly.com/feed/
+    homepage_url: https://liveandletsfly.com
+    display_name: Live and Let's Fly
+    summary: Matthew Klint and contributors on airlines, hotels, loyalty programs, travel experiences, and aviation news.
+    profile_photo: https://liveandletsfly.com/wp-content/uploads/2019/09/cropped-Live-and-Lets-Fly-Favicon-32x32.jpg
+  live_for_films:
+    feed_url: https://www.liveforfilm.com/feed/
+    homepage_url: https://www.liveforfilm.com
+    display_name: Live for Films
+    summary: Movie and television news, trailers, reviews, interviews, home-video releases, and pop culture from Live for Films.
+    profile_photo: https://www.liveforfilm.com/wp-content/uploads/2016/03/cropped-LFF-fist-logo-180x180.png
+  live_laugh_blog:
+    feed_url: https://livelaugh.blog/rss.xml
+    homepage_url: https://livelaugh.blog
+    display_name: Live Laugh Blog
+    summary: Jenn Schiffer's personal lifestyle blog about cooking, home projects, reading, art, and weekly reflections.
+    profile_photo: https://livelaugh.blog/static/_images/favicon.jpg
+  livingintheshell:
+    feed_url: http://livingintheshell.com/feeds/all.atom.xml
+    homepage_url: http://livingintheshell.com
+    display_name: livingintheshell
+    summary: 'Archived programming notes in English and Portuguese on Django performance, profiling, Docker, and development environments. Latest feed post: December 2013.'
+  marcus_ljungblad:
+    feed_url: https://ljungblad.nu/rss
+    homepage_url: https://ljungblad.nu
+    display_name: Marcus Ljungblad
+    summary: 'Marcus Ljungblad''s archived writing on software, startups, community, diversity, and Hacker School. Latest feed post: June 2015.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fljungblad.nu&size=128
+  llbbl:
+    feed_url: https://www.llbbl.com/rss.xml
+    homepage_url: https://llbbl.com
+    display_name: LLBBL.com
+    summary: blog posts on building, shipping, and the craft of programming.
+  loadingreadyrun:
+    feed_url: https://feeds.feedburner.com/Loadingreadyrun
+    homepage_url: https://www.loadingreadyrun.com
+    display_name: LoadingReadyRun
+    summary: Comedy shorts, video-game news, Twitch highlights, and other videos from the LoadingReadyRun comedy troupe.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.loadingreadyrun.com&size=128
+  library_of_congress_timeless:
+    feed_url: https://blogs.loc.gov/loc/feed/
+    homepage_url: https://blogs.loc.gov/loc
+    display_name: Timeless - Library of Congress
+    summary: Stories about collections, history, literature, film, music, staff, and research from the Library of Congress Timeless blog.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.loc.gov&size=128
+  tom_lockwood:
+    feed_url: https://lockwood.dev/feed.xml
+    homepage_url: https://lockwood.dev
+    display_name: Tom Lockwood
+    summary: Tom Lockwood's writing on software development, AI coding tools, technology leadership, unions, and work.
+    profile_photo: https://lockwood.dev/favicon.png
+  the_perl_noc:
+    feed_url: https://log.perl.org/feeds/posts/default
+    homepage_url: https://log.perl.org
+    display_name: The Perl NOC
+    summary: Official perl.org infrastructure weblog covering CPAN services, email, hosting, migrations, and operational announcements.
+  rapid7_cybersecurity_blog:
+    feed_url: https://www.rapid7.com/rss.xml
+    homepage_url: https://www.rapid7.com/blog
+    display_name: Rapid7 Cybersecurity Blog
+    summary: Security research, vulnerability alerts, Metasploit updates, incident response, and industry commentary from Rapid7, which acquired Logentries.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.rapid7.com%2Fblog&size=128
+  logolounge:
+    feed_url: https://www.logolounge.com/feed
+    homepage_url: https://www.logolounge.com
+    display_name: LogoLounge
+    summary: Logo design news, branding projects, research, design trends, and community announcements from LogoLounge.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.logolounge.com&size=128
+  loldwell:
+    feed_url: http://loldwell.com/?feed=rss2
+    homepage_url: http://loldwell.com
+    display_name: LOLDWELL
+    summary: 'Caldwell Tanner''s archived humor webcomics and creator notes. Latest feed post: August 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Floldwell.com&size=128
+  lol_my_thesis:
+    feed_url: https://lolmythesis.com/rss
+    homepage_url: https://lolmythesis.com
+    display_name: lol my thesis
+    summary: 'Archived humorous one-sentence summaries of academic theses and research, submitted by readers. Latest feed post: February 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flolmythesis.com&size=128
+  lolthulhu:
+    feed_url: https://lolthulhu.com/feed/
+    homepage_url: https://lolthulhu.com
+    display_name: LOLTHULHU
+    summary: 'Archived Cthulhu and Lovecraft-themed image jokes in the style of lolcats. Latest feed post: May 2008.'
+  lolware:
+    feed_url: https://lolware.net/rss.xml
+    homepage_url: https://lolware.net
+    display_name: Lolware
+    summary: Security research, exploit writeups, programming, Windows administration, and technology commentary from Lolware. The feed also includes static site pages.
+    profile_photo: https://lolware.net/icons/icon-48x48.png?v=6736eb11ee8e665adbd9609c1c4bd2c2
+  loading_bar:
+    feed_url: https://loading.bar/feed/
+    homepage_url: https://loading.bar
+    display_name: Loading Bar
+    summary: 'Loading Bar news, gaming events, board-game guides, and games-inspired drinks. Latest feed post: November 2024.'
+    profile_photo: https://loading.bar/wp-content/uploads/2021/08/Loading_Micro_Logo_black-1-200x200.png
+  london_reconnections:
+    feed_url: https://feeds.feedburner.com/londonreconnections
+    homepage_url: https://londonreconnections.com
+    display_name: London Reconnections
+    summary: Transport news, analysis, history, curated reading, and community events from London Reconnections.
+    profile_photo: https://londonreconnections.com/favicon.png
+  lonelymachines:
+    feed_url: https://lonelymachines.org/feed/
+    homepage_url: https://lonelymachines.org
+    display_name: LonelyMachines
+    summary: Personal writing and recordings covering electronic music, synthesizers, computing, law, politics, and everyday life.
+    profile_photo: https://i0.wp.com/lonelymachines.org/wp-content/uploads/2015/12/journey_icon.png?fit=32%2C32&ssl=1
+  longest_voyage:
+    feed_url: https://longest.voyage/index.xml
+    homepage_url: https://longest.voyage
+    display_name: Longest Voyage
+    summary: Jamie Crisman's personal notes on books, cooking, painting, technology, and everyday life.
+    profile_photo: https://longest.voyage/apple-touch-icon.png
+  a_smart_bear:
+    feed_url: https://longform.asmartbear.com/index.xml
+    homepage_url: https://longform.asmartbear.com
+    display_name: A Smart Bear
+    summary: Jason Cohen's essays on startups, entrepreneurship, product strategy, marketing, pricing, and company building.
+    profile_photo: https://longform.asmartbear.com/images/bear-green-192-sq.png
+  longplayer:
+    feed_url: https://longplayer.org/feed/
+    homepage_url: https://longplayer.org
+    display_name: Longplayer
+    summary: News, events, performances, and listening-site updates for Longplayer, Jem Finer's thousand-year musical composition.
+    profile_photo: https://longplayer.org/wp-content/uploads/2014/06/cropped-live-bowl5icon-180x180.jpg
+  look_at_me_im_danny:
+    feed_url: https://lookatmeimdanny.tumblr.com/rss
+    homepage_url: https://lookatmeimdanny.tumblr.com
+    display_name: Look at me, I'm Danny.
+    summary: 'Archived personal essays and shared links on technology, economics, politics, and disinformation. Latest feed post: August 2018.'
+    profile_photo: https://api.tumblr.com/v2/blog/lookatmeimdanny.tumblr.com/avatar/128
+  loper_os:
+    feed_url: https://www.loper-os.org/?feed=rss2
+    homepage_url: https://www.loper-os.org/?p=8
+    display_name: Loper OS
+    summary: 'Stanislav Datskovskiy''s essays and projects on Lisp, personal computing, hardware, cryptography, finite-field arithmetic, and Bitcoin. Latest feed post: February 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.loper-os.org&size=128
+  lostgarden:
+    feed_url: https://lostgarden.com/feed/
+    homepage_url: https://lostgarden.com
+    display_name: Lostgarden
+    summary: 'Daniel Cook''s essays on game design, social systems, game art, and the business of design. Latest feed post: May 2025.'
+    profile_photo: https://i0.wp.com/lostgarden.com/wp-content/uploads/2024/02/cropped-icon.webp?fit=180%2C180&ssl=1
+  living_out_loud:
+    feed_url: https://louplummer.lol/feed/
+    homepage_url: https://louplummer.lol
+    display_name: Living Out Loud
+    summary: Lou Plummer's personal stories and reflections on everyday life, family, food, travel, and memories.
+  love2d_releases:
+    feed_url: https://love2d.org/releases.xml
+    homepage_url: https://love2d.org
+    display_name: LÖVE releases
+    summary: 'Official release announcements for the free, open-source LOVE 2D game framework. Latest feed release: version 11.5, December 2023.'
+    profile_photo: https://love2d.org/apple-touch-icon.png?v=XBJe4KgJAz
+  lucian_marin:
+    feed_url: https://feeds.feedburner.com/lucianmarin
+    homepage_url: https://lucianmarin.com
+    display_name: Lucian Marin
+    summary: Lucian Marin's curated links and notes on programming, design, AI tools, and technology.
+    profile_photo: https://lucianmarin.com/static/aqua.png
+  lucid_legal:
+    feed_url: https://lucid.co/legal-rss.xml
+    homepage_url: https://lucid.co/legal
+    display_name: Lucid Legal
+    summary: Official change notifications for Lucid Software's legal policies, security program, privacy terms, and data-processing documents. This is not the Lucidchart product blog.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flucid.co&size=128
+  lukas_atkinson:
+    feed_url: https://lukasatkinson.de/feed.atom.xml
+    homepage_url: https://lukasatkinson.de
+    display_name: Lukas Atkinson
+    summary: Lukas Atkinson's long-form posts on software development, programming languages, Python tooling, data protection, and AI-assisted coding.
+    profile_photo: https://github.com/latk.png?size=200
+  lukew:
+    feed_url: https://feeds.feedburner.com/FunctioningForm
+    homepage_url: https://www.lukew.com
+    display_name: LukeW
+    summary: Expert articles about user experience, mobile, Web applications, usability, interaction design and visual design.
+    profile_photo: https://static.lukew.com/apple-touch-icon.png
+  hardi_kovamees:
+    feed_url: https://luminarious.tumblr.com/rss
+    homepage_url: https://luminarious.tumblr.com
+    display_name: Hardi Kõvamees
+    summary: 'Hardi Kovamees''s archived game-design projects, tabletop games, print-and-play designs, and interface experiments. Latest feed post: November 2022.'
+    profile_photo: https://api.tumblr.com/v2/blog/luminarious.tumblr.com/avatar/128
+  luminous_landscape:
+    feed_url: https://luminous-landscape.com/feed/
+    homepage_url: https://luminous-landscape.com
+    display_name: Luminous Landscape
+    summary: Photography tutorials, printing guidance, camera and lens reviews, and photographic craft from Luminous Landscape.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fluminous-landscape.com&size=128
+  lunatask_releases:
+    feed_url: https://lunatask.app/releases/rss.xml
+    homepage_url: https://lunatask.app/releases
+    display_name: Lunatask Releases
+    summary: Official release notes for Lunatask, covering new features, improvements, and fixes for its encrypted task, habit, notes, and journaling app.
+    profile_photo: https://lunatask.app/img/favicon.png
+  lunchbag:
+    feed_url: https://lunchbag.ca/index.xml
+    homepage_url: https://lunchbag.ca
+    display_name: lunchbag
+    summary: Blog by Jen Yip, founder of Lunch Money
+    profile_photo: https://lunchbag.ca/images/apple-touch-icon.png
+  lunduke_journal:
+    feed_url: https://api.substack.com/feed/podcast/462466.rss
+    homepage_url: https://lunduke.com
+    display_name: The Lunduke Journal of Technology
+    summary: Bryan Lunduke's technology podcast covering Linux, open source, computing history, software projects, and opinion.
+    profile_photo: https://lunduke.com/lundukelogo.jpg
+  luta_security:
+    feed_url: https://www.lutasecurity.com/blog-feed.xml
+    homepage_url: https://www.lutasecurity.com/blog
+    display_name: Luta Security
+    summary: Security analysis and opinion from Luta Security on vulnerability disclosure, bug bounties, security maturity, AI security, and technology policy.
+    profile_photo: https://static.wixstatic.com/media/28eddb_73accb9efacf4a849408a9a04c9c8731%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/28eddb_73accb9efacf4a849408a9a04c9c8731%7Emv2.jpg
   the_city:
     feed_url: https://www.thecity.nyc/feed/
     homepage_url: https://www.thecity.nyc
