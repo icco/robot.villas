@@ -819,6 +819,256 @@ bots:
     display_name: The Synth and I
     summary: Synthesis, sound, electronic music, art, and creative inspiration.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://synthandi.blogspot.com&size=128
+  fitchandfitch:
+    feed_url: https://fitchandfitch.co.uk/feed/
+    homepage_url: https://fitchandfitch.co.uk
+    display_name: Fitch & Fitch | Mortgage Broker
+    summary: mortgage broker, canary wharf, independent mortgage broker, large loans, private banks, remortgage, buy to let, mortgages
+  fitzgen:
+    feed_url: https://fitzgen.com/feed.xml
+    homepage_url: https://fitzgen.com
+    display_name: Nick Fitzgerald
+    summary: Updates from Nick Fitzgerald.
+  fivebooks:
+    feed_url: https://fivebooks.com/feed/
+    homepage_url: https://fivebooks.com
+    display_name: Five Books
+    summary: The best books on everything
+  fixate_it:
+    feed_url: https://www.fixate.it/blog?format=rss
+    homepage_url: https://www.fixate.it/blog
+    display_name: Insights
+    summary: Updates from Insights.
+  flameeyes_blog:
+    feed_url: https://flameeyes.blog/feed/
+    homepage_url: https://flameeyes.blog
+    display_name: Flameeyes's Weblog
+    summary: This Time Self-Hosted
+  fleen:
+    feed_url: http://fleen.com/feed/
+    homepage_url: http://fleen.com
+    display_name: 'Fleen: The Awkward Christmas Dinner Of Our Obligation To Existence'
+    summary: The webcomics blog about webcomics
+  fleetio:
+    feed_url: https://www.fleetio.com/rss.xml
+    homepage_url: https://www.fleetio.com
+    display_name: Fleetio Blog
+    summary: Latest posts from the Fleetio blog
+  flexibits:
+    feed_url: https://flexibits.com/blog/feed/
+    homepage_url: https://flexibits.com/blog
+    display_name: Flexibits
+    summary: Blog
+  flightradar24:
+    feed_url: https://www.flightradar24.com/blog/feed/
+    homepage_url: https://www.flightradar24.com/blog
+    display_name: Flightradar24 Blog
+    summary: Aviation news and flight tracking data
+  flipdots:
+    feed_url: https://flipdots.com/en/feed/
+    homepage_url: https://flipdots.com
+    display_name: ALFAZETA
+    summary: Electromagnetic flip-dot displays and components
+  florian_kraemer:
+    feed_url: https://florian-kraemer.net/feed.xml
+    homepage_url: https://florian-kraemer.net
+    display_name: Florian Krämer
+    summary: Updates from Florian Krämer.
+  flourish:
+    feed_url: https://www.flourish.org/posts/feed.xml
+    homepage_url: https://www.flourish.org
+    display_name: Blog on Francis Irving
+    summary: Recent content in Blog on Francis Irving
+  fluentd:
+    feed_url: https://www.fluentd.org/blog/feed.rss
+    homepage_url: https://www.fluentd.org/blog
+    display_name: Fluentd Blog
+    summary: Get the Latest Updates on Fluentd and More
+  flyfishing:
+    feed_url: https://www.flyfishing.co.uk/forums/-/index.rss
+    homepage_url: https://www.flyfishing.co.uk
+    display_name: Fly Fishing Forum
+    summary: A forum community dedicated to fly fishing and sporting enthusiasts. Come join the discussion about safety, licenses, tips, tricks, rivers, reviews, accessories, classifieds, and more!
+  fogknife:
+    feed_url: https://fogknife.com/atom.xml
+    homepage_url: https://fogknife.com
+    display_name: Fogknife
+    summary: Updates from Fogknife.
+  fontprep:
+    feed_url: https://fontprep.com/feed/
+    homepage_url: https://fontprep.com
+    display_name: 新品複合機コピー機最新機能
+    summary: 新品複合機コピー機最新機能まとめサイト
+  fontsinuse:
+    feed_url: https://fontsinuse.com/main.rss
+    homepage_url: https://fontsinuse.com
+    display_name: Fonts In Use – Type at work in the real world
+    summary: Fonts In Use – Type at work in the real world
+  foodbeast:
+    feed_url: https://www.foodbeast.com/feed/
+    homepage_url: https://www.foodbeast.com
+    display_name: Foodbeast
+    summary: Updates from Foodbeast.
+  foodinjars:
+    feed_url: https://foodinjars.com/feed/
+    homepage_url: https://foodinjars.com
+    display_name: Food in Jars
+    summary: A blog about canning, pickling, and cooking from scratch.
+  footle:
+    feed_url: https://footle.org/atom.xml
+    homepage_url: https://footle.org
+    display_name: footle
+    summary: Updates from footle.
+  forgejo:
+    feed_url: https://forgejo.org/rss.xml
+    homepage_url: https://forgejo.org
+    display_name: Forgejo News
+    summary: Forgejo is a self-hosted lightweight software forge. Easy to install and low maintenance, it just does the job.
+  fortressofdoors:
+    feed_url: https://www.fortressofdoors.com/rss/
+    homepage_url: https://www.fortressofdoors.com
+    display_name: Fortress of Doors
+    summary: Lars Doucet's personal blog -- Game design and stuff.
+  fortydaysofdating:
+    feed_url: https://fortydaysofdating.com/feed/
+    homepage_url: https://fortydaysofdating.com
+    display_name: 40 Days of Dating
+    summary: Two good friends with opposite relationship problems found themselves single at the same time. As an experiment, they dated for 40 days.
+  forum_effectivealtruism:
+    feed_url: https://forum.effectivealtruism.org/feed.xml
+    homepage_url: https://forum.effectivealtruism.org
+    display_name: Effective Altruism Forum
+    summary: Effective altruism research, discussion and community updates
+  forum_merveilles_town:
+    feed_url: https://forum.merveilles.town/rss.xml
+    homepage_url: https://forum.merveilles.town
+    display_name: Merveilles Forum
+    summary: marvellous happenings and introspective wanderings
+  informatechtarget:
+    feed_url: https://www.informatechtarget.com/feed/
+    homepage_url: https://www.informatechtarget.com
+    display_name: Informa TechTarget
+    summary: Updates from Informa TechTarget.
+  forums_plex_tv:
+    feed_url: https://forums.plex.tv/posts.rss
+    homepage_url: https://forums.plex.tv
+    display_name: Plex Forum - Latest posts
+    summary: Latest posts
+  forums_xfinity:
+    feed_url: https://forums.xfinity.com/rss/
+    homepage_url: https://forums.xfinity.com
+    display_name: Xfinity Community Forum
+    summary: Need Help? Find Solutions, share knowledge and get answers from customers and experts.
+  forward:
+    feed_url: https://forward.com/feed/
+    homepage_url: https://forward.com
+    display_name: The Forward
+    summary: JEWISH. INDEPENDENT. NONPROFIT.
+  fosdem:
+    feed_url: https://fosdem.org/2027/rss.xml
+    homepage_url: https://fosdem.org
+    display_name: FOSDEM 2027
+    summary: FOSDEM 2027 News Feed
+  fossdroid:
+    feed_url: https://fossdroid.com/blog/feed
+    homepage_url: https://fossdroid.com/blog
+    display_name: Fossdroid Blog
+    summary: Free and open source Android apps on Fossdroid
+  fosslinux:
+    feed_url: https://www.fosslinux.com/feed
+    homepage_url: https://www.fosslinux.com
+    display_name: FOSS Linux
+    summary: Enhance your Linux experience.
+  fosterelli_co:
+    feed_url: https://fosterelli.co/feed.xml
+    homepage_url: https://fosterelli.co
+    display_name: Blog - Chris Foster
+    summary: Chris Foster's blog and profile -- this site is a collection of some experiments in machine learning, software development, and web application security.
+  foundersatwork:
+    feed_url: https://www.foundersatwork.com/blog/feed
+    homepage_url: http://www.foundersatwork.com/blog
+    display_name: Founders at Work - Blog
+    summary: Blog
+  foundersatwork_posthaven:
+    feed_url: https://foundersatwork.posthaven.com/posts.atom
+    homepage_url: https://foundersatwork.posthaven.com
+    display_name: Jessica Livingston
+    summary: Updates from Jessica Livingston.
+  fountain:
+    feed_url: https://fountain.io/feed/
+    homepage_url: https://fountain.io
+    display_name: Fountain
+    summary: Updates from Fountain.
+  fowllanguagecomics:
+    feed_url: https://www.fowllanguagecomics.com/feed/
+    homepage_url: https://www.fowllanguagecomics.com
+    display_name: Fowl Language Comics
+    summary: by Brian Gordon
+  fox13now:
+    feed_url: https://www.fox13now.com/index.rss
+    homepage_url: https://www.fox13now.com
+    display_name: Homepage
+    summary: Homepage
+  fox2now:
+    feed_url: https://fox2now.com/feed/
+    homepage_url: https://fox2now.com
+    display_name: FOX 2
+    summary: St. Louis news, weather, and sports.
+  foxnews:
+    feed_url: https://moxie.foxnews.com/google-publisher/latest.xml
+    homepage_url: https://www.foxnews.com
+    display_name: Latest & Breaking News on Fox News
+    summary: Discover the latest breaking news feed with Fox. Find out what the latest news is and read about the latest news happening today.
+  foxsports:
+    feed_url: https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30
+    homepage_url: https://www.foxsports.com
+    display_name: Latest Sports News & Videos from FOX Sports
+    summary: The latest sports videos, news, articles, and stories from FOX Sports.
+  frame_work:
+    feed_url: https://frame.work/blog.rss
+    homepage_url: https://frame.work
+    display_name: Framework Blog
+    summary: RSS feed for Framework Blog
+  framethink_wordpress:
+    feed_url: https://framethink.wordpress.com/feed/
+    homepage_url: https://framethink.wordpress.com
+    display_name: FrameThink
+    summary: Frameworks for Thinking People
+  framework_zend:
+    feed_url: https://framework.zend.com/security/feed
+    homepage_url: https://framework.zend.com/security
+    display_name: Zend Framework Security Advisories
+    summary: Reported and patched vulnerabilities in Zend Framework
+  frankejames:
+    feed_url: https://www.frankejames.com/feed/
+    homepage_url: https://www.frankejames.com
+    display_name: Franke James
+    summary: Art and Activism
+  fredart:
+    feed_url: https://www.fredart.com/rss/
+    homepage_url: https://www.fredart.com
+    display_name: Fred Gallagher on ArtStation
+    summary: Comic Artist
+  fredrin_tumblr:
+    feed_url: https://fredrin.tumblr.com/rss
+    homepage_url: https://fredrin.tumblr.com
+    display_name: fredrin.tumblr
+    summary: Screenshots of work in progress and other miscellaneous stuffz.
+  freebiesbug:
+    feed_url: https://freebiesbug.com/feed/
+    homepage_url: https://freebiesbug.com
+    display_name: Freebiesbug
+    summary: The Best Free Resources for Designers and Developers
+  freemovement_org_uk:
+    feed_url: https://freemovement.org.uk/feed/
+    homepage_url: https://freemovement.org.uk
+    display_name: Free Movement
+    summary: Updates, commentary, training and advice on immigration and asylum law
+  truenas:
+    feed_url: https://www.truenas.com/feed/podcast/truenas-welcome-to-the-open-storage-era/
+    homepage_url: https://www.truenas.com/blog/truenas-podcast/truenas-welcome-to-the-open-storage-era
+    display_name: TrueNAS Tech Talk (T3)
+    summary: TrueNAS Tech Talk - A weekly podcast short which covers TrueNAS Topics, Weekly Development Updates, Q&A and more!
   vintage_synth_explorer:
     feed_url: https://feeds.feedburner.com/vintagesynth
     homepage_url: https://www.vintagesynth.com
