@@ -1407,6 +1407,256 @@ bots:
     homepage_url: https://charlie-volow.com/blog/index.html
     display_name: Charlie Volow's blog
     summary: Developing the Jackdaw digital audio workstation.
+  the_gadgeteer:
+    feed_url: https://the-gadgeteer.com/feed/
+    homepage_url: https://the-gadgeteer.com
+    display_name: The Gadgeteer
+    summary: Gadget news and reviews since 1997!
+  the_independent:
+    feed_url: https://www.the-independent.com/rss
+    homepage_url: https://www.the-independent.com
+    display_name: The Independent
+    summary: Visit now for the latest news direct from The Independent and updated throughout the day
+  the_shooting_star:
+    feed_url: https://the-shooting-star.com/feed/
+    homepage_url: https://the-shooting-star.com
+    display_name: The Shooting Star
+    summary: Slow, soulful, sustainable travel
+  thetuskdotcom_wordpress:
+    feed_url: https://thetuskdotcom.wordpress.com/feed/
+    homepage_url: https://thetuskdotcom.wordpress.com
+    display_name: The Tusk
+    summary: Drunk on truth to stupid baby power.
+  the_yorkshireman:
+    feed_url: https://the-yorkshireman.com/feed/
+    homepage_url: https://the-yorkshireman.com
+    display_name: The Yorkshireman
+    summary: The Home Of All Things Yorkshire
+  theadvocate:
+    feed_url: https://www.theadvocate.com/search/?f=rss&t=article&c=baton_rouge/news&l=50&s=start_time&sd=desc
+    homepage_url: https://www.theadvocate.com/search/?f=rss&t=article&c=baton_rouge/news&l=50&s=start_time&sd=desc
+    display_name: www.theadvocate.com - RSS Results in baton_rouge/news of type article
+    summary: www.theadvocate.com - RSS Results in section(s) baton_rouge/news only for asset type(s) of article
+  theage_com_au:
+    feed_url: https://www.theage.com.au/rss/feed.xml
+    homepage_url: https://www.theage.com.au
+    display_name: The Age - Latest News
+    summary: The top News headlines from The Age. For all the news, visit https://www.theage.com.au/
+  12gramsofcarbon:
+    feed_url: https://12gramsofcarbon.com/feed
+    homepage_url: https://12gramsofcarbon.com
+    display_name: 12 Grams of Carbon
+    summary: I'm increasingly certain no one knows anything about anything. Current founder @ noriagentic.com. Previous founder @ soot.com. Before that was googling. Writes about programming, AI, startups, video games, and misc other things.
+  theartnewspaper:
+    feed_url: https://www.theartnewspaper.com/rss.xml
+    homepage_url: https://www.theartnewspaper.com
+    display_name: The Art Newspaper - International art news and events
+    summary: The Art Newspaper is the journal of record for the visual arts world, covering international news and events.
+  theartofanimation_tumblr:
+    feed_url: https://theartofanimation.tumblr.com/rss
+    homepage_url: https://theartofanimation.tumblr.com
+    display_name: the art of animation
+    summary: All works displayed on this site are the property of their respective authors. If you are the author of any work published here and you want it deleted, write to Theartofanimationtumblr@gmail.com
+  thebasispoint:
+    feed_url: https://thebasispoint.com/feed/
+    homepage_url: http://thebasispoint.com
+    display_name: The Basis Point
+    summary: Money, Banking, Housing, Fintech
+  maddox_xmission:
+    feed_url: http://feeds.feedburner.com/TheBestPageInTheUniverse
+    homepage_url: http://maddox.xmission.com
+    display_name: The Best Page in the Universe
+    summary: This page is about me and why everything I like is great. If you disagree with anything you find on this page, you are wrong.
+  thebiglead:
+    feed_url: https://www.thebiglead.com/feed/
+    homepage_url: https://www.thebiglead.com
+    display_name: The Big Lead
+    summary: Updates from The Big Lead.
+  theblaze:
+    feed_url: https://www.theblaze.com/feeds/feed.rss
+    homepage_url: https://www.theblaze.com
+    display_name: Blaze Media
+    summary: Blaze Media
+  thebluemoment:
+    feed_url: https://thebluemoment.com/feed/
+    homepage_url: https://thebluemoment.com
+    display_name: thebluemoment.com
+    summary: A blog about music by Richard Williams
+  thebookseller:
+    feed_url: https://www.thebookseller.com/Syndication/DF.cfm?f=7&ft=10
+    homepage_url: https://www.thebookseller.com/Syndication/DF.cfm?f=7&ft=10
+    display_name: BookDataOnlineNewsFeed
+    summary: News
+  theburningmonk:
+    feed_url: https://theburningmonk.com/feed/
+    homepage_url: https://theburningmonk.com
+    display_name: theburningmonk.com
+    summary: Learn to build production-ready serverless applications on AWS
+  thecodelesscode:
+    feed_url: https://thecodelesscode.com/rss
+    homepage_url: http://thecodelesscode.com
+    display_name: The Codeless Code
+    summary: Kōans for the Software Engineer -- An illustrated collection of (sometimes violent) fables, concerning the Art and Philosophy of software development.
+  thecultureist:
+    feed_url: https://www.thecultureist.com/feed/
+    homepage_url: https://www.thecultureist.com
+    display_name: The Culture-ist
+    summary: Travel. Do Good. Live Well.
+  thedefiant:
+    feed_url: https://thedefiant.io/api/feed
+    homepage_url: https://thedefiant.io
+    display_name: The Defiant
+    summary: Defi News. The Defiant curates, digests, and analyzes all the major developments in decentralized finance, so that you can stay informed and smart about the most cutting-edge and fastest-changing corner of crypto and finance.
+  thedevop:
+    feed_url: https://thedevop.com/rss.xml
+    homepage_url: https://thedevop.com
+    display_name: 球盟会体育
+    summary: 球盟会体育官方网站【KY1.AC】官网认证:手机版、app下载、登录入口、官方网站、网页版、平台、网址、地址、注册、娱乐，球盟会体育(中国)官方网站欢迎大家选择真正的官方通道，同时我们提供全天候7x24小时在线服务，第一时间处理各类问题，正规集团平台有保障，欢迎体验！
+  thedial_world:
+    feed_url: https://www.thedial.world/articles?format=rss
+    homepage_url: https://www.thedial.world/articles
+    display_name: The Dial - Articles
+    summary: Updates from The Dial - Articles.
+  thedieline:
+    feed_url: https://thedieline.com/feed/
+    homepage_url: https://thedieline.com
+    display_name: DIELINE
+    summary: The Leading Source for Packaging Innovation and Insight
+  thedoomthatcametopuppet_tumblr:
+    feed_url: https://thedoomthatcametopuppet.tumblr.com/rss
+    homepage_url: https://thedoomthatcametopuppet.tumblr.com
+    display_name: At the Modules of Madness
+    summary: Posts generated by a Markov chain trained on the Puppet documentation and the assorted works of H. P. Lovecraft. Created by @branan using barrucadu/markov. Inspired by King James Programming. Or check it out on Twitter
+  thedotisblack_tumblr:
+    feed_url: https://thedotisblack.com/rss
+    homepage_url: https://thedotisblack.tumblr.com
+    display_name: thedotisblack
+    summary: Platform for research design on (generative) drawings and videos made with code.
+  theflexblog:
+    feed_url: https://theflexblog.com/feed/
+    homepage_url: https://theflexblog.com
+    display_name: theflexblog.com
+    summary: Updates from theflexblog.com.
+  theflightdeal:
+    feed_url: https://www.theflightdeal.com/feed/
+    homepage_url: https://www.theflightdeal.com
+    display_name: The Flight Deal
+    summary: '"Just because it''s a great fare doesn''t mean it''s a great deal"'
+  thefreelancery:
+    feed_url: https://thefreelancery.com/feed/
+    homepage_url: https://thefreelancery.com
+    display_name: The Freelancery
+    summary: Thriving on your own
+  thefw:
+    feed_url: https://thefw.com/feed/
+    homepage_url: https://thefw.com
+    display_name: TheFW
+    summary: Funny Internet Videos - TheFW
+  thegeekiary:
+    feed_url: https://thegeekiary.com/feed
+    homepage_url: https://thegeekiary.com
+    display_name: The Geekiary
+    summary: Geek News, Reviews, and Op/Eds
+  thegoodtrade:
+    feed_url: https://www.thegoodtrade.com/feed/
+    homepage_url: https://www.thegoodtrade.com
+    display_name: The Good Trade
+    summary: Updates from The Good Trade.
+  thegreatdiscontent:
+    feed_url: https://thegreatdiscontent.com/feed/
+    homepage_url: https://thegreatdiscontent.com
+    display_name: The Great Discontent (TGD)
+    summary: Own your discontent. Interviews with artists, makers & risk-takers via print & online mag, live event series & podcast.
+  thehalfandhalf:
+    feed_url: https://www.thehalfandhalf.com/rss
+    homepage_url: https://www.thehalfandhalf.com
+    display_name: The Half and Half
+    summary: The Half and Half
+  thehardtimes:
+    feed_url: https://thehardtimes.net/feed/
+    homepage_url: https://thehardtimes.net
+    display_name: HARDTIMES
+    summary: Updates from HARDTIMES.
+  thehighline:
+    feed_url: https://www.thehighline.org/blog/feed/
+    homepage_url: https://www.thehighline.org/blog
+    display_name: Blog | The High Line
+    summary: Updates from Blog | The High Line.
+  thehugoawards:
+    feed_url: https://www.thehugoawards.org/feed/
+    homepage_url: https://www.thehugoawards.org
+    display_name: The Hugo Award
+    summary: The Official Site of The Hugo Award
+  theinertia:
+    feed_url: https://www.theinertia.com/feed/
+    homepage_url: https://www.theinertia.com
+    display_name: The Inertia
+    summary: The Voice of Surf and Outdoors
+  thelavinagency:
+    feed_url: https://thelavinagency.com/feed/
+    homepage_url: https://thelavinagency.com
+    display_name: The Lavin Agency
+    summary: People Who Changed The World
+  themorningnews:
+    feed_url: https://themorningnews.org/rss/
+    homepage_url: https://themorningnews.org
+    display_name: The Morning News
+    summary: Newsy, artsy, bloggy since 1999
+  themotorlesscity:
+    feed_url: https://www.themotorlesscity.com/feed/
+    homepage_url: https://www.themotorlesscity.com
+    display_name: The Motorless City
+    summary: Rantings and photos of Metro Detroit in a post-industrial era.
+  themusicninja:
+    feed_url: https://www.themusicninja.com/feed/
+    homepage_url: https://www.themusicninja.com
+    display_name: The Music Ninja
+    summary: Breaking Beats Since 2010
+  theneedledrop:
+    feed_url: https://theneedledrop.com/rss/
+    homepage_url: https://theneedledrop.com
+    display_name: The Needle Drop
+    summary: Home of the internet's busiest music nerd
+  thenerdary:
+    feed_url: https://www.thenerdary.net/rss
+    homepage_url: https://www.thenerdary.net
+    display_name: The Nerdary
+    summary: Updates from The Nerdary.
+  thenewpress:
+    feed_url: https://thenewpress.org/feed/
+    homepage_url: https://thenewpress.org
+    display_name: The New Press
+    summary: Books to Change Minds About Justice
+  theonering:
+    feed_url: https://www.theonering.net/torwp/feed/
+    homepage_url: https://www.theonering.net/torwp
+    display_name: Lord of the Rings & Tolkien News – TheOneRing.net Fan Community, since 1999
+    summary: Forged by and for fans of J.R.R. Tolkien
+  theorion:
+    feed_url: https://theorion.com/feed/
+    homepage_url: https://theorion.com
+    display_name: The Orion
+    summary: Chico State's independent student newspaper
+  thepass_co:
+    feed_url: https://www.thepass.co/feed/
+    homepage_url: https://www.thepass.co
+    display_name: The Pass
+    summary: Farm to Label Cannabis in Massachusetts
+  thepassportchronicles:
+    feed_url: https://thepassportchronicles.com/feed/
+    homepage_url: https://thepassportchronicles.com
+    display_name: The Passport Chronicles
+    summary: Updates from The Passport Chronicles.
+  theperfectpack:
+    feed_url: https://theperfectpack.com/feed/
+    homepage_url: https://theperfectpack.com
+    display_name: The Perfect Pack
+    summary: Updates from The Perfect Pack.
+  thephoblographer:
+    feed_url: https://www.thephoblographer.com/feed/
+    homepage_url: https://www.thephoblographer.com
+    display_name: The Phoblographer
+    summary: The Future of Human Photography
   jacob_vosmaer:
     feed_url: https://blog.jacobvosmaer.nl/atom.xml
     homepage_url: https://blog.jacobvosmaer.nl/
