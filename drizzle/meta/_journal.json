@@ -162,6 +162,13 @@
       "when": 1791750729100,
       "tag": "0022_delete_future_dated_posts",
       "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "7",
+      "when": 1791751439834,
+      "tag": "0023_reset_feed_validators",
+      "breakpoints": true
     }
   ]
 }
