@@ -327,6 +327,256 @@ bots:
     display_name: NYT > Opinion
     summary: Opinion and editorials from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  softwarekaizen_substack:
+    feed_url: https://softwarekaizen.substack.com/feed
+    homepage_url: https://softwarekaizen.substack.com
+    display_name: Software Kaizen
+    summary: A newsletter about finding software delivery excellence.
+  hellofromthemagictavern:
+    feed_url: https://hellofromthemagictavern.com/episodes?format=rss
+    homepage_url: https://hellofromthemagictavern.com/episodes
+    display_name: Episodes - Hello from the Magic Tavern
+    summary: Updates from Episodes - Hello from the Magic Tavern.
+  homedit:
+    feed_url: https://www.homedit.com/feed/
+    homepage_url: https://www.homedit.com
+    display_name: Homedit
+    summary: Updates from Homedit.
+  hookrace:
+    feed_url: https://hookrace.net/blog/feed/
+    homepage_url: https://hookrace.net
+    display_name: HookRace Blog
+    summary: Updates from HookRace Blog.
+  hothardware:
+    feed_url: https://hothardware.com/rss/news.aspx
+    homepage_url: https://hothardware.com
+    display_name: HotHardware.com News Rss Feed
+    summary: HotHardware.com News Rss Feed
+  hotnewhiphop:
+    feed_url: https://www.hotnewhiphop.com/feed
+    homepage_url: https://www.hotnewhiphop.com
+    display_name: HotNewHipHop
+    summary: The Latest Hip Hop News, Songs, Rap Albums & Music, Gossip & Entertainment News, Sneaker Releases, Sports News, TV & Movies, Interviews, Culture & more
+  htmlgoodies:
+    feed_url: https://www.htmlgoodies.com/feed/
+    homepage_url: https://www.htmlgoodies.com
+    display_name: HTML Goodies
+    summary: Updates from HTML Goodies.
+  hungryadmin:
+    feed_url: https://hungryadmin.com/feeds/all.atom.xml
+    homepage_url: https://hungryadmin.com
+    display_name: Hungry Admin
+    summary: Updates from Hungry Admin.
+  hvmag:
+    feed_url: https://hvmag.com/feed/
+    homepage_url: https://hvmag.com
+    display_name: Hudson Valley Magazine
+    summary: Dining, entertainment and more
+  hyperboleandahalf_blogspot:
+    feed_url: http://feeds.feedburner.com/Hyperbole-and-a-half
+    homepage_url: http://hyperboleandahalf.blogspot.com
+    display_name: Hyperbole and a Half
+    summary: Updates from Hyperbole and a Half.
+  ia:
+    feed_url: https://ia.net/feed
+    homepage_url: https://ia.net
+    display_name: iA
+    summary: iA builds products for focus and flow.
+  iamcal:
+    feed_url: https://www.iamcal.com/rss/
+    homepage_url: http://www.iamcal.com
+    display_name: iamcal.com
+    summary: All the links rom iamcal.com
+  ianstormtaylor:
+    feed_url: https://ianstormtaylor.com/atom.xml
+    homepage_url: https://ianstormtaylor.com
+    display_name: Ian Storm Taylor
+    summary: Updates from Ian Storm Taylor.
+  ietf:
+    feed_url: https://www.ietf.org/blog/feed/
+    homepage_url: https://www.ietf.org/blog
+    display_name: IETF Blog
+    summary: The latest items from the IETF Blog.
+  imore:
+    feed_url: https://www.imore.com/feeds.xml
+    homepage_url: https://www.imore.com
+    display_name: Latest from IMore
+    summary: All the latest content from the IMore team
+  impressivewebs:
+    feed_url: https://www.impressivewebs.com/feed/
+    homepage_url: https://www.impressivewebs.com
+    display_name: Impressive Webs
+    summary: Articles on Front-end Web Development
+  incidentalcomics:
+    feed_url: http://feeds.feedburner.com/blogspot/lTBMF
+    homepage_url: http://www.incidentalcomics.com
+    display_name: INCIDENTAL COMICS
+    summary: Updates from INCIDENTAL COMICS.
+  increment:
+    feed_url: https://increment.com/feed.xml
+    homepage_url: https://increment.com
+    display_name: Increment
+    summary: A digital magazine about how teams build and operate software systems at scale.
+  influxdata:
+    feed_url: https://www.influxdata.com/feed/
+    homepage_url: https://www.influxdata.com/blog
+    display_name: InfluxData Blog
+    summary: The place for technical guides, customer observability & IoT use cases, product info, and news on leading time series platform InfluxDB, Telegraf, SQL, & more.
+  insidehighered:
+    feed_url: https://www.insidehighered.com/rss.xml
+    homepage_url: https://www.insidehighered.com
+    display_name: Inside Higher Ed
+    summary: Updates from Inside Higher Ed.
+  intercom:
+    feed_url: https://www.intercom.com/blog/feed
+    homepage_url: https://www.intercom.com/blog
+    display_name: The Intercom Blog
+    summary: Articles and Podcasts on Customer Service, AI and Automation, Product, and more.
+  ubuntu:
+    feed_url: https://ubuntu.com/blog/feed
+    homepage_url: https://ubuntu.com/blog
+    display_name: Ubuntu blog
+    summary: Ubuntu blog feed
+  instagram_engineering_tumblr:
+    feed_url: https://instagram-engineering.tumblr.com/rss
+    homepage_url: https://instagram-engineering.tumblr.com
+    display_name: Instagram Engineering
+    summary: We’re sharing the tools + techniques we’ve learned in bringing photo-sharing to millions of people
+  interblah:
+    feed_url: http://feeds.feedburner.com/interblah
+    homepage_url: https://interblah.net
+    display_name: interblah.net
+    summary: Updates from interblah.net.
+  interestingengineering:
+    feed_url: https://interestingengineering.com/feed
+    homepage_url: https://interestingengineering.com
+    display_name: Interesting Engineering
+    summary: Updates from Interesting Engineering.
+  spiceworks:
+    feed_url: https://community.spiceworks.com/posts.rss
+    homepage_url: https://www.spiceworks.com
+    display_name: Spiceworks Community - Latest posts
+    summary: Latest posts
+  itch:
+    feed_url: https://itch.io/feed/featured.xml
+    homepage_url: http://itch.io
+    display_name: Featured games - itch.io
+    summary: Updates from Featured games - itch.io.
+  itechpost:
+    feed_url: https://www.itechpost.com/rss/archives/archives.xml
+    homepage_url: https://www.itechpost.com
+    display_name: 'iTechPost :: Latest News'
+    summary: 'Updates from iTechPost :: Latest News.'
+  jacobin:
+    feed_url: https://jacobin.com/feed
+    homepage_url: https://jacobin.com
+    display_name: Jacobin
+    summary: Updates from Jacobin.
+  jamesshore:
+    feed_url: https://www.jamesshore.com/v2/feed
+    homepage_url: https://www.jamesshore.com
+    display_name: James Shore
+    summary: The Art of Agile
+  jasonshen:
+    feed_url: https://www.jasonshen.com/rss/
+    homepage_url: https://www.jasonshen.com
+    display_name: Jason Shen
+    summary: I help deeply ambitious founders repair their partnership and win the inner game
+  jeffhuang:
+    feed_url: https://jeffhuang.com/feed.xml
+    homepage_url: https://jeffhuang.com
+    display_name: Jeff Huang's Articles
+    summary: Jeff Huang, Computer Science Professor at Brown University
+  jeffkreeftmeijer:
+    feed_url: https://jeffkreeftmeijer.com/feed.xml
+    homepage_url: https://jeffkreeftmeijer.com
+    display_name: Jeff Kreeftmeijer
+    summary: Updates from Jeff Kreeftmeijer.
+  jekyllrb:
+    feed_url: https://jekyllrb.com/feed.xml
+    homepage_url: https://jekyllrb.com
+    display_name: Jekyll • Simple, blog-aware, static sites
+    summary: Updates from Jekyll • Simple, blog-aware, static sites.
+  jimjordan_design:
+    feed_url: https://jimjordan.design/rss.xml
+    homepage_url: https://jimjordan.design
+    display_name: Jim Jordan
+    summary: Personal blog covering design, development, and media tracking.
+  jlord_computer:
+    feed_url: https://jlord.computer/feed.xml
+    homepage_url: https://jlord.computer
+    display_name: jlord's weblog
+    summary: What I write and put onto the internet.
+  joeduffyblog:
+    feed_url: https://joeduffyblog.com/feed.xml
+    homepage_url: http://joeduffyblog.com
+    display_name: Joe Duffy's Blog
+    summary: Adventures in the high-tech underbelly
+  joeydevilla:
+    feed_url: https://www.joeydevilla.com/feed/
+    homepage_url: https://www.joeydevilla.com
+    display_name: The Adventures of Accordion Guy in the 21st Century
+    summary: Joey deVilla's Personal Blog
+  jordanorelli:
+    feed_url: https://jordanorelli.com/rss
+    homepage_url: https://jordanorelli.com
+    display_name: jordan orelli
+    summary: engineer at singularity 6 working on palia, @jordanorelli on twitter.
+  journal_neilgaiman:
+    feed_url: https://journal.neilgaiman.com/feeds/posts/default
+    homepage_url: https://journal.neilgaiman.com
+    display_name: Neil Gaiman's Journal
+    summary: Updates from Neil Gaiman's Journal.
+  journal_stuffwithstuff:
+    feed_url: https://journal.stuffwithstuff.com/rss.xml
+    homepage_url: http://journal.stuffwithstuff.com
+    display_name: journal.stuffwithstuff.com
+    summary: Programming, languages, compilers, games, etc.
+  jpmens:
+    feed_url: https://jpmens.net/atom.xml
+    homepage_url: https://jpmens.net
+    display_name: Jan-Piet Mens
+    summary: Updates from Jan-Piet Mens.
+  jspowerhour:
+    feed_url: https://www.jspowerhour.com/comics.rss
+    homepage_url: https://www.jspowerhour.com
+    display_name: Junior Scientist Power Hour
+    summary: Wider and longer from now on.
+  judiciary_house_gov:
+    feed_url: https://judiciary.house.gov/rss.xml
+    homepage_url: http://judiciary.house.gov
+    display_name: House Judiciary Committee Republicans
+    summary: Updates from House Judiciary Committee Republicans.
+  julianoliver:
+    feed_url: https://julianoliver.com/index.xml
+    homepage_url: https://julianoliver.com
+    display_name: julian oliver
+    summary: Recent content on julian oliver
+  julieannhorvath:
+    feed_url: https://julieannhorvath.com/feed/
+    homepage_url: https://julieannhorvath.com
+    display_name: Julie Ann Horvath
+    summary: Academic Freelance Writer
+  justonecookbook:
+    feed_url: https://www.justonecookbook.com/feed/
+    homepage_url: https://www.justonecookbook.com
+    display_name: Just One Cookbook
+    summary: Japanese Food and Recipe Blog
+  kellysutton:
+    feed_url: https://kellysutton.com/feed.xml
+    homepage_url: https://kellysutton.com
+    display_name: Kelly Sutton
+    summary: Updates from Kelly Sutton.
+  kennethreitz:
+    feed_url: https://kennethreitz.org/feed.xml
+    homepage_url: https://kennethreitz.org
+    display_name: Kenneth Reitz
+    summary: Creator of Requests, Pipenv, and other tools. Writing about technology, consciousness, and human-centered design.
+  kernel:
+    feed_url: https://www.kernel.org/feeds/all.atom.xml
+    homepage_url: https://www.kernel.org
+    display_name: The Linux Kernel Archives
+    summary: Updates from The Linux Kernel Archives.
   nyt_food:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/DiningandWine.xml
     homepage_url: https://www.nytimes.com/section/food
