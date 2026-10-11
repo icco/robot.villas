@@ -579,6 +579,256 @@ bots:
     display_name: WSJ.com — Markets
     summary: Wall Street Journal markets and finance headlines.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wsj.com&size=128
+  blog_mikemccandless:
+    feed_url: https://blog.mikemccandless.com/feeds/posts/default
+    homepage_url: https://blog.mikemccandless.com
+    display_name: Changing Bits
+    summary: Updates from Changing Bits.
+  mythic_beasts:
+    feed_url: https://www.mythic-beasts.com/blog/feed/
+    homepage_url: https://www.mythic-beasts.com/blog
+    display_name: Mythic Beasts
+    summary: Updates from Mythic Beasts.
+  ncrp:
+    feed_url: https://ncrp.org/feed/
+    homepage_url: https://ncrp.org
+    display_name: NCRP
+    summary: Updates from NCRP.
+  netguru:
+    feed_url: https://www.netguru.com/blog/rss.xml
+    homepage_url: https://www.netguru.com/blog
+    display_name: netguru.com
+    summary: Stay ahead with Netguru Blog — tutorials, case studies, and strategies on Agile, product growth, startup innovation, and remote collaboration.
+  blog_netlab_360:
+    feed_url: https://blog.netlab.360.com/rss/
+    homepage_url: https://blog.netlab.360.com
+    display_name: 360 Netlab Blog - Network Security Research Lab at 360
+    summary: Network Security Research Lab at 360
+  newrelic:
+    feed_url: https://newrelic.com/rss.xml
+    homepage_url: https://newrelic.com/blog
+    display_name: Observatory | The New Relic Blog
+    summary: Observatory | The New Relic Blog RSS Feed
+  blog_nyaruka:
+    feed_url: https://blog.nyaruka.com/posts.atom
+    homepage_url: https://blog.nyaruka.com
+    display_name: The Nyaruka Blog
+    summary: Updates from The Nyaruka Blog.
+  blog_oddbit:
+    feed_url: https://blog.oddbit.com/rss.xml
+    homepage_url: https://blog.oddbit.com
+    display_name: blog.oddbit.com
+    summary: Recent content on blog.oddbit.com
+  blog_penelopetrunk:
+    feed_url: http://feeds.feedburner.com/BrazenCareerist
+    homepage_url: https://blog.penelopetrunk.com
+    display_name: Penelope Trunk Careers Blog
+    summary: Advice at the intersection of work and life
+  blog_phusion_nl:
+    feed_url: https://blog.phusion.nl/rss/
+    homepage_url: https://blog.phusion.nl
+    display_name: Phusion Blog
+    summary: Pushing the state of art in web apps, microservices and devops.
+  blog_poormansmath:
+    feed_url: https://blog.poormansmath.net/feed.xml
+    homepage_url: http://blog.poormansmath.net
+    display_name: The poor man's math blog
+    summary: By Stefano Maggiolo
+  portswigger:
+    feed_url: https://portswigger.net/research/rss
+    homepage_url: https://portswigger.net/research
+    display_name: PortSwigger Research
+    summary: Updates from PortSwigger Research.
+  blog_px_dev:
+    feed_url: https://blog.px.dev/rss.xml
+    homepage_url: https://blog.px.dev
+    display_name: Pixie Labs Blog RSS Feed
+    summary: Pixie Blog
+  blog_questionable_services:
+    feed_url: https://blog.questionable.services/atom.xml
+    homepage_url: https://blog.questionable.services
+    display_name: Questionable Services
+    summary: Updates from Questionable Services.
+  blog_r0b:
+    feed_url: https://blog.r0b.io/feed.xml
+    homepage_url: https://blog.r0b.io
+    display_name: r0b's random ramblings
+    summary: Updates from r0b's random ramblings.
+  blog_rafaelcorrales:
+    feed_url: http://blog.rafaelcorrales.com/feeds/posts/default
+    homepage_url: http://blog.rafaelcorrales.com
+    display_name: blog.rafaelcorrales.com
+    summary: Updates from blog.rafaelcorrales.com.
+  blog_reybango:
+    feed_url: https://blog.reybango.com/feed/
+    homepage_url: https://blog.reybango.com
+    display_name: Rey Bango
+    summary: Security and stuff...
+  blog_rongarret_info:
+    feed_url: https://blog.rongarret.info/feeds/posts/default
+    homepage_url: https://blog.rongarret.info
+    display_name: Rondam Ramblings
+    summary: Updates from Rondam Ramblings.
+  blog_rootshell_be:
+    feed_url: https://blog.rootshell.be/feed/
+    homepage_url: https://blog.rootshell.be
+    display_name: /dev/random
+    summary: '"If the enemy leaves a door open, you must rush in." - Sun Tzu'
+  blog_rubygems:
+    feed_url: https://blog.rubygems.org/atom.xml
+    homepage_url: https://blog.rubygems.org
+    display_name: RubyGems Blog
+    summary: Updates from RubyGems Blog.
+  runspired:
+    feed_url: https://runspired.com/feed.xml
+    homepage_url: https://runspired.com
+    display_name: runspired.com
+    summary: Updates from runspired.com.
+  blog_rust_lang:
+    feed_url: https://blog.rust-lang.org/feed.xml
+    homepage_url: https://blog.rust-lang.org
+    display_name: Rust Blog
+    summary: Updates from Rust Blog.
+  sandstorm:
+    feed_url: https://sandstorm.io/feed.xml
+    homepage_url: https://sandstorm.io
+    display_name: Sandstorm.io Blog
+    summary: Latest updates on Sandstorm.io
+  blog_scottlogic:
+    feed_url: https://blog.scottlogic.com/atom.xml
+    homepage_url: https://blog.scottlogic.com
+    display_name: Scott Logic
+    summary: Updates from Scott Logic.
+  onscouting:
+    feed_url: https://onscouting.org/feed/
+    homepage_url: https://onscouting.org
+    display_name: On Scouting
+    summary: For families and leaders living the Scout Life
+  blog_seanmartell:
+    feed_url: https://blog.seanmartell.com/feed/
+    homepage_url: https://blog.seanmartell.com
+    display_name: Reticulating Splines
+    summary: Updates from Reticulating Splines.
+  blog_securitymouse:
+    feed_url: http://blog.securitymouse.com/feeds/posts/default
+    homepage_url: http://blog.securitymouse.com
+    display_name: The Mouse Trap
+    summary: Updates from The Mouse Trap.
+  blog_sefsar:
+    feed_url: https://blog.sefsar.com/feed
+    homepage_url: http://blog.sefsar.com
+    display_name: sefsar
+    summary: Updates from sefsar.
+  blog_sendsonar:
+    feed_url: https://blog.sendsonar.com/feed/
+    homepage_url: https://blog.sendsonar.com
+    display_name: Sonar – Blog
+    summary: Updates from Sonar – Blog.
+  blog_senko:
+    feed_url: https://blog.senko.net/feed/
+    homepage_url: https://blog.senko.net
+    display_name: Senko Rašić
+    summary: Random thoughts | [about](https://senko.net)
+  blog_signalnoise:
+    feed_url: https://blog.signalnoise.com/rss/
+    homepage_url: https://blog.signalnoise.com
+    display_name: Signalnoise Blog | The Art of James White
+    summary: Signalnoise is the official blog of James White... designer, illustrator, and retro-futurist exploring bold neon art, creative process, 80s tech nostalgia, and behind-the-scenes design insights.
+  blog_simontaranto:
+    feed_url: http://blog.simontaranto.com/index.xml
+    homepage_url: http://blog.simontaranto.com
+    display_name: Simon Taranto
+    summary: Recent content on Simon Taranto
+  blog_spoongraphics:
+    feed_url: http://feeds2.feedburner.com/SpoonGraphics
+    homepage_url: https://blog.spoongraphics.co.uk
+    display_name: Spoon Graphics
+    summary: Design Tutorials and Free Resource Downloads
+  blog_sshh:
+    feed_url: https://blog.sshh.io/feed
+    homepage_url: https://blog.sshh.io
+    display_name: Shrivu’s Substack
+    summary: A personal blog on AI, software engineering, and cybersecurity.
+  blog_talosintelligence:
+    feed_url: https://blog.talosintelligence.com/rss/
+    homepage_url: https://blog.talosintelligence.com
+    display_name: Cisco Talos Blog
+    summary: Talos intelligence and world-class threat research team better protects you and your organization against known and emerging cybersecurity threats.
+  blog_tangled:
+    feed_url: https://blog.tangled.org/feed.xml
+    homepage_url: https://blog.tangled.org
+    display_name: The Tangled Blog
+    summary: Updates from The Tangled Blog.
+  blog_teamtreehouse:
+    feed_url: https://blog.teamtreehouse.com/feed
+    homepage_url: https://blog.teamtreehouse.com
+    display_name: Treehouse Blog
+    summary: Learn programming, design, and more—all online and on your own time.
+  blog_ted:
+    feed_url: https://blog.ted.com/feed/
+    homepage_url: https://blog.ted.com
+    display_name: TED Blog
+    summary: The TED Blog shares news about TED Talks and TED Conferences.
+  blog_thebakery:
+    feed_url: https://blog.thebakery.io/feed.xml
+    homepage_url: https://blog.thebakery.io
+    display_name: The Bakery
+    summary: Updates from The Bakery.
+  blog_thijsalkema_de:
+    feed_url: https://blog.thijsalkema.de/atom.xml
+    homepage_url: https://blog.thijsalkema.de
+    display_name: xnyhps’ blog
+    summary: Updates from xnyhps’ blog.
+  blog_thinkst:
+    feed_url: https://blog.thinkst.com/feed
+    homepage_url: https://blog.thinkst.com
+    display_name: Thinkst Thoughts
+    summary: Writing about our experiences and research findings
+  blog_tilt_dev:
+    feed_url: https://blog.tilt.dev/feed.xml
+    homepage_url: https://blog.tilt.dev
+    display_name: Tilt Blog
+    summary: Updates from Tilt Blog.
+  tigerdata:
+    feed_url: https://www.tigerdata.com/blog/rss
+    homepage_url: https://www.tigerdata.com/blog
+    display_name: Tiger Data Blog
+    summary: Insights, product updates, and tips from TigerData (Creators of TimescaleDB) engineers on Postgres, time series & AI. IoT, crypto, and analytics tutorials & use cases.
+  blog_tindie:
+    feed_url: https://blog.tindie.com/feed/
+    homepage_url: https://blog.tindie.com
+    display_name: Tindie Blog
+    summary: News, Updates, & Announcements
+  blog_tjcx_me:
+    feed_url: https://blog.tjcx.me/feed
+    homepage_url: https://blog.tjcx.me
+    display_name: TJCX
+    summary: Mostly an exploration of consumer health information. Sometimes just a journal with extra steps.
+  blog_tjll:
+    feed_url: https://blog.tjll.net/feed.xml
+    homepage_url: https://blog.tjll.net
+    display_name: Tyblog
+    summary: Technology, security, and general blogging
+  toggl:
+    feed_url: https://toggl.com/blog/feed
+    homepage_url: https://toggl.com/blog
+    display_name: Toggl Blog
+    summary: Everything works much better with Toggl
+  blog_trailofbits:
+    feed_url: https://blog.trailofbits.com/index.xml
+    homepage_url: https://blog.trailofbits.com
+    display_name: The Trail of Bits Blog
+    summary: Recent content on The Trail of Bits Blog
+  blog_travisthieman:
+    feed_url: https://blog.travisthieman.com/index.xml
+    homepage_url: https://blog.travisthieman.com
+    display_name: Travis Thieman on Travis Thieman
+    summary: Updates from Travis Thieman on Travis Thieman.
+  varonis:
+    feed_url: https://www.varonis.com/blog/rss.xml
+    homepage_url: https://www.varonis.com/blog
+    display_name: Varonis Blog
+    summary: Insights and analysis on cybersecurity from the leaders in data security.
   wsj_opinion:
     feed_url: https://feeds.content.dowjones.io/public/rss/RSSOpinion
     homepage_url: https://www.wsj.com
