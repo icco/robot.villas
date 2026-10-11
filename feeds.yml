@@ -2727,7 +2727,6 @@ bots:
     homepage_url: https://www.tumblr.com/3lix13
     display_name: Project 2501
     summary: Project 2501 (@3lix13) shares sketchbook drawings, comics, animation, and reblogged art on Tumblr.
-    profile_photo: https://64.media.tumblr.com/337edeb14ceb0ca95e18d3533e46bbda/5fdb3c073bd2dafa-77/s200x200u_c1/7f30a80c37d2254ec3c38a49aa858fc484aca3a6.jpg
   a_whole_lotta_nothing:
     feed_url: https://a.wholelottanothing.org/rss/
     homepage_url: https://a.wholelottanothing.org
@@ -2880,12 +2879,6 @@ bots:
     display_name: The Typekit Blog
     summary: 'Archived Typekit announcements, font releases, and web-typography articles. Latest feed post: October 2018, when Typekit became Adobe Fonts.'
     profile_photo: https://blog.typekit.com/wp-content/themes/typekit/img/152x152.png
-  uchujin_the_blog:
-    feed_url: https://blog.uchujin.co.uk/feed/
-    homepage_url: https://blog.uchujin.co.uk
-    display_name: Uchujin - Adrian Storey
-    summary: Adrian Storey's updates on documentary filmmaking, cinematography, photography, projects, screenings, and travels.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.uchujin.co.uk&size=128
   vrypan_blog:
     feed_url: https://blog.vrypan.net/rss.xml
     homepage_url: https://blog.vrypan.net
