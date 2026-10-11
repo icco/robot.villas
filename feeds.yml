@@ -3618,253 +3618,288 @@ bots:
   plumshell:
     feed_url: https://plumshell.com/feed/
     homepage_url: https://plumshell.com
-    display_name: plumshell
-    summary: I make simple apps.
+    display_name: plumshell - Non Umemoto
+    summary: 'Non Umemoto''s blog on independent app development, iOS tools, AI, work habits, and life in Japan. Latest feed post: August 2025.'
+    profile_photo: https://plumshell.com/wp-content/uploads/2015/06/umenonblog2.png
   popsugar:
     feed_url: https://www.popsugar.com/feed/
     homepage_url: https://www.popsugar.com
-    display_name: POPSUGAR
-    summary: POPSUGAR delivers the biggest moments, the hottest trends, and the best tips in entertainment, fashion, beauty, fitness, and food and the ability to shop for it all in one place.
-  pyfound_blogspot:
+    display_name: PS (POPSUGAR)
+    summary: PS, formerly POPSUGAR, covers health, fitness, beauty, lifestyle, identity, entertainment, travel, and shopping.
+    profile_photo: https://media1.popsugar-assets.com/v4901/static/imgs/feeds/logos/popsugar.png
+  psf_news:
     feed_url: https://pyfound.blogspot.com/feeds/posts/default
     homepage_url: https://pyfound.blogspot.com
     display_name: Python Software Foundation News
-    summary: Updates from Python Software Foundation News.
-  qntm:
+    summary: Official Python Software Foundation news on community events, governance, elections, grants, packaging, and Python development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpyfound.blogspot.com&size=128
+  things_of_interest:
     feed_url: https://qntm.org/rss.php
     homepage_url: https://qntm.org
-    display_name: Things Of Interest
-    summary: a website
-  radiotimes:
+    display_name: Things Of Interest - qntm
+    summary: qntm's personal site with science fiction, programming experiments, games, mathematics, and essays.
+    profile_photo: https://qntm.org/page/favicon.png
+  radio_times:
     feed_url: https://www.radiotimes.com/feed
     homepage_url: https://www.radiotimes.com
     display_name: Radio Times
-    summary: Updates from Radio Times.
+    summary: Radio Times covers UK television, streaming, radio, film, gaming, entertainment news, reviews, and sports viewing guides.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.radiotimes.com&size=128
   raptitude:
     feed_url: https://www.raptitude.com/feed/
     homepage_url: https://www.raptitude.com
-    display_name: Raptitude.com
-    summary: Getting better at being human
-  rdegges:
+    display_name: Raptitude - David Cain
+    summary: David Cain's essays and experiments on everyday life, attention, habits, mindfulness, and getting better at being human.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.raptitude.com&size=128
+  randall_degges:
     feed_url: https://rdegges.com/feed.xml
     homepage_url: https://rdegges.com
     display_name: Randall Degges
-    summary: Updates from Randall Degges.
-  reason:
+    summary: 'Randall Degges''s personal writing on programming, web security, APIs, entrepreneurship, finance, and everyday life. Latest feed post: August 2024.'
+    profile_photo: https://rdegges.com/static/images/favicons/apple-icon-180x180.png
+  reason_magazine:
     feed_url: https://reason.com/feed/
     homepage_url: https://reason.com
     display_name: Reason Magazine
-    summary: Free Minds and Free Markets
+    summary: Reason's libertarian reporting, commentary, and analysis on politics, civil liberties, law, markets, culture, and technology, including The Volokh Conspiracy.
+    profile_photo: https://reason.com/wp-content/uploads/2026/08/cropped-rinsquareRGB-180x180.png
   roblog:
     feed_url: https://roblog.co.uk/feed.xml
     homepage_url: https://roblog.co.uk
-    display_name: Roblog
-    summary: Rob Miller’s blog about creativity, sustainability, and uncertainty
-  rollership_tumblr:
+    display_name: Roblog - Rob Miller
+    summary: Rob Miller's essays and annotated links on uncertainty, creativity, sustainability, business, technology, and culture.
+  the_utopian_encyclopedia:
     feed_url: https://rollership.tumblr.com/rss
-    homepage_url: https://rollership.tumblr.com
+    homepage_url: https://www.tumblr.com/rollership
     display_name: The Utopian Encyclopedia
-    summary: Use the search function, (top left) it works! like a real encyclopedia.
-  seclists:
+    summary: The Utopian Encyclopedia, rollership's Tumblr collection of art, architecture, historical images, design, surreal collage, and political commentary.
+    profile_photo: https://64.media.tumblr.com/avatar_68231e01121d_512.pnj
+  nmap_development:
     feed_url: https://seclists.org/rss/nmap-dev.rss
-    homepage_url: https://seclists.org/#nmap-dev
+    homepage_url: https://seclists.org/nmap-dev/
     display_name: Nmap Development
-    summary: Unmoderated technical development forum for debating ideas, patches, and suggestions regarding proposed changes to Nmap and related projects. Subscribe to nmap-dev here.
-  seekingalpha:
-    feed_url: https://seekingalpha.com/feed.xml
-    homepage_url: https://seekingalpha.com
-    display_name: All Articles on Seeking Alpha
-    summary: © seekingalpha.com. Use of this feed is limited to personal, non-commercial use and is governed by Seeking Alpha's Terms of Use (https://about.seekingalpha.com/terms). Publishing this feed for public or commercial use and/or misrepresentation by a third party is prohibited.
-  seldo:
+    summary: The Nmap Development mailing-list archive on SecLists, with technical discussions, patches, bug reports, networking, and OS fingerprints for Nmap and related projects.
+    profile_photo: https://seclists.org/shared/images/tiny-eyeicon.png
+  laurie_voss:
     feed_url: https://seldo.com/rss.xml
     homepage_url: https://seldo.com
-    display_name: Seldo.com
-    summary: Personal website of Laurie Voss
-  sfexaminer:
+    display_name: Seldo.com - Laurie Voss
+    summary: Laurie Voss's writing on software development, open source, developer relations, AI, and technology's effects on people.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fseldo.com&size=128
+  san_francisco_examiner:
     feed_url: https://www.sfexaminer.com/search/?f=rss&t=article&c=news&l=50&s=start_time&sd=desc
-    homepage_url: https://www.sfexaminer.com/search/?f=rss&t=article&c=news&l=50&s=start_time&sd=desc
-    display_name: www.sfexaminer.com - RSS Results in news of type article
-    summary: www.sfexaminer.com - RSS Results in section(s) news only for asset type(s) of article
-  shapeshed:
+    homepage_url: https://www.sfexaminer.com/news/
+    display_name: San Francisco Examiner - News
+    summary: 'Selected San Francisco Examiner news reporting on San Francisco and the Bay Area, including government, housing, public health, and local communities. Latest feed post: September 2026.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.sfexaminer.com%2Fsearch%2F%3Ff%3Drss%26t%3Darticle%26c%3Dnews%26l%3D50%26s%3Dstart_time%26sd%3Ddesc&size=128
+  george_ornbo:
     feed_url: https://shapeshed.com/index.xml
     homepage_url: https://shapeshed.com
     display_name: George Ornbo
-    summary: Recent content on George Ornbo
-  slrlounge:
+    summary: 'George Ornbo''s archived programming and systems tutorials on Linux, Vim, shell tools, Go, Kubernetes, and security. Latest feed post: May 2023.'
+    profile_photo: https://shapeshed.com/apple-touch-icon.png
+  slr_lounge:
     feed_url: https://www.slrlounge.com/feed/
     homepage_url: https://www.slrlounge.com
     display_name: SLR Lounge
-    summary: Photography Tutorials and News
+    summary: SLR Lounge's photography tutorials, lighting and posing guides, editing advice, gear reviews, and photography business resources.
+    profile_photo: https://www.slrlounge.com/wp-content/uploads/2019/09/cropped-favicon-180x180.png
   snopes:
     feed_url: https://www.snopes.com/feed/
     homepage_url: https://www.snopes.com
-    display_name: Snopes.com
-    summary: 'Snopes.com: The definitive fact-checking site and reference source for urban legends, folklore, myths, rumors, and misinformation. > all_snopes'
-  somafm:
+    display_name: Snopes
+    summary: Snopes fact-checks urban legends, viral claims, rumors, political statements, entertainment stories, and online misinformation.
+    profile_photo: https://www.snopes.com/apple-touch-icon.png
+  somafm_news:
     feed_url: https://somafm.com/news/rss.xml
     homepage_url: https://somafm.com/news
     display_name: SomaFM News
-    summary: SomaFM News
-  spaceflightnow:
+    summary: News and operational updates from SomaFM, the listener-supported internet radio service, including station changes, fundraising, broadcasts, events, and listening issues.
+    profile_photo: https://somafm.com/apple-touch-icon.png
+  spaceflight_now:
     feed_url: https://spaceflightnow.com/feed/
     homepage_url: https://spaceflightnow.com
     display_name: Spaceflight Now
-    summary: The leading source for online space news
-  spoon_tamago:
-    feed_url: https://spoon-tamago.com/feed/
+    summary: Spaceflight Now reports on rocket launches, missions, spacecraft, the International Space Station, and the space industry, with launch previews and live coverage.
+    profile_photo: https://spaceflightnow.com/wp-content/uploads/2015/09/SFN-Logo-Blue1.png
+  spoon_and_tamago:
+    feed_url: https://www.spoon-tamago.com/feed
     homepage_url: https://spoon-tamago.com
     display_name: Spoon & Tamago
-    summary: japanese art, design and culture
-  staltz:
+    summary: Spoon & Tamago covers Japanese art, design, architecture, craft, exhibitions, and culture.
+    profile_photo: https://spoon-tamago.com/wp-content/themes/spoon-tamago/images/spoon-tamago-logo_new.gif
+  andre_staltz:
     feed_url: https://staltz.com/feed.xml
     homepage_url: https://staltz.com
     display_name: André Staltz
-    summary: Updates from André Staltz.
+    summary: Andre Staltz's essays on open source, decentralization, software development, AI-assisted programming, and the web.
+    profile_photo: https://github.com/staltz.png?size=200
   stepsecurity:
     feed_url: https://www.stepsecurity.io/blog/rss.xml
-    homepage_url: https://www.stepsecurity.io
-    display_name: Step Security Blog
-    summary: The latest from StepSecurity — practical guidance, product updates, and threat insights to help secure your CI/CD pipelines and stay ahead of supply chain attacks
-  stoneg_github:
+    homepage_url: https://www.stepsecurity.io/blog
+    display_name: StepSecurity Blog
+    summary: StepSecurity's software supply-chain security research, threat analysis, CI/CD guidance, and updates to its developer and GitHub Actions security products.
+    profile_photo: https://cdn.prod.website-files.com/673b71f0790aabf30bd30bc5/675212e5f56acdccbb27ef96_web-clip.png
+  sitong_peng_writing:
     feed_url: https://stoneg.github.io/feeds/all.atom.xml
     homepage_url: https://stoneg.github.io
-    display_name: Writing
-    summary: Updates from Writing.
-  swizec:
+    display_name: Writing - Sitong Peng (Archive)
+    summary: 'Sitong Peng''s archived personal blog on learning programming, Python, algorithms, machine learning, projects, and personal goals. Latest feed post: May 2018.'
+    profile_photo: https://github.com/stoneg.png?size=200
+  swizec_teller:
     feed_url: https://swizec.com/rss.xml
     homepage_url: https://swizec.com
     display_name: Swizec Teller
-    summary: A geek with a hat
-  taskandpurpose:
+    summary: Swizec Teller's software engineering lessons from production, covering architecture, scaling, React, AI-assisted development, careers, and building products.
+    profile_photo: https://swizec.com/assets/apple-touch-icon-CRweTA7p.png
+  task_and_purpose:
     feed_url: https://taskandpurpose.com/feed/
     homepage_url: https://taskandpurpose.com
     display_name: Task & Purpose
-    summary: Task & Purpose provides military news, culture, and analysis by and for the military and veterans community.
-  thecreativeindependent:
+    summary: Task & Purpose reports on military news, veterans, defense technology, tactics, history, and military culture.
+    profile_photo: https://taskandpurpose.com/wp-content/uploads/2020/11/cropped-Task-and-Purpose-Icon.png?quality=85&w=180
+  the_creative_independent:
     feed_url: https://thecreativeindependent.com/feed.xml
     homepage_url: https://thecreativeindependent.com
     display_name: The Creative Independent
-    summary: Updates from The Creative Independent.
-  thegeekstuff:
+    summary: Interviews and practical guidance for creative people from The Creative Independent, covering artistic process, music, writing, visual art, and sustaining creative work.
+    profile_photo: https://thecreativeindependent.com/images/apple-icon-precomposed.png
+  the_geek_stuff:
     feed_url: https://feeds.feedburner.com/TheGeekStuff
     homepage_url: https://www.thegeekstuff.com
     display_name: The Geek Stuff
-    summary: Guides, HowTos and Tips for Technology Geeks
-  thehustle_co:
+    summary: 'Ramesh Natarajan''s archived systems and programming tutorials on Linux, shell scripting, databases, networking, security, and AWS. Latest feed post: May 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.thegeekstuff.com&size=128
+  hustle_originals:
     feed_url: https://thehustle.co/originals/rss.xml
     homepage_url: https://thehustle.co/originals
     display_name: Hustle Originals
-    summary: The Hustle is a free 5-minute newsletter keeping innovators in the loop on the latest in business & tech. Read the original content from our Sunday edition.
-  thekitchn:
+    summary: The Hustle's Originals section features long-form reporting on business, technology, unusual industries, economics, and entrepreneurs.
+    profile_photo: https://thehustle.co/hubfs/The%20Hustle/Logos/Hustle_Favicon_White.png
+  kitchn:
     feed_url: https://www.thekitchn.com/main.rss
     homepage_url: https://www.thekitchn.com
-    display_name: Kitchn | Inspiring cooks, nourishing homes
-    summary: Inspiring cooks, nourishing homes
-  themarshallproject:
+    display_name: Kitchn
+    summary: Kitchn publishes recipes, home-cooking techniques, kitchen advice, grocery recommendations, cookware reviews, and food stories.
+    profile_photo: https://www.thekitchn.com/static/icons/apple-touch-icon.png
+  the_marshall_project:
     feed_url: https://www.themarshallproject.org/rss/recent
     homepage_url: https://www.themarshallproject.org
     display_name: The Marshall Project
-    summary: The Marshall Project is a nonprofit, nonpartisan news organization covering America's criminal justice system.
-  thesartorialist:
-    feed_url: https://www.thesartorialist.com/feed/
-    homepage_url: https://www.thesartorialist.com
-    display_name: The Sartorialist
-    summary: Updates from The Sartorialist.
-  thestar:
-    feed_url: https://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
-    homepage_url: https://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
-    display_name: 'www.thestar.com - RSS Results of type article with keyword(s) of #topstory'
-    summary: 'www.thestar.com - RSS Results only for asset type(s) of article with keyword(s) of #topstory'
-  thewitchofendor:
-    feed_url: https://thewitchofendor.com/feed/
-    homepage_url: https://thewitchofendor.com
-    display_name: The Witch of Endor
-    summary: System Poetics
-  tinysubversions:
-    feed_url: http://tinysubversions.com/feed.xml
-    homepage_url: http://tinysubversions.com
+    summary: The Marshall Project's nonprofit reporting and investigations into the U.S. criminal justice system, policing, prisons, courts, and immigration enforcement.
+    profile_photo: https://www.themarshallproject.org/assets/touch-icon-iphone-7f0ff19b76f6eb76c1b52df3891243175af744a1a7e0b750452b75fcb190f2c7.png
+  toronto_star:
+    feed_url: https://www.thestar.com/search/?f=rss&t=article&c=news&l=50&s=start_time&sd=desc
+    homepage_url: https://www.thestar.com/
+    display_name: Toronto Star - News
+    summary: Toronto Star news coverage of Toronto and the GTA, Ontario, Canada, and the world, including local government, public safety, politics, and investigations.
+    profile_photo: https://bloximages.chicago2.vip.townnews.com/thestar.com/content/tncms/live/libraries/flex/components/torstar_core/resources/images/favicons/thestar/apple-icon-180x180.png?_dc=1790789475
+  caer_jar:
+    feed_url: https://www.caerjar.com/feed/
+    homepage_url: https://www.caerjar.com/
+    display_name: Caer Jar - eon
+    summary: eon's Caer Jar, the announced successor to The Witch of Endor, with essays on philosophy, technology, art, poetry, herbalism, and consciousness.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!wgbk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe67db06e-1eb0-47a2-91b2-8b2d0853d4b7%2Fapple-touch-icon-57x57.png
+  tiny_subversions:
+    feed_url: https://tinysubversions.com/feed.xml
+    homepage_url: https://tinysubversions.com/
     display_name: Tiny Subversions
-    summary: This feed will keep you up to date on all of Darius Kazemi's projects, writings, press, and shows.
+    summary: Darius Kazemi's projects, writing, talks, and appearances on internet culture, creative technology, social networks, bots, and art.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Ftinysubversions.com&size=128
   tmz:
     feed_url: https://www.tmz.com/rss.xml
     homepage_url: https://www.tmz.com
-    display_name: TMZ.com
-    summary: Celebrity Gossip and Entertainment News, Covering Celebrity News and Hollywood Rumors. Get All The Latest Gossip at TMZ - Thirty Mile Zone.
-  tomtunguz:
+    display_name: TMZ
+    summary: TMZ's celebrity and entertainment news, reporting, interviews, photos, and videos.
+    profile_photo: https://static.tmz.com/tmz-web/icons/apple-touch-icon-180x180-precomposed-v1.png
+  tomasz_tunguz:
     feed_url: https://tomtunguz.com/index.xml
     homepage_url: https://tomtunguz.com
     display_name: Tomasz Tunguz
-    summary: Recent content on Tomasz Tunguz
-  tonsky_me:
+    summary: Tomasz Tunguz's writing on startups, venture capital, SaaS, AI, data, business strategy, and company growth.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftomtunguz.com&size=128
+  nikita_prokopov:
     feed_url: https://tonsky.me/atom.xml
     homepage_url: https://tonsky.me
-    display_name: tonsky.me
-    summary: Updates from tonsky.me.
-  reactormag:
+    display_name: tonsky.me - Nikita Prokopov
+    summary: Nikita Prokopov's blog on software quality, programming, user interfaces, performance, typography, design, and developer tools.
+    profile_photo: https://tonsky.me/i/favicon.png?t=1789292010
+  reactor:
     feed_url: https://reactormag.com/feed/
-    homepage_url: https://reactormag.com
+    homepage_url: https://reactormag.com/
     display_name: Reactor
-    summary: Science fiction. Fantasy. The universe. And related subjects.
-  tumblr:
+    summary: Reactor, formerly Tor.com, covers science fiction and fantasy books, stories, films, television, authors, criticism, and fandom.
+  dm_paul_weber:
     feed_url: https://dm-paul-weber.tumblr.com/rss
-    homepage_url: https://www.tumblr.com
+    homepage_url: https://www.tumblr.com/dm-paul-weber
     display_name: DM Paul Weber
-    summary: 'Facebook Group: Facebook.com/groups/dmweber'
+    summary: 'DM Paul Weber''s Tumblr archive of Dungeons & Dragons battle maps, adventures, supplements, and game-running resources. Latest feed post: October 2023.'
+    profile_photo: https://64.media.tumblr.com/avatar_d274c0f3b79a_128.pnj
   twistedsifter:
     feed_url: https://twistedsifter.com/feed/
     homepage_url: https://twistedsifter.com
     display_name: TwistedSifter
-    summary: The best of the internet, sifted, and sorted.
+    summary: TwistedSifter curates and retells internet stories about workplace, family, neighbors, and everyday drama, alongside art, science, and unusual discoveries.
+    profile_photo: https://twistedsifter.com/wp-content/uploads/2026/05/cropped-web-app-manifest-512x512-1.png?w=180
   akka:
     feed_url: https://akka.io/blog/rss.xml
     homepage_url: https://akka.io/blog
-    display_name: AKKA Blogs
-    summary: Updates from AKKA Blogs.
-  unschooled:
+    display_name: Akka Blog
+    summary: Akka's official company blog on agentic AI, distributed applications, platform engineering, governance, product releases, and customer stories.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fakka.io%2Fblog&size=128
+  nicholas_bergson_shilcock:
     feed_url: https://unschooled.org/atom.xml
     homepage_url: https://unschooled.org
-    display_name: Unschooled - Nicholas Bergson-Shilcock
-    summary: Updates from Unschooled - Nicholas Bergson-Shilcock.
-  untappedcities:
+    display_name: Unschooled - Nicholas Bergson-Shilcock (Archive)
+    summary: 'Nicholas Bergson-Shilcock''s archived essays on programming, startups, learning, unschooling, culture, and personal life. Latest feed post: March 2012.'
+  untapped_new_york_videos:
     feed_url: https://www.untappedcities.com/video/rss/
-    homepage_url: https://www.untappedcities.com
-    display_name: Untapped New York
-    summary: Discover NYC's secrets and hidden gems online or in-person!
-  untested_sonnet:
+    homepage_url: https://www.untappedcities.com/video/
+    display_name: Untapped New York - Videos
+    summary: Untapped New York's video posts, virtual book talks, photography presentations, and explorations of New York City history, architecture, and hidden places.
+    profile_photo: https://storage.ghost.io/c/3e/3b/3e3b259f-e5a2-4287-97e8-4888d22daaef/content/images/size/w256h256/format/jpeg/2024/03/Untapped-U-Hi-Res.jpg
+  untested_rafa_pastuszak:
     feed_url: https://untested.sonnet.io/feed.xml
     homepage_url: https://untested.sonnet.io
     display_name: Untested · Rafał Pastuszak
-    summary: Updates from Untested · Rafał Pastuszak.
-  uptownalmanac:
+    summary: 'Rafal Pastuszak''s Untested digital garden of creative projects, experiments, design, writing tools, programming notes, and personal reflections. Latest feed post: September 2025.'
+    profile_photo: https://untested.sonnet.io/assets/favicons/icon-180.png
+  uptown_almanac:
     feed_url: https://uptownalmanac.com/feed
-    homepage_url: https://uptownalmanac.com/blog_old
-    display_name: Uptown Almanac
-    summary: Feed of all the lame entries for Uptown Almanac
-  cisa_gov:
+    homepage_url: https://uptownalmanac.com/
+    display_name: Uptown Almanac (Archive)
+    summary: 'Uptown Almanac''s archived reporting and irreverent commentary on San Francisco''s Mission District, bars, restaurants, parks, arts, and neighborhood politics. Latest feed post: May 2020.'
+    profile_photo: https://uptownalmanac.com/sites/all/themes/almanac-zen/images/icons/apple-touch-icon-152x152.png
+  cisa:
     feed_url: https://www.cisa.gov/rss.xml
     homepage_url: https://www.cisa.gov
-    display_name: Cybersecurity and Infrastructure Security Agency CISA
-    summary: Updates from Cybersecurity and Infrastructure Security Agency CISA.
-  varnull_adityamukerjee:
+    display_name: CISA
+    summary: Official Cybersecurity and Infrastructure Security Agency alerts, industrial-control-system advisories, threat guidance, news, and cybersecurity events.
+    profile_photo: https://www.cisa.gov/profiles/cisad8_gov/themes/custom/gesso/favicon.png
+  aditya_mukerjee:
     feed_url: https://varnull.adityamukerjee.net/feed/
     homepage_url: https://varnull.adityamukerjee.net
-    display_name: /var/blog
-    summary: blogging data from aditya mukerjee
-  washingtoncitypaper:
+    display_name: /var/blog - Aditya Mukerjee (Archive)
+    summary: 'Aditya Mukerjee''s archived writing on distributed systems, observability, Kubernetes, remote work, Unicode, security, and social issues. Latest feed post: April 2018.'
+    profile_photo: https://varnull.adityamukerjee.net/wp-content/uploads/2017/09/cropped-favicon_round-300x300.png
+  washington_city_paper:
     feed_url: https://washingtoncitypaper.com/feed/?partner-feed=public
     homepage_url: https://washingtoncitypaper.com
     display_name: Washington City Paper
-    summary: Updates from Washington City Paper.
-  webdesignerdepot:
+    summary: Washington City Paper reports on Washington, D.C. news, politics, housing, food, arts, culture, and local events.
+    profile_photo: https://i0.wp.com/newspack-washingtoncitypaper.s3.amazonaws.com/uploads/2020/08/cropped-CP.png?fit=180%2C180&ssl=1
+  web_designer_depot:
     feed_url: https://webdesignerdepot.com/feed/
     homepage_url: https://webdesignerdepot.com
     display_name: Web Designer Depot
-    summary: Web Design Blog
-  whatever_scalzi:
+    summary: Web Designer Depot publishes web-design and development articles on UX, visual design, AI tools, freelancing, technology, and creative resources.
+    profile_photo: https://webdesignerdepot.com/wp-content/themes/webdesigndepot/img/wdd_logo.png
+  john_scalzi_whatever:
     feed_url: https://whatever.scalzi.com/feed/
     homepage_url: https://whatever.scalzi.com
-    display_name: Whatever
-    summary: DIGITAL CONTENT FROM ANALOG PEOPLE
+    display_name: Whatever - John Scalzi
+    summary: John Scalzi's Whatever blog on writing, books, science fiction, politics, travel, and everyday life, with posts by Athena Scalzi and guest authors.
+    profile_photo: https://i0.wp.com/whatever.scalzi.com/wp-content/uploads/2020/12/cropped-whateverfavicon.jpg?fit=180%2C180&ssl=1
   matrixsynth:
     feed_url: https://www.matrixsynth.com/feeds/posts/default?alt=rss
     homepage_url: https://www.matrixsynth.com
