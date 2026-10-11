@@ -12848,6 +12848,289 @@ bots:
     display_name: The Synth and I
     summary: Synthesis, sound, electronic music, art, and creative inspiration.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://synthandi.blogspot.com&size=128
+  fitch_and_fitch:
+    feed_url: https://fitchandfitch.co.uk/feed/
+    homepage_url: https://fitchandfitch.co.uk
+    display_name: Fitch & Fitch
+    summary: Mortgage advice, property buying guides, and lending-market updates from independent UK mortgage broker Fitch & Fitch.
+    profile_photo: https://fitchandfitch.co.uk/wp-content/uploads/2023/08/fitchfitch-300x300.png
+  nick_fitzgerald:
+    feed_url: https://fitzgen.com/feed.xml
+    homepage_url: https://fitzgen.com
+    display_name: Nick Fitzgerald
+    summary: Nick Fitzgerald writes about compilers, WebAssembly, Rust, fuzzing, and software development.
+    profile_photo: https://github.com/fitzgen.png?size=200
+  five_books:
+    feed_url: https://fivebooks.com/feed/
+    homepage_url: https://fivebooks.com
+    display_name: Five Books
+    summary: Expert interviews and recommendations of the best books on a wide range of subjects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffivebooks.com&size=128
+  fixate:
+    feed_url: https://www.fixate.it/blog?format=rss
+    homepage_url: https://www.fixate.it/blog
+    display_name: Fixate
+    summary: 'Archived articles from Fixate on website design, UI, UX, branding, and digital strategy. Latest feed articles: December 2021.'
+    profile_photo: https://images.squarespace-cdn.com/content/v1/61726a416edd4454e8cff28f/ded86102-ab92-4df0-8988-1b89cec1b973/black-logo-fixate.png?format=1500w
+  flameeyes_weblog:
+    feed_url: https://flameeyes.blog/feed/
+    homepage_url: https://flameeyes.blog
+    display_name: Flameeyes's Weblog
+    summary: Personal writing on software engineering, open source, technology, and everyday life.
+  fleen:
+    feed_url: http://fleen.com/feed/
+    homepage_url: http://fleen.com
+    display_name: Fleen
+    summary: The webcomics blog about webcomics
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Ffleen.com&size=128
+  fleetio_blog:
+    feed_url: https://www.fleetio.com/rss.xml
+    homepage_url: https://www.fleetio.com
+    display_name: Fleetio Blog
+    summary: Fleet management and vehicle maintenance guides, operational advice, and company updates from Fleetio.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.fleetio.com&size=128
+  flexibits:
+    feed_url: https://flexibits.com/blog/feed/
+    homepage_url: https://flexibits.com/blog
+    display_name: Flexibits
+    summary: Product news and guides for Fantastical and Cardhop from Flexibits.
+    profile_photo: https://flexibits.com/apple-touch-icon.png
+  flightradar24_blog:
+    feed_url: https://www.flightradar24.com/blog/feed/
+    homepage_url: https://www.flightradar24.com/blog
+    display_name: Flightradar24 Blog
+    summary: Aviation news and flight tracking data
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.flightradar24.com%2Fblog&size=128
+  alfazeta:
+    feed_url: https://flipdots.com/en/feed/
+    homepage_url: https://flipdots.com
+    display_name: ALFAZETA
+    summary: ALFAZETA makes electromagnetic flip-dot displays and components. This archived feed contains one demonstration post from December 2016.
+    profile_photo: https://flipdots.com/wp-content/uploads/2025/09/az_logo_100x100.gif
+  florian_kraemer:
+    feed_url: https://florian-kraemer.net/feed.xml
+    homepage_url: https://florian-kraemer.net
+    display_name: Florian Krämer
+    summary: Florian Kraemer writes about software architecture, software development, and technology.
+    profile_photo: https://florian-kraemer.net/assets/theme/images/avatar.png
+  francis_irving:
+    feed_url: https://www.flourish.org/posts/feed.xml
+    homepage_url: https://www.flourish.org
+    display_name: Francis Irving
+    summary: Francis Irving writes about technology, AI, politics, land policy, and books.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.flourish.org&size=128
+  fluentd_blog:
+    feed_url: https://www.fluentd.org/blog/feed.rss
+    homepage_url: https://www.fluentd.org/blog
+    display_name: Fluentd Blog
+    summary: Release announcements, support lifecycle updates, and news from the Fluentd logging and data collection project.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.fluentd.org%2Fblog&size=128
+  fly_fishing_forum:
+    feed_url: https://www.flyfishing.co.uk/forums/-/index.rss
+    homepage_url: https://www.flyfishing.co.uk
+    display_name: Fly Fishing Forum
+    summary: A forum community dedicated to fly fishing and sporting enthusiasts. Come join the discussion about safety, licenses, tips, tricks, rivers, reviews, accessories, classifieds, and more!
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.flyfishing.co.uk&size=128
+  fogknife:
+    feed_url: https://fogknife.com/atom.xml
+    homepage_url: https://fogknife.com
+    display_name: Fogknife
+    summary: Jason McIntosh writes about books, games, music, software, and everyday life.
+    profile_photo: https://fogknife.com/images/fogknife_favicon.png
+  fonts_in_use:
+    feed_url: https://fontsinuse.com/main.rss
+    homepage_url: https://fontsinuse.com
+    display_name: Fonts In Use
+    summary: A searchable archive of typography in real-world design, indexed by typeface, format, and topic.
+    profile_photo: https://assets.fontsinuse.com/images/icons/apple-touch-icon.png
+  foodbeast:
+    feed_url: https://www.foodbeast.com/feed/
+    homepage_url: https://www.foodbeast.com
+    display_name: Foodbeast
+    summary: Food news, restaurant and fast-food stories, product launches, and food culture.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.foodbeast.com&size=128
+  food_in_jars:
+    feed_url: https://foodinjars.com/feed/
+    homepage_url: https://foodinjars.com
+    display_name: Food in Jars
+    summary: A blog about canning, pickling, and cooking from scratch.
+    profile_photo: https://foodinjars.com/wp-content/uploads/2018/10/cropped-fij-favicon-180x180.jpg
+  footle:
+    feed_url: https://footle.org/atom.xml
+    homepage_url: https://footle.org
+    display_name: footle
+    summary: Brad Greenlee writes about software development, macOS, iOS, and personal projects.
+    profile_photo: https://footle.org/public/apple-touch-icon-144-precomposed.png
+  forgejo_news:
+    feed_url: https://forgejo.org/rss.xml
+    homepage_url: https://forgejo.org
+    display_name: Forgejo News
+    summary: Forgejo is a self-hosted lightweight software forge. Easy to install and low maintenance, it just does the job.
+    profile_photo: https://forgejo.org/favicon.png
+  fortress_of_doors:
+    feed_url: https://www.fortressofdoors.com/rss/
+    homepage_url: https://www.fortressofdoors.com
+    display_name: Fortress of Doors
+    summary: Lars Doucet's personal blog -- Game design and stuff.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.fortressofdoors.com&size=128
+  40_days_of_dating:
+    feed_url: https://fortydaysofdating.com/feed/
+    homepage_url: https://fortydaysofdating.com
+    display_name: 40 Days of Dating
+    summary: The archived 2013 dating experiment of two friends who dated for 40 days, documented through daily reflections and design.
+    profile_photo: https://fortydaysofdating.com/wp-content/themes/fortydates/img/avatar.png
+  effective_altruism_forum:
+    feed_url: https://forum.effectivealtruism.org/feed.xml
+    homepage_url: https://forum.effectivealtruism.org
+    display_name: Effective Altruism Forum
+    summary: Effective altruism research, discussion and community updates
+    profile_photo: https://images.ctfassets.net/ohf186sfn6di/7J4cBC9SXCWMoqqCIqI0GI/affe205261bb8cff47501a0ada0f2268/ea-logo-square-1200x1200__1_.png?h=180
+  merveilles_forum:
+    feed_url: https://forum.merveilles.town/rss.xml
+    homepage_url: https://forum.merveilles.town
+    display_name: Merveilles Forum
+    summary: Merveilles community discussions about art, creative projects, technology, and everyday life.
+  plex_forum:
+    feed_url: https://forums.plex.tv/posts.rss
+    homepage_url: https://forums.plex.tv
+    display_name: Plex Forum
+    summary: Latest posts and replies in the Plex community support and discussion forums.
+    profile_photo: https://global.discourse-cdn.com/plex/optimized/3X/8/3/833e5cd753c8645af15fef9118673a310d7e286d_2_180x180.png
+  xfinity_community_forum:
+    feed_url: https://forums.xfinity.com/rss/
+    homepage_url: https://forums.xfinity.com
+    display_name: Xfinity Community Forum
+    summary: Customer questions, troubleshooting, and community discussion about Xfinity services.
+    profile_photo: https://sprcdn-assets.sprinklr.com/1110/79e57f25-ebdb-4590-aaf5-b656175f8931-1467995988.png
+  the_forward:
+    feed_url: https://forward.com/feed/
+    homepage_url: https://forward.com
+    display_name: The Forward
+    summary: Independent nonprofit journalism on Jewish news, politics, culture, and community life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fforward.com&size=128
+  fosdem:
+    feed_url: https://fosdem.org/rss.xml
+    homepage_url: https://fosdem.org
+    display_name: FOSDEM
+    summary: News and announcements for FOSDEM, the free and open source software developers conference in Brussels.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffosdem.org&size=128
+  fossdroid_blog:
+    feed_url: https://fossdroid.com/blog/feed
+    homepage_url: https://fossdroid.com/blog
+    display_name: Fossdroid Blog
+    summary: 'Archived articles on free and open source Android applications. Latest feed article: March 2017.'
+    profile_photo: https://fossdroid.com/favicon-16x16.png
+  foss_linux:
+    feed_url: https://www.fosslinux.com/feed
+    homepage_url: https://www.fosslinux.com
+    display_name: FOSS Linux
+    summary: Linux tutorials, open-source application guides, news, and reviews.
+    profile_photo: https://www.fosslinux.com/wp-content/uploads/2016/02/fosslinux512.png
+  chris_foster:
+    feed_url: https://fosterelli.co/feed.xml
+    homepage_url: https://fosterelli.co
+    display_name: Chris Foster
+    summary: 'Archived writing by Chris Foster on software development, machine learning, security, and privacy. Latest feed article: November 2020.'
+    profile_photo: https://fosterelli.co/favicon-32x32.png
+  founders_at_work:
+    feed_url: https://www.foundersatwork.com/blog/feed
+    homepage_url: https://www.foundersatwork.com/blog
+    display_name: Founders at Work
+    summary: 'Jessica Livingston''s archived Founders at Work blog on startups, founders, and Y Combinator. Latest feed article: October 2012.'
+  jessica_livingston:
+    feed_url: https://foundersatwork.posthaven.com/posts.atom
+    homepage_url: https://foundersatwork.posthaven.com
+    display_name: Jessica Livingston
+    summary: Jessica Livingston writes about startup founders, Y Combinator, and building companies.
+    profile_photo: https://phaven-prod.s3.amazonaws.com/files/profile_pic/asset/1517931/zoYl1hAgVstfC_GFahX86lmXqYA/medium_JL_headshot.jpg
+  fountain:
+    feed_url: https://fountain.io/feed/
+    homepage_url: https://fountain.io
+    display_name: Fountain
+    summary: Documentation and FAQs for Fountain, a plain-text markup format for writing screenplays. Feed entries are documentation pages published in May 2023.
+    profile_photo: https://fountain.io/wp-content/uploads/2023/05/fountain-sign-164.png
+  fowl_language_comics:
+    feed_url: https://www.fowllanguagecomics.com/feed/
+    homepage_url: https://www.fowllanguagecomics.com
+    display_name: Fowl Language Comics
+    summary: Brian Gordon's comics about parenting and everyday frustrations. Archived site feed; latest entries from November 2020 announce a move to Tinyview.
+    profile_photo: https://www.fowllanguagecomics.com/apple-icon-57x57.png
+  fox_13_news_utah:
+    feed_url: https://www.fox13now.com/index.rss
+    homepage_url: https://www.fox13now.com
+    display_name: FOX 13 News Utah
+    summary: Utah and Salt Lake City news, weather, traffic, and sports from FOX 13 News Utah.
+    profile_photo: https://www.fox13now.com/apple-touch-icon.png
+  fox_2:
+    feed_url: https://fox2now.com/feed/
+    homepage_url: https://fox2now.com
+    display_name: FOX 2
+    summary: St. Louis news, weather, and sports.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffox2now.com&size=128
+  fox_news:
+    feed_url: https://moxie.foxnews.com/google-publisher/latest.xml
+    homepage_url: https://www.foxnews.com
+    display_name: Fox News
+    summary: Breaking news and reporting on US and world affairs, politics, business, health, entertainment, technology, and sports.
+    profile_photo: https://static.foxnews.com/static/orion/styles/img/fox-news/favicons/apple-touch-icon-57x57.png
+  fox_sports:
+    feed_url: https://api.foxsports.com/v2/content/optimized-rss?partnerKey=MB0Wehpmuj2lUhuRhQaafhBjAJqaPU244mlTDK1i&size=30
+    homepage_url: https://www.foxsports.com
+    display_name: FOX Sports
+    summary: The latest sports videos, news, articles, and stories from FOX Sports.
+    profile_photo: https://www.foxsports.com/apple-touch-icon.png
+  framework_blog:
+    feed_url: https://frame.work/blog.rss
+    homepage_url: https://frame.work
+    display_name: Framework Blog
+    summary: Product announcements, engineering updates, and company news from Framework, maker of modular repairable computers.
+    profile_photo: https://frame.work/apple-touch-icon.png
+  framethink:
+    feed_url: https://framethink.wordpress.com/feed/
+    homepage_url: https://framethink.wordpress.com
+    display_name: FrameThink
+    summary: 'Archived essays on technology, startups, product design, social networks, and user experience. Latest feed article: July 2014.'
+  zend_framework_security_advisories:
+    feed_url: https://framework.zend.com/security/feed
+    homepage_url: https://framework.zend.com/security
+    display_name: Zend Framework Security Advisories
+    summary: 'Archived security advisories for Zend Framework. Latest feed advisory: March 2019.'
+    profile_photo: https://github.com/zendframework.png?size=200
+  franke_james:
+    feed_url: https://www.frankejames.com/feed/
+    homepage_url: https://www.frankejames.com
+    display_name: Franke James
+    summary: Art, environmental activism, disability rights, and books by Franke James.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.frankejames.com&size=128
+  fred_gallagher:
+    feed_url: https://www.fredart.com/rss/
+    homepage_url: https://www.fredart.com
+    display_name: Fred Gallagher
+    summary: 'Fred Gallagher''s illustration and comic-art portfolio, hosted on ArtStation. Latest feed artwork: February 2021.'
+  fredrin_tumblr:
+    feed_url: https://fredrin.tumblr.com/rss
+    homepage_url: https://www.tumblr.com/fredrin
+    display_name: fredrin.tumblr
+    summary: Fred Gallagher's Tumblr posts of artwork, works in progress, Megatokyo material, and personal reflections.
+    profile_photo: https://64.media.tumblr.com/avatar_9f6a33f0c6c7_128.pnj
+  freebiesbug:
+    feed_url: https://freebiesbug.com/feed/
+    homepage_url: https://freebiesbug.com
+    display_name: Freebiesbug
+    summary: The Best Free Resources for Designers and Developers
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffreebiesbug.com&size=128
+  free_movement:
+    feed_url: https://freemovement.org.uk/feed/
+    homepage_url: https://freemovement.org.uk
+    display_name: Free Movement
+    summary: Updates, commentary, training and advice on immigration and asylum law
+    profile_photo: https://freemovement.org.uk/wp-content/uploads/2022/07/cropped-Goose-logo-180x180.png
+  truenas:
+    feed_url: https://www.truenas.com/feed/
+    homepage_url: https://www.truenas.com/blog/
+    display_name: TrueNAS
+    summary: Official TrueNAS news, product releases, storage engineering, and ZFS articles from the project formerly known as FreeNAS.
+    profile_photo: https://www.truenas.com/wp-content/uploads/2020/08/cropped-TN-favicon-250x250.png
   vintage_synth_explorer:
     feed_url: https://feeds.feedburner.com/vintagesynth
     homepage_url: https://www.vintagesynth.com
