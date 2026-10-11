@@ -51,6 +51,256 @@ bots:
     display_name: ProPublica
     summary: Investigative journalism in the public interest.
     profile_photo: https://www.propublica.org/wp-content/uploads/2026/02/propublica-site-icon-512x512-2.png
+  visionect:
+    feed_url: https://www.visionect.com/feed/
+    homepage_url: https://www.visionect.com
+    display_name: Visionect
+    summary: We take digital signage to a whole new level.
+  visitsteve:
+    feed_url: https://visitsteve.com/feed/
+    homepage_url: https://visitsteve.com
+    display_name: Steve Lambert
+    summary: Portfolio of Steve Lambert, artist, artistic activist, creative activist, co-founder of the Center for Artistic Activism, and Associate Professor at SUNY Purchase
+  visualcomplexity:
+    feed_url: https://visualcomplexity.com/feed/
+    homepage_url: https://visualcomplexity.com
+    display_name: VISUAL COMPLEXITY
+    summary: Updates from VISUAL COMPLEXITY.
+  visualizingeconomics:
+    feed_url: https://www.visualizingeconomics.com/blog?format=rss
+    homepage_url: https://www.visualizingeconomics.com/blog
+    display_name: Blog - Visualizing Economics
+    summary: Updates from Blog - Visualizing Economics.
+  vitalets_github:
+    feed_url: https://vitalets.github.io/rss.xml
+    homepage_url: https://vitalets.github.io
+    display_name: Vitaliy Potapov
+    summary: Personal engineering notes about Playwright, testing, and developer tooling.
+  vivaldi:
+    feed_url: https://vivaldi.com/feed/
+    homepage_url: https://vivaldi.com
+    display_name: Vivaldi Browser
+    summary: Fast & Fully Customizable Web Browser
+  vogella:
+    feed_url: https://www.vogella.com/blog/feed.xml
+    homepage_url: https://vogella.com/blog
+    display_name: vogella Blog
+    summary: Updates from vogella Blog.
+  vogue_in:
+    feed_url: https://www.vogue.in/feed/rss
+    homepage_url: https://www.vogue.in
+    display_name: Vogue India
+    summary: The latest from www.vogue.in
+  volokh:
+    feed_url: https://volokh.com/feed/
+    homepage_url: https://volokh.com
+    display_name: The Volokh Conspiracy
+    summary: Commentary on law, public policy, and more
+  voltsteve_blogspot:
+    feed_url: http://feeds.feedburner.com/IdiomsIdiots
+    homepage_url: http://voltsteve.blogspot.com
+    display_name: Idioms & Idiots
+    summary: Updates from Idioms & Idiots.
+  voodootikigod:
+    feed_url: https://www.voodootikigod.com/rss.xml
+    homepage_url: https://www.voodootikigod.com
+    display_name: voodootikigod
+    summary: Chris Williams - Software engineer, community builder, and open source advocate
+  vorpus:
+    feed_url: https://vorpus.org/blog/feeds/atom.xml
+    homepage_url: https://vorpus.org/blog
+    display_name: njs blog
+    summary: Updates from njs blog.
+  vps_arachnoid:
+    feed_url: https://arachnoid.com/feed.xml
+    homepage_url: http://vps.arachnoid.com
+    display_name: arachnoid.com
+    summary: A site for people who think. Intellectual resources, programming, astronomy, science, mathematics, Java/JavaScript applets, programming instruction, home of Arachnophilia.
+  vsevolod:
+    feed_url: https://vsevolod.net/rss.xml
+    homepage_url: https://vsevolod.net
+    display_name: Vsevolod Solovyov
+    summary: Vsevolod Solovyov's blog
+  vusec:
+    feed_url: https://www.vusec.net/feed/
+    homepage_url: https://www.vusec.net
+    display_name: vusec
+    summary: Systems and Network Security Group at VU Amsterdam
+  leftshift:
+    feed_url: https://leftshift.io/feed.xml
+    homepage_url: https://leftshift.io
+    display_name: Leftshift
+    summary: Browse the full archive of the LeftShift blog by month.
+  w00tsec_blogspot:
+    feed_url: https://w00tsec.blogspot.com/feeds/posts/default
+    homepage_url: https://w00tsec.blogspot.com
+    display_name: w00tsec
+    summary: Updates from w00tsec.
+  w3techs:
+    feed_url: https://w3techs.com/blogfeed
+    homepage_url: https://w3techs.com
+    display_name: W3Techs.com - Web Technology Blog
+    summary: W3Techs.com - Web Technology Blog
+  wacaco:
+    feed_url: http://feeds.feedburner.com/Wacaco-Minipresso-Blog
+    homepage_url: https://www.wacaco.com/blogs/news
+    display_name: Wacaco - BLOG
+    summary: Updates from Wacaco - BLOG.
+  wakatime:
+    feed_url: https://wakatime.com/blog/all.atom
+    homepage_url: https://wakatime.com/blog
+    display_name: The WakaTime Blog
+    summary: Updates from The WakaTime Blog.
+  wakeuptopolitics:
+    feed_url: https://www.wakeuptopolitics.com/feed
+    homepage_url: https://www.wakeuptopolitics.com
+    display_name: Wake Up To Politics
+    summary: Your guide through the world of politics.
+  walesonline:
+    feed_url: https://www.walesonline.co.uk/?service=rss
+    homepage_url: https://www.walesonline.co.uk
+    display_name: WalesOnline - Home
+    summary: RSS feed from WalesOnline
+  walkah:
+    feed_url: https://walkah.net/atom.xml
+    homepage_url: https://walkah.net
+    display_name: walkah
+    summary: Updates from walkah.
+  walkingtree_tech:
+    feed_url: https://walkingtree.tech/feed/
+    homepage_url: https://walkingtree.tech
+    display_name: WalkingTree Technologies
+    summary: Updates from WalkingTree Technologies.
+  wamc:
+    feed_url: https://www.wamc.org/news.rss
+    homepage_url: https://www.wamc.org/news
+    display_name: News
+    summary: News
+  wamu:
+    feed_url: https://wamu.org/feed/podcast
+    homepage_url: https://wamu.org
+    display_name: WAMU
+    summary: '-'
+  wanderingstan:
+    feed_url: https://wanderingstan.com/feed
+    homepage_url: https://wanderingstan.com
+    display_name: wanderingstan
+    summary: the wanderings and wonderings of stan james
+  warrenellis:
+    feed_url: https://warrenellis.com/feed.rss
+    homepage_url: https://warrenellis.com
+    display_name: Warren Ellis
+    summary: The feed of updates to Warren Ellis
+  warzel_substack:
+    feed_url: https://warzel.substack.com/feed
+    homepage_url: https://warzel.substack.com
+    display_name: Galaxy Brain
+    summary: Thinking out loud about the internet, media, politics...and big ideas.
+  washington_edu:
+    feed_url: https://www.washington.edu/news/feed/
+    homepage_url: https://www.washington.edu/news
+    display_name: UW News
+    summary: Updates from UW News.
+  washingtonexaminer:
+    feed_url: https://www.washingtonexaminer.com/feed/
+    homepage_url: https://www.washingtonexaminer.com
+    display_name: Washington Examiner
+    summary: Political News and Conservative Analysis About Congress, the President, and the Federal Government
+  washingtonian:
+    feed_url: https://washingtonian.com/feed/
+    homepage_url: https://washingtonian.com
+    display_name: Washingtonian
+    summary: The website that Washington lives by.
+  washingtonmonthly:
+    feed_url: https://washingtonmonthly.com/feed/
+    homepage_url: https://washingtonmonthly.com
+    display_name: Washington Monthly
+    summary: Updates from Washington Monthly.
+  washpostpr_tumblr:
+    feed_url: https://washpostpr.tumblr.com/rss
+    homepage_url: https://washpostpr.tumblr.com
+    display_name: WashPost PR
+    summary: Follow The Washington Post PR team at washingtonpost.com/pr.
+  watabou_itch:
+    feed_url: https://watabou.itch.io/medieval-fantasy-city-generator/devlog.rss
+    homepage_url: https://watabou.itch.io/medieval-fantasy-city-generator
+    display_name: Medieval Fantasy City Generator Devlog - itch.io
+    summary: Not a game
+  watchesbysjx:
+    feed_url: https://watchesbysjx.com/feed
+    homepage_url: https://watchesbysjx.com
+    display_name: SJX Watches
+    summary: A Journal Dedicated to Fine Watches
+  wattenberger:
+    feed_url: https://wattenberger.com/rss.xml
+    homepage_url: https://wattenberger.com
+    display_name: Amelia Wattenberger
+    summary: Thoughts on the future of human-computer interaction
+  wattpad:
+    feed_url: https://www.wattpad.com/rss
+    homepage_url: https://www.wattpad.com?mode=1&language=1&lim=&search=&utm_source=rss
+    display_name: Wattpad - What's Hot
+    summary: Wattpad - Discover a World of Unlimited Stories
+  wattvision:
+    feed_url: https://www.wattvision.com/blog/feed
+    homepage_url: https://www.wattvision.com/blog
+    display_name: Wattvision Blog
+    summary: Updates from Wattvision Blog.
+  wavelight_ws:
+    feed_url: https://wavelight.ws/rss.xml
+    homepage_url: https://wavelight.ws
+    display_name: wavelight
+    summary: music, art, process, nature, words.
+  wbez:
+    feed_url: https://www.wbez.org/rss/index.xml
+    homepage_url: https://www.wbez.org
+    display_name: WBEZ Chicago - All
+    summary: Updates from WBEZ Chicago - All.
+  wdwprepschool:
+    feed_url: https://wdwprepschool.com/feed/
+    homepage_url: https://wdwprepschool.com
+    display_name: WDW Prep School
+    summary: Updates from WDW Prep School.
+  webaim:
+    feed_url: https://webaim.org/blog/feed/
+    homepage_url: https://webaim.org/blog
+    display_name: WebAIM Blog
+    summary: The WebAIM Web Accessibility Blog
+  webdesignerwall:
+    feed_url: https://webdesignerwall.com/feed
+    homepage_url: https://webdesignerwall.com
+    display_name: Web Designer Wall
+    summary: Design Trends and Tutorials - A wall of design ideas, web trends, and tutorials.
+  weblog_jamisbuck:
+    feed_url: https://feeds.feedburner.com/buckblog
+    homepage_url: http://weblog.jamisbuck.org
+    display_name: The Buckblog
+    summary: assorted ramblings by Jamis Buck
+  weblog_rogueamoeba:
+    feed_url: https://weblog.rogueamoeba.com/feed/
+    homepage_url: https://weblog.rogueamoeba.com
+    display_name: Under the Microscope
+    summary: The Rogue Amoeba Blog
+  weblogtoolscollection:
+    feed_url: http://feeds2.feedburner.com/weblogtoolscollection/UXMP
+    homepage_url: https://weblogtoolscollection.com
+    display_name: Weblog Tools Collection
+    summary: Weblog Tools Blogging Tools Blog
+  webmonkey:
+    feed_url: https://www.webmonkey.com/feed/
+    homepage_url: https://www.webmonkey.com
+    display_name: WebMonkey
+    summary: No More Monkey Business
+  webofstories:
+    feed_url: https://www.webofstories.com/rss.xml
+    homepage_url: https://www.webofstories.com
+    display_name: Web of Stories RSS
+    summary: Web of Stories RSS news
+  webstock_org_nz:
+    feed_url: https://www.webstock.org.nz/feed/
+    homepage_url: https://www.webstock.org.nz
+    display_name: Webstock
+    summary: Updates from Webstock.
   highlands_current:
     feed_url: https://highlandscurrent.org/feed/
     homepage_url: https://highlandscurrent.org
