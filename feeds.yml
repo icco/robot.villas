@@ -3918,256 +3918,300 @@ bots:
     display_name: Bandcamp Daily
     summary: Music discovery, artist features, and deep dives from Bandcamp.
     profile_photo: https://s4.bcbits.com/img/favicon/apple-touch-icon.png
-  wiz:
+  wiz_blog:
     feed_url: https://www.wiz.io/feed/rss.xml
-    homepage_url: https://www.wiz.io
-    display_name: Wiz Blog | RSS feed
+    homepage_url: https://www.wiz.io/blog
+    display_name: Wiz Blog
     summary: Guides, announcements, and articles about Cloud Security and the Wiz platform.
-  wordpress:
+    profile_photo: https://www.wiz.io/favicon.png
+  wordpress_news:
     feed_url: https://wordpress.org/news/feed/
     homepage_url: https://wordpress.org/news
     display_name: WordPress News
     summary: The latest news about WordPress and the WordPress community
-  worrydream:
+    profile_photo: https://s.w.org/images/wmark.png
+  bret_victor:
     feed_url: https://worrydream.com/feed.xml
     homepage_url: https://worrydream.com
-    display_name: Bret Victor's website
-    summary: Updates from Bret Victor's website.
-  wynnnetherland:
+    display_name: Bret Victor
+    summary: 'Bret Victor''s work and website updates on humane computing, dynamic media, programming, visual explanations, and Dynamicland. Latest feed entry: May 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fworrydream.com&size=128
+  wynn_netherland:
     feed_url: https://wynnnetherland.com/feed.xml
     homepage_url: https://wynnnetherland.com
     display_name: Wynn Netherland
-    summary: Team builder. API nerd.
-  xn__gckvb8fzb:
+    summary: 'Wynn Netherland''s archived personal writing, annotated links, software and career notes, and book reviews. The current feed contains book reviews; latest entry: November 2020.'
+    profile_photo: https://wynnnetherland.com/apple-touch-icon.png
+  marius_journal:
     feed_url: https://xn--gckvb8fzb.com/index.xml
     homepage_url: https://xn--gckvb8fzb.com
-    display_name: マリウス
-    summary: The Journal of マリウス
-  yosefk:
+    display_name: Marius
+    summary: Marius's personal journal on open-source software, Linux, privacy, keyboards, hardware, travel, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fxn--gckvb8fzb.com&size=128
+  yossi_kreinin:
     feed_url: https://www.yosefk.com/blog/feed
     homepage_url: https://yosefk.com/blog
     display_name: Yossi Kreinin
-    summary: Worse is better
+    summary: Yossi Kreinin's essays on programming, performance, software tools, management, AI, and technology. Feed entries are not ordered newest first.
+    profile_photo: https://yosefk.com/blog/self.jpg
   yubico:
     feed_url: https://www.yubico.com/feed/
-    homepage_url: https://www.yubico.com
+    homepage_url: https://www.yubico.com/blog/
     display_name: Yubico
-    summary: Updates from Yubico.
-  zurb:
+    summary: Yubico's official blog on security keys, passkeys, phishing-resistant authentication, identity security, research, and company and product news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.yubico.com&size=128
+  zurb_blog:
     feed_url: https://zurb.com/blog/feed/
     homepage_url: https://zurb.com/blog
     display_name: ZURB Blog
     summary: The ZURB Blog covers design strategy, interaction design, and design thinking to help businesses and designers build better products and experiences.
-  1041uuu_tumblr:
+    profile_photo: https://zurb.com/packs/media/zurb/img/icons/favicon/favicon-16x16-8213d9ef31710213b65e2183840e2271.png
+  1041uuu:
     feed_url: https://1041uuu.tumblr.com/rss
-    homepage_url: https://1041uuu.tumblr.com
-    display_name: 1041uuu
-    summary: Updates from 1041uuu.
+    homepage_url: https://www.tumblr.com/1041uuu
+    display_name: 1041uuu - Yuuta Toyoi
+    summary: 'Yuuta Toyoi''s pixel art, animated scenes, music, and independent game development as 1041uuu. Latest feed post: October 2025.'
   1stwebdesigner:
     feed_url: https://1stwebdesigner.com/feed/
     homepage_url: https://1stwebdesigner.com
     display_name: 1stWebDesigner
-    summary: Helping You Build a Better Web
-  512pixels:
+    summary: 1stWebDesigner publishes web design and development tutorials, CSS and coding resources, design tools, and advice for web professionals.
+    profile_photo: https://1stwebdesigner.com/wp-content/uploads/2020/01/1stwebdesigner-logo-2020-300x300.png
+  512_pixels:
     feed_url: https://512pixels.net/feed.xml
     homepage_url: https://512pixels.net
     display_name: 512 Pixels
-    summary: Recent content on 512 Pixels
+    summary: Stephen Hackett's 512 Pixels covers Apple and Macintosh history, technology, personal projects, and his podcasts.
+    profile_photo: https://512pixels.net/apple-touch-icon.png
   6sqft:
     feed_url: https://www.6sqft.com/feed/
     homepage_url: https://www.6sqft.com
     display_name: 6sqft
-    summary: NYC Real Estate news and information
-  7x7:
+    summary: 6sqft covers New York City news, housing, real estate, architecture, neighborhoods, events, and things to do.
+    profile_photo: https://www.6sqft.com/wp-content/themes/sqft/img/favicons/6SQFT_favicon_152x152px.png
+  7x7_bay_area:
     feed_url: https://www.7x7.com/feeds/feed.rss
     homepage_url: https://www.7x7.com
     display_name: 7x7 Bay Area
-    summary: 7x7 Bay Area
-  80000hours:
+    summary: 7x7 covers San Francisco Bay Area food, drink, arts, events, travel, shopping, and local experiences.
+    profile_photo: https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMjEzNjY3OS9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTgzNTIxMDUyMH0.iGJnhevYr6Us1j7ofsZFbpXbhHif_TQpcH01aKyfYzg/img.jpg?width=192&height=192
+  80_000_hours:
     feed_url: https://80000hours.org/feed/
     homepage_url: https://80000hours.org
     display_name: 80,000 Hours
-    summary: Updates from 80,000 Hours.
-  acko:
+    summary: 80,000 Hours publishes career guidance, research, and podcast interviews on using a career to address pressing global problems, including AI risk.
+    profile_photo: https://80000hours.org/favicon-152.png
+  acko_net:
     feed_url: https://acko.net/atom.xml
     homepage_url: https://acko.net
-    display_name: Acko.net
-    summary: Updates from Acko.net.
-  adambard:
+    display_name: Acko.net - Steven Wittens
+    summary: Steven Wittens's writing and experiments in graphics, mathematics, programming, design, and technology.
+    profile_photo: https://acko.net/apple-touch-icon.png
+  adam_bard:
     feed_url: https://adambard.com/feed.xml
     homepage_url: https://adambard.com
-    display_name: Home Page on Adam Bard, Handsome Web Developer
-    summary: Recent content in Home Page on Adam Bard, Handsome Web Developer
-  adit:
+    display_name: Adam Bard
+    summary: 'Adam Bard''s programming and web development blog, with tutorials and notes on software tools, functional programming, and infrastructure. Latest feed post: March 2023.'
+  adits_blog:
     feed_url: https://www.adit.io/rss.xml
-    homepage_url: http://www.adit.io
+    homepage_url: https://www.adit.io
     display_name: Adit's Blog
-    summary: Posts on programming
-  ahmet_im:
+    summary: 'Aditya Bhargava''s illustrated explanations of programming, algorithms, mathematics, and civic topics. Latest listed post: November 2022; the feed omits publication dates.'
+  ahmet_alp_balkan:
     feed_url: https://ahmet.im/blog/feed/rss.xml
     homepage_url: https://ahmet.im/blog
     display_name: Ahmet Alp Balkan
-    summary: RSS feed for blog Ahmet Alp Balkan
-  akamai:
+    summary: 'Ahmet Alp Balkan''s systems engineering writing on Kubernetes, cloud infrastructure, networking, and developer tools, with links to talks and podcasts. Latest feed post: July 2025.'
+    profile_photo: https://github.com/ahmetb.png?size=200
+  akamai_blog:
     feed_url: https://feeds.feedburner.com/akamai/blog
     homepage_url: https://www.akamai.com/blog
-    display_name: akamai.com
+    display_name: Akamai Blog
     summary: Stay ahead with the latest cloud computing, content delivery, and cybersecurity trends, expert analyses, and tech insights from the official Akamai blog.
-  albumwhale:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.akamai.com%2Fblog&size=128
+  sean_breslin_backpacking:
     feed_url: https://albumwhale.com/sean-breslin/backpacking-soundtrack-1993-1998.atom
-    homepage_url: https://albumwhale.com
-    display_name: Sean Breslin's Backpacking Soundtrack 1993~1998 on Album Whale
-    summary: Updates from Sean Breslin's Backpacking Soundtrack 1993~1998 on Album Whale.
-  alestic:
-    feed_url: http://feeds.alestic.com/alestic
+    homepage_url: https://albumwhale.com/sean-breslin/backpacking-soundtrack-1993-1998
+    display_name: Sean Breslin - Backpacking Soundtrack 1993-1998
+    summary: 'Sean Breslin''s Album Whale list of albums he listened to while backpacking around the world in 1993-1998, with personal listening notes. Latest feed additions: May 2025.'
+    profile_photo: https://albumwhale.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NDk1NCwicHVyIjoiYmxvYl9pZCJ9fQ==--535f1b8c9091f9c26cd30ac8b9cc85811f8a6c30/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlsxMDAsMTAwXX0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--42c177951674e75023fae9ef246169b0f9844a2c/Avatar-2024-SeanBreslin1.jpg
+  alestic_eric_hammond:
+    feed_url: https://alestic.com/index.xml
     homepage_url: https://alestic.com
-    display_name: Alestic.com - A Personal AWS Blog by Eric Hammond
-    summary: Recent content in Alestic.com - A Personal AWS Blog by Eric Hammond on Alestic.com - A Personal AWS Blog by Eric Hammond
-  alexgaynor:
+    display_name: Alestic - Eric Hammond
+    summary: 'Eric Hammond''s archived personal AWS blog, covering EC2, IAM, account administration, command-line tools, and AWS events. Latest feed post: January 2020.'
+    profile_photo: https://alestic.com/img/alestic-favicon.png
+  alex_gaynor:
     feed_url: https://alexgaynor.net/feed.xml
     homepage_url: https://alexgaynor.net/blog
-    display_name: Blogs on Alex Gaynor
-    summary: Recent content in Blogs on Alex Gaynor
-  alexkras:
+    display_name: Alex Gaynor
+    summary: Alex Gaynor's writing on software security, memory safety, cryptography, programming, open source, and technology policy.
+    profile_photo: https://alexgaynor.net/apple-touch-icon-144-precomposed.png
+  alex_kras:
     feed_url: https://alexkras.com/feed/
     homepage_url: https://alexkras.com
-    display_name: alexkras.com
+    display_name: Alex Kras
     summary: Mostly a tech blog
-  alfredapp:
+    profile_photo: https://alexkras.com/wp-content/uploads/favicon-32x32-1.png
+  alfred_blog:
     feed_url: https://www.alfredapp.com/blog/feed.xml
     homepage_url: https://www.alfredapp.com/blog
     display_name: Alfred Blog
-    summary: Keep up with the latest news about Alfred 2 for Mac and Alfred Remote for iOS, and discover tips and tricks to make you more productive.
-  allthatsinteresting:
+    summary: Official Alfred news, release announcements, workflows, snippets, and productivity tips for Alfred on macOS and Alfred Remote on iOS.
+    profile_photo: https://www.alfredapp.com/apple-touch-icon.png
+  all_thats_interesting:
     feed_url: https://allthatsinteresting.com/feed
     homepage_url: https://allthatsinteresting.com
     display_name: All That's Interesting
-    summary: Something interesting to read every day.
-  alumni_berkeley_edu:
+    summary: All That's Interesting publishes stories on history, archaeology, science, true crime, nature, and unusual people and events.
+    profile_photo: https://allthatsinteresting.com/apple-touch-icon-ipad.png
+  cal_alumni_association:
     feed_url: https://alumni.berkeley.edu/feed/
     homepage_url: https://alumni.berkeley.edu
     display_name: Cal Alumni Association
-    summary: Berkeley. For Life.
-  androidheadlines:
+    summary: Cal Alumni Association stories and California magazine articles on UC Berkeley, alumni, culture, research, travel, and the association's community and programs.
+    profile_photo: https://alumni.berkeley.edu/wp-content/uploads/2022/03/cropped-cal_alumni_association_icon-180x180.png
+  android_headlines:
     feed_url: https://www.androidheadlines.com/feed
     homepage_url: https://www.androidheadlines.com
     display_name: Android Headlines
-    summary: Android Headlines
-  anniecherkaev:
+    summary: Android Headlines covers Android, smartphones, Google, consumer technology, AI, gaming, security, reviews, and deals.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.androidheadlines.com&size=128
+  annie_cherkaev:
     feed_url: https://anniecherkaev.com/feed.xml
     homepage_url: https://anniecherkaev.com
-    display_name: "/* \U0001F916\U0001F6E0️ */"
-    summary: Beep Beep Boop Boop
+    display_name: Annie Cherkaev
+    summary: Annie Cherkaev's explanations and personal notes on containers, programming, developer workflows, AI coding, keyboards, and learning.
   anti_pattern:
     feed_url: https://anti-pattern.com/feed.xml
     homepage_url: https://anti-pattern.com
-    display_name: Anti-pattern
-    summary: Updates from Anti-pattern.
-  antonlindstrom:
+    display_name: Anti-pattern - Brandon Weiss
+    summary: 'Brandon Weiss''s archived programming opinions and practical tutorials on Ruby, Rails, Git, developer tools, and workflows. Latest feed post: June 2020.'
+    profile_photo: https://anti-pattern.com/images/avatar.png
+  anton_lindstrom:
     feed_url: https://antonlindstrom.com/feed.xml
     homepage_url: https://www.antonlindstrom.com
-    display_name: anton lindstrom
-    summary: Updates from anton lindstrom.
-  antonz:
+    display_name: Anton Lindstrom
+    summary: 'Anton Lindstrom''s Swedish-language posts on cycling, swimming, outdoor routes, and training. Latest feed post: October 2025.'
+    profile_photo: https://github.com/antonlindstrom.png?size=200
+  anton_zhiyanov:
     feed_url: https://antonz.org/index.xml
     homepage_url: https://antonz.org
     display_name: Anton Zhiyanov
     summary: Everything about Go, SQL, and software in general.
-  appelsiini:
+    profile_photo: https://antonz.org/assets/favicon/apple-touch-icon.png
+  mika_tuupola:
     feed_url: https://www.appelsiini.net/index.xml
     homepage_url: https://www.appelsiini.net
     display_name: Mika Tuupola
-    summary: Recent content on Mika Tuupola
-  arduino_cc:
+    summary: Mika Tuupola's projects and tutorials on embedded electronics, drones, MicroPython, graphics, web development, privacy, and decentralized social media.
+    profile_photo: https://www.appelsiini.net/apple-touch-icon-144-precomposed.png
+  arduino_blog:
     feed_url: https://blog.arduino.cc/feed/
-    homepage_url: https://www.arduino.cc
+    homepage_url: https://blog.arduino.cc/
     display_name: Arduino Blog
-    summary: Updates from Arduino Blog.
-  ariadne_space:
+    summary: Official Arduino news, hardware and software announcements, maker projects, robotics, electronics tutorials, and connected-device experiments.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.arduino.cc&size=128
+  ariadnes_space:
     feed_url: https://ariadne.space/feed.xml
     homepage_url: https://ariadne.space
     display_name: Ariadne's Space
-    summary: Updates from Ariadne's Space.
-  artificiallawyer:
+    summary: Ariadne's essays on free software, security, systems programming, digital autonomy, technology's social effects, and personal interests.
+    profile_photo: https://micro.blog/ariadne/favicon.png
+  artificial_lawyer:
     feed_url: https://www.artificiallawyer.com/feed/
     homepage_url: https://www.artificiallawyer.com
     display_name: Artificial Lawyer
     summary: Legal Tech & AI News and Views
-  artima:
+    profile_photo: https://www.artificiallawyer.com/wp-content/uploads/2019/06/cropped-Screenshot-2019-06-05-at-08.45.41-180x180.png
+  bruce_eckel_artima:
     feed_url: https://www.artima.com/weblogs/feeds/bloggers/beckel.rss
-    homepage_url: http://www.artima.com/weblogs/index.jsp?blogger=beckel
-    display_name: Bruce Eckel's Weblog
-    summary: Artima Weblogs is a community of bloggers posting on a wide range of topics of interest to software developers.
+    homepage_url: https://www.artima.com/weblogs/index.jsp?blogger=beckel
+    display_name: Computing Thoughts - Bruce Eckel (Artima Archive)
+    summary: 'Bruce Eckel''s archived Computing Thoughts weblog on Artima, covering programming languages, software design, books, talks, and technology. Latest post: November 2014; the feed omits publication dates.'
   artlebedev:
     feed_url: https://www.artlebedev.ru/news.rdf
-    homepage_url: https://www.artlebedev.com
-    display_name: Новости Студии Артемия Лебедева
-    summary: Новые работы студии, свежие вакансии, изменения в графике работы и ассортименте магазинов.
-  askubuntu:
+    homepage_url: https://www.artlebedev.ru/
+    display_name: Art. Lebedev Studio - News (Russian)
+    summary: Russian-language news from Art. Lebedev Studio about design projects, identities, typography, products, wayfinding, jobs, and its stores.
+    profile_photo: https://img.artlebedev.ru/icons/touch-icon-iphone.png
+  ask_ubuntu:
     feed_url: https://askubuntu.com/feeds
-    homepage_url: https://askubuntu.com/questions
-    display_name: Recent Questions - Ask Ubuntu
-    summary: Updates from Recent Questions - Ask Ubuntu.
-  attractmo_de:
-    feed_url: https://attractmo.de/rss
-    homepage_url: https://attractmo.de
-    display_name: Almabrizita - The Latest Gaming News
-    summary: 'Attract Mode by Almabrizita: Check the latest gaming news by nerds like you.'
-  batsov:
+    homepage_url: https://askubuntu.com/
+    display_name: Ask Ubuntu - Recent Questions
+    summary: Recent community questions about Ubuntu installation, hardware, networking, applications, system administration, and troubleshooting on Ask Ubuntu.
+    profile_photo: https://cdn.sstatic.net/Sites/askubuntu/Img/apple-touch-icon.png
+  attract_mode:
+    feed_url: https://medium.com/feed/attract-mode
+    homepage_url: https://www.tumblr.com/attract-mode-collective
+    display_name: Attract Mode - Matt Hawkins
+    summary: 'Matt Hawkins''s Attract Mode essays and curated discoveries on video game culture, art, design, advertising, merchandise, and events. Latest feed post: January 2025.'
+    profile_photo: https://api.tumblr.com/v2/blog/attract-mode-collective.tumblr.com/avatar/512
+  bozhidar_batsov_think:
     feed_url: https://batsov.com/feed.xml
     homepage_url: https://batsov.com
-    display_name: (think)
-    summary: Updates from (think).
-  bzamayo:
+    display_name: (think) - Bozhidar Batsov
+    summary: Bozhidar Batsov's personal programming blog, with Emacs, Clojure, OCaml, REPLs, development tools, and open-source project updates.
+    profile_photo: https://batsov.com/assets/img/favicons/apple-touch-icon.png
+  benjamin_mayo:
     feed_url: https://bzamayo.com/index.atom
     homepage_url: https://bzamayo.com
     display_name: Benjamin Mayo
-    summary: Updates from Benjamin Mayo.
+    summary: Benjamin Mayo's commentary and annotated links on Apple hardware, software, services, interface design, and company news.
+    profile_photo: https://bzamayo.com/favicon.png
   berkeleyside:
     feed_url: https://www.berkeleyside.org/feed
     homepage_url: https://www.berkeleyside.org
     display_name: Berkeleyside
-    summary: Nonprofit news. Free for all, funded by readers.
-  bert:
+    summary: Berkeleyside's nonprofit local reporting and opinion on Berkeley and the East Bay, including government, public safety, housing, education, food, and community life.
+    profile_photo: https://i0.wp.com/newspack-berkeleyside-cityside.s3.amazonaws.com/wp-content/uploads/2018/07/cropped-berkeleyside-favicon-1.png?fit=180%2C180&ssl=1
+  bertrand_fan:
     feed_url: https://bert.org/feed.xml
     homepage_url: https://bert.org
-    display_name: bertrand fan
-    summary: Updates from bertrand fan.
-  bhautikj_tumblr:
+    display_name: Bertrand Fan
+    summary: 'Bertrand Fan''s personal technology experiments, retrocomputing, hardware projects, games, and software explorations. Latest feed post: February 2023.'
+    profile_photo: https://bert.org/apple-touch-icon-57x57.png
+  bhautik_joshi_tumblr:
     feed_url: https://bhautikj.tumblr.com/rss
-    homepage_url: https://bhautikj.tumblr.com
-    display_name: The Professional Dork™
-    summary: Photography and experiments from @bhautikj
-  biblegateway:
-    feed_url: http://feeds.feedburner.com/BibleGatewayBlog
-    homepage_url: https://www.biblegateway.com/blog
-    display_name: Bible Gateway Blog
-    summary: News and reflections from BibleGateway.com
-  bibwild_wordpress:
+    homepage_url: https://www.tumblr.com/bhautikj
+    display_name: The Professional Dork - Bhautik Joshi
+    summary: 'Bhautik Joshi''s Tumblr photography and visual experiments, including San Francisco street scenes and public art. Latest feed post: January 2018.'
+    profile_photo: https://api.tumblr.com/v2/blog/bhautikj.tumblr.com/avatar/512
+  bible_gateway_news:
+    feed_url: https://www.biblegateway.com/learn/feed/
+    homepage_url: https://www.biblegateway.com/learn/
+    display_name: Bible Gateway News & Knowledge
+    summary: Bible Gateway's Christian Bible study guides, biblical history and news, devotional reflections, author excerpts, and product updates.
+    profile_photo: https://staticblog.bgcdn.com/learn/wp-content/uploads/2024/06/10143227/bible-gateway-door-e1718044363874.png
+  bibliographic_wilderness:
     feed_url: https://bibwild.wordpress.com/feed/
     homepage_url: https://bibwild.wordpress.com
-    display_name: Bibliographic Wilderness
-    summary: Updates from Bibliographic Wilderness.
-  bigthink:
+    display_name: Bibliographic Wilderness - Jonathan Rochkind
+    summary: Jonathan Rochkind's writing on digital libraries, metadata, cataloging, Ruby, Rails, web development, archival systems, and related civic concerns.
+  big_think:
     feed_url: https://bigthink.com/feed/
     homepage_url: https://bigthink.com
     display_name: Big Think
-    summary: Smarter, Faster
-  bits_debian:
+    summary: Big Think publishes essays, interviews, and explainers on science, philosophy, psychology, technology, culture, and big ideas.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbigthink.com&size=128
+  bits_from_debian:
     feed_url: https://bits.debian.org/feeds/atom.xml
     homepage_url: https://bits.debian.org
     display_name: Bits from Debian
-    summary: Updates from Bits from Debian.
-  silentcircle:
+    summary: The Debian Project's official blog on releases, developers and maintainers, community events, DebConf, outreach, and project news.
+    profile_photo: https://bits.debian.org/theme/images/openlogo-nd-75.png
+  silent_circle:
     feed_url: https://www.silentcircle.com/rss.xml
-    homepage_url: https://www.silentcircle.com
-    display_name: Silent Circle
-    summary: Silent Circle is a secure communications firm offering enterprise communications solutions including software, devices, and services.
+    homepage_url: https://www.silentcircle.com/blog/
+    display_name: Silent Circle Blog
+    summary: 'Silent Circle''s blog on secure communications, enterprise cybersecurity, and its products, from the company behind the discontinued Blackphone. Latest feed post: November 2023.'
+    profile_photo: https://www.silentcircle.com/apple-touch-icon.png?sha256=clJkAhF-voIHvCUeXeUfHV2_dRZxmpI3C3uHjRHLPJ8
   bleepingcomputer:
     feed_url: https://www.bleepingcomputer.com/feed/
     homepage_url: https://www.bleepingcomputer.com
     display_name: BleepingComputer
-    summary: BleepingComputer - All Stories
+    summary: BleepingComputer's cybersecurity and technology reporting on vulnerabilities, malware, breaches, threat actors, software updates, and security tools, including sponsored stories.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.bleepingcomputer.com&size=128
   nyt_homepage:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
     homepage_url: https://www.nytimes.com
