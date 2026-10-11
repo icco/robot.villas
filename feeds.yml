@@ -19559,6 +19559,250 @@ bots:
     homepage_url: https://approximateknowledge.net/
     display_name: Approximate Knowledge
     summary: Etymology, video games, and curious observations.
+  piratebox:
+    feed_url: https://piratebox.cc/feed.php
+    homepage_url: https://piratebox.cc
+    display_name: PIRATEBOX
+    summary: Archived PirateBox wiki changes for the DIY offline file-sharing and communications project, including page and media revisions; latest feed entry is from May 2020.
+  piratpartiet:
+    feed_url: https://piratpartiet.se/feed/
+    homepage_url: https://piratpartiet.se
+    display_name: Piratpartiet
+    summary: News, policy statements, elections, and member announcements from Piratpartiet, the Swedish Pirate Party.
+    profile_photo: https://piratpartiet.se/wp-content/uploads/2022/01/logotyp_prim_200x200.png
+  function_rant_piro:
+    feed_url: https://pirorant.tumblr.com/rss
+    homepage_url: https://pirorant.tumblr.com
+    display_name: 'function: rant[piro]'
+    summary: 'Archived sketches, drawings, comics, and personal notes from Piro''s function: rant[piro] Tumblr; feed entries end in July 2012.'
+    profile_photo: https://api.tumblr.com/v2/blog/pirorant.tumblr.com/avatar/128
+  pixelgraphix:
+    feed_url: https://pixelgraphix.de/feed.rss
+    homepage_url: https://pixelgraphix.de
+    display_name: pixelgraphix
+    summary: Drawings, print projects, calendars, design notes, and words and images by Manuela Hoffmann.
+    profile_photo: https://pixelgraphix.de/assets/apple-touch-icon.png
+  andrew_montalenti:
+    feed_url: https://amontalenti.com/feed
+    homepage_url: https://amontalenti.com
+    display_name: Andrew Montalenti
+    summary: Programming, software engineering, startups, and technology essays by Andrew Montalenti; the former pixelmonkey.org blog now publishes at amontalenti.com.
+  pixln:
+    feed_url: https://pixln.wordpress.com/feed/
+    homepage_url: https://pixln.wordpress.com
+    display_name: Pixln
+    summary: Archived German-language posts about pixel art, DIY pixel displays, LED projects, and community events; feed entries end in December 2015.
+  pirijan:
+    feed_url: https://pketh.org/feed.xml
+    homepage_url: https://pketh.org
+    display_name: Pirijan (pketh.org)
+    summary: Design, software, creative tools, and independent product-building essays by Pirijan, creator of Kinopio and co-creator of Glitch.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpketh.org&size=128
+  public_knowledge_project:
+    feed_url: https://pkp.sfu.ca/feed/
+    homepage_url: https://pkp.sfu.ca
+    display_name: Public Knowledge Project
+    summary: Public Knowledge Project news about open scholarly publishing, Open Journal Systems, community resources, research, and events.
+    profile_photo: https://pkp.sfu.ca/wp-content/uploads/2022/11/cropped-PKP_square_avatar-300x300.png
+  placeholder_blog:
+    feed_url: https://www.placeholder.vc/blog?format=rss
+    homepage_url: https://www.placeholder.vc/blog
+    display_name: Placeholder Blog
+    summary: Investment theses, research, and commentary about crypto networks, decentralized applications, and blockchain economics from Placeholder.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.placeholder.vc%2Fblog&size=128
+  plagiarism_today:
+    feed_url: https://www.plagiarismtoday.com/feed/
+    homepage_url: https://www.plagiarismtoday.com
+    display_name: Plagiarism Today
+    summary: News and analysis about plagiarism, copyright, content theft, infringement, and publishing from Plagiarism Today.
+    profile_photo: https://www.plagiarismtoday.com/wp-content/uploads/2020/11/cropped-ptlogosquare512-180x180.png
+  in_plain_english:
+    feed_url: https://plainenglish.io/feed.xml
+    homepage_url: https://plainenglish.io
+    display_name: In Plain English
+    summary: Programming tutorials, software-development articles, data and AI news, and technology commentary from In Plain English.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fplainenglish.io&size=128
+  planetscale_blog:
+    feed_url: https://planetscale.com/blog/feed.atom
+    homepage_url: https://planetscale.com/blog
+    display_name: PlanetScale Blog
+    summary: PlanetScale database product announcements and engineering articles about Postgres, Vitess, MySQL, performance, and software development.
+    profile_photo: https://planetscale.com/apple-touch-icon.png
+  planetware:
+    feed_url: https://www.planetware.com/feed/
+    homepage_url: https://www.planetware.com
+    display_name: PlanetWare
+    summary: Travel destinations, outdoor activities, trip-planning advice, and practical travel tips from PlanetWare.
+    profile_photo: https://www.planetware.com/img/planetware-favicon-448x448.png
+  platformer:
+    feed_url: https://www.platformer.news/rss/
+    homepage_url: https://www.platformer.news
+    display_name: Platformer
+    summary: Independent reporting on AI, social platforms, and the people shaping technology.
+    profile_photo: https://storage.ghost.io/c/a0/4c/a04c7225-d919-4d78-9b7c-a3fdd071349b/content/images/size/w256h256/2024/05/Logomark_Blue_800px.png
+  playbook:
+    feed_url: https://www.playbook.com/blog/rss/
+    homepage_url: https://www.playbook.com
+    display_name: Playbook
+    summary: Playbook product announcements and articles about creative file management, digital asset management, design workflows, and collaboration.
+    profile_photo: https://playbook-at.ghost.io/favicon.png
+  player_one:
+    feed_url: https://www.player.one/rss/
+    homepage_url: https://www.player.one
+    display_name: Player One
+    summary: Video-game news, reviews, guides, features, and entertainment coverage from Player One.
+    profile_photo: https://g.player.one/themes/favicons/apple-touch-icon.png
+  playstation_lifestyle:
+    feed_url: https://www.playstationlifestyle.net/feed
+    homepage_url: https://www.playstationlifestyle.net
+    display_name: PlayStation LifeStyle
+    summary: PlayStation news, game reviews, guides, trophies, PS Plus, and PSN coverage from PlayStation LifeStyle.
+    profile_photo: https://www.playstationlifestyle.net/wp-content/uploads/sites/9/2023/03/apple-touch-icon-120x120-1.png
+  pmav_eu:
+    feed_url: https://pmav.eu/rss
+    homepage_url: http://pmav.eu
+    display_name: pmav.eu
+    summary: A feed of software projects and browser experiments from pmav.eu, including image processing, JavaScript demos, and Conway's Game of Life; entries have no publication dates.
+  pocket_lint:
+    feed_url: https://www.pocket-lint.com/feed/
+    homepage_url: https://www.pocket-lint.com
+    display_name: Pocket-lint
+    summary: Consumer-technology news, product reviews, gadgets, phones, audio, entertainment, and buying advice from Pocket-lint.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.pocket-lint.com&size=128
+  computer_science_math_and_clever_dolphins:
+    feed_url: https://poincare101.blogspot.com/feeds/posts/default
+    homepage_url: https://poincare101.blogspot.com
+    display_name: Computer Science, Math and Clever Dolphins
+    summary: Archived articles about computer science, mathematics, abstract algebra, algorithms, and reasoning from Computer Science, Math and Clever Dolphins; feed entries end in April 2012.
+  pointers_gone_wild:
+    feed_url: https://pointersgonewild.com/rss.xml
+    homepage_url: https://pointersgonewild.com
+    display_name: Pointers Gone Wild
+    summary: Programming-language implementation, compilers, interpreters, graphics, audio software, and technology essays from Pointers Gone Wild.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpointersgonewild.com&size=128
+  political_wire:
+    feed_url: https://politicalwire.com/feed/
+    homepage_url: https://politicalwire.com
+    display_name: Political Wire
+    summary: Political news, polling, analysis, and commentary from Political Wire.
+    profile_photo: https://politicalwire.com/wp-content/uploads/2014/11/cropped-apple-touch-icon-32x32.png
+  gilles_chehade:
+    feed_url: https://poolp.org/index.xml
+    homepage_url: https://poolp.org
+    display_name: Gilles Chehade (poolp.org)
+    summary: Systems programming, OpenSMTPD, OpenBSD, Plakar, backups, music, and personal essays by Gilles Chehade.
+    profile_photo: https://poolp.org/apple-touch-icon.png
+  popdust:
+    feed_url: https://www.popdust.com/feed
+    homepage_url: https://www.popdust.com
+    display_name: Popdust
+    summary: Music interviews, entertainment and pop-culture coverage, plus shopping and lifestyle articles from Popdust.
+    profile_photo: https://www.popdust.com/wp-content/uploads/2024/09/favicon.webp
+  popular_information:
+    feed_url: https://popular.info/feed
+    homepage_url: https://popular.info
+    display_name: Popular Information
+    summary: Independent accountability journalism from Popular Information.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!Z9p1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4b450277-08da-4b4f-8b02-da438c0f0fcc%2Fapple-touch-icon-57x57.png
+  portkey_blog:
+    feed_url: https://portkey.ai/blog/rss/
+    homepage_url: https://portkey.ai/blog
+    display_name: Portkey Blog
+    summary: Engineering guides, benchmarks, and product articles about production AI, LLM gateways, agents, governance, and security from Portkey.
+    profile_photo: https://storage.ghost.io/c/04/80/04808bfa-0485-4139-98cc-e3f82ab7f009/content/images/size/w256h256/2024/04/just-icon.png
+  portland_mercury:
+    feed_url: https://www.portlandmercury.com/feed/
+    homepage_url: https://www.portlandmercury.com
+    display_name: Portland Mercury
+    summary: Portland news, politics, arts, music, culture, and reader contributions from the Portland Mercury.
+    profile_photo: https://i0.wp.com/www.portlandmercury.com/wp-content/uploads/2026/01/cropped-favicon.png?fit=180%2C180&ssl=1
+  portrait_coffee:
+    feed_url: https://portrait.coffee/blogs/news.atom
+    homepage_url: https://portrait.coffee/blogs/news
+    display_name: Portrait Coffee
+    summary: Portrait Coffee news, founder stories, community spotlights, and music playlists; latest news-feed entry is from August 2024.
+    profile_photo: https://portrait.coffee/cdn/shop/files/Mugsy_Logo-01_b4a36099-efb4-4da5-af97-243c2b20dbdd.png?crop=center&height=180&v=1678235865&width=180
+  eyal_posener:
+    feed_url: https://posener.github.io/feed.xml
+    homepage_url: https://posener.github.io
+    display_name: Eyal Posener
+    summary: Archived software-engineering articles and talks by Eyal Posener, especially Go, APIs, GitHub, and developer tooling; feed entries end in July 2022.
+    profile_photo: https://posener.github.io/images/about.png
+  intrapology_posts:
+    feed_url: https://post.intrapology.com/feed.xml
+    homepage_url: https://post.intrapology.com
+    display_name: Intrapology posts
+    summary: Updates about the Intrapology storyworld, queer and disabled online art, interactive performances, games, and community events.
+  postgis:
+    feed_url: https://postgis.net/feed.xml
+    homepage_url: https://postgis.net
+    display_name: PostGIS
+    summary: PostGIS release announcements and project news about spatial and geographic data support for PostgreSQL.
+    profile_photo: https://postgis.net/favicon/favicon-32x32.png
+  specterops:
+    feed_url: https://specterops.io/feed/
+    homepage_url: https://specterops.io/blog/
+    display_name: SpecterOps
+    summary: SpecterOps research and technical articles about adversary tradecraft, detection engineering, identity security, attack path management, and BloodHound.
+    profile_photo: https://specterops.io/wp-content/uploads/sites/3/2022/03/favicon-light.png?w=156
+  postsecret:
+    feed_url: https://postsecret.com/feed/
+    homepage_url: https://postsecret.com
+    display_name: PostSecret
+    summary: Anonymous secrets submitted on postcards, published as Sunday Secrets and related updates by PostSecret.
+    profile_photo: https://i0.wp.com/postsecret.com/wp-content/uploads/2025/12/cropped-ps-favicon-large.jpg?fit=180%2C180&ssl=1
+  power_lines_in_anime:
+    feed_url: https://powerlinesinanime.tumblr.com/rss
+    homepage_url: https://powerlinesinanime.tumblr.com
+    display_name: Power Lines in Anime
+    summary: Archived anime screenshots featuring power lines, support poles, lattice towers, and rail overhead lines; feed entries end in January 2022.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpowerlinesinanime.tumblr.com&size=128
+  powerpuff_animation_errors:
+    feed_url: https://powerpufferrors.tumblr.com/rss
+    homepage_url: https://powerpufferrors.tumblr.com
+    display_name: The Powerpuff Girls (2016) Animation Error Archive
+    summary: Archived examples of animation errors in the 2016 reboot of The Powerpuff Girls; feed entries end in May 2017.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpowerpufferrors.tumblr.com&size=128
+  mytinytodo:
+    feed_url: https://blog.mytinytodo.net/feed
+    homepage_url: https://blog.mytinytodo.net
+    display_name: myTinyTodo Development Blog
+    summary: myTinyTodo development announcements and release notes by Max Pozdeev; the official development-blog feed ends in October 2023.
+  ppooll:
+    feed_url: https://ppooll.klingt.org/feed/
+    homepage_url: https://ppooll.klingt.org
+    display_name: ppooll
+    summary: News and community-event announcements for ppooll, a digital signal-processing environment for Max.
+    profile_photo: https://ppooll.klingt.org/wp-content/uploads/2025/10/cropped-ppooll_logo_final_251003_bw_light-180x180.png
+  marco_pracucci:
+    feed_url: https://pracucci.com/feed.xml
+    homepage_url: https://pracucci.com
+    display_name: Marco Pracucci
+    summary: Archived software-engineering articles by Marco Pracucci about distributed systems, Go, observability, and engineering practice; feed entries end in August 2020.
+    profile_photo: https://pracucci.com/assets/favicon/apple-icon-180x180-1c816cd5a370b6991c0a50f2479bc44a87d23f53655bf3b3a1ad8c52f6a01b01.png
+  prairie_wires_modular:
+    feed_url: https://www.prairiewires.ca/feed/
+    homepage_url: https://www.prairiewires.ca
+    display_name: Prairie Wires Modular
+    summary: Electronic-music and sound-art events, artists, and community activities from Prairie Wires Modular in Brandon, Manitoba.
+    profile_photo: https://i0.wp.com/www.prairiewires.ca/wp-content/uploads/2025/04/PW-logo-stack_wht-8.png?fit=180%2C80&ssl=1
+  forte_labs:
+    feed_url: https://fortelabs.com/feed/
+    homepage_url: https://fortelabs.com
+    display_name: Forte Labs
+    summary: Articles by Tiago Forte and Forte Labs about productivity, personal knowledge management, Building a Second Brain, AI tools, and creative work; successor to the Praxis blog.
+    profile_photo: https://fortelabs.com/wp-content/uploads/2020/02/cropped-cropped-Icon_Red-1-180x180.png
+  future_fire_press:
+    feed_url: http://press.futurefire.net/feeds/posts/default
+    homepage_url: http://press.futurefire.net
+    display_name: News & Press from The Future Fire
+    summary: Issue announcements, author interviews, publishing news, and accessible speculative-fiction projects from The Future Fire.
+  the_portland_press_herald:
+    feed_url: https://www.pressherald.com/feed/
+    homepage_url: https://www.pressherald.com
+    display_name: The Portland Press Herald
+    summary: Maine news, investigations, politics, features, sports, and opinion from the Portland Press Herald.
+    profile_photo: https://www.pressherald.com/wp-content/uploads/sites/4/2025/08/pph-icon-circle-black.png?w=180
   minireference:
     feed_url: https://minireference.com/blog/feed/
     homepage_url: https://minireference.com/blog/
