@@ -1274,6 +1274,256 @@ bots:
     homepage_url: https://nickdrozd.github.io/
     display_name: Something Something Programming
     summary: Programming, computation, and Turing machines.
+  builder_aws:
+    feed_url: https://builder.aws.com/rss.xml
+    homepage_url: https://builder.aws.com
+    display_name: builder.aws.com
+    summary: Updates from builder.aws.com.
+  regular_expressions_info:
+    feed_url: https://www.regular-expressions.info/updates.xml
+    homepage_url: https://www.regular-expressions.info
+    display_name: $new =~ /www\.regular-expressions\.info/
+    summary: Stay up-to-date with changes and new additions to the web's premier site about regular expressions. Gives direct links to the relevant pages on the site.
+  reillywood:
+    feed_url: https://www.reillywood.com/index.xml
+    homepage_url: https://www.reillywood.com
+    display_name: Reilly Wood
+    summary: Recent content on Reilly Wood
+  relab_blog_torontomu_ca:
+    feed_url: https://relab.blog.torontomu.ca/feed/
+    homepage_url: https://relab.blog.torontomu.ca
+    display_name: The Responsive Ecologies Lab
+    summary: The Responsive Ecologies Lab @ Toronto Metropolitan University
+  remote_exploit:
+    feed_url: http://remote-exploit.org/rss.xml
+    homepage_url: http://remote-exploit.org
+    display_name: remote-exploit.org
+    summary: hacking for the fun of it
+  remysharp:
+    feed_url: https://remysharp.com/feed.xml
+    homepage_url: https://remysharp.com
+    display_name: remy sharp's b:log
+    summary: About [code] and all that jazz
+  renegademothering:
+    feed_url: https://renegademothering.com/feed/
+    homepage_url: https://renegademothering.com
+    display_name: renegade mothering
+    summary: tales of a wayward mama
+  renesd_blogspot:
+    feed_url: https://renesd.blogspot.com/feeds/posts/default
+    homepage_url: https://renesd.blogspot.com
+    display_name: making apps, making webs.
+    summary: Updates from making apps, making webs..
+  rentafounder:
+    feed_url: https://rentafounder.com/index.xml
+    homepage_url: https://rentafounder.com
+    display_name: Rent-a-founder
+    summary: Recent content on Rent-a-founder
+  rentzsch_tumblr:
+    feed_url: https://rentzsch.tumblr.com/rss
+    homepage_url: https://rentzsch.tumblr.com
+    display_name: rentzsch.tumblr.com
+    summary: Updates from rentzsch.tumblr.com.
+  repair_her_armor_tumblr:
+    feed_url: https://repair-her-armor.tumblr.com/rss
+    homepage_url: https://repair-her-armor.tumblr.com
+    display_name: Repair Her Armor
+    summary: This blog is dedicated to show and change the looks of ridiculous female armors (and other outfits) that women tend to have in media; such as games and comics. The purpose is to show that over-sexualized women is not “empowering”, but clearly offensive and ridiculous - not to mention it’s also clearly out of context. We’ll also show that their clothes could be greatly improved with a touch of common sense, equality and character. Feel free to submit! Please take note that Tica, the creator of RH
+  repography:
+    feed_url: https://repography.com/rss/feed.xml
+    homepage_url: https://repography.com
+    display_name: 'Repography: Visualize your code'
+    summary: Create graphical dashboards to embed in your README.md, or turn your project into beautiful data visualization posters.
+  resilientwebdesign:
+    feed_url: https://resilientwebdesign.com/podcast.rss
+    homepage_url: https://resilientwebdesign.com
+    display_name: Resilient Web Design
+    summary: A web book by Jeremy Keith.
+  resistancedashboard:
+    feed_url: https://www.resistancedashboard.com/rss.xml
+    homepage_url: https://www.resistancedashboard.com
+    display_name: Resistance Dashboard
+    summary: Updates from Resistance Dashboard.
+  resist_bot:
+    feed_url: https://resist.bot/feed.xml
+    homepage_url: https://resist.bot
+    display_name: Resistbot
+    summary: I'm Resistbot. Text RESIST to 50409 and I'll help you contact your representatives.
+  retinamacapps:
+    feed_url: https://retinamacapps.com/feed/
+    homepage_url: https://retinamacapps.com
+    display_name: RetinaMacApps
+    summary: Load up your Mac with these awesome apps
+  revealnews:
+    feed_url: https://revealnews.org/feed/
+    homepage_url: https://revealnews.org
+    display_name: Reveal
+    summary: from The Center for Investigative Reporting
+  reviews_ofb_biz:
+    feed_url: https://reviews.ofb.biz/safari/index.rss
+    homepage_url: https://reviews.ofb.biz/safari
+    display_name: TestyTim.com - OFB Labs
+    summary: The journal of technology, culture and ideas, serving up insights into the business of life since 2001.
+  revk_uk:
+    feed_url: https://www.revk.uk/feeds/posts/default
+    homepage_url: https://www.revk.uk
+    display_name: RevK®'s ramblings
+    summary: Updates from RevK®'s ramblings.
+  revsys:
+    feed_url: https://www.revsys.com/blog/feeds/latest/
+    homepage_url: https://www.revsys.com/blog/feeds/latest
+    display_name: REVSYS Blog
+    summary: Latest News and Tips from REVSYS
+  rfc_editor:
+    feed_url: https://www.rfc-editor.org/rfcrss.xml
+    homepage_url: https://www.rfc-editor.org
+    display_name: Recent RFCs
+    summary: Recently published RFCs
+  rferl:
+    feed_url: https://www.rferl.org/api/
+    homepage_url: https://www.rferl.org
+    display_name: Radio Free Europe / Radio Liberty
+    summary: Radio Free Europe / Radio Liberty is an international news organization serving Central and Eastern Europe, the Caucasus, Central Asia, Russia, the Middle East and Balkan countries
+  rfsfeelgoodupdates_substack:
+    feed_url: https://rfsfeelgoodupdates.substack.com/feed
+    homepage_url: https://rfsfeelgoodupdates.substack.com
+    display_name: Run for Something feel-good updates
+    summary: Good vibes - and no fundraising emails - from the Run for Something community. Check your inbox every Monday morning.
+  riaa:
+    feed_url: https://www.riaa.com/feed/
+    homepage_url: https://www.riaa.com
+    display_name: RIAA
+    summary: Recording Industry Association of America (RIAA)
+  richarddavidjones:
+    feed_url: https://www.richarddavidjones.com/rss/
+    homepage_url: https://www.richarddavidjones.com
+    display_name: Keeping up with the Jonesy
+    summary: My personal development project looking at personal wealth and physicial & mental health.
+  rickey:
+    feed_url: https://www.rickey.org/index.xml
+    homepage_url: https://www.rickey.org
+    display_name: Rickey News Videos
+    summary: Recent content on Rickey News Videos
+  rickrubin_substack:
+    feed_url: https://rickrubin.substack.com/feed
+    homepage_url: https://rickrubin.substack.com
+    display_name: 'The Creative Act: Thoughtforms & Innerworks'
+    summary: A weekly communiqué of actionable practices
+  rickylinn_tumblr:
+    feed_url: https://rickylinn.tumblr.com/rss
+    homepage_url: https://rickylinn.tumblr.com
+    display_name: Ricky Linn
+    summary: Tervislike Linnade - Disabled Dog Stuff - Holland’s Gin Church Of Christ - Environmental And Aquatic Biogeochemistry Laboratory - Ashe Alliance Volleyball
+  rigsomelight:
+    feed_url: https://rigsomelight.com/feed.xml
+    homepage_url: http://rigsomelight.com
+    display_name: Bruce Hauman's Blog
+    summary: Bruce Hauman's ramblings on web development and programming
+  rileyjshaw:
+    feed_url: https://rileyjshaw.com/highlights.xml
+    homepage_url: https://rileyjshaw.com
+    display_name: Highlights feed
+    summary: Riley J. Shaw is a programmer and designer. Rooted in repair and craft, he creates transparent, remixable tools for a sustainable and accessible future.
+  rioterm:
+    feed_url: https://rioterm.com/blog/rss.xml
+    homepage_url: https://rioterm.com/blog
+    display_name: Rio Terminal Blog
+    summary: Rio Terminal Blog
+  ritholtz:
+    feed_url: https://ritholtz.com/feed/
+    homepage_url: https://ritholtz.com
+    display_name: The Big Picture
+    summary: Macro Perspective on the Capital Markets, Economy, Geopolitics, Technology, and Digital Media
+  riverbed:
+    feed_url: https://www.riverbed.com/feed/
+    homepage_url: https://www.riverbed.com
+    display_name: Riverbed
+    summary: Digital Experience Innovation & Acceleration
+  rjionline:
+    feed_url: https://rjionline.org/feed/
+    homepage_url: https://rjionline.org
+    display_name: RJI
+    summary: Donald W. Reynolds Journalism Institute
+  rmurphey:
+    feed_url: https://rmurphey.com/feed/feed.xml
+    homepage_url: https://rmurphey.com
+    display_name: Rebecca Murphey
+    summary: Updates from Rebecca Murphey.
+  roadandtrack:
+    feed_url: https://www.roadandtrack.com/rss/news.xml
+    homepage_url: https://www.roadandtrack.com/news
+    display_name: News - Road & Track
+    summary: RSS feed for News - Road & Track
+  roadlesstravelled_me:
+    feed_url: https://roadlesstravelled.me/feed/
+    homepage_url: https://roadlesstravelled.me
+    display_name: Road Less Travelled
+    summary: Wander profoundly, travel deeply, surrender wholly of don't go at all... Take the Road Less Travelled. Awe-inspiring stories, photos and media from the most incredible destinations and cultures on planet earth.
+  roadmap_space:
+    feed_url: https://roadmap.space/index.xml
+    homepage_url: https://roadmap.space
+    display_name: Public Roadmap Tool on Roadmap
+    summary: Recent content in Public Roadmap Tool on Roadmap
+  roadtolarissa:
+    feed_url: https://roadtolarissa.com/rss.xml
+    homepage_url: https://roadtolarissa.com
+    display_name: roadtolarissa
+    summary: Charts from Adam Pearce
+  rknight_me:
+    feed_url: https://rknight.me/subscribe/posts/atom.xml
+    homepage_url: https://rknight.me
+    display_name: Robb Knight • Posts • Atom Feed
+    summary: Updates from Robb Knight • Posts • Atom Feed.
+  robdelaney_tumblr:
+    feed_url: https://robdelaney.tumblr.com/rss
+    homepage_url: https://robdelaney.tumblr.com
+    display_name: Rob Delaney
+    summary: Updates from Rob Delaney.
+  robdodson_me:
+    feed_url: https://robdodson.me/feed.xml
+    homepage_url: https://robdodson.me
+    display_name: Rob Dodson
+    summary: Updates from Rob Dodson.
+  robertchen_cc:
+    feed_url: https://robertchen.cc/feed.xml
+    homepage_url: https://robertchen.cc/blog
+    display_name: robertchen.cc
+    summary: A collection of some thoughts, occasionally security related
+  robertgreiner:
+    feed_url: https://robertgreiner.com/rss.xml
+    homepage_url: https://robertgreiner.com
+    display_name: Robert Greiner
+    summary: I write about AI strategy, leadership, and technology.
+  robertmuth_blogspot:
+    feed_url: https://robertmuth.blogspot.com/feeds/posts/default
+    homepage_url: https://robertmuth.blogspot.com
+    display_name: Robert Muth
+    summary: Updates from Robert Muth.
+  robkhenderson:
+    feed_url: https://www.robkhenderson.com/feed
+    homepage_url: https://www.robkhenderson.com
+    display_name: Rob Henderson's Newsletter
+    summary: Human nature, psychology, social class, luxury beliefs, and more.
+  robohub:
+    feed_url: https://robohub.org/feed/
+    homepage_url: https://robohub.org
+    display_name: Robohub
+    summary: Connecting the robotics community to the world
+  robotrising:
+    feed_url: https://robotrising.org/feed/
+    homepage_url: http://robotrising.org
+    display_name: RobotRising
+    summary: High Altitude Adventures
+  punklabs:
+    feed_url: https://punklabs.com/rss
+    homepage_url: https://punklabs.com
+    display_name: Punk Labs
+    summary: The latest news about Punk Labs games and software.
+  rockyourcode:
+    feed_url: https://www.rockyourcode.com/index.xml
+    homepage_url: https://www.rockyourcode.com
+    display_name: rockyourcode
+    summary: Recent content on rockyourcode
   paloma_kop:
     feed_url: https://palomakop.tv/rss.xml
     homepage_url: https://palomakop.tv/
