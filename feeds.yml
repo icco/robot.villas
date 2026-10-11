@@ -345,6 +345,256 @@ bots:
     display_name: Hell Gate
     summary: Subscriber-funded, worker-owned news outlet about New York City.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://hellgatenyc.com&size=128
+  cumulusmedia:
+    feed_url: https://www.cumulusmedia.com/feed/
+    homepage_url: https://www.cumulusmedia.com
+    display_name: Cumulus Media
+    summary: Where Every Voice Matters
+  kitchensoap:
+    feed_url: https://www.kitchensoap.com/feed/
+    homepage_url: https://www.kitchensoap.com
+    display_name: Kitchen Soap
+    summary: Thoughts on systems safety, software operations, and sociotechnical systems.
+  labs_detectify:
+    feed_url: https://labs.detectify.com/feed/
+    homepage_url: https://labs.detectify.com
+    display_name: Labs Detectify
+    summary: Updates from Labs Detectify.
+  laptopmag:
+    feed_url: https://www.laptopmag.com/feeds/articletype/news
+    homepage_url: https://www.laptopmag.com/news
+    display_name: Latest from Laptop Mag in News
+    summary: All the latest news content from the Laptop Mag team
+  lbrandy:
+    feed_url: https://lbrandy.com/atom.xml
+    homepage_url: https://lbrandy.com
+    display_name: lbrandy.com
+    summary: Updates from lbrandy.com.
+  lewisandquark_tumblr:
+    feed_url: https://lewisandquark.tumblr.com/rss
+    homepage_url: https://lewisandquark.tumblr.com
+    display_name: Lewis & Quark
+    summary: Keeping you updated on the latest advancements in tech, AI artificial intelligence, machine learning, and automation.
+  lina_sh:
+    feed_url: https://lina.sh/blog/rss.xml
+    homepage_url: https://lina.sh
+    display_name: lina's blog
+    summary: My little place to ramble and rant on the internet
+  lincolnloop:
+    feed_url: https://lincolnloop.com/blog/feed/
+    homepage_url: https://lincolnloop.com/blog
+    display_name: Lincoln Loop Blog
+    summary: Lincoln Loop Blog
+  linuxscrew:
+    feed_url: https://www.linuxscrew.com/feed
+    homepage_url: https://www.linuxscrew.com
+    display_name: Linux Guides, Tips and Tutorials | LinuxScrew
+    summary: LinuxScrew is a Linux resource that contains many useful guides on Linux, programming, networking, and more.
+  audacy:
+    feed_url: https://www.audacy.com/feeds/live105.rss
+    homepage_url: https://www.audacy.com
+    display_name: Audacy
+    summary: Audacy
+  locusmag:
+    feed_url: https://locusmag.com/feed/
+    homepage_url: https://locusmag.com
+    display_name: Locus
+    summary: The Magazine of the Science Fiction and Fantasy Field
+  logicmag:
+    feed_url: https://logicmag.io/rss.xml
+    homepage_url: https://logicmag.io
+    display_name: Logic(s) Magazine
+    summary: Logic(s) is a Queer Black and Asian magazine devoted to deepening the discourse around technology. We publish three times per year in print and digital formats.
+  lord:
+    feed_url: https://lord.io/feed.xml
+    homepage_url: https://lord.io
+    display_name: Lord.io
+    summary: Updates from Lord.io.
+  lrb:
+    feed_url: https://www.lrb.co.uk/feeds/rss
+    homepage_url: https://www.lrb.co.uk
+    display_name: London Review of Books
+    summary: Literary review publishing essay-length book reviews and topical articles on politics, literature, history, philosophy, science and the arts by leading writers and thinkers
+  lucumr_pocoo:
+    feed_url: https://lucumr.pocoo.org/feed.atom
+    homepage_url: https://lucumr.pocoo.org
+    display_name: Armin Ronacher's Thoughts and Writings
+    summary: Updates from Armin Ronacher's Thoughts and Writings.
+  ludumdare:
+    feed_url: https://ludumdare.com/atom.xml
+    homepage_url: https://ludumdare.com
+    display_name: Ludum Dare
+    summary: Updates from Ludum Dare.
+  subbu:
+    feed_url: https://www.subbu.org/index.xml
+    homepage_url: https://www.subbu.org
+    display_name: Writing is clarifying
+    summary: Writing is clarifying
+  ma_ttias_be:
+    feed_url: https://ma.ttias.be/index.xml
+    homepage_url: https://ma.ttias.be
+    display_name: Mattias Geniar on ma.ttias.be
+    summary: Recent content in Mattias Geniar on ma.ttias.be
+  macdaddy:
+    feed_url: https://macdaddy.io/feed.xml
+    homepage_url: https://macdaddy.io
+    display_name: MacDaddy
+    summary: Guides, deep dives, and news for Mac users from MacDaddy — backups, recovery, hardware, and automation.
+  macroscopicentric:
+    feed_url: https://macroscopicentric.net/feed.xml
+    homepage_url: https://macroscopicentric.net
+    display_name: Macroscopicentric
+    summary: This is a tech blog on the internet.
+  magazine_calpoly_edu:
+    feed_url: https://magazine.calpoly.edu/feed/
+    homepage_url: https://magazine.calpoly.edu
+    display_name: Cal Poly Magazine
+    summary: Cal Poly Magazine is the flagship publication of California Polytechnic State University, San Luis Obispo, showcasing the results of Learn by Doing.
+  uit_stanford_edu:
+    feed_url: https://uit.stanford.edu/rss.xml
+    homepage_url: https://uit.stanford.edu
+    display_name: University IT
+    summary: Updates from University IT.
+  mappinglondon:
+    feed_url: https://mappinglondon.co.uk/feed/
+    homepage_url: https://mappinglondon.co.uk
+    display_name: Mapping London
+    summary: Highlighting the best London maps
+  marijnhaverbeke_nl:
+    feed_url: https://marijnhaverbeke.nl/blog/feed.atom
+    homepage_url: https://marijnhaverbeke.nl
+    display_name: marijnhaverbeke.nl/blog
+    summary: Updates from marijnhaverbeke.nl/blog.
+  mark_story:
+    feed_url: https://mark-story.com/posts.rss
+    homepage_url: https://mark-story.com/posts
+    display_name: Recent Writing - Mark Story
+    summary: Recent writing and musings of Mark Story
+  markboulton:
+    feed_url: https://markboulton.co.uk/journal/feed/feed.xml
+    homepage_url: https://markboulton.co.uk
+    display_name: Mark Boulton Journal
+    summary: Updates from Mark Boulton Journal.
+  martech:
+    feed_url: https://martech.org/feed/
+    homepage_url: https://martech.org
+    display_name: MarTech
+    summary: Marketing Technology News and Community for MarTech Professionals
+  markmanson:
+    feed_url: https://markmanson.net/feed
+    homepage_url: https://markmanson.net
+    display_name: Mark Manson
+    summary: Life Advice that Doesn't Suck
+  massivegreatness:
+    feed_url: https://massivegreatness.com/feed
+    homepage_url: https://massivegreatness.com
+    display_name: Massive Greatness
+    summary: Updates from Massive Greatness.
+  mateuszurbanowicz:
+    feed_url: https://mateuszurbanowicz.com/feed/
+    homepage_url: https://mateuszurbanowicz.com
+    display_name: Mateusz Urbanowicz
+    summary: マテウシュ・ウルバノヴィチ
+  matrix:
+    feed_url: https://matrix.org/atom.xml
+    homepage_url: https://matrix.org
+    display_name: Matrix.org
+    summary: Updates from Matrix.org.
+  matt_aimonetti:
+    feed_url: https://matt.aimonetti.net/index.xml
+    homepage_url: https://matt.aimonetti.net
+    display_name: Matt Aimonetti
+    summary: Recent content on Matt Aimonetti
+  matt3o:
+    feed_url: https://matt3o.com/index.xml
+    homepage_url: https://matt3o.com
+    display_name: Matt3o.com
+    summary: Recent content on Matt3o.com
+  mattjohnston_co:
+    feed_url: https://mattjohnston.co/index.xml
+    homepage_url: https://mattjohnston.co
+    display_name: Matthew Johnston
+    summary: Recent content on Matthew Johnston
+  mcarthurgfx:
+    feed_url: https://mcarthurgfx.com/?feed=rss2
+    homepage_url: https://mcarthurgfx.com
+    display_name: สปินมาเนีย
+    summary: สัมผัสความตื่นเต้นของการสปินอย่างไม่มีหยุด
+  mclare_blog:
+    feed_url: https://mclare.blog/feed.atom
+    homepage_url: https://mclare.blog
+    display_name: MClare Blog
+    summary: Updates from MClare Blog.
+  mensjournal:
+    feed_url: https://www.mensjournal.com/.rss/feed/30161159-6e19-4afa-97f5-e7c51a324667.xml
+    homepage_url: https://www.mensjournal.com
+    display_name: Men's Journal
+    summary: We are a men's lifestyle publication covering the coolest gear, best spirits, top-tier style and grooming essentials, health and fitness tips, and more.
+  meta_stackoverflow:
+    feed_url: https://meta.stackoverflow.com/feeds
+    homepage_url: https://meta.stackoverflow.com/questions
+    display_name: Recent Questions - Meta Stack Overflow
+    summary: Updates from Recent Questions - Meta Stack Overflow.
+  midhudsonnews:
+    feed_url: https://midhudsonnews.com/feed/
+    homepage_url: https://midhudsonnews.com
+    display_name: Mid Hudson News
+    summary: Serving Hudson Valley and the Catskills for over 25 Years
+  mikhail:
+    feed_url: https://mikhail.io/feed/
+    homepage_url: https://mikhail.io
+    display_name: Mikhail Shilkov
+    summary: Updates from Mikhail Shilkov.
+  minimaxir:
+    feed_url: https://minimaxir.com/index.xml
+    homepage_url: https://minimaxir.com
+    display_name: Max Woolf's Blog
+    summary: Recent content on Max Woolf's Blog
+  mislav:
+    feed_url: https://mislav.net/writings/index.xml
+    homepage_url: https://mislav.net/writings
+    display_name: Mislav's writings
+    summary: Updates from Mislav's writings.
+  mixcloud:
+    feed_url: https://www.mixcloud.com/blog/feed.xml
+    homepage_url: https://www.mixcloud.com/blog
+    display_name: Mixcloud Blog
+    summary: News, guides and music culture from Mixcloud — creator advice, platform guides and stories from music communities around the world.
+  mixergy:
+    feed_url: https://mixergy.com/?feed=mixergy_feed
+    homepage_url: https://mixergy.com
+    display_name: Startup Stories - Mixergy
+    summary: Business tips for startups by proven entrepreneurs
+  mixxx:
+    feed_url: https://mixxx.org/feed.xml
+    homepage_url: https://mixxx.org
+    display_name: Mixxx
+    summary: Updates from Mixxx.
+  monochrome_watches:
+    feed_url: https://monochrome-watches.com/feed/
+    homepage_url: https://monochrome-watches.com
+    display_name: Monochrome Watches
+    summary: News, Reviews and Interesting Stories from the World of Luxury Watches
+  monome:
+    feed_url: https://monome.org/rss.xml
+    homepage_url: https://monome.org
+    display_name: monome
+    summary: sound machines for the exploration of time and space
+  motorauthority:
+    feed_url: https://feeds.highgearmedia.com/?sites=MotorAuthority
+    homepage_url: https://www.motorauthority.com
+    display_name: Motor Authority
+    summary: Latest news, reviews, and more from around the Motor Authority
+  mrmoneymustache:
+    feed_url: https://www.mrmoneymustache.com/feed/
+    homepage_url: https://www.mrmoneymustache.com
+    display_name: Mr. Money Mustache
+    summary: Early Retirement through Badassity
+  mrmrs_cc:
+    feed_url: https://mrmrs.cc/rss.xml
+    homepage_url: https://mrmrs.cc
+    display_name: Adam Morse - Generative Designer in Los Angeles
+    summary: Generative design, procedural motion, pen plots, and more.
   bbc_news:
     feed_url: https://feeds.bbci.co.uk/news/rss.xml
     homepage_url: https://www.bbc.com/news
