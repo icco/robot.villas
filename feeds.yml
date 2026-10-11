@@ -12281,6 +12281,274 @@ bots:
     display_name: SoundCloud Backstage
     summary: Developer infrastructure, distributed systems, APIs, and engineering at SoundCloud.
     profile_photo: https://soundcloud.com/pwa-round-icon-512x512.png
+  empire:
+    feed_url: https://rss.onebauer.media/api/feed-aggregator?hostname=https://www.empireonline.com
+    homepage_url: https://www.empireonline.com
+    display_name: Empire
+    summary: Film and television news, reviews, interviews, and features from Empire magazine.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.empireonline.com&size=128
+  emily_short:
+    feed_url: https://emshort.blog/feed/
+    homepage_url: https://emshort.blog
+    display_name: Emily Short's Interactive Storytelling
+    summary: Emily Short's archived writing on interactive fiction, game dialogue, and narrative design. The feed's latest post is from November 2023.
+  interfax_ukraine:
+    feed_url: https://en.interfax.com.ua/news/last.rss
+    homepage_url: https://en.interfax.com.ua
+    display_name: Interfax-Ukraine
+    summary: English-language news from Interfax-Ukraine covering Ukrainian politics, business, defense, and international affairs.
+    profile_photo: https://interfax.com.ua/static/rss_logo_180x180.jpg
+  wikisource_recent_changes:
+    feed_url: https://en.wikisource.org/w/api.php?hidebots=1&hidecategorization=1&hideWikibase=1&urlversion=1&days=1&limit=50&action=feedrecentchanges&feedformat=atom
+    homepage_url: https://en.wikisource.org/wiki/Special:RecentChanges
+    display_name: English Wikisource Recent Changes
+    summary: Recent edits to English Wikisource, the collaborative library of source texts, including author pages, transcriptions, and proofreading updates.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fen.wikisource.org%2Fwiki%2FSpecial%3ARecentChanges&size=128
+  eneko_alonso:
+    feed_url: https://www.enekoalonso.com/feed.xml
+    homepage_url: https://www.enekoalonso.com
+    display_name: Eneko Alonso
+    summary: Eneko Alonso's archived software-development articles, including Swift, SwiftUI, iOS, and cloud services. The feed's latest article is from October 2021.
+    profile_photo: https://github.com/eneko.png?size=200
+  energy_vanguard:
+    feed_url: https://www.energyvanguard.com/feed/
+    homepage_url: https://www.energyvanguard.com
+    display_name: Energy Vanguard
+    summary: Building-science articles from Energy Vanguard on home energy efficiency, HVAC, insulation, moisture, and indoor air quality.
+    profile_photo: https://www.energyvanguard.com/wp-content/uploads/2020/12/apple-icon-57x57-1.png
+  cambridge_engineering:
+    feed_url: https://www.eng.cam.ac.uk/rss.xml
+    homepage_url: https://www.eng.cam.ac.uk
+    display_name: Cambridge Engineering
+    summary: Research news, student and alumni stories, and engineering developments from the University of Cambridge Department of Engineering.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.eng.cam.ac.uk&size=128
+  khan_academy_engineering:
+    feed_url: https://blog.khanacademy.org/engineering/feed/
+    homepage_url: https://blog.khanacademy.org/engineering/
+    display_name: Khan Academy Engineering
+    summary: Khan Academy's engineering blog on software development, accessibility, design systems, infrastructure, and educational technology.
+    profile_photo: https://blog.khanacademy.org/wp-content/uploads/2026/07/KABlog_favicon-2.png
+  el_pais_in_english:
+    feed_url: https://feeds.elpais.com/mrss-s/pages/ep/site/english.elpais.com/portada
+    homepage_url: https://english.elpais.com
+    display_name: EL PAÍS in English
+    summary: English-language reporting and opinion from EL PAIS on international affairs, politics, culture, science, and society.
+    profile_photo: https://static.elpais.com/dist/resources/images/apple-touch-icon.png
+  eez:
+    feed_url: https://www.envox.eu/feed/
+    homepage_url: https://www.envox.eu
+    display_name: EEZ
+    summary: News and tutorials about EEZ Studio, embedded graphical interfaces, open-source electronics, and test-and-measurement automation.
+    profile_photo: https://www.envox.eu/wp-content/uploads/cropped-EEZ-Studio-new-icon-thick2-512x512-1-180x180.png
+  envoy_workplace_security:
+    feed_url: https://envoy.com/workplace-compliance-security-safety/rss.xml
+    homepage_url: https://envoy.com/workplace-compliance-security-safety
+    display_name: Envoy Workplace Compliance, Security & Safety
+    summary: Envoy's workplace compliance, security, and safety articles covering access control, visitor management, emergency response, and regulatory requirements.
+    profile_photo: https://cdn.prod.website-files.com/64820bb890b5d776bb0c9faf/64820d0de75a4a2af1c28912_webclip.png
+  an_entirely_other_day:
+    feed_url: https://www.eod.com/meta/full.xml
+    homepage_url: https://www.eod.com/blog
+    display_name: An Entirely Other Day
+    summary: Greg Knauss's writing on code, nerd culture, humor, politics, and everyday life at An Entirely Other Day.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.eod.com%2Fblog&size=128
+  epicdash:
+    feed_url: http://www.epicdash.com/feed/
+    homepage_url: http://www.epicdash.com
+    display_name: EpicDash
+    summary: Archived viral stories, entertainment, travel lists, and shareable photos from EpicDash. The feed's latest post is from July 2018.
+  epicurious:
+    feed_url: https://www.epicurious.com/feed/rss
+    homepage_url: https://www.epicurious.com
+    display_name: Epicurious
+    summary: Recipes, cooking techniques, kitchen tips, and food features for home cooks from Epicurious.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.epicurious.com&size=128
+  equalitie:
+    feed_url: https://equalitie.org/feed/
+    homepage_url: https://equalitie.org
+    display_name: eQualitie
+    summary: News from eQualitie on open-source tools, censorship resistance, digital security, and resilient online communities.
+    profile_photo: https://equalitie.org/wp-content/uploads/2025/02/cropped-favicon-1-180x180.png
+  ergosphere_blog:
+    feed_url: https://ergosphere.blog/atom.xml
+    homepage_url: https://ergosphere.blog
+    display_name: ergosphere.blog
+    summary: Personal essays about science, academia, artificial intelligence, and life beyond research.
+  eric_bidelman:
+    feed_url: https://ericbidelman.tumblr.com/rss
+    homepage_url: https://ericbidelman.tumblr.com
+    display_name: Eric Bidelman
+    summary: Eric Bidelman's archived Chrome, HTML5, JavaScript, and web-platform development posts. The feed's latest post is from September 2016.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fericbidelman.tumblr.com&size=128
+  eric_lippert:
+    feed_url: https://ericlippert.com/feed/
+    homepage_url: https://ericlippert.com
+    display_name: Fabulous adventures in coding
+    summary: Eric Lippert's blog about programming languages, C#, software development, and his technical writing.
+  eric_migicovsky:
+    feed_url: https://ericmigi.com/rss.xml
+    homepage_url: https://ericmigi.com
+    display_name: Eric Migicovsky's Blog
+    summary: Eric Migicovsky's writing about inventing products, Pebble smartwatches, Beeper, hardware, and startups, including linked Pebble project updates.
+    profile_photo: https://ericmigi.com/bc-notes.png
+  erik_bernhardsson:
+    feed_url: https://erikbern.com/index.xml
+    homepage_url: https://erikbern.com/index.html
+    display_name: Erik Bernhardsson
+    summary: Erik Bernhardsson's essays on software engineering, data, infrastructure, technology companies, and building products.
+    profile_photo: https://erikbern.com/assets/face.jpeg
+  eric_wendelin:
+    feed_url: https://www.eriwen.com/atom.xml
+    homepage_url: https://www.eriwen.com
+    display_name: Eric Wendelin
+    summary: Eric Wendelin's archived software-engineering blog on developer tools, testing, build performance, and programming. This feed currently contains one article from July 2019.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.eriwen.com&size=128
+  erlang_solutions:
+    feed_url: https://www.erlang-solutions.com/feed/
+    homepage_url: https://www.erlang-solutions.com
+    display_name: Erlang Solutions
+    summary: Technical articles and company updates from Erlang Solutions on Erlang, Elixir, distributed systems, messaging, and application development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.erlang-solutions.com&size=128
+  laurent_eschenauer:
+    feed_url: https://eschnou.com/index.xml
+    homepage_url: https://eschnou.com
+    display_name: Laurent Eschenauer (Eschnou)
+    summary: Laurent Eschenauer's writing as Eschnou on software engineering, artificial intelligence, open source, decentralization, and digital sovereignty.
+    profile_photo: https://eschnou.com/images/avatar.jpg
+  armed_and_dangerous:
+    feed_url: http://esr.ibiblio.org/?feed=rss2
+    homepage_url: http://esr.ibiblio.org
+    display_name: Armed and Dangerous
+    summary: Eric S. Raymond's archived blog about software, open source, politics, and firearms. The feed includes 2021 test posts and earlier essays.
+  loeber_on_substack:
+    feed_url: https://essays.johnloeber.com/feed
+    homepage_url: https://essays.johnloeber.com
+    display_name: Loeber on Substack
+    summary: John Loeber's essays on interactions between people, markets, and technology.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!--BK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F1fcac584-7776-428a-b395-7f55822162d2%2Fapple-touch-icon-57x57.png
+  etch_software_studio:
+    feed_url: https://etch.co/feed.xml
+    homepage_url: https://etch.co
+    display_name: Etch Software Studio Blog
+    summary: Articles from Etch Software Studio about software engineering, interface design, accessibility, design systems, and AI-assisted development.
+    profile_photo: https://etch.co/icons/apple-touch-icon-152x152.png
+  mandates:
+    feed_url: https://ethanding.substack.com/feed
+    homepage_url: https://ethanding.substack.com
+    display_name: mandates
+    summary: Ethan Ding publishes mandates, a newsletter about AI products, software businesses, and technology markets. The publication describes its content as AI-generated.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!hwMy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F201f2a78-a0a7-4f77-9e5e-15afe3bdfbc6%2Fapple-touch-icon-57x57.png
+  ethan_heilman:
+    feed_url: https://ethanheilman.tumblr.com/rss
+    homepage_url: https://ethanheilman.tumblr.com
+    display_name: Ethan Heilman
+    summary: Ethan Heilman's archived writing on cryptography, security research, Bitcoin, design, and games. The feed's latest post is from September 2017.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fethanheilman.tumblr.com&size=128
+  ethicalads:
+    feed_url: https://www.ethicalads.io/feeds/all.atom.xml
+    homepage_url: https://www.ethicalads.io
+    display_name: EthicalAds
+    summary: Blog posts and newsletters from EthicalAds about privacy-focused contextual advertising, developer audiences, publishers, and ad-network updates.
+    profile_photo: https://www.ethicalads.io/theme/img/favicons/favicon-32x32.png
+  the_akratic_socratic:
+    feed_url: https://etirabys.tumblr.com/rss
+    homepage_url: https://etirabys.tumblr.com
+    display_name: the akratic socratic
+    summary: Personal posts and reblogs from etirabys on books, fandom, skepticism, memes, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fetirabys.tumblr.com&size=128
+  web_developers_notes:
+    feed_url: https://eugenioz.blogspot.com/feeds/posts/default
+    homepage_url: https://eugenioz.blogspot.com
+    display_name: Web-developer's notes
+    summary: Archived programming notes and tutorials about web development, Go, cloud services, and mobile apps. The feed's latest post is from September 2018.
+  eurozine:
+    feed_url: https://www.eurozine.com/feed/
+    homepage_url: https://www.eurozine.com
+    display_name: Eurozine
+    summary: Essays, criticism, and analysis from Eurozine and its network of European cultural journals on politics, society, arts, and ideas.
+    profile_photo: https://www.eurozine.com/wp-content/themes/eurozine-theme/img/favicon.png
+  evan_dahm:
+    feed_url: https://evandahm.tumblr.com/rss
+    homepage_url: https://evandahm.tumblr.com
+    display_name: Evan Dahm
+    summary: Art, comics, project updates, and reblogs from illustrator and cartoonist Evan Dahm, creator of Rice Boy and other fantasy comics.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fevandahm.tumblr.com&size=128
+  everlane_mens_sweaters:
+    feed_url: https://www.everlane.com/collections/mens-sweaters.atom
+    homepage_url: https://www.everlane.com/collections/mens-sweaters
+    display_name: Everlane Men's Sweaters
+    summary: Everlane's men's sweater product feed, including cashmere, wool, cotton, and merino knitwear listings.
+    profile_photo: https://www.everlane.com/cdn/shop/files/EverlaneFavicon_2025-01.png?crop=center&height=32&v=1757958640&width=32
+  evert_pot:
+    feed_url: https://evertpot.com/atom.xml
+    homepage_url: https://evertpot.com
+    display_name: Evert's Dugout
+    summary: Evert Pot's blog on open source, web standards, HTTP, software development, and personal projects.
+    profile_photo: https://evertpot.com/assets/img/flower-icon.png
+  everyday_astronaut:
+    feed_url: https://everydayastronaut.com/feed/
+    homepage_url: https://everydayastronaut.com
+    display_name: Everyday Astronaut
+    summary: Rocket-launch previews, mission summaries, and spaceflight explainers from Tim Dodd and the Everyday Astronaut team. The feed's latest article is from July 2025.
+    profile_photo: https://everydayastronaut.com/wp-content/uploads/2020/12/cropped-everydayastronaut-favicon-180x180.png
+  everyday:
+    feed_url: https://everyday.app/blog/rss/
+    homepage_url: https://everyday.app/blog/
+    display_name: everyday
+    summary: Articles from the everyday habit tracker about building habits, productivity, time management, and using habit-tracking tools.
+    profile_photo: https://everyday.app/blog/content/images/size/w256h256/2018/07/everyday.png
+  everything2_new_writeups:
+    feed_url: https://everything2.com/node/ticker/New+Writeups+Atom+Feed
+    homepage_url: https://everything2.com/node/superdoc/Writeups+by+Type
+    display_name: Everything2 New Writeups
+    summary: New community-written fiction, nonfiction, poetry, reviews, and personal pieces published on Everything2.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Feverything2.com%2Fnode%2Fsuperdoc%2FWriteups%2Bby%2BType&size=128
+  everytown:
+    feed_url: https://www.everytown.org/feed/
+    homepage_url: https://www.everytown.org
+    display_name: Everytown for Gun Safety
+    summary: Gun-violence prevention news, policy explainers, advocacy guidance, and community stories from Everytown for Gun Safety.
+    profile_photo: https://www.everytown.org/wp-content/themes/everytownaction/static/img/favicon/apple-touch-icon.png
+  eves_e_den:
+    feed_url: https://eves-e-den.tumblr.com/rss
+    homepage_url: https://eves-e-den.tumblr.com
+    display_name: Eve's-e-den
+    summary: Personal visual posts and reblogs from Eve's-e-den, including photography, fashion, and aesthetic inspiration.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Feves-e-den.tumblr.com&size=128
+  evil_martians:
+    feed_url: https://evilmartians.com/chronicles.atom
+    homepage_url: https://evilmartians.com/chronicles
+    display_name: Evil Martians
+    summary: Martian Chronicles, Evil Martians' engineering and design blog, with technical articles, case studies, open-source projects, and developer-tool insights.
+    profile_photo: https://evilmartians.com/apple-touch-icon.png
+  the_big_mud_puddle:
+    feed_url: https://evincarofautumn.blogspot.com/feeds/posts/default
+    homepage_url: https://evincarofautumn.blogspot.com
+    display_name: The Big Mud Puddle
+    summary: Jon Purdy's archived essays on computing, programming languages, and design. The feed's latest article is from February 2012.
+  eweek:
+    feed_url: https://www.eweek.com/feed/
+    homepage_url: https://www.eweek.com
+    display_name: eWeek
+    summary: Technology reporting from eWeek on artificial intelligence, enterprise software, cloud computing, security, and the technology industry.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.eweek.com&size=128
+  chris_oliver:
+    feed_url: https://excid3.com/feed.xml
+    homepage_url: https://excid3.com/
+    display_name: Chris Oliver
+    summary: Chris Oliver's archived posts on web development, Ruby on Rails, software businesses, and leadership. The feed's latest post is from January 2018.
+    profile_photo: https://excid3.com/favicon.png
+  code_on_the_road:
+    feed_url: https://www.expatsoftware.com/blog/rss.aspx
+    homepage_url: https://www.expatsoftware.com/articles
+    display_name: Code on the Road
+    summary: Archived writing from Expat Software's Code on the Road blog about bootstrapped software businesses, cloud operations, travel, and working independently. The feed's latest post is from January 2023.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.expatsoftware.com%2Farticles&size=128
+  tom_stuart:
+    feed_url: https://tomstu.art/feed.atom
+    homepage_url: https://tomstu.art
+    display_name: Tom Stuart
+    summary: Tom Stuart's weeknotes and essays on software development, work, learning, and everyday life. His former Expert Human posts now live at tomstu.art.
   hugging_face:
     feed_url: https://huggingface.co/blog/feed.xml
     homepage_url: https://huggingface.co
