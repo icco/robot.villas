@@ -1390,6 +1390,256 @@ bots:
     display_name: Push.cx
     summary: Projects and technical notes from Peter Bhat Harkins.
     profile_photo: https://push.cx/apple-touch-icon.png
+  taoofmac:
+    feed_url: https://taoofmac.com/atom.xml
+    homepage_url: https://taoofmac.com
+    display_name: Tao of Mac
+    summary: Updates from Tao of Mac.
+  unity:
+    feed_url: https://unity.com/blog/rss
+    homepage_url: https://unity.com
+    display_name: Unity Blog RSS Feed
+    summary: Latest blog posts from Unity
+  tarensk_tumblr:
+    feed_url: https://tarensk.tumblr.com/rss
+    homepage_url: https://tarensk.tumblr.com
+    display_name: TarenSK
+    summary: Reflections on Aaron Swartz’s life and death, how to change the world, and making ourselves the people we want to be.
+  tarts_tumblr:
+    feed_url: https://tarts.tumblr.com/rss
+    homepage_url: https://tarts.tumblr.com
+    display_name: live or tell
+    summary: mostly a plant blog. + small press endeavours + writing fragments live well and wear love.
+  tasteandtellblog:
+    feed_url: https://www.tasteandtellblog.com/feed/
+    homepage_url: https://www.tasteandtellblog.com
+    display_name: Taste and Tell
+    summary: Come experience a taste of life!
+  tastefullyoffensive:
+    feed_url: https://www.tastefullyoffensive.com/feed/
+    homepage_url: https://www.tastefullyoffensive.com
+    display_name: Tastefully Offensive
+    summary: Premium funny, updated daily.
+  tastingtable:
+    feed_url: https://www.tastingtable.com/feed/
+    homepage_url: https://www.tastingtable.com
+    display_name: Tasting Table - Food, Restaurants, Reviews, Recipes, Cooking Tips
+    summary: Breaking food industry news, cooking tips, recipes, reviews, rankings, and interviews - since 2008.
+  tatey:
+    feed_url: https://tatey.com/feed.xml
+    homepage_url: https://tatey.com
+    display_name: Tate Johnson
+    summary: Updates from Tate Johnson.
+  taxfoundation:
+    feed_url: https://taxfoundation.org/feed/
+    homepage_url: https://taxfoundation.org
+    display_name: Tax Foundation
+    summary: Principled Research. Insightful Analysis. Engaged Experts.
+  tctmagazine:
+    feed_url: https://www.tctmagazine.com/rss/
+    homepage_url: https://www.tctmagazine.com
+    display_name: TCT Magazine
+    summary: Explore the world of additive manufacturing with TCT — news, events, podcasts, and expert insight shaping the future of 3D printing innovation.
+  tech_foo_blogspot:
+    feed_url: https://tech-foo.blogspot.com/feeds/posts/default
+    homepage_url: https://tech-foo.blogspot.com
+    display_name: Tech-Foo
+    summary: Updates from Tech-Foo.
+  tech_bluesmoon_info:
+    feed_url: http://feeds.feedburner.com/bluestech
+    homepage_url: http://tech.bluesmoon.info
+    display_name: The other side of the moon
+    summary: Updates from The other side of the moon.
+  tech_co:
+    feed_url: https://tech.co/feed
+    homepage_url: https://tech.co
+    display_name: Tech.co
+    summary: Updates from Tech.co.
+  tech_cornell_edu:
+    feed_url: https://tech.cornell.edu/feed/
+    homepage_url: https://tech.cornell.edu
+    display_name: Cornell Tech
+    summary: Updates from Cornell Tech.
+  tech_mit_edu:
+    feed_url: http://tech.mit.edu/rss/tech.xml
+    homepage_url: http://tech.mit.edu
+    display_name: The Tech - MIT's Student Newspaper
+    summary: Headlines from The Tech, MIT's Student Newspaper
+  tech_stonecharioteer:
+    feed_url: https://tech.stonecharioteer.com/index.xml
+    homepage_url: http://tech.stonecharioteer.com
+    display_name: Stonecharioteer on Tech
+    summary: Recent content on Stonecharioteer on Tech
+  tech_supercarblondie:
+    feed_url: https://tech.supercarblondie.com/feed/
+    homepage_url: https://tech.supercarblondie.com
+    display_name: SBTech
+    summary: Latest articles
+  techacute:
+    feed_url: https://techacute.com/feed/
+    homepage_url: https://techacute.com
+    display_name: TechAcute
+    summary: Empowered by Information
+  techblog_bozho:
+    feed_url: https://techblog.bozho.net/feed/
+    homepage_url: https://techblog.bozho.net
+    display_name: Bozho's tech blog
+    summary: Tips and thoughts on developing software, by Bozhidar Bozhanov
+  techblog_jeppson:
+    feed_url: https://techblog.jeppson.org/feed/
+    homepage_url: https://techblog.jeppson.org
+    display_name: Technicus
+    summary: Nick's technical musings
+  techinchicago_co:
+    feed_url: http://www.techinchicago.co/episodes?format=rss
+    homepage_url: http://www.techinchicago.co
+    display_name: Tech In Chicago
+    summary: Tech In Chicago takes you inside the Chicago tech world. Each week Colin Keeley is joined by Chicago’s top startup founders and venture capitalists to talk about the amazing companies being built right here. Visit TechInChicago.co for more information.
+  techmagazine_ws:
+    feed_url: https://techmagazine.ws/feed/
+    homepage_url: https://techmagazine.ws
+    display_name: Tech Magazine
+    summary: Tools, Tech, and Innovation
+  idnes_cz:
+    feed_url: https://servis.idnes.cz/rss.aspx
+    homepage_url: https://www.idnes.cz
+    display_name: iDNES.cz – s námi víte víc
+    summary: Nejnovější zprávy z vašeho kraje, České republiky a celého světa.
+  technology_blog_gov_uk:
+    feed_url: https://technology.blog.gov.uk/feed/
+    homepage_url: https://technology.blog.gov.uk
+    display_name: Technology in government
+    summary: Updates from Technology in government.
+  millenniumprize:
+    feed_url: https://millenniumprize.org/news-articles/blog/feed/
+    homepage_url: https://millenniumprize.org/news-articles/blog
+    display_name: Blog Archives - Millennium Technology Prize
+    summary: Finland's tribute to innovations for a better life.
+  technori:
+    feed_url: https://technori.com/feed/
+    homepage_url: https://technori.com
+    display_name: Technori
+    summary: Updates from Technori.
+  adapter_dc:
+    feed_url: https://adapter-dc.com/feed/
+    homepage_url: https://adapter-dc.com
+    display_name: Adapter | Advanced Website and Software Development in Washington DC
+    summary: Updates from Adapter | Advanced Website and Software Development in Washington DC.
+  techpolicylab_uw_edu:
+    feed_url: https://techpolicylab.uw.edu/feed/
+    homepage_url: https://techpolicylab.uw.edu
+    display_name: Tech Policy Lab
+    summary: University of Washington
+  techpp:
+    feed_url: https://techpp.com/feed/
+    homepage_url: https://techpp.com
+    display_name: TechPP
+    summary: TechPP was founded in 2008 and aims to personalize technology. TechPP publishes in-depth buying guides, reviews, tutorials and opinions.
+  techtimes:
+    feed_url: https://www.techtimes.com/rss/archives/archives.xml
+    homepage_url: https://www.techtimes.com
+    display_name: 'Tech Times :: Latest News'
+    summary: 'Updates from Tech Times :: Latest News.'
+  brainstation:
+    feed_url: https://brainstation.io/blog/feed
+    homepage_url: https://brainstation.io/blog
+    display_name: BrainStation® Blog
+    summary: The Digital Learning Company
+  teddyzetterlund:
+    feed_url: https://teddyzetterlund.com/feed/feed.xml
+    homepage_url: https://teddyzetterlund.com
+    display_name: Teddy Zetterlund – Product Coach
+    summary: Updates from Teddy Zetterlund – Product Coach.
+  tedium_co:
+    feed_url: https://feed.tedium.co/
+    homepage_url: https://tedium.co
+    display_name: 'Tedium: The Dull Side of the Internet.'
+    summary: 'Updates from Tedium: The Dull Side of the Internet..'
+  teksocial:
+    feed_url: https://teksocial.com/feed/
+    homepage_url: https://teksocial.com
+    display_name: TekSocial
+    summary: Technology tips and tools
+  temboo:
+    feed_url: https://blog.temboo.com/feed/
+    homepage_url: https://temboo.com
+    display_name: The Temboo Blog
+    summary: The latest news and updates on AI-driven embedded systems development.
+  temikus:
+    feed_url: https://temikus.net/feed
+    homepage_url: https://temikus.net
+    display_name: Artem’s ramblings
+    summary: Updates from Artem’s ramblings.
+  tencentticker:
+    feed_url: https://www.tencentticker.com/feed/
+    homepage_url: https://www.tencentticker.com
+    display_name: Tencent Ticker
+    summary: Bringing Spirit of Best Read
+  tendercrumb_blogspot:
+    feed_url: http://feeds.feedburner.com/blogspot/qwfbwo
+    homepage_url: http://tendercrumb.blogspot.com
+    display_name: TENDER CRUMB
+    summary: Updates from TENDER CRUMB.
+  tenshu53_exblog_jp:
+    feed_url: https://tenshu53.exblog.jp/index.xml
+    homepage_url: http://tenshu53.exblog.jp
+    display_name: 下呂温泉 留之助商店 店主のブログ
+    summary: 芸術みたいな玩具みたいなオブジェモチャ屋の店主が綴るあまり役に立たないオモチャ情報。
+  tenzer_dk:
+    feed_url: https://tenzer.dk/index.xml
+    homepage_url: https://tenzer.dk
+    display_name: Tenzer.dk
+    summary: Recent content on Tenzer.dk
+  termie_pbworks:
+    feed_url: https://termie.pbworks.com/w/feed/rss
+    homepage_url: http://termie.pbworks.com
+    display_name: termie
+    summary: The invite key is secret due to spammers :/
+  terminally_incoherent:
+    feed_url: https://www.terminally-incoherent.com/blog/feed/index.html
+    homepage_url: http://www.terminally-incoherent.com/blog
+    display_name: Terminally Incoherent
+    summary: I will not fix your computer.
+  terrygodier:
+    feed_url: https://www.terrygodier.com/feed.xml
+    homepage_url: https://terrygodier.com
+    display_name: Terry Godier
+    summary: Building software that respects your attention.
+  texastribune:
+    feed_url: https://feeds.texastribune.org/feeds/main/
+    homepage_url: https://www.texastribune.org
+    display_name: The Texas Tribune
+    summary: Independent news. Trusted by Texans.
+  textual_textualize:
+    feed_url: https://textual.textualize.io/feed_rss_created.xml
+    homepage_url: https://textual.textualize.io
+    display_name: Textual
+    summary: Updates from Textual.
+  texxandthecity:
+    feed_url: https://texxandthecity.com/feed/
+    homepage_url: https://texxandthecity.com
+    display_name: Texx and the City
+    summary: Spotlighting Independent South African Artists
+  thagomizer:
+    feed_url: https://thagomizer.com/atom.xml
+    homepage_url: http://www.thagomizer.com
+    display_name: Thagomizer
+    summary: Updates from Thagomizer.
+  thaiwood:
+    feed_url: https://thaiwood.io/index.xml
+    homepage_url: https://ThaiWood.IO
+    display_name: Thai Wood
+    summary: Recent content on Thai Wood
+  the_best_art_computer:
+    feed_url: https://the-best-art.computer/rss
+    homepage_url: https://the-best-art.computer
+    display_name: The Best Art
+    summary: The Best Art is an artistic collaboration between the computer (MacBook Air, 13-inch, early 2015), and the human (Nicole He). The computer queries the universe and uses an algorithm to objectively calculate the best art for any given moment in time. The human executes the commands. Follow new projects here or on Twitter. Read more about The Best Art here.
+  the_camera_in_the_mirror_tumblr:
+    feed_url: https://the-camera-in-the-mirror.tumblr.com/rss
+    homepage_url: https://the-camera-in-the-mirror.tumblr.com
+    display_name: the camera in the mirror
+    summary: Updates from the camera in the mirror.
   zach_ahn:
     feed_url: https://zachahn.com/posts/atom.xml
     homepage_url: https://zachahn.com/
