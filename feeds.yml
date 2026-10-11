@@ -729,6 +729,256 @@ bots:
     display_name: Mark Mosher
     summary: Experimental electronic music, synthesis, dark ambient, cinematic music, glitch, and multimedia.
     profile_photo: https://i0.wp.com/markmoshermusic.com/wp-content/uploads/2022/02/cropped-2da15-cropped-snapshot-06-06-2021-0917-1.png?fit=180%2C180&ssl=1
+  definite_app:
+    feed_url: https://www.definite.app/rss.xml
+    homepage_url: https://definite.app
+    display_name: Definite Blog
+    summary: Latest articles from Definite
+  defn:
+    feed_url: https://defn.io/index.xml
+    homepage_url: https://defn.io
+    display_name: defn.io
+    summary: Bogdan Popa's website.
+  defnesumanblogs:
+    feed_url: https://defnesumanblogs.com/feed/
+    homepage_url: https://defnesumanblogs.com
+    display_name: İnsanlık Hâlİ
+    summary: HUMAN CONDITION
+  delbius:
+    feed_url: https://delbius.com/feed/
+    homepage_url: https://delbius.com
+    display_name: delbius.com
+    summary: Updates from delbius.com.
+  demilked:
+    feed_url: https://www.demilked.com/rss.xml
+    homepage_url: https://www.demilked.com
+    display_name: Demilked - The Good Stuff In Life
+    summary: Demilked is a magazine about design, art, photography, and everything that's beautiful.
+  democrats:
+    feed_url: https://democrats.org/feed/
+    homepage_url: https://democrats.org
+    display_name: Democrats
+    summary: Updates from Democrats.
+  coopercenter:
+    feed_url: https://www.coopercenter.org/rss.xml
+    homepage_url: https://www.coopercenter.org
+    display_name: Cooper Center
+    summary: Updates from Cooper Center.
+  dendory:
+    feed_url: https://dendory.net/rss.xml
+    homepage_url: https://dendory.net
+    display_name: Dendory Network - Blog
+    summary: Blog posts and papers about gaming, technology and art.
+  denilson_sa_nom_br:
+    feed_url: https://denilson.sa.nom.br/atom.xml
+    homepage_url: https://denilson.sa.nom.br
+    display_name: Denilson Sá
+    summary: Updates from Denilson Sá.
+  deno:
+    feed_url: https://deno.com/feed
+    homepage_url: https://deno.com/blog
+    display_name: Deno
+    summary: Updates from Deno.
+  denodell:
+    feed_url: https://denodell.com/rss.xml
+    homepage_url: https://denodell.com
+    display_name: Den Odell’s Journal
+    summary: Thoughts on building fast, accessible, and resilient web apps, drawn from years of real-world experience, a couple of books, and a lot of hard lessons. Expect deep dives, practical tips, a bit of history, and the occasional opinionated take on where the web is going.
+  deps_co:
+    feed_url: https://www.deps.co/index.xml
+    homepage_url: https://www.deps.co
+    display_name: Deps
+    summary: Recent content on Deps
+  derekthompson:
+    feed_url: https://www.derekthompson.org/feed
+    homepage_url: https://www.derekthompson.org
+    display_name: Derek Thompson
+    summary: A newsletter about abundance and building a better world.
+  dergigi:
+    feed_url: https://dergigi.com/thoughts.xml
+    homepage_url: https://dergigi.com/thinking
+    display_name: Thinking in Public
+    summary: Writing to think. Thinking in public.
+  deseret:
+    feed_url: https://www.deseret.com/rss/latest.rss
+    homepage_url: https://www.deseret.com
+    display_name: Deseret News
+    summary: Deseret News News Feed
+  designbeep:
+    feed_url: https://designbeep.com/feed/
+    homepage_url: https://designbeep.com
+    display_name: Designbeep
+    summary: Free Resources for Designers and Developers
+  designer_daily:
+    feed_url: https://www.designer-daily.com/feed
+    homepage_url: https://www.designer-daily.com
+    display_name: 'Designer Daily: graphic and web design blog'
+    summary: Designer Daily is a place to find inspiration, resources and articles for graphic and web designers, or just design lovers in general.
+  designersandbooks:
+    feed_url: https://www.designersandbooks.com/rss
+    homepage_url: https://www.designersandbooks.com
+    display_name: Designers & Books Blog
+    summary: Updates from Designers & Books Blog.
+  designsponge_blogspot:
+    feed_url: https://designsponge.blogspot.com/feeds/posts/default
+    homepage_url: https://designsponge.blogspot.com
+    display_name: Design*Sponge
+    summary: Updates from Design*Sponge.
+  desktopgaming:
+    feed_url: https://www.desktopgaming.com/feed/
+    homepage_url: https://www.desktopgaming.com
+    display_name: Desktop Gaming
+    summary: Any and All Things Related to Gaming
+  destinationluxury:
+    feed_url: https://destinationluxury.com/feed/
+    homepage_url: https://destinationluxury.com
+    display_name: Destination Luxury
+    summary: Home
+  destiny_bungie:
+    feed_url: https://destiny.bungie.org/rss.xml
+    homepage_url: http://destiny.bungie.org
+    display_name: DBO
+    summary: bungie.org's superlative coverage of Bungie's game Destiny
+  blueberries_gg:
+    feed_url: https://www.blueberries.gg/feed/
+    homepage_url: https://www.blueberries.gg
+    display_name: BlueberriesGG
+    summary: Your number one source for Destiny 2 content
+  destroyallsoftware:
+    feed_url: https://www.destroyallsoftware.com/blog/index.xml
+    homepage_url: https://www.destroyallsoftware.com/screencasts
+    display_name: Destroy All Software Blog
+    summary: Updates from Destroy All Software Blog.
+  destroytoday:
+    feed_url: https://destroytoday.com/feeds/all
+    homepage_url: https://destroytoday.com/feeds/all
+    display_name: Jonnie Hallman (@destroytoday)
+    summary: An indie design engineer based in Brooklyn.
+  dev_answers_blogspot:
+    feed_url: https://dev-answers.blogspot.com/feeds/posts/default
+    homepage_url: https://dev-answers.blogspot.com
+    display_name: Development Answers (No Questions)
+    summary: Updates from Development Answers (No Questions).
+  dev_arie_bovenberg:
+    feed_url: https://dev.arie.bovenberg.net/feed.xml
+    homepage_url: https://dev.arie.bovenberg.net
+    display_name: Arie Bovenberg
+    summary: Updates from Arie Bovenberg.
+  devblogs_microsoft:
+    feed_url: https://devblogs.microsoft.com/typescript/feed/
+    homepage_url: https://devblogs.microsoft.com/typescript
+    display_name: TypeScript
+    summary: The official blog of the TypeScript team.
+  devconnected:
+    feed_url: https://devconnected.com/feed/
+    homepage_url: https://devconnected.com
+    display_name: devconnected
+    summary: Software Engineering Articles, Guides & Tips
+  devdocs:
+    feed_url: https://devdocs.io/feed
+    homepage_url: https://devdocs.io
+    display_name: DevDocs
+    summary: Updates from DevDocs.
+  devel_tech:
+    feed_url: https://devel.tech/rss.xml
+    homepage_url: https://devel.tech
+    display_name: devel.tech
+    summary: Technical articles on Python, TypeScript, AWS, and web development
+  mcvuk:
+    feed_url: https://mcvuk.com/feed/
+    homepage_url: https://mcvuk.com
+    display_name: MCV/DEVELOP
+    summary: News, events, research and jobs from the games industry
+  developer_chrome:
+    feed_url: https://developer.chrome.com/blog/feed.xml
+    homepage_url: https://developer.chrome.com/blog
+    display_name: 'developer.chrome.com: Blog'
+    summary: All of developer.chrome.com articles.
+  developer_uservoice:
+    feed_url: http://feeds.feedburner.com/uservoice/GxpH
+    homepage_url: https://developer.uservoice.com
+    display_name: UserVoice Developer
+    summary: Updates from UserVoice Developer.
+  devnull_as_a_service:
+    feed_url: https://devnull-as-a-service.com/index.xml
+    homepage_url: https://devnull-as-a-service.com
+    display_name: /dev/null as a Service
+    summary: Recent content on /dev/null as a Service
+  devo_ps:
+    feed_url: https://devo.ps/atom.xml
+    homepage_url: https://devo.ps
+    display_name: devo.ps
+    summary: Updates from devo.ps.
+  devonzuegel:
+    feed_url: https://devonzuegel.com/feed.xml
+    homepage_url: https://devonzuegel.com
+    display_name: devonzuegel.com
+    summary: Updates from devonzuegel.com.
+  devops:
+    feed_url: https://devops.com/feed/
+    homepage_url: https://devops.com
+    display_name: DevOps.com
+    summary: Where the world meets DevOps
+  devopsanywhere_blogspot:
+    feed_url: http://feeds.feedburner.com/Devopsanywhere
+    homepage_url: http://devopsanywhere.blogspot.com
+    display_name: devopsanywhere
+    summary: Updates from devopsanywhere.
+  devs_cloudimmunity:
+    feed_url: http://devs.cloudimmunity.com/rss/
+    homepage_url: http://devs.cloudimmunity.com
+    display_name: Devs ♥ Security
+    summary: Code, Cloud, Security, and Everything in Between.
+  devtidbits:
+    feed_url: https://devtidbits.com/index.xml
+    homepage_url: https://devtidbits.com
+    display_name: The Developer's Tidbits
+    summary: Helpful software and developer tips for random problems
+  dgl_cx:
+    feed_url: https://dgl.cx/feed
+    homepage_url: https://dgl.cx
+    display_name: dgl.cx
+    summary: Updates from dgl.cx.
+  dgp_toronto_edu__mjmcguff:
+    feed_url: https://www.dgp.toronto.edu/feed
+    homepage_url: https://www.dgp.toronto.edu
+    display_name: Dynamic Graphics Project
+    summary: Computer Science, University of Toronto
+  dhdersch_github:
+    feed_url: https://dhdersch.github.io/feed.xml
+    homepage_url: https://dhdersch.github.io
+    display_name: Programming Blog
+    summary: Hello, I am Daniel Dersch and welcome to my programming blog!
+  diabettech:
+    feed_url: https://www.diabettech.com/feed/
+    homepage_url: https://www.diabettech.com
+    display_name: Diabettech – Diabetes and Technology
+    summary: Where Diabetes and Technology meet
+  diamondgeezer_blogspot:
+    feed_url: http://feeds.feedburner.com/blogspot/HcFb
+    homepage_url: http://diamondgeezer.blogspot.com
+    display_name: diamond geezer
+    summary: Updates from diamond geezer.
+  diaryofdennis:
+    feed_url: https://diaryofdennis.com/feed/
+    homepage_url: https://diaryofdennis.com
+    display_name: Diary of Dennis
+    summary: Photography, Technology, PC Gaming, Tutorials
+  didact_us:
+    feed_url: http://didact.us/feed.xml
+    homepage_url: http://didact.us
+    display_name: NEVERSAW.US | Chris Dickinson's Blog
+    summary: NEVERSAW.US | Chris Dickinson's Blog
+  diegobasch:
+    feed_url: https://diegobasch.com/feed
+    homepage_url: https://diegobasch.com
+    display_name: Diego Basch
+    summary: Updates from Diego Basch.
+  dieworkwear:
+    feed_url: https://dieworkwear.com/feed/
+    homepage_url: https://dieworkwear.com
+    display_name: Die, Workwear!
+    summary: A blog about menswear
   jondent:
     feed_url: https://djjondent.blogspot.com/feeds/posts/default?alt=rss
     homepage_url: https://djjondent.blogspot.com
