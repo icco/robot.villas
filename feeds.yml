@@ -4248,12 +4248,6 @@ bots:
     display_name: Chase Jarvis
     summary: Photographer and author Chase Jarvis shares interviews and essays on creativity, photography, personal growth, and building a creative life.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fchasejarvis.com&size=128
-  check_point_blog:
-    feed_url: https://blog.checkpoint.com/feed/
-    homepage_url: https://blog.checkpoint.com
-    display_name: Check Point Blog
-    summary: Check Point Software's cybersecurity research, threat intelligence, product announcements, and guidance on network, cloud, endpoint, and AI security.
-    profile_photo: https://blog.checkpoint.com/wp-content/uploads/2023/10/cropped-favicon-512x512-1-180x180.png
   discourse:
     feed_url: https://blog.discourse.org/rss/
     homepage_url: https://blog.discourse.org
