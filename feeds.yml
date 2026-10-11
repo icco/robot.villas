@@ -1176,6 +1176,256 @@ bots:
     homepage_url: https://cceckman.com/
     display_name: Hi, I'm cceckman. on cceckman.com
     summary: Photography, software, and personal projects.
+  ntietz:
+    feed_url: https://ntietz.com/atom.xml
+    homepage_url: https://ntietz.com
+    display_name: ntietz.com blog - technically a blog
+    summary: Updates from ntietz.com blog - technically a blog.
+  nuclearsquid:
+    feed_url: https://nuclearsquid.com/feed.xml
+    homepage_url: https://nuclearsquid.com
+    display_name: The Nuclear Squid
+    summary: Musings on technology.
+  nullprogram:
+    feed_url: https://nullprogram.com/feed/
+    homepage_url: https://nullprogram.com
+    display_name: null program
+    summary: Updates from null program.
+  nullsweep:
+    feed_url: https://nullsweep.com/rss/
+    homepage_url: https://nullsweep.com
+    display_name: Null Sweep
+    summary: Continuous Security, DevOps, and DevSecOps
+  nulogy:
+    feed_url: https://nulogy.com/feed/
+    homepage_url: https://nulogy.com
+    display_name: Nulogy
+    summary: For the people behind every product
+  nwjs:
+    feed_url: https://nwjs.io/feed/blog.xml
+    homepage_url: http://nwjs.io
+    display_name: NW.js Blog
+    summary: NW.js Blog
+  jonathanleemartin:
+    feed_url: https://jonathanleemartin.com/rss/
+    homepage_url: https://jonathanleemartin.com
+    display_name: tl;dr
+    summary: "Software design. Craftsmanship. And lots of JavaScript. \U0001F64C"
+  nycemf:
+    feed_url: https://nycemf.org/feed/
+    homepage_url: https://nycemf.org
+    display_name: NYCEMF 2027
+    summary: NYCEMF 2027
+  nynightowls_tumblr:
+    feed_url: https://nynightowls.tumblr.com/rss
+    homepage_url: https://nynightowls.tumblr.com
+    display_name: New York Nightowls
+    summary: A late night co-working club brought to you lovingly by @allan & @heyamberrae
+  nyskateboarding:
+    feed_url: https://nyskateboarding.com/feed/
+    homepage_url: https://nyskateboarding.com
+    display_name: NYSkateboarding.com
+    summary: New York Skateboarding & Culture since the late 80s
+  nyxt_atlas_engineer:
+    feed_url: https://nyxt.atlas.engineer/feed
+    homepage_url: https://nyxt.atlas.engineer
+    display_name: Nyxt Browser
+    summary: Updates from Nyxt Browser.
+  nzaht:
+    feed_url: https://nzaht.org/feed/
+    homepage_url: https://nzaht.org/new-home
+    display_name: Antarctic Heritage Trust
+    summary: A New Zealand-based charity with a vision of inspiring explorers.
+  oaklandreviewofbooks:
+    feed_url: https://www.oaklandreviewofbooks.org/rss/
+    homepage_url: https://www.oaklandreviewofbooks.org
+    display_name: Oakland Review of Books
+    summary: ORBital. absORBent. fORBearance. motORBus.
+  obartunov_livejournal:
+    feed_url: https://obartunov.livejournal.com/data/rss
+    homepage_url: https://obartunov.livejournal.com
+    display_name: '...'
+    summary: '... - LiveJournal.com'
+  obdev_at:
+    feed_url: https://obdev.at/rss/
+    homepage_url: https://obdev.at/blog
+    display_name: Objective Development's Blog
+    summary: Objective Development's Blog
+  obfuscurity:
+    feed_url: http://obfuscurity.com/rss.xml
+    homepage_url: http://obfuscurity.com
+    display_name: obfuscurity.
+    summary: hidden in plain sight
+  objc:
+    feed_url: https://www.objc.io/feed.xml
+    homepage_url: https://www.objc.io
+    display_name: objc.io
+    summary: objc.io publishes books, videos, and articles on advanced techniques for iOS and macOS development.
+  object:
+    feed_url: https://object.io/feed.xml
+    homepage_url: https://object.io
+    display_name: object.io
+    summary: Hi, I'm Laust Rud Jacobsen, an experienced webapp developer specializing in Ruby and PostgreSQL-based solutions. You can hire me to build awesome stuff for you. Your idea needs somebody who understands the tools, and can puzzle out the trickiest of issues. I hold a M.Sc. in Computer Science, and I use that foundation to build efficient, maintainable and understandable solutions. I have been working full-time on Rails-projects since early 2008, and have been test-driven since day one. I live in b
+  obscuritory:
+    feed_url: https://obscuritory.com/feed/
+    homepage_url: https://obscuritory.com
+    display_name: The Obscuritory
+    summary: For Games Unplayed and Unknown
+  obsproject:
+    feed_url: https://obsproject.com/blog/rss
+    homepage_url: https://obsproject.com/blog
+    display_name: Blog Feed
+    summary: Updates from Blog Feed.
+  obvious:
+    feed_url: https://obvious.com/feed/
+    homepage_url: https://obvious.com
+    display_name: Obvious
+    summary: Updates from Obvious.
+  odd_blog:
+    feed_url: https://odd.blog/feed/
+    homepage_url: https://odd.blog
+    display_name: Something Odd!
+    summary: Updates from Something Odd!.
+  octodex_github:
+    feed_url: https://octodex.github.com/atom.xml
+    homepage_url: https://octodex.github.com
+    display_name: GitHub Octodex
+    summary: Updates from GitHub Octodex.
+  odbms:
+    feed_url: https://www.odbms.org/feed/
+    homepage_url: https://www.odbms.org
+    display_name: ODBMS.org
+    summary: Operational Database Management Systems
+  oddly_even:
+    feed_url: https://oddly-even.com/feed/
+    homepage_url: https://oddly-even.com
+    display_name: OddsEven
+    summary: 'Optimalkan Strategi Anda: Pahami Format Peluang dan Hitung dengan Cerdas'
+  oert:
+    feed_url: https://www.oert.org/feed/
+    homepage_url: https://www.oert.org
+    display_name: OERT
+    summary: Open Educational Resources for Typography
+  offbytwo:
+    feed_url: http://feeds.feedburner.com/offbytwo
+    homepage_url: http://offbytwo.com
+    display_name: Cosmin Stejerean (offbytwo)
+    summary: Updates from Cosmin Stejerean (offbytwo).
+  offf_barcelona:
+    feed_url: https://www.offf.barcelona/blog-feed.xml
+    homepage_url: https://www.offf.barcelona/blog
+    display_name: OFFF Events S.L.
+    summary: OFFF 2027
+  oggcamp:
+    feed_url: https://www.oggcamp.org/index.xml
+    homepage_url: https://www.oggcamp.org
+    display_name: OggCamp 2026
+    summary: Recent content on OggCamp 2026
+  oh_totoro:
+    feed_url: https://oh-totoro.com/rss
+    homepage_url: https://oh-totoro.com
+    display_name: Studio Ghibli
+    summary: Just here to celebrate and share Studio Ghibli with others.
+  ohjoysextoy:
+    feed_url: https://www.ohjoysextoy.com/feed/
+    homepage_url: https://www.ohjoysextoy.com
+    display_name: Oh Joy Sex Toy
+    summary: A Sex Education and Toy Review Comic
+  ohmyveggies:
+    feed_url: https://ohmyveggies.com/feed/
+    homepage_url: https://ohmyveggies.com
+    display_name: Oh My Veggies
+    summary: A Vegetarian Food Site
+  ojack_xyz:
+    feed_url: https://ojack.xyz/index.xml
+    homepage_url: https://ojack.xyz
+    display_name: olivia jack
+    summary: Recent content on olivia jack
+  ok:
+    feed_url: https://www.ok.co.uk/?service=rss
+    homepage_url: https://www.ok.co.uk
+    display_name: Ok - home
+    summary: RSS feed from Ok
+  noahkagan:
+    feed_url: https://noahkagan.com/feed/
+    homepage_url: https://noahkagan.com
+    display_name: Noah Kagan
+    summary: Noah Kagan's Blog About Marketing and More
+  okhell_tumblr:
+    feed_url: https://okhell.tumblr.com/rss
+    homepage_url: https://okhell.tumblr.com
+    display_name: OkHell
+    summary: Collecting the shared pains and sufferings of the online dater.
+  olark:
+    feed_url: https://www.olark.com/index.xml
+    homepage_url: https://www.olark.com
+    display_name: Olark
+    summary: Recent content on Olark
+  oldjewishmen_substack:
+    feed_url: https://oldjewishmen.substack.com/feed
+    homepage_url: https://oldjewishmen.substack.com
+    display_name: OLD JEWISH MEN
+    summary: Essential reading for non-essential people
+  oldschoolfrp_tumblr:
+    feed_url: https://oldschoolfrp.tumblr.com/rss
+    homepage_url: https://oldschoolfrp.tumblr.com
+    display_name: Old School FRP
+    summary: Mysterious robed dungeon-dwelling person/thing presents:The original golden age of fantasy role playing games.
+  oliodevices:
+    feed_url: https://www.oliodevices.com/feed/
+    homepage_url: https://www.oliodevices.com
+    display_name: Olio Devices
+    summary: Updates from Olio Devices.
+  olivierlacan:
+    feed_url: https://feed.olivierlacan.com/
+    homepage_url: https://olivierlacan.com
+    display_name: Olivier Lacan
+    summary: Thoughts on Ruby, Rails, open source software, programming, and life.
+  ollieparanoid_github:
+    feed_url: https://ollieparanoid.github.io/feed.xml
+    homepage_url: https://ollieparanoid.github.io
+    display_name: ollieparanoid
+    summary: ollieparanoid
+  ictworks:
+    feed_url: https://www.ictworks.org/feed/
+    homepage_url: https://www.ictworks.org
+    display_name: ICTworks
+    summary: Expertise in sustainable ICT4D for the developing world
+  omakasecharity:
+    feed_url: https://omakasecharity.org/feed/
+    homepage_url: https://omakasecharity.org
+    display_name: omakasecharity.org
+    summary: Updates from omakasecharity.org.
+  omar_website:
+    feed_url: https://omar.website/posts/index.xml
+    homepage_url: https://omar.website/posts
+    display_name: Posts on Omar Rizwan
+    summary: Recent content in Posts on Omar Rizwan
+  omc345_substack:
+    feed_url: https://omc345.substack.com/feed
+    homepage_url: https://omc345.substack.com
+    display_name: the dot dot dot
+    summary: First principles analysis of technology, business, and power - focusing on what comes next and what others miss
+  once:
+    feed_url: https://once.com/campfire/changelog.atom
+    homepage_url: https://once.com/campfire/changelog
+    display_name: Campfire Changelog
+    summary: Updates from Campfire Changelog.
+  thom4:
+    feed_url: https://thom4.net/feed/
+    homepage_url: https://thom4.net
+    display_name: Thomas Parisot — Carnet Web
+    summary: Updates from Thomas Parisot — Carnet Web.
+  onegoodthingbyjillee:
+    feed_url: https://www.onegoodthingbyjillee.com/feed/
+    homepage_url: https://www.onegoodthingbyjillee.com
+    display_name: One Good Thing by Jillee
+    summary: Simplify life with practical tips and tested advice for cleaning, organizing, and cooking.
+  ongardie:
+    feed_url: https://ongardie.net/blog/rss.xml
+    homepage_url: https://ongardie.net/blog
+    display_name: ongardie.net
+    summary: Diego Ongaro's Blog
   occasionally_cogent:
     feed_url: https://occasionallycogent.com/feed.xml
     homepage_url: https://occasionallycogent.com/
