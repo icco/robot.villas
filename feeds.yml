@@ -9766,256 +9766,290 @@ bots:
     display_name: The Race
     summary: Independent Formula 1, MotoGP, Formula E, and motorsport news.
     profile_photo: https://www.the-race.com/favicon.png
-  booktwo:
-    feed_url: http://booktwo.org/feed/
-    homepage_url: http://booktwo.org
-    display_name: booktwo.org
-    summary: The work and writing of James Bridle
-  boorch_itch:
+  booktwo_james_bridle:
+    feed_url: https://booktwo.org/feed/
+    homepage_url: https://booktwo.org
+    display_name: Booktwo - James Bridle
+    summary: James Bridle writes about art, literature, technology, ecology, and the network.
+  dronage_terminal_devlog:
     feed_url: https://boorch.itch.io/dronage-terminal/devlog.rss
     homepage_url: https://boorch.itch.io/dronage-terminal
-    display_name: Dronage Terminal Devlog - itch.io
-    summary: A terminal based drone workstation
-  borud_no:
+    display_name: Dronage Terminal Devlog
+    summary: Release notes from boorch for Dronage Terminal, a terminal-based drone music workstation.
+    profile_photo: https://img.itch.zone/aW1nLzI0NzEwMjQxLmpwZw==/32x32%23/eMCTX1.jpg
+  bjorn_borud:
     feed_url: https://borud.no/index.xml
-    homepage_url: http://borud.no
+    homepage_url: https://borud.no
     display_name: Bjørn Borud
-    summary: Recent content on Bjørn Borud
-  bounty_github:
+    summary: Bjørn Borud writes about programming, software tools, hardware, and technology.
+    profile_photo: https://github.com/borud.png?size=200
+  github_bug_bounty:
     feed_url: https://bounty.github.com/feed.atom
     homepage_url: https://bounty.github.com
-    display_name: GitHub security bug bounty program
-    summary: Updates from GitHub security bug bounty program.
-  box_matto_nl:
+    display_name: GitHub Bug Bounty
+    summary: Archived GitHub bug bounty disclosures and researcher acknowledgements, with feed entries through 2019.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbounty.github.com&size=128
+  box_matto:
     feed_url: https://box.matto.nl/index.xml
-    homepage_url: http://box.matto.nl
-    display_name: Open source software and nice hardware
-    summary: Open source software and nice hardware
-  bramstein:
+    homepage_url: https://box.matto.nl
+    display_name: box.matto.nl
+    summary: Matto writes about open source software, Unix-like systems, Emacs, the small web, hardware, and books.
+  bram_stein:
     feed_url: https://www.bramstein.com/rss.xml
     homepage_url: https://www.bramstein.com
-    display_name: bramstein.com news
-    summary: Updates from the personal website of Bram Stein, a web developer.
-  brancz:
+    display_name: Bram Stein
+    summary: Bram Stein's archived writing on web typography, font loading, and front-end development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.bramstein.com&size=128
+  frederic_branczyk:
     feed_url: https://www.brancz.com/index.xml
     homepage_url: https://brancz.com
     display_name: Frederic Branczyk
-    summary: Recent content on Frederic Branczyk
-  bravotv:
+    summary: Frederic Branczyk's archived writing on Kubernetes, Prometheus, monitoring, and cloud infrastructure.
+    profile_photo: https://www.brancz.com/favicons/apple-touch-icon.png
+  bravo_tv:
     feed_url: https://www.bravotv.com/rss.xml
     homepage_url: https://www.bravotv.com
-    display_name: Bravo TV Official Site
-    summary: Updates from Bravo TV Official Site.
-  breakingdefense:
+    display_name: Bravo TV
+    summary: Official Bravo entertainment and reality-TV articles from an RSS archive last updated in 2023.
+    profile_photo: https://www.bravotv.com/sites/bravo/themes/custom/reality/images/icons/apple-touch/apple-touch-icon.png
+  breaking_defense:
     feed_url: https://breakingdefense.com/feed/
     homepage_url: https://breakingdefense.com
     display_name: Breaking Defense
-    summary: Defense technology, policy and national security news
-  breakingmuscle:
+    summary: Defense technology, policy, industry, and national security news and analysis.
+    profile_photo: https://breakingdefense.com/wp-content/uploads/sites/13/2025/07/cropped-bd-favicon-01-300x300.png
+  breaking_muscle:
     feed_url: https://breakingmuscle.com/feed/
     homepage_url: https://breakingmuscle.com
     display_name: Breaking Muscle
-    summary: Breaking Muscle
+    summary: Fitness, strength training, nutrition, and reviews of exercise equipment and supplements.
+    profile_photo: https://breakingmuscle.com/wp-content/uploads/2016/11/cropped-bmlogowhite-red.png
   breakingnews_ie:
     feed_url: https://www.breakingnews.ie/feed/all.rss
-    homepage_url: https://www.breakingnews.ie/all
-    display_name: 'All: BreakingNews'
-    summary: Ireland's premier breaking news website providing up to the minute news and sports reports. With e-mail news releases following breaking stories throughout the day.
-  mapsplatform_google:
-    feed_url: https://mapsplatform.google.com/resources/blog/rss.xml
-    homepage_url: https://mapsplatform.google.com/resources/blog
-    display_name: Google Maps Platform Blog
-    summary: Google Maps Platform Blog
-  breitbart:
+    homepage_url: https://www.breakingnews.ie
+    display_name: BreakingNews.ie
+    summary: Irish and international news, sport, and current affairs from BreakingNews.ie.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.breakingnews.ie%2Fall&size=128
+  breitbart_news:
     feed_url: https://feeds.feedburner.com/breitbart
     homepage_url: https://www.breitbart.com
     display_name: Breitbart News
-    summary: HomePage
-  brendanhay_nz:
+    summary: Conservative news and opinion covering politics, world affairs, culture, and the economy.
+    profile_photo: https://www.breitbart.com/apple-touch-icon.png
+  brendan_hay:
     feed_url: https://www.brendanhay.nz/atom.xml
     homepage_url: https://www.brendanhay.nz
     display_name: Brendan Hay
-    summary: Updates from Brendan Hay.
-  bretthard_in:
+    summary: Brendan Hay's archived writing on Haskell libraries, AWS, cloud infrastructure, and software development.
+    profile_photo: https://www.brendanhay.nz/public/apple-touch-icon-144-precomposed.png
+  brett_hardin:
     feed_url: http://bretthard.in/atom.xml
     homepage_url: http://bretthard.in
     display_name: Constantly Learning - Brett Hardin
-    summary: Updates from Constantly Learning - Brett Hardin.
+    summary: Brett Hardin's archived personal blog on software, productivity, reading, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fbretthard.in&size=128
   brewdog:
     feed_url: https://brewdog.com/blogs/news.atom
     homepage_url: https://brewdog.com/blogs/news
-    display_name: BrewDog - News
-    summary: Updates from BrewDog - News.
+    display_name: BrewDog
+    summary: Official BrewDog news on beers, bars, events, and company developments.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbrewdog.com%2Fblogs%2Fnews&size=128
   brewpi:
     feed_url: https://www.brewpi.com/feed/
     homepage_url: https://www.brewpi.com
     display_name: BrewPi
-    summary: Brewing Automation
-  brianchang_info:
+    summary: Archived BrewPi brewing-automation news and technical articles. The project is now named Brewblox.
+    profile_photo: https://www.brewpi.com/wp-content/uploads/2016/11/cropped-brewpi-icon_512x512-300x300.png
+  brain_food:
     feed_url: http://brianchang.info/feed.xml
     homepage_url: http://brianchang.info
     display_name: Brain Food
-    summary: Enrich your brain with the musings of Brian Chang.
-  brianstempin:
+    summary: Brain Food, Brian Chang's archived essays on programming, technology, and software development.
+    profile_photo: https://github.com/eviltoylet.png?size=200
+  brian_stempin:
     feed_url: https://brianstempin.com/feeds/all.atom.xml
     homepage_url: https://brianstempin.com
-    display_name: BMS's Blog
-    summary: Updates from BMS's Blog.
-  brianstorti:
+    display_name: BMS's Blog - Brian Stempin
+    summary: Brian Stempin's personal blog on backend engineering, data processing, hardware projects, and life.
+    profile_photo: https://github.com/bstempi.png?size=200
+  brian_storti:
     feed_url: https://www.brianstorti.com/feed/atom.xml
     homepage_url: https://www.brianstorti.com
     display_name: Brian Storti
-    summary: Updates from Brian Storti.
-  briarproject:
+    summary: Brian Storti's archived writing on distributed systems, databases, networking, Ruby, and software development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.brianstorti.com&size=128
+  briar_news:
     feed_url: https://briarproject.org/news/index.xml
-    homepage_url: https://briarproject.org
-    display_name: News - Briar
-    summary: Updates from News - Briar.
-  brickunderground:
+    homepage_url: https://briarproject.org/news/
+    display_name: Briar News
+    summary: Official news, releases, and security updates for Briar, the privacy-focused peer-to-peer messenger.
+    profile_photo: https://briarproject.org/img/briar_logo_circle.png
+  brick_underground:
     feed_url: https://www.brickunderground.com/rss.xml
     homepage_url: https://www.brickunderground.com
     display_name: Brick Underground
-    summary: Updates from Brick Underground.
+    summary: New York City housing news and advice for renters, buyers, sellers, and apartment dwellers.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.brickunderground.com&size=128
   bricoleur:
-    feed_url: http://feeds.feedburner.com/bricoleur
-    homepage_url: http://www.bricoleur.org
+    feed_url: https://feeds.feedburner.com/bricoleur
+    homepage_url: https://www.bricoleur.org
     display_name: bricoleur
-    summary: Updates from bricoleur.
-  briefs_co:
+    summary: Alexander Macgillivray writes about technology, law, policy, software, music, and other interests.
+  briefs_finance:
     feed_url: https://www.briefs.co/feed/
     homepage_url: https://www.briefs.co
     display_name: Briefs Finance
-    summary: News You Can Finally Use!
-  britishculturearchive:
+    summary: Finance and investing news, market analysis, personal finance, and technology coverage from Briefs Finance.
+    profile_photo: https://www.briefs.co/wp-content/uploads/2025/12/Briefs-Finance-Favicon.png
+  british_culture_archive:
     feed_url: https://britishculturearchive.co.uk/feed/
     homepage_url: https://britishculturearchive.co.uk
     display_name: British Culture Archive
-    summary: British Documentary Photography
-  brm:
+    summary: British documentary photography, cultural history, photographer features, books, and exhibitions.
+    profile_photo: https://britishculturearchive.co.uk/wp-content/uploads/2025/09/british-culture-archive-logo.png
+  liabru:
     feed_url: https://brm.io/feed.xml
     homepage_url: https://brm.io
-    display_name: brm.io
-    summary: code by @liabru
+    display_name: liabru
+    summary: Archived project updates from liabru, including Matter.js, web graphics, typography, and JavaScript experiments.
+    profile_photo: https://brm.io/img/icon/apple-touch-icon.png
   broadwayworld:
     feed_url: https://www.broadwayworld.com/feed_all_bway.php
     homepage_url: https://www.broadwayworld.com
-    display_name: BroadwayWorld.com Featured Content
-    summary: Latest BroadwayWorld.com News, Reviews, and More...
-  brodzinski:
+    display_name: BroadwayWorld
+    summary: Featured Broadway and theatre news, reviews, interviews, photos, and videos from BroadwayWorld.
+    profile_photo: https://cloudimages2.broadwayworld.com/2017/broadwayworld-new-retina.png
+  pawel_brodzinski:
     feed_url: https://brodzinski.com/feed
     homepage_url: https://brodzinski.com
     display_name: Pawel Brodzinski on Leadership in Technology
-    summary: Whatever it takes to lead a team, build a product, and run a business
+    summary: Pawel Brodzinski writes about technology leadership, product development, teams, business, and Kanban.
+    profile_photo: https://brodzinski.com/wp-content/uploads/cropped-hand1-32x32.png
   brokelyn:
     feed_url: https://brokelyn.com/feed/
     homepage_url: https://brokelyn.com
     display_name: Brokelyn
-    summary: Living Big on Small Change in Brooklyn
+    summary: Archived Brooklyn guides to affordable living, local news, and free or inexpensive events, through 2020.
+    profile_photo: https://brokelyn.com/app/uploads/2017/05/brokelyn-favicon.png
   brooklyn_tailors:
     feed_url: https://www.brooklyn-tailors.com/blogs/blog.atom
     homepage_url: https://www.brooklyn-tailors.com/blogs/blog
-    display_name: Brooklyn Tailors - BROOKLYN TAILORS' JOURNAL
-    summary: Updates from Brooklyn Tailors - BROOKLYN TAILORS' JOURNAL.
-  brooklynhacker:
+    display_name: Brooklyn Tailors
+    summary: Brooklyn Tailors' archived journal of seasonal lookbooks, clothing brands, and tailoring stories, through 2022.
+    profile_photo: https://www.brooklyn-tailors.com/cdn/shop/files/FAVICON_32x32.png?v=1634084297
+  brooklyn_hacker:
     feed_url: https://brooklynhacker.com/rss
     homepage_url: https://brooklynhacker.com
     display_name: Brooklyn Hacker
-    summary: 'Rob Spectre - just your average self-produced superhero var _gaq = _gaq || []; _gaq.push([’_setAccount’, ‘UA-1608534-9’]); _gaq.push([’_trackPageview’]); (function() { var ga = document.createElement(''script’); ga.type = ''text/javascript’; ga.async = true; ga.src = (''https:’ == document.location.protocol ? ''https://ssl’ : ''http://www’) + ’.google-analytics.com/ga.js’; var s = document.getElementsByTagName(''script’)[0]; s.parentNode.insertBefore(ga, s); })();'
-  brooklynheightsblog:
-    feed_url: http://feeds.feedburner.com/brooklynheightsblog/tuwF
+    summary: Rob Spectre's personal blog on technology, software, music, and life in Brooklyn.
+    profile_photo: https://api.tumblr.com/v2/blog/brooklynhacker.com/avatar/128
+  brooklyn_heights_blog:
+    feed_url: https://feeds.feedburner.com/brooklynheightsblog/tuwF
     homepage_url: http://brooklynheightsblog.com
     display_name: Brooklyn Heights Blog
-    summary: Dispatches from America's first suburb
-  bryankonietzko_tumblr:
+    summary: Local news, neighborhood history, events, and community discussion from Brooklyn Heights, New York.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fbrooklynheightsblog.com&size=128
+  bryan_konietzko:
     feed_url: https://bryankonietzko.tumblr.com/rss
     homepage_url: https://bryankonietzko.tumblr.com
-    display_name: bryan konietzko
-    summary: 'Creator of Threadworlds, an upcoming 5-volume graphic novel series with First Second Books; co-creator of The Legend of Korra & Avatar: The Last Airbender; photographer; musician/recording artist Ginormous'
-  bsumm:
+    display_name: Bryan Konietzko
+    summary: Bryan Konietzko's archived art, photography, music, and updates on Avatar and The Legend of Korra.
+    profile_photo: https://api.tumblr.com/v2/blog/bryankonietzko.tumblr.com/avatar/128
+  bryan_summersett:
     feed_url: https://bsumm.net/feed.xml
     homepage_url: https://bsumm.net
     display_name: Bryan Summersett
-    summary: Bryan Summersett's home page.
-  bufr_tumblr:
+    summary: Bryan Summersett's archived essays on software, learning, code, design, and social media.
+    profile_photo: https://bsumm.net/apple-touch-icon.png
+  buford_taylor:
     feed_url: https://bufr.tumblr.com/rss
     homepage_url: https://bufr.tumblr.com
-    display_name: Bufr Overflow
-    summary: Buford Taylor CTO at Rentify, former engineer at Eventbrite, entrepreneur on training wheels, and funny looking.
-  bugs_launchpad:
+    display_name: Bufr Overflow - Buford Taylor
+    summary: Bufr Overflow, Buford Taylor's archived blog on startups, engineering, and technology, through 2013.
+    profile_photo: https://api.tumblr.com/v2/blog/bufr.tumblr.com/avatar/128
+  ubuntu_firefox_bug_402767:
     feed_url: https://feeds.launchpad.net/bugs/402767/bug.atom
-    homepage_url: https://bugs.launchpad.net/bugs/402767
-    display_name: Bug 402767
-    summary: Updates from Bug 402767.
-  devops_nz:
+    homepage_url: https://bugs.launchpad.net/ubuntu/+source/firefox-3.5/+bug/402767
+    display_name: Ubuntu Firefox Bug 402767
+    summary: 'The archived discussion of Ubuntu Firefox bug #402767: multisearch changes to search and location-bar behavior.'
+    profile_photo: https://bugs.launchpad.net/@@/apple-touch-icon.png?v=2022
+  devops_new_zealand:
     feed_url: https://devops.nz/feed.xml
     homepage_url: https://devops.nz
     display_name: DevOps New Zealand
-    summary: Updates from DevOps New Zealand.
-  buildkite:
+    summary: Julian Simpson's DevOps New Zealand blog on software delivery, continuous integration, operations, and security.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdevops.nz&size=128
+  buildkite_blog:
     feed_url: https://buildkite.com/blog.atom
     homepage_url: https://buildkite.com/resources/blog
     display_name: Buildkite Blog
-    summary: Updates from Buildkite Blog.
+    summary: Official Buildkite articles on CI/CD, testing, software delivery, product releases, and engineering.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbuildkite.com%2Fresources%2Fblog&size=128
   building:
     feed_url: https://www.building.co.uk/220.rss
     homepage_url: https://www.building.co.uk
-    display_name: Building - Latest News
-    summary: https://www.building.co.uk
-  buildingresources:
+    display_name: Building
+    summary: Latest UK construction-industry news from Building, covering firms, projects, housing, and policy.
+    profile_photo: https://www.building.co.uk/magazine/dest/graphics/favicons/apple-touch-icon-precomposed.png
+  building_resources_of_san_francisco:
     feed_url: https://buildingresources.org/feed/
     homepage_url: https://buildingresources.org
     display_name: Building Resources of San Francisco
-    summary: Updates from Building Resources of San Francisco.
-  buildnewgames:
+    summary: News on salvaged building materials, reuse, deconstruction, and events from Building Resources of San Francisco.
+    profile_photo: https://buildingresources.org/wp-content/uploads/cropped-house-sq-180x180.png
+  build_new_games:
     feed_url: http://buildnewgames.com/atom.xml
     homepage_url: http://buildnewgames.com
     display_name: Build New Games
-    summary: Updates from Build New Games.
-  builtbybalance:
-    feed_url: https://builtbybalance.com/feed/
-    homepage_url: https://builtbybalance.com
-    display_name: Window Replacement – Builtbybalance
-    summary: Updates from Window Replacement – Builtbybalance.
-  represent_us:
+    summary: An archived collection of HTML5 and open-web game-development articles published in 2012 and 2013.
+    profile_photo: http://buildnewgames.com/favicon.png
+  representus:
     feed_url: https://represent.us/feed/
     homepage_url: https://represent.us
     display_name: RepresentUs
-    summary: End corruption. Defend the Republic.
-  bullypulpitgames:
+    summary: Official RepresentUs news and advocacy on political corruption, government accountability, and democracy.
+    profile_photo: https://represent.us/wp-content/uploads/2017/05/cropped-bulletin-logo-239x239.png
+  bully_pulpit_games:
     feed_url: https://bullypulpitgames.com/blogs/news.atom
     homepage_url: https://bullypulpitgames.com/blogs/news
-    display_name: Bully Pulpit Games - News
-    summary: Updates from Bully Pulpit Games - News.
-  burkeholland_github:
+    display_name: Bully Pulpit Games
+    summary: Official Bully Pulpit Games news on tabletop roleplaying games, releases, crowdfunding, and events.
+    profile_photo: https://bullypulpitgames.com/cdn/shop/files/bpg_logo_screen_512_white.png?crop=center&height=32&v=1651250893&width=32
+  burke_holland:
     feed_url: https://burkeholland.github.io/feed.xml
     homepage_url: https://burkeholland.github.io
     display_name: Burke Holland
-    summary: Updates from Burke Holland.
-  burritojustice:
+    summary: Burke Holland writes about software development, AI coding tools, and technology.
+    profile_photo: https://github.com/burkeholland.png?size=200
+  burrito_justice:
     feed_url: https://burritojustice.com/feed/
     homepage_url: https://burritojustice.com
     display_name: Burrito Justice
-    summary: You can pry my burrito out of my cold, dead hand.
-  businesskorea_co_kr:
+    summary: Archived San Francisco maps, local history, cycling, photography, and neighborhood observations, through 2020.
+    profile_photo: https://secure.gravatar.com/blavatar/548252f4fd4e9f0fcf213975b1e0796c2bf09defb3444ecc54dbca10f615ca12?s=114
+  businesskorea:
     feed_url: https://www.businesskorea.co.kr/rss/gns_allArticle.xml
     homepage_url: https://www.businesskorea.co.kr
-    display_name: Businesskorea - ALL ARTICLES
-    summary: Businesskorea
+    display_name: BusinessKorea
+    summary: BusinessKorea news on South Korean business, finance, industry, technology, and culture, in Korean and English.
+    profile_photo: https://www.businesskorea.co.kr/image/logo/favicon.png
   bust:
     feed_url: https://bust.com/feed/
     homepage_url: https://bust.com
     display_name: BUST
-    summary: Feminist magazine for women with something to get off their chests
-  bydanielvictor:
+    summary: Feminist magazine covering politics, music, arts, entertainment, fashion, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbust.com&size=128
+  by_daniel_victor:
     feed_url: http://feeds.feedburner.com/ByDanielVictor
     homepage_url: https://bydanielvictor.com
     display_name: By Daniel Victor
-    summary: Updates from By Daniel Victor.
-  bylinesupplement:
+    summary: Daniel Victor's archived personal writing on journalism, reporting, crowdsourcing, and social media.
+  byline_times_substack:
     feed_url: https://www.bylinesupplement.com/feed
     homepage_url: https://www.bylinesupplement.com
-    display_name: Byline Times
-    summary: 'The UK''s only reader-funded, independent newspaper that truly sits outside of the established system. Subscribe for exclusive content in the Byline Times monthly print edition: subscribe.bylinetimes.com Visit our free daily news site: bylinetimes.com'
+    display_name: Byline Times (Substack)
+    summary: Byline Times' Substack publication, with independent reporting, political analysis, essays, and podcasts.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!PFJj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F398470d1-7680-4dca-a187-a58f4c8a88d9%2Fapple-touch-icon-57x57.png
   jamietanna:
     feed_url: https://www.jvt.me/kind/articles/feed.xml
     homepage_url: https://www.jvt.me
