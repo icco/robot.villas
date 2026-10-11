@@ -18117,6 +18117,282 @@ bots:
     display_name: Military Times
     summary: Independent news about service members at home and deployed around the world.
     profile_photo: https://www.militarytimes.com/pf/resources/img/favicons/mil/apple-touch-icon.png?d=143
+  narrative_magazine:
+    feed_url: https://www.narrativemagazine.com/rss.xml
+    homepage_url: https://www.narrativemagazine.com
+    display_name: Narrative Magazine
+    summary: Fiction, poetry, essays, nonfiction, and visual stories by established and emerging writers and artists.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.narrativemagazine.com&size=128
+  nate_berkopec:
+    feed_url: https://www.nateberkopec.com/feed.xml
+    homepage_url: https://www.nateberkopec.com
+    display_name: Nate Berkopec
+    summary: Nate Berkopec on software development, Ruby on Rails, startups, AI, and personal growth.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.nateberkopec.com&size=128
+  nat_eliason:
+    feed_url: https://www.nateliason.com/api/rss
+    homepage_url: https://www.nateliason.com/blog
+    display_name: Nat Eliason
+    summary: Nat Eliason on writing, books, learning, productivity, technology, and personal life.
+    profile_photo: https://www.nateliason.com/favicon/apple-touch-icon.png
+  nate_thayer:
+    feed_url: https://natethayer.wordpress.com/feed/
+    homepage_url: https://natethayer.wordpress.com
+    display_name: Nate Thayer
+    summary: 'Nate Thayer''s archived journalism and published work, including reporting on politics, extremism, and Southeast Asia. Latest feed post: May 2021.'
+  nathan_grigg:
+    feed_url: https://nathangrigg.com/feed.xml
+    homepage_url: https://nathangrigg.com
+    display_name: Nathan Grigg
+    summary: Nathan Grigg on programming, mathematics, baseball, and everyday life, including short untitled posts.
+    profile_photo: https://nathangrigg.com/favicon.png
+  thoughts_from_the_red_planet:
+    feed_url: https://feeds.feedburner.com/ThoughtsFromTheRedPlanet
+    homepage_url: https://nathanmarz.com/
+    display_name: thoughts from the red planet
+    summary: 'Nathan Marz''s archived essays on programming, Clojure, data systems, and startups. Latest feed post: September 2021.'
+    profile_photo: https://github.com/nathanmarz.png?size=200
+  notes_on_the_crises:
+    feed_url: https://nathantankus.substack.com/feed
+    homepage_url: https://nathantankus.substack.com
+    display_name: Notes on the Crises
+    summary: 'Nathan Tankus''s archived monetary political economy analysis of the pandemic, inflation, and financial institutions. Latest feed post: April 2021; publication subsequently left Substack.'
+    profile_photo: https://substackcdn.com/image/fetch/$s_!KmWx!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fadce985e-5aad-4075-8ade-79877d4e7768%2Fapple-touch-icon-57x57.png
+  nathan_youngman:
+    feed_url: https://nathany.com/articles.xml
+    homepage_url: https://nathany.com
+    display_name: Nathan Youngman
+    summary: Nathan Youngman on programming languages, Go, Odin, music, and personal life.
+  national_post:
+    feed_url: https://nationalpost.com/feed/atom
+    homepage_url: https://nationalpost.com
+    display_name: National Post
+    summary: Canadian and international news, politics, business, culture, and opinion from National Post.
+    profile_photo: https://dcs-static.gprod.postmedia.digital/22.2.2/websites/images/apple-touch-icons/iphone/icon-np.png
+  national_review:
+    feed_url: https://www.nationalreview.com/feed/
+    homepage_url: https://www.nationalreview.com
+    display_name: National Review
+    summary: Conservative political commentary, U.S. and world news, history, and cultural criticism from National Review.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.nationalreview.com&size=128
+  naval_technology:
+    feed_url: https://www.naval-technology.com/feed/
+    homepage_url: https://www.naval-technology.com
+    display_name: Naval Technology
+    summary: Naval defence news, analysis, procurement, shipbuilding, weapons systems, and industry developments.
+    profile_photo: https://www.naval-technology.com/wp-content/uploads/sites/15/2021/11/cropped-navalfavicon-180x180.png
+  navidrome:
+    feed_url: https://www.navidrome.org/index.xml
+    homepage_url: https://www.navidrome.org
+    display_name: Navidrome
+    summary: Navidrome music-server documentation, installation guides, administration, integrations, and project information. This site-wide feed includes documentation pages and legacy placeholder dates.
+    profile_photo: https://www.navidrome.org/favicons/apple-icon-57x57.png
+  naz_avo:
+    feed_url: https://nazavo.com/rss/
+    homepage_url: https://nazavo.com
+    display_name: Naz Avo
+    summary: 'Naz Avo''s guides and personal writing on digital-nomad visas, travel, technology, and financial independence. Latest feed post: April 2025.'
+    profile_photo: https://storage.ghost.io/c/83/24/83249340-57ef-42cd-bda5-173dfc27c238/content/images/size/w256h256/2021/01/final-small-transparent-klaksa-small-2.png
+  nbc_5_dallas_fort_worth:
+    feed_url: https://www.nbcdfw.com/?rss=y
+    homepage_url: https://www.nbcdfw.com
+    display_name: NBC 5 Dallas-Fort Worth
+    summary: Dallas-Fort Worth and North Texas news, weather, sports, community reporting, and national headlines from NBC 5.
+    profile_photo: https://media.nbcdfw.com/2019/09/cropped-NBC_DFW.png?fit=180%2C180&quality=85&strip=all
+  nbc_sports:
+    feed_url: https://www.nbcsports.com/index.atom
+    homepage_url: https://www.nbcsports.com
+    display_name: NBC Sports
+    summary: Sports news, scores, analysis, and rumors from NBC Sports, including ProFootballTalk NFL reporting.
+    profile_photo: https://www.nbcsports.com/apple-touch-icon.png
+  nbc4_washington:
+    feed_url: https://www.nbcwashington.com/?rss=y
+    homepage_url: https://www.nbcwashington.com
+    display_name: NBC4 Washington
+    summary: Washington, D.C., Maryland, and Virginia news, weather, politics, sports, and community reporting from NBC4.
+    profile_photo: https://media.nbcwashington.com/2019/09/cropped-NBC_Washington.png?fit=180%2C180&quality=85&strip=all
+  national_board_of_review:
+    feed_url: https://nationalboardofreview.org/feed/
+    homepage_url: https://nationalboardofreview.org
+    display_name: National Board of Review
+    summary: National Board of Review film discussions, filmmaker interviews, awards, fellowships, and organizational announcements.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnationalboardofreview.org&size=128
+  human_who_codes:
+    feed_url: https://humanwhocodes.com/feeds/blog.xml
+    homepage_url: https://humanwhocodes.com/blog/
+    display_name: Human Who Codes
+    summary: Nicholas C. Zakas on JavaScript, software engineering, developer tools, and AI-assisted development.
+    profile_photo: https://humanwhocodes.com/favicon.png
+  neatnik:
+    feed_url: https://neatnik.net/feed.xml
+    homepage_url: https://www.neatnik.net
+    display_name: Neatnik
+    summary: Neatnik articles on web services, internet tools, security, subscription design, and small technical projects.
+    profile_photo: https://www.neatnik.net/apple-touch-icon.png?v=1791254974.7558
+  neil_panchal:
+    feed_url: https://neil.computer/rss/
+    homepage_url: https://neil.computer
+    display_name: Neil Panchal
+    summary: Neil Panchal on computing hardware, virtualization, storage, software, business, and practical tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fneil.computer&size=128
+  neil_kakkar:
+    feed_url: https://neilkakkar.com/feed.xml
+    homepage_url: https://neilkakkar.com
+    display_name: Neil Kakkar
+    summary: Neil Kakkar on software engineering, AI-assisted development, learning, and personal growth.
+  photography_by_neil_kodner:
+    feed_url: https://neilkodner.com/feed.xml
+    homepage_url: https://neilkodner.com
+    display_name: Photography by Neil Kodner
+    summary: Neil Kodner's aviation and hockey photography collections. Feed entries share January 2026 dates and are portfolio pages, not the former technology blog.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fneilkodner.com&size=128
+  nelsons_log:
+    feed_url: https://nelsonslog.wordpress.com/feed/
+    homepage_url: https://nelsonslog.wordpress.com
+    display_name: Nelson's log
+    summary: Nelson's personal work journal on software, servers, AI tools, games, books, and internet services.
+  neo900:
+    feed_url: https://neo900.org/feeds/all.atom.xml
+    homepage_url: https://neo900.org
+    display_name: Neo900
+    summary: 'Archived project news and development updates for the Neo900 open-hardware successor to the Nokia N900. Latest feed item: February 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fneo900.org&size=128
+  nerderati:
+    feed_url: https://nerderati.com/atom.xml
+    homepage_url: https://nerderati.com
+    display_name: Nerderati
+    summary: 'Programming tutorials and notes on Git, development tools, Python, databases, and software products. Latest feed post: October 2024.'
+    profile_photo: https://nerderati.com/apple-touch-icon.png
+  adam_argyle:
+    feed_url: https://nerdy.dev/rss.xml
+    homepage_url: https://nerdy.dev
+    display_name: Adam Argyle
+    summary: Adam Argyle on CSS, JavaScript, HTML, web design, user experience, demos, and developer tools.
+    profile_photo: https://nerdy.dev/rss-icon.png
+  nerf_now:
+    feed_url: https://feeds.feedburner.com/nerfnow/full
+    homepage_url: https://www.nerfnow.com
+    display_name: Nerf NOW!!
+    summary: Nerf NOW!! gaming webcomics and commentary on video games, characters, and gaming culture.
+    profile_photo: https://www.nerfnow.com/assets/favicon-d8ada47c7b21ba6b38dc272fc9bfadf805a18e199a916c28f42e29bd9ddb4d62.png
+  netboot_xyz_blog:
+    feed_url: https://netboot.xyz/blog/rss.xml
+    homepage_url: https://netboot.xyz/blog
+    display_name: netboot.xyz Blog
+    summary: Official netboot.xyz release notes, iPXE network-boot updates, documentation changes, and community milestones.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnetboot.xyz%2Fblog&size=128
+  netdata:
+    feed_url: https://www.netdata.cloud/blog/index.xml
+    homepage_url: https://www.netdata.cloud/blog/
+    display_name: Netdata Blog
+    summary: Netdata product updates and technical articles on monitoring, observability, performance, infrastructure, and troubleshooting.
+    profile_photo: https://www.netdata.cloud/favicon-32x32.png
+  third_eye_tie_dye:
+    feed_url: https://netgrind.tumblr.com/rss
+    homepage_url: https://netgrind.tumblr.com
+    display_name: third eye tie-dye
+    summary: 'Cale Bradbury''s archived GIF art, games, and visual experiments on third eye tie-dye. Latest feed post: February 2018.'
+    profile_photo: https://api.tumblr.com/v2/blog/netgrind.tumblr.com/avatar/128
+  netjeff_com:
+    feed_url: https://www.netjeff.com/wp/?feed=rss2
+    homepage_url: https://www.netjeff.com/wp
+    display_name: netjeff.com
+    summary: Personal posts and curated links on computing, security, science, technology, and internet discoveries.
+  netlify_blog:
+    feed_url: https://www.netlify.com/feed.xml
+    homepage_url: https://www.netlify.com/blog/
+    display_name: Netlify Blog
+    summary: Netlify product news, engineering articles, deployment tutorials, and web-platform updates.
+    profile_photo: https://www.netlify.com/favicon/apple-touch-icon.png
+  netresec_network_security_blog:
+    feed_url: https://www.netresec.com/rss.ashx
+    homepage_url: https://www.netresec.com/?page=Blog
+    display_name: NETRESEC Network Security Blog
+    summary: NETRESEC network-security research, packet analysis, malware investigations, network forensics, and product releases.
+    profile_photo: https://www.netresec.com/favicon-192x192.png
+  lost_in_technopolis:
+    feed_url: https://newartisans.com/rss.xml
+    homepage_url: https://newartisans.com/
+    display_name: Lost in Technopolis
+    summary: John Wiegley's articles on Emacs, programming, developer tools, and AI-assisted workflows.
+  new_harbinger:
+    feed_url: https://www.newharbinger.com/feed/
+    homepage_url: https://www.newharbinger.com
+    display_name: New Harbinger
+    summary: New Harbinger authors and clinicians on mental health, therapy, self-help, mindfulness, and related books and resources.
+    profile_photo: https://d2tdui6flib2aa.cloudfront.net/new-harbinger-wp/wp-content/uploads/2020/10/13222503/cropped-SiteIcon2-180x180.png
+  php_internals:
+    feed_url: https://news-web.php.net/group.php?group=php.internals&format=rss
+    homepage_url: https://news-web.php.net/group.php?group=php.internals
+    display_name: PHP Internals
+    summary: PHP internals mailing-list discussions of language development, RFCs, implementation changes, and project workflows.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnews-web.php.net%2Fgroup.php%3Fgroup%3Dphp.announce&size=128
+  bitcoin_news:
+    feed_url: https://news.bitcoin.com/feed/
+    homepage_url: https://news.bitcoin.com
+    display_name: Bitcoin News
+    summary: Bitcoin.com reporting on cryptocurrencies, markets, regulation, security, and financial technology.
+    profile_photo: https://news.bitcoin.com/icons/Icon-96x96-bcom.png
+  cal_oes_news:
+    feed_url: https://www.news.caloes.ca.gov/feed/
+    homepage_url: https://www.news.caloes.ca.gov
+    display_name: Cal OES News
+    summary: California Governor's Office of Emergency Services news on emergency response, disasters, preparedness, and public safety.
+    profile_photo: https://www.news.caloes.ca.gov/wp-content/uploads/sites/6/2016/09/cropped-CalOES-512x512-180x180.png
+  dart_news_and_updates:
+    feed_url: https://news.dartlang.org/feeds/posts/default
+    homepage_url: https://news.dartlang.org
+    display_name: Dart News & Updates
+    summary: 'Archived official Dart language announcements, release news, and community updates. Latest feed post: September 2019; news subsequently moved to a new blog.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnews.dartlang.org&size=128
+  delta_news_hub:
+    feed_url: https://news.delta.com/rss.xml
+    homepage_url: https://news.delta.com
+    display_name: Delta News Hub
+    summary: Official Delta Air Lines news on routes, operations, aircraft, customer services, employees, and financial results.
+    profile_photo: https://news.delta.com/themes/custom/newshubten/build/assets/icons/apple_touch_icon.png
+  design_language_news:
+    feed_url: https://news.designlanguage.com/rss
+    homepage_url: https://news.designlanguage.com
+    display_name: Design Language News
+    summary: 'Archived Design Language News links and commentary on visual art, photography, typography, maps, and design. Latest feed post: July 2012.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnews.designlanguage.com&size=128
+  gandi_news:
+    feed_url: https://news.gandi.net/en/feed/
+    homepage_url: https://news.gandi.net/en/
+    display_name: Gandi News
+    summary: English-language Gandi news on domain names, DNS, web hosting, certificates, digital security, and company updates.
+    profile_photo: https://news.gandi.net/wp-content/uploads/2021/06/cropped-gandi-favicon-192.9d8e7b4c4306-180x180.png
+  harvard_gazette:
+    feed_url: https://news.harvard.edu/gazette/feed/
+    homepage_url: https://news.harvard.edu/gazette
+    display_name: Harvard Gazette
+    summary: Harvard University research, teaching, campus news, interviews, and coverage of science, health, society, and culture.
+    profile_photo: https://news.harvard.edu/wp-content/uploads/2024/01/cropped-favicon.png?resize=180%2C180
+  illinois_news_bureau:
+    feed_url: https://news.illinois.edu/feed/
+    homepage_url: https://news.illinois.edu/
+    display_name: Illinois News Bureau
+    summary: University of Illinois Urbana-Champaign research, faculty expertise, campus news, and academic achievements.
+    profile_photo: https://cdn.brand.illinois.edu/touch-icon-40x40.png
+  microsoft_source:
+    feed_url: https://news.microsoft.com/source/feed/
+    homepage_url: https://news.microsoft.com/source
+    display_name: Microsoft Source
+    summary: Microsoft company, product, research, and technology news, including links to its developer and Xbox blogs and executive posts.
+    profile_photo: https://news.microsoft.com/source/wp-content/uploads/2022/10/cropped-Microsoft_logo.svg_-300x300-1-128x120.png
+  nc_state_news:
+    feed_url: https://news.ncsu.edu/feed/
+    homepage_url: https://news.ncsu.edu
+    display_name: NC State News
+    summary: NC State University research, campus news, faculty achievements, student life, and community updates.
+    profile_photo: https://cdn.ncsu.edu/brand-assets/favicons/apple-touch-icon.png
+  techmeme_news:
+    feed_url: https://news.techmeme.com/index.xml
+    homepage_url: https://news.techmeme.com
+    display_name: Techmeme News
+    summary: Techmeme's own announcements and explanations of its news aggregation, editorial practices, and sister sites.
+    profile_photo: https://www.techmeme.com/m/config/tech/iicon.gif
   horn_gg:
     feed_url: https://horn.gg/feed.xml
     homepage_url: https://horn.gg
