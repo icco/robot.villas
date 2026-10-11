@@ -19411,11 +19411,6 @@ bots:
     homepage_url: https://philchen.com
     display_name: Phil Chen
     summary: Phil Chen
-  philip_greenspun:
-    feed_url: https://philip.greenspun.com/blog/feed/
-    homepage_url: https://philip.greenspun.com/blog
-    display_name: Philip Greenspun’s Weblog
-    summary: A posting every day; an interesting idea every three months...
   philiplaine:
     feed_url: https://philiplaine.com/index.xml
     homepage_url: https://philiplaine.com
