@@ -1445,6 +1445,256 @@ bots:
     homepage_url: https://www.counterpunch.org/
     display_name: CounterPunch
     summary: Independent journalism and political commentary.
+  timingapp:
+    feed_url: https://timingapp.com/blog/feed/atom/
+    homepage_url: https://timingapp.com/blog
+    display_name: Timing Time Management Blog
+    summary: Updates from Timing Time Management Blog.
+  timkadlec:
+    feed_url: https://timkadlec.com/atom.xml
+    homepage_url: https://timkadlec.com
+    display_name: Tim Kadlec
+    summary: Posts about web performance, product management, and the web.
+  blackduck:
+    feed_url: https://www.blackduck.com/feed
+    homepage_url: https://www.blackduck.com
+    display_name: Black Duck
+    summary: Application Security | Open Source Security | SAST/DAST/SCA Tools | Black Duck
+  tinyclouds:
+    feed_url: https://tinyclouds.org/feed
+    homepage_url: https://tinyclouds.org
+    display_name: Ryan Dahl
+    summary: Personal blog of Ryan Dahl
+  tinymediamanager:
+    feed_url: https://www.tinymediamanager.org/feed.xml
+    homepage_url: https://www.tinymediamanager.org
+    display_name: tinyMediaManager
+    summary: Updates from tinyMediaManager.
+  tinyprojects_dev:
+    feed_url: https://tinyprojects.dev/feed.xml
+    homepage_url: https://tinyprojects.dev
+    display_name: Tiny Projects
+    summary: "Making one tiny project each week \U0001F4A1"
+  tinyshinykey_tumblr:
+    feed_url: https://tinyshinykey.tumblr.com/rss
+    homepage_url: https://tinyshinykey.tumblr.com
+    display_name: Tiny Shiny Key
+    summary: The Ani will continue until morale improves.
+  titanous:
+    feed_url: https://titanous.com/posts.xml
+    homepage_url: https://titanous.com
+    display_name: Jonathan Rudenberg
+    summary: Updates from Jonathan Rudenberg.
+  tks2103_tumblr:
+    feed_url: https://tks2103.tumblr.com/rss
+    homepage_url: https://tks2103.tumblr.com
+    display_name: No Evidence
+    summary: Baseless Conclusions
+  tmonews:
+    feed_url: https://www.tmonews.com/feed/
+    homepage_url: https://www.tmonews.com
+    display_name: TmoNews
+    summary: Unofficial T-Mobile Blog, News, Videos, Articles and more
+  tmwhere:
+    feed_url: https://www.tmwhere.com/posts/index.xml
+    homepage_url: https://www.tmwhere.com/posts
+    display_name: posts on tmwhere
+    summary: Recent content in posts on tmwhere
+  tnhh:
+    feed_url: https://www.tnhh.net/feed.xml
+    homepage_url: https://www.tnhh.net
+    display_name: Huan Truong's Pensieve
+    summary: Updates from Huan Truong's Pensieve.
+  tnmoc:
+    feed_url: https://www.tnmoc.org/events?format=rss
+    homepage_url: https://www.tnmoc.org/events
+    display_name: Events - The National Museum of Computing
+    summary: Updates from Events - The National Museum of Computing.
+  toao:
+    feed_url: https://toao.com/feeds/rss.xml
+    homepage_url: https://www.toao.com
+    display_name: Sadiq Jaffer
+    summary: Updates from Sadiq Jaffer.
+  todayilearned:
+    feed_url: https://todayilearned.co.uk/feed/
+    homepage_url: https://todayilearned.co.uk
+    display_name: todayilearned.co.uk
+    summary: Updates from todayilearned.co.uk.
+  tofugu:
+    feed_url: https://www.tofugu.com/feed.xml
+    homepage_url: https://www.tofugu.com
+    display_name: Tofugu
+    summary: Updates from Tofugu.
+  togototo_wordpress:
+    feed_url: https://togototo.wordpress.com/feed/
+    homepage_url: https://togototo.wordpress.com
+    display_name: To:goto To;
+    summary: If you're reading this then you're not C.
+  tokyoweekender:
+    feed_url: https://www.tokyoweekender.com/feed/
+    homepage_url: https://www.tokyoweekender.com
+    display_name: Tokyo Weekender
+    summary: Japan's Premier English Magazine
+  toledoblade:
+    feed_url: https://www.toledoblade.com/rss/
+    homepage_url: http://www.toledoblade.com
+    display_name: Toledo Blade Latest Headlines
+    summary: The Latest News from Toledoblade.com (v5)
+  tollbrothers:
+    feed_url: https://www.tollbrothers.com/blog/feed
+    homepage_url: https://www.tollbrothers.com/blog
+    display_name: Build Beautiful
+    summary: Blog | www.tollbrothers.com
+  tomandlorenzo:
+    feed_url: https://tomandlorenzo.com/feed/
+    homepage_url: https://tomandlorenzo.com
+    display_name: Tom + Lorenzo
+    summary: Fabulous & Opinionated
+  tomarmitage:
+    feed_url: https://tomarmitage.com/index.xml
+    homepage_url: https://tomarmitage.com
+    display_name: Tom Armitage
+    summary: freelance technologist, designer and writer
+  tomaz_me:
+    feed_url: https://www.tomaz.me/atom.xml
+    homepage_url: https://www.tomaz.me
+    display_name: Tomaz Muraus' personal blog
+    summary: Updates from Tomaz Muraus' personal blog.
+  tombuntu:
+    feed_url: https://feeds.feedburner.com/Tombuntu
+    homepage_url: https://tombuntu.com
+    display_name: Tombuntu
+    summary: Recent content on Tombuntu
+  tommyrefenes_tumblr:
+    feed_url: https://tommyrefenes.tumblr.com/rss
+    homepage_url: https://tommyrefenes.tumblr.com
+    display_name: Tommy Refenes
+    summary: Me1 Vs Me2 - GM Stepper Motors - Nelson Electric Motors - Women Leaders In Higher Education - Surcod Malawi
+  tomtalks_blog:
+    feed_url: https://tomtalks.blog/feed/
+    homepage_url: https://tomtalks.blog
+    display_name: Tom Talks – Microsoft Teams and Microsoft 365 news and opinions
+    summary: Microsoft Teams and Microsoft 365 news and opinions
+  tonyarnold:
+    feed_url: https://tonyarnold.com/posts_feed
+    homepage_url: https://tonyarnold.com
+    display_name: Tony Arnold
+    summary: Updates from Tony Arnold.
+  toonamir_blogspot:
+    feed_url: https://toonamir.blogspot.com/feeds/posts/default
+    homepage_url: https://toonamir.blogspot.com
+    display_name: Amir Avni's Cartoon Blog
+    summary: Updates from Amir Avni's Cartoon Blog.
+  topcoat:
+    feed_url: http://topcoat.io/rss.xml
+    homepage_url: http://topcoat.io
+    display_name: Topcoat
+    summary: CSS for clean and fast web apps.
+  toriavey:
+    feed_url: https://toriavey.com/feed/
+    homepage_url: https://toriavey.com
+    display_name: Tori Avey
+    summary: Recipes, How To Tutorials & Vintage Lifestyle - Every Day Inspired by the Past
+  tosbourn:
+    feed_url: https://tosbourn.com/feed.xml
+    homepage_url: https://tosbourn.com
+    display_name: Tosbourn – Belfast based Ruby developers
+    summary: Tosbourn are a Belfast based Ruby development team who care deeply about the web.
+  totalvibration_tumblr:
+    feed_url: https://totalvibration.tumblr.com/rss
+    homepage_url: https://totalvibration.tumblr.com
+    display_name: Total Vibration
+    summary: Hi. I’m Lars Gotrich. I do a lot of things for NPR Music. I enjoy metal, fun-killer noise, effusively joyful pop music and beer.
+  trac_edgewall:
+    feed_url: https://trac.edgewall.org/ticket/6300?format=rss
+    homepage_url: https://trac.edgewall.org/ticket/6300
+    display_name: 'The Trac Project: Ticket #6300: Database newer than Trac version'
+    summary: 'When i run Trac though mod_python on apache on FC5 i get this error in my code [Mon Nov 05 04:50:46 2007] [error] [client 90.193.172.63] PythonHandler trac.web.modpython_frontend: Traceback (most recent call last): [Mon Nov 05 04:50:46 2007] [error] [client 90.193.172.63] PythonHandler trac.web.modpython_frontend: File "/usr/lib/python2.4/site-packages/mod_python/apache.py", line 299, in HandlerDispatch\n result = object(req) [Mon Nov 05 04:50:46 2007] [error] [client 90.193.172.63] PythonHandle'
+  tracingwoodgrains:
+    feed_url: https://www.tracingwoodgrains.com/feed
+    homepage_url: https://www.tracingwoodgrains.com
+    display_name: Tracing Woodgrains
+    summary: A former Mormon's chaotic pursuit of order in a world gone mad
+  trainjam:
+    feed_url: https://trainjam.com/feed
+    homepage_url: https://trainjam.com
+    display_name: Train Jam
+    summary: Updates from Train Jam.
+  travisjeffery:
+    feed_url: https://travisjeffery.com/index.xml
+    homepage_url: http://travisjeffery.com
+    display_name: travis jeffery
+    summary: Recent content on travis jeffery
+  treblezine:
+    feed_url: https://www.treblezine.com/feed/
+    homepage_url: https://www.treblezine.com
+    display_name: Treble
+    summary: Music news, artist interviews, album reviews and more.
+  treebetty:
+    feed_url: https://treebetty.com/feed/
+    homepage_url: https://treebetty.com
+    display_name: '*treebetty'
+    summary: Apps for a Measured Life
+  tremulantdesign:
+    feed_url: https://tremulantdesign.com/feed/
+    homepage_url: https://tremulantdesign.com
+    display_name: Tremulant Design
+    summary: Michael Hobson, UX Designer
+  trendblog:
+    feed_url: https://trendblog.net/feed/
+    homepage_url: https://trendblog.net
+    display_name: trendblog.net
+    summary: Mobile, Gadgets and Technology
+  trentwalton:
+    feed_url: https://trentwalton.com/feed.xml
+    homepage_url: http://trentwalton.com
+    display_name: Trent Walton
+    summary: Trent Walton’s Blog
+  triangulationblog:
+    feed_url: https://www.triangulationblog.com/feed/
+    homepage_url: https://www.triangulationblog.com
+    display_name: Triangulation Art Blog
+    summary: Updates from Triangulation Art Blog.
+  tribecafilm:
+    feed_url: https://tribecafilm.com/feed.xml
+    homepage_url: https://tribecafilm.com/news
+    display_name: Tribecafilm.com - All Articles
+    summary: Where films, festivals, culture, comedy, and original content intersect.
+  trolocsis:
+    feed_url: https://trolocsis.com/atom.xml
+    homepage_url: https://trolocsis.com
+    display_name: Ryan's Blog
+    summary: Updates from Ryan's Blog.
+  truckpoetry:
+    feed_url: http://feeds.feedburner.com/Truckpoetry
+    homepage_url: http://www.truckpoetry.net
+    display_name: Truckpoetry.net - official blog of Cameron Mathews
+    summary: Updates from Truckpoetry.net - official blog of Cameron Mathews.
+  truedimensions:
+    feed_url: http://feeds.feedburner.com/JKBrickworks
+    homepage_url: https://truedimensions.com
+    display_name: JK Brickworks
+    summary: Bringing Bricks to Life
+  trueprepper:
+    feed_url: https://trueprepper.com/feed/
+    homepage_url: https://trueprepper.com
+    display_name: TruePrepper
+    summary: Modern Prepping Guides and Survival Gear Reviews by Preparedness Experts
+  trustedreviews:
+    feed_url: https://www.trustedreviews.com/feed
+    homepage_url: https://www.trustedreviews.com
+    display_name: Trusted Reviews
+    summary: Unbiased, independent advice on what tech to buy
+  tsa_gov:
+    feed_url: https://www.tsa.gov/rss.xml
+    homepage_url: https://www.tsa.gov
+    display_name: Transportation Security Administration
+    summary: Updates from Transportation Security Administration.
+  tsminteractive:
+    feed_url: https://tsminteractive.com/feed/
+    homepage_url: https://tsminteractive.com
+    display_name: TSM Interactive - Tip Sheet
+    summary: Updates from TSM Interactive - Tip Sheet.
   joho_todai:
     feed_url: https://joho-todai.com/pinterest-rss/
     homepage_url: https://joho-todai.com/
