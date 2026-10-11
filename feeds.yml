@@ -1241,6 +1241,256 @@ bots:
     display_name: George Mandis
     summary: Web development, creative technology, and travel.
     profile_photo: https://george.mand.is/apple-touch-icon.png
+  pressthink:
+    feed_url: https://pressthink.org/feed/
+    homepage_url: https://pressthink.org
+    display_name: PressThink
+    summary: PressThink, a project of the Arthur L. Carter Journalism Institute at New York University, is written by Jay Rosen.
+  prestonlee:
+    feed_url: https://www.prestonlee.com/feed/
+    homepage_url: https://www.prestonlee.com
+    display_name: Preston Lee's Blog
+    summary: Health IT and software craftsman.
+  primermagazine:
+    feed_url: http://feeds2.feedburner.com/primermagazine/otzU
+    homepage_url: https://www.primermagazine.com
+    display_name: Primer
+    summary: The secret manual to affordable style, self-development, how-tos, and apartment DIY for the self-made man.
+  princeton_edu:
+    feed_url: https://www.princeton.edu/feed
+    homepage_url: https://www.princeton.edu
+    display_name: Princeton University News
+    summary: The latest news and events stories from Princeton University.
+  printfection:
+    feed_url: https://www.printfection.com/feed/
+    homepage_url: https://www.printfection.com
+    display_name: Swag Pro (Formerly Printfection)
+    summary: Swag Management Platform
+  prinxe_tumblr:
+    feed_url: https://prinxe.tumblr.com/rss
+    homepage_url: https://prinxe.tumblr.com
+    display_name: prinxe dot tumblr dot com
+    summary: please call me jones • 40 • he/him
+  privacylog_blogspot:
+    feed_url: https://privacylog.blogspot.com/feeds/posts/default
+    homepage_url: https://privacylog.blogspot.com
+    display_name: Privacy Log
+    summary: Updates from Privacy Log.
+  privatecaptcha:
+    feed_url: https://privatecaptcha.com/index.xml
+    homepage_url: https://privatecaptcha.com
+    display_name: Private Captcha on
+    summary: Recent content in Private Captcha on
+  probertson_tumblr:
+    feed_url: https://probertson.tumblr.com/rss
+    homepage_url: https://probertson.tumblr.com
+    display_name: Paul Robertson
+    summary: Updates from Paul Robertson.
+  problogger:
+    feed_url: https://problogger.com/feed/
+    homepage_url: https://problogger.com
+    display_name: ProBlogger
+    summary: Blog Tips to Help You Make Money Blogging
+  profkeithdevlin:
+    feed_url: https://profkeithdevlin.org/feed/
+    homepage_url: https://profkeithdevlin.org
+    display_name: profkeithdevlin.org
+    summary: Mathematics and other passions
+  progit:
+    feed_url: https://progit.org/feed/
+    homepage_url: https://progit.org
+    display_name: Le Portail d'informations
+    summary: News et Actus
+  progrium_xyz:
+    feed_url: https://progrium.xyz/blog/feed.xml
+    homepage_url: https://progrium.xyz
+    display_name: progrium.xyz
+    summary: Homepage and blog of hacker/builder Jeff Lindsay, aka progrium
+  project_kiteboat:
+    feed_url: https://project.kiteboat.com/feed/
+    homepage_url: https://project.kiteboat.com
+    display_name: Kiteboat Project
+    summary: Kai Concepts
+  projectgus:
+    feed_url: https://www.projectgus.com/feed/all.xml
+    homepage_url: https://www.projectgus.com
+    display_name: Project Gus
+    summary: Updates from Project Gus.
+  projectionlab:
+    feed_url: https://projectionlab.com/feed
+    homepage_url: https://projectionlab.com
+    display_name: ProjectionLab
+    summary: The latest ProjectionLab posts, updates, and articles.
+  prospect:
+    feed_url: https://prospect.org/feed/
+    homepage_url: https://prospect.org
+    display_name: The American Prospect
+    summary: Ideas, Politics & Power
+  proto_garden:
+    feed_url: https://proto.garden/rss/notes.xml
+    homepage_url: https://proto.garden/notes
+    display_name: proto notes
+    summary: Updates from proto notes.
+  pruned_blogspot:
+    feed_url: http://feeds.feedburner.com/Pruned
+    homepage_url: http://pruned.blogspot.com
+    display_name: Pruned
+    summary: Updates from Pruned.
+  psung_blogspot:
+    feed_url: https://psung.blogspot.com/feeds/posts/default
+    homepage_url: https://psung.blogspot.com
+    display_name: I Still Know What You Learned Last Summer
+    summary: Updates from I Still Know What You Learned Last Summer.
+  psyche_co:
+    feed_url: https://psyche.co/feed.rss
+    homepage_url: https://psyche.co
+    display_name: Psyche | Know Your Self
+    summary: Psyche is a magazine to help you understand your self and live well. Discover articles and videos on emotions, mental health, spirituality, relationships and community.
+  psychologytoday:
+    feed_url: https://www.psychologytoday.com/us/front/feed
+    homepage_url: https://www.psychologytoday.com/us
+    display_name: 'Psychology Today: The Latest'
+    summary: The latest blog posts from Psychology Today
+  psypost:
+    feed_url: https://www.psypost.org/feed/
+    homepage_url: https://www.psypost.org
+    display_name: PsyPost – Psychology News
+    summary: Reporting the latest scientific research on behavior, cognition and society
+  wowhead:
+    feed_url: https://www.wowhead.com/news/rss/all
+    homepage_url: https://www.wowhead.com/news
+    display_name: Wowhead News
+    summary: World of Warcraft News and Guides
+  pttrns:
+    feed_url: https://www.pttrns.com/feed/
+    homepage_url: https://www.pttrns.com
+    display_name: Pttrns
+    summary: The finest collection of mobile design patterns
+  pubcastworldwide:
+    feed_url: http://pubcastworldwide.com/feed/
+    homepage_url: http://pubcastworldwide.com
+    display_name: Pubcast Worldwide
+    summary: 'Podcasting: Unfiltered'
+  publicadcampaign:
+    feed_url: https://publicadcampaign.com/rss.xml
+    homepage_url: http://www.publicadcampaign.com
+    display_name: Public Ad Campaign
+    summary: Updates from Public Ad Campaign.
+  publicpolicypolling:
+    feed_url: https://www.publicpolicypolling.com/feed/
+    homepage_url: https://www.publicpolicypolling.com
+    display_name: Public Policy Polling
+    summary: Highly Accurate Polling Across the Country
+  pubnub:
+    feed_url: https://www.pubnub.com/feed/blog/
+    homepage_url: https://www.pubnub.com
+    display_name: PubNub Blog
+    summary: Learn about new PubNub releases, industry trends, and app development tips.
+  pudding_cool:
+    feed_url: https://pudding.cool/rss.xml
+    homepage_url: https://pudding.cool
+    display_name: The Pudding
+    summary: The Pudding is an editorial publication that explains ideas debated in culture with visual essays.
+  punchdrink:
+    feed_url: http://feeds.feedburner.com/punchdrink
+    homepage_url: https://punchdrink.com
+    display_name: PUNCH
+    summary: Updates from PUNCH.
+  punkt_ch:
+    feed_url: https://www.punkt.ch/blogs/news.atom
+    homepage_url: https://www.punkt.ch/blogs/news
+    display_name: punkt.ch - News
+    summary: Updates from punkt.ch - News.
+  puppet:
+    feed_url: https://www.puppet.com/rss.xml
+    homepage_url: https://www.puppet.com
+    display_name: Puppet
+    summary: Updates from Puppet.
+  puri_sm:
+    feed_url: https://puri.sm/feed/
+    homepage_url: https://puri.sm
+    display_name: Purism
+    summary: High-quality computers that protect your freedom and privacy
+  pushsquare:
+    feed_url: https://www.pushsquare.com/feeds/latest
+    homepage_url: https://www.pushsquare.com/feeds/latest
+    display_name: Push Square | Latest Updates
+    summary: Updates from Push Square | Latest Updates.
+  putthison:
+    feed_url: https://putthison.com/feed/
+    homepage_url: https://putthison.com
+    display_name: Put This On
+    summary: A blog about menswear
+  puzzling_stackexchange:
+    feed_url: https://puzzling.stackexchange.com/feeds
+    homepage_url: https://puzzling.stackexchange.com/questions
+    display_name: Recent Questions - Puzzling Stack Exchange
+    summary: Updates from Recent Questions - Puzzling Stack Exchange.
+  pyramidthoughts_wordpress:
+    feed_url: https://pyramidthoughts.wordpress.com/feed/
+    homepage_url: https://pyramidthoughts.wordpress.com
+    display_name: Pyramid Thoughts
+    summary: rambling noise about programming, bioinformatics and other geeky things
+  pythias_tumblr:
+    feed_url: https://pythias.tumblr.com/rss
+    homepage_url: https://pythias.tumblr.com
+    display_name: stay on task, kid
+    summary: novelties and art reference. • art blog. • comic. • archive. • about.
+  python:
+    feed_url: https://peps.python.org/peps.rss
+    homepage_url: https://www.python.org
+    display_name: Newest Python PEPs
+    summary: 'Newest Python Enhancement Proposals (PEPs): Information on new language features and some meta-information like release procedure and schedules.'
+  pythonsweetness_tumblr:
+    feed_url: https://pythonsweetness.tumblr.com/rss
+    homepage_url: https://pythonsweetness.tumblr.com
+    display_name: Bịt tai chống ồn chính hãng giá rẻ
+    summary: Review nút bịt tai chống ồn chính hãng giá rẻ và các loại nút tai chống ồn tốt hàng đầu tại Việt Nam, Freeship và bảo hành đổi trả.
+  pytosquatting:
+    feed_url: https://www.pytosquatting.org/feed/
+    homepage_url: https://www.pytosquatting.org
+    display_name: Pyto Squatting
+    summary: Updates from Pyto Squatting.
+  qio_me:
+    feed_url: https://qio.me/blog/feed.xml
+    homepage_url: https://qio.me/blog
+    display_name: Журнал QIO
+    summary: Практические материалы QIO о сайтах, SEO, GEO и внедрении ИИ.
+  quantifiedself:
+    feed_url: https://thequantifiedself.substack.com/feed
+    homepage_url: https://quantifiedself.com
+    display_name: Quantified Self
+    summary: News and links about the Quantified Self from Gary Isaac Wolf
+  queerty:
+    feed_url: https://www.queerty.com/feed/
+    homepage_url: https://www.queerty.com
+    display_name: Queerty
+    summary: Free of an agenda, except for that gay one. LGBTQ life, entertainment, politics and the goods - all for the gay, lesbian, bisexual, transgender and queer community.
+  quirksmode:
+    feed_url: https://www.quirksmode.org/blog/atom.xml
+    homepage_url: http://www.quirksmode.org/blog
+    display_name: QuirksBlog
+    summary: Updates from QuirksBlog.
+  quotesondesign:
+    feed_url: https://quotesondesign.com/feed/
+    homepage_url: https://quotesondesign.com
+    display_name: Quotes on Design
+    summary: Updates from Quotes on Design.
+  qwstion:
+    feed_url: https://qwstion.com/blogs/news.atom
+    homepage_url: https://qwstion.com/blogs/news
+    display_name: QWSTION - Our Stories
+    summary: Updates from QWSTION - Our Stories.
+  qzaidi_github:
+    feed_url: https://qzaidi.github.io/atom.xml
+    homepage_url: https://qzaidi.github.io
+    display_name: Thruput | Garbage In, Garbage Out
+    summary: Updates from Thruput | Garbage In, Garbage Out.
+  raamdev:
+    feed_url: https://raamdev.com/feed/
+    homepage_url: https://raamdev.com
+    display_name: Raam Dev
+    summary: Updates from Raam Dev.
   namanyay_goel:
     feed_url: https://nmn.gl/blog/feed.xml
     homepage_url: https://nmn.gl/blog/
