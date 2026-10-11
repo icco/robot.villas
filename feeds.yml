@@ -417,6 +417,256 @@ bots:
     display_name: 'NPR Topics: Technology'
     summary: Technology news from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  tkkader:
+    feed_url: https://www.tkkader.com/feed/
+    homepage_url: https://www.tkkader.com
+    display_name: TK Kader | Unstoppable
+    summary: belief x discipline makes you unstoppable
+  taylorstitch:
+    feed_url: https://www.taylorstitch.com/blogs/archive.atom
+    homepage_url: https://www.taylorstitch.com/blogs/archive
+    display_name: Taylor Stitch - Taylor Stitch Journal
+    summary: Updates from Taylor Stitch - Taylor Stitch Journal.
+  tbaggery:
+    feed_url: http://feeds.feedburner.com/tpope
+    homepage_url: https://tbaggery.com
+    display_name: tbaggery
+    summary: Updates from tbaggery.
+  tech_paulcz:
+    feed_url: https://tech.paulcz.net/index.xml
+    homepage_url: https://tech.paulcz.net
+    display_name: Paul Czarkowski
+    summary: Recent content on Paul Czarkowski
+  techeblog:
+    feed_url: https://www.techeblog.com/feed/
+    homepage_url: https://www.techeblog.com
+    display_name: TechEBlog
+    summary: Updates from TechEBlog.
+  techmeme:
+    feed_url: https://www.techmeme.com/feed.xml
+    homepage_url: https://www.techmeme.com
+    display_name: Techmeme
+    summary: Top news and commentary for technology's leaders, from all around the web
+  techstars:
+    feed_url: https://techstars.org/feed/
+    homepage_url: https://techstars.org
+    display_name: Techstars Foundation
+    summary: We’re here to start a movement that makes innovation accessible to anyone, anywhere.
+  techtrenches_dev:
+    feed_url: https://techtrenches.dev/feed
+    homepage_url: https://techtrenches.dev
+    display_name: From the Trenches
+    summary: Practical engineering management lessons learned in the trenches of scaling tech teams.
+  tegabrain:
+    feed_url: https://tegabrain.com/rss
+    homepage_url: https://tegabrain.com
+    display_name: Tega Brain
+    summary: Tega Brain
+  terriblesoftware:
+    feed_url: https://terriblesoftware.org/feed/
+    homepage_url: https://terriblesoftware.org
+    display_name: Terrible Software
+    summary: Software | Engineering Leadership | Tech
+  testing_googleblog:
+    feed_url: http://feeds.feedburner.com/blogspot/RLXA
+    homepage_url: http://testing.googleblog.com
+    display_name: Google Testing Blog
+    summary: Updates from Google Testing Blog.
+  textslashplain:
+    feed_url: https://textslashplain.com/feed/
+    homepage_url: https://textslashplain.com
+    display_name: text/plain
+    summary: ericlaw talks about security, the web, and software in general
+  thatdragoncancer:
+    feed_url: http://www.thatdragoncancer.com/thatdragoncancer?format=rss
+    homepage_url: http://www.thatdragoncancer.com/thatdragoncancer
+    display_name: Blog - That Dragon, Cancer
+    summary: '"That Dragon, Cancer" is currently being developed by Ryan & Amy Green and Josh Larson along with five others at their new studio Numinous Games. A videogame developer''s love letter to his son; an immersive adventure game to inspire love for others; a memorial for hundreds who have fought cancer. “That Dragon, Cancer” is a poetic and playful interactive retelling of Joel Green’s 4-year fight against cancer, and an autobiographical memoir of how parents Ryan and Amy embrace hope in the face of de'
+  sarahcpr_substack:
+    feed_url: https://sarahcpr.substack.com/feed
+    homepage_url: https://sarahcpr.substack.com
+    display_name: sarahcpr
+    summary: Stories and other chicken scratch from Sarah Cooper.
+  thedailywtf:
+    feed_url: https://feeds.feedburner.com/TheDailyWtf
+    homepage_url: http://thedailywtf.com
+    display_name: The Daily WTF
+    summary: Curious Perversions in Information Technology
+  thedeletedscenes:
+    feed_url: https://www.thedeletedscenes.com/feed
+    homepage_url: https://www.thedeletedscenes.com
+    display_name: The Deleted Scenes
+    summary: Urbanism, culture, idiosyncrasy
+  thedrive:
+    feed_url: https://www.thedrive.com/feed
+    homepage_url: https://www.thedrive.com
+    display_name: The Drive
+    summary: Car News, Reviews, and Culture
+  thehackernews:
+    feed_url: https://feeds.feedburner.com/TheHackersNews
+    homepage_url: https://thehackernews.com
+    display_name: The Hacker News
+    summary: Most trusted, widely-read independent cybersecurity news source for everyone; supported by hackers and IT professionals — Send TIPs to admin@thehackernews.com
+  thejournal_ie:
+    feed_url: https://www.thejournal.ie/feed/
+    homepage_url: https://www.thejournal.ie
+    display_name: TheJournal.ie
+    summary: Ireland's Internet Newspaper
+  thenewinquiry:
+    feed_url: https://thenewinquiry.com/feed/
+    homepage_url: https://thenewinquiry.com
+    display_name: The New Inquiry
+    summary: modern scholarship
+  therichest:
+    feed_url: https://www.therichest.com/feed/
+    homepage_url: https://www.therichest.com
+    display_name: TheRichest
+    summary: TheRichest covers the wealth, net worth, and the luxurious lifestyles of the richest people in the world.
+  thesarcasmsociety_tumblr:
+    feed_url: https://thesarcasmsociety.tumblr.com/rss
+    homepage_url: https://thesarcasmsociety.tumblr.com
+    display_name: 404 Error - Not Found
+    summary: I’d like to look after myself before anyone else; But people say that’s selfish. So I don’t. zomgilyandshithahalolxx. FB > Recommend to have me featured
+  thesun:
+    feed_url: https://www.thesun.co.uk/feed/
+    homepage_url: https://www.thesun.co.uk
+    display_name: The Sun
+    summary: The Best for News, Sport, Showbiz, Celebrities
+  thesweetsetup:
+    feed_url: https://thesweetsetup.com/feed/
+    homepage_url: https://thesweetsetup.com
+    display_name: The Sweet Setup
+    summary: The best apps and workflows for your iPhone, iPad, and Mac
+  theunconventionalroute:
+    feed_url: https://www.theunconventionalroute.com/feed/
+    homepage_url: https://www.theunconventionalroute.com
+    display_name: The Unconventional Route
+    summary: Make the most of your trip through life.
+  tholman:
+    feed_url: https://tholman.com/feed.xml
+    homepage_url: https://tholman.com
+    display_name: The Curious Creations of Tim Holman
+    summary: Updates from The Curious Creations of Tim Holman.
+  tickld:
+    feed_url: https://www.tickld.com/feed/
+    homepage_url: https://www.tickld.com
+    display_name: Tickld
+    summary: Here at Kabazi, we know what you crave! Our editorial team aims to humor, surprise and delight you with our daily content. They scour the internet for the hidden gems, keeping a keen eye on what’s trending, and serve you only the best of the best. So, keep calm and scroll on!
+  tindie:
+    feed_url: https://www.tindie.com/feed/
+    homepage_url: https://www.tindie.com
+    display_name: Tindie product feed
+    summary: This is the Tindie feed for new products.
+  tisiphone:
+    feed_url: https://tisiphone.net/feed/
+    homepage_url: https://tisiphone.net
+    display_name: Lesley Carhart's Cybersecurity Blog
+    summary: '[Lesley Carhart, Public Universal Cyber-Pal]'
+  tmm1:
+    feed_url: http://tmm1.net/atom.xml
+    homepage_url: http://tmm1.net
+    display_name: '@tmm1'
+    summary: Updates from @tmm1.
+  toddwschneider:
+    feed_url: https://toddwschneider.com/atom.xml
+    homepage_url: https://toddwschneider.com
+    display_name: Todd W. Schneider
+    summary: Updates from Todd W. Schneider.
+  toolsandtoys:
+    feed_url: https://toolsandtoys.net/feed/
+    homepage_url: https://toolsandtoys.net
+    display_name: Tools and Toys
+    summary: Hand-Picked for Work and Play
+  trac_hacks:
+    feed_url: https://trac-hacks.org/blog?format=rss
+    homepage_url: https://trac-hacks.org/blog
+    display_name: Trac Hacks - Plugins Macros etc. - Blog
+    summary: trac-hacks.org Blog
+  home_treasury_gov:
+    feed_url: https://home.treasury.gov/rss.xml
+    homepage_url: https://home.treasury.gov
+    display_name: U.S. Department of the Treasury
+    summary: Updates from U.S. Department of the Treasury.
+  trendir:
+    feed_url: https://www.trendir.com/feed/
+    homepage_url: https://www.trendir.com
+    display_name: Trendir
+    summary: The Latest Trends in Modern House Design and Decorating
+  texasdemocrats:
+    feed_url: https://www.texasdemocrats.org/blog-feed.xml
+    homepage_url: https://www.texasdemocrats.org/blog
+    display_name: The Texas Democratic Party
+    summary: Texas Democratic Party
+  tylergaw:
+    feed_url: https://tylergaw.com/rss.xml
+    homepage_url: https://tylergaw.com
+    display_name: Tyler Gaw's blog
+    summary: Updates from Tyler Gaw's blog.
+  typographica:
+    feed_url: https://typographica.org/feed/
+    homepage_url: https://typographica.org
+    display_name: Typographica
+    summary: A review of typefaces and typography books, with occasional commentary on fonts and typographic design.
+  typography:
+    feed_url: https://www.typography.com/rss/blog
+    homepage_url: https://www.typography.com/blog
+    display_name: H&Co News
+    summary: H&Co designs fonts for print, web, and mobile environments.
+  uberlin:
+    feed_url: https://uberlin.co.uk/feed/
+    homepage_url: https://uberlin.co.uk
+    display_name: überlin
+    summary: Life in Berlin
+  universetoday:
+    feed_url: https://www.universetoday.com/rss.xml
+    homepage_url: https://www.universetoday.com
+    display_name: Universe Today
+    summary: Space and Astronomy News from Universe Today
+  commons_wikimedia:
+    feed_url: https://commons.wikimedia.org/w/api.php?action=featuredfeed&feed=potd&feedformat=atom
+    homepage_url: https://commons.wikimedia.org/wiki/Main_Page
+    display_name: Wikimedia Commons picture of the day feed
+    summary: Updates from Wikimedia Commons picture of the day feed.
+  urbandictionary:
+    feed_url: https://www.urbandictionary.com/daily.rss
+    homepage_url: http://www.urbandictionary.com
+    display_name: Urban Word of the Day
+    summary: A new definition every day from Urban Dictionary
+  urbanhonking:
+    feed_url: http://www.urbanhonking.com/section/index19b5.html?feed=fullfeed
+    homepage_url: http://urbanhonking.com/section
+    display_name: Urban Honking
+    summary: Updates from Urban Honking.
+  ux_stackexchange:
+    feed_url: https://ux.stackexchange.com/feeds
+    homepage_url: https://ux.stackexchange.com/questions
+    display_name: Recent Questions - User Experience Stack Exchange
+    summary: Updates from Recent Questions - User Experience Stack Exchange.
+  uxmag:
+    feed_url: https://uxmag.com/feed
+    homepage_url: https://uxmag.com
+    display_name: UX Magazine
+    summary: UX Magazine is a central, one-stop resource for everything related to user experience. We provide a steady stream of current, informative, and credible information about UX and related fields to enhance the professional and creative lives of UX practitioners and those exploring the field. Our content is driven and created by an impressive roster of experienced professionals
+  vibe:
+    feed_url: https://www.vibe.com/feed/
+    homepage_url: https://www.vibe.com
+    display_name: VIBE.com
+    summary: Hip-Hop, R&B, Style, and Black Culture
+  villagevoice:
+    feed_url: https://www.villagevoice.com/feed/
+    homepage_url: https://www.villagevoice.com
+    display_name: The Village Voice
+    summary: Updates from The Village Voice.
+  viralnova:
+    feed_url: https://viralnova.com/feed/
+    homepage_url: https://viralnova.com
+    display_name: ViralNova
+    summary: Get all the latest interesting, hilarious, and mind-blowing stories on the Web. This is the stuff everyone's talking about.
+  visualidiot:
+    feed_url: https://www.visualidiot.com/feed/
+    homepage_url: https://www.visualidiot.com
+    display_name: VI-Designs
+    summary: Amazing Websites for Businesses and Professionals
   npr_movies:
     feed_url: https://feeds.npr.org/1045/rss.xml
     homepage_url: https://www.npr.org
