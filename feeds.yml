@@ -17811,6 +17811,294 @@ bots:
     display_name: Undark Magazine
     summary: Science journalism at the intersection of research, policy, medicine, and society.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://undark.org&size=128
+  daniel_moerner:
+    feed_url: https://moerner.com/index.xml
+    homepage_url: https://moerner.com
+    display_name: Daniel Moerner
+    summary: Daniel Moerner's personal writing on programming, developer tools, technology, music, food, and life.
+    profile_photo: https://moerner.com/apple-touch-icon.png
+  molleindustria:
+    feed_url: https://www.molleindustria.org/blog/feed/
+    homepage_url: https://www.molleindustria.org/blog
+    display_name: Molleindustria
+    summary: Molleindustria's independent political games, development announcements, social criticism, talks, and project archives.
+    profile_photo: https://www.molleindustria.org/blog/wp-content/uploads/2019/09/logo_small.png
+  money:
+    feed_url: https://money.com/money/feed/
+    homepage_url: https://money.com
+    display_name: Money
+    summary: Personal finance news and advice on saving, investing, credit, insurance, retirement, and financial scams from Money.
+    profile_photo: https://money.com/money/img/favicons/favicon-57.png
+  the_money_project:
+    feed_url: https://money.visualcapitalist.com/feed/
+    homepage_url: https://money.visualcapitalist.com
+    display_name: The Money Project
+    summary: 'Archived visual explainers on money, markets, wealth, and economic history from The Money Project. Latest feed post: October 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmoney.visualcapitalist.com&size=128
+  monica_byrne:
+    feed_url: https://monicacatherine.com/feed/
+    homepage_url: https://monicacatherine.com
+    display_name: monica byrne
+    summary: Monica Byrne's writing updates, creative workshops, worldbuilding, personal reflections, and links to her longer work.
+    profile_photo: https://secure.gravatar.com/blavatar/4c286656dd9c5ee04d121753630fb7eb49b4211db97040c375fe9139c32de36f?s=114
+  the_monica_blog:
+    feed_url: https://www.monicahq.com/en/blog/feed.xml
+    homepage_url: https://www.monicahq.com/en/blog
+    display_name: The Monica blog
+    summary: Monica's official blog on its open-source personal CRM, releases, privacy, relationship modeling, and product development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.monicahq.com%2Fen%2Fblog&size=128
+  monkey_mace:
+    feed_url: https://monkeymace.com/rss
+    homepage_url: https://monkeymace.com
+    display_name: Monkey Mace
+    summary: 'Archived Tumblr posts and reblogs about humans, technology, art, and design. Latest feed post: December 2012.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmonkeymace.com&size=128
+  monkeyuser:
+    feed_url: https://www.monkeyuser.com/index.xml
+    homepage_url: https://www.monkeyuser.com
+    display_name: Monkeyuser
+    summary: Programming and software-development comics about code, tools, workplaces, AI, and developer life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.monkeyuser.com&size=128
+  monki_gras:
+    feed_url: https://monkigras.com/feed/
+    homepage_url: https://monkigras.com
+    display_name: Monki Gras
+    summary: 'Archived Monki Gras developer-conference posts on software, craft, design, and tech culture. Latest feed post: March 2017; the conference homepage has newer event information.'
+    profile_photo: https://monkigras.com/wp-content/uploads/2025/12/cropped-404233-200.png?w=180
+  monocle:
+    feed_url: https://monocle.com/feed/
+    homepage_url: https://monocle.com
+    display_name: Monocle
+    summary: Monocle reporting and commentary on global affairs, business, culture, design, travel, and urban life.
+    profile_photo: https://monocle.com/wp-content/uploads/2025/11/cropped-MONOCLE_DIGI_BLACK-BGWHITE-M-MARK_1.png?fit=180%2C180
+  helftone_blog:
+    feed_url: https://blog.helftone.com/feed.xml
+    homepage_url: https://blog.helftone.com
+    display_name: Helftone Blog
+    summary: Helftone product announcements and technical updates, primarily for the Monodraw ASCII-art and diagram editor for macOS.
+    profile_photo: https://monodraw.helftone.com/static/images/favicons/apple-touch-icon-57x57.png
+  montana_newsroom:
+    feed_url: https://montananewsroom.com/feed/
+    homepage_url: https://montananewsroom.com
+    display_name: Montana Newsroom
+    summary: Montana and regional news, politics, business, sports, and opinion from Montana Newsroom.
+    profile_photo: https://montananewsroom.com/wp-content/uploads/2023/11/Montana-Newsroom-Favicon.png
+  monthly_music_hackathon_nyc:
+    feed_url: https://monthlymusichackathon.org/rss
+    homepage_url: https://monthlymusichackathon.org
+    display_name: Monthly Music Hackathon NYC
+    summary: 'Archived Monthly Music Hackathon NYC event announcements, calls for projects, and recaps about music and creative technology. Latest feed post: July 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmonthlymusichackathon.org&size=128
+  moo_blog:
+    feed_url: https://www.moo.com/blog/feed
+    homepage_url: https://www.moo.com/blog
+    display_name: MOO Blog
+    summary: MOO's official blog on print design, branding, paper, business cards, creative businesses, and product announcements.
+    profile_photo: https://mlyx2uz0zaat.i.optimole.com/cb:tThl.5002c/w:auto/h:auto/q:90/f:best/https://www.moo.com/blog/wp-content/themes/mooblog/dist/img/favicon.ico?v=2
+  the_bob_moog_foundation:
+    feed_url: https://moogfoundation.org/feed/
+    homepage_url: https://moogfoundation.org
+    display_name: The Bob Moog Foundation
+    summary: Bob Moog Foundation news on the Moogseum, music and science education, synthesizer history, events, and fundraising.
+    profile_photo: https://moogfoundation.org/wp-content/uploads/cropped-bmf_icon_1-180x180.jpg
+  moog_music:
+    feed_url: https://www.moogmusic.com/rss.xml
+    homepage_url: https://www.moogmusic.com
+    display_name: Moog Music
+    summary: Moog Music's official articles on synthesizers, sound design, instrument releases, presets, education, and company news.
+    profile_photo: https://www.moogmusic.com/icons/icon-48x48.png?v=19824249db559062a014b54da82f0eca
+  moserware:
+    feed_url: https://feeds.feedburner.com/Moserware
+    homepage_url: https://www.moserware.com
+    display_name: Moserware
+    summary: 'Jeff Moser''s archived illustrated explanations of cryptography, programming, software internals, and computing. Latest feed post: October 2015.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.moserware.com&size=128
+  motor1_com:
+    feed_url: https://www.motor1.com/rss/news/all/
+    homepage_url: https://www.motor1.com/news
+    display_name: Motor1.com
+    summary: Automotive news, new vehicles, concept cars, industry developments, and driving coverage from Motor1.com.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.motor1.com%2Fnews&size=128
+  movebits:
+    feed_url: http://movebits.net/atom.xml
+    homepage_url: http://movebits.net
+    display_name: movebits
+    summary: 'Archived movebits posts on Ubuntu Edge funding, electronics, and Ruby on Rails concepts. Latest feed post: July 2013.'
+  moveline:
+    feed_url: https://www.moveline.com/feed/
+    homepage_url: https://www.moveline.com
+    display_name: Moveline
+    summary: 'Moveline moving guides on budgeting, packing, furniture shipping, relocation, and choosing movers. Latest feed post: August 2024.'
+    profile_photo: https://www.moveline.com/wp-content/themes/custom-theme/assets/favicon/apple-touch-icon.png
+  moviebarcode:
+    feed_url: https://moviebarcode.tumblr.com/rss
+    homepage_url: https://moviebarcode.tumblr.com
+    display_name: moviebarcode
+    summary: 'Archived film frames compressed into barcode-like color strips and visual sequences. Latest feed post: May 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmoviebarcode.tumblr.com&size=128
+  source_code_in_tv_and_films:
+    feed_url: https://moviecode.tumblr.com/rss
+    homepage_url: https://moviecode.tumblr.com
+    display_name: Source Code in TV and Films
+    summary: 'Archived examples identifying the computer source code shown on screen in television and films. Latest feed post: March 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmoviecode.tumblr.com&size=128
+  moving_to_nyc_101:
+    feed_url: https://movingtonyc101.blogspot.com/feeds/posts/default
+    homepage_url: https://movingtonyc101.blogspot.com
+    display_name: Moving to NYC 101
+    summary: 'Archived budget-conscious advice on moving to New York City, apartment hunting, neighborhoods, credit, and furniture. Latest feed post: June 2014.'
+  mpr_news:
+    feed_url: https://www.mprnews.org/feed/homepage
+    homepage_url: https://www.mprnews.org/homepage
+    display_name: MPR News
+    summary: Minnesota Public Radio news on Minnesota communities, politics, business, climate, sports, and national affairs.
+    profile_photo: https://www.mprnews.org/apple-touch-icon.png
+  peter_coles:
+    feed_url: https://mrcoles.com/feeds/latest/
+    homepage_url: https://mrcoles.com
+    display_name: Peter Coles
+    summary: Peter Coles' writing on web development, programming, browser tools, small projects, and personal observations.
+    profile_photo: https://mrcoles.com/media/ico/apple-touch-icon.png
+  andrew_drozdov:
+    feed_url: https://mrdrozdov.github.io/feed.xml
+    homepage_url: https://mrdrozdov.github.io
+    display_name: Andrew Drozdov
+    summary: Andrew Drozdov's personal research site and blog; the feed currently contains one February 2024 article with advice for early PhD students.
+    profile_photo: https://github.com/mrdrozdov.png?size=200
+  the_art_of_m_s_corley:
+    feed_url: http://feeds.feedburner.com/TheArtOfMSCorley
+    homepage_url: http://mscorley.blogspot.com
+    display_name: The Art of M. S. Corley
+    summary: 'Archived book-cover illustrations, redesigns, comics, and artwork by M. S. Corley. Latest feed post: April 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fmscorley.blogspot.com&size=128
+  mta:
+    feed_url: https://www.mta.info/rss.xml
+    homepage_url: https://www.mta.info
+    display_name: MTA
+    summary: Official New York Metropolitan Transportation Authority press releases, project announcements, transit news, and website updates; not a live service-alert feed.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mta.info&size=128
+  ferdinand_mutsch:
+    feed_url: https://muetsch.io/rss2.xml
+    homepage_url: https://muetsch.io
+    display_name: Ferdinand Mütsch
+    summary: Ferdinand Mutsch's writing on software engineering, self-hosting, systems administration, personal projects, technology, and cycling.
+    profile_photo: https://muetsch.io/images/favicon.png
+  next_tv:
+    feed_url: https://www.nexttv.com/feeds.xml
+    homepage_url: https://www.nexttv.com/multichannel-news
+    display_name: Next TV
+    summary: 'Next TV and Multichannel News archive covering television, cable, broadcasting, streaming, and media business. Latest feed post: October 2025.'
+    profile_photo: https://cdn.mos.cms.futurecdn.net/flexiimages/5wxjxz2kut1575538129.png
+  munin_monitoring:
+    feed_url: https://munin-monitoring.org/feed.xml
+    homepage_url: https://munin-monitoring.org
+    display_name: Munin Monitoring
+    summary: 'Archived Munin resource-monitoring project release notes, website announcements, and community news. Latest feed post: November 2021.'
+    profile_photo: https://munin-monitoring.org/assets/favicons/apple-touch-icon-57x57.png
+  museum_hack:
+    feed_url: https://museumhack.com/feed/
+    homepage_url: https://museumhack.com
+    display_name: Museum Hack
+    summary: 'Museum Hack articles on museum history, tours, art, events, and corporate team-building activities. Latest feed post: April 2025.'
+    profile_photo: https://museumhack.com/wp-content/uploads/2019/05/museumhack-min.jpg
+  music_business_worldwide:
+    feed_url: https://www.musicbusinessworldwide.com/feed/
+    homepage_url: https://www.musicbusinessworldwide.com
+    display_name: Music Business Worldwide
+    summary: Global music-industry news and analysis on labels, artists, streaming, licensing, technology, and the business of music.
+    profile_photo: https://www.musicbusinessworldwide.com/wp-content/themes/mb/assets/img/icons/apple-touch-icon-57x57.png
+  music_for_programming:
+    feed_url: https://musicforprogramming.net/rss.xml
+    homepage_url: https://musicforprogramming.net
+    display_name: Music For Programming
+    summary: Datassette-curated music mixes for focused programming and other activities, with guest selectors and downloadable episodes.
+    profile_photo: https://musicforprogramming.net/img/folder.jpg
+  music_machinery:
+    feed_url: https://musicmachinery.com/feed/
+    homepage_url: https://musicmachinery.com
+    display_name: Music Machinery
+    summary: Paul Lamere's writing on music technology, playlist tools, music discovery, programming, and creative software projects.
+  mvkb_updates:
+    feed_url: https://buttondown.com/MVKB/rss
+    homepage_url: https://mvkb.com
+    display_name: MVKB Updates
+    summary: MVKB keyboard and keycap design project updates, group buys, stock announcements, and previews from Tim Van Damme, also known as Max Voltar.
+    profile_photo: https://mvkb.com/favicon.png
+  max_stoibers_essays:
+    feed_url: https://mxstbr.com/rss
+    homepage_url: https://mxstbr.com
+    display_name: Max Stoiber's Essays
+    summary: Max Stoiber's essays and notes on programming, developer tools, leadership, productivity, startups, and creative work. The feed groups older essays before notes through July 2026.
+    profile_photo: https://mxstbr.com/icon.png?icon.0412e0a9.png
+  haavard_moen_archive:
+    feed_url: https://opvardarchive.wordpress.com/feed/
+    homepage_url: https://opvardarchive.wordpress.com
+    display_name: An Archive From Behind the Trenches
+    summary: 'Haavard Moen''s archived my.opera.com/haavard blog on Opera, browser engines, web standards, and technology. Latest feed post: November 2013.'
+  myanimelist_news:
+    feed_url: https://myanimelist.net/rss/news.xml
+    homepage_url: https://myanimelist.net/news
+    display_name: MyAnimeList News
+    summary: MyAnimeList news on anime and manga adaptations, casts, releases, production announcements, music, and industry events.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmyanimelist.net%2Fnews%3F_location%3Drss&size=128
+  myce_blog:
+    feed_url: https://myce.com/blog/feed/
+    homepage_url: https://myce.com/blog
+    display_name: Myce Blog
+    summary: 'Myce Blog archive of technology and app guides, product reviews, and employment and benefits explainers. Latest feed post: October 2024; recent posts differ from its older storage-news focus.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmyce.com%2Fblog&size=128
+  myfonts_metronic_slab_pro:
+    feed_url: https://www.myfonts.com/collections/metronic-slab-pro-font-mostardesign.atom
+    homepage_url: https://www.myfonts.com/collections/metronic-slab-pro-font-mostardesign
+    display_name: 'MyFonts: Metronic Slab Pro'
+    summary: 'MyFonts product feed for Mostardesign''s Metronic Slab Pro font family and individual styles, not general font news. Latest feed product timestamp: January 2022.'
+    profile_photo: https://www.myfonts.com/cdn/shop/files/MyFonts_Favicon_small.png?v=1717748062
+  fox8_wghp:
+    feed_url: https://myfox8.com/feed/
+    homepage_url: https://myfox8.com
+    display_name: FOX8 WGHP
+    summary: FOX8 WGHP local news, weather, politics, sports, and community reporting from North Carolina and the Piedmont Triad.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmyfox8.com&size=128
+  classic_wisdom:
+    feed_url: https://www.myharvardclassics.com/blog.rss
+    homepage_url: https://www.myharvardclassics.com
+    display_name: Classic Wisdom
+    summary: Classic Wisdom, the My Harvard Classics blog, with reading advice and essays on classic literature, authors, history, and cultural traditions.
+  my_morning_routine:
+    feed_url: http://feeds.feedburner.com/mymorningroutine
+    homepage_url: https://mymorningroutine.com
+    display_name: My Morning Routine
+    summary: Archived interviews about the morning routines of writers, entrepreneurs, and creatives. Regular publishing ended in July 2019; the feed includes a February 2023 update.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmymorningroutine.com&size=128
+  my_nintendo_news:
+    feed_url: https://mynintendonews.com/feed/
+    homepage_url: https://mynintendonews.com
+    display_name: My Nintendo News
+    summary: Independent Nintendo and video-game news on releases, developers, hardware, industry announcements, and related games.
+    profile_photo: https://i0.wp.com/mynintendonews.com/wp-content/uploads/2023/04/34CAvYNz_400x400.jpg?fit=180%2C180&ssl=1
+  my_own_fortune:
+    feed_url: https://myownfortune.wordpress.com/feed/
+    homepage_url: https://myownfortune.wordpress.com
+    display_name: My Own Fortune
+    summary: 'Archived personal writing on programming, debugging, games, startup learning, and business models. Latest feed post: October 2017.'
+  n_gate_com:
+    feed_url: http://n-gate.com/index.atom
+    homepage_url: http://n-gate.com
+    display_name: n-gate.com
+    summary: 'Archived satirical annotated digests of Hacker News discussions, with irreverent criticism of software and tech culture. Latest feed timestamp: October 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fn-gate.com&size=128
+  nd_unlimited:
+    feed_url: https://feeds.feedburner.com/NDUnlimited
+    homepage_url: https://www.namirdeiter.com
+    display_name: ND Unlimited
+    summary: ND Unlimited updates for Isabel and Terrence Marks' webcomics, including Nicole and Derek, Wonder Kittens, and You Say it First; current items rerun older strips with commentary.
+    profile_photo: https://www.namirdeiter.com/nav.png
+  naoto_fukasawa_design:
+    feed_url: https://naotofukasawa.com/feed/
+    homepage_url: https://naotofukasawa.com
+    display_name: Naoto Fukasawa Design
+    summary: Naoto Fukasawa Design's legacy news feed, currently containing one November 2018 MINGEI exhibition notice; the official website has newer projects and news.
+    profile_photo: https://naotofukasawa.com/cms/wp-content/themes/naotofukasawa/assets/images/og.png
   nasa:
     feed_url: https://www.nasa.gov/feed/
     homepage_url: https://www.nasa.gov
