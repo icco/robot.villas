@@ -79,7 +79,7 @@ function makeConfig(botCount: number): FeedsConfig {
 describe("startPoller concurrency", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0 });
+    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0, deferred: 0 });
     mockGetStatusMap.mockResolvedValue(new Map());
   });
 
@@ -210,7 +210,7 @@ describe("startPoller concurrency", () => {
 describe("startPoller conditional GET and rate limiting", () => {
   beforeEach(() => {
     vi.clearAllMocks();
-    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0 });
+    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0, deferred: 0 });
     mockGetStatusMap.mockResolvedValue(new Map());
   });
 
@@ -241,6 +241,34 @@ describe("startPoller conditional GET and rate limiting", () => {
       etag: '"abc"',
       lastModified: "yesterday",
     });
+  });
+
+  it("clears both validators for deferred entries and restores caching once they are eligible", async () => {
+    mockGetStatusMap.mockResolvedValue(new Map([["bot0", statusRow({ etag: '"old"', lastModified: "yesterday" })]]));
+    mockFetchFeed.mockResolvedValue(okFetch({ validators: { etag: '"new"', lastModified: "today" } }));
+    mockPublishNewEntries.mockResolvedValueOnce({ stored: 1, skipped: 1, deferred: 1 });
+
+    const first = startOneBot();
+    try {
+      await vi.waitFor(() => expect(mockUpsertStatus).toHaveBeenCalledTimes(1));
+      expect(mockUpsertStatus.mock.calls[0][1]).toMatchObject({ etag: null, lastModified: null });
+    } finally {
+      first.stop();
+    }
+
+    mockGetStatusMap.mockResolvedValue(new Map([["bot0", statusRow({
+      ...mockUpsertStatus.mock.calls[0][1],
+      lastCheckedAt: new Date(Date.now() - 24 * 60 * 60 * 1000),
+    })]]));
+    mockPublishNewEntries.mockResolvedValueOnce({ stored: 1, skipped: 1, deferred: 0 });
+    const second = startOneBot();
+    try {
+      await vi.waitFor(() => expect(mockUpsertStatus).toHaveBeenCalledTimes(2));
+      expect(mockFetchFeed.mock.calls[1][1]).toEqual({ etag: null, lastModified: null });
+      expect(mockUpsertStatus.mock.calls[1][1]).toMatchObject({ etag: '"new"', lastModified: "today" });
+    } finally {
+      second.stop();
+    }
   });
 
   it("does not publish anything when the feed is unmodified", async () => {
@@ -374,7 +402,7 @@ describe("startPoller replica leases", () => {
   beforeEach(() => {
     vi.clearAllMocks();
     mockGetStatusMap.mockResolvedValue(new Map());
-    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0 });
+    mockPublishNewEntries.mockResolvedValue({ stored: 0, skipped: 0, deferred: 0 });
     mockFetchFeed.mockResolvedValue(okFetch());
   });
 
