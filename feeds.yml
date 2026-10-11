@@ -33,6 +33,256 @@ bots:
     display_name: Nat? Nat. Nat!
     summary: Nat Welch's blog about random stuff.
     profile_photo: https://avatars.githubusercontent.com/u/20201?s=200
+  commaful:
+    feed_url: https://commaful.com/blog/feed/
+    homepage_url: https://commaful.com/blog
+    display_name: Commaful Storytelling Blog
+    summary: Let's learn about great storytelling!
+  users_softlab_ece_ntua_gr__ttsiod:
+    feed_url: https://www.thanassis.space/rss.xml
+    homepage_url: https://www.thanassis.space
+    display_name: Coding and administration articles by ttsiodras
+    summary: 'I periodically blog about things from the coding/admin world that I find interesting. Some things you will find here: coding puzzles, Python/C++/OCaml articles, embedded programming, Linux/Windows administration hints, real-time graphics, CUDA, SSE, ...'
+  uspto_gov:
+    feed_url: https://www.uspto.gov/rss.xml
+    homepage_url: https://www.uspto.gov
+    display_name: USPTO Site Feed
+    summary: Updates from USPTO Site Feed.
+  utsavmamoria_substack:
+    feed_url: https://utsavmamoria.substack.com/feed
+    homepage_url: https://utsavmamoria.substack.com
+    display_name: Tumse Na Ho Paayega
+    summary: Long-form writing on how to think, feel and live better by a Millennial navigating mid-life. Philosophy, not productivity.
+  utwente_nl:
+    feed_url: https://www.utwente.nl/over-ons/nieuws-events-ceremonies/nieuws.rss
+    homepage_url: https://www.utwente.nl/over-ons
+    display_name: Nieuws, evenementen en plechtigheden
+    summary: Updates from Nieuws, evenementen en plechtigheden.
+  uwm_edu:
+    feed_url: https://uwm.edu/news/feed/
+    homepage_url: https://uwm.edu/news
+    display_name: UWM REPORT
+    summary: News from the University of Wisconsin - Milwaukee
+  uzbl:
+    feed_url: https://www.uzbl.org/atom.xml
+    homepage_url: https://www.uzbl.org
+    display_name: Uzbl News
+    summary: Updates from Uzbl News.
+  v8_dev:
+    feed_url: https://v8.dev/blog.atom
+    homepage_url: https://v8.dev
+    display_name: V8
+    summary: Updates from V8.
+  vadimkravcenko:
+    feed_url: https://vadimkravcenko.com/feed/
+    homepage_url: https://vadimkravcenko.com
+    display_name: Vadim Kravcenko
+    summary: Helping startups get to the next level
+  vaghetti_dev:
+    feed_url: https://vaghetti.dev/index.xml
+    homepage_url: https://vaghetti.dev
+    display_name: Douglas Vaghetti
+    summary: Recent content on Douglas Vaghetti
+  higherlogic:
+    feed_url: https://www.higherlogic.com/feed/
+    homepage_url: https://www.higherlogic.com
+    display_name: Higher Logic
+    summary: Updates from Higher Logic.
+  vanishingnewyork_blogspot:
+    feed_url: https://vanishingnewyork.blogspot.com/feeds/posts/default
+    homepage_url: https://vanishingnewyork.blogspot.com
+    display_name: Jeremiah's Vanishing New York
+    summary: Updates from Jeremiah's Vanishing New York.
+  vanschneider:
+    feed_url: https://vanschneider.com/blog/rss/
+    homepage_url: https://vanschneider.com/blog
+    display_name: The DESK Magazine
+    summary: A design publication written by designers, for designers — by Tobias van Schneider
+  varesano:
+    feed_url: https://varesano.net/feed/
+    homepage_url: https://varesano.net
+    display_name: varesano.net
+    summary: Updates from varesano.net.
+  varun_ch:
+    feed_url: https://varun.ch/feed/feed.xml
+    homepage_url: https://varun.ch
+    display_name: varun.ch
+    summary: Updates from varun.ch.
+  vcpost:
+    feed_url: https://www.vcpost.com/rss/archives/archives.xml
+    homepage_url: https://www.vcpost.com
+    display_name: 'VC Post :: Latest News'
+    summary: 'Updates from VC Post :: Latest News.'
+  veen:
+    feed_url: https://veen.com/jeff/rss-source.xml
+    homepage_url: https://veen.com/jeff
+    display_name: Jeffrey Veen
+    summary: Updates from Jeffrey Veen.
+  velominati:
+    feed_url: https://www.velominati.com/feed/
+    homepage_url: https://www.velominati.com
+    display_name: Velominati
+    summary: Keepers of the Cog
+  venomousporridge:
+    feed_url: https://venomousporridge.com/rss
+    homepage_url: https://venomousporridge.com
+    display_name: venomous porridge
+    summary: I’m Dan Wineman and sometimes I post things here.
+  venrock:
+    feed_url: https://www.venrock.com/feed/
+    homepage_url: https://www.venrock.com
+    display_name: Venrock
+    summary: Build the Future
+  venturegeneratedcontent:
+    feed_url: https://venturegeneratedcontent.com/feed/
+    homepage_url: https://venturegeneratedcontent.com
+    display_name: Venture Generated Content
+    summary: A blog by Satya Patel
+  versionone_vc:
+    feed_url: https://versionone.vc/feed/
+    homepage_url: https://versionone.vc
+    display_name: Version One Ventures
+    summary: We back bold founders building technology that will transform the world. We support founders building—and defining—new markets and categories.
+  versobooks:
+    feed_url: https://www.versobooks.com/blogs/news.atom
+    homepage_url: https://www.versobooks.com/blogs/news
+    display_name: Verso - News
+    summary: Updates from Verso - News.
+  vertette_github:
+    feed_url: https://vertette.github.io/feed.xml
+    homepage_url: https://vertette.github.io
+    display_name: Vertette's Blog
+    summary: A blog where an obscure indie dev dumps his thoughts sometimes.
+  hq_vevo:
+    feed_url: https://www.hq.vevo.com/blog-feed.xml
+    homepage_url: https://www.hq.vevo.com/blog
+    display_name: Vevo
+    summary: Vevo
+  vi_stackexchange:
+    feed_url: https://vi.stackexchange.com/feeds
+    homepage_url: https://vi.stackexchange.com/questions
+    display_name: Recent Questions - Vi and Vim Stack Exchange
+    summary: Updates from Recent Questions - Vi and Vim Stack Exchange.
+  viableparadise:
+    feed_url: https://viableparadise.com/feed/
+    homepage_url: https://viableparadise.com
+    display_name: Viable Paradise
+    summary: A Science Fiction and Fantasy Writers' Workshop
+  viaopenbook:
+    feed_url: https://www.viaopenbook.com/feed
+    homepage_url: https://www.viaopenbook.com
+    display_name: Viaopenbook.com
+    summary: Updates from Viaopenbook.com.
+  victongai_tumblr:
+    feed_url: https://victongai.tumblr.com/rss
+    homepage_url: https://victongai.tumblr.com
+    display_name: Victo Ngai
+    summary: Forbes 30 Under (Art and Style) honoree and two times Society of Illustrators NY Gold Medalist Victo Ngai is a NY based illustrator from Hong Kong, graduated from Rhode Island School of Design. “Victo” is not a boy nor a typo, but a nickname derived from Victoria - a leftover from the British colonization. Victo creates art for newspaper and magazines such as the New York Times and the New Yorker; makes books for publishers such as the Folio Society, Abrams and Tor Forge; and works on advertisem
+  foxbusiness:
+    feed_url: https://www.foxbusiness.com/rss.xml?category=
+    homepage_url: https://www.foxbusiness.com
+    display_name: Latest & Breaking News | Fox Business
+    summary: Discover the latest breaking news feed with FOX Business. Find out what the latest news is and read about the latest news happening today.
+  videogamer:
+    feed_url: https://www.videogamer.com/feed/
+    homepage_url: https://www.videogamer.com
+    display_name: VideoGamer
+    summary: All About Video Games
+  viewfromthewing:
+    feed_url: https://viewfromthewing.com/feed/
+    homepage_url: https://viewfromthewing.com
+    display_name: View from the Wing
+    summary: Thought Leader in Travel
+  viget:
+    feed_url: https://feeds.feedburner.com/Viget
+    homepage_url: https://www.viget.com
+    display_name: Viget Articles
+    summary: Articles written by Viget
+  vignetteinteractive:
+    feed_url: https://vignetteinteractive.com/feed/
+    homepage_url: https://vignetteinteractive.com
+    display_name: Interactive Design and Creative Experiences
+    summary: Updates from Interactive Design and Creative Experiences.
+  vigrey:
+    feed_url: https://vigrey.com/journal/feed.rss
+    homepage_url: http://vigrey.com/journal/index.html
+    display_name: Vi Grey's Journal
+    summary: My journal about mostly tech stuff but sometimes other things
+  fastvpn:
+    feed_url: https://fastvpn.com/blog/feed/
+    homepage_url: https://fastvpn.com/blog
+    display_name: FastVPN Blog
+    summary: Cybersecurity, Privacy & VPN Tips
+  viktorcessan:
+    feed_url: https://www.viktorcessan.com/feed.xml
+    homepage_url: https://www.viktorcessan.com/blog
+    display_name: Viktor Cessan
+    summary: Writing on organizational design, team coaching, product management, and leadership by Viktor Cessan.
+  villagegreennj:
+    feed_url: https://villagegreennj.com/feed/
+    homepage_url: https://villagegreennj.com
+    display_name: The Village Green
+    summary: of Maplewood and South Orange
+  vimcasts:
+    feed_url: http://vimcasts.org/feeds/ogg.rss
+    homepage_url: http://vimcasts.org
+    display_name: Vimcasts OGG Feed
+    summary: Vimcasts - Free screencasts about the text editor Vim
+  vincentschmalbach:
+    feed_url: https://www.vincentschmalbach.com/feed/
+    homepage_url: https://www.vincentschmalbach.com
+    display_name: Vincent Schmalbach
+    summary: Software Developer
+  vincenzopagliuca:
+    feed_url: https://vincenzopagliuca.com/rss
+    homepage_url: https://vincenzopagliuca.com
+    display_name: Vincenzo Pagliuca
+    summary: Vincenzo Pagliuca
+  vincit:
+    feed_url: https://www.vincit.com/insights/rss.xml
+    homepage_url: https://www.vincit.com/insights
+    display_name: Insights
+    summary: Insights | Vincit
+  vinepair:
+    feed_url: https://vinepair.com/feed/
+    homepage_url: https://vinepair.com
+    display_name: VinePair
+    summary: Updates from VinePair.
+  vipyne_tumblr:
+    feed_url: https://vipyne.tumblr.com/rss
+    homepage_url: https://vipyne.tumblr.com
+    display_name: vipyne
+    summary: i write code and here are some words about learning | github.com/vipyne
+  viralportal:
+    feed_url: https://viralportal.net/feed/
+    homepage_url: https://viralportal.net
+    display_name: Viral Portal
+    summary: Modern medicines and solutions for diseases
+  viraltales:
+    feed_url: https://www.viraltales.com/feed/
+    homepage_url: https://viraltales.com
+    display_name: Viral Tales
+    summary: Sharing worthy stories
+  virginiamercury:
+    feed_url: https://virginiamercury.com/feed/
+    homepage_url: https://virginiamercury.com
+    display_name: Virginia Mercury
+    summary: A new look at the Old Dominion
+  virtualizationhowto:
+    feed_url: https://www.virtualizationhowto.com/feed/
+    homepage_url: https://www.virtualizationhowto.com
+    display_name: Virtualization Howto
+    summary: Virtualization, Cloud, DevOps, Reviews
+  virtualpants:
+    feed_url: https://virtualpants.com/rss
+    homepage_url: https://virtualpants.com
+    display_name: Virtual Pants
+    summary: Updates from Virtual Pants.
+  visidata:
+    feed_url: https://www.visidata.org/feed.xml
+    homepage_url: https://www.visidata.org
+    display_name: VisiData Blog Feed
+    summary: Updates from VisiData Blog Feed.
   micahflee:
     feed_url: https://micahflee.com/rss/
     homepage_url: https://micahflee.com
