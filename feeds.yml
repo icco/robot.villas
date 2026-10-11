@@ -6005,6 +6005,286 @@ bots:
     display_name: 'NPR Topics: Business'
     summary: Business and economy coverage from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  phonearena:
+    feed_url: https://www.phonearena.com/feed/news
+    homepage_url: https://www.phonearena.com
+    display_name: PhoneArena
+    summary: PhoneArena covers smartphones, mobile carriers, wearables, and consumer technology with news, reviews, specifications, and buying guides.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.phonearena.com&size=128
+  parabo_press_blog:
+    feed_url: https://www.parabo.press/blog/rss/
+    homepage_url: https://www.parabo.press/blog
+    display_name: Parabo Press Blog
+    summary: Photo-printing, display, gift, and home-decor ideas from Parabo Press, the current destination of the former Photojojo site.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.parabo.press%2Fblog&size=128
+  picturecorrect:
+    feed_url: https://www.picturecorrect.com/feed/
+    homepage_url: https://www.picturecorrect.com
+    display_name: PictureCorrect
+    summary: Photography tips, exposure and composition tutorials, editing techniques, and photography equipment and course offers from PictureCorrect.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.picturecorrect.com&size=128
+  pine64_community_blog:
+    feed_url: https://pine64.org/blog/index.xml
+    homepage_url: https://pine64.org/blog
+    display_name: PINE64 Community Blog
+    summary: PINE64 community news on open hardware, Linux phones, tablets, watches, and related software projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpine64.org%2Fblog&size=128
+  pix11:
+    feed_url: https://pix11.com/feed/
+    homepage_url: https://pix11.com
+    display_name: PIX11
+    summary: New York City and regional news, weather, public safety, and community reporting from television station PIX11.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpix11.com&size=128
+  padraig_brady:
+    feed_url: https://www.pixelbeat.org/feed/rss2.xml
+    homepage_url: http://www.pixelbeat.org
+    display_name: Pádraig Brady
+    summary: Padraig Brady on GNU coreutils, Linux, shell tools, programming, and practical technology. Entries include directly linked scripts as well as articles.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.pixelbeat.org&size=128
+  the_plain_text_project:
+    feed_url: https://plaintextproject.online/feed.xml
+    homepage_url: https://plaintextproject.online
+    display_name: The Plain Text Project
+    summary: Scott Nesbitt's archived guides to plain-text writing, note-taking, publishing, and productivity. The project closed in December 2022.
+  pleated_jeans:
+    feed_url: https://pleated-jeans.com/feed/
+    homepage_url: https://pleated-jeans.com
+    display_name: Pleated Jeans
+    summary: Humor, memes, funny social-media posts, and curated image collections from Pleated Jeans.
+    profile_photo: https://pleated-jeans.com/wp-content/uploads/2026/04/cropped-Pleated_Jeans_Icon_White-180x180.png
+  politico_europe:
+    feed_url: https://www.politico.eu/feed/
+    homepage_url: https://www.politico.eu
+    display_name: POLITICO Europe
+    summary: European politics, elections, policy, and international affairs reporting from POLITICO Europe.
+    profile_photo: https://www.politico.eu/wp-content/themes/politico/assets/images/apple/apple-touch-icon.png
+  poolga:
+    feed_url: http://feeds2.feedburner.com/poolga
+    homepage_url: http://poolga.com
+    display_name: Poolga
+    summary: An archive of illustrated wallpapers for iPhone, iPad, and other handheld devices, credited to their artists. The newest feed entries date to April 2016.
+    profile_photo: http://poolga.com/public/img/apple-touch-icon.png
+  postcards_from_space:
+    feed_url: https://postcardsfromspace.tumblr.com/rss
+    homepage_url: https://postcardsfromspace.tumblr.com
+    display_name: Postcards from Space
+    summary: Personal posts and reblogs on culture, identity, politics, creative work, and everyday life from Postcards from Space on Tumblr.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpostcardsfromspace.tumblr.com&size=128
+  postmark_blog:
+    feed_url: https://postmarkapp.com/blog/feed.atom
+    homepage_url: https://postmarkapp.com/blog
+    display_name: Postmark Blog
+    summary: Official Postmark product updates, email deliverability guidance, security features, and developer tutorials.
+    profile_photo: https://postmarkapp.com/images/apple-touch-icon.png
+  team_potato:
+    feed_url: https://potatohatsecurity.tumblr.com/rss
+    homepage_url: https://potatohatsecurity.tumblr.com
+    display_name: Team Potato
+    summary: Team Potato's archived application-security research and DEFCON badge-challenge walkthroughs, by Brett Buerhaus and Jason Thor Hall. Feed entries span 2014-2016.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpotatohatsecurity.tumblr.com&size=128
+  the_world_from_prx:
+    feed_url: https://feeds.theworld.org/feed
+    homepage_url: https://theworld.org
+    display_name: The World from PRX
+    summary: International news and human stories from The World, a public radio program co-produced by PRX and GBH.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftheworld.org&size=128
+  probably_dance:
+    feed_url: https://probablydance.com/feed/
+    homepage_url: https://probablydance.com
+    display_name: Probably Dance
+    summary: Malte Skarupke writes about programming, game development, performance, AI, books, and everyday life at Probably Dance.
+  progrium:
+    feed_url: https://progrium.com/index.xml
+    homepage_url: https://progrium.com/blog/
+    display_name: Progrium Technology Company
+    summary: Jeff Lindsay's Progrium Technology Company blog on Apptron and composable software tools. The available feed last published in October 2022.
+    profile_photo: https://github.com/progrium.png?size=200
+  pacific_standard:
+    feed_url: https://psmag.com/feed/
+    homepage_url: https://psmag.com
+    display_name: Pacific Standard
+    summary: Pacific Standard's archived reporting on social justice, science, the environment, economics, and culture. The feed ends in August 2019.
+    profile_photo: https://psmag.com/wp-content/uploads/2024/07/cropped-favicon-32x32-1.png?w=180
+  purewow:
+    feed_url: https://www.purewow.com/rss/feed_national.xml
+    homepage_url: https://www.purewow.com/
+    display_name: PureWow
+    summary: Lifestyle and entertainment reporting from PureWow, including food, beauty, fashion, family, home, travel, and celebrity news.
+    profile_photo: https://www.purewow.com/static-gmg/purewow/logos/favicons/favicon-sand-48x48.png
+  pypi_recent_updates:
+    feed_url: https://pypi.org/rss/updates.xml
+    homepage_url: https://pypi.org
+    display_name: PyPI recent updates
+    summary: Recently released package versions on the Python Package Index, with package descriptions and links to their release pages.
+  pyvideo_org:
+    feed_url: https://pyvideo.org/feeds/all.atom.xml
+    homepage_url: https://pyvideo.org
+    display_name: PyVideo.org
+    summary: Python conference and user-group talk videos and descriptions from PyVideo. Feed entries span 2010-2024 and are not ordered by publication date.
+    profile_photo: https://pyvideo.org/theme/images/favicon.png
+  queness:
+    feed_url: https://feeds2.feedburner.com/queness
+    homepage_url: https://www.queness.com/
+    display_name: Queness
+    summary: Queness covers web design and development resources, JavaScript tutorials, and WordPress tools. Recent entries focus on commercial theme and plugin roundups.
+    profile_photo: https://www.queness.com/assets/favicon/apple-icon-180x180.png
+  quip_blog:
+    feed_url: https://quip.com/blog/feed
+    homepage_url: https://quip.com/blog
+    display_name: Quip Blog
+    summary: Quip's archived product and engineering blog, including collaborative editing and accessibility. The available feed last published in August 2022.
+    profile_photo: https://quip-cdn.com/fXl-J2rj_5VEusmXOBsyAQ
+  jaana_dogan:
+    feed_url: https://rakyll.org/index.xml
+    homepage_url: https://rakyll.org
+    display_name: Jaana Dogan
+    summary: Jaana Dogan writes about Go, distributed systems, infrastructure, performance, and AI at rakyll.org.
+    profile_photo: https://github.com/rakyll.png?size=200
+  raw_syntax:
+    feed_url: https://feeds.feedburner.com/RawSyntax
+    homepage_url: http://rawsyntax.com
+    display_name: Raw Syntax
+    summary: Eric Himmelreich's archived Raw Syntax blog on Ruby, Rails, Elixir, software projects, and app development. The feed ends in July 2017.
+  kodeco:
+    feed_url: https://www.kodeco.com/feed
+    homepage_url: https://www.kodeco.com
+    display_name: Kodeco
+    summary: Programming tutorials and learning resources from Kodeco, formerly raywenderlich.com, covering Swift, iOS, Kotlin, Android, Flutter, and related topics.
+    profile_photo: https://www.kodeco.com/apple-touch-icon.png
+  react_blog:
+    feed_url: https://react.dev/rss.xml
+    homepage_url: https://react.dev/blog
+    display_name: React Blog
+    summary: Official React team release announcements, security advisories, and project news.
+    profile_photo: https://react.dev/apple-touch-icon.png
+  reason_blog:
+    feed_url: https://reasonml.github.io/blog/atom.xml
+    homepage_url: https://reasonml.github.io/blog
+    display_name: Reason Blog
+    summary: Archived Reason language release announcements, community news, and ReasonReact updates. The available feed spans 2017-2018.
+    profile_photo: https://reasonml.github.io/img/icon_50.png
+  red_sweater_blog:
+    feed_url: https://redsweater.com/blog/feed
+    homepage_url: https://redsweater.com/blog
+    display_name: Red Sweater Blog
+    summary: Red Sweater Software product releases and development news, including MarsEdit and Black Ink.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fredsweater.com%2Fblog&size=128
+  reproducible_builds:
+    feed_url: https://reproducible-builds.org/blog/index.rss
+    homepage_url: https://reproducible-builds.org/blog/
+    display_name: Reproducible Builds
+    summary: Reproducible Builds project news, monthly reports, community events, and work on independently verifiable software builds.
+    profile_photo: https://reproducible-builds.org/assets/images/favicon.png
+  rethinkdb:
+    feed_url: https://rethinkdb.com/feed.xml
+    homepage_url: https://rethinkdb.com
+    display_name: RethinkDB
+    summary: RethinkDB release announcements, engineering articles, and community news about the open-source realtime database. The feed last published in December 2023.
+    profile_photo: https://rethinkdb.com/favicon.png
+  rewire_news_group:
+    feed_url: https://rewirenewsgroup.com/feed/
+    homepage_url: https://rewirenewsgroup.com/
+    display_name: Rewire News Group
+    summary: Rewire News Group reporting and commentary on reproductive and sexual health, abortion access, gender, LGBTQ rights, and justice.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frewire.news&size=128
+  robert_haas:
+    feed_url: https://rhaas.blogspot.com/feeds/posts/default
+    homepage_url: https://rhaas.blogspot.com
+    display_name: Robert Haas
+    summary: PostgreSQL contributor Robert Haas writes about database development, performance, patch review, and hacking workshops.
+  rico_sta_cruz:
+    feed_url: https://ricostacruz.com/posts/rss.xml
+    homepage_url: https://ricostacruz.com
+    display_name: Rico Sta. Cruz
+    summary: Rico Sta. Cruz writes about web development, JavaScript, Ruby, UI design, and developer tools.
+    profile_photo: https://github.com/rstacruz.png?size=200
+  ritual_dust:
+    feed_url: https://ritualdust.com/index.xml
+    homepage_url: https://ritualdust.com
+    display_name: Ritual Dust
+    summary: Lizbeth Poirier's folk and fantasy art, tattooing, music, craft, folklore, and plant-based recipes. This site-wide feed includes portfolio and shop pages and is not date-sorted.
+    profile_photo: https://ritualdust.com/img/preview.png
+  eyes_above_the_waves:
+    feed_url: https://robert.ocallahan.org/feed.xml
+    homepage_url: https://robert.ocallahan.org
+    display_name: Eyes Above The Waves
+    summary: Robert O'Callahan writes about software, debugging, AI, Christianity, politics, and hiking in New Zealand at Eyes Above The Waves.
+  roy_marples:
+    feed_url: https://roy.marples.name/blog/atom.xml
+    homepage_url: https://roy.marples.name/blog
+    display_name: Roy Marples
+    summary: Roy Marples's personal blog on Unix networking, NetBSD, programming, hardware, and family life. The available blog feed ends in April 2023.
+    profile_photo: https://roy.marples.name/_app/immutable/assets/favicon.Ccu0hplO.gif
+  rpg_stackexchange:
+    feed_url: https://rpg.stackexchange.com/feeds
+    homepage_url: https://rpg.stackexchange.com/questions
+    display_name: Role-playing Games Stack Exchange
+    summary: Recent and active questions about tabletop role-playing games, rules, game mastering, and play on Role-playing Games Stack Exchange.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frpg.stackexchange.com%2Fquestions&size=128
+  rasmus_andersson:
+    feed_url: https://rsms.me/atom.xml
+    homepage_url: https://rsms.me
+    display_name: Rasmus Andersson
+    summary: Rasmus Andersson's archived essays on programming, software tools, and design. The available article feed ends in January 2017.
+    profile_photo: https://rsms.me/res/icon-ios.png?v=20261006163330
+  rsyslog:
+    feed_url: https://www.rsyslog.com/feed/
+    homepage_url: https://www.rsyslog.com
+    display_name: rsyslog
+    summary: Official rsyslog releases and project news on log processing, related libraries, and the rsyslog Windows Agent.
+    profile_photo: https://www.rsyslog.com/files/2018/02/cropped-rsyslog-logo-512x512-180x180.png
+  the_ruby_toolbox:
+    feed_url: https://www.ruby-toolbox.com/blog.rss
+    homepage_url: https://www.ruby-toolbox.com
+    display_name: The Ruby Toolbox
+    summary: The Ruby Toolbox blog on its Ruby-library catalog, project comparisons, metrics, and contributor tools. The available feed last published in May 2024.
+    profile_photo: https://www.ruby-toolbox.com/apple-touch-icon.png
+  ruby_inside:
+    feed_url: https://rubyinside.com/index.xml
+    homepage_url: https://rubyinside.com
+    display_name: Ruby Inside
+    summary: Peter Cooper's Ruby programming blog, revived in 2026, with language news, compiler coverage, and programming experiments.
+    profile_photo: https://rubyinside.com/apple-touch-icon.png
+  ryan_bigg:
+    feed_url: https://ryanbigg.com/feed.xml
+    homepage_url: https://ryanbigg.com
+    display_name: Ryan Bigg
+    summary: Ryan Bigg writes about Ruby, Rails, JavaScript, developer tools, work, games, and personal life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fryanbigg.com&size=128
+  ryan_riddle:
+    feed_url: https://ryanriddle.github.io/rss.xml
+    homepage_url: https://ryanriddle.github.io
+    display_name: Ryan Riddle
+    summary: Ryan Riddle's 2017 blog archive on building databases, transactions, data structures, and learning at the Recurse Center.
+    profile_photo: https://github.com/ryanriddle.png?size=200
+  ryan_seys:
+    feed_url: https://ryanseys.com/atom.xml
+    homepage_url: https://ryanseys.com
+    display_name: Ryan Seys
+    summary: Ryan Seys's archived posts on software projects, developer communities, career, and personal reflections. The available feed ends in March 2018.
+    profile_photo: https://ryanseys.com/img/apple-touch-icon.png
+  sam_newman:
+    feed_url: https://samnewman.io/blog/feed.xml
+    homepage_url: https://samnewman.io/blog/
+    display_name: Sam Newman
+    summary: Sam Newman on software architecture, microservices, platform engineering, training, and Magpie Talkshow interviews. The available blog feed ends in February 2023.
+  sam_saffron:
+    feed_url: https://samsaffron.com/feed.xml
+    homepage_url: https://samsaffron.com
+    display_name: Sam Saffron
+    summary: Sam Saffron writes about software performance, Ruby, Discourse, AI, and developer tools.
+    profile_photo: https://discuss.samsaffron.com/uploads/default/original/2X/2/22cf4689ce67ff9c4a86e226b6975fae6a2ed060.png
+  samuel_mullen:
+    feed_url: https://samuelmullen.com/feed.xml
+    homepage_url: https://samuelmullen.com
+    display_name: Samuel Mullen
+    summary: Samuel Mullen writes about Elixir, Phoenix, Ruby, engineering leadership, careers, and productivity.
+  slashdot_science:
+    feed_url: https://rss.slashdot.org/Slashdot/slashdotScience
+    homepage_url: https://science.slashdot.org
+    display_name: 'Slashdot: Science'
+    summary: Science news, research links, space coverage, and community discussion from Slashdot's Science section.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fscience.slashdot.org&size=128
   npr_science:
     feed_url: https://feeds.npr.org/1007/rss.xml
     homepage_url: https://www.npr.org
