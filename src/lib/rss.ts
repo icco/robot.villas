@@ -1,6 +1,7 @@
 import Parser from "rss-parser";
 import { SaxesParser } from "saxes";
-import { fetchRemote, readLimitedText } from "./remote-fetch";
+import { fetchRemoteWithPolicy, readLimitedText } from "./remote-fetch";
+import { createRobotsCheck } from "./robots";
 
 const parser = new Parser({ timeout: 10_000 });
 
@@ -114,7 +115,9 @@ export async function fetchFeedWithHttpResult(
 ): Promise<FeedFetchResult> {
   try {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), FEED_FETCH_TIMEOUT_MS);
+    let remainingMs = FEED_FETCH_TIMEOUT_MS;
+    let startedAt = Date.now();
+    let timeout = setTimeout(() => controller.abort(), remainingMs);
     try {
       const headers: Record<string, string> = {
         Accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
@@ -126,9 +129,16 @@ export async function fetchFeedWithHttpResult(
       if (cached.lastModified) {
         headers["If-Modified-Since"] = cached.lastModified;
       }
-      const res = await fetchRemote(feedUrl, {
+      const checkRobots = createRobotsCheck(FEED_USER_AGENT);
+      const res = await fetchRemoteWithPolicy(feedUrl, {
         signal: controller.signal,
         headers,
+      }, async (url) => {
+        clearTimeout(timeout);
+        remainingMs -= Date.now() - startedAt;
+        await checkRobots(url);
+        startedAt = Date.now();
+        timeout = setTimeout(() => controller.abort(), Math.max(0, remainingMs));
       });
       const httpStatus = res.status;
       if (httpStatus === 304) {
