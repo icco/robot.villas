@@ -91,7 +91,7 @@ describe("publishNewEntries", () => {
       "testbot", "robot.villas", [futureEntry], testBotConfig,
     );
 
-    expect(result).toEqual({ stored: 0, skipped: 1 });
+    expect(result).toEqual({ stored: 0, skipped: 1, deferred: 1 });
     expect(mockInsertEntry).not.toHaveBeenCalled();
     expect(mockResolveHashtags).not.toHaveBeenCalled();
     expect(refreshEntryPublishedDates).toHaveBeenCalledWith(expect.anything(), "testbot", []);
@@ -105,10 +105,10 @@ describe("publishNewEntries", () => {
     const db = {} as any; // eslint-disable-line @typescript-eslint/no-explicit-any
 
     expect(await publishNewEntries(mockCtx, db, "testbot", "robot.villas", [futureEntry], testBotConfig))
-      .toEqual({ stored: 0, skipped: 1 });
+      .toEqual({ stored: 0, skipped: 1, deferred: 1 });
     vi.setSystemTime(new Date("2026-10-11T12:00:01Z"));
     expect(await publishNewEntries(mockCtx, db, "testbot", "robot.villas", [futureEntry], testBotConfig))
-      .toEqual({ stored: 1, skipped: 0 });
+      .toEqual({ stored: 1, skipped: 0, deferred: 0 });
     expect(mockInsertEntry).toHaveBeenCalledTimes(1);
   });
 
@@ -128,7 +128,7 @@ describe("publishNewEntries", () => {
       "testbot", "robot.villas", mixedEntries, testBotConfig,
     );
 
-    expect(result).toEqual({ stored: 3, skipped: 1 });
+    expect(result).toEqual({ stored: 3, skipped: 1, deferred: 1 });
     expect(mockInsertEntry.mock.calls.map((call) => call[5])).toEqual([
       new Date("2026-10-11T11:59:59.999Z"),
       new Date("2026-10-11T12:00:00Z"),
