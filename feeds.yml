@@ -926,6 +926,256 @@ bots:
     display_name: Schneier on Security
     summary: Security, cryptography, privacy, surveillance, and the politics of both.
     profile_photo: https://www.schneier.com/wp-content/uploads/2020/06/cropped-favicon-1-192x192.png
+  ihatemornings:
+    feed_url: https://ihatemornings.com/feed.rss
+    homepage_url: https://ihatemornings.com
+    display_name: ihatemornings
+    summary: The feed of updates to ihatemornings
+  iheanyi:
+    feed_url: https://iheanyi.com/rss.xml
+    homepage_url: https://iheanyi.com
+    display_name: Iheanyi Ekechukwu
+    summary: Iheanyi Ekechukwu is a software engineer based in Houston, TX.
+  ijr:
+    feed_url: https://ijr.com/feed
+    homepage_url: https://ijr.com
+    display_name: IJR News
+    summary: Today's news from every side — the IJR news feed.
+  ilikestuffblog:
+    feed_url: https://ilikestuffblog.com/feed/
+    homepage_url: https://ilikestuffblog.com
+    display_name: ilikestuffblog
+    summary: Thank you for visiting ILikeStuffBlog.com – your go-to source for all the stuff you like, and more!
+  ilovecharts_tumblr:
+    feed_url: https://ilovecharts.tumblr.com/rss
+    homepage_url: https://ilovecharts.tumblr.com
+    display_name: I Love Charts
+    summary: By people who love charts. For people who love charts.
+  imagecomics:
+    feed_url: https://imagecomics.com/rss.xml
+    homepage_url: https://imagecomics.com
+    display_name: imagecomics.com
+    summary: The official imagecomics.com RSS feed.
+  imaginaryproperty_tumblr:
+    feed_url: https://imaginaryproperty.tumblr.com/rss
+    homepage_url: https://imaginaryproperty.tumblr.com
+    display_name: Imaginary Property
+    summary: Random thoughts on technology, science, and the law.
+  imakewebthings:
+    feed_url: http://feeds.feedburner.com/OnMakingWebThings
+    homepage_url: http://imakewebthings.com
+    display_name: On Making Web Things
+    summary: Updates from On Making Web Things.
+  imperialboyimages_tumblr:
+    feed_url: https://imperialboyimages.tumblr.com/rss
+    homepage_url: https://imperialboyimages.tumblr.com
+    display_name: Imperial Boy Images
+    summary: A blog dedicated to showcasing the work of the artist Imperial Boy This blog is in no way affiliated with Imperial Boy. It is a fan-run page. ✖animated work ✖characters ✖another blog Official Website
+  importantshock_wordpress:
+    feed_url: https://importantshock.wordpress.com/feed/
+    homepage_url: https://importantshock.wordpress.com
+    display_name: Important Shock
+    summary: Updates from Important Shock.
+  improbable:
+    feed_url: https://www.improbable.io/news?format=rss
+    homepage_url: https://www.improbable.io/news
+    display_name: News - Improbable
+    summary: Updates from News - Improbable.
+  improveverywhere:
+    feed_url: https://improveverywhere.com/feed/
+    homepage_url: https://improveverywhere.com
+    display_name: Improv Everywhere
+    summary: We Cause Scenes
+  chalkbeat:
+    feed_url: https://www.chalkbeat.org/arc/outboundfeeds/rss/
+    homepage_url: https://www.chalkbeat.org
+    display_name: Chalkbeat
+    summary: Updates from Chalkbeat.
+  incase:
+    feed_url: https://www.incase.com/collections/all.atom
+    homepage_url: https://www.incase.com/collections/all
+    display_name: Incase.com
+    summary: Updates from Incase.com.
+  incident:
+    feed_url: https://incident.io/blog.xml
+    homepage_url: https://incident.io
+    display_name: The incident.io Blog
+    summary: incident.io is a software reliability platform unifying on-call, agentic root cause analysis, incident response, and status pages – helping teams resolve issues faster.
+  inclouds_space:
+    feed_url: https://inclouds.space/feed.rss
+    homepage_url: https://inclouds.space
+    display_name: Charles in Cloud's Space
+    summary: Charles Chamberlain's blog
+  incoherency:
+    feed_url: https://incoherency.co.uk/blog/rss.xml
+    homepage_url: http://incoherency.co.uk/blog
+    display_name: jes's blog
+    summary: This is jes's blog
+  incrediblethings:
+    feed_url: https://incrediblethings.com/feed/
+    homepage_url: https://incrediblethings.com
+    display_name: Incredible Things
+    summary: Stay Curious. Stay Inspired. Discover Incredible Things.
+  increpare:
+    feed_url: https://www.increpare.com/feed.rss
+    homepage_url: https://www.increpare.com
+    display_name: increpare games
+    summary: Games and other things made by increpare.
+  indelible:
+    feed_url: https://www.indelible.org/feeds/ink/index.xml
+    homepage_url: https://www.indelible.org/ink
+    display_name: Indelible Ink
+    summary: Updates from Indelible Ink.
+  indexoncensorship:
+    feed_url: https://www.indexoncensorship.org/feed/
+    homepage_url: https://www.indexoncensorship.org
+    display_name: Index on Censorship
+    summary: A voice for the persecuted
+  ictnews:
+    feed_url: https://ictnews.org/feed/
+    homepage_url: https://ictnews.org
+    display_name: ICT
+    summary: Updates from ICT.
+  indiegamebuzz:
+    feed_url: https://indiegamebuzz.com/feed/
+    homepage_url: https://indiegamebuzz.com
+    display_name: Indie Game Buzz
+    summary: Indie game reviews and news for PC, console and mobile
+  indiegamesplus:
+    feed_url: https://indiegamesplus.com/feed/
+    homepage_url: https://indiegamesplus.com
+    display_name: Indie Games Plus
+    summary: Creative, Personal, Passionate Digital Experiences
+  indybay:
+    feed_url: https://www.indybay.org/syn/generate_rss.php?news_item_status_restriction=1155
+    homepage_url: https://www.indybay.org
+    display_name: Indybay newswire
+    summary: SF Bay Area Independent Media Center (Indybay) Newswire
+  inews:
+    feed_url: https://inews.co.uk/feed
+    homepage_url: https://inews.co.uk
+    display_name: The i Paper
+    summary: Impartial news & intelligent debate
+  inference_vc:
+    feed_url: https://www.inference.vc/rss/
+    homepage_url: https://www.inference.vc
+    display_name: inFERENCe
+    summary: posts on machine learning, statistics, opinions on things I'm reading in the space
+  infiniteundo:
+    feed_url: https://infiniteundo.com/rss
+    homepage_url: https://infiniteundo.com
+    display_name: Infinite Undo
+    summary: Software As Narrative How-To Articles Devops Reading List CC Sharealike © 2025 by Noah Sussman
+  infocaptor:
+    feed_url: https://www.infocaptor.com/feed
+    homepage_url: https://www.infocaptor.com
+    display_name: InfoCaptor AI
+    summary: AI Summarizer
+  inform_ly:
+    feed_url: https://inform.ly/feed/
+    homepage_url: https://inform.ly
+    display_name: inform.ly
+    summary: Updates from inform.ly.
+  infotrope:
+    feed_url: https://infotrope.net/feed/
+    homepage_url: https://infotrope.net
+    display_name: Infotrope
+    summary: Infotrope
+  infovore:
+    feed_url: http://feeds.feedburner.com/infovoredotorg
+    homepage_url: https://infovore.org
+    display_name: Infovore
+    summary: a weblog by Tom Armitage
+  inkdroid:
+    feed_url: https://inkdroid.org/feed.xml
+    homepage_url: https://inkdroid.org
+    display_name: inkdroid
+    summary: Paper or Plastic
+  inklestudios:
+    feed_url: https://www.inklestudios.com/feed.xml
+    homepage_url: https://www.inklestudios.com/blog
+    display_name: inkle
+    summary: Independent developer of narrative games and interactive stories.
+  inkling:
+    feed_url: https://www.inkling.com/feed/
+    homepage_url: https://www.inkling.com
+    display_name: Inkling
+    summary: Updates from Inkling.
+  bulrushlabs:
+    feed_url: https://bulrushlabs.com/index.xml
+    homepage_url: https://bulrushlabs.com
+    display_name: Richard Tibbetts on Bulrush Labs — Richard Tibbetts
+    summary: Recent content in Richard Tibbetts on Bulrush Labs — Richard Tibbetts
+  innonate:
+    feed_url: https://innonate.com/blog.rss
+    homepage_url: https://innonate.com
+    display_name: innonate - Nate Westheimer's blog
+    summary: Nate Westheimer's blog about making and making sense of things.
+  inoveryourhead:
+    feed_url: http://www.inoveryourhead.net/feed/
+    homepage_url: https://www.inoveryourhead.net
+    display_name: In Over Your Head
+    summary: social capital, trust agents, all that jazz
+  insideedition:
+    feed_url: https://www.insideedition.com/feed/taxonomy/term/news
+    homepage_url: https://www.insideedition.com/latest/news
+    display_name: News
+    summary: Updates from News.
+  insideevs:
+    feed_url: https://insideevs.com/rss/news/all/
+    homepage_url: https://insideevs.com/news
+    display_name: InsideEVs - News
+    summary: Get breaking news, in-depth articles and press releases covering News
+  insideinsides_blogspot:
+    feed_url: https://insideinsides.blogspot.com/feeds/posts/default
+    homepage_url: https://insideinsides.blogspot.com
+    display_name: Inside Insides
+    summary: Updates from Inside Insides.
+  insightcrime:
+    feed_url: https://insightcrime.org/feed/
+    homepage_url: https://insightcrime.org
+    display_name: InSight Crime
+    summary: INVESTIGATION AND ANALYSIS OF ORGANIZED CRIME
+  insimpleterms_blog:
+    feed_url: https://insimpleterms.blog/feed
+    homepage_url: https://insimpleterms.blog
+    display_name: In Simple Terms
+    summary: If I can't find a simple explanation, I write notes for myself. Often about things related to software engineering.
+  inspektor_gadget:
+    feed_url: https://inspektor-gadget.io/blog/rss.xml
+    homepage_url: https://www.inspektor-gadget.io/blog
+    display_name: Inspektor Gadget Blog
+    summary: Inspektor Gadget Blog
+  inspirationfeed:
+    feed_url: https://inspirationfeed.com/feed/
+    homepage_url: https://inspirationfeed.com
+    display_name: Inspirationfeed
+    summary: Inspiring and educating bright minds.
+  instagrid_me:
+    feed_url: https://instagrid.me/feed/
+    homepage_url: https://instagrid.me
+    display_name: Instagrid.me
+    summary: Updates from Instagrid.me.
+  instantshift:
+    feed_url: http://feeds.feedburner.com/iShift/
+    homepage_url: http://www.instantshift.com
+    display_name: InstantShift
+    summary: Web Designers and Developers Daily Resource.
+  instapainting:
+    feed_url: https://www.instapainting.com/blog/feed/
+    homepage_url: https://www.instapainting.com/blog
+    display_name: Instapainting Blog
+    summary: Leveraging Art & Technology
+  instiki:
+    feed_url: https://instiki.org/feed/
+    homepage_url: https://instiki.org
+    display_name: Instiki
+    summary: Updates from Instiki.
+  instinctmagazine:
+    feed_url: https://instinctmagazine.com/feed/
+    homepage_url: https://instinctmagazine.com
+    display_name: Instinct Magazine
+    summary: Follow Yours...
   fasterthanlime:
     feed_url: https://fasterthanli.me/index.xml
     homepage_url: https://fasterthanli.me
