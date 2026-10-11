@@ -6889,6 +6889,270 @@ bots:
     display_name: Up First
     summary: Morning news podcast from NPR — the biggest stories, in about ten minutes.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  wanderr_lustt:
+    feed_url: https://wanderr-lustt.tumblr.com/rss
+    homepage_url: https://wanderr-lustt.tumblr.com
+    display_name: wanderr-lustt
+    summary: An archived personal Tumblr of photography, quotes, personal responses, and reblogs. The latest feed post is dated July 2017.
+    profile_photo: https://api.tumblr.com/v2/blog/wanderr-lustt.tumblr.com/avatar/128
+  barnaby_walters:
+    feed_url: https://waterpigs.co.uk/services/microformats-to-atom/?url=https%3A//waterpigs.co.uk/
+    homepage_url: https://waterpigs.co.uk
+    display_name: Barnaby Walters
+    summary: Barnaby Walters shares notes and articles on programming, the IndieWeb, musical instruments, electronics, nature, and everyday projects.
+    profile_photo: https://waterpigs.co.uk/photo-2021-04-22-719w.jpg
+  wccftech:
+    feed_url: https://wccftech.com/feed/
+    homepage_url: https://wccftech.com
+    display_name: Wccftech
+    summary: Computer hardware, gaming, mobile technology, industry news, reviews, guides, and shopping deals from Wccftech.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwccftech.com&size=128
+  webkit:
+    feed_url: https://webkit.org/feed/
+    homepage_url: https://webkit.org
+    display_name: WebKit
+    summary: Official WebKit development news, browser features, standards work, and Safari Technology Preview release notes.
+    profile_photo: https://webkit.org/apple-touch-icon.png
+  mozilla_wiki_recent_changes:
+    feed_url: https://wiki.mozilla.org/api.php?hidebots=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom
+    homepage_url: https://wiki.mozilla.org/Special:RecentChanges
+    display_name: MozillaWiki - Recent Changes
+    summary: Recent edits and revision diffs from MozillaWiki, including project documentation, release engineering, support, and community administration.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwiki.mozilla.org%2FSpecial%3ARecentChanges&size=128
+  winterdom:
+    feed_url: https://winterdom.com/feed.xml
+    homepage_url: https://winterdom.com
+    display_name: Winterdom
+    summary: Tomas Restrepo writes about software development, developer tools, cloud infrastructure, and AI-assisted engineering.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwinterdom.com&size=128
+  wisdom_and_wonder:
+    feed_url: https://www.wisdomandwonder.com/feed
+    homepage_url: https://www.wisdomandwonder.com
+    display_name: Wisdom And Wonder
+    summary: Grant's personal notebook on computing, Emacs, Lisp, software tools, learning, and everyday reflections.
+    profile_photo: https://i0.wp.com/www.wisdomandwonder.com/wp-content/uploads/2019/03/cropped-WisdomAndWonderLogoFavicon-2-1.png?fit=180%2C180&ssl=1
+  without_their_permission:
+    feed_url: https://withouttheirpermission.com/rss
+    homepage_url: https://withouttheirpermission.com
+    display_name: Without Their Permission
+    summary: Archived updates, videos, entrepreneurship commentary, and book-tour posts for Alexis Ohanian's Without Their Permission. The latest feed post is dated March 2014.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwithouttheirpermission.com&size=128
+  the_wristwatch_review:
+    feed_url: https://wristwatchreview.com/feed
+    homepage_url: https://wristwatchreview.com
+    display_name: The Wristwatch Review
+    summary: Wristwatch news, hands-on reviews, new releases, and watch-industry coverage from The Wristwatch Review.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!5TRJ!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa44b7ce5-2e83-4bf7-ac7f-5605e2c898c7_243x243.jpeg
+  willamette_week:
+    feed_url: https://www.wweek.com/arc/outboundfeeds/rss/?outputType=xml
+    homepage_url: https://www.wweek.com
+    display_name: Willamette Week
+    summary: Portland and Oregon news, investigations, politics, food, arts, music, and culture from Willamette Week.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.wweek.com&size=128
+  kodi_news:
+    feed_url: https://kodi.tv/rss.xml
+    homepage_url: https://kodi.tv/
+    display_name: Kodi News
+    summary: Official Kodi project news, software releases, development updates, and community announcements from Team Kodi, formerly XBMC.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fxbmc.org&size=128
+  xero_blog:
+    feed_url: https://blog.xero.com/feed/
+    homepage_url: https://blog.xero.com/
+    display_name: Xero Blog
+    summary: Xero product updates, small-business resources, accounting and bookkeeping guidance, industry insights, and company news.
+    profile_photo: https://www.xero.com/content/dam/xero/pilot-images/admin/icons/favicon/apple-touch-icon.png
+  yacoset:
+    feed_url: https://yacoset.com/feed/
+    homepage_url: https://yacoset.com
+    display_name: YACOSET
+    summary: YACOSET's software-engineering, architecture, programming, and development articles, including republished older essays. Displayed dates do not establish original publication dates.
+  while_coding:
+    feed_url: http://www.youell.com/matt/writing/?feed=rss2
+    homepage_url: http://www.youell.com/matt/writing
+    display_name: while coding
+    summary: Matt Youell's archived personal writing about programming, hiring, technology, and life. The latest feed post is dated October 2018.
+  yourbasic_algorithms_and_go:
+    feed_url: https://yourbasic.org/index.xml
+    homepage_url: https://yourbasic.org
+    display_name: YourBasic - Algorithms and Go
+    summary: Stefan Nilsson's reference articles and code examples about algorithms and Go programming. The feed indexes existing pages with placeholder 2001 dates, not a chronological news stream.
+    profile_photo: https://yourbasic.org/res/favicon-16x16.png
+  the_zapier_blog:
+    feed_url: https://zapier.com/blog/feeds/latest/
+    homepage_url: https://zapier.com/blog
+    display_name: The Zapier Blog
+    summary: Productivity, workflow automation, software comparisons, AI tools, and practical business guides from the Zapier blog.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fzapier.com%2Fblog&size=128
+  zwischenzugs:
+    feed_url: https://zwischenzugs.com/feed/
+    homepage_url: https://zwischenzugs.com
+    display_name: zwischenzugs.com
+    summary: Ian Miell writes about software engineering, DevOps, shell tools, infrastructure, AI, and the business and financial context of technology.
+  0day_work:
+    feed_url: https://0day.work/index.xml
+    homepage_url: https://0day.work
+    display_name: 0day.work
+    summary: Sebastian Neef's security research, vulnerability writeups, CTF solutions, and tooling notes. The latest post is dated July 2025.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2F0day.work&size=128
+  mo_town_blog:
+    feed_url: https://mo.town/blog/rss.xml
+    homepage_url: https://mo.town/blog/
+    display_name: mo.town blog
+    summary: Mohit Muthanna Cheppudira writes about programming, music notation, audio, machine learning, and creative software projects.
+  101_cookbooks:
+    feed_url: https://www.101cookbooks.com/feed
+    homepage_url: https://www.101cookbooks.com
+    display_name: 101 Cookbooks
+    summary: Heidi Swanson's vegetarian and often vegan recipes, with a focus on vegetables, whole foods, and everyday home cooking.
+    profile_photo: https://www.101cookbooks.com/wp-content/uploads/2018/05/cropped-101fav-1-180x180.png
+  abc_10news_san_diego:
+    feed_url: https://www.10news.com/index.rss
+    homepage_url: https://www.10news.com
+    display_name: ABC 10News San Diego
+    summary: San Diego and Southern California news, weather, investigations, and community reporting from ABC 10News (KGTV).
+    profile_photo: https://www.10news.com/apple-touch-icon.png
+  "127_0_0_1":
+    feed_url: https://127001.me/index.xml
+    homepage_url: https://127001.me/post/
+    display_name: 127.0.0.1
+    summary: A personal programming blog about Linux desktops, ThinkPads, Java, Scala, functional programming, and software development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2F127001.me&size=128
+  19_silver_linings:
+    feed_url: https://19silverlinings.wordpress.com/feed/
+    homepage_url: https://19silverlinings.wordpress.com
+    display_name: 19 Silver Linings
+    summary: Jess Morency's archived interviews and stories about Piddlehinton village life during the COVID-19 lockdown. The latest feed post is dated August 2021.
+    profile_photo: https://19silverlinings.wordpress.com/wp-content/uploads/2020/07/cropped-piddlehinton-32.jpeg?w=180
+  xoxo:
+    feed_url: https://xoxofest.com/rss.xml
+    homepage_url: https://xoxofest.com
+    display_name: XOXO
+    summary: News and archives from XOXO, the Portland festival for independent artists and internet creators held from 2012 to 2024, including its 2026 archive launch.
+    profile_photo: https://xoxofest.com/favicons/apple-touch-icon.png
+  super_normal_exhibition:
+    feed_url: https://2021supernormal.wordpress.com/feed/
+    homepage_url: https://2021supernormal.wordpress.com
+    display_name: Super Normal Exhibition
+    summary: twentytwentyone's archive of the Super Normal design exhibition curated by Naoto Fukasawa and Jasper Morrison, with posts dated 2006-2007.
+  20_dollar_lolita:
+    feed_url: https://20dollarlolita.tumblr.com/rss
+    homepage_url: https://20dollarlolita.tumblr.com
+    display_name: Budget, Offbrand, DIY
+    summary: Budget Lolita/EGL fashion, sewing and pattern-making resources, fashion-community discussion, personal notes, and reblogs from 20dollarlolita.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2F20dollarlolita.tumblr.com&size=128
+  20x200:
+    feed_url: https://20x200.com/blogs/news.atom
+    homepage_url: https://20x200.com/blogs/news
+    display_name: 20x200
+    summary: Artist interviews, affordable art editions, collection highlights, and shop announcements from 20x200. The latest feed post is dated July 2025.
+    profile_photo: https://20x200.com/cdn/shop/files/20x200-favicon_2x_92d17b72-38a6-4ded-b0f4-52bfe5899a76_32x32.png?v=1613720692
+  23andme_blog:
+    feed_url: https://www.23andme.org/blog/feed/
+    homepage_url: https://www.23andme.org/blog
+    display_name: 23andMe Blog
+    summary: Genetics, ancestry, health research, and product updates from the official 23andMe blog.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.23andme.org%2Fblog&size=128
+  3_am_magazine:
+    feed_url: https://www.3ammagazine.com/3am/feed/
+    homepage_url: https://www.3ammagazine.com/3am
+    display_name: 3:AM Magazine
+    summary: Literary reviews, essays, interviews, fiction, and poetry from 3:AM Magazine.
+    profile_photo: https://www.3ammagazine.com/wp-content/uploads/2022/08/cropped-favicon-32x32.png
+  brian_scordato_3degrees:
+    feed_url: https://3degreesnation.tumblr.com/rss
+    homepage_url: https://3degreesnation.tumblr.com
+    display_name: 3Degrees
+    summary: Brian Scordato's archived startup journal about building 3Degrees and its pivot to Find Your Lobster. Posts are dated 2011-2012.
+    profile_photo: https://api.tumblr.com/v2/blog/3degreesnation.tumblr.com/avatar/128
+  3d_printing_industry:
+    feed_url: https://3dprintingindustry.com/feed/
+    homepage_url: https://3dprintingindustry.com
+    display_name: 3D Printing Industry
+    summary: Additive manufacturing news, industry developments, research, materials, applications, and 3D-printing business coverage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2F3dprintingindustry.com&size=128
+  3eanuts:
+    feed_url: https://3eanuts.com/rss
+    homepage_url: https://3eanuts.com/
+    display_name: 3eanuts
+    summary: Charles Schulz's Peanuts strips with the final panel removed, emphasizing the comics' existential humor and melancholy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2F3eanuts.tumblr.com&size=128
+  3_quarks_daily:
+    feed_url: https://3quarksdaily.com/feed
+    homepage_url: https://3quarksdaily.com
+    display_name: 3 Quarks Daily
+    summary: Curated reading, original essays, and poetry spanning science, arts, philosophy, politics, and literature.
+    profile_photo: https://3quarksdaily.com/wp-content/uploads/2018/04/cropped-favicon-180x180.png
+  3sixteen:
+    feed_url: https://www.3sixteen.com/blogs/news.atom
+    homepage_url: https://www.3sixteen.com/blogs/news
+    display_name: 3sixteen
+    summary: Denim and menswear releases, lookbooks, collaborations, retail events, and brand news from 3sixteen.
+  sean_sherwood_dont_follow_the_herd:
+    feed_url: https://4mojo.wordpress.com/feed/
+    homepage_url: https://4mojo.wordpress.com
+    display_name: don't follow the herd
+    summary: Sean Sherwood's archived personal essays about entrepreneurship, work, happiness, and everyday life. The latest post is dated September 2018.
+  52_weeks_of_ux:
+    feed_url: https://52weeksofux.com/rss
+    homepage_url: https://52weeksofux.com
+    display_name: 52 Weeks of UX
+    summary: Josh Brewer and Josh Porter's archived essays on user experience, interaction design, usability, and product design. Feed posts are dated 2010-2011.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2F52weeksofux.com&size=128
+  7_min_fitness:
+    feed_url: https://7-min.com/feed/
+    homepage_url: https://7-min.com
+    display_name: 7-Min Scientific Workout and Fitness Magazine
+    summary: David Smit's 7-Min fitness site covers home workouts, nutrition, detox diets, and exercise-equipment reviews. Recent feed posts focus on Master Cleanse diets and juicers.
+    profile_photo: https://cdn.shortpixel.ai/spai/q_glossy+ret_img+to_webp/7-min.com/wp-content/uploads/2015/01/cropped-favicon-180x180.png
+  7fff:
+    feed_url: https://7fff.com/feed.xml
+    homepage_url: https://7fff.com/
+    display_name: 7fff
+    summary: John G. Norman writes about programming, security, privacy, books, films, and technology. The latest feed post is dated August 2025.
+  80x24:
+    feed_url: https://80x24.net/rss.xml
+    homepage_url: https://80x24.net
+    display_name: 80x24
+    summary: Kyle Schreiber's archived posts about encryption tools, cryptography, software, and web technology. The latest post is dated February 2022.
+    profile_photo: https://80x24.net/apple-touch-icon.png
+  perry_chen:
+    feed_url: https://8east4west.tumblr.com/rss
+    homepage_url: https://8east4west.tumblr.com
+    display_name: Perry Chen
+    summary: Perry Chen's archived 2012 account of how the idea for Kickstarter developed and became a platform for creative projects.
+  8th_light_insights:
+    feed_url: https://8thlight.com/insights/feed/rss.xml
+    homepage_url: https://8thlight.com/insights
+    display_name: 8th Light Insights
+    summary: Software engineering, design, consulting, AI-assisted development, and company news from 8th Light.
+    profile_photo: https://8thlight.com/apple-touch-icon.png
+  jon_rafman_nine_eyes:
+    feed_url: https://9-eyes.com/rss
+    homepage_url: https://9-eyes.com
+    display_name: Jon Rafman - Nine Eyes
+    summary: Jon Rafman's Nine Eyes of Google Street View, an ongoing photographic art project collecting images found in Google Street View.
+  steph_samson:
+    feed_url: https://9.svbtle.com/feed
+    homepage_url: https://9.svbtle.com
+    display_name: Steph Samson
+    summary: Steph Samson's archived programming and personal posts from Hacker School, including translation bots, SICP, and pair programming. Posts are dated 2014.
+  9lessons_programming_blog:
+    feed_url: https://feeds2.feedburner.com/9lesson
+    homepage_url: https://www.9lessons.info/
+    display_name: 9lessons Programming Blog
+    summary: Srinivas Tamada's web-development tutorials covering JavaScript, React, Angular, PHP, databases, and deployment. The latest feed post is dated June 2023.
+    profile_photo: https://raw.githubusercontent.com/srinivastamada/9lessonsImages/master/9lessons/favicon.png?raw=true
+  adam_drake:
+    feed_url: https://adamdrake.com/index.xml
+    homepage_url: https://adamdrake.com
+    display_name: Adam Drake
+    summary: Adam Drake's archived writing on software engineering, performance, data science, leadership, and technology organizations. The latest feed post is dated August 2019.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fadamdrake.com&size=128
+  aaron_bonner_dev_notes:
+    feed_url: https://aaronbonner.io/rss
+    homepage_url: https://aaronbonner.io
+    display_name: /dev/notes
+    summary: Aaron Bonner's archived notes on PHP, Magento, MySQL, Unix tools, testing, and software development. The latest post is dated April 2014.
   npr_consider_this:
     feed_url: https://feeds.npr.org/510355/podcast.xml
     homepage_url: https://www.npr.org/podcasts/510355/consider-this-from-npr
