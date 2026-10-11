@@ -599,6 +599,256 @@ bots:
     display_name: Lydia Dehn — and then
     summary: Lydia Dehn's blog on painting, textiles, art history, fashion, and creative practice.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.lydiadehn.com&size=128
+  videah:
+    feed_url: https://videah.net/feed.xml
+    homepage_url: https://videah.net
+    display_name: videah.net
+    summary: Updates from videah.net.
+  blog_vivekhaldar:
+    feed_url: https://blog.vivekhaldar.com/rss
+    homepage_url: https://blog.vivekhaldar.com
+    display_name: Vivek Haldar
+    summary: Updates from Vivek Haldar.
+  vllm_ai:
+    feed_url: https://vllm.ai/blog/rss.xml
+    homepage_url: https://vllm.ai/blog
+    display_name: vLLM Blog
+    summary: Technical articles, release announcements, model guides, and community updates from the vLLM project.
+  wealthfront:
+    feed_url: https://www.wealthfront.com/blog/feed/
+    homepage_url: https://www.wealthfront.com/blog
+    display_name: Wealthfront Blog
+    summary: Personal Finance & Investing Insights
+  blog_whatwg:
+    feed_url: https://blog.whatwg.org/feed
+    homepage_url: https://blog.whatwg.org
+    display_name: The WHATWG Blog
+    summary: Please leave your sense of logic at the door, thanks!
+  blog_widodh_nl:
+    feed_url: https://wido.blog/feed/
+    homepage_url: https://blog.widodh.nl
+    display_name: Wido den Hollander
+    summary: Personal blog of a Linux and Networking professional
+  blog_wireshark:
+    feed_url: https://blog.wireshark.org/index.xml
+    homepage_url: https://blog.wireshark.org
+    display_name: The Official Wireshark Blog
+    summary: Recent content on The Official Wireshark Blog
+  blog_wolfram:
+    feed_url: https://blog.wolfram.com/feed/
+    homepage_url: https://blog.wolfram.com
+    display_name: Wolfram Blog
+    summary: News, Views and Insights from Wolfram
+  blog_workflowy:
+    feed_url: https://blog.workflowy.com/feed/
+    homepage_url: https://blog.workflowy.com
+    display_name: Workflowy
+    summary: Organize your brain.
+  worldbuilders:
+    feed_url: https://worldbuilders.org/feed/
+    homepage_url: https://worldbuilders.org
+    display_name: Worldbuilders
+    summary: Nonprofit Charity of Geeks Doing Good
+  blog_yossarian:
+    feed_url: https://blog.yossarian.net/feed.xml
+    homepage_url: https://blog.yossarian.net
+    display_name: ENOSUCHBLOG
+    summary: Updates from ENOSUCHBLOG.
+  blog_zarfhome:
+    feed_url: https://blog.zarfhome.com/feeds/posts/default
+    homepage_url: https://blog.zarfhome.com
+    display_name: Zarf Updates
+    summary: Updates from Zarf Updates.
+  blog_zawodny:
+    feed_url: https://blog.zawodny.com/feed/
+    homepage_url: https://blog.zawodny.com
+    display_name: Jeremy Zawodny's blog
+    summary: Blogging on a platform that doesn't suck
+  zenkit:
+    feed_url: https://zenkit.com/en/feed/
+    homepage_url: https://zenkit.com/en
+    display_name: Zenkit
+    summary: Zenkit Tagline
+  zoom:
+    feed_url: https://www.zoom.com/en/feed/?cms_guid=false
+    homepage_url: https://www.zoom.com
+    display_name: Zoom Blog
+    summary: Updates from Zoom Blog.
+  blog_zoyander_cc:
+    feed_url: https://blog.zoyander.cc/feed.xml
+    homepage_url: https://blog.zoyander.cc
+    display_name: Zoyander Street
+    summary: Updates from Zoyander Street.
+  blogdesignblog:
+    feed_url: https://www.blogdesignblog.com/feed/
+    homepage_url: https://www.blogdesignblog.com
+    display_name: Blogdesignblog
+    summary: Updates from Blogdesignblog.
+  bloggeroo_dev:
+    feed_url: https://bloggeroo.dev/rss.xml
+    homepage_url: https://bloggeroo.dev
+    display_name: Bloggeroo.dev
+    summary: A blog about tech and Software Development.
+  blogofholding:
+    feed_url: https://www.blogofholding.com/?feed=rss2
+    homepage_url: https://www.blogofholding.com
+    display_name: Blog of Holding
+    summary: Updates from Blog of Holding.
+  blogoscoped:
+    feed_url: https://blogoscoped.com/rss.xml
+    homepage_url: http://blogoscoped.com
+    display_name: Google Blogoscoped
+    summary: Google, the World, and the World Wide Web, Weblogged
+  blogrium_wordpress:
+    feed_url: https://blogrium.wordpress.com/feed/
+    homepage_url: https://blogrium.wordpress.com
+    display_name: blogrium
+    summary: progrium has a blogrium
+  blogs_duanemorris:
+    feed_url: https://blogs.duanemorris.com/feed/
+    homepage_url: https://blogs.duanemorris.com
+    display_name: Duane Morris Blogs
+    summary: Updates from Duane Morris Blogs.
+  blogs_gnome:
+    feed_url: https://blogs.gnome.org/mclasen/feed/
+    homepage_url: https://blogs.gnome.org/mclasen
+    display_name: Goings on
+    summary: Just another GNOME Blogs site
+  blogs_halibut:
+    feed_url: https://blogs.halibut.com/mark/atom.xml
+    homepage_url: http://blogs.halibut.com/mark
+    display_name: Mark's Blog
+    summary: Updates from Mark's Blog.
+  blogs_kde:
+    feed_url: https://blogs.kde.org/index.xml
+    homepage_url: https://blogs.kde.org
+    display_name: KDE Blogs
+    summary: Recent content on KDE Blogs
+  archive_blogs_harvard_edu:
+    feed_url: https://archive.blogs.harvard.edu/feed/
+    homepage_url: https://archive.blogs.harvard.edu
+    display_name: Weblogs at Harvard
+    summary: Updates from Weblogs at Harvard.
+  blogs_library_duke_edu:
+    feed_url: https://blogs.library.duke.edu/feed/
+    homepage_url: https://blogs.library.duke.edu
+    display_name: Duke University Libraries Blogs
+    summary: News, Events, and Exhibits from Duke University Libraries
+  blogs_mercurynews:
+    feed_url: https://blogs.mercurynews.com/feed/
+    homepage_url: https://blogs.mercurynews.com
+    display_name: Mercury News
+    summary: Just another MediaNews Group Blogs weblog
+  sites_middlebury_edu:
+    feed_url: https://sites.middlebury.edu/middblogs/feed/
+    homepage_url: https://sites.middlebury.edu/middblogs
+    display_name: The Middlebury Sites Network
+    summary: Middlebury’s WordPress-based, self-service, website creation space.
+  blogs_perl:
+    feed_url: https://blogs.perl.org/atom.xml
+    homepage_url: https://blogs.perl.org
+    display_name: blogs.perl.org
+    summary: Updates from blogs.perl.org.
+  blogs_windows:
+    feed_url: https://blogs.windows.com/feed/
+    homepage_url: https://blogs.windows.com
+    display_name: Windows Blog
+    summary: Updates from Windows Blog.
+  blogsuki:
+    feed_url: http://blogsuki.com/feed/
+    homepage_url: http://blogsuki.com
+    display_name: "blogå¥½ã\x81\x8D"
+    summary: "Updates from blogå¥½ã\x81\x8D."
+  blogtitle_github:
+    feed_url: https://blogtitle.github.io/index.xml
+    homepage_url: https://blogtitle.github.io
+    display_name: Blog Title
+    summary: Recent content on Blog Title
+  blowmage:
+    feed_url: https://blowmage.com/feed.atom
+    homepage_url: https://blowmage.com
+    display_name: '::blowmage::'
+    summary: Updates from ::blowmage::.
+  bluehost:
+    feed_url: https://www.bluehost.com/blog/feed/
+    homepage_url: https://bluehost.com
+    display_name: Bluehost Blog
+    summary: Updates from Bluehost Blog.
+  blues_win:
+    feed_url: https://blues.win/index.xml
+    homepage_url: https://blues.win
+    display_name: Winblues
+    summary: Recent content on Winblues
+  bluxte:
+    feed_url: https://www.bluxte.net/rss.xml
+    homepage_url: http://bluxte.net
+    display_name: Sylvain Wallez
+    summary: Random musings of a busy geek
+  boats_gitlab:
+    feed_url: https://boats.gitlab.io/blog/index.xml
+    homepage_url: https://boats.gitlab.io/blog
+    display_name: withoutblogs
+    summary: Recent content on withoutblogs
+  boboandchichi:
+    feed_url: https://www.boboandchichi.com/feed/
+    homepage_url: https://www.boboandchichi.com
+    display_name: Bobo and ChiChi
+    summary: Informative travel guides with the perfect combination of iconic locations and authentic experiences.
+  bobsomers:
+    feed_url: https://bobsomers.com/feed.xml
+    homepage_url: https://bobsomers.com
+    display_name: Bob Somers
+    summary: Updates from Bob Somers.
+  bodhilinux:
+    feed_url: https://www.bodhilinux.com/feed/
+    homepage_url: https://www.bodhilinux.com
+    display_name: Bodhi Linux
+    summary: The Enlightened Linux Distribution
+  boffosocko:
+    feed_url: https://boffosocko.com/feed/
+    homepage_url: https://boffosocko.com
+    display_name: Chris Aldrich
+    summary: Musings of a Modern Day Cyberneticist
+  boilingsteam:
+    feed_url: https://boilingsteam.com/feed/rss-feed.xml
+    homepage_url: https://boilingsteam.com
+    display_name: Boiling Steam
+    summary: PC Gaming on Linux is so Tomorrow!
+  boinkor:
+    feed_url: https://boinkor.net/index.xml
+    homepage_url: https://boinkor.net
+    display_name: Andreas Fuchs' Journal on Andreas Fuchs' Journal
+    summary: Updates from Andreas Fuchs' Journal on Andreas Fuchs' Journal.
+  bokardo:
+    feed_url: http://bokardo.com/feed/
+    homepage_url: http://bokardo.com
+    display_name: Bokardo
+    summary: A blog about interface and product design by Joshua Porter
+  boldport_blogspot:
+    feed_url: https://boldport.blogspot.com/feeds/posts/default
+    homepage_url: https://boldport.blogspot.com
+    display_name: boldport
+    summary: Updates from boldport.
+  bolid_es:
+    feed_url: https://www.bolid.es/feed/
+    homepage_url: https://www.bolid.es
+    display_name: Bolid
+    summary: Gana más, juega mejor
+  bombingscience:
+    feed_url: https://www.bombingscience.com/feed/
+    homepage_url: https://www.bombingscience.com
+    display_name: Bombing Science
+    summary: Graffiti Supplies and Blog
+  bonsaitonight:
+    feed_url: https://bonsaitonight.com/feed/
+    homepage_url: https://bonsaitonight.com
+    display_name: Bonsai Tonight
+    summary: An educational website about bonsai development
+  bookpickings_brainpickings:
+    feed_url: https://bookpickings.themarginalian.org/rss
+    homepage_url: https://bookpickings.brainpickings.org
+    display_name: book pickings
+    summary: Updates from book pickings.
   liliputing:
     feed_url: https://liliputing.com/feed/
     homepage_url: https://liliputing.com
