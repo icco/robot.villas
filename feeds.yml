@@ -13425,6 +13425,270 @@ bots:
     display_name: Strong Towns
     summary: Cities, transportation, housing, walkability, and sustainable urban development.
     profile_photo: https://cdn.prod.website-files.com/67ed6684112274e687cbf06e/68bb2b845bd31fd2886492e9_strong-towns_webclip.png
+  geeky_gadgets:
+    feed_url: https://www.geeky-gadgets.com/feed/
+    homepage_url: https://www.geeky-gadgets.com
+    display_name: Geeky Gadgets
+    summary: Technology news, gadget coverage, software tutorials, and product reviews from Geeky Gadgets.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.geeky-gadgets.com&size=128
+  sarah_withee:
+    feed_url: https://geekygirlsarah.com/feed.xml
+    homepage_url: https://geekygirlsarah.com
+    display_name: Sarah Withee
+    summary: 'Sarah Withee writes about software engineering, speaking, work, and personal experiences. Latest feed post: November 2024.'
+    profile_photo: https://geekygirlsarah.com/assets/images/apple-touch-icon.png
+  everybody_loves_eric_raymond:
+    feed_url: https://geekz.co.uk/lovesraymond/feed
+    homepage_url: https://geekz.co.uk/lovesraymond
+    display_name: Everybody loves Eric Raymond
+    summary: 'Archived Everybody loves Eric Raymond comics satirizing open-source personalities including Eric Raymond, Richard Stallman, and Linus Torvalds. Latest feed post: January 2009.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgeekz.co.uk%2Flovesraymond&size=128
+  gell_mann_amnesia:
+    feed_url: https://gellmannamnesia.blogspot.com/feeds/posts/default
+    homepage_url: https://gellmannamnesia.blogspot.com
+    display_name: Gell-Mann Amnesia
+    summary: 'Archived Gell-Mann Amnesia posts on technology, programming, work, economics, and personal interests. Latest feed post: August 2013.'
+  general_assembly:
+    feed_url: https://resource-center.generalassemb.ly/feed/
+    homepage_url: https://www.generalassemb.ly
+    display_name: General Assembly
+    summary: General Assembly articles on technology training, AI, careers, alumni, and workplace skills.
+    profile_photo: https://www.generalassemb.ly/apple-icon.png?apple-icon.0u-dc.0mru4k6.png
+  geoloqi_blog:
+    feed_url: https://geoloqi.com/blog/feed/
+    homepage_url: http://geoloqi.com/blog
+    display_name: Geoloqi Blog
+    summary: 'Archived Geoloqi company and developer news about location sharing, location-based applications, and the transition to Esri Geotrigger. Latest feed post: March 2014.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fgeoloqi.com%2Fblog&size=128
+  geon:
+    feed_url: https://geon.github.io/atom.xml
+    homepage_url: https://geon.github.io
+    display_name: geon
+    summary: Victor Widell's geon blog on programming experiments, retro computing, game emulation, and personal projects.
+    profile_photo: https://github.com/geon.png?size=200
+  george_stocker:
+    feed_url: https://georgestocker.com/feed/
+    homepage_url: https://georgestocker.com
+    display_name: George Stocker
+    summary: 'George Stocker writes about software development, agile processes, teams, and transforming software businesses. Latest feed post: August 2024.'
+  geshans_blog:
+    feed_url: https://geshan.com.np/atom.xml
+    homepage_url: https://geshan.com.np
+    display_name: Geshan's Blog
+    summary: Geshan Manandhar's articles on software engineering, web development, DevOps, cloud services, and developer tools.
+    profile_photo: https://geshan.com.np/images/favicons/apple-touch-icon.png
+  encrypt_me:
+    feed_url: https://blog.encrypt.me/feed.xml
+    homepage_url: https://blog.encrypt.me
+    display_name: Encrypt.me Security Blog
+    summary: 'Archived security, privacy, VPN advice, and product announcements from Encrypt.me, formerly Cloak. Latest feed post: July 2020.'
+    profile_photo: https://encrypt.me/wp-content/uploads/2022/09/apple-touch-icon.png
+  kirby_releases:
+    feed_url: https://github.com/getkirby/kirby/releases.atom
+    homepage_url: https://getkirby.com
+    display_name: Kirby Releases
+    summary: Official Kirby CMS release notes from the getkirby/kirby repository.
+    profile_photo: https://assets.getkirby.com/assets/images/favicon.1704303350.png
+  get_your_shit_together:
+    feed_url: https://getyourshittogether.org/feed/
+    homepage_url: https://getyourshittogether.org
+    display_name: Get Your Shit Together
+    summary: Get Your Shit Together articles, checklists, and courses on end-of-life planning, wills, insurance, finances, and emergency preparation.
+    profile_photo: https://i0.wp.com/getyourshittogether.org/wp-content/uploads/2016/07/gyst_fb_logo_new-copy.jpg?fit=180%2C180&ssl=1
+  geoffrey_huntley:
+    feed_url: https://ghuntley.com/rss/
+    homepage_url: https://ghuntley.com
+    display_name: Geoffrey Huntley
+    summary: Geoffrey Huntley writes about software development, AI-assisted engineering, developer tools, and industry changes.
+    profile_photo: https://storage.ghost.io/c/06/e5/06e5d12b-0328-469d-a0d0-3a0f0ba34c46/content/images/size/w256h256/format/jpeg/2026/02/A-black-and-white--low-angle-digital-illustration-in-a-symbolic-traditional-tattoo-art-style.--A-bald--light-skinned-man-with-a-bushy-beard--prominent-eyebrows--and-a-friendly-expression-wears-denim-overalls--2-.jpg
+  order_of_the_stick:
+    feed_url: https://www.giantitp.com/comics/oots.rss
+    homepage_url: https://www.giantitp.com/Comics.html
+    display_name: The Order of the Stick
+    summary: The Order of the Stick, Rich Burlew's fantasy adventure webcomic on Giant in the Playground.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.giantitp.com%2FComics.html&size=128
+  gibson_dunn:
+    feed_url: https://www.gibsondunn.com/feed/
+    homepage_url: https://www.gibsondunn.com
+    display_name: Gibson Dunn
+    summary: Gibson Dunn legal updates, client alerts, regulatory analysis, and law-firm news.
+    profile_photo: https://www.gibsondunn.com/wp-content/uploads/2024/07/cropped-gd-monogram-600x600-1-180x180.png
+  squids_blog:
+    feed_url: https://gigasquidsoftware.com/atom.xml
+    homepage_url: https://gigasquidsoftware.com
+    display_name: Squid's Blog
+    summary: Carin Meier's Squid's Blog on programming, Clojure, machine learning, and technology experiments.
+  gigster:
+    feed_url: https://gigster.com/feed/
+    homepage_url: https://gigster.com
+    display_name: Gigster
+    summary: Gigster articles on custom software development, enterprise AI, engineering teams, and technology delivery.
+    profile_photo: https://gigster.com/wp-content/uploads/fbrfg/apple-touch-icon.png
+  use_tables:
+    feed_url: https://www.gijsk.com/blog/feed/
+    homepage_url: https://www.gijsk.com/blog
+    display_name: Use Tables!
+    summary: 'Archived Use Tables! posts on Firefox development, browser features, and software by Gijs Kruitbosch. Latest feed post: February 2019.'
+  gimp:
+    feed_url: https://www.gimp.org/feeds/atom.xml
+    homepage_url: https://www.gimp.org
+    display_name: GIMP
+    summary: Official GIMP news, image-editor releases, development reports, and community interviews.
+    profile_photo: https://www.gimp.org/images/wilber32.png
+  superheroes_are_for_girls_too:
+    feed_url: https://girlslovesuperheroes.tumblr.com/rss
+    homepage_url: https://girlslovesuperheroes.tumblr.com
+    display_name: Superheroes are for girls, too!
+    summary: 'Archived photos and submissions celebrating girls who dress as, read about, and enjoy superheroes. Latest feed post: August 2015.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgirlslovesuperheroes.tumblr.com&size=128
+  ugrc:
+    feed_url: https://gis.utah.gov/rss.xml
+    homepage_url: https://gis.utah.gov
+    display_name: UGRC
+    summary: Utah Geospatial Resource Center news on statewide GIS datasets, mapping tools, imagery services, and geospatial infrastructure.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgis.utah.gov&size=128
+  git_annex_news:
+    feed_url: https://git-annex.branchable.com/news/index.rss
+    homepage_url: https://git-annex.branchable.com/news
+    display_name: git-annex News
+    summary: Official git-annex release announcements and project news.
+  git_blame:
+    feed_url: http://feeds.feedburner.com/GitBlame
+    homepage_url: https://git-blame.blogspot.com
+    display_name: Git Blame
+    summary: 'Junio C Hamano''s Git Blame blog on Git releases, development, and version-control techniques. Latest feed post: May 2016.'
+  legit_releases:
+    feed_url: https://github.com/frostming/legit/releases.atom
+    homepage_url: https://frostming.github.io/legit
+    display_name: Legit Releases
+    summary: 'Release notes for Legit, the Git workflow command-line tool. Latest release in the feed: December 2019.'
+  tower_blog:
+    feed_url: https://feeds.git-tower.com/tower-blog
+    homepage_url: https://www.git-tower.com/blog
+    display_name: Tower Blog
+    summary: Tower product releases and articles on Git, software development, design, and developer workflows.
+    profile_photo: https://www.git-tower.com/blog/assets/img/favicons/apple-touch-icon.1791479002.png
+  yarn_social_commits:
+    feed_url: https://git.mills.io/yarnsocial/yarn
+    homepage_url: https://git.mills.io/yarnsocial/yarn
+    display_name: Yarn Social Commits
+    summary: Main-branch commits for Yarn, Yarn Social's self-hosted decentralized microblogging software.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgit.mills.io%2Fyarnsocial%2Fyarn%2Fbranch%2Fmain&size=128
+  github_status:
+    feed_url: https://www.githubstatus.com/history.atom
+    homepage_url: https://www.githubstatus.com
+    display_name: GitHub Status
+    summary: GitHub service incident reports, outage updates, and incident history.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.githubstatus.com&size=128
+  gitian:
+    feed_url: https://gitian.org/index.xml
+    homepage_url: https://gitian.org
+    display_name: Gitian
+    summary: Archived Gitian documentation about deterministic builds, trusted binary distribution, and software signing; the feed contains one How To page.
+  giuliomac:
+    feed_url: https://giuliomac.wordpress.com/feed/
+    homepage_url: https://giuliomac.wordpress.com
+    display_name: GiulioMac
+    summary: 'GiulioMac''s archived personal blog on computing, software, videos, and other interests. Latest feed post: March 2014.'
+  gizmoweek:
+    feed_url: https://www.gizmoweek.com/feed/
+    homepage_url: https://www.gizmoweek.com
+    display_name: GizmoWeek
+    summary: GizmoWeek news and reviews of smartphones, gadgets, and consumer technology.
+    profile_photo: https://www.gizmoweek.com/wp-content/uploads/2020/11/gizmoweek-icon.png
+  glaad:
+    feed_url: https://glaad.org/feed/
+    homepage_url: https://glaad.org
+    display_name: GLAAD
+    summary: News, advocacy, media analysis, and LGBTQ representation updates from GLAAD.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fglaad.org&size=128
+  glasswire_blog:
+    feed_url: https://www.glasswire.com/blog/feed/
+    homepage_url: https://www.glasswire.com/blog
+    display_name: GlassWire Blog
+    summary: GlassWire articles on network monitoring, online security, privacy, passwords, and protecting connected devices.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.glasswire.com%2Fblog&size=128
+  dimitri_glazkov:
+    feed_url: https://glazkov.com/feed/
+    homepage_url: https://glazkov.com
+    display_name: Dimitri Glazkov
+    summary: Dimitri Glazkov's essays on software, AI, creativity, thinking, and personal interests.
+  geeking_with_greg:
+    feed_url: http://feeds.feedburner.com/GeekingWithGreg
+    homepage_url: http://glinden.blogspot.com
+    display_name: Geeking with Greg
+    summary: 'Greg Linden''s Geeking with Greg blog on AI, recommendations, personalization, misinformation, and the technology industry. Latest feed post: January 2024.'
+  global_grind:
+    feed_url: https://globalgrind.com/feed/
+    homepage_url: https://globalgrind.com
+    display_name: Global Grind
+    summary: Global Grind entertainment, music, celebrity, viral internet, and culture coverage.
+    profile_photo: https://globalgrind.com/wp-content/uploads/sites/16/2018/08/cropped-15332439935053-e1533244083199-1.jpg?quality=80&strip=all&w=57&crop=0,0,100,57px
+  global_nerdy:
+    feed_url: https://www.globalnerdy.com/feed/
+    homepage_url: https://www.globalnerdy.com
+    display_name: Global Nerdy
+    summary: Tampa Bay technology news, local tech events, programming, entrepreneurship, and internet culture from Global Nerdy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.globalnerdy.com&size=128
+  glp_1_digest:
+    feed_url: https://www.glp1digest.com/feed
+    homepage_url: https://www.glp1digest.com
+    display_name: GLP-1 Digest
+    summary: The GLP-1 newsletter for founders, operators and investors.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!nADF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94874fec-c6d3-427c-8e6a-aa5270301e17%2Fapple-touch-icon-57x57.png
+  deciphering_glyph:
+    feed_url: https://blog.glyph.im/feeds/all.atom.xml
+    homepage_url: https://blog.glyph.im
+    display_name: Deciphering Glyph
+    summary: Glyph Lefkowitz's Deciphering Glyph blog on programming, open source, software, and technology.
+    profile_photo: https://github.com/glyph.png?size=200
+  glyphs_news_events_and_tutorials:
+    feed_url: https://glyphsapp.com/feed
+    homepage_url: https://glyphsapp.com
+    display_name: Glyphs News, Events and Tutorials
+    summary: Official Glyphs font-editor news, type-design events, and tutorials.
+    profile_photo: https://glyphsapp.com/assets/img/favicons/apple-touch-icon.png
+  gnd_buzz:
+    feed_url: https://gnd.buzz/rss/main
+    homepage_url: https://gnd.buzz
+    display_name: gnd buzz
+    summary: Making music and noise, building instruments and effects, learning electronics and DSP.
+    profile_photo: https://gnd.buzz/apple-touch-icon.png
+  bloomberg_technology:
+    feed_url: https://www.bloomberg.com/feeds/technology/news.rss
+    homepage_url: https://www.bloomberg.com/technology
+    display_name: Bloomberg Technology
+    summary: Bloomberg reporting and analysis on technology companies, startups, AI, and the technology industry.
+  gobankingrates:
+    feed_url: https://www.gobankingrates.com/feed/
+    homepage_url: https://www.gobankingrates.com
+    display_name: GOBankingRates
+    summary: GOBankingRates articles on personal finance, saving, retirement, banking, and making money.
+    profile_photo: https://cdn.gobankingrates.com/wp-content/uploads/2017/04/cropped-gbr-logo_go_site_id-180x180.png
+  gocardless_resources:
+    feed_url: https://gocardless.com/content-platform/rss/resources.xml
+    homepage_url: https://gocardless.com
+    display_name: GoCardless Resources
+    summary: GoCardless resources on payments, recurring revenue, business finance, product news, and payment technology.
+    profile_photo: https://framerusercontent.com/images/DttpiSG0Zmnl5Ae6JgVz0wbnkqQ.png
+  godot_engine_official:
+    feed_url: https://godotengine.org/rss.xml
+    homepage_url: https://godotengine.org
+    display_name: Godot Engine Official
+    summary: Official Godot Engine release announcements, development snapshots, technical updates, and project news.
+    profile_photo: https://godotengine.org/assets/favicon.png
+  gog:
+    feed_url: https://www.gog.com/blog/feed/
+    homepage_url: https://www.gog.com/blog
+    display_name: GOG
+    summary: Official GOG Blog stories about DRM-free games, game preservation, classic titles, and people in gaming.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.gog.com%2Fblog&size=128
+  golden_hill_software:
+    feed_url: https://www.goldenhillsoftware.com/feed/
+    homepage_url: https://www.goldenhillsoftware.com
+    display_name: Golden Hill Software
+    summary: Golden Hill Software news and release announcements for Unread, its RSS reader for Mac, iPhone, and iPad.
+    profile_photo: https://www.goldenhillsoftware.com/rsrcs/favicon-unread-v4.png
   places_journal:
     feed_url: https://feeds.feedburner.com/placesjournal
     homepage_url: https://placesjournal.org
