@@ -11179,6 +11179,266 @@ bots:
     display_name: Figma Engineering
     summary: Graphics, collaboration, frontend, infrastructure, and unusual engineering problems.
     profile_photo: https://static.figma.com/app/icon/2/touch-180.png
+  daniel_tenner:
+    feed_url: https://danieltenner.com/rss/
+    homepage_url: https://danieltenner.com
+    display_name: Daniel Tenner
+    summary: Daniel Tenner on AI, AI consciousness, software development, startups, and personal experiments.
+    profile_photo: https://danieltenner.com/content/images/size/w256h256/format/jpeg/2025/09/swombat_logo_white_bg.jpg
+  daniel_warner_smith:
+    feed_url: https://danielwarnersmith.tumblr.com/rss
+    homepage_url: https://danielwarnersmith.tumblr.com
+    display_name: Daniel Warner Smith
+    summary: 'Daniel Warner Smith''s photo and design posts on Tumblr. Archived feed; latest post: July 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdanielwarnersmith.tumblr.com&size=128
+  daniemons_blog:
+    feed_url: https://blog.daniemon.com/feed/
+    homepage_url: https://blog.daniemon.com
+    display_name: Daniemon's Blog
+    summary: 'Daniel Davis on web development, privacy, art, woodblock printing, and geeky music. Latest feed post: May 2025.'
+    profile_photo: https://blog.daniemon.com/wp-content/uploads/2018/07/daddy.jpg?w=180
+  dan_neumann:
+    feed_url: https://www.danneu.com/atom.xml
+    homepage_url: https://www.danneu.com
+    display_name: Dan Neumann
+    summary: Dan Neumann's personal writing about software, AI-assisted programming, and finding a creative outlet. Relaunched in June 2026.
+    profile_photo: https://github.com/danneu.png?size=200
+  dan_sinker:
+    feed_url: https://dansinker.com/feed.xml
+    homepage_url: https://dansinker.com/blog/
+    display_name: Dan Sinker
+    summary: Dan Sinker's essays on politics, culture, technology, writing, and life.
+    profile_photo: https://dansinker.com/icons/apple-touch-icon.png
+  dan_walsh:
+    feed_url: https://danwalsh.livejournal.com/data/rss
+    homepage_url: https://danwalsh.livejournal.com
+    display_name: Dan Walsh's Blog
+    summary: 'Dan Walsh''s archived posts on SELinux, Linux container security, Podman, and cloud infrastructure. Latest feed post: May 2019.'
+    profile_photo: https://l-userpic.livejournal.com/61868732/9465280
+  dan_wang:
+    feed_url: https://danwang.co/feed/
+    homepage_url: https://danwang.co
+    display_name: Dan Wang
+    summary: Dan Wang's essays and annual letters on China, technology, economics, culture, and travel.
+    profile_photo: https://danwang.co/wp-content/uploads/2017/05/cropped-dw.png
+  dan_webb:
+    feed_url: https://danwebb.net/feed.xml
+    homepage_url: https://danwebb.net
+    display_name: Dan Webb
+    summary: Dan Webb on engineering leadership, product development, AI, and building software teams.
+    profile_photo: https://danwebb.net/img/favicon/apple-touch-icon.png
+  dappered:
+    feed_url: https://dappered.com/feed/
+    homepage_url: https://dappered.com
+    display_name: Dappered
+    summary: Affordable men's style, clothing and watch reviews, shopping advice, and sale picks from Dappered.
+    profile_photo: https://dappered.com/wp-content/uploads/2016/06/cropped-dappered-icon-200x200.png
+  darin_dines:
+    feed_url: https://darindines.com/feed/
+    homepage_url: https://darindines.com/
+    display_name: Darin Dines
+    summary: 'Darin''s restaurant reviews and dining photography, especially fine dining in California, Las Vegas, and Japan. Latest feed post: September 2023.'
+    profile_photo: https://i0.wp.com/darindines.com/wp-content/uploads/2021/09/cropped-android-chrome-512x512-1.png?fit=180%2C180&ssl=1
+  darknavy_blog:
+    feed_url: https://www.darknavy.org/blog/index.xml
+    homepage_url: https://www.darknavy.org/blog/
+    display_name: DARKNAVY Blog
+    summary: DARKNAVY's security research on vulnerabilities, exploitation, reverse engineering, and AI-assisted security analysis.
+    profile_photo: https://www.darknavy.org/images/apple-touch-icon.png
+  darktable_blog:
+    feed_url: https://www.darktable.org/blog/index.xml
+    homepage_url: https://www.darktable.org/blog/
+    display_name: darktable Blog
+    summary: Official darktable blog with photography workflows, raw image editing tutorials, feature deep dives, and development updates.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.darktable.org&size=128
+  darpa:
+    feed_url: https://www.darpa.mil/rss.xml
+    homepage_url: https://www.darpa.mil
+    display_name: DARPA
+    summary: Research news, program announcements, and podcasts from the Defense Advanced Research Projects Agency (DARPA).
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.darpa.mil&size=128
+  the_dart_blog:
+    feed_url: https://dart.dev/blog/feed.xml
+    homepage_url: https://dart.dev/blog
+    display_name: The Dart Blog
+    summary: Official Dart language announcements, releases, tooling updates, and technical deep dives from the Dart team.
+    profile_photo: https://dart.dev/assets/img/touch-icon-iphone.png
+  das_keyboard_blog:
+    feed_url: https://www.daskeyboard.com/blog/feed.xml
+    homepage_url: https://www.daskeyboard.com/blog
+    display_name: Das Keyboard Blog
+    summary: Das Keyboard's official blog on mechanical keyboards, typing, accessories, product updates, and Q applets.
+    profile_photo: https://www.daskeyboard.com/apple-icon.png?apple-icon.0u7-icvccju3d.png
+  datacenterdude:
+    feed_url: https://datacenterdude.com/feed/
+    homepage_url: https://datacenterdude.com
+    display_name: DatacenterDude
+    summary: Nick Howell on enterprise infrastructure, storage, networking, virtualization, cloud, AI, home labs, and engineering careers.
+    profile_photo: https://i0.wp.com/datacenterdude.com/wp-content/uploads/2024/01/DCD-YouTube.jpg?fit=180%2C180&ssl=1
+  data_center_knowledge:
+    feed_url: https://www.datacenterknowledge.com/rss.xml
+    homepage_url: https://www.datacenterknowledge.com
+    display_name: Data Center Knowledge
+    summary: Data center industry reporting on infrastructure, energy, cooling, construction, operations, AI, and investment.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.datacenterknowledge.com&size=128
+  datamation:
+    feed_url: https://www.datamation.com/feed/
+    homepage_url: https://www.datamation.com
+    display_name: Datamation
+    summary: Enterprise technology analysis, software buying guides, cloud and data coverage, and company press releases from Datamation.
+    profile_photo: https://www.datamation.com/apple-touch-icon.png
+  data_methods:
+    feed_url: https://datamethods.substack.com/feed
+    homepage_url: https://datamethods.substack.com
+    display_name: Data Methods
+    summary: Jordan Goodman's practical writing on data architecture, SQL, analytics, data pipelines, and modern data systems.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!OTAW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8f738c7a-62b0-4c5e-bcbf-2f44a6388b55%2Fapple-touch-icon-57x57.png
+  data_society_research:
+    feed_url: https://datasociety.net/research-library/feed/
+    homepage_url: https://datasociety.net/research-library
+    display_name: Data & Society Research Library
+    summary: Data & Society's research and resource library on the social implications of data, automation, AI, technology policy, and digital inequality.
+    profile_photo: https://datasociety.net/wp-content/uploads/2026/05/cropped-fav-180x180.png
+  datatables_blog:
+    feed_url: https://datatables.net/feeds/blog.xml
+    homepage_url: https://datatables.net/blog/
+    display_name: DataTables Blog
+    summary: Official DataTables tutorials, product announcements, releases, and integration guides by Allan Jardine and the DataTables team.
+    profile_photo: https://datatables.net/media/images/apple-touch-icon.png
+  tcp_stealth_draft:
+    feed_url: https://datatracker.ietf.org/feed/document-changes/draft-kirsch-ietf-tcp-stealth/
+    homepage_url: https://datatracker.ietf.org/doc/draft-kirsch-ietf-tcp-stealth/history
+    display_name: TCP Stealth Draft History
+    summary: IETF Datatracker change history for the expired individual TCP Stealth Internet-Draft, draft-kirsch-ietf-tcp-stealth. Two revisions from 2014 and 2015; not an IETF standard.
+    profile_photo: https://static.ietf.org/dt/12.80.0/ietf/images/ietf-logo-nor-180.png
+  datavu:
+    feed_url: https://datavu.blogspot.com/feeds/posts/default
+    homepage_url: https://datavu.blogspot.com
+    display_name: Datavu
+    summary: 'Datavu''s archived notes on data science, programming, analytics, medical AI, and healthcare technology. Latest feed post: December 2022.'
+  dave_akerman:
+    feed_url: https://www.daveakerman.com/?feed=rss2
+    homepage_url: https://www.daveakerman.com
+    display_name: Dave Akerman
+    summary: 'Dave Akerman on high-altitude ballooning, radio tracking, Raspberry Pi hardware, and balloon telemetry. Latest feed post: May 2024.'
+    profile_photo: https://www.daveakerman.com/wp-content/uploads/2021/02/cropped-D_nPtRlWkAAQ8Xh-180x180.jpg
+  david_celis:
+    feed_url: https://davidcel.is/feeds/main
+    homepage_url: https://davidcel.is
+    display_name: David Celis
+    summary: David Celis's personal notes, articles, photos, and curated links on software, technology, politics, and everyday life.
+    profile_photo: https://davidcel.is/apple-touch-icon.png
+  david_g_cohen:
+    feed_url: https://feeds.feedburner.com/DavidGCohen
+    homepage_url: https://davidgcohen.com
+    display_name: David G. Cohen
+    summary: Techstars founder David G. Cohen on startups, investing, accelerators, software, and entrepreneurship.
+    profile_photo: https://davidgcohen.com/wp-content/uploads/2017/05/cropped-favico-180x180.png
+  david_hughes:
+    feed_url: https://www.davidhughes.org/feed/
+    homepage_url: https://www.davidhughes.org
+    display_name: David Hughes
+    summary: David Hughes on design, digital transformation, writing, AI experiments, photography, stationery, and everyday life.
+    profile_photo: https://www.davidhughes.org/wp-content/uploads/2026/04/David-Hughes.jpg
+  david_hunt:
+    feed_url: http://www.davidhunt.ie/feed/
+    homepage_url: http://www.davidhunt.ie
+    display_name: David Hunt
+    summary: 'David Hunt''s archived Raspberry Pi, camera, electronics, and embedded-computing projects. Latest feed post: May 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.davidhunt.ie&size=128
+  davids_log:
+    feed_url: https://www.davidslog.com/rss
+    homepage_url: https://www.davidslog.com
+    display_name: David's Log
+    summary: 'David Karp''s personal Tumblr posts on technology, Tumblr, community, and life. Archived feed; latest post: June 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.davidslog.com&size=128
+  daydreamer_synth:
+    feed_url: https://www.daydreamersynth.com/blog?format=rss
+    homepage_url: https://www.daydreamersynth.com/blog
+    display_name: DayDreamer Synth
+    summary: 'Build notes for DayDreamer''s open-source analog synthesizer, covering oscillators, polyphony, filters, envelopes, and Arduino control. Latest feed post: October 2025.'
+  dba_stackexchange:
+    feed_url: https://dba.stackexchange.com/feeds
+    homepage_url: https://dba.stackexchange.com/questions
+    display_name: Database Administrators Stack Exchange
+    summary: Recent community questions on database administration, SQL, PostgreSQL, SQL Server, backups, performance, and reliability.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdba.stackexchange.com%2Fquestions&size=128
+  dbpedia_association:
+    feed_url: https://www.dbpedia.org/feed/
+    homepage_url: https://www.dbpedia.org
+    display_name: DBpedia Association
+    summary: News, research, community events, and project updates from the DBpedia Association and knowledge graph community.
+    profile_photo: https://www.dbpedia.org/wp-content/uploads/2020/09/cropped-dbpedia-webicon-180x180.png
+  daniel_patterson:
+    feed_url: https://dbp.io/rss.xml
+    homepage_url: https://dbp.io/
+    display_name: Daniel Patterson
+    summary: 'Daniel Patterson''s archived essays on programming languages, compilers, formal reasoning, email systems, and home infrastructure. Latest feed post: April 2018.'
+    profile_photo: https://github.com/dbp.png?size=200
+  dccc:
+    feed_url: https://dccc.org/feed/
+    homepage_url: https://dccc.org
+    display_name: DCCC
+    summary: Official Democratic Congressional Campaign Committee press releases, campaign announcements, and statements about US House elections.
+    profile_photo: https://dccc.org/wp-content/uploads/2018/04/DCCC-favicon-150x150.png
+  damon_cortesi:
+    feed_url: https://www.dcortesi.com/index.xml
+    homepage_url: https://www.dcortesi.com
+    display_name: Damon Cortesi
+    summary: 'Damon Cortesi''s personal blog archive on programming, Twitter applications, analytics, and technology. Latest feed post: February 2012.'
+  "0xdeadbeef":
+    feed_url: https://deadbeef.me/feed.xml
+    homepage_url: https://www.deadbeef.me
+    display_name: "0xDEADBEEF"
+    summary: Mike JS. Choi's personal writing on Swift, Go, open-source software, startups, and everyday interests.
+    profile_photo: https://github.com/mkchoi212.png?size=200
+  deadsuperhero:
+    feed_url: https://deadsuperhero.com/rss/
+    homepage_url: https://deadsuperhero.com
+    display_name: deadsuperhero
+    summary: Sean Tilley's writing on the fediverse, free software, creative work, game development, and technology.
+    profile_photo: https://storage.ghost.io/c/5e/73/5e73d4fd-6320-49f7-bf4c-80edf5fed419/content/images/size/w256h256/2025/03/cropped-cropped-cropped-test-sample.png
+  debamitro_chakraborti:
+    feed_url: https://debamitro.github.io/index.xml
+    homepage_url: https://debamitro.github.io
+    display_name: Debamitro Chakraborti
+    summary: Debamitro Chakraborti on software development, AI tools, open source, personal projects, and teaching.
+    profile_photo: https://github.com/debamitro.png?size=200
+  debian_handbook:
+    feed_url: https://debian-handbook.info/feed/
+    homepage_url: https://debian-handbook.info
+    display_name: The Debian Administrator's Handbook
+    summary: 'Archived project announcements, translations, and edition updates for The Debian Administrator''s Handbook by Raphael Hertzog and Roland Mas. Latest feed post: July 2020.'
+  debugbear_blog:
+    feed_url: https://www.debugbear.com/blog/rss.xml
+    homepage_url: https://www.debugbear.com/blog
+    display_name: DebugBear Blog
+    summary: DebugBear's tutorials and research on website performance, Core Web Vitals, browser tooling, monitoring, and frontend development.
+    profile_photo: https://www.debugbear.com/public/favicon-2022-32x32.png
+  debuntu:
+    feed_url: https://www.debuntu.org/feed.xml
+    homepage_url: https://www.debuntu.org
+    display_name: Debuntu
+    summary: 'Chantra''s archived Debian and Ubuntu system-administration tutorials covering Linux, servers, mail, security, and web software. Latest feed post: January 2016.'
+    profile_photo: https://github.com/chantra.png?size=200
+  decider:
+    feed_url: https://decider.com/feed/
+    homepage_url: https://decider.com
+    display_name: Decider
+    summary: Decider's streaming recommendations, movie and TV reviews, recaps, interviews, and guides to where to watch.
+    profile_photo: https://decider.com/wp-content/themes/decider/static/images/favicons/apple-touch-icon.png
+  allison_posts:
+    feed_url: https://posts.decontextualize.com/rss.xml
+    homepage_url: https://posts.decontextualize.com/
+    display_name: Allison Posts
+    summary: Allison Parrish's essays, talk transcripts, projects, and teaching resources on computational poetry, language, AI, and creative programming.
+    profile_photo: https://github.com/aparrish.png?size=200
+  deep_sea_news:
+    feed_url: https://deepseanews.com/feed/
+    homepage_url: https://deepseanews.com
+    display_name: Deep Sea News
+    summary: 'Marine science, deep-sea biology, ocean conservation, and ocean exploration from Deep Sea News. Latest feed post: June 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdeepseanews.com&size=128
   sean_goedecke:
     feed_url: https://www.seangoedecke.com/rss.xml
     homepage_url: https://www.seangoedecke.com
