@@ -1210,6 +1210,256 @@ bots:
     display_name: Vishnu Bharathi
     summary: Reading logs and programming notes.
     profile_photo: https://www.gravatar.com/avatar/261fb0f50b7dea501c807ac01f242343?s=180
+  passfail_squarespace:
+    feed_url: http://passfail.squarespace.com/journal/atom.xml
+    homepage_url: http://passfail.squarespace.com/journal
+    display_name: Journal
+    summary: Updates from Journal.
+  passingstrangeness_wordpress:
+    feed_url: https://passingstrangeness.wordpress.com/feed/
+    homepage_url: https://passingstrangeness.wordpress.com
+    display_name: Passing Strangeness
+    summary: the odd bits of the world
+  paul_kinlan_me:
+    feed_url: https://paul.kinlan.me/index.xml
+    homepage_url: https://paul.kinlan.me
+    display_name: Modern Web Development with Chrome
+    summary: Recent content on Modern Web Development with Chrome
+  pauladamsmith:
+    feed_url: https://pauladamsmith.com/rss.xml
+    homepage_url: https://pauladamsmith.com
+    display_name: Paul Smith
+    summary: Software engineer. Co-founder, Ad Hoc.
+  paulfitz_github:
+    feed_url: https://paulfitz.github.io/rss.xml
+    homepage_url: http://paulfitz.github.io
+    display_name: Paul Fitzpatrick
+    summary: Paul Fitzpatrick
+  pbfcomics:
+    feed_url: https://pbfcomics.com/feed/
+    homepage_url: https://pbfcomics.com
+    display_name: The Perry Bible Fellowship
+    summary: Offbeat comic strip by Nicholas Gurewitch. Includes archives, information about the author, and purchases.
+  pc_kombo:
+    feed_url: https://www.pc-kombo.com/blog/feed
+    homepage_url: https://www.pc-kombo.com/blog
+    display_name: pc-kombo blog
+    summary: Updates from pc-kombo blog.
+  pcaro_es:
+    feed_url: https://pcaro.es/index.xml
+    homepage_url: https://pcaro.es
+    display_name: Pablo J. Caro Martín
+    summary: Recent content on Pablo J. Caro Martín
+  pcgamesn:
+    feed_url: https://www.pcgamesn.com/mainrss.xml
+    homepage_url: https://www.pcgamesn.com
+    display_name: PCGamesN
+    summary: The latest PC games news, features, updates, guides, and hands-on reviews. Plus all the latest from our hardware experts on your gaming PC needs.
+  pchristensen:
+    feed_url: http://pchristensen.com/blog/feed/
+    homepage_url: http://pchristensen.com/blog
+    display_name: Peter Christensen
+    summary: Updates from Peter Christensen.
+  pcsx2:
+    feed_url: https://pcsx2.net/blog/rss.xml
+    homepage_url: https://pcsx2.net/blog
+    display_name: PCSX2 Blog
+    summary: PCSX2 Blog
+  wppiexpo:
+    feed_url: https://wppiexpo.com/sitemap.rss
+    homepage_url: https://wppiexpo.com
+    display_name: WPPI
+    summary: WPPI
+  peak5390_wordpress:
+    feed_url: https://peak5390.wordpress.com/feed/
+    homepage_url: https://peak5390.wordpress.com
+    display_name: peak 5390
+    summary: a little of everything
+  pecl_php:
+    feed_url: https://pecl.php.net/feeds/latest.rss
+    homepage_url: https://pecl.php.net
+    display_name: 'PECL: Latest releases'
+    summary: The latest releases in PECL.
+  peergos:
+    feed_url: https://peergos.org/feeds/posts.atom.xml
+    homepage_url: https://peergos.org
+    display_name: Peergos - posts
+    summary: Updates from Peergos - posts.
+  pelegri_wordpress:
+    feed_url: https://pelegri.wordpress.com/feed/
+    homepage_url: https://pelegri.wordpress.com
+    display_name: Castellers
+    summary: Updates from Castellers.
+  people_kernel:
+    feed_url: https://people.kernel.org/read/feed/
+    homepage_url: https://people.kernel.org
+    display_name: people.kernel.org Reader
+    summary: Read the latest posts from people.kernel.org.
+  perforce:
+    feed_url: https://www.perforce.com/rss.xml
+    homepage_url: https://www.perforce.com
+    display_name: Perforce Software
+    summary: Updates from Perforce Software.
+  perishablepress:
+    feed_url: https://perishablepress.com/feed/
+    homepage_url: https://perishablepress.com
+    display_name: Perishable Press
+    summary: Web Dev + WordPress + Security
+  perspectives_mvdirona:
+    feed_url: https://perspectives.mvdirona.com/feed/
+    homepage_url: https://perspectives.mvdirona.com
+    display_name: Perspectives
+    summary: James Hamilton's Blog
+  petersobot:
+    feed_url: https://petersobot.com/atom.xml
+    homepage_url: https://petersobot.com
+    display_name: Peter Sobot
+    summary: Updates from Peter Sobot.
+  peterullrich:
+    feed_url: https://peterullrich.com/feed.xml
+    homepage_url: https://peterullrich.com
+    display_name: Peter Ullrich Blog
+    summary: Updates from Peter Ullrich Blog.
+  petewarden:
+    feed_url: https://petewarden.com/feed/
+    homepage_url: https://petewarden.com
+    display_name: Pete Warden's blog
+    summary: Ever tried. Ever failed. No matter. Try Again. Fail again. Fail better.
+  pewresearch:
+    feed_url: https://www.pewresearch.org/feed/
+    homepage_url: https://www.pewresearch.org
+    display_name: Pew Research Center
+    summary: Numbers, Facts and Trends Shaping Your World
+  pganalyze:
+    feed_url: https://pganalyze.com/feed.xml
+    homepage_url: https://pganalyze.com/blog
+    display_name: pganalyze Blog
+    summary: Monitoring Postgres and tuning query performance
+  pgdog_dev:
+    feed_url: https://pgdog.dev/feed.xml
+    homepage_url: https://pgdog.dev
+    display_name: PgDog
+    summary: PgDog is a connection pooler, load balancer, and sharding proxy for PostgreSQL. Scale Postgres horizontally without rewriting your application.
+  philcalcado:
+    feed_url: https://philcalcado.com/feed.xml
+    homepage_url: http://philcalcado.com
+    display_name: Phil Calçado
+    summary: Updates from Phil Calçado.
+  philchen:
+    feed_url: https://philchen.com/feed/
+    homepage_url: https://philchen.com
+    display_name: Phil Chen
+    summary: Phil Chen
+  philip_greenspun:
+    feed_url: https://philip.greenspun.com/blog/feed/
+    homepage_url: https://philip.greenspun.com/blog
+    display_name: Philip Greenspun’s Weblog
+    summary: A posting every day; an interesting idea every three months...
+  philiplaine:
+    feed_url: https://philiplaine.com/index.xml
+    homepage_url: https://philiplaine.com
+    display_name: Philip Laine
+    summary: Recent content on Philip Laine
+  philippe_bourgau:
+    feed_url: https://philippe.bourgau.net/feed.xml
+    homepage_url: https://philippe.bourgau.net
+    display_name: Philippe Bourgau’s XP Coaching Blog
+    summary: Updates from Philippe Bourgau’s XP Coaching Blog.
+  philmckinney:
+    feed_url: https://www.philmckinney.com/blog/rss/
+    homepage_url: https://www.philmckinney.com
+    display_name: Phil McKinney
+    summary: An inventor and former HP CTO providing nearly 1,000 free podcasts and videos, plus essays, a private advisory for senior leaders, and hands-on innovation tools.
+  philpearl_github:
+    feed_url: https://philpearl.github.io/index.xml
+    homepage_url: https://philpearl.github.io
+    display_name: Phil Pearl's Blog
+    summary: Recent content on Phil Pearl's Blog
+  philsturgeon:
+    feed_url: https://philsturgeon.com/rss/
+    homepage_url: https://philsturgeon.com
+    display_name: Phil Sturgeon
+    summary: Digital nomad, writing about APIs, van life, and unfucking the planet through reforestation and green tech.
+  philwbass:
+    feed_url: https://philwbass.com/feed/
+    homepage_url: https://philwbass.com
+    display_name: Phil Wain
+    summary: Bass, love & music
+  phoboslab:
+    feed_url: https://phoboslab.org/log/feed
+    homepage_url: https://phoboslab.org/log
+    display_name: Phoboslab
+    summary: Latest news
+  phong:
+    feed_url: https://phong.com/feed/
+    homepage_url: https://phong.com
+    display_name: phong
+    summary: Stimulate your optic nerves.
+  photoshopessentials:
+    feed_url: https://www.photoshopessentials.com/feed/
+    homepage_url: https://www.photoshopessentials.com
+    display_name: Photoshop Essentials
+    summary: Where everyone can learn Photoshop!
+  photoville:
+    feed_url: https://photoville.com/feed/
+    homepage_url: https://photoville.com
+    display_name: Photoville
+    summary: Updates from Photoville.
+  phrogz:
+    feed_url: https://phrogz.net/rss
+    homepage_url: https://phrogz.net
+    display_name: Phrogz.net Content
+    summary: The personal site of Gavin Kistner, his views, and discussions on varied topics.
+  phys:
+    feed_url: https://phys.org/rss-feed/
+    homepage_url: https://phys.org
+    display_name: Phys.org - latest science and technology news stories
+    summary: 'Phys.org internet news portal provides the latest news on science including: Physics, Nanotechnology, Life Sciences, Space Science, Earth Science, Environment, Health and Medicine.'
+  pi_dev:
+    feed_url: https://pi.dev/changelog.xml
+    homepage_url: https://pi.dev/changelog
+    display_name: Pi Changelog
+    summary: Release notes, project updates, and announcements from the Pi team.
+  pidgin_im:
+    feed_url: https://www.pidgin.im/index.xml
+    homepage_url: https://pidgin.im
+    display_name: Pidgin on Pidgin, the universal chat client
+    summary: Recent content in Pidgin on Pidgin, the universal chat client
+  pier24:
+    feed_url: https://pier24.org/feed/
+    homepage_url: https://pier24.org
+    display_name: Pier 24
+    summary: Updates from Pier 24.
+  pietro_menna_net_br:
+    feed_url: https://pietro.menna.net.br/atom.xml
+    homepage_url: https://pietro.menna.net.br
+    display_name: Pietro Menna
+    summary: Updates from Pietro Menna.
+  pinpayments:
+    feed_url: https://pinpayments.com/blog.atom
+    homepage_url: https://pinpayments.com
+    display_name: Pin Payments Blog
+    summary: Updates from Pin Payments Blog.
+  pineapplebread_wordpress:
+    feed_url: https://pineapplebread.wordpress.com/feed/
+    homepage_url: https://pineapplebread.wordpress.com
+    display_name: Pineapple Bread
+    summary: An exploratory food blog
+  pinktentacle:
+    feed_url: http://feeds.feedburner.com/PinkTentacle
+    homepage_url: https://pinktentacle.com
+    display_name: Pink Tentacle
+    summary: Updates from Pink Tentacle.
+  pioneerspacesim:
+    feed_url: https://pioneerspacesim.net/index.xml
+    homepage_url: https://pioneerspacesim.net
+    display_name: Home on Pioneer
+    summary: Recent content in Home on Pioneer
+  pipistrel_aircraft:
+    feed_url: https://www.pipistrel-aircraft.com/feed/
+    homepage_url: https://www.pipistrel-aircraft.com
+    display_name: Pipistrel
+    summary: Updates from Pipistrel.
   veit_heller:
     feed_url: https://blog.veitheller.de/feed.rss
     homepage_url: https://blog.veitheller.de/
