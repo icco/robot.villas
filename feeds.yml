@@ -11727,6 +11727,265 @@ bots:
     display_name: The Public Domain Review
     summary: Curated art, literature, history, science, and strange treasures from the public domain.
     profile_photo: https://publicdomainreview.org/apple-icon-180x180.png
+  digital_freepen:
+    feed_url: https://digitalfreepen.com/feed.xml
+    homepage_url: https://digitalfreepen.com
+    display_name: Digital Freepen
+    summary: Archived personal essays about software engineering, graphics, games, travel, and learning from Digital Freepen; feed entries end in 2022.
+    profile_photo: https://digitalfreepen.com/images/fav.png
+  digital_labor_working_group:
+    feed_url: https://digitallabor.commons.gc.cuny.edu/feed/
+    homepage_url: https://digitallabor.commons.gc.cuny.edu
+    display_name: Digital Labor Working Group
+    summary: Archived research, reading lists, and events about digital technology, labor, and cooperative economies from the CUNY Graduate Center working group; feed entries end in 2015.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdigitallabor.commons.gc.cuny.edu&size=128
+  digital_synopsis:
+    feed_url: https://digitalsynopsis.com/feed/
+    homepage_url: https://digitalsynopsis.com
+    display_name: Digital Synopsis
+    summary: Design and advertising inspiration, typography, creative tools, and practical resources for designers.
+    profile_photo: https://digitalsynopsis.com/wp-content/uploads/2019/11/cropped-digital-synopsis-favicon-180x180.jpg
+  digits_to_dollars:
+    feed_url: https://digitstodollars.com/feed/
+    homepage_url: https://digitstodollars.com
+    display_name: Digits to Dollars
+    summary: Analysis of semiconductors, custom silicon, wireless technology, and the business of deep tech; this feed's latest entries are from April 2025.
+    profile_photo: https://i0.wp.com/digitstodollars.com/wp-content/uploads/2023/05/cropped-Square-Logo.jpg?fit=180%2C180&ssl=1
+  discover_pods:
+    feed_url: https://discoverpods.com/feed/
+    homepage_url: https://discoverpods.com
+    display_name: Discover Pods
+    summary: Podcast recommendations, reviews, themed listening lists, and resources for podcast creators.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdiscoverpods.com&size=128
+  disruption_banking:
+    feed_url: https://www.disruptionbanking.com/feed/
+    homepage_url: https://www.disruptionbanking.com
+    display_name: Disruption Banking
+    summary: Reporting and analysis about global banking, capital markets, digital assets, fintech, and sustainability.
+    profile_photo: https://www.disruptionbanking.com/wp-content/uploads/2019/08/Logo1-300x300.png
+  distilgovhealth:
+    feed_url: https://distilgovhealth.com/feed/
+    homepage_url: https://distilgovhealth.com
+    display_name: DistilGovHealth
+    summary: Archived DistilNFO GovHealth coverage of healthcare technology, health policy, and public health; feed entries end in December 2020.
+    profile_photo: https://www.distilnfo.com/wp-content/themes/kaushik/images/favicon.png
+  divan_blog:
+    feed_url: https://divan.dev/index.xml
+    homepage_url: https://divan.dev
+    display_name: divan's blog
+    summary: Archived writing about Go, concurrency, databases, software design, and personal experiences from divan; feed entries end in 2022.
+    profile_photo: https://divan.dev/images/apple-touch-icon.png
+  the_diversity_blog:
+    feed_url: https://www.diversity.net.nz/feed/
+    homepage_url: https://www.diversity.net.nz
+    display_name: The Diversity Blog
+    summary: Ben Kepes's writing on business strategy, SaaS, cloud computing, technology, governance, and life in New Zealand.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.diversity.net.nz&size=128
+  divinations:
+    feed_url: https://every.to/divinations/feed
+    homepage_url: https://every.to/divinations
+    display_name: Divinations
+    summary: Archived business-strategy essays by Nathan Baschez on technology companies, competitive advantage, and product decisions, published by Every; feed entries end in July 2023.
+  djh:
+    feed_url: https://djharper.dev/index.xml
+    homepage_url: https://djharper.dev/
+    display_name: djh
+    summary: Personal writing by djh about software engineering, emulators, computers, self-hosting, and experiments with developer tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdjhworld.github.io&size=128
+  djnn:
+    feed_url: https://djnn.sh/index.xml
+    homepage_url: https://djnn.sh/posts
+    display_name: djnn@localhost
+    summary: Personal posts about offensive security, Linux, software engineering, red-team research, and CTF write-ups.
+  dkron_blog:
+    feed_url: https://dkron.io/blog/rss.xml
+    homepage_url: https://dkron.io/blog
+    display_name: Dkron Blog
+    summary: Release announcements and technical updates for Dkron, a distributed job scheduler.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdkron.io%2Fblog&size=128
+  new_york_dmv:
+    feed_url: https://dmv.ny.gov/rss.xml
+    homepage_url: https://dmv.ny.gov
+    display_name: New York DMV
+    summary: Website updates and guidance from the New York State Department of Motor Vehicles, including driver licensing, vehicles, and administrative procedures.
+    profile_photo: https://dmv.ny.gov/themes/custom/webny_core/storybook/dist/icons/apple-touch/apple-touch-icon-60x60.png
+  odni:
+    feed_url: https://www.odni.gov/newsroom/press-releases/feed/
+    homepage_url: https://www.odni.gov/newsroom/press-releases/
+    display_name: Office of the Director of National Intelligence
+    summary: Official press releases from the U.S. Office of the Director of National Intelligence.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.odni.gov&size=128
+  hatchet_blog:
+    feed_url: https://hatchet.run/rss.xml
+    homepage_url: https://hatchet.run/blog/
+    display_name: Hatchet Blog
+    summary: Engineering essays and product updates from Hatchet about durable workflows, background tasks, AI agents, and developer infrastructure.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdocs.hatchet.run%2Fv1&size=128
+  mongodb_blog:
+    feed_url: https://www.mongodb.com/company/blog/rss
+    homepage_url: https://www.mongodb.com/blog
+    display_name: MongoDB Blog
+    summary: Technical tutorials, product announcements, customer stories, and database and AI infrastructure articles from MongoDB; the verified feed currently ends in June 2026.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mongodb.com%2Fblog&size=128
+  dodocase_ipad_cases:
+    feed_url: https://dodocase.com/collections/ipad-cases-sleeves.atom
+    homepage_url: https://dodocase.com/collections/ipad-cases-sleeves
+    display_name: DODOcase iPad Cases
+    summary: Product listings for DODOcase iPad cases, sleeves, and related accessories; this Atom feed is a shop collection, not a news blog.
+    profile_photo: https://dodocase.com/cdn/shop/files/DODOcase_logo_dodo.png?crop=center&height=180&v=1614329084&width=180
+  washington_state_department_of_health:
+    feed_url: https://doh.wa.gov/rss.xml
+    homepage_url: https://doh.wa.gov
+    display_name: Washington State Department of Health
+    summary: Website updates, public-health guidance, contracts, and other resources from the Washington State Department of Health.
+    profile_photo: https://doh.wa.gov/sites/default/files/DOH-logo_favicon_16x16.png
+  domain_incite:
+    feed_url: https://domainincite.com/feed
+    homepage_url: https://domainincite.com
+    display_name: Domain Incite
+    summary: Domain-name industry reporting and analysis covering registries, registrars, ICANN, top-level domains, and policy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdomainincite.com&size=128
+  dominion_strategy:
+    feed_url: https://dominionstrategy.com/feed/
+    homepage_url: https://dominionstrategy.com
+    display_name: Dominion Strategy
+    summary: Archived strategy articles, card analysis, and tournament-player interviews about Dominion, the deck-building board game; feed entries end in November 2022.
+    profile_photo: https://secure.gravatar.com/blavatar/bcb1f009baf9810b7ae2942c4711605be9e14106e2571948ec51efc9af6a5ea7?s=114
+  domino:
+    feed_url: https://www.domino.com/feed/
+    homepage_url: https://www.domino.com
+    display_name: Domino
+    summary: Interior design, home tours, renovation ideas, shopping guides, and lifestyle articles from Domino.
+    profile_photo: https://www.domino.com/wp-content/uploads/2025/05/domino-fav.png?quality=85&w=180
+  don_macaskill_blog:
+    feed_url: https://don.blogs.smugmug.com/feed/
+    homepage_url: https://don.blogs.smugmug.com
+    display_name: SmugMug's Don MacAskill
+    summary: Archived posts by SmugMug cofounder Don MacAskill about SmugMug, cloud infrastructure, photography, and internet policy; feed entries end in February 2012.
+    profile_photo: https://secure.gravatar.com/blavatar/e699db3017897367a21bfae31dba98780a9b04109510acbc8696678b2c18d1c2?s=114
+  douchey_account_guy:
+    feed_url: https://doucheyaccountguy.tumblr.com/rss
+    homepage_url: https://doucheyaccountguy.tumblr.com
+    display_name: Douchey Account Guy
+    summary: Archived advertising-agency workplace humor and submitted quotes about account management; feed entries end in September 2016.
+    profile_photo: https://api.tumblr.com/v2/blog/doucheyaccountguy.tumblr.com/avatar/128
+  downtown_at_dawn:
+    feed_url: http://www.downtownatdawn.com/feeds/posts/default
+    homepage_url: http://www.downtownatdawn.com
+    display_name: Downtown at Dawn
+    summary: Archived photography and visual observations of New York, Brooklyn, and city life from Downtown at Dawn; feed entries end in October 2016.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.downtownatdawn.com&size=128
+  deployhq_blog:
+    feed_url: https://www.deployhq.com/blog/feed.xml
+    homepage_url: https://www.deployhq.com/blog
+    display_name: DeployHQ Blog
+    summary: Product updates and tutorials about Git-based deployments, hosting, build pipelines, and server automation from DeployHQ, the successor to DeployBot.
+    profile_photo: https://www.deployhq.com/assets/favicon-357ebe39b58f28869358da83948e76e7cadfb0791c97af34abfe346f5e3ef634.png
+  disability_rights_advocates:
+    feed_url: https://dralegal.org/feed/
+    homepage_url: https://dralegal.org
+    display_name: Disability Rights Advocates
+    summary: Disability-rights litigation updates, announcements, surveys, and related media coverage selected by Disability Rights Advocates.
+    profile_photo: https://dralegal.org/wp-content/uploads/2022/03/cropped-icon-180x180.png
+  julias_drawings:
+    feed_url: https://drawings.jvns.ca/index.xml
+    homepage_url: https://drawings.jvns.ca
+    display_name: julia's drawings
+    summary: Archived illustrated explanations of Linux, networking, programming, and computer systems by Julia Evans; feed entries end in April 2018.
+  dreamhost_blog:
+    feed_url: https://www.dreamhost.com/blog/feed/
+    homepage_url: https://www.dreamhost.com/blog
+    display_name: DreamHost Blog
+    summary: Web hosting, WordPress, website management, and digital marketing tutorials from DreamHost.
+    profile_photo: https://www.dreamhost.com/blog/wp-content/themes/blog2018/touch.png
+  rtr_dress_code:
+    feed_url: https://dresscode.renttherunway.com/blog?format=rss
+    homepage_url: https://dresscode.renttherunway.com
+    display_name: RTR Dress Code
+    summary: Archived engineering, design, analytics, and product-team posts from Rent the Runway; feed entries end in August 2022.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdresscode.renttherunway.com&size=128
+  drifter_usa:
+    feed_url: https://drifterbag.com/blogs/news.atom
+    homepage_url: https://drifterbag.com/blogs/news
+    display_name: Drifter USA
+    summary: Drifter USA store notices, bag releases, and product stories; the latest feed entry announces a temporary store pause in December 2025.
+    profile_photo: https://drifterbag.com/cdn/shop/files/favicon_drifter_1c342a33-8cd3-4acc-adf0-068c25657fe3.png?crop=center&height=32&v=1613677902&width=32
+  drinkhacker:
+    feed_url: https://www.drinkhacker.com/feed/
+    homepage_url: https://www.drinkhacker.com
+    display_name: Drinkhacker
+    summary: Reviews of spirits, wine, beer, and other drinks, with cocktail recipes and drinking-industry coverage.
+    profile_photo: https://www.drinkhacker.com/wp-content/uploads/2019/01/cropped-glass-only-square-180x180.png
+  drink_tea_and_travel:
+    feed_url: https://drinkteatravel.com/feed/
+    homepage_url: https://drinkteatravel.com
+    display_name: Drink Tea & Travel
+    summary: Travel guides, itineraries, and practical tips with a focus on sustainable travel.
+    profile_photo: https://drinkteatravel.com/wp-content/uploads/favicon.png
+  drive_accord:
+    feed_url: https://www.driveaccord.net/forums/-/index.rss
+    homepage_url: https://www.driveaccord.net
+    display_name: Drive Accord
+    summary: Latest community forum discussions about Honda Accord maintenance, repairs, ownership, modifications, and reviews.
+    profile_photo: https://images.platforum.cloud/logos/driveaccord_net_profile.png?1&auto=webp&dpr=2&fit=cover&format=png&height=180&optimize=high&width=180
+  drivetribe:
+    feed_url: https://drivetribe.com/feed/
+    homepage_url: https://drivetribe.com
+    display_name: DriveTribe
+    summary: Company news, partnerships, and announcements from DriveTribe, the automotive media and production company.
+    profile_photo: https://drivetribe.com/wp-content/uploads/2023/08/cropped-fav2-180x180.png
+  vadim_drobinin:
+    feed_url: https://drobinin.com/feed.xml
+    homepage_url: https://drobinin.com
+    display_name: Vadim Drobinin
+    summary: Personal essays and technical projects about iOS, machine learning, software engineering, and life by Vadim Drobinin.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdrobinin.com&size=128
+  dronedj:
+    feed_url: https://dronedj.com/feed/
+    homepage_url: https://dronedj.com
+    display_name: DroneDJ
+    summary: Drone-industry reporting, reviews, public-safety coverage, and deals, including DJI, Skydio, and other manufacturers.
+    profile_photo: https://dronedj.com/wp-content/uploads/sites/2/2017/09/dronedj-icon-hires.png?w=180
+  dronexl:
+    feed_url: https://dronexl.co/feed.xml
+    homepage_url: https://dronexl.co
+    display_name: DroneXL
+    summary: Drone news, reviews, regulation, public-safety and delivery coverage, industry analysis, and deals from DroneXL.
+    profile_photo: https://dronexl.co/assets/apple-touch-icon.png
+  dropmark:
+    feed_url: https://www.dropmark.com/feed.xml
+    homepage_url: https://www.dropmark.com
+    display_name: Dropmark
+    summary: Product announcements, creative workflows, and visual-curation ideas from Dropmark, a bookmarking and collaboration service.
+    profile_photo: https://www.dropmark.com/assets/images/apple-touch-icon.png
+  drtechniko:
+    feed_url: https://drtechniko.wordpress.com/feed/
+    homepage_url: https://drtechniko.wordpress.com
+    display_name: DrTechniko
+    summary: Archived activities, stories, and games teaching children computer science and technology concepts; feed entries end in April 2016.
+    profile_photo: https://secure.gravatar.com/blavatar/bafe2e2303694be0430e3bc032ffd852b5645d18d57e723cc05423742f9f425b?s=114
+  digital_society_and_policy:
+    feed_url: https://proftomcrick.com/feed/
+    homepage_url: https://proftomcrick.com
+    display_name: Digital Society & Policy
+    summary: Tom Crick's writing on technology, public policy, computing education, AI governance, and digital society.
+  drunk_j_crew:
+    feed_url: https://drunkjcrew.tumblr.com/rss
+    homepage_url: https://drunkjcrew.tumblr.com
+    display_name: Drunk J. Crew
+    summary: Archived satirical captions for J. Crew fashion imagery; feed entries end in January 2021.
+    profile_photo: https://api.tumblr.com/v2/blog/drunkjcrew.tumblr.com/avatar/128
+  daryl_sng_archive:
+    feed_url: http://www.dsng.net/feeds/posts/default
+    homepage_url: http://www.dsng.net
+    display_name: Daryl Sng Archive
+    summary: Archived personal writing about music, movies, baseball, language, and life in Singapore and Washington, DC; the final 2021 post points to darylsng.com.
+  daniel_sokolovskiys_blog:
+    feed_url: https://dsokolovskiy.com/blog/rss/
+    homepage_url: https://dsokolovskiy.com/blog
+    display_name: Daniel Sokolovskiy's Blog
+    summary: Writing about DJing, music production, marketing, productivity, and personal growth; the English feed's latest entries are from August 2024.
+    profile_photo: https://dsokolovskiy.com/blog/pictures/userpic/userpic-square@2x.jpg?1732048793
   scott_berkun:
     feed_url: https://scottberkun.com/feed/
     homepage_url: https://scottberkun.com
