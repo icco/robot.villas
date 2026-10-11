@@ -619,6 +619,256 @@ bots:
     display_name: The Race
     summary: Independent Formula 1, MotoGP, Formula E, and motorsport news.
     profile_photo: https://www.the-race.com/favicon.png
+  booktwo:
+    feed_url: http://booktwo.org/feed/
+    homepage_url: http://booktwo.org
+    display_name: booktwo.org
+    summary: The work and writing of James Bridle
+  boorch_itch:
+    feed_url: https://boorch.itch.io/dronage-terminal/devlog.rss
+    homepage_url: https://boorch.itch.io/dronage-terminal
+    display_name: Dronage Terminal Devlog - itch.io
+    summary: A terminal based drone workstation
+  borud_no:
+    feed_url: https://borud.no/index.xml
+    homepage_url: http://borud.no
+    display_name: Bjørn Borud
+    summary: Recent content on Bjørn Borud
+  bounty_github:
+    feed_url: https://bounty.github.com/feed.atom
+    homepage_url: https://bounty.github.com
+    display_name: GitHub security bug bounty program
+    summary: Updates from GitHub security bug bounty program.
+  box_matto_nl:
+    feed_url: https://box.matto.nl/index.xml
+    homepage_url: http://box.matto.nl
+    display_name: Open source software and nice hardware
+    summary: Open source software and nice hardware
+  bramstein:
+    feed_url: https://www.bramstein.com/rss.xml
+    homepage_url: https://www.bramstein.com
+    display_name: bramstein.com news
+    summary: Updates from the personal website of Bram Stein, a web developer.
+  brancz:
+    feed_url: https://www.brancz.com/index.xml
+    homepage_url: https://brancz.com
+    display_name: Frederic Branczyk
+    summary: Recent content on Frederic Branczyk
+  bravotv:
+    feed_url: https://www.bravotv.com/rss.xml
+    homepage_url: https://www.bravotv.com
+    display_name: Bravo TV Official Site
+    summary: Updates from Bravo TV Official Site.
+  breakingdefense:
+    feed_url: https://breakingdefense.com/feed/
+    homepage_url: https://breakingdefense.com
+    display_name: Breaking Defense
+    summary: Defense technology, policy and national security news
+  breakingmuscle:
+    feed_url: https://breakingmuscle.com/feed/
+    homepage_url: https://breakingmuscle.com
+    display_name: Breaking Muscle
+    summary: Breaking Muscle
+  breakingnews_ie:
+    feed_url: https://www.breakingnews.ie/feed/all.rss
+    homepage_url: https://www.breakingnews.ie/all
+    display_name: 'All: BreakingNews'
+    summary: Ireland's premier breaking news website providing up to the minute news and sports reports. With e-mail news releases following breaking stories throughout the day.
+  mapsplatform_google:
+    feed_url: https://mapsplatform.google.com/resources/blog/rss.xml
+    homepage_url: https://mapsplatform.google.com/resources/blog
+    display_name: Google Maps Platform Blog
+    summary: Google Maps Platform Blog
+  breitbart:
+    feed_url: https://feeds.feedburner.com/breitbart
+    homepage_url: https://www.breitbart.com
+    display_name: Breitbart News
+    summary: HomePage
+  brendanhay_nz:
+    feed_url: https://www.brendanhay.nz/atom.xml
+    homepage_url: https://www.brendanhay.nz
+    display_name: Brendan Hay
+    summary: Updates from Brendan Hay.
+  bretthard_in:
+    feed_url: http://bretthard.in/atom.xml
+    homepage_url: http://bretthard.in
+    display_name: Constantly Learning - Brett Hardin
+    summary: Updates from Constantly Learning - Brett Hardin.
+  brewdog:
+    feed_url: https://brewdog.com/blogs/news.atom
+    homepage_url: https://brewdog.com/blogs/news
+    display_name: BrewDog - News
+    summary: Updates from BrewDog - News.
+  brewpi:
+    feed_url: https://www.brewpi.com/feed/
+    homepage_url: https://www.brewpi.com
+    display_name: BrewPi
+    summary: Brewing Automation
+  brianchang_info:
+    feed_url: http://brianchang.info/feed.xml
+    homepage_url: http://brianchang.info
+    display_name: Brain Food
+    summary: Enrich your brain with the musings of Brian Chang.
+  brianstempin:
+    feed_url: https://brianstempin.com/feeds/all.atom.xml
+    homepage_url: https://brianstempin.com
+    display_name: BMS's Blog
+    summary: Updates from BMS's Blog.
+  brianstorti:
+    feed_url: https://www.brianstorti.com/feed/atom.xml
+    homepage_url: https://www.brianstorti.com
+    display_name: Brian Storti
+    summary: Updates from Brian Storti.
+  briarproject:
+    feed_url: https://briarproject.org/news/index.xml
+    homepage_url: https://briarproject.org
+    display_name: News - Briar
+    summary: Updates from News - Briar.
+  brickunderground:
+    feed_url: https://www.brickunderground.com/rss.xml
+    homepage_url: https://www.brickunderground.com
+    display_name: Brick Underground
+    summary: Updates from Brick Underground.
+  bricoleur:
+    feed_url: http://feeds.feedburner.com/bricoleur
+    homepage_url: http://www.bricoleur.org
+    display_name: bricoleur
+    summary: Updates from bricoleur.
+  briefs_co:
+    feed_url: https://www.briefs.co/feed/
+    homepage_url: https://www.briefs.co
+    display_name: Briefs Finance
+    summary: News You Can Finally Use!
+  britishculturearchive:
+    feed_url: https://britishculturearchive.co.uk/feed/
+    homepage_url: https://britishculturearchive.co.uk
+    display_name: British Culture Archive
+    summary: British Documentary Photography
+  brm:
+    feed_url: https://brm.io/feed.xml
+    homepage_url: https://brm.io
+    display_name: brm.io
+    summary: code by @liabru
+  broadwayworld:
+    feed_url: https://www.broadwayworld.com/feed_all_bway.php
+    homepage_url: https://www.broadwayworld.com
+    display_name: BroadwayWorld.com Featured Content
+    summary: Latest BroadwayWorld.com News, Reviews, and More...
+  brodzinski:
+    feed_url: https://brodzinski.com/feed
+    homepage_url: https://brodzinski.com
+    display_name: Pawel Brodzinski on Leadership in Technology
+    summary: Whatever it takes to lead a team, build a product, and run a business
+  brokelyn:
+    feed_url: https://brokelyn.com/feed/
+    homepage_url: https://brokelyn.com
+    display_name: Brokelyn
+    summary: Living Big on Small Change in Brooklyn
+  brooklyn_tailors:
+    feed_url: https://www.brooklyn-tailors.com/blogs/blog.atom
+    homepage_url: https://www.brooklyn-tailors.com/blogs/blog
+    display_name: Brooklyn Tailors - BROOKLYN TAILORS' JOURNAL
+    summary: Updates from Brooklyn Tailors - BROOKLYN TAILORS' JOURNAL.
+  brooklynhacker:
+    feed_url: https://brooklynhacker.com/rss
+    homepage_url: https://brooklynhacker.com
+    display_name: Brooklyn Hacker
+    summary: 'Rob Spectre - just your average self-produced superhero var _gaq = _gaq || []; _gaq.push([’_setAccount’, ‘UA-1608534-9’]); _gaq.push([’_trackPageview’]); (function() { var ga = document.createElement(''script’); ga.type = ''text/javascript’; ga.async = true; ga.src = (''https:’ == document.location.protocol ? ''https://ssl’ : ''http://www’) + ’.google-analytics.com/ga.js’; var s = document.getElementsByTagName(''script’)[0]; s.parentNode.insertBefore(ga, s); })();'
+  brooklynheightsblog:
+    feed_url: http://feeds.feedburner.com/brooklynheightsblog/tuwF
+    homepage_url: http://brooklynheightsblog.com
+    display_name: Brooklyn Heights Blog
+    summary: Dispatches from America's first suburb
+  bryankonietzko_tumblr:
+    feed_url: https://bryankonietzko.tumblr.com/rss
+    homepage_url: https://bryankonietzko.tumblr.com
+    display_name: bryan konietzko
+    summary: 'Creator of Threadworlds, an upcoming 5-volume graphic novel series with First Second Books; co-creator of The Legend of Korra & Avatar: The Last Airbender; photographer; musician/recording artist Ginormous'
+  bsumm:
+    feed_url: https://bsumm.net/feed.xml
+    homepage_url: https://bsumm.net
+    display_name: Bryan Summersett
+    summary: Bryan Summersett's home page.
+  bufr_tumblr:
+    feed_url: https://bufr.tumblr.com/rss
+    homepage_url: https://bufr.tumblr.com
+    display_name: Bufr Overflow
+    summary: Buford Taylor CTO at Rentify, former engineer at Eventbrite, entrepreneur on training wheels, and funny looking.
+  bugs_launchpad:
+    feed_url: https://feeds.launchpad.net/bugs/402767/bug.atom
+    homepage_url: https://bugs.launchpad.net/bugs/402767
+    display_name: Bug 402767
+    summary: Updates from Bug 402767.
+  devops_nz:
+    feed_url: https://devops.nz/feed.xml
+    homepage_url: https://devops.nz
+    display_name: DevOps New Zealand
+    summary: Updates from DevOps New Zealand.
+  buildkite:
+    feed_url: https://buildkite.com/blog.atom
+    homepage_url: https://buildkite.com/resources/blog
+    display_name: Buildkite Blog
+    summary: Updates from Buildkite Blog.
+  building:
+    feed_url: https://www.building.co.uk/220.rss
+    homepage_url: https://www.building.co.uk
+    display_name: Building - Latest News
+    summary: https://www.building.co.uk
+  buildingresources:
+    feed_url: https://buildingresources.org/feed/
+    homepage_url: https://buildingresources.org
+    display_name: Building Resources of San Francisco
+    summary: Updates from Building Resources of San Francisco.
+  buildnewgames:
+    feed_url: http://buildnewgames.com/atom.xml
+    homepage_url: http://buildnewgames.com
+    display_name: Build New Games
+    summary: Updates from Build New Games.
+  builtbybalance:
+    feed_url: https://builtbybalance.com/feed/
+    homepage_url: https://builtbybalance.com
+    display_name: Window Replacement – Builtbybalance
+    summary: Updates from Window Replacement – Builtbybalance.
+  represent_us:
+    feed_url: https://represent.us/feed/
+    homepage_url: https://represent.us
+    display_name: RepresentUs
+    summary: End corruption. Defend the Republic.
+  bullypulpitgames:
+    feed_url: https://bullypulpitgames.com/blogs/news.atom
+    homepage_url: https://bullypulpitgames.com/blogs/news
+    display_name: Bully Pulpit Games - News
+    summary: Updates from Bully Pulpit Games - News.
+  burkeholland_github:
+    feed_url: https://burkeholland.github.io/feed.xml
+    homepage_url: https://burkeholland.github.io
+    display_name: Burke Holland
+    summary: Updates from Burke Holland.
+  burritojustice:
+    feed_url: https://burritojustice.com/feed/
+    homepage_url: https://burritojustice.com
+    display_name: Burrito Justice
+    summary: You can pry my burrito out of my cold, dead hand.
+  businesskorea_co_kr:
+    feed_url: https://www.businesskorea.co.kr/rss/gns_allArticle.xml
+    homepage_url: https://www.businesskorea.co.kr
+    display_name: Businesskorea - ALL ARTICLES
+    summary: Businesskorea
+  bust:
+    feed_url: https://bust.com/feed/
+    homepage_url: https://bust.com
+    display_name: BUST
+    summary: Feminist magazine for women with something to get off their chests
+  bydanielvictor:
+    feed_url: http://feeds.feedburner.com/ByDanielVictor
+    homepage_url: https://bydanielvictor.com
+    display_name: By Daniel Victor
+    summary: Updates from By Daniel Victor.
+  bylinesupplement:
+    feed_url: https://www.bylinesupplement.com/feed
+    homepage_url: https://www.bylinesupplement.com
+    display_name: Byline Times
+    summary: 'The UK''s only reader-funded, independent newspaper that truly sits outside of the established system. Subscribe for exclusive content in the Byline Times monthly print edition: subscribe.bylinetimes.com Visit our free daily news site: bylinetimes.com'
   jamietanna:
     feed_url: https://www.jvt.me/kind/articles/feed.xml
     homepage_url: https://www.jvt.me
