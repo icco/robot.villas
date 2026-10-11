@@ -16358,6 +16358,277 @@ bots:
     display_name: Vercel
     summary: Frontend infrastructure, Next.js, edge computing, and web performance.
     profile_photo: https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com/front/favicon/vercel/android-chrome-512x512.png
+  authentise:
+    feed_url: https://www.authentise.com/blog-feed.xml
+    homepage_url: https://www.authentise.com/blog
+    display_name: Authentise
+    summary: Authentise's company news, developer posts, and articles on additive manufacturing, digital workflows, and manufacturing automation.
+    profile_photo: https://static.wixstatic.com/media/11c680_43a4bc5ef8b74903a8aaf5538a31b645%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/11c680_43a4bc5ef8b74903a8aaf5538a31b645%7Emv2.png
+  layerbag:
+    feed_url: https://layerbag.com/rss.xml
+    homepage_url: https://layerbag.com
+    display_name: Layerbag
+    summary: 'Layerbag''s archived design inspiration, mockups, typography, tutorials, and occasional business and lifestyle articles. Latest feed post: March 2023.'
+  lazyadmin:
+    feed_url: https://lazyadmin.nl/feed/
+    homepage_url: https://lazyadmin.nl
+    display_name: LazyAdmin
+    summary: LazyAdmin's practical guides to Microsoft 365, PowerShell, home networking, UniFi, and smart-home technology.
+    profile_photo: https://lazyadmin.nl/wp-content/uploads/2024/03/favicon-black-white-lazyadmin-300x300.png
+  lbry_news:
+    feed_url: https://lbry.com/news/rss.xml
+    homepage_url: https://lbry.com/news
+    display_name: LBRY News
+    summary: 'Archived LBRY project news, development updates, and community announcements. Latest feed post: February 2020.'
+    profile_photo: https://lbry.com/img/fav/apple-touch-icon-60x60.png
+  lcamtufs_old_blog:
+    feed_url: https://lcamtuf.blogspot.com/feeds/posts/default
+    homepage_url: https://lcamtuf.blogspot.com
+    display_name: lcamtuf's old blog
+    summary: 'lcamtuf''s retired blog on security research, fuzzing, electronics, and practical projects. Latest Blogger post: October 2022; newer writing is at blog.coredump.cx.'
+  lcamtufs_thing:
+    feed_url: https://blog.coredump.cx/feed
+    homepage_url: https://blog.coredump.cx
+    display_name: lcamtuf’s thing
+    summary: lcamtuf's essays on geek culture, algorithms, security, electronics, practical projects, and life.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!1klH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Ffa6e9d40-43ef-4acc-8201-f2bf3b5405d3%2Fapple-touch-icon-57x57.png
+  laurent_dirers_blog:
+    feed_url: https://ldirer.com/rss.xml
+    homepage_url: https://ldirer.com/blog
+    display_name: Laurent Direr's blog
+    summary: Laurent Direr's programming articles and notes on Python, software tooling, and AI-assisted coding workflows.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fldirer.com%2Fblog&size=128
+  leaddev:
+    feed_url: https://leaddev.com/feed
+    homepage_url: https://leaddev.com
+    display_name: LeadDev
+    summary: LeadDev's articles on engineering leadership, team management, software delivery, developer productivity, and AI.
+    profile_photo: https://leaddev.com/wp-content/themes/pbc/assets/apple-touch-icon.png
+  leafo_net:
+    feed_url: https://leafo.net/feed.xml
+    homepage_url: https://leafo.net
+    display_name: leafo.net
+    summary: 'Leaf''s programming posts and guides on Lua, MoonScript, PostgreSQL, NGINX, web development, and independent game projects. Latest feed guide: April 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fleafo.net&size=128
+  and_now_its_all_this:
+    feed_url: https://leancrew.com/all-this/feed/
+    homepage_url: https://leancrew.com/all-this
+    display_name: And now it’s all this
+    summary: Dr. Drang's writing on programming, engineering, data analysis, Apple tools, and everyday technology.
+    profile_photo: https://leancrew.com/all-this/resources/snowman-200.png
+  leandro_moreira:
+    feed_url: https://leandromoreira.com/feed/
+    homepage_url: https://leandromoreira.com
+    display_name: Leandro Moreira
+    summary: 'Leandro Moreira''s archived software engineering articles on networking, video streaming, infrastructure, and development. Latest feed post: December 2021.'
+    profile_photo: https://leandromoreira.com/wp-content/uploads/2020/04/cropped-screen-shot-2020-04-28-at-12.33.18-pm.png?w=180
+  lean_essays:
+    feed_url: https://www.leanessays.com/feeds/posts/default
+    homepage_url: https://www.leanessays.com
+    display_name: Lean Essays
+    summary: 'Lean Essays'' archived writing on lean thinking, software development, organizational design, and managing work. Latest feed post: June 2022.'
+  learn_addict_academy:
+    feed_url: https://learnaddict.academy/posts/index.xml
+    homepage_url: https://learnaddict.academy
+    display_name: Learn Addict Academy
+    summary: 'Learn Addict Academy''s archived practical posts on Raspberry Pi, IoT, home labs, Linux, programming, and IT learning. Latest post feed entry: February 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flearnaddict.academy%2Findex.html&size=128
+  least_authority:
+    feed_url: https://leastauthority.com/feed/
+    homepage_url: https://leastauthority.com
+    display_name: Least Authority
+    summary: Least Authority's security audit reports, cryptography articles, privacy technology updates, and company news.
+    profile_photo: https://leastauthority.com/wp-content/uploads/2023/04/favicon-32x32-1.png
+  evan_lecklider:
+    feed_url: https://lecklider.com/rss/
+    homepage_url: https://lecklider.com
+    display_name: Evan Lecklider
+    summary: 'Evan Lecklider''s archived software development articles on JavaScript, Ruby, web security, and tooling. Latest feed post: December 2019.'
+  lee_dohm:
+    feed_url: https://www.lee-dohm.com/feed.xml
+    homepage_url: https://www.lee-dohm.com
+    display_name: Lee Dohm
+    summary: 'Lee Dohm''s archived writing on software, open source, inclusion, games, work, and personal life. Latest feed post: July 2022.'
+    profile_photo: https://www.lee-dohm.com/favicon-icon.png
+  leg100_github_io:
+    feed_url: https://leg100.github.io/index.xml
+    homepage_url: https://leg100.github.io
+    display_name: leg100.github.io
+    summary: 'Louis Garman''s programming blog, currently featuring tips for building Go terminal interfaces with Bubble Tea. Latest feed post: August 2024.'
+    profile_photo: https://github.com/leg100.png?size=200
+  legal_layer:
+    feed_url: https://legallayer.substack.com/feed
+    homepage_url: https://legallayer.substack.com
+    display_name: Legal Layer
+    summary: Legal Layer's analysis of AI law, copyright, liability, privacy, and practical legal decisions for technology builders and founders.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!nJ21!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc5154d99-0e1f-4220-a99e-d06d43db6f2c%2Fapple-touch-icon-57x57.png
+  legal_support_network:
+    feed_url: https://www.legalsupportnetwork.co.uk/feed/
+    homepage_url: https://www.legalsupportnetwork.co.uk
+    display_name: Legal Support Network
+    summary: Legal Support Network's supplier news, case studies, and resources on legal technology, business operations, finance, and practice management.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.legalsupportnetwork.co.uk&size=128
+  lemiffe:
+    feed_url: https://lemiffe.com/atom.xml
+    homepage_url: https://lemiffe.com
+    display_name: LEMIFFE
+    summary: Lemiffe's music releases, software tutorials, creative projects, and personal stories.
+    profile_photo: https://lemiffe.com/public/apple-touch-icon.png
+  lemonsweetie:
+    feed_url: https://lemonsweetie.tumblr.com/rss
+    homepage_url: https://lemonsweetie.tumblr.com
+    display_name: LemonSweetie (discontinued archive)
+    summary: 'LemonSweetie''s discontinued Tumblr archive of GIFs, doodles, reblogs, and posts about abuse and support resources. Latest feed post: April 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flemonsweetie.tumblr.com&size=128
+  lensrentals_blog:
+    feed_url: https://www.lensrentals.com/blog/feed.xml
+    homepage_url: https://www.lensrentals.com/blog
+    display_name: Lensrentals Blog
+    summary: The Lensrentals blog's articles on photography, video production, camera and lens technology, equipment testing, and rental stories.
+    profile_photo: https://www.lensrentals.com/apple-touch-icon.png?v=2bwoG3P3el
+  lesswrong:
+    feed_url: https://www.lesswrong.com/feed.xml
+    homepage_url: https://www.lesswrong.com
+    display_name: LessWrong
+    summary: LessWrong's community writing on rationality, decision-making, AI, science, philosophy, and related ideas.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.lesswrong.com&size=128
+  levelsio_pieter_levels:
+    feed_url: https://levels.io/rss
+    homepage_url: https://levels.io
+    display_name: '@levelsio (Pieter Levels)'
+    summary: Pieter Levels's posts on bootstrapped startups, software, AI, travel, and personal life, including posts republished from X.
+    profile_photo: https://levels.io/favicon.jpg?v=1791702300
+  levels_health:
+    feed_url: https://www.levels.com/feed/
+    homepage_url: https://www.levels.com
+    display_name: Levels
+    summary: 'Levels'' archived metabolic-health blog posts on blood sugar, nutrition, lifestyle, and health research. Latest feed post: December 2024.'
+    profile_photo: https://www.levels.com/wp-content/uploads/2023/03/cropped-cropped-favicon-200x200-1-32x32.png
+  the_leveraged_sell_out:
+    feed_url: https://feeds.feedburner.com/leveragedsellout/lCfw
+    homepage_url: https://www.leveragedsellout.com
+    display_name: The Leveraged Sell-Out
+    summary: 'The Leveraged Sell-Out''s archived satire about Wall Street, banking, business, and professional culture. Latest feed post: November 2017.'
+  lex_on_tech:
+    feed_url: https://lexontech.org/feed
+    homepage_url: https://lexontech.org
+    display_name: Lex on Tech
+    summary: Lex Friedman's technology writing and curated links on Apple, indie apps, software, and the internet.
+    profile_photo: https://lexontech.org/img/apple-touch-icon.png?1787762593
+  larry_land:
+    feed_url: https://lg.io/feed.xml
+    homepage_url: https://lg.io
+    display_name: Larry Land
+    summary: 'Larry Gadea''s archived engineering articles on cloud infrastructure, storage, security, and technology projects. Latest feed post: October 2016.'
+    profile_photo: https://github.com/lg.png?size=200
+  liberty_street_economics:
+    feed_url: https://libertystreeteconomics.newyorkfed.org/feed/
+    homepage_url: https://libertystreeteconomics.newyorkfed.org
+    display_name: Liberty Street Economics
+    summary: The Federal Reserve Bank of New York's research-based analysis of economics, monetary policy, financial markets, and the regional economy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flibertystreeteconomics.newyorkfed.org&size=128
+  congressman_ted_lieu:
+    feed_url: https://lieu.house.gov/rss.xml
+    homepage_url: https://lieu.house.gov
+    display_name: Congressman Ted Lieu
+    summary: Opinion pieces and selected media entries from Congressman Ted Lieu's official website, representing California's 36th District.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Flieu.house.gov&size=128
+  life_times:
+    feed_url: https://lifeandtimes.com/feed
+    homepage_url: https://lifeandtimes.com
+    display_name: Life+Times
+    summary: 'Life+Times'' archived coverage of art, sports, music, fashion, and culture, curated by JAY Z. Latest feed post: September 2015.'
+    profile_photo: https://lifeandtimes.com/wp-content/themes/lifeandtimes/images/apple-touch-icon-precomposed.png
+  life_beyond_fife:
+    feed_url: https://lifebeyondfife.com/rss.xml
+    homepage_url: https://lifebeyondfife.com
+    display_name: Life Beyond Fife
+    summary: Life Beyond Fife's essays on software engineering, engineering management, technology projects, and personal life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flifebeyondfife.com&size=128
+  lifehacker_australia:
+    feed_url: https://au.lifehacker.com/feed.xml
+    homepage_url: https://au.lifehacker.com
+    display_name: Lifehacker Australia
+    summary: Lifehacker Australia's tips and articles on technology, productivity, lifestyle, entertainment, and daily puzzles.
+    profile_photo: https://lifehacker.com/images/apple-touch-icon.png
+  life_of_a_stranger_who_stole_my_phone:
+    feed_url: https://lifeofastrangerwhostolemyphone.tumblr.com/rss
+    homepage_url: https://lifeofastrangerwhostolemyphone.tumblr.com
+    display_name: 'life of a stranger who stole my phone:'
+    summary: 'Archived Tumblr photo diary about a stolen phone whose camera uploads continued, with later updates about the project. Latest feed post: October 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flifeofastrangerwhostolemyphone.tumblr.com&size=128
+  sports_illustrated_lifestyle:
+    feed_url: https://lifestyle.si.com/feed
+    homepage_url: https://lifestyle.si.com
+    display_name: Sports Illustrated Lifestyle
+    summary: Sports Illustrated Lifestyle's coverage of celebrities, fashion, beauty, wellness, and athletes' lives beyond sports.
+    profile_photo: https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_1:1,f_auto,q_auto,g_auto/shape/cover/sport/SI-74c21606399974ed255fc6272bfcfcab.ico
+  light_stalking:
+    feed_url: https://www.lightstalking.com/feed/
+    homepage_url: https://www.lightstalking.com
+    display_name: Light Stalking
+    summary: Light Stalking's photography tutorials, image-making advice, community competitions, and photography news.
+    profile_photo: https://www.lightstalking.com/wp-content/uploads/cropped-Favicon1-180x180.jpg
+  haoyis_programming_blog:
+    feed_url: https://www.lihaoyi.com/feed.xml
+    homepage_url: https://www.lihaoyi.com
+    display_name: Haoyi's Programming Blog
+    summary: Haoyi's programming articles on Scala, software tooling, performance, systems design, and engineering.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.lihaoyi.com&size=128
+  the_harvard_library_innovation_lab:
+    feed_url: https://lil.law.harvard.edu/blog/feed/index.xml
+    homepage_url: https://lil.law.harvard.edu/blog
+    display_name: The Harvard Library Innovation Lab
+    summary: The Harvard Library Innovation Lab's posts on libraries, public data, digital preservation, open knowledge, and technology projects.
+    profile_photo: https://lil.law.harvard.edu/assets/images/apple-touch-favicon.png
+  alex_limi:
+    feed_url: https://limi.net/feed.xml
+    homepage_url: https://limi.net
+    display_name: Alex Limi
+    summary: 'Alex Limi''s archived product-design and user-experience articles on Firefox, browsers, and Plone. Latest feed post: October 2013.'
+    profile_photo: https://limi.net/images/logo.png
+  linbug:
+    feed_url: https://linbug.github.io/atom.xml
+    homepage_url: https://linbug.github.io
+    display_name: Linbug
+    summary: 'Linbug''s archived data-science and programming articles, learning notes, and personal reflections. Latest feed post: October 2017.'
+    profile_photo: https://github.com/linbug.png?size=200
+  line25_com:
+    feed_url: https://line25.com/feed/
+    homepage_url: https://line25.com
+    display_name: Line25.com
+    summary: Line25's web and graphic design articles, tutorials, inspiration, comparisons, and design resources.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fline25.com&size=128
+  linuxczar:
+    feed_url: https://linuxczar.net/index.xml
+    homepage_url: https://linuxczar.net
+    display_name: LinuxCzar
+    summary: Jack Neely's LinuxCzar articles on software engineering, Linux, SRE, monitoring, observability, and open-source projects.
+    profile_photo: https://github.com/jjneely.png?size=200
+  linux_gazette:
+    feed_url: https://linuxgazette.net/lg.rss
+    homepage_url: https://linuxgazette.net
+    display_name: Linux Gazette
+    summary: Linux Gazette's archived Linux tutorials, technical articles, news, and reader discussions. The feed contains the June 2011 issue (#186).
+    profile_photo: https://linuxgazette.net/gx/2004/newlogo-blank-100-gold2.jpg
+  linuxiac:
+    feed_url: https://linuxiac.com/feed/
+    homepage_url: https://linuxiac.com
+    display_name: Linuxiac
+    summary: Linuxiac's news on Linux distributions, open-source software, desktop applications, and Linux gaming.
+    profile_photo: https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_auto/linuxiac.com/wp-content/uploads/2022/02/cropped-favicon-180x180.png
+  linuxlinks:
+    feed_url: https://www.linuxlinks.com/feed/
+    homepage_url: https://www.linuxlinks.com
+    display_name: LinuxLinks
+    summary: LinuxLinks' Linux software reviews, application roundups, open-source recommendations, and distribution coverage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.linuxlinks.com&size=128
+  lion_publishers:
+    feed_url: https://lionpublishers.com/feed/
+    homepage_url: https://lionpublishers.com
+    display_name: LION Publishers
+    summary: LION Publishers' news, resources, programs, and research supporting independent local news organizations and journalism entrepreneurs.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flionpublishers.com&size=128
   sentry:
     feed_url: https://blog.sentry.io/feed.xml
     homepage_url: https://blog.sentry.io
