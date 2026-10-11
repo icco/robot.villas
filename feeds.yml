@@ -978,6 +978,256 @@ bots:
     display_name: Fabien Sanglard
     summary: Game engine archaeology, graphics programming, hardware teardowns, and code review of classic software.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://fabiensanglard.net&size=128
+  jnack:
+    feed_url: http://jnack.com/blog/feed/
+    homepage_url: http://jnack.com/blog
+    display_name: Nackblog
+    summary: Musings on photography, illustration, mobile apps, and more
+  joanganzcooneycenter:
+    feed_url: https://joanganzcooneycenter.org/feed/
+    homepage_url: https://joanganzcooneycenter.org
+    display_name: Joan Ganz Cooney Center
+    summary: Advancing Children's Learning in a Digital Age
+  joanwestenberg:
+    feed_url: https://www.joanwestenberg.com/feed
+    homepage_url: https://www.joanwestenberg.com
+    display_name: WESTENBERG
+    summary: Field Notes on the Machine Age.
+  joel_drapper_me:
+    feed_url: https://joel.drapper.me/rss.xml
+    homepage_url: https://joel.drapper.me
+    display_name: Joel Drapper
+    summary: Joel Drapper’s blog about software.
+  joel_franusic:
+    feed_url: https://joel.franusic.com/rss.xml
+    homepage_url: https://joel.franusic.com
+    display_name: Joël Franusic
+    summary: Joël Franusic
+  joel_is:
+    feed_url: https://joel.is/rss/
+    homepage_url: https://joel.is
+    display_name: Joel Gascoigne's blog
+    summary: Updates from Joel Gascoigne's blog.
+  joelambert:
+    feed_url: https://www.joelambert.co.uk/feed/
+    homepage_url: https://www.joelambert.co.uk
+    display_name: Joe Lambert
+    summary: Developer & UX designer based in the UK
+  joelgouveia_substack:
+    feed_url: https://joelgouveia.substack.com/feed
+    homepage_url: https://joelgouveia.substack.com
+    display_name: The Artist Economy
+    summary: For the artists, managers, and operators building the next music industry. Owned audiences, real economics, and the playbooks the major labels won't write.
+  joelgrus:
+    feed_url: https://joelgrus.com/feeds/atom.xml
+    homepage_url: https://joelgrus.com
+    display_name: Joel Grus
+    summary: Updates from Joel Grus.
+  joelneely_wordpress:
+    feed_url: https://joelneely.wordpress.com/feed/
+    homepage_url: https://joelneely.wordpress.com
+    display_name: Sliding up the banister
+    summary: Sneaking up on functional programming
+  joeloliveira:
+    feed_url: https://joeloliveira.com/rss.xml
+    homepage_url: https://joeloliveira.com
+    display_name: Joel Oliveira
+    summary: A software engineer in Boston writing mostly ruby. He loves beer and bulldogs and his family.
+  joelpm:
+    feed_url: https://joelpm.com/atom.xml
+    homepage_url: https://joelpm.com
+    display_name: JoelPM
+    summary: Updates from JoelPM.
+  joemcnally:
+    feed_url: https://joemcnally.com/feed/
+    homepage_url: https://joemcnally.com
+    display_name: Joe McNally Photography
+    summary: The website and blog of Joe McNally
+  joemiller_me:
+    feed_url: https://joemiller.me/index.xml
+    homepage_url: http://joemiller.me
+    display_name: Joe Miller
+    summary: Recent content on Joe Miller
+  john_onolan:
+    feed_url: https://john.onolan.org/rss/
+    homepage_url: https://john.onolan.org
+    display_name: John O'Nolan
+    summary: Founder/CEO @ Ghost.org — Geographically restless. Publishing, open source, and independent business around the world.
+  johnhcochrane_blogspot:
+    feed_url: https://johnhcochrane.blogspot.com/feeds/posts/default
+    homepage_url: https://johnhcochrane.blogspot.com
+    display_name: The Grumpy Economist
+    summary: Updates from The Grumpy Economist.
+  johnjames_blog:
+    feed_url: https://johnjames.blog/rss.xml
+    homepage_url: https://johnjames.blog
+    display_name: John James
+    summary: Notes on web, JS/TS, CI/CD, and experiments.
+  johnkeefe:
+    feed_url: https://johnkeefe.net/posts.atom
+    homepage_url: https://johnkeefe.net
+    display_name: johnkeefe.net
+    summary: Updates from johnkeefe.net.
+  johnkenn_blogspot:
+    feed_url: https://johnkenn.blogspot.com/feeds/posts/default
+    homepage_url: https://johnkenn.blogspot.com
+    display_name: don kenn gallery
+    summary: Updates from don kenn gallery.
+  johnmyleswhite:
+    feed_url: https://www.johnmyleswhite.com/index.xml
+    homepage_url: https://www.johnmyleswhite.com
+    display_name: John Myles White
+    summary: Recent content on John Myles White
+  johnnyrodgers_is:
+    feed_url: https://www.johnnyrodgers.is/rss/
+    homepage_url: https://www.johnnyrodgers.is
+    display_name: Johnny Rodgers
+    summary: I’m a technology designer and programmer from Vancouver, Canada. This site collects the things I do and the things I write about.
+  johnpavlus_wordpress:
+    feed_url: https://johnpavlus.wordpress.com/feed/
+    homepage_url: https://johnpavlus.wordpress.com
+    display_name: John Pavlus
+    summary: i work here
+  johnsto:
+    feed_url: https://www.johnsto.co.uk/index.xml
+    homepage_url: https://www.johnsto.co.uk
+    display_name: johnsto.co.uk on johnsto.co.uk
+    summary: Updates from johnsto.co.uk on johnsto.co.uk.
+  joi_ito:
+    feed_url: https://feeds.feedburner.com/joi-ito/weblog
+    homepage_url: https://joi.ito.com/weblog
+    display_name: Joi Ito's Web
+    summary: Updates from Joi Ito's Web.
+  jola_dev:
+    feed_url: https://jola.dev/rss.xml
+    homepage_url: https://jola.dev
+    display_name: jola.dev
+    summary: Blog posts from jola.dev
+  jolvera_dev:
+    feed_url: https://jolvera.dev/feed.xml
+    homepage_url: https://jolvera.dev
+    display_name: Juan Olvera
+    summary: Opinions and thoughts on web development, readings, and personal experiences.
+  jonathangerlach:
+    feed_url: https://jonathangerlach.com/feed.xml
+    homepage_url: https://jonathangerlach.com
+    display_name: Jonathan Gerlach
+    summary: Updates from Jonathan Gerlach.
+  jhedley:
+    feed_url: https://jhedley.com/feed.xml
+    homepage_url: https://jhedley.com
+    display_name: Jonathan Hedley
+    summary: Updates from Jonathan Hedley.
+  jonathanischwartz_wordpress:
+    feed_url: https://jonathanischwartz.wordpress.com/feed/
+    homepage_url: https://jonathanischwartz.wordpress.com
+    display_name: What I Couldn't Say…
+    summary: Opinions and insights from a former CEO
+  jonathanmh:
+    feed_url: https://jonathanmh.com/feed/feed.xml
+    homepage_url: https://jonathanmh.com
+    display_name: JonathanMH
+    summary: Code, Photography and other adventures
+  jonathanwstokes:
+    feed_url: https://www.jonathanwstokes.com/blog?format=rss
+    homepage_url: https://www.jonathanwstokes.com/blog
+    display_name: Jonathan W. Stokes - Blog
+    summary: Updates from Jonathan W. Stokes - Blog.
+  jonathas:
+    feed_url: https://jonathas.com/feed.xml
+    homepage_url: https://jonathas.com
+    display_name: Jonathas Ribeiro
+    summary: Updates from Jonathas Ribeiro.
+  jonkuperman:
+    feed_url: https://jonkuperman.com/feed/feed.xml
+    homepage_url: https://jonkuperman.com
+    display_name: Jon Kuperman
+    summary: Updates from Jon Kuperman.
+  jonls_dk:
+    feed_url: https://jonls.dk/feed/
+    homepage_url: https://jonls.dk
+    display_name: Jonls
+    summary: Updates from Jonls.
+  jonpeck_blogspot:
+    feed_url: https://jonpeck.blogspot.com/feeds/posts/default
+    homepage_url: https://jonpeck.blogspot.com
+    display_name: dissension
+    summary: Updates from dissension.
+  jonready:
+    feed_url: https://jonready.com/blog/feed.xml
+    homepage_url: https://jonready.com/blog
+    display_name: Jonathon Ready Blog
+    summary: Thoughts on building, exploring, and technology.
+  jootse84_github:
+    feed_url: https://jootse84.github.io/feed.xml
+    homepage_url: https://jootse84.github.io
+    display_name: Jose's blog
+    summary: A general Computer Science blog. My fun thoughts on coding problems, ideas and projects.
+  josediazgonzalez:
+    feed_url: https://josediazgonzalez.com/atom.xml
+    homepage_url: https://josediazgonzalez.com
+    display_name: Jose Diaz-Gonzalez
+    summary: Updates from Jose Diaz-Gonzalez.
+  josefbacik_github:
+    feed_url: https://josefbacik.github.io/feed.xml
+    homepage_url: https://josefbacik.github.io
+    display_name: Josef Bacik’s Blog
+    summary: Updates from Josef Bacik’s Blog.
+  josephg:
+    feed_url: https://josephg.com/blog/rss/
+    homepage_url: https://josephg.com/blog
+    display_name: Seph
+    summary: Seph
+  josephthacker:
+    feed_url: https://josephthacker.com/feed.xml
+    homepage_url: https://josephthacker.com
+    display_name: Joseph Thacker
+    summary: Updates from Joseph Thacker.
+  josephwalla:
+    feed_url: https://josephwalla.com/posts.atom
+    homepage_url: https://josephwalla.com
+    display_name: startup thoughts
+    summary: Updates from startup thoughts.
+  josh_ing:
+    feed_url: https://www.josh.ing/blog/rss.xml
+    homepage_url: https://www.josh.ing/blog
+    display_name: Just Joshing - Blog
+    summary: Thoughts on building, investing, and just joshing around.
+  joshdata_me:
+    feed_url: https://joshdata.wordpress.com/feed/
+    homepage_url: https://joshdata.me
+    display_name: Joshua Tauberer's Archived Blog
+    summary: Blog posts from 2004-2015. Newer posts are at https://medium.com/@joshuatauberer.
+  joshmcarthur:
+    feed_url: https://www.joshmcarthur.com/feed/
+    homepage_url: https://joshmcarthur.com
+    display_name: 'Notes: Josh McArthur'
+    summary: I'm Josh McArthur, a web developer specializing in Ruby on Rails and Phoenix. I write posts about technology and hiking.
+  joshtronic:
+    feed_url: https://joshtronic.com/rss.xml
+    homepage_url: https://joshtronic.com
+    display_name: Joshtronic
+    summary: Shipping Fixes Everything
+  joshua_hu:
+    feed_url: https://joshua.hu/feed.xml
+    homepage_url: https://joshua.hu
+    display_name: Joshua Rogers’ Scribbles
+    summary: Updates from Joshua Rogers’ Scribbles.
+  journal_james_zhan:
+    feed_url: https://journal.james-zhan.com/feed/
+    homepage_url: https://journal.james-zhan.com
+    display_name: James Zhan in real life.
+    summary: Updates from James Zhan in real life..
+  paul_querna:
+    feed_url: https://paul.querna.org/atom.xml
+    homepage_url: https://paul.querna.org
+    display_name: Paul's Journal
+    summary: Updates from Paul's Journal.
+  journalism:
+    feed_url: https://www.journalism.co.uk/rss/
+    homepage_url: https://www.journalism.co.uk
+    display_name: Journalism UK
+    summary: Inspiring newsrooms, empowering journalists
   ben_kuhn:
     feed_url: https://www.benkuhn.net/rss/
     homepage_url: https://www.benkuhn.net
