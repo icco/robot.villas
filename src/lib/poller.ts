@@ -93,10 +93,12 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         etag: previous?.etag ?? null,
         lastModified: previous?.lastModified ?? null,
       });
+      let deferred = 0;
       if (!fetchResult.errorMessage && !fetchResult.notModified) {
         // Advancing validators is safe only after every entry and submission
         // intent is committed. Partial ingestion retries using the old validators.
         const result = await publishNewEntries(ctx, db, username, domain, fetchResult.entries, bot, blockedInstances);
+        deferred = result.deferred;
         logger.info("Ingested {stored} posts for {username}, skipped {skipped}", { username, ...result });
       }
       // Fenced by the token: entry inserts are idempotent per guid, but only the
@@ -106,10 +108,10 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
         lastCheckedAt: checkedAt,
         lastHttpStatus: fetchResult.httpStatus,
         lastError: fetchResult.errorMessage,
-        etag: fetchResult.validators ? fetchResult.validators.etag : (previous?.etag ?? null),
-        lastModified: fetchResult.validators
+        etag: deferred > 0 ? null : (fetchResult.validators ? fetchResult.validators.etag : (previous?.etag ?? null)),
+        lastModified: deferred > 0 ? null : (fetchResult.validators
           ? fetchResult.validators.lastModified
-          : (previous?.lastModified ?? null),
+          : (previous?.lastModified ?? null)),
         nextPollAt:
           fetchResult.retryAfterMs == null
             ? null
