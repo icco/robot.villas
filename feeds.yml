@@ -1290,6 +1290,256 @@ bots:
     homepage_url: https://liquidbrain.net/
     display_name: liquidbrain
     summary: Essays on mathematics, programming, music, and community.
+  rogerebert:
+    feed_url: https://www.rogerebert.com/feed
+    homepage_url: https://www.rogerebert.com
+    display_name: Roger Ebert
+    summary: Movie reviews and ratings by Film Critic Roger Ebert
+  rogerhub_com__r:
+    feed_url: https://rogerhub.com/~r/sysadmin/atom.xml
+    homepage_url: https://rogerhub.com/~r
+    display_name: /~r/sysadmin/
+    summary: Updates from /~r/sysadmin/.
+  rohitbhargava:
+    feed_url: https://rohitbhargava.com/feed/
+    homepage_url: https://rohitbhargava.com
+    display_name: Non-Obvious Insights Blog
+    summary: Helping readers be more interesting since 2005. Non-obvious ideas on trends, marketing, innovation and culture from Rohit Bhargava.
+  romeda:
+    feed_url: https://romeda.org/?feed=rss2
+    homepage_url: https://romeda.org
+    display_name: Romeda
+    summary: Updates from Romeda.
+  romly:
+    feed_url: https://romly.com/feed
+    homepage_url: https://romly.com
+    display_name: Romly
+    summary: Love Keyboards, 3D printing, etc...
+  rosenfeldmedia:
+    feed_url: https://rosenfeldmedia.com/feed/
+    homepage_url: https://rosenfeldmedia.com
+    display_name: Rosenfeld Media
+    summary: We connect people interested in designing better user experiences with the best expertise available
+  alyssarosenzweig_ca:
+    feed_url: https://alyssarosenzweig.ca/feed.xml
+    homepage_url: https://alyssarosenzweig.ca
+    display_name: Alyssa Rosenzweig
+    summary: Musing of a graphics witch
+  rotub_me:
+    feed_url: https://rotub.me/feed/
+    homepage_url: https://rotub.me
+    display_name: DA88
+    summary: Updates from DA88.
+  routerjockey:
+    feed_url: https://routerjockey.com/index.xml
+    homepage_url: https://routerjockey.com
+    display_name: routerjockey
+    summary: Recent posts on routerjockey
+  pingdom:
+    feed_url: https://www.pingdom.com/blog/feed/
+    homepage_url: https://www.pingdom.com/blog
+    display_name: Blog Posts Archive - Pingdom
+    summary: Website Performance and Availability Monitoring | Pingdom
+  royalboiler_tumblr:
+    feed_url: https://royalboiler.tumblr.com/rss
+    homepage_url: https://royalboiler.tumblr.com
+    display_name: BRANDON GRAHAM
+    summary: hellloo I’m Brandon Graham. I make comics. King city, Multiple Warheads, Prophet, Walrus, Escalator etc.
+  roylines:
+    feed_url: https://roylines.co.uk/feed.xml
+    homepage_url: https://roylines.co.uk
+    display_name: 'Roy Lines: Consultant CTO, Cloud Architect and Devops Specialist'
+    summary: Advisor at Digital McKinsey. Creating high scale systems for money and playing with robots for fun.
+  rpbouman_blogspot:
+    feed_url: https://rpbouman.blogspot.com/feeds/posts/default
+    homepage_url: https://rpbouman.blogspot.com
+    display_name: Roland Bouman's blog
+    summary: Updates from Roland Bouman's blog.
+  rrvs_blogspot:
+    feed_url: http://feeds.feedburner.com/rrvs
+    homepage_url: http://rrvs.blogspot.com
+    display_name: Random Ravings
+    summary: Updates from Random Ravings.
+  rte_ie:
+    feed_url: https://www.rte.ie/feeds/rss/?index=/news/
+    homepage_url: https://www.rte.ie/news
+    display_name: News Headlines
+    summary: Updates from News Headlines.
+  rtings:
+    feed_url: https://www.rtings.com/latest-rss.xml
+    homepage_url: https://www.rtings.com
+    display_name: Rtings.com - Latest Reviews
+    summary: Straight to the point buying recommendations. We purchase our own products and put them under the same test bench, so that you can compare the results easily. No cherry-picked units sent by brands. Only real tests.
+  rubinius:
+    feed_url: https://rubinius.com/rss.xml
+    homepage_url: https://rubinius.com
+    display_name: Vivarium AI Blog
+    summary: An experimental platform for real AI.
+  rubymotion:
+    feed_url: http://www.rubymotion.com/news/rss.xml
+    homepage_url: http://www.rubymotion.com
+    display_name: RubyMotion
+    summary: RSS feed for RubyMotion
+  ruchirablog:
+    feed_url: https://feeds.feedburner.com/Ruchirablog
+    homepage_url: https://ruchirablog.com
+    display_name: Ruchirablog | Servers,SEO,WebApps Gadgets and more!
+    summary: Updates from Ruchirablog | Servers,SEO,WebApps Gadgets and more!.
+  rudebaguette:
+    feed_url: https://www.rudebaguette.com/feed/
+    homepage_url: https://www.rudebaguette.com
+    display_name: Rude Baguette
+    summary: Rude Baguette
+  ruleant_blogspot:
+    feed_url: http://feeds.feedburner.com/poolofoblivion
+    homepage_url: http://ruleant.blogspot.com
+    display_name: Pool of oblivion
+    summary: Updates from Pool of oblivion.
+  rulethepla:
+    feed_url: https://rulethepla.net/rss/
+    homepage_url: https://rulethepla.net
+    display_name: Wow Great Stuff
+    summary: Some good ideas, some bad ideas, but definitely - ideas.
+  rushi_wordpress:
+    feed_url: https://rushi.wordpress.com/feed/
+    homepage_url: https://rushi.wordpress.com
+    display_name: Rushi's Ramblings
+    summary: The ramblings of a Web Developer, Mac Enthusiast, coffee junkie and all-round sarcastic sour-puss
+  rushter:
+    feed_url: https://rushter.com/blog/feed/
+    homepage_url: https://rushter.com
+    display_name: Artem Golubin
+    summary: Python, Machine learning, NLP, websec, etc.
+  ruslanspivak:
+    feed_url: https://ruslanspivak.com/feeds/all.atom.xml
+    homepage_url: https://ruslanspivak.com
+    display_name: Ruslan's Blog
+    summary: Updates from Ruslan's Blog.
+  rwmj_wordpress:
+    feed_url: https://rwmj.wordpress.com/feed/
+    homepage_url: https://rwmj.wordpress.com
+    display_name: Richard WM Jones
+    summary: Virtualization, tools and tips
+  ryan_science:
+    feed_url: https://ryan.science/rss.xml
+    homepage_url: https://ryan.science/blog
+    display_name: Ryan Fahey
+    summary: My personal website, portfolio, and blog.
+  ryanabbott:
+    feed_url: https://ryanabbott.com/blog/feed/
+    homepage_url: https://ryanabbott.com
+    display_name: ryanabbott.com
+    summary: Updates from ryanabbott.com.
+  ryanarn_blogspot:
+    feed_url: https://ryanarn.blogspot.com/feeds/posts/default
+    homepage_url: https://ryanarn.blogspot.com
+    display_name: Ryan S. Arnold (ryanarn)
+    summary: Updates from Ryan S. Arnold (ryanarn).
+  ryancarson:
+    feed_url: https://www.ryancarson.com/feed.xml
+    homepage_url: https://ryancarson.com
+    display_name: Ryan Carson
+    summary: Ryan Carson's blog
+  ryanholiday:
+    feed_url: https://ryanholiday.net/feed/atom/
+    homepage_url: https://ryanholiday.net
+    display_name: RyanHoliday.net
+    summary: Updates from RyanHoliday.net.
+  ryanleecarson_tumblr:
+    feed_url: https://ryanleecarson.tumblr.com/rss
+    homepage_url: https://ryanleecarson.tumblr.com
+    display_name: The Naive Optimist
+    summary: The blog of Ryan Carson. I’m a Father, entrepreneur and lover of movies. Co-Founder and CEO of Treehouse.
+  rz01:
+    feed_url: https://rz01.org/index.xml
+    homepage_url: https://rz01.org
+    display_name: rz01.org
+    summary: Recent content on rz01.org
+  sabrinas_space:
+    feed_url: https://sabrinas.space/?feed=rss2
+    homepage_url: https://sabrinas.space
+    display_name: sabrinas.space
+    summary: Updates from sabrinas.space.
+  sacbear:
+    feed_url: https://www.sacbear.com/feed/
+    homepage_url: https://www.sacbear.com
+    display_name: The Sacramento Bear
+    summary: Updates from The Sacramento Bear.
+  sacks_substack:
+    feed_url: https://sacks.substack.com/feed
+    homepage_url: https://sacks.substack.com
+    display_name: Bottom Up by David Sacks
+    summary: Playbooks for building software companies.
+  sageadvice_eu:
+    feed_url: https://www.sageadvice.eu/feed/
+    homepage_url: https://www.sageadvice.eu
+    display_name: D&D Sage Advice
+    summary: Questions on Dungeons & Dragons answered by game designers
+  sahandsaba:
+    feed_url: https://sahandsaba.com/feeds/all.atom.xml
+    homepage_url: https://sahandsaba.com
+    display_name: Math ∪ Code by Sahand Saba
+    summary: Updates from Math ∪ Code by Sahand Saba.
+  sakurity:
+    feed_url: https://sakurity.com/blog/feed.xml
+    homepage_url: https://sakurity.com/blog
+    display_name: The Sakurity Blog
+    summary: Boutique infosec consultancy
+  salvis:
+    feed_url: https://www.salvis.com/blog/feed/
+    homepage_url: https://www.salvis.com/blog
+    display_name: Philipp Salvisberg's Blog
+    summary: Database-centric development
+  sammachin:
+    feed_url: https://www.sammachin.com/index.xml
+    homepage_url: https://www.sammachin.com
+    display_name: Welcome on Sam Machin
+    summary: Recent content in Welcome on Sam Machin
+  samuel_warde:
+    feed_url: https://samuel-warde.com/feed/
+    homepage_url: https://samuel-warde.com
+    display_name: Digital Solutions
+    summary: Transforming Digital Potential into Business Success
+  samuelstern_wordpress:
+    feed_url: https://samuelstern.wordpress.com/feed/
+    homepage_url: https://samuelstern.wordpress.com
+    display_name: Sam Stern
+    summary: Projects, musings, and more
+  samxli_tumblr:
+    feed_url: https://samxli.tumblr.com/rss
+    homepage_url: https://samxli.tumblr.com
+    display_name: Ideations
+    summary: 'Sam’s various thoughts and ideas. About the author: www.samxli.com'
+  sanarias:
+    feed_url: https://www.sanarias.com/blog/rss
+    homepage_url: https://www.sanarias.com/blog
+    display_name: Santiago Arias's blog
+    summary: Santiago Arias's blog
+  sandersak_posthaven:
+    feed_url: https://sandersak.posthaven.com/posts.atom
+    homepage_url: https://sandersak.posthaven.com
+    display_name: text from sandersak
+    summary: Updates from text from sandersak.
+  sandyuraz:
+    feed_url: https://sandyuraz.com/feed.xml
+    homepage_url: https://sandyuraz.com
+    display_name: Sandy’s Website ⛩️
+    summary: Visitor... Welcome to my Pink Lounge. This place exists between dream and reality, mind and matter. I hope you enjoy ...
+  sanremouk:
+    feed_url: https://www.sanremouk.com/feed/
+    homepage_url: https://www.sanremouk.com
+    display_name: Sanremo UK
+    summary: Sanremo Coffee Machines
+  santamariatimes:
+    feed_url: https://santamariatimes.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
+    homepage_url: https://santamariatimes.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
+    display_name: 'santamariatimes.com - RSS Results of type article with keyword(s) of #topstory'
+    summary: 'santamariatimes.com - RSS Results only for asset type(s) of article with keyword(s) of #topstory'
+  sashalaundy:
+    feed_url: https://sashalaundy.com/rss/
+    homepage_url: https://sashalaundy.com
+    display_name: Sasha Laundy
+    summary: Leadership coaching for data teams and beyond
   the_slow_path:
     feed_url: https://theslowpath.pages.dev/index.xml
     homepage_url: https://theslowpath.pages.dev/
