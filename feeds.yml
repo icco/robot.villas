@@ -765,6 +765,256 @@ bots:
     display_name: Ned Batchelder
     summary: Python, software design, programming culture, and thoughtful technical essays.
     profile_photo: https://avatars.githubusercontent.com/u/23789?s=200
+  dualshockers:
+    feed_url: https://www.dualshockers.com/feed/
+    homepage_url: https://www.dualshockers.com
+    display_name: DualShockers
+    summary: DualShockers is the definitive destination for video game fans. From gaming news to in-depth guides, we’ve got you covered with our expert coverage.
+  dubreggae_tumblr:
+    feed_url: https://dubreggae.tumblr.com/rss
+    homepage_url: https://dubreggae.tumblr.com
+    display_name: Dub Anthology
+    summary: The best dub reggae albums ever made, according to a teenager’s list from 1977
+  ducea:
+    feed_url: https://www.ducea.com/rss.xml
+    homepage_url: https://www.ducea.com
+    display_name: MD/Blog
+    summary: Recent content on MD/Blog
+  duckduckgo:
+    feed_url: https://spreadprivacy.com/rss/
+    homepage_url: https://duckduckgo.com
+    display_name: Spread Privacy
+    summary: The Official DuckDuckGo Blog
+  ducktyped:
+    feed_url: https://www.ducktyped.org/feed
+    homepage_url: https://www.ducktyped.org
+    display_name: DuckTyped
+    summary: Illustrated posts on software
+  dudeism:
+    feed_url: https://dudeism.com/feed/
+    homepage_url: https://dudeism.com
+    display_name: Dudeism
+    summary: The Church of the Latter-Day Dude
+  dumblittleman:
+    feed_url: https://www.dumblittleman.com/feed/
+    homepage_url: https://www.dumblittleman.com
+    display_name: Dumb Little Man
+    summary: Your Digital Playground
+  dungeonmastering:
+    feed_url: https://www.dungeonmastering.com/feed/
+    homepage_url: https://www.dungeonmastering.com
+    display_name: Dungeon Mastering
+    summary: The D&D Blog
+  durdn:
+    feed_url: https://www.durdn.com/index.xml
+    homepage_url: https://www.durdn.com
+    display_name: '@durdn - nicola paolucci'
+    summary: Recent content on @durdn - nicola paolucci
+  dxuuu_xyz:
+    feed_url: https://dxuuu.xyz/atom.xml
+    homepage_url: https://dxuuu.xyz
+    display_name: dxu's blog
+    summary: Updates from dxu's blog.
+  statuspage_gbucnss_oci_oraclecloud:
+    feed_url: https://statuspage.gbucnss.oci.oraclecloud.com/status/xgbu_Dyn/atom
+    homepage_url: https://statuspage.gbucnss.oci.oraclecloud.com/status/xgbu_Dyn
+    display_name: Oracle Dynamic DNS
+    summary: Updates from Oracle Dynamic DNS.
+  e_texteditor:
+    feed_url: https://www.e-texteditor.com/feed
+    homepage_url: https://www.e-texteditor.com
+    display_name: 人気の自動車保険を口コミ・相場からランキングでご紹介!
+    summary: 今売れてる通販型自動車保険を口コミからランキング形式でご紹介!
+  eagereyes:
+    feed_url: https://eagereyes.org/feed
+    homepage_url: https://eagereyes.org
+    display_name: eagereyes
+    summary: Data visualization and visual communication by Robert Kosara
+  enterpriseintegrationpatterns:
+    feed_url: https://www.enterpriseintegrationpatterns.com/ramblings.rss
+    homepage_url: http://www.enterpriseintegrationpatterns.com
+    display_name: 'Enterprise Integration Patterns: Gregor''s Ramblings'
+    summary: Gregor's Ramblings on Enterprise Integration
+  earendil:
+    feed_url: https://earendil.com/posts/feed.atom
+    homepage_url: https://earendil.com
+    display_name: Earendil Posts
+    summary: Updates from Earendil Posts.
+  eastoftheweb:
+    feed_url: https://www.eastoftheweb.com/rss.xml
+    homepage_url: https://www.eastoftheweb.com
+    display_name: East of the Web
+    summary: Updates from East of the Web.
+  easyengine:
+    feed_url: https://easyengine.io/feed/
+    homepage_url: https://easyengine.io
+    display_name: EasyEngine
+    summary: Updates from EasyEngine.
+  eatingpolicy:
+    feed_url: https://www.eatingpolicy.com/feed
+    homepage_url: https://www.eatingpolicy.com
+    display_name: Eating Policy
+    summary: In business, culture eats strategy. In government, culture eats policy. Here we'll talk about the problems of state capacity (government's ability to achieve its policy goals) and how to fix them. From the author of Recoding America.
+  eaves_ca:
+    feed_url: https://eaves.ca/feed/
+    homepage_url: https://eaves.ca
+    display_name: eaves.ca
+    summary: if writing is a muscle, this is my gym
+  ebiquity_umbc_edu:
+    feed_url: https://feeds.feedburner.com/ebiquityStream
+    homepage_url: https://ebiquity.umbc.edu
+    display_name: UMBC ebiquity stream
+    summary: Updates from UMBC ebiquity stream.
+  ebird:
+    feed_url: https://ebird.org/feed
+    homepage_url: https://ebird.org/news
+    display_name: eBird.org News
+    summary: The latest news posts from eBird.org
+  echeng:
+    feed_url: https://echeng.com/feed.xml
+    homepage_url: https://echeng.com
+    display_name: ERIC CHENG
+    summary: Photography by ERIC CHENG
+  eclim:
+    feed_url: https://eclim.org/feed/
+    homepage_url: https://eclim.org
+    display_name: Eclim – Marine Life, Fisheries and Ocean Conservation
+    summary: Updates from Eclim – Marine Life, Fisheries and Ocean Conservation.
+  eclypsium:
+    feed_url: https://eclypsium.com/feed/
+    homepage_url: https://eclypsium.com/home
+    display_name: Eclypsium
+    summary: Secure Infrastructure In The Age of AI
+  eddie_codes:
+    feed_url: https://eddie.codes/rss.xml
+    homepage_url: https://eddie.codes
+    display_name: Eddie's Blog
+    summary: Opinions my own and probably wrong
+  edge:
+    feed_url: https://www.edge.org/feed
+    homepage_url: https://www.edge.org
+    display_name: Edge.org
+    summary: Updates from Edge.org.
+  editorial_rottentomatoes:
+    feed_url: https://editorial.rottentomatoes.com/rss/
+    homepage_url: https://editorial.rottentomatoes.com
+    display_name: Rotten Tomatoes
+    summary: Serving up Fresh and Rotten reviews for Movies and TV.
+  ediy_com_my:
+    feed_url: https://ediy.com.my/itemlist%3Fformat=feed&type=rss
+    homepage_url: http://ediy.com.my
+    display_name: eDIY - eDIY - Home
+    summary: DIY projects for the electronics enthusiast.
+  edmtunes:
+    feed_url: https://www.edmtunes.com/feed/
+    homepage_url: https://www.edmtunes.com
+    display_name: EDMTunes
+    summary: Updates from EDMTunes.
+  edovia:
+    feed_url: https://blog.edovia.com/rss.php?lg=en
+    homepage_url: https://edovia.com/en/?
+    display_name: Edovia Blog
+    summary: Latest updates from Edovia
+  eewang_github:
+    feed_url: https://eewang.github.io/atom.xml
+    homepage_url: https://eewang.github.io
+    display_name: eugenius
+    summary: Updates from eugenius.
+  effectortheme_tumblr:
+    feed_url: https://effectortheme.tumblr.com/rss
+    homepage_url: https://effectortheme.tumblr.com
+    display_name: Effector Theme
+    summary: Effector improves the overall customization and includes some additional features that I think you’re gonna like. We recommend that you visit the docs to learn more about what’s new or to learn how to make the most out of this theme. More theme info →
+  egghead:
+    feed_url: https://app.egghead.io/feed
+    homepage_url: https://egghead.io/q
+    display_name: egghead.io - Bite-sized Web Development Video Tutorials & Training
+    summary: Awesome lessons on modern web tools that you use to get work done.
+  eieio_games:
+    feed_url: https://eieio.games/feed.xml
+    homepage_url: https://eieio.games
+    display_name: eieio.games
+    summary: Updates from eieio.games.
+  ejholmes_github:
+    feed_url: https://ejholmes.github.io/feed.xml
+    homepage_url: https://ejholmes.github.io
+    display_name: Eric Holmes
+    summary: Updates from Eric Holmes.
+  ejroundtheworld_blogspot:
+    feed_url: https://ejroundtheworld.blogspot.com/feeds/posts/default
+    homepage_url: https://ejroundtheworld.blogspot.com
+    display_name: Around The World and Back Again
+    summary: Updates from Around The World and Back Again.
+  plex_tv:
+    feed_url: https://www.plex.tv/feed/
+    homepage_url: https://www.plex.tv
+    display_name: Plex
+    summary: Stream smarter.
+  elektronauts:
+    feed_url: https://www.elektronauts.com/posts.rss
+    homepage_url: https://www.elektronauts.com
+    display_name: Elektronauts - Latest posts
+    summary: Latest posts
+  element:
+    feed_url: https://element.io/blog/rss/
+    homepage_url: https://element.io/blog
+    display_name: Element Blog
+    summary: Own your conversation
+  elementary:
+    feed_url: https://blog.elementary.io/feed.xml
+    homepage_url: https://elementary.io
+    display_name: elementary Blog
+    summary: We design and develop the fast, open, and privacy-respecting replacement for Windows and macOS
+  elevenlabs:
+    feed_url: https://elevenlabs.io/blog/rss.xml
+    homepage_url: https://elevenlabs.io/blog
+    display_name: ElevenLabs Blog
+    summary: Read the latest research, product, and company updates from ElevenLabs - provider of the most realistic and versatile AI audio tools
+  eliotsykes:
+    feed_url: https://eliotsykes.com/feed/
+    homepage_url: https://eliotsykes.com
+    display_name: Eliot Sykes
+    summary: Rails developer and coach
+  ell_stackexchange:
+    feed_url: https://ell.stackexchange.com/feeds
+    homepage_url: https://ell.stackexchange.com/questions
+    display_name: Recent Questions - English Language Learners Stack Exchange
+    summary: Updates from Recent Questions - English Language Learners Stack Exchange.
+  elliotcsmith:
+    feed_url: https://www.elliotcsmith.com/rss/
+    homepage_url: https://www.elliotcsmith.com
+    display_name: Elliot C Smith | Posts about Dev, Startups, and Product
+    summary: Posts on product, software development, building companies and other things I find interesting.
+  elliotjaystocks:
+    feed_url: https://feeds.feedburner.com/elliotjaystocks/
+    homepage_url: https://elliotjaystocks.com
+    display_name: Elliot Jay Stocks | Everything (blog + newsletter + speaking) feed
+    summary: Elliot Jay Stocks is a designer and author, usually doing something with typography
+  elliptic_curves_art:
+    feed_url: https://elliptic-curves.art/index.xml
+    homepage_url: https://elliptic-curves.art
+    display_name: Home page on elliptic-curves.art
+    summary: Recent content in Home page on elliptic-curves.art
+  ellsberg:
+    feed_url: https://www.ellsberg.net/feed/
+    homepage_url: https://www.ellsberg.net
+    display_name: Daniel Ellsberg's Website
+    summary: Updates from Daniel Ellsberg's Website.
+  ellugar_co:
+    feed_url: https://ellugar.co/logs/index.xml
+    homepage_url: https://ellugar.co/logs
+    display_name: ellugar Logs
+    summary: Logs from ellugar
+  emi_h:
+    feed_url: https://emi-h.com/feed.xml
+    homepage_url: https://emi-h.com
+    display_name: emi-h.com feed
+    summary: Updates from emi-h.com feed.
+  emojilog_rosano_ca:
+    feed_url: https://rosano.ca/blog/feed
+    homepage_url: https://emojilog.rosano.ca
+    display_name: Rosano / Blog
+    summary: Updates from Rosano / Blog.
   etsy_code_as_craft:
     feed_url: https://www.etsy.com/codeascraft/rss
     homepage_url: https://www.etsy.com
