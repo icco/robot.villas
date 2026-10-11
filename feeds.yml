@@ -69,6 +69,256 @@ bots:
     display_name: Hundred Rabbits
     summary: Rek and Devine project updates.
     profile_photo: https://100r.co/media/services/icon.jpg
+  websymphony:
+    feed_url: https://websymphony.net/index.xml
+    homepage_url: https://websymphony.net
+    display_name: I am Amit, I make things. on Amit Gaur
+    summary: Recent content in I am Amit, I make things. on Amit Gaur
+  webupd8:
+    feed_url: http://feeds2.feedburner.com/webupd8
+    homepage_url: http://www.webupd8.org
+    display_name: Web Upd8 - Ubuntu / Linux blog
+    summary: Daily Ubuntu / Linux news and application reviews
+  weekendengineering_blogspot:
+    feed_url: https://weekendengineering.blogspot.com/feeds/posts/default
+    homepage_url: https://weekendengineering.blogspot.com
+    display_name: Weekend Engineering
+    summary: Updates from Weekend Engineering.
+  weekendsherpa:
+    feed_url: https://www.weekendsherpa.com/rss.xml
+    homepage_url: https://www.weekendsherpa.com
+    display_name: Weekend Sherpa
+    summary: Weekend Sherpa. Hikes and Outdoor Activities in California.
+  weev_livejournal:
+    feed_url: https://weev.livejournal.com/data/rss
+    homepage_url: https://weev.livejournal.com
+    display_name: Andrew Auernheimer
+    summary: Andrew Auernheimer - LiveJournal.com
+  wegotthiscovered:
+    feed_url: https://wegotthiscovered.com/feed/
+    homepage_url: https://wegotthiscovered.com
+    display_name: We Got This Covered
+    summary: All the latest news, trailers, & reviews for movies, TV, celebrities, Marvel, Netflix, anime, and more.
+  welcometodrivein_wordpress:
+    feed_url: https://welcometodrivein.wordpress.com/feed/
+    homepage_url: https://welcometodrivein.wordpress.com
+    display_name: '#drive-in'
+    summary: Scheduled film viewings and film discussion
+  welovewp:
+    feed_url: https://welovewp.com/feed/
+    homepage_url: https://welovewp.com
+    display_name: WeLoveWP
+    summary: The famous showcase of WordPress sites, blogs, and theme designs.
+  wgaeast:
+    feed_url: https://www.wgaeast.org/feed/
+    homepage_url: https://www.wgaeast.org
+    display_name: Writers Guild of America East
+    summary: The labor union representing writers in film, television, news, podcasts and online media.
+  whatculture:
+    feed_url: https://whatculture.com/music/feed
+    homepage_url: https://whatculture.com
+    display_name: Music - WhatCulture.com
+    summary: Latest articles from WhatCulture.com
+  whatsinyourbag:
+    feed_url: https://whatsinyourbag.com/rss
+    homepage_url: https://whatsinyourbag.com
+    display_name: What's In Your Bag
+    summary: whatsinyourbag.com is a tribute to the big, squishy, bulky, salty, furry things we carry and simply cannot live without. Rejoice in everyday adventure. Founded by a San Francisco bike messenger in 1989, Timbuk2 pioneered the messenger bag and is known for legendary durability and custom manufacturing.
+  whatthefuck_is:
+    feed_url: https://whatthefuck.is/feed.xml
+    homepage_url: https://whatthefuck.is
+    display_name: whatthefuck.is
+    summary: whatthefuck.is
+  wheelfront:
+    feed_url: https://wheelfront.com/feed/
+    homepage_url: https://wheelfront.com
+    display_name: Wheel Front
+    summary: Aftermarket Wheels Gallery & Directory
+  wheresjessieb:
+    feed_url: https://wheresjessieb.com/blog?format=rss
+    homepage_url: https://wheresjessieb.com/blog
+    display_name: Blog | Where’s Jessie B.
+    summary: Updates from Blog | Where’s Jessie B..
+  whoisnnamdi:
+    feed_url: https://whoisnnamdi.com/feed/
+    homepage_url: https://whoisnnamdi.com
+    display_name: Who is Nnamdi?
+    summary: Thoughts on technology, venture capital, and the economics of both
+  whoownsengland:
+    feed_url: https://whoownsengland.org/feed/
+    homepage_url: https://whoownsengland.org
+    display_name: Who owns England?
+    summary: Updates from Who owns England?.
+  whyjava_wordpress:
+    feed_url: https://whyjava.wordpress.com/feed/
+    homepage_url: https://whyjava.wordpress.com
+    display_name: Shekhar Gulati
+    summary: Writings on Software Engineering, Software Architecture, Generative AI and LLMs
+  whywebleep:
+    feed_url: https://www.whywebleep.com/whywebleep?format=rss
+    homepage_url: https://www.whywebleep.com/whywebleep
+    display_name: Why We Bleep
+    summary: Why We Bleep is inspired by the mysterious, unique and amazing people behind the equipment and music that we love. It's about getting better at making music, dweebing out over music and synth technology, and to perhaps better understand where music making might be going.
+  whyy:
+    feed_url: https://whyy.org/feed/
+    homepage_url: https://whyy.org
+    display_name: WHYY
+    summary: WHYY serves the community by contributing to the quality of life through education, information, entertainment and inspiration.
+  wicki:
+    feed_url: https://wicki.io/posts/index.xml
+    homepage_url: https://wicki.io/posts
+    display_name: Blog posts on Simon Wicki — Frontend Engineer from Berlin
+    summary: Recent content in Blog posts on Simon Wicki — Frontend Engineer from Berlin
+  wiki_openstreetmap:
+    feed_url: https://wiki.openstreetmap.org/w/api.php?hidebots=1&hidecategorization=1&hideWikibase=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom
+    homepage_url: https://wiki.openstreetmap.org/wiki/Special:RecentChanges
+    display_name: OpenStreetMap Wiki - Recent changes [en]
+    summary: Updates from OpenStreetMap Wiki - Recent changes [en].
+  wikiart:
+    feed_url: https://www.wikiart.org/news/feed/
+    homepage_url: https://www.wikiart.org/news
+    display_name: WikiArt
+    summary: Updates from WikiArt.
+  wikimatze_de:
+    feed_url: https://wikimatze.de/feed.xml
+    homepage_url: https://wikimatze.de
+    display_name: wikimatze
+    summary: Writings and talks by Matthias Günther.
+  wikimediafoundation:
+    feed_url: https://wikimediafoundation.org/feed/
+    homepage_url: https://wikimediafoundation.org
+    display_name: Wikimedia Foundation
+    summary: Updates from Wikimedia Foundation.
+  wikiofthrones:
+    feed_url: https://wikiofthrones.com/feed
+    homepage_url: https://wikiofthrones.com
+    display_name: Wiki of Thrones
+    summary: A Game of Thrones community for filming news, theories, games, discussions and lots more
+  wikipediocracy:
+    feed_url: https://wikipediocracy.com/feed/
+    homepage_url: https://wikipediocracy.com
+    display_name: Wikipediocracy
+    summary: You can't talk about Wikipedia's flaws on Wikipedia
+  wildbit:
+    feed_url: https://www.wildbit.com/blog/feed.atom
+    homepage_url: https://wildbit.com/blog
+    display_name: Wildbit (en-US)
+    summary: Updates from Wildbit (en-US).
+  merki_ca:
+    feed_url: https://merki.ca/rss.xml
+    homepage_url: https://merki.ca
+    display_name: Merki.ca RSS Feed
+    summary: Robert Merki's personal website
+  wildimagining:
+    feed_url: https://wildimagining.com/feed/
+    homepage_url: https://wildimagining.com
+    display_name: Wild Imagining
+    summary: Adventure, everywhere
+  wilfredchan:
+    feed_url: https://www.wilfredchan.net/rss.xml
+    homepage_url: https://www.wilfredchan.net
+    display_name: Wilfred Chan
+    summary: RSS Feed for Wilfred Chan
+  wilhelmsgames_wordpress:
+    feed_url: https://wilhelmsgames.wordpress.com/feed/
+    homepage_url: https://wilhelmsgames.wordpress.com
+    display_name: Wilhelm's Games
+    summary: Updates from Wilhelm's Games.
+  willcodefor_beer:
+    feed_url: https://willcodefor.beer/feed.xml
+    homepage_url: https://willcodefor.beer
+    display_name: willcodefor.beer
+    summary: Updates from willcodefor.beer.
+  williamshatner_tumblr:
+    feed_url: https://williamshatner.tumblr.com/rss
+    homepage_url: https://williamshatner.tumblr.com
+    display_name: WILLIAM SHATNER
+    summary: These posts are my own and should not be construed as anything but my opinion and views
+  willj:
+    feed_url: https://willj.net/rss.xml
+    homepage_url: https://willj.net
+    display_name: Will Jessop's Writings
+    summary: Recent content on Will Jessop's Writings
+  willmorrison:
+    feed_url: https://willmorrison.net/index.xml
+    homepage_url: https://willmorrison.net
+    display_name: Will Morrison
+    summary: Recent content on Will Morrison
+  wilwheaton:
+    feed_url: https://wilwheaton.net/feed/
+    homepage_url: https://wilwheaton.net
+    display_name: WIL WHEATON dot NET
+    summary: 50,000 Monkeys at 50,000 Typewriters Can't Be Wrong
+  windsooon_github:
+    feed_url: https://windsooon.github.io/atom.xml
+    homepage_url: https://windsooon.github.io
+    display_name: Tech blog of Unicooo
+    summary: Updates from Tech blog of Unicooo.
+  wire:
+    feed_url: https://wire.com/en/blog/rss.xml
+    homepage_url: https://wire.com/en/blog
+    display_name: Wire Blog
+    summary: Explore Wire's secure collaboration platform, prioritizing digital privacy with end-to-end encryption and advanced security features.
+  wkyc:
+    feed_url: https://www.wkyc.com/feeds/syndication/rss/news
+    homepage_url: https://www.wkyc.com
+    display_name: 'WKYC RSS Feed: news'
+    summary: WKYC Rss Feed
+  wlcentral:
+    feed_url: https://wlcentral.org/rss.xml
+    homepage_url: http://wlcentral.org
+    display_name: WL Central
+    summary: Updates from WL Central.
+  women:
+    feed_url: https://www.women.com/feed/
+    homepage_url: https://www.women.com
+    display_name: Women - News, Celebrity, Lifestyle, and Expert Opinions
+    summary: The ultimate destination for Women. Covering news, celebrity, fashion, beauty, wellness, and expert exclusives - since 1995.
+  wonkette:
+    feed_url: https://www.wonkette.com/feed
+    homepage_url: https://www.wonkette.com
+    display_name: Wonkette
+    summary: Wonkette is filthy, hilarious, liberal news. YOU CAN HANDLE THE TRUTH!
+  woodstockmusicshop:
+    feed_url: https://woodstockmusicshop.com/feed/
+    homepage_url: https://woodstockmusicshop.com
+    display_name: Woodstock Music Shop
+    summary: Vinyl, Instruments, and Gear in the Heart of Woodstock NY
+  wopc:
+    feed_url: https://feeds.feedburner.com/worldofplayingcards
+    homepage_url: https://www.wopc.co.uk
+    display_name: The World of Playing Cards
+    summary: The small rectangular pieces of cardboard have been a medium for games of luck and skill, as well as a focus for design, advertising, political propaganda, art, history and much more... a miniature encyclopedia of social anthropology
+  wordle:
+    feed_url: https://www.wordle.net/feed/
+    homepage_url: https://www.wordle.net
+    display_name: Wordora — Daily word games & puzzles
+    summary: A fresh word game every day. Five-letter guesses, crosswords, word groups, and a honeycomb letter hunt — all under one roof.
+  workaholicsnews_blogspot:
+    feed_url: https://workaholicsnews.blogspot.com/feeds/posts/default
+    homepage_url: https://workaholicsnews.blogspot.com
+    display_name: Workaholics
+    summary: Updates from Workaholics.
+  workingnotworking:
+    feed_url: https://workingnotworking.com/feed/
+    homepage_url: https://workingnotworking.com
+    display_name: workingnotworking.com
+    summary: Updates from workingnotworking.com.
+  world_hey:
+    feed_url: https://world.hey.com/jason/feed.atom
+    homepage_url: https://world.hey.com/jason
+    display_name: Jason Fried
+    summary: Updates from Jason Fried.
+  worldhistory_substack:
+    feed_url: https://worldhistory.substack.com/feed
+    homepage_url: https://worldhistory.substack.com
+    display_name: Looking Through the Past
+    summary: Illuminating forgotten corners of history and using them to think about the present
+  teaepicure:
+    feed_url: https://teaepicure.com/feed/
+    homepage_url: https://teaepicure.com
+    display_name: Tea Epicure
+    summary: Taste Differently
   mcsweeneys:
     feed_url: https://feeds.feedburner.com/mcsweeneys
     homepage_url: https://www.mcsweeneys.net
