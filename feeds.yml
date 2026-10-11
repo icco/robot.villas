@@ -14313,254 +14313,287 @@ bots:
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://worksinprogress.co&size=128
   hmkcode:
     feed_url: https://hmkcode.com/feed.xml
-    homepage_url: http://hmkcode.com
+    homepage_url: https://hmkcode.com
     display_name: HMKCODE
-    summary: Updates from HMKCODE.
-  hmmdaily:
+    summary: Programming tutorials and examples covering Android, Java, JavaScript, CSS, web development, and machine learning.
+    profile_photo: https://github.com/hmkcode.png?size=200
+  hmm_daily:
     feed_url: https://hmmdaily.com/feed/
     homepage_url: https://hmmdaily.com
     display_name: Hmm Daily
-    summary: THINK AGAIN
-  hogbaysoftware:
+    summary: Archived essays, cultural criticism, reporting, poetry, and humor from Hmm Daily, which closed in July 2019.
+    profile_photo: https://hmmdaily.wpenginepowered.com/wp-content/uploads/2018/06/hmm_only_square.png
+  hog_bay_software:
     feed_url: https://www.hogbaysoftware.com/feed/feed.xml
     homepage_url: https://www.hogbaysoftware.com
     display_name: Hog Bay Software
-    summary: Updates from Hog Bay Software.
-  hokstad:
+    summary: Jesse Grosjean's news and development notes about Hog Bay Software's Mac writing and outlining apps, including Bike and TaskPaper.
+    profile_photo: https://www.hogbaysoftware.com/apple-touch-icon.png
+  vidar_hokstad:
     feed_url: https://hokstad.com/feed
-    homepage_url: http://hokstad.com
+    homepage_url: https://hokstad.com
     display_name: Vidar Hokstad
-    summary: Vidar Hokstad
-  hollygramazio:
-    feed_url: http://www.hollygramazio.net/blog?format=rss
-    homepage_url: http://www.hollygramazio.net/blog
-    display_name: Blog - Holly Gramazio
-    summary: Updates from Blog - Holly Gramazio.
-  holovaty:
+    summary: 'Vidar Hokstad''s archived articles on programming, Ruby compilers, Linux, Docker, and software development. Latest feed post: April 2016.'
+    profile_photo: https://github.com/vidarh.png?size=200
+  holly_gramazio:
+    feed_url: https://www.hollygramazio.net/blog?format=rss
+    homepage_url: https://www.hollygramazio.net/blog
+    display_name: Holly Gramazio
+    summary: 'Holly Gramazio''s archived blog about games, writing, travel, and creative projects. Latest feed post: April 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.hollygramazio.net%2Fblog&size=128
+  adrian_holovaty:
     feed_url: https://www.holovaty.com/rss/
     homepage_url: https://www.holovaty.com
-    display_name: Holovaty.com
+    display_name: Adrian Holovaty
     summary: Adrian Holovaty's blog.
+    profile_photo: https://github.com/adrianholovaty.png?size=200
   homage:
     feed_url: https://www.homage.com/blogs/news.atom
     homepage_url: https://www.homage.com/blogs/news
-    display_name: HOMAGE - Pay Homage
-    summary: Updates from HOMAGE - Pay Homage.
-  homakov_blogspot:
+    display_name: HOMAGE
+    summary: HOMAGE's apparel brand blog, featuring charity partnerships, sports, pop culture, and community stories.
+    profile_photo: https://www.homage.com/cdn/shop/files/apple-touch-icon_180x180.png
+  egor_homakov:
     feed_url: https://homakov.blogspot.com/feeds/posts/default
     homepage_url: https://homakov.blogspot.com
     display_name: Egor Homakov
-    summary: Updates from Egor Homakov.
-  homebrewvc_tumblr:
+    summary: Egor Homakov's archived security research on OAuth, CSRF, web applications, and payment systems. The final post announces a blog move in February 2015.
+  homebrew_vc_blog:
     feed_url: https://homebrewvc.tumblr.com/rss
     homepage_url: https://homebrewvc.tumblr.com
-    display_name: Homebrew Blog
-    summary: Updates from Homebrew Blog.
+    display_name: Homebrew VC Blog
+    summary: Archived Homebrew venture-capital blog about portfolio companies, investments, and startups. Moved to homebrew.co/blog in December 2018.
+    profile_photo: https://api.tumblr.com/v2/blog/homebrewvc.tumblr.com/avatar/128
   homethingspast:
     feed_url: https://homethingspast.com/feed/
     homepage_url: https://homethingspast.com
     display_name: HomeThingsPast
-    summary: Updates from HomeThingsPast.
-  hongkongfp:
+    summary: 'Illustrated historical articles about domestic objects, household tools, furniture, and everyday life. Latest feed post: June 2012.'
+  hong_kong_free_press:
     feed_url: https://hongkongfp.com/feed/
     homepage_url: https://hongkongfp.com
-    display_name: Hong Kong Free Press HKFP
-    summary: Hong Kong news, breaking updates - 100% Independent, impartial, non-profit
+    display_name: Hong Kong Free Press
+    summary: Independent, non-profit reporting, opinion, and analysis on Hong Kong, China, Taiwan, and the region.
+    profile_photo: https://hongkongfp.com/wp-content/uploads/2025/06/TINY-FAVICON-do-not-use-200x200.jpg?crop=1
   hoodline:
     feed_url: https://hoodline.com/rss.xml
     homepage_url: https://hoodline.com
-    display_name: Originally Reported, Hyperlocal Neighborhood News
-    summary: Get breaking news from Hoodline's local reporters with stories to inform you about politics, weather, real estate, business, dining, crime, & more.
-  hoodzpahdesign:
+    display_name: Hoodline
+    summary: Local news and neighborhood stories from cities across the United States, covering politics, crime, business, dining, housing, and community events.
+    profile_photo: https://hoodline.com/assets/hoodline-bay-area-news-a461edcab024445da31061cc2f363a1bca7524c10adf93f2ce77a4a33bf06d8e.jpg
+  hoodzpah:
     feed_url: https://hoodzpahdesign.com/feed/
     homepage_url: https://hoodzpahdesign.com
     display_name: Hoodzpah
     summary: A branding and type design studio
-  hoopsanalyst:
+    profile_photo: https://hoodzpahdesign.com/wp-content/uploads/2020/06/cropped-Hoodzpah-logos-icon-favicon-more-negative-2-180x180.jpg
+  hoops_analyst:
     feed_url: https://hoopsanalyst.com/feed/
     homepage_url: https://hoopsanalyst.com
     display_name: Hoops Analyst
-    summary: Updates from Hoops Analyst.
-  horsecycles:
-    feed_url: http://www.horsecycles.com/blog?format=rss
-    homepage_url: http://www.horsecycles.com/blog
-    display_name: Blog - horse
-    summary: Updates from Blog - horse.
+    summary: Basketball analysis, NBA history, player evaluations, trades, and draft coverage.
+    profile_photo: https://hoopsanalyst.com/wp-content/uploads/2023/02/cropped-logo-V2-1-180x180.png
+  horse_cycles:
+    feed_url: https://www.horsecycles.com/blog?format=rss
+    homepage_url: https://www.horsecycles.com/blog
+    display_name: Horse Cycles
+    summary: Horse Cycles' custom bicycle builds, frame designs, workshop projects, and cycling stories.
   houzz:
-    feed_url: http://feeds.feedburner.com/houzz
+    feed_url: https://feeds.feedburner.com/houzz
     homepage_url: https://www.houzz.com
     display_name: Houzz
-    summary: Houzz - Home Design, Decorating and Remodeling Ideas and Inspiration, Kitchen and Bathroom Design
+    summary: Houzz magazine articles on home design, decorating, remodeling, architecture, interiors, gardens, and renovation projects.
+    profile_photo: https://st.hzcdn.com/res/29858323/pic/logo.gif?v=29858323
   hoverbear:
     feed_url: https://hoverbear.org/rss.xml
     homepage_url: https://hoverbear.org
     display_name: Hoverbear
     summary: A computer scientist working in open source towards a more hopeful future.
+    profile_photo: https://hoverbear.org/apple-touch-icon.png
   howchoo:
     feed_url: https://howchoo.com/feed/
     homepage_url: https://howchoo.com
     display_name: howchoo
-    summary: Updates from howchoo.
-  howdns_works:
+    summary: How-to and DIY guides for makers and programmers, covering Raspberry Pi, electronics, software, gaming, and practical projects.
+    profile_photo: https://howchoo.com/wp-content/uploads/2023/07/cropped-favicon-180x180.png
+  how_dns_works:
     feed_url: https://howdns.works/feed.xml
     homepage_url: https://howdns.works
     display_name: How DNS works
-    summary: Learn what is the domain name system (DNS) that brings computers and IP addresses together when you type a website address in your browser.
+    summary: DNSimple's educational webcomic explaining DNS resolution through six episodes and a bonus on glue records. The feed lists the original 2015 episodes.
+    profile_photo: https://howdns.works/assets/images/favicon.png
   hpmor:
     feed_url: https://hpmor.com/feed/
     homepage_url: https://hpmor.com
     display_name: Harry Potter and the Methods of Rationality
-    summary: Petunia married a professor, and Harry grew up reading science and science fiction.
-  hrw:
+    summary: 'Author''s notes and announcements for the completed fan-fiction novel Harry Potter and the Methods of Rationality. Latest feed post: March 2015.'
+  human_rights_watch_news:
     feed_url: https://www.hrw.org/rss/news
     homepage_url: https://www.hrw.org
     display_name: Human Rights Watch News
-    summary: Updates from Human Rights Watch News.
+    summary: Human Rights Watch news, research, and commentary on human rights abuses, international justice, conflict, and civil liberties worldwide.
   simplehomelab:
     feed_url: https://www.simplehomelab.com/feed/
     homepage_url: https://www.simplehomelab.com
     display_name: SimpleHomelab
     summary: Simplifying Homelabs, One Step at a Time! (previously SmartHomeBeginner)
-  hudsandguis:
-    feed_url: http://feeds.feedburner.com/Hudsandguis
+    profile_photo: https://www.simplehomelab.com/images/2025/03/cropped-SimpleHomelab-Icon-512x-1-180x180.png
+  huds_guis:
+    feed_url: https://feeds.feedburner.com/Hudsandguis
     homepage_url: https://www.hudsandguis.com
     display_name: HUDS+GUIS
-    summary: Articles
-  hudsonvalleypost:
+    summary: Future user interfaces, heads-up displays, and GUI design from film, television, games, and personal projects, with designer interviews and visual breakdowns.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.hudsandguis.com&size=128
+  hudson_valley_post:
     feed_url: https://hudsonvalleypost.com/feed/
     homepage_url: https://hudsonvalleypost.com
-    display_name: Hudson Valley Post – Real-Time Hudson Valley News – Hudson Valley News
+    display_name: Hudson Valley Post
     summary: The real-time Hudson Valley news your community is sharing
-  gohugo:
+    profile_photo: https://townsquare.media/wp-content/uploads/2019/05/hudsonvalleypost.png?w=144&h=144
+  hugo_news:
     feed_url: https://gohugo.io/index.xml
     homepage_url: https://gohugo.io
     display_name: Hugo News
     summary: Recent news about Hugo, a static site generator written in Go, optimized for speed and designed for flexibility.
-  humblebundle:
+    profile_photo: https://gohugo.io/apple-touch-icon.png
+  humble_bundle_blog:
     feed_url: https://blog.humblebundle.com/feed/
-    homepage_url: https://www.humblebundle.com
+    homepage_url: https://blog.humblebundle.com
     display_name: Humble Bundle Blog
     summary: The official blog of Humble Bundle
+    profile_photo: https://cdn.humblebundle.com/static/hashed/03df0490a53d595fd930f9fff52038366d60a05d.png
   humbledmba:
     feed_url: https://humbledmba.com/feed/
     homepage_url: https://humbledmba.com
     display_name: humbledMBA
-    summary: Jason Freedman’s lessons learned…and relearned.
-  hungoverowls_tumblr:
+    summary: 'Jason Freedman''s archived lessons on startups, entrepreneurship, fundraising, and venture investment. Latest feed post: November 2021.'
+  hungover_owls:
     feed_url: https://hungoverowls.tumblr.com/rss
     homepage_url: https://hungoverowls.tumblr.com
     display_name: Hungover Owls
-    summary: All photos copyright their original owners. All captions copyright hungoverowls.com, and courtesy of experience. Please direct all Owl-related inquiries to hungoverowls@ gmail.com Owls on Twitter- @hungoverowls Yes, of course there’s a book. Order it now on Amazon!
-  huonw_github:
+    summary: 'Archived owl photographs with humorous hangover-themed captions. Latest feed post: July 2013.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fhungoverowls.tumblr.com&size=128
+  huon_on_the_internet:
     feed_url: https://huonw.github.io/blog/atom.xml
     homepage_url: https://huonw.github.io/blog
     display_name: Huon on the internet
-    summary: Updates from Huon on the internet.
-  husobee_github:
+    summary: Huon Wilson writes about software engineering, Rust, databases, AI, performance, and mathematical ideas.
+    profile_photo: https://github.com/huonw.png?size=200
+  husobee:
     feed_url: https://husobee.github.io/feed.xml
     homepage_url: https://husobee.github.io
     display_name: Why We Can't Have Nice Things
-    summary: Just stuff I get interested in, and need to express to the world.
-  everyhue_me:
+    summary: Programming and software-engineering articles covering Go, web development, dependency security, architecture, and engineering management.
+  searching_gradients:
     feed_url: https://everyhue.me/atom.xml
     homepage_url: https://everyhue.me
-    display_name: Searching Gradients with Huy Nguyen
-    summary: Updates from Searching Gradients with Huy Nguyen.
-  hynek_me:
+    display_name: Searching Gradients
+    summary: Huy Nguyen writes about computer vision, visual search, deep learning, programming, and research projects.
+    profile_photo: https://github.com/huyng.png?size=200
+  hynek_schlawack:
     feed_url: https://hynek.me/index.xml
     homepage_url: https://hynek.me
     display_name: Hynek Schlawack
-    summary: Updates from Hynek Schlawack.
-  hypable:
+    summary: Hynek Schlawack's articles and talks about Python, Go, open-source software, application design, and software engineering.
+    profile_photo: https://hynek.me/apple-touch-icon.png
+  hypable_impact:
     feed_url: https://hypable.com/feed/
     homepage_url: https://hypable.com
     display_name: Hypable Impact
-    summary: Podcast and Patreon consultations | Live your passion
-  hypatia_ca:
+    summary: Andrew Sims' podcasting and Patreon advice, tutorials, and consulting resources. Hypable Impact succeeds the former Hypable entertainment site, which closed in 2021.
+  hypatia_dot_ca:
     feed_url: https://hypatia.ca/feed/
     homepage_url: https://hypatia.ca
     display_name: hypatia dot ca
-    summary: Leigh Honeywell's Blog
+    summary: 'Leigh Honeywell''s archived personal blog on technology, security, ally skills, ADHD, books, and life. Latest feed post: March 2022.'
   hypebot:
     feed_url: https://www.hypebot.com/latest/rss/
     homepage_url: https://www.hypebot.com
     display_name: Hypebot
     summary: Essential news & insights for artists and live music pros.
-  hypotext_co:
-    feed_url: https://hypotext.co/feed/
-    homepage_url: https://hypotext.co
-    display_name: hay88do.us.com
-    summary: hay88
-  iain_rocks:
+    profile_photo: https://storage.ghost.io/c/3a/95/3a957c06-c825-4057-9939-0a274cc16d23/content/images/size/w256h256/2025/11/Frame-78.png
+  iain_cambridge:
     feed_url: https://iain.rocks/feed.xml
     homepage_url: https://iain.rocks
     display_name: Iain Cambridge
-    summary: Updates from Iain Cambridge.
-  iamakulov:
+    summary: Iain Cambridge's technical writing on software development, Go, cryptography, and the programming community.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fiain.rocks&size=128
+  ivan_akulovs_blog:
     feed_url: https://iamakulov.com/notes/feed/
     homepage_url: https://iamakulov.com/notes
-    display_name: Ivan Akulov’s blog
+    display_name: Ivan Akulov's blog
     summary: Ivan Akulov writes about his front-end experience, React, webpack, and performance optimizations.
-  iamtrask_github:
+    profile_photo: https://secure.gravatar.com/avatar/aec4e9e944911b58f2c3d14b7f9e5412a217e5738359c3f52e824b4de2b2263c?s=200&d=404&r=g
+  i_am_trask:
     feed_url: https://iamtrask.github.io/feed.xml
     homepage_url: https://iamtrask.github.io
     display_name: i am trask
     summary: A machine learning craftsmanship blog.
-  iamwillwang:
+    profile_photo: https://github.com/iamtrask.png?size=200
+  will_wang:
     feed_url: https://iamwillwang.com/rss.xml
     homepage_url: https://iamwillwang.com
     display_name: Will Wang
     summary: Notes by Will Wang
-  iana:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fiamwillwang.com&size=128
+  iana_news:
     feed_url: https://www.iana.org/news.atom
     homepage_url: https://www.iana.org/news
     display_name: IANA News
-    summary: Updates from IANA News.
-  ibtimes_2:
+    summary: Official Internet Assigned Numbers Authority announcements about DNS root operations, DNSSEC, protocol registries, audits, and service updates.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.iana.org%2Fnews&size=128
+  international_business_times_uk:
     feed_url: https://feeds.ibtimes.co.uk/feeds/veruc.rss
     homepage_url: https://www.ibtimes.co.uk
-    display_name: ibtimes.co.uk
-    summary: Updates from ibtimes.co.uk.
-  icanread_tumblr:
+    display_name: International Business Times UK
+    summary: International Business Times UK reporting on business, politics, technology, world news, and entertainment.
+    profile_photo: https://g.ibtimes.co.uk/themes/favicons/apple-touch-icon.png
+  i_can_read:
     feed_url: https://icanread.tumblr.com/rss
     homepage_url: https://icanread.tumblr.com
     display_name: i can read
     summary: images with words
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ficanread.tumblr.com&size=128
   icinga:
     feed_url: https://icinga.com/feed/
     homepage_url: https://icinga.com
     display_name: Icinga
     summary: Monitor your Entire Infrastructure
+    profile_photo: https://icinga.com/wp-content/uploads/2020/11/cropped-icinga-favicon-512x512px-180x180.png
   iclarified:
     feed_url: https://www.iclarified.com/rss/rss.xml
     homepage_url: https://www.iClarified.com
-    display_name: iClarified - Apple News and Tutorials
+    display_name: iClarified
     summary: News and Tutorials to help you stay current with your Mac, iPhone, iPod, iPad and other Apple Products
-  icomoon:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.iClarified.com&size=128
+  icomoon_news:
     feed_url: https://icomoon.io/news/feed.atom
-    homepage_url: https://icomoon.io
+    homepage_url: https://icomoon.io/news
     display_name: IcoMoon News
-    summary: Updates from IcoMoon News.
-  icons8:
+    summary: Official IcoMoon product updates and feature announcements for its SVG editor, icon libraries, and icon-font tools.
+    profile_photo: https://icomoon.io/common/apple-touch-icon-35f4a648bf9ba38347b4ab81eb7a06ba.png?vsn=d
+  icons8_blog:
     feed_url: https://icons8.com/blog/feed/
     homepage_url: https://icons8.com/blog
-    display_name: icons8.com
-    summary: Updates from icons8.com.
+    display_name: Icons8 Blog
+    summary: Icons8 articles on graphic design, icons, illustration, visual trends, and tools and workflows for designers.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ficons8.com%2Fblog&size=128
   ideas_ted:
     feed_url: https://ideas.ted.com/feed/
     homepage_url: https://ideas.ted.com
     display_name: ideas.ted.com
-    summary: Ideas change everything
-  idiallo:
+    summary: 'TED''s articles on science, technology, business, arts, and human behavior. Latest feed article: January 2024.'
+  ibrahim_diallo:
     feed_url: https://idiallo.com/feed.rss
     homepage_url: https://idiallo.com
-    display_name: Software and Tech stories from an Insider - iDiallo.com
-    summary: Throughout the years, I have decide to put all my the knowledge I have accumulated in my Blog. Hopefully it will serve others as well as it serves me.
-  jolts_world:
+    display_name: Ibrahim Diallo
+    summary: Ibrahim Diallo's programming tutorials, software and technology stories, and reflections on work and everyday life.
+    profile_photo: https://cdn.idiallo.com/images/id-self-br.jpg
+  jolts:
     feed_url: https://jolts.world/index.php/jolts/gateway/plugin/WebFeedGatewayPlugin/atom
     homepage_url: https://jolts.world/index.php/jolts
     display_name: Journal of Open Law, Technology & Society
-    summary: Updates from Journal of Open Law, Technology & Society.
+    summary: Journal articles on free and open-source software law, licensing, compliance, and openness in technology and society. This feed lists three articles from 2021.
   henri_bergius:
     feed_url: https://bergie.iki.fi/blog/rss.xml
     homepage_url: https://bergie.iki.fi
