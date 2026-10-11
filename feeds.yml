@@ -12008,252 +12008,261 @@ bots:
     feed_url: https://www.dualshockers.com/feed/
     homepage_url: https://www.dualshockers.com
     display_name: DualShockers
-    summary: DualShockers is the definitive destination for video game fans. From gaming news to in-depth guides, we’ve got you covered with our expert coverage.
-  dubreggae_tumblr:
+    summary: Video game news, reviews, guides, and features from DualShockers.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.dualshockers.com&size=128
+  dub_anthology:
     feed_url: https://dubreggae.tumblr.com/rss
     homepage_url: https://dubreggae.tumblr.com
     display_name: Dub Anthology
-    summary: The best dub reggae albums ever made, according to a teenager’s list from 1977
-  ducea:
+    summary: 'Archived dub and reggae album anthology based on a teenager''s 1977 record list. Latest feed post: January 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdubreggae.tumblr.com&size=128
+  marius_ducea:
     feed_url: https://www.ducea.com/rss.xml
     homepage_url: https://www.ducea.com
-    display_name: MD/Blog
-    summary: Recent content on MD/Blog
-  duckduckgo:
+    display_name: Marius Ducea
+    summary: Marius Ducea's technical blog on AWS, Kubernetes, infrastructure automation, Linux, and developer tools.
+    profile_photo: https://www.ducea.com/favicon-32x32.png
+  spread_privacy:
     feed_url: https://spreadprivacy.com/rss/
-    homepage_url: https://duckduckgo.com
+    homepage_url: https://spreadprivacy.com/
     display_name: Spread Privacy
-    summary: The Official DuckDuckGo Blog
+    summary: DuckDuckGo's official blog on privacy research, browser and search updates, AI privacy, and digital competition.
+    profile_photo: https://duckduckgo.com/static-assets/favicons/DDG-iOS-icon_60x60.png
   ducktyped:
     feed_url: https://www.ducktyped.org/feed
     homepage_url: https://www.ducktyped.org
     display_name: DuckTyped
-    summary: Illustrated posts on software
+    summary: Aditya Bhargava's illustrated explanations of software, cloud networking, mathematics, and programming.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!nH0n!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fef14ff81-e93f-40ab-afae-4951030bacb4%2Fapple-touch-icon-57x57.png
   dudeism:
     feed_url: https://dudeism.com/feed/
     homepage_url: https://dudeism.com
     display_name: Dudeism
-    summary: The Church of the Latter-Day Dude
-  dumblittleman:
-    feed_url: https://www.dumblittleman.com/feed/
-    homepage_url: https://www.dumblittleman.com
-    display_name: Dumb Little Man
-    summary: Your Digital Playground
-  dungeonmastering:
+    summary: 'Archived news and newsletters from Dudeism, the Church of the Latter-Day Dude, inspired by The Big Lebowski. Latest feed post: June 2012.'
+    profile_photo: https://dudeism.com/wp-content/uploads/2015/12/cropped-dudeism-logo1-1-180x180.png
+  dungeon_mastering:
     feed_url: https://www.dungeonmastering.com/feed/
     homepage_url: https://www.dungeonmastering.com
     display_name: Dungeon Mastering
-    summary: The D&D Blog
-  durdn:
+    summary: 'Dungeons & Dragons fifth-edition rules explanations, character-class guides, and dungeon-master advice. Latest feed post: December 2023.'
+    profile_photo: https://www.dungeonmastering.com/wp-content/uploads/2021/02/dm-favicon-300x300.png
+  nicola_paolucci:
     feed_url: https://www.durdn.com/index.xml
     homepage_url: https://www.durdn.com
-    display_name: '@durdn - nicola paolucci'
-    summary: Recent content on @durdn - nicola paolucci
-  dxuuu_xyz:
+    display_name: Nicola Paolucci
+    summary: 'Nicola Paolucci''s archive of Git workflows, development tools, software projects, and technical roundups. Latest feed post: March 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.durdn.com&size=128
+  daniel_xu:
     feed_url: https://dxuuu.xyz/atom.xml
     homepage_url: https://dxuuu.xyz
-    display_name: dxu's blog
-    summary: Updates from dxu's blog.
-  statuspage_gbucnss_oci_oraclecloud:
+    display_name: Daniel Xu
+    summary: Daniel Xu on Linux, BPF, systems programming, debugging, testing tools, and open-source projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdxuuu.xyz&size=128
+  oracle_dynamic_dns:
     feed_url: https://statuspage.gbucnss.oci.oraclecloud.com/status/xgbu_Dyn/atom
     homepage_url: https://statuspage.gbucnss.oci.oraclecloud.com/status/xgbu_Dyn
     display_name: Oracle Dynamic DNS
-    summary: Updates from Oracle Dynamic DNS.
-  e_texteditor:
-    feed_url: https://www.e-texteditor.com/feed
-    homepage_url: https://www.e-texteditor.com
-    display_name: 人気の自動車保険を口コミ・相場からランキングでご紹介!
-    summary: 今売れてる通販型自動車保険を口コミからランキング形式でご紹介!
+    summary: Official Oracle Dynamic DNS service incidents and scheduled maintenance notices.
   eagereyes:
     feed_url: https://eagereyes.org/feed
     homepage_url: https://eagereyes.org
     display_name: eagereyes
-    summary: Data visualization and visual communication by Robert Kosara
-  enterpriseintegrationpatterns:
+    summary: Robert Kosara on data visualization, visual communication, visualization research, and photography.
+    profile_photo: https://media.eagereyes.org/wp-content/uploads/2016/09/winky-e-favicon-256.png
+  gregor_hohpe_ramblings:
     feed_url: https://www.enterpriseintegrationpatterns.com/ramblings.rss
-    homepage_url: http://www.enterpriseintegrationpatterns.com
+    homepage_url: https://www.enterpriseintegrationpatterns.com/ramblings.html
     display_name: 'Enterprise Integration Patterns: Gregor''s Ramblings'
-    summary: Gregor's Ramblings on Enterprise Integration
+    summary: Gregor Hohpe's essays on enterprise integration, messaging, event-driven systems, and software architecture.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.enterpriseintegrationpatterns.com&size=128
   earendil:
     feed_url: https://earendil.com/posts/feed.atom
     homepage_url: https://earendil.com
-    display_name: Earendil Posts
-    summary: Updates from Earendil Posts.
-  eastoftheweb:
+    display_name: Earendil
+    summary: Earendil's posts on Pi, Lefos, open AI tools, coding agents, and software development.
+    profile_photo: https://earendil.com/static/favicon/apple-touch-icon.png
+  east_of_the_web:
     feed_url: https://www.eastoftheweb.com/rss.xml
     homepage_url: https://www.eastoftheweb.com
     display_name: East of the Web
-    summary: Updates from East of the Web.
+    summary: Short stories across fiction, crime, horror, humor, romance, science fiction, nonfiction, and children's literature. Feed dates are sparse and include legacy placeholder timestamps.
   easyengine:
     feed_url: https://easyengine.io/feed/
     homepage_url: https://easyengine.io
     display_name: EasyEngine
-    summary: Updates from EasyEngine.
-  eatingpolicy:
+    summary: EasyEngine release notes, WordPress hosting and server-management tutorials, and dashboard updates.
+    profile_photo: https://easyengine.io/wp-content/uploads/2019/06/cropped-EasyEngine-New-Logo-Favicon-180x180.png
+  eating_policy:
     feed_url: https://www.eatingpolicy.com/feed
     homepage_url: https://www.eatingpolicy.com
     display_name: Eating Policy
-    summary: In business, culture eats strategy. In government, culture eats policy. Here we'll talk about the problems of state capacity (government's ability to achieve its policy goals) and how to fix them. From the author of Recoding America.
-  eaves_ca:
+    summary: Jennifer Pahlka on government state capacity, public-service delivery, institutional culture, and policy implementation.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!1529!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5067dc9e-3212-474f-9a31-7817c1a2ab27%2Fapple-touch-icon-57x57.png
+  david_eaves:
     feed_url: https://eaves.ca/feed/
     homepage_url: https://eaves.ca
-    display_name: eaves.ca
-    summary: if writing is a muscle, this is my gym
-  ebiquity_umbc_edu:
+    display_name: David Eaves
+    summary: David Eaves on digital government, public infrastructure, data sovereignty, cloud policy, and institutional change.
+    profile_photo: https://secure.gravatar.com/blavatar/45a7cd750786f8b9ec93f02d98fc895d45be4e28672fccf404eab3a949b65e0b?s=114
+  umbc_ebiquity:
     feed_url: https://feeds.feedburner.com/ebiquityStream
     homepage_url: https://ebiquity.umbc.edu
-    display_name: UMBC ebiquity stream
-    summary: Updates from UMBC ebiquity stream.
-  ebird:
+    display_name: UMBC ebiquity
+    summary: 'Archived research papers and events from UMBC''s ebiquity research group, covering semantic systems, AI, and computing. Latest feed item: April 2012.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Febiquity.umbc.edu&size=128
+  ebird_news:
     feed_url: https://ebird.org/feed
     homepage_url: https://ebird.org/news
-    display_name: eBird.org News
-    summary: The latest news posts from eBird.org
-  echeng:
+    display_name: eBird News
+    summary: Cornell Lab of Ornithology's eBird news on birding events, citizen science, bird observations, and conservation.
+    profile_photo: https://is-ebird-web-static-content-prod.s3.amazonaws.com/content/releases/20260923_152816/eBirdCommon/lib/images/favicons/ebird/apple-touch-icon.png
+  eric_cheng:
     feed_url: https://echeng.com/feed.xml
     homepage_url: https://echeng.com
-    display_name: ERIC CHENG
-    summary: Photography by ERIC CHENG
-  eclim:
-    feed_url: https://eclim.org/feed/
-    homepage_url: https://eclim.org
-    display_name: Eclim – Marine Life, Fisheries and Ocean Conservation
-    summary: Updates from Eclim – Marine Life, Fisheries and Ocean Conservation.
+    display_name: Eric Cheng
+    summary: Eric Cheng's photography portfolio, photo collections, and interactive 3D captures.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fecheng.com&size=128
   eclypsium:
     feed_url: https://eclypsium.com/feed/
     homepage_url: https://eclypsium.com/home
     display_name: Eclypsium
-    summary: Secure Infrastructure In The Age of AI
-  eddie_codes:
+    summary: Eclypsium's research, podcasts, and product updates on hardware, firmware, supply-chain security, and trusted AI infrastructure.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Feclypsium.com%2Fhome&size=128
+  eddie_atkinson:
     feed_url: https://eddie.codes/rss.xml
     homepage_url: https://eddie.codes
-    display_name: Eddie's Blog
-    summary: Opinions my own and probably wrong
-  edge:
+    display_name: Eddie Atkinson
+    summary: Eddie Atkinson's articles on programming, TypeScript, data tools, web development, and code quality.
+    profile_photo: https://eddie.codes/apple-touch-icon.png
+  edge_org:
     feed_url: https://www.edge.org/feed
     homepage_url: https://www.edge.org
     display_name: Edge.org
-    summary: Updates from Edge.org.
-  editorial_rottentomatoes:
+    summary: 'Archived Edge Foundation conversations and essays on science, psychology, culture, and ideas. Hosted in perpetuity by the Internet Archive; latest feed post: November 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.edge.org&size=128
+  rotten_tomatoes_editorial:
     feed_url: https://editorial.rottentomatoes.com/rss/
     homepage_url: https://editorial.rottentomatoes.com
-    display_name: Rotten Tomatoes
-    summary: Serving up Fresh and Rotten reviews for Movies and TV.
-  ediy_com_my:
-    feed_url: https://ediy.com.my/itemlist%3Fformat=feed&type=rss
-    homepage_url: http://ediy.com.my
-    display_name: eDIY - eDIY - Home
-    summary: DIY projects for the electronics enthusiast.
+    display_name: Rotten Tomatoes Editorial
+    summary: Movie and television news, interviews, ranked viewing guides, review roundups, and box-office reporting from Rotten Tomatoes.
+    profile_photo: https://editorial.rottentomatoes.com/wp-content/uploads/2022/05/favicon.png?w=96
   edmtunes:
     feed_url: https://www.edmtunes.com/feed/
     homepage_url: https://www.edmtunes.com
     display_name: EDMTunes
-    summary: Updates from EDMTunes.
+    summary: Electronic dance music news, new releases, festival announcements, event coverage, and music-technology updates.
+    profile_photo: https://www.edmtunes.com/apple-touch-icon.png
   edovia:
     feed_url: https://blog.edovia.com/rss.php?lg=en
-    homepage_url: https://edovia.com/en/?
-    display_name: Edovia Blog
-    summary: Latest updates from Edovia
-  eewang_github:
-    feed_url: https://eewang.github.io/atom.xml
-    homepage_url: https://eewang.github.io
-    display_name: eugenius
-    summary: Updates from eugenius.
-  effectortheme_tumblr:
+    homepage_url: https://blog.edovia.com/en/
+    display_name: Edovia
+    summary: Edovia's product news and release updates for Screens, Screens Connect, and its other Apple-platform apps.
+    profile_photo: https://edovia.com/apple-touch-icon.png
+  effector_theme:
     feed_url: https://effectortheme.tumblr.com/rss
     homepage_url: https://effectortheme.tumblr.com
     display_name: Effector Theme
-    summary: Effector improves the overall customization and includes some additional features that I think you’re gonna like. We recommend that you visit the docs to learn more about what’s new or to learn how to make the most out of this theme. More theme info →
+    summary: 'Archived demonstration posts and release notes for the Effector Tumblr theme. Latest feed post: November 2012.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Feffectortheme.tumblr.com&size=128
   egghead:
     feed_url: https://app.egghead.io/feed
     homepage_url: https://egghead.io/q
-    display_name: egghead.io - Bite-sized Web Development Video Tutorials & Training
-    summary: Awesome lessons on modern web tools that you use to get work done.
+    display_name: egghead
+    summary: Web-development video lessons and courses on JavaScript, frontend frameworks, developer tools, and AI-assisted programming.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fegghead.io%2Fq&size=128
   eieio_games:
     feed_url: https://eieio.games/feed.xml
     homepage_url: https://eieio.games
     display_name: eieio.games
-    summary: Updates from eieio.games.
-  ejholmes_github:
+    summary: Nolen Royalty's playful web projects, multiplayer experiments, games, and technical writeups.
+    profile_photo: https://eieio.games/favicon.png
+  eric_holmes:
     feed_url: https://ejholmes.github.io/feed.xml
     homepage_url: https://ejholmes.github.io
     display_name: Eric Holmes
-    summary: Updates from Eric Holmes.
-  ejroundtheworld_blogspot:
+    summary: Eric Holmes on developer tools, AWS infrastructure, software supply-chain security, Docker, and programming.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fejholmes.github.io&size=128
+  emily_levy_travel:
     feed_url: https://ejroundtheworld.blogspot.com/feeds/posts/default
     homepage_url: https://ejroundtheworld.blogspot.com
     display_name: Around The World and Back Again
-    summary: Updates from Around The World and Back Again.
-  plex_tv:
+    summary: 'Emily J. Levy''s archived travel stories, family reflections, and New York dispatches. Latest feed post: November 2012.'
+  plex:
     feed_url: https://www.plex.tv/feed/
-    homepage_url: https://www.plex.tv
+    homepage_url: https://www.plex.tv/blog/
     display_name: Plex
-    summary: Stream smarter.
+    summary: Plex's official blog with streaming recommendations, movie and television guides, and service updates.
+    profile_photo: https://watch.plex.tv/icons/plex-76.png
   elektronauts:
     feed_url: https://www.elektronauts.com/posts.rss
     homepage_url: https://www.elektronauts.com
-    display_name: Elektronauts - Latest posts
-    summary: Latest posts
-  element:
+    display_name: Elektronauts
+    summary: Latest community forum posts about Elektron instruments, synthesizers, music gear, production, and members' music.
+    profile_photo: https://eu5.dh-cdn.net/uploads/db8181/optimized/3X/5/6/560c1d1f88552a2e73e44d22979fc0250d3a1bcb_2_180x180.png
+  element_blog:
     feed_url: https://element.io/blog/rss/
     homepage_url: https://element.io/blog
     display_name: Element Blog
-    summary: Own your conversation
-  elementary:
+    summary: Element's news and technical writing on Matrix, encrypted communications, interoperability, collaboration, and digital sovereignty.
+    profile_photo: https://element.io/blog/content/images/size/w256h256/2020/07/Logomark---white-on-green.png
+  elementary_blog:
     feed_url: https://blog.elementary.io/feed.xml
-    homepage_url: https://elementary.io
+    homepage_url: https://blog.elementary.io/
     display_name: elementary Blog
-    summary: We design and develop the fast, open, and privacy-respecting replacement for Windows and macOS
-  elevenlabs:
+    summary: Official elementary OS releases, app updates, desktop design, development progress, and community news.
+    profile_photo: https://elementary.io/images/launcher-icons/apple-touch-icon.png
+  elevenlabs_blog:
     feed_url: https://elevenlabs.io/blog/rss.xml
     homepage_url: https://elevenlabs.io/blog
     display_name: ElevenLabs Blog
-    summary: Read the latest research, product, and company updates from ElevenLabs - provider of the most realistic and versatile AI audio tools
-  eliotsykes:
+    summary: ElevenLabs research, product releases, company news, and guides to AI speech, audio generation, transcription, and voice agents.
+    profile_photo: https://elevenlabs.io/apple-icon.png?6592732ab34b1d42
+  eliot_sykes:
     feed_url: https://eliotsykes.com/feed/
     homepage_url: https://eliotsykes.com
     display_name: Eliot Sykes
-    summary: Rails developer and coach
+    summary: 'Eliot Sykes'' archived Ruby on Rails tutorials on testing, security, background jobs, and developer tools. Latest feed post: July 2017.'
+    profile_photo: https://i0.wp.com/eliotsykes.com/wp-content/uploads/2020/06/eliot-outline-square.png?fit=180%2C180&ssl=1
   ell_stackexchange:
     feed_url: https://ell.stackexchange.com/feeds
     homepage_url: https://ell.stackexchange.com/questions
-    display_name: Recent Questions - English Language Learners Stack Exchange
-    summary: Updates from Recent Questions - English Language Learners Stack Exchange.
-  elliotcsmith:
+    display_name: English Language Learners Stack Exchange
+    summary: Recent English Language Learners Stack Exchange questions on English grammar, vocabulary, usage, and meaning.
+    profile_photo: https://cdn.sstatic.net/Sites/ell/Img/apple-touch-icon.png
+  elliot_c_smith:
     feed_url: https://www.elliotcsmith.com/rss/
     homepage_url: https://www.elliotcsmith.com
-    display_name: Elliot C Smith | Posts about Dev, Startups, and Product
-    summary: Posts on product, software development, building companies and other things I find interesting.
-  elliotjaystocks:
-    feed_url: https://feeds.feedburner.com/elliotjaystocks/
+    display_name: Elliot C Smith
+    summary: Elliot C Smith on product development, software engineering, startups, pricing, and building with AI.
+    profile_photo: https://storage.ghost.io/c/ea/1d/ea1d42ce-212e-4795-993b-1716a8c550ed/content/images/size/w256h256/2026/07/Favicon.png
+  elliot_jay_stocks:
+    feed_url: https://elliotjaystocks.com/feed.xml
     homepage_url: https://elliotjaystocks.com
-    display_name: Elliot Jay Stocks | Everything (blog + newsletter + speaking) feed
-    summary: Elliot Jay Stocks is a designer and author, usually doing something with typography
+    display_name: Elliot Jay Stocks
+    summary: Elliot Jay Stocks' writing, newsletter issues, and speaking announcements on typography, design, and creative work.
+    profile_photo: https://elliotjaystocks.com/images/icons/favicon-196.png
   elliptic_curves_art:
     feed_url: https://elliptic-curves.art/index.xml
     homepage_url: https://elliptic-curves.art
-    display_name: Home page on elliptic-curves.art
-    summary: Recent content in Home page on elliptic-curves.art
-  ellsberg:
+    display_name: elliptic-curves.art
+    summary: 'Nadir Hajouji and Steve Trettel''s mathematical illustrations, papers, and visualizations of elliptic curves. Latest feed item: April 2025.'
+  daniel_ellsberg:
     feed_url: https://www.ellsberg.net/feed/
     homepage_url: https://www.ellsberg.net
-    display_name: Daniel Ellsberg's Website
-    summary: Updates from Daniel Ellsberg's Website.
-  ellugar_co:
+    display_name: Daniel Ellsberg
+    summary: Daniel Ellsberg's official archive and legacy updates on the Pentagon Papers, nuclear threats, civil resistance, and his writings.
+  mario_carballo:
     feed_url: https://ellugar.co/logs/index.xml
     homepage_url: https://ellugar.co/logs
-    display_name: ellugar Logs
-    summary: Logs from ellugar
+    display_name: Mario Carballo (ellugar)
+    summary: 'Mario Carballo''s archived game-development logs, web and server notes, personal reflections, and stories in English and Spanish. Latest feed post: January 2023.'
+    profile_photo: https://ellugar.co/apple-touch-icon.png
   emi_h:
     feed_url: https://emi-h.com/feed.xml
     homepage_url: https://emi-h.com
-    display_name: emi-h.com feed
-    summary: Updates from emi-h.com feed.
-  emojilog_rosano_ca:
-    feed_url: https://rosano.ca/blog/feed
-    homepage_url: https://emojilog.rosano.ca
-    display_name: Rosano / Blog
-    summary: Updates from Rosano / Blog.
+    display_name: emi-h.com
+    summary: Emilia-h's articles on programming languages, algorithms, graph theory, formal systems, and mathematical games.
+    profile_photo: https://github.com/emilia-h.png?size=200
   etsy_code_as_craft:
     feed_url: https://www.etsy.com/codeascraft/rss
     homepage_url: https://www.etsy.com
