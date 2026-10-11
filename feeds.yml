@@ -8295,252 +8295,257 @@ bots:
     feed_url: https://betanews.com/feed/
     homepage_url: https://betanews.com
     display_name: BetaNews
-    summary: Technology News and Analysis
-  betternotesapp:
-    feed_url: http://www.betternotesapp.com/feed.xml
-    homepage_url: http://www.betternotesapp.com
-    display_name: Better Notes — Stupid-simple notes for your phone.
-    summary: Better notes.
-  betterthangrep:
-    feed_url: https://betterthangrep.com/feed/
-    homepage_url: https://betterthangrep.com
-    display_name: Better Than Grep
-    summary: The Most Opinionated Linux Blog
-  bevsi_tumblr:
+    summary: Technology news and analysis covering software, operating systems, security, AI, and consumer technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbetanews.com&size=128
+  bevsi:
     feed_url: https://bevsi.tumblr.com/rss
     homepage_url: https://bevsi.tumblr.com
     display_name: bevsi
-    summary: portfolio / patreon / art / redbubble / instagram / behance / prints Bev Johnson / character designer and illustrator - beverly.blue88 @ gmail. com
-  bevstohl_blogspot:
+    summary: Art, character illustrations, Heartstrings comic updates, and selected reblogs from illustrator Bev Johnson, known as bevsi.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbevsi.tumblr.com&size=128
+  bev_stohls_stata_confusion:
     feed_url: https://bevstohl.blogspot.com/feeds/posts/default
     homepage_url: https://bevstohl.blogspot.com
     display_name: Bev Stohl's Stata Confusion
-    summary: Updates from Bev Stohl's Stata Confusion.
-  bhc3:
+    summary: Bev Stohl's personal essays on writing, family, and her years working with Noam Chomsky, including Chomsky and Me memoir updates.
+  im_not_actually_a_geek:
     feed_url: https://bhc3.com/feed/
     homepage_url: https://bhc3.com
     display_name: I'm Not Actually a Geek
-    summary: Observations on technology and business from someone who should know better
-  bidnessetc:
-    feed_url: https://www.bidnessetc.com/feed/
-    homepage_url: https://www.bidnessetc.com
-    display_name: BidnessETC
-    summary: Dominating The Web; One Step At A Time
-  bieberlabs:
+    summary: 'Hutch Carpenter''s archived essays on innovation, business, behavioral economics, social technology, and collaboration. Latest feed post: November 2015.'
+    profile_photo: https://2.gravatar.com/avatar/bd38e0d18debcbf72a38e06198de60efe6da7536b477832448e6bc7417c806d8?s=200&d=404
+  bieber_labs:
     feed_url: https://bieberlabs.com/feed/
     homepage_url: https://bieberlabs.com
     display_name: Bieber Labs
-    summary: Updates from Bieber Labs.
-  bigdata_2minutestreaming:
+    summary: Ron Bieber's essays on software development, agile and lean methods, AI, and personal reflections.
+    profile_photo: https://secure.gravatar.com/blavatar/b0a0e3974a6aa0ee37ebdda37a11c61298b0c65e44cad55bb89d4881a96b519d?s=114
+  stanislavs_big_data_stream:
     feed_url: https://bigdata.2minutestreaming.com/feed
     homepage_url: https://bigdata.2minutestreaming.com
-    display_name: Stanislav’s Big Data Stream
-    summary: "A stream of all the highly-technical viral posts I do surrounding big data and tech. Same high quality in a less distracting format. \U0001F44C"
-  bigmachine:
+    display_name: Stanislav's Big Data Stream
+    summary: Stanislav Kozlovski's technical articles and interviews on Apache Kafka, event streaming, databases, data lakes, and distributed systems.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!bASM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9a0437aa-086d-4175-a039-b9629cc791e9%2Fapple-touch-icon-57x57.png
+  big_machine:
     feed_url: https://bigmachine.io/feed.xml
     homepage_url: https://bigmachine.io
     display_name: Big Machine
-    summary: Essays, notes, and field reports on AI and agentic engineering, databases, and the craft of writing software.
-  bikesnobnyc_blogspot:
-    feed_url: http://feeds.feedburner.com/blogspot/arls
-    homepage_url: http://bikesnobnyc.blogspot.com
+    summary: Rob Conery's software-development essays, tutorials, and field reports on databases, AI-assisted engineering, and building software.
+    profile_photo: https://bigmachine.io/images/icon.png
+  bike_snob_nyc:
+    feed_url: https://bikesnobnyc.com/feed/
+    homepage_url: https://bikesnobnyc.com
     display_name: Bike Snob NYC
-    summary: Updates from Bike Snob NYC.
-  bilalquadri:
+    summary: Eben Weiss's cycling commentary, bike reviews, rides, and observations on bicycle culture as Bike Snob NYC.
+    profile_photo: https://i0.wp.com/bikesnobnyc.com/wp-content/uploads/2020/01/cropped-Screenshot-2019-07-15-at-3.07.06-PM.png?fit=180%2C180&ssl=1
+  bilal_quadri:
     feed_url: https://bilalquadri.com/feed.xml
-    homepage_url: http://bilalquadri.com
+    homepage_url: https://bilalquadri.com
     display_name: Bilal Quadri
-    summary: The personal site & blog of Bilal Quadri
-  bing:
+    summary: 'Bilal Quadri''s archived programming tutorials on Vim, Angular promises, Laravel, and developer tools. Latest feed post: May 2014.'
+    profile_photo: https://bilalquadri.com/favicon.png
+  bing_blogs:
     feed_url: https://blogs.bing.com/feed/
-    homepage_url: https://www.bing.com
+    homepage_url: https://blogs.bing.com
     display_name: Bing Blogs
-    summary: This is a place devoted to giving you deeper insight into the news, trends, people and technology behind Bing.
-  binpress:
-    feed_url: https://www.binpress.com/feed/
-    homepage_url: https://www.binpress.com
-    display_name: binPress
-    summary: Updates from binPress.
+    summary: Official Microsoft Bing blog posts on search, AI grounding, Bing Webmaster Tools, maps, and product announcements.
+    profile_photo: https://www.bing.com/sa/simg/favicon-trans-bg-blue-mg-png.png
   bioware:
-    feed_url: https://www.bioware.com/feed/
-    homepage_url: https://www.bioware.com
-    display_name: BioWare
-    summary: Rich Stories, Unforgettable Characters, And Vast Worlds
-  birch_co:
+    feed_url: https://blog.bioware.com/feed/
+    homepage_url: https://blog.bioware.com
+    display_name: BioWare Blog
+    summary: Official BioWare blog posts on Mass Effect, Dragon Age, studio updates, and the community behind its role-playing games.
+    profile_photo: https://blog.bioware.com/wp-content/uploads/2019/02/BioWare-B-300x300.png
+  my_musepad:
     feed_url: https://birch.co/rss
     homepage_url: https://birch.co
     display_name: My musepad
-    summary: Writings and musings from a startup guy. Talk about tech, startups, innovation, investing, food, travel, and other random thoughts.
-  birchtree_me:
+    summary: 'Mark Birch''s My musepad: startup and technology commentary, personal reflections, travel notes, quotations, and reblogs. Latest feed post: September 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbirch.co&size=128
+  birchtree:
     feed_url: https://birchtree.me/rss/
     homepage_url: https://birchtree.me
     display_name: Birchtree
-    summary: Tech, Apple, and the vast grey area that is AI
-  bisexual_books_tumblr:
+    summary: Matt Birchler's writing on Apple, technology, app development, design, and AI, alongside updates on his own apps.
+    profile_photo: https://storage.ghost.io/c/25/31/25312b2a-2d5b-4d01-ba92-e6755efc202c/content/images/size/w256h256/2025/03/birchtreefavi.png
+  bisexual_books:
     feed_url: https://bisexual-books.tumblr.com/rss
     homepage_url: https://bisexual-books.tumblr.com
     display_name: Bisexual Books
-    summary: Welcome to Bisexual Books. Here you’ll find views and reviews on books from multiple genres and for all ages from the bisexual perspective. Be warned this site contains spoilers and reviews of erotica and other sexual material. Questions or comments?…
+    summary: 'Archived book and comic reviews, bisexual representation discussions, reader questions, and LGBTQ commentary. Latest feed post: December 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbisexual-books.tumblr.com&size=128
   bisnow:
     feed_url: https://www.bisnow.com/rss/all
     homepage_url: https://www.bisnow.com
-    display_name: Bisnow Latest News Feed
-    summary: Latest Bisnow articles across all markets
-  mo:
+    display_name: Bisnow
+    summary: Commercial real estate reporting on property markets, development, leasing, finance, and deals across US and international cities.
+    profile_photo: https://a-us.storyblok.com/g/91156235541309/180x180/321f30fc59/apple-touch-icon.png
+  mo_bitar:
     feed_url: https://mo.io/rss.xml
     homepage_url: https://mo.io
-    display_name: Mo — mough.xyz
-    summary: Working on Enjoy. Previously built Standard Notes.
-  bitcannon:
+    display_name: Mo Bitar
+    summary: Mo Bitar's personal essays on software, privacy, entrepreneurship, creativity, and philosophy, with an archive of earlier app-building posts.
+  bit_cannon:
     feed_url: https://bitcannon.net/index.xml
     homepage_url: https://bitcannon.net
     display_name: Bit Cannon
-    summary: Recent posts on Bit Cannon
-  bitcoin:
+    summary: 'Archived hands-on articles about Linux and BSD desktops, operating systems, computer hardware, and alternatives to Apple platforms. Latest feed post: July 2023.'
+  bitcoin_network_status_and_alerts:
     feed_url: https://bitcoin.org/en/rss/alerts.rss
     homepage_url: https://bitcoin.org/en/alerts
     display_name: Bitcoin network status and alerts
-    summary: This RSS feed allows to follow events and alerts surrounding the Bitcoin network and software.
+    summary: 'Bitcoin.org archive of Bitcoin network and software security alerts, upgrade notices, and disruptions. Latest feed alert: September 2018.'
+    profile_photo: https://bitcoin.org/img/icons/logo_ios.png?1790370652
   bitcoinist:
     feed_url: https://bitcoinist.com/feed/
     homepage_url: https://bitcoinist.com
-    display_name: Bitcoinist.com
-    summary: Updates from Bitcoinist.com.
+    display_name: Bitcoinist
+    summary: Cryptocurrency news and analysis covering Bitcoin, altcoins, blockchain technology, regulation, exchanges, and markets.
+    profile_photo: https://bitcoinist.com/wp-content/uploads/2021/04/cropped-cropped-cropped-Icon.png?fit=180%2C180
   bitlbee:
     feed_url: https://www.bitlbee.org/news.r.html.rss
-    homepage_url: http://www.bitlbee.org/main.php/news.html
-    display_name: BitlBee - News
-    summary: Updates from BitlBee - News.
-  bitrebels:
-    feed_url: https://bitrebels.com/feed/
-    homepage_url: https://bitrebels.com
-    display_name: Bit Rebels
-    summary: Technology, Social Media, Business, Geek News
+    homepage_url: https://www.bitlbee.org
+    display_name: BitlBee
+    summary: 'Archived release announcements and protocol-support notices for BitlBee, the instant-messaging gateway for IRC clients. Latest feed post: March 2016.'
+    profile_photo: https://github.com/bitlbee.png?size=200
   bitsnpieces_dev:
     feed_url: https://bitsnpieces.dev/feed.xml
     homepage_url: https://bitsnpieces.dev
-    display_name: bitsnpieces.dev
-    summary: Updates from bitsnpieces.dev.
-  bitsup_blogspot:
+    display_name: bitsnpieces.dev - Alastair Roberts
+    summary: Alastair Roberts's software and hardware projects, including a portable step-sequencer synthesizer built for his daughter.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbitsnpieces.dev&size=128
+  bits_up:
     feed_url: https://bitsup.blogspot.com/feeds/posts/default
     homepage_url: https://bitsup.blogspot.com
     display_name: Bits Up!
-    summary: Updates from Bits Up!.
+    summary: 'Patrick McManus''s archived technical articles on network performance, HTTP/2, QUIC, DNS over HTTPS, TLS, and Firefox networking. Latest feed post: May 2018.'
   bklyner:
     feed_url: https://bklyner.com/rss/
     homepage_url: https://bklyner.com
     display_name: Bklyner
-    summary: News from Brooklyn
+    summary: 'Brooklyn local news and commentary covering politics, neighborhoods, housing, transit, and community issues. Latest feed post: June 2025.'
+    profile_photo: https://storage.ghost.io/c/5c/31/5c318fb9-e352-457a-b652-589f09f1e75d/content/images/size/w256h256/2024/06/Bklyner-Favicon-Square-Black.png
   bkmag:
     feed_url: https://www.bkmag.com/feed/
     homepage_url: https://www.bkmag.com
     display_name: BKMAG
-    summary: Brooklyn's guide to local news, music, bars, restaurants, books, sex, real estate and events.
-  blackhole12_blogspot:
-    feed_url: https://blackhole12.blogspot.com/feeds/posts/default
-    homepage_url: https://blackhole12.blogspot.com
+    summary: Brooklyn reporting and guides covering local news, arts, entertainment, food, drink, fashion, real estate, and events.
+    profile_photo: https://www.bkmag.com/wp-content/themes/brooklyn-magazine/assets/images/apple-touch-icon-180x180.png
+  erik_mcclure:
+    feed_url: https://erikmcclure.com/blog/index.xml
+    homepage_url: https://erikmcclure.com
     display_name: Erik McClure
-    summary: Updates from Erik McClure.
+    summary: Erik McClure's essays on software engineering, mathematics, games, technology, and society, including AI and open-source development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblackhole12.blogspot.com&size=128
   blackthorn:
     feed_url: https://blackthorn.io/feed/
     homepage_url: https://blackthorn.io
     display_name: Blackthorn
-    summary: Event Management, Native to Salesforce.com
-  blackwoodspress:
-    feed_url: https://blackwoodspress.com/sitemap.rss
-    homepage_url: https://blackwoodspress.com
-    display_name: Blackwoods Press
-    summary: Blackwoods Press
-  jip_dev:
+    summary: Official Blackthorn articles on Salesforce-native event management, registration, payments, attendee communication, and customer workflows.
+    profile_photo: https://blackthorn.io/wp-content/uploads/2025/06/cropped-Blackthorn-favicon-180x180.png
+  jorge_israel_pena:
     feed_url: https://jip.dev/index.xml
-    homepage_url: https://www.jip.dev
-    display_name: Jorge Israel Peña
-    summary: Recent content on Jorge Israel Peña
-  blainsmith:
+    homepage_url: https://jip.dev
+    display_name: Jorge Israel Pena
+    summary: 'Jorge Israel Pena''s archived programming notes on Vim, Haskell, Hakyll, Linux configuration, and developer tools. Latest feed post: February 2014.'
+    profile_photo: https://jip.dev/favicon.png
+  blain_smith:
     feed_url: https://blainsmith.com/rss.xml
     homepage_url: https://blainsmith.com
     display_name: Blain Smith
-    summary: Updates from Blain Smith.
-  blakesmith_me:
+    summary: Blain Smith's technical articles and personal essays on software engineering, Go, distributed systems, concurrency, and computing culture.
+    profile_photo: https://blainsmith.com/favicon.png
+  blake_smith:
     feed_url: https://blakesmith.me/atom.xml
     homepage_url: https://blakesmith.me
-    display_name: create. code. learn.
-    summary: Updates from create. code. learn..
-  syfy:
+    display_name: Blake Smith
+    summary: Blake Smith's articles on distributed systems, cloud infrastructure, virtualization, hardware projects, and self-hosting.
+    profile_photo: https://blakesmith.me/images/blake_about.jpg
+  syfy_wire:
     feed_url: https://www.syfy.com/syfy-wire/feed
-    homepage_url: https://www.syfy.com
+    homepage_url: https://www.syfy.com/syfy-wire
     display_name: SYFY WIRE
-    summary: Science Fiction, Fantasy, Horror News
+    summary: Science fiction, fantasy, and horror entertainment reporting from SYFY WIRE, covering films, television, comics, games, and creator interviews.
+    profile_photo: https://www.syfy.com/sites/syfy/themes/custom/syfy/images/icons/apple-touch/apple-touch-icon.png
   blavity:
     feed_url: https://blavity.com/rss.xml
     homepage_url: https://blavity.com
     display_name: Blavity
-    summary: Blavity is a tech company for forward thinking Black millennials pushing the boundaries of culture and the status quo.
-  bldgblog_blogspot:
+    summary: News, culture, entertainment, politics, and health reporting centered on Black communities and perspectives.
+  bldgblog:
     feed_url: http://www.blogger.com/feeds/8663346/posts/default
     homepage_url: http://bldgblog.blogspot.com
     display_name: BLDGBLOG
-    summary: Updates from BLDGBLOG.
+    summary: 'Geoff Manaugh''s BLDGBLOG archive on architecture, landscapes, infrastructure, speculative design, and the built environment. Latest Blogger feed post: June 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fbldgblog.blogspot.com&size=128
   blender:
     feed_url: https://www.blender.org/feed/
     homepage_url: https://www.blender.org
     display_name: Blender
-    summary: The Free and Open Source 3D Creation Software — blender.org
-  blessthisstuff:
+    summary: Official Blender project news covering open-source 3D software releases, community events, open movies, surveys, and Blender Foundation reports.
+    profile_photo: https://www.blender.org/wp-content/themes/bthree/assets/icons/apple-touch-icon.png
+  bless_this_stuff:
     feed_url: https://www.blessthisstuff.com/rss/
     homepage_url: https://www.blessthisstuff.com
     display_name: Bless This Stuff
-    summary: Web Magazine for guys. Men’s Style, gadgets, gear, technology, vehicles and more.
+    summary: Curated product discoveries covering gadgets, clothing, everyday-carry gear, vehicles, design, home goods, and outdoor equipment.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.blessthisstuff.com&size=128
   blinry:
     feed_url: https://blinry.org/feed/
     homepage_url: https://blinry.org
-    display_name: blinry's homepage
-    summary: Updates from blinry's homepage.
-  blog_0x1fff:
+    display_name: blinry
+    summary: blinry's visual and interactive projects, open-source software, creative coding, hardware builds, games, tutorials, and personal explorations.
+    profile_photo: https://blinry.org/assets/images/avatar.png
+  0x1fffs_blog:
     feed_url: https://blog.0x1fff.com/blog/atom.xml
     homepage_url: https://blog.0x1fff.com
-    display_name: 0x1fff.com blog Blog
-    summary: Updates from 0x1fff.com blog Blog.
-  blog_0xbadc0de_be:
+    display_name: 0x1fff's Blog
+    summary: 0x1fff's Polish and English programming archive on Linux, networking, Perl, databases, and system administration; substantive posts run through 2012.
+  aris_blog:
     feed_url: https://blog.0xbadc0de.be/feed
     homepage_url: https://blog.0xbadc0de.be
     display_name: Aris' Blog
-    summary: Computers, ssh and rock'n roll
-  abevoelker:
+    summary: Aris' articles on computer security, SSH, cryptography, reverse engineering, free software, astrophotography, and personal reflections.
+  abe_voelker:
     feed_url: https://abevoelker.com/feed.xml
     homepage_url: https://abevoelker.com
     display_name: Abe Voelker
-    summary: Updates from Abe Voelker.
-  aboutamazon:
+    summary: 'Abe Voelker''s essays on programming, Ruby, Rails, Kubernetes, rural broadband, privacy, and life on a Wisconsin dairy farm. Latest feed post: January 2023.'
+    profile_photo: https://abevoelker.com/apple-touch-icon-180x180.png
+  amazon_news:
     feed_url: https://www.aboutamazon.com/rss/feed.rss
     homepage_url: https://www.aboutamazon.com/amazon-news-today
     display_name: Amazon News
-    summary: Amazon News RSS Feed
-  blog_achernya:
+    summary: Official Amazon company news on shopping, devices, AWS, operations, community initiatives, and Prime Video entertainment.
+    profile_photo: https://www.aboutamazon.com/_next/static/media/apple-touch-icon.706b1b87.png
+  alex_chernyakhovsky:
     feed_url: https://blog.achernya.com/feeds/posts/default
     homepage_url: https://blog.achernya.com
     display_name: Alex Chernyakhovsky
-    summary: Updates from Alex Chernyakhovsky.
-  blog_acolyer:
+    summary: 'Alex Chernyakhovsky''s archived articles on Linux, networking, security, systems programming, and MIT computing infrastructure. Latest feed post: June 2017.'
+  the_morning_paper:
     feed_url: https://blog.acolyer.org/feed/
     homepage_url: https://blog.acolyer.org
     display_name: the morning paper
-    summary: a random walk through Computer Science research, by Adrian Colyer
-  blog_acrosspolyethylene:
+    summary: Adrian Colyer's archived summaries of computer science research papers, including distributed systems, databases, security, and machine learning. Paused in February 2021.
+    profile_photo: https://0.gravatar.com/avatar/3a354cf7a8268ff825f87b3c13e24831e4d773c637ee1a81895ed8e861fa8f1d?s=200&d=404
+  epistolary_purgatory:
     feed_url: https://blog.acrosspolyethylene.com/rss.xml
     homepage_url: https://blog.acrosspolyethylene.com
     display_name: Epistolary Purgatory
-    summary: A little cabin in the world wide woods
-  blog_andrewcantino:
+    summary: Sumanth Srinivasan's essays on music, books, programming, language, travel, trains, and life in New York City.
+  andrew_makes_things:
     feed_url: https://blog.andrewcantino.com/feed.xml
     homepage_url: https://blog.andrewcantino.com
     display_name: andrew makes things
-    summary: Updates from andrew makes things.
-  blog_angryasianman:
-    feed_url: http://feeds.feedburner.com/angryasianman/hMam
-    homepage_url: http://blog.angryasianman.com
+    summary: 'Andrew Cantino''s programming and machine-learning experiments, security research, automation, and climate-tech reflections. Latest feed post: March 2023.'
+    profile_photo: https://blog.andrewcantino.com/assets/apple-touch-icon.png
+  angry_asian_man:
+    feed_url: https://feeds.feedburner.com/angryasianman/hMam
+    homepage_url: https://blog.angryasianman.com
     display_name: Angry Asian Man
-    summary: Updates from Angry Asian Man.
+    summary: Phil Yu's Asian American news, entertainment, culture, community commentary, and They Call Us Bruce podcast updates.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fblog.angryasianman.com&size=128
   techcrunch:
     feed_url: https://techcrunch.com/feed/
     homepage_url: https://techcrunch.com
