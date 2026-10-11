@@ -31,253 +31,303 @@ bots:
   polygon:
     feed_url: https://www.polygon.com/feed/
     homepage_url: https://www.polygon.com
-    display_name: Polygon.com
+    display_name: Polygon
     summary: Your source for the latest in video games, sci-fi, fantasy, tabletop games, anime, horror, books, and comics.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.polygon.com&size=128
   pitchfork:
     feed_url: https://pitchfork.com/feed/rss
     homepage_url: https://pitchfork.com
     display_name: Pitchfork
-    summary: The latest from pitchfork.com
+    summary: Music news, album reviews, and features from Pitchfork.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpitchfork.com&size=128
   buzzfeed:
     feed_url: https://www.buzzfeed.com/index.xml
     homepage_url: https://www.buzzfeed.com/index
-    display_name: BuzzFeed - Latest
-    summary: BuzzFeed has breaking news, vital journalism, quizzes, videos, celeb news, Tasty food videos, recipes, DIY hacks, and all the trending buzz you’ll want to share with your friends. Copyright BuzzFeed, Inc. All rights reserved.
-  boingboing:
+    display_name: BuzzFeed
+    summary: Quizzes, entertainment, celebrity news, shopping recommendations, recipes, and internet culture from BuzzFeed.
+    profile_photo: https://www.buzzfeed.com/static-assets/img/touch-icon-ios_60.e17fab1b0a360167a1ed607f87a7c484.png
+  boing_boing:
     feed_url: https://boingboing.net/feed
     homepage_url: https://boingboing.net
     display_name: Boing Boing
     summary: A directory of mostly wonderful things
-  theintercept:
+    profile_photo: https://boingboing.net/wp-content/uploads/fbrfg/apple-touch-icon.png
+  the_intercept:
     feed_url: https://theintercept.com/feed/
     homepage_url: https://theintercept.com
     display_name: The Intercept
     summary: Independent investigative journalism covering politics, national security, civil liberties, and the environment.
+    profile_photo: https://theintercept.com/wp-content/themes/intercept/assets/icons/apple-touch-icon-57x57.png
   kotaku:
     feed_url: https://kotaku.com/feed
     homepage_url: https://kotaku.com
     display_name: Kotaku
     summary: Gaming Reviews, News, Tips and More.
-  businessinsider:
+    profile_photo: https://kotaku.com/apple-touch-icon.png
+  business_insider:
     feed_url: https://feeds.businessinsider.com/custom/all
     homepage_url: https://www.businessinsider.com
     display_name: Business Insider
-    summary: Updates from All Content from Business Insider.
-  thenib:
+    summary: Business, technology, finance, economy, and lifestyle reporting from Business Insider.
+    profile_photo: https://www.businessinsider.com/public/assets/BI/US/favicons/apple-touch-icon-180x180.png?v=2025-05
+  the_nib:
     feed_url: https://thenib.com/feed/
     homepage_url: https://thenib.com
     display_name: The Nib
-    summary: Political satire, journalism and non-fiction on what is going down in the world. All in comics form, the best medium.
-  newyorker:
+    summary: Archived political satire, journalism, and nonfiction comics from The Nib.
+    profile_photo: https://thenib.com/wp-content/uploads/2019/08/nib-favicon.png
+  the_new_yorker:
     feed_url: https://www.newyorker.com/feed/rss
     homepage_url: https://www.newyorker.com
     display_name: The New Yorker
-    summary: The latest from www.newyorker.com
+    summary: Reporting, essays, fiction, cultural criticism, cartoons, and puzzles from The New Yorker.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.newyorker.com&size=128
   mashable:
     feed_url: https://mashable.com/feeds/rss/all
     homepage_url: https://mashable.com
     display_name: Mashable
     summary: Mashable is a global, multi-platform media and entertainment company.
+    profile_photo: https://mashable.com/favicons/apple-touch-icon.jpg
   ign:
     feed_url: https://www.ign.com/rss/v2/articles/feed
     homepage_url: https://www.ign.com/articles
-    display_name: The Latest Articles from IGN
-    summary: This feed contains the latest 20 articles from IGN sorted by publishDate
-  avclub:
-    feed_url: https://www.avclub.com/feed
+    display_name: IGN
+    summary: Video game and entertainment news, reviews, and features from IGN.
+    profile_photo: https://kraken.ignimgs.com/apple-touch-icon.png
+  the_a_v_club:
+    feed_url: https://www.avclub.com/rss.xml
     homepage_url: https://www.avclub.com
-    display_name: AV Club
+    display_name: The A.V. Club
     summary: Pop culture obsessives writing for the pop culture obsessed.
+    profile_photo: https://www.avclub.com/wp-content/themes/pastemagazine/img/mobile-icon-57.png
   vox:
     feed_url: https://www.vox.com/rss/index.xml
     homepage_url: https://www.vox.com
     display_name: Vox
-    summary: Updates from Vox.
+    summary: Explanatory journalism on politics, policy, science, technology, and culture.
+    profile_photo: https://www.vox.com/static-assets/icons/apple-touch-icon.png
   vogue:
     feed_url: https://www.vogue.com/feed/rss
     homepage_url: https://www.vogue.com
     display_name: Vogue
     summary: The latest from www.vogue.com
-  androidpolice:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.vogue.com&size=128
+  android_police:
     feed_url: https://www.androidpolice.com/feed/
     homepage_url: https://www.androidpolice.com
     display_name: Android Police
     summary: All the latest mobile tech news, deals, reviews, guides, editorials, and more. Embracing the green bubble since 2009.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.androidpolice.com&size=128
   penny_arcade:
     feed_url: https://www.penny-arcade.com/feed
     homepage_url: https://www.penny-arcade.com
     display_name: Penny Arcade
     summary: Penny Arcade comics and news.
-  thenextweb:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.penny-arcade.com&size=128
+  the_next_web:
     feed_url: https://thenextweb.com/feed
     homepage_url: https://thenextweb.com
     display_name: The Next Web
     summary: Original and proudly opinionated perspectives for Generation T
+    profile_photo: https://static.thenextweb.com/assets/img/favicon/apple-touch-icon-57x57.png
   torrentfreak:
     feed_url: https://torrentfreak.com/feed/
     homepage_url: https://torrentfreak.com
     display_name: TorrentFreak
     summary: Breaking File-sharing, Copyright and Privacy News
-  latimes:
+    profile_photo: https://torrentfreak.com/apple-touch-icon.png
+  los_angeles_times:
     feed_url: https://www.latimes.com/index.rss
     homepage_url: https://www.latimes.com
     display_name: Los Angeles Times
     summary: The L.A. Times is a leading source of breaking news, entertainment, sports, politics, and more for Southern California and the world.
-  sfgate:
+    profile_photo: https://www.latimes.com/apple-touch-icon.png
+  sfgate_culture:
     feed_url: https://www.sfgate.com/default/feed/sfgate-culture-channel-rss-4239.php
-    homepage_url: https://www.sfgate.com
-    display_name: SFGATE Culture Channel RSS
-    summary: Updates from SFGATE Culture Channel RSS.
+    homepage_url: https://www.sfgate.com/sf-culture/
+    display_name: SFGATE Culture
+    summary: San Francisco Bay Area arts, entertainment, and culture from SFGATE.
+    profile_photo: https://www.sfgate.com/sites/sfgate/apple-touch-icon-196x196.png
   gigaom:
     feed_url: https://gigaom.com/feed/
     homepage_url: https://gigaom.com
-    display_name: Gigaom
-    summary: Two Decades. Ahead Of The Curve.
-  zachholman:
+    display_name: GigaOm
+    summary: Enterprise technology analysis from GigaOm; this blog feed is currently inactive.
+    profile_photo: https://gigaom.com/wp-content/uploads/sites/1/2024/05/d5fd323f-cropped-ff3d2831-gigaom-square-32x32.png
+  zach_holman:
     feed_url: https://zachholman.com/atom.xml
     homepage_url: https://zachholman.com
     display_name: Zach Holman
     summary: Updates from Zach Holman.
-  recurse:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fzachholman.com&size=128
+  recurse_center:
     feed_url: https://www.recurse.com/blog.rss
     homepage_url: https://www.recurse.com/blog
     display_name: The Recurse Center Blog
     summary: A blog about programming, education, and the Recurse Center
-  thehill:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.recurse.com%2Fblog&size=128
+  the_hill_news:
     feed_url: https://thehill.com/feed/?feed=partnerfeed-news-feed&format=rss
     homepage_url: https://thehill.com
     display_name: The Hill News
-    summary: Unbiased Politics News
+    summary: U.S. politics, policy, and opinion from The Hill.
+    profile_photo: https://thehill.com/wp-content/uploads/sites/2/2023/03/cropped-favicon-512px-1.png?w=32
   eff:
     feed_url: https://www.eff.org/rss.xml
     homepage_url: https://www.eff.org
     display_name: Electronic Frontier Foundation
     summary: Updates from Electronic Frontier Foundation.
+    profile_photo: https://www.eff.org/sites/all/themes/phoenix/apple-touch-icon-precomposed.png
   gq:
     feed_url: https://www.gq.com/feed/rss
     homepage_url: https://www.gq.com
     display_name: GQ
-    summary: The latest from www.gq.com
-  thebolditalic:
+    summary: Men's fashion, style, grooming, culture, and entertainment from GQ.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.gq.com&size=128
+  the_bold_italic:
     feed_url: https://www.thebolditalic.com/rss/
     homepage_url: https://www.thebolditalic.com
     display_name: The Bold Italic
-    summary: The Bold Italic
-  cloud_google:
+    summary: Stories celebrating San Francisco and the Bay Area.
+    profile_photo: https://storage.ghost.io/c/3b/f8/3bf8c529-c75f-4ce0-92fe-8f0c4cd2f092/content/images/size/w256h256/2025/04/TBILogo-copy.png
+  google_cloud:
     feed_url: https://cloudblog.withgoogle.com/rss/
     homepage_url: https://cloud.google.com/blog
     display_name: Google Cloud Blog
     summary: News, product updates, and engineering stories from Google Cloud.
-  rollingstone:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcloud.google.com%2Fblog&size=128
+  rolling_stone:
     feed_url: https://www.rollingstone.com/feed/
     homepage_url: https://www.rollingstone.com
     display_name: Rolling Stone
     summary: Music, Film, TV and Political News Coverage
+    profile_photo: https://www.rollingstone.com/wp-content/uploads/2024/12/R-Avatar_512x512_flat.png?w=180
   sfist:
     feed_url: https://sfist.com/rss/
     homepage_url: https://sfist.com
-    display_name: SFist - San Francisco News, Restaurants, Events, & Sports
+    display_name: SFist
     summary: SFist is San Francisco's source for fun, witty, & serious news. With updates about restaurants, events, sports, politics & more, SFist reaches millions of users in California.
-  independent:
+    profile_photo: https://img.sfist.com/2018/12/favicon-1.png
+  the_independent_us:
     feed_url: https://www.independent.co.uk/us/rss
     homepage_url: https://www.independent.co.uk/us
     display_name: The Independent US
     summary: Visit now for the latest news direct from The Independent US and updated throughout the day
-  ny_eater:
+    profile_photo: https://www.independent.co.uk/img/shortcut-icons/icon-192x192.png
+  eater_ny:
     feed_url: https://ny.eater.com/rss/index.xml
     homepage_url: https://ny.eater.com
     display_name: Eater NY
-    summary: Updates from Eater NY.
-  randsinrepose:
+    summary: Food news and dining guides for New York City.
+    profile_photo: https://ny.eater.com/static-assets/icons/apple-touch-icon.png
+  rands_in_repose:
     feed_url: https://randsinrepose.com/feed/
     homepage_url: https://randsinrepose.com
     display_name: Rands in Repose
     summary: Stories about the humans who build software
+    profile_photo: https://randsinrepose.com/wp-content/uploads/2025/08/cropped-rands-favicon-1-32x32.png
   time:
     feed_url: https://time.com/feed/
     homepage_url: https://time.com
     display_name: TIME
     summary: Breaking news and analysis from TIME.com. Politics, world news, photos, video, tech reviews, health, science and entertainment news.
-  technologyreview:
+    profile_photo: https://time.com/favicon/apple-touch-icon.png
+  mit_technology_review:
     feed_url: https://www.technologyreview.com/feed/
     homepage_url: https://www.technologyreview.com
     display_name: MIT Technology Review
-    summary: Updates from MIT Technology Review.
+    summary: Emerging technology reporting and analysis from MIT Technology Review.
+    profile_photo: https://wp.technologyreview.com/wp-content/uploads/2024/09/cropped-TR-Logo-Block-Centered-R.png?w=32
   salon:
     feed_url: https://www.salon.com/feed
     homepage_url: https://www.salon.com
-    display_name: Salon.com
+    display_name: Salon
     summary: In-depth news, politics, business, technology & culture
-  nbcnews:
+    profile_photo: https://www.salon.com/app/themes/salon/assets/img/apple-touch-icon.png
+  nbc_news_top_stories:
     feed_url: https://feeds.nbcnews.com/nbcnews/public/news
     homepage_url: https://www.nbcnews.com
     display_name: NBC News Top Stories
-    summary: NBC News Top Stories
-  newrepublic:
+    summary: Top stories and breaking news from NBC News.
+    profile_photo: https://nodeassets.nbcnews.com/cdnassets/projects/ramen/favicon/nbcnews/all-other-sizes-PNG.ico/apple-icon.png
+  the_new_republic:
     feed_url: https://newrepublic.com/rss.xml
     homepage_url: https://newrepublic.com
     display_name: The New Republic
-    summary: The New Republic
-  ycombinator:
+    summary: Political reporting, commentary, and cultural criticism from The New Republic.
+    profile_photo: https://assets.newrepublic.com/assets/favicons/apple-touch-icon-57x57.png
+  y_combinator_blog:
     feed_url: https://www.ycombinator.com/blog/feed
     homepage_url: https://www.ycombinator.com/blog
     display_name: Y Combinator Blog
-    summary: Y Combinator Blog
+    summary: News and updates about Y Combinator, startups, and its community.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.ycombinator.com%2Fblog&size=128
   bgr:
     feed_url: https://www.bgr.com/feed/
     homepage_url: https://www.bgr.com
-    display_name: BGR - Industry-Leading Insights In Tech And Entertainment
+    display_name: BGR
     summary: Expert analysis of the leading stories in tech and entertainment plus reviews of the latest gadgets.
+    profile_photo: https://looper-static.s3.amazonaws.com/img/BGR-favicon-448x448.png
   design_milk:
     feed_url: https://design-milk.com/feed/
     homepage_url: https://design-milk.com
     display_name: Design Milk
     summary: Dedicated to modern design
+    profile_photo: https://design-milk.com/img/favicon/apple-touch-icon-precomposed.png
   xkcd:
     feed_url: https://xkcd.com/atom.xml
     homepage_url: https://xkcd.com
-    display_name: xkcd.com
-    summary: Updates from xkcd.com.
-  blog_flickr:
+    display_name: xkcd
+    summary: Randall Munroe's webcomic of romance, sarcasm, math, and language.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fxkcd.com&size=128
+  flickr_blog:
     feed_url: https://blog.flickr.net/feed
     homepage_url: https://blog.flickr.net
     display_name: Flickr Blog
-    summary: Updates from Flickr Blog.
-  bringatrailer:
+    summary: Photography, community stories, and product updates from Flickr.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.flickr.net&size=128
+  bring_a_trailer:
     feed_url: https://bringatrailer.com/feed/
     homepage_url: https://bringatrailer.com
-    display_name: The best vintage and classic cars for sale online | Bring a Trailer
-    summary: Barn finds, rally cars, and needles in the haystack.
+    display_name: Bring a Trailer
+    summary: Collector-car auction listings, including vintage and classic vehicles.
+    profile_photo: https://bringatrailer.com/wp-content/themes/bringatrailer/assets/img/apple-touch-icon-iphone-60x60.png?v=http://26e80dffe5
   fortune:
     feed_url: https://fortune.com/feed/fortune-feeds/?id=3230629
     homepage_url: https://fortune.com
     display_name: Fortune
     summary: Fortune 500 Daily & Breaking Business News
+    profile_photo: https://fortune.com/apple-touch-icon.png
   refinery29:
     feed_url: https://www.refinery29.com/rss.xml
     homepage_url: https://www.refinery29.com
     display_name: Refinery29
-    summary: Refinery29
+    summary: Fashion, beauty, money, relationships, wellbeing, and culture from Refinery29.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.refinery29.com&size=128
   variety:
     feed_url: https://variety.com/feed/
     homepage_url: https://variety.com
     display_name: Variety
     summary: Entertainment news, film reviews, awards, film festivals, box office, entertainment industry conferences
+    profile_photo: https://variety.com/wp-content/themes/pmc-variety-2020/assets/app/icons/apple-touch-icon.png
   9to5google:
     feed_url: https://9to5google.com/feed/
     homepage_url: https://9to5google.com
     display_name: 9to5Google
     summary: Google news, Pixel, Android, Gemini, Home, more
-  aws_amazon:
+    profile_photo: https://9to5google.com/wp-content/uploads/sites/4/2017/03/favicon-bg-none-face-white.png?w=180
+  aws_news:
     feed_url: https://aws.amazon.com/blogs/aws/feed/
     homepage_url: https://aws.amazon.com/blogs/aws
     display_name: AWS News Blog
     summary: Announcements, updates, and launches from Amazon Web Services.
-  joy_recurse:
+    profile_photo: https://a0.awsstatic.com/main/images/site/touch-icon-iphone-114-smile.png
+  joy_of_computing:
     feed_url: https://joy.recurse.com/feed.atom
     homepage_url: https://joy.recurse.com
     display_name: Joy of Computing
-    summary: Updates from Joy of Computing.
+    summary: An archive of creative computing projects and links from the Recurse Center community.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjoy.recurse.com&size=128
   synthtopia:
     feed_url: https://www.synthtopia.com/feed/
     homepage_url: https://www.synthtopia.com
