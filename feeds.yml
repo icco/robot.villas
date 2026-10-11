@@ -2716,6 +2716,292 @@ bots:
     display_name: TigerBeetle
     summary: Engineering a high-performance, safety-critical financial database.
     profile_photo: https://framerusercontent.com/images/GMJ8d83FjKzitkLWA3knVLO5HQ.png
+  jeffrey_zeldman_presents:
+    feed_url: https://zeldman.com/feed/
+    homepage_url: https://zeldman.com
+    display_name: Jeffrey Zeldman Presents
+    summary: Jeffrey Zeldman's essays and links on web design, standards, digital culture, music, and personal life.
+    profile_photo: https://i0.wp.com/zeldman.com/wp-content/uploads/2014/12/cropped-default-54a3966bv1_site_icon.png?fit=180%2C180&ssl=1
+  project_2501:
+    feed_url: https://3lix13.tumblr.com/rss
+    homepage_url: https://www.tumblr.com/3lix13
+    display_name: Project 2501
+    summary: Project 2501 (@3lix13) shares sketchbook drawings, comics, animation, and reblogged art on Tumblr.
+  a_whole_lotta_nothing:
+    feed_url: https://a.wholelottanothing.org/rss/
+    homepage_url: https://a.wholelottanothing.org
+    display_name: A Whole Lotta Nothing
+    summary: Matthew Haughey's personal essays on travel, woodworking, cycling, games, technology, and everyday life.
+    profile_photo: https://a.wholelottanothing.org/assets/favicon-180.png?v=mtGW7ak-IxKFztuR
+  abc7_los_angeles:
+    feed_url: https://abc7.com/feed/
+    homepage_url: https://abc7.com
+    display_name: ABC7 Los Angeles
+    summary: KABC Eyewitness News covering Los Angeles and Southern California, alongside national and world headlines.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fabc7.com&size=128
+  ableton_blog:
+    feed_url: https://www.ableton.com/en/blog/feeds/latest/
+    homepage_url: https://www.ableton.com/en/blog
+    display_name: Ableton Blog
+    summary: Artist interviews, music-production tutorials, videos, downloads, and product news from Ableton.
+    profile_photo: https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/apple-touch-icon.fb3597184cb0.png
+  a_book_apart:
+    feed_url: https://feeds.feedburner.com/a-book-apart
+    homepage_url: https://abookapart.com/blogs/press
+    display_name: A Book Apart
+    summary: 'Archived A Book Apart publisher announcements, book releases, and sales. Latest feed post: March 2024, announcing an end to new titles.'
+    profile_photo: https://abookapart.com/cdn/shop/t/4/assets/apple-touch-icon-57x57%EF%B9%96v=65803350735019661971537450561.png
+  addy_osmani:
+    feed_url: https://addyosmani.com/rss.xml
+    homepage_url: https://addyosmani.com
+    display_name: Addy Osmani
+    summary: Addy Osmani's articles on software engineering, AI coding agents, developer tools, web performance, and engineering leadership.
+    profile_photo: https://addyosmani.com/assets/images/favicons/apple-touch-icon-57x57.png
+  adland_tv:
+    feed_url: https://adland.tv/rss.xml
+    homepage_url: https://adland.tv
+    display_name: Adland
+    summary: Commercials, advertising campaigns, industry news, and commentary from Adland's advertising archive.
+    profile_photo: https://app.adland.tv/storage/v1/object/public/assets/ad-favicon.png
+  akimbo_comics:
+    feed_url: https://www.akimbocomics.com/?feed=rss2
+    homepage_url: https://www.akimbocomics.com
+    display_name: Akimbo Comics
+    summary: 'Archived Akimbo Comics webcomics, including Eat, Shit & Die, by bpatrick. Latest feed post: August 2021.'
+  apartment_therapy:
+    feed_url: https://www.apartmenttherapy.com/main.rss
+    homepage_url: https://www.apartmenttherapy.com
+    display_name: Apartment Therapy
+    summary: Home tours, decorating, organizing, cleaning, renovation projects, and shopping recommendations from Apartment Therapy.
+    profile_photo: https://www.apartmenttherapy.com/static/icons/apple-touch-icon.png
+  the_art_of_manliness:
+    feed_url: https://www.artofmanliness.com/feed/
+    homepage_url: https://www.artofmanliness.com
+    display_name: The Art of Manliness
+    summary: Articles and podcasts on character, practical skills, fitness, relationships, fatherhood, style, and culture from The Art of Manliness.
+    profile_photo: https://www.artofmanliness.com/wp-content/themes/newaom/assets/img/icon.png
+  automato_farm:
+    feed_url: http://automato.farm/index.xml
+    homepage_url: http://automato.farm/
+    display_name: automato.farm
+    summary: 'Archived automato.farm design-research projects and prototypes exploring technology, machine learning, and everyday objects. Latest feed entries: February 2018.'
+    profile_photo: http://www.automato.farm/assets/favicons/apple-touch-icon-152x152-precomposed.png
+  bikeexif:
+    feed_url: https://www.bikeexif.com/feed
+    homepage_url: https://www.bikeexif.com
+    display_name: Bike EXIF
+    summary: Custom and classic motorcycles, cafe racers, bobbers, scramblers, builders, and motorcycle gear from Bike EXIF.
+    profile_photo: https://www.bikeexif.com/resources/img/favicons/apple-touch-icon.png
+  michael_heilemann:
+    feed_url: https://binarybonsai.com/blog?format=rss
+    homepage_url: https://binarybonsai.com
+    display_name: Michael Heilemann
+    summary: 'Michael Heilemann''s essays on design, film, architecture, craft, and technology. Latest feed post: October 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbinarybonsai.com&size=128
+  bleacher_report:
+    feed_url: https://feeds.bleacherreport.com/articles
+    homepage_url: https://bleacherreport.com
+    display_name: Bleacher Report
+    summary: Sports reporting, analysis, highlights, rumors, rankings, and fantasy coverage across major leagues and college sports.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbleacherreport.com&size=128
+  bleeding_cool_news:
+    feed_url: https://bleedingcool.com/feed/
+    homepage_url: https://bleedingcool.com
+    display_name: Bleeding Cool News
+    summary: Comics, film, television, gaming, collectibles, and convention news and commentary from Bleeding Cool.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbleedingcool.com&size=128
+  asmartbear:
+    feed_url: https://blog.asmartbear.com/feed/
+    homepage_url: https://blog.asmartbear.com
+    display_name: A Smart Bear - Jason Cohen
+    summary: 'Jason Cohen''s archived essays on startups, product strategy, marketing, and building companies. Latest feed post: January 2023; newer writing is at longform.asmartbear.com.'
+    profile_photo: https://blog.asmartbear.com/wp-content/uploads/2022/03/favicon.png
+  doit_cloud_intelligence:
+    feed_url: https://www.doit.com/blog/feed.xml
+    homepage_url: https://www.doit.com/blog
+    display_name: DoiT Cloud Intelligence Blog
+    summary: DoiT's guides, analysis, and product updates on cloud costs, FinOps, Kubernetes, and AI infrastructure.
+    profile_photo: https://www.doit.com/favicons/cloud-intelligence/apple-icon.png
+  doppler_photo:
+    feed_url: https://blog.doppler-photo.net/rss/
+    homepage_url: https://blog.doppler-photo.net
+    display_name: Doppler Photo
+    summary: 'Omari Stephens''s photography and essays on documentary work, visual style, nature, and everyday life. Latest feed post: January 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.doppler-photo.net&size=128
+  elad_blog:
+    feed_url: https://blog.eladgil.com/feed
+    homepage_url: https://blog.eladgil.com
+    display_name: Elad Gil's Blog
+    summary: Elad Gil's essays on startups, venture capital, AI markets, technology, and company building.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!a9f8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb5fb1842-6afa-4c33-a59d-f5679a02ce7c%2Fapple-touch-icon-57x57.png
+  hatnote:
+    feed_url: https://blog.hatnote.com/rss
+    homepage_url: https://www.tumblr.com/hat-note
+    display_name: Hatnote
+    summary: 'Hatnote project announcements and discussion about Wikipedia, Wikidata, Listen to Wikipedia, and Weeklypedia. Latest feed post: September 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.hatnote.com&size=128
+  jay_fields_thoughts:
+    feed_url: https://feeds.feedburner.com/jayfields/mjKQ
+    homepage_url: http://blog.jayfields.com
+    display_name: Jay Fields' Thoughts
+    summary: 'Jay Fields''s archived writing on software development, testing, Ruby, Clojure, maintainability, and consulting. Latest feed post: May 2017.'
+  emilia_lazer_walker:
+    feed_url: https://blog.lazerwalker.com/atom.xml
+    homepage_url: https://blog.lazerwalker.com
+    display_name: Emilia Lazer-Walker
+    summary: 'Emilia Lazer-Walker''s writing on game design, interactive art, virtual events, accessibility, and creative technology. Latest feed post: June 2022.'
+    profile_photo: https://github.com/lazerwalker.png?size=200
+  nick_johnson_blog:
+    feed_url: http://blog.notdot.net/feeds/atom.xml
+    homepage_url: http://blog.notdot.net
+    display_name: Nick's Blog - Nick Johnson
+    summary: 'Nick Johnson''s archived articles on electronics, programming, algorithms, and hardware projects. Latest feed post: January 2013.'
+  ntpsec_project_blog:
+    feed_url: https://blog.ntpsec.org/feed.xml
+    homepage_url: https://blog.ntpsec.org
+    display_name: NTPsec Project Blog
+    summary: NTPsec release announcements, security work, time-synchronization engineering, and project news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.ntpsec.org&size=128
+  totally_not_malware:
+    feed_url: http://blog.totallynotmalware.net/?feed=rss2
+    homepage_url: http://blog.totallynotmalware.net
+    display_name: Totally Not Malware
+    summary: 'Elle Armageddon''s archived writing on operational security, privacy, activism, protest safety, and security lessons from popular culture. Latest feed post: March 2017.'
+  travis_ci:
+    feed_url: https://www.travis-ci.com/feed/
+    homepage_url: https://www.travis-ci.com/blog/
+    display_name: Travis CI Blog
+    summary: Official Travis CI product announcements and articles on continuous integration, testing, deployment, containers, and DevOps.
+    profile_photo: https://www.travis-ci.com/wp-content/uploads/2025/05/cropped-Favicon-180x180.png
+  the_typekit_blog:
+    feed_url: https://blog.typekit.com/feed/
+    homepage_url: https://blog.typekit.com/
+    display_name: The Typekit Blog
+    summary: 'Archived Typekit announcements, font releases, and web-typography articles. Latest feed post: October 2018, when Typekit became Adobe Fonts.'
+    profile_photo: https://blog.typekit.com/wp-content/themes/typekit/img/152x152.png
+  vrypan_blog:
+    feed_url: https://blog.vrypan.net/rss.xml
+    homepage_url: https://blog.vrypan.net
+    display_name: vrypan's Blog
+    summary: vrypan's personal notes and articles on software projects, terminal tools, social networks, technology, and everyday life.
+    profile_photo: https://blog.vrypan.net/apple-touch-icon.png
+  wesley_aptekar_cassels:
+    feed_url: https://blog.wesleyac.com/feed.xml
+    homepage_url: https://blog.wesleyac.com
+    display_name: Wesley Aptekar-Cassels
+    summary: 'Wesley Aptekar-Cassels''s articles on systems programming, networking, cryptography, testing, and decentralized services. Latest feed post: February 2024.'
+  call_me_fishmeal:
+    feed_url: http://blog.wilshipley.com/feeds/posts/default
+    homepage_url: http://blog.wilshipley.com
+    display_name: Call Me Fishmeal - Wil Shipley
+    summary: 'Wil Shipley''s archived essays on Mac development, Swift, Objective-C, Delicious Library, and personal experiences. Latest feed post: September 2021.'
+  microsoft_python:
+    feed_url: https://devblogs.microsoft.com/python/feed/
+    homepage_url: https://devblogs.microsoft.com/python/
+    display_name: Microsoft for Python Developers Blog
+    summary: Microsoft's Python developer blog covering VS Code, Pylance, Python environments, database tools, and community events.
+    profile_photo: https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2018/10/Microsoft-Favicon.png
+  book_riot:
+    feed_url: https://bookriot.com/feed/
+    homepage_url: https://bookriot.com
+    display_name: Book Riot
+    summary: Book recommendations, reviews, reading lists, literary news, book deals, and coverage of libraries and book bans.
+    profile_photo: https://bookriot.com/wp-content/themes/bookriot/assets/images/favicons/BookRiot_Logo_32.png
+  fernando_borretti:
+    feed_url: https://borretti.me/feed.xml
+    homepage_url: https://borretti.me
+    display_name: Fernando Borretti
+    summary: Fernando Borretti's essays on programming, software tools, AI, futurism, philosophy, fiction, and personal projects.
+    profile_photo: https://borretti.me/assets/favicon.jpg
+  brad_frost:
+    feed_url: https://bradfrost.com/feed/feed.xml
+    homepage_url: https://bradfrost.com
+    display_name: Brad Frost
+    summary: Brad Frost's writing and links on web design, design systems, atomic design, AI, music, art, and family life.
+    profile_photo: https://bradfrost.com/apple-touch-icon.png
+  brave:
+    feed_url: https://brave.com/index.xml
+    homepage_url: https://brave.com
+    display_name: Brave
+    summary: Brave's articles, interviews, product updates, and policy pages on its browser, search, privacy, AI, and cryptocurrency.
+    profile_photo: https://brave.com/static-assets/images/cropped-brave_appicon_release-180x180.png
+  brett_terpstra:
+    feed_url: https://brett.trpstra.net/brettterpstra
+    homepage_url: https://brettterpstra.com
+    display_name: Brett Terpstra
+    summary: Brett Terpstra's projects, tutorials, and curated links on Markdown, Mac automation, writing tools, and productivity.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbrettterpstra.com&size=128
+  homebrew:
+    feed_url: https://brew.sh/atom.xml
+    homepage_url: https://brew.sh
+    display_name: Homebrew
+    summary: Official Homebrew release notes and project announcements for the package manager.
+    profile_photo: https://brew.sh/assets/img/apple-touch-icon.png
+  brooklyn_paper:
+    feed_url: https://www.brooklynpaper.com/feed/
+    homepage_url: https://www.brooklynpaper.com
+    display_name: Brooklyn Paper
+    summary: Brooklyn neighborhood reporting on politics, transportation, crime, development, arts, education, businesses, and local events.
+    profile_photo: https://www.brooklynpaper.com/wp-content/uploads/2019/11/bp_icon_iphone.png
+  bustedtees:
+    feed_url: https://www.bustedtees.com/blogs/news.atom
+    homepage_url: https://www.bustedtees.com/blogs/news
+    display_name: BustedTees News
+    summary: BustedTees's retail blog promoting its funny T-shirts, apparel collections, holiday gifts, and seasonal shopping ideas.
+    profile_photo: https://www.bustedtees.com/cdn/shop/files/Busted-favicon_32x32.jpg?v=1614324664
+  cal_newport:
+    feed_url: https://calnewport.com/feed/
+    homepage_url: https://calnewport.com
+    display_name: Cal Newport
+    summary: Cal Newport's Study Hacks essays on deep work, attention, productivity, digital life, and the social effects of technology and AI.
+    profile_photo: https://calnewport.com/wp-content/uploads/2022/10/cropped-cal-newport-favicon-512x512-1-180x180.png
+  charity_wtf:
+    feed_url: https://charity.wtf/feed
+    homepage_url: https://charity.wtf
+    display_name: charity.wtf - Charity Majors
+    summary: Charity Majors's essays on observability, engineering leadership, team culture, software operations, and AI.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!_ZAb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F481e6ddf-7887-42bb-8be9-5e08437c0550%2Fapple-touch-icon-57x57.png
+  chris_messina:
+    feed_url: https://www.chrismessina.me/blog/rss/
+    homepage_url: https://www.chrismessina.me
+    display_name: Chris Messina
+    summary: 'Chris Messina''s writing on product design, launches, AI, hashtags, social platforms, and internet culture. Latest feed post: December 2025.'
+    profile_photo: https://storage.ghost.io/c/9e/8a/9e8a2c1f-873d-44c9-8c06-57c515181f44/content/images/size/w256h256/format/jpeg/2026/10/chris-messina-icon-2026-10.jpg
+  conde_nast_traveler:
+    feed_url: https://www.cntraveler.com/feed/rss
+    homepage_url: https://www.cntraveler.com
+    display_name: Conde Nast Traveler
+    summary: Destination guides, hotels, travel news, food, wellness, and travel-shopping recommendations from Conde Nast Traveler.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.cntraveler.com&size=128
+  noirpass_commits:
+    feed_url: https://codeberg.org/koharu/noirpass/rss/branch/main
+    homepage_url: https://codeberg.org/koharu/noirpass
+    display_name: Noirpass Commits
+    summary: Main-branch commits for Noirpass, an on-demand GPG-backed freedesktop Secret Service for Linux. This is a software development feed, not a general Codeberg feed.
+  codecademy_blog:
+    feed_url: https://www.codecademy.com/resources/blog/feed
+    homepage_url: https://www.codecademy.com/resources/blog
+    display_name: Codecademy Blog
+    summary: Codecademy's learning tips, programming-career advice, learner stories, and course and product announcements.
+    profile_photo: https://www.codecademy.com/resources/blog/wp-content/uploads/2023/01/favicon.png?w=180
+  cooper_hewitt:
+    feed_url: https://www.cooperhewitt.org/feed/
+    homepage_url: https://www.cooperhewitt.org
+    display_name: Cooper Hewitt, Smithsonian Design Museum
+    summary: Cooper Hewitt, Smithsonian Design Museum's articles on design, collections, exhibitions, designers, awards, and museum news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.cooperhewitt.org&size=128
+  coredns_blog:
+    feed_url: https://coredns.io/blog/index.xml
+    homepage_url: https://coredns.io/blog/
+    display_name: CoreDNS Blog
+    summary: CoreDNS release notes and articles on DNS, Kubernetes service discovery, plugins, and project development.
+    profile_photo: https://coredns.io/images/favicon.png
+  square_corner_blog:
+    feed_url: https://developer.squareup.com/blog/rss.xml
+    homepage_url: https://developer.squareup.com/blog/
+    display_name: Square Corner Blog
+    summary: 'Square''s engineering and developer blog on infrastructure, security, data science, mobile development, and APIs. Latest feed post: June 2025.'
+    profile_photo: https://developer.squareup.com/blog/icons/icon-192x192.png?v=31eec9cbd54fc7be7beee71a2ed6fc5f
   kottke:
     feed_url: https://feeds.kottke.org/main
     homepage_url: https://kottke.org
