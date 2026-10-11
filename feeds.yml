@@ -711,6 +711,256 @@ bots:
     display_name: Figma Engineering
     summary: Graphics, collaboration, frontend, infrastructure, and unusual engineering problems.
     profile_photo: https://static.figma.com/app/icon/2/touch-180.png
+  danieltenner:
+    feed_url: https://danieltenner.com/rss/
+    homepage_url: https://danieltenner.com
+    display_name: danieltenner.com
+    summary: 'Current status: AI, Claude Code, ChatGPT, Ruby on Rails, Omarchy'
+  danielwarnersmith_tumblr:
+    feed_url: https://danielwarnersmith.tumblr.com/rss
+    homepage_url: https://danielwarnersmith.tumblr.com
+    display_name: Daniel Warner Smith
+    summary: I shovel pixels to make ends meet in San Francisco.
+  blog_daniemon:
+    feed_url: https://blog.daniemon.com/feed/
+    homepage_url: https://blog.daniemon.com
+    display_name: Daniemon's Blog
+    summary: Web tech, privacy stuff and geeky songs from Daniel Davis.
+  danneu:
+    feed_url: https://www.danneu.com/atom.xml
+    homepage_url: https://www.danneu.com
+    display_name: danneu
+    summary: Updates from danneu.
+  dansinker:
+    feed_url: https://dansinker.com/feed.xml
+    homepage_url: https://dansinker.com
+    display_name: Dan Sinker's Blog
+    summary: Updates from Dan Sinker's Blog.
+  danwalsh_livejournal:
+    feed_url: https://danwalsh.livejournal.com/data/rss
+    homepage_url: https://danwalsh.livejournal.com
+    display_name: Dan Walsh's Blog
+    summary: Dan Walsh's Blog - LiveJournal.com
+  danwang_co:
+    feed_url: https://danwang.co/feed/
+    homepage_url: https://danwang.co
+    display_name: Dan Wang
+    summary: The secure transport of light
+  danwebb:
+    feed_url: https://danwebb.net/feed.xml
+    homepage_url: https://danwebb.net
+    display_name: danwebb.net
+    summary: Updates from danwebb.net.
+  dappered:
+    feed_url: https://dappered.com/feed/
+    homepage_url: https://dappered.com
+    display_name: Dappered
+    summary: Affordable Men's Style
+  darindines:
+    feed_url: https://darindines.com/feed/
+    homepage_url: http://darindines.com
+    display_name: Darin Dines
+    summary: A Food Blog
+  darknavy:
+    feed_url: https://www.darknavy.org/index.xml
+    homepage_url: https://www.darknavy.org
+    display_name: DARKNAVY Blog
+    summary: Recent content on DARKNAVY Blog
+  darktable:
+    feed_url: https://www.darktable.org/index.xml
+    homepage_url: https://www.darktable.org
+    display_name: darktable
+    summary: Recent content on darktable
+  darpa_mil:
+    feed_url: https://www.darpa.mil/rss.xml
+    homepage_url: https://www.darpa.mil
+    display_name: DARPA - Defense Advanced Research Projects Agency
+    summary: 'Since 1958, DARPA has held to an enduring mission: To create and prevent technological surprise for our national security.'
+  dart_dev:
+    feed_url: https://dart.dev/blog/feed.xml
+    homepage_url: https://dart.dev/blog
+    display_name: The Dart Blog
+    summary: Updates from The Dart Blog.
+  daskeyboard:
+    feed_url: https://www.daskeyboard.com/blog/feed.xml
+    homepage_url: https://www.daskeyboard.com/blog
+    display_name: Das Keyboard Blog
+    summary: Mechanical keyboard tips, product news, and Q applets.
+  datacenterdude:
+    feed_url: https://datacenterdude.com/feed/
+    homepage_url: https://datacenterdude.com
+    display_name: DatacenterDude
+    summary: Infrastructure Veteran. Opinions included.
+  datacenterknowledge:
+    feed_url: https://www.datacenterknowledge.com/rss.xml
+    homepage_url: https://www.datacenterknowledge.com
+    display_name: datacenterknowledge
+    summary: Public RSS feed
+  datamation:
+    feed_url: https://www.datamation.com/feed/
+    homepage_url: https://www.datamation.com
+    display_name: Datamation
+    summary: Emerging Enterprise Tech Analysis and Products
+  datamethods_substack:
+    feed_url: https://datamethods.substack.com/feed
+    homepage_url: https://datamethods.substack.com
+    display_name: Data Methods
+    summary: Data Methods is a practical data architecture publication for analysts, BI developers, and small data teams.
+  datamoshing:
+    feed_url: http://datamoshing.com/feed/
+    homepage_url: http://datamoshing.com
+    display_name: Datamoshing
+    summary: '#corruptabsolutely'
+  datasociety:
+    feed_url: https://datasociety.net/research-library/feed/
+    homepage_url: https://datasociety.net/research-library
+    display_name: Research and Resource Library - Data & Society
+    summary: Updates from Research and Resource Library - Data & Society.
+  datatables:
+    feed_url: https://datatables.net/feeds/releases.xml
+    homepage_url: http://www.datatables.net
+    display_name: DataTables releases feed
+    summary: Software release information for DataTables and its extensions
+  datatracker_ietf:
+    feed_url: https://datatracker.ietf.org/feed/document-changes/draft-kirsch-ietf-tcp-stealth/
+    homepage_url: https://datatracker.ietf.org/doc/draft-kirsch-ietf-tcp-stealth/history
+    display_name: Changes for draft-kirsch-ietf-tcp-stealth
+    summary: Updates from Changes for draft-kirsch-ietf-tcp-stealth.
+  datavu_blogspot:
+    feed_url: https://datavu.blogspot.com/feeds/posts/default
+    homepage_url: https://datavu.blogspot.com
+    display_name: Datavu
+    summary: Updates from Datavu.
+  daveakerman:
+    feed_url: https://www.daveakerman.com/?feed=rss2
+    homepage_url: https://www.daveakerman.com
+    display_name: Dave Akerman
+    summary: High Altitude Ballooning
+  davidcel_is:
+    feed_url: https://davidcel.is/feeds/main
+    homepage_url: https://davidcel.is
+    display_name: davidcel.is
+    summary: Updates from davidcel.is.
+  davidgalbraith:
+    feed_url: https://davidgalbraith.org/feed/
+    homepage_url: https://davidgalbraith.org
+    display_name: david galbraith
+    summary: 'david galbraith: portfolio'
+  davidgcohen:
+    feed_url: http://feeds.feedburner.com/DavidGCohen
+    homepage_url: https://davidgcohen.com
+    display_name: Hi, I'm David G. Cohen
+    summary: Thoughts from a geeky ex-hacker turned investor and founder of Techstars.
+  davidhughes:
+    feed_url: https://www.davidhughes.org/feed/
+    homepage_url: https://www.davidhughes.org
+    display_name: David Hughes
+    summary: Notes From Afar
+  davidhunt_ie:
+    feed_url: http://www.davidhunt.ie/feed/
+    homepage_url: http://www.davidhunt.ie
+    display_name: www.DavidHunt.ie
+    summary: featuring the blog where you learn from my mistakes...
+  davidslog:
+    feed_url: https://www.davidslog.com/rss
+    homepage_url: https://www.davidslog.com
+    display_name: David's Log
+    summary: Est. 2006
+  daydreamersynth:
+    feed_url: https://www.daydreamersynth.com/blog?format=rss
+    homepage_url: https://www.daydreamersynth.com/blog
+    display_name: Blog - DAYDREAMER
+    summary: Updates from Blog - DAYDREAMER.
+  dba_stackexchange:
+    feed_url: https://dba.stackexchange.com/feeds
+    homepage_url: https://dba.stackexchange.com/questions
+    display_name: Recent Questions - Database Administrators Stack Exchange
+    summary: Updates from Recent Questions - Database Administrators Stack Exchange.
+  dbpedia:
+    feed_url: https://www.dbpedia.org/feed/
+    homepage_url: https://www.dbpedia.org
+    display_name: DBpedia Association
+    summary: Global and Unified Access to Knowledge Graphs
+  dbp:
+    feed_url: https://dbp.io/rss.xml
+    homepage_url: http://dbp.io
+    display_name: 'dbp.io :: essays'
+    summary: writing on programming etc by daniel patterson
+  dccc:
+    feed_url: https://dccc.org/feed/
+    homepage_url: https://dccc.org
+    display_name: DCCC
+    summary: Updates from DCCC.
+  dcortesi:
+    feed_url: https://www.dcortesi.com/index.xml
+    homepage_url: https://www.dcortesi.com
+    display_name: DCortesi.com
+    summary: Recent content on DCortesi.com
+  deadbeef_me:
+    feed_url: https://deadbeef.me/feed.xml
+    homepage_url: https://www.deadbeef.me
+    display_name: "0xDEADBEEF"
+    summary: Hi, I'm Mike. Here, I mainly write about Swift, Go, and random computer musings.
+  deadman:
+    feed_url: https://deadman.org/feed/
+    homepage_url: https://deadman.org
+    display_name: Deadman.org
+    summary: Updates from Deadman.org.
+  deadsuperhero:
+    feed_url: https://deadsuperhero.com/rss/
+    homepage_url: https://deadsuperhero.com
+    display_name: deadsuperhero
+    summary: Utilizing weapons of mass creation.
+  dear_apple:
+    feed_url: https://dear-apple.com/feed/
+    homepage_url: https://dear-apple.com
+    display_name: Dear APPLE
+    summary: NO MUSIC NO LIFE
+  debamitro_github:
+    feed_url: https://debamitro.github.io/index.xml
+    homepage_url: https://debamitro.github.io
+    display_name: Home page of Debamitro Chakraborti
+    summary: Recent content on Home page of Debamitro Chakraborti
+  debian_handbook_info:
+    feed_url: https://debian-handbook.info/feed/
+    homepage_url: https://debian-handbook.info
+    display_name: The Debian Administrator's Handbook
+    summary: Debian Bullseye from Discovery to Mastery
+  deborahmcdonnell:
+    feed_url: https://deborahmcdonnell.com/feed/
+    homepage_url: https://deborahmcdonnell.com
+    display_name: Deborah McDonnell – author
+    summary: Updates from Deborah McDonnell – author.
+  debugbear:
+    feed_url: https://www.debugbear.com/blog/rss.xml
+    homepage_url: https://www.debugbear.com/blog
+    display_name: DebugBear Blog
+    summary: DebugBear Blog
+  debuntu:
+    feed_url: https://www.debuntu.org/feed.xml
+    homepage_url: https://www.debuntu.org
+    display_name: Debuntu
+    summary: Updates from Debuntu.
+  decideotron:
+    feed_url: https://decideotron.com/feed/
+    homepage_url: https://decideotron.com
+    display_name: decideotron.com
+    summary: Updates from decideotron.com.
+  decider:
+    feed_url: https://decider.com/feed/
+    homepage_url: https://decider.com
+    display_name: Decider
+    summary: Decider helps you find what to watch. Discover the best movies and shows streaming on Netflix, Disney+, Hulu, Amazon Prime Video, HBO Max, and more.
+  decontextualize:
+    feed_url: https://posts.decontextualize.com/rss.xml
+    homepage_url: https://www.decontextualize.com
+    display_name: Allison Posts
+    summary: Posts from Allison Parrish, poet and programmer.
+  deepseanews:
+    feed_url: https://deepseanews.com/feed/
+    homepage_url: https://deepseanews.com
+    display_name: Deep Sea News
+    summary: All the news on the Earth's largest environment.
   sean_goedecke:
     feed_url: https://www.seangoedecke.com/rss.xml
     homepage_url: https://www.seangoedecke.com
