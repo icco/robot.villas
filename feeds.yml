@@ -8564,256 +8564,291 @@ bots:
     display_name: Engadget
     summary: Technology news, reviews, and buying advice.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.engadget.com&size=128
-  blog_anylist:
+  anylist_blog:
     feed_url: https://blog.anylist.com/feed.xml
     homepage_url: https://blog.anylist.com
     display_name: AnyList Blog
     summary: The official blog of the AnyList team.
   anynines:
     feed_url: https://anynines.com/feed/
-    homepage_url: https://anynines.com
+    homepage_url: https://anynines.com/blog/
     display_name: anynines
-    summary: Managed Cloud Platforms & Data Service Automation
-  blog_assaflavie:
-    feed_url: http://feeds.feedburner.com/assaflavie/
-    homepage_url: http://blog.assaflavie.com
+    summary: Technical articles and company news on Cloud Foundry, Kubernetes, cloud platforms, and data service automation.
+    profile_photo: https://anynines.com/wp-content/uploads/2025/09/favicon-300x300.png
+  weekly_typed_language:
+    feed_url: https://feeds.feedburner.com/assaflavie/
+    homepage_url: https://blog.assaflavie.com
     display_name: Weekly Typed Language
-    summary: Updates from Weekly Typed Language.
-  blog_atuin_sh:
+    summary: Assaf Lavie's archived essays on technology, design, and everyday life, with posts from 2014.
+  the_atuin_blog:
     feed_url: https://blog.atuin.sh/rss/
     homepage_url: https://blog.atuin.sh
     display_name: The Atuin Blog
     summary: Updates and news about Atuin, the magical shell tool
-  blog_aurynn:
+    profile_photo: https://storage.ghost.io/c/66/46/6646b777-02d8-44b3-9d01-dd721730b905/content/images/size/w256h256/2024/01/Atuin_Mascot-_01_square.png
+  the_particular_finest:
     feed_url: https://blog.aurynn.com/feed.rss
     homepage_url: https://blog.aurynn.com
     display_name: The Particular Finest
     summary: Thoughts, comments, and the general words of Aurynn Shaw
-  blog_bear_app:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.aurynn.com&size=128
+  bear:
     feed_url: https://blog.bear.app/feed/
     homepage_url: https://blog.bear.app
     display_name: Bear
     summary: 'Bear: Flexible notes, beautiful writing on Mac, iPad, iPhone, and Apple Watch'
-  blog_bioware:
+    profile_photo: https://blog.bear.app/wp-content/uploads/2019/01/cropped-Red-Graphite-iOS-180x180.png
+  bioware_blog:
     feed_url: https://blog.bioware.com/feed/
     homepage_url: https://blog.bioware.com
     display_name: BioWare Blog
     summary: A look at story-based gaming
-  blog_bolt:
+    profile_photo: https://blog.bioware.com/wp-content/uploads/2019/02/BioWare-B-300x300.png
+  the_bolt_blog:
     feed_url: https://blog.bolt.io/feed/
     homepage_url: https://blog.bolt.io
     display_name: The Bolt Blog
-    summary: Investing at the intersection of the digital and physical world
-  blog_bonnieeisenman:
+    summary: Archived articles from Bolt on hardware startups, product design, venture investing, and technology, with posts through 2021.
+  bonnie_eisenman:
     feed_url: https://blog.bonnieeisenman.com/feed.xml
-    homepage_url: http://blog.bonnieeisenman.com
+    homepage_url: https://blog.bonnieeisenman.com
     display_name: Bonnie Eisenman
-    summary: Updates from Bonnie Eisenman.
-  blog_bookstellyouwhy:
+    summary: Bonnie Eisenman's writing on software engineering, personal projects, accessibility, and work.
+  blogis_librorum:
     feed_url: https://blog.bookstellyouwhy.com/rss.xml
     homepage_url: https://blog.bookstellyouwhy.com
-    display_name: blogis librorum. A blog about books. Rare books.
-    summary: Learn about rare books, signed books, first editions. Bookbinding and Restoration. Start your rare book collection. Leave a legacy.
-  blog_briancmoses:
+    display_name: blogis librorum
+    summary: The Books Tell You Why blog on rare books, collecting, authors, illustrators, and book history, with posts through 2024.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.bookstellyouwhy.com&size=128
+  brian_c_moses:
     feed_url: https://blog.briancmoses.com/atom.xml
     homepage_url: https://blog.briancmoses.com
-    display_name: briancmoses.com
-    summary: Updates from briancmoses.com.
-  buoyant:
+    display_name: Brian C. Moses
+    summary: Brian C. Moses writes about DIY NAS servers, 3D printing, home automation, and other technology projects.
+    profile_photo: https://blog.briancmoses.com/assets/images/favicon/favicon.png
+  buoyant_blog:
     feed_url: https://www.buoyant.io/blog/rss.xml
-    homepage_url: https://www.buoyant.io
+    homepage_url: https://www.buoyant.io/blog
     display_name: Buoyant Blog
     summary: How-to guides, point of view, and news on Linkerd, service mesh, AI, and much more!
-  burntsushi:
+    profile_photo: https://cdn.prod.website-files.com/678194e4895761e109e855b5/67dcf21b6e3a17721a18ddb1_iconApp.png
+  andrew_gallants_blog:
     feed_url: https://burntsushi.net/index.xml
     homepage_url: https://burntsushi.net
-    display_name: Andrew Gallant's Blog on Andrew Gallant's Blog
-    summary: Updates from Andrew Gallant's Blog on Andrew Gallant's Blog.
-  blog_bytebytego:
+    display_name: Andrew Gallant's Blog
+    summary: Andrew Gallant's writing on Rust, regular expressions, command-line tools, and personal life.
+    profile_photo: https://github.com/BurntSushi.png?size=200
+  bytebytego_newsletter:
     feed_url: https://blog.bytebytego.com/feed
     homepage_url: https://blog.bytebytego.com
     display_name: ByteByteGo Newsletter
-    summary: Explain complex systems with simple terms, from the authors of the best-selling system design book series. Join over 1,000,000 friendly readers.
-  blog_calebjay:
+    summary: ByteByteGo's newsletter explains system design, software engineering, distributed systems, and AI.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!hoGd!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F5507d97a-c736-4de2-852b-fab5b91d0796%2Fapple-touch-icon-57x57.png
+  calebs_blog:
     feed_url: https://blog.calebjay.com/index.xml
-    homepage_url: http://blog.calebjay.com
+    homepage_url: https://blog.calebjay.com
     display_name: Caleb's Blog
-    summary: Recent content on Caleb's Blog
-  blog_camposanto:
+    summary: Caleb Jay's writing on technology, programming, travel, philosophy, and personal life.
+  campo_santo:
     feed_url: https://blog.camposanto.com/rss
     homepage_url: https://blog.camposanto.com
     display_name: Campo Santo
-    summary: Campo Santo is a small but scrappy video game studio in San Francisco. We’re currently developing our second game, In the Valley of Gods.
-  blog_chaddickerson:
+    summary: Campo Santo's archived development blog about Firewatch, studio news, and In the Valley of Gods, with posts through 2018.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.camposanto.com&size=128
+  chad_dickersons_blog:
     feed_url: https://blog.chaddickerson.com/feed/
     homepage_url: https://blog.chaddickerson.com
     display_name: Chad Dickerson's blog
-    summary: Updates from Chad Dickerson's blog.
-  chenalexander:
+    summary: Chad Dickerson's personal writing on technology, leadership, coaching, music, and life.
+  alexander_chen:
     feed_url: https://www.chenalexander.com/rss/
     homepage_url: https://www.chenalexander.com
     display_name: Alexander Chen
-    summary: Alexander Chen
-  blog_chewxy:
+    summary: Alexander Chen's portfolio of interactive projects combining music, design, and coding.
+  bigger_on_the_inside:
     feed_url: https://blog.chewxy.com/index.xml
     homepage_url: https://blog.chewxy.com
     display_name: Bigger on the Inside
-    summary: Recent content on Bigger on the Inside
-  blog_chrismeller:
+    summary: Chewxy's essays on programming, machine learning, ideas, and personal life.
+    profile_photo: https://github.com/chewxy.png?size=200
+  chris_meller:
     feed_url: https://blog.chrismeller.com/atom/1
     homepage_url: https://blog.chrismeller.com
     display_name: Chris Meller
-    summary: Updates from Chris Meller.
-  blog_chriszacharias:
+    summary: Chris Meller's archived writing on programming, open data, FOIA, and government transparency, with posts through 2014.
+    profile_photo: https://blog.chrismeller.com/user/themes/sparse/assets/img/favicon.png
+  chris_zacharias:
     feed_url: https://blog.chriszacharias.com/feed
     homepage_url: https://blog.chriszacharias.com
     display_name: Chris Zacharias
-    summary: Updates from Chris Zacharias.
-  blog_cleancoder:
-    feed_url: http://blog.cleancoder.com/atom.xml
+    summary: Chris Zacharias's essays on web development, imgix, startups, and personal experience.
+  the_clean_code_blog:
+    feed_url: https://blog.cleancoder.com/atom.xml
     homepage_url: https://blog.cleancoder.com
     display_name: The Clean Code Blog
-    summary: Updates from The Clean Code Blog.
-  cloudfour:
+    summary: Robert C. Martin's essays on software craftsmanship, programming, functional design, and professional practice, with posts through 2023.
+    profile_photo: https://blog.cleancoder.com/assets/clean_code_72_color.png
+  cloud_four:
     feed_url: https://cloudfour.com/feed/
     homepage_url: https://cloudfour.com
     display_name: Cloud Four
     summary: Responsive web design and development, progressive web apps
-  blog_codecombat:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcloudfour.com&size=128
+  codecombat_blog:
     feed_url: https://blog.codecombat.com/rss/
     homepage_url: https://blog.codecombat.com
-    display_name: "null"
+    display_name: CodeCombat Blog
     summary: News, features and tips for teachers, computer science advocates, and other heroes in education
-  cloudbees:
+    profile_photo: https://storage.ghost.io/c/3e/3c/3e3c29b1-b2ef-46c6-83bc-9eb24b79fbf6/content/images/size/w256h256/2019/03/apple-icon-60x60.png
+  cloudbees_blog:
     feed_url: https://www.cloudbees.com/blog/rss.xml
-    homepage_url: https://www.cloudbees.com
+    homepage_url: https://www.cloudbees.com/blog
     display_name: CloudBees Blog
-    summary: Stories about our company, our products and our customers, and how our solutions empower enterprises globally.
-  blog_confiant:
+    summary: CloudBees articles and company news on DevOps, CI/CD, software delivery, Jenkins, and AI.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.cloudbees.com&size=128
+  confiant:
     feed_url: https://blog.confiant.com/feed
     homepage_url: https://blog.confiant.com
     display_name: Confiant
     summary: Field Intelligence for the Ad Economy
-  crazyegg:
+  the_daily_egg:
     feed_url: https://www.crazyegg.com/blog/feed/
     homepage_url: https://www.crazyegg.com/blog
     display_name: The Daily Egg
-    summary: Website Optimization
-  blog_ctms_me:
+    summary: Crazy Egg's blog on website optimization, conversion rates, analytics, marketing, and product updates.
+    profile_photo: https://ceblog.s3.amazonaws.com/wp-content/uploads/2024/12/08134046/favicon-1.png
+  dom_corriveau:
     feed_url: https://blog.ctms.me/index.xml
     homepage_url: https://blog.ctms.me
     display_name: Dom Corriveau
     summary: Hi, I'm Dom and this is my web feed. Thoughts, opinions, wild speculation, and haphazard technical advice. I’m a hearing disabled irrigation contractor, B-movie aficionado, self-hoster, and hopeless Linux desktop romantic.
-  blog_cynthia_re:
+    profile_photo: https://github.com/cinimodev.png?size=200
+  cynthias_blog:
     feed_url: https://blog.cynthia.re/rss.xml
     homepage_url: https://blog.cynthia.re
     display_name: Cynthia's blog
     summary: Programming, Networking and some things I found hard to fix at some point
-  danielsada_tech:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.cynthia.re&size=128
+  daniel_sada_caraveo:
     feed_url: https://danielsada.tech/index.xml
     homepage_url: https://danielsada.tech
-    display_name: Daniel Sada Caraveo | Developer Productivity & Culture
-    summary: Recent content on Daniel Sada Caraveo | Developer Productivity & Culture
-  blog_danielsosebee:
+    display_name: Daniel Sada Caraveo
+    summary: Daniel Sada Caraveo writes in English and Spanish about developer productivity, software engineering, culture, and personal projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdanielsada.tech&size=128
+  daniel_sosebee:
     feed_url: https://blog.danielsosebee.com/feed
     homepage_url: https://blog.danielsosebee.com
     display_name: Daniel Sosebee
     summary: Sharing what's true in my life and projects, every week
-  blog_danlew:
+    profile_photo: https://substackcdn.com/image/fetch/$s_!tm5k!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4ccaa7a-1803-4fb7-ad75-3deb99d26f84%2Fapple-touch-icon-57x57.png
+  dan_lew_codes:
     feed_url: https://blog.danlew.net/rss/
     homepage_url: https://blog.danlew.net
     display_name: Dan Lew Codes
     summary: Thoughts on life, the universe and the mystery of it all; but actually mostly just code.
-  blog_dantup:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.danlew.net&size=128
+  danny_tuppeny:
     feed_url: https://feeds.dantup.com/DanTup
     homepage_url: https://blog.dantup.com
     display_name: Danny Tuppeny
-    summary: Updates from Danny Tuppeny.
-  blog_databigbang:
-    feed_url: http://feeds.feedburner.com/DataBigBangBlog
+    summary: Danny Tuppeny's articles on software development and infrastructure, including Dart, Flutter, Kubernetes, and Cardano, with posts through 2021.
+  data_big_bang_blog:
+    feed_url: https://feeds.feedburner.com/DataBigBangBlog
     homepage_url: https://blog.databigbang.com
     display_name: Data Big Bang Blog
-    summary: Creativity and Problem Solving for Data Science (whatever it may mean...) | An experimental spin-off from Nektra Advanced Computing
-  blog_datomic:
+    summary: Archived articles from Nektra's Data Big Bang project on data science, web scraping, and programming, with posts through 2013.
+  datomic_blog:
     feed_url: https://www.datomic.com/feed.xml
     homepage_url: https://blog.datomic.com
     display_name: Datomic Blog
     summary: News from the Datomic team
-  blog_dbsmasher:
+  dbsmasher_corner:
     feed_url: https://blog.dbsmasher.com/feed.xml
     homepage_url: https://blog.dbsmasher.com
     display_name: dbsmasher corner
-    summary: Updates from dbsmasher corner.
-  blog_decryption_net_au:
+    summary: Silvia Botros's archived writing on databases, engineering leadership, and career development, with posts through 2022.
+  decryptions_blog:
     feed_url: https://blog.decryption.net.au/feed.xml
     homepage_url: https://blog.decryption.net.au
     display_name: decryption's blog
     summary: this is where decryption writes stuff
-  blog_detectify:
+    profile_photo: https://blog.decryption.net.au/apple-touch-icon.png
+  detectify_blog:
     feed_url: https://blog.detectify.com/feed/
     homepage_url: https://blog.detectify.com
-    display_name: Blog Detectify
-    summary: Updates from Blog Detectify.
-  blog_diasporafoundation:
+    display_name: Detectify Blog
+    summary: Detectify's application security research, best practices, industry insights, company news, and product updates.
+    profile_photo: https://blogadmin.detectify.com/app/uploads/2025/10/cropped-apple-touch-icon-32x32.png
+  the_diaspora_blog:
     feed_url: https://blog.diasporafoundation.org/feed
     homepage_url: https://blog.diasporafoundation.org
     display_name: The diaspora* blog
-    summary: Updates from The diaspora* blog.
-  blog_diffen:
+    summary: Official announcements, releases, security updates, and community news from the diaspora* project.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.diasporafoundation.org&size=128
+  the_diffen_blog:
     feed_url: https://blog.diffen.com/rss
     homepage_url: https://blog.diffen.com
     display_name: The Diffen Blog
-    summary: Diffen is a difference engine that lets you compare anything. This blog chronicles our experiences raising this media property.
-  ryanstewart:
-    feed_url: http://feeds.feedburner.com/ryanstewart
-    homepage_url: http://ryanstewart.net
-    display_name: Digital Backcountry - Ryan Stewart's Flash Platform Blog
-    summary: A blog about using the Flash Platform to create Web Applications. I talk about Flex, FlashLite, ColdFusion and using the platform to deliver Rich Internet Applications over the web.
-  blog_dimroc:
+    summary: The Diffen Blog's essays on the comparison website, technology, and AI, with posts through 2025.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.diffen.com&size=128
+  digital_backcountry:
+    feed_url: https://feeds.feedburner.com/ryanstewart
+    homepage_url: https://ryanstewart.net
+    display_name: Digital Backcountry
+    summary: Ryan Stewart's archived writing on web development tools, Brackets, Adobe Creative Cloud, and personal projects, with posts from 2014.
+    profile_photo: https://github.com/ryanstewart.png?size=200
+  dimroc:
     feed_url: https://blog.dimroc.com/atom.xml
     homepage_url: https://blog.dimroc.com
     display_name: dimroc
-    summary: Updates from dimroc.
-  blog_disqus:
+    summary: dimroc's writing on software engineering, machine learning, generative AI, experiments, and books, with posts through 2023.
+  disqus_blog:
     feed_url: https://blog.disqus.com/rss.xml
     homepage_url: https://blog.disqus.com
     display_name: Disqus Blog
     summary: The official blog for Disqus news, tips, and updates.
-  blog_dmcc:
+    profile_photo: https://blog.disqus.com/hubfs/favicon-192x192.png
+  danny:
     feed_url: https://blog.dmcc.io/index.xml
     homepage_url: https://blog.dmcc.io
     display_name: Danny
     summary: Notes on work, life, and the tools in between.
-  blog_dshr:
+    profile_photo: https://blog.dmcc.io/img/apple-touch-icon.png
+  dshrs_blog:
     feed_url: https://blog.dshr.org/feeds/posts/default
     homepage_url: https://blog.dshr.org
     display_name: DSHR's Blog
-    summary: Updates from DSHR's Blog.
+    summary: David Rosenthal's writing on digital preservation, storage, technology, and economics.
   easydns:
     feed_url: https://easydns.com/feed/
-    homepage_url: https://easydns.com
+    homepage_url: https://easydns.com/blog/
     display_name: easyDNS
-    summary: Power & Freedom
-  blog_ecosia:
+    summary: easyDNS company news, service notices, and commentary on DNS, domains, hosting, and internet security.
+    profile_photo: https://easydns.com/wp-content/uploads/2018/07/cropped-easydns-big-bolt-512x512-180x180.png
+  the_ecosia_blog:
     feed_url: https://blog.ecosia.org/rss/
     homepage_url: https://blog.ecosia.org
     display_name: The Ecosia Blog
     summary: News from Ecosia, the alternative search engine that plants trees. Discover where Ecosia plants trees, and how they tackle climate change and deforestation.
-  blog_emojipedia:
+    profile_photo: https://storage.ghost.io/c/8c/7d/8c7d9e0f-61bf-4220-bb2e-c87039c38fb3/content/images/size/w256h256/2026/07/ecosia-icon-512.png?v=3.0.0
+  emojipedia:
     feed_url: https://blog.emojipedia.org/rss/
     homepage_url: https://blog.emojipedia.org
-    display_name: Emojipedia - The Latest Emoji News
-    summary: Emojipedia
-  blog_engflow:
+    display_name: Emojipedia
+    summary: Emoji news and analysis from Emojipedia, covering Unicode releases, platform designs, and emoji culture.
+    profile_photo: https://storage.ghost.io/c/9d/22/9d22b4fe-6e44-4d73-b6cb-2cd996b7af7b/content/images/size/w256h256/2017/08/64x64@2x.png
+  engflow_blog:
     feed_url: https://blog.engflow.com/feed_rss_created.xml
     homepage_url: https://blog.engflow.com
     display_name: EngFlow Blog
-    summary: Updates from EngFlow Blog.
-  blog_flipper:
+    summary: EngFlow's articles on Bazel, build systems, testing, developer infrastructure, and company news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.engflow.com&size=128
+  flipper_blog:
     feed_url: https://blog.flipper.net/rss/
     homepage_url: https://blog.flipper.net
     display_name: Flipper Blog
-    summary: Flipper Blog
+    summary: Official Flipper product news and technical articles on Flipper Zero, Flipper One, firmware, and security research.
+    profile_photo: https://blog.flipper.net/content/images/size/w256h256/2022/11/qFlipper_macOS_256px_ugly.png
   gizmodo:
     feed_url: https://gizmodo.com/feed/
     homepage_url: https://gizmodo.com
