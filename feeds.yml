@@ -507,6 +507,256 @@ bots:
     display_name: Hidden Brain
     summary: Science and storytelling, exploring the unconscious patterns that drive human behavior.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  autismandrace:
+    feed_url: https://autismandrace.com/feed/
+    homepage_url: https://autismandrace.com
+    display_name: The Autistic People of Color Fund
+    summary: Community Power, Redistributive Justice, Mutual Aid, Solidarity Economics
+  automorphic_blogspot:
+    feed_url: https://automorphic.blogspot.com/feeds/posts/default
+    homepage_url: https://automorphic.blogspot.com
+    display_name: 5:55 AM
+    summary: Updates from 5:55 AM.
+  averylaird:
+    feed_url: https://www.averylaird.com/feed.xml
+    homepage_url: https://averylaird.com
+    display_name: averylaird.com
+    summary: Updates from averylaird.com.
+  avichal:
+    feed_url: https://avichal.com/feed/
+    homepage_url: https://avichal.com
+    display_name: Avichal Garg
+    summary: Updates from Avichal Garg.
+  avinash_com_np:
+    feed_url: https://avinash.com.np/index.xml
+    homepage_url: https://avinash.com.np
+    display_name: Avinash's Blog, Ramblings and JPT on Ramblings and JPT Tech
+    summary: Recent content in Avinash's Blog, Ramblings and JPT on Ramblings and JPT Tech
+  avweb:
+    feed_url: https://avweb.com/feed/
+    homepage_url: https://avweb.com
+    display_name: AVweb
+    summary: Independent Aviation News Resource
+  awwwards:
+    feed_url: https://www.awwwards.com/feed/
+    homepage_url: https://www.awwwards.com
+    display_name: Awwwards - Sites of the day
+    summary: Latest sites of the day
+  axiacore:
+    feed_url: https://axiacore.com/blog/feed/
+    homepage_url: https://axiacore.com/blog
+    display_name: axiacore
+    summary: Updates from axiacore.
+  ayoungh:
+    feed_url: https://www.ayoungh.co.uk/feed.xml
+    homepage_url: https://ayoungh.co.uk
+    display_name: Anthony Young - Articles
+    summary: Writing and notes by Anthony Young.
+  b22_design_tumblr:
+    feed_url: https://b22-design.tumblr.com/rss
+    homepage_url: https://b22-design.tumblr.com
+    display_name: B22 Design
+    summary: Online gallery original vintage design furniture www.b22design.nl
+  b3n:
+    feed_url: https://b3n.org/feed/
+    homepage_url: https://b3n.org
+    display_name: b3n.org
+    summary: Where Computers Meet Conviction -- Coram Deo
+  backpacker:
+    feed_url: https://www.backpacker.com/feed/?scope=anon
+    homepage_url: https://www.backpacker.com
+    display_name: Backpacker
+    summary: Your Backpacking, Hiking, Camping and Outdoor Gear Magazine
+  backpress:
+    feed_url: https://backpress.org/feed/
+    homepage_url: https://backpress.org
+    display_name: BackPress
+    summary: Core PHP libraries for your web applications.
+  baekdal:
+    feed_url: https://rss.baekdal.com/
+    homepage_url: https://baekdal.com
+    display_name: Baekdal.com
+    summary: Baekdal is your premium site for media reports and trend analysis.
+  bahijd_tumblr:
+    feed_url: https://bahijd.tumblr.com/rss
+    homepage_url: https://bahijd.tumblr.com
+    display_name: バヒBAHI JD
+    summary: 'Animator／illustrator ♦ アニメーター ♦ イラストレーター twitter: @bahijd'
+  bakadesuyo:
+    feed_url: https://bakadesuyo.com/feed/
+    homepage_url: https://bakadesuyo.com
+    display_name: Barking Up The Wrong Tree
+    summary: How to be awesome at life.
+  bakery_cakephp:
+    feed_url: https://bakery.cakephp.org/rss.html
+    homepage_url: https://bakery.cakephp.org
+    display_name: Bakery
+    summary: Everything CakePHP
+  ballingt:
+    feed_url: https://ballingt.com/index.xml
+    homepage_url: http://ballingt.com
+    display_name: ballingt
+    summary: Recent content on ballingt
+  shreyb_dev:
+    feed_url: https://shreyb.dev/blog/atom.xml
+    homepage_url: https://shreyb.dev
+    display_name: Shrey Banga's blog
+    summary: Updates from Shrey Banga's blog.
+  barefootcoffee:
+    feed_url: https://www.barefootcoffee.com/blogs/news.atom
+    homepage_url: https://www.barefootcoffee.com/blogs/news
+    display_name: Barefoot Coffee Roasters - Barefoot Coffee News
+    summary: Updates from Barefoot Coffee Roasters - Barefoot Coffee News.
+  bartongeorge:
+    feed_url: https://bartongeorge.io/feed/
+    homepage_url: https://bartongeorge.io
+    display_name: 808labs
+    summary: To the clouds and beyond...
+  bashcurescancer:
+    feed_url: https://bashcurescancer.com/feed/
+    homepage_url: https://bashcurescancer.com
+    display_name: Boundary Burst
+    summary: Updates from Boundary Burst.
+  bashshell:
+    feed_url: https://www.bashshell.net/feed/
+    homepage_url: https://www.bashshell.net
+    display_name: Bashshell
+    summary: Updates from Bashshell.
+  basicappleguy:
+    feed_url: https://basicappleguy.com/basicappleblog?format=rss
+    homepage_url: https://basicappleguy.com
+    display_name: Basic Apple Guy | Apple Wallpapers, Reviews, and Merch
+    summary: Updates from Basic Apple Guy | Apple Wallpapers, Reviews, and Merch.
+  basicattentiontoken:
+    feed_url: https://basicattentiontoken.org/index.xml
+    homepage_url: https://basicattentiontoken.org
+    display_name: Basic Attention Token
+    summary: Recent content on Basic Attention Token
+  battery:
+    feed_url: https://www.battery.com/feed/
+    homepage_url: https://www.battery.com
+    display_name: Battery Ventures
+    summary: 'Battery is a global, technology-focused investment firm. Markets: application software, IT infrastructure, consumer internet/mobile & industrial technology.'
+  battleforthenet:
+    feed_url: https://www.battleforthenet.com/rss/
+    homepage_url: https://www.battleforthenet.com
+    display_name: Battle for the Net – Fight for the Future
+    summary: We are a group of artists, engineers, activists, and technologists who have been behind the largest online protests in human history, channeling Internet outrage into political power to win public interest victories previously thought to be impossible. We fight for a future where technology liberates — not oppresses — us.
+  baumbydahm_tumblr:
+    feed_url: https://baumbydahm.tumblr.com/rss
+    homepage_url: https://baumbydahm.tumblr.com
+    display_name: Baum by Dahm
+    summary: I illustrated The Wonderful Wizard of Oz by L. Frank Baum! You can buy it in print here. Rice Boy Comics / Patreon
+  bay12games:
+    feed_url: http://www.bay12games.com/dwarves/dev_now.rss
+    homepage_url: http://www.bay12games.com/dwarves/index.html
+    display_name: Dwarf Fortress Development Log
+    summary: DF development updates
+  baymard:
+    feed_url: https://feeds.baymard.com/baymard
+    homepage_url: https://baymard.com
+    display_name: Baymard Institute
+    summary: Updates from Baymard Institute.
+  bigfishpr:
+    feed_url: https://bigfishpr.com/feed/
+    homepage_url: https://bigfishpr.com
+    display_name: BIG FISH PR | Public Relations Agency
+    summary: PR Agency, Top Public Relations Firm
+  caboo_se:
+    feed_url: https://caboo.se/feed/
+    homepage_url: https://caboo.se
+    display_name: Caboo
+    summary: Updates from Caboo.
+  bedfordandbowery:
+    feed_url: https://bedfordandbowery.com/feed/
+    homepage_url: https://bedfordandbowery.com
+    display_name: Bedford + Bowery
+    summary: Where downtown Manhattan and north Brooklyn intersect.
+  beets:
+    feed_url: https://beets.io/blog/atom.xml
+    homepage_url: http://beets.io/blog
+    display_name: The beets blog.
+    summary: Updates from The beets blog..
+  beewise_ag:
+    feed_url: https://beewise.ag/blog/rss.xml
+    homepage_url: https://beewise.ag/blog
+    display_name: Beewise Blog
+    summary: This is the place for Beewise technology updates, as well as thought leadership and education around climate technology, pollination, and our mission to save the bees.
+  belchak:
+    feed_url: https://www.belchak.com/rss.xml
+    homepage_url: https://www.belchak.com
+    display_name: belchak.com
+    summary: Ben Belchak's blog about technology, theology, and AI.
+  bellejar_ca:
+    feed_url: https://bellejar.ca/feed/
+    homepage_url: https://bellejar.ca
+    display_name: The Belle Jar
+    summary: '"Let me live, love and say it well in good sentences." - Sylvia Plath'
+  ben_morris:
+    feed_url: https://www.ben-morris.com/rss.xml
+    homepage_url: https://www.ben-morris.com
+    display_name: Ben Morris. Agile enterprise architecture.
+    summary: Recent content on Ben Morris. Agile enterprise architecture.
+  langfeld_me:
+    feed_url: http://langfeld.me/atom.xml
+    homepage_url: http://langfeld.me
+    display_name: Ben Langfeld's Blog
+    summary: Updates from Ben Langfeld's Blog.
+  bencoe_tumblr:
+    feed_url: https://bencoe.tumblr.com/rss
+    homepage_url: https://bencoe.tumblr.com
+    display_name: Codes from the Underground
+    summary: Ben Coe is a software developer based in SF. He currently hacks up a storm at npm His interests include climbing, coding, and being awesome.
+  bendsource:
+    feed_url: https://www.bendsource.com/feed/
+    homepage_url: https://www.bendsource.com
+    display_name: The Source – Bend, Oregon
+    summary: Bend's Daily Independent Voice
+  benjamincongdon_me:
+    feed_url: https://benjamincongdon.me/feed.xml
+    homepage_url: https://benjamincongdon.me
+    display_name: Ben Congdon
+    summary: Recent posts from Ben Congdon
+  benjiweber:
+    feed_url: https://benjiweber.co.uk/blog/feed/
+    homepage_url: https://benjiweber.co.uk/blog
+    display_name: Benji's Blog
+    summary: Updates from Benji's Blog.
+  benmilne:
+    feed_url: https://benmilne.com/feed.xml
+    homepage_url: https://benmilne.com
+    display_name: Ben Milne
+    summary: Founder, Brale. Writing about value design, protocol thinking, and other musings.
+  berk_es:
+    feed_url: http://feeds.feedburner.com/berkes
+    homepage_url: https://berk.es
+    display_name: Bèr ‘berkes’ Kessels
+    summary: Updates from Bèr ‘berkes’ Kessels.
+  berniesanders:
+    feed_url: https://berniesanders.com/rss.xml
+    homepage_url: https://berniesanders.com
+    display_name: Bernie Sanders Official Website
+    summary: Change will never come without political participation. Join the political revolution today.
+  bestburgerinnorthwestlondon_wordpress:
+    feed_url: https://bestburgerinnorthwestlondon.wordpress.com/feed/
+    homepage_url: https://bestburgerinnorthwestlondon.wordpress.com
+    display_name: Best Burger in North West London
+    summary: A hunt for the elusive best burger in North West London
+  bestinclass_dk:
+    feed_url: https://bestinclass.dk/feed/
+    homepage_url: https://bestinclass.dk
+    display_name: Bestinclass.dk
+    summary: Updates from Bestinclass.dk.
+  requesttracker:
+    feed_url: https://requesttracker.com/feed/
+    homepage_url: https://requesttracker.com
+    display_name: Request Tracker
+    summary: Updates from Request Tracker.
+  betalist:
+    feed_url: https://feeds.feedburner.com/BetaList
+    homepage_url: https://betalist.com
+    display_name: BetaList - Discover tomorrow's startups, today
+    summary: Updates from BetaList - Discover tomorrow's startups, today.
   npr_latino_usa:
     feed_url: https://feeds.npr.org/510016/podcast.xml
     homepage_url: https://latinousa.org
