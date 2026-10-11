@@ -1339,6 +1339,256 @@ bots:
     homepage_url: https://jagi.studio/
     display_name: Jagi Natarajan
     summary: Audio software and creative projects.
+  skateboarding:
+    feed_url: https://www.skateboarding.com/.rss/feed/5179d9ba-dd32-4a52-b062-434a0316bb7a.xml
+    homepage_url: https://www.skateboarding.com
+    display_name: Skateboarding
+    summary: Your resource for skateboarding news, videos, athletes, and events.
+  skeptrune:
+    feed_url: https://www.skeptrune.com/rss.xml
+    homepage_url: https://www.skeptrune.com
+    display_name: Nick Khami's Blog
+    summary: Technical blog covering AI, cryptography, data analysis, and software development. Insights on building systems, tutorials, and lessons learned from production deployments.
+  skerritt_blog:
+    feed_url: https://skerritt.blog/rss/
+    homepage_url: https://skerritt.blog
+    display_name: Skerritt.blog
+    summary: Esoteric Computer Science Knowledge from your favourite local rust girlie
+  sketchupdate_blogspot:
+    feed_url: http://feeds.feedburner.com/OfficialGoogleSketchupBlog
+    homepage_url: http://sketchupdate.blogspot.com
+    display_name: SketchUpdate
+    summary: Updates from SketchUpdate.
+  slcyber:
+    feed_url: https://www.slcyber.io/research/rss.xml
+    homepage_url: https://www.slcyber.io
+    display_name: Searchlight Labs > Zero-day security research blog
+    summary: Read our discoveries and in-depth analysis of zero-day vulnerabilities in the enterprise software the world runs on.
+  slickstreamer_info:
+    feed_url: http://www.slickstreamer.info/sitemap.rss
+    homepage_url: http://www.slickstreamer.info
+    display_name: お仕事選びの条件
+    summary: お仕事選びの条件
+  jasongaston:
+    feed_url: https://jasongaston.net/feed/
+    homepage_url: https://jasongaston.net
+    display_name: Jason Gaston
+    summary: 'I''ve come here to do two things: Blog and chew bubblegum and I''m all out of bubblegum.'
+  slightlywrongquotes_tumblr:
+    feed_url: https://slightlywrongquotes.tumblr.com/rss
+    homepage_url: https://slightlywrongquotes.tumblr.com
+    display_name: Slightly Wrong Quotes On T-Shirts
+    summary: '(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = ''https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2''; fjs.parentNode.insertBefore(js, fjs); }(document, ''script'', ''facebook-jssdk'')); Irritate pedants by wearing a t-shirt with a slightly wrong quote. Pro-tip: Insist that the quote is 100% correct. BUY THESE T-SHIRTS FOR REAL CONTACT / DISCLAIMER'
+  slimframework:
+    feed_url: https://www.slimframework.com/blog/feed.rss
+    homepage_url: https://www.slimframework.com/blog
+    display_name: Slim Framework Blog
+    summary: Updates from Slim Framework Blog.
+  smartmirrorprojectblog_wordpress:
+    feed_url: https://smartmirrorprojectblog.wordpress.com/feed/
+    homepage_url: https://smartmirrorprojectblog.wordpress.com
+    display_name: Smart Mirror Project
+    summary: A journey into technology
+  smashfreakz:
+    feed_url: https://smashfreakz.com/feed/
+    homepage_url: https://smashfreakz.com
+    display_name: Smashfreakz
+    summary: Tech News Portal
+  smittenkitchen:
+    feed_url: http://feeds.feedburner.com/smittenkitchen
+    homepage_url: https://smittenkitchen.com
+    display_name: smitten kitchen
+    summary: Fearless cooking from a tiny NYC kitchen.
+  blog_smittytone:
+    feed_url: https://blog.smittytone.net/feed/
+    homepage_url: https://blog.smittytone.net
+    display_name: smittytone messes with micros
+    summary: BULLETINS FROM THE TECHNOLOGY FRONT LINE — AND OCCASIONALLY BEHIND IT
+  snapcraft:
+    feed_url: https://snapcraft.io/blog/feed
+    homepage_url: https://snapcraft.io
+    display_name: Snapcraft Blog
+    summary: Snapcraft Blog feed
+  snarfed:
+    feed_url: https://snarfed.org/feed
+    homepage_url: https://snarfed.org
+    display_name: Ryan Barrett
+    summary: Updates from Ryan Barrett.
+  snikt:
+    feed_url: https://snikt.net/index.xml
+    homepage_url: https://snikt.net
+    display_name: Andreas Happe
+    summary: Recent content on Andreas Happe
+  sociology_ucsc_edu:
+    feed_url: https://sociology.ucsc.edu/feed/
+    homepage_url: https://sociology.ucsc.edu
+    display_name: Sociology
+    summary: Building better societies through education and research
+  socket_dev:
+    feed_url: https://socket.dev/api/blog/feed.atom
+    homepage_url: https://socket.dev/api/blog/feed.json
+    display_name: Socket
+    summary: Updates from Socket.
+  socketsite:
+    feed_url: https://socketsite.com/feed
+    homepage_url: https://socketsite.com
+    display_name: SocketSite™
+    summary: 'San Francisco real estate tips, trends and the local scoop: "Plug In" to SocketSite™'
+  softwaremaniacs:
+    feed_url: https://softwaremaniacs.org/blog/feed/
+    homepage_url: https://softwaremaniacs.org/blog
+    display_name: Маниакальный веблог
+    summary: Updates from Маниакальный веблог.
+  sohamkamani:
+    feed_url: https://www.sohamkamani.com/rss.xml
+    homepage_url: https://www.sohamkamani.com
+    display_name: Soham Kamani
+    summary: I write about programming, technoloy, and my journey to being a better developer.
+  solidsmack:
+    feed_url: https://www.solidsmack.com/feed/
+    homepage_url: https://www.solidsmack.com
+    display_name: SolidSmack
+    summary: Design, Technology, CAD and FAB
+  solokeys:
+    feed_url: https://solokeys.com/blogs/news.atom
+    homepage_url: https://solokeys.com/blogs/news
+    display_name: SoloKeys - News
+    summary: Updates from SoloKeys - News.
+  somebits:
+    feed_url: https://www.somebits.com/weblog/index.atom
+    homepage_url: https://www.somebits.com/weblog
+    display_name: Nelson's Weblog
+    summary: Updates from Nelson's Weblog.
+  someecards:
+    feed_url: https://cf.someecards.com/rss/homepage.xml
+    homepage_url: https://www.someecards.com
+    display_name: someecards.com
+    summary: Latest posts from Someecards
+  mattmaber:
+    feed_url: http://feeds.feedburner.com/Mattmaber
+    homepage_url: https://mattmaber.com
+    display_name: MattMaber
+    summary: Photography
+  somethingaboutmaps_wordpress:
+    feed_url: https://somethingaboutmaps.wordpress.com/feed/
+    homepage_url: https://somethingaboutmaps.wordpress.com
+    display_name: somethingaboutmaps
+    summary: Updates from somethingaboutmaps.
+  somethingsimilar:
+    feed_url: https://www.somethingsimilar.com/feed
+    homepage_url: https://www.somethingsimilar.com
+    display_name: Something Similar
+    summary: Updates from Something Similar.
+  sonatype:
+    feed_url: https://www.sonatype.com/blog/rss.xml
+    homepage_url: https://www.sonatype.com/blog
+    display_name: 2024 Sonatype Blog
+    summary: Conversations about software supply automation, devsecops, open source, continuous delivery, and application security.
+  sonjajacob_tumblr:
+    feed_url: https://sonjajacob.tumblr.com/rss
+    homepage_url: https://sonjajacob.tumblr.com
+    display_name: The Real Sonja
+    summary: 'Hi, I’m Sonja Jacob. I write and produce videos, copy, and other interesting interactive projects. The Real Sonja is my personal blog about creativity, music, marketing, entrepreneurship, pop-culture, art and film. If you like what I’m posting, please say hi by emailing me at mail at sonja dot me. Follow me on Twitter: @sonja'
+  sontek:
+    feed_url: https://sontek.net/rss.xml
+    homepage_url: https://sontek.net
+    display_name: sontek's blog
+    summary: Blog about SRE, Kubernetes, Python, GoLang, and anything development related.
+  soundboy_tumblr:
+    feed_url: https://soundboy.tumblr.com/rss
+    homepage_url: https://soundboy.tumblr.com
+    display_name: Soundboy
+    summary: Updates from Soundboy.
+  soundonsound:
+    feed_url: https://www.soundonsound.com/rss.xml
+    homepage_url: https://www.soundonsound.com
+    display_name: Sound On Sound
+    summary: 'SOUND ON SOUND: The world''s premier music and recording technology magazine and website.'
+  source_opennews:
+    feed_url: https://source.opennews.org/rss/
+    homepage_url: https://source.opennews.org
+    display_name: Source
+    summary: Recent articles from Source
+  sourcefilmmaker:
+    feed_url: https://www.sourcefilmmaker.com/rss.xml
+    homepage_url: https://www.sourcefilmmaker.com
+    display_name: SFM Official Blog
+    summary: Insight and announcements from the Source Filmmaker team
+  sourcehut:
+    feed_url: https://sourcehut.org/blog/index.xml
+    homepage_url: https://sourcehut.org/blog
+    display_name: Blogs on Sourcehut
+    summary: Recent content in Blogs on Sourcehut
+  sourcetrail:
+    feed_url: https://www.sourcetrail.com/feed/
+    homepage_url: https://www.sourcetrail.com
+    display_name: SourceTrail
+    summary: Updates from SourceTrail.
+  southeastasiabackpacker:
+    feed_url: https://southeastasiabackpacker.com/feed/
+    homepage_url: https://southeastasiabackpacker.com
+    display_name: South East Asia Backpacker
+    summary: The Best Resource for Travellers to Southeast Asia.
+  southord:
+    feed_url: https://www.southord.com/blogs/news.atom
+    homepage_url: https://www.southord.com/blogs/news
+    display_name: SouthOrd - News
+    summary: Updates from SouthOrd - News.
+  soylentnews:
+    feed_url: https://soylentnews.org/index.atom
+    homepage_url: https://soylentnews.org
+    display_name: SoylentNews
+    summary: Updates from SoylentNews.
+  spacenews:
+    feed_url: https://spacenews.com/feed/
+    homepage_url: https://spacenews.com
+    display_name: SpaceNews
+    summary: Covering the business and politics of space
+  esahubble:
+    feed_url: https://feeds.feedburner.com/hubble_news/
+    homepage_url: https://esahubble.org/news
+    display_name: ESAHubble News
+    summary: The ESAHubble News feed delivers the latest updates and discoveries from the NASA/ESA/CSA James Webb Space Telescope. Stay informed about groundbreaking scientific findings, mission progress, and important announcements.
+  spacing_ca:
+    feed_url: https://spacing.ca/feed/
+    homepage_url: http://spacing.ca
+    display_name: Spacing
+    summary: Canadian Urbanism Uncovered | Architecture, Urban Deisgn, Public Transit, City Hall, Parks, Walking, Bikes, Streetscape, History, Waterfront, Maps, Public Spaces
+  sparktoro:
+    feed_url: https://sparktoro.com/blog/feed/
+    homepage_url: https://sparktoro.com/blog
+    display_name: SparkToro
+    summary: Updates from SparkToro.
+  speaking:
+    feed_url: https://speaking.io/atom.xml
+    homepage_url: https://speaking.io
+    display_name: speaking.io
+    summary: Updates from speaking.io.
+  speckyboy:
+    feed_url: https://speckyboy.com/feed/
+    homepage_url: https://speckyboy.com
+    display_name: Speckyboy Design Magazine
+    summary: Resources for Designers & Developers
+  spencerfry:
+    feed_url: https://www.spencerfry.com/rss/
+    homepage_url: https://www.spencerfry.com/blog
+    display_name: Spencer Fry Blog
+    summary: Spencer Fry RSS
+  spendlifetraveling:
+    feed_url: https://www.spendlifetraveling.com/feed/
+    homepage_url: https://www.spendlifetraveling.com
+    display_name: Spend Life Traveling
+    summary: 'Travel blog with travel tips and personal experiences. From short trips to living and working abroad. By Sanne Wesselman: traveler and digital nomad.'
+  spinellis_gr:
+    feed_url: https://www.spinellis.gr/blog/dds-blog-rss.xml
+    homepage_url: https://www.spinellis.gr/blog
+    display_name: Diomidis D. Spinellis Web Log
+    summary: The Internet soapbox of Diomidis Spinellis
+  spitalfieldslife:
+    feed_url: https://spitalfieldslife.com/feed/
+    homepage_url: https://spitalfieldslife.com
+    display_name: Spitalfields Life
+    summary: In the midst of life I woke to find myself living in an old house beside Brick Lane in the East End of London
   robin_neufeld:
     feed_url: https://metavee.github.io/blog/feed.xml
     homepage_url: https://metavee.github.io/blog/
