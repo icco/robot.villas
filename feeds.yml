@@ -363,6 +363,256 @@ bots:
     display_name: 'NPR Topics: News'
     summary: NPR news, audio, and podcasts — breaking stories, national and world news, politics, business, science, and technology.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  musictech:
+    feed_url: https://musictech.com/feed/
+    homepage_url: https://musictech.com
+    display_name: MusicTech
+    summary: The world’s leading media brand at the intersection of music and technology.
+  percona:
+    feed_url: https://www.percona.com/feed/
+    homepage_url: https://www.percona.com
+    display_name: Percona
+    summary: The Way is Open
+  nathanbarry:
+    feed_url: https://nathanbarry.com/feed/
+    homepage_url: https://nathanbarry.com
+    display_name: Nathan Barry
+    summary: Design, Business, Life
+  nathanleclaire:
+    feed_url: https://nathanleclaire.com/index.xml
+    homepage_url: https://nathanleclaire.com
+    display_name: nathan leclaire on nathan leclaire
+    summary: Updates from nathan leclaire on nathan leclaire.
+  neatorama:
+    feed_url: https://www.neatorama.com/feed/
+    homepage_url: https://www.neatorama.com
+    display_name: Neatorama
+    summary: The Neatest Stuff Around
+  nesbitt:
+    feed_url: https://nesbitt.io/feed.xml
+    homepage_url: https://nesbitt.io
+    display_name: Andrew Nesbitt
+    summary: Updates from Andrew Nesbitt.
+  code_tutsplus:
+    feed_url: https://tutsplus.com/posts.atom
+    homepage_url: https://code.tutsplus.com
+    display_name: Envato Tuts+ Tutorials
+    summary: Updates from Envato Tuts+ Tutorials.
+  netsdaily:
+    feed_url: https://www.netsdaily.com/rss/index.xml
+    homepage_url: https://www.netsdaily.com
+    display_name: NetsDaily
+    summary: Updates from NetsDaily.
+  news_berkeley_edu:
+    feed_url: https://news.berkeley.edu/feed/
+    homepage_url: https://news.berkeley.edu
+    display_name: Berkeley News
+    summary: News from the University of California, Berkeley
+  cheddar:
+    feed_url: https://www.cheddar.com/arc/outboundfeeds/rss/
+    homepage_url: https://cheddar.com
+    display_name: Cheddar RSS
+    summary: Cheddar is the leading post-cable news, media, and entertainment company.
+  nextcity:
+    feed_url: https://nextcity.org/feeds/features
+    homepage_url: https://nextcity.org/features
+    display_name: Next City - Forefront
+    summary: The latest features from Next City.
+  nextjs:
+    feed_url: https://nextjs.org/feed.xml
+    homepage_url: https://nextjs.org
+    display_name: Next.js Blog
+    summary: Next.js Blog
+  nikon:
+    feed_url: https://www.nikon.com/company/rss/feeds/news.rss
+    homepage_url: https://www.nikon.com/company/news
+    display_name: News | Nikon About Us
+    summary: News | Nikon About Us
+  ninjasandrobots:
+    feed_url: https://ninjasandrobots.com/feed
+    homepage_url: https://ninjasandrobots.com
+    display_name: Ninjas and Robots
+    summary: Updates from Ninjas and Robots.
+  nme:
+    feed_url: https://www.nme.com/feed
+    homepage_url: https://www.nme.com
+    display_name: NME
+    summary: NME brings you the latest music and pop culture news and reviews, along with videos and galleries, band features, concert tickets, magazine, radio and more.
+  nofilmschool:
+    feed_url: https://nofilmschool.com/feeds/feed.rss
+    homepage_url: https://nofilmschool.com
+    display_name: No Film School
+    summary: No Film School
+  nuklearpower:
+    feed_url: https://www.nuklearpower.com/feed/
+    homepage_url: https://www.nuklearpower.com
+    display_name: Nuklear Power
+    summary: Nuklear Power
+  nvie:
+    feed_url: https://feeds.feedburner.com/nvie
+    homepage_url: https://nvie.com
+    display_name: nvie.com
+    summary: Updates from nvie.com.
+  nycresistor:
+    feed_url: https://www.nycresistor.com/feed/
+    homepage_url: https://www.nycresistor.com
+    display_name: NYC Resistor
+    summary: We learn, share, and make things.
+  nylas:
+    feed_url: https://www.nylas.com/feed/
+    homepage_url: https://www.nylas.com
+    display_name: Nylas
+    summary: Updates from Nylas.
+  nytco:
+    feed_url: https://www.nytco.com/feed/
+    homepage_url: https://www.nytco.com
+    display_name: The New York Times Company
+    summary: The New York Times Company
+  obeygiant:
+    feed_url: https://obeygiant.com/feed/
+    homepage_url: https://obeygiant.com
+    display_name: Obey Giant
+    summary: The Art of Shepard Fairey
+  offscreenmag:
+    feed_url: https://www.offscreenmag.com/blog/rss
+    homepage_url: https://www.offscreenmag.com
+    display_name: Offscreen
+    summary: Updates from Offscreen.
+  ofsparrows_tumblr:
+    feed_url: https://ofsparrows.tumblr.com/rss
+    homepage_url: https://ofsparrows.tumblr.com
+    display_name: sparrows
+    summary: terrible drawings faq ∙ twitter ∙ prints
+  om_co:
+    feed_url: https://om.co/feed/
+    homepage_url: https://om.co
+    display_name: On my Om
+    summary: 'Technology & Change: Field Notes From The Present Future'
+  omnigroup:
+    feed_url: https://www.omnigroup.com/blog/rss/
+    homepage_url: https://www.omnigroup.com
+    display_name: The Omni Group
+    summary: The Omni Group makes awesome productivity software for macOS and iOS in the beautiful Pacific Northwest.
+  openlibrary:
+    feed_url: https://openlibrary.org/feed
+    homepage_url: https://openlibrary.org
+    display_name: Infogami - Recent changes
+    summary: Track the most recent changes to https://openlibrary.org in this feed.
+  openmymind:
+    feed_url: https://www.openmymind.net/atom.xml
+    homepage_url: https://www.openmymind.net
+    display_name: openmymind.net
+    summary: Updates from openmymind.net.
+  opensource:
+    feed_url: https://opensource.com/feed
+    homepage_url: https://opensource.com
+    display_name: Opensource.com
+    summary: Updates from Opensource.com.
+  organized_home:
+    feed_url: https://www.organized-home.com/web-stories/feed/
+    homepage_url: https://www.organized-home.com
+    display_name: Stories – The Organized Home
+    summary: Smart Storage Solutions for Every Room in the House
+  osnews:
+    feed_url: https://www.osnews.com/feed/
+    homepage_url: https://www.osnews.com
+    display_name: OSnews
+    summary: Exploring the Future of Computing
+  pagerduty:
+    feed_url: https://www.pagerduty.com/feed/
+    homepage_url: https://www.pagerduty.com
+    display_name: PagerDuty
+    summary: Build It | Ship It | Own It
+  pajiba:
+    feed_url: https://www.pajiba.com/feed.xml
+    homepage_url: https://www.pajiba.com
+    display_name: Pajiba
+    summary: Sweetened by Mock, Lightened by Droll
+  palant_info:
+    feed_url: https://palant.info/rss.xml
+    homepage_url: https://palant.info
+    display_name: Almost Secure
+    summary: Wladimir Palant's blog
+  paper_li:
+    feed_url: https://paper.li/feed/
+    homepage_url: https://paper.li
+    display_name: Paper.li
+    summary: Updates from Paper.li.
+  invertedpassion:
+    feed_url: https://invertedpassion.com/feed/
+    homepage_url: https://invertedpassion.com
+    display_name: Inverted Passion
+    summary: Know what's true and do what's right
+  patch:
+    feed_url: https://patch.com/rss/patch_editorial_content
+    homepage_url: https://patch.com
+    display_name: Patch Editorial Content
+    summary: Most Recent News For Patch Editorial Content
+  patkay:
+    feed_url: https://patkay.com/blogs/pk.atom
+    homepage_url: https://patkay.com/blogs/pk
+    display_name: Pat Kay - pk
+    summary: Updates from Pat Kay - pk.
+  p_atrick:
+    feed_url: https://p.atrick.org/feed.xml
+    homepage_url: https://p.atrick.org
+    display_name: This Modern Web
+    summary: The personal website of Patrick Marsceill
+  patshaughnessy:
+    feed_url: http://feeds2.feedburner.com/patshaughnessy
+    homepage_url: https://patshaughnessy.net
+    display_name: Pat Shaughnessy
+    summary: Updates from Pat Shaughnessy.
+  pcta:
+    feed_url: https://www.pcta.org/feed/
+    homepage_url: https://www.pcta.org
+    display_name: Pacific Crest Trail Association
+    summary: Protecting, Preserving, Promoting the Pacific Crest Trail
+  pearsonified:
+    feed_url: https://pearsonified.com/feed/
+    homepage_url: https://pearsonified.com
+    display_name: Pearsonified
+    summary: Best damn website on the planet since 2005
+  csail_mit_edu:
+    feed_url: https://www.csail.mit.edu/rss.xml
+    homepage_url: https://www.csail.mit.edu
+    display_name: MIT CSAIL
+    summary: Updates from MIT CSAIL.
+  pepijndevos_nl:
+    feed_url: https://pepijndevos.nl/feed.xml
+    homepage_url: http://pepijndevos.nl
+    display_name: Wishful Coding
+    summary: Updates from Wishful Coding.
+  perens:
+    feed_url: https://perens.com/blog/bruce-perens-blog-5/feed
+    homepage_url: https://perens.com/blog/5
+    display_name: Bruce Perens' Blog
+    summary: Updates from Bruce Perens' Blog.
+  petefreitag:
+    feed_url: https://www.petefreitag.com/rss/
+    homepage_url: https://www.petefreitag.com
+    display_name: Pete Freitag
+    summary: Covering ColdFusion, Java, Web Development, & other topics
+  petekeen:
+    feed_url: https://www.petekeen.net/feed.xml
+    homepage_url: https://www.petekeen.net
+    display_name: Pete Keen
+    summary: Essays and projects by Pete Keen
+  peterbe:
+    feed_url: https://www.peterbe.com/rss.xml
+    homepage_url: https://www.peterbe.com
+    display_name: Peterbe.com
+    summary: Stuff in Peter's head
+  phillymag:
+    feed_url: https://www.phillymag.com/feed/
+    homepage_url: https://www.phillymag.com
+    display_name: Philadelphia Magazine
+    summary: Updates from Philadelphia Magazine.
+  philosophicalhacker:
+    feed_url: https://www.philosophicalhacker.com/index.xml
+    homepage_url: https://www.philosophicalhacker.com
+    display_name: Philosophical Hacker
+    summary: Recent content on Philosophical Hacker
   npr_national:
     feed_url: https://feeds.npr.org/1003/rss.xml
     homepage_url: https://www.npr.org
