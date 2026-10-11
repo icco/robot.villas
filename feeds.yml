@@ -15172,6 +15172,280 @@ bots:
     display_name: Maggie Appleton
     summary: Design, anthropology, programming, and illustrated essays about tools for thought.
     profile_photo: https://maggieappleton.com/images/favicon/android-chrome-512x512.png
+  jake_archibalds_blog:
+    feed_url: https://jakearchibald.com/posts.rss
+    homepage_url: https://jakearchibald.com
+    display_name: Jake Archibald's blog
+    summary: Jake Archibald's articles and demonstrations about web platform APIs, JavaScript, CSS, browser behavior, performance, and accessibility.
+    profile_photo: https://jakearchibald.com/c/favicon-Cwc1YWtr.png
+  jake_lows_blog:
+    feed_url: https://www.jakelow.com/blog/feed.atom
+    homepage_url: https://www.jakelow.com/blog
+    display_name: Jake Low's blog
+    summary: Jake Low's programming articles and project announcements, including developer tools, maps, OpenStreetMap, and Recurse Center experiences.
+    profile_photo: https://www.jakelow.com/apple-touch-icon.png
+  a_newbies_guide_to_publishing:
+    feed_url: https://jakonrath.blogspot.com/feeds/posts/default
+    homepage_url: https://jakonrath.blogspot.com
+    display_name: A Newbie's Guide to Publishing
+    summary: Author J.A. Konrath's essays about publishing, self-publishing, ebooks, copyright, piracy, and AI's effects on creative professions.
+  one_div_zero:
+    feed_url: https://james-iry.blogspot.com/feeds/posts/default
+    homepage_url: https://james-iry.blogspot.com
+    display_name: One Div Zero
+    summary: 'James Iry''s archived software development essays about programming languages, functional programming, Scala, and type systems. Latest feed post: March 2016.'
+  james_clear:
+    feed_url: https://jamesclear.com/feed
+    homepage_url: https://jamesclear.com
+    display_name: James Clear
+    summary: 'James Clear''s archived articles about habits, productivity, decision-making, and personal improvement. Latest feed post: January 2020; this is not the current 3-2-1 newsletter.'
+    profile_photo: https://jamesclear.com/wp-content/uploads/2020/11/cropped-icon-180x180.png
+  jim_fishers_blog:
+    feed_url: https://jameshfisher.com/feed.xml
+    homepage_url: https://jameshfisher.com
+    display_name: Jim Fisher's blog
+    summary: Jim Fisher's programming notes and project essays about web development, JavaScript, databases, algorithms, and developer tools.
+    profile_photo: https://jameshfisher.com/assets/jim_128.png
+  jameson_nathan_jones:
+    feed_url: https://www.jamesonnathanjones.com/blog.rss
+    homepage_url: https://www.jamesonnathanjones.com/blog
+    display_name: Jameson Nathan Jones
+    summary: 'Jameson Nathan Jones''s archived newsletter about composition, harmony, synthesis, sound design, and electronic music production. Latest feed post: June 2024.'
+    profile_photo: https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/themes/2154492114/settings_images/1b8d4-cc3-ec1-3f3e-c3efb174721d_jnjweb-08-08.png
+  james_porter:
+    feed_url: https://www.jamesporter.me/index.xml
+    homepage_url: https://jamesporter.me
+    display_name: James Porter
+    summary: James J Porter's personal projects and writing about programming, puzzles, data visualization, hiking, and a wedding videobooth.
+  james_whittaker:
+    feed_url: http://jameswhittaker.com/feed.xml
+    homepage_url: http://jameswhittaker.com
+    display_name: James Whittaker
+    summary: Software engineer and designer James Whittaker's personal site. Its feed contains one introductory post, A new year, a new blog; the feed supplies no publication date.
+  jamie_palatnik:
+    feed_url: https://jamiepalatnik.com/feed/
+    homepage_url: https://jamiepalatnik.com
+    display_name: Jamie Palatnik
+    summary: Jamie Palatnik's development blog and personal updates about software projects, programming, work, and Recurse Center.
+    profile_photo: https://jamiepalatnik.com/wp-content/uploads/2024/11/android-chrome-512x512-1-300x300.png
+  jamie_todd_rubin:
+    feed_url: http://feeds.feedburner.com/JamieToddRubin
+    homepage_url: https://jamierubin.net
+    display_name: Jamie Todd Rubin
+    summary: Writer and programmer Jamie Todd Rubin's essays about reading, writing, technology, paperless workflows, travel, and everyday life.
+    profile_photo: https://i0.wp.com/jamierubin.net/wp-content/uploads/2021/06/cropped-cropped-JTR-Social-Media-New.jpg?fit=180%2C180&ssl=1
+  janko_jovanovic:
+    feed_url: https://www.jankoatwarpspeed.com/feed/
+    homepage_url: https://www.jankoatwarpspeed.com
+    display_name: Janko Jovanovic
+    summary: 'Janko Jovanovic''s archived articles about design management, strategic design, user experience, and work. Latest feed post: December 2022.'
+    profile_photo: https://www.jankoatwarpspeed.com/wp-content/uploads/2025/05/janko-icon-2-300x300.png
+  japan_trends:
+    feed_url: http://feeds.feedburner.com/japantrends/feed
+    homepage_url: https://www.japantrends.com
+    display_name: Japan Trends
+    summary: Japan Trends articles about Japanese culture, lifestyle, design, technology, travel, and products, including shopping-oriented product features.
+    profile_photo: https://www.japantrends.com/japan-trends/wp-content/uploads/2015/09/japan-trends-favicon.jpg
+  jasim_a_basheer:
+    feed_url: https://jasimab.com/atom.xml
+    homepage_url: https://jasimab.com
+    display_name: Jasim A Basheer
+    summary: Jasim A Basheer's programming essays about Ruby, Rails, JavaScript, ReasonML, data structures, and writing legible code.
+  jasmines_substack:
+    feed_url: https://jasmi.news/feed
+    homepage_url: https://jasmi.news
+    display_name: '@jasmine''s substack'
+    summary: Jasmine Sun's essays and reporting about AI, Silicon Valley culture, technology, and politics.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!nVp2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1bce7f73-dea9-4135-9fca-55349b1cd990%2Fapple-touch-icon-57x57.png
+  jason_a_heppler:
+    feed_url: https://jasonheppler.org/feed.xml
+    homepage_url: https://jasonheppler.org
+    display_name: Jason A. Heppler
+    summary: Historian and software developer Jason A. Heppler's writing about environmental and digital history, research workflows, archives, and technology.
+    profile_photo: https://jasonheppler.org/assets/favicon.png
+  just_well_mixed:
+    feed_url: https://jasonlefkowitz.net/feed/atom/
+    homepage_url: https://jasonlefkowitz.net
+    display_name: Just Well Mixed
+    summary: 'Jason Lefkowitz''s archived essays about politics, technology, books, movies, and everyday life at Just Well Mixed. Latest feed post: October 2017.'
+    profile_photo: https://jasonlefkowitz.net/wp-content/themes/jwm2015/images/apple-touch-icon.png?v=2
+  jason_rudolph:
+    feed_url: http://feeds.feedburner.com/jasonrudolph
+    homepage_url: https://jasonrudolph.com
+    display_name: Jason Rudolph
+    summary: 'Jason Rudolph''s software engineering essays, developer tools, and project announcements, including BuildPulse and EveryDive. Latest feed post: October 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjasonrudolph.com&size=128
+  jason_thorsness_blog:
+    feed_url: https://www.jasonthorsness.com/rss.xml?v=0
+    homepage_url: https://www.jasonthorsness.com
+    display_name: Jason Thorsness Blog
+    summary: Jason Thorsness's programming experiments and essays about web performance, databases, WebAssembly, AI, and building personal software.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.jasonthorsness.com&size=128
+  jvm_advent:
+    feed_url: http://feeds.feedburner.com/JavaAdventCalendar
+    homepage_url: https://www.javaadvent.com
+    display_name: JVM Advent
+    summary: The JVM Advent programming calendar, publishing articles about Java, JVM languages, libraries, tools, and software development during December.
+    profile_photo: https://i0.wp.com/www.javaadvent.com/content/uploads/2017/12/DukeFavicon.png?fit=139%2C140&ssl=1
+  java_code_geeks:
+    feed_url: https://www.javacodegeeks.com/feed
+    homepage_url: https://www.javacodegeeks.com
+    display_name: Java Code Geeks
+    summary: Java Code Geeks programming tutorials, articles, and resources for Java and related technologies, alongside software deals and ebook promotions.
+    profile_photo: https://www.javacodegeeks.com/wp-content/uploads/2012/12/JavaCodeGeeks-favIcon.png
+  javarevisited:
+    feed_url: http://feeds.feedburner.com/Javarevisited
+    homepage_url: https://javarevisited.blogspot.com
+    display_name: Javarevisited
+    summary: Javin Paul's Javarevisited blog about Java, programming, databases, algorithms, and interview preparation, including book and course recommendations.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fjavarevisited.blogspot.com&size=128
+  javarevisited_by_javin_paul:
+    feed_url: https://javarevisited.substack.com/feed
+    homepage_url: https://javarevisited.substack.com
+    display_name: Javarevisited by Javin Paul
+    summary: Javin Paul's Javarevisited newsletter about Java, AI, system design, backend engineering, and technical interviews, including reading and tool recommendations.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!KARa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0b5d38d2-9763-4acf-9cd0-d0d11ed69038%2Fapple-touch-icon-57x57.png
+  playing_favorites_jay_acunzo:
+    feed_url: https://jayacunzo.com/blog?format=rss
+    homepage_url: https://jayacunzo.com/blog
+    display_name: Playing Favorites - Jay Acunzo
+    summary: Jay Acunzo's Playing Favorites newsletter about storytelling, marketing, creative work, and building audience resonance.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjayacunzo.com%2Fblog&size=128
+  josh_morrow:
+    feed_url: https://jcmorrow.com/rss.xml
+    homepage_url: https://jcmorrow.com
+    display_name: Josh Morrow
+    summary: Josh Morrow's programming projects and essays about array programming, graphics, spreadsheets, work values, and Recurse Center.
+    profile_photo: https://github.com/jcmorrow.png?size=200
+  j_crew:
+    feed_url: https://jcrew.tumblr.com/rss
+    homepage_url: https://jcrew.tumblr.com
+    display_name: J.Crew
+    summary: 'J.Crew''s archived Tumblr posts about clothing, styling, collaborations, travel, and lifestyle. Latest feed post: September 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjcrew.tumblr.com&size=128
+  jack_danger:
+    feed_url: https://jackdanger.com/index.xml
+    homepage_url: https://jackdanger.com
+    display_name: Jack Danger
+    summary: Jack Danger's writing about software engineering, engineering management, AI agents, and developer tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjackdanger.com&size=128
+  jeanettes_healthy_living:
+    feed_url: https://jeanetteshealthyliving.com/feed/
+    homepage_url: https://jeanetteshealthyliving.com
+    display_name: Jeanette's Healthy Living
+    summary: 'Jeanette''s Healthy Living recipe archive featuring whole ingredients, gluten-free cooking, and Asian-inspired dishes. Latest feed post: October 2021.'
+    profile_photo: https://jeanetteshealthyliving.com/wp-content/uploads/2015/09/cropped-cropped-logo-180x180.jpg
+  jeffs_nerdy_projects:
+    feed_url: https://jeffsnerdyprojects.blogspot.com/feeds/posts/default
+    homepage_url: https://jeffsnerdyprojects.blogspot.com
+    display_name: Jeff's Nerdy Projects
+    summary: 'An archive of Jeff''s DIY computing projects, including smart mirrors, Raspberry Pi builds, retro gaming, and repurposed computers. Latest feed post: February 2022.'
+  jeff_kaufmans_writing:
+    feed_url: https://www.jefftk.com/news.rss
+    homepage_url: https://www.jefftk.com/p
+    display_name: Jeff Kaufman's Writing
+    summary: Jeff Kaufman's writing about software, music, effective altruism, public health, photography, parenting, and everyday projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.jefftk.com%2Fp&size=128
+  jeff_wilcox:
+    feed_url: https://jeffwilcox.blog/rss
+    homepage_url: https://jeffwilcox.blog
+    display_name: Jeff Wilcox
+    summary: Jeff Wilcox's personal engineering articles about GitHub, Microsoft, developer infrastructure, home networking, and technology projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjeffwilcox.blog&size=128
+  holy_ghost_stories:
+    feed_url: https://www.jeffwofford.com/wp/?feed=rss2
+    homepage_url: https://www.jeffwofford.com/wp
+    display_name: Holy Ghost Stories
+    summary: Jeff Wofford's Holy Ghost Stories essays about Christian faith, imagination, technology, game development, and work.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.jeffwofford.com%2Fwp&size=128
+  johannes_enevoldsen:
+    feed_url: https://jenevoldsen.com/index.xml
+    homepage_url: https://jenevoldsen.com
+    display_name: Johannes Enevoldsen
+    summary: Johannes Enevoldsen's personal projects. The feed currently contains one February 2025 post demonstrating excitable cells and reentry tachyarrhythmias.
+    profile_photo: https://jenevoldsen.com/images/favicon/apple-touch-icon.png
+  jenkem_magazine:
+    feed_url: https://www.jenkemmag.com/home/feed/
+    homepage_url: https://www.jenkemmag.com/home
+    display_name: Jenkem Magazine
+    summary: Jenkem Magazine's skateboarding interviews, videos, photography, scene reports, and skate culture features.
+    profile_photo: https://www.jenkemmag.com/home/wp-content/themes/jenkem_2021/assets/icons/apple-touch-icon.png
+  thought_palace:
+    feed_url: https://jens.mooseyard.com/index.xml
+    homepage_url: https://jens.mooseyard.com
+    display_name: Thought Palace
+    summary: 'Jens Alfke''s Thought Palace weblog archive about software development, technology, music, and personal observations. Latest feed post: November 2021.'
+    profile_photo: https://jens.mooseyard.com/images/apple-touch-icon-precomposed.png
+  jen_schuetz:
+    feed_url: https://jenschuetz.com/feed.xml
+    homepage_url: https://jenschuetz.com
+    display_name: Jen Schuetz
+    summary: Jen Schuetz's journal about knitting, travel, homesteading, outdoor experiences, and personal reflections.
+    profile_photo: https://jenschuetz.com/assets/img/apple-touch-icon.png
+  jepsen:
+    feed_url: https://jepsen.io/blog.rss
+    homepage_url: https://jepsen.io/blog
+    display_name: Jepsen
+    summary: Jepsen's distributed systems safety research, database analyses, project releases, conference announcements, and testing reports.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjepsen.io%2Fblog&size=128
+  jeremy_eders_blog:
+    feed_url: https://jeremyeder.com/feed/
+    homepage_url: https://jeremyeder.com
+    display_name: Jeremy Eder's Blog
+    summary: Jeremy Eder's technical writing about systems performance, cloud infrastructure, containers, and AI agents.
+  jerry_gamblin:
+    feed_url: https://jerrygamblin.com/feed/
+    homepage_url: https://jerrygamblin.com
+    display_name: Jerry Gamblin
+    summary: Security researcher Jerry Gamblin's projects and commentary about vulnerabilities, CVE data, wireless devices, and information security.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjerrygamblin.com&size=128
+  jessitron:
+    feed_url: https://jessitron.com/feed/
+    homepage_url: https://jessitron.com
+    display_name: Jessitron
+    summary: Jessica Kerr's Jessitron essays about software development, learning, systems thinking, symmathesy, and AI.
+    profile_photo: https://i0.wp.com/jessitron.com/wp-content/uploads/2019/05/cropped-cropped-logo-by-linda-2.png?fit=180%2C180&ssl=1
+  jetpack:
+    feed_url: https://jetpack.com/feed/
+    homepage_url: https://jetpack.com
+    display_name: Jetpack
+    summary: Official Jetpack product updates and guides about WordPress security, backups, performance, forms, publishing, and site tools.
+    profile_photo: https://jetpack.com/wp-content/uploads/2022/06/85c4b-74462-jp-favicon-new.png?w=180
+  jill_aiko_yee:
+    feed_url: https://www.jillaikoyee.com/news?format=rss
+    homepage_url: https://www.jillaikoyee.com/news
+    display_name: Jill Aiko Yee
+    summary: 'Fashion designer Jill Aiko Yee''s archived newsletters, profiles, and studio news. Latest feed post: May 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.jillaikoyee.com%2Fnews&size=128
+  jim_hoskins:
+    feed_url: https://jimhoskins.com/atom.xml
+    homepage_url: https://jimhoskins.com
+    display_name: Jim Hoskins
+    summary: 'Jim Hoskins''s archived programming articles about AngularJS, JavaScript, Docker, and development tools. Latest feed post: July 2013.'
+    profile_photo: https://github.com/jimrhoskins.png?size=200
+  jim_willis:
+    feed_url: https://www.jimwillis.org/feed/
+    homepage_url: https://www.jimwillis.org
+    display_name: Jim Willis
+    summary: Jim Willis's personal projects and technical notes about self-hosting, audio, macOS automation, home technology, and cycling.
+    profile_photo: https://i0.wp.com/www.jimwillis.org/wp-content/uploads/2024/03/cropped-DSCF0444-scaled-1.jpeg?fit=180%2C180&ssl=1
+  alex_yumashev:
+    feed_url: https://www.jitbit.com/alexblog/rss/
+    homepage_url: https://www.jitbit.com/alexblog/
+    display_name: Alex Yumashev's blog
+    summary: Jitbit founder Alex Yumashev's essays about software engineering, running a software business, developer tools, and AI.
+    profile_photo: https://www.jitbit.com/favicon.png
+  justin_kramer:
+    feed_url: https://jkkramer.wordpress.com/feed/
+    homepage_url: https://jkkramer.wordpress.com
+    display_name: Justin Kramer
+    summary: 'Justin Kramer''s archived programming essays and project notes about Clojure and other languages. Latest feed post: March 2011.'
+  john_milinovich:
+    feed_url: https://mili.dev/rss.xml
+    homepage_url: https://mili.dev
+    display_name: John Milinovich
+    summary: John Milinovich's writing about AI, product development, entrepreneurship, design, and building technology companies.
+    profile_photo: https://mili.dev/favicon.png
   molly_white:
     feed_url: https://www.citationneeded.news/rss/
     homepage_url: https://www.citationneeded.news
