@@ -32,6 +32,8 @@ How robot.villas delivers posts, handles failures, and limits what remote server
 
 Feeds are fetched only from public HTTP(S) addresses, checked when connecting and on each of at most 5 redirects. Responses are limited to 5 MiB. Feeds with a DTD, nesting deeper than 64, or more than 50,000 elements are rejected.
 
+Before each feed request, including redirect destinations, the poller checks the origin's `/robots.txt` for `RobotVillas`, falling back to `User-agent: *`. Requests retain the User-Agent `robot.villas RSS poller/1.0 (+https://robot.villas/about)`. The parser's matching identity is separate from the HTTP header; groups named `robot.villas` or `RSS` do not match. Only a matching Disallow rule blocks the fetch; more-specific Allow rules and equal-length Allow rules take precedence. Blocked feeds report `Blocked by robots.txt` in their poll status without changing cached feed validators. Missing files, unsuccessful HTTP responses, network errors, timeouts, and oversized robots files do not block feeds. Robots checks have a separate 2-second timeout and 500 KiB body limit, reuse the public-address protections, and reuse rules only within one feed fetch. Federation requests are unaffected. See [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309.html) for matching rules; fail-open error handling is intentional.
+
 ## Monitoring
 
 - `/healthcheck`: 200 while the process serves HTTP
