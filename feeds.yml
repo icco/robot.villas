@@ -561,6 +561,256 @@ bots:
     display_name: Scientific American
     summary: Awe-inspiring advances in science and technology from Scientific American.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.scientificamerican.com&size=128
+  folyo_me:
+    feed_url: https://www.folyo.me/rss/
+    homepage_url: https://www.folyo.me/blog
+    display_name: Folyo Blog
+    summary: Folyo RSS
+  blog_francoismaillet:
+    feed_url: https://blog.francoismaillet.com/rss.xml
+    homepage_url: https://blog.francoismaillet.com
+    display_name: François Maillet - Blog
+    summary: François Maillet - Blog
+  blog_frankmtaylor:
+    feed_url: https://blog.frankmtaylor.com/feed/
+    homepage_url: https://blog.frankmtaylor.com
+    display_name: Frank M Taylor
+    summary: blog
+  freenode:
+    feed_url: https://freenode.net/feed.xml
+    homepage_url: https://freenode.net
+    display_name: freenode news
+    summary: freenode news
+  blog_frizk:
+    feed_url: https://blog.frizk.net/feeds/posts/default
+    homepage_url: https://blog.frizk.net
+    display_name: Security | DMA | Hacking
+    summary: Updates from Security | DMA | Hacking.
+  blog_gaborkoos:
+    feed_url: https://blog.gaborkoos.com/feed.xml
+    homepage_url: https://blog.gaborkoos.com
+    display_name: import chaos
+    summary: The edge cases of software engineering.
+  blog_gesteves:
+    feed_url: https://www.gesteves.com/feed.xml
+    homepage_url: https://blog.gesteves.com
+    display_name: Guillermo Esteves
+    summary: Updates from Guillermo Esteves.
+  blog_getbootstrap:
+    feed_url: https://blog.getbootstrap.com/feed.xml
+    homepage_url: https://blog.getbootstrap.com
+    display_name: Bootstrap Blog
+    summary: Official blog for the Bootstrap framework.
+  blog_postman:
+    feed_url: https://blog.postman.com/feed/
+    homepage_url: https://blog.postman.com
+    display_name: Postman Blog
+    summary: The official Postman blog
+  ghost:
+    feed_url: https://ghost.org/resources/rss/
+    homepage_url: https://ghost.org/resources
+    display_name: Ghost Resources
+    summary: A library of resources to help you share content, grow your audience, and build an independent subscription business.
+  gingerlime:
+    feed_url: https://www.gingerlime.com/feed/
+    homepage_url: https://www.gingerlime.com
+    display_name: Gingerlime
+    summary: Updates from Gingerlime.
+  blog_gitbutler:
+    feed_url: https://blog.gitbutler.com/rss
+    homepage_url: https://blog.gitbutler.com
+    display_name: Butler's Log
+    summary: The GitButler blog - insights, tutorials, and updates from the GitButler team
+  blog_gitguardian:
+    feed_url: https://blog.gitguardian.com/rss/
+    homepage_url: https://blog.gitguardian.com
+    display_name: GitGuardian Blog - Take Control of Your Secrets Security
+    summary: A blog for developers, security engineers, and other cybersecurity professionals to learn about secrets, non-human identities and code security, DevSecOps and much more.
+  blog_gregbrockman:
+    feed_url: https://blog.gregbrockman.com/feed
+    homepage_url: https://blog.gregbrockman.com
+    display_name: Greg Brockman
+    summary: Updates from Greg Brockman.
+  blog_habets_se:
+    feed_url: https://blog.habets.se/feed.xml
+    homepage_url: https://blog.habets.se
+    display_name: Blargh
+    summary: The blog where I write down random techy things I've found or done.
+  blog_humphd:
+    feed_url: https://blog.humphd.org/rss/
+    homepage_url: https://blog.humphd.org
+    display_name: Bread & Circuits
+    summary: The blog of David Humphrey
+  blog_hypem:
+    feed_url: https://blog.hypem.com/feed/
+    homepage_url: https://blog.hypem.com
+    display_name: Machine Shop
+    summary: Official Hype Machine staff blog
+  blog_initialized:
+    feed_url: https://blog.initialized.com/feed/
+    homepage_url: https://blog.initialized.com
+    display_name: View from Initialized
+    summary: Updates from View from Initialized.
+  intuit:
+    feed_url: https://www.intuit.com/blog/feed/
+    homepage_url: https://www.intuit.com/blog
+    display_name: Intuit Blog
+    summary: Powering Financial Prosperity
+  blog_invisiblethings:
+    feed_url: https://blog.invisiblethings.org/feed.xml
+    homepage_url: https://blog.invisiblethings.org
+    display_name: The Invisible Things Blog
+    summary: My personal blog and website (see http://blog.invisiblethings.org/)
+  blog_irccloud:
+    feed_url: https://blog.irccloud.com/feed.xml
+    homepage_url: https://blog.irccloud.com
+    display_name: IRCCloud Blog
+    summary: Updates from IRCCloud Blog.
+  blog_jenkster:
+    feed_url: https://blog.jenkster.com/rss.xml
+    homepage_url: https://blog.jenkster.com
+    display_name: Kris Jenkins' Blog
+    summary: The personal blog of Kris Jenkins, geek.
+  blog_jim_nielsen:
+    feed_url: https://blog.jim-nielsen.com/feed.xml
+    homepage_url: https://blog.jim-nielsen.com
+    display_name: Jim Nielsen’s Blog
+    summary: Updates from Jim Nielsen’s Blog.
+  blog_joemoreno:
+    feed_url: http://feeds.feedburner.com/MeaVitamyLife
+    homepage_url: http://blog.joemoreno.com
+    display_name: 'Mea Vita: Carpe Diem'
+    summary: 'Updates from Mea Vita: Carpe Diem.'
+  blog_joinmastodon:
+    feed_url: https://blog.joinmastodon.org/index.xml
+    homepage_url: https://blog.joinmastodon.org
+    display_name: Mastodon Blog
+    summary: Recent content on Mastodon Blog
+  blog_jonudell:
+    feed_url: https://blog.jonudell.net/feed/
+    homepage_url: https://blog.jonudell.net
+    display_name: Jon Udell
+    summary: Strategies for Internet citizens
+  flaviocopes:
+    feed_url: https://flaviocopes.com/rss.xml
+    homepage_url: https://flaviocopes.com
+    display_name: Flavio Copes
+    summary: Learn to build software products, put them on the internet, find customers, and create an independent business that can make a great living.
+  blog_jooq:
+    feed_url: https://blog.jooq.org/feed/
+    homepage_url: https://blog.jooq.org
+    display_name: Java, SQL and jOOQ.
+    summary: Best Practices and Lessons Learned from Writing Awesome Java and SQL Code. Get some hands-on insight on what's behind developing jOOQ.
+  blog_jse_li:
+    feed_url: https://blog.jse.li/index.xml
+    homepage_url: https://blog.jse.li
+    display_name: Jesse Li
+    summary: Recent content on Jesse Li
+  blog_jupyter:
+    feed_url: https://blog.jupyter.org/feeds/all.atom.xml
+    homepage_url: https://blog.jupyter.org
+    display_name: Jupyter Blog
+    summary: Updates from Jupyter Blog.
+  blog_kapeli:
+    feed_url: https://blog.kapeli.com/atom.xml
+    homepage_url: https://blog.kapeli.com
+    display_name: Kapeli Blog
+    summary: Updates from Kapeli Blog.
+  blog_kedrosky:
+    feed_url: https://blog.kedrosky.com/feed
+    homepage_url: https://blog.kedrosky.com
+    display_name: Paul Kedrosky
+    summary: Updates from Paul Kedrosky.
+  blog_kenperlin:
+    feed_url: https://blog.kenperlin.com/?feed=rss2
+    homepage_url: https://blog.kenperlin.com
+    display_name: Ken's Blog
+    summary: Because the future has just started
+  blog_kfish:
+    feed_url: http://blog.kfish.org/feeds/posts/default
+    homepage_url: http://blog.kfish.org
+    display_name: Conrad Parker
+    summary: Updates from Conrad Parker.
+  blog_khanacademy:
+    feed_url: https://blog.khanacademy.org/feed/
+    homepage_url: https://blog.khanacademy.org
+    display_name: Khan Academy Blog
+    summary: Updates from Khan Academy Blog.
+  blog_kiratalent:
+    feed_url: https://blog.kiratalent.com/feed/
+    homepage_url: https://blog.kiratalent.com
+    display_name: Kira Talent Admissions Resources
+    summary: Higher education blog
+  neilpatel:
+    feed_url: https://neilpatel.com/feed/
+    homepage_url: https://neilpatel.com
+    display_name: Neil Patel
+    summary: Updates from Neil Patel.
+  blog_kraken:
+    feed_url: https://blog.kraken.com/feed
+    homepage_url: https://blog.kraken.com
+    display_name: Kraken Blog
+    summary: Updates from Kraken Blog.
+  blog_kraken_2:
+    feed_url: https://blog.kraken.io/feed/
+    homepage_url: https://blog.kraken.io
+    display_name: Kraken.io Blog
+    summary: On Image Optimization and Web Performance in general
+  blog_kroy:
+    feed_url: https://blog.kroy.io/feed/
+    homepage_url: https://blog.kroy.io
+    display_name: blog.kroy.io
+    summary: computers, tech, and whatever other random stuff crosses my mind.
+  blog_kylemeyer:
+    feed_url: https://blog.kylemeyer.com/rss
+    homepage_url: https://blog.kylemeyer.com
+    display_name: Kyle Meyer
+    summary: Kyle Meyer is a San Francisco based product designer. Formerly at Facebook and Big Cartel.
+  latentflip:
+    feed_url: https://latentflip.com/essays.xml
+    homepage_url: http://latentflip.com
+    display_name: Philip Roberts - Essays
+    summary: Musings and essays by Philip Roberts
+  leif_me:
+    feed_url: https://leif.me/rss/
+    homepage_url: https://leif.me
+    display_name: Dr. Leif Singer
+    summary: 'Working Together Through Computers: Research And Musings On The Experience Of Making Software.'
+  blog_lessonslearned:
+    feed_url: https://blog.lessonslearned.org/rss/
+    homepage_url: https://blog.lessonslearned.org
+    display_name: First Principles
+    summary: Thoughts on security, technology & systems
+  mitchellbaker:
+    feed_url: https://mitchellbaker.net/feed/
+    homepage_url: https://mitchellbaker.net
+    display_name: Mitchell Baker
+    summary: Updates from Mitchell Baker.
+  blog_logrocket:
+    feed_url: https://blog.logrocket.com/feed/
+    homepage_url: https://blog.logrocket.com
+    display_name: LogRocket Blog
+    summary: Resources to Help Product Teams Ship Amazing Digital Experiences
+  blog_margaretleibovic:
+    feed_url: https://blog.margaretleibovic.com/feed.xml
+    homepage_url: http://blog.margaretleibovic.com
+    display_name: Margaret Leibovic
+    summary: I'm an engineering manager at Mozilla. I love the open web, and I'm working on keeping it awesome.
+  blog_maxrudberg:
+    feed_url: https://blog.maxrudberg.com/rss/
+    homepage_url: https://blog.maxrudberg.com
+    display_name: Max Rudberg's blog
+    summary: Sweden’s favorite UI designer. I conceptualize, design and make apps. From the shaping of an idea, to building out UI mockups & prototypes, 3D animations, crafting design libraries, assets & app icons
+  datagravitas:
+    feed_url: https://datagravitas.com/feed/
+    homepage_url: https://datagravitas.com
+    display_name: Data Gravitas
+    summary: Dave McCrory’s Thoughts, Ideas, and Research
+  blog_mikebowler_ca:
+    feed_url: https://blog.mikebowler.ca/atom.xml
+    homepage_url: https://blog.mikebowler.ca
+    display_name: Mike Bowler
+    summary: Updates from Mike Bowler.
   lifehacker:
     feed_url: https://lifehacker.com/feed/rss
     homepage_url: https://lifehacker.com
