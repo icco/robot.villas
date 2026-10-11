@@ -675,6 +675,256 @@ bots:
     display_name: Stripe Engineering
     summary: Engineering, APIs, infrastructure, and building reliable financial software.
     profile_photo: https://images.stripeassets.com/fzn2n1nzq965/4vVgZi0ZMoEzOhkcv7EVwK/8cce6fdcf2733b2ec8e99548908847ed/favicon.png?w=180&h=180
+  code_flickr:
+    feed_url: https://code.flickr.net/feed/
+    homepage_url: https://code.flickr.net
+    display_name: code.flickr.com
+    summary: Updates from code.flickr.com.
+  code_recollect:
+    feed_url: https://code.recollect.com/rss
+    homepage_url: https://code.recollect.com
+    display_name: Recollect Engineering
+    summary: This is the code blog describing the engineering efforts behind Recollect.
+  code_visualstudio:
+    feed_url: https://code.visualstudio.com/feed.xml
+    homepage_url: https://code.visualstudio.com
+    display_name: Visual Studio Code - Code Editing. Redefined.
+    summary: Updates from Visual Studio Code - Code Editing. Redefined..
+  zynga:
+    feed_url: https://www.zynga.com/feed/
+    homepage_url: https://www.zynga.com
+    display_name: Zynga
+    summary: Free Mobile & Online Games
+  code52:
+    feed_url: http://code52.org/rss.xml
+    homepage_url: http://www.Code52.org
+    display_name: Code52 Feed
+    summary: Updates from Code52 Feed.
+  codeartists:
+    feed_url: https://codeartists.com/rss
+    homepage_url: https://codeartists.com
+    display_name: CodeArtists
+    summary: We’re product people with ideas. Beautiful code. Simple design. Making things happen.
+  codecondo:
+    feed_url: https://codecondo.com/feed/
+    homepage_url: https://codecondo.com
+    display_name: Codecondo
+    summary: CodeCondo
+  octopus:
+    feed_url: http://feeds.feedburner.com/OctopusDeploy
+    homepage_url: https://octopus.com/codefresh
+    display_name: Octopus blog
+    summary: Updates from Octopus blog.
+  codefriar:
+    feed_url: https://codefriar.com/rss.xml
+    homepage_url: https://codefriar.com
+    display_name: Codefriar's blog
+    summary: Codefriar's blog
+  codeinsecurity_wordpress:
+    feed_url: https://codeinsecurity.wordpress.com/feed/
+    homepage_url: https://codeinsecurity.wordpress.com
+    display_name: codeinsecurity
+    summary: a mostly technical blog about things what which I done did or am looking at have
+  codelitt:
+    feed_url: https://www.codelitt.com/blog-feed.xml
+    homepage_url: https://www.codelitt.com/blog
+    display_name: Codelitt
+    summary: 'Codelitt: Curating Talent, Crafting Success'
+  codeofhonor:
+    feed_url: https://www.codeofhonor.com/atom.xml
+    homepage_url: https://www.codeofhonor.com
+    display_name: Code of Honor
+    summary: Updates from Code of Honor.
+  codeography:
+    feed_url: https://www.codeography.com/atom.xml
+    homepage_url: https://www.codeography.com
+    display_name: The blog of Christopher
+    summary: Updates from The blog of Christopher.
+  coderanger:
+    feed_url: https://coderanger.net/atom.xml
+    homepage_url: https://coderanger.net
+    display_name: Noah Kantrowitz
+    summary: Updates from Noah Kantrowitz.
+  coderoom_wordpress:
+    feed_url: https://coderoom.wordpress.com/feed/
+    homepage_url: https://coderoom.wordpress.com
+    display_name: yield thought
+    summary: it's not as hard as you think
+  codesmash_dev:
+    feed_url: https://codesmash.dev/rss.xml
+    homepage_url: https://codesmash.dev
+    display_name: CodeSmash
+    summary: CodeSmash
+  codesounding:
+    feed_url: https://www.codesounding.org/feed/
+    homepage_url: https://www.codesounding.org
+    display_name: codesounding.org
+    summary: https://www.codesounding.org
+  codewithoutrules:
+    feed_url: https://codewithoutrules.com/atom.xml
+    homepage_url: https://codewithoutrules.com
+    display_name: Code Without Rules
+    summary: Updates from Code Without Rules.
+  codysoyland:
+    feed_url: https://www.codysoyland.com/index.xml
+    homepage_url: https://www.codysoyland.com
+    display_name: Cody Soyland
+    summary: Recent content on Cody Soyland
+  coeverywhere:
+    feed_url: https://www.coeverywhere.com/feed/
+    homepage_url: https://www.coeverywhere.com
+    display_name: Every Cowhere
+    summary: Blog about market research
+  pdf2xl:
+    feed_url: https://www.pdf2xl.com/feed/
+    homepage_url: https://www.pdf2xl.com
+    display_name: PDF2XL
+    summary: Convert PDF Data to Excel Spreadsheets With The World's Most Powerful Business Converters & Free Online Converters!
+  coinspeaker:
+    feed_url: https://www.coinspeaker.com/news/feed/
+    homepage_url: https://www.coinspeaker.com/news
+    display_name: News Archives - Coinspeaker
+    summary: Bitcoin, Ethereum, Altcoins and Crypto News with Analysis, Live Prices, Data Charts and Guides
+  colcasac:
+    feed_url: https://colcasac.com/feed/
+    homepage_url: https://colcasac.com
+    display_name: colcasac
+    summary: Updates from colcasac.
+  coldattic_info:
+    feed_url: https://coldattic.info/index.xml
+    homepage_url: https://coldattic.info
+    display_name: A Foo walks into a Bar... - blog by Paul Shved - coldattic.info
+    summary: Recent ddsad content on A Foo walks into a Bar... - blog by Paul Shved - coldattic.info
+  collabfund:
+    feed_url: http://feeds.feedburner.com/collabfund
+    homepage_url: https://collabfund.com
+    display_name: Collaborative Fund
+    summary: Collaborative Fund is a leading source of capital for entrepreneurs pushing the world forward.
+  collectorsweekly:
+    feed_url: https://www.collectorsweekly.com/articles/feed/
+    homepage_url: https://www.collectorsweekly.com/articles
+    display_name: Collectors Weekly Articles and Interviews
+    summary: Articles and Interviews on Antiques and Collecting
+  coloradonewsline:
+    feed_url: https://coloradonewsline.com/feed/
+    homepage_url: https://coloradonewsline.com
+    display_name: Colorado Newsline
+    summary: Start with the truth
+  comediva:
+    feed_url: https://comediva.com/feed/
+    homepage_url: https://comediva.com
+    display_name: Comediva
+    summary: Fiercely funny.
+  comedycentral_tumblr:
+    feed_url: https://comedycentral.tumblr.com/rss
+    homepage_url: https://comedycentral.tumblr.com
+    display_name: Comedy Central
+    summary: The Official Tumblr Blog of Comedy Central. Go ahead, laugh in our face.
+  comicsbeat:
+    feed_url: https://www.comicsbeat.com/feed/
+    homepage_url: https://www.comicsbeat.com
+    display_name: The Beat
+    summary: Comic book news, graphic novel news, comics culture
+  commitstrip:
+    feed_url: https://www.commitstrip.com/en/feed/?
+    homepage_url: https://www.commitstrip.com
+    display_name: CommitStrip
+    summary: The blog relating the daily life of web agency developers
+  wbur:
+    feed_url: https://rss.wbur.org/wbur/rss
+    homepage_url: https://www.wbur.org/news
+    display_name: WBUR News
+    summary: A lot happens in Boston every day. To help you keep up, WBUR, Boston's NPR News station, pulled these stories together just for you.
+  community_letsencrypt:
+    feed_url: https://community.letsencrypt.org/posts.rss
+    homepage_url: https://community.letsencrypt.org
+    display_name: Let's Encrypt Community Support - Latest posts
+    summary: Latest posts
+  thisiscentralstation:
+    feed_url: https://thisiscentralstation.com/feed/
+    homepage_url: https://thisiscentralstation.com
+    display_name: Central Station
+    summary: Updates from Central Station.
+  community_windy:
+    feed_url: https://community.windy.com/topic/8804.rss
+    homepage_url: https://community.windy.com/topic/8804/the-next-big-thing
+    display_name: The next BIG THING
+    summary: The human brain is a weird organ. It can solve complicated math equations, yet it fails us when making decisions that are simple but that can determine if we live or die. If someone promises us a quick and painless solution, we tend to believe them even if it lacks basic logic. We watch the news and are eager to try out all the new technologies and gadgets that will soon be part of our life. We are unable to imagine a complete change of an hundred-year-old paradigm, even though this change can b
+  computationalcreativity:
+    feed_url: https://computationalcreativity.net/iccc21/feed/
+    homepage_url: https://computationalcreativity.net/iccc21
+    display_name: ICCC'21
+    summary: International Conference on Computational Creativity
+  computinged_wordpress:
+    feed_url: https://computinged.wordpress.com/feed/
+    homepage_url: https://computinged.wordpress.com
+    display_name: Computing Ed Research – Guzdial's Take
+    summary: How do people understand computing, and how can we improve that understanding?
+  concept_cars:
+    feed_url: https://www.concept-cars.org/feed
+    homepage_url: https://www.concept-cars.org
+    display_name: Concept Cars
+    summary: Prototype vehicles magazine - pictures and news
+  connectedcomedy:
+    feed_url: https://connectedcomedy.com/feed/
+    homepage_url: https://connectedcomedy.com
+    display_name: Connected Comedy
+    summary: Helping you produce, promote, and profit from funny content.
+  conorneill:
+    feed_url: https://conorneill.com/feed/
+    homepage_url: https://conorneill.com
+    display_name: Moving People to Action
+    summary: Challenging and Supporting People to do the Most Important Work of their Lives
+  westernjournal:
+    feed_url: https://www.westernjournal.com/feed/
+    homepage_url: https://www.westernjournal.com
+    display_name: The Western Journal
+    summary: Real Stories. Real People.
+  container_solutions:
+    feed_url: https://blog.container-solutions.com/rss.xml
+    homepage_url: https://www.container-solutions.com
+    display_name: Blog - Container Solutions
+    summary: Read the latest thinking, news and research from the team at Container Solutions in our Cloud Native Blog.
+  contentwithstyle:
+    feed_url: https://contentwithstyle.co.uk/atom.xml
+    homepage_url: https://contentwithstyle.co.uk
+    display_name: Content with Style
+    summary: Updates from Content with Style.
+  coolhunting:
+    feed_url: https://coolhunting.com/feed/
+    homepage_url: https://coolhunting.com
+    display_name: COOL HUNTING®
+    summary: Informing the future since 2003
+  coolmompicks:
+    feed_url: https://coolmompicks.com/feed
+    homepage_url: https://coolmompicks.com
+    display_name: Cool Mom Picks
+    summary: Cool Mom Picks — smart, stylish recommendations for family life.
+  coopcloud_tech:
+    feed_url: https://coopcloud.tech/index.xml
+    homepage_url: https://coopcloud.tech
+    display_name: The Co-op Cloud
+    summary: Recent content on The Co-op Cloud
+  copix:
+    feed_url: https://www.copix.org/feed/
+    homepage_url: https://www.copix.org
+    display_name: copix
+    summary: Updates from copix.
+  copyright_gov:
+    feed_url: https://www.copyright.gov/rss.xml
+    homepage_url: https://www.copyright.gov
+    display_name: What's New at the Copyright Office - Recent Updates
+    summary: What's New at the Copyright Office - Recent Updates
+  coralproject:
+    feed_url: https://coralproject.net/feed/
+    homepage_url: https://coralproject.net
+    display_name: Coral by Vox Media
+    summary: A better commenting experience
+  cordlessdog:
+    feed_url: https://cordlessdog.com/blog/feed/atom/
+    homepage_url: https://cordlessdog.com/blog
+    display_name: Cordless Blog
+    summary: Updates from Cordless Blog.
   github_engineering:
     feed_url: https://github.blog/engineering/feed/
     homepage_url: https://github.blog
