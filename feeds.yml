@@ -309,6 +309,256 @@ bots:
     display_name: NYT > Arts
     summary: Arts news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  e360_yale_edu:
+    feed_url: https://e360.yale.edu/feed.xml
+    homepage_url: https://e360.yale.edu
+    display_name: Yale E360
+    summary: Yale Environment 360 is an online magazine offering opinion, analysis, reporting, and debate on global environmental issues.
+  eclecticlight_co:
+    feed_url: https://eclecticlight.co/feed/
+    homepage_url: https://eclecticlight.co
+    display_name: The Eclectic Light Company
+    summary: "Macs & painting – \U0001F989 No AI content"
+  tess_oconnor_cx:
+    feed_url: https://tess.oconnor.cx/feed
+    homepage_url: https://tess.oconnor.cx
+    display_name: Theresa O’Connor
+    summary: Updates from Theresa O’Connor.
+  elaineou:
+    feed_url: https://elaineou.com/feed/
+    homepage_url: https://elaineou.com
+    display_name: Elaine's Idle Mind
+    summary: and Devil's Workshop
+  electrek_co:
+    feed_url: https://electrek.co/feed/
+    homepage_url: https://electrek.co
+    display_name: Electrek
+    summary: EV and Tesla News, Green Energy, Ebikes, and more
+  electricliterature:
+    feed_url: https://electricliterature.com/feed/
+    homepage_url: https://electricliterature.com
+    display_name: Electric Literature
+    summary: Reading Into Everything.
+  eli_li:
+    feed_url: https://eli.li/feed.rss
+    homepage_url: https://eli.li
+    display_name: Oatmeal
+    summary: The feed of updates for Oatmeal
+  elischiff:
+    feed_url: https://elischiff.com/index.xml
+    homepage_url: https://elischiff.com
+    display_name: Eli Schiff's blog
+    summary: Recent content from Eli's blog
+  wordpress_2:
+    feed_url: https://wordpress.com/blog/feed/
+    homepage_url: https://wordpress.com/blog
+    display_name: WordPress.com Blog
+    summary: News, Tips & Website Tutorials
+  en_wikibooks:
+    feed_url: https://en.wikibooks.org/w/api.php?hidebots=1&hidecategorization=1&hideWikibase=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom
+    homepage_url: https://en.wikibooks.org/wiki/Special:RecentChanges
+    display_name: Wikibooks - Recent changes [en]
+    summary: Updates from Wikibooks - Recent changes [en].
+  codeengineered:
+    feed_url: https://codeengineered.com/index.xml
+    homepage_url: https://codeengineered.com
+    display_name: Code Engineered
+    summary: Recent content on Code Engineered
+  engineering_remind:
+    feed_url: https://engineering.remind.com/feed.xml
+    homepage_url: http://engineering.remind.com
+    display_name: Remind Engineering
+    summary: Code with purpose with our engineering team.
+  engineyard:
+    feed_url: https://www.engineyard.com/feed/
+    homepage_url: https://www.engineyard.com
+    display_name: EngineYard
+    summary: PaaS Platform as a Service | PaaS Solution
+  euronews:
+    feed_url: https://www.euronews.com/rss?level=vertical&name=culture
+    homepage_url: https://www.euronews.com
+    display_name: Culture | Euronews RSS
+    summary: Latest news from Euronews
+  evbogue:
+    feed_url: https://evbogue.com/feed.xml
+    homepage_url: https://evbogue.com
+    display_name: evbogue.com
+    summary: Writing by Everett Bogue.
+  events_ccc_de:
+    feed_url: https://events.ccc.de/feed
+    homepage_url: https://events.ccc.de
+    display_name: CCC Event Blog
+    summary: Recent content on CCC Event Blog
+  everythingsysadmin:
+    feed_url: https://feeds.everythingsysadmin.com/EverythingSysadmin
+    homepage_url: https://everythingsysadmin.com
+    display_name: Tom Limoncelli's EverythingSysadmin Blog
+    summary: Thoughts, news and views of Limoncelli, Hogan & Chalup
+  elainewherry:
+    feed_url: https://elainewherry.com/feed/
+    homepage_url: https://elainewherry.com
+    display_name: Elaine Wherry's Blog
+    summary: Updates from Elaine Wherry's Blog.
+  expressjs:
+    feed_url: https://expressjs.com/feed.xml
+    homepage_url: https://expressjs.com
+    display_name: The Express.js Blog
+    summary: News and updates about express.js
+  factoryjoe:
+    feed_url: https://factoryjoe.com/feed/
+    homepage_url: https://factoryjoe.com
+    display_name: Factory Joe
+    summary: This can all be made better. Ready? Begin
+  fieldkit:
+    feed_url: https://www.fieldkit.org/feed/
+    homepage_url: https://www.fieldkit.org
+    display_name: FieldKit
+    summary: Updates from FieldKit.
+  fin:
+    feed_url: https://www.fin.com/rss.xml
+    homepage_url: https://fin.com/stories
+    display_name: Fin.com Stories
+    summary: Customer stories, product updates, and editorial content from Fin.com.
+  fishbowl_pastiche:
+    feed_url: https://fishbowl.pastiche.org/atom.xml
+    homepage_url: https://fishbowl.pastiche.org
+    display_name: The Fishbowl
+    summary: Updates from The Fishbowl.
+  floci:
+    feed_url: https://floci.io/rss.xml
+    homepage_url: https://floci.io
+    display_name: floci Chronicle
+    summary: Notes and stories from the floci community.
+  flowerhack_dreamwidth:
+    feed_url: https://flowerhack.dreamwidth.org/data/rss
+    homepage_url: https://flowerhack.dreamwidth.org
+    display_name: flowerhack
+    summary: flowerhack - Dreamwidth Studios
+  focuslist_co:
+    feed_url: https://focuslist.co/feed/
+    homepage_url: https://focuslist.co
+    display_name: FocusList – daily planner & focus timer based on timeboxing and Pomodoro technique
+    summary: Updates from FocusList – daily planner & focus timer based on timeboxing and Pomodoro technique.
+  fossil_scm:
+    feed_url: https://www.fossil-scm.org/home/timeline.rss
+    homepage_url: https://www.fossil-scm.org/home
+    display_name: Fossil
+    summary: Fossil SCM
+  frankchimero:
+    feed_url: https://frankchimero.com/feed.xml
+    homepage_url: https://frankchimero.com
+    display_name: Frank Chimero
+    summary: Personal site of designer Frank Chimero
+  freebeacon:
+    feed_url: https://freebeacon.com/blog/feed/
+    homepage_url: https://freebeacon.com/blog
+    display_name: Blog Archive -
+    summary: Updates from Blog Archive -.
+  blog_citp_princeton_edu:
+    feed_url: https://blog.citp.princeton.edu/feed/
+    homepage_url: https://blog.citp.princeton.edu
+    display_name: CITP Blog
+    summary: Center for Information Technology Policy (CITP)
+  fsf:
+    feed_url: https://static.fsf.org/fsforg/rss/news.xml
+    homepage_url: http://www.fsf.org/news/aggregator
+    display_name: FSF News
+    summary: Updates from FSF News.
+  gaijin:
+    feed_url: https://www.gaijin.com/rss/
+    homepage_url: https://www.gaijin.com
+    display_name: gaijin
+    summary: Japanese restaurant reviews - Exploring the finest Japanese restaurants across Asia
+  gamedev:
+    feed_url: https://gamedev.net/feed/
+    homepage_url: https://gamedev.net
+    display_name: GameDev.net
+    summary: Latest from GameDev.net.
+  gamedev_stackexchange:
+    feed_url: https://gamedev.stackexchange.com/feeds
+    homepage_url: https://gamedev.stackexchange.com/questions
+    display_name: Recent Questions - Game Development Stack Exchange
+    summary: Updates from Recent Questions - Game Development Stack Exchange.
+  geohot_github:
+    feed_url: https://geohot.github.io//blog/feed.xml
+    homepage_url: https://geohot.github.io//blog
+    display_name: the singularity is nearer
+    summary: Updates from the singularity is nearer.
+  getharvest:
+    feed_url: https://www.getharvest.com/blog/rss.xml
+    homepage_url: https://www.getharvest.com/blog
+    display_name: The Harvest Blog
+    summary: Learn how time tracking can help you run your business with expert tips and resources to strengthen your time management skills and increase employee engagement.
+  giuliomagnifico_blog:
+    feed_url: https://giuliomagnifico.blog/index.xml
+    homepage_url: https://giuliomagnifico.blog
+    display_name: /home/⏎
+    summary: Recent content on /home/⏎
+  developers_googleblog:
+    feed_url: https://developers.googleblog.com/feeds/posts/default/
+    homepage_url: https://developers.googleblog.com
+    display_name: Google Developers Blog
+    summary: Updates on changes and additions to the Google Developers Blog.
+  gottabemobile:
+    feed_url: https://www.gottabemobile.com/feed/
+    homepage_url: https://www.gottabemobile.com
+    display_name: Gotta Be Mobile
+    summary: Mobile Tech News & Reviews
+  govtech:
+    feed_url: https://www.govtech.com/index.rss
+    homepage_url: https://www.govtech.com
+    display_name: Government Technology State & Local Articles - e.Republic
+    summary: Government Technology has IT articles for state, local and city government. Find government news and events.
+  govtrack_us:
+    feed_url: https://www.govtrack.us/posts.rss
+    homepage_url: https://www.govtrack.us/posts
+    display_name: GovTrack.us Posts
+    summary: Upcoming legislation in Congress, recaps, analysis, and site news from GovTrack.us.
+  grammarly:
+    feed_url: https://www.grammarly.com/blog/feed/
+    homepage_url: https://www.grammarly.com/blog
+    display_name: Grammarly Blog
+    summary: Grammarly Blog
+  grantland:
+    feed_url: https://grantland.com/features/feed/
+    homepage_url: https://grantland.com
+    display_name: Features – Grantland
+    summary: Sports and pop culture from our rotating cast of writers
+  grumpy_website:
+    feed_url: https://grumpy.website/feed.xml
+    homepage_url: https://grumpy.website
+    display_name: Grumpy Website
+    summary: Updates from Grumpy Website.
+  haacked:
+    feed_url: https://haacked.com/atom.xml
+    homepage_url: https://haacked.com
+    display_name: You’ve Been Haacked
+    summary: Updates from You’ve Been Haacked.
+  hackny:
+    feed_url: https://hackny.org/blog?format=rss
+    homepage_url: https://hackny.org/blog
+    display_name: hackNY
+    summary: 'hackNY: Connecting students and startups in NYC!'
+  hanno_rein_de:
+    feed_url: http://legacy.hanno-rein.de/hanno-rein.de/feed
+    homepage_url: http://hanno-rein.de
+    display_name: hanno-rein.de
+    summary: Cambridge and other planets
+  hardforum:
+    feed_url: https://hardforum.com/forums/-/index.rss
+    homepage_url: https://hardforum.com
+    display_name: '[H]ard|Forum'
+    summary: HardOCP Community Forum for PC Hardware Enthusiasts
+  haseebq:
+    feed_url: https://haseebq.com/feed.xml
+    homepage_url: https://haseebq.com
+    display_name: haseeb qureshi
+    summary: Updates from haseeb qureshi.
+  haskell:
+    feed_url: https://wiki.haskell.org/api.php?hidebots=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom
+    homepage_url: https://www.haskell.org
+    display_name: HaskellWiki - Recent changes [en]
+    summary: Updates from HaskellWiki - Recent changes [en].
   nyt_style:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/FashionandStyle.xml
     homepage_url: https://www.nytimes.com/section/style
