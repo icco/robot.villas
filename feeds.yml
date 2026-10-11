@@ -2408,256 +2408,296 @@ bots:
     display_name: The Orbital Index
     summary: A technical, curated weekly digest of space exploration news.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://orbitalindex.com&size=128
-  geoff_greer_fm:
+  geoff_greer:
     feed_url: https://geoff.greer.fm/feed.atom
     homepage_url: https://geoff.greer.fm
     display_name: Geoff Greer's site
-    summary: Updates from Geoff Greer's site.
+    summary: 'Geoff Greer''s personal essays on programming, hardware, technology, and making things. Latest feed post: July 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgeoff.greer.fm&size=128
   glamour:
     feed_url: https://www.glamour.com/feed/rss
     homepage_url: https://www.glamour.com
     display_name: Glamour
-    summary: The latest from www.glamour.com
+    summary: Fashion, beauty, entertainment, women's issues, and politics from Glamour.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.glamour.com&size=128
   highsnobiety:
     feed_url: https://www.highsnobiety.com/feeds/rss
     homepage_url: https://www.highsnobiety.com
     display_name: Highsnobiety
-    summary: Online lifestyle news site covering sneakers, streetwear, street art and more.
-  idlewords:
+    summary: Sneakers, streetwear, fashion, design, music, and contemporary culture from Highsnobiety.
+    profile_photo: https://www.highsnobiety.com/static-assets/assets/h-icons/ios/57.png
+  idle_words:
     feed_url: https://idlewords.com/index.xml
     homepage_url: http://idlewords.com
     display_name: Idle Words
-    summary: Brevity is for the weak
-  it_slashdot:
+    summary: Maciej Ceglowski's essays on technology, politics, travel, food, and spaceflight.
+  slashdot_it:
     feed_url: https://rss.slashdot.org/Slashdot/slashdotIt
     homepage_url: https://it.slashdot.org
     display_name: 'Slashdot: IT'
-    summary: News for nerds, stuff that matters
-  kevin_burke_dev:
+    summary: Slashdot's IT coverage of cybersecurity, infrastructure, software vulnerabilities, and computing.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fit.slashdot.org&size=128
+  kevin_burke:
     feed_url: https://kevin.burke.dev/feed/
     homepage_url: https://kevin.burke.dev
     display_name: Kevin Burke
-    summary: The golden age is before us, not behind us
-  kkovacs_eu:
+    summary: Kevin Burke's writing on software engineering, independent consulting, technology, and personal experiences.
+    profile_photo: https://github.com/kevinburke.png?size=200
+  kristof_kovacs:
     feed_url: https://kkovacs.eu/index.xml
     homepage_url: https://kkovacs.eu
-    display_name: Software Architect and DevOps Consultant on Kristof Kovacs ✈️
-    summary: Recent content in Software Architect and DevOps Consultant on Kristof Kovacs ✈️
-  larahogan_me:
+    display_name: Kristof Kovacs
+    summary: Kristof Kovacs's articles on software architecture, DevOps, Unix tools, AI coding workflows, and management.
+    profile_photo: https://kkovacs.eu/apple-touch-icon.png
+  lara_hogan:
     feed_url: https://larahogan.me/feed.xml
     homepage_url: https://larahogan.me
-    display_name: Lara Callender Hogan
-    summary: Lara Hogan, Management Coach and Trainer
-  lastweekinaws:
+    display_name: Lara Hogan
+    summary: Lara Hogan's practical advice and worksheets on engineering management, leadership, feedback, and team communication.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flarahogan.me&size=128
+  last_week_in_aws:
     feed_url: https://www.lastweekinaws.com/feed/
     homepage_url: https://www.lastweekinaws.com
     display_name: Last Week in AWS
-    summary: AWS News Sprinkled With Snark
-  launchpad:
+    summary: Corey Quinn's commentary on AWS services, cloud costs, observability, and the cloud industry.
+    profile_photo: https://www.lastweekinaws.com/wp-content/uploads/2022/01/cropped-favicon-umber-512-180x180.png
+  launchpad_announcements:
     feed_url: https://feeds.launchpad.net/announcements.atom
     homepage_url: https://launchpad.net/+announcements
-    display_name: Announcements published via Launchpad
-    summary: Updates from Announcements published via Launchpad.
-  layervault_tumblr:
+    display_name: 'Launchpad: Project Announcements'
+    summary: Announcements and release notes from projects across the Launchpad software-hosting platform.
+    profile_photo: https://launchpad.net/@@/apple-touch-icon.png?v=2022
+  layervault_blog:
     feed_url: https://layervault.tumblr.com/rss
     homepage_url: https://layervault.tumblr.com
     display_name: LayerVault Blog
-    summary: We’re LayerVault, a simple version control system for designers. This is our blog.
-  linuxjournal:
+    summary: 'Archived LayerVault product announcements and interviews about design tools. Latest feed post: December 2015.'
+  linux_journal:
     feed_url: https://www.linuxjournal.com/node/feed?from=225
     homepage_url: https://www.linuxjournal.com
-    display_name: Linux Journal - The Original Magazine of the Linux Community
-    summary: Updates from Linux Journal - The Original Magazine of the Linux Community.
-  livescience:
+    display_name: Linux Journal
+    summary: Linux and open-source news, tutorials, kernel developments, system administration, and programming from Linux Journal.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.linuxjournal.com&size=128
+  live_science:
     feed_url: https://www.livescience.com/feeds.xml
     homepage_url: https://www.livescience.com
-    display_name: Latest from Live Science
-    summary: All the latest content from the Live Science team
-  lostechies:
+    display_name: Live Science
+    summary: Science news and explainers covering space, archaeology, biology, health, Earth, and technology.
+    profile_photo: https://cdn.mos.cms.futurecdn.net/flexiimages/ze6kddeaxb1774625505.png
+  los_techies:
     feed_url: https://feeds.feedburner.com/LosTechies
     homepage_url: https://lostechies.com
     display_name: Los Techies
-    summary: Updates from Los Techies.
-  mailchimp:
+    summary: Software development, architecture, .NET, programming tools, and AI coding experiments from the Los Techies community.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flostechies.com&size=128
+  print_newsletters:
     feed_url: https://us4.campaign-archive.com/feed?u=92393903161db64d4a7ef4719&id=27ca5ffcdb
-    homepage_url: https://mailchimp.com
-    display_name: Print Magazine Archive Feed
-    summary: Updates from Print Magazine Archive Feed.
+    homepage_url: https://us4.campaign-archive.com/home/?u=92393903161db64d4a7ef4719&id=27ca5ffcdb
+    display_name: PRINT Magazine Newsletters
+    summary: 'PRINT Magazine''s email archive: design newsletters, book-club invitations, events, and promotions. Includes more than PRINT Weekly.'
+    profile_photo: https://i0.wp.com/www.printmag.com/wp-content/uploads/2023/08/cropped-print-favicon.png?fit=180%2C180&quality=80&ssl=1
   math_stackexchange:
     feed_url: https://math.stackexchange.com/feeds
-    homepage_url: https://math.stackexchange.com/questions
-    display_name: Recent Questions - Mathematics Stack Exchange
-    summary: Updates from Recent Questions - Mathematics Stack Exchange.
-  mattcutts:
+    homepage_url: https://math.stackexchange.com/
+    display_name: Mathematics Stack Exchange
+    summary: Recent mathematics questions from the Mathematics Stack Exchange community.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmath.stackexchange.com%2Fquestions&size=128
+  matt_cutts:
     feed_url: https://www.mattcutts.com/blog/feed/
     homepage_url: https://www.mattcutts.com/blog
     display_name: 'Matt Cutts: Gadgets, Google, and SEO'
-    summary: 'Updates from Matt Cutts: Gadgets, Google, and SEO.'
+    summary: 'Matt Cutts''s personal blog on gadgets, Google, SEO, public service, and family. Latest feed post: August 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mattcutts.com%2Fblog&size=128
   mattermark:
     feed_url: https://mattermark.com/feed/
     homepage_url: https://mattermark.com
     display_name: Mattermark
-    summary: Mattermark - Data-Driven Deal Intelligence
-  meetup:
+    summary: 'Archived Mattermark posts on startups, venture capital, sales, and company news. Latest feed post: February 2019.'
+    profile_photo: https://mattermark.com/wp-content/uploads/2017/05/cropped-favicon-transparent-blue-180x180.png
+  meetup_blog:
     feed_url: https://www.meetup.com/blog/feed/
     homepage_url: https://www.meetup.com/blog
     display_name: Meetup Blog
-    summary: Community Matters
-  mentalfloss:
+    summary: Meetup's official blog on product changes, event organizing, and building real-life communities. This is not a local group's event feed.
+    profile_photo: https://www.meetup.com/blog/wp-content/uploads/fbrfg/apple-touch-icon.png
+  mental_floss:
     feed_url: https://www.mentalfloss.com/feed
     homepage_url: https://www.mentalfloss.com
-    display_name: Mentalfloss Feed
-    summary: Updates from Mentalfloss Feed.
+    display_name: Mental Floss
+    summary: History, language, geography, entertainment, trivia, quizzes, and curious facts from Mental Floss.
+    profile_photo: https://images2.minutemediacdn.com/image/upload/v1635074903/frontier/favicons/MFFavicon_216ef394-60ef-4fac-9984-97a8819af760_400x.png
   metafilter:
     feed_url: https://rss.metafilter.com/metafilter.rss
     homepage_url: https://www.metafilter.com
     display_name: MetaFilter
-    summary: The past 24 hours of MetaFilter
-  networkworld:
+    summary: Community-selected links and discussion from MetaFilter's main weblog, covering the past 24 hours.
+    profile_photo: https://www.metafilter.com/apple-touch-icon.png
+  network_world:
     feed_url: https://www.networkworld.com/feed/
     homepage_url: https://www.networkworld.com
     display_name: Network World
-    summary: From the data center to the edge
-  news_artnet:
+    summary: Enterprise networking, data centers, cloud infrastructure, storage, security, and IT industry news and analysis.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.networkworld.com&size=128
+  artnet_news:
     feed_url: https://news.artnet.com/feed
     homepage_url: https://news.artnet.com
     display_name: Artnet News
-    summary: The world’s most-read and best trusted art publication
+    summary: Art-world reporting, exhibitions, auctions, artists, and the art market from Artnet News.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnews.artnet.com&size=128
   phandroid:
     feed_url: https://phandroid.com/feed/
     homepage_url: https://phandroid.com
     display_name: Phandroid
-    summary: Android Phone News, Rumors, Reviews, Apps, Forums & More!
-  piratefsh_github:
+    summary: Android and consumer-technology news, device reviews, and shopping deals from Phandroid.
+    profile_photo: https://phandroid.com/wp-content/uploads/2021/03/s10LgrPt-350x350.jpg
+  commented:
     feed_url: https://piratefsh.github.io/feed.xml
-    homepage_url: http://piratefsh.github.io
+    homepage_url: https://piratefsh.github.io/
     display_name: Commented
-    summary: A blog on the intersections of computer, history, and art. Plus some personal stories.
+    summary: 'piratefsh''s blog on generative art, computer history, programming, perfume, and personal experiences. Latest feed post: December 2022.'
+    profile_photo: https://piratefsh.github.io/favicon.png
   pluralistic:
     feed_url: https://pluralistic.net/feed/
     homepage_url: https://pluralistic.net
-    display_name: 'Pluralistic: Daily links from Cory Doctorow'
-    summary: 'No trackers, no ads. Black type, white background. Privacy policy: we don''t collect or retain any data at all ever period.'
+    display_name: 'Pluralistic: Cory Doctorow'
+    summary: Cory Doctorow's essays and daily links on technology, politics, economics, culture, and digital rights.
+    profile_photo: https://i0.wp.com/pluralistic.net/wp-content/uploads/2020/02/cropped-guillotine-French-Revolution.jpg?fit=180%2C180&ssl=1
   poynter:
     feed_url: https://www.poynter.org/feed/
     homepage_url: https://www.poynter.org
     display_name: Poynter
-    summary: A global leader in journalism. Strengthening democracy.
-  quoteinvestigator:
+    summary: Journalism and media reporting, press freedom, fact-checking, ethics, and professional advice from Poynter.
+    profile_photo: https://www.poynter.org/wp-content/uploads/2020/06/favicon.png
+  quote_investigator:
     feed_url: https://quoteinvestigator.com/feed/
     homepage_url: https://quoteinvestigator.com
-    display_name: Quote Investigator®
-    summary: Tracing Quotations
-  rememberyourlines:
+    display_name: Quote Investigator
+    summary: Research tracing the origins, earliest citations, and attribution of quotations and sayings.
+    profile_photo: https://quoteinvestigator.com/wp-content/uploads/2018/10/cropped-magnify720-1-180x180.png
+  remember_your_lines:
     feed_url: http://rememberyourlines.com/feed/
     homepage_url: http://rememberyourlines.com
     display_name: Remember Your Lines
-    summary: Learning and practicing [code, etc.]
-  runforsomething:
-    feed_url: https://runforsomething.net/feed/
+    summary: 'Liene Verzemnieks''s personal blog about programming, work, learning, and family. Latest feed post: May 2022.'
+  run_for_something:
+    feed_url: https://runforsomething.medium.com/feed
     homepage_url: https://runforsomething.net
     display_name: Run For Something
-    summary: Run for Something recruits and supports talented, passionate young leaders to run for state and local office - we’re building long-term power.
+    summary: Official Run for Something posts on young progressive candidates, endorsements, and running for state and local office.
+    profile_photo: https://runforsomething.net/wp-content/uploads/2020/06/cropped-rfs-icon-180x180.png
   scattered_thoughts:
     feed_url: https://www.scattered-thoughts.net/atom.xml
     homepage_url: https://www.scattered-thoughts.net
-    display_name: Scattered Thoughts
-    summary: Updates from Scattered Thoughts.
-  scotthelme:
+    display_name: Scattered Thoughts - Jamie Brandon
+    summary: Jamie Brandon's essays and development logs on databases, programming languages, compilers, systems, AI, and personal projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.scattered-thoughts.net&size=128
+  scott_helme:
     feed_url: https://scotthelme.co.uk/rss/
     homepage_url: https://scotthelme.co.uk
     display_name: Scott Helme
-    summary: Hi, I'm Scott Helme, a Security Researcher, Entrepreneur and International Speaker. I'm the creator of Report URI and Security Headers, and I deliver world renowned training on Hacking and Encryption.
+    summary: Scott Helme's research and practical writing on web security, encryption, browser protections, data breaches, and technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fscotthelme.co.uk&size=128
   screenrant:
     feed_url: https://screenrant.com/feed/
     homepage_url: https://screenrant.com
-    display_name: ScreenRant
-    summary: ScreenRant debuted in 2003 and has grown into the largest source of breaking entertainment news & original features for movies, TV, comics, + more!
-  sf_eater:
+    display_name: Screen Rant
+    summary: Movie, television, gaming, comics, and entertainment news, reviews, guides, and features from Screen Rant.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fscreenrant.com&size=128
+  eater_sf:
     feed_url: https://sf.eater.com/rss/index.xml
     homepage_url: https://sf.eater.com
     display_name: Eater SF
-    summary: Updates from Eater SF.
-  smh_com_au:
+    summary: Restaurant news, openings, dining guides, and food coverage across San Francisco and the Bay Area.
+    profile_photo: https://sf.eater.com/static-assets/icons/apple-touch-icon.png
+  sydney_morning_herald:
     feed_url: https://www.smh.com.au/rss/feed.xml
     homepage_url: https://www.smh.com.au
-    display_name: Sydney Morning Herald - Latest News
-    summary: The top News headlines from The Sydney Morning Herald. For all the news, visit https://www.smh.com.au
-  spin_atomicobject:
+    display_name: The Sydney Morning Herald
+    summary: Latest headlines on Sydney, Australia, world affairs, politics, business, sport, culture, and lifestyle.
+    profile_photo: https://www.smh.com.au/apple-touch-icons/smh.png
+  atomic_spin:
     feed_url: https://spin.atomicobject.com/feed/
     homepage_url: https://spin.atomicobject.com
     display_name: Atomic Spin
-    summary: Atomic Object’s blog on everything we find fascinating.
-  stackoverflow_blog:
+    summary: Atomic Object's team blog on software development, design, product work, AI, and workplace practices.
+    profile_photo: https://spin.atomicobject.com/wp-content/uploads/cropped-AO-Favicon-512-32x32.png
+  stack_overflow_blog:
     feed_url: https://stackoverflow.blog/feed/
     homepage_url: https://stackoverflow.blog
     display_name: Stack Overflow Blog
     summary: Essays, opinions, and advice on the act of computer programming from Stack Overflow.
-  talkingpointsmemo:
+    profile_photo: https://stackoverflow.blog/apple-touch-icon.png
+  talking_points_memo:
     feed_url: https://talkingpointsmemo.com/feed
     homepage_url: https://talkingpointsmemo.com
-    display_name: TPM – Talking Points Memo
-    summary: Breaking News and Analysis
+    display_name: Talking Points Memo
+    summary: Reporting, analysis, and commentary on American politics, public policy, and political culture from TPM.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftalkingpointsmemo.com&size=128
   techrepublic:
     feed_url: https://www.techrepublic.com/feed/
     homepage_url: https://www.techrepublic.com
     display_name: TechRepublic
     summary: News, Tips, and Advice for Technology Professionals
-  the_pastry_box_project:
-    feed_url: https://the-pastry-box-project.net/feed/
-    homepage_url: https://the-pastry-box-project.net
-    display_name: News
-    summary: Serwis technologiczny
-  themacro:
+    profile_photo: https://www.techrepublic.com/apple-touch-icon.png
+  the_macro:
     feed_url: https://themacro.com/feed.xml
-    homepage_url: http://www.themacro.com
+    homepage_url: https://www.themacro.com/
     display_name: The Macro
-    summary: Updates from The Macro.
-  arringtoncapital:
-    feed_url: https://www.arringtoncapital.com/feed/
-    homepage_url: https://www.arringtoncapital.com
-    display_name: Arrington Capital
-    summary: Arrington Capital
+    summary: 'Archived Y Combinator essays, founder interviews, and startup advice from The Macro. Latest feed post: November 2016; articles redirect to Y Combinator''s blog.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.themacro.com&size=128
+  uncrunched:
+    feed_url: https://uncrunched.wordpress.com/feed/
+    homepage_url: https://uncrunched.wordpress.com/
+    display_name: Uncrunched - Michael Arrington
+    summary: 'Michael Arrington''s archived personal blog on startups, technology, venture capital, and media. Latest feed post: March 2018.'
   upworthy:
     feed_url: https://www.upworthy.com/feed/
     homepage_url: https://www.upworthy.com
     display_name: Upworthy
-    summary: Updates from Upworthy.
-  usmagazine:
+    summary: Human-interest stories about culture, family, nature, science, and everyday life from Upworthy.
+    profile_photo: https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/cropped-upworthy-site-icon_2ff506.png?w=180
+  us_magazine:
     feed_url: https://www.usmagazine.com/feed/
     homepage_url: https://www.usmagazine.com
-    display_name: Us
-    summary: Latest Celebrity News, Pictures & Entertainment
-  w3:
+    display_name: Us Magazine
+    summary: Celebrity and entertainment news, reality TV, style, lifestyle, and shopping recommendations from Us.
+    profile_photo: https://www.usmagazine.com/wp-content/uploads/2026/08/cropped-logo-us_c613c2.png?w=180&quality=86&strip=all
+  w3c_blog:
     feed_url: https://www.w3.org/blog/feed/
     homepage_url: https://www.w3.org/blog
-    display_name: W3C - Blog
-    summary: The W3C blog is for in-depth Web standards topics and educational materials.
+    display_name: W3C Blog
+    summary: W3C's official blog on web standards, accessibility, privacy, security, organizational news, and events.
+    profile_photo: https://www.w3.org/assets/logos/w3c-2025/favicons/favicon-180.png
   warpspire:
     feed_url: https://warpspire.com/feed
     homepage_url: https://warpspire.com
     display_name: Warpspire
-    summary: Updates from Warpspire.
-  waxy:
+    summary: 'Kyle Aster''s essays on design, community, climate, resilience, and building things at Warpspire. Latest feed post: January 2023.'
+    profile_photo: https://warpspire.com/apple-touch-icon.png
+  waxy_org:
     feed_url: https://waxy.org/feed/
     homepage_url: https://waxy.org
     display_name: Waxy.org
-    summary: Andy Baio lives here
-  what_if_xkcd:
+    summary: Andy Baio's essays and curated links on internet culture, technology, art, games, and creative projects.
+    profile_photo: https://waxy.org/wp-content/uploads/2016/10/square_logo.png
+  xkcd_what_if:
     feed_url: https://what-if.xkcd.com/feed.atom
     homepage_url: https://what-if.xkcd.com
-    display_name: what if?
-    summary: Updates from what if?.
-  wmagazine:
+    display_name: 'xkcd: What If?'
+    summary: 'Randall Munroe''s science answers to absurd hypothetical questions. Archived article feed; latest feed post: December 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwhat-if.xkcd.com&size=128
+  w_magazine:
     feed_url: https://www.wmagazine.com/rss
     homepage_url: https://www.wmagazine.com
-    display_name: W
-    summary: W Magazine is a leading destination where the worlds of fashion, film, art, and entertainment converge. Unbound by convention, W creates stories through breathtaking imagery that stimulates the senses, challenges expectations, and transforms the world around us.
+    display_name: W Magazine
+    summary: Fashion, beauty, art, film, celebrity culture, and travel from W Magazine.
+    profile_photo: https://cdn2.bustle.com/2026/w/icon-d690f3d0ff.png
   wwd:
     feed_url: https://wwd.com/feed/
     homepage_url: https://wwd.com
     display_name: WWD
-    summary: Women's Wear Daily brings you breaking news about the fashion industry, designers, celebrity trend setters, and extensive coverage of fashion week.
+    summary: Fashion-industry news, designers, retail, beauty, runway coverage, celebrity style, and shopping from Women's Wear Daily.
+    profile_photo: https://wwd.com/wp-content/themes/vip/pmc-wwd-2021/assets/app/icons/apple-touch-icon.png
   quanta:
     feed_url: https://www.quantamagazine.org/feed/
     homepage_url: https://www.quantamagazine.org
