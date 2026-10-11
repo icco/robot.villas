@@ -20,9 +20,14 @@ describe("feed robots policy", () => {
     ["User-agent: *\nDisallow: /feed\nAllow: /feed", "/feed.xml", false],
     ["User-agent: *\nDisallow: /*.xml$", "/feed.xml", true],
     ["User-agent: *\nDisallow: /*.xml$", "/feed.xml?public=1", false],
-    ["User-agent: ROBOT.VILLAS\nDisallow: /", "/feed.xml", true],
-    ["User-agent: *\nDisallow: /\nUser-agent: robot.villas\nDisallow:", "/feed.xml", false],
-    ["User-agent: robot.villas\nDisallow: /other\nUser-agent: robot.villas\nDisallow: /feed", "/feed.xml", true],
+    ["User-agent: ROBOTVILLAS\nDisallow: /", "/feed.xml", true],
+    ["User-agent: *\nDisallow: /\nUser-agent: RobotVillas", "/feed.xml", false],
+    ["User-agent: *\nDisallow: /feed", "/%66eed.xml", true],
+    ["User-agent: *\nDisallow: /\nAllow: /feed", "/%66eed.xml", false],
+    ["User-agent: *\nDisallow: /%66eed", "/feed.xml", true],
+    ["User-agent: *\nDisallow: /feed%2F", "/feed/one", false],
+    ["User-agent: *\nDisallow: /\nUser-agent: RobotVillas\nDisallow:", "/feed.xml", false],
+    ["User-agent: RobotVillas\nDisallow: /other\nUser-agent: RobotVillas\nDisallow: /feed", "/feed.xml", true],
   ])("uses matching rules from %s for %s", async (robots, path, blocked) => {
     const requested: string[] = [];
     globalThis.fetch = async (input) => {
@@ -79,6 +84,31 @@ describe("feed robots policy", () => {
       ? "#".repeat(500 * 1024 + 1)
       : feed);
     expect((await fetchFeedWithHttpResult("https://example.com/feed.xml")).entries[0]?.guid).toBe("ada-1");
+  });
+
+  it("preserves the feed timeout budget after robots timeouts on redirected origins", async () => {
+    vi.useFakeTimers();
+    globalThis.fetch = async (input, init) => {
+      const url = new URL(String(input));
+      if (url.pathname === "/robots.txt") {
+        return new Promise<Response>((_resolve, reject) => {
+          init?.signal?.addEventListener("abort", () => reject(new Error("robots timeout")), { once: true });
+        });
+      }
+      if (url.hostname === "example.com") {
+        return new Response(null, { status: 302, headers: { location: "https://other.example/feed.xml" } });
+      }
+      return new Promise<Response>((resolve, reject) => {
+        const timer = setTimeout(() => resolve(new Response(feed)), 8_500);
+        init?.signal?.addEventListener("abort", () => {
+          clearTimeout(timer);
+          reject(new Error("feed timeout"));
+        }, { once: true });
+      });
+    };
+    const result = fetchFeedWithHttpResult("https://example.com/feed.xml");
+    await vi.advanceTimersByTimeAsync(12_500);
+    expect((await result).entries[0]?.guid).toBe("ada-1");
   });
 
   it("rejects private robots redirects without preventing the public feed fetch", async () => {

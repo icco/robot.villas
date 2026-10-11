@@ -40,6 +40,9 @@ importers:
       '@logtape/logtape':
         specifier: ^2.4.0
         version: 2.4.0
+      '@trybyte/robotstxt-parser':
+        specifier: ^2.0.0
+        version: 2.0.0
       daisyui:
         specifier: ^5.7.47
         version: 5.7.47
@@ -67,9 +70,6 @@ importers:
       react-dom:
         specifier: ^19.3.0
         version: 19.3.0(react@19.3.0)
-      robots-parser:
-        specifier: ^3.0.1
-        version: 3.0.1
       rss-parser:
         specifier: ^3.13.0
         version: 3.13.0
@@ -1070,6 +1070,10 @@ packages:
   '@tailwindcss/postcss@4.3.3':
     resolution: {integrity: sha512-JTSZZGQi1AyKirbLN3azmjVzef92tcX7h+iSqPdaeStyFpGpDlKvvpxeOE8njhbUanbRwr3z8DyzhICWnMtQeg==}
 
+  '@trybyte/robotstxt-parser@2.0.0':
+    resolution: {integrity: sha512-kqoL5DCRQeTkAbG8xsPGP8/5lEFUtFj/t3hOLvIB7kkFZTIjRXH8rm6blH3FjXEJ44zjzMFYXZMamuTZPCwuMw==}
+    engines: {node: '>=22.0.0'}
+
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
 
@@ -2031,10 +2035,6 @@ packages:
   reusify@1.1.0:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
-
-  robots-parser@3.0.1:
-    resolution: {integrity: sha512-s+pyvQeIKIZ0dx5iJiQk1tPLJAWln39+MI5jtM8wnyws+G5azk+dMnMX0qfbqNetKKNgcWWOdi0sfm+FbQbgdQ==}
-    engines: {node: '>=10.0.0'}
 
   rolldown@1.2.13:
     resolution: {integrity: sha512-/5apOkwWxtACcQtZ5WlrAsKS4JwXVThQPJZ3RqIruRY9UG9M8e0VlXN068xum/JRKA4aIUoJ13ghe/kGCvidiQ==}
@@ -3109,6 +3109,8 @@ snapshots:
       postcss: 8.5.29
       tailwindcss: 4.3.3
 
+  '@trybyte/robotstxt-parser@2.0.0': {}
+
   '@types/chai@5.2.3':
     dependencies:
       '@types/deep-eql': 4.0.2
@@ -3989,8 +3991,6 @@ snapshots:
   retry@0.13.1: {}
 
   reusify@1.1.0: {}
-
-  robots-parser@3.0.1: {}
 
   rolldown@1.2.13:
     dependencies:

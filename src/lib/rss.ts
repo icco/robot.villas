@@ -46,7 +46,7 @@ export const MAX_FEED_BYTES = 5 * 1024 * 1024;
 export const MAX_ITEMS_PER_POLL = 100;
 
 /** Identifies the fetcher so feed hosts can contact us instead of blocking an anonymous bot. */
-export const FEED_USER_AGENT = "robot.villas RSS poller/1.0 (+https://robot.villas/about)";
+export const FEED_USER_AGENT = "RobotVillas/1.0 (+https://robot.villas/about; RSS poller)";
 
 /** Backoff used when a 429 arrives without a usable `Retry-After`. */
 export const DEFAULT_RATE_LIMIT_BACKOFF_MS = 60 * 60 * 1000;
@@ -115,7 +115,9 @@ export async function fetchFeedWithHttpResult(
 ): Promise<FeedFetchResult> {
   try {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), FEED_FETCH_TIMEOUT_MS);
+    let remainingMs = FEED_FETCH_TIMEOUT_MS;
+    let startedAt = Date.now();
+    let timeout = setTimeout(() => controller.abort(), remainingMs);
     try {
       const headers: Record<string, string> = {
         Accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
@@ -127,10 +129,17 @@ export async function fetchFeedWithHttpResult(
       if (cached.lastModified) {
         headers["If-Modified-Since"] = cached.lastModified;
       }
+      const checkRobots = createRobotsCheck(FEED_USER_AGENT);
       const res = await fetchRemoteWithPolicy(feedUrl, {
         signal: controller.signal,
         headers,
-      }, createRobotsCheck(FEED_USER_AGENT));
+      }, async (url) => {
+        clearTimeout(timeout);
+        remainingMs -= Date.now() - startedAt;
+        await checkRobots(url);
+        startedAt = Date.now();
+        timeout = setTimeout(() => controller.abort(), Math.max(0, remainingMs));
+      });
       const httpStatus = res.status;
       if (httpStatus === 304) {
         await res.body?.cancel();

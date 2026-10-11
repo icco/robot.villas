@@ -1,18 +1,18 @@
 import { getLogger } from "@logtape/logtape";
-import robotsParser from "robots-parser";
+import { compileRobotsText, type CrawlerRules } from "@trybyte/robotstxt-parser";
 import { fetchRemote, readLimitedText } from "./remote-fetch";
 
 const logger = getLogger(["robot-villas", "robots"]);
 
 export function createRobotsCheck(userAgent: string): (url: URL) => Promise<void> {
-  const policies = new Map<string, ReturnType<typeof robotsParser> | null>();
+  const policies = new Map<string, CrawlerRules | null>();
   return async (url) => {
     if (url.pathname === "/robots.txt") {
       return;
     }
     const robotsUrl = new URL("/robots.txt", url);
     if (!policies.has(url.origin)) {
-      let policy: ReturnType<typeof robotsParser> | null = null;
+      let policy: CrawlerRules | null = null;
       const controller = new AbortController();
       const timeout = setTimeout(() => controller.abort(), 2_000);
       try {
@@ -22,7 +22,7 @@ export function createRobotsCheck(userAgent: string): (url: URL) => Promise<void
           cache: "no-store",
         });
         if (response.ok) {
-          policy = robotsParser(robotsUrl.href, await readLimitedText(response, 500 * 1024));
+          policy = compileRobotsText(await readLimitedText(response, 500 * 1024), { policy: "rfc9309" }).forCrawler("RobotVillas");
         } else {
           await response.body?.cancel();
           logger.debug("Ignoring robots.txt HTTP {status} for {origin}", { status: response.status, origin: url.origin });
@@ -34,7 +34,7 @@ export function createRobotsCheck(userAgent: string): (url: URL) => Promise<void
       }
       policies.set(url.origin, policy);
     }
-    if (policies.get(url.origin)?.isAllowed(url.href, "robot.villas") === false) {
+    if (policies.get(url.origin)?.isAllowed(url.href) === false) {
       throw new Error(`Blocked by robots.txt: ${url.href}`);
     }
   };
