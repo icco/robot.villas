@@ -1356,6 +1356,256 @@ bots:
     display_name: Tierney Cyren
     summary: JavaScript, developer tools, and open protocols.
     profile_photo: https://bnb.im/img/small-card.png
+  splinter_com_au:
+    feed_url: https://feeds.feedburner.com/splintersw
+    homepage_url: http://www.splinter.com.au
+    display_name: Chris Hulbert is Splinter Software
+    summary: Updates from Chris Hulbert is Splinter Software.
+  pixivision:
+    feed_url: https://www.pixivision.net/ja/rss
+    homepage_url: https://www.pixivision.net/ja
+    display_name: pixivision
+    summary: おもしろいもん観たいじゃん
+  sprint_ly:
+    feed_url: https://sprint.ly/blog/feed/
+    homepage_url: https://sprint.ly/blog
+    display_name: Sprintly
+    summary: Beautiful Project Management Software
+  squashed_tumblr:
+    feed_url: https://squashed.tumblr.com/rss
+    homepage_url: https://squashed.tumblr.com
+    display_name: Squashed
+    summary: 'A blog of politics, law, religion, and the tricky spots where they collide. Questions? Contact. var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src=''" + gaJsHost + "google-analytics.com/ga.js'' type=''text/javascript''%3E%3C/script%3E")); var pageTracker = _gat._getTracker("UA-4075519-1"); pageTracker._initData(); pageTracker._trackPageview();'
+  squirming:
+    feed_url: https://www.squirming.net/feed/
+    homepage_url: https://www.squirming.net
+    display_name: Squirming
+    summary: Updates from Squirming.
+  stabyourself:
+    feed_url: https://blog.stabyourself.net/rss
+    homepage_url: https://stabyourself.net
+    display_name: Stabyourself.net news archive
+    summary: Updates from Stabyourself.net news archive.
+  stackexchange:
+    feed_url: https://stackexchange.com/feeds/questions
+    homepage_url: https://stackexchange.com
+    display_name: Hot Questions - Stack Exchange
+    summary: Updates from Hot Questions - Stack Exchange.
+  stackify:
+    feed_url: https://stackify.com/feed/
+    homepage_url: https://stackify.com
+    display_name: Stackify
+    summary: Updates from Stackify.
+  stackingthebricks:
+    feed_url: https://stackingthebricks.com/atom.xml
+    homepage_url: https://stackingthebricks.com
+    display_name: Stacking the Bricks
+    summary: Updates from Stacking the Bricks.
+  staff_tumblr:
+    feed_url: https://staff.tumblr.com/rss
+    homepage_url: https://staff.tumblr.com
+    display_name: Tumblr Staff
+    summary: Updates from Tumblr Staff.
+  staffeng:
+    feed_url: https://staffeng.com/index.xml
+    homepage_url: https://staffeng.com
+    display_name: 'Staff Engineer: Leadership beyond the management track'
+    summary: 'Recent content on Staff Engineer: Leadership beyond the management track'
+  stallman:
+    feed_url: https://stallman.org/rss/rss.xml
+    homepage_url: https://stallman.org/archives/polnotes.html
+    display_name: Richard Stallman's Political Notes
+    summary: Daily political notes about what is happening in the world.
+  standardsmanual:
+    feed_url: https://standardsmanual.com/blogs/news.atom
+    homepage_url: https://standardsmanual.com/blogs/news
+    display_name: Standards Manual - News
+    summary: Updates from Standards Manual - News.
+  starkeycomics:
+    feed_url: https://starkeycomics.com/feed/
+    homepage_url: https://starkeycomics.com
+    display_name: Starkey Comics
+    summary: 'Starkey Comics: Colourful images about culture and language'
+  startacus:
+    feed_url: https://startacus.net/feed/
+    homepage_url: https://startacus.net
+    display_name: My blog
+    summary: Updates from My blog.
+  startbotnet:
+    feed_url: https://startbotnet.com/feed
+    homepage_url: https://startbotnet.com
+    display_name: Start Bot Net
+    summary: Social Media And Technology
+  startingdotneprogramming_blogspot:
+    feed_url: https://startingdotneprogramming.blogspot.com/feeds/posts/default
+    homepage_url: https://startingdotneprogramming.blogspot.com
+    display_name: Ken's Programming Blog
+    summary: Updates from Ken's Programming Blog.
+  startupandrew:
+    feed_url: https://startupandrew.com/index.xml
+    homepage_url: https://startupandrew.com
+    display_name: Andrew Lee's Blog on Andrew's Blog
+    summary: Recent content in Andrew Lee's Blog on Andrew's Blog
+  startuplessonslearned:
+    feed_url: http://feeds.feedburner.com/startup/lessons/learned
+    homepage_url: http://www.startuplessonslearned.com
+    display_name: Lessons Learned
+    summary: Updates from Lessons Learned.
+  startuptools_pbworks:
+    feed_url: https://startuptools.pbworks.com/w/feed/rss
+    homepage_url: http://startuptools.pbworks.com
+    display_name: startuptools
+    summary: Recent changes for startuptools
+  startyourownisp:
+    feed_url: https://startyourownisp.com/index.xml
+    homepage_url: https://startyourownisp.com
+    display_name: Start Your Own ISP
+    summary: Recent content on Start Your Own ISP
+  stat_columbia_edu__cook:
+    feed_url: https://stat.columbia.edu/feed/
+    homepage_url: https://stat.columbia.edu
+    display_name: Department of Statistics
+    summary: Columbia University
+  status_cafe:
+    feed_url: https://status.cafe/feed.atom
+    homepage_url: https://status.cafe
+    display_name: status.cafe
+    summary: Updates from status.cafe.
+  status_npmjs:
+    feed_url: https://status.npmjs.org/history.atom
+    homepage_url: https://status.npmjs.org
+    display_name: npm Status - Incident History
+    summary: Updates from npm Status - Incident History.
+  slack_status:
+    feed_url: https://slack-status.com/feed/atom
+    homepage_url: https://slack-status.com
+    display_name: Slack System Status
+    summary: Updates from Slack System Status.
+  stavros:
+    feed_url: https://www.stavros.io/feed/short/
+    homepage_url: https://www.stavros.io
+    display_name: Stavros' Stuff
+    summary: Latest posts on Stavros' Stuff.
+  stefan_schueller:
+    feed_url: https://stefan.schueller.net/index.xml
+    homepage_url: https://stefan.schueller.net
+    display_name: Stefan Schüller
+    summary: Stefan Schüller
+  steipete_me:
+    feed_url: https://steipete.me/rss.xml
+    homepage_url: https://steipete.me
+    display_name: Peter Steinberger
+    summary: AI-powered tools from Swift roots to web frontiers. Every commit lands on GitHub for you to fork & remix.
+  stephango:
+    feed_url: https://stephango.com/feed.xml
+    homepage_url: https://stephango.com
+    display_name: Steph Ango
+    summary: Updates from Steph Ango.
+  stephanpastis_wordpress:
+    feed_url: https://stephanpastis.wordpress.com/feed/
+    homepage_url: https://stephanpastis.wordpress.com
+    display_name: Too Stupid to Travel
+    summary: A travel blog for those of us who get lost, stay lost, and make poor decisions throughout.
+  stephensearles:
+    feed_url: https://stephensearles.com/index.xml
+    homepage_url: https://stephensearles.com
+    display_name: Stephen Searles
+    summary: Recent content on Stephen Searles
+  beckystern:
+    feed_url: https://beckystern.com/feed/
+    homepage_url: https://beckystern.com
+    display_name: Becky Stern
+    summary: Updates from Becky Stern.
+  steshaw:
+    feed_url: https://steshaw.org/rss.xml
+    homepage_url: http://steshaw.org
+    display_name: Steven Shaw
+    summary: Loves Programming Languages
+  steveblank:
+    feed_url: https://steveblank.com/feed/
+    homepage_url: https://steveblank.com
+    display_name: Steve Blank
+    summary: Innovation and Entrepreneurship
+  stevekinney:
+    feed_url: https://stevekinney.com/writing/rss
+    homepage_url: https://stevekinney.com
+    display_name: Steve Kinney
+    summary: Updates from Steve Kinney.
+  stevenbuccini:
+    feed_url: https://www.stevenbuccini.com/feed.xml
+    homepage_url: https://stevenbuccini.com
+    display_name: Steven Buccini
+    summary: Updates from Steven Buccini.
+  stevencrewniverse_tumblr:
+    feed_url: https://stevencrewniverse.tumblr.com/rss
+    homepage_url: https://stevencrewniverse.tumblr.com
+    display_name: Steven Crewniverse Behind-The-Scenes Universe
+    summary: Updates from Steven Crewniverse Behind-The-Scenes Universe.
+  stevenharman:
+    feed_url: https://stevenharman.net/feed.xml
+    homepage_url: https://stevenharman.net
+    display_name: Steven Harman
+    summary: It Depends™, as a Service. Maker & breaker of things. Software spelunker. Good at naps. he/him
+  stevenhickson_blogspot:
+    feed_url: https://stevenhickson.blogspot.com/feeds/posts/default
+    homepage_url: https://stevenhickson.blogspot.com
+    display_name: Steves Computer Vision Blog
+    summary: Updates from Steves Computer Vision Blog.
+  stevenote_tv:
+    feed_url: https://stevenote.tv/feed/
+    homepage_url: https://stevenote.tv
+    display_name: Steve Note
+    summary: Serving technology better.
+  stevenrosenberg:
+    feed_url: https://stevenrosenberg.net/feed.xml
+    homepage_url: https://stevenrosenberg.net
+    display_name: Steven Rosenberg's Shinobi blog
+    summary: 'Tip: Use an RSS reader, or make your browser window smaller and your type size larger'
+  stevepavlina:
+    feed_url: https://stevepavlina.com/feed/
+    homepage_url: https://stevepavlina.com
+    display_name: Steve Pavlina
+    summary: Fully Inhabit Your Heart
+  stevetravale:
+    feed_url: https://stevetravale.com/feed/
+    homepage_url: https://stevetravale.com
+    display_name: Steve Travale – Sound Design
+    summary: Updates from Steve Travale – Sound Design.
+  stitcher:
+    feed_url: https://stitcher.io/rss
+    homepage_url: https://stitcher.io
+    display_name: stitcher.io
+    summary: Updates from stitcher.io.
+  stitchescrafts_blogspot:
+    feed_url: https://stitchescrafts.blogspot.com/feeds/posts/default
+    homepage_url: https://stitchescrafts.blogspot.com
+    display_name: The Professor's Blog
+    summary: Updates from The Professor's Blog.
+  stltoday:
+    feed_url: https://www.stltoday.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
+    homepage_url: https://www.stltoday.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
+    display_name: 'www.stltoday.com - RSS Results of type article with keyword(s) of #topstory'
+    summary: 'www.stltoday.com - RSS Results only for asset type(s) of article with keyword(s) of #topstory'
+  stochasticgeometry_wordpress:
+    feed_url: https://stochasticgeometry.wordpress.com/feed/
+    homepage_url: https://stochasticgeometry.wordpress.com
+    display_name: Stochastic Geometry
+    summary: Random journal entries on programming, systems administration, nonlinear math and anything else that interests me.
+  stochasticresonance_wordpress:
+    feed_url: https://stochasticresonance.wordpress.com/feed/
+    homepage_url: https://stochasticresonance.wordpress.com
+    display_name: fate = will && choice || circumstance
+    summary: Programming People, People Programming and other Misadventures
+  stormconsultancy:
+    feed_url: https://stormconsultancy.co.uk/feed/
+    homepage_url: https://stormconsultancy.co.uk
+    display_name: Storm Consultancy – Your Digital Technology Agency
+    summary: Your Digital Technology Agency
+  stormingtheivorytower:
+    feed_url: https://www.stormingtheivorytower.com/feeds/posts/default
+    homepage_url: https://www.stormingtheivorytower.com
+    display_name: Storming the Ivory Tower
+    summary: Updates from Storming the Ivory Tower.
   sammy_straus:
     feed_url: https://www.sammystraus.com/feed.xml
     homepage_url: https://www.sammystraus.com/
