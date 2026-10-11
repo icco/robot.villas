@@ -7729,6 +7729,285 @@ bots:
     display_name: Pop Culture Happy Hour
     summary: What to watch, read, and play — a film, TV, and book discussion show from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  anneke_forbes:
+    feed_url: https://www.annekeforbes.com/blog?format=rss
+    homepage_url: https://www.annekeforbes.com/blog
+    display_name: Anneke Forbes
+    summary: Anneke Forbes' custom womenswear blog about jacket design, slow fashion, personal style, and running an independent clothing label.
+  open_windows_ann_telnaes:
+    feed_url: https://anntelnaes.substack.com/feed
+    homepage_url: https://anntelnaes.substack.com
+    display_name: Open Windows- Ann Telnaes
+    summary: Editorial cartoons, political satire, and commentary by Ann Telnaes in Open Windows.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!u1Yk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4d737a51-73cb-4b47-a16a-4487a2732142%2Fapple-touch-icon-57x57.png
+  another_thought:
+    feed_url: https://anotherthoughtanotherthought.substack.com/feed
+    homepage_url: https://anotherthoughtanotherthought.substack.com
+    display_name: Another Thought
+    summary: Dusty Henry's music and arts newsletter, featuring album essays, artist interviews, comics, and illustrations.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!zBae!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6cf1e785-99d6-49e0-9971-fe31ddde5f5b%2Fapple-touch-icon-57x57.png
+  anova_culinary:
+    feed_url: https://anovaculinary.com/blogs/blog.atom
+    homepage_url: https://anovaculinary.com/blogs/blog
+    display_name: Anova Culinary
+    summary: Recipes, sous vide and combi-oven techniques, and product and app updates from Anova Culinary.
+    profile_photo: https://anovaculinary.com/cdn/shop/t/309/assets/apple-touch-icon.png?v=123763138410794694931667259370
+  ant_research_news:
+    feed_url: https://ant.isi.edu/blog/?feed=rss2
+    homepage_url: https://ant.isi.edu/blog
+    display_name: ANT Research News
+    summary: Research news from the Analysis of Network Traffic group at USC/ISI, covering Internet measurement, connectivity, outages, and research publications.
+    profile_photo: https://ant.isi.edu/blog/wp-content/uploads/2017/12/cropped-ant_logo_text_749x749-180x180.png
+  antennasys:
+    feed_url: https://www.antennasys.com/antennasys-blog?format=rss
+    homepage_url: https://www.antennasys.com/antennasys-blog
+    display_name: AntennaSys
+    summary: 'Antenna engineering, radio-frequency technology, product analysis, and company news from AntennaSys and Spencer Webb. Latest feed post: June 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.antennasys.com%2Fantennasys-blog&size=128
+  kevin_kwok:
+    feed_url: https://antimatter15.com/feed.xml
+    homepage_url: https://antimatter15.com
+    display_name: Kevin Kwok - antimatter15
+    summary: 'Kevin Kwok''s archived blog about programming, browser experiments, hardware, and personal projects. Latest feed post: December 2015.'
+  antipolygraph_org:
+    feed_url: https://antipolygraph.org/rss.xml
+    homepage_url: https://antipolygraph.org/index.shtml
+    display_name: AntiPolygraph.org
+    summary: Polygraph-related news, investigations, litigation, and advocacy from AntiPolygraph.org, a public-interest website critical of lie-detector testing.
+    profile_photo: https://antipolygraph.org/resources/apple-touch-icon.png
+  antithesis_blog:
+    feed_url: https://antithesis.com/blog/rss.xml
+    homepage_url: https://antithesis.com
+    display_name: Antithesis blog
+    summary: Software reliability, distributed systems, deterministic simulation, and autonomous testing from the Antithesis engineering blog.
+    profile_photo: https://antithesis.com/apple-touch-icon.png
+  antonin_januska:
+    feed_url: https://antjanus.com/rss.xml
+    homepage_url: https://antjanus.com
+    display_name: Antonin Januska
+    summary: Antonin Januska's writing about AI-assisted development, technical leadership, software engineering, and personal projects.
+    profile_photo: https://antjanus.com/apple-touch-icon.png
+  antoine_finkelsteins_blog:
+    feed_url: https://antoine.fi/feed.rss
+    homepage_url: https://antoine.fi
+    display_name: Antoine Finkelstein's blog
+    summary: Antoine Finkelstein's personal blog about software, AI experiments, business, language learning, health, and games.
+    profile_photo: https://antoine.fi/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mzk4LCJwdXIiOiJibG9iX2lkIn19--d3e6efb19dc4b4dc72f3345968d90c00d2d027fb/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fbGltaXQiOlsyNTYsMjU2XSwic2F2ZXIiOnsicXVhbGl0eSI6ODB9LCJjb2xvdXJzcGFjZSI6bnVsbH0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--78b78888dbec6addfa55b93ed28e9dda60383a17/avatar.jpeg
+  antonio_leiva:
+    feed_url: https://antonioleiva.com/rss.xml
+    homepage_url: https://antonioleiva.com
+    display_name: Antonio Leiva
+    summary: Antonio Leiva's Spanish-language writing about software development, AI agents, developer tools, and projects, with an archive of Android and Kotlin tutorials.
+    profile_photo: https://antonioleiva.com/apple-touch-icon.png
+  anvil_blog:
+    feed_url: https://anvil.works/blog/feed.xml
+    homepage_url: https://anvil.works/blog
+    display_name: Anvil Blog
+    summary: Tutorials, product updates, and case studies from Anvil, a platform for building web applications with Python.
+    profile_photo: https://anvil.works/apple-touch-icon-57x57.png
+  austin_parker:
+    feed_url: https://aparker.io/feed.xml
+    homepage_url: https://aparker.io
+    display_name: Austin Parker
+    summary: Austin Parker's writing about software, observability, AI, developer communities, and the open web.
+    profile_photo: https://aparker.io/favicon.png
+  apenwarr:
+    feed_url: https://apenwarr.ca/log/rss.php
+    homepage_url: https://apenwarr.ca/log
+    display_name: apenwarr - Avery Pennarun
+    summary: Avery Pennarun's essays and project notes about software engineering, distributed systems, networking, open source, and technology.
+    profile_photo: https://apenwarr.ca/img/chicken.gif
+  apis_you_wont_hate:
+    feed_url: https://apisyouwonthate.com/rss/
+    homepage_url: https://apisyouwonthate.com
+    display_name: APIs You Won't Hate
+    summary: Articles, tools, newsletters, and podcast interviews about API design, development, documentation, and the API ecosystem.
+    profile_photo: https://storage.ghost.io/c/b4/3e/b43eb8f8-cafd-49ee-ab1f-e4fe989d2890/content/images/size/w256h256/2023/03/apis-logo-square.png
+  apkmirror:
+    feed_url: https://www.apkmirror.com/feed/
+    homepage_url: https://www.apkmirror.com
+    display_name: APKMirror
+    summary: Android application release listings from APKMirror, including app names, versions, developers, and download pages.
+    profile_photo: https://www.apkmirror.com/wp-content/themes/APKMirror/images/apple-touch-icon.png
+  appcanary:
+    feed_url: https://blog.appcanary.com/feed.xml
+    homepage_url: https://blog.appcanary.com
+    display_name: Appcanary
+    summary: 'Archived Appcanary security articles and podcasts about software vulnerabilities and development. Latest feed post: January 2018, announcing the team''s move to GitHub and the service''s closure.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.appcanary.com&size=128
+  applied_go:
+    feed_url: https://appliedgo.net/index.xml
+    homepage_url: https://appliedgo.net
+    display_name: Applied Go
+    summary: 'Applied Go articles and tutorials about Go programming, debugging, command-line tools, deployment, and practical software projects. Latest blog-feed post: March 2025.'
+    profile_photo: https://appliedgo.net/touch-icon-144-precomposed.png
+  aral_balkan:
+    feed_url: https://ar.al/index.xml
+    homepage_url: https://ar.al
+    display_name: Aral Balkan
+    summary: 'Aral Balkan''s essays and project updates about the Small Web, privacy, accessibility, and independent technology. Latest feed post: June 2025.'
+    profile_photo: https://ar.al/apple-touch-icon-144x144.png
+  applied_cartography:
+    feed_url: https://www.jmduke.com/feed.xml
+    homepage_url: https://jmduke.com
+    display_name: Applied Cartography
+    summary: Justin Duke's essays, software notes, and book, film, and other media reviews at Applied Cartography.
+    profile_photo: https://www.jmduke.com/apple-touch-icon.png
+  archaeology_magazine:
+    feed_url: https://archaeology.org/feed/
+    homepage_url: https://archaeology.org
+    display_name: Archaeology Magazine
+    summary: Archaeological discoveries, research, and fieldwork news from Archaeology Magazine, published by the Archaeological Institute of America.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Farchaeology.org&size=128
+  architecture_and_design:
+    feed_url: https://www.architecturendesign.net/feed/
+    homepage_url: https://www.architecturendesign.net
+    display_name: Architecture & Design
+    summary: Curated architecture, interiors, art, design, and DIY galleries and articles from Architecture & Design.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.architecturendesign.net&size=128
+  architectural_league_ny:
+    feed_url: https://archleague.org/feed/?post_type=event
+    homepage_url: https://archleague.org
+    display_name: The Architectural League of New York - Events
+    summary: Architecture lectures, studio visits, educational programs, and public events from The Architectural League of New York.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Farchleague.org&size=128
+  the_architects_newspaper:
+    feed_url: https://www.archpaper.com/feed/
+    homepage_url: https://www.archpaper.com
+    display_name: The Architect's Newspaper
+    summary: Architecture and design news, criticism, interviews, practice, preservation, and urbanism from The Architect's Newspaper.
+    profile_photo: https://www.archpaper.com/images/AN_favicon_64.png
+  ashley_renee_cribbins:
+    feed_url: https://arcribbins.tumblr.com/rss
+    homepage_url: https://arcribbins.tumblr.com
+    display_name: AR's Art & Illustration Blog
+    summary: 'Archived illustrations, comics, and illustrated fiction by Ashley-Renee Cribbins. Latest feed post: February 2018.'
+    profile_photo: https://api.tumblr.com/v2/blog/arcribbins.tumblr.com/avatar/128
+  arin:
+    feed_url: https://www.arin.net/rss.xml
+    homepage_url: https://www.arin.net
+    display_name: ARIN
+    summary: Official ARIN updates covering Internet number resources, policy, technical services, community grants, and board and council meeting records.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.arin.net&size=128
+  ariya_hidayat:
+    feed_url: https://ariya.io/index.xml
+    homepage_url: https://ariya.io
+    display_name: Ariya Hidayat
+    summary: Ariya Hidayat's technical articles about software engineering, JavaScript, testing, infrastructure, local AI, and hardware.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fariya.io&size=128
+  armchair_general_magazine:
+    feed_url: https://feeds.feedburner.com/ArmchairGeneralMagazineMilitaryHistory
+    homepage_url: https://armchairgeneral.com
+    display_name: Armchair General Magazine
+    summary: 'Military history, historical books, and tabletop wargame reviews from Armchair General Magazine. Latest feed post: March 2025.'
+    profile_photo: https://armchairgeneral.com/apple-touch-icon.png
+  armor_games:
+    feed_url: https://armorgames.com/feed/new-games
+    homepage_url: https://armorgames.com
+    display_name: Armor Games - Newest Games
+    summary: Game listings from Armor Games, including browser action, adventure, strategy, puzzle, and incremental games.
+    profile_photo: https://armorgames.com/apple-touch-icon.png
+  around_nyc_in_86_days:
+    feed_url: https://around-nyc-in-86-days.tumblr.com/rss
+    homepage_url: https://around-nyc-in-86-days.tumblr.com
+    display_name: Around New York in eighty-six days
+    summary: 'Archived 2015 journal of an eighty-six-day stay in New York attending Hacker School, renamed Recurse Center. Final feed post: May 2015.'
+    profile_photo: https://api.tumblr.com/v2/blog/around-nyc-in-86-days.tumblr.com/avatar/128
+  arun_jacob:
+    feed_url: https://arunxjacob.wordpress.com/feed/
+    homepage_url: https://arunxjacob.wordpress.com
+    display_name: Arun Jacob - Wherever I go, there I am
+    summary: 'Arun Jacob''s archived personal blog about Ruby, Rails, monitoring, semantic search, work, and life. Latest feed post: October 2008, announcing a move to Blogspot.'
+  andrew_carter:
+    feed_url: https://ascarter.dev/rss.xml
+    homepage_url: https://ascarter.dev
+    display_name: Andrew Carter - Coding in the Rain
+    summary: 'Andrew Carter''s archived Coding in the Rain blog about Go, Ruby, Rails, developer conferences, and software engineering. Latest feed post: June 2014.'
+    profile_photo: https://github.com/ascarter.png?size=200
+  ash_furrows_blog:
+    feed_url: https://ashfurrow.com/feed.xml
+    homepage_url: https://ashfurrow.com
+    display_name: Ash Furrow's Blog
+    summary: Ash Furrow's personal blog about software development, engineering teams, empathy, AI coding tools, and life.
+    profile_photo: https://ashfurrow.com/assets/icons/icon-48x48.png
+  askmen:
+    feed_url: https://www.askmen.com/latest.rss
+    homepage_url: https://www.askmen.com
+    display_name: AskMen
+    summary: Dating, relationships, fitness, health, grooming, style, and product recommendations from AskMen.
+    profile_photo: https://luna-askmen-images.askmen.com/responsive/common/plus-114.png
+  askplaybook:
+    feed_url: https://askplaybook.com/feed/
+    homepage_url: https://askplaybook.com
+    display_name: Playbook - Design Community
+    summary: 'Archived design-community advice about design systems, portfolios, feedback, management, freelancing, and careers. Latest feed item: January 2023.'
+    profile_photo: https://askplaybook.com/assets/favicon.png
+  asymptomatic:
+    feed_url: https://asymptomatic.net/feed.xml
+    homepage_url: https://asymptomatic.net
+    display_name: Asymptomatic - Owen Winkler
+    summary: Owen Winkler's personal Asymptomatic blog about software, home labs, music, family, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fasymptomatic.net&size=128
+  americans_for_tax_reform:
+    feed_url: https://atr.org/feed/
+    homepage_url: https://atr.org
+    display_name: Americans for Tax Reform
+    summary: Tax policy, spending, regulation, technology, and political advocacy from Americans for Tax Reform, an organization opposing tax increases.
+    profile_photo: https://atr.org/wp-content/uploads/2022/01/cropped-ATR_Favicon-180x180.png
+  stefano_j_attardi:
+    feed_url: https://attardi.org/rss.xml
+    homepage_url: https://attardi.org
+    display_name: Stefano J. Attardi
+    summary: 'Stefano J. Attardi''s articles about React performance, machine learning in iOS apps, and parenting. Latest feed article: November 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fattardi.org&size=128
+  attila_olah:
+    feed_url: https://attilaolah.eu/rss.xml
+    homepage_url: https://attilaolah.eu
+    display_name: Attila Olah
+    summary: 'Attila Olah''s archived programming and graphics tutorials about Go, shell tools, Blender, and Godot. Latest feed post: November 2021.'
+    profile_photo: https://attilaolah.eu/avatar/192.jpg
+  atoms_vs_bits:
+    feed_url: https://www.atvbt.com/rss/
+    homepage_url: https://www.atvbt.com
+    display_name: Atoms vs Bits - Uri and Shawni
+    summary: Personal essays and observations by Uri and Shawni about relationships, technology, books, food, work, and everyday life.
+    profile_photo: https://storage.ghost.io/c/37/79/3779c573-98d3-4e3f-93be-879da9f27ea6/content/images/size/w256h256/2022/01/canvas.png.PNG
+  keepcup_australia:
+    feed_url: https://au.keepcup.com/collections/shop-the-range.atom
+    homepage_url: https://au.keepcup.com/collections/all
+    display_name: KeepCup Australia - Products
+    summary: Product listings from KeepCup Australia for reusable cups, bottles, food containers, and bundles.
+    profile_photo: https://au.keepcup.com/cdn/shop/files/Favicon_d4a51211-f13d-4718-a070-f4c8a1966497.png?crop=center&height=32&v=1753847752&width=32
+  audubon_news:
+    feed_url: https://www.audubon.org/rss.xml
+    homepage_url: https://www.audubon.org/news
+    display_name: Audubon News
+    summary: Birds, conservation science, habitat protection, policy, and organizational news from the National Audubon Society.
+    profile_photo: https://www.audubon.org/icons/icon_x192.png
+  aulart:
+    feed_url: https://www.aulart.com/feed/
+    homepage_url: https://www.aulart.com
+    display_name: Aulart
+    summary: 'Archived music-production articles and tutorials about sampling, synthesis, mixing, and production tools from Aulart. Latest feed post: January 2024.'
+    profile_photo: https://www.aulart.com/apple-touch-icon.png
+  austins_nerdy_things:
+    feed_url: https://austinsnerdythings.com/feed/
+    homepage_url: https://austinsnerdythings.com
+    display_name: Austin's Nerdy Things
+    summary: Austin's technical project blog about home labs, precise timekeeping, Raspberry Pi, networking, automation, and AI experiments.
+    profile_photo: https://austinsnerdythings.com/wp-content/uploads/2021/05/icon-only-300x300.png
+  episteme_and_techne:
+    feed_url: http://austinzheng.com/atom.xml
+    homepage_url: http://austinzheng.com
+    display_name: Episteme and Techne
+    summary: 'Austin Zheng''s archived Episteme and Techne blog about Swift, generics, pattern matching, and Haskell. Latest feed post: October 2015.'
+    profile_photo: http://austinzheng.com/public/apple-touch-icon-precomposed.png
+  authentic_jobs:
+    feed_url: https://authenticjobs.com/?feed=job_feed
+    homepage_url: https://authenticjobs.com
+    display_name: Authentic Jobs
+    summary: Job listings for designers, developers, and creative professionals from Authentic Jobs.
+    profile_photo: https://authenticjobs.com/wp-content/uploads/2020/04/cropped-aj-site-favicon-180x180.png
   npr_all_songs_considered:
     feed_url: https://feeds.npr.org/510019/podcast.xml
     homepage_url: https://www.npr.org/sections/allsongs
