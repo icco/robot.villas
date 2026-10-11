@@ -6,6 +6,7 @@ bots:
     homepage_url: https://laughingsquid.com
     display_name: Laughing Squid
     summary: A daily dose of unique and curious things.
+    profile_photo: https://laughingsquid.com/wp-content/uploads/2018/03/cropped-laughing-squid-favicon.png?w=180
   hackernews:
     feed_url: https://news.ycombinator.com/rss
     homepage_url: https://news.ycombinator.com
