@@ -381,6 +381,256 @@ bots:
     display_name: 'NPR Topics: Business'
     summary: Business and economy coverage from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  phonearena:
+    feed_url: https://www.phonearena.com/feed/news
+    homepage_url: https://www.phonearena.com
+    display_name: PhoneArena - Articles
+    summary: PhoneArena.com - Cell Phone Reviews, News, Specs and Info.
+  parabo_press:
+    feed_url: https://www.parabo.press/blog/rss/
+    homepage_url: https://www.parabo.press/blog
+    display_name: Parabo Press Blog
+    summary: Ideas for printing, displaying, and styling your photos at home. Easy how-tos, iPhone editing tips, gift inspiration, and décor ideas from Parabo Press.
+  picturecorrect:
+    feed_url: https://www.picturecorrect.com/feed/
+    homepage_url: https://www.picturecorrect.com
+    display_name: PictureCorrect
+    summary: Photography Tips & Techniques
+  pine64:
+    feed_url: https://pine64.org/blog/index.xml
+    homepage_url: https://pine64.org/blog
+    display_name: Community blog on PINE64
+    summary: Recent content in Community blog on PINE64
+  pioneerworks:
+    feed_url: https://pioneerworks.org/feed.xml
+    homepage_url: https://pioneerworks.org
+    display_name: The Broadcast
+    summary: An extension of our physical campus, The Broadcast is a home for interdisciplinary discourse—a place that ignites thought, encourages curiosity, and cultivates conversations on Music, Technology, Science, and the Arts.
+  pix11:
+    feed_url: https://pix11.com/feed/
+    homepage_url: https://pix11.com
+    display_name: PIX11
+    summary: New York's Very Own
+  pixelbeat:
+    feed_url: https://www.pixelbeat.org/feed/rss2.xml
+    homepage_url: http://www.pixelbeat.org
+    display_name: www.pixelbeat.org
+    summary: latest from www.pixelbeat.org
+  plaintextproject_online:
+    feed_url: https://plaintextproject.online/feed.xml
+    homepage_url: https://plaintextproject.online
+    display_name: The Plain Text Project
+    summary: Musings on living and working in plain text
+  pleated_jeans:
+    feed_url: https://pleated-jeans.com/feed/
+    homepage_url: https://pleated-jeans.com
+    display_name: Pleated Jeans
+    summary: No filler, just funny.
+  politico_eu:
+    feed_url: https://www.politico.eu/feed/
+    homepage_url: https://www.politico.eu
+    display_name: POLITICO
+    summary: European Politics, Policy, Government News
+  poolga:
+    feed_url: http://feeds2.feedburner.com/poolga
+    homepage_url: http://poolga.com
+    display_name: Poolga
+    summary: Poolga. iPhone, iPad and iPod Touch wallpapers for the rest of us.
+  postcardsfromspace_tumblr:
+    feed_url: https://postcardsfromspace.tumblr.com/rss
+    homepage_url: https://postcardsfromspace.tumblr.com
+    display_name: Postcards from Space
+    summary: Wish you were here.
+  postmarkapp:
+    feed_url: https://postmarkapp.com/blog/feed.atom
+    homepage_url: https://postmarkapp.com/blog
+    display_name: Postmark (en-US)
+    summary: Updates from Postmark (en-US).
+  potatohatsecurity_tumblr:
+    feed_url: https://potatohatsecurity.tumblr.com/rss
+    homepage_url: https://potatohatsecurity.tumblr.com
+    display_name: Team Potato
+    summary: Vulnerability disclosures and rambles on application security. Brett Buerhaus | Jason Thor Hall | Try our Crypto Challenges!
+  theworld:
+    feed_url: https://feeds.theworld.org/feed
+    homepage_url: https://theworld.org
+    display_name: The World from PRX
+    summary: A daily public radio broadcast program and podcast from PRX and WGBH, hosted by Marco Werman
+  probablydance:
+    feed_url: https://probablydance.com/feed/
+    homepage_url: https://probablydance.com
+    display_name: Probably Dance
+    summary: I can program and like games
+  progrium:
+    feed_url: https://progrium.com/index.xml
+    homepage_url: https://progrium.com
+    display_name: progrium technology company
+    summary: Recent content on progrium technology company
+  psmag:
+    feed_url: https://psmag.com/feed/
+    homepage_url: https://psmag.com
+    display_name: Pacific Standard
+    summary: Updates from Pacific Standard.
+  purewow:
+    feed_url: https://www.purewow.com/rss/feed_national.xml
+    homepage_url: https://www.purewow.com/national
+    display_name: 'PureWow: Entertainment, Beauty, Food, Fashion, Family & Home'
+    summary: PureWow is the women's lifestyle destination dedicated to making your life easier, more interesting and of course, beautiful. We create content covering entertainment, beauty, food, fashion, family, home, news, travel, pets, royals & weddings.
+  pypi:
+    feed_url: https://pypi.org/rss/updates.xml
+    homepage_url: https://pypi.org
+    display_name: PyPI recent updates
+    summary: Recent updates to the Python Package Index
+  pyvideo:
+    feed_url: https://pyvideo.org/feeds/all.atom.xml
+    homepage_url: https://pyvideo.org
+    display_name: PyVideo.org
+    summary: Updates from PyVideo.org.
+  queness:
+    feed_url: https://feeds2.feedburner.com/queness
+    homepage_url: http://www.queness.com
+    display_name: Queness Feed
+    summary: Updates from Queness Feed.
+  quip:
+    feed_url: https://quip.com/blog/feed
+    homepage_url: https://quip.com/blog
+    display_name: Quip Blog
+    summary: Updates from Quip Blog.
+  rabbitwaves_ca:
+    feed_url: https://rabbitwaves.ca/links/rss.xml
+    homepage_url: https://rabbitwaves.ca
+    display_name: Rabbit Waves
+    summary: Rabbit Waves content updates
+  rakyll:
+    feed_url: https://rakyll.org/index.xml
+    homepage_url: https://rakyll.org
+    display_name: rakyll.org
+    summary: Recent content on rakyll.org
+  rawsyntax:
+    feed_url: http://feeds.feedburner.com/RawSyntax
+    homepage_url: http://rawsyntax.com
+    display_name: Raw Syntax
+    summary: Updates from Raw Syntax.
+  kodeco:
+    feed_url: https://www.kodeco.com/feed
+    homepage_url: https://www.kodeco.com
+    display_name: 'Kodeco | High quality programming tutorials: iOS, Android, Swift, Kotlin, Unity, and more'
+    summary: 'Updates from Kodeco | High quality programming tutorials: iOS, Android, Swift, Kotlin, Unity, and more.'
+  react_dev:
+    feed_url: https://react.dev/rss.xml
+    homepage_url: https://react.dev
+    display_name: React Blog
+    summary: This blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted here first.
+  reasonml_github:
+    feed_url: https://reasonml.github.io/blog/atom.xml
+    homepage_url: https://reasonml.github.io/blog
+    display_name: Reason Blog
+    summary: Updates from Reason Blog.
+  redsweater:
+    feed_url: https://redsweater.com/blog/feed
+    homepage_url: https://redsweater.com/blog
+    display_name: Red Sweater Blog
+    summary: Official blog of Red Sweater Software
+  reproducible_builds:
+    feed_url: https://reproducible-builds.org/feed.xml
+    homepage_url: https://reproducible-builds.org
+    display_name: reproducible-builds.org
+    summary: “Reproducible builds” aim to provide a verifiable path from software source code to its compiled binary form.
+  rethinkdb:
+    feed_url: https://rethinkdb.com/feed.xml
+    homepage_url: https://rethinkdb.com
+    display_name: 'RethinkDB: the open-source database for the realtime web'
+    summary: News and updates from the RethinkDB team.
+  rewire_news:
+    feed_url: https://rewirenewsgroup.com/feed/
+    homepage_url: https://rewire.news
+    display_name: Rewire News Group
+    summary: Fearless Journalism For Every Body
+  rhaas_blogspot:
+    feed_url: https://rhaas.blogspot.com/feeds/posts/default
+    homepage_url: https://rhaas.blogspot.com
+    display_name: Robert Haas
+    summary: Updates from Robert Haas.
+  ricostacruz:
+    feed_url: https://ricostacruz.com/posts/rss.xml
+    homepage_url: https://ricostacruz.com
+    display_name: Rico Sta. Cruz
+    summary: Blog posts from Rico (@rstacruz) about web development and more
+  ritualdust:
+    feed_url: https://ritualdust.com/index.xml
+    homepage_url: https://ritualdust.com
+    display_name: Ritual Dust
+    summary: Ritual Dust • Write your own folklore
+  robert_ocallahan:
+    feed_url: https://robert.ocallahan.org/feed.xml
+    homepage_url: https://robert.ocallahan.org
+    display_name: Eyes Above The Waves
+    summary: Updates from Eyes Above The Waves.
+  roy_marples_name:
+    feed_url: https://roy.marples.name/blog/atom.xml
+    homepage_url: https://roy.marples.name
+    display_name: Roy's Blog
+    summary: Updates from Roy's Blog.
+  rpg_stackexchange:
+    feed_url: https://rpg.stackexchange.com/feeds
+    homepage_url: https://rpg.stackexchange.com/questions
+    display_name: Recent Questions - Role-playing Games Stack Exchange
+    summary: Updates from Recent Questions - Role-playing Games Stack Exchange.
+  rsms_me:
+    feed_url: https://rsms.me/atom.xml
+    homepage_url: https://rsms.me
+    display_name: Rasmus Andersson
+    summary: Updates from Rasmus Andersson.
+  rsyslog:
+    feed_url: https://www.rsyslog.com/feed/
+    homepage_url: https://www.rsyslog.com
+    display_name: rsyslog
+    summary: High-performance log ingestion and ETL engine
+  ruby_toolbox:
+    feed_url: https://www.ruby-toolbox.com/blog.rss
+    homepage_url: https://www.ruby-toolbox.com
+    display_name: The Ruby Toolbox
+    summary: Explore and compare open source Ruby libraries
+  rubyinside:
+    feed_url: https://rubyinside.com/index.xml
+    homepage_url: https://rubyinside.com
+    display_name: Ruby Inside
+    summary: Recent content on Ruby Inside
+  ryanbigg:
+    feed_url: https://ryanbigg.com/feed.xml
+    homepage_url: https://ryanbigg.com
+    display_name: Ryan Bigg’s Blog
+    summary: Updates from Ryan Bigg’s Blog.
+  ryanriddle_github:
+    feed_url: https://ryanriddle.github.io/rss.xml
+    homepage_url: https://ryanriddle.github.io
+    display_name: Ryan's Blog
+    summary: Updates from Ryan's Blog.
+  ryanseys:
+    feed_url: https://ryanseys.com/atom.xml
+    homepage_url: https://ryanseys.com
+    display_name: Ryan Seys
+    summary: Updates from Ryan Seys.
+  samnewman:
+    feed_url: https://samnewman.io/blog/feed.xml
+    homepage_url: http://samnewman.io/blog
+    display_name: Sam Newman
+    summary: Updates from Sam Newman.
+  samsaffron:
+    feed_url: https://samsaffron.com/feed.xml
+    homepage_url: https://samsaffron.com
+    display_name: Sam Saffron
+    summary: Writing about software, performance, Ruby, Discourse, and technology.
+  samuelmullen:
+    feed_url: https://samuelmullen.com/feed.xml
+    homepage_url: https://samuelmullen.com
+    display_name: Samuel Mullen
+    summary: Updates from Samuel Mullen.
+  science_slashdot:
+    feed_url: https://rss.slashdot.org/Slashdot/slashdotScience
+    homepage_url: https://science.slashdot.org
+    display_name: 'Slashdot: Science'
+    summary: News for nerds, stuff that matters
   npr_science:
     feed_url: https://feeds.npr.org/1007/rss.xml
     homepage_url: https://www.npr.org
