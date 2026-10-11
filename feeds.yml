@@ -435,6 +435,256 @@ bots:
     display_name: Up First
     summary: Morning news podcast from NPR — the biggest stories, in about ten minutes.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  wanderr_lustt_tumblr:
+    feed_url: https://wanderr-lustt.tumblr.com/rss
+    homepage_url: https://wanderr-lustt.tumblr.com
+    display_name: https://wanderr-lustt.tumblr.com/
+    summary: Updates from https://wanderr-lustt.tumblr.com/.
+  waterpigs:
+    feed_url: https://waterpigs.co.uk/services/microformats-to-atom/?url=https%3A//waterpigs.co.uk/
+    homepage_url: https://waterpigs.co.uk
+    display_name: Barnaby Walters
+    summary: Updates from Barnaby Walters.
+  wccftech:
+    feed_url: https://wccftech.com/feed/
+    homepage_url: https://wccftech.com
+    display_name: Wccftech
+    summary: We bring you the latest from hardware, mobile and gaming industries in news, reviews, and guides.
+  webkit:
+    feed_url: https://webkit.org/feed/
+    homepage_url: https://webkit.org
+    display_name: WebKit
+    summary: Open Source Web Browser Engine
+  wiki_mozilla:
+    feed_url: https://wiki.mozilla.org/api.php?hidebots=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom
+    homepage_url: https://wiki.mozilla.org/Special:RecentChanges
+    display_name: MozillaWiki - Recent changes [en]
+    summary: Updates from MozillaWiki - Recent changes [en].
+  winterdom:
+    feed_url: https://winterdom.com/feed.xml
+    homepage_url: https://winterdom.com
+    display_name: Winterdom
+    summary: by dæmons be driven - a site by Tomas Restrepo
+  wisdomandwonder:
+    feed_url: https://www.wisdomandwonder.com/feed
+    homepage_url: https://www.wisdomandwonder.com
+    display_name: Wisdom And Wonder
+    summary: Equanimity Λ Computing
+  withouttheirpermission:
+    feed_url: https://withouttheirpermission.com/rss
+    homepage_url: https://withouttheirpermission.com
+    display_name: Without Their Permission
+    summary: A book by reddit co-founder, Alexis Ohanian For aspiring entrepreneurs eager to embrace the future of the internet for fun, profit, and the good of humankind. The world isn’t flat, but the world wide web is. May this be your blueprint.
+  wristwatchreview:
+    feed_url: https://wristwatchreview.com/feed
+    homepage_url: https://wristwatchreview.com
+    display_name: The Wristwatch Review
+    summary: Welcome to the Wristwatch Review, the longest-running site on the Internet for lovers of mechanical, quartz, and digital wristwatches.
+  wweek:
+    feed_url: https://www.wweek.com/arc/outboundfeeds/rss/?outputType=xml
+    homepage_url: https://www.wweek.com
+    display_name: Willamette Week
+    summary: Willamette Week News Feed
+  xbmc:
+    feed_url: https://kodi.tv/rss.xml
+    homepage_url: https://xbmc.org
+    display_name: Kodi News
+    summary: Kodi is a free media player that is designed to look great on your big screen TV but is just as at home on a small screen.
+  bioxconomy:
+    feed_url: https://www.bioxconomy.com/rss.xml
+    homepage_url: https://www.bioxconomy.com
+    display_name: bioxconomy
+    summary: Public RSS feed
+  xero:
+    feed_url: https://blog.xero.com/feed/
+    homepage_url: https://www.xero.com/us
+    display_name: Xero Blog
+    summary: Beautiful business and Your business supercharged
+  yacoset:
+    feed_url: https://yacoset.com/feed/
+    homepage_url: https://yacoset.com
+    display_name: YACOSET
+    summary: Software Engineering, Architecture, Development and Planning
+  youell:
+    feed_url: http://www.youell.com/matt/writing/?feed=rss2
+    homepage_url: http://www.youell.com/matt/writing
+    display_name: while coding
+    summary: simplify
+  yourbasic:
+    feed_url: https://yourbasic.org/index.xml
+    homepage_url: https://yourbasic.org
+    display_name: Algorithms to Go
+    summary: Recent content on Algorithms to Go
+  yournewswire:
+    feed_url: https://yournewswire.com/feed/
+    homepage_url: https://yournewswire.com
+    display_name: YourNewsWire
+    summary: Updates from YourNewsWire.
+  zapier:
+    feed_url: https://zapier.com/blog/feeds/latest/
+    homepage_url: https://zapier.com/blog
+    display_name: The Zapier Blog
+    summary: A blog about productivity, workflow automation, company building and how to get things done with less work.
+  zwischenzugs:
+    feed_url: https://zwischenzugs.com/feed/
+    homepage_url: https://zwischenzugs.com
+    display_name: zwischenzugs.com
+    summary: Updates from zwischenzugs.com.
+  0day_work:
+    feed_url: https://0day.work/index.xml
+    homepage_url: https://0day.work
+    display_name: 0day.work
+    summary: Recent content on 0day.work
+  0xfe_blogspot:
+    feed_url: https://0xfe.blogspot.com/feeds/posts/default
+    homepage_url: https://0xfe.blogspot.com
+    display_name: mo.town blog
+    summary: Updates from mo.town blog.
+  101cookbooks:
+    feed_url: https://www.101cookbooks.com/feed
+    homepage_url: https://www.101cookbooks.com
+    display_name: 101 Cookbooks
+    summary: When you own over 100 cookbooks, it is time to stop buying, and start cooking. This site chronicles a cookbook collection, one recipe at a time.
+  10news:
+    feed_url: https://www.10news.com/index.rss
+    homepage_url: https://www.10news.com
+    display_name: Homepage
+    summary: Homepage
+  127001_me:
+    feed_url: https://127001.me/index.xml
+    homepage_url: https://127001.me
+    display_name: 127.0.0.1
+    summary: Recent content on 127.0.0.1
+  12devs:
+    feed_url: https://www.12devs.co.uk/feed/
+    homepage_url: https://www.12devs.co.uk
+    display_name: 12 Devs is back!
+    summary: Events | Articles | Workshops | Thoughts
+  19silverlinings_wordpress:
+    feed_url: https://19silverlinings.wordpress.com/feed/
+    homepage_url: https://19silverlinings.wordpress.com
+    display_name: 19 Silver Linings
+    summary: Piddlehinton Village in Lockdown
+  xoxofest:
+    feed_url: https://xoxofest.com/rss.xml
+    homepage_url: https://xoxofest.com
+    display_name: XOXO
+    summary: XOXO was an experimental festival for independent artists and creators from the internet.
+  2021supernormal_wordpress:
+    feed_url: https://2021supernormal.wordpress.com/feed/
+    homepage_url: https://2021supernormal.wordpress.com
+    display_name: Super Normal exhibition twentytwentyone, London
+    summary: Quietly extraordinary objects selected by Naoto Fukasawa and Jasper Morrison
+  20dollarlolita_tumblr:
+    feed_url: https://20dollarlolita.tumblr.com/rss
+    homepage_url: https://20dollarlolita.tumblr.com
+    display_name: Budget, Offbrand, DIY
+    summary: Lоlita fashion, or egl, is a fashion style from Japan that is highly influenced by Victorian clothing and styles from the Rococo period. I make resources for doing egl on a budget. Time and inflation have not been kind too my blog title but it’s too late to change it.
+  20x200:
+    feed_url: https://20x200.com/blogs/news.atom
+    homepage_url: https://20x200.com/blogs/news
+    display_name: 20x200 - News
+    summary: Updates from 20x200 - News.
+  23andme:
+    feed_url: https://www.23andme.org/blog/feed/
+    homepage_url: https://www.23andme.org/blog
+    display_name: 23andMe Blog
+    summary: Welcome to The World of Genetics
+  3ammagazine:
+    feed_url: https://www.3ammagazine.com/3am/feed/
+    homepage_url: https://www.3ammagazine.com/3am
+    display_name: 3:AM Magazine
+    summary: Whatever it is, we're against it.
+  3degreesnation_tumblr:
+    feed_url: https://3degreesnation.tumblr.com/rss
+    homepage_url: https://3degreesnation.tumblr.com
+    display_name: 3Degrees
+    summary: My name is Brian Scordato, and I recently graduated from UNC’s Kenan-Flagler Business School. I’m a former college basketball player at Union College, an ex-finance guy, and an absolute sucker for anything start-up or tech related. I’m a single founder starting a company called 3Degrees, with a ton of help from my developers. 3Degrees is a web-based application that will allow you to leverage your Facebook contacts to search your Friends’ Friends for compatible people you should be hanging out w
+  3dprintingindustry:
+    feed_url: https://3dprintingindustry.com/feed/
+    homepage_url: https://3dprintingindustry.com
+    display_name: 3D Printing Industry
+    summary: Additive Manufacturing and 3D Printing News
+  3eanuts_tumblr:
+    feed_url: https://3eanuts.com/rss
+    homepage_url: https://3eanuts.tumblr.com
+    display_name: 3eanuts
+    summary: 'Charles Schulz’s Peanuts comics often conceal the existential despair of their world with a closing joke at the characters’ expense. With the last panel omitted, despair pervades all. var _gaq = _gaq || []; _gaq.push([’_setAccount’, ‘UA-22332035-1’]); _gaq.push([’_trackPageview’]); (function() { var ga = document.createElement(''script’); ga.type = ''text/javascript’; ga.async = true; ga.src = (''https:’ == document.location.protocol ? ''https://ssl’ : ''http://www’) + ’.google-analytics.com/ga.js’; '
+  3quarksdaily:
+    feed_url: https://3quarksdaily.com/feed
+    homepage_url: https://3quarksdaily.com
+    display_name: 3 Quarks Daily
+    summary: Science Arts Philosophy Politics Literature
+  3sixteen:
+    feed_url: https://www.3sixteen.com/blogs/news.atom
+    homepage_url: https://www.3sixteen.com/blogs/news
+    display_name: 3sixteen - News
+    summary: Updates from 3sixteen - News.
+  4mojo_wordpress:
+    feed_url: https://4mojo.wordpress.com/feed/
+    homepage_url: https://4mojo.wordpress.com
+    display_name: don't follow the herd
+    summary: ramblings of an accidental tech founder
+  52weeksofux:
+    feed_url: https://52weeksofux.com/rss
+    homepage_url: https://52weeksofux.com
+    display_name: 52 Weeks of UX
+    summary: Updates from 52 Weeks of UX.
+  5ones:
+    feed_url: http://5ones.com/feed/
+    homepage_url: http://5ones.com
+    display_name: My blog
+    summary: Updates from My blog.
+  7_min:
+    feed_url: https://7-min.com/feed/
+    homepage_url: https://7-min.com
+    display_name: 7-Min Scientific Workout and Fitness Magazine
+    summary: Positively Impacting Your Health - 7 minutes at a time.
+  7fff:
+    feed_url: https://7fff.com/feed.xml
+    homepage_url: http://7fff.com
+    display_name: 7fff
+    summary: Updates from 7fff.
+  80x24:
+    feed_url: https://80x24.net/rss.xml
+    homepage_url: https://80x24.net
+    display_name: 80x24
+    summary: Thoughts on the bits and bytes of life.
+  8east4west_tumblr:
+    feed_url: https://8east4west.tumblr.com/rss
+    homepage_url: https://8east4west.tumblr.com
+    display_name: perry chen
+    summary: Updates from perry chen.
+  8thlight:
+    feed_url: https://8thlight.com/insights/feed/rss.xml
+    homepage_url: https://8thlight.com/insights
+    display_name: 8th Light Insights
+    summary: Posts on software craftsmanship and consulting from 8th Light's designers and crafters.
+  9_eyes:
+    feed_url: https://9-eyes.com/rss
+    homepage_url: https://9-eyes.com
+    display_name: Jon Rafman
+    summary: Nine Eyes of Google Street View, Jon Rafman, 2008 - ongoing home / insta / twitt / insta / fb
+  9_svbtle:
+    feed_url: https://9.svbtle.com/feed
+    homepage_url: https://9.svbtle.com
+    display_name: Steph Samson
+    summary: Updates from Steph Samson.
+  9lessons_info:
+    feed_url: https://feeds2.feedburner.com/9lesson
+    homepage_url: http://www.9lessons.info
+    display_name: 9lessons Programming Blog
+    summary: 9lessons is a popular tech blog maintained by Srinivas Tamada from India. Topics focus on Programming, Javascript, Angular, React JS, PHP, Java, Jquery, Mysql, Database, Ionic and web resources.
+  adamdrake:
+    feed_url: https://adamdrake.com/index.xml
+    homepage_url: https://adamdrake.com
+    display_name: Adam Drake
+    summary: Updates from Adam Drake.
+  aaronbonner:
+    feed_url: https://aaronbonner.io/rss
+    homepage_url: https://aaronbonner.io
+    display_name: /dev/notes
+    summary: Aaron's Development Blog
   npr_consider_this:
     feed_url: https://feeds.npr.org/510355/podcast.xml
     homepage_url: https://www.npr.org/podcasts/510355/consider-this-from-npr
