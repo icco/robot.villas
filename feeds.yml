@@ -836,6 +836,256 @@ bots:
     display_name: Public Books
     summary: Literature, culture, politics, criticism, and ideas from scholars and writers.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.publicbooks.org&size=128
+  freenetworks:
+    feed_url: https://freenetworks.org/feed/
+    homepage_url: https://freenetworks.org
+    display_name: FreeNetworks.org
+    summary: Education, Collaboration and Advocacy for Open Infrastructure. History of the free networks movement.
+  superhouse_tv:
+    feed_url: https://www.superhouse.tv/feed/
+    homepage_url: https://www.superhouse.tv
+    display_name: SuperHouse Automation
+    summary: Superpowers for you and your house!
+  freewilliamsburg:
+    feed_url: https://freewilliamsburg.com/?feed=rss2
+    homepage_url: https://freewilliamsburg.com
+    display_name: Free Williamsburg
+    summary: Updates from Free Williamsburg.
+  freshpaint:
+    feed_url: https://www.freshpaint.io/blog/rss.xml
+    homepage_url: https://www.freshpaint.io
+    display_name: Freshpaint Blog
+    summary: Blog posts from the Freshpaint team.
+  freshtilledsoil:
+    feed_url: http://feeds.feedburner.com/freshtilledsoilrss
+    homepage_url: https://www.freshtilledsoil.com
+    display_name: fresh tilled soil
+    summary: UX/UI Design Firm, Fresh Tilled Soil, posts original, expert content on cutting edge topics in UX/UI design, strategy, technology, business and consulting, and content on local Boston tech and innovation.
+  fribbledom:
+    feed_url: https://fribbledom.com/index.xml
+    homepage_url: https://fribbledom.com
+    display_name: fribbledom's Journal
+    summary: Recent content on fribbledom's Journal
+  frominsidethebox:
+    feed_url: https://frominsidethebox.com/index.xml
+    homepage_url: https://frominsidethebox.com
+    display_name: Thoughts from Inside The Box
+    summary: A chronicle of my life living out of a 16' box truck, and the stuff that's happening after that too.
+  fromme_toyou_tumblr:
+    feed_url: https://fromme-toyou.tumblr.com/rss
+    homepage_url: https://fromme-toyou.tumblr.com
+    display_name: Bách Khoa Toàn Thư Mở WikiGioiTre
+    summary: Updates from Bách Khoa Toàn Thư Mở WikiGioiTre.
+  unpacked_media:
+    feed_url: https://unpacked.media/feed/
+    homepage_url: https://unpacked.media
+    display_name: Unpacked
+    summary: We provide nuanced insights by unpacking all things Jewish.
+  frydawolff:
+    feed_url: https://frydawolff.com/feed/
+    homepage_url: https://frydawolff.com
+    display_name: Fryda Wolff
+    summary: '"Directing an actor often makes my stomach tense up but with you it was always fun and I always walked away with a new ''directing arrow'' in my quiver." - Philip Hunter, Respawn'
+  fstoppers:
+    feed_url: https://fstoppers.com/feed
+    homepage_url: https://fstoppers.com
+    display_name: Fstoppers
+    summary: Photography News and Community for Creative Professionals
+  ftalphaville_ft:
+    feed_url: https://www.ft.com/alphaville?format=rss
+    homepage_url: https://ftalphaville.ft.com
+    display_name: Alphaville
+    summary: Alphaville
+  fubiz:
+    feed_url: https://www.fubiz.net/feed/
+    homepage_url: https://www.fubiz.net
+    display_name: Fubiz Media
+    summary: The latest creative news from Fubiz about art, design and pop-culture.
+  fuckyournoguchicoffeetable_tumblr:
+    feed_url: https://fuckyournoguchicoffeetable.tumblr.com/rss
+    homepage_url: https://fuckyournoguchicoffeetable.tumblr.com
+    display_name: Fuck Your Noguchi Coffee Table
+    summary: Twitter @FYNCT Instagram @FYNCT
+  fullcontact:
+    feed_url: https://www.fullcontact.com/feed/
+    homepage_url: https://www.fullcontact.com
+    display_name: FullContact
+    summary: Relationships, reimagined.
+  fuma_nama_dev:
+    feed_url: https://www.fuma-nama.dev/rss.xml
+    homepage_url: https://www.fuma-nama.dev
+    display_name: Fuma Nama
+    summary: Fuma Nama's blog
+  funkatron:
+    feed_url: https://www.funkatron.com/rss/
+    homepage_url: https://www.funkatron.com
+    display_name: funkatron + dead_agent
+    summary: The cpu as engine of creation. The cycle of creation and destruction as artistic process. Learning a system in order to subvert it. Teaching others how to control and create and destroy.
+  funkwhale_audio:
+    feed_url: https://blog.funkwhale.audio/feeds/all.atom.xml
+    homepage_url: https://www.funkwhale.audio
+    display_name: Funkwhale Blog
+    summary: Updates from Funkwhale Blog.
+  funonrails:
+    feed_url: http://funonrails.com/feed.xml
+    homepage_url: http://funonrails.com
+    display_name: Fun On Rails
+    summary: 'Journal of a Web Developer #ruby #rails #JS'
+  furbo:
+    feed_url: https://furbo.org/feed/
+    homepage_url: https://furbo.org
+    display_name: furbo.org
+    summary: by Craig Hockenberry
+  futurealoof:
+    feed_url: https://futurealoof.com/feed/
+    homepage_url: https://futurealoof.com
+    display_name: オトナのKOITOPI
+    summary: Updates from オトナのKOITOPI.
+  futurefriend_ly:
+    feed_url: https://futurefriend.ly/feed/
+    homepage_url: https://futurefriend.ly
+    display_name: Futurefriendly
+    summary: Updates from Futurefriendly.
+  futureoflife:
+    feed_url: https://futureoflife.org/feed/
+    homepage_url: https://futureoflife.org
+    display_name: Future of Life Institute
+    summary: Preserving the long-term future of life.
+  futurice:
+    feed_url: https://www.futurice.com/rss.xml
+    homepage_url: https://futurice.com
+    display_name: Futurice — All blogs
+    summary: Updates from Futurice — All blogs.
+  fxguide:
+    feed_url: https://www.fxguide.com/feed/
+    homepage_url: https://www.fxguide.com
+    display_name: fxguide
+    summary: vfx and 3D news
+  fxstreet:
+    feed_url: https://www.fxstreet.com/rss
+    homepage_url: https://www.fxstreet.com
+    display_name: FXStreet Forex & Commodities News
+    summary: Real-time Forex News and the latest trading updates. Stay updated on the latest news about currencies and commodities markets.
+  g3rv4:
+    feed_url: https://g3rv4.com/atom.xml
+    homepage_url: https://g3rv4.com
+    display_name: g3rv4
+    summary: Updates from g3rv4.
+  gadgetreview:
+    feed_url: https://www.gadgetreview.com/feed
+    homepage_url: https://www.gadgetreview.com
+    display_name: Gadget Review
+    summary: Updates from Gadget Review.
+  galeriemagazine:
+    feed_url: https://galeriemagazine.com/feed/
+    homepage_url: https://galeriemagazine.com
+    display_name: Galerie Magazine
+    summary: Updates from Galerie Magazine.
+  game_icons:
+    feed_url: https://game-icons.net/feeds/icons.xml
+    homepage_url: https://game-icons.net
+    display_name: last Added Icons
+    summary: last Added Icons
+  gamerant:
+    feed_url: https://gamerant.com/feed/
+    homepage_url: https://gamerant.com
+    display_name: GameRant
+    summary: GameRant delivers content written by gamers for gamers with an emphasis on news, reviews, unique features, and interviews.
+  games_slashdot:
+    feed_url: https://rss.slashdot.org/Slashdot/slashdotGames
+    homepage_url: https://games.slashdot.org
+    display_name: 'Slashdot: Games'
+    summary: News for nerds, stuff that matters
+  youtube:
+    feed_url: https://www.youtube.com/feeds/videos.xml?channel_id=UCJx5KP-pCUmL9eZUv-mIcNw
+    homepage_url: https://www.youtube.com/channel/UCJx5KP-pCUmL9eZUv-mIcNw
+    display_name: GameTrailers
+    summary: Updates from GameTrailers.
+  gamingonlinux:
+    feed_url: https://www.gamingonlinux.com/article_rss.php
+    homepage_url: https://www.gamingonlinux.com
+    display_name: GamingOnLinux Latest Articles
+    summary: The latest articles from GamingOnLinux
+  gamingtheclassroom_wordpress:
+    feed_url: https://gamingtheclassroom.wordpress.com/feed/atom/
+    homepage_url: https://gamingtheclassroom.wordpress.com
+    display_name: Gaming the Classroom
+    summary: Updates from Gaming the Classroom.
+  gapminder:
+    feed_url: https://www.gapminder.org/feed/
+    homepage_url: https://www.gapminder.org
+    display_name: Gapminder
+    summary: Unveiling the beauty of statistics for a fact based world view.
+  garbe:
+    feed_url: https://garbe.io/atom.xml
+    homepage_url: https://garbe.io
+    display_name: Philipps Blog
+    summary: Updates from Philipps Blog.
+  garethrees:
+    feed_url: https://www.garethrees.co.uk/feed.xml
+    homepage_url: https://www.garethrees.co.uk
+    display_name: Gareth Rees
+    summary: Updates from Gareth Rees.
+  garron_me:
+    feed_url: https://www.garron.me/en/feed.xml
+    homepage_url: https://www.garron.me/en
+    display_name: garron.me — English
+    summary: Guillermo Garron's personal site and blog in English
+  garry:
+    feed_url: https://garry.net/posts/rss/
+    homepage_url: https://garry.net/posts
+    display_name: Garry Newman's Blog
+    summary: Garry Newman is a video game developer based in the UK. He is best known as the owner of development studio Facepunch and games Garry's Mod and Rust.
+  garymarcus_substack:
+    feed_url: https://garymarcus.substack.com/feed
+    homepage_url: https://garymarcus.substack.com
+    display_name: Marcus on AI
+    summary: '"Marcus has become one of our few indispensable public intellectuals. The more people read him, the better our actions in shaping Al will be." - Kim Stanley Robinson, author of Ministry for the Future'
+  garysieling:
+    feed_url: https://www.garysieling.com/blog/feed/
+    homepage_url: https://www.garysieling.com/blog
+    display_name: Gary Sieling
+    summary: Software Engineer
+  gatheringmagic:
+    feed_url: https://www.coolstuffinc.com/articles_feed.rss
+    homepage_url: http://www.gatheringmagic.com
+    display_name: CoolStuffInc.com Articles
+    summary: Articles from CoolStuffInc.com
+  gearfuse:
+    feed_url: https://www.gearfuse.com/feed/
+    homepage_url: https://www.gearfuse.com
+    display_name: Gearfuse
+    summary: Technology, Science, Culture & More
+  gears2gnomes_tumblr:
+    feed_url: https://gears2gnomes.tumblr.com/rss
+    homepage_url: https://gears2gnomes.tumblr.com
+    display_name: gears2gnomes
+    summary: 'Knight-mj Sketches, comics, artworks, gnomes! Fanart, Originals – You also find me here: Bluesky Twitter “ArenaNet Creative Partner” - GW2 art sponsored by Arenanet'
+  geckoboard:
+    feed_url: https://www.geckoboard.com/blog/rss/
+    homepage_url: https://www.geckoboard.com/blog
+    display_name: The team performance blog | Geckoboard
+    summary: How the best teams set goals, measure what matters, and build a culture of performance. Guides, case studies, and sharp takes from Geckoboard.
+  geek_art:
+    feed_url: https://geek-art.net/blog/feed/
+    homepage_url: https://geek-art.net
+    display_name: geek-art.net
+    summary: Updates from geek-art.net.
+  geekflare:
+    feed_url: https://geekflare.com/feed/
+    homepage_url: https://geekflare.com
+    display_name: Geekflare
+    summary: Trusted Business Solutions for Growth
+  geeksaresexy_blogspot:
+    feed_url: http://feeds.feedburner.com/geeksAreSexyTechnologyNews
+    homepage_url: https://geeksaresexy.blogspot.com
+    display_name: Geeks are Sexy
+    summary: Geek Culture, Tech, Science, Gaming & Pop Culture
+  geekwagon_games:
+    feed_url: https://geekwagon.games/index.xml
+    homepage_url: https://geekwagon.games
+    display_name: Home on Geekwagon
+    summary: Recent content in Home on Geekwagon
   paris_review:
     feed_url: https://www.theparisreview.org/blog/feed/
     homepage_url: https://www.theparisreview.org
