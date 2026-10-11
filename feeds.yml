@@ -4530,253 +4530,290 @@ bots:
   chris_lamb:
     feed_url: https://chris-lamb.co.uk/feed
     homepage_url: https://chris-lamb.co.uk
-    display_name: lamby
-    summary: Updates from lamby.
-  chrisjdavis:
+    display_name: Chris Lamb (lamby)
+    summary: Chris Lamb's reports and essays on Debian, Reproducible Builds, free software, software supply-chain security, and personal projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fchris-lamb.co.uk&size=128
+  sswi:
     feed_url: https://www.chrisjdavis.org/feed.xml
     homepage_url: https://chrisjdavis.org
-    display_name: SSWI
-    summary: A collection of links, videos, photos and sometimes, just sometimes, missives from the master of Sillyness himself, Chris J. Davis.
-  chriskiehl:
+    display_name: SSWI - Chris J. Davis
+    summary: Chris J. Davis's personal essays, links, photographs, and projects about design, software, cinema, family, and everyday life.
+    profile_photo: https://www.chrisjdavis.org/apple-touch-icon.png
+  chris_kiehl:
     feed_url: https://chriskiehl.com/rss.xml
     homepage_url: https://chriskiehl.com
-    display_name: chriskiehl.com
-    summary: The blog where I pretend to be good at stuff
-  christacy_blogspot:
+    display_name: Chris Kiehl
+    summary: Chris Kiehl writes about software development, data-oriented programming in Java, Gooey, books, microscopy, 3D printing, and personal projects.
+    profile_photo: https://github.com/chriskiehl.png?size=200
+  deep_in_the_weeds:
     feed_url: https://christacy.blogspot.com/feeds/posts/default
     homepage_url: https://christacy.blogspot.com
     display_name: '...deep in the weeds'
-    summary: Updates from ...deep in the weeds.
-  cloudatomiclab:
+    summary: 'The personal blog of chris (cbtacy), with essays on technology culture, business strategy, politics, history, food, and life in Hawaii. Latest feed post: August 2025.'
+  cloud_atomic_laboratory:
     feed_url: https://www.cloudatomiclab.com/index.xml
     homepage_url: https://www.cloudatomiclab.com
-    display_name: Cloud Atomic Laboratory
-    summary: Recent content on Cloud Atomic Laboratory
-  cloudfoundry:
-    feed_url: https://www.cloudfoundry.org/feed/
-    homepage_url: https://www.cloudfoundry.org
-    display_name: Cloud Foundry
-    summary: The industry standard cloud application platform
-  codeforamerica:
+    display_name: Cloud Atomic Laboratory - Justin Cormack
+    summary: 'Justin Cormack''s essays on operating systems, containers, security, open source, computing history, and personal observations. Latest feed post: August 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.cloudatomiclab.com&size=128
+  cloud_foundry:
+    feed_url: https://www.cloudfoundry.org/blog/feed/
+    homepage_url: https://www.cloudfoundry.org/blog/
+    display_name: Cloud Foundry Blog
+    summary: Cloud Foundry Foundation and community articles on its open-source application platform, Kubernetes, buildpacks, security advisories, events, and ecosystem projects.
+    profile_photo: https://www.cloudfoundry.org/wp-content/themes/cloudfoundry/imgs/favicons/apple-icon-180x180.png
+  code_for_america:
     feed_url: https://codeforamerica.org/feed/
     homepage_url: https://codeforamerica.org
     display_name: Code for America
-    summary: Government can and should work well for everyone. We’re people-centered problem solvers showing that it’s possible.
-  codewords_recurse:
-    feed_url: https://codewords.recurse.com/feed.xml
-    homepage_url: https://codewords.recurse.com
-    display_name: Code Words
-    summary: Updates from Code Words.
+    summary: Code for America's news, case studies, and guidance on civic technology, public benefits, tax filing, criminal justice, accessible government services, and AI.
+    profile_photo: https://codeforamerica.org/wp-content/themes/cfa-main/static/apple-touch-icon.png
   cointelegraph:
     feed_url: https://cointelegraph.com/rss
     homepage_url: https://cointelegraph.com
-    display_name: Cointelegraph.com News
-    summary: Cointelegraph covers fintech, blockchain and Bitcoin bringing you the latest crypto news and analyses on the future of money.
-  comicbookmovie:
+    display_name: Cointelegraph
+    summary: Cointelegraph reports on cryptocurrencies, Bitcoin, Ethereum, blockchain, financial markets, regulation, security, and industry developments, alongside commissioned content.
+    profile_photo: https://cointelegraph.com/apple-touch-icon.png
+  comic_book_movie:
     feed_url: https://comicbookmovie.com/rss/
     homepage_url: https://comicbookmovie.com
     display_name: Comic Book Movie
-    summary: Keep up to date with the latest and greatest in comic book, superhero, and pop culture movie and TV news, rumors, videos, and more with ComicBookMovie.com!
-  commoncrawl:
+    summary: ComicBookMovie.com publishes superhero and comic-book movie and television news, trailers, rumors, reviews, interviews, and fan commentary.
+    profile_photo: https://comicbookmovie.com/apple-touch-icon.png
+  common_crawl:
     feed_url: https://www.commoncrawl.org/blog/rss.xml
     homepage_url: https://www.commoncrawl.org
     display_name: Common Crawl
-    summary: The latest news and announcements from Common Crawl
-  commondreams:
+    summary: Common Crawl's crawl-archive releases, web graphs, research, tutorials, and announcements about its free repository of web crawl data.
+    profile_photo: https://cdn.prod.website-files.com/6479b8d98bf5dcb4a69c4f31/648962c357c8113a871e3378_Common_Crawl_Rev3_LPX_Logo%20Gradient%20BG.png
+  common_dreams:
     feed_url: https://www.commondreams.org/feeds/feed.rss
     homepage_url: https://www.commondreams.org
     display_name: Common Dreams
-    summary: Common Dreams
-  computerhistory:
+    summary: Common Dreams publishes progressive political commentary and advocacy-group newswire statements on climate, democracy, economic inequality, rights, and international affairs. This feed is mostly newswire releases and Further columns.
+    profile_photo: https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8zMjEzMDAzNS9vcmlnaW4ucG5nIiwiZXhwaXJlc19hdCI6MTgyOTg0MTc3MH0.vgFGl7oQItwtad-tVlVayDFQXLZf6zwCR_aJV5c_wkI/img.png?width=192&height=192
+  computer_history_museum:
     feed_url: https://computerhistory.org/feed/
     homepage_url: https://computerhistory.org
-    display_name: CHM
-    summary: Computer History Museum
-  coolmaterial:
+    display_name: Computer History Museum
+    summary: Computer History Museum articles on computing history, artifacts, pioneers, museum projects, events, and the social impact of technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcomputerhistory.org&size=128
+  cool_material:
     feed_url: https://coolmaterial.com/feed/
     homepage_url: https://coolmaterial.com
     display_name: Cool Material
-    summary: Updates from Cool Material.
-  creativereview:
+    summary: Cool Material's lifestyle features, gear recommendations, style guides, cars, cocktails, travel, and sponsored partner stories.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcoolmaterial.com&size=128
+  creative_review:
     feed_url: https://www.creativereview.co.uk/feed/
     homepage_url: https://www.creativereview.co.uk
     display_name: Creative Review
-    summary: The best in creativity
-  cringely:
+    summary: Creative Review covers advertising, graphic design, branding, photography, film, art, and the people and businesses behind creative work. Some articles require a subscription.
+    profile_photo: https://d3e341ktepti6g.cloudfront.net/uploads/2016/05/cropped-crlogo-master-icon.png?auto=compress,format&crop=faces,entropy,edges&fit=crop&q=60&w=180&h=180
+  i_cringely:
     feed_url: https://www.cringely.com/feed/
     homepage_url: https://www.cringely.com
     display_name: I, Cringely
-    summary: on technology
-  crunchyroll:
+    summary: Robert X. Cringely's columns on technology, computing businesses, artificial intelligence, industry history, and public policy.
+    profile_photo: https://cringely.wpenginepowered.com/wp-content/uploads/2013/06/Cringely-upload-icon1.png
+  crunchyroll_videos:
     feed_url: https://www.crunchyroll.com/rss/
-    homepage_url: http://www.crunchyroll.com
-    display_name: Latest Crunchyroll Videos
-    summary: Check out the newest videos on Crunchyroll.
-  current:
+    homepage_url: https://www.crunchyroll.com/
+    display_name: Crunchyroll Videos
+    summary: Crunchyroll's latest anime episode and video releases, including subtitled and dubbed versions in multiple languages. Playback availability depends on region and subscription.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.crunchyroll.com&size=128
+  current_public_media:
     feed_url: https://current.org/feed/
     homepage_url: https://current.org
     display_name: Current
-    summary: For people in public media
-  cursor:
+    summary: Current reports on U.S. public media, including radio and television programming, station leadership, funding, policy, and industry developments.
+    profile_photo: https://current.org/wp-content/uploads/2025/07/current-icon-300x300.png
+  cursor_blog:
     feed_url: https://cursor.com/atom.xml
-    homepage_url: https://cursor.com
-    display_name: Cursor Blog | RSS Feed
-    summary: Updates from Cursor Blog | RSS Feed.
-  cyberlaw_stanford_edu:
+    homepage_url: https://cursor.com/blog
+    display_name: Cursor Blog
+    summary: 'Cursor''s archived engineering and company posts about its AI-assisted coding tools. Latest feed post: November 2024; the blog homepage has newer articles.'
+    profile_photo: https://cursor.com/marketing-static/apple-touch-icon-light.png
+  stanford_cis_publications:
     feed_url: https://cyberlaw.stanford.edu/publications/rss/
-    homepage_url: https://cyberlaw.stanford.edu
-    display_name: Stanford CIS
-    summary: The Center for Internet and Society at Stanford Law School is a leader in the study of the law and policy around the Internet and other emerging technologies.
+    homepage_url: https://cyberlaw.stanford.edu/publications/
+    display_name: Stanford CIS Publications
+    summary: Research publications from Stanford Law School's Center for Internet and Society on privacy, AI, internet policy, net neutrality, security, and technology law.
+    profile_photo: https://storage.ghost.io/c/d5/17/d517bf5e-0944-433c-a10e-1dfe572602c5/content/images/size/w256h256/2026/01/cislogo.png
   cyberscoop:
     feed_url: https://cyberscoop.com/feed/
     homepage_url: https://cyberscoop.com
     display_name: CyberScoop
-    summary: Updates from CyberScoop.
-  damieng:
+    summary: CyberScoop reports on cybersecurity, cybercrime, threats, research, privacy, national security, and government and industry policy.
+    profile_photo: https://cyberscoop.com/wp-content/uploads/sites/3/2023/01/cropped-cs_favicon-2.png?w=180
+  damien_guard:
     feed_url: https://damieng.com/rss.xml
     homepage_url: https://damieng.com
-    display_name: DamienG's Blog
-    summary: Damien Guard on software development, typography, vintage computing, and .NET.
-  datapointed:
+    display_name: Damien Guard
+    summary: Damien Guard writes about software development, .NET, typography, pixel fonts, vintage computing, and personal projects.
+    profile_photo: https://damieng.com/apple-touch-icon.png
+  data_pointed:
     feed_url: https://www.datapointed.net/feed/
     homepage_url: https://www.datapointed.net
-    display_name: Data Pointed
-    summary: Data, Visualization, and Art
-  dave_is:
+    display_name: Data Pointed - Stephen Von Worley
+    summary: 'Stephen Von Worley''s data visualization research and visual essays on geography, colors, population, mathematics, and art. Latest feed post: December 2018.'
+    profile_photo: https://www.datapointed.net/wp-content/themes/dp48/apple-touch-icon-precomposed.png
+  david_albert:
     feed_url: https://dave.is/atom.xml
     homepage_url: https://dave.is
     display_name: David Albert
-    summary: Updates from David Albert.
-  daverupert:
+    summary: 'David Albert''s archived essays on programming, learning, startups, Hacker School, computing freedom, and personal reflections. Latest feed post: January 2014.'
+  dave_rupert:
     feed_url: https://daverupert.com/atom.xml
     homepage_url: https://daverupert.com
-    display_name: daverupert.com
-    summary: The personal blog of Dave Rupert, web developer and podcaster from Austin, TX.
-  dayoneapp:
+    display_name: Dave Rupert
+    summary: Dave Rupert's personal writing on web development, CSS, web components, accessibility, software projects, games, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdaverupert.com&size=128
+  day_one:
     feed_url: https://dayoneapp.com/feed/
     homepage_url: https://dayoneapp.com
-    display_name: Day One | Your Journal for Life
-    summary: Day One is the award-winning journaling app for iPhone, Android, iPad and Apple Watch.
-  dazeddigital:
+    display_name: Day One
+    summary: Day One's journaling-app product updates, feature guides, journaling prompts, user stories, and advice on keeping a personal journal.
+    profile_photo: https://i0.wp.com/dayoneapp.com/wp-content/uploads/2021/11/favicon-32x32-1.png?fit=32%2C32&quality=80&ssl=1
+  dazed:
     feed_url: https://www.dazeddigital.com/rss
     homepage_url: https://www.dazeddigital.com
     display_name: Dazed
-    summary: Updates from Dazed.
-  dcrainmaker:
+    summary: Dazed covers fashion, art, photography, music, film, beauty, youth culture, and ideas through news, interviews, features, and brand partnerships.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.dazeddigital.com&size=128
+  dc_rainmaker:
     feed_url: https://www.dcrainmaker.com/feed
     homepage_url: https://www.dcrainmaker.com
     display_name: DC Rainmaker
-    summary: Updates from DC Rainmaker.
-  debian:
+    summary: Ray Maker's DC Rainmaker publishes in-depth sports-technology reviews, comparisons, buying guides, deals, and personal training and travel stories.
+    profile_photo: https://media.dcrainmaker.com/images/2017/03/dcrainmaker-dc-logo-square.png
+  debian_news:
     feed_url: https://www.debian.org/News/news
     homepage_url: https://www.debian.org/News
     display_name: Debian News
-    summary: Debian Latest News
-  deepmind_google:
+    summary: Official Debian Project release announcements, distribution updates, support milestones, conference news, and other major project notices.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.debian.org%2FNews&size=128
+  google_deepmind_news:
     feed_url: https://deepmind.google/blog/rss.xml
     homepage_url: https://deepmind.google/blog
     display_name: Google DeepMind News
-    summary: Read the latest articles and stories from DeepMind and find out more about our latest breakthroughs in cutting-edge AI research.
-  defcon:
+    summary: Google DeepMind's official announcements and research stories about AI models, scientific applications, robotics, safety, and responsible AI.
+    profile_photo: https://storage.googleapis.com/gdm-deepmind-com-prod-public/icons/google_deepmind_2x_96dp.png
+  def_con_announcements:
     feed_url: https://www.defcon.org/defconrss.xml
     homepage_url: https://www.defcon.org
-    display_name: DEF CON Announcements!
-    summary: 'DEFCON is the world''s largest annual hacker convention, held every year in Las Vegas, Nevada. The first DEFCON took place in June 1993. DEF CON is renowned for the "arcane arts" of drinking, socializing, debugging, and crowd control. DEFCON is what you make of it, so get involved and help the community grow. This Feed will keep you up to date with some announcements surrounding pre and post con events, references to DEFCON in the news, and other errata. For the most up to date information visit '
-  degoes:
+    display_name: DEF CON Announcements
+    summary: Official DEF CON announcements about hacker conferences, training, calls for participation, community events, media, and related security news.
+    profile_photo: https://www.defcon.org/images/apple-touch-icon.png
+  john_a_de_goes:
     feed_url: https://degoes.net/feed.xml
     homepage_url: https://degoes.net
-    display_name: John A De Goes
-    summary: Updates from John A De Goes.
-  dereklow_co:
+    display_name: John A. De Goes
+    summary: John A. De Goes writes about functional programming, Scala, ZIO, software engineering, and personal reflections on religion and philosophy.
+  derek_low:
     feed_url: https://dereklow.co/rss/
     homepage_url: https://dereklow.co
     display_name: Derek Low
-    summary: Stories about travels and startups
+    summary: 'Derek Low''s travel stories, rail journeys, unusual destinations, and hardware experiments, with occasional entrepreneurship posts. Latest feed post: December 2019.'
   designobserver:
     feed_url: https://designobserver.com/feed/
     homepage_url: https://designobserver.com
-    display_name: DesignObserver
-    summary: Writings on Design + Visual Culture
-  designyoutrust:
+    display_name: Design Observer
+    summary: Design Observer's articles and podcasts on design, visual culture, business, creativity, and social issues.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdesignobserver.com&size=128
+  design_you_trust:
     feed_url: https://designyoutrust.com/feed/
     homepage_url: https://designyoutrust.com
     display_name: Design You Trust
-    summary: Updates from Design You Trust.
-  dev_jdherg:
-    feed_url: http://dev.jdherg.com/feeds/all.atom.xml
-    homepage_url: http://dev.jdherg.com
+    summary: Design You Trust curates illustrated artist features and galleries covering photography, illustration, architecture, graphic design, 3D art, and AI-generated artwork.
+    profile_photo: https://designyoutrust.com/wp-content/uploads/2024/04/cropped-favicon-180x180.png
+  john_hergenroeder:
+    feed_url: https://dev.jdherg.com/feeds/all.atom.xml
+    homepage_url: https://dev.jdherg.com/
     display_name: John Hergenroeder
-    summary: Updates from John Hergenroeder.
-  developmentseed:
+    summary: 'John Hergenroeder''s archived posts on Python projects, PyCon, the Recurse Center, and generated fiction. Latest feed post: July 2015.'
+  development_seed:
     feed_url: https://developmentseed.org/rss.xml
     homepage_url: https://developmentseed.org
-    display_name: Insights and musing from Development Seed
-    summary: See our planet better.
-  dgtlgrove:
+    display_name: Development Seed
+    summary: Development Seed's geospatial engineering articles, open-source project announcements, satellite imagery, Earth observation, mapping, AI, and team news.
+    profile_photo: https://developmentseed.org/meta/apple-touch-icon.png
+  digital_grove:
     feed_url: https://www.dgtlgrove.com/feed
     homepage_url: https://www.dgtlgrove.com
-    display_name: Digital Grove
-    summary: Towards better computers.
-  dictionaryofobscuresorrows:
+    display_name: Digital Grove - Ryan Fleury
+    summary: Ryan Fleury's essays, videos, and code walkthroughs on systems programming, debuggers, performance, user interfaces, software design, and Nintendo 64 programming.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!GXIh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1512c3be-bed5-4a80-9654-f3e45f9f1ad2%2Fapple-touch-icon-57x57.png
+  dictionary_of_obscure_sorrows:
     feed_url: https://dictionaryofobscuresorrows.com/rss
-    homepage_url: https://dictionaryofobscuresorrows.com
+    homepage_url: https://www.tumblr.com/dictionaryofobscuresorrows
     display_name: The Dictionary of Obscure Sorrows
-    summary: '“Creates beautiful new words that we need but do not yet have.” — John Green, author of The Fault in Our Stars The Book - NOW AVAILABLE FOR PRE-ORDER! It’s finally here. 12 years in the making, 300 pages, 70% new material, including longer video-like definitions, otherworldly illustrations, and some thoughts on language and the meaning of life. Pre-order your copy here (click links on the right): https://www.simonandschuster.com/books/The-Dictionary-of-Obscure-Sorrows/John-Koenig/9781501153648 C'
-  digitalcommons_calpoly_edu:
+    summary: 'John Koenig''s invented words and video essays for hard-to-name emotions, with updates about The Dictionary of Obscure Sorrows book. Latest feed post: November 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdictionaryofobscuresorrows.com&size=128
+  digitalcommons_calpoly:
     feed_url: https://digitalcommons.calpoly.edu/recent.rss
     homepage_url: https://digitalcommons.calpoly.edu
     display_name: DigitalCommons@CalPoly
-    summary: Recent documents in DigitalCommons@CalPoly
+    summary: Recent research, student projects, scholarship, and campus publications deposited in Cal Poly San Luis Obispo's institutional repository.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdigitalcommons.calpoly.edu&size=128
   digitizor:
     feed_url: https://digitizor.com/feed/
     homepage_url: https://digitizor.com
     display_name: Digitizor
-    summary: Your guide to everything Technology.
-  dish_andrewsullivan:
+    summary: 'Debjit Saha''s technology tutorials and engineering-leadership insights on AI systems, infrastructure, web development, WordPress, and business software. Latest feed post: January 2026.'
+  the_dish:
     feed_url: https://dish.andrewsullivan.com/feed/
     homepage_url: https://dish.andrewsullivan.com
     display_name: The Dish
-    summary: Updates from The Dish.
+    summary: 'The archive of Andrew Sullivan and The Dish team''s political commentary, cultural essays, reader discussions, poetry, and curated links. Latest feed post: June 2015.'
+    profile_photo: https://secure.gravatar.com/blavatar/20ae55c8bfb86880eadaf0751f461f5742ef8124d48f65ac48301b61b0b9b831?s=114
   distractify:
     feed_url: https://www.distractify.com/rss
     homepage_url: https://www.distractify.com
     display_name: Distractify
-    summary: Latest news and updates
-  diyphotography:
+    summary: Distractify covers viral social-media stories, entertainment, television, celebrities, and human-interest topics, with interviews and sponsored features.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.distractify.com&size=128
+  diy_photography:
     feed_url: https://www.diyphotography.net/feed/
     homepage_url: https://www.diyphotography.net
     display_name: DIY Photography
-    summary: Your one stop shop for everything photo and video
-  djr:
+    summary: DIY Photography publishes photography and video news, equipment coverage, tutorials, creative projects, photographer features, and imaging technology stories.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.diyphotography.net&size=128
+  david_jonathan_ross:
     feed_url: https://djr.com/feed.rss
     homepage_url: https://djr.com
     display_name: David Jonathan Ross
-    summary: Typeface design and typography by David Jonathan Ross.
-  docs_litellm_ai:
+    summary: Typeface designer David Jonathan Ross shares font releases, Font of the Month Club updates, typography experiments, and examples of his fonts in use.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdjr.com&size=128
+  litellm_blog:
     feed_url: https://docs.litellm.ai/blog/rss.xml
     homepage_url: https://docs.litellm.ai/blog
-    display_name: liteLLM Blog
-    summary: liteLLM Blog
-  dresdencodak_tumblr:
+    display_name: LiteLLM Engineering Blog
+    summary: LiteLLM's engineering and product posts on AI gateways, model integrations, routing, reliability, performance, observability, security, and agent tools.
+    profile_photo: https://docs.litellm.ai/img/brand/litellm-monogram-blue-192.png
+  dresden_codak_tumblr:
     feed_url: https://dresdencodak.tumblr.com/rss
-    homepage_url: https://dresdencodak.tumblr.com
-    display_name: Dresden Codak
-    summary: My name is Sen (she/her) and I make comics! Patreon | dresdencodak
-  drivesaversdatarecovery:
+    homepage_url: https://www.tumblr.com/dresdencodak
+    display_name: Dresden Codak - Sen's Tumblr
+    summary: Comic creator Sen's Tumblr shares Dresden Codak and Dark Science comics, artwork, process notes, personal commentary, merchandise, and reblogs.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdresdencodak.tumblr.com&size=128
+  drivesavers:
     feed_url: https://drivesaversdatarecovery.com/feed/
-    homepage_url: https://drivesaversdatarecovery.com
-    display_name: DriveSavers Data Recovery Services
-    summary: The Worldwide Leader in Data Recovery
-  dwmkerr:
-    feed_url: https://dwmkerr.com/index.xml
+    homepage_url: https://drivesaversdatarecovery.com/blog/
+    display_name: DriveSavers Data Recovery
+    summary: DriveSavers publishes data-recovery guidance, storage and encryption articles, ransomware case studies, company news, and media coverage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdrivesaversdatarecovery.com&size=128
+  dave_kerr:
+    feed_url: https://dwmkerr.com/post/index.xml
     homepage_url: https://dwmkerr.com
-    display_name: dwmkerr.com
-    summary: Recent content on dwmkerr.com
+    display_name: Dave Kerr
+    summary: Dave Kerr's essays and tutorials on software engineering, shell skills, infrastructure, leadership, and AI-assisted development.
   dxomark:
     feed_url: https://www.dxomark.com/feed/
     homepage_url: https://www.dxomark.com
     display_name: DXOMARK
-    summary: The leading source of independent audio, display, battery and image quality measurements and ratings for smartphone, camera, lens, wireless speaker and laptop since 2008.
+    summary: DXOMARK publishes device tests, scores, and technical articles on smartphone cameras, displays, audio, batteries, camera sensors, lenses, speakers, and laptops.
+    profile_photo: https://www.dxomark.com/wp-content/uploads/2019/09/logo-o-transparent.png
   nyt_science:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
     homepage_url: https://www.nytimes.com/section/science
