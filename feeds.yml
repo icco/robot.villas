@@ -237,6 +237,256 @@ bots:
     display_name: Austin Kleon
     summary: A writer who draws. Author of Steal Like an Artist.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://austinkleon.com&size=128
+  plumshell:
+    feed_url: https://plumshell.com/feed/
+    homepage_url: https://plumshell.com
+    display_name: plumshell
+    summary: I make simple apps.
+  popsugar:
+    feed_url: https://www.popsugar.com/feed/
+    homepage_url: https://www.popsugar.com
+    display_name: POPSUGAR
+    summary: POPSUGAR delivers the biggest moments, the hottest trends, and the best tips in entertainment, fashion, beauty, fitness, and food and the ability to shop for it all in one place.
+  pyfound_blogspot:
+    feed_url: https://pyfound.blogspot.com/feeds/posts/default
+    homepage_url: https://pyfound.blogspot.com
+    display_name: Python Software Foundation News
+    summary: Updates from Python Software Foundation News.
+  qntm:
+    feed_url: https://qntm.org/rss.php
+    homepage_url: https://qntm.org
+    display_name: Things Of Interest
+    summary: a website
+  radiotimes:
+    feed_url: https://www.radiotimes.com/feed
+    homepage_url: https://www.radiotimes.com
+    display_name: Radio Times
+    summary: Updates from Radio Times.
+  raptitude:
+    feed_url: https://www.raptitude.com/feed/
+    homepage_url: https://www.raptitude.com
+    display_name: Raptitude.com
+    summary: Getting better at being human
+  rdegges:
+    feed_url: https://rdegges.com/feed.xml
+    homepage_url: https://rdegges.com
+    display_name: Randall Degges
+    summary: Updates from Randall Degges.
+  reason:
+    feed_url: https://reason.com/feed/
+    homepage_url: https://reason.com
+    display_name: Reason Magazine
+    summary: Free Minds and Free Markets
+  roblog:
+    feed_url: https://roblog.co.uk/feed.xml
+    homepage_url: https://roblog.co.uk
+    display_name: Roblog
+    summary: Rob Miller’s blog about creativity, sustainability, and uncertainty
+  rollership_tumblr:
+    feed_url: https://rollership.tumblr.com/rss
+    homepage_url: https://rollership.tumblr.com
+    display_name: The Utopian Encyclopedia
+    summary: Use the search function, (top left) it works! like a real encyclopedia.
+  seclists:
+    feed_url: https://seclists.org/rss/nmap-dev.rss
+    homepage_url: https://seclists.org/#nmap-dev
+    display_name: Nmap Development
+    summary: Unmoderated technical development forum for debating ideas, patches, and suggestions regarding proposed changes to Nmap and related projects. Subscribe to nmap-dev here.
+  seekingalpha:
+    feed_url: https://seekingalpha.com/feed.xml
+    homepage_url: https://seekingalpha.com
+    display_name: All Articles on Seeking Alpha
+    summary: © seekingalpha.com. Use of this feed is limited to personal, non-commercial use and is governed by Seeking Alpha's Terms of Use (https://about.seekingalpha.com/terms). Publishing this feed for public or commercial use and/or misrepresentation by a third party is prohibited.
+  seldo:
+    feed_url: https://seldo.com/rss.xml
+    homepage_url: https://seldo.com
+    display_name: Seldo.com
+    summary: Personal website of Laurie Voss
+  sfexaminer:
+    feed_url: https://www.sfexaminer.com/search/?f=rss&t=article&c=news&l=50&s=start_time&sd=desc
+    homepage_url: https://www.sfexaminer.com/search/?f=rss&t=article&c=news&l=50&s=start_time&sd=desc
+    display_name: www.sfexaminer.com - RSS Results in news of type article
+    summary: www.sfexaminer.com - RSS Results in section(s) news only for asset type(s) of article
+  shapeshed:
+    feed_url: https://shapeshed.com/index.xml
+    homepage_url: https://shapeshed.com
+    display_name: George Ornbo
+    summary: Recent content on George Ornbo
+  slrlounge:
+    feed_url: https://www.slrlounge.com/feed/
+    homepage_url: https://www.slrlounge.com
+    display_name: SLR Lounge
+    summary: Photography Tutorials and News
+  snopes:
+    feed_url: https://www.snopes.com/feed/
+    homepage_url: https://www.snopes.com
+    display_name: Snopes.com
+    summary: 'Snopes.com: The definitive fact-checking site and reference source for urban legends, folklore, myths, rumors, and misinformation. > all_snopes'
+  somafm:
+    feed_url: https://somafm.com/news/rss.xml
+    homepage_url: https://somafm.com/news
+    display_name: SomaFM News
+    summary: SomaFM News
+  spaceflightnow:
+    feed_url: https://spaceflightnow.com/feed/
+    homepage_url: https://spaceflightnow.com
+    display_name: Spaceflight Now
+    summary: The leading source for online space news
+  spoon_tamago:
+    feed_url: https://spoon-tamago.com/feed/
+    homepage_url: https://spoon-tamago.com
+    display_name: Spoon & Tamago
+    summary: japanese art, design and culture
+  staltz:
+    feed_url: https://staltz.com/feed.xml
+    homepage_url: https://staltz.com
+    display_name: André Staltz
+    summary: Updates from André Staltz.
+  stepsecurity:
+    feed_url: https://www.stepsecurity.io/blog/rss.xml
+    homepage_url: https://www.stepsecurity.io
+    display_name: Step Security Blog
+    summary: The latest from StepSecurity — practical guidance, product updates, and threat insights to help secure your CI/CD pipelines and stay ahead of supply chain attacks
+  stoneg_github:
+    feed_url: https://stoneg.github.io/feeds/all.atom.xml
+    homepage_url: https://stoneg.github.io
+    display_name: Writing
+    summary: Updates from Writing.
+  swizec:
+    feed_url: https://swizec.com/rss.xml
+    homepage_url: https://swizec.com
+    display_name: Swizec Teller
+    summary: A geek with a hat
+  taskandpurpose:
+    feed_url: https://taskandpurpose.com/feed/
+    homepage_url: https://taskandpurpose.com
+    display_name: Task & Purpose
+    summary: Task & Purpose provides military news, culture, and analysis by and for the military and veterans community.
+  thecreativeindependent:
+    feed_url: https://thecreativeindependent.com/feed.xml
+    homepage_url: https://thecreativeindependent.com
+    display_name: The Creative Independent
+    summary: Updates from The Creative Independent.
+  thegeekstuff:
+    feed_url: https://feeds.feedburner.com/TheGeekStuff
+    homepage_url: https://www.thegeekstuff.com
+    display_name: The Geek Stuff
+    summary: Guides, HowTos and Tips for Technology Geeks
+  thehustle_co:
+    feed_url: https://thehustle.co/originals/rss.xml
+    homepage_url: https://thehustle.co/originals
+    display_name: Hustle Originals
+    summary: The Hustle is a free 5-minute newsletter keeping innovators in the loop on the latest in business & tech. Read the original content from our Sunday edition.
+  thekitchn:
+    feed_url: https://www.thekitchn.com/main.rss
+    homepage_url: https://www.thekitchn.com
+    display_name: Kitchn | Inspiring cooks, nourishing homes
+    summary: Inspiring cooks, nourishing homes
+  themarshallproject:
+    feed_url: https://www.themarshallproject.org/rss/recent
+    homepage_url: https://www.themarshallproject.org
+    display_name: The Marshall Project
+    summary: The Marshall Project is a nonprofit, nonpartisan news organization covering America's criminal justice system.
+  thesartorialist:
+    feed_url: https://www.thesartorialist.com/feed/
+    homepage_url: https://www.thesartorialist.com
+    display_name: The Sartorialist
+    summary: Updates from The Sartorialist.
+  thestar:
+    feed_url: https://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
+    homepage_url: https://www.thestar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
+    display_name: 'www.thestar.com - RSS Results of type article with keyword(s) of #topstory'
+    summary: 'www.thestar.com - RSS Results only for asset type(s) of article with keyword(s) of #topstory'
+  thewitchofendor:
+    feed_url: https://thewitchofendor.com/feed/
+    homepage_url: https://thewitchofendor.com
+    display_name: The Witch of Endor
+    summary: System Poetics
+  tinysubversions:
+    feed_url: http://tinysubversions.com/feed.xml
+    homepage_url: http://tinysubversions.com
+    display_name: Tiny Subversions
+    summary: This feed will keep you up to date on all of Darius Kazemi's projects, writings, press, and shows.
+  tmz:
+    feed_url: https://www.tmz.com/rss.xml
+    homepage_url: https://www.tmz.com
+    display_name: TMZ.com
+    summary: Celebrity Gossip and Entertainment News, Covering Celebrity News and Hollywood Rumors. Get All The Latest Gossip at TMZ - Thirty Mile Zone.
+  tomtunguz:
+    feed_url: https://tomtunguz.com/index.xml
+    homepage_url: https://tomtunguz.com
+    display_name: Tomasz Tunguz
+    summary: Recent content on Tomasz Tunguz
+  tonsky_me:
+    feed_url: https://tonsky.me/atom.xml
+    homepage_url: https://tonsky.me
+    display_name: tonsky.me
+    summary: Updates from tonsky.me.
+  reactormag:
+    feed_url: https://reactormag.com/feed/
+    homepage_url: https://reactormag.com
+    display_name: Reactor
+    summary: Science fiction. Fantasy. The universe. And related subjects.
+  tumblr:
+    feed_url: https://dm-paul-weber.tumblr.com/rss
+    homepage_url: https://www.tumblr.com
+    display_name: DM Paul Weber
+    summary: 'Facebook Group: Facebook.com/groups/dmweber'
+  twistedsifter:
+    feed_url: https://twistedsifter.com/feed/
+    homepage_url: https://twistedsifter.com
+    display_name: TwistedSifter
+    summary: The best of the internet, sifted, and sorted.
+  akka:
+    feed_url: https://akka.io/blog/rss.xml
+    homepage_url: https://akka.io/blog
+    display_name: AKKA Blogs
+    summary: Updates from AKKA Blogs.
+  unschooled:
+    feed_url: https://unschooled.org/atom.xml
+    homepage_url: https://unschooled.org
+    display_name: Unschooled - Nicholas Bergson-Shilcock
+    summary: Updates from Unschooled - Nicholas Bergson-Shilcock.
+  untappedcities:
+    feed_url: https://www.untappedcities.com/video/rss/
+    homepage_url: https://www.untappedcities.com
+    display_name: Untapped New York
+    summary: Discover NYC's secrets and hidden gems online or in-person!
+  untested_sonnet:
+    feed_url: https://untested.sonnet.io/feed.xml
+    homepage_url: https://untested.sonnet.io
+    display_name: Untested · Rafał Pastuszak
+    summary: Updates from Untested · Rafał Pastuszak.
+  uptownalmanac:
+    feed_url: https://uptownalmanac.com/feed
+    homepage_url: https://uptownalmanac.com/blog_old
+    display_name: Uptown Almanac
+    summary: Feed of all the lame entries for Uptown Almanac
+  cisa_gov:
+    feed_url: https://www.cisa.gov/rss.xml
+    homepage_url: https://www.cisa.gov
+    display_name: Cybersecurity and Infrastructure Security Agency CISA
+    summary: Updates from Cybersecurity and Infrastructure Security Agency CISA.
+  varnull_adityamukerjee:
+    feed_url: https://varnull.adityamukerjee.net/feed/
+    homepage_url: https://varnull.adityamukerjee.net
+    display_name: /var/blog
+    summary: blogging data from aditya mukerjee
+  washingtoncitypaper:
+    feed_url: https://washingtoncitypaper.com/feed/?partner-feed=public
+    homepage_url: https://washingtoncitypaper.com
+    display_name: Washington City Paper
+    summary: Updates from Washington City Paper.
+  webdesignerdepot:
+    feed_url: https://webdesignerdepot.com/feed/
+    homepage_url: https://webdesignerdepot.com
+    display_name: Web Designer Depot
+    summary: Web Design Blog
+  whatever_scalzi:
+    feed_url: https://whatever.scalzi.com/feed/
+    homepage_url: https://whatever.scalzi.com
+    display_name: Whatever
+    summary: DIGITAL CONTENT FROM ANALOG PEOPLE
   matrixsynth:
     feed_url: https://www.matrixsynth.com/feeds/posts/default?alt=rss
     homepage_url: https://www.matrixsynth.com
