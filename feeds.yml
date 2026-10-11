@@ -960,6 +960,256 @@ bots:
     display_name: Maggie Appleton
     summary: Design, anthropology, programming, and illustrated essays about tools for thought.
     profile_photo: https://maggieappleton.com/images/favicon/android-chrome-512x512.png
+  jakearchibald:
+    feed_url: https://jakearchibald.com/posts.rss
+    homepage_url: https://jakearchibald.com
+    display_name: Jake Archibald's blog
+    summary: Updates from Jake Archibald's blog.
+  jakelow:
+    feed_url: https://www.jakelow.com/blog/feed.atom
+    homepage_url: https://www.jakelow.com/blog
+    display_name: Jake Low's blog
+    summary: Updates from Jake Low's blog.
+  jakonrath_blogspot:
+    feed_url: https://jakonrath.blogspot.com/feeds/posts/default
+    homepage_url: https://jakonrath.blogspot.com
+    display_name: A Newbie's Guide to Publishing
+    summary: Updates from A Newbie's Guide to Publishing.
+  james_iry_blogspot:
+    feed_url: https://james-iry.blogspot.com/feeds/posts/default
+    homepage_url: https://james-iry.blogspot.com
+    display_name: One Div Zero
+    summary: Updates from One Div Zero.
+  jamesclear:
+    feed_url: https://jamesclear.com/feed
+    homepage_url: https://jamesclear.com
+    display_name: James Clear
+    summary: Ideas that never expire.
+  jameshfisher:
+    feed_url: https://jameshfisher.com/feed.xml
+    homepage_url: https://jameshfisher.com
+    display_name: Jim Fisher’s blog
+    summary: Updates from Jim Fisher’s blog.
+  jamesonnathanjones:
+    feed_url: https://www.jamesonnathanjones.com/blog.rss
+    homepage_url: https://www.jamesonnathanjones.com
+    display_name: Newsletter
+    summary: Join over 6,000 artists who already receive my weekly newsletter every Saturday as well as updates on upcoming videos, music, and courses. Short, actionable pieces of experience to improve your compositions/productions; no algorithms - straight to your inbox.
+  jamesporter_me:
+    feed_url: https://www.jamesporter.me/index.xml
+    homepage_url: https://jamesporter.me
+    display_name: James Porter
+    summary: Updates from James Porter.
+  jameswhittaker:
+    feed_url: http://jameswhittaker.com/feed.xml
+    homepage_url: http://jameswhittaker.com
+    display_name: James Whittaker
+    summary: Software engineer & Designer.
+  jamiepalatnik:
+    feed_url: https://jamiepalatnik.com/feed/
+    homepage_url: https://jamiepalatnik.com
+    display_name: Jamie Palatnik
+    summary: Updates from Jamie Palatnik.
+  jamierubin:
+    feed_url: http://feeds.feedburner.com/JamieToddRubin
+    homepage_url: https://jamierubin.net
+    display_name: Jamie Todd Rubin
+    summary: Writer, Coder, Avid Reader
+  jankoatwarpspeed:
+    feed_url: https://www.jankoatwarpspeed.com/feed/
+    homepage_url: https://www.jankoatwarpspeed.com
+    display_name: Janko Jovanovic
+    summary: Design Management + Coaching
+  japan_guide:
+    feed_url: https://www.japan-guide.com/rss/
+    homepage_url: http://www.japan-guide.com
+    display_name: Japan Travel Updates by japan-guide.com
+    summary: Delivering comprehensive, up to date information on travel in Japan, first-hand from Japan.
+  japantrends:
+    feed_url: http://feeds.feedburner.com/japantrends/feed
+    homepage_url: https://www.japantrends.com
+    display_name: Japan Trends
+    summary: News, Lifestyle, Fashion, Technology, and Product Innovation in Tokyo and Japan
+  jasimab:
+    feed_url: https://jasimab.com/atom.xml
+    homepage_url: https://jasimab.com
+    display_name: Jasim A Basheer
+    summary: Updates from Jasim A Basheer.
+  jasmi_news:
+    feed_url: https://jasmi.news/feed
+    homepage_url: https://jasmi.news
+    display_name: '@jasmine’s substack'
+    summary: "an anthropology of disruption \U0001F4CD essays on AI and Silicon Valley culture"
+  jasonheppler:
+    feed_url: https://jasonheppler.org/feed.xml
+    homepage_url: https://jasonheppler.org
+    display_name: Jason A. Heppler
+    summary: Recent content on Jason A. Heppler
+  jasonlefkowitz:
+    feed_url: https://jasonlefkowitz.net/feed/atom/
+    homepage_url: https://jasonlefkowitz.net
+    display_name: Just Well Mixed
+    summary: Updates from Just Well Mixed.
+  jasonrudolph:
+    feed_url: http://feeds.feedburner.com/jasonrudolph
+    homepage_url: https://jasonrudolph.com
+    display_name: Jason Rudolph
+    summary: Updates from Jason Rudolph.
+  jasonseifer:
+    feed_url: https://www.jasonseifer.com/feed/
+    homepage_url: https://www.jasonseifer.com
+    display_name: Jason Info
+    summary: Tech Tips By Jason
+  jasonthorsness:
+    feed_url: https://www.jasonthorsness.com/rss.xml?v=0
+    homepage_url: https://www.jasonthorsness.com
+    display_name: Jason Thorsness Blog
+    summary: Jason Thorsness Blog
+  javaadvent:
+    feed_url: http://feeds.feedburner.com/JavaAdventCalendar
+    homepage_url: https://www.javaadvent.com
+    display_name: JVM Advent
+    summary: The JVM Programming Advent Calendar
+  javacodegeeks:
+    feed_url: https://www.javacodegeeks.com/feed
+    homepage_url: https://www.javacodegeeks.com
+    display_name: Java Code Geeks
+    summary: Java Developers Resource Center
+  javarevisited_blogspot:
+    feed_url: http://feeds.feedburner.com/Javarevisited
+    homepage_url: http://javarevisited.blogspot.com
+    display_name: Javarevisited
+    summary: Updates from Javarevisited.
+  javarevisited_substack:
+    feed_url: https://javarevisited.substack.com/feed
+    homepage_url: https://javarevisited.substack.com
+    display_name: Javarevisited by Javin Paul
+    summary: Master AI, Low-Latency Java, HFT, FIX Protocol, and System Design to crack elite banking interviews. Written by Javin Paul for ambitious backend engineers.
+  jayacunzo:
+    feed_url: https://jayacunzo.com/blog?format=rss
+    homepage_url: https://jayacunzo.com/blog
+    display_name: 'Become a Stronger Storyteller-Playing Favorites: The Newsletter of Jay Acunzo - Jay Acunzo'
+    summary: Jay Acunzo is an author, speaker, and show host helping experts stand out with substance, not stunts. In a world obsessed with reach, resonance is your advantage.
+  jcmorrow:
+    feed_url: https://jcmorrow.com/rss.xml
+    homepage_url: https://jcmorrow.com
+    display_name: Josh Morrow
+    summary: Writing and projects by Josh Morrow
+  jcrew_tumblr:
+    feed_url: https://jcrew.tumblr.com/rss
+    homepage_url: https://jcrew.tumblr.com
+    display_name: J.Crew
+    summary: Updates from J.Crew.
+  jackdanger:
+    feed_url: https://jackdanger.com/index.xml
+    homepage_url: https://jackdanger.com
+    display_name: Jack Danger
+    summary: Recent content on Jack Danger
+  jeanetteshealthyliving:
+    feed_url: https://jeanetteshealthyliving.com/feed/
+    homepage_url: https://jeanetteshealthyliving.com
+    display_name: Jeanette's Healthy Living
+    summary: Where delicious and healthy come together
+  jeffsnerdyprojects_blogspot:
+    feed_url: https://jeffsnerdyprojects.blogspot.com/feeds/posts/default
+    homepage_url: https://jeffsnerdyprojects.blogspot.com
+    display_name: Jeff's Nerdy Projects
+    summary: Updates from Jeff's Nerdy Projects.
+  jefftk:
+    feed_url: https://www.jefftk.com/news.rss
+    homepage_url: https://www.jefftk.com/p
+    display_name: Jeff Kaufman's Writing
+    summary: Jeff Kaufman's Writing
+  jeffwilcox_blog:
+    feed_url: https://jeffwilcox.blog/rss
+    homepage_url: https://jeffwilcox.blog
+    display_name: Personal Site of Jeff Wilcox
+    summary: RSS feed for the personal blog of Jeff Wilcox, Principal Engineer, Microsoft
+  jeffwofford:
+    feed_url: https://www.jeffwofford.com/wp/?feed=rss2
+    homepage_url: https://www.jeffwofford.com/wp
+    display_name: Holy Ghost Stories
+    summary: Faith, technology, and everything in between.
+  jenevoldsen:
+    feed_url: https://jenevoldsen.com/index.xml
+    homepage_url: https://jenevoldsen.com
+    display_name: Johannes Enevoldsen
+    summary: This is Johannes Enevoldsen's personal page
+  jenkemmag:
+    feed_url: https://www.jenkemmag.com/home/feed/
+    homepage_url: https://www.jenkemmag.com/home
+    display_name: Jenkem Magazine
+    summary: Skateboarding & Shenanigans
+  jens_mooseyard:
+    feed_url: https://jens.mooseyard.com/index.xml
+    homepage_url: https://jens.mooseyard.com
+    display_name: Thought Palace
+    summary: Recent content on Thought Palace
+  jenschuetz:
+    feed_url: https://jenschuetz.com/feed.xml
+    homepage_url: https://jenschuetz.com
+    display_name: Jen Schuetz
+    summary: Updates from Jen Schuetz.
+  jepsen:
+    feed_url: https://jepsen.io/blog.rss
+    homepage_url: https://jepsen.io/blog
+    display_name: Jepsen
+    summary: Recent news from Jepsen, the distributed systems safety consultancy
+  jeremyeder:
+    feed_url: https://jeremyeder.com/feed/
+    homepage_url: https://jeremyeder.com
+    display_name: Jeremy Eder's Blog
+    summary: Hopefully useful. Probably not. Perpetual Optimist.
+  jerrygamblin:
+    feed_url: https://jerrygamblin.com/feed/
+    homepage_url: https://jerrygamblin.com
+    display_name: JerryGamblin.com
+    summary: Curiosity in Practice
+  jessitron:
+    feed_url: https://jessitron.com/feed/
+    homepage_url: https://jessitron.com
+    display_name: Jessitron
+    summary: symmathecist, in the medium of code
+  jetpack:
+    feed_url: https://jetpack.com/feed/
+    homepage_url: https://jetpack.com
+    display_name: Jetpack
+    summary: The ultimate WordPress plugin for security, backups, site performance, and growth tools
+  jfire:
+    feed_url: https://jfire.io/atom.xml
+    homepage_url: https://jfire.io
+    display_name: John Firebaugh
+    summary: Updates from John Firebaugh.
+  jillaikoyee:
+    feed_url: https://www.jillaikoyee.com/news?format=rss
+    homepage_url: https://www.jillaikoyee.com/news
+    display_name: News - Jill Aiko Yee
+    summary: Blog and Newsletter Archive for Jill Aiko Yee
+  jimhoskins:
+    feed_url: https://jimhoskins.com/atom.xml
+    homepage_url: https://jimhoskins.com
+    display_name: Jim Hoskins
+    summary: Updates from Jim Hoskins.
+  jimwillis:
+    feed_url: https://www.jimwillis.org/feed/
+    homepage_url: https://www.jimwillis.org
+    display_name: Jim Willis
+    summary: Updates from Jim Willis.
+  jitbit:
+    feed_url: https://www.jitbit.com/news/rss/
+    homepage_url: https://www.jitbit.com
+    display_name: Founder's blog
+    summary: Jitbit Sofwtare blog
+  jkkramer_wordpress:
+    feed_url: https://jkkramer.wordpress.com/feed/
+    homepage_url: https://jkkramer.wordpress.com
+    display_name: Justin Kramer
+    summary: Updates from Justin Kramer.
+  mili_dev:
+    feed_url: https://mili.dev/rss.xml
+    homepage_url: https://mili.dev
+    display_name: John Milinovich
+    summary: Writing on AI, product craft, and building things
   molly_white:
     feed_url: https://www.citationneeded.news/rss/
     homepage_url: https://www.citationneeded.news
