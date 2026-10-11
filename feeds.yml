@@ -8867,6 +8867,282 @@ bots:
     display_name: Scientific American
     summary: Awe-inspiring advances in science and technology from Scientific American.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.scientificamerican.com&size=128
+  folyo_blog:
+    feed_url: https://www.folyo.me/rss/
+    homepage_url: https://www.folyo.me/blog
+    display_name: Folyo Blog
+    summary: Folyo's advice for web design agencies on finding clients, website redesign RFPs, project budgets, pricing, and winning work.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.folyo.me%2Fblog&size=128
+  frank_m_taylor:
+    feed_url: https://blog.frankmtaylor.com/feed/
+    homepage_url: https://blog.frankmtaylor.com
+    display_name: Frank M Taylor
+    summary: Frank M Taylor writes about frontend development, HTML, CSS, JavaScript, content management, linguistics, fiction, and personal life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.frankmtaylor.com&size=128
+  freenode_news:
+    feed_url: https://freenode.net/feed.xml
+    homepage_url: https://freenode.net
+    display_name: freenode news
+    summary: freenode news reports on open source software, standards, security, infrastructure, programming languages, AI, and cryptocurrency development. This is the current news publication, not the historical IRC staff blog.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ffreenode.net&size=128
+  security_dma_hacking:
+    feed_url: https://blog.frizk.net/feeds/posts/default
+    homepage_url: https://blog.frizk.net
+    display_name: Security | DMA | Hacking
+    summary: 'Archived Security | DMA | Hacking posts on PCILeech, memory analysis, DMA attacks, firmware, and hardware security. Latest feed post: October 2021.'
+  import_chaos:
+    feed_url: https://blog.gaborkoos.com/feed.xml
+    homepage_url: https://blog.gaborkoos.com
+    display_name: import chaos
+    summary: Gabor Koos's software engineering blog on Go, JavaScript, distributed systems, databases, networking, and developer tools, with older matched-betting mathematics posts.
+    profile_photo: https://opengraph.b-cdn.net/production/images/74740c4e-d40d-49be-83fb-7170084dbda1.png?token=3Pxj4Ccc7Z93zXgN6-HhJM8U3lpcnqtTs8xNIPoUzF4&height=614&width=620&expires=33290472379
+  guillermo_esteves:
+    feed_url: https://www.gesteves.com/feed.xml
+    homepage_url: https://www.gesteves.com/blog/
+    display_name: Guillermo Esteves
+    summary: 'Guillermo Esteves''s archived essays and links on web development, photography, technology, and personal interests. Latest feed entry: July 2023, announcing his separate triathlon blog.'
+    profile_photo: https://github.com/gesteves.png?size=200
+  bootstrap_blog:
+    feed_url: https://blog.getbootstrap.com/feed.xml
+    homepage_url: https://blog.getbootstrap.com
+    display_name: Bootstrap Blog
+    summary: Official Bootstrap releases, project announcements, tooling, and community news.
+    profile_photo: https://blog.getbootstrap.com/assets/img/favicons/apple-touch-icon.png
+  postman_blog:
+    feed_url: https://blog.postman.com/feed/
+    homepage_url: https://blog.postman.com
+    display_name: Postman Blog
+    summary: Official Postman news, API development and testing guidance, platform updates, integrations, and developer stories.
+    profile_photo: https://blog.postman.com/wp-content/uploads/2021/11/cropped-favicon-180x180.png
+  ghost_changelog:
+    feed_url: https://ghost.org/changelog/rss/
+    homepage_url: https://ghost.org/changelog/
+    display_name: Ghost Changelog
+    summary: Official Ghost product announcements, releases, new features, and improvements from its changelog.
+    profile_photo: https://storage.ghost.io/c/11/12/11129d96-48f2-4637-9c25-b077458f01e2/content/images/size/w256h256/2023/06/ghost-orb-orange-squircle-04.png
+  gingerlime:
+    feed_url: https://www.gingerlime.com/feed/
+    homepage_url: https://www.gingerlime.com
+    display_name: Gingerlime
+    summary: Yoav Aner's Gingerlime blog on software, privacy, security, self-hosting, small businesses, and personal projects.
+    profile_photo: https://www.gingerlime.com/assets/cropped-gingerlime-favicon-512-180x180.png
+  butlers_log:
+    feed_url: https://blog.gitbutler.com/rss
+    homepage_url: https://blog.gitbutler.com
+    display_name: Butler's Log
+    summary: GitButler's Butler's Log covers Git, version control, product releases, developer workflows, and software engineering.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.gitbutler.com&size=128
+  gitguardian_blog:
+    feed_url: https://blog.gitguardian.com/rss/
+    homepage_url: https://blog.gitguardian.com
+    display_name: GitGuardian Blog
+    summary: GitGuardian's blog on secrets security, non-human identities, supply-chain attacks, DevSecOps, and AI agent security.
+    profile_photo: https://storage.ghost.io/c/42/5d/425d266f-cf99-406e-9436-597a19bed011/content/images/size/w256h256/2022/06/Frame-558-1.png
+  greg_brockman:
+    feed_url: https://blog.gregbrockman.com/feed
+    homepage_url: https://blog.gregbrockman.com
+    display_name: Greg Brockman
+    summary: Greg Brockman's essays on AI, machine learning, cybersecurity, OpenAI, and his work in technology.
+  blargh:
+    feed_url: https://blog.habets.se/feed.xml
+    homepage_url: https://blog.habets.se
+    display_name: Blargh
+    summary: Thomas Habets's Blargh blog on programming, Unix, networking, software-defined radio, electronics, and technical experiments.
+    profile_photo: https://blog.habets.se/static/apple-touch-icon.png
+  bread_and_circuits:
+    feed_url: https://blog.humphd.org/rss/
+    homepage_url: https://blog.humphd.org
+    display_name: Bread & Circuits
+    summary: 'David Humphrey''s Bread & Circuits blog on open source, programming, teaching, WebAssembly, and AI-assisted tools. Latest feed post: June 2025.'
+  machine_shop:
+    feed_url: https://blog.hypem.com/feed/
+    homepage_url: https://blog.hypem.com
+    display_name: Hype Machine Blog
+    summary: 'Archived Hype Machine staff posts on music discovery, annual Zeitgeist lists, crowdfunding, and service updates. Latest feed post: December 2021.'
+    profile_photo: https://static.hypem.com/favicon.png
+  view_from_initialized:
+    feed_url: https://blog.initialized.com/feed/
+    homepage_url: https://blog.initialized.com
+    display_name: View from Initialized
+    summary: Initialized Capital's perspectives on startups, venture investing, technology, and its portfolio companies.
+    profile_photo: https://i0.wp.com/blog.initialized.com/wp-content/uploads/2022/11/cropped-android-chrome-512x512-1.png?fit=180%2C180&ssl=1
+  intuit_blog:
+    feed_url: https://www.intuit.com/blog/feed/
+    homepage_url: https://www.intuit.com/blog
+    display_name: Intuit Blog
+    summary: Official Intuit stories on financial technology, small businesses, engineering, education, social impact, and company initiatives.
+    profile_photo: https://www.intuit.com/blog/wp-content/uploads/2026/09/cropped-Intuit_FavIcon_192x192-1.png?w=180
+  the_invisible_things_blog:
+    feed_url: https://blog.invisiblethings.org/feed.xml
+    homepage_url: https://blog.invisiblethings.org
+    display_name: The Invisible Things Blog
+    summary: Joanna Rutkowska's archived security research and Qubes OS blog, including Wildland updates. A February 2026 post announces her separate Traces of Humanity blog.
+  irccloud_blog:
+    feed_url: https://blog.irccloud.com/feed.xml
+    homepage_url: https://blog.irccloud.com
+    display_name: IRCCloud Blog
+    summary: 'Archived IRCCloud product announcements, IRC features, pricing changes, security notices, and incident reports. Latest feed post: December 2022.'
+    profile_photo: https://blog.irccloud.com/favicon.png
+  kris_jenkins_blog:
+    feed_url: https://blog.jenkster.com/rss.xml
+    homepage_url: https://blog.jenkster.com
+    display_name: Kris Jenkins' Blog
+    summary: Kris Jenkins's essays on software development, functional programming, developer tools, databases, and AI-assisted coding.
+    profile_photo: https://blog.jenkster.com/apple-touch-icon.png
+  jim_nielsens_blog:
+    feed_url: https://blog.jim-nielsen.com/feed.xml
+    homepage_url: https://blog.jim-nielsen.com
+    display_name: Jim Nielsen’s Blog
+    summary: Jim Nielsen writes about web development, design, interfaces, app icons, technology, and making things for the web.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.jim-nielsen.com&size=128
+  mea_vita_carpe_diem:
+    feed_url: http://feeds.feedburner.com/MeaVitamyLife
+    homepage_url: http://blog.joemoreno.com
+    display_name: 'Mea Vita: Carpe Diem'
+    summary: 'Joe Moreno''s Mea Vita: Carpe Diem blog on Apple, technology, software, business, military history, and personal observations.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fblog.joemoreno.com&size=128
+  mastodon_blog:
+    feed_url: https://blog.joinmastodon.org/index.xml
+    homepage_url: https://blog.joinmastodon.org
+    display_name: Mastodon Blog
+    summary: Official Mastodon project news, releases, development updates, governance, community stories, and merchandise announcements.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.joinmastodon.org&size=128
+  jon_udell:
+    feed_url: https://blog.jonudell.net/feed/
+    homepage_url: https://blog.jonudell.net
+    display_name: Jon Udell
+    summary: Jon Udell's writing on software, AI-assisted development, the web, collaboration, technology, and civic life.
+    profile_photo: https://i0.wp.com/blog.jonudell.net/wp-content/uploads/2024/07/gravatar-jon.png?fit=180%2C180&ssl=1
+  flavio_copes:
+    feed_url: https://flaviocopes.com/rss.xml
+    homepage_url: https://flaviocopes.com
+    display_name: Flavio Copes
+    summary: Flavio Copes's practical software-development tutorials, developer tools, AI-assisted coding, product projects, and independent software business advice.
+    profile_photo: https://flaviocopes.com/img/apple-touch-icon.png
+  java_sql_and_jooq:
+    feed_url: https://blog.jooq.org/feed/
+    homepage_url: https://blog.jooq.org
+    display_name: Java, SQL and jOOQ.
+    summary: Java, SQL and jOOQ tutorials, database techniques, programming practices, and jOOQ releases from Lukas Eder and Data Geekery.
+    profile_photo: https://i0.wp.com/blog.jooq.org/wp-content/uploads/2021/08/jooq-logo-white-750x750-padded.png?fit=180%2C180&ssl=1
+  jesse_li:
+    feed_url: https://blog.jse.li/index.xml
+    homepage_url: https://blog.jse.li
+    display_name: Jesse Li
+    summary: Jesse Li's blog on programming, web security, reverse engineering, technical experiments, and personal projects.
+    profile_photo: https://blog.jse.li/favicon.png
+  jupyter_blog:
+    feed_url: https://blog.jupyter.org/feeds/all.atom.xml
+    homepage_url: https://blog.jupyter.org
+    display_name: Jupyter Blog
+    summary: Official Project Jupyter news, releases, community stories, events, and technical work across the Jupyter ecosystem.
+    profile_photo: https://blog.jupyter.org/theme/img/apple-touch-icon.png
+  kapeli_blog:
+    feed_url: https://blog.kapeli.com/atom.xml
+    homepage_url: https://blog.kapeli.com
+    display_name: Kapeli Blog
+    summary: Kapeli's official Dash news, releases, platform updates, and product announcements.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.kapeli.com&size=128
+  paul_kedrosky:
+    feed_url: https://blog.kedrosky.com/feed
+    homepage_url: https://blog.kedrosky.com
+    display_name: Paul Kedrosky
+    summary: 'Paul Kedrosky''s archived essays on technology companies, business growth, innovation, teams, and Raspberry Pi experiments. Latest feed post: April 2015.'
+  kens_blog:
+    feed_url: https://blog.kenperlin.com/?feed=rss2
+    homepage_url: https://blog.kenperlin.com
+    display_name: Ken's Blog
+    summary: Ken Perlin's personal essays and observations on programming, creativity, virtual worlds, society, and everyday life.
+  conrad_parker:
+    feed_url: http://blog.kfish.org/feeds/posts/default
+    homepage_url: http://blog.kfish.org
+    display_name: Conrad Parker
+    summary: 'Conrad Parker''s archived blog on free software, Haskell, C, multimedia, streaming, Git, and music. Latest feed post: September 2011.'
+  khan_academy_blog:
+    feed_url: https://blog.khanacademy.org/feed/
+    homepage_url: https://blog.khanacademy.org
+    display_name: Khan Academy Blog
+    summary: Official Khan Academy news, learning resources, classroom guidance, education research, product updates, and engineering.
+    profile_photo: https://blog.khanacademy.org/wp-content/uploads/2026/07/KABlog_favicon-2.png
+  kira_talent_admissions_resources:
+    feed_url: https://blog.kiratalent.com/feed/
+    homepage_url: https://blog.kiratalent.com
+    display_name: Kira Talent Admissions Resources
+    summary: Kira Talent's higher-education admissions resources, assessment guidance, case studies, and product news.
+    profile_photo: https://blog.kiratalent.com/wp-content/uploads/2020/07/kira-favicon-new.png
+  kraken_blog:
+    feed_url: https://blog.kraken.com/feed
+    homepage_url: https://blog.kraken.com
+    display_name: Kraken Blog
+    summary: Official Kraken cryptocurrency exchange news, asset listings, trading products, promotions, security, and educational articles.
+    profile_photo: https://i0.wp.com/blog.kraken.com/wp-content/uploads/2023/06/cropped-favicon-gradient.png?fit=180%2C180&ssl=1
+  kraken_io_blog:
+    feed_url: https://blog.kraken.io/feed/
+    homepage_url: https://blog.kraken.io
+    display_name: Kraken.io Blog
+    summary: 'Kraken.io''s archived image optimization, web performance, compression technology, and service updates. Latest feed post: September 2024.'
+  blog_kroy_io:
+    feed_url: https://blog.kroy.io/feed/
+    homepage_url: https://blog.kroy.io
+    display_name: blog.kroy.io
+    summary: 'Archived blog.kroy.io posts on homelabs, networking, VyOS, virtualization, retro computers, and games. Latest feed post: June 2021.'
+    profile_photo: https://blog.kroy.io/wp-content/uploads/2020/04/cropped-android-chrome-512x512-3-180x180.png
+  kyle_meyer:
+    feed_url: https://blog.kylemeyer.com/rss
+    homepage_url: https://blog.kylemeyer.com
+    display_name: Kyle Meyer
+    summary: 'Kyle Meyer''s archived photo posts, travel, design, and art quotations. Latest feed post: November 2014.'
+  philip_roberts:
+    feed_url: https://latentflip.com/essays.xml
+    homepage_url: https://latentflip.com
+    display_name: Philip Roberts
+    summary: 'Philip Roberts''s archived essays on programming, startups, leadership, mental health, travel, and personal life. Latest feed post: November 2018.'
+  dr_leif_singer:
+    feed_url: https://leif.me/rss/
+    homepage_url: https://leif.me
+    display_name: Dr. Leif Singer
+    summary: Leif Singer's research and essays on software teams, developer collaboration, human factors, AI-assisted coding, and Paper Jams discussions.
+    profile_photo: https://storage.ghost.io/c/9f/ec/9fec95d9-10de-48e5-860f-be9a4998327e/content/images/size/w256h256/format/jpeg/2025/01/leif-singer-500.jpg
+  first_principles:
+    feed_url: https://blog.lessonslearned.org/rss/
+    homepage_url: https://blog.lessonslearned.org
+    display_name: First Principles
+    summary: 'Kenneth White''s archived First Principles blog on security, cryptography, malware, and development tools. Latest feed post: January 2020.'
+  mitchell_baker:
+    feed_url: https://mitchellbaker.net/feed/
+    homepage_url: https://mitchellbaker.net
+    display_name: Mitchell Baker
+    summary: 'Mitchell Baker''s writing on Mozilla, open source, the internet, AI, and building a better world through technology. Latest feed post: April 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmitchellbaker.net&size=128
+  logrocket_blog:
+    feed_url: https://blog.logrocket.com/feed/
+    homepage_url: https://blog.logrocket.com
+    display_name: LogRocket Blog
+    summary: LogRocket tutorials and perspectives on frontend development, UI and UX, product management, software tools, and AI.
+    profile_photo: https://blog.logrocket.com/wp-content/uploads/2019/06/cropped-cropped-favicon-196x196-300x300.png
+  margaret_leibovic:
+    feed_url: https://blog.margaretleibovic.com/feed.xml
+    homepage_url: https://blog.margaretleibovic.com
+    display_name: Margaret Leibovic
+    summary: 'Margaret Leibovic''s archived blog on Firefox for Android, open-web development, and engineering management. Latest feed post: July 2016, announcing her departure from Mozilla.'
+    profile_photo: https://github.com/leibovic.png?size=200
+  max_rudbergs_blog:
+    feed_url: https://blog.maxrudberg.com/rss/
+    homepage_url: https://blog.maxrudberg.com
+    display_name: Max Rudberg's blog
+    summary: Max Rudberg writes about interface design, app icons, design systems, creative tools, and making distinctive apps.
+    profile_photo: https://storage.ghost.io/c/35/e0/35e07802-a79f-46dd-9d48-1a454bb2ff5c/content/images/size/w256h256/2025/10/publication.png
+  data_gravitas:
+    feed_url: https://datagravitas.com/feed/
+    homepage_url: https://datagravitas.com
+    display_name: Data Gravitas
+    summary: 'Dave McCrory''s archived Data Gravitas blog on data gravity, cloud computing, networks, platforms, and technology strategy. Latest feed post: August 2019.'
+  mike_bowler:
+    feed_url: https://blog.mikebowler.ca/atom.xml
+    homepage_url: https://blog.mikebowler.ca
+    display_name: Mike Bowler
+    summary: Mike Bowler writes about agile practices, software development, team dynamics, flow, psychology, and neuroscience.
+    profile_photo: https://files.mikebowler.ca/apple-touch-icon.png
   lifehacker:
     feed_url: https://lifehacker.com/feed/rss
     homepage_url: https://lifehacker.com
