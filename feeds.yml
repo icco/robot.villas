@@ -9161,256 +9161,298 @@ bots:
     display_name: WSJ.com — Markets
     summary: Wall Street Journal markets and finance headlines.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.wsj.com&size=128
-  blog_mikemccandless:
+  changing_bits:
     feed_url: https://blog.mikemccandless.com/feeds/posts/default
     homepage_url: https://blog.mikemccandless.com
     display_name: Changing Bits
-    summary: Updates from Changing Bits.
+    summary: Michael McCandless's archived writing on Apache Lucene, search indexing, and software performance.
   mythic_beasts:
     feed_url: https://www.mythic-beasts.com/blog/feed/
     homepage_url: https://www.mythic-beasts.com/blog
     display_name: Mythic Beasts
-    summary: Updates from Mythic Beasts.
+    summary: Mythic Beasts hosting news and engineering posts on servers, networking, infrastructure, and Raspberry Pi hosting.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mythic-beasts.com%2Fblog&size=128
   ncrp:
     feed_url: https://ncrp.org/feed/
     homepage_url: https://ncrp.org
-    display_name: NCRP
-    summary: Updates from NCRP.
-  netguru:
+    display_name: National Committee for Responsive Philanthropy
+    summary: News and commentary from the National Committee for Responsive Philanthropy on philanthropic accountability, equity, and social justice.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fncrp.org&size=128
+  netguru_blog:
     feed_url: https://www.netguru.com/blog/rss.xml
     homepage_url: https://www.netguru.com/blog
-    display_name: netguru.com
-    summary: Stay ahead with Netguru Blog — tutorials, case studies, and strategies on Agile, product growth, startup innovation, and remote collaboration.
-  blog_netlab_360:
+    display_name: Netguru Blog
+    summary: Netguru's articles on software development, digital product design, AI, and technology businesses.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.netguru.com%2Fblog&size=128
+  360_netlab_blog:
     feed_url: https://blog.netlab.360.com/rss/
     homepage_url: https://blog.netlab.360.com
-    display_name: 360 Netlab Blog - Network Security Research Lab at 360
-    summary: Network Security Research Lab at 360
-  newrelic:
-    feed_url: https://newrelic.com/rss.xml
+    display_name: 360 Netlab Blog
+    summary: Network-security research and threat-intelligence reports from 360 Netlab, including malware, botnets, and AI security.
+    profile_photo: https://blog.netlab.360.com/content/images/size/w256h256/2019/02/netlab_xs-2.png
+  new_relic_blog:
+    feed_url: https://newrelic.com/blog/feed.rss
     homepage_url: https://newrelic.com/blog
-    display_name: Observatory | The New Relic Blog
-    summary: Observatory | The New Relic Blog RSS Feed
-  blog_nyaruka:
+    display_name: New Relic Blog
+    summary: New Relic's blog on observability, application performance, engineering, AI monitoring, and product news.
+    profile_photo: https://newrelic.com/themes/custom/erno/assets/images/metadata/apple-touch-icon.png
+  the_nyaruka_blog:
     feed_url: https://blog.nyaruka.com/posts.atom
     homepage_url: https://blog.nyaruka.com
     display_name: The Nyaruka Blog
-    summary: Updates from The Nyaruka Blog.
-  blog_oddbit:
+    summary: Archived Nyaruka posts on software in East Africa, TextIt, RapidPro, and SMS-based public-health projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.nyaruka.com&size=128
+  the_odd_bit:
     feed_url: https://blog.oddbit.com/rss.xml
     homepage_url: https://blog.oddbit.com
-    display_name: blog.oddbit.com
-    summary: Recent content on blog.oddbit.com
-  blog_penelopetrunk:
-    feed_url: http://feeds.feedburner.com/BrazenCareerist
+    display_name: The odd bit
+    summary: 'The odd bit: Lars Kellogg-Stedman''s notes on Linux, networking, containers, programming, and personal technical projects.'
+  penelope_trunk_careers_blog:
+    feed_url: https://feeds.feedburner.com/BrazenCareerist
     homepage_url: https://blog.penelopetrunk.com
     display_name: Penelope Trunk Careers Blog
-    summary: Advice at the intersection of work and life
-  blog_phusion_nl:
+    summary: Penelope Trunk's writing on careers, education, parenting, relationships, and life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.penelopetrunk.com&size=128
+  phusion_blog:
     feed_url: https://blog.phusion.nl/rss/
     homepage_url: https://blog.phusion.nl
     display_name: Phusion Blog
-    summary: Pushing the state of art in web apps, microservices and devops.
-  blog_poormansmath:
+    summary: Phusion Passenger release announcements, security updates, and writing on web application deployment.
+    profile_photo: https://github.com/phusion.png?size=200
+  the_poor_mans_math_blog:
     feed_url: https://blog.poormansmath.net/feed.xml
-    homepage_url: http://blog.poormansmath.net
+    homepage_url: https://blog.poormansmath.net
     display_name: The poor man's math blog
-    summary: By Stefano Maggiolo
-  portswigger:
+    summary: Stefano Maggiolo's archived posts on mathematics, statistics, software, and personal projects.
+    profile_photo: https://github.com/stefano-maggiolo.png?size=200
+  portswigger_research:
     feed_url: https://portswigger.net/research/rss
     homepage_url: https://portswigger.net/research
     display_name: PortSwigger Research
-    summary: Updates from PortSwigger Research.
-  blog_px_dev:
+    summary: PortSwigger's original web-security research, attack techniques, and vulnerability analysis.
+    profile_photo: https://portswigger.net/content/images/logos/apple-touch-icon.png
+  pixie_labs_blog:
     feed_url: https://blog.px.dev/rss.xml
     homepage_url: https://blog.px.dev
-    display_name: Pixie Labs Blog RSS Feed
-    summary: Pixie Blog
-  blog_questionable_services:
+    display_name: Pixie Labs Blog
+    summary: Pixie team and guest posts on eBPF, Kubernetes observability, debugging, and software engineering.
+    profile_photo: https://blog.px.dev/icons/icon-48x48.png?v=d80ef861563ca159b3b53cdb30546180
+  questionable_services:
     feed_url: https://blog.questionable.services/atom.xml
     homepage_url: https://blog.questionable.services
     display_name: Questionable Services
-    summary: Updates from Questionable Services.
-  blog_r0b:
+    summary: Matt Silverlock's archived writing on computing, Go web services, Kubernetes, and the Internet.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.questionable.services&size=128
+  r0bs_random_ramblings:
     feed_url: https://blog.r0b.io/feed.xml
     homepage_url: https://blog.r0b.io
     display_name: r0b's random ramblings
-    summary: Updates from r0b's random ramblings.
-  blog_rafaelcorrales:
+    summary: Rob Anderson's notes on web development, programming experiments, electronics, and personal projects.
+    profile_photo: https://blog.r0b.io/img/favicon.png
+  rafael_corrales:
     feed_url: http://blog.rafaelcorrales.com/feeds/posts/default
     homepage_url: http://blog.rafaelcorrales.com
-    display_name: blog.rafaelcorrales.com
-    summary: Updates from blog.rafaelcorrales.com.
-  blog_reybango:
+    display_name: Rafael Corrales
+    summary: Rafael Corrales's archived posts on startups, investing, hiring, and building teams.
+  rey_bango:
     feed_url: https://blog.reybango.com/feed/
     homepage_url: https://blog.reybango.com
     display_name: Rey Bango
-    summary: Security and stuff...
-  blog_rongarret_info:
+    summary: Rey Bango's archived writing on information security, penetration testing, and web development.
+  rondam_ramblings:
     feed_url: https://blog.rongarret.info/feeds/posts/default
     homepage_url: https://blog.rongarret.info
     display_name: Rondam Ramblings
-    summary: Updates from Rondam Ramblings.
-  blog_rootshell_be:
+    summary: Ron Garret's essays on science, philosophy, religion, politics, and computing.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.rongarret.info&size=128
+  dev_random:
     feed_url: https://blog.rootshell.be/feed/
     homepage_url: https://blog.rootshell.be
     display_name: /dev/random
-    summary: '"If the enemy leaves a door open, you must rush in." - Sun Tzu'
-  blog_rubygems:
+    summary: Xavier Mertens's archived security research, malware analysis, SANS ISC diary links, and conference reports.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.rootshell.be&size=128
+  rubygems_blog:
     feed_url: https://blog.rubygems.org/atom.xml
     homepage_url: https://blog.rubygems.org
     display_name: RubyGems Blog
-    summary: Updates from RubyGems Blog.
-  runspired:
+    summary: RubyGems and Bundler releases, RubyGems.org service news, and security advisories.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.rubygems.org&size=128
+  chris_thoburn:
     feed_url: https://runspired.com/feed.xml
     homepage_url: https://runspired.com
-    display_name: runspired.com
-    summary: Updates from runspired.com.
-  blog_rust_lang:
+    display_name: Chris Thoburn (runspired)
+    summary: Chris Thoburn (@runspired) writes about software engineering, WarpDrive, Ember Data, and web architecture.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frunspired.com&size=128
+  rust_blog:
     feed_url: https://blog.rust-lang.org/feed.xml
     homepage_url: https://blog.rust-lang.org
     display_name: Rust Blog
-    summary: Updates from Rust Blog.
-  sandstorm:
+    summary: Official Rust project announcements, language and toolchain releases, community news, and security advisories.
+    profile_photo: https://blog.rust-lang.org/images/apple-touch-icon.png
+  sandstorm_blog:
     feed_url: https://sandstorm.io/feed.xml
-    homepage_url: https://sandstorm.io
-    display_name: Sandstorm.io Blog
-    summary: Latest updates on Sandstorm.io
-  blog_scottlogic:
+    homepage_url: https://sandstorm.io/news/
+    display_name: Sandstorm Blog
+    summary: Historical Sandstorm startup and project blog on secure self-hosted web apps. The open-source project has moved to sandstorm.org.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsandstorm.io&size=128
+  scott_logic:
     feed_url: https://blog.scottlogic.com/atom.xml
     homepage_url: https://blog.scottlogic.com
-    display_name: Scott Logic
-    summary: Updates from Scott Logic.
-  onscouting:
+    display_name: Scott Logic Blog
+    summary: Scott Logic staff writing on software engineering, architecture, data, design, delivery, and AI.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.scottlogic.com&size=128
+  on_scouting:
     feed_url: https://onscouting.org/feed/
     homepage_url: https://onscouting.org
     display_name: On Scouting
-    summary: For families and leaders living the Scout Life
-  blog_seanmartell:
+    summary: Scouting America news, outdoor activities, and advice for Scout families and leaders from On Scouting.
+    profile_photo: https://i0.wp.com/onscouting.org/wp-content/uploads/2026/04/cropped-1080x1080_OnScouting.png?fit=180%2C180&ssl=1
+  reticulating_splines:
     feed_url: https://blog.seanmartell.com/feed/
     homepage_url: https://blog.seanmartell.com
     display_name: Reticulating Splines
-    summary: Updates from Reticulating Splines.
-  blog_securitymouse:
+    summary: Sean Martell's archived writing on Mozilla design, illustration, photography, DIY projects, and creative work.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.seanmartell.com&size=128
+  the_mouse_trap:
     feed_url: http://blog.securitymouse.com/feeds/posts/default
     homepage_url: http://blog.securitymouse.com
     display_name: The Mouse Trap
-    summary: Updates from The Mouse Trap.
-  blog_sefsar:
+    summary: Don A. Bailey's archived Lab Mouse security research on IoT, hardware, vulnerabilities, and blockchain.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fblog.securitymouse.com&size=128
+  sefsar:
     feed_url: https://blog.sefsar.com/feed
-    homepage_url: http://blog.sefsar.com
+    homepage_url: https://blog.sefsar.com
     display_name: sefsar
-    summary: Updates from sefsar.
-  blog_sendsonar:
+    summary: Archived posts by sefsar (@ys) on technology, privacy, startups, and product ideas.
+  sonar:
     feed_url: https://blog.sendsonar.com/feed/
     homepage_url: https://blog.sendsonar.com
-    display_name: Sonar – Blog
-    summary: Updates from Sonar – Blog.
-  blog_senko:
+    display_name: Sonar
+    summary: Archived Sonar posts on business text messaging, SMS marketing, customer communication, and product updates.
+    profile_photo: https://blog.sendsonar.com/wp-content/uploads/2019/10/favicon.png
+  senko_rasic:
     feed_url: https://blog.senko.net/feed/
     homepage_url: https://blog.senko.net
     display_name: Senko Rašić
-    summary: Random thoughts | [about](https://senko.net)
-  blog_signalnoise:
+    summary: Senko Rasic's writing on software development, AI models and tools, Linux, and technology.
+  signalnoise_blog:
     feed_url: https://blog.signalnoise.com/rss/
     homepage_url: https://blog.signalnoise.com
-    display_name: Signalnoise Blog | The Art of James White
-    summary: Signalnoise is the official blog of James White... designer, illustrator, and retro-futurist exploring bold neon art, creative process, 80s tech nostalgia, and behind-the-scenes design insights.
-  blog_simontaranto:
+    display_name: Signalnoise Blog
+    summary: James White's Signalnoise blog on illustration, retro-futurist art, design projects, and creative process.
+    profile_photo: https://storage.ghost.io/c/66/49/66493924-e39b-49cb-8a6d-8abb6789da15/content/images/size/w256h256/2025/12/SN_Icon-2.png
+  simon_taranto:
     feed_url: http://blog.simontaranto.com/index.xml
     homepage_url: http://blog.simontaranto.com
     display_name: Simon Taranto
-    summary: Recent content on Simon Taranto
-  blog_spoongraphics:
-    feed_url: http://feeds2.feedburner.com/SpoonGraphics
+    summary: Simon Taranto's archived writing on Rails, software development, analytics, and building products.
+  spoon_graphics:
+    feed_url: https://feeds.feedburner.com/SpoonGraphics
     homepage_url: https://blog.spoongraphics.co.uk
     display_name: Spoon Graphics
-    summary: Design Tutorials and Free Resource Downloads
-  blog_sshh:
+    summary: Chris Spooner's design tutorials, creative resources, downloads, and graphics-tool recommendations.
+    profile_photo: https://blog.spoongraphics.co.uk/wp-content/themes/SpoonGraphics_V7.3/assets/images/apple-touch-icon-precomposed.png
+  shrivus_substack:
     feed_url: https://blog.sshh.io/feed
     homepage_url: https://blog.sshh.io
     display_name: Shrivu’s Substack
-    summary: A personal blog on AI, software engineering, and cybersecurity.
-  blog_talosintelligence:
+    summary: Shrivu Shankar's personal blog on AI, software engineering, and cybersecurity.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!7tx4!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc917d9b1-91ee-41d0-a0e0-e3446a4b6359_460x460.jpeg
+  cisco_talos_blog:
     feed_url: https://blog.talosintelligence.com/rss/
     homepage_url: https://blog.talosintelligence.com
     display_name: Cisco Talos Blog
-    summary: Talos intelligence and world-class threat research team better protects you and your organization against known and emerging cybersecurity threats.
-  blog_tangled:
+    summary: Cisco Talos threat research, malware analysis, vulnerability reports, incident-response insights, and security news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.talosintelligence.com&size=128
+  the_tangled_blog:
     feed_url: https://blog.tangled.org/feed.xml
     homepage_url: https://blog.tangled.org
     display_name: The Tangled Blog
-    summary: Updates from The Tangled Blog.
-  blog_teamtreehouse:
+    summary: Tangled's announcements and engineering posts on its social code forge, collaboration tools, and CI infrastructure.
+    profile_photo: https://blog.tangled.org/static/logos/dolly.png
+  treehouse_blog:
     feed_url: https://blog.teamtreehouse.com/feed
     homepage_url: https://blog.teamtreehouse.com
     display_name: Treehouse Blog
-    summary: Learn programming, design, and more—all online and on your own time.
-  blog_ted:
+    summary: Treehouse posts on learning programming and design, technology careers, AI tools, and online education.
+    profile_photo: https://blog.teamtreehouse.com/wp-content/uploads/2018/08/favicon.png
+  ted_blog:
     feed_url: https://blog.ted.com/feed/
     homepage_url: https://blog.ted.com
     display_name: TED Blog
-    summary: The TED Blog shares news about TED Talks and TED Conferences.
-  blog_thebakery:
+    summary: News, speaker stories, conference reports, and ideas from TED Talks and the TED community.
+    profile_photo: https://blog.ted.com/wp-content/uploads/sites/2/2023/08/cropped-TED-circle-logo-512x512-1.png?w=180
+  the_bakery:
     feed_url: https://blog.thebakery.io/feed.xml
     homepage_url: https://blog.thebakery.io
     display_name: The Bakery
-    summary: Updates from The Bakery.
-  blog_thijsalkema_de:
+    summary: The Bakery Studios' archived engineering posts on Meteor, React Native, mobile development, and machine learning.
+    profile_photo: https://blog.thebakery.io/images/apple-touch-icon-precomposed.png
+  xnyhps_blog:
     feed_url: https://blog.thijsalkema.de/atom.xml
     homepage_url: https://blog.thijsalkema.de
     display_name: xnyhps’ blog
-    summary: Updates from xnyhps’ blog.
-  blog_thinkst:
+    summary: Thijs Alkemade's archived security research on XMPP, cryptography, TLS, and software vulnerabilities.
+  thinkst_thoughts:
     feed_url: https://blog.thinkst.com/feed
     homepage_url: https://blog.thinkst.com
     display_name: Thinkst Thoughts
-    summary: Writing about our experiences and research findings
-  blog_tilt_dev:
+    summary: Thinkst's security research, engineering experiences, and updates on Canary and Canarytokens.
+    profile_photo: https://blog.thinkst.com/wp-content/uploads/2022/10/cropped-thinkst-icon-180x180.png
+  tilt_blog:
     feed_url: https://blog.tilt.dev/feed.xml
     homepage_url: https://blog.tilt.dev
     display_name: Tilt Blog
-    summary: Updates from Tilt Blog.
-  tigerdata:
+    summary: Archived Tilt posts on local Kubernetes and microservices development, debugging, and developer tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.tilt.dev&size=128
+  tiger_data_blog:
     feed_url: https://www.tigerdata.com/blog/rss
     homepage_url: https://www.tigerdata.com/blog
     display_name: Tiger Data Blog
-    summary: Insights, product updates, and tips from TigerData (Creators of TimescaleDB) engineers on Postgres, time series & AI. IoT, crypto, and analytics tutorials & use cases.
-  blog_tindie:
+    summary: Tiger Data, formerly Timescale, on Postgres, TimescaleDB, time-series data, analytics, and product engineering.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.tigerdata.com%2Fblog&size=128
+  tindie_blog:
     feed_url: https://blog.tindie.com/feed/
     homepage_url: https://blog.tindie.com
     display_name: Tindie Blog
-    summary: News, Updates, & Announcements
-  blog_tjcx_me:
+    summary: Tindie's editorial blog on maker electronics, open-source hardware, projects, and community news.
+    profile_photo: https://static.tindie.com/images/paw-stamp@2x.png
+  tjcx:
     feed_url: https://blog.tjcx.me/feed
     homepage_url: https://blog.tjcx.me
     display_name: TJCX
-    summary: Mostly an exploration of consumer health information. Sometimes just a journal with extra steps.
-  blog_tjll:
+    summary: Tom's essays on consumer health information, medical communication, and building AI products.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!WgyU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F03101fce-e3e8-4704-8348-8793fdeb0142%2Fapple-touch-icon-57x57.png
+  tyblog:
     feed_url: https://blog.tjll.net/feed.xml
     homepage_url: https://blog.tjll.net
     display_name: Tyblog
-    summary: Technology, security, and general blogging
-  toggl:
+    summary: Tyler Langlois's writing on Linux, systems administration, self-hosting, programming, and security.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.tjll.net&size=128
+  toggl_blog:
     feed_url: https://toggl.com/blog/feed
     homepage_url: https://toggl.com/blog
     display_name: Toggl Blog
-    summary: Everything works much better with Toggl
-  blog_trailofbits:
+    summary: Toggl's guides to time tracking, productivity, project and team management, business growth, and its products.
+    profile_photo: https://toggl.com/blog/wp-content/themes/toggl-mjtweaver/img/favicon/apple-touch-icon.png
+  the_trail_of_bits_blog:
     feed_url: https://blog.trailofbits.com/index.xml
     homepage_url: https://blog.trailofbits.com
     display_name: The Trail of Bits Blog
-    summary: Recent content on The Trail of Bits Blog
-  blog_travisthieman:
-    feed_url: https://blog.travisthieman.com/index.xml
+    summary: Trail of Bits research and engineering posts on software security, cryptography, auditing, and open-source tools.
+    profile_photo: https://blog.trailofbits.com/favicon.png
+  travis_thieman:
+    feed_url: https://blog.travisthieman.com/post/index.xml
     homepage_url: https://blog.travisthieman.com
-    display_name: Travis Thieman on Travis Thieman
-    summary: Updates from Travis Thieman on Travis Thieman.
-  varonis:
+    display_name: Travis Thieman
+    summary: Travis Thieman's archived posts on software engineering, deployment infrastructure, cloud computing, and game AI.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.travisthieman.com&size=128
+  varonis_blog:
     feed_url: https://www.varonis.com/blog/rss.xml
     homepage_url: https://www.varonis.com/blog
     display_name: Varonis Blog
-    summary: Insights and analysis on cybersecurity from the leaders in data security.
+    summary: Varonis research, analysis, and guidance on data security, cybersecurity, AI security, and threat detection.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.varonis.com%2Fblog&size=128
   wsj_opinion:
     feed_url: https://feeds.content.dowjones.io/public/rss/RSSOpinion
     homepage_url: https://www.wsj.com
