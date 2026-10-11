@@ -8026,6 +8026,253 @@ bots:
     display_name: Hidden Brain
     summary: Science and storytelling, exploring the unconscious patterns that drive human behavior.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  the_autistic_people_of_color_fund:
+    feed_url: https://autismandrace.com/feed/
+    homepage_url: https://autismandrace.com
+    display_name: The Autistic People of Color Fund
+    summary: News, policy advocacy, disability and racial justice, and mutual aid updates from the Autistic People of Color Fund.
+    profile_photo: https://autismandrace.com/wp-content/uploads/2021/07/cropped-AWN-logo-Zoom-180x180.png
+  five_fifty_five_am:
+    feed_url: https://automorphic.blogspot.com/feeds/posts/default
+    homepage_url: https://automorphic.blogspot.com
+    display_name: 5:55 AM
+    summary: 'Archived posts about GNOME, Tomboy, open-source development, technology, and personal life on 5:55 AM. Latest feed post: October 2012.'
+  avery_laird:
+    feed_url: https://www.averylaird.com/feed.xml
+    homepage_url: https://www.averylaird.com/
+    display_name: Avery Laird
+    summary: 'Avery Laird''s archived research and programming notes on text editors, piece tables, trees, and orbital calculations. Latest feed post: May 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Faverylaird.com&size=128
+  avichal_garg:
+    feed_url: https://avichal.com/feed/
+    homepage_url: https://avichal.com
+    display_name: Avichal Garg
+    summary: 'Avichal Garg''s archived essays on startups, entrepreneurship, product management, teams, and technology. Latest feed post: March 2020.'
+  ramblings_and_jpt_tech:
+    feed_url: https://avinash.com.np/index.xml
+    homepage_url: https://avinash.com.np
+    display_name: Ramblings and JPT Tech
+    summary: Avinash's programming notes, technology-community reports, personal reflections, and miscellaneous writing from Nepal.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Favinash.com.np&size=128
+  avweb:
+    feed_url: https://avweb.com/feed/
+    homepage_url: https://avweb.com
+    display_name: AVweb
+    summary: Aviation news, flight safety, training, aircraft ownership, industry reporting, opinion, and photos from AVweb.
+    profile_photo: https://avweb.com/wp-content/uploads/2025/05/cropped-avweb_favicon_2024-1.png?w=180
+  awwwards:
+    feed_url: https://www.awwwards.com/feed/
+    homepage_url: https://www.awwwards.com
+    display_name: Awwwards
+    summary: 'Awwwards'' Site of the Day winners: selected web designs, creative portfolios, and digital experiences.'
+    profile_photo: https://www.awwwards.com/apple-touch-icon.png
+  axiacore:
+    feed_url: https://axiacore.com/blog/feed/
+    homepage_url: https://axiacore.com/blog/
+    display_name: axiacore
+    summary: English and Spanish essays from axiacore on software, AI, design, digital products, business, and working culture.
+    profile_photo: https://axiacore.com/static/img/apple-touch-icon.af193f3752d4.png
+  anthony_young:
+    feed_url: https://www.ayoungh.co.uk/feed.xml
+    homepage_url: https://www.ayoungh.co.uk/
+    display_name: Anthony Young
+    summary: Anthony Young writes about creative development, AI-assisted work, engineering management, personal projects, and developer tools.
+    profile_photo: https://www.ayoungh.co.uk/avatar.jpg
+  b22_design:
+    feed_url: https://b22-design.tumblr.com/rss
+    homepage_url: https://b22-design.tumblr.com
+    display_name: B22 Design
+    summary: B22 Design shares vintage furniture, modernist interiors and architecture, art, and design inspiration.
+    profile_photo: https://api.tumblr.com/v2/blog/b22-design.tumblr.com/avatar/128
+  b3n_org:
+    feed_url: https://b3n.org/feed/
+    homepage_url: https://b3n.org
+    display_name: b3n.org
+    summary: Benjamin Bryan's writing on computers, homelabs, backups, personal finance, practical projects, Christian faith, and everyday life.
+    profile_photo: https://b3n.org/wp-content/uploads/fbrfg/apple-touch-icon.png?v=oLnR4bK0PO
+  backpacker:
+    feed_url: https://www.backpacker.com/feed/?scope=anon
+    homepage_url: https://www.backpacker.com
+    display_name: Backpacker
+    summary: Backpacking and hiking routes, outdoor skills, camping, gear reviews and deals, travel, and outdoor news from Backpacker.
+    profile_photo: https://cdn.backpacker.com/wp-content/uploads/2023/11/cropped-backpacker-favicon-180x180.png
+  baekdal_com:
+    feed_url: https://rss.baekdal.com/
+    homepage_url: https://baekdal.com
+    display_name: Baekdal.com
+    summary: Thomas Baekdal's media analysis on journalism, publishing, audience behavior, subscriptions, marketing, and digital platforms.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbaekdal.com&size=128
+  bahi_jd:
+    feed_url: https://bahijd.tumblr.com/rss
+    homepage_url: https://bahijd.tumblr.com
+    display_name: Bahi JD
+    summary: Animation work, key-animation clips, illustrations, sketches, paintings, and production updates from animator Bahi JD.
+    profile_photo: https://api.tumblr.com/v2/blog/bahijd.tumblr.com/avatar/128
+  barking_up_the_wrong_tree:
+    feed_url: https://bakadesuyo.com/feed/
+    homepage_url: https://bakadesuyo.com
+    display_name: Barking Up The Wrong Tree
+    summary: Eric Barker's research-based essays on happiness, relationships, productivity, meaning, strategy, and personal development.
+    profile_photo: https://bakadesuyo.com/wp-content/uploads/2012/10/cropped-bakalogo-32x32.png
+  cakephp_bakery:
+    feed_url: https://bakery.cakephp.org/rss.html
+    homepage_url: https://bakery.cakephp.org
+    display_name: Bakery - The Official CakePHP Blog
+    summary: Official CakePHP releases, security and maintenance updates, project announcements, and community news.
+    profile_photo: https://bakery.cakephp.org/_static/favicons/apple-touch-icon.png
+  thomas_ballinger:
+    feed_url: https://ballingt.com/index.xml
+    homepage_url: https://ballingt.com/
+    display_name: Thomas Ballinger
+    summary: Thomas Ballinger's programming essays, teaching notes, software projects, and personal writing, including Python, JavaScript, and developer tools.
+    profile_photo: https://ballingt.com/apple-touch-icon.png
+  shrey_banga:
+    feed_url: https://shreyb.dev/blog/atom.xml
+    homepage_url: https://shreyb.dev
+    display_name: Shrey Banga
+    summary: 'Shrey Banga''s programming and startup essays, developer-tool tips, and personal projects. Latest feed post: February 2024.'
+  barefoot_coffee_roasters:
+    feed_url: https://www.barefootcoffee.com/blogs/news.atom
+    homepage_url: https://www.barefootcoffee.com/blogs/news
+    display_name: Barefoot Coffee Roasters
+    summary: 'Barefoot Coffee Roasters'' archived coffee, chocolate, cafe, class, event, and company news. Latest feed post: February 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.barefootcoffee.com%2Fblogs%2Fnews&size=128
+  808labs:
+    feed_url: https://bartongeorge.io/feed/
+    homepage_url: https://bartongeorge.io
+    display_name: 808labs
+    summary: Barton George and 808labs cover open source, cloud infrastructure, DevOps, enterprise technology, and AI through interviews and commentary.
+    profile_photo: https://i0.wp.com/bartongeorge.io/wp-content/uploads/2026/05/cropped-cropped-808labs-unboxing-LOGO.png?fit=180%2C180&ssl=1
+  basic_apple_guy:
+    feed_url: https://basicappleguy.com/basicappleblog?format=rss
+    homepage_url: https://basicappleguy.com
+    display_name: Basic Apple Guy
+    summary: Apple-inspired wallpapers, design projects, device reviews, Apple event history and commentary, and merchandise from Basic Apple Guy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbasicappleguy.com&size=128
+  basic_attention_token:
+    feed_url: https://basicattentiontoken.org/index.xml
+    homepage_url: https://basicattentiontoken.org
+    display_name: Basic Attention Token
+    summary: Official Basic Attention Token and Brave Rewards announcements, roadmaps, ecosystem news, and service policies.
+    profile_photo: https://basicattentiontoken.org/static-assets/images/cropped-bat-180x180.png
+  battery_ventures:
+    feed_url: https://www.battery.com/feed/
+    homepage_url: https://www.battery.com
+    display_name: Battery Ventures
+    summary: Battery Ventures investment and portfolio announcements, technology-market analysis, and advice on building and operating companies.
+    profile_photo: https://www.battery.com/wp-content/uploads/2025/03/cropped-battery-favicon-circle-32x32.png
+  baum_by_dahm:
+    feed_url: https://baumbydahm.tumblr.com/rss
+    homepage_url: https://baumbydahm.tumblr.com
+    display_name: Baum by Dahm
+    summary: 'Evan Dahm''s archived illustrations and process notes for The Wonderful Wizard of Oz, with related book, comics, and art updates. Latest feed post: May 2020.'
+    profile_photo: https://api.tumblr.com/v2/blog/baumbydahm.tumblr.com/avatar/128
+  dwarf_fortress_development_log:
+    feed_url: https://www.bay12games.com/dwarves/dev_now.rss
+    homepage_url: https://www.bay12games.com/dwarves/index.html
+    display_name: Dwarf Fortress Development Log
+    summary: Dwarf Fortress development progress, release notes, monthly reports, and developer Q&A links from Bay 12 Games.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.bay12games.com%2Fdwarves%2Findex.html&size=128
+  baymard_institute:
+    feed_url: https://feeds.baymard.com/baymard
+    homepage_url: https://baymard.com
+    display_name: Baymard Institute
+    summary: Baymard Institute research on ecommerce and service UX, usability benchmarks, conversion, and design best practices.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbaymard.com&size=128
+  big_fish_pr:
+    feed_url: https://bigfishpr.com/feed/
+    homepage_url: https://bigfishpr.com
+    display_name: BIG FISH PR
+    summary: BIG FISH PR agency news and advice on public relations, product launches, earned media, brand storytelling, and technology marketing.
+    profile_photo: https://bigfishpr.com/wp-content/uploads/2020/08/BIGFISH_SOCIALAVATAR_BLUE_DARK-150x150.png
+  bedford_bowery:
+    feed_url: https://bedfordandbowery.com/feed/
+    homepage_url: https://bedfordandbowery.com
+    display_name: Bedford + Bowery
+    summary: 'Archived Bedford + Bowery reporting on downtown Manhattan and north Brooklyn neighborhoods, arts, food, local news, and culture. Latest feed post: May 2021.'
+    profile_photo: https://bedfordandbowery.com/wp-content/uploads/2019/04/cropped-logo_bb-180x180.png
+  beets_blog:
+    feed_url: https://beets.io/blog/atom.xml
+    homepage_url: https://beets.io/blog/
+    display_name: The beets blog
+    summary: 'Archived announcements, guides, and technical articles for beets, the open-source music library manager. Latest feed post: August 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fbeets.io%2Fblog&size=128
+  beewise_blog:
+    feed_url: https://beewise.ag/blog/rss.xml
+    homepage_url: https://beewise.ag/blog
+    display_name: Beewise Blog
+    summary: Beewise company and technology updates, impact reports, beekeeping and pollination research, climate technology, and efforts to protect bees.
+    profile_photo: https://beewise.ag/hubfs/b-icon-gold.png
+  ben_belchak:
+    feed_url: https://www.belchak.com/rss.xml
+    homepage_url: https://www.belchak.com
+    display_name: Ben Belchak
+    summary: Ben Belchak's writing on technology, theology, AI experiments, software development, management, and personal life.
+    profile_photo: https://www.belchak.com/apple-touch-icon.png
+  the_belle_jar:
+    feed_url: https://bellejar.ca/feed/
+    homepage_url: https://bellejar.ca
+    display_name: The Belle Jar
+    summary: 'The Belle Jar''s archived personal essays on mental health, feminism, parenting, trauma, and culture, with occasional guest posts. Latest feed post: February 2017.'
+  ben_morris:
+    feed_url: https://www.ben-morris.com/rss.xml
+    homepage_url: https://www.ben-morris.com
+    display_name: Ben Morris - Agile Enterprise Architecture
+    summary: Ben Morris writes about software and enterprise architecture, agile delivery, integration, APIs, AI systems, and technical leadership.
+    profile_photo: https://www.ben-morris.com/images/apple-touch-icon.png
+  codes_from_the_underground:
+    feed_url: https://bencoe.tumblr.com/rss
+    homepage_url: https://bencoe.tumblr.com
+    display_name: Codes from the Underground
+    summary: 'Ben Coe''s archived software projects and essays on Node.js, Ruby, web development, startups, and climbing. Latest feed post: April 2014.'
+    profile_photo: https://api.tumblr.com/v2/blog/bencoe.tumblr.com/avatar/128
+  the_source_bend_oregon:
+    feed_url: https://www.bendsource.com/feed/
+    homepage_url: https://www.bendsource.com
+    display_name: The Source - Bend, Oregon
+    summary: Independent Bend and Central Oregon news, opinion, arts, food, music, outdoor recreation, and community events.
+    profile_photo: https://i0.wp.com/www.bendsource.com/wp-content/uploads/2026/03/cropped-Untitled-design-4.png?fit=180%2C180&ssl=1
+  ben_congdon:
+    feed_url: https://benjamincongdon.me/feed.xml
+    homepage_url: https://benjamincongdon.me
+    display_name: Ben Congdon
+    summary: Ben Congdon writes about software engineering, developer tools, AI, distributed systems, books, and career lessons.
+    profile_photo: https://benjamincongdon.me/img/icon_hu26f271b218bfbcdcc2d7c4970e2dc205_23311_152x152_resize_lanczos_3.png
+  benji_weber:
+    feed_url: https://benjiweber.co.uk/blog/feed/
+    homepage_url: https://benjiweber.co.uk/blog
+    display_name: Benji Weber
+    summary: Benji Weber writes about extreme programming, software development, engineering teams, leadership, and collaborative work.
+    profile_photo: https://benjiweber.co.uk/blog/wp-content/uploads/2025/01/benji2019.png
+  ben_milne:
+    feed_url: https://benmilne.com/feed.xml
+    homepage_url: https://benmilne.com
+    display_name: Ben Milne
+    summary: Ben Milne writes about payments, stablecoin infrastructure, protocol and value design, company building, and personal reflections.
+    profile_photo: https://benmilne.com/assets/apple-touch-icon.png
+  ber_kessels:
+    feed_url: https://berk.es/atom.xml
+    homepage_url: https://berk.es
+    display_name: Ber Kessels
+    summary: Ber Kessels' English and Dutch writing on open-source software, Ruby, Rust, web development, decentralized systems, and technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fberk.es&size=128
+  best_burger_in_north_west_london:
+    feed_url: https://bestburgerinnorthwestlondon.wordpress.com/feed/
+    homepage_url: https://bestburgerinnorthwestlondon.wordpress.com
+    display_name: Best Burger in North West London
+    summary: 'Archived burger reviews from North West London and beyond, with occasional travel and cost-of-living posts. Latest feed post: January 2014.'
+  request_tracker:
+    feed_url: https://requesttracker.com/feed/
+    homepage_url: https://requesttracker.com
+    display_name: Request Tracker
+    summary: Official Request Tracker and RTIR releases, product news, documentation updates, workflow guidance, and open-source ticketing features.
+    profile_photo: https://i0.wp.com/requesttracker.com/wp-content/uploads/2024/11/cropped-13d8eb00-c903-11eb-853d-c44e379eca57.png?fit=180%2C180&ssl=1
+  betalist:
+    feed_url: https://feeds.feedburner.com/BetaList
+    homepage_url: https://betalist.com
+    display_name: BetaList
+    summary: Newly featured early-stage startups and their products from BetaList, not its jobs listing.
+    profile_photo: https://betalist.com/assets/touch-icon-precomposed-144-e8598d79.png
   npr_latino_usa:
     feed_url: https://feeds.npr.org/510016/podcast.xml
     homepage_url: https://latinousa.org
