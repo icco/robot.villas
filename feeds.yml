@@ -5415,6 +5415,277 @@ bots:
     display_name: Hell Gate
     summary: Subscriber-funded, worker-owned news outlet about New York City.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://hellgatenyc.com&size=128
+  kitchen_soap:
+    feed_url: https://www.kitchensoap.com/feed/
+    homepage_url: https://www.kitchensoap.com
+    display_name: Kitchen Soap
+    summary: John Allspaw's Kitchen Soap blog on software operations, systems safety, human factors, resilience engineering, and engineering management; the latest feed post is from November 2017.
+  detectify_labs:
+    feed_url: https://labs.detectify.com/feed/
+    homepage_url: https://labs.detectify.com
+    display_name: Detectify Labs
+    summary: Detectify Labs vulnerability research, ethical hacking writeups, API security guides, attack-surface management, and Crowdsource community news.
+    profile_photo: https://labsadmin.detectify.com/app/uploads/2025/10/cropped-apple-touch-icon-180x180.png
+  laptop_mag:
+    feed_url: https://www.laptopmag.com/feeds/articletype/news
+    homepage_url: https://www.laptopmag.com/news
+    display_name: Laptop Mag
+    summary: Archived Laptop Mag news and features about laptops, consumer technology, AI, and gaming. The publication announced its closure in August 2025; this news feed includes a November 2025 buying-guide update.
+    profile_photo: https://vanilla.futurecdn.net/laptopmag/1777961/apple-touch-icon.png
+  louis_brandy:
+    feed_url: https://lbrandy.com/atom.xml
+    homepage_url: https://lbrandy.com
+    display_name: Louis Brandy
+    summary: Louis Brandy's essays on programming, C++, technology, internet culture, and personal observations; the latest feed post is from March 2023.
+  ai_weirdness:
+    feed_url: https://www.aiweirdness.com/rss/
+    homepage_url: https://www.aiweirdness.com
+    display_name: AI Weirdness
+    summary: 'Janelle Shane''s AI Weirdness: humorous machine-learning experiments, generated names and text, illustrations, and laser science; successor to her Lewis & Quark Tumblr blog.'
+    profile_photo: https://www.aiweirdness.com/favicon.png
+  linas_blog:
+    feed_url: https://lina.sh/blog/rss.xml
+    homepage_url: https://lina.sh
+    display_name: lina's blog
+    summary: Lina's blog on security research, DNS hijacking, internet censorship, German ISP blocking, and personal software projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flina.sh&size=128
+  lincoln_loop_blog:
+    feed_url: https://lincolnloop.com/blog/feed/
+    homepage_url: https://lincolnloop.com/blog
+    display_name: Lincoln Loop Blog
+    summary: Lincoln Loop technical articles on Django, Wagtail, web development, infrastructure, performance, AI coding, and running a software consultancy.
+    profile_photo: https://media.lincolnloop.com/static/assets/favicon/apple-touch-icon.5a11d882a1c9.png
+  linuxscrew:
+    feed_url: https://www.linuxscrew.com/feed
+    homepage_url: https://www.linuxscrew.com
+    display_name: LinuxScrew
+    summary: LinuxScrew tutorials on Linux administration, shell tools, programming, networking, Raspberry Pi, and databases; the latest feed post is from August 2023.
+    profile_photo: https://cd.linuxscrew.com/wp-content/uploads/2020/10/favicon-7.png
+  live105:
+    feed_url: https://www.audacy.com/feeds/live105.rss
+    homepage_url: https://www.audacy.com/live105
+    display_name: LIVE 105
+    summary: 'LIVE 105 (KITS-FM), the Bay Area''s alternative radio station: music news, Soundcheck playlists, concerts, station events, performances, and ticket giveaways.'
+    profile_photo: https://assets.rbl.ms/66647933/origin.jpg
+  locus:
+    feed_url: https://locusmag.com/feed/
+    homepage_url: https://locusmag.com
+    display_name: Locus
+    summary: Locus magazine news, reviews, interviews, awards, conventions, and new book releases from the science fiction, fantasy, and horror field.
+    profile_photo: https://locusmag.com/wp-content/uploads/2022/03/cropped-Locus-blue-logo-bullet-point-180x180.jpg
+  logic_s_magazine:
+    feed_url: https://logicmag.io/rss.xml
+    homepage_url: https://logicmag.io
+    display_name: Logic(s) Magazine
+    summary: Logic(s), a queer Black and Asian technology magazine publishing critical essays, reporting, poetry, and speculative writing about technology and social life.
+    profile_photo: https://logicmag.io/images/favicon-a626860b.png
+  lord_io:
+    feed_url: https://lord.io/feed.xml
+    homepage_url: https://lord.io
+    display_name: Lord.io
+    summary: Lord.io essays on programming, text editors, incremental computation, Rust, open source, electronics, and creative technical projects.
+  london_review_of_books:
+    feed_url: https://www.lrb.co.uk/feeds/rss
+    homepage_url: https://www.lrb.co.uk
+    display_name: London Review of Books
+    summary: London Review of Books essays, book reviews, criticism, letters, and commentary on literature, history, politics, philosophy, science, and the arts.
+    profile_photo: https://www.lrb.co.uk/assets/icons/apple-touch-icon.png
+  armin_ronacher:
+    feed_url: https://lucumr.pocoo.org/feed.atom
+    homepage_url: https://lucumr.pocoo.org
+    display_name: Armin Ronacher's Thoughts and Writings
+    summary: Armin Ronacher's writing on programming languages, Rust, Python, developer tools, AI coding, open source, software design, and personal reflections.
+    profile_photo: https://lucumr.pocoo.org/static/avatar-small.jpg
+  ludum_dare:
+    feed_url: https://ludumdare.com/atom.xml
+    homepage_url: https://ludumdare.com
+    display_name: Ludum Dare
+    summary: Official Ludum Dare game-jam schedules, announcements, sponsorship news, and event updates; the latest feed entry is Ludum Dare 57 in April 2025.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fludumdare.com&size=128
+  subbu_allamaraju:
+    feed_url: https://www.subbu.org/index.xml
+    homepage_url: https://www.subbu.org
+    display_name: Writing is clarifying
+    summary: 'Subbu Allamaraju''s Writing is clarifying: essays on technology leadership, engineering organizations, personal development, and working with AI.'
+    profile_photo: https://www.subbu.org/subbu.jpg
+  mattias_geniar:
+    feed_url: https://ma.ttias.be/index.xml
+    homepage_url: https://ma.ttias.be
+    display_name: Mattias Geniar
+    summary: Mattias Geniar's writing on Linux, PHP, DevOps, DNS, security, web performance, independent software products, and development tools.
+    profile_photo: https://ma.ttias.be/authors/mattias-geniar-large.jpg
+  macdaddy:
+    feed_url: https://macdaddy.io/feed.xml
+    homepage_url: https://macdaddy.io
+    display_name: MacDaddy
+    summary: MacDaddy developer Benedict Slaney's articles on Mac backups, data recovery, bootable installers, hardware, power efficiency, and local speech-to-text software.
+    profile_photo: https://macdaddy.io/apple-touch-icon.png
+  macroscopicentric:
+    feed_url: https://macroscopicentric.net/feed.xml
+    homepage_url: https://macroscopicentric.net
+    display_name: Macroscopicentric
+    summary: Macroscopicentric personal technical articles on web development, shell tools, programming concepts, configuration management, and learning to code; the latest feed post is from June 2025.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmacroscopicentric.net&size=128
+  cal_poly_magazine:
+    feed_url: https://magazine.calpoly.edu/feed/
+    homepage_url: https://magazine.calpoly.edu
+    display_name: Cal Poly Magazine
+    summary: Cal Poly Magazine stories about students, faculty, alumni, research, and campus life at Cal Poly San Luis Obispo; this RSS feed ends in January 2018 although the magazine still publishes new issues.
+  mapping_london:
+    feed_url: https://mappinglondon.co.uk/feed/
+    homepage_url: https://mappinglondon.co.uk
+    display_name: Mapping London
+    summary: Mapping London reviews and highlights historic, artistic, transport, tourist, and data-driven maps of London, with books, exhibitions, and mapping events.
+    profile_photo: https://mappinglondon.co.uk/wp-content/uploads/2013/04/mapping_london_logo3.png
+  marijn_haverbeke:
+    feed_url: https://marijnhaverbeke.nl/blog/feed.atom
+    homepage_url: https://marijnhaverbeke.nl
+    display_name: Marijn Haverbeke
+    summary: Marijn Haverbeke's writing on JavaScript, parsing, programming languages, collaborative editing, CodeMirror, ProseMirror, Lezer, and Wordgard.
+  mark_story:
+    feed_url: https://mark-story.com/posts.rss
+    homepage_url: https://mark-story.com/posts
+    display_name: Mark Story
+    summary: Mark Story's articles on web development, CakePHP, databases, Rust, Python, developer tools, open source, and software engineering.
+    profile_photo: https://mark-story.com/favicon.png
+  mark_boulton_journal:
+    feed_url: https://markboulton.co.uk/journal/feed/feed.xml
+    homepage_url: https://markboulton.co.uk
+    display_name: Mark Boulton Journal
+    summary: Mark Boulton's journal on product design, typography, design leadership, working practices, cycling, and personal weeknotes; the latest feed post is from September 2025.
+    profile_photo: https://markboulton.co.uk/apple-touch-icon.png
+  martech:
+    feed_url: https://martech.org/feed/
+    homepage_url: https://martech.org
+    display_name: MarTech
+    summary: MarTech reporting and analysis on marketing technology, strategy, customer experience, automation, AI, data, and industry products; successor to Marketing Land.
+    profile_photo: https://martech.org/wp-content/themes/tdm-editorial/apple-touch-icon.png
+  mark_manson:
+    feed_url: https://markmanson.net/feed
+    homepage_url: https://markmanson.net
+    display_name: Mark Manson
+    summary: Mark Manson's essays on personal growth, relationships, purpose, habits, mental health, and life advice; the latest feed post is from December 2025.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmarkmanson.net&size=128
+  massive_greatness:
+    feed_url: https://massivegreatness.com/feed
+    homepage_url: https://massivegreatness.com
+    display_name: Massive Greatness
+    summary: MG Siegler's Massive Greatness essays on technology, startups, products, apps, and writing; this Svbtle archive's latest feed post is from August 2013.
+  mateusz_urbanowicz:
+    feed_url: https://mateuszurbanowicz.com/feed/
+    homepage_url: https://mateuszurbanowicz.com
+    display_name: Mateusz Urbanowicz
+    summary: Mateusz Urbanowicz's watercolor and digital art, books, animation, exhibitions, drawing tools, photography, retro writing technology, and studio updates.
+    profile_photo: https://mateuszurbanowicz.com/wp-content/uploads/2020/04/logo.png?w=180
+  matrix:
+    feed_url: https://matrix.org/atom.xml
+    homepage_url: https://matrix.org
+    display_name: Matrix
+    summary: Official Matrix project and foundation news, protocol releases, events, and This Week in Matrix community updates about decentralized communication.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmatrix.org&size=128
+  matt_aimonetti:
+    feed_url: https://matt.aimonetti.net/index.xml
+    homepage_url: https://matt.aimonetti.net
+    display_name: Matt Aimonetti
+    summary: Matt Aimonetti's essays on software engineering, entrepreneurship, technology leadership, music technology, collaboration, and generative AI; the latest feed post is from January 2024.
+    profile_photo: https://matt.aimonetti.net/images/MattAimonetti_2018.jpeg
+  matt3o:
+    feed_url: https://matt3o.com/index.xml
+    homepage_url: https://matt3o.com
+    display_name: Matt3o
+    summary: Matteo Spinelli's Matt3o maker's log on mechanical keyboards, keycaps, mice, trackballs, 3D printing, DIY projects, Linux, and coding.
+  matthew_johnston:
+    feed_url: https://mattjohnston.co/index.xml
+    homepage_url: https://mattjohnston.co
+    display_name: Matthew Johnston
+    summary: Matthew Johnston's software projects and articles on Elixir, SQLite, Ruby, Rails, C, programming patterns, and personal projects; the latest feed entry is from April 2021.
+    profile_photo: https://mattjohnston.co/apple-touch-icon.png
+  maryanne_wachter:
+    feed_url: https://mclare.blog/feed.atom
+    homepage_url: https://mclare.blog
+    display_name: MClare Blog - Maryanne Wachter
+    summary: Maryanne Wachter's MClare Blog on software development, Emacs, data visualization, mapping, open-source engineering tools, and structural engineering.
+    profile_photo: https://github.com/m-clare.png?size=200
+  mens_journal:
+    feed_url: https://www.mensjournal.com/.rss/feed/30161159-6e19-4afa-97f5-e7c51a324667.xml
+    homepage_url: https://www.mensjournal.com
+    display_name: Men's Journal
+    summary: Men's Journal lifestyle coverage of fitness, health, gear, shopping deals, travel, sports, entertainment, and popular culture, including affiliate commerce articles.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mensjournal.com&size=128
+  meta_stack_overflow:
+    feed_url: https://meta.stackoverflow.com/feeds
+    homepage_url: https://meta.stackoverflow.com/questions
+    display_name: Meta Stack Overflow
+    summary: Recent Meta Stack Overflow questions about the site, moderation, tags, community policy, interface bugs, and the developer survey; not the main programming Q&A feed.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmeta.stackoverflow.com%2Fquestions&size=128
+  mid_hudson_news:
+    feed_url: https://midhudsonnews.com/feed/
+    homepage_url: https://midhudsonnews.com
+    display_name: Mid Hudson News
+    summary: Mid Hudson News reporting, community announcements, and opinion from New York's Hudson Valley and Catskills, including local government, public safety, business, health, and events.
+    profile_photo: https://midhudsonnews.com/wp-content/uploads/2019/07/blue-icon.png
+  mikhail_shilkov:
+    feed_url: https://mikhail.io/feed/
+    homepage_url: https://mikhail.io
+    display_name: Mikhail Shilkov
+    summary: Mikhail Shilkov's technical articles on cloud infrastructure, serverless computing, Azure, AWS, Pulumi, Temporal, and AI developer tools; this feed ends in October 2025 and omits newer homepage writing.
+    profile_photo: https://mikhail.io/images/author.jpg
+  max_woolfs_blog:
+    feed_url: https://minimaxir.com/index.xml
+    homepage_url: https://minimaxir.com
+    display_name: Max Woolf's Blog
+    summary: Max Woolf's experiments and analysis on AI, machine learning, data science, generated media, programming, and coding agents.
+    profile_photo: https://minimaxir.com/apple-touch-icon.png
+  mislav_marohnic:
+    feed_url: https://mislav.net/feeds/dev.xml
+    homepage_url: https://mislav.net
+    display_name: Mislav Marohnic
+    summary: Mislav Marohnic's technical blog on developer tools, GitHub, Ruby, HTTP clients, testing, and software documentation; this Atom feed's latest post is from January 2020.
+  mixcloud_blog:
+    feed_url: https://www.mixcloud.com/blog/feed.xml
+    homepage_url: https://www.mixcloud.com/blog
+    display_name: Mixcloud Blog
+    summary: Mixcloud Blog news, platform guides, creator advice, DJ and radio interviews, music scenes, and curated mixes; an editorial blog feed, not a feed of all user uploads.
+    profile_photo: https://www.mixcloud.com/blog/apple-touch-icon.png
+  mixergy:
+    feed_url: https://mixergy.com/?feed=mixergy_feed
+    homepage_url: https://mixergy.com
+    display_name: Mixergy
+    summary: Mixergy startup founder interviews and business lessons hosted by Andrew Warner, covering entrepreneurship, products, growth, operations, and AI businesses.
+    profile_photo: https://mixergy.com/wp-content/themes/mixergy-2015-v2/assets/img/icons/apple-touch-icon-180x180.png
+  mixxx:
+    feed_url: https://mixxx.org/feed.xml
+    homepage_url: https://mixxx.org
+    display_name: Mixxx
+    summary: Official Mixxx free and open-source DJ software news, release announcements, contributor reports, technical development, and community events.
+  monochrome_watches:
+    feed_url: https://monochrome-watches.com/feed/
+    homepage_url: https://monochrome-watches.com
+    display_name: Monochrome Watches
+    summary: Monochrome Watches news, reviews, buying guides, interviews, watchmaking explainers, and industry reporting on fine watches, with occasional automotive features.
+    profile_photo: https://monochrome-watches.com/app/themes/monochromewatches/dist/images/favicon/apple-touch-icon-57x57.png
+  monome:
+    feed_url: https://monome.org/rss.xml
+    homepage_url: https://monome.org
+    display_name: monome
+    summary: Official monome product, firmware, availability, shipping, performance, and community updates for its grid, arc, norns, and experimental sound instruments; feed items link to the shared homepage.
+  motor_authority:
+    feed_url: https://feeds.highgearmedia.com/?sites=MotorAuthority
+    homepage_url: https://www.motorauthority.com
+    display_name: Motor Authority
+    summary: Motor Authority news, road tests, spy shots, racing, and technology coverage of performance and luxury cars; the current official RSS and homepage snapshot end in March 2025.
+    profile_photo: https://www.motorauthority.com/images/square-logo.png
+  mr_money_mustache:
+    feed_url: https://www.mrmoneymustache.com/feed/
+    homepage_url: https://www.mrmoneymustache.com
+    display_name: Mr. Money Mustache
+    summary: Mr. Money Mustache's essays on financial independence, early retirement, frugal living, investing, housing, transport, and personal well-being.
+  adam_morse:
+    feed_url: https://mrmrs.cc/rss.xml
+    homepage_url: https://mrmrs.cc
+    display_name: Adam Morse
+    summary: Adam Morse's generative design portfolio and writing on interface design, CSS, accessibility, pen plotting, procedural artwork, and design tools; this mixed feed is not ordered newest-first.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmrmrs.cc&size=128
   bbc_news:
     feed_url: https://feeds.bbci.co.uk/news/rss.xml
     homepage_url: https://www.bbc.com/news
