@@ -657,6 +657,256 @@ bots:
     display_name: Mitchell Hashimoto
     summary: Software engineering, infrastructure, developer tools, and programming.
     profile_photo: https://mitchellh.com/static/favicons/apple-touch-icon.png
+  cheeaun:
+    feed_url: https://cheeaun.com/blog/feed.xml
+    homepage_url: https://cheeaun.com/blog
+    display_name: cheeaunblog
+    summary: Updates from cheeaunblog.
+  cheezburger:
+    feed_url: https://cheezburger.com/rss
+    homepage_url: https://cheezburger.com
+    display_name: cheezburger.com
+    summary: You get a Cheezburger, and YOU get a Cheezburger. EVERYONE GETS A CHEEZBURGER. The original internet funny site.
+  chemicaloliver:
+    feed_url: https://chemicaloliver.net/index.xml
+    homepage_url: https://chemicaloliver.net
+    display_name: Home on Oliver Smith
+    summary: Recent content in Home on Oliver Smith
+  cherrypy:
+    feed_url: https://www.cherrypy.org/feed/
+    homepage_url: https://www.cherrypy.org
+    display_name: 'Magazine de Communication Entreprises : Gagner en visibilité sur Internet'
+    summary: 'Diffuser des actualités : l''importance de la communication des Entreprises pour augmenter le trafic de visiteurs'
+  chicago_eater:
+    feed_url: https://chicago.eater.com/rss/index.xml
+    homepage_url: https://chicago.eater.com
+    display_name: Eater Chicago
+    summary: Updates from Eater Chicago.
+  chireviewofbooks:
+    feed_url: https://chireviewofbooks.com/feed/
+    homepage_url: https://chireviewofbooks.com
+    display_name: Chicago Review of Books
+    summary: Updates from Chicago Review of Books.
+  chowhound:
+    feed_url: https://www.chowhound.com/feed/
+    homepage_url: https://www.chowhound.com
+    display_name: 'Chowhound - The Site for Food Nerds: Cooking Tips, Culinary How-To''s, & More.'
+    summary: Chowhound is the site for food nerds - from expert chef tips to culinary how-to's, helpful ingredient lists, baking science, and more.
+  chrbutler:
+    feed_url: https://www.chrbutler.com/feed.rss
+    homepage_url: https://www.chrbutler.com
+    display_name: Christopher Butler
+    summary: Feed for Christopher Butler
+  chrisdone:
+    feed_url: https://chrisdone.com/rss.xml
+    homepage_url: https://chrisdone.com
+    display_name: Chris Done's Blog
+    summary: Blog all about programming, especially in Haskell since 2008!
+  chrismaughan:
+    feed_url: https://chrismaughan.com/index.xml
+    homepage_url: https://chrismaughan.com
+    display_name: ChrisMaughan.com
+    summary: Recent content on ChrisMaughan.com
+  chrissimpson:
+    feed_url: https://chrissimpson.co.uk/feed.xml
+    homepage_url: https://chrissimpson.co.uk
+    display_name: Chris Simpson
+    summary: Software developer — writing on software, search, and infrastructure.
+  christianheilmann:
+    feed_url: http://christianheilmann.com/feed/
+    homepage_url: https://christianheilmann.com
+    display_name: Christian Heilmann
+    summary: For a better web with more professional jobs - can talk, will travel
+  christiantoday:
+    feed_url: https://www.christiantoday.com/rss.xml
+    homepage_url: https://www.christiantoday.com
+    display_name: Christian Today | RSS
+    summary: Christian Today
+  christoph_ruegg_name:
+    feed_url: https://christoph.ruegg.name/blog/atom.xml
+    homepage_url: http://christoph.ruegg.name
+    display_name: Christoph Rüegg
+    summary: Updates from Christoph Rüegg.
+  chrisvalleskey:
+    feed_url: http://chrisvalleskey.com/feed/
+    homepage_url: http://chrisvalleskey.com
+    display_name: Chris Valleskey
+    summary: Designer and developer living in the Chicago area. Occasionally write on the mind, universe, or anything else.
+  chromeunboxed:
+    feed_url: https://chromeunboxed.com/feed/
+    homepage_url: https://chromeunboxed.com
+    display_name: Chrome Unboxed – The Latest Chrome OS News
+    summary: A Space for All Things Chrome, Google, and More!
+  chungkong_nl:
+    feed_url: https://www.chungkong.nl/feed/
+    homepage_url: https://www.chungkong.nl
+    display_name: CHUNGKONG
+    summary: Minimalist posters archive and online shop
+  chuq_me:
+    feed_url: https://www.chuq.me/blog?format=rss
+    homepage_url: https://www.chuq.me/blog
+    display_name: Blog - Chuq Von Rospach - Birds - Landscapes - Nature
+    summary: Updates from Blog - Chuq Von Rospach - Birds - Landscapes - Nature.
+  churchillsolitaire:
+    feed_url: https://www.churchillsolitaire.com/feed/
+    homepage_url: https://www.churchillsolitaire.com
+    display_name: Churchill Solitaire
+    summary: The most diabolical version of solitaire ever devised.
+  ciaradinneen_substack:
+    feed_url: https://ciaradinneen.substack.com/feed
+    homepage_url: https://ciaradinneen.substack.com
+    display_name: over promise under deliver
+    summary: a commonplace of sorts, for what it's worth
+  circleid:
+    feed_url: https://circleid.com/feeds/main/
+    homepage_url: https://www.circleid.com/blogs
+    display_name: CircleID
+    summary: CircleID
+  circusscientist:
+    feed_url: https://www.circusscientist.com/feed/
+    homepage_url: https://www.circusscientist.com
+    display_name: Circus Scientist
+    summary: Technology in Performance
+  cirw_in:
+    feed_url: https://cirw.in/blog/atom.xml
+    homepage_url: https://cirw.in
+    display_name: Conrad Irwin
+    summary: Updates from Conrad Irwin.
+  citizen428:
+    feed_url: https://citizen428.net/index.xml
+    homepage_url: https://citizen428.net
+    display_name: citizen428.net
+    summary: Learn something about everything
+  citizenschools:
+    feed_url: https://www.citizenschools.org/news?format=rss
+    homepage_url: https://www.citizenschools.org/news
+    display_name: News - Citizen Schools
+    summary: News
+  citylimits:
+    feed_url: https://citylimits.org/feed/
+    homepage_url: https://citylimits.org
+    display_name: City Limits
+    summary: Empowering affordable and thriving neighborhoods | Knowledge builds community
+  civilservice_blog_gov_uk:
+    feed_url: https://civilservice.blog.gov.uk/feed/
+    homepage_url: https://civilservice.blog.gov.uk
+    display_name: Civil Service
+    summary: Updates from Civil Service.
+  ckeditor:
+    feed_url: https://ckeditor.com/rss.xml
+    homepage_url: https://ckeditor.com
+    display_name: CKEditor Ecosystem Blog
+    summary: Read updates and release notes of CKEditor Ecosystem products. Find out more about implementing collaborative editing in the web development context.
+  zight:
+    feed_url: https://zight.com/rss.xml
+    homepage_url: https://zight.com
+    display_name: Zight Blog
+    summary: Screen recording, screenshots, and async communication — how teams show work instead of describing it.
+  clearerthinking:
+    feed_url: https://www.clearerthinking.org/blog-feed.xml
+    homepage_url: https://www.clearerthinking.org/blog
+    display_name: ClearerThinking.org
+    summary: Clearer Thinking
+  clearleft:
+    feed_url: https://clearleft.com/thinking/rss
+    homepage_url: https://clearleft.com/thinking
+    display_name: Clearleft | Blog
+    summary: The latest news from Clearleft
+  clevergirlblog_tumblr:
+    feed_url: https://clevergirlblog.tumblr.com/rss
+    homepage_url: https://clevergirlblog.tumblr.com
+    display_name: Clever Girl
+    summary: 'Designer • Woman • Tech Twitter: @MissyTitus | Dribbble: @MissyTitus | missytitus.com'
+  clickhouse:
+    feed_url: https://clickhouse.com/rss.xml
+    homepage_url: https://clickhouse.com/blog
+    display_name: ClickHouse Blog
+    summary: Welcome to the ClickHouse Blog!
+  cliffmass_blogspot:
+    feed_url: https://cliffmass.blogspot.com/feeds/posts/default
+    homepage_url: https://cliffmass.blogspot.com
+    display_name: Cliff Mass Weather Blog
+    summary: Updates from Cliff Mass Weather Blog.
+  climatecentral:
+    feed_url: http://feeds.feedburner.com/climatecentral/djOO
+    homepage_url: https://www.climatecentral.org
+    display_name: Climate Central - News
+    summary: Climate Central is a nonprofit science and media organization created to provide clear and objective information about climate change and its potential solutions.
+  clockmaker_jp:
+    feed_url: http://feeds2.feedburner.com/clockmaker
+    homepage_url: https://clockmaker.jp/blog
+    display_name: ClockMaker Blog
+    summary: Updates from ClockMaker Blog.
+  clockworkpi:
+    feed_url: https://www.clockworkpi.com/blog-feed.xml
+    homepage_url: https://www.clockworkpi.com/home-gameshell
+    display_name: ClockworkPi.com
+    summary: An open source software & hardware tech company.
+  cloudappreciationsociety:
+    feed_url: https://cloudappreciationsociety.org/feed/
+    homepage_url: https://cloudappreciationsociety.org
+    display_name: Cloud Appreciation Society
+    summary: Uniting cloud lovers around the world
+  flexera:
+    feed_url: https://www.flexera.com/blog/feed/
+    homepage_url: https://www.flexera.com/blog
+    display_name: Flexera Blog
+    summary: Stay in the know
+  cloudconvert:
+    feed_url: https://cloudconvert.com/blog/feed
+    homepage_url: https://cloudconvert.com
+    display_name: CloudConvert Blog
+    summary: Updates from CloudConvert Blog.
+  cloudpundit:
+    feed_url: https://cloudpundit.com/feed/
+    homepage_url: https://cloudpundit.com
+    display_name: 'CloudPundit: Massive-Scale Computing'
+    summary: the business of Internet infrastructure, cloud computing, and data centers
+  clutchpoints:
+    feed_url: https://clutchpoints.com/feed
+    homepage_url: https://clutchpoints.com
+    display_name: ClutchPoints
+    summary: Unlock Your Sports World
+  cmus_github:
+    feed_url: https://github.com/cmus/cmus/commits/master.atom
+    homepage_url: https://cmus.github.io
+    display_name: Recent Commits to cmus:master
+    summary: Updates from Recent Commits to cmus:master.
+  sourceforge:
+    feed_url: https://sourceforge.net/projects/cmus/rss?path=/
+    homepage_url: https://sourceforge.net
+    display_name: C* Music Player
+    summary: Files from C* Music Player Small, fast and powerful console music player for Linux and many other UNIX like operating systems.
+  cncf:
+    feed_url: https://www.cncf.io/feed/
+    homepage_url: https://www.cncf.io
+    display_name: Cloud Native Computing Foundation
+    summary: Updates from Cloud Native Computing Foundation.
+  cnil_fr:
+    feed_url: https://www.cnil.fr/fr/rss.xml
+    homepage_url: https://www.cnil.fr/fr
+    display_name: RSS - Actualités CNIL
+    summary: Protéger les données personnelles, accompagner l'innovation, préserver les libertés individuelles
+  cnx_software:
+    feed_url: https://www.cnx-software.com/feed/
+    homepage_url: https://www.cnx-software.com
+    display_name: CNX Software – Embedded Systems News
+    summary: Reviews, tutorials and the latest news about embedded systems, IoT, open-source hardware, SBC's, microcontrollers, processors, and more
+  cnyvitals:
+    feed_url: https://cnyvitals.org/feed/
+    homepage_url: https://cnyvitals.org
+    display_name: CNY Vitals
+    summary: Updates from CNY Vitals.
+  co9:
+    feed_url: https://co9.io/rss.xml
+    homepage_url: https://co9.io
+    display_name: Council of 9
+    summary: 'Ruling the world. A very diverse and darling group… Contact: contact@co9.io'
+  cockroachlabs:
+    feed_url: https://www.cockroachlabs.com/rss.xml
+    homepage_url: https://www.cockroachlabs.com
+    display_name: cockroachlabs.com
+    summary: Welcome to this blog posts!
   jeff_geerling:
     feed_url: https://www.jeffgeerling.com/blog.xml
     homepage_url: https://www.jeffgeerling.com
