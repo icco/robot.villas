@@ -16,6 +16,256 @@ bots:
     display_name: Lobsters
     summary: Stories from Lobsters
     profile_photo: https://lobste.rs/apple-touch-icon-144.png
+  ttvl_co:
+    feed_url: https://ttvl.co/index.xml
+    homepage_url: https://ttvl.co
+    display_name: Home on Toto Tvalavadze
+    summary: Recent content in Home on Toto Tvalavadze
+  tuaw:
+    feed_url: https://www.tuaw.com/feed/
+    homepage_url: https://www.tuaw.com
+    display_name: TUAW
+    summary: Apple News, Reviews and How-To Guides
+  tubbypaws_blogspot:
+    feed_url: https://tubbypaws.blogspot.com/feeds/posts/default
+    homepage_url: https://tubbypaws.blogspot.com
+    display_name: Tubbypaws
+    summary: Updates from Tubbypaws.
+  tumbledry:
+    feed_url: https://tumbledry.org/all.rss
+    homepage_url: https://tumbledry.org
+    display_name: tumbledry.org
+    summary: by
+  tumblr_amitgupta:
+    feed_url: https://tumblr.amitgupta.com/rss
+    homepage_url: https://tumblr.amitgupta.com
+    display_name: Amit Gupta likes you!
+    summary: 'I live in San Francisco, CA. I started Photojojo & Jelly. (more…) email: [current year] @ amit gupta dot com'
+  tuneage_tumblr:
+    feed_url: https://tuneage.com/rss
+    homepage_url: https://tuneage.tumblr.com
+    display_name: Tuneage
+    summary: Updates from Tuneage.
+  tuple_app:
+    feed_url: https://tuple.app/rss.xml
+    homepage_url: https://tuple.app
+    display_name: The Tuple Blog
+    summary: Read the latest news, info and thoughts from the Tuple team
+  turbopuffer:
+    feed_url: https://turbopuffer.com/blog/rss.xml
+    homepage_url: https://turbopuffer.com/blog
+    display_name: turbopuffer Blog
+    summary: Latest posts from the turbopuffer blog
+  tutorialedge:
+    feed_url: https://tutorialedge.net/index.xml
+    homepage_url: https://tutorialedge.net
+    display_name: TutorialEdge.net
+    summary: Recent content on TutorialEdge.net
+  tvstudiohistory:
+    feed_url: https://tvstudiohistory.co.uk/studio-category/bbc-tv-centre/feed/
+    homepage_url: https://tvstudiohistory.co.uk
+    display_name: BBC TV Centre - TV Studio History
+    summary: TV Studio History
+  tweetping:
+    feed_url: https://tweetping.net/feed/
+    homepage_url: https://tweetping.net
+    display_name: TweetPing.net | Explore Digital Insights, Trends & Global Stories
+    summary: Updates from TweetPing.net | Explore Digital Insights, Trends & Global Stories.
+  twicsy_tumblr:
+    feed_url: https://twicsy.tumblr.com/rss
+    homepage_url: https://twicsy.tumblr.com
+    display_name: Trending shirt for adults, find your thing
+    summary: All stuff for t-shirts, hoodies, tanks or mugs.
+  twingate:
+    feed_url: https://rss.app/feeds/GvWVHBYxRfO2ER9k.xml
+    homepage_url: https://www.twingate.com
+    display_name: Twingate Blog
+    summary: Twingate makes Zero Trust Network Access easy to deploy, even easier to use, and always secure.
+  salesforce:
+    feed_url: https://www.salesforce.com/blog/feed/
+    homepage_url: https://www.salesforce.com/blog
+    display_name: Salesforce
+    summary: Learn how to get ahead of trends and supercharge professional relationships
+  twowaymirrors:
+    feed_url: https://www.twowaymirrors.com/feed/
+    homepage_url: https://www.twowaymirrors.com
+    display_name: Two Way Mirrors
+    summary: Mirrors that reflect your ideas
+  tyhalley_tumblr:
+    feed_url: https://tyhalley.tumblr.com/rss
+    homepage_url: https://tyhalley.tumblr.com
+    display_name: Ty Halley's Secret Tumblr
+    summary: I created the web-experiment “This Could Chnage Everything”. By taking the form of a “webcomic” this webs-periment dives deep undercover to unfurl the dark, petty and incessantly narcissistic world of “journal comics”.
+  tylercipriani:
+    feed_url: https://tylercipriani.com/blog/index.atom
+    homepage_url: https://tylercipriani.com/blog
+    display_name: 'Tyler Cipriani: blog'
+    summary: 'Updates from Tyler Cipriani: blog.'
+  ubergizmo:
+    feed_url: https://www.ubergizmo.com/feed/
+    homepage_url: https://www.ubergizmo.com
+    display_name: Ubergizmo
+    summary: Opinionated news and reviews of consumer electronics
+  ubuntu_nl:
+    feed_url: https://www.ubuntu-nl.org/index.xml
+    homepage_url: https://www.ubuntu-nl.org
+    display_name: Ubuntu NL
+    summary: Recent content on Ubuntu NL
+  ubuntuincident_wordpress:
+    feed_url: https://ubuntuincident.wordpress.com/feed/
+    homepage_url: https://ubuntuincident.wordpress.com
+    display_name: The Ubuntu Incident
+    summary: Ubuntu Adventures
+  ugmonk:
+    feed_url: https://ugmonk.com/blogs/journal.atom
+    homepage_url: https://ugmonk.com/blogs/journal
+    display_name: Ugmonk - Journal
+    summary: Updates from Ugmonk - Journal.
+  uk_news_yahoo:
+    feed_url: https://uk.news.yahoo.com/rss/
+    homepage_url: https://uk.news.yahoo.com
+    display_name: Yahoo News UK & Ireland - Latest World News & UK News Headlines
+    summary: The latest world news and UK news headlines from Yahoo News UK. Find videos, pictures and in-depth coverage of politics, business, technology, entertainment news and more.
+  uk_pcmag:
+    feed_url: https://uk.pcmag.com/feed.xml
+    homepage_url: https://uk.pcmag.com
+    display_name: PCMag UK
+    summary: Updates from PCMag UK.
+  ultraparanoid_wordpress:
+    feed_url: https://ultraparanoid.wordpress.com/feed/
+    homepage_url: https://ultraparanoid.wordpress.com
+    display_name: ultraparanoid
+    summary: A blog on computer and internet privacy and security.
+  uncloud_run:
+    feed_url: https://uncloud.run/blog/rss.xml
+    homepage_url: https://uncloud.run/blog
+    display_name: Uncloud Blog
+    summary: Uncloud Blog
+  xcott:
+    feed_url: https://xcott.com/feed/
+    homepage_url: https://xcott.com
+    display_name: Dark Блог
+    summary: Блог о даркнет площадках, безопасности в сети Tor.
+  unhandledexpression:
+    feed_url: http://unhandledexpression.com/feed.xml
+    homepage_url: http://unhandledexpression.com
+    display_name: Unhandled Expression
+    summary: Updates from Unhandled Expression.
+  unhosted:
+    feed_url: https://unhosted.org/adventures/feed.atom
+    homepage_url: https://unhosted.org
+    display_name: Unhosted Adventures
+    summary: Updates from Unhosted Adventures.
+  uniglobekisco:
+    feed_url: https://uniglobekisco.com/feed
+    homepage_url: https://uniglobekisco.com
+    display_name: Uniglobe Kisco Inc
+    summary: Advanced Materials Specialist
+  unison_lang:
+    feed_url: https://www.unison-lang.org/feed.xml
+    homepage_url: https://www.unison-lang.org
+    display_name: Unison Language | Blog
+    summary: Updates from Unison Language | Blog.
+  universityofcalifornia_edu:
+    feed_url: https://www.universityofcalifornia.edu/rss.xml
+    homepage_url: https://www.universityofcalifornia.edu
+    display_name: University of California - The only world-class public research university for, by and of California
+    summary: Updates from University of California - The only world-class public research university for, by and of California..
+  skor_sh:
+    feed_url: http://skor.sh/index.xml
+    homepage_url: https://skor.sh
+    display_name: Ivan Skorokhodov
+    summary: Recent content on Ivan Skorokhodov
+  unix:
+    feed_url: https://community.unix.com/t/disconnecting-a-telnet-session/178726.rss
+    homepage_url: https://www.unix.com
+    display_name: Disconnecting a telnet session
+    summary: How can I disconnect an existing telnet session? The host is a serial port server with multiple ports. The users login using the host's name and a port, i.e. telnet host01 1235. Thanks.
+  unix_stackexchange:
+    feed_url: https://unix.stackexchange.com/feeds
+    homepage_url: https://unix.stackexchange.com/questions
+    display_name: Recent Questions - Unix & Linux Stack Exchange
+    summary: Updates from Recent Questions - Unix & Linux Stack Exchange.
+  unixetc:
+    feed_url: https://unixetc.co.uk/feed/
+    homepage_url: https://unixetc.co.uk
+    display_name: Unix etc.
+    summary: Unix, Linux and related technologies.
+  unknownworlds:
+    feed_url: https://unknownworlds.com/feed.xml
+    homepage_url: https://unknownworlds.com/en/news
+    display_name: Unknown Worlds — News
+    summary: Latest news from Unknown Worlds
+  unlok_ca:
+    feed_url: https://www.unlok.ca/feed/
+    homepage_url: https://www.unlok.ca
+    display_name: Unlok
+    summary: Updates from Unlok.
+  unrealengine:
+    feed_url: https://www.unrealengine.com/rss.xml
+    homepage_url: https://unrealengine.com
+    display_name: Unreal Engine - News, Developer Interviews, Spotlights, Tech Blogs
+    summary: Updates from Unreal Engine - News, Developer Interviews, Spotlights, Tech Blogs.
+  unwomen:
+    feed_url: https://www.unwomen.org/en/rss.xml
+    homepage_url: https://www.unwomen.org/en
+    display_name: UN Women
+    summary: Updates from UN Women.
+  upguard:
+    feed_url: https://www.upguard.com/breaches/rss.xml
+    homepage_url: https://www.upguard.com
+    display_name: UpGuard Data Breach Research
+    summary: Subscribe to UpGuard's data breach research and get notified when new research is released.
+  uploadvr:
+    feed_url: https://www.uploadvr.com/rss/
+    homepage_url: https://www.uploadvr.com
+    display_name: UploadVR
+    summary: VR & AR news, reviews, guides, and industry analysis.
+  uppy:
+    feed_url: https://uppy.io/blog/rss.xml
+    homepage_url: https://uppy.io/blog
+    display_name: Uppy Blog
+    summary: Uppy Blog
+  upstartlabs:
+    feed_url: https://upstartlabs.com/feed/
+    homepage_url: https://upstartlabs.com
+    display_name: Upstart Labs – Accelerating Market Entry – Upstart Labs
+    summary: Updates from Upstart Labs – Accelerating Market Entry – Upstart Labs.
+  urbangiraffe:
+    feed_url: https://urbangiraffe.com/feed/
+    homepage_url: https://urbangiraffe.com
+    display_name: Urban Giraffe
+    summary: Life, The Universe, and WordPress
+  urbankchoze_blogspot:
+    feed_url: https://urbankchoze.blogspot.com/feeds/posts/default
+    homepage_url: https://urbankchoze.blogspot.com
+    display_name: Urban kchoze
+    summary: Updates from Urban kchoze.
+  uri_cat:
+    feed_url: https://uri.cat/feed/
+    homepage_url: https://uri.cat
+    display_name: The Works of Oriol Ferrer Mesià
+    summary: Updates from The Works of Oriol Ferrer Mesià.
+  usa_oceana:
+    feed_url: https://usa.oceana.org/feed/
+    homepage_url: https://usa.oceana.org/homepage/home
+    display_name: Oceana USA
+    summary: We are Protecting the World's Oceans.
+  usc_edu:
+    feed_url: https://www.usc.edu/feed/
+    homepage_url: https://www.usc.edu
+    display_name: USC
+    summary: University of Southern California
+  use_the_index_luke:
+    feed_url: https://use-the-index-luke.com/blog/feed
+    homepage_url: https://use-the-index-luke.com
+    display_name: Use The Index, Luke!
+    summary: A Guide to SQL Performance for Developers
+  usefulfictions_substack:
+    feed_url: https://usefulfictions.substack.com/feed
+    homepage_url: https://usefulfictions.substack.com
+    display_name: Useful Fictions
+    summary: all models are wrong, but some are useful
   cdm:
     feed_url: https://cdm.link/feed/
     homepage_url: https://cdm.link
