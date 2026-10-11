@@ -854,6 +854,256 @@ bots:
     display_name: Strong Towns
     summary: Cities, transportation, housing, walkability, and sustainable urban development.
     profile_photo: https://cdn.prod.website-files.com/67ed6684112274e687cbf06e/68bb2b845bd31fd2886492e9_strong-towns_webclip.png
+  geeky_gadgets:
+    feed_url: https://www.geeky-gadgets.com/feed/
+    homepage_url: https://www.geeky-gadgets.com
+    display_name: Geeky Gadgets
+    summary: The Latest Technology News
+  geekygirlsarah:
+    feed_url: https://geekygirlsarah.com/feed.xml
+    homepage_url: https://geekygirlsarah.com
+    display_name: GeekyGirlSarah.com
+    summary: Updates from GeekyGirlSarah.com.
+  geekz:
+    feed_url: https://geekz.co.uk/lovesraymond/feed
+    homepage_url: https://geekz.co.uk/lovesraymond
+    display_name: Everybody loves Eric Raymond
+    summary: A comic featuring esr, rms, Linus and others
+  gellmannamnesia_blogspot:
+    feed_url: https://gellmannamnesia.blogspot.com/feeds/posts/default
+    homepage_url: https://gellmannamnesia.blogspot.com
+    display_name: Gell-Mann Amnesia
+    summary: Updates from Gell-Mann Amnesia.
+  generalassemb_ly:
+    feed_url: https://resource-center.generalassemb.ly/feed/
+    homepage_url: https://www.generalassemb.ly
+    display_name: General Assembly
+    summary: Updates from General Assembly.
+  geography_oii_ox_ac_uk:
+    feed_url: https://geography.oii.ox.ac.uk/feed/
+    homepage_url: https://geography.oii.ox.ac.uk
+    display_name: Information Geographies
+    summary: Updates from Information Geographies.
+  geoloqi:
+    feed_url: https://geoloqi.com/blog/feed/
+    homepage_url: http://geoloqi.com/blog
+    display_name: Geoloqi Blog
+    summary: A secure, real-time mobile and web platform for location sharing.
+  geon_github:
+    feed_url: https://geon.github.io/atom.xml
+    homepage_url: https://geon.github.io
+    display_name: geon
+    summary: Updates from geon.
+  georgestocker:
+    feed_url: https://georgestocker.com/feed/
+    homepage_url: https://georgestocker.com
+    display_name: George Stocker
+    summary: Discovering how to transform software businesses in a post-agile world.
+  geshan_com_np:
+    feed_url: https://geshan.com.np/atom.xml
+    homepage_url: https://geshan.com.np
+    display_name: Geshan's Blog
+    summary: Updates from Geshan's Blog.
+  encrypt_me:
+    feed_url: https://encrypt.me/feed/
+    homepage_url: https://encrypt.me
+    display_name: Encrypt.me
+    summary: Updates from Encrypt.me.
+  getkirby:
+    feed_url: https://github.com/getkirby/kirby/releases.atom
+    homepage_url: https://getkirby.com
+    display_name: Release notes from kirby
+    summary: Updates from Release notes from kirby.
+  getprsm:
+    feed_url: https://getprsm.com/feed
+    homepage_url: https://getprsm.com
+    display_name: PRSM
+    summary: The Sharing Network
+  getrest_co:
+    feed_url: https://getrest.co/feed/
+    homepage_url: https://getrest.co
+    display_name: GetRest News
+    summary: Top Tech Innovations
+  getyourshittogether:
+    feed_url: https://getyourshittogether.org/feed/
+    homepage_url: https://getyourshittogether.org
+    display_name: Get Your Shit Together
+    summary: Life goes sideways. Hoping for the best is not a plan
+  ghuntley:
+    feed_url: https://ghuntley.com/rss/
+    homepage_url: https://ghuntley.com
+    display_name: Geoffrey Huntley
+    summary: It's an uncertain time for our profession, but one thing is certain—things will change. Drafting used to require a room of engineers, but then CAD came along...
+  giantitp:
+    feed_url: https://www.giantitp.com/comics/oots.rss
+    homepage_url: http://www.giantitp.com/Comics.html
+    display_name: Order of the Stick
+    summary: Order of the Stick
+  gibsondunn:
+    feed_url: https://www.gibsondunn.com/feed/
+    homepage_url: https://www.gibsondunn.com
+    display_name: Gibson Dunn
+    summary: Gibson, Dunn & Crutcher LLP International Law Firm
+  gigasquidsoftware:
+    feed_url: https://gigasquidsoftware.com/atom.xml
+    homepage_url: https://gigasquidsoftware.com
+    display_name: Squid's Blog
+    summary: Recent content on Squid's Blog
+  gigster:
+    feed_url: https://gigster.com/feed/
+    homepage_url: https://gigster.com
+    display_name: Gigster
+    summary: Updates from Gigster.
+  gijsk:
+    feed_url: https://www.gijsk.com/blog/feed/
+    homepage_url: https://www.gijsk.com/blog
+    display_name: Use Tables!
+    summary: Except not really.
+  gimp:
+    feed_url: https://www.gimp.org/feeds/atom.xml
+    homepage_url: https://www.gimp.org
+    display_name: GIMP
+    summary: Updates from GIMP.
+  girlslovesuperheroes_tumblr:
+    feed_url: https://girlslovesuperheroes.tumblr.com/rss
+    homepage_url: https://girlslovesuperheroes.tumblr.com
+    display_name: Superheroes are for girls, too!
+    summary: Superheroes aren’t just for little boys. Here you’ll find lots of images of little girls from past and present who also love them. As seen on BuzzFeed, MentalFloss, HuffingtonPost, Oprah.com, Comics Alliance, Pajiba, BLTB, School Library Journal and others. You may submit pictures you’ve taken or pictures of you or a relative. No pictures randomly pulled off the net, please. Girls dressed as superheroes, meeting superheroes, reading superheroes comics are all welcome. If you even have to ask abo
+  gis_utah_gov:
+    feed_url: https://gis.utah.gov/rss.xml
+    homepage_url: https://gis.utah.gov
+    display_name: UGRC
+    summary: We are the Utah's map technology coordination office. We aggregate and make available important statewide data sets; engage and advise on GIS implementations and best practices; and build custom tools, services, and applications for all levels of government.
+  git_annex_branchable:
+    feed_url: https://git-annex.branchable.com/news/index.rss
+    homepage_url: http://git-annex.branchable.com/news
+    display_name: news
+    summary: git-annex
+  git_blame_blogspot:
+    feed_url: http://feeds.feedburner.com/GitBlame
+    homepage_url: http://git-blame.blogspot.com
+    display_name: Git Blame
+    summary: Updates from Git Blame.
+  git_legit:
+    feed_url: https://www.git-legit.org/feed/
+    homepage_url: https://www.git-legit.org
+    display_name: Git Legit
+    summary: Updates from Git Legit.
+  git_tower:
+    feed_url: https://feeds.git-tower.com/tower-blog
+    homepage_url: https://www.git-tower.com/blog
+    display_name: Tower Blog
+    summary: Tower Blog - About Web and Software Development, Marketing and Design
+  git_mills:
+    feed_url: https://git.mills.io/yarnsocial/yarn
+    homepage_url: https://git.mills.io/yarnsocial/yarn/branch/main
+    display_name: Latest commits for branch main
+    summary: "\U0001F4D5 yarn is a Self-Hosted, Twitter™-like Decentralised micro-Blogging platform. No ads, no tracking, your content, your data!"
+  githubstatus:
+    feed_url: https://www.githubstatus.com/history.atom
+    homepage_url: https://www.githubstatus.com
+    display_name: GitHub Status - Incident History
+    summary: Updates from GitHub Status - Incident History.
+  gitian:
+    feed_url: https://gitian.org/index.xml
+    homepage_url: https://gitian.org
+    display_name: Gitian
+    summary: Recent content on Gitian
+  giuliomac_wordpress:
+    feed_url: https://giuliomac.wordpress.com/feed/
+    homepage_url: https://giuliomac.wordpress.com
+    display_name: GiulioMac
+    summary: Personal blog and place for the things I care about.
+  gizmoweek:
+    feed_url: https://www.gizmoweek.com/feed/
+    homepage_url: https://www.gizmoweek.com
+    display_name: GizmoWeek
+    summary: Updates from GizmoWeek.
+  glaad:
+    feed_url: https://glaad.org/feed/
+    homepage_url: https://glaad.org
+    display_name: GLAAD
+    summary: GLAAD rewrites the script for LGBTQ acceptance.
+  glasswire:
+    feed_url: https://www.glasswire.com/blog/feed/
+    homepage_url: https://www.glasswire.com/blog
+    display_name: GlassWire Blog
+    summary: Free Firewall Software & Network Monitor.
+  glazkov:
+    feed_url: https://glazkov.com/feed/
+    homepage_url: https://glazkov.com
+    display_name: Dimitri Glazkov
+    summary: Self and About
+  glinden_blogspot:
+    feed_url: http://feeds.feedburner.com/GeekingWithGreg
+    homepage_url: http://glinden.blogspot.com
+    display_name: Geeking with Greg
+    summary: Updates from Geeking with Greg.
+  globalgrind:
+    feed_url: https://globalgrind.com/feed/
+    homepage_url: https://globalgrind.com
+    display_name: Global Grind
+    summary: Go-to spot for viral internet content | entertainment news, music news, quizzes, and celebrity news for Millennials and Gen Z.
+  globalnerdy:
+    feed_url: https://www.globalnerdy.com/feed/
+    homepage_url: https://www.globalnerdy.com
+    display_name: Global Nerdy
+    summary: Tampa Bay’s Technology Blog
+  glp1digest:
+    feed_url: https://www.glp1digest.com/feed
+    homepage_url: https://www.glp1digest.com
+    display_name: GLP-1 Digest
+    summary: The GLP-1 newsletter for founders, operators and investors.
+  glyph_twistedmatrix:
+    feed_url: https://blog.glyph.im/feeds/all.atom.xml
+    homepage_url: https://glyph.twistedmatrix.com
+    display_name: Deciphering Glyph
+    summary: Updates from Deciphering Glyph.
+  glyphsapp:
+    feed_url: https://glyphsapp.com/feed
+    homepage_url: https://glyphsapp.com
+    display_name: Glyphs News, Events and Tutorials
+    summary: All the latest from Glyphs
+  gnd_buzz:
+    feed_url: https://gnd.buzz/rss/main
+    homepage_url: https://gnd.buzz
+    display_name: gnd buzz
+    summary: Making music and noise, building instruments and effects, learning electronics and DSP.
+  go_girly:
+    feed_url: https://go-girly.com/feed/
+    homepage_url: https://go-girly.com
+    display_name: Go Girly
+    summary: Meet And Fuck Apps
+  go_bloomberg:
+    feed_url: https://go.bloomberg.com/feed/
+    homepage_url: https://go.bloomberg.com
+    display_name: Go Redirects
+    summary: Just another Promo Sites site
+  gobankingrates:
+    feed_url: https://www.gobankingrates.com/feed/
+    homepage_url: https://www.gobankingrates.com
+    display_name: GOBankingRates
+    summary: Personal finance resource designed to share articles and advice on saving, managing, and making money.
+  gocardless:
+    feed_url: https://gocardless.com/content-platform/rss/resources.xml
+    homepage_url: https://gocardless.com
+    display_name: GoCardless Resources
+    summary: Helping recurring revenue businesses to go further
+  godotengine:
+    feed_url: https://godotengine.org/rss.xml
+    homepage_url: https://godotengine.org
+    display_name: Godot Engine Official
+    summary: Updates from Godot Engine Official.
+  gog:
+    feed_url: https://www.gog.com/blog/feed/
+    homepage_url: https://www.gog.com/blog
+    display_name: GOG.COM
+    summary: Keep Falling in Love With Games
+  goldenhillsoftware:
+    feed_url: https://www.goldenhillsoftware.com/feed/
+    homepage_url: https://www.goldenhillsoftware.com
+    display_name: Golden Hill Software
+    summary: Updates from Golden Hill Software.
   places_journal:
     feed_url: https://feeds.feedburner.com/placesjournal
     homepage_url: https://placesjournal.org
