@@ -18980,6 +18980,280 @@ bots:
     homepage_url: https://djan.org/
     display_name: djan.org
     summary: A public notebook of hardware and software experiments.
+  onmsft:
+    feed_url: https://onmsft.com/feed/
+    homepage_url: https://onmsft.com
+    display_name: OnMSFT
+    summary: Technology news about PC hardware, gaming, Windows, Linux, and the technology industry from OnMSFT.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fonmsft.com&size=128
+  ethan_stock_onotech:
+    feed_url: https://onotech.blogspot.com/feeds/posts/default
+    homepage_url: https://onotech.blogspot.com
+    display_name: 'OnoTech: Ethan Stock on Technology'
+    summary: Archived technology, search, social-media, entrepreneurship, and political commentary by Ethan Stock; feed entries end in April 2010.
+  openapi_initiative:
+    feed_url: https://www.openapis.org/feed
+    homepage_url: https://www.openapis.org
+    display_name: OpenAPI Initiative
+    summary: Specification announcements, community news, events, and newsletters from the OpenAPI Initiative, including OpenAPI and Arazzo.
+    profile_photo: https://www.openapis.org/wp-content/uploads/sites/31/2019/06/favicon-300x300.png
+  open_compute_project:
+    feed_url: http://www.opencompute.org/news/feed/
+    homepage_url: https://www.opencompute.org/news
+    display_name: Open Compute Project
+    summary: Open Compute Project news about open data-center hardware, networking, AI infrastructure, technical contributions, and community events.
+    profile_photo: https://www.opencompute.org/wp-content/uploads/2026/08/cropped-OCP-main-logo-Arrows-8DC63F-2000px-32x32.png
+  opendemocracy:
+    feed_url: https://www.opendemocracy.net/rss/
+    homepage_url: https://www.opendemocracy.net
+    display_name: openDemocracy
+    summary: Investigative reporting, political analysis, and movement-focused journalism about rights, gender, migration, technology, and world affairs from openDemocracy.
+    profile_photo: https://www.opendemocracy.net/favicon.png
+  openfga_blog:
+    feed_url: https://openfga.dev/blog/rss.xml
+    homepage_url: https://openfga.dev/blog
+    display_name: OpenFGA Blog
+    summary: OpenFGA release announcements, authorization-model guidance, engineering updates, and community newsletters about fine-grained authorization.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fopenfga.dev%2Fblog&size=128
+  gavin_carrs_hackery:
+    feed_url: https://openfusion.net/index.atom
+    homepage_url: https://openfusion.net
+    display_name: Gavin Carr's Hackery
+    summary: Archived programming and system-administration articles by Gavin Carr about Linux, Go, Perl, shell tools, and web infrastructure; feed entries end in November 2021.
+    profile_photo: https://openfusion.net/public/images/avatar_favicon.png
+  open_plans:
+    feed_url: https://www.openplans.org/blog?format=rss
+    homepage_url: https://www.openplans.org/blog
+    display_name: Open Plans
+    summary: Open Plans advocacy updates, newsletters, research, and events about New York City streets, public space, outdoor dining, and reducing driving.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.openplans.org%2Fblog&size=128
+  openrce:
+    feed_url: https://www.openrce.org/rss/feeds/articles
+    homepage_url: https://www.openrce.org/articles
+    display_name: OpenRCE
+    summary: Archived technical articles from the Open Reverse Code Engineering Community about malware analysis, memory forensics, and reverse engineering; article-feed entries end in November 2008.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.openrce.org%2Farticles&size=128
+  openssl_valhalla_rampage:
+    feed_url: https://opensslrampage.org/rss
+    homepage_url: https://opensslrampage.org
+    display_name: OpenSSL Valhalla Rampage
+    summary: Archived commentary on OpenSSL cleanup, security fixes, and LibreSSL development and releases; feed entries end in October 2014.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fopensslrampage.org&size=128
+  open_sysblog:
+    feed_url: http://opensysblog.directorioc.net/feeds/posts/default
+    homepage_url: http://opensysblog.directorioc.net
+    display_name: Open SysBlog
+    summary: Archived Linux and system-administration notes about networking, DNS, TLS, SSH, containers, and databases; feed entries end in September 2017.
+  opentelemetry:
+    feed_url: https://opentelemetry.io/index.xml
+    homepage_url: https://opentelemetry.io
+    display_name: OpenTelemetry
+    summary: Official OpenTelemetry documentation and specification pages about telemetry collection, instrumentation, traces, metrics, and logs; this site-wide feed is not limited to blog posts.
+    profile_photo: https://opentelemetry.io/apple-touch-icon.png
+  orcaman:
+    feed_url: https://orcaman.blogspot.com/feeds/posts/default
+    homepage_url: https://orcaman.blogspot.com
+    display_name: ./orcaman
+    summary: Archived programming notes on Go, App Engine, continuous integration, concurrency, databases, and developer tooling from ./orcaman; feed entries end in June 2015.
+  orgnizedmess:
+    feed_url: https://orgnizedmess.net/feed.xml
+    homepage_url: https://orgnizedmess.net/index.html
+    display_name: orgnizedmess
+    summary: Personal technical notes on self-hosting, homelabs, mail servers, networking, blogging, and developer tools from orgnizedmess.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Forgnizedmess.net%2Findex.html&size=128
+  open_source_game_clones:
+    feed_url: https://osgameclones.com/feed.xml
+    homepage_url: https://osgameclones.com
+    display_name: Open Source Game Clones
+    summary: New and updated directory entries for open source and source-available game remakes, clones, ports, and reverse-engineering projects.
+  the_accidental_developer:
+    feed_url: https://osric.com/chris/accidental-developer/feed/
+    homepage_url: https://osric.com/chris/accidental-developer
+    display_name: The Accidental Developer
+    summary: Programming and system-administration articles on The Accidental Developer, covering Linux, networking, web development, monitoring, and developer tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fosric.com%2Fchris%2Faccidental-developer&size=128
+  otavio_valadares:
+    feed_url: https://otavio.dev/feed/
+    homepage_url: https://otavio.dev
+    display_name: O. Valadares' Blog
+    summary: Otavio Valadares's curated monthly reading newsletters about software engineering, AI, technology, and books; older programming articles are available on the blog.
+    profile_photo: https://otavio.dev/wp-content/uploads/2024/06/1ac164c1-0680-41f1-976b-8f8a6ba82baf.jpg?w=135
+  our_incredible_journey:
+    feed_url: https://ourincrediblejourney.tumblr.com/rss
+    homepage_url: https://ourincrediblejourney.tumblr.com
+    display_name: Our Incredible Journey
+    summary: A critical collection of startup acquisition and shutdown announcements, juxtaposing company promises with product closures and acquihires.
+  our_world_in_data:
+    feed_url: https://ourworldindata.org/atom.xml
+    homepage_url: https://ourworldindata.org
+    display_name: Our World in Data
+    summary: Research articles and data-driven explanations about health, population, poverty, climate, biodiversity, democracy, and other global issues from Our World in Data.
+    profile_photo: https://ourworldindata.org/apple-touch-icon.png
+  tin_rabzelj:
+    feed_url: https://rabzelj.com/blog/rss.xml
+    homepage_url: https://rabzelj.com
+    display_name: Tin Rabzelj
+    summary: Software engineer.
+    profile_photo: https://rabzelj.com/apple-icon.png
+  outdoor_voices:
+    feed_url: https://www.outdoorvoices.com/collections/shop-men.atom
+    homepage_url: https://www.outdoorvoices.com/collections/shop-men
+    display_name: Outdoor Voices
+    summary: Men's activewear product listings from Outdoor Voices, including shirts, shorts, sweatpants, and other clothing; this is a product-catalog feed, not editorial news.
+    profile_photo: https://www.outdoorvoices.com/cdn/shop/files/OV-Logo2_1.png?crop=center&height=32&v=1757817074&width=32
+  outsidethebeltway:
+    feed_url: https://feeds.feedburner.com/OTB
+    homepage_url: https://outsidethebeltway.com
+    display_name: Outside the Beltway
+    summary: U.S. politics, foreign affairs, public-policy analysis, opinion, and community discussion from Outside the Beltway.
+    profile_photo: https://i0.wp.com/outsidethebeltway.com/wp-content/uploads/2019/04/cropped-OTB-1.png?fit=180%2C180&ssl=1
+  ovelny:
+    feed_url: https://ovelny.sh/atom.xml
+    homepage_url: https://ovelny.sh
+    display_name: ovelny
+    summary: Technical guides and personal notes about self-hosting, the Fediverse, offensive security, Linux, and developer tools by Lynn, also known as ovelny; latest feed publication is January 2025, with later article edits.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fovelny.sh&size=128
+  overset:
+    feed_url: http://www.overset.com/rss.xml
+    homepage_url: http://www.overset.com
+    display_name: overset
+    summary: Archived development notes and projects by Jim Palmer about JavaScript, jQuery, web programming, sorting, and developer tools; feed entries end in September 2010.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.overset.com&size=128
+  overthinking_it:
+    feed_url: https://feeds.overthinkingit.com/oti
+    homepage_url: https://www.overthinkingit.com
+    display_name: Overthinking It
+    summary: Episodes of the Overthinking It podcast analyzing television, films, music, and popular culture.
+    profile_photo: https://www.overthinkingit.com/wp-content/themes/oti2012/images/apple-touch-icon-256.png
+  owened:
+    feed_url: https://owened.co.nz/feed
+    homepage_url: https://owened.co.nz
+    display_name: Owened
+    summary: Owen Williams's archived technology commentary about Apple, social media, payments, and interface design; the final June 2017 post announces a move to Charged.
+  owen_ou:
+    feed_url: https://owenou.com/feed.xml
+    homepage_url: https://owenou.com
+    display_name: Owen Ou's blog
+    summary: Owen Ou's archived programming articles and open source project announcements about Go, Git, command-line tools, and terminal sharing; feed entries end in October 2020.
+    profile_photo: https://owenou.com/assets/favicon/apple-touch-icon.png
+  owl_posting:
+    feed_url: https://www.owlposting.com/feed
+    homepage_url: https://www.owlposting.com
+    display_name: Owl Posting
+    summary: Abhishaike Mahajan's essays and interviews about biology, biomedical research, drug discovery, and machine learning on Owl Posting.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!-NWY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F365c6d74-4dbd-460b-820e-ab43a47dbbf1%2Fapple-touch-icon-57x57.png
+  owncloud:
+    feed_url: https://owncloud.com/feed/
+    homepage_url: https://owncloud.com
+    display_name: ownCloud
+    summary: Official ownCloud product releases, security updates, integration guides, engineering articles, and community news about file sharing and collaboration.
+    profile_photo: https://owncloud.com/wp-content/themes/ownCloud/dist/assets/img/favicon/apple-touch-icon.png
+  oxide_computer_company:
+    feed_url: https://oxide.computer/blog/feed
+    homepage_url: https://oxide.computer
+    display_name: Oxide Computer Company Blog
+    summary: Engineering articles, product updates, company announcements, and customer stories from Oxide Computer Company about on-premises cloud computing and server hardware.
+    profile_photo: https://oxide.computer/favicon.png
+  open_yale_courses:
+    feed_url: https://oyc.yale.edu/rss.xml
+    homepage_url: https://oyc.yale.edu
+    display_name: Open Yale Courses
+    summary: Archived Open Yale Courses lecture and examination materials; the current feed contains geology and geophysics course pages dated July 2017, not new course announcements.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Foyc.yale.edu&size=128
+  parikshit_agnihotry:
+    feed_url: https://p.agnihotry.com/index.xml
+    homepage_url: https://p.agnihotry.com
+    display_name: Parikshit Agnihotry
+    summary: Parikshit Agnihotry's software-engineering articles about AI agents, cloud infrastructure, caching, authentication, and hiring.
+  piotr_migdal:
+    feed_url: https://p.migdal.pl/feed.xml
+    homepage_url: https://p.migdal.pl
+    display_name: Piotr Migdał's Blog
+    summary: Piotr Migdal's writing about AI, machine learning, data visualization, quantum physics, software, and personal interests, including his articles published at Quesma.
+    profile_photo: https://p.migdal.pl/favicon.png
+  pacific_coast_business_times:
+    feed_url: https://www.pacbiztimes.com/feed/
+    homepage_url: https://www.pacbiztimes.com
+    display_name: Pacific Coast Business Times
+    summary: Business news and commentary covering Ventura, Santa Barbara, and San Luis Obispo counties in California.
+    profile_photo: https://www.pacbiztimes.com/wp-content/themes/dailypress-child/images/favicons/apple-touch-icon.png
+  padrino:
+    feed_url: https://padrinorb.com/blog.rss
+    homepage_url: https://padrinorb.com
+    display_name: Padrino
+    summary: Release announcements, project news, and development updates for Padrino, the Ruby web framework built on Sinatra.
+    profile_photo: https://padrinorb.com/images/favicons/apple-touch-icon-57x57-75d6516e.png
+  blockthrough:
+    feed_url: https://blockthrough.com/feed/
+    homepage_url: https://blockthrough.com
+    display_name: Blockthrough
+    summary: Articles about ad blocking, publisher revenue, advertising quality, and privacy from Blockthrough, which acquired PageFair in 2018; feed entries end in October 2024.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblockthrough.com&size=128
+  tanya_birch:
+    feed_url: https://www.tanyabirch.com/feed/
+    homepage_url: https://www.tanyabirch.com
+    display_name: Tanya Birch
+    summary: Tanya Birch's travel writing, beer-destination guides, book discussions, and author updates; latest feed publication is January 2025.
+  pallets_blog:
+    feed_url: https://www.palletsprojects.com/blog/feed.xml
+    homepage_url: https://palletsprojects.com/blog
+    display_name: Pallets Blog
+    summary: Archived Pallets project releases and community announcements about Flask, Werkzeug, Jinja, Click, Quart, and related libraries; feed entries end in April 2023.
+    profile_photo: https://github.com/pallets.png?size=200
+  pansentient_league:
+    feed_url: https://pansentient.wordpress.com/feed/
+    homepage_url: https://pansentient.wordpress.com
+    display_name: Pansentient League
+    summary: Archived Spotify articles, synthpop album lists, playlists, and concert notes from Pansentient League; feed entries end in October 2023.
+    profile_photo: https://pansentient.files.wordpress.com/2023/06/afrontwide.jpg?w=64
+  pantheon_blog:
+    feed_url: https://pantheon.io/blog/feed
+    homepage_url: https://pantheon.io
+    display_name: Pantheon WordPress & Drupal Blog
+    summary: Pantheon product and engineering articles about managed web hosting, WordPress, Drupal, content publishing, AI, and website operations; latest feed entries are from October 2025.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpantheon.io&size=128
+  pappps_rambling:
+    feed_url: https://pappp.net/?feed=rss2
+    homepage_url: https://pappp.net
+    display_name: PAPPP's Rambling
+    summary: Personal commentary, technical links, and notes about computing, electronics, fabrication, open source software, and academic life from PAPPP's Rambling.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpappp.net&size=128
+  paragon_initiative:
+    feed_url: https://paragonie.com/rss
+    homepage_url: https://paragonie.com
+    display_name: Paragon Initiative
+    summary: Security and cryptography articles from Paragon Initiative Enterprises about PHP, post-quantum cryptography, secure software, and open source security libraries.
+    profile_photo: https://paragonie.com/static/images/logo.png?gENF/b63y2AhTnJXXsBNJWUoWL4=
+  parallel18:
+    feed_url: https://parallel18.com/feed/
+    homepage_url: https://parallel18.com
+    display_name: Parallel18
+    summary: Parallel18 program announcements, startup news, grants, investment updates, and entrepreneurship articles from its Puerto Rico-based startup ecosystem.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fparallel18.com&size=128
+  parcel_blog:
+    feed_url: https://parceljs.org/feed.xml
+    homepage_url: https://parceljs.org
+    display_name: Parcel Blog
+    summary: Parcel build-tool release announcements and technical articles about bundling, CSS processing, performance, and development tooling; feed entries extend through May 2025.
+    profile_photo: https://parceljs.org/avatar.0b65227e.png
+  parks_computing:
+    feed_url: https://parkscomputing.com/rss.xml
+    homepage_url: https://parkscomputing.com
+    display_name: Parks Computing
+    summary: Paul M. Parks's programming and user-experience writing; this RSS feed currently contains only the June 2023 article Personas In the Wild, despite newer articles on the site.
+    profile_photo: https://parkscomputing.com/apple-touch-icon.png
+  partizan_brewing_archive:
+    feed_url: https://partizanbrewingarchive.tumblr.com/rss
+    homepage_url: https://partizanbrewingarchive.tumblr.com
+    display_name: Partizan Brewing Archive
+    summary: Archived photographs of Partizan Brewing beers and label artwork; feed entries end in January 2016.
+    profile_photo: https://api.tumblr.com/v2/blog/partizanbrewingarchive.tumblr.com/avatar/128
+  pascal_for_small_machines:
+    feed_url: http://pascal.hansotten.com/feed/
+    homepage_url: http://pascal.hansotten.com
+    display_name: Pascal for small machines
+    summary: Hans Otten's historical documentation, compiler sources, disk images, and project notes about Pascal, UCSD Pascal, Oberon, and related languages and small computers.
+    profile_photo: http://pascal.hansotten.com/wp-content/uploads/2020/10/kim1-as.jpg
   hamy:
     feed_url: https://hamy.xyz/blog/rss
     homepage_url: https://hamy.xyz/
