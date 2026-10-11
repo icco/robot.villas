@@ -1193,6 +1193,256 @@ bots:
     homepage_url: https://djan.org/
     display_name: djan.org
     summary: A public notebook of hardware and software experiments.
+  onmsft:
+    feed_url: https://onmsft.com/feed/
+    homepage_url: https://onmsft.com
+    display_name: OnMSFT
+    summary: The Tech News Site
+  onotech_blogspot:
+    feed_url: https://onotech.blogspot.com/feeds/posts/default
+    homepage_url: https://onotech.blogspot.com
+    display_name: 'OnoTech: Ethan Stock on Technology'
+    summary: 'Updates from OnoTech: Ethan Stock on Technology.'
+  openapis:
+    feed_url: https://www.openapis.org/feed
+    homepage_url: https://www.openapis.org
+    display_name: OpenAPI Initiative
+    summary: The OpenAPI Initiative provides an open source, technical community, within which industry participants may easily contribute to building a vendor-neutral, portable and an open specification for providing technical metadata for REST APIs – the “OpenAPI Specification” (OAS).
+  opencompute:
+    feed_url: http://www.opencompute.org/news/feed/
+    homepage_url: https://www.opencompute.org/news
+    display_name: OCP News
+    summary: The latest news and updates from the Open Compute Project.
+  opendemocracy:
+    feed_url: https://www.opendemocracy.net/rss/
+    homepage_url: https://www.opendemocracy.net
+    display_name: openDemocracy
+    summary: Investigative and movement-focused journalism at the nexus of gender, geopolitics, migration, technology and rights.
+  openfga_dev:
+    feed_url: https://openfga.dev/blog/rss.xml
+    homepage_url: https://openfga.dev/blog
+    display_name: OpenFGA Blog
+    summary: OpenFGA Blog
+  openfusion:
+    feed_url: https://openfusion.net/index.atom
+    homepage_url: https://openfusion.net
+    display_name: Gavin Carr's Hackery
+    summary: Updates from Gavin Carr's Hackery.
+  openplans:
+    feed_url: https://www.openplans.org/blog?format=rss
+    homepage_url: https://www.openplans.org/blog
+    display_name: Blog - Open Plans
+    summary: Updates from Blog - Open Plans.
+  openrce:
+    feed_url: https://www.openrce.org/rss/feeds/articles
+    homepage_url: https://www.openrce.org/articles
+    display_name: 'OpenRCE: Articles'
+    summary: 'OpenRCE: The Open Reverse Code Engineering Community'
+  opensslrampage:
+    feed_url: https://opensslrampage.org/rss
+    homepage_url: https://opensslrampage.org
+    display_name: OpenSSL Valhalla Rampage
+    summary: Tearing apart OpenSSL, one arcane VMS hack at a time. Like what OpenBSD is doing to OpenSSL? Donate here.
+  opensysblog_directorioc:
+    feed_url: http://opensysblog.directorioc.net/feeds/posts/default
+    homepage_url: http://opensysblog.directorioc.net
+    display_name: '# Open SysBlog'
+    summary: 'Updates from # Open SysBlog.'
+  opentelemetry:
+    feed_url: https://opentelemetry.io/index.xml
+    homepage_url: https://opentelemetry.io
+    display_name: OpenTelemetry
+    summary: Recent content on OpenTelemetry
+  orcaman_blogspot:
+    feed_url: https://orcaman.blogspot.com/feeds/posts/default
+    homepage_url: https://orcaman.blogspot.com
+    display_name: ./orcaman
+    summary: Updates from ./orcaman.
+  orgnizedmess:
+    feed_url: https://orgnizedmess.net/feed.xml
+    homepage_url: https://orgnizedmess.net/index.html
+    display_name: orgnizedmess
+    summary: Recent posts on orgnizedmess
+  osgameclones:
+    feed_url: https://osgameclones.com/feed.xml
+    homepage_url: https://osgameclones.com
+    display_name: 'Open Source Game Clones: New/Updated Games'
+    summary: 'Updates from Open Source Game Clones: New/Updated Games.'
+  osric:
+    feed_url: https://osric.com/chris/accidental-developer/feed/
+    homepage_url: https://osric.com/chris/accidental-developer
+    display_name: The Accidental Developer
+    summary: What if Gregor Samsa awoke a computer programmer?
+  otavio_dev:
+    feed_url: https://otavio.dev/feed/
+    homepage_url: https://otavio.dev
+    display_name: O. Valadares' Blog
+    summary: Updates from O. Valadares' Blog.
+  ourincrediblejourney_tumblr:
+    feed_url: https://ourincrediblejourney.tumblr.com/rss
+    homepage_url: https://ourincrediblejourney.tumblr.com
+    display_name: Our Incredible Journey
+    summary: Putting the ack! in acquihire
+  ourworldindata:
+    feed_url: https://ourworldindata.org/atom.xml
+    homepage_url: https://ourworldindata.org
+    display_name: Our World in Data
+    summary: Updates from Our World in Data.
+  rabzelj:
+    feed_url: https://rabzelj.com/blog/rss.xml
+    homepage_url: https://rabzelj.com
+    display_name: Tin Rabzelj
+    summary: Software engineer.
+  outdoorvoices:
+    feed_url: https://www.outdoorvoices.com/collections/shop-men.atom
+    homepage_url: https://www.outdoorvoices.com/collections/all
+    display_name: Outdoor Voices
+    summary: Updates from Outdoor Voices.
+  outsidethebeltway:
+    feed_url: http://feeds.feedburner.com/OTB
+    homepage_url: https://outsidethebeltway.com
+    display_name: OutsideTheBeltway
+    summary: An online community for politics and foreign affairs analysis.
+  ovelny_sh:
+    feed_url: https://ovelny.sh/atom.xml
+    homepage_url: https://ovelny.sh
+    display_name: ovelny
+    summary: Updates from ovelny.
+  overclockercafe:
+    feed_url: https://www.overclockercafe.com/feed/
+    homepage_url: https://www.overclockercafe.com
+    display_name: overclocker cafe
+    summary: My Personal Web
+  overset:
+    feed_url: http://www.overset.com/rss.xml
+    homepage_url: http://www.overset.com
+    display_name: overset
+    summary: overset - development log for Jim Palmer
+  overthinkingit:
+    feed_url: https://feeds.overthinkingit.com/oti
+    homepage_url: https://www.overthinkingit.com
+    display_name: Overthinking It
+    summary: Overthinking It subjects the popular culture to a level of scrutiny it probably doesn't deserve.
+  owened_co_nz:
+    feed_url: https://owened.co.nz/feed
+    homepage_url: https://owened.co.nz
+    display_name: Owened
+    summary: Updates from Owened.
+  owenou:
+    feed_url: https://owenou.com/feed.xml
+    homepage_url: https://owenou.com
+    display_name: Owen Ou’s blog
+    summary: Updates from Owen Ou’s blog.
+  owlposting:
+    feed_url: https://www.owlposting.com/feed
+    homepage_url: https://www.owlposting.com
+    display_name: Owl Posting
+    summary: essays about biology and ml, written for and by owls
+  owncloud:
+    feed_url: https://owncloud.com/feed/
+    homepage_url: https://owncloud.com
+    display_name: ownCloud
+    summary: Secure Enterprise File Sharing (EFSS)
+  oxide_computer:
+    feed_url: https://oxide.computer/blog/feed
+    homepage_url: https://oxide.computer
+    display_name: Oxide Computer Company Blog
+    summary: Updates from Oxide Computer Company Blog.
+  oyc_yale_edu:
+    feed_url: https://oyc.yale.edu/rss.xml
+    homepage_url: https://oyc.yale.edu
+    display_name: Open Yale Courses
+    summary: Updates from Open Yale Courses.
+  p_agnihotry:
+    feed_url: https://p.agnihotry.com/index.xml
+    homepage_url: https://p.agnihotry.com
+    display_name: Parikshit Agnihotry
+    summary: Recent content on Parikshit Agnihotry
+  p_migdal_pl:
+    feed_url: https://p.migdal.pl/feed.xml
+    homepage_url: https://p.migdal.pl
+    display_name: Piotr Migdał's Blog
+    summary: Piotr Migdał - blog posts and stuff
+  pacbiztimes:
+    feed_url: https://www.pacbiztimes.com/feed/
+    homepage_url: https://www.pacbiztimes.com
+    display_name: title
+    summary: Proudly serving Ventura, Santa Barbara and San Luis Obispo counties
+  padrinorb:
+    feed_url: http://padrinorb.com/blog.rss
+    homepage_url: http://padrinorb.com
+    display_name: Blog - Padrino Ruby Web Framework
+    summary: Blog - Padrino Ruby Web Framework
+  blockthrough:
+    feed_url: https://blockthrough.com/feed/
+    homepage_url: https://blockthrough.com
+    display_name: Blockthrough
+    summary: Adblock Revenue Recovery
+  tanyabirch:
+    feed_url: https://www.tanyabirch.com/feed/
+    homepage_url: https://www.tanyabirch.com
+    display_name: Tanya Birch
+    summary: Author
+  palletsprojects:
+    feed_url: https://www.palletsprojects.com/blog/feed.xml
+    homepage_url: https://palletsprojects.com/blog
+    display_name: Pallets Blog
+    summary: Updates from Pallets Blog.
+  pansentient_wordpress:
+    feed_url: https://pansentient.wordpress.com/feed/
+    homepage_url: https://pansentient.wordpress.com
+    display_name: Pansentient League
+    summary: Spotify & synthpop
+  pantheon:
+    feed_url: https://pantheon.io/blog/feed
+    homepage_url: https://pantheon.io
+    display_name: Pantheon WordPress &amp; Drupal Blog
+    summary: Blog posts from Pantheon.io
+  pappp:
+    feed_url: https://pappp.net/?feed=rss2
+    homepage_url: https://pappp.net
+    display_name: PAPPP's Rambling
+    summary: Hacking, Geekery, and life in Academia.
+  papyros:
+    feed_url: https://papyros.io/feed/
+    homepage_url: https://papyros.io
+    display_name: Papyros
+    summary: Get designed by the best.
+  paragonie:
+    feed_url: https://paragonie.com/rss
+    homepage_url: https://paragonie.com
+    display_name: Paragon Initiative
+    summary: The official blog of Paragon Initiative Enterprises.
+  parallel18:
+    feed_url: https://parallel18.com/feed/
+    homepage_url: https://parallel18.com
+    display_name: Parallel18
+    summary: 'Parallel18 - #workhardplaytropical'
+  parceljs:
+    feed_url: https://parceljs.org/feed.xml
+    homepage_url: https://parceljs.org
+    display_name: Parcel Blog
+    summary: Updates from Parcel Blog.
+  parkourpedia:
+    feed_url: https://parkourpedia.com/feed/
+    homepage_url: https://parkourpedia.com
+    display_name: Parkourpedia
+    summary: Understand Parkour, Learn Parkour
+  parkscomputing:
+    feed_url: https://parkscomputing.com/rss.xml
+    homepage_url: https://parkscomputing.com
+    display_name: Parks Computing Services
+    summary: Parks Computing Services web site
+  partizanbrewingarchive_tumblr:
+    feed_url: https://partizanbrewingarchive.tumblr.com/rss
+    homepage_url: https://partizanbrewingarchive.tumblr.com
+    display_name: Partizan Brewing Archive
+    summary: Updates from Partizan Brewing Archive.
+  pascal_hansotten:
+    feed_url: http://pascal.hansotten.com/feed/
+    homepage_url: http://pascal.hansotten.com
+    display_name: Pascal for small machines
+    summary: Wirth languages, Pascal, UCSD, Turbo, Delphi, Freepascal, Oberon
   hamy:
     feed_url: https://hamy.xyz/blog/rss
     homepage_url: https://hamy.xyz/
