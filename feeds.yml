@@ -6303,256 +6303,278 @@ bots:
     display_name: 'NPR Topics: Education'
     summary: Education news and ideas from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
-  seattlemet:
+  seattle_met:
     feed_url: https://www.seattlemet.com/feed
     homepage_url: https://www.seattlemet.com
     display_name: Seattle Met
-    summary: Updates from Seattle Met.
+    summary: Seattle news, food, arts, culture, travel, and city life from Seattle Met magazine.
+    profile_photo: https://www.seattlemet.com/assets/seattle_met/apple-touch-icon-778c1ac42231a3db005d3a80f30383dc957948bfe864f2ceda9625317ca47968.png
   securelist:
     feed_url: https://securelist.com/feed/
     homepage_url: https://securelist.com
     display_name: Securelist
-    summary: Updates from Securelist.
+    summary: Kaspersky threat intelligence, malware research, vulnerability analysis, and cybersecurity reports.
+    profile_photo: https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/11/06125514/cropped-sl_favicon-32x32.png
   security_stackexchange:
     feed_url: https://security.stackexchange.com/feeds
-    homepage_url: https://security.stackexchange.com/questions
-    display_name: Recent Questions - Information Security Stack Exchange
-    summary: Updates from Recent Questions - Information Security Stack Exchange.
+    homepage_url: https://security.stackexchange.com/
+    display_name: Information Security Stack Exchange
+    summary: Questions and answers about information security, cryptography, authentication, and protecting systems.
+    profile_photo: https://cdn.sstatic.net/Sites/security/Img/apple-touch-icon.png
   securityweek:
     feed_url: https://www.securityweek.com/feed/
     homepage_url: https://www.securityweek.com
     display_name: SecurityWeek
-    summary: Cybersecurity News, Insights & Analysis
+    summary: Cybersecurity news, threat intelligence, vulnerability reporting, and industry analysis.
+    profile_photo: https://www.securityweek.com/wp-content/uploads/2023/01/cropped-SecurityWeek-Icon-32x32.jpeg
   semplice:
     feed_url: https://www.semplice.com/feed
     homepage_url: https://www.semplice.com
     display_name: Semplice
-    summary: With Semplice you can build fully responsive case studies & custom branded project pages with just a few clicks.
-  sethvargo:
+    summary: Archived Semplice portfolio-builder news, including pricing and compatibility posts dated 2015-2019.
+    profile_photo: https://www.semplice.com/wp-content/uploads/2017/07/favicon.png
+  seth_vargo:
     feed_url: https://www.sethvargo.com/feed.xml
     homepage_url: https://www.sethvargo.com
     display_name: Seth Vargo
-    summary: Updates from Seth Vargo.
-  sfconservancy:
+    summary: Seth Vargo writes about Go, cloud infrastructure, DevOps, security, and software development. The latest feed posts are dated 2023.
+    profile_photo: https://www.sethvargo.com/assets/images/touch-icon-180.png
+  software_freedom_conservancy:
     feed_url: https://sfconservancy.org/feeds/omnibus/
     homepage_url: https://sfconservancy.org/news
-    display_name: The Software Freedom Conservancy
-    summary: An aggregated feed of all RSS content available from the Software Freedom Conservancy, including both news items and blogs.
-  shanghaiist:
-    feed_url: https://shanghaiist.com/feed/
-    homepage_url: https://shanghaiist.com
-    display_name: Shanghaiist
-    summary: China in bite-sized portions!
-  shawnblanc:
+    display_name: Software Freedom Conservancy
+    summary: News and blog posts from Software Freedom Conservancy about free software, copyleft, legal advocacy, and community projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsfconservancy.org%2Fnews&size=128
+  shawn_blanc:
     feed_url: https://shawnblanc.net/feed/
     homepage_url: https://shawnblanc.net
     display_name: Shawn Blanc
-    summary: Updates from Shawn Blanc.
-  silentbobspeaks:
+    summary: Shawn Blanc writes about creativity, productivity, focus, and independent work, with selected links. The latest feed posts are dated 2023.
+    profile_photo: https://shawnblanc.net/apple-touch-icon-precomposed.png
+  kevin_smith_my_boring_ass_life:
     feed_url: http://silentbobspeaks.com/?feed=rss2
     homepage_url: http://silentbobspeaks.com
-    display_name: My Boring Ass Life
-    summary: Kevin Smith's Boring Ass Life
-  siliconvalleyryangosling_tumblr:
+    display_name: Kevin Smith - My Boring Ass Life
+    summary: Kevin Smith's archived personal blog about filmmaking, family, and everyday life. The latest feed posts are dated 2015.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fsilentbobspeaks.com&size=128
+  silicon_valley_ryan_gosling:
     feed_url: https://siliconvalleyryangosling.tumblr.com/rss
     homepage_url: https://siliconvalleyryangosling.tumblr.com
     display_name: Silicon Valley Ryan Gosling
-    summary: Updates from Silicon Valley Ryan Gosling.
-  simonrepp:
+    summary: Lian Amaris's archived Ryan Gosling 'Hey girl' memes about technology and startup culture, plus creative-project announcements. The latest feed posts are dated 2013.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsiliconvalleyryangosling.tumblr.com&size=128
+  simon_repp:
     feed_url: https://simonrepp.com/feed.rss
     homepage_url: https://simonrepp.com
-    display_name: simonrepp.com
-    summary: Occasional hand-written notes from Simon Repp
-  simpleanalytics:
+    display_name: Simon Repp
+    summary: Simon Repp shares notes and releases for Faircamp, Hyper 8, and other independent media and software projects.
+    profile_photo: https://simonrepp.com/media_egyptica_1068.jpg
+  simple_analytics_blog:
     feed_url: https://www.simpleanalytics.com/feed.xml
     homepage_url: https://www.simpleanalytics.com/blog
-    display_name: Blog of Simple Analytics
-    summary: Updates from Blog of Simple Analytics.
-  simpleprogrammer:
+    display_name: Simple Analytics Blog
+    summary: Privacy-friendly web analytics, data protection, GDPR, and product news from Simple Analytics.
+    profile_photo: https://www.simpleanalytics.com/apple-touch-icon-180x180.png
+  simple_programmer:
     feed_url: https://simpleprogrammer.com/feed/
     homepage_url: https://simpleprogrammer.com
     display_name: Simple Programmer
-    summary: Updates from Simple Programmer.
+    summary: Software-development careers, coding education, productivity, and business advice from Simple Programmer.
+    profile_photo: https://simpleprogrammer.com/wp-content/uploads/2022/12/SP-Logo-White.png
   skift:
     feed_url: https://skift.com/feed/
     homepage_url: https://skift.com
     display_name: Skift
-    summary: Travel News, Airline News, Hotel News & Tourism News
-  skorks:
+    summary: Travel-industry reporting and analysis covering airlines, hotels, tourism, travel technology, and business trends.
+    profile_photo: https://skift.com/wp-content/uploads/2026/09/cropped-favicon-skift.png?w=180
+  alan_skorkin:
     feed_url: https://skorks.com/index.xml
     homepage_url: https://skorks.com
-    display_name: Skorks
-    summary: Recent content on Skorks
+    display_name: Alan Skorkin - Skorks
+    summary: Alan Skorkin's archived essays on Ruby, programming, software design, startups, and development teams. The latest feed posts are dated 2013.
+    profile_photo: https://skorks.com/apple-touch-icon.png
   slack_design:
     feed_url: https://slack.design/feed/
     homepage_url: https://slack.design
     display_name: Slack Design
-    summary: A collection of articles and resources from the design team at Slack.
+    summary: Articles about product design, content strategy, accessibility, and design practice from the Slack design team.
+    profile_photo: https://slack.design/wp-content/themes/puffy/assets//img/favicon-32.png
   slashgeek:
     feed_url: https://www.slashgeek.net/feed/
     homepage_url: https://www.slashgeek.net
     display_name: Slashgeek
-    summary: Field-tested guides, original benchmarks, and operator notes on Linux, self-hosting, and privacy.
-  slatestarcodex:
+    summary: Pavs's independent technology blog about Linux, self-hosting, useful tools, privacy, and the internet.
+    profile_photo: https://www.slashgeek.net/apple-touch-icon.png
+  slate_star_codex:
     feed_url: https://slatestarcodex.com/feed/
     homepage_url: https://slatestarcodex.com
     display_name: Slate Star Codex
-    summary: Updates from Slate Star Codex.
-  snippets_aktagon:
-    feed_url: https://snippets.aktagon.com/index.xml
-    homepage_url: https://snippets.aktagon.com
-    display_name: Snippets MCP
-    summary: Recent content on Snippets MCP
-  snook_ca:
+    summary: Scott Alexander's archived blog on science, medicine, philosophy, politics, and futurism. Its final feed post announces Astral Codex Ten in 2021.
+    profile_photo: https://slatestarcodex.com/wp-content/themes/responsive-pujugama-v3/images/codex.png
+  jonathan_snook:
     feed_url: https://snook.ca/posts/index.xml
     homepage_url: https://snook.ca
-    display_name: Snook.ca
-    summary: Updates from Snook.ca.
-  solipsys:
-    feed_url: http://www.solipsys.co.uk/rss.xml
+    display_name: Jonathan Snook
+    summary: Jonathan Snook's personal journal about everyday interests, software, design, and projects.
+    profile_photo: https://snook.ca/favicon/apple-touch-icon.png?v=20260806
+  colin_wright_random_ramblings:
+    feed_url: https://www.solipsys.co.uk/rss.xml
     homepage_url: https://www.solipsys.co.uk/new/ColinsBlog.html
-    display_name: Random Ramblings on Math, Juggling, Programming, Business, and stuff ...
-    summary: Although titled "blog", this is more just random rants and streams of consciousness, touching on math, juggling, programming, user interaction, business, and anything that comes to mind. Read at your peril!
-  somadesign_ca:
-    feed_url: http://feeds.feedburner.com/somadesign
-    homepage_url: http://somadesign.ca
-    display_name: Soma Design » Blog Feed
-    summary: News about Soma Design and posts about web design, WordPress, and other interesting web-related things.
-  songexploder:
+    display_name: Colin Wright - Random Ramblings
+    summary: Colin Wright's archived ramblings on mathematics, juggling, programming, business, and everyday observations. The latest feed posts are dated 2021.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.solipsys.co.uk%2Fnew%2FColinsBlog.html&size=128
+  soma_design:
+    feed_url: https://feeds.feedburner.com/somadesign
+    homepage_url: https://somadesign.ca/
+    display_name: Soma Design
+    summary: Archived Soma Design posts about web design, WordPress, typography, and projects. The final post announces the studio closing in 2012.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fsomadesign.ca&size=128
+  song_exploder:
     feed_url: https://songexploder.net/feed
     homepage_url: https://songexploder.net
     display_name: Song Exploder
-    summary: A podcast where musicians take apart their songs, and piece by piece, tell the story of how they were made.
-  sookocheff:
+    summary: A podcast where musicians take apart their songs and tell the stories of how they were made.
+    profile_photo: https://songexploder.net/wp-content/themes/songexploder_v2/images/icons/apple-touch-icon-180x180.png
+  kevin_sookocheff:
     feed_url: https://sookocheff.com/index.xml
     homepage_url: https://sookocheff.com
     display_name: Kevin Sookocheff
-    summary: Recent content on Kevin Sookocheff
+    summary: Kevin Sookocheff writes about distributed systems, cloud computing, software architecture, engineering, and AI.
+    profile_photo: https://sookocheff.com/favicon/favicon-16x16.png
   sparanoid:
     feed_url: https://sparanoid.com/feed.xml
     homepage_url: https://sparanoid.com
     display_name: Sparanoid
-    summary: Updates from Sparanoid.
-  spideroak:
-    feed_url: https://spideroak.com/feed/
-    homepage_url: https://spideroak.com
-    display_name: SpiderOak
-    summary: Zero-Trust Security for the Edge
-  spiegel_de:
+    summary: Archived design projects, open-source tools, CSS, and web-development notes from Sparanoid. The latest feed entries are dated 2019.
+    profile_photo: https://sparanoid.com/apple-touch-icon.png
+  der_spiegel:
     feed_url: https://www.spiegel.de/schlagzeilen/index.rss
     homepage_url: https://www.spiegel.de
-    display_name: DER SPIEGEL - Schlagzeilen
-    summary: Deutschlands führende Nachrichtenseite. Alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr.
-  splitbrain:
+    display_name: DER SPIEGEL
+    summary: News and analysis from DER SPIEGEL covering politics, business, society, culture, science, technology, and sport, primarily in German.
+    profile_photo: https://cdn.prod.www.spiegel.de/public/spon/images/icons/touch-icon.png
+  andreas_gohr:
     feed_url: https://www.splitbrain.org/feed/blog
     homepage_url: https://www.splitbrain.org
-    display_name: splitbrain.org - blog
-    summary: electronic brain surgery since 2001
-  spritesmods:
+    display_name: Andreas Gohr - splitbrain.org
+    summary: Andreas Gohr's blog about software, self-hosting, hardware, home automation, and maker projects.
+    profile_photo: https://www.splitbrain.org/_media/wiki/apple-touch-icon.png
+  sprites_mods:
     feed_url: https://spritesmods.com/rss.php
     homepage_url: https://spritesmods.com
     display_name: Sprites mods
-    summary: 'Sprites mods: website documenting various hardware and software mods and hacks.'
-  stackapps:
+    summary: Jeroen Domburg's hardware and software hacking projects, electronics modifications, and experiments as Sprite_tm.
+  stack_apps:
     feed_url: https://stackapps.com/feeds
     homepage_url: https://stackapps.com/questions
-    display_name: Recent Questions - Stack Apps
-    summary: Updates from Recent Questions - Stack Apps.
+    display_name: Stack Apps
+    summary: Community questions, apps, scripts, and tools for working with the Stack Exchange API.
+    profile_photo: https://stackapps.com/Content/Sites/stackapps/Img/apple-touch-icon.png?v=ae5288ff04ee
   stamen:
     feed_url: https://stamen.com/feed/
     homepage_url: https://stamen.com
     display_name: Stamen
-    summary: Helping people find and tell more beautiful stories with data
-  startupquote:
-    feed_url: https://startupquote.com/feed/
-    homepage_url: https://startupquote.com
-    display_name: Startupquote
-    summary: Cuota intereses y comisiones todo lo que pagas en un prestamo.
-  statamic:
+    summary: Mapping, cartography, data visualization, design projects, and studio news from Stamen.
+    profile_photo: https://stamen.com/wp-content/uploads/2022/03/favicon-16x16-1.png
+  statamic_blog:
     feed_url: https://statamic.com/blog.rss
     homepage_url: https://statamic.com/blog
-    display_name: The Statamic Blog
-    summary: The latest news, tips, and tales from team. Our secret public journal, if you will.
-  steve_yegge_blogspot:
+    display_name: Statamic Blog
+    summary: Product releases, development tips, company news, and community stories from the Statamic CMS team.
+    profile_photo: https://statamic.com/img/favicons/squircle/apple-touch-icon.png
+  steve_yegge_blog_rants:
     feed_url: https://steve-yegge.blogspot.com/feeds/posts/default
     homepage_url: https://steve-yegge.blogspot.com
-    display_name: Stevey's Blog Rants
-    summary: Updates from Stevey's Blog Rants.
-  stevegrunwell:
+    display_name: Steve Yegge - Stevey's Blog Rants
+    summary: Steve Yegge's archived programming essays, industry commentary, and personal rants. The final Blogger post announces his move to Medium in 2018.
+  steve_grunwell:
     feed_url: https://stevegrunwell.com/feed/
     homepage_url: https://stevegrunwell.com
     display_name: Steve Grunwell
-    summary: Open-source contributor, speaker, and electronics tinkerer
-  stevehanov_ca:
+    summary: Steve Grunwell writes about software engineering, open source, testing, and his work and projects.
+    profile_photo: https://stevegrunwell.com/wp-content/uploads/2018/02/cropped-growella-headshot-small-180x180.jpg
+  steve_hanovs_blog:
     feed_url: https://stevehanov.ca/blog/feed
     homepage_url: https://stevehanov.ca/blog
     display_name: Steve Hanov's Blog
-    summary: I know how to make and sell software online, and I can share my tips with you.
-  streeteasy:
+    summary: Steve Hanov writes about making and selling software, SaaS businesses, programming, and AI tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstevehanov.ca%2Fblog&size=128
+  streeteasy_blog:
     feed_url: https://streeteasy.com/blog/feed/
     homepage_url: https://streeteasy.com/blog
     display_name: StreetEasy Blog
-    summary: Updates from StreetEasy Blog.
-  stuff_tv:
+    summary: New York City real-estate research, housing-market data, neighborhood stories, and advice on buying, selling, and renting from StreetEasy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstreeteasy.com%2Fblog&size=128
+  stuff_news:
     feed_url: https://www.stuff.tv/news/feed/
     homepage_url: https://www.stuff.tv/news
-    display_name: News | Stuff
-    summary: The best gadgets - news, reviews and buying guides
-  suck_uk:
+    display_name: Stuff News
+    summary: Gadget and consumer-technology news, analysis, and selected reviews from Stuff.
+    profile_photo: https://www.stuff.tv/wp-content/uploads/sites/2/2021/09/cropped-stuff-tv-favicon.png?quality=75&w=180
+  suck_uk_product_news:
     feed_url: https://www.suck.uk.com/feed/
     homepage_url: https://www.suck.uk.com
-    display_name: SuckUK Product News
-    summary: More hit new products created by suck.uk.com
+    display_name: SUCK UK Product News
+    summary: Product announcements and catalog entries for original gifts, stationery, toys, games, and home accessories from SUCK UK.
+    profile_photo: https://www.suck.uk.com/webImages/suckLogo.png
   suckless:
     feed_url: https://suckless.org/atom.xml
     homepage_url: https://www.suckless.org
-    display_name: suckless.org news
-    summary: Updates from suckless.org news.
-  chicago_suntimes:
+    display_name: suckless
+    summary: News and releases from suckless.org, makers of minimalist software including dwm, st, dmenu, and slock.
+  chicago_sun_times:
     feed_url: https://chicago.suntimes.com/rss/index.xml
     homepage_url: https://chicago.suntimes.com
-    display_name: Chicago Sun-Times - All
-    summary: Updates from Chicago Sun-Times - All.
-  superuser:
+    display_name: Chicago Sun-Times
+    summary: Chicago and regional news, politics, sports, arts, and community reporting from the Chicago Sun-Times.
+    profile_photo: https://chicago.suntimes.com/apple-touch-icon.png
+  super_user:
     feed_url: https://superuser.com/feeds
-    homepage_url: https://superuser.com/questions
-    display_name: Recent Questions - Super User
-    summary: Updates from Recent Questions - Super User.
-  surma_dev:
+    homepage_url: https://superuser.com/
+    display_name: Super User
+    summary: Community questions and answers about computer hardware, software, operating systems, and networking.
+    profile_photo: https://cdn.sstatic.net/Sites/superuser/Img/apple-touch-icon.png
+  surma:
     feed_url: https://surma.dev/index.xml
     homepage_url: https://surma.dev
-    display_name: surma.dev
-    summary: Updates from surma.dev.
-  swiss_miss:
-    feed_url: http://feeds2.feedburner.com/Swissmiss
+    display_name: Surma
+    summary: Surma writes about the web platform, WebAssembly, JavaScript, performance, programming tools, and experiments.
+    profile_photo: https://surma.dev/assets/surma.1bdb48ee.jpg
+  swissmiss:
+    feed_url: https://www.swiss-miss.com/feed
     homepage_url: https://www.swiss-miss.com
     display_name: swissmiss
-    summary: swissmiss is an online garden (aka design blog) run by Tina Roth Eisenberg, a Swiss designer gone NYC.
-  swling:
+    summary: Tina Roth Eisenberg's design blog and collection of art, creative ideas, useful links, and inspiration.
+    profile_photo: https://www.swiss-miss.com/wp-content/themes/swissmiss/images/apple-touch-icon.png
+  the_swling_post:
     feed_url: https://swling.com/blog/feed/
     homepage_url: https://swling.com/blog
     display_name: The SWLing Post
-    summary: Shortwave listening and everything radio including reviews, broadcasting, ham radio, field operation, DXing, maker kits, travel, emergency gear, events, and more
+    summary: Shortwave listening, radio reviews, broadcasting, amateur radio, DXing, field listening, and radio history.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fswling.com%2Fblog&size=128
   sxsw:
     feed_url: https://sxsw.com/feed/
     homepage_url: https://sxsw.com
     display_name: SXSW
-    summary: Helping creatives achieve their goals.
-  symfony:
+    summary: Official South by Southwest announcements and stories about its technology, film, television, music, and comedy conferences and festivals.
+    profile_photo: https://sxsw.com/wp-content/uploads/sites/2/2026/10/sxsw-site-icon-512-padded.png?quality=99&w=180
+  symfony_blog:
     feed_url: https://feeds.feedburner.com/symfony/blog
     homepage_url: https://symfony.com/blog
     display_name: Symfony Blog
-    summary: Most recent posts published on the Symfony project blog
-  tachyons:
+    summary: Official Symfony release news, new features, community updates, and conference announcements.
+    profile_photo: https://symfony.com/favicons/apple-touch-icon.png
+  tachyons_components:
     feed_url: https://tachyons.io/components/rss.xml
-    homepage_url: http://tachyons.io
-    display_name: Tachyons Recent Components
-    summary: Tachyons. Functional CSS for humans.
+    homepage_url: https://tachyons.io/components/
+    display_name: Tachyons Components
+    summary: Archived examples of interface components built with Tachyons functional CSS. Feed entries are dated December 2016.
   tailscale:
     feed_url: https://tailscale.com/blog/index.xml
     homepage_url: https://tailscale.com/blog
-    display_name: Blog on Tailscale
-    summary: Recent blog posts from Tailscale
+    display_name: Tailscale
+    summary: Networking and security engineering, product releases, company news, and community stories from Tailscale.
+    profile_photo: https://tailscale.com/favicon.png
   npr_race_and_culture:
     feed_url: https://feeds.npr.org/1015/rss.xml
     homepage_url: https://www.npr.org
