@@ -10360,6 +10360,273 @@ bots:
     display_name: Mitchell Hashimoto
     summary: Software engineering, infrastructure, developer tools, and programming.
     profile_photo: https://mitchellh.com/static/favicons/apple-touch-icon.png
+  lim_chee_aun:
+    feed_url: https://cheeaun.com/blog/feed.xml
+    homepage_url: https://cheeaun.com/blog
+    display_name: Lim Chee Aun
+    summary: Lim Chee Aun writes about web development, interface experiments, personal projects, and annual reviews.
+    profile_photo: https://cheeaun.com/assets/images/icon-192.png
+  cheezburger:
+    feed_url: https://cheezburger.com/rss
+    homepage_url: https://cheezburger.com
+    display_name: Cheezburger
+    summary: Internet humor, memes, animal stories, and workplace anecdotes from the Cheezburger network.
+    profile_photo: https://i.chzbgr.com/s/unversioned/img/chz-logo-150.jpg
+  oliver_smith:
+    feed_url: https://chemicaloliver.net/index.xml
+    homepage_url: https://chemicaloliver.net
+    display_name: Oliver Smith
+    summary: Oliver Smith's archive of technology, Linux, DevOps, and travel posts; this feed ends in 2019.
+  eater_chicago:
+    feed_url: https://chicago.eater.com/rss/index.xml
+    homepage_url: https://chicago.eater.com
+    display_name: Eater Chicago
+    summary: Restaurant news, openings, reviews, and dining guides for Chicago.
+    profile_photo: https://chicago.eater.com/static-assets/icons/apple-touch-icon.png
+  chicago_review_of_books:
+    feed_url: https://chireviewofbooks.com/feed/
+    homepage_url: https://chireviewofbooks.com
+    display_name: Chicago Review of Books
+    summary: Book reviews, author interviews, literary features, and coverage of Chicago's literary community.
+    profile_photo: https://i0.wp.com/chireviewofbooks.com/wp-content/uploads/2021/01/cropped-CRB_Logo_Icon_WhiteOnGreen.png?resize=180%2C180&ssl=1
+  chowhound:
+    feed_url: https://www.chowhound.com/feed/
+    homepage_url: https://www.chowhound.com
+    display_name: Chowhound
+    summary: Chowhound is the site for food nerds - from expert chef tips to culinary how-to's, helpful ingredient lists, baking science, and more.
+    profile_photo: https://www.chowhound.com/img/chowhound-favicon-506x506.png
+  christopher_butler:
+    feed_url: https://www.chrbutler.com/feed.rss
+    homepage_url: https://www.chrbutler.com
+    display_name: Christopher Butler
+    summary: Christopher Butler writes about design, technology, and the future, alongside visual mood boards.
+    profile_photo: https://cdn.blot.im/folder/v-5e02faec/blog_a7eb7cf1ab024efcb17c380ef69c53f4/Public/site/favicons/apple-touch-icon.png
+  chris_dones_blog:
+    feed_url: https://chrisdone.com/rss.xml
+    homepage_url: https://chrisdone.com
+    display_name: Chris Done's Blog
+    summary: Blog all about programming, especially in Haskell since 2008!
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fchrisdone.com&size=128
+  chris_maughan:
+    feed_url: https://chrismaughan.com/index.xml
+    homepage_url: https://chrismaughan.com
+    display_name: Chris Maughan
+    summary: Chris Maughan's portfolio of programming, graphics, music software, and personal projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fchrismaughan.com&size=128
+  chris_simpson:
+    feed_url: https://chrissimpson.co.uk/feed.xml
+    homepage_url: https://chrissimpson.co.uk
+    display_name: Chris Simpson
+    summary: Chris Simpson writes about software development, search systems, and infrastructure.
+    profile_photo: https://chrissimpson.co.uk/apple-icon.png?apple-icon.0p6dtoql2od.p.png
+  christian_heilmann:
+    feed_url: http://christianheilmann.com/feed/
+    homepage_url: https://christianheilmann.com
+    display_name: Christian Heilmann
+    summary: Christian Heilmann writes about web development, technology, developer tools, and speaking engagements.
+  christian_today:
+    feed_url: https://www.christiantoday.com/rss.xml
+    homepage_url: https://www.christiantoday.com
+    display_name: Christian Today
+    summary: Christian news, church affairs, religious freedom, culture, and opinion from Christian Today.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.christiantoday.com&size=128
+  christoph_ruegg:
+    feed_url: https://christoph.ruegg.name/blog/atom.xml
+    homepage_url: https://christoph.ruegg.name
+    display_name: Christoph Rüegg
+    summary: Christoph Ruegg's archived posts on Math.NET, F#, numerical computing, and software development; this feed ends in 2013.
+    profile_photo: https://christoph.ruegg.name/favicon.png
+  chris_valleskey:
+    feed_url: http://chrisvalleskey.com/feed/
+    homepage_url: http://chrisvalleskey.com
+    display_name: Chris Valleskey
+    summary: Chris Valleskey's archived writing on design, development, technology, and personal reflections; this feed ends in 2017.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fchrisvalleskey.com&size=128
+  chrome_unboxed:
+    feed_url: https://chromeunboxed.com/feed/
+    homepage_url: https://chromeunboxed.com
+    display_name: Chrome Unboxed
+    summary: A Space for All Things Chrome, Google, and More!
+    profile_photo: https://chromeunboxed.com/wp-content/uploads/2026/09/cropped-ChromeUnboxedIcon2026-180x180.png
+  chungkong:
+    feed_url: https://www.chungkong.nl/feed/
+    homepage_url: https://www.chungkong.nl
+    display_name: CHUNGKONG
+    summary: Minimalist posters archive and online shop
+    profile_photo: https://www.chungkong.nl/wp-content/uploads/fbrfg/apple-touch-icon.png?v=OmJadRXbgk
+  chuq_von_rospach:
+    feed_url: https://www.chuq.me/blog?format=rss
+    homepage_url: https://www.chuq.me/blog
+    display_name: Chuq Von Rospach
+    summary: Chuq Von Rospach writes about photography, birding, nature, and his 6FPS newsletter.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.chuq.me%2Fblog&size=128
+  churchill_solitaire:
+    feed_url: https://www.churchillsolitaire.com/feed/
+    homepage_url: https://www.churchillsolitaire.com
+    display_name: Churchill Solitaire
+    summary: Official Churchill Solitaire game site and its single Media & Press feed entry, dated 2014.
+    profile_photo: https://www.churchillsolitaire.com/wp-content/uploads/2014/12/cropped-icon-180x180.png
+  over_promise_under_deliver:
+    feed_url: https://ciaradinneen.substack.com/feed
+    homepage_url: https://ciaradinneen.substack.com
+    display_name: over promise under deliver
+    summary: a commonplace of sorts, for what it's worth
+    profile_photo: https://substackcdn.com/image/fetch/$s_!6uC3!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F973dbff3-cd9d-48e8-8a97-473b9be9edeb_1080x1080.png
+  circleid:
+    feed_url: https://circleid.com/feeds/main/
+    homepage_url: https://www.circleid.com/blogs
+    display_name: CircleID
+    summary: News, analysis, opinions, and sponsored industry posts about Internet infrastructure, domains, security, and policy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.circleid.com%2Fblogs&size=128
+  circus_scientist:
+    feed_url: https://www.circusscientist.com/feed/
+    homepage_url: https://www.circusscientist.com
+    display_name: Circus Scientist
+    summary: Electronics and programming tutorials for circus performance, LED poi, juggling equipment, and DIY projects.
+    profile_photo: https://www.circusscientist.com/wp-content/uploads/2018/06/cropped-profile-1-180x180.png
+  conrad_irwin:
+    feed_url: https://cirw.in/blog/atom.xml
+    homepage_url: https://cirw.in
+    display_name: Conrad Irwin
+    summary: Conrad Irwin writes about programming languages, software tools, and developer projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcirw.in&size=128
+  citizen428:
+    feed_url: https://citizen428.net/index.xml
+    homepage_url: https://citizen428.net
+    display_name: citizen428
+    summary: Michael Kohl, also known as citizen428, writes about programming languages, developer tools, and software projects.
+    profile_photo: https://github.com/citizen428.png?size=200
+  citizen_schools:
+    feed_url: https://www.citizenschools.org/news?format=rss
+    homepage_url: https://www.citizenschools.org/news
+    display_name: Citizen Schools
+    summary: News, interviews, and community stories from Citizen Schools, focused on education and opportunity.
+    profile_photo: https://images.squarespace-cdn.com/content/57542d1b0442628dccd81967/1465134462684-991LM3WTH6EH41FKT4JS/citizen-schools-square.png?format=100w&content-type=image%2Fpng
+  city_limits:
+    feed_url: https://citylimits.org/feed/
+    homepage_url: https://citylimits.org
+    display_name: City Limits
+    summary: New York City reporting and opinion on housing, homelessness, immigration, land use, and neighborhood issues.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcitylimits.org&size=128
+  civil_service:
+    feed_url: https://civilservice.blog.gov.uk/feed/
+    homepage_url: https://civilservice.blog.gov.uk
+    display_name: Civil Service
+    summary: Official UK Civil Service blog covering its people, workplaces, public service, and government administration.
+    profile_photo: https://civilservice.blog.gov.uk/wp-content/themes/gds-blogs/build/govuk-assets/images/govuk-icon-180.png
+  ckeditor_ecosystem_blog:
+    feed_url: https://ckeditor.com/rss.xml
+    homepage_url: https://ckeditor.com/blog/
+    display_name: CKEditor Ecosystem Blog
+    summary: Read updates and release notes of CKEditor Ecosystem products. Find out more about implementing collaborative editing in the web development context.
+    profile_photo: https://ckeditor.com/assets/images/favicons/120x120.png
+  clearer_thinking:
+    feed_url: https://www.clearerthinking.org/blog-feed.xml
+    homepage_url: https://www.clearerthinking.org/blog
+    display_name: Clearer Thinking
+    summary: Research-based articles about decision-making, cognitive biases, habits, motivation, and rational thinking.
+    profile_photo: https://static.wixstatic.com/media/52ee9a_c1e7455120e44a67b4ad9df12eaa1877%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/52ee9a_c1e7455120e44a67b4ad9df12eaa1877%7Emv2.png
+  clearleft:
+    feed_url: https://clearleft.com/thinking/rss
+    homepage_url: https://clearleft.com/thinking
+    display_name: Clearleft
+    summary: Clearleft's perspectives and practical lessons on design, accessibility, content, and user experience.
+    profile_photo: https://clearleft.com/apple-touch-152x152.png
+  clever_girl:
+    feed_url: https://clevergirlblog.tumblr.com/rss
+    homepage_url: https://clevergirlblog.tumblr.com
+    display_name: Clever Girl
+    summary: Missy Titus's archived Tumblr posts and reblogs about design, art, and technology; this feed ends in 2014.
+    profile_photo: https://api.tumblr.com/v2/blog/clevergirlblog.tumblr.com/avatar/128
+  clickhouse_blog:
+    feed_url: https://clickhouse.com/rss.xml
+    homepage_url: https://clickhouse.com/blog
+    display_name: ClickHouse Blog
+    summary: ClickHouse product announcements, engineering articles, tutorials, and customer stories about analytics and databases.
+    profile_photo: https://clickhouse.com/apple-icon.png?apple-icon.18ftzencg_4sl.png
+  cliff_mass_weather_blog:
+    feed_url: https://cliffmass.blogspot.com/feeds/posts/default
+    homepage_url: https://cliffmass.blogspot.com
+    display_name: Cliff Mass Weather Blog
+    summary: Cliff Mass discusses Pacific Northwest weather, forecasting, climate issues, and current events.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcliffmass.blogspot.com&size=128
+  climate_central:
+    feed_url: https://feeds.feedburner.com/climatecentral/djOO
+    homepage_url: https://www.climatecentral.org
+    display_name: Climate Central
+    summary: Climate Central's legacy news feed covers climate change, extreme weather, and local impacts; the feed ends in May 2022.
+    profile_photo: https://www.climatecentral.org/images/apple-touch-icon.png
+  clockmaker_blog:
+    feed_url: https://clockmaker.jp/blog/feed/
+    homepage_url: https://clockmaker.jp/blog
+    display_name: ClockMaker Blog
+    summary: Yasunobu Ikeda's Japanese-language archive on HTML, Flash, interactive web design, and Adobe tools; this feed ends in 2018.
+  clockworkpi:
+    feed_url: https://www.clockworkpi.com/blog-feed.xml
+    homepage_url: https://www.clockworkpi.com/home-gameshell
+    display_name: ClockworkPi
+    summary: ClockworkPi's archived GameShell software and hardware tutorials, ending in 2020.
+    profile_photo: https://static.wixstatic.com/media/3833f7_5ae335525d1346d3b9f1e8c0f08ba3fe%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/3833f7_5ae335525d1346d3b9f1e8c0f08ba3fe%7Emv2.png
+  cloud_appreciation_society:
+    feed_url: https://cloudappreciationsociety.org/feed/
+    homepage_url: https://cloudappreciationsociety.org
+    display_name: Cloud Appreciation Society
+    summary: Uniting cloud lovers around the world
+    profile_photo: https://cloudappreciationsociety.org/wp-content/uploads/2023/11/cropped-CAS-Logomark-Small-512x512-1-180x180.png
+  cloudconvert_blog:
+    feed_url: https://cloudconvert.com/blog/feed
+    homepage_url: https://cloudconvert.com/blog
+    display_name: CloudConvert Blog
+    summary: CloudConvert product updates, file-conversion features, API announcements, and engineering news.
+    profile_photo: https://cloudconvert.com/build/assets/apple-touch-icon-gaCvqugM.png
+  cloudpundit_massive_scale_computing:
+    feed_url: https://cloudpundit.com/feed/
+    homepage_url: https://cloudpundit.com
+    display_name: 'CloudPundit: Massive-Scale Computing'
+    summary: Lydia Leong's archive on cloud computing, Internet infrastructure, and data centers; a 2026 notice says posting has stopped.
+    profile_photo: https://secure.gravatar.com/blavatar/e5c7caa00f5fa325ab6f2a78dd6af5d1ae91c7cfba1647029e9c8335439b58bf?s=114
+  clutchpoints:
+    feed_url: https://clutchpoints.com/feed
+    homepage_url: https://clutchpoints.com
+    display_name: ClutchPoints
+    summary: Sports news, rumors, analysis, and opinion covering professional and college teams.
+    profile_photo: https://clutchpoints.com/apple-icon.png?apple-icon.2rp1apv2bqb01.png
+  cmus_commits:
+    feed_url: https://github.com/cmus/cmus/commits/master.atom
+    homepage_url: https://cmus.github.io
+    display_name: cmus commits
+    summary: Recent commits to the official cmus console music player repository's master branch.
+    profile_photo: https://github.com/cmus.png?size=200
+  cloud_native_computing_foundation:
+    feed_url: https://www.cncf.io/feed/
+    homepage_url: https://www.cncf.io
+    display_name: Cloud Native Computing Foundation
+    summary: Cloud Native Computing Foundation news, community posts, events, and cloud-native technical articles.
+    profile_photo: https://www.cncf.io/wp-content/themes/cncf-twenty-two/images/apple-touch-icon.png
+  cnil_actualites:
+    feed_url: https://www.cnil.fr/fr/rss.xml
+    homepage_url: https://www.cnil.fr/fr
+    display_name: CNIL Actualités
+    summary: French-language news and announcements from CNIL, France's data protection authority.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.cnil.fr%2Ffr&size=128
+  cnx_software:
+    feed_url: https://www.cnx-software.com/feed/
+    homepage_url: https://www.cnx-software.com
+    display_name: CNX Software
+    summary: Reviews, tutorials and the latest news about embedded systems, IoT, open-source hardware, SBC's, microcontrollers, processors, and more
+    profile_photo: https://www.cnx-software.com/wp-content/uploads/2021/04/cropped-CNX-Software-Square-Logo-Light-Grey-1-180x180.png
+  cny_vitals:
+    feed_url: https://cnyvitals.org/feed/
+    homepage_url: https://cnyvitals.org
+    display_name: CNY Vitals
+    summary: Community data, research, and stories about poverty, education, health, housing, and equity in Central New York.
+    profile_photo: https://cnyvitals.org/wp-content/uploads/2018/05/cropped-CNYvitals_Favicon-180x180.png
+  council_of_9:
+    feed_url: https://co9.io/rss.xml
+    homepage_url: https://co9.io
+    display_name: Council of 9
+    summary: Council of 9's archived DEF CON badge challenges and puzzle-solving writeups; the feed ends in 2021.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fco9.io&size=128
   jeff_geerling:
     feed_url: https://www.jeffgeerling.com/blog.xml
     homepage_url: https://www.jeffgeerling.com
