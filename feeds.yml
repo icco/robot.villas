@@ -747,6 +747,256 @@ bots:
     display_name: The Public Domain Review
     summary: Curated art, literature, history, science, and strange treasures from the public domain.
     profile_photo: https://publicdomainreview.org/apple-icon-180x180.png
+  digitalfreepen:
+    feed_url: https://digitalfreepen.com/feed.xml
+    homepage_url: https://digitalfreepen.com
+    display_name: Digital Freepen
+    summary: Of everything you can write about in a digital world
+  digitallabor_commons_gc_cuny_edu:
+    feed_url: https://digitallabor.commons.gc.cuny.edu/feed/
+    homepage_url: https://digitallabor.commons.gc.cuny.edu
+    display_name: Digital Labor Working Group
+    summary: '@CUNY Graduate Center'
+  digitalsynopsis:
+    feed_url: https://digitalsynopsis.com/feed/
+    homepage_url: https://digitalsynopsis.com
+    display_name: Digital Synopsis
+    summary: Design, Advertising & Creative Inspiration
+  digitstodollars:
+    feed_url: https://digitstodollars.com/feed/
+    homepage_url: https://digitstodollars.com
+    display_name: Digits to Dollars
+    summary: Deep Tech, Semis and More
+  discoverpods:
+    feed_url: https://discoverpods.com/feed/
+    homepage_url: https://discoverpods.com
+    display_name: Discover the Best Podcasts | Discover Pods
+    summary: Find your next favorite podcast
+  dishcrawl:
+    feed_url: https://dishcrawl.com/feed/
+    homepage_url: https://dishcrawl.com
+    display_name: Dishcrawl
+    summary: The Authority On Pizza - Pizza Ovens, Pizza Recipes and More
+  disruptionbanking:
+    feed_url: https://www.disruptionbanking.com/feed/
+    homepage_url: https://www.disruptionbanking.com
+    display_name: Disruption Banking
+    summary: Disrupting Investment Banking
+  distilgovhealth:
+    feed_url: https://distilgovhealth.com/feed/
+    homepage_url: https://distilgovhealth.com
+    display_name: DistilGovHealth
+    summary: DistilNFO GovHealth Advisory
+  divan_dev:
+    feed_url: https://divan.dev/index.xml
+    homepage_url: https://divan.dev
+    display_name: divan's blog
+    summary: Recent content on divan's blog
+  diversity_net_nz:
+    feed_url: https://www.diversity.net.nz/feed/
+    homepage_url: https://www.diversity.net.nz
+    display_name: The Diversity Blog – SaaS, Cloud & Business Strategy
+    summary: Thoughts on the Future of Business and User-Centered Technology
+  divinations_substack:
+    feed_url: https://divinations.substack.com/feed
+    homepage_url: https://divinations.substack.com
+    display_name: The Foresight Playbook
+    summary: A weekly deep dive into the products, trends, and strategies shaping the future. Join other founders, investors, and operators learning to play the long game.
+  djhworld_github:
+    feed_url: https://djharper.dev/index.xml
+    homepage_url: https://djhworld.github.io
+    display_name: djh
+    summary: Recent content on djh
+  djnn_sh:
+    feed_url: https://djnn.sh/index.xml
+    homepage_url: https://djnn.sh/posts
+    display_name: posts on djnn@localhost
+    summary: Recent content in posts on djnn@localhost
+  dkron:
+    feed_url: https://dkron.io/blog/rss.xml
+    homepage_url: https://dkron.io/blog
+    display_name: Dkron Blog
+    summary: Dkron Blog
+  dmv_ny_gov:
+    feed_url: https://dmv.ny.gov/rss.xml
+    homepage_url: https://dmv.ny.gov
+    display_name: NY DMV
+    summary: Updates from NY DMV.
+  odni_gov:
+    feed_url: https://www.odni.gov/feed/
+    homepage_url: https://www.odni.gov
+    display_name: – Office of the Director of National Intelligence – Office of the Director of National Intelligence
+    summary: Updates from – Office of the Director of National Intelligence – Office of the Director of National Intelligence.
+  docs_hatchet_run:
+    feed_url: https://hatchet.run/rss.xml
+    homepage_url: https://docs.hatchet.run/v1
+    display_name: Hatchet Blog
+    summary: Hatchet is a single platform for orchestrating AI agents, scheduling background tasks, and running mission-critical workflows.
+  mongodb:
+    feed_url: https://www.mongodb.com/company/blog/rss
+    homepage_url: https://www.mongodb.com/blog
+    display_name: MongoDB | Blog
+    summary: MongoDB news and information.
+  litmus:
+    feed_url: https://www.litmus.com/feed
+    homepage_url: https://www.litmus.com
+    display_name: Litmus
+    summary: Are you getting the most out of your email marketing?
+  dodocase:
+    feed_url: https://dodocase.com/collections/ipad-cases-sleeves.atom
+    homepage_url: https://dodocase.com/collections/all
+    display_name: DODOcase
+    summary: Updates from DODOcase.
+  doh_wa_gov:
+    feed_url: https://doh.wa.gov/rss.xml
+    homepage_url: https://doh.wa.gov
+    display_name: Washington State Department of Health
+    summary: Updates from Washington State Department of Health.
+  domainincite:
+    feed_url: https://domainincite.com/feed
+    homepage_url: https://domainincite.com
+    display_name: Domain Incite
+    summary: Domain Name Industry News, Analysis & Opinion
+  dominionstrategy:
+    feed_url: https://dominionstrategy.com/feed/
+    homepage_url: https://dominionstrategy.com
+    display_name: Dominion Strategy
+    summary: Cards, Combos, and Counters
+  domino:
+    feed_url: https://www.domino.com/feed/
+    homepage_url: https://www.domino.com
+    display_name: Domino
+    summary: The ultimate guide for a stylish life and home—discover your personal style and create a space you love.
+  don_blogs_smugmug:
+    feed_url: https://don.blogs.smugmug.com/feed/
+    homepage_url: https://don.blogs.smugmug.com
+    display_name: SmugMug's Don MacAskill
+    summary: SmugMug's Co-Founder, CEO & Chief Geek
+  doo:
+    feed_url: https://www.doo.net/feed/rss2
+    homepage_url: https://www.doo.net
+    display_name: doo Event Knowhow Blog
+    summary: Updates from doo Event Knowhow Blog.
+  dot_p2p:
+    feed_url: https://dot-p2p.org/feed
+    homepage_url: https://dot-p2p.org
+    display_name: 元金欠保育士の副業まとめ
+    summary: 副業の口コミ、評判を徹底調査｜元金欠保育士の副業まとめ
+  doucheyaccountguy_tumblr:
+    feed_url: https://doucheyaccountguy.tumblr.com/rss
+    homepage_url: https://doucheyaccountguy.tumblr.com
+    display_name: Douchey Account Guy
+    summary: “2/3rds of this stuff isnt even douchey” - an account guy Tweet !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs"); Submit your own started by @dswenson
+  downtownatdawn:
+    feed_url: http://www.downtownatdawn.com/feeds/posts/default
+    homepage_url: http://www.downtownatdawn.com
+    display_name: Downtown at Dawn
+    summary: Updates from Downtown at Dawn.
+  deployhq:
+    feed_url: https://www.deployhq.com/blog/feed.xml
+    homepage_url: https://www.deployhq.com/deploybot?utm_source=deploybot&utm_medium=redirect&utm_campaign=deploybot-migration
+    display_name: The DeployHQ Blog
+    summary: DeployHQ is a code deployment platform designed to help you get files from Git, Mercurial & Subversion repositories onto your servers using SFTP, FTP, S3, Digital Ocean and more!
+  dralegal:
+    feed_url: https://dralegal.org/feed/
+    homepage_url: https://dralegal.org
+    display_name: Disability Rights Advocates
+    summary: Updates from Disability Rights Advocates.
+  drawings_jvns_ca:
+    feed_url: https://drawings.jvns.ca/index.xml
+    homepage_url: https://drawings.jvns.ca
+    display_name: julia's drawings
+    summary: Recent content on julia's drawings
+  dreamhost:
+    feed_url: https://www.dreamhost.com/blog/feed/
+    homepage_url: https://www.dreamhost.com/blog
+    display_name: DreamHost Blog
+    summary: Updates from DreamHost Blog.
+  dresscode_renttherunway:
+    feed_url: https://dresscode.renttherunway.com/blog?format=rss
+    homepage_url: https://dresscode.renttherunway.com
+    display_name: RTR Dress Code
+    summary: Updates from RTR Dress Code.
+  drifterbag:
+    feed_url: https://drifterbag.com/blogs/news.atom
+    homepage_url: https://drifterbag.com/blogs/news
+    display_name: Drifter USA - News
+    summary: Updates from Drifter USA - News.
+  drinkhacker:
+    feed_url: https://www.drinkhacker.com/feed/
+    homepage_url: https://www.drinkhacker.com
+    display_name: 'Drinkhacker: The Insider''s Guide to Good Drinking'
+    summary: The Insider's Guide to Good Drinking
+  drinkteatravel:
+    feed_url: https://drinkteatravel.com/feed/
+    homepage_url: https://drinkteatravel.com
+    display_name: Drink Tea & Travel
+    summary: '- Sustainable Travel Blog'
+  driveaccord:
+    feed_url: https://www.driveaccord.net/forums/-/index.rss
+    homepage_url: https://www.driveaccord.net
+    display_name: Honda Accord Forums - The DriveAccord community is where Honda Accord 2003+ owners can discuss revie
+    summary: Drive Accord forum, a community where Honda Accord owners can discuss reviews, service, parts, and share mods.
+  drivetribe:
+    feed_url: https://drivetribe.com/feed/
+    homepage_url: https://drivetribe.com
+    display_name: drivetribe.com
+    summary: Updates from drivetribe.com.
+  drobinin:
+    feed_url: https://drobinin.com/feed.xml
+    homepage_url: https://drobinin.com
+    display_name: Vadim Drobinin on iOS Engineering
+    summary: Updates from Vadim Drobinin on iOS Engineering.
+  dronedj:
+    feed_url: https://dronedj.com/feed/
+    homepage_url: https://dronedj.com
+    display_name: DroneDJ
+    summary: Drone news and views covering DJI, Skydio, Parrot and more
+  dronexl_co:
+    feed_url: https://dronexl.co/feed.xml
+    homepage_url: https://dronexl.co
+    display_name: 'DroneXL: The Independent Drone Authority — DJI, FAA, Reviews & Deals'
+    summary: 'DroneXL is the independent authority on drones: DJI news and rumors, FAA rules and drone laws, public-safety drones, FPV, hands-on reviews, and deals.'
+  dropmark:
+    feed_url: https://www.dropmark.com/feed.xml
+    homepage_url: https://www.dropmark.com
+    display_name: Dropmark
+    summary: The smart way to organize all your links, files, and notes into visual collections. Completely private and ad-free, as always.
+  dropular:
+    feed_url: https://dropular.net/feed/
+    homepage_url: https://dropular.net
+    display_name: Dropular
+    summary: Updates from Dropular.
+  drtechniko_wordpress:
+    feed_url: https://drtechniko.wordpress.com/feed/
+    homepage_url: https://drtechniko.wordpress.com
+    display_name: DrTechniko – Making kids literate in technology
+    summary: Teaching children about computer science and technology concepts through classes, stories, and games.
+  proftomcrick:
+    feed_url: https://proftomcrick.com/feed/
+    homepage_url: https://proftomcrick.com
+    display_name: Digital Society & Policy
+    summary: Technology, systems and public policy
+  drunkjcrew_tumblr:
+    feed_url: https://drunkjcrew.tumblr.com/rss
+    homepage_url: https://drunkjcrew.tumblr.com
+    display_name: Drunk J. Crew
+    summary: Updates from Drunk J. Crew.
+  dslreports:
+    feed_url: http://feeds.feedburner.com/dslreports
+    homepage_url: http://www.dslreports.com
+    display_name: DSLreports - front page
+    summary: The largest broadband users community on the web
+  dsng:
+    feed_url: http://www.dsng.net/feeds/posts/default
+    homepage_url: http://www.dsng.net
+    display_name: dsng.net - the daryl sng blog
+    summary: Updates from dsng.net - the daryl sng blog.
+  dsokolovskiy:
+    feed_url: https://dsokolovskiy.com/blog/rss/
+    homepage_url: https://dsokolovskiy.com/blog
+    display_name: Daniel Sokolovskiy’s Blog
+    summary: On the DJ career, music industry, marketing, professional growth, productivity tools, personal journey and life
   scott_berkun:
     feed_url: https://scottberkun.com/feed/
     homepage_url: https://scottberkun.com
