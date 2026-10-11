@@ -88,6 +88,38 @@ describe("parseFeedXml", () => {
     expect(entries[0].publishedAt).toBeInstanceOf(Date);
   });
 
+  it("uses Atom publication time rather than a later update time", async () => {
+    const xml = ATOM_FEED.replace("<updated>", "<published>2023-10-06T01:00:00+02:00</published><updated>");
+    const [entry] = await parseFeedXml(xml);
+    expect(entry.publishedAt).toEqual(new Date("2023-10-05T23:00:00Z"));
+  });
+
+  it("uses the RSS item's pubDate, not the channel's build date", async () => {
+    const xml = `<rss version="2.0"><channel>
+      <title>Robbie Lyman</title>
+      <lastBuildDate>Tue, 06 Oct 2026 22:34:18 +0000</lastBuildDate>
+      <item><title>Extend Lua with Zig 1: Hello World</title>
+        <link>https://www.robbielyman.com/blog/extend-lua-with-zig-1/</link>
+        <pubDate>Tue, 06 Oct 2026 01:00:00 +0000</pubDate>
+      </item></channel></rss>`;
+    const [entry] = await parseFeedXml(xml);
+    expect(entry.publishedAt).toEqual(new Date("2026-10-06T01:00:00Z"));
+  });
+
+  it("preserves RSS timezone offsets and Dublin Core dates", async () => {
+    const [offset] = await parseFeedXml(SAMPLE_RSS.replace("12:00:00 GMT", "12:00:00 -0500"));
+    expect(offset.publishedAt).toEqual(new Date("2024-01-01T17:00:00Z"));
+    const xml = MINIMAL_RSS.replace('<rss version="2.0">', '<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">')
+      .replace("</item>", "<dc:date>2026-10-06T01:00:00Z</dc:date></item>");
+    const [dc] = await parseFeedXml(xml);
+    expect(dc.publishedAt).toEqual(new Date("2026-10-06T01:00:00Z"));
+  });
+
+  it("keeps an invalid RSS publication date unknown", async () => {
+    const [entry] = await parseFeedXml(SAMPLE_RSS.replace("Mon, 01 Jan 2024 12:00:00 GMT", "not a date"));
+    expect(entry.publishedAt).toBeNull();
+  });
+
   it("handles items with missing fields gracefully", async () => {
     const entries = await parseFeedXml(MINIMAL_RSS);
     expect(entries).toHaveLength(1);

@@ -7,6 +7,7 @@ import {
   migrateWithRetry,
   hasEntry,
   getExistingGuids,
+  refreshEntryPublishedDates,
   getEntryByGuid,
   getAllEntries,
   getEntriesPage,
@@ -138,6 +139,54 @@ describeWithDb("database", () => {
   });
 
   describe("feed_entries", () => {
+    it("refreshes corrected and missing dates without changing identity or grabbed time", async () => {
+      const guid = "https://www.robbielyman.com/blog/extend-lua-with-zig-1/";
+      const corrected = new Date("2026-10-06T01:00:00Z");
+      const id = await insertEntry(db, "testbot", guid, guid, "Original", new Date("2027-09-30T01:00:00Z"), ["Original"]);
+      await insertEntry(db, "testbot", "missing-date", "https://example.com/missing", "Missing", null, []);
+      await insertEntry(db, "bot_a", guid, guid, "Other bot", new Date("2027-09-30T01:00:00Z"), []);
+      const before = await db.select().from(schema.feedEntries).where(inArray(schema.feedEntries.id, [id!]));
+
+      const corrections = [{ guid, publishedAt: corrected }, { guid: "missing-date", publishedAt: corrected }];
+      await refreshEntryPublishedDates(db, "testbot", corrections);
+      await refreshEntryPublishedDates(db, "testbot", corrections);
+      const after = await db.select().from(schema.feedEntries).where(inArray(schema.feedEntries.id, [id!]));
+      expect(after).toEqual([{ ...before[0], publishedAt: corrected }]);
+      expect((await getEntryByGuid(db, "testbot", "missing-date"))?.publishedAt).toEqual(corrected);
+      expect((await getEntryByGuid(db, "bot_a", guid))?.publishedAt).toEqual(new Date("2027-09-30T01:00:00Z"));
+      expect(await getExistingGuids(db, "testbot", [guid, "missing-date"])).toEqual(new Set([guid, "missing-date"]));
+    });
+
+    it("ignores absent or invalid dates, unknown GUIDs, and deleted posts", async () => {
+      const original = new Date("2026-10-06T01:00:00Z");
+      await insertEntry(db, "testbot", "unchanged", "https://example.com", "Original", original, []);
+      await insertEntry(db, "testbot", "deleted", "https://example.com/deleted", "Deleted", original, []);
+      await db.update(schema.feedEntries).set({ deletedAt: new Date() })
+        .where(inArray(schema.feedEntries.guid, ["deleted"]));
+      await refreshEntryPublishedDates(db, "testbot", []);
+      await refreshEntryPublishedDates(db, "testbot", [{ guid: "unchanged", publishedAt: null }]);
+      await refreshEntryPublishedDates(db, "testbot", [
+        { guid: "unchanged", publishedAt: new Date("invalid") },
+        { guid: "deleted", publishedAt: new Date("2026-10-10T00:00:00Z") },
+        { guid: "unknown", publishedAt: original },
+      ]);
+      expect((await getEntryByGuid(db, "testbot", "unchanged"))?.publishedAt).toEqual(original);
+      const deleted = await db.select().from(schema.feedEntries).where(inArray(schema.feedEntries.guid, ["deleted"]));
+      expect(deleted[0].publishedAt).toEqual(original);
+      expect(deleted[0].deletedAt).not.toBeNull();
+      expect(await hasEntry(db, "testbot", "unknown")).toBe(false);
+    });
+
+    it("uses the first valid date for duplicate GUIDs", async () => {
+      const first = new Date("2026-10-06T01:00:00Z");
+      await insertEntry(db, "testbot", "duplicate", "https://example.com", "Duplicate", null, []);
+      await refreshEntryPublishedDates(db, "testbot", [
+        { guid: "duplicate", publishedAt: first },
+        { guid: "duplicate", publishedAt: new Date("2026-10-10T00:00:00Z") },
+      ]);
+      expect((await getEntryByGuid(db, "testbot", "duplicate"))?.publishedAt).toEqual(first);
+    });
+
     it("paginates by publication date with a grabbed-date fallback in every feed", async () => {
       const oldDate = new Date("2026-10-01T12:00:00Z");
       const newDate = new Date("2026-10-10T12:00:00Z");
