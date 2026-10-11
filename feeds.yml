@@ -908,6 +908,256 @@ bots:
     display_name: Works in Progress
     summary: Technology, science, economics, progress, infrastructure, and ideas for improving the world.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://worksinprogress.co&size=128
+  hmkcode:
+    feed_url: https://hmkcode.com/feed.xml
+    homepage_url: http://hmkcode.com
+    display_name: HMKCODE
+    summary: Updates from HMKCODE.
+  hmmdaily:
+    feed_url: https://hmmdaily.com/feed/
+    homepage_url: https://hmmdaily.com
+    display_name: Hmm Daily
+    summary: THINK AGAIN
+  hogbaysoftware:
+    feed_url: https://www.hogbaysoftware.com/feed/feed.xml
+    homepage_url: https://www.hogbaysoftware.com
+    display_name: Hog Bay Software
+    summary: Updates from Hog Bay Software.
+  hokstad:
+    feed_url: https://hokstad.com/feed
+    homepage_url: http://hokstad.com
+    display_name: Vidar Hokstad
+    summary: Vidar Hokstad
+  hollygramazio:
+    feed_url: http://www.hollygramazio.net/blog?format=rss
+    homepage_url: http://www.hollygramazio.net/blog
+    display_name: Blog - Holly Gramazio
+    summary: Updates from Blog - Holly Gramazio.
+  holovaty:
+    feed_url: https://www.holovaty.com/rss/
+    homepage_url: https://www.holovaty.com
+    display_name: Holovaty.com
+    summary: Adrian Holovaty's blog.
+  homage:
+    feed_url: https://www.homage.com/blogs/news.atom
+    homepage_url: https://www.homage.com/blogs/news
+    display_name: HOMAGE - Pay Homage
+    summary: Updates from HOMAGE - Pay Homage.
+  homakov_blogspot:
+    feed_url: https://homakov.blogspot.com/feeds/posts/default
+    homepage_url: https://homakov.blogspot.com
+    display_name: Egor Homakov
+    summary: Updates from Egor Homakov.
+  homebrewvc_tumblr:
+    feed_url: https://homebrewvc.tumblr.com/rss
+    homepage_url: https://homebrewvc.tumblr.com
+    display_name: Homebrew Blog
+    summary: Updates from Homebrew Blog.
+  homethingspast:
+    feed_url: https://homethingspast.com/feed/
+    homepage_url: https://homethingspast.com
+    display_name: HomeThingsPast
+    summary: Updates from HomeThingsPast.
+  hongkongfp:
+    feed_url: https://hongkongfp.com/feed/
+    homepage_url: https://hongkongfp.com
+    display_name: Hong Kong Free Press HKFP
+    summary: Hong Kong news, breaking updates - 100% Independent, impartial, non-profit
+  hoodline:
+    feed_url: https://hoodline.com/rss.xml
+    homepage_url: https://hoodline.com
+    display_name: Originally Reported, Hyperlocal Neighborhood News
+    summary: Get breaking news from Hoodline's local reporters with stories to inform you about politics, weather, real estate, business, dining, crime, & more.
+  hoodzpahdesign:
+    feed_url: https://hoodzpahdesign.com/feed/
+    homepage_url: https://hoodzpahdesign.com
+    display_name: Hoodzpah
+    summary: A branding and type design studio
+  hoopsanalyst:
+    feed_url: https://hoopsanalyst.com/feed/
+    homepage_url: https://hoopsanalyst.com
+    display_name: Hoops Analyst
+    summary: Updates from Hoops Analyst.
+  horsecycles:
+    feed_url: http://www.horsecycles.com/blog?format=rss
+    homepage_url: http://www.horsecycles.com/blog
+    display_name: Blog - horse
+    summary: Updates from Blog - horse.
+  houzz:
+    feed_url: http://feeds.feedburner.com/houzz
+    homepage_url: https://www.houzz.com
+    display_name: Houzz
+    summary: Houzz - Home Design, Decorating and Remodeling Ideas and Inspiration, Kitchen and Bathroom Design
+  hoverbear:
+    feed_url: https://hoverbear.org/rss.xml
+    homepage_url: https://hoverbear.org
+    display_name: Hoverbear
+    summary: A computer scientist working in open source towards a more hopeful future.
+  howchoo:
+    feed_url: https://howchoo.com/feed/
+    homepage_url: https://howchoo.com
+    display_name: howchoo
+    summary: Updates from howchoo.
+  howdns_works:
+    feed_url: https://howdns.works/feed.xml
+    homepage_url: https://howdns.works
+    display_name: How DNS works
+    summary: Learn what is the domain name system (DNS) that brings computers and IP addresses together when you type a website address in your browser.
+  hpmor:
+    feed_url: https://hpmor.com/feed/
+    homepage_url: https://hpmor.com
+    display_name: Harry Potter and the Methods of Rationality
+    summary: Petunia married a professor, and Harry grew up reading science and science fiction.
+  hrw:
+    feed_url: https://www.hrw.org/rss/news
+    homepage_url: https://www.hrw.org
+    display_name: Human Rights Watch News
+    summary: Updates from Human Rights Watch News.
+  simplehomelab:
+    feed_url: https://www.simplehomelab.com/feed/
+    homepage_url: https://www.simplehomelab.com
+    display_name: SimpleHomelab
+    summary: Simplifying Homelabs, One Step at a Time! (previously SmartHomeBeginner)
+  hudsandguis:
+    feed_url: http://feeds.feedburner.com/Hudsandguis
+    homepage_url: https://www.hudsandguis.com
+    display_name: HUDS+GUIS
+    summary: Articles
+  hudsonvalleypost:
+    feed_url: https://hudsonvalleypost.com/feed/
+    homepage_url: https://hudsonvalleypost.com
+    display_name: Hudson Valley Post – Real-Time Hudson Valley News – Hudson Valley News
+    summary: The real-time Hudson Valley news your community is sharing
+  gohugo:
+    feed_url: https://gohugo.io/index.xml
+    homepage_url: https://gohugo.io
+    display_name: Hugo News
+    summary: Recent news about Hugo, a static site generator written in Go, optimized for speed and designed for flexibility.
+  humblebundle:
+    feed_url: https://blog.humblebundle.com/feed/
+    homepage_url: https://www.humblebundle.com
+    display_name: Humble Bundle Blog
+    summary: The official blog of Humble Bundle
+  humbledmba:
+    feed_url: https://humbledmba.com/feed/
+    homepage_url: https://humbledmba.com
+    display_name: humbledMBA
+    summary: Jason Freedman’s lessons learned…and relearned.
+  hungoverowls_tumblr:
+    feed_url: https://hungoverowls.tumblr.com/rss
+    homepage_url: https://hungoverowls.tumblr.com
+    display_name: Hungover Owls
+    summary: All photos copyright their original owners. All captions copyright hungoverowls.com, and courtesy of experience. Please direct all Owl-related inquiries to hungoverowls@ gmail.com Owls on Twitter- @hungoverowls Yes, of course there’s a book. Order it now on Amazon!
+  huonw_github:
+    feed_url: https://huonw.github.io/blog/atom.xml
+    homepage_url: https://huonw.github.io/blog
+    display_name: Huon on the internet
+    summary: Updates from Huon on the internet.
+  husobee_github:
+    feed_url: https://husobee.github.io/feed.xml
+    homepage_url: https://husobee.github.io
+    display_name: Why We Can't Have Nice Things
+    summary: Just stuff I get interested in, and need to express to the world.
+  everyhue_me:
+    feed_url: https://everyhue.me/atom.xml
+    homepage_url: https://everyhue.me
+    display_name: Searching Gradients with Huy Nguyen
+    summary: Updates from Searching Gradients with Huy Nguyen.
+  hynek_me:
+    feed_url: https://hynek.me/index.xml
+    homepage_url: https://hynek.me
+    display_name: Hynek Schlawack
+    summary: Updates from Hynek Schlawack.
+  hypable:
+    feed_url: https://hypable.com/feed/
+    homepage_url: https://hypable.com
+    display_name: Hypable Impact
+    summary: Podcast and Patreon consultations | Live your passion
+  hypatia_ca:
+    feed_url: https://hypatia.ca/feed/
+    homepage_url: https://hypatia.ca
+    display_name: hypatia dot ca
+    summary: Leigh Honeywell's Blog
+  hypebot:
+    feed_url: https://www.hypebot.com/latest/rss/
+    homepage_url: https://www.hypebot.com
+    display_name: Hypebot
+    summary: Essential news & insights for artists and live music pros.
+  hypotext_co:
+    feed_url: https://hypotext.co/feed/
+    homepage_url: https://hypotext.co
+    display_name: hay88do.us.com
+    summary: hay88
+  iain_rocks:
+    feed_url: https://iain.rocks/feed.xml
+    homepage_url: https://iain.rocks
+    display_name: Iain Cambridge
+    summary: Updates from Iain Cambridge.
+  iamakulov:
+    feed_url: https://iamakulov.com/notes/feed/
+    homepage_url: https://iamakulov.com/notes
+    display_name: Ivan Akulov’s blog
+    summary: Ivan Akulov writes about his front-end experience, React, webpack, and performance optimizations.
+  iamtrask_github:
+    feed_url: https://iamtrask.github.io/feed.xml
+    homepage_url: https://iamtrask.github.io
+    display_name: i am trask
+    summary: A machine learning craftsmanship blog.
+  iamwillwang:
+    feed_url: https://iamwillwang.com/rss.xml
+    homepage_url: https://iamwillwang.com
+    display_name: Will Wang
+    summary: Notes by Will Wang
+  iana:
+    feed_url: https://www.iana.org/news.atom
+    homepage_url: https://www.iana.org/news
+    display_name: IANA News
+    summary: Updates from IANA News.
+  ibtimes_2:
+    feed_url: https://feeds.ibtimes.co.uk/feeds/veruc.rss
+    homepage_url: https://www.ibtimes.co.uk
+    display_name: ibtimes.co.uk
+    summary: Updates from ibtimes.co.uk.
+  icanread_tumblr:
+    feed_url: https://icanread.tumblr.com/rss
+    homepage_url: https://icanread.tumblr.com
+    display_name: i can read
+    summary: images with words
+  icinga:
+    feed_url: https://icinga.com/feed/
+    homepage_url: https://icinga.com
+    display_name: Icinga
+    summary: Monitor your Entire Infrastructure
+  iclarified:
+    feed_url: https://www.iclarified.com/rss/rss.xml
+    homepage_url: https://www.iClarified.com
+    display_name: iClarified - Apple News and Tutorials
+    summary: News and Tutorials to help you stay current with your Mac, iPhone, iPod, iPad and other Apple Products
+  icomoon:
+    feed_url: https://icomoon.io/news/feed.atom
+    homepage_url: https://icomoon.io
+    display_name: IcoMoon News
+    summary: Updates from IcoMoon News.
+  icons8:
+    feed_url: https://icons8.com/blog/feed/
+    homepage_url: https://icons8.com/blog
+    display_name: icons8.com
+    summary: Updates from icons8.com.
+  ideas_ted:
+    feed_url: https://ideas.ted.com/feed/
+    homepage_url: https://ideas.ted.com
+    display_name: ideas.ted.com
+    summary: Ideas change everything
+  idiallo:
+    feed_url: https://idiallo.com/feed.rss
+    homepage_url: https://idiallo.com
+    display_name: Software and Tech stories from an Insider - iDiallo.com
+    summary: Throughout the years, I have decide to put all my the knowledge I have accumulated in my Blog. Hopefully it will serve others as well as it serves me.
+  jolts_world:
+    feed_url: https://jolts.world/index.php/jolts/gateway/plugin/WebFeedGatewayPlugin/atom
+    homepage_url: https://jolts.world/index.php/jolts
+    display_name: Journal of Open Law, Technology & Society
+    summary: Updates from Journal of Open Law, Technology & Society.
   henri_bergius:
     feed_url: https://bergie.iki.fi/blog/rss.xml
     homepage_url: https://bergie.iki.fi
