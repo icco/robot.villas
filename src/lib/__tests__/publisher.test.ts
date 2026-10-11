@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 
 vi.mock("../db", () => ({
   insertEntry: vi.fn(),
@@ -74,6 +74,71 @@ describe("publishNewEntries", () => {
       { followerId: "https://remote.example/user/1", sharedInboxUrl: "https://remote.example/inbox" },
     ]);
     mockGetAcceptedRelays.mockResolvedValue([]);
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  it("skips future dates before storage, date corrections, or hashtag generation", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-10-11T12:00:00Z"));
+    const futureEntry = { ...entries[0], publishedAt: new Date("2026-10-11T08:00:00.001-04:00") };
+
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot", "robot.villas", [futureEntry], testBotConfig,
+    );
+
+    expect(result).toEqual({ stored: 0, skipped: 1 });
+    expect(mockInsertEntry).not.toHaveBeenCalled();
+    expect(mockResolveHashtags).not.toHaveBeenCalled();
+    expect(refreshEntryPublishedDates).toHaveBeenCalledWith(expect.anything(), "testbot", []);
+    expect(mockGetExistingGuids).toHaveBeenCalledWith(expect.anything(), "testbot", []);
+  });
+
+  it("stores a deferred entry when its publish time arrives on a later poll", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-10-11T12:00:00Z"));
+    const futureEntry = { ...entries[0], publishedAt: new Date("2026-10-11T12:00:01Z") };
+    const db = {} as any; // eslint-disable-line @typescript-eslint/no-explicit-any
+
+    expect(await publishNewEntries(mockCtx, db, "testbot", "robot.villas", [futureEntry], testBotConfig))
+      .toEqual({ stored: 0, skipped: 1 });
+    vi.setSystemTime(new Date("2026-10-11T12:00:01Z"));
+    expect(await publishNewEntries(mockCtx, db, "testbot", "robot.villas", [futureEntry], testBotConfig))
+      .toEqual({ stored: 1, skipped: 0 });
+    expect(mockInsertEntry).toHaveBeenCalledTimes(1);
+  });
+
+  it("keeps past, present, and undated entries when skipping a future duplicate GUID", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-10-11T12:00:00Z"));
+    const mixedEntries = [
+      { ...entries[0], publishedAt: new Date("2026-10-11T12:00:00.001Z") },
+      { ...entries[0], publishedAt: new Date("2026-10-11T11:59:59.999Z") },
+      { ...entries[1], publishedAt: new Date("2026-10-11T08:00:00-04:00") },
+      entries[2],
+    ];
+
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot", "robot.villas", mixedEntries, testBotConfig,
+    );
+
+    expect(result).toEqual({ stored: 3, skipped: 1 });
+    expect(mockInsertEntry.mock.calls.map((call) => call[5])).toEqual([
+      new Date("2026-10-11T11:59:59.999Z"),
+      new Date("2026-10-11T12:00:00Z"),
+      null,
+    ]);
+    expect(refreshEntryPublishedDates).toHaveBeenCalledWith(expect.anything(), "testbot", [
+      { guid: "g1", publishedAt: new Date("2026-10-11T11:59:59.999Z") },
+      { guid: "g2", publishedAt: new Date("2026-10-11T12:00:00Z") },
+      { guid: "g3", publishedAt: null },
+    ]);
   });
 
   it("publishes new entries and skips existing ones", async () => {
