@@ -15755,6 +15755,291 @@ bots:
     display_name: antirez
     summary: Systems programming, C, databases, and notes from the creator of Redis.
     profile_photo: https://avatars.githubusercontent.com/u/65632?s=200
+  lincoln_journal_star:
+    feed_url: https://journalstar.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc
+    homepage_url: https://journalstar.com/
+    display_name: Lincoln Journal Star
+    summary: Lincoln Journal Star reporting on Lincoln and Nebraska news, politics, sports, business, and community life, alongside national and syndicated features.
+  gamesindustry_japan_archive:
+    feed_url: https://business.4gamer.net/rss/index.xml
+    homepage_url: https://business.4gamer.net/
+    display_name: GamesIndustry.biz Japan Edition / Business 4Gamer
+    summary: Japanese game-industry reporting, interviews, development articles, and business analysis from the GamesIndustry.biz Japan Edition archive at Business 4Gamer. Publication ended in September 2025.
+    profile_photo: https://business.4gamer.net/images/apple-touch-icon.png
+  ign_japan:
+    feed_url: https://jp.ign.com/feed.xml
+    homepage_url: https://jp.ign.com
+    display_name: IGN Japan
+    summary: IGN Japan's video game and entertainment news, reviews, previews, trailers, and gaming hardware coverage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjp.ign.com&size=128
+  julie_pichon:
+    feed_url: https://www.jpichon.net/feeds/all.atom.xml
+    homepage_url: https://www.jpichon.net
+    display_name: Julie Pichon
+    summary: 'Julie Pichon''s personal writing about open-source software, development, education, technology, and conference experiences. Latest feed post: August 2024.'
+    profile_photo: https://github.com/jpichon.png?size=200
+  jquery_mobile_blog:
+    feed_url: https://blog.jquerymobile.com/feed/
+    homepage_url: https://blog.jquerymobile.com/
+    display_name: jQuery Mobile Blog
+    summary: The official jQuery Mobile blog archive of releases, project announcements, and mobile web development. The project was deprecated in October 2021, when the latest feed posts were published.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjquerymobile.com&size=128
+  js13kgames_blog:
+    feed_url: https://js13kgames.com/rss.xml
+    homepage_url: https://js13kgames.com
+    display_name: js13kGames Blog
+    summary: Official js13kGames competition announcements, results, community news, and blog posts about making web games within a 13 KB size limit.
+    profile_photo: https://js13kgames.com/_/f180.png
+  james_somers:
+    feed_url: https://jsomers.net/blog/feed
+    homepage_url: https://jsomers.net/blog
+    display_name: James Somers
+    summary: James Somers's essays about writing, reading, language, technology, programming, and ways of thinking.
+  jsplumb_toolkit_blog:
+    feed_url: https://jsplumbtoolkit.com/blog/rss.xml
+    homepage_url: https://jsplumbtoolkit.com/blog
+    display_name: JsPlumb Toolkit Blog
+    summary: Official JsPlumb Toolkit release announcements and articles about diagramming, visual interfaces, and application development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjsplumbtoolkit.com%2Fblog&size=128
+  majd_taby:
+    feed_url: https://majd.blog/feed/
+    homepage_url: https://majd.blog
+    display_name: Majd Taby
+    summary: 'Majd Taby''s personal writing about photography, visual composition, technology, creative work, and life. Latest feed post: April 2024.'
+  julies_substack:
+    feed_url: https://jtibs.substack.com/feed
+    homepage_url: https://jtibs.substack.com
+    display_name: Julie's Substack
+    summary: Julie's essays about software engineering, open-source work, monorepos, careers, and personal experiences.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!HdQb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F364a0c11-a22d-4dfa-baf7-ee7c73ce0188%2Fapple-touch-icon-57x57.png
+  jt_olio:
+    feed_url: https://www.jtolio.com/rss.xml
+    homepage_url: https://www.jtolio.com
+    display_name: JT Olio
+    summary: JT Olio's essays and projects about programming, distributed systems, climate change, technology, and personal life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.jtolio.com&size=128
+  judgmental_maps:
+    feed_url: https://judgmentalmaps.com/rss
+    homepage_url: https://judgmentalmaps.com
+    display_name: Judgmental Maps
+    summary: 'Satirical maps labeling cities and neighborhoods with local stereotypes, jokes, and observations. Latest feed post: March 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjudgmentalmaps.com&size=128
+  bartmans_blog:
+    feed_url: http://www.jukie.net/~bart/index.xml
+    homepage_url: http://www.jukie.net/~bart
+    display_name: bartman's blog
+    summary: bartman's programming and systems-administration notes about Git, Linux, NixOS, development tools, networking, and hardware.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.jukie.net%2F~bart&size=128
+  julian_simioni:
+    feed_url: https://juliansimioni.com/atom.xml
+    homepage_url: https://juliansimioni.com
+    display_name: Julian Simioni
+    summary: 'Julian Simioni''s archived programming articles, personal projects, and reading notes. Latest feed post: January 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjuliansimioni.com&size=128
+  wilderness_downtown:
+    feed_url: https://julianyap.com/index.xml
+    homepage_url: https://julianyap.com
+    display_name: Wilderness Downtown
+    summary: Julian Yap's Wilderness Downtown blog about custom keyboards, programming, 3D printing, computing tools, and personal observations.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjulianyap.com&size=128
+  jumpcloud:
+    feed_url: https://jumpcloud.com/feed
+    homepage_url: https://jumpcloud.com
+    display_name: JumpCloud
+    summary: JumpCloud's articles about identity and access management, directory services, device administration, security, cloud infrastructure, and AI in IT.
+    profile_photo: https://jumpcloud.com/wp-content/themes/jumpcloud/assets/images/favicons/apple-icon-57x57-light.png
+  juniperarts:
+    feed_url: https://juniperarts.tumblr.com/rss
+    homepage_url: https://juniperarts.tumblr.com
+    display_name: Juniperarts
+    summary: Juniperarts' original illustrations, fan art, comics, and multi-fandom artwork, including Arcane characters and alternate-universe scenes.
+    profile_photo: https://api.tumblr.com/v2/blog/juniperarts.tumblr.com/avatar/128
+  abby_organizes:
+    feed_url: https://justagirlandherblog.com/feed/
+    homepage_url: https://justagirlandherblog.com
+    display_name: Abby Organizes
+    summary: Abby Organizes' home organization ideas, printable planners, decorating projects, and practical household guides.
+    profile_photo: https://justagirlandherblog.com/wp-content/uploads/2016/01/Favicon_128x128.png
+  f_lux_news:
+    feed_url: https://justgetflux.com/news/atom.xml
+    homepage_url: https://justgetflux.com/news/
+    display_name: f.lux news
+    summary: 'The official f.lux news archive about screen light, sleep, circadian rhythms, product changes, and related research. Latest feed post: March 2020.'
+    profile_photo: https://justgetflux.com/favicon.png
+  justinsteven:
+    feed_url: https://www.justinsteven.com/index.xml
+    homepage_url: https://www.justinsteven.com
+    display_name: Justin Steven
+    summary: 'Justin Steven''s security research, capture-the-flag writeups, vulnerability analyses, and technical troubleshooting notes. Latest feed post: April 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.justinsteven.com&size=128
+  jx0_org:
+    feed_url: https://www.jx0.org/feeds/posts/default
+    homepage_url: http://www.jx0.org
+    display_name: Jx0.org
+    summary: Jx0.org's personal computing notes, hardware and Linux experiences, software setup guides, and video game tips.
+  jyn_dev:
+    feed_url: https://jyn.dev/atom.xml
+    homepage_url: https://jyn.dev
+    display_name: the website of jyn
+    summary: jyn's essays about programming, software design, developer workflows, security, AI, and things that bring joy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjyn.dev&size=128
+  matthias_kirschners_web_log:
+    feed_url: https://k7r.eu/feed.xml
+    homepage_url: https://k7r.eu
+    display_name: Matthias Kirschner's Web log
+    summary: Matthias Kirschner's personal writing about free software, digital rights, the FSFE, and the Ada & Zangemann book and film.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fk7r.eu&size=128
+  kablamo:
+    feed_url: https://www.kablamo.com.au/feed.xml
+    homepage_url: https://www.kablamo.com.au
+    display_name: Kablamo
+    summary: Kablamo's technology consultancy articles, case studies, and company insights about cloud software, data, AI, design, and engineering.
+  david_kadavy:
+    feed_url: https://kadavy.net/feed/
+    homepage_url: https://kadavy.net
+    display_name: David Kadavy
+    summary: David Kadavy's essays and book announcements about creativity, productivity, writing, self-publishing, and personal development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fkadavy.net&size=128
+  kai_wern:
+    feed_url: https://kaiwern.com/index.xml
+    homepage_url: https://kaiwern.com/
+    display_name: Kai Wern
+    summary: Kai Wern's programming articles, technical notes, and personal learning experiences, including systems tools, networking, and Recurse Center.
+  kaizoku_dev:
+    feed_url: https://kaizoku.dev/rss.xml
+    homepage_url: https://kaizoku.dev
+    display_name: Kaizoku Dev
+    summary: 'Kaizoku Dev''s security writeup archive, with two posts about password strategies and a Hack The Box challenge. Latest feed post: December 2021.'
+    profile_photo: https://cdn.hashnode.com/res/hashnode/image/upload/v1608139006916/0KdvkNevW.png
+  kamil_szymanski:
+    feed_url: https://kamilszymanski.github.io/feed.xml
+    homepage_url: https://kamilszymanski.github.io
+    display_name: Under the hood - Kamil Szymanski
+    summary: 'Kamil Szymanski''s archived software development articles about Java, reactive services, concurrency, Docker, and system design. Latest feed post: September 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fkamilszymanski.github.io&size=128
+  kamran_ahmed:
+    feed_url: https://kamran.fyi/feed.xml
+    homepage_url: https://kamran.fyi
+    display_name: Kamran Ahmed
+    summary: Kamran Ahmed's engineering articles and visual explainers about cloud infrastructure, programming, product building, and AI-assisted development.
+    profile_photo: https://kamran.fyi/manifest/apple-touch-icon.png
+  kanye_comics:
+    feed_url: https://kanyepluscomics.tumblr.com/rss
+    homepage_url: https://kanyepluscomics.tumblr.com
+    display_name: Kanye + Comics
+    summary: 'Chris Haley''s Kanye + Comics archive pairing Kanye West lyrics with comic-book images, including submissions and reblogs. Latest feed post: February 2014.'
+    profile_photo: https://api.tumblr.com/v2/blog/kanyepluscomics.tumblr.com/avatar/128
+  kara_stone:
+    feed_url: https://karastonesite.com/feed/
+    homepage_url: https://karastonesite.com
+    display_name: Kara Stone
+    summary: 'Kara Stone''s art and experimental game archive, including project announcements, exhibitions, and work exploring mental health, feminism, and environmental themes. Latest feed post: November 2022.'
+    profile_photo: https://secure.gravatar.com/blavatar/33e9c5f1b8e1e88ec793382c8d620f4382223146e6cc03129cc6d257cc709021?s=114
+  kare_prints:
+    feed_url: https://kareprints.com/blogs/news.atom
+    homepage_url: https://kareprints.com/blogs/news
+    display_name: Kare Prints - Susan Kare
+    summary: Susan Kare's official Kare Prints news blog with press coverage, interviews, exhibitions, icon design projects, and print announcements.
+  andrej_karpathy_blog:
+    feed_url: https://karpathy.github.io/feed.xml
+    homepage_url: https://karpathy.github.io/
+    display_name: Andrej Karpathy blog
+    summary: Andrej Karpathy's technical essays and tutorials about neural networks, deep learning, language models, programming, and related personal experiments.
+    profile_photo: https://github.com/karpathy.png?size=200
+  iris_kashflow:
+    feed_url: https://www.kashflow.com/feed/
+    homepage_url: https://www.kashflow.com
+    display_name: IRIS KashFlow
+    summary: 'The IRIS KashFlow blog archive about UK small-business accounting, payroll, taxation, bookkeeping, and business administration. Latest feed post: December 2020.'
+    profile_photo: https://kashflow.b-cdn.net/wp-content/themes/KashFlow-2013/icons/apple-touch-icon-57x57.png
+  kaspersky_official_blog:
+    feed_url: https://www.kaspersky.com/blog/feed/
+    homepage_url: https://www.kaspersky.com/blog/
+    display_name: Kaspersky official blog
+    summary: Kaspersky's official English-language cybersecurity blog about malware, scams, privacy, security research, defensive advice, and product news.
+    profile_photo: https://media.kasperskydaily.com/wp-content/uploads/sites/92/2019/06/04074830/cropped-k-favicon-new-150x150.png
+  rafael_kassner:
+    feed_url: https://www.kassner.com.br/atom.xml
+    homepage_url: https://www.kassner.com.br
+    display_name: Rafael Kassner
+    summary: Rafael Kassner's technical articles and project notes about self-hosting, Linux, networking, software development, and home automation, in English and Portuguese.
+  critical_kate_willaert:
+    feed_url: https://katewillaert.tumblr.com/rss
+    homepage_url: https://katewillaert.tumblr.com
+    display_name: Critical Kate Willaert
+    summary: Critical Kate Willaert's research, artwork, and videos about video game history, logos, comics, and forgotten pop-culture stories.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fkatewillaert.tumblr.com&size=128
+  katherine_erickson:
+    feed_url: https://katherineerickson.com/feed.xml
+    homepage_url: https://katherineerickson.com/
+    display_name: Katherine Erickson
+    summary: Katherine Erickson's development portfolio. Its feed contains one July 2016 post testing JavaScript in Markdown; portfolio projects are not published through this feed.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fkatherineerickson.com&size=128
+  kausal:
+    feed_url: https://kausal.co/index.xml
+    homepage_url: https://kausal.co
+    display_name: Kausal
+    summary: 'Kausal''s archived articles about Prometheus, Cortex, Kubernetes, tracing, and observability. Latest feed post: its March 2018 acquisition announcement by Grafana Labs.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fkausal.co&size=128
+  kaylees_apps:
+    feed_url: https://kaylees.site/feed.xml
+    homepage_url: https://kaylees.site/
+    display_name: Kaylee's Apps
+    summary: Kaylee's independent app development blog with Wipr and game releases, App Store experiences, and personal development notes.
+    profile_photo: https://kaylees.site/ico/apple-touch-icon-57.png?v=8
+  kaylin_pavlik:
+    feed_url: https://www.kaylinpavlik.com/rss/
+    homepage_url: https://www.kaylinpavlik.com
+    display_name: Kaylin Pavlik
+    summary: 'Kaylin Pavlik''s archived data-science articles about R, text mining, visualization, books, crafts, sports, and pop culture. Latest feed post: February 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.kaylinpavlik.com&size=128
+  kazushige_miyake:
+    feed_url: https://www.kazushigemiyake.com/sitemap.rss
+    homepage_url: https://www.kazushigemiyake.com
+    display_name: Kazushige Miyake
+    summary: Kazushige Miyake Design's product portfolio feed, including electronics, furniture, household goods, lighting, and industrial design projects.
+    profile_photo: https://www.kazushigemiyake.com/wp/wp-content/uploads/2024/05/cropped-favicon-180x180.png
+  cert_vulnerability_notes:
+    feed_url: https://www.kb.cert.org/vuls/atomfeed/
+    homepage_url: https://kb.cert.org/vuls
+    display_name: CERT Vulnerability Notes
+    summary: Recently published vulnerability notes from CERT/CC at Carnegie Mellon University's Software Engineering Institute, with technical details, affected vendors, and remediation information.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fkb.cert.org%2Fvuls&size=128
+  kcymaerxthaere:
+    feed_url: https://kcymaerxthaere.com/feed/
+    homepage_url: https://kcymaerxthaere.com
+    display_name: Kcymaerxthaere
+    summary: 'News from Eames Demetrios''s Kcymaerxthaere art and storytelling project, a fictional parallel universe represented through real-world markers, installations, and events. Latest feed post: May 2023.'
+    profile_photo: https://eggt37kyren.exactdn.com/wp-content/uploads/2019/08/cropped-kcy_logo_K_scaled.png?strip=all&lossy=1&resize=180%2C180&ssl=1
+  kdnuggets:
+    feed_url: https://www.kdnuggets.com/feed/
+    homepage_url: https://www.kdnuggets.com
+    display_name: KDnuggets
+    summary: KDnuggets tutorials, technical articles, resource recommendations, and industry commentary about data science, machine learning, AI, analytics, and programming.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.kdnuggets.com&size=128
+  kenneth_auchenbergs_blog:
+    feed_url: https://kenneth.io/api/feed.xml
+    homepage_url: https://kenneth.io
+    display_name: Kenneth Auchenberg's Blog
+    summary: Kenneth Auchenberg's essays and project announcements about developer tools, software, technology, startups, and AI. The feed includes both older writing and current posts.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fkenneth.io&size=128
+  avi_zurel:
+    feed_url: https://www.avizurel.com/index.xml
+    homepage_url: https://www.avizurel.com
+    display_name: Avi Zurel
+    summary: Avi Zurel's engineering essays about infrastructure, DevOps, cloud platforms, software architecture, leadership, and AI-assisted development.
+  kentishtowner:
+    feed_url: https://www.kentishtowner.co.uk/feed/
+    homepage_url: https://www.kentishtowner.co.uk
+    display_name: Kentishtowner
+    summary: Kentishtowner's North London reporting and guides about food, drink, culture, neighborhoods, people, and things to do, including sponsored features.
+    profile_photo: https://www.kentishtowner.co.uk/wp-content/uploads/sites/13/2018/02/KT-web-logo.jpg?1791729105
+  kevin_deldycke:
+    feed_url: https://kevin.deldycke.com/feed.atom
+    homepage_url: https://kevin.deldycke.com
+    display_name: Kevin Deldycke
+    summary: 'Kevin Deldycke''s archived technical articles about programming, home infrastructure, networking, hardware, and software operations. Latest feed post: June 2022.'
+    profile_photo: https://kevin.deldycke.com/apple-touch-icon.png
   fly_io:
     feed_url: https://fly.io/blog/feed.xml
     homepage_url: https://fly.io
