@@ -489,6 +489,256 @@ bots:
     display_name: Pop Culture Happy Hour
     summary: What to watch, read, and play — a film, TV, and book discussion show from NPR.
     profile_photo: https://media.npr.org/chrome/favicon/favicon-32x32.png
+  annekeforbes:
+    feed_url: https://www.annekeforbes.com/blog?format=rss
+    homepage_url: https://www.annekeforbes.com/blog
+    display_name: Blog - Anneke Forbes | Custom Jackets for Women
+    summary: Updates from Blog - Anneke Forbes | Custom Jackets for Women.
+  anntelnaes_substack:
+    feed_url: https://anntelnaes.substack.com/feed
+    homepage_url: https://anntelnaes.substack.com
+    display_name: Open Windows- Ann Telnaes
+    summary: Ann Telnaes- Artist, visual storyteller, creator of "Open Windows"
+  anotherthoughtanotherthought_substack:
+    feed_url: https://anotherthoughtanotherthought.substack.com/feed
+    homepage_url: https://anotherthoughtanotherthought.substack.com
+    display_name: Another Thought
+    summary: Another Thought is a music and arts newsletter focused on slowing down, sharing, and giving deep consideration to the constant flow of art being created every day through essays, comics, and illustrations.
+  anovaculinary:
+    feed_url: https://anovaculinary.com/blogs/blog.atom
+    homepage_url: https://anovaculinary.com/blogs/blog
+    display_name: Anova Culinary - Anova Culinary Blog
+    summary: Updates from Anova Culinary - Anova Culinary Blog.
+  ant_isi_edu:
+    feed_url: https://ant.isi.edu/blog/?feed=rss2
+    homepage_url: https://ant.isi.edu/blog
+    display_name: ANT Research News
+    summary: Updates about research by the ANT group (Analysis of Network Traffic)
+  antennasys:
+    feed_url: https://www.antennasys.com/antennasys-blog?format=rss
+    homepage_url: https://www.antennasys.com/antennasys-blog
+    display_name: Blog - AntennaSys, Inc.
+    summary: Updates from Blog - AntennaSys, Inc..
+  antimatter15:
+    feed_url: https://antimatter15.com/feed.xml
+    homepage_url: http://antimatter15.com
+    display_name: stuff by kevin kwok
+    summary: somewhere to talk about ideas and projects and stuff like everyone else
+  antipolygraph:
+    feed_url: https://antipolygraph.org/rss.xml
+    homepage_url: https://antipolygraph.org/index.shtml
+    display_name: AntiPolygraph.org
+    summary: Non-profit, public interest website dedicated to exposing waste, fraud, and abuse associated with the use of the polygraph (lie detector).
+  antithesis:
+    feed_url: https://antithesis.com/blog/rss.xml
+    homepage_url: https://antithesis.com
+    display_name: Antithesis blog
+    summary: Our journey towards fully autonomous software testing
+  antjanus:
+    feed_url: https://antjanus.com/rss.xml
+    homepage_url: https://antjanus.com
+    display_name: Antonin Januska - AI Pioneer & Technical Writer
+    summary: Writing about AI workflows, technical leadership, and software engineering.
+  antoine_fi:
+    feed_url: https://antoine.fi/feed.rss
+    homepage_url: https://antoine.fi
+    display_name: Antoine Finkelstein's blog
+    summary: Welcome to my personal blog! I use it to share what I'm currently learning or thinking about, usually on topics related to technology, business, and health.
+  antonioleiva:
+    feed_url: https://antonioleiva.com/rss.xml
+    homepage_url: https://antonioleiva.com
+    display_name: Antonio Leiva
+    summary: Los proyectos que construyo con agentes de IA y lo que aprendo con cada uno. Antonio Leiva, fundador de DevExpert y Google Developer Expert en Android.
+  anvil_works:
+    feed_url: https://anvil.works/blog/feed.xml
+    homepage_url: https://anvil.works/blog
+    display_name: Anvil Blog
+    summary: The Anvil Blog
+  aparker:
+    feed_url: https://aparker.io/feed.xml
+    homepage_url: https://aparker.io
+    display_name: aparker.io
+    summary: Updates from aparker.io.
+  apenwarr_ca:
+    feed_url: https://apenwarr.ca/log/rss.php
+    homepage_url: https://apenwarr.ca/log
+    display_name: apenwarr
+    summary: apenwarr - NITLog
+  apisyouwonthate:
+    feed_url: https://apisyouwonthate.com/rss/
+    homepage_url: https://apisyouwonthate.com
+    display_name: APIs You Won't Hate
+    summary: The largest community for API Devs on the web.
+  apkmirror:
+    feed_url: https://www.apkmirror.com/feed/
+    homepage_url: https://www.apkmirror.com
+    display_name: Releases Archive - APKMirror
+    summary: Free and safe Android APK downloads
+  blog_appcanary:
+    feed_url: https://blog.appcanary.com/feed.xml
+    homepage_url: https://blog.appcanary.com
+    display_name: Appcanary
+    summary: Updates from Appcanary.
+  appliedgo:
+    feed_url: https://appliedgo.net/index.xml
+    homepage_url: https://appliedgo.net
+    display_name: Blog on Applied Go
+    summary: Recent content in Blog on Applied Go
+  ar_al:
+    feed_url: https://ar.al/index.xml
+    homepage_url: https://ar.al
+    display_name: Aral Balkan
+    summary: Recent content on Aral Balkan
+  jmduke:
+    feed_url: https://www.jmduke.com/feed.xml
+    homepage_url: https://jmduke.com
+    display_name: Applied Cartography
+    summary: Essays and media reviews by Justin Duke
+  archaeology:
+    feed_url: https://archaeology.org/feed/
+    homepage_url: https://archaeology.org
+    display_name: Archaeology Magazine
+    summary: A publication of the Archaeological Institute of America
+  architecturendesign:
+    feed_url: https://www.architecturendesign.net/feed/
+    homepage_url: https://www.architecturendesign.net
+    display_name: Architecture & Design
+    summary: Is an online magazine that tries to feed your imagination by picking up and delivering a daily doze of the most inspiring, exciting and outstanding selection of Architecture Art and Design.
+  archleague:
+    feed_url: https://archleague.org/feed/
+    homepage_url: https://archleague.org
+    display_name: The Architectural League of New York
+    summary: The Architectural League of New York
+  archpaper:
+    feed_url: https://www.archpaper.com/feed/
+    homepage_url: https://www.archpaper.com
+    display_name: The Architect’s Newspaper
+    summary: The most authoritative voice on architecture and design in the United States.
+  arcribbins_tumblr:
+    feed_url: https://arcribbins.tumblr.com/rss
+    homepage_url: https://arcribbins.tumblr.com
+    display_name: AR's Art & Illustration Blog
+    summary: '#ILLUSTRATIONS #COMICS Hi! I’m Ashley-Renée and this is my art and illustration blog. You can also find me at my website or on twitter as @arcribbins. Cheers! ♥ WEBSITE FOLLOW ME'
+  arin:
+    feed_url: https://www.arin.net/rss.xml
+    homepage_url: https://www.arin.net
+    display_name: Home on American Registry for Internet Numbers
+    summary: Recent content in Home on American Registry for Internet Numbers
+  ariya:
+    feed_url: https://ariya.io/index.xml
+    homepage_url: https://ariya.io
+    display_name: ariya.io
+    summary: Recent content on ariya.io
+  armchairgeneral:
+    feed_url: http://feeds.feedburner.com/ArmchairGeneralMagazineMilitaryHistory
+    homepage_url: https://armchairgeneral.com
+    display_name: Armchair General Magazine – We Put YOU in Command!
+    summary: All things military history!
+  armorgames:
+    feed_url: https://armorgames.com/feed/new-games
+    homepage_url: https://armorgames.com
+    display_name: Newest Games at Armor Games
+    summary: The newest games available at ArmorGames.com
+  around_nyc_in_86_days_tumblr:
+    feed_url: https://around-nyc-in-86-days.tumblr.com/rss
+    homepage_url: https://around-nyc-in-86-days.tumblr.com
+    display_name: Around New York in eighty-six days
+    summary: A journal of my 3-month stay in NYC to take part on Hacker School, updated almost daily.
+  arunxjacob_wordpress:
+    feed_url: https://arunxjacob.wordpress.com/feed/
+    homepage_url: https://arunxjacob.wordpress.com
+    display_name: Wherever I go, there I am
+    summary: sometimes that's nice, sometimes not so much...
+  ascarter_dev:
+    feed_url: https://ascarter.dev/rss.xml
+    homepage_url: http://ascarter.dev
+    display_name: Coding in the Rain
+    summary: Coding in the Rain by Andrew Carter
+  ashfurrow:
+    feed_url: https://ashfurrow.com/feed.xml
+    homepage_url: https://ashfurrow.com
+    display_name: Ash Furrow's Blog
+    summary: Compassionate Software Developer
+  askmen:
+    feed_url: https://www.askmen.com/latest.rss
+    homepage_url: https://www.askmen.com
+    display_name: AskMen
+    summary: AskMen is the No. 1 site to help men improve their lives—from discovering new products & trends to getting advice on dating, fitness, grooming & more.
+  askplaybook:
+    feed_url: https://askplaybook.com/feed/
+    homepage_url: https://askplaybook.com
+    display_name: Playbook
+    summary: One place for the design community to share knowledge.
+  asktetra:
+    feed_url: https://asktetra.com/feed/
+    homepage_url: https://asktetra.com
+    display_name: TigerExchange
+    summary: Updates from TigerExchange.
+  asymptomatic:
+    feed_url: https://asymptomatic.net/feed.xml
+    homepage_url: https://asymptomatic.net
+    display_name: Asymptomatic
+    summary: The lastest posts from Asymptomatic
+  atr:
+    feed_url: https://atr.org/feed/
+    homepage_url: https://atr.org
+    display_name: Americans for Tax Reform
+    summary: Updates from Americans for Tax Reform.
+  attardi:
+    feed_url: https://attardi.org/rss.xml
+    homepage_url: https://attardi.org
+    display_name: Stefano J. Attardi
+    summary: Sr. Engineering Manager, Developer Experience at Coinbase. Former UI engineer and designer, specializing in React and React performance. Previously at Facebook and Storehouse. Winner of the first Node.js Knockout with Swarmation.com.
+  attendly:
+    feed_url: https://attendly.com/blog/rss.xml
+    homepage_url: https://attendly.com
+    display_name: Attendly Blog — California K-12 Compliance & Expanded Learning
+    summary: Updates on California K-12 compliance, ELOP, ASES, 21st CCLC, attendance recovery, SART/SARB, and chronic absenteeism.
+  attilaolah_eu:
+    feed_url: https://attilaolah.eu/rss.xml
+    homepage_url: https://attilaolah.eu
+    display_name: Attila Oláh
+    summary: Full-time dad, part-time web developer.
+  atvbt:
+    feed_url: https://www.atvbt.com/rss/
+    homepage_url: https://www.atvbt.com
+    display_name: Atoms vs Bits
+    summary: Atoms vs Bits
+  au_keepcup:
+    feed_url: https://au.keepcup.com/collections/shop-the-range.atom
+    homepage_url: https://au.keepcup.com/collections/all
+    display_name: KeepCup
+    summary: Updates from KeepCup.
+  audubon:
+    feed_url: https://www.audubon.org/rss.xml
+    homepage_url: https://www.audubon.org/news
+    display_name: Audubon News
+    summary: Bird and Conservation News
+  aulart:
+    feed_url: https://www.aulart.com/feed/
+    homepage_url: https://www.aulart.com
+    display_name: Aulart
+    summary: Online Electronic Music Production Classes
+  austinist:
+    feed_url: https://www.austinist.com/feed/
+    homepage_url: https://www.austinist.com
+    display_name: Austinist
+    summary: Updates from Austinist.
+  austinsnerdythings:
+    feed_url: https://austinsnerdythings.com/feed/
+    homepage_url: https://austinsnerdythings.com
+    display_name: Austin's Nerdy Things
+    summary: Nerding out, one post at a time
+  austinzheng:
+    feed_url: http://austinzheng.com/atom.xml
+    homepage_url: http://austinzheng.com
+    display_name: Episteme and Techne
+    summary: Updates from Episteme and Techne.
+  authenticjobs:
+    feed_url: https://authenticjobs.com/?feed=job_feed
+    homepage_url: https://authenticjobs.com
+    display_name: Authentic Jobs
+    summary: Designer, Creatives and Developers Jobs Board | Authentic Positions
   npr_all_songs_considered:
     feed_url: https://feeds.npr.org/510019/podcast.xml
     homepage_url: https://www.npr.org/sections/allsongs
