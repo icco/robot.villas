@@ -201,6 +201,256 @@ bots:
     display_name: Import AI
     summary: A weekly newsletter about artificial intelligence based on detailed analysis of cutting-edge research, by Jack Clark.
     profile_photo: https://substack-post-media.s3.amazonaws.com/public/images/8cc1c9c9-fc87-4eeb-ad15-7dc989b77553_528x504.png
+  creativebloq:
+    feed_url: https://www.creativebloq.com/feeds.xml
+    homepage_url: https://www.creativebloq.com
+    display_name: Creative Bloq
+    summary: Updates from Creative Bloq.
+  csswizardry:
+    feed_url: https://csswizardry.com/feed.xml
+    homepage_url: https://csswizardry.com
+    display_name: CSS Wizardry
+    summary: – Web Performance and Site Speed Consultant
+  daemonology:
+    feed_url: http://www.daemonology.net/blog/index.rss
+    homepage_url: https://www.daemonology.net/blog
+    display_name: Daemonic Dispatches
+    summary: Musings from Colin Percival
+  dailycaller:
+    feed_url: https://api.dailycaller.com/?feed=full&key=abad8678eeda58de4efcc7e9a704d008
+    homepage_url: https://dailycaller.com
+    display_name: The Daily Caller
+    summary: The Daily Caller features breaking news, opinion, research, and entertainment 24 hours a day.
+  daltoncaldwell:
+    feed_url: https://daltoncaldwell.com/feed
+    homepage_url: https://daltoncaldwell.com
+    display_name: Dalton Caldwell
+    summary: Updates from Dalton Caldwell.
+  dangerousminds:
+    feed_url: https://dangerousminds.net/feed/
+    homepage_url: https://dangerousminds.net
+    display_name: Dangerous Minds
+    summary: The weird side of underground culture
+  danismm_tumblr:
+    feed_url: https://danismm.tumblr.com/rss
+    homepage_url: https://danismm.tumblr.com
+    display_name: ✨Vintage, Arts, Architecture (1900-1980)✨
+    summary: “Welcome to the party! Enter freely. Go safely. Share your sadness or leave something of the happiness you bring!”
+  dashes:
+    feed_url: https://www.dashes.com/feed.xml
+    homepage_url: https://www.dashes.com
+    display_name: Anil Dash
+    summary: Updates from Anil Dash.
+  dbushell:
+    feed_url: https://dbushell.com/rss.xml
+    homepage_url: https://dbushell.com/blog
+    display_name: dbushell.com (blog)
+    summary: David Bushell’s Blog only feed
+  deaddrops:
+    feed_url: https://deaddrops.com/feed/
+    homepage_url: https://deaddrops.com
+    display_name: Dead Drops
+    summary: Un-cloud your files in cement! 'Dead Drops’ is an anonymous, offline, peer to peer file-sharing network in public space.
+  decoist:
+    feed_url: https://www.decoist.com/feed/
+    homepage_url: https://www.decoist.com
+    display_name: decoist
+    summary: Obsessed with the cult of beauty
+  denofgeek:
+    feed_url: https://www.denofgeek.com/feed/
+    homepage_url: https://www.denofgeek.com
+    display_name: Den of Geek
+    summary: Updates from Den of Geek.
+  developers_facebook:
+    feed_url: https://developers.facebook.com/blog/feed/
+    homepage_url: https://developers.facebook.com/blog
+    display_name: Facebook Developers
+    summary: Updates from Facebook Developers.
+  doublefine:
+    feed_url: https://www.doublefine.com/rss/news.rss
+    homepage_url: https://www.doublefine.com
+    display_name: Double Fine
+    summary: Updates from Double Fine.
+  droid_life:
+    feed_url: https://www.droid-life.com/feed/
+    homepage_url: https://www.droid-life.com
+    display_name: Droid Life
+    summary: Opinionated Android news.
+  elezea:
+    feed_url: https://elezea.com/feed.xml
+    homepage_url: https://elezea.com
+    display_name: Elezea - RSS Feed
+    summary: Rian van der Merwe's blog
+  soranews24:
+    feed_url: https://soranews24.com/feed/
+    homepage_url: https://soranews24.com
+    display_name: SoraNews24 —Japan News—
+    summary: Bringing you yesterday's news from Japan and Asia, today.
+  eonline:
+    feed_url: https://eol-feeds.eonline.com/rssfeed/us/top_stories
+    homepage_url: https://www.eonline.com
+    display_name: E! Online (US) - Top Stories
+    summary: News from across the show-biz spectrum-TV, movies, music and celebrities
+  evanmiller:
+    feed_url: https://www.evanmiller.org/news.xml
+    homepage_url: https://www.evanmiller.org
+    display_name: Evan Miller’s News
+    summary: Evan Miller’s News
+  eviltrout:
+    feed_url: https://eviltrout.com/blog/feed.xml
+    homepage_url: https://eviltrout.com
+    display_name: Blogs on Evil Trout Inc.
+    summary: Recent content in Blogs on Evil Trout Inc.
+  express:
+    feed_url: https://www.express.co.uk/posts/rss/143/gaming
+    homepage_url: https://www.express.co.uk
+    display_name: 'Daily Express :: Gaming Feed'
+    summary: Simply The Best 7 Days A Week
+  foreignpolicy:
+    feed_url: https://foreignpolicy.com/feed/
+    homepage_url: https://foreignpolicy.com
+    display_name: Foreign Policy
+    summary: the Global Magazine of News and Ideas
+  foursquare:
+    feed_url: https://foursquare.com/feed/
+    homepage_url: https://foursquare.com
+    display_name: Foursquare
+    summary: Independent Location Data Platform
+  ftrain:
+    feed_url: https://ftrain.com/xml/feed/rss.xml
+    homepage_url: https://ftrain.com
+    display_name: Ftrain.com
+    summary: Essays and stories by Paul Ford. Since 1997.
+  futurism:
+    feed_url: https://futurism.com/feed
+    homepage_url: https://futurism.com
+    display_name: Futurism
+    summary: Building the future together
+  gearnews:
+    feed_url: https://www.gearnews.com/feed/
+    homepage_url: https://www.gearnews.com
+    display_name: gearnews.com
+    summary: The latest equipment news & rumors for guitar, recording and synthesizer.
+  geekdad:
+    feed_url: https://geekdad.com/feed/
+    homepage_url: https://geekdad.com
+    display_name: GeekDad
+    summary: Raising Geek Generation 2.0
+  research_google:
+    feed_url: https://research.google/blog/rss/
+    homepage_url: https://research.google/blog
+    display_name: The latest research from Google
+    summary: Updates from The latest research from Google.
+  googlesystem_blogspot:
+    feed_url: https://feeds.feedburner.com/GoogleOperatingSystem
+    homepage_url: http://googlesystem.blogspot.com
+    display_name: Google Operating System
+    summary: Updates from Google Operating System.
+  grist:
+    feed_url: https://grist.org/feed/
+    homepage_url: https://grist.org
+    display_name: Grist
+    summary: 25 Years on the Climate Beat
+  gun:
+    feed_url: https://gun.io/feed/
+    homepage_url: https://gun.io
+    display_name: Gun.io
+    summary: 'Gun.io: Elite Tech Talent, Precisely Deployed'
+  gutenberg:
+    feed_url: https://www.gutenberg.org/ebooks/29765.opds
+    homepage_url: https://www.gutenberg.org
+    display_name: Webster's Unabridged Dictionary by Various
+    summary: Updates from Webster's Unabridged Dictionary by Various.
+  gwern:
+    feed_url: https://gwern.substack.com/feed
+    homepage_url: https://gwern.net
+    display_name: Gwern.net Newsletter
+    summary: Latest gwern.net updates, interesting links, and reviews
+  habr:
+    feed_url: https://habr.com/ru/rss/articles/
+    homepage_url: https://habr.com/ru/articles
+    display_name: Все публикации подряд на Хабре
+    summary: Все публикации подряд на Хабре
+  hackdesign:
+    feed_url: https://www.hackdesign.org/feed.xml
+    homepage_url: https://www.hackdesign.org
+    display_name: Hack Design
+    summary: Updates from Hack Design.
+  hackster:
+    feed_url: https://www.hackster.io/projects?format=atom&sort=recent
+    homepage_url: https://www.hackster.io
+    display_name: Explore all projects - Page 1 - Hackster.io
+    summary: Updates from Explore all projects - Page 1 - Hackster.io.
+  heavy:
+    feed_url: https://heavy.com/feed/
+    homepage_url: https://heavy.com
+    display_name: HEAVY
+    summary: Sports News, Stats & Analysis
+  honeypot:
+    feed_url: https://honeypot.net/feed.xml
+    homepage_url: https://honeypot.net
+    display_name: Honeypot.net
+    summary: Updates from Honeypot.net.
+  hongkiat:
+    feed_url: https://www.hongkiat.com/blog/feed/
+    homepage_url: https://www.hongkiat.com/blog
+    display_name: Hongkiat
+    summary: Tech and Design Tips
+  web_dev:
+    feed_url: https://web.dev/blog/feed.xml
+    homepage_url: https://web.dev/blog
+    display_name: 'web.dev: Blog'
+    summary: All of web.dev's blog posts.
+  ibtimes:
+    feed_url: https://www.ibtimes.com/rss/
+    homepage_url: https://www.ibtimes.com
+    display_name: International Business Times
+    summary: Latest News
+  ignorethecode:
+    feed_url: https://ignorethecode.net/blog/rss/
+    homepage_url: https://ignorethecode.net
+    display_name: ignorethecode.net
+    summary: Essays on usability, programming, and other nerd topics.
+  ilovetypography:
+    feed_url: https://ilovetypography.com/feed/
+    homepage_url: https://ilovetypography.com
+    display_name: I Love Typography Ltd
+    summary: quality curated fonts
+  inciweb_wildfire_gov:
+    feed_url: https://inciweb.wildfire.gov/rss.xml
+    homepage_url: http://inciweb.wildfire.gov
+    display_name: InciWeb
+    summary: Updates from InciWeb.
+  infoworld:
+    feed_url: https://www.infoworld.com/feed/
+    homepage_url: https://www.infoworld.com
+    display_name: InfoWorld
+    summary: Technology insight for the enterprise
+  inhabitat:
+    feed_url: https://inhabitat.com/feed/
+    homepage_url: https://inhabitat.com
+    display_name: Inhabitat - Green Design, Innovation, Architecture, Green Building
+    summary: Green design & innovation for a better world
+  inkandswitch:
+    feed_url: https://www.inkandswitch.com/index.xml
+    homepage_url: https://www.inkandswitch.com
+    display_name: Ink & Switch
+    summary: This feed includes every essay, event, newsletter, lab note, project, and page published on our website. This is the full fire hose — the most comprehensive way to stay up-to-date on our work.
+  itnews_com_au:
+    feed_url: https://www.itnews.com.au/rss/rss.ashx
+    homepage_url: https://www.itnews.com.au
+    display_name: iTnews
+    summary: iTnews
+  jacobian:
+    feed_url: https://jacobian.org/index.xml
+    homepage_url: https://jacobian.org
+    display_name: jacobian.org
+    summary: jacobian.org
+  jamesaltucher:
+    feed_url: https://archive.jamesaltucher.com/feed/
+    homepage_url: https://www.jamesaltucher.com
+    display_name: James Altucher
+    summary: Updates from James Altucher.
   simon_willison:
     feed_url: https://simonwillison.net/atom/everything/
     homepage_url: https://simonwillison.net
