@@ -1086,6 +1086,256 @@ bots:
     display_name: Noema Magazine
     summary: Long essays on technology, geopolitics, philosophy, economics, and the future of governance.
     profile_photo: https://www.noemamag.com/wp-content/uploads/2020/06/cropped-ms-icon-310x310-1-192x192.png
+  maryrosecook_tumblr:
+    feed_url: https://maryrosecook.tumblr.com/rss
+    homepage_url: https://maryrosecook.tumblr.com
+    display_name: Mary Rose Cook
+    summary: About GitHub Twitter RSS feed
+  masterskya:
+    feed_url: https://masterskya.com/feed/
+    homepage_url: https://masterskya.com
+    display_name: Masterskya
+    summary: Updates from Masterskya.
+  mastersreview:
+    feed_url: https://mastersreview.com/feed/
+    homepage_url: https://mastersreview.com
+    display_name: The Masters Review
+    summary: A platform for emerging writers
+  masterzen_fr:
+    feed_url: http://feeds.feedburner.com/masterzen
+    homepage_url: https://www.masterzen.fr
+    display_name: Masterzen’s Blog
+    summary: Updates from Masterzen’s Blog.
+  matadornetwork:
+    feed_url: https://matadornetwork.com/feed/
+    homepage_url: https://matadornetwork.com
+    display_name: Matador Network
+    summary: Travel Fearlessly
+  uwaterloo_ca:
+    feed_url: https://uwaterloo.ca/rss.xml
+    homepage_url: https://uwaterloo.ca
+    display_name: University of Waterloo
+    summary: Updates from University of Waterloo.
+  mathematica_stackexchange:
+    feed_url: https://mathematica.stackexchange.com/feeds
+    homepage_url: https://mathematica.stackexchange.com/questions
+    display_name: Recent Questions - Mathematica Stack Exchange
+    summary: Updates from Recent Questions - Mathematica Stack Exchange.
+  mathiasmikkelsen:
+    feed_url: https://www.mathiasmikkelsen.com/feed.xml
+    homepage_url: http://mathiasmikkelsen.com
+    display_name: Mathias Mikkelsen – Founder, Designer and Entreprenur
+    summary: Mathias Mikkelsen is the founder and CEO of Timely, and the co-founder of Sporty. Product designer, entrepreneur, founder.
+  mathjax:
+    feed_url: https://www.mathjax.org/feed.xml
+    homepage_url: https://www.mathjax.org
+    display_name: MathJax
+    summary: Updates from MathJax.
+  matklad_github:
+    feed_url: https://matklad.github.io/feed.xml
+    homepage_url: https://matklad.github.io
+    display_name: matklad
+    summary: Updates from matklad.
+  matschaffer:
+    feed_url: https://matschaffer.com/atom.xml
+    homepage_url: https://matschaffer.com
+    display_name: Mat Schaffer's blog
+    summary: Updates from Mat Schaffer's blog.
+  mattambrogi_bearblog_dev:
+    feed_url: https://mattambrogi.bearblog.dev/feed/
+    homepage_url: https://mattambrogi.bearblog.dev
+    display_name: Matt Ambrogi
+    summary: Updates from Matt Ambrogi.
+  matter_vc:
+    feed_url: https://matter.vc/rss/
+    homepage_url: https://matter.vc
+    display_name: Matter
+    summary: Build a Culture of Innovation
+  natgray:
+    feed_url: https://natgray.co.uk/blog/rss/
+    homepage_url: https://natgray.co.uk
+    display_name: Natalie Gray
+    summary: I'm a Digital Creator sharing my wonder for amazing careers, and using my electronics & 3D printing skills to Make Things. I'm also a member of The Technical Difficulties with Tom Scott…
+  mattgemmell:
+    feed_url: https://mattgemmell.scot/atom.xml
+    homepage_url: https://mattgemmell.com
+    display_name: Matt Gemmell
+    summary: Thriller, Horror, and Suspense author
+  matthewdicks:
+    feed_url: https://matthewdicks.com/feed/
+    homepage_url: https://matthewdicks.com
+    display_name: Matthew Dicks
+    summary: Making Stories Come Alive
+  mttmr:
+    feed_url: https://www.mttmr.com/rss.xml
+    homepage_url: https://mttmr.com/writing
+    display_name: Matt Moore — Writing
+    summary: Essays on design, technology, and building products for the physical world.
+  matthewpalmer:
+    feed_url: https://matthewpalmer.net/feed.xml
+    homepage_url: http://www.matthewpalmer.net
+    display_name: Matthew Palmer
+    summary: Web and iOS developer from Australia. @_matthewpalmer.
+  mattstromawn:
+    feed_url: https://mattstromawn.com/feed.xml
+    homepage_url: https://mattstromawn.com
+    display_name: The personal website of Matt Ström-Awn
+    summary: Updates from The personal website of Matt Ström-Awn.
+  matthewtejo_substack:
+    feed_url: https://matthewtejo.substack.com/feed
+    homepage_url: https://matthewtejo.substack.com
+    display_name: Matthew’s Writing
+    summary: Various things I feel like sharing
+  mattiasa_blogspot:
+    feed_url: http://feeds.feedburner.com/blogspot/SZAN
+    homepage_url: http://mattiasa.blogspot.com
+    display_name: Mattias Inks
+    summary: Updates from Mattias Inks.
+  mattlieberiseverything_tumblr:
+    feed_url: https://mattlieberiseverything.tumblr.com/rss
+    homepage_url: https://mattlieberiseverything.tumblr.com
+    display_name: https://mattlieberiseverything.tumblr.com/
+    summary: Illustrations dedicated to the weekly phrases about Matt Lieber on the Reply All podcast. By Seth Lucas
+  mattsayar:
+    feed_url: https://mattsayar.com/feed.xml
+    homepage_url: https://mattsayar.com
+    display_name: mattsayar.com
+    summary: Updates from mattsayar.com.
+  mattsears:
+    feed_url: https://mattsears.com/feed.xml
+    homepage_url: https://mattsears.com
+    display_name: Matt Sears
+    summary: Updates from Matt Sears.
+  thebignewsletter:
+    feed_url: https://www.thebignewsletter.com/feed
+    homepage_url: https://www.thebignewsletter.com
+    display_name: BIG by Matt Stoller
+    summary: The history and politics of monopoly power.
+  matznerd:
+    feed_url: https://matznerd.com/rss.xml
+    homepage_url: https://matznerd.com
+    display_name: Matznerd
+    summary: Independent writing by Eric Matzner about minds, machines, health, technology, culture, and the edges of human possibility.
+  mautic:
+    feed_url: https://mautic.org/feed/
+    homepage_url: https://mautic.org
+    display_name: Mautic
+    summary: World's Largest Open Source Marketing Automation Project
+  max_computer:
+    feed_url: https://max.computer/index.xml
+    homepage_url: http://max.computer
+    display_name: Max.Computer
+    summary: Recent content on Max.Computer
+  maxleiter:
+    feed_url: https://maxleiter.com/feed.xml
+    homepage_url: https://maxleiter.com
+    display_name: Max Leiter
+    summary: Max Leiter's blog
+  maxmynter_substack:
+    feed_url: https://maxmynter.substack.com/feed
+    homepage_url: https://maxmynter.substack.com
+    display_name: Relentlessly Curious
+    summary: Riffs on tech, software, pop culture, the occasional philosophy, vibes and what i'm generally on about in life.
+  maxnagy:
+    feed_url: https://maxnagy.com/index.xml
+    homepage_url: https://maxnagy.com
+    display_name: Max Nagy
+    summary: Recent content on Max Nagy
+  mbleigh_dev:
+    feed_url: https://mbleigh.dev/rss.xml
+    homepage_url: https://mbleigh.dev
+    display_name: mbleigh.dev
+    summary: Updates from mbleigh.dev.
+  mcfunley:
+    feed_url: https://mcfunley.com/feed.xml
+    homepage_url: https://mcfunley.com
+    display_name: Dan McKinley
+    summary: Updates from Dan McKinley.
+  mdk_fr:
+    feed_url: https://mdk.fr/feeds/all.atom.xml
+    homepage_url: https://mdk.fr
+    display_name: Julien Palard
+    summary: Updates from Julien Palard.
+  mdw_la:
+    feed_url: https://mdw.la/rss.xml
+    homepage_url: https://www.mdw.la
+    display_name: 'mdw.la :: Matt Welsh'
+    summary: Matt Welsh's home page.
+  media_ccc_de:
+    feed_url: https://media.ccc.de/news.atom
+    homepage_url: https://media.ccc.de
+    display_name: media.ccc.de - NEWS
+    summary: Updates from media.ccc.de - NEWS.
+  media_mit_edu:
+    feed_url: https://www.media.mit.edu/feed.rss
+    homepage_url: https://www.media.mit.edu
+    display_name: News + Updates - MIT Media Lab
+    summary: Everything from the Media Lab homepage
+  mediamatters:
+    feed_url: https://www.mediamatters.org/rss.xml
+    homepage_url: https://www.mediamatters.org
+    display_name: Media Matters for America
+    summary: Articles published by Media Matters for America
+  medicaldaily:
+    feed_url: https://www.medicaldaily.com/rss/
+    homepage_url: https://www.medicaldaily.com
+    display_name: Medical Daily
+    summary: Latest News
+  medriscoll:
+    feed_url: https://medriscoll.com/feed/
+    homepage_url: https://medriscoll.com
+    display_name: m. e. driscoll
+    summary: Updates from m. e. driscoll.
+  megelison:
+    feed_url: https://megelison.com/feed
+    homepage_url: https://megelison.com
+    display_name: Meg Elison
+    summary: Author & Essayist
+  mehulkar:
+    feed_url: https://www.mehulkar.com/feed.xml
+    homepage_url: https://www.mehulkar.com
+    display_name: Mehul Kar's blog
+    summary: Updates from Mehul Kar's blog.
+  about_readcube:
+    feed_url: https://about.readcube.com/feed/
+    homepage_url: https://about.readcube.com
+    display_name: ReadCube
+    summary: Your personal library of research
+  melissagiragrant:
+    feed_url: https://www.melissagiragrant.com/rss/
+    homepage_url: https://www.melissagiragrant.com
+    display_name: Melissa Gira Grant
+    summary: Author and journalist writing on sex, gender, race, and the law.
+  melmagazine:
+    feed_url: https://melmagazine.com/feed
+    homepage_url: https://melmagazine.com
+    display_name: MEL Magazine
+    summary: There's no playbook for how to be a guy.
+  memrise:
+    feed_url: https://www.memrise.com/blog/rss.xml
+    homepage_url: https://www.memrise.com/blog
+    display_name: Memrise Blog
+    summary: Memrise Blog
+  mentalized:
+    feed_url: https://mentalized.net/journal/entries.xml
+    homepage_url: https://mentalized.net
+    display_name: mentalized.net
+    summary: The virtual home of Jakob Skjerning, an experienced web application developer, consultancy owner and grumpy geek
+  merlinmann:
+    feed_url: https://www.merlinmann.com/roderick/atom.xml
+    homepage_url: http://www.merlinmann.com/roderick
+    display_name: Roderick on the Line
+    summary: Updates from Roderick on the Line.
+  nutanix:
+    feed_url: https://www.nutanix.com/blog.rssfeed.xml
+    homepage_url: https://www.nutanix.com/blog
+    display_name: Read the Latest Blogs from Nutanix
+    summary: Tips from experts, thoughts from leaders, news from the front line. Join the conversation beyond hyperconverged infrastructure to the enterprise cloud.
+  meta_discourse:
+    feed_url: https://meta.discourse.org/posts.rss
+    homepage_url: https://meta.discourse.org
+    display_name: Discourse Meta - Latest posts
+    summary: Latest posts
   astral_codex_ten:
     feed_url: https://www.astralcodexten.com/feed
     homepage_url: https://www.astralcodexten.com
