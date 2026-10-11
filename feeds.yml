@@ -1258,6 +1258,256 @@ bots:
     display_name: Fauxtrots
     summary: Personal reflections, art, and technology projects.
     profile_photo: https://www.fauxtrots.com/apple-touch-icon.png
+  rabbitisland:
+    feed_url: https://rabbitisland.org/feed/
+    homepage_url: https://rabbitisland.org
+    display_name: Rabbit Island
+    summary: The story of a remote island in Lake Superior
+  rachbelaid:
+    feed_url: https://rachbelaid.com/feed.xml
+    homepage_url: http://rachbelaid.com
+    display_name: Maybe a -> Blog
+    summary: Blogging about programming, computer sciences, databases and others stuffs
+  people_csail_mit_edu:
+    feed_url: https://people.csail.mit.edu/rachit/post/atom.xml
+    homepage_url: https://people.csail.mit.edu/rachit/post
+    display_name: '- Rachit''s Blog'
+    summary: Updates from - Rachit's Blog.
+  major:
+    feed_url: https://major.io/index.xml
+    homepage_url: https://major.io
+    display_name: Major Hayden
+    summary: Recent content on Major Hayden
+  racketracer_wordpress:
+    feed_url: https://racketracer.wordpress.com/feed/
+    homepage_url: https://racketracer.wordpress.com
+    display_name: Jay's Life
+    summary: This is my free time
+  radek:
+    feed_url: https://radek.io/rss.xml
+    homepage_url: https://radek.io
+    display_name: Radek Pazdera — Full-stack Product Engineer
+    summary: I build software products and write on the Internet.
+  radiant_earth:
+    feed_url: https://radiant.earth/index.xml
+    homepage_url: https://radiant.earth
+    display_name: Radiant Earth
+    summary: Recent content from Radiant Earth
+  radicalcartography:
+    feed_url: http://radicalcartography.blogspot.com/feeds/posts/default
+    homepage_url: http://radicalcartography.net
+    display_name: radicalcartography
+    summary: Updates from radicalcartography.
+  radio_no:
+    feed_url: https://radio.no/feed/
+    homepage_url: https://radio.no
+    display_name: Radio.no
+    summary: Radio.no hjelper deg med overgangen til digital radio. Radio.no drives av Digitalradio Norge, som eies av NRK og P4.
+  radium_ro:
+    feed_url: https://radium.ro/feed/
+    homepage_url: https://radium.ro
+    display_name: Radium.ro – Adult Media
+    summary: Updates from Radium.ro – Adult Media.
+  railserve:
+    feed_url: https://railserve.com/feed/
+    homepage_url: https://railserve.com
+    display_name: Railserve
+    summary: Orbit Media WP Elementor Sandbox
+  yhbt:
+    feed_url: https://yhbt.net/raindrops/NEWS.atom.xml
+    homepage_url: https://yhbt.net/raindrops/NEWS.html
+    display_name: raindrops news
+    summary: Updates from raindrops news.
+  rajibedi_tumblr:
+    feed_url: https://rajibedi.tumblr.com/rss
+    homepage_url: https://rajibedi.tumblr.com
+    display_name: Raji Bedi
+    summary: Currently based in SF. I’m the founder of doingtonight, an app that allows you to make and broadcast your plans for tonight. It is available in the iTunes App Store here. Prior to founding doingtonight I was an Associate at North Bridge, and a Consultant at Deloitte. I challenge you to a dance off. Follow me on twitter!
+  rakhim_exotext:
+    feed_url: https://rakhim.exotext.com/rss.xml
+    homepage_url: https://rakhim.exotext.com
+    display_name: Rakhim's blog
+    summary: Hi, my name is Rakhim. I'm a staff engineer at IQM Quantum Computers. I'm building Exotext.com and Minifeed.net. Reach me on Bluesky or Twitter.
+  ralphsevelius_blogspot:
+    feed_url: https://ralphsevelius.blogspot.com/feeds/posts/default
+    homepage_url: https://ralphsevelius.blogspot.com
+    display_name: Ralph Sevelius
+    summary: Updates from Ralph Sevelius.
+  ramiro:
+    feed_url: https://ramiro.org/rss.xml
+    homepage_url: https://ramiro.org
+    display_name: RSS Feed | Ramiro.org
+    summary: RSS Feed
+  randalolson:
+    feed_url: https://www.randalolson.com/feed.xml
+    homepage_url: https://www.randalolson.com
+    display_name: Dr. Randal S. Olson
+    summary: AI Researcher & Builder - Blog posts on AI, machine learning, data science, and data visualization
+  randle_substack:
+    feed_url: https://randle.substack.com/feed
+    homepage_url: https://randle.substack.com
+    display_name: Ev's Prime Meridian
+    summary: Explorations of topics I enjoy
+  randomhacks:
+    feed_url: https://www.randomhacks.net/feed.xml
+    homepage_url: http://www.randomhacks.net
+    display_name: Random Hacks
+    summary: Random code snippets, projects and musings about software from Eric Kidd, a developer and occasional entrepreneur.
+  randomlylondon:
+    feed_url: https://randomlylondon.com/feed/
+    homepage_url: https://randomlylondon.com
+    display_name: Randomly London
+    summary: Walking The Tube, Hotels & London Secrets
+  randomwire:
+    feed_url: https://randomwire.com/feed/
+    homepage_url: https://randomwire.com
+    display_name: Randomwire
+    summary: Exploring since 2003
+  thestate51conspiracy:
+    feed_url: https://thestate51conspiracy.com/rss
+    homepage_url: https://thestate51conspiracy.com
+    display_name: state51
+    summary: state51
+  raphaeljs:
+    feed_url: http://raphaeljs.com/feed
+    homepage_url: http://raphaeljs.com
+    display_name: Raphaël
+    summary: JavaScript Library
+  rapin:
+    feed_url: https://rapin.com/atom.xml
+    homepage_url: https://rapin.com
+    display_name: Dave Rapin
+    summary: Updates from Dave Rapin.
+  rareese:
+    feed_url: https://rareese.com/index.xml
+    homepage_url: https://rareese.com
+    display_name: Robert Reese's Website
+    summary: Recent content on Robert Reese's Website
+  raspberrypi_stackexchange:
+    feed_url: https://raspberrypi.stackexchange.com/feeds
+    homepage_url: https://raspberrypi.stackexchange.com/questions
+    display_name: Recent Questions - Raspberry Pi Stack Exchange
+    summary: Updates from Recent Questions - Raspberry Pi Stack Exchange.
+  raymmar:
+    feed_url: https://raymmar.com/feed/
+    homepage_url: https://raymmar.com
+    display_name: Raymmar.com
+    summary: Welcome to the online mind of Raymmar Tirado
+  razius:
+    feed_url: https://razius.com/feeds/all.atom.xml
+    homepage_url: https://razius.com
+    display_name: Silviu Tantos (razius)
+    summary: Updates from Silviu Tantos (razius).
+  rbth:
+    feed_url: https://www.rbth.com/rss
+    homepage_url: https://www.rbth.com
+    display_name: Russia Beyond
+    summary: Russia Beyond
+  rcptones:
+    feed_url: https://rcptones.com/feed/
+    homepage_url: https://rcptones.com
+    display_name: RCP | Professional Ringtones for Android and iPhone
+    summary: Updates from RCP | Professional Ringtones for Android and iPhone.
+  rcrowley:
+    feed_url: https://rcrowley.org/index.atom.xml
+    homepage_url: https://rcrowley.org
+    display_name: Richard Crowley
+    summary: Updates from Richard Crowley.
+  rdist_root:
+    feed_url: https://rdist.root.org/feed/
+    homepage_url: https://rdist.root.org
+    display_name: rdist
+    summary: Embedded security, cryptography, software protection
+  re_cycledair:
+    feed_url: https://www.re-cycledair.com/feed
+    homepage_url: https://www.re-cycledair.com
+    display_name: Re-Cycled Air
+    summary: Jack Slingerland's Programming & Life Adventures
+  readability:
+    feed_url: https://www.readability.com/feed
+    homepage_url: https://www.readability.com
+    display_name: Readability
+    summary: News on the Trend
+  readingbyeugene:
+    feed_url: https://readingbyeugene.com/feed/
+    homepage_url: http://readingbyeugene.com
+    display_name: Books I Read
+    summary: Curious reads and finds
+  readings_owlfolio:
+    feed_url: https://readings.owlfolio.org/index.atom
+    homepage_url: https://readings.owlfolio.org
+    display_name: Readings in Information Security
+    summary: Updates from Readings in Information Security.
+  about_readthedocs:
+    feed_url: https://about.readthedocs.com/feeds/atom.xml
+    homepage_url: https://about.readthedocs.com
+    display_name: Read the Docs
+    summary: Updates from Read the Docs.
+  realescapegame:
+    feed_url: https://realescapegame.com/feed/
+    homepage_url: https://realescapegame.com
+    display_name: REAL ESCAPE GAME Created by SCRAP – Voted America’s No.1 Escape Room
+    summary: REAL ESCAPE GAME™ is a unique and interactive live puzzle event where teams solve mysteries and clues within a limited time.
+  reasoniamhere:
+    feed_url: https://reasoniamhere.com/feed/
+    homepage_url: https://reasoniamhere.com
+    display_name: A Blog About Science and Life
+    summary: Simple posts about science, technology, learning, and the world around us.
+  rebble:
+    feed_url: https://rebble.io/feed.xml
+    homepage_url: https://rebble.io/
+    display_name: Rebble
+    summary: The goal of Rebble is to maintain and advance Pebble functionality in the absence of Pebble Technology Corp.
+  ilovepeanutbutter:
+    feed_url: https://ilovepeanutbutter.com/blogs/recipes.atom
+    homepage_url: https://ilovepeanutbutter.com/blogs/recipes
+    display_name: Peanut Butter & Co - ilovepeanutbutter.com - Recipes
+    summary: Updates from Peanut Butter & Co - ilovepeanutbutter.com - Recipes.
+  reco_ai:
+    feed_url: https://www.reco.ai/blog/rss.xml
+    homepage_url: https://www.reco.ai
+    display_name: Rece.ai Feed
+    summary: Your go-to destination for insights on cutting-edge topics such as data security, SaaS security & A.I. In today's interconnected world, safeguarding data has become more critical than ever. See how we delve deep into the intricacies of data security, providing valuable information and actionable tips to protect your sensitive information from cyber threats.
+  recompilermag:
+    feed_url: https://recompilermag.com/feed/
+    homepage_url: https://recompilermag.com
+    display_name: The Recompiler
+    summary: a magazine about building better technology, together
+  recoverymonkey:
+    feed_url: https://recoverymonkey.org/feed/
+    homepage_url: https://recoverymonkey.org
+    display_name: Recovery Monkey
+    summary: Musings on storage, tuning, backups and more - delivered with a no-nonsense approach. By Dimitris Krekoukias
+  recraigslist:
+    feed_url: https://recraigslist.com/feed/
+    homepage_url: https://recraigslist.com
+    display_name: ReCraigslist
+    summary: Make a living outside the box.
+  redis:
+    feed_url: https://redis.io/blog/feed/
+    homepage_url: https://redis.io/en/blog
+    display_name: Redis Blog
+    summary: Latest blog posts from Redis
+  redscott_tumblr:
+    feed_url: https://redscott.tumblr.com/rss
+    homepage_url: https://redscott.tumblr.com
+    display_name: Red Scott
+    summary: SF based Stand-Up comic and occasional photographer. Co-creator and co-host of Boars, Gore, and Swords. Ask me a question.
+  reductress:
+    feed_url: https://reductress.com/feed/
+    homepage_url: https://reductress.com
+    display_name: Reductress
+    summary: Women's News. Feminized.
+  reflectoring:
+    feed_url: https://reflectoring.io/index.xml
+    homepage_url: https://reflectoring.io
+    display_name: Reflectoring - Where the HOW meets the WHY
+    summary: Recent content on Reflectoring - Where the HOW meets the WHY
+  regexcrossword:
+    feed_url: https://regexcrossword.com/api/feed
+    homepage_url: https://regexcrossword.com
+    display_name: Regex Crossword
+    summary: Updates from Regex Crossword.
   evan_schwartz:
     feed_url: https://emschwartz.me/feed/
     homepage_url: https://emschwartz.me/
