@@ -10919,256 +10919,248 @@ bots:
     display_name: Synth History
     summary: Stories about the history, people, instruments, and culture of synthesizers.
     profile_photo: https://static.wixstatic.com/media/8c9e81_a58d513f3b184515b750539f47c5c6a1%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/8c9e81_a58d513f3b184515b750539f47c5c6a1%7Emv2.png
-  countrylife:
+  country_life:
     feed_url: https://www.countrylife.co.uk/feeds.xml
     homepage_url: https://www.countrylife.co.uk
-    display_name: Latest from Country Life
-    summary: All the latest content from the Country Life team
-  courthousenews:
+    display_name: Country Life
+    summary: British country living, property, gardens, interiors, rural affairs, arts, and lifestyle from Country Life magazine.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.countrylife.co.uk&size=128
+  courthouse_news_service:
     feed_url: https://courthousenews.com/feed/
     homepage_url: https://courthousenews.com
     display_name: Courthouse News Service
-    summary: Probably the best news site in the world
-  covertprestige_info:
-    feed_url: https://covertprestige.info/feed/
-    homepage_url: https://covertprestige.info
-    display_name: Informations
-    summary: Updates from Informations.
+    summary: Legal news, court reporting, politics, and public-interest journalism from Courthouse News Service.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcourthousenews.com&size=128
   coveteur:
     feed_url: https://coveteur.com/rss/all.xml
     homepage_url: https://coveteur.com
     display_name: Coveteur
-    summary: Coveteur - Fashion, Beauty, and Lifestyle News
-  cprimozic:
+    summary: Fashion, beauty, celebrity style, closets, and culture from Coveteur.
+    profile_photo: https://coveteur.com/images/apple-touch-icon.png
+  casey_primozic:
     feed_url: https://cprimozic.net/rss.xml
     homepage_url: https://cprimozic.net
-    display_name: cprimozic.net Blog
-    summary: Personal website of Casey Primozic / ameo
-  crankyflier:
+    display_name: Casey Primozic
+    summary: Casey Primozic writes about software development, web applications, graphics, machine learning, and personal programming projects.
+    profile_photo: https://cprimozic.b-cdn.net/favicon.png
+  cranky_flier:
     feed_url: https://crankyflier.com/feed/
     homepage_url: https://crankyflier.com
     display_name: Cranky Flier
-    summary: An Airline Industry Blog
-  crashdev:
+    summary: Airline industry analysis, route news, interviews, and trip reports from Cranky Flier.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcrankyflier.com&size=128
+  crash_dev:
     feed_url: https://crashdev.com/feed/
     homepage_url: https://crashdev.com
     display_name: Crash Dev
-    summary: Seeking useful patterns wherever they appear.
-  crawshaw:
+    summary: Archived posts by Chris DeVore about startups, venture capital, Seattle, and entrepreneurship; the available feed ends in 2019.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcrashdev.com&size=128
+  david_crawshaw:
     feed_url: https://crawshaw.io/atom.xml
     homepage_url: https://crawshaw.io
     display_name: David Crawshaw
-    summary: Updates from David Crawshaw.
-  crazysexyfuntraveler:
+    summary: David Crawshaw writes about software engineering, Go, SQLite, cloud infrastructure, and programming with AI agents.
+    profile_photo: https://github.com/crawshaw.png?size=200
+  crazy_sexy_fun_traveler:
     feed_url: https://feeds.feedburner.com/CrazySexyFunTraveler
     homepage_url: https://www.crazysexyfuntraveler.com
-    display_name: Crazy sexy fun traveler – travel blog about adventure and spa
-    summary: Crazy travel, fun adventures, sexy photos and healthy lifestyle
-  creativeapplications:
-    feed_url: https://www.creativeapplications.net/feed/
-    homepage_url: https://www.creativeapplications.net?pk_campaign=rss-feed&pk_source=feed&pk_medium=rss
-    display_name: CreativeApplications.Net
-    summary: Technology, Society, and Critical Making (Since 2008)
-  creativecommons:
+    display_name: Crazy sexy fun traveler
+    summary: Travel experiences, destination guides, accommodation reviews, adventure, spas, and healthy living from Crazy Sexy Fun Traveler.
+  creative_commons:
     feed_url: https://creativecommons.org/feed/
     homepage_url: https://creativecommons.org
     display_name: Creative Commons
-    summary: Updates from Creative Commons.
-  creativegood:
-    feed_url: https://creativegood.com/blog/feed.xml
-    homepage_url: https://creativegood.com/blog
+    summary: News and commentary from Creative Commons on open licensing, shared knowledge, cultural heritage, and its community and advocacy work.
+    profile_photo: https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/favicon/apple-touch-icon.png
+  creative_good:
+    feed_url: https://buttondown.com/creativegood/rss
+    homepage_url: https://creativegood.com/blog/
     display_name: Creative Good
-    summary: By Mark Hurst
-  creditkarma:
+    summary: Mark Hurst writes about technology and its effects on people, customer experience, Big Tech, and the Gel conference.
+    profile_photo: https://creativegood.com/img/favicon-16x16.png
+  intuit_credit_karma:
     feed_url: https://www.creditkarma.com/feed
     homepage_url: https://www.creditkarma.com
     display_name: Intuit Credit Karma
-    summary: Free Credit Score & Free Credit Reports With Monitoring
-  crispgm:
+    summary: Credit Karma articles and guides about credit cards, credit scores, loans, and personal finance, including financial-product comparisons.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.creditkarma.com&size=128
+  crispdev:
     feed_url: https://crispgm.com/feed.xml
     homepage_url: https://crispgm.com
     display_name: CrispDev
-    summary: Home page and blog of David Zhang (@crispgm), a minimalist programmer, photographer, and lifehacker.
-  crummy:
+    summary: David Zhang writes about programming, developer tools, photography, travel, and personal interests at CrispDev; the available feed ends in 2024.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcrispgm.com&size=128
+  news_you_can_bruise:
     feed_url: https://www.crummy.com/atom.xml
     homepage_url: https://www.crummy.com
     display_name: News You Can Bruise
-    summary: Updates from News You Can Bruise.
-  crypt_codemancers:
-    feed_url: https://crypt.codemancers.com/rss.xml
-    homepage_url: https://crypt.codemancers.com
-    display_name: crypt.codemancers.com
-    summary: Blog posts RSS feed
+    summary: 'Leonard Richardson''s News You Can Bruise: personal writing, film reviews, software, geek culture, and humor.'
+  codemancers_blog:
+    feed_url: https://www.codemancers.com/rss.xml
+    homepage_url: https://www.codemancers.com/blog
+    display_name: Codemancers Blog
+    summary: Engineering articles from Codemancers about software development, web applications, infrastructure, and AI.
+    profile_photo: https://www.codemancers.com/images/logo-120x120.png
   cryptopotato:
     feed_url: https://cryptopotato.com/feed/
     homepage_url: https://cryptopotato.com
     display_name: CryptoPotato
-    summary: Updates from CryptoPotato.
-  cryto_net__joepie91:
+    summary: Cryptocurrency news, Bitcoin and altcoin market analysis, interviews, and educational guides from CryptoPotato.
+    profile_photo: https://cryptopotato.com/wp-content/themes/cryptopotato/assets/build/images/pwa/apple-touch-icon.png
+  joepie91s_ramblings:
     feed_url: http://cryto.net/~joepie91/blog/feed.xml
     homepage_url: http://cryto.net/~joepie91/blog
     display_name: joepie91's Ramblings
-    summary: Updates from joepie91's Ramblings.
-  engineering_tufts_edu:
-    feed_url: https://engineering.tufts.edu/rss.xml
-    homepage_url: https://engineering.tufts.edu
-    display_name: School of Engineering
-    summary: Updates from School of Engineering.
-  cs_ucsb_edu__vlab:
-    feed_url: https://cs.ucsb.edu/rss.xml
-    homepage_url: https://cs.ucsb.edu
-    display_name: UCSB Computer Science
-    summary: Updates from UCSB Computer Science.
-  cs_utexas_edu:
-    feed_url: https://www.cs.utexas.edu/rss.xml
-    homepage_url: https://www.cs.utexas.edu
-    display_name: UT Austin Computer Science
-    summary: Updates from UT Austin Computer Science.
-  cs007_blog:
+    summary: Archived essays by joepie91 about software, JavaScript, security, privacy, and technology policy; the available feed ends in 2016.
+    profile_photo: https://github.com/joepie91.png?size=200
+  cs_007_personal_finance_for_engineers:
     feed_url: https://cs007.blog/feed/
     homepage_url: https://cs007.blog
     display_name: 'CS 007: Personal Finance for Engineers'
-    summary: Stanford University 2017-2025 (9th Year)
-  cse_ucsd_edu:
-    feed_url: https://cse.ucsd.edu/rss.xml
-    homepage_url: https://cse.ucsd.edu
-    display_name: Computer Science
-    summary: Updates from Computer Science.
-  csoonline:
+    summary: Course materials for Adam Nash's Stanford personal finance course for engineers, covering saving, budgeting, debt, compensation, and investing.
+  cso_online:
     feed_url: https://www.csoonline.com/feed/
     homepage_url: https://www.csoonline.com
     display_name: CSO Online
-    summary: Security at the speed of business
-  cstack_github:
+    summary: Cybersecurity news and analysis for enterprise security leaders, covering threats, vulnerabilities, risk, and security management.
+    profile_photo: https://www.csoonline.com/wp-content/uploads/2023/06/cropped-CSO-favicon-1-1.png?w=180
+  lets_build_a_simple_database:
     feed_url: https://cstack.github.io/db_tutorial/feed.xml
     homepage_url: https://cstack.github.io/db_tutorial
     display_name: Let's Build a Simple Database
-    summary: Writing a sqlite clone from scratch in C
+    summary: Archived tutorial documenting a SQLite-style database built from scratch in C, including storage, cursors, and B-trees; no longer under active development.
+    profile_photo: https://github.com/cstack.png?size=200
   cstheory_stackexchange:
     feed_url: https://cstheory.stackexchange.com/feeds
     homepage_url: https://cstheory.stackexchange.com/questions
-    display_name: Recent Questions - Theoretical Computer Science Stack Exchange
-    summary: Updates from Recent Questions - Theoretical Computer Science Stack Exchange.
-  ctftime:
+    display_name: Theoretical Computer Science Stack Exchange
+    summary: Recent research-level theoretical computer science questions from the Theoretical Computer Science Stack Exchange community.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcstheory.stackexchange.com%2Fquestions&size=128
+  ctftime_upcoming_events:
     feed_url: https://ctftime.org/event/list/upcoming/rss/
     homepage_url: https://ctftime.org
-    display_name: 'CTFtime.org: upcoming CTF events'
-    summary: CTFtime.org upcoming CTF events feed.
-  cube_drone:
+    display_name: CTFtime Upcoming Events
+    summary: Upcoming cybersecurity Capture the Flag competitions listed by CTFtime.org.
+    profile_photo: https://ctftime.org/static/images/ctftime-logo-avatar.png
+  blog_drone:
     feed_url: https://cube-drone.com/index.xml
     homepage_url: https://cube-drone.com
-    display_name: Hi. on Blog Drone
-    summary: Recent content in Hi. on Blog Drone
-  cubewatermelon_tumblr:
+    display_name: Blog Drone
+    summary: Curtis writes at Blog Drone about software, technology, games, books, humor, and everyday life.
+  cube_watermelon:
     feed_url: https://cubewatermelon.tumblr.com/rss
     homepage_url: https://cubewatermelon.tumblr.com
     display_name: Cube Watermelon
-    summary: The Newly reborn tumblr for Me, Cube Watermelon, creator of Sleepless Domain, Kiwi Blitz, and Let’s Speak English. Owner of many good cats. Sometimes a vtuber.
+    summary: Art, sketches, comics, and personal updates from Cube Watermelon, creator of Sleepless Domain, Kiwi Blitz, and Let's Speak English.
+    profile_photo: https://64.media.tumblr.com/fe8219ece2cf43f374ca7f524b603db0/0230e6200cf84fc1-b4/s200x200u_c1/c3afeda2ec6c467b8278957bbd71bf5db034f149.pnj
   cuddly_octo_palm_tree:
     feed_url: https://cuddly-octo-palm-tree.com/feed.xml
     homepage_url: https://cuddly-octo-palm-tree.com
     display_name: Cuddly, Octo-Palm Tree
-    summary: Blog on software engineering, mostly.
-  culturedcode:
+    summary: Software engineering essays and tutorials, including Clojure optimization, shell scripting, functional programming, and development tools.
+  things_blog:
     feed_url: https://culturedcode.com/things/blog/feed/rss.xml
     homepage_url: https://culturedcode.com/things/blog
     display_name: Things Blog
-    summary: Things Blog
-  cuong:
-    feed_url: https://cuong.io/rss.xml
-    homepage_url: https://cuong.io
-    display_name: Code Centre
-    summary: Welcome to Code Centre, a blog for developers and those who are interested in AIs.
-  curi_us:
+    summary: Product updates, feature releases, and announcements from Cultured Code, the developers of the Things task manager.
+    profile_photo: https://culturedcode.com/apple-touch-icon.png?breackcache=ddi27f1a
+  curiosity_blog:
     feed_url: https://curi.us/rss
     homepage_url: https://curi.us
-    display_name: curi
-    summary: Explanations for the curious
-  cushionapp:
+    display_name: Curiosity Blog
+    summary: 'Elliot Temple''s Curiosity Blog: informal personal writing, discussion, philosophy, and commentary; newer formal philosophy articles are published separately.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcuri.us&size=128
+  cushion_blog:
     feed_url: https://cushionapp.com/rss.xml
     homepage_url: https://cushionapp.com
     display_name: Cushion Blog
-    summary: Stay up-to-date with new Cushion features, announcements, and milestones.
-  cyberasylum_janithw:
+    summary: Product updates, changelogs, and company announcements for Cushion, a scheduling and financial-planning app for freelancers.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcushionapp.com&size=128
+  cyber_asylum:
     feed_url: https://cyberasylum.janithw.com/feed/
     homepage_url: https://cyberasylum.janithw.com
     display_name: Cyber Asylum
-    summary: For all those who are mad about computing…
-  cycling74:
+    summary: Archived computing tutorials by Janith Weerasinghe about Raspberry Pi, web development, hardware, and machine learning; the available feed ends in 2014.
+    profile_photo: https://2.gravatar.com/avatar/87b971789c5a34d1793bf8cec52f003d?s=40&d=identicon&r=g
+  cycling_74:
     feed_url: https://cycling74.com/rss.xml
     homepage_url: https://cycling74.com
-    display_name: Cycling '74 » RSS
-    summary: The last 24 hours on https://cycling74.com
-  arcticwolf:
-    feed_url: https://arcticwolf.com/feed/
-    homepage_url: https://arcticwolf.com
-    display_name: Arctic Wolf
-    summary: The Leaders in Security Operations
-  da_data_blogspot:
+    display_name: Cycling '74
+    summary: Recent Cycling '74 community activity, including Max and RNBO forum questions and replies about sound, graphics, and interactive tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcycling74.com&size=128
+  daves_data:
     feed_url: https://da-data.blogspot.com/feeds/posts/default
     homepage_url: https://da-data.blogspot.com
     display_name: Dave's Data
-    summary: Updates from Dave's Data.
-  dannysullivan:
+    summary: David Andersen's archived posts about computer science, systems, programming, technology, and vegan cooking; the available feed ends in 2023.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fda-data.blogspot.com&size=128
+  danny_sullivan:
     feed_url: https://dannysullivan.com/feed
     homepage_url: https://dannysullivan.com
     display_name: Danny Sullivan
-    summary: Updates from Danny Sullivan.
-  daguar_github:
+    summary: Personal writing by Danny Sullivan about technology, search engines, media, apps, and everyday life.
+    profile_photo: https://dannysullivan.com/wp-content/uploads/2026/04/favicon.png
+  dave_guarino:
     feed_url: https://daguar.github.io/atom.xml
     homepage_url: https://daguar.github.io
     display_name: Dave Guarino
-    summary: Updates from Dave Guarino.
-  dailymaverick_co_za:
+    summary: Dave Guarino's archived writing on technology, government, civic services, and organizational change; the available feed ends in 2020.
+  daily_maverick:
     feed_url: https://www.dailymaverick.co.za/dmrss/
     homepage_url: https://www.dailymaverick.co.za
-    display_name: Daily Maverick - Latest News
-    summary: Latest news and analysis from Daily Maverick
-  dailyvim_blogspot:
+    display_name: Daily Maverick
+    summary: South African and international news, investigations, analysis, politics, business, social justice, and opinion from Daily Maverick.
+    profile_photo: https://www.dailymaverick.co.za/images/favicons/DMmonogram_favicon76px.png
+  daily_vim:
     feed_url: https://dailyvim.blogspot.com/feeds/posts/default
     homepage_url: https://dailyvim.blogspot.com
-    display_name: 'Daily Vim: Text Editor Tips, Tricks, Tutorials, and HOWTOs'
-    summary: 'Updates from Daily Vim: Text Editor Tips, Tricks, Tutorials, and HOWTOs.'
-  daiz_moe:
+    display_name: Daily Vim
+    summary: Archived Vim tips, text-editing tutorials, shell commands, and computing notes by Travis Whitton; the available feed ends in 2014.
+  daiz_on_media_and_other_escapades:
     feed_url: https://daiz.moe/rss.xml
     homepage_url: https://daiz.moe
     display_name: Daiz on Media & Other Escapades
-    summary: Digital media expert Daiz writes about technology, Japanese media, video games, and consumer awareness matters.
-  damiengwalter:
+    summary: Daiz writes about digital media, technology, Japanese media, video games, and consumer issues; the available feed contains one 2025 article on Crunchyroll subtitles.
+    profile_photo: https://daiz.moe/favicon.png
+  damien_walter:
     feed_url: https://damiengwalter.com/feed/
     homepage_url: https://damiengwalter.com
     display_name: Damien Walter
-    summary: Writer, storyteller and critic
-  damninteresting:
+    summary: Damien Walter writes about science fiction, storytelling, books, film, culture, and technology.
+  damn_interesting:
     feed_url: https://www.damninteresting.com/feeds/everything/
     homepage_url: https://www.damninteresting.com
     display_name: Damn Interesting
-    summary: A collection of legitimately fascinating information culled from the past, present, and anticipated future.
-  danaernst:
-    feed_url: http://danaernst.com/feed.xml
+    summary: True stories from science, history, psychology, and technology, alongside site news and curated links from Damn Interesting.
+    profile_photo: https://www.damninteresting.com/apple-touch-icon.png
+  dana_c_ernst:
+    feed_url: https://danaernst.com/feed.xml
     homepage_url: https://danaernst.com
     display_name: Dana C. Ernst
-    summary: Updates from Dana C. Ernst.
-  danbooru_donmai_us:
+    summary: Mathematics, teaching, inquiry-based learning, research, and student achievements from Dana C. Ernst.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdanaernst.com&size=128
+  danbooru:
     feed_url: https://danbooru.donmai.us/posts.atom
     homepage_url: https://danbooru.donmai.us/posts
     display_name: Danbooru
-    summary: Updates from Danbooru.
-  daniel_fone_net_nz:
+    summary: Recent posts from Danbooru, a community-tagged anime and illustration image board; posts may include adult or explicit content.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdanbooru.donmai.us%2Fposts&size=128
+  daniel_fone:
     feed_url: https://daniel.fone.net.nz/atom.xml
-    homepage_url: http://daniel.fone.net.nz/blog
+    homepage_url: https://daniel.fone.net.nz/
     display_name: Daniel Fone
-    summary: Updates from Daniel Fone.
-  danielcompton:
+    summary: Daniel Fone's archived articles about Ruby, Rails, PostgreSQL, web development, and software engineering; the available feed ends in 2020.
+  daniel_compton:
     feed_url: https://danielcompton.net/index.xml
     homepage_url: https://danielcompton.net
     display_name: Daniel Compton
-    summary: Recent content in Welcome on Daniel Compton
-  danielputtick:
+    summary: Daniel Compton writes about Clojure, software development, open source funding, cloud services, and developer tools.
+  dan_puttick:
     feed_url: https://www.danielputtick.com/feeds/atom.xml
     homepage_url: https://www.danielputtick.com
     display_name: Dan Puttick
-    summary: Updates from Dan Puttick.
+    summary: Dan Puttick's archived personal essays about software, cycling, sustainability, public health, and everyday life; the available feed ends in 2020.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.danielputtick.com&size=128
   stanislas:
     feed_url: https://stanislas.blog/feed.xml
     homepage_url: https://stanislas.blog
