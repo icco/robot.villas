@@ -10070,6 +10070,278 @@ bots:
     display_name: Martin Fowler
     summary: Software architecture, design, refactoring, and engineering practice.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://martinfowler.com&size=128
+  bytemash:
+    feed_url: https://bytemash.net/rss.xml
+    homepage_url: https://bytemash.net
+    display_name: Bytemash
+    summary: Software engineering and building web applications, by Jye.
+    profile_photo: https://bytemash.net/favicon-32x32.png
+  caava_design:
+    feed_url: https://caavadesign.com/feed/
+    homepage_url: https://caavadesign.com
+    display_name: Caava Design
+    summary: Archived studio news and branding, packaging, and website projects from Caava Design; feed entries end in 2013.
+    profile_photo: https://github.com/caavadesign.png?size=200
+  cabal_p2p_chat:
+    feed_url: https://cabal.chat/posts/posts.xml
+    homepage_url: https://cabal.chat/
+    display_name: cabal p2p chat
+    summary: Project updates about Cabal, a private peer-to-peer chat platform for friends and communities, and the Cable protocol.
+    profile_photo: https://cabal.chat/links/favicon/favicon.png
+  cabin_porn:
+    feed_url: https://www.cabinporn.com/feed
+    homepage_url: https://www.cabinporn.com
+    display_name: Cabin Porn ®
+    summary: Inspiration for cabins, cottages, tiny homes, houseboats, shelters, saunas, and other quiet places.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!jis_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb29d7025-0a96-48cb-9c6b-60fab296a478%2Fapple-touch-icon-57x57.png
+  cadasta_foundation:
+    feed_url: https://cadasta.org/feed/
+    homepage_url: https://cadasta.org
+    display_name: Cadasta Foundation
+    summary: News and stories about documenting land rights, community-led mapping, climate resilience, and equitable development.
+    profile_photo: https://cadasta.org/wp-content/uploads/2015/12/cropped-icon-300x300.png
+  caddy_community:
+    feed_url: https://caddy.community/posts.rss
+    homepage_url: https://caddy.community
+    display_name: Caddy Community
+    summary: Latest community forum posts about the Caddy web server, configuration, troubleshooting, and the modern web.
+    profile_photo: https://dqah5woojdp50.cloudfront.net/optimized/2X/9/9ff57336e95a9ba567e563d5e36d05c91df182df_2_180x180.png
+  cards_against_humanity:
+    feed_url: https://cah.tumblr.com/rss
+    homepage_url: https://cah.tumblr.com
+    display_name: Cards Against Humanity
+    summary: Archived announcements and posts from Cards Against Humanity, the party game; feed entries end in 2018.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcah.tumblr.com&size=128
+  caius_theory:
+    feed_url: https://caiustheory.com/feed.xml
+    homepage_url: https://caiustheory.com
+    display_name: Caius Theory
+    summary: Personal posts about programming, computers, cars, and other projects on Caius Theory.
+  cal_coast_news:
+    feed_url: https://feeds.feedburner.com/CalCoastNews
+    homepage_url: https://calcoastnews.com
+    display_name: Cal Coast News
+    summary: Independent local and investigative reporting from San Luis Obispo County and California's Central Coast.
+    profile_photo: https://i0.wp.com/calcoastnews.com/images/2022/10/cropped-largetile.jpg?fit=180%2C180&ssl=1
+  calculated_risk:
+    feed_url: https://feeds.feedburner.com/CalculatedRisk
+    homepage_url: https://www.calculatedriskblog.com/
+    display_name: Calculated Risk
+    summary: Archived economics, finance, and housing-market analysis from Calculated Risk; daily blog updates ended in January 2026.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.calculatedriskblog.com&size=128
+  calm_blog:
+    feed_url: https://blog.calm.com/blog?format=rss
+    homepage_url: https://blog.calm.com/
+    display_name: Calm Blog
+    summary: Articles from Calm about sleep, stress, meditation, mindfulness, and mental well-being.
+    profile_photo: https://www.calm.com/apple-icon.png
+  cal_performances:
+    feed_url: https://calperformances.org/feed/
+    homepage_url: https://calperformances.org
+    display_name: Cal Performances
+    summary: Stories, artist profiles, and program insights from Cal Performances, the performing arts presenter at UC Berkeley.
+    profile_photo: https://calperformances.org/wp-content/uploads/icon-apple.png
+  cambridge_fish_preservation_and_angling_society:
+    feed_url: https://cambridge-fpas.co.uk/feed/
+    homepage_url: https://cambridge-fpas.co.uk
+    display_name: Cambridge Fish Preservation and Angling Society
+    summary: Fishing news and match reports from Cambridge Fish Preservation and Angling Society; feed entries end in 2023.
+    profile_photo: https://cambridge-fpas.co.uk/wp-content/uploads/2016/05/CFPAS_Favicon.png
+  data_origami:
+    feed_url: https://dataorigami.net/feed.xml
+    homepage_url: https://dataorigami.net
+    display_name: Data Origami
+    summary: Archived data science, statistics, survival analysis, Python, and machine-learning posts by Cameron Davidson-Pilon; feed entries end in 2020.
+    profile_photo: https://github.com/CamDavidsonPilon.png?size=200
+  a_campaign_of_shock_and_awe:
+    feed_url: https://campaignofshockandawe.wordpress.com/feed/
+    homepage_url: https://campaignofshockandawe.wordpress.com
+    display_name: A Campaign of Shock and Awe
+    summary: Archived posts collecting internet oddities, humor, television, and pop culture; feed entries end in 2017.
+    profile_photo: https://secure.gravatar.com/blavatar/ad4716525f261470b4174f222c82181f8e65d3682614710d04b59b13f68c19ce?s=114
+  candy_chang:
+    feed_url: https://www.candychang.com/rss/
+    homepage_url: https://www.candychang.com
+    display_name: Candy Chang
+    summary: Art, communal rituals, personal reflections, and notebook entries from artist Candy Chang.
+    profile_photo: https://storage.ghost.io/c/86/61/86613c74-003f-40f3-ac81-1e40a62b9679/content/images/size/w256h256/format/jpeg/2024/10/cropped-C.jpg
+  carcinisation:
+    feed_url: https://carcinisation.com/feed/
+    homepage_url: https://carcinisation.com
+    display_name: Carcinisation
+    summary: Essays on culture, psychology, philosophy, history, and human behavior.
+    profile_photo: https://carcinisation.com/wp-content/uploads/2017/08/cropped-crab.jpg?w=180
+  cardinal_news:
+    feed_url: https://cardinalnews.org/feed/
+    homepage_url: https://cardinalnews.org
+    display_name: Cardinal News
+    summary: Independent local reporting on Southwest and Southside Virginia, including politics, economy, education, healthcare, and culture.
+    profile_photo: https://i0.wp.com/cardinalnews.org/wp-content/uploads/2022/05/cropped-CardinalNews_icon-500-%C3%97-500-px.png?fit=180%2C180&ssl=1
+  gayle_laakmann_mcdowell:
+    feed_url: https://www.gayle.com/blog?format=rss
+    homepage_url: https://www.gayle.com/blog
+    display_name: Gayle Laakmann McDowell
+    summary: Archived writing about technical interviews, hiring, careers, and startup work from Gayle Laakmann McDowell; feed entries end in 2017.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.gayle.com%2Fblog&size=128
+  carl_langes_blog:
+    feed_url: https://redfloatplane.lol/blog/rss.xml
+    homepage_url: https://redfloatplane.lol
+    display_name: Carl Lange's Blog
+    summary: Personal writing about software engineering, AI, tools, and creative projects from Carl Lange.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fredfloatplane.lol&size=128
+  carolyn_van_slyck:
+    feed_url: https://carolynvanslyck.com/index.xml
+    homepage_url: https://carolynvanslyck.com
+    display_name: Carolyn Van Slyck
+    summary: Archived posts about developer tools, Go, cloud-native projects, and inclusive open-source communities; feed entries end in 2022.
+    profile_photo: https://carolynvanslyck.com/apple-touch-icon.png
+  casey_fiesler:
+    feed_url: https://caseyfiesler.com/feed/
+    homepage_url: https://caseyfiesler.com
+    display_name: Casey Fiesler
+    summary: Archived posts about computing, technology ethics, law, teaching, and feminism by Casey Fiesler; feed entries end in 2016.
+    profile_photo: https://secure.gravatar.com/blavatar/128902f67d4640244fbd629554839820287dbc5c8b31d416dbb03f19b118f858?s=114
+  liss_is_more:
+    feed_url: https://www.caseyliss.com/rss
+    homepage_url: https://www.caseyliss.com
+    display_name: Liss is More
+    summary: Technology, app development, personal writing, and selected links from Casey Liss.
+    profile_photo: https://www.caseyliss.com/images/favicon.png
+  las_ruinas_de_gringobamba:
+    feed_url: https://castyour.net/rss.xml
+    homepage_url: https://castyour.net/
+    display_name: Las Ruinas de Gringobamba
+    summary: Archived personal posts about computers, Linux, maps, travel, politics, and daily life; feed entries end in 2016.
+  caterina_fake:
+    feed_url: https://caterina.net/feed/
+    homepage_url: https://caterina.net
+    display_name: Caterina Fake
+    summary: Writing and conversations from Caterina Fake about art, culture, technology, books, and creative life.
+    profile_photo: https://secure.gravatar.com/blavatar/49a82d0eb16a15474a8402313666fb6f1c5655dacc073901002ea5396748f733?s=114
+  catskull_net:
+    feed_url: https://catskull.net/feed.xml
+    homepage_url: https://catskull.net
+    display_name: catskull.net
+    summary: Personal writing about software, computers, hardware projects, and technology.
+    profile_photo: https://catskull.net/favicon.png
+  catt_small:
+    feed_url: https://cattsmall.com/feed.xml
+    homepage_url: https://cattsmall.com/
+    display_name: Catt Small
+    summary: Product and UX design, games, career growth, and creative technology from Catt Small.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fcattsmall.com&size=128
+  comic_book_legal_defense_fund:
+    feed_url: https://cbldf.org/feed/
+    homepage_url: https://cbldf.org
+    display_name: Comic Book Legal Defense Fund
+    summary: News, legal analysis, events, and resources defending free expression in comics and opposing censorship.
+    profile_photo: https://cbldf.org/wp-content/uploads/2020/05/cropped-SiteIcon-1-180x180.png
+  alexander_cobleigh:
+    feed_url: https://cblgh.org/all.xml
+    homepage_url: https://cblgh.org
+    display_name: Alexander Cobleigh
+    summary: Posts, project notes, and wiki updates from Alexander Cobleigh about software, peer-to-peer tools, and the web.
+    profile_photo: https://github.com/cblgh.png?size=200
+  chaos_computer_club_updates:
+    feed_url: https://www.ccc.de/rss/updates.xml
+    homepage_url: https://www.ccc.de
+    display_name: Chaos Computer Club Updates
+    summary: Chaos Computer Club news and statements about digital rights, information freedom, cybersecurity, and technology policy.
+    profile_photo: https://www.ccc.de/apple-touch-icon.png
+  colin_devroe:
+    feed_url: https://cdevroe.com/feed/
+    homepage_url: https://cdevroe.com
+    display_name: Colin Devroe
+    summary: Notes, essays, project updates, photography, art, and selected links from Colin Devroe.
+    profile_photo: https://cdevroe.com/wp-content/uploads/2024/09/cdevroe-site-icon-512-300x300.png
+  connors_blog:
+    feed_url: https://cedwards.xyz/index.xml
+    homepage_url: https://cedwards.xyz
+    display_name: Connor's Blog
+    summary: Personal posts about Go, software engineering, security, infrastructure, and technology.
+  cele_bitchy:
+    feed_url: https://www.celebitchy.com/feed/
+    homepage_url: https://www.celebitchy.com
+    display_name: Cele|bitchy
+    summary: Celebrity and royal news, entertainment, fashion, and commentary.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.celebitchy.com&size=128
+  celebrity_net_worth:
+    feed_url: https://www.celebritynetworth.com/feed/
+    homepage_url: https://www.celebritynetworth.com
+    display_name: Celebrity Net Worth
+    summary: Articles about celebrity wealth, business deals, salaries, sports contracts, homes, and entertainment.
+    profile_photo: https://vz.cnwimg.com/wp-content/themes/cnw_2023/images/favicons_202304/apple-touch-icon.png?x76785
+  centreon_blog:
+    feed_url: https://www.centreon.com/feed/
+    homepage_url: https://www.centreon.com/blog
+    display_name: Centreon Blog
+    summary: Best practices, tutorials, product news, and insights about IT monitoring and observability from Centreon.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.centreon.com%2Fblog&size=128
+  cert_polska:
+    feed_url: https://cert.pl/atom.xml
+    homepage_url: https://cert.pl
+    display_name: CERT Polska
+    summary: Security advisories, vulnerability disclosures, threat research, and incident-response news from CERT Polska.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcert.pl&size=128
+  chad_mazzola:
+    feed_url: https://www.chad.is/rss.xml
+    homepage_url: https://www.chad.is
+    display_name: Chad Mazzola
+    summary: Personal writing about technology, entrepreneurship, reading, and life from Chad Mazzola.
+    profile_photo: https://www.chad.is/icon.png
+  ian_chans_blog:
+    feed_url: https://chanian.com/feed/
+    homepage_url: https://chanian.com
+    display_name: Ian Chan's Blog
+    summary: Archived writing about software, user experience, movies, privacy, and startup life from Ian Chan; feed entries end in 2013.
+  charles_leifer:
+    feed_url: https://charlesleifer.com/blog/rss/
+    homepage_url: https://charlesleifer.com/
+    display_name: Charles Leifer
+    summary: Software engineering, Python, databases, open-source projects, and personal writing from Charles Leifer.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fcharlesleifer.com&size=128
+  charlie_tran:
+    feed_url: https://charlietran.com/feed.xml
+    homepage_url: https://charlietran.com
+    display_name: Charlie Tran
+    summary: Archived personal writing about programming, career reflections, and building a resume website; feed entries end in 2018.
+    profile_photo: https://charlietran.com/assets/icon.png
+  chartbeat:
+    feed_url: https://chartbeat.com/feed/
+    homepage_url: https://chartbeat.com
+    display_name: Chartbeat
+    summary: Research, publisher strategy, audience engagement, and analytics insights from Chartbeat.
+    profile_photo: https://chartbeat.com/wp-content/uploads/2024/03/cropped-favicon-180x180.png
+  chartfags_den_of_lesbian_enterprise:
+    feed_url: https://chartfag.wordpress.com/feed/
+    homepage_url: https://chartfag.wordpress.com
+    display_name: Chartfag's Den of Lesbian Enterprise
+    summary: Archived seasonal anime preview charts and related posts; publishing ended in February 2012.
+    profile_photo: https://secure.gravatar.com/blavatar/76e686f0950c7bbdb0b853ecf9f9134976ad51ead7759d040f36c01a57cb3e3a?s=114
+  chartio:
+    feed_url: https://chartio.com/blog/feed.xml
+    homepage_url: https://chartio.com
+    display_name: Chartio Blog
+    summary: Archived articles about business intelligence, data analytics, and visualization from Chartio; feed entries end in 2021 and the service closed in 2022.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fchartio.com&size=128
+  chart_porn:
+    feed_url: https://chartporn.org/feed/
+    homepage_url: https://chartporn.org
+    display_name: Chart Porn
+    summary: A collection of charts, graphs, maps, and interactive data visualizations; regular updates ended in 2017, with occasional later posts.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fchartporn.org&size=128
+  peter_cook:
+    feed_url: https://www.peterrcook.com/feed.xml
+    homepage_url: https://www.peterrcook.com/articles/
+    display_name: Peter Cook - Animated Data
+    summary: Archived Animated Data articles by Peter Cook about D3, interactive data visualization, and project design; feed entries end in 2015.
+    profile_photo: https://github.com/peterrcook.png?size=200
+  chase_mccoy:
+    feed_url: https://chsmc.org/feed.xml
+    homepage_url: https://chsmc.org
+    display_name: Chase McCoy
+    summary: 'Exploring and building the web: design engineering, software, projects, and personal writing from Chase McCoy.'
+    profile_photo: https://chsmc.org/apple-touch-icon.png
   pragmatic_engineer:
     feed_url: https://blog.pragmaticengineer.com/rss/
     homepage_url: https://blog.pragmaticengineer.com
