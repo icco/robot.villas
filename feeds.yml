@@ -943,6 +943,256 @@ bots:
     homepage_url: https://www.righto.com
     display_name: Ken Shirriff
     summary: Chip reverse engineering, vintage computer restoration, silicon die photography, and electronics archaeology.
+  expectedbehavior:
+    feed_url: https://www.expectedbehavior.com/building-burndown/feed.xml
+    homepage_url: https://www.expectedbehavior.com/building-burndown
+    display_name: The Burndown Journey
+    summary: Updates from The Burndown Journey.
+  instrumments:
+    feed_url: https://www.instrumments.com/feed/
+    homepage_url: https://www.instrumments.com
+    display_name: Instrumments
+    summary: Updates from Instrumments.
+  intellijel:
+    feed_url: https://intellijel.com/feed/
+    homepage_url: https://intellijel.com
+    display_name: intellijel
+    summary: eurorack modular synthesizers and electronic musical instruments
+  ixdf:
+    feed_url: https://ixdf.org/rss/site_news.xml
+    homepage_url: https://ixdf.org/blog
+    display_name: UX Daily - User Experience Daily
+    summary: UX Daily - User Experience Daily
+  interfluidity:
+    feed_url: https://www.interfluidity.com/feed
+    homepage_url: https://www.interfluidity.com
+    display_name: interfluidity
+    summary: it is what it is.
+  dynatrace:
+    feed_url: https://www.dynatrace.com/news/blog/feed/
+    homepage_url: https://www.dynatrace.com/news/blog
+    display_name: Dynatrace Blog
+    summary: The tech industry is moving fast and our customers are as well. Stay up-to-date with the latest trends, best practices, thought leadership, and our solution's biweekly feature releases.
+  internetnews:
+    feed_url: https://www.internetnews.com/feed/
+    homepage_url: https://www.internetnews.com
+    display_name: InternetNews
+    summary: Updates from InternetNews.
+  internetsociety:
+    feed_url: https://www.internetsociety.org/feed/
+    homepage_url: https://www.internetsociety.org
+    display_name: Internet Society
+    summary: 'We are a global charitable organization empowering people to keep the Internet a force for good: open, globally connected, secure, and trustworthy.'
+  intothepixel:
+    feed_url: https://intothepixel.com/feed/
+    homepage_url: https://intothepixel.com
+    display_name: Intothepixel.com
+    summary: Look up the words
+  intu:
+    feed_url: https://intu.io/blog/feed/
+    homepage_url: https://intu.io/blog
+    display_name: intuio Blog
+    summary: Blogging on User Experience Design, Usability Engineering & User Interface Development
+  inventgeek:
+    feed_url: https://www.inventgeek.com/feed/
+    homepage_url: https://www.inventgeek.com
+    display_name: Inventgeek.com
+    summary: Invention Through Reinvention
+  investmentzen:
+    feed_url: https://www.investmentzen.com/blog/feed
+    homepage_url: http://www.investmentzen.com
+    display_name: InvestmentZen
+    summary: Updates from InvestmentZen.
+  invisiblebread:
+    feed_url: https://feeds.feedburner.com/InvisibleBread
+    homepage_url: https://invisiblebread.com
+    display_name: Invisible Bread
+    summary: A webcomic that you'll enjoy if you like comics about things and stuff!
+  invoiceberry:
+    feed_url: https://www.invoiceberry.com/blog/feed/
+    homepage_url: https://www.invoiceberry.com/blog
+    display_name: InvoiceBerry Blog
+    summary: InvoiceBerry's blog about small business news, freelancing and general business guides.
+  iobridge:
+    feed_url: https://iobridge.com/feed/
+    homepage_url: https://iobridge.com
+    display_name: ioBridge – Internet of Things (IoT)
+    summary: Updates from ioBridge – Internet of Things (IoT).
+  ionic:
+    feed_url: https://ionic.io/blog/feed
+    homepage_url: https://ionic.io/blog
+    display_name: Ionic Blog
+    summary: Build amazing native and progressive web apps with the web
+  ipcc_ch:
+    feed_url: https://www.ipcc.ch/feed/
+    homepage_url: https://www.ipcc.ch
+    display_name: IPCC
+    summary: Intergovernmental Panel on Climate Change
+  ir:
+    feed_url: http://ir.net/feed/
+    homepage_url: http://ir.net
+    display_name: IR.net
+    summary: The Latest Breaking Political and Business News
+  isc_sans_edu:
+    feed_url: https://isc.sans.edu/rssfeed.xml
+    homepage_url: https://isc.sans.edu
+    display_name: 'SANS Internet Storm Center, InfoCON: green'
+    summary: SANS Internet Storm Center - Cooperative Cyber Security Monitor
+  ischools:
+    feed_url: https://www.ischools.org/blog-feed.xml
+    homepage_url: https://www.ischools.org/news
+    display_name: iSchools Inc.
+    summary: The iSchools represent an international organization of over 130 universities.
+  ishadeed:
+    feed_url: https://ishadeed.com/feed.xml
+    homepage_url: https://ishadeed.com
+    display_name: Ahmad Shadeed
+    summary: Deep-dive CSS articles, modern CSS and visual CSS explanations.
+  islandofatlas:
+    feed_url: https://islandofatlas.net/atom.xml
+    homepage_url: https://islandofatlas.net
+    display_name: urban vagabond
+    summary: Updates from urban vagabond.
+  islands:
+    feed_url: https://www.islands.com/feed/
+    homepage_url: https://www.islands.com
+    display_name: 'Islands - Expert Travel Info & Tips: From Islands, to Mountains, & Everything In Between'
+    summary: Islands covers everything you want to do and anywhere you want to travel with expert info, in-depth guides, local tips, and more.
+  issabove:
+    feed_url: http://www.issabove.com/blog?format=rss
+    homepage_url: http://www.issabove.com/blog
+    display_name: Blog - ISS-ABOVE | Track the ISS and See Live Video from Space
+    summary: Updates from Blog - ISS-ABOVE | Track the ISS and See Live Video from Space.
+  issueprojectroom:
+    feed_url: https://issueprojectroom.org/events.xml
+    homepage_url: https://issueprojectroom.org
+    display_name: 'ISSUE Project Room: Upcoming Events'
+    summary: 'Updates from ISSUE Project Room: Upcoming Events.'
+  istio:
+    feed_url: https://istio.io/latest/blog/feed.xml
+    homepage_url: https://istio.io/latest
+    display_name: Istio Blog
+    summary: Blog posts from the Istio service mesh.
+  it_notes_dragas:
+    feed_url: https://it-notes.dragas.net/feed.xml
+    homepage_url: https://it-notes.dragas.net
+    display_name: IT Notes
+    summary: Scattered IT Notes - by Stefano Marinelli
+  itchyi_squarespace:
+    feed_url: http://itchyi.squarespace.com/thelatest/atom.xml
+    homepage_url: http://itchyi.squarespace.com/thelatest
+    display_name: The Latest
+    summary: Updates from The Latest.
+  itooamharvard_tumblr:
+    feed_url: https://itooamharvard.tumblr.com/rss
+    homepage_url: https://itooamharvard.tumblr.com
+    display_name: I, Too, Am Harvard
+    summary: 'A photo campaign highlighting the faces and voices of black students at Harvard College. Our voices often go unheard on this campus, our experiences are devalued, our presence is questioned– this project is our way of speaking back, of claiming this campus, of standing up to say: We are here. This place is ours. We, TOO, are Harvard. The #itooamharvard photo campaign is inspired by I, Too, Am Harvard, a play based on interviews with members of the black community exploring and affirming our dive'
+  itpro:
+    feed_url: https://www.itpro.com/feeds.xml
+    homepage_url: https://www.itpro.com
+    display_name: Latest from ITPro
+    summary: All the latest content from the ITPro team
+  itsfoss:
+    feed_url: https://feed.itsfoss.com/
+    homepage_url: https://itsfoss.com
+    display_name: It's FOSS
+    summary: Making You a Better Linux User
+  itshouldbeuseful_wordpress:
+    feed_url: https://itshouldbeuseful.wordpress.com/feed/
+    homepage_url: https://itshouldbeuseful.wordpress.com
+    display_name: it { should be_useful }
+    summary: '[ useful snacks ]'
+  itstactical:
+    feed_url: https://www.itstactical.com/feed/
+    homepage_url: https://www.itstactical.com
+    display_name: ITS Tactical
+    summary: Imminent Threat Solutions
+  ivan_bessarabov:
+    feed_url: https://ivan.bessarabov.com/blog.rss
+    homepage_url: https://ivan.bessarabov.com/blog
+    display_name: Ivan Bessarabov blog
+    summary: Ivan Bessarabov blog
+  ivanzuzak_info:
+    feed_url: http://ivanzuzak.info/atom.xml
+    homepage_url: https://ivanzuzak.info
+    display_name: Ivan Zuzak
+    summary: Updates from Ivan Zuzak.
+  ivarch:
+    feed_url: https://www.ivarch.com/social.rss
+    homepage_url: https://www.ivarch.com
+    display_name: Andrew Wood
+    summary: Public posts from @ivarch@fedi.ivarch.com
+  ivomynttinen:
+    feed_url: https://ivomynttinen.com/rss.xml
+    homepage_url: https://ivomynttinen.com
+    display_name: Blog - Ivo Mynttinen
+    summary: Design engineer with a passion for interior design, and homelabbing.
+  iwdrm_tumblr:
+    feed_url: https://iwdrm.tumblr.com/rss
+    homepage_url: https://iwdrm.tumblr.com
+    display_name: IF WE DON'T, REMEMBER ME.
+    summary: Updates from IF WE DON'T, REMEMBER ME..
+  labs_iximiuz:
+    feed_url: https://labs.iximiuz.com/feed.rss
+    homepage_url: https://labs.iximiuz.com
+    display_name: iximiuz Labs — All new posts
+    summary: Practice on real servers, solve challenges, and follow guided Linux, Docker, Kubernetes, and Networking learning paths — all from your browser or via SSH.
+  j3s_sh:
+    feed_url: https://j3s.sh/feed.atom
+    homepage_url: https://j3s.sh
+    display_name: j3s.sh
+    summary: Updates from j3s.sh.
+  jack_vanlightly:
+    feed_url: https://jack-vanlightly.com/blog?format=rss
+    homepage_url: https://jack-vanlightly.com
+    display_name: Jack Vanlightly
+    summary: '{ dist sys, formal verification, event streaming }'
+  jackharvest:
+    feed_url: https://jackharvest.com/index.php/feed/
+    homepage_url: https://jackharvest.com
+    display_name: JackHarvest.com
+    summary: Answers.
+  jacklew_is:
+    feed_url: https://jacklew.is/feed.xml
+    homepage_url: https://www.jacklew.is
+    display_name: Jack Lewis
+    summary: Updates from Jack Lewis.
+  jacklinke:
+    feed_url: https://jacklinke.com/rss.xml
+    homepage_url: https://jacklinke.com
+    display_name: Jack Linke's Blog
+    summary: Jack Linke's Blog
+  jackmcdade:
+    feed_url: https://jackmcdade.com/articles/rss.xml
+    homepage_url: https://jackmcdade.com/articles
+    display_name: Articles by Jack McDade
+    summary: Recent articles by Jack McDade
+  jacks_tumblr:
+    feed_url: https://jacks.tumblr.com/rss
+    homepage_url: https://jacks.tumblr.com
+    display_name: Jack's
+    summary: A sailor, a tailor.
+  jacksongariety:
+    feed_url: https://jacksongariety.com/feed/
+    homepage_url: https://jacksongariety.com
+    display_name: Jackson Gariety
+    summary: Updates from Jackson Gariety.
+  jacobbrazeal_wordpress:
+    feed_url: https://jacobbrazeal.wordpress.com/feed/
+    homepage_url: https://jacobbrazeal.wordpress.com
+    display_name: Jacob Brazeal
+    summary: Updates from Jacob Brazeal.
+  jacobtomlinson_dev:
+    feed_url: https://jacobtomlinson.dev/feed.xml
+    homepage_url: https://jacobtomlinson.dev
+    display_name: Jacob Tomlinson
+    summary: Recent content on Jacob Tomlinson
+  jakarta_apache:
+    feed_url: https://jakarta.apache.org/site/rss.xml
+    homepage_url: http://jakarta.apache.org
+    display_name: Apache Jakarta Project
+    summary: News and product releases from Apache's Jakarta Project
   chris_siebenmann:
     feed_url: https://utcc.utoronto.ca/~cks/space/blog/?atom
     homepage_url: https://utcc.utoronto.ca/~cks/space/blog/
