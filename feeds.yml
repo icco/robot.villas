@@ -87,6 +87,256 @@ bots:
     display_name: Dropbox Tech Blog
     summary: Engineering blog from Dropbox.
     profile_photo: https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/app-dropbox-android.png
+  worldsciencefestival:
+    feed_url: https://www.worldsciencefestival.com/feed/
+    homepage_url: https://www.worldsciencefestival.com
+    display_name: World Science Festival
+    summary: The World Science Foundation is a 501(c)(3) non-profit organization. Our mission is to cultivate a general public informed by science, inspired by its wonder, convinced of its value, and prepared to engage with its implications for the future.
+  wornandwound:
+    feed_url: https://wornandwound.com/feed/
+    homepage_url: https://wornandwound.com
+    display_name: Worn & Wound
+    summary: Updates from Worn & Wound.
+  worthdoingbadly:
+    feed_url: https://worthdoingbadly.com/feed.xml
+    homepage_url: https://worthdoingbadly.com
+    display_name: Worth Doing Badly
+    summary: Updates from Worth Doing Badly.
+  wpc_ncep_noaa_gov:
+    feed_url: http://www.wpc.ncep.noaa.gov/metwatch/mdrss.xml
+    homepage_url: http://www.wpc.ncep.noaa.gov
+    display_name: WPC Mesoscale Precipitation Discussions
+    summary: Weather Prediction Center - Mesoscale Precipitation Discussions
+  wpdh:
+    feed_url: https://wpdh.com/feed/
+    homepage_url: https://wpdh.com
+    display_name: 101.5 WPDH – The Home of Rock and Roll – Hudson Valley Classic Rock Radio
+    summary: The Home of Rock and Roll
+  overleaf:
+    feed_url: https://www.overleaf.com/blog/feed/
+    homepage_url: https://www.overleaf.com
+    display_name: Overleaf Blog
+    summary: Updates from Overleaf Blog.
+  writings_thisismissem_social:
+    feed_url: https://writings.thisismissem.social/rss/
+    homepage_url: https://writings.thisismissem.social
+    display_name: Writings of Emelia
+    summary: Thoughts, stories and ideas.
+  wrla_ch:
+    feed_url: https://wrla.ch/feeds/all.atom.xml
+    homepage_url: https://wrla.ch
+    display_name: Will Lachance's Log
+    summary: Updates from Will Lachance's Log.
+  wrvo:
+    feed_url: https://www.wrvo.org/news.rss
+    homepage_url: https://www.wrvo.org/news
+    display_name: News
+    summary: News
+  wtfpod:
+    feed_url: http://www.wtfpod.com/podcast?format=rss
+    homepage_url: http://www.wtfpod.com/podcast
+    display_name: Episodes - WTF with Marc Maron Podcast
+    summary: Updates from Episodes - WTF with Marc Maron Podcast.
+  wtop:
+    feed_url: https://wtop.com/feed/
+    homepage_url: https://wtop.com
+    display_name: WTOP News
+    summary: News Happens Here
+  wunder_schoenaberselten:
+    feed_url: https://wunder.schoenaberselten.com/feed/
+    homepage_url: https://wunder.schoenaberselten.com
+    display_name: wunderschoen aber selten
+    summary: very much alive. tales of time, tenderness, and trees
+  wundergraph:
+    feed_url: https://wundergraph.com/atom.xml
+    homepage_url: https://wundergraph.com
+    display_name: WunderGraph Feed
+    summary: Updates from WunderGraph Feed.
+  www3_planetcom:
+    feed_url: https://www.www3.planetcom.co.uk/blog-feed.xml
+    homepage_url: https://www.www3.planetcom.co.uk/news
+    display_name: Mysite
+    summary: Mysite
+  wyldcard:
+    feed_url: https://www.wyldcard.io/rss.xml
+    homepage_url: https://www.wyldcard.io
+    display_name: Wyldcard Blog
+    summary: 'News and essays from Wyldcard: e-paper gaming cards and game design.'
+  wyofile:
+    feed_url: https://wyofile.com/feed/
+    homepage_url: https://wyofile.com
+    display_name: WyoFile
+    summary: An independent, reader-funded, non-profit news organization focused on the people, places, and policy of Wyoming.
+  xavigimenez:
+    feed_url: https://www.xavigimenez.net/blog/feed/
+    homepage_url: https://www.xavigimenez.net/blog
+    display_name: Xavi Gimenez
+    summary: Data Visualization and Interactive Stuff
+  xudongz:
+    feed_url: https://www.xudongz.com/blog/atom.xml
+    homepage_url: https://www.xudongz.com
+    display_name: Xudong Zheng
+    summary: Updates from Xudong Zheng.
+  xuntos:
+    feed_url: https://xuntos.org/feed/
+    homepage_url: https://xuntos.org
+    display_name: Xuntos
+    summary: Launch your career in tech
+  yamanote_style:
+    feed_url: http://yamanote.style/feed.xml
+    homepage_url: https://yamanote.style/
+    display_name: Yamanote Style
+    summary: Soundscapes of the JR Yamanote line.
+  yannesposito:
+    feed_url: https://yannesposito.com/atom.xml
+    homepage_url: https://yannesposito.com
+    display_name: yannesposito.com
+    summary: Updates from yannesposito.com.
+  yarnpkg:
+    feed_url: https://yarnpkg.com/blog/rss.xml
+    homepage_url: https://yarnpkg.com/blog
+    display_name: Yarn Blog
+    summary: Yarn Blog
+  yegor256:
+    feed_url: https://www.yegor256.com/rss.xml
+    homepage_url: https://www.yegor256.com
+    display_name: Yegor Bugayenko
+    summary: Updates from Yegor Bugayenko.
+  yellowstonepark:
+    feed_url: https://www.yellowstonepark.com/feed/?scope=anon
+    homepage_url: https://www.yellowstonepark.com
+    display_name: Yellowstone National Park
+    summary: Plan your Trip to Yellowstone National Park
+  yeoman:
+    feed_url: https://yeoman.io/blog/atom.xml
+    homepage_url: https://yeoman.io
+    display_name: Yeoman Blog
+    summary: Updates from Yeoman Blog.
+  yewjin_substack:
+    feed_url: https://yewjin.substack.com/feed
+    homepage_url: https://yewjin.substack.com
+    display_name: What YJ Thinks
+    summary: After nearly two decades building Google Search as a Eng Director, I now write about AI, crypto, trail running, and the slower practices that make life meaningful.
+  yihui:
+    feed_url: https://yihui.org/index.xml
+    homepage_url: https://yihui.org
+    display_name: Homepage on Yihui Xie | 谢益辉
+    summary: Recent content in Homepage on Yihui Xie | 谢益辉
+  yob_id_au:
+    feed_url: https://yob.id.au/index.rss
+    homepage_url: http://yob.id.au
+    display_name: yob.id.au
+    summary: yob.id.au - James Healy
+  yogastudioapp:
+    feed_url: https://yogastudioapp.com/blog?format=rss
+    homepage_url: https://yogastudioapp.com/blog
+    display_name: 'Yoga Studio: Mind & Body'
+    summary: 'Updates from Yoga Studio: Mind & Body.'
+  yorickpeterse:
+    feed_url: https://yorickpeterse.com/feed.xml
+    homepage_url: https://yorickpeterse.com
+    display_name: Yorick Peterse
+    summary: Updates from Yorick Peterse.
+  yosekastationery:
+    feed_url: https://yosekastationery.com/blogs/news.atom
+    homepage_url: https://yosekastationery.com/blogs/news
+    display_name: Yoseka Stationery - Yoseka Stationery Blog
+    summary: Updates from Yoseka Stationery - Yoseka Stationery Blog.
+  you_know_nothing:
+    feed_url: https://you-know-nothing.com/feed/
+    homepage_url: https://you-know-nothing.com
+    display_name: You-Know-Nothing
+    summary: Play Like a Life.
+  blog_youtube:
+    feed_url: https://blog.youtube/rss/
+    homepage_url: https://blog.youtube
+    display_name: YouTube Official Blog
+    summary: YouTube Official Blog
+  zachgibson:
+    feed_url: https://zachgibson.com/rss
+    homepage_url: https://zachgibson.com
+    display_name: Zach Gibson
+    summary: Zach Gibson
+  zadzmo:
+    feed_url: https://zadzmo.org/downloads/nepenthes/rss
+    homepage_url: https://zadzmo.org
+    display_name: Indusium Artifact Repo for nepenthes
+    summary: This is the RSS feed of an Indusium file version manager at https://zadzmo.org, project nepenthes
+  zandy_blog:
+    feed_url: https://zandy.blog/feed/
+    homepage_url: https://zandy.blog
+    display_name: Revelry Reverie
+    summary: Updates from Revelry Reverie.
+  zanytomato_tumblr:
+    feed_url: https://zanytomato.tumblr.com/rss
+    homepage_url: https://zanytomato.tumblr.com
+    display_name: Who's a Nerdy Girl?
+    summary: Musings from the edge of reality
+  zedshaw:
+    feed_url: https://zedshaw.com/feed.atom
+    homepage_url: https://zedshaw.com
+    display_name: Zed A. Shaw
+    summary: Updates from Zed A. Shaw.
+  zef_me:
+    feed_url: https://zef.me/rss/
+    homepage_url: https://zef.me
+    display_name: Zef Hemel
+    summary: Engineering leadership coach and consultant
+  zeldaandscout:
+    feed_url: https://zeldaandscout.com/feed/
+    homepage_url: https://zeldaandscout.com
+    display_name: Zelda & Scout
+    summary: southern stories from the sleepless city
+  zenrows:
+    feed_url: https://www.zenrows.com/blog/rss.xml
+    homepage_url: https://www.zenrows.com/blog
+    display_name: The Zenrows blog
+    summary: Field guides on getting the web's data.
+  zensounds_de:
+    feed_url: https://www.zensounds.de/feed
+    homepage_url: https://www.zensounds.de
+    display_name: zensounds 禅の音
+    summary: ambient, vaporwave, electronic and experimental music
+  zephyrproject:
+    feed_url: https://www.zephyrproject.org/feed/
+    homepage_url: https://www.zephyrproject.org
+    display_name: Zephyr Project
+    summary: A proven RTOS ecosystem, by developers, for developers
+  zerocharactersleft_blogspot:
+    feed_url: https://zerocharactersleft.blogspot.com/feeds/posts/default
+    homepage_url: https://zerocharactersleft.blogspot.com
+    display_name: Zero Characters Left
+    summary: Updates from Zero Characters Left.
+  zhero_web_sec_github:
+    feed_url: https://zhero-web-sec.github.io/feed.xml
+    homepage_url: https://zhero-web-sec.github.io
+    display_name: zhero_web_security
+    summary: Updates from zhero_web_security.
+  zotero:
+    feed_url: http://feeds.feedburner.com/zotero
+    homepage_url: https://www.zotero.org/blog
+    display_name: Zotero
+    summary: Collect, organize, cite, and share your research
+  zpacks:
+    feed_url: https://zpacks.com/collections/zip-pouches.atom
+    homepage_url: https://zpacks.com/collections/all
+    display_name: Zpacks
+    summary: Updates from Zpacks.
+  zpalexander:
+    feed_url: http://zpalexander.com/rss/
+    homepage_url: http://zpalexander.com
+    display_name: Zach Alexander
+    summary: Zach Alexander
+  zulko_github:
+    feed_url: https://zulko.github.io/atom.xml
+    homepage_url: https://zulko.github.io
+    display_name: __del__( self )
+    summary: Updates from __del__( self ).
+  zx2c4:
+    feed_url: https://www.zx2c4.com/feed.xml
+    homepage_url: https://www.zx2c4.com
+    display_name: Nerdling Sapple
+    summary: '{{{ ZX2C4 | Jason A. Donenfeld }}}'
   eli_bendersky:
     feed_url: https://eli.thegreenplace.net/feeds/all.atom.xml
     homepage_url: https://eli.thegreenplace.net
