@@ -22,7 +22,7 @@ export function createRobotsCheck(userAgent: string): (url: URL) => Promise<void
           cache: "no-store",
         });
         if (response.ok) {
-          policy = compileRobotsText(await readLimitedText(response, 500 * 1024), { policy: "rfc9309" }).forCrawler("RSS");
+          policy = compileRobotsText(await readLimitedText(response, 500 * 1024), { policy: "rfc9309" }).forCrawler("RobotVillas");
         } else {
           await response.body?.cancel();
           logger.debug("Ignoring robots.txt HTTP {status} for {origin}", { status: response.status, origin: url.origin });

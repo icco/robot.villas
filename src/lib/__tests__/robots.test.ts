@@ -20,16 +20,16 @@ describe("feed robots policy", () => {
     ["User-agent: *\nDisallow: /feed\nAllow: /feed", "/feed.xml", false],
     ["User-agent: *\nDisallow: /*.xml$", "/feed.xml", true],
     ["User-agent: *\nDisallow: /*.xml$", "/feed.xml?public=1", false],
-    ["User-agent: rss\nDisallow: /", "/feed.xml", true],
-    ["User-agent: *\nDisallow: /\nUser-agent: RSS", "/feed.xml", false],
+    ["User-agent: robotvillas\nDisallow: /", "/feed.xml", true],
+    ["User-agent: *\nDisallow: /\nUser-agent: RobotVillas", "/feed.xml", false],
     ["User-agent: robot.villas\nDisallow: /", "/feed.xml", false],
-    ["User-agent: RobotVillas\nDisallow: /", "/feed.xml", false],
+    ["User-agent: RSS\nDisallow: /", "/feed.xml", false],
     ["User-agent: *\nDisallow: /feed", "/%66eed.xml", true],
     ["User-agent: *\nDisallow: /\nAllow: /feed", "/%66eed.xml", false],
     ["User-agent: *\nDisallow: /%66eed", "/feed.xml", true],
     ["User-agent: *\nDisallow: /feed%2F", "/feed/one", false],
-    ["User-agent: *\nDisallow: /\nUser-agent: RSS\nDisallow:", "/feed.xml", false],
-    ["User-agent: RSS\nDisallow: /other\nUser-agent: RSS\nDisallow: /feed", "/feed.xml", true],
+    ["User-agent: *\nDisallow: /\nUser-agent: RobotVillas\nDisallow:", "/feed.xml", false],
+    ["User-agent: RobotVillas\nDisallow: /other\nUser-agent: RobotVillas\nDisallow: /feed", "/feed.xml", true],
   ])("uses matching rules from %s for %s", async (robots, path, blocked) => {
     const requested: string[] = [];
     globalThis.fetch = async (input) => {
