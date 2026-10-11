@@ -5,7 +5,7 @@ import escapeHtml from "escape-html";
 import { getLogger } from "@logtape/logtape";
 import { partitionBlockedRecipients } from "./blocklist";
 import type { BotConfig } from "./config";
-import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, type Db } from "./db";
+import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, refreshEntryPublishedDates, type Db } from "./db";
 import { storeEntryWithPublications } from "./publications";
 import { resolveHashtags } from "./hashtags";
 import type { FeedEntry } from "./rss";
@@ -175,6 +175,10 @@ export async function publishNewEntries(
     url: truncateToMax(entry.link, MAX_URL_LENGTH),
     title: truncateToMax(entry.title, MAX_TITLE_LENGTH),
   }));
+  // Existing GUIDs must still receive date corrections, but never a new Create.
+  await refreshEntryPublishedDates(db, botUsername, truncatedEntries.map(({ entry, guid }) => ({
+    guid, publishedAt: entry.publishedAt,
+  })));
   // One round trip to find which guids already exist, instead of one query per entry.
   const existingGuids = await getExistingGuids(
     db,

@@ -3,6 +3,7 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 vi.mock("../db", () => ({
   insertEntry: vi.fn(),
   getExistingGuids: vi.fn(),
+  refreshEntryPublishedDates: vi.fn().mockResolvedValue(undefined),
   getFollowers: vi.fn(),
   getFollowerRecipients: vi.fn(),
   getAcceptedRelays: vi.fn(),
@@ -13,7 +14,7 @@ vi.mock("../hashtags", () => ({
   resolveHashtags: vi.fn().mockResolvedValue(["T1", "T2", "T3"]),
 }));
 
-import { getExistingGuids, getFollowers, getFollowerRecipients, getAcceptedRelays } from "../db";
+import { getExistingGuids, getFollowers, getFollowerRecipients, getAcceptedRelays, refreshEntryPublishedDates } from "../db";
 import { storeEntryWithPublications } from "../publications";
 import { resolveHashtags } from "../hashtags";
 import {
@@ -130,6 +131,11 @@ describe("publishNewEntries", () => {
     expect(result.skipped).toBe(3);
     expect(mockInsertEntry).not.toHaveBeenCalled();
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
+    expect(refreshEntryPublishedDates).toHaveBeenCalledWith(expect.anything(), "testbot", [
+      { guid: "g1", publishedAt: entries[0].publishedAt },
+      { guid: "g2", publishedAt: null },
+      { guid: "g3", publishedAt: null },
+    ]);
   });
 
   it("publishes entries with malformed links without throwing", async () => {

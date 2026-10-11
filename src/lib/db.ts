@@ -91,6 +91,34 @@ export async function getExistingGuids(
   return new Set(rows.map((r) => r.guid));
 }
 
+/** Refresh feed-supplied dates without changing post identity or ingestion time. */
+export async function refreshEntryPublishedDates(
+  db: Db,
+  botUsername: string,
+  entries: ReadonlyArray<{ guid: string; publishedAt: Date | null }>,
+): Promise<void> {
+  const dates = new Map<string, Date>();
+  for (const entry of entries) {
+    if (entry.publishedAt && Number.isFinite(entry.publishedAt.getTime()) && !dates.has(entry.guid)) {
+      dates.set(entry.guid, entry.publishedAt);
+    }
+  }
+  if (dates.size === 0) {
+    return;
+  }
+  const values = sql.join([...dates].map(([guid, date]) =>
+    sql`(${guid}::text, ${date.toISOString()}::timestamptz)`), sql`, `);
+  await db.execute(sql`
+    UPDATE ${schema.feedEntries} AS entry
+    SET published_at = incoming.published_at
+    FROM (VALUES ${values}) AS incoming(guid, published_at)
+    WHERE entry.bot_username = ${botUsername}
+      AND entry.guid = incoming.guid
+      AND entry.deleted_at IS NULL
+      AND entry.published_at IS DISTINCT FROM incoming.published_at
+  `);
+}
+
 /**
  * Inserts a feed entry. Returns the new row id when inserted, or null when the
  * entry already existed (dedup by bot + guid). Use the returned id for Note URIs.

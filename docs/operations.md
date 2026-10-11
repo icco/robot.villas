@@ -4,6 +4,7 @@ How robot.villas delivers posts, handles failures, and limits what remote server
 
 ## Publishing
 
+- Each successful feed fetch refreshes valid publication dates on existing posts, including corrections and previously missing dates. Missing or invalid dates never erase a known date. This preserves post IDs and grabbed times and does not queue another Create; already-delivered copies on remote servers are not updated. HTTP 304 responses have no entries to refresh, so corrections are picked up when the feed next returns a changed body.
 - A new feed entry and one delivery record per follower or relay inbox are saved in one transaction. A feed's cache headers are saved only after that, so a failure retries the same items on the next poll.
 - The poller hands pending records to Fedify's queue, at most 100 per cycle, backing off up to an hour after errors. "Queued" means Fedify accepted it; Fedify then retries the remote server itself.
 - A crash right after queueing can resend the same activity ID once (at-least-once).
