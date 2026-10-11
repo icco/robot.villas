@@ -17213,256 +17213,291 @@ bots:
     display_name: Noema Magazine
     summary: Long essays on technology, geopolitics, philosophy, economics, and the future of governance.
     profile_photo: https://www.noemamag.com/wp-content/uploads/2020/06/cropped-ms-icon-310x310-1-192x192.png
-  maryrosecook_tumblr:
+  mary_rose_cook_tumblr:
     feed_url: https://maryrosecook.tumblr.com/rss
     homepage_url: https://maryrosecook.tumblr.com
-    display_name: Mary Rose Cook
-    summary: About GitHub Twitter RSS feed
+    display_name: Mary Rose Cook - Tumblr Archive
+    summary: Archived Tumblr posts by Mary Rose Cook about programming, books, and technology. This blog moved in December 2017.
+    profile_photo: https://api.tumblr.com/v2/blog/maryrosecook.tumblr.com/avatar/128
   masterskya:
     feed_url: https://masterskya.com/feed/
     homepage_url: https://masterskya.com
     display_name: Masterskya
-    summary: Updates from Masterskya.
-  mastersreview:
+    summary: Brazilian jiu-jitsu training articles from Masterskya in New York City; the feed currently contains posts from 2021.
+    profile_photo: https://masterskya.com/wp-content/uploads/2021/10/cropped-MS-website-thumbnail-32x32.png
+  the_masters_review:
     feed_url: https://mastersreview.com/feed/
     homepage_url: https://mastersreview.com
     display_name: The Masters Review
     summary: A platform for emerging writers
-  masterzen_fr:
-    feed_url: http://feeds.feedburner.com/masterzen
+    profile_photo: https://mastersreview.com/files/2016/03/porcupine-flip-e1457028334447-150x150.jpg
+  masterzens_blog:
+    feed_url: https://feeds.feedburner.com/masterzen
     homepage_url: https://www.masterzen.fr
     display_name: Masterzen’s Blog
-    summary: Updates from Masterzen’s Blog.
-  matadornetwork:
+    summary: Technical articles by Masterzen about systems engineering and building mechanical keyboards; the feed currently ends in 2020.
+    profile_photo: https://www.masterzen.fr/favicon.png
+  matador_network:
     feed_url: https://matadornetwork.com/feed/
     homepage_url: https://matadornetwork.com
     display_name: Matador Network
-    summary: Travel Fearlessly
-  uwaterloo_ca:
-    feed_url: https://uwaterloo.ca/rss.xml
-    homepage_url: https://uwaterloo.ca
-    display_name: University of Waterloo
-    summary: Updates from University of Waterloo.
+    summary: Travel guides, destinations, and outdoor adventures from Matador Network.
+    profile_photo: https://matadornetwork.com/apple-touch-icon.png
   mathematica_stackexchange:
     feed_url: https://mathematica.stackexchange.com/feeds
     homepage_url: https://mathematica.stackexchange.com/questions
-    display_name: Recent Questions - Mathematica Stack Exchange
-    summary: Updates from Recent Questions - Mathematica Stack Exchange.
-  mathiasmikkelsen:
+    display_name: Mathematica Stack Exchange
+    summary: Recent questions about Wolfram Mathematica on Mathematica Stack Exchange.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmathematica.stackexchange.com%2Fquestions&size=128
+  mathias_mikkelsen:
     feed_url: https://www.mathiasmikkelsen.com/feed.xml
-    homepage_url: http://mathiasmikkelsen.com
-    display_name: Mathias Mikkelsen – Founder, Designer and Entreprenur
-    summary: Mathias Mikkelsen is the founder and CEO of Timely, and the co-founder of Sporty. Product designer, entrepreneur, founder.
+    homepage_url: https://www.mathiasmikkelsen.com
+    display_name: Mathias Mikkelsen
+    summary: Archived posts by product designer and entrepreneur Mathias Mikkelsen about Timely, startups, and design; the feed currently ends in 2014.
   mathjax:
     feed_url: https://www.mathjax.org/feed.xml
     homepage_url: https://www.mathjax.org
     display_name: MathJax
-    summary: Updates from MathJax.
-  matklad_github:
+    summary: Official MathJax news, releases, and project updates for displaying mathematics in web browsers.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mathjax.org&size=128
+  matklad:
     feed_url: https://matklad.github.io/feed.xml
     homepage_url: https://matklad.github.io
     display_name: matklad
-    summary: Updates from matklad.
-  matschaffer:
+    summary: matklad writes about software engineering, programming languages, performance, and development tools.
+    profile_photo: https://matklad.github.io/favicon.png
+  mat_schaffers_blog:
     feed_url: https://matschaffer.com/atom.xml
     homepage_url: https://matschaffer.com
     display_name: Mat Schaffer's blog
-    summary: Updates from Mat Schaffer's blog.
-  mattambrogi_bearblog_dev:
+    summary: Technical posts by Mat Schaffer about software development, infrastructure, and monitoring; the feed currently ends in 2021.
+    profile_photo: https://matschaffer.com/ico/apple-touch-icon-144-precomposed.png
+  matt_ambrogi:
     feed_url: https://mattambrogi.bearblog.dev/feed/
     homepage_url: https://mattambrogi.bearblog.dev
     display_name: Matt Ambrogi
-    summary: Updates from Matt Ambrogi.
-  matter_vc:
+    summary: Matt Ambrogi's 2022 Recurse Center journal about learning programming and building projects.
+  matter:
     feed_url: https://matter.vc/rss/
     homepage_url: https://matter.vc
     display_name: Matter
-    summary: Build a Culture of Innovation
-  natgray:
+    summary: News and essays from Matter about innovation, media, and the Sulzberger fellowship program.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmatter.vc&size=128
+  natalie_gray:
     feed_url: https://natgray.co.uk/blog/rss/
     homepage_url: https://natgray.co.uk
     display_name: Natalie Gray
-    summary: I'm a Digital Creator sharing my wonder for amazing careers, and using my electronics & 3D printing skills to Make Things. I'm also a member of The Technical Difficulties with Tom Scott…
-  mattgemmell:
+    summary: Natalie Gray writes about electronics, 3D printing, travel, and making things; formerly published at mattg.co.uk.
+    profile_photo: https://natgray.co.uk/content/images/size/w256h256/format/jpeg/2026/07/avatar_2026-1.jpg
+  matt_gemmell:
     feed_url: https://mattgemmell.scot/atom.xml
     homepage_url: https://mattgemmell.com
     display_name: Matt Gemmell
     summary: Thriller, Horror, and Suspense author
-  matthewdicks:
+    profile_photo: https://mattgemmell.com/images/favicon-167.png
+  matthew_dicks:
     feed_url: https://matthewdicks.com/feed/
     homepage_url: https://matthewdicks.com
     display_name: Matthew Dicks
     summary: Making Stories Come Alive
-  mttmr:
+    profile_photo: https://matthewdicks.com/wp-content/uploads/2024/07/cropped-MD-Ads-Carousel-Template-1-1-150x150.png
+  matt_moore:
     feed_url: https://www.mttmr.com/rss.xml
     homepage_url: https://mttmr.com/writing
-    display_name: Matt Moore — Writing
+    display_name: Matt Moore
     summary: Essays on design, technology, and building products for the physical world.
-  matthewpalmer:
-    feed_url: https://matthewpalmer.net/feed.xml
-    homepage_url: http://www.matthewpalmer.net
-    display_name: Matthew Palmer
-    summary: Web and iOS developer from Australia. @_matthewpalmer.
-  mattstromawn:
+    profile_photo: https://www.mttmr.com/apple-icon.png?apple-icon.2hsot29363uwb.png
+  matt_strom_awn:
     feed_url: https://mattstromawn.com/feed.xml
     homepage_url: https://mattstromawn.com
-    display_name: The personal website of Matt Ström-Awn
-    summary: Updates from The personal website of Matt Ström-Awn.
-  matthewtejo_substack:
+    display_name: Matt Ström-Awn
+    summary: Matt Ström-Awn writes about design, product development, leadership, and building teams.
+    profile_photo: https://mattstromawn.com/favicon.png
+  matthews_writing:
     feed_url: https://matthewtejo.substack.com/feed
     homepage_url: https://matthewtejo.substack.com
     display_name: Matthew’s Writing
-    summary: Various things I feel like sharing
-  mattiasa_blogspot:
-    feed_url: http://feeds.feedburner.com/blogspot/SZAN
-    homepage_url: http://mattiasa.blogspot.com
+    summary: Matthew Tejo's writing about software engineering, AI tools, and programming projects.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!j00D!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fba6e3c51-7235-415e-9fc0-ed03ceb0af0a_144x144.png
+  mattias_inks:
+    feed_url: https://feeds.feedburner.com/blogspot/SZAN
+    homepage_url: https://mattiasa.blogspot.com
     display_name: Mattias Inks
-    summary: Updates from Mattias Inks.
-  mattlieberiseverything_tumblr:
+    summary: Illustrations, sketches, and drawings by Mattias Adolfsson.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fmattiasa.blogspot.com&size=128
+  matt_lieber_is_everything:
     feed_url: https://mattlieberiseverything.tumblr.com/rss
     homepage_url: https://mattlieberiseverything.tumblr.com
-    display_name: https://mattlieberiseverything.tumblr.com/
-    summary: Illustrations dedicated to the weekly phrases about Matt Lieber on the Reply All podcast. By Seth Lucas
-  mattsayar:
+    display_name: Matt Lieber Is Everything
+    summary: Archived illustrations by Seth Lucas of the Reply All podcast's weekly phrases about Matt Lieber; posts date from 2015-2016.
+    profile_photo: https://api.tumblr.com/v2/blog/mattlieberiseverything.tumblr.com/avatar/128
+  matt_sayar:
     feed_url: https://mattsayar.com/feed.xml
     homepage_url: https://mattsayar.com
-    display_name: mattsayar.com
-    summary: Updates from mattsayar.com.
-  mattsears:
+    display_name: Matt Sayar
+    summary: Matt Sayar writes about software, books, food, and personal projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmattsayar.com&size=128
+  matt_sears:
     feed_url: https://mattsears.com/feed.xml
     homepage_url: https://mattsears.com
     display_name: Matt Sears
-    summary: Updates from Matt Sears.
-  thebignewsletter:
+    summary: Matt Sears writes about software development, technology, business, and personal interests.
+    profile_photo: https://mattsears.com/assets/images/me-adult.jpg
+  big_by_matt_stoller:
     feed_url: https://www.thebignewsletter.com/feed
     homepage_url: https://www.thebignewsletter.com
     display_name: BIG by Matt Stoller
     summary: The history and politics of monopoly power.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!foQf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb98ab605-be40-4612-8493-dd79bce9c716%2Fapple-touch-icon-57x57.png
   matznerd:
     feed_url: https://matznerd.com/rss.xml
     homepage_url: https://matznerd.com
     display_name: Matznerd
-    summary: Independent writing by Eric Matzner about minds, machines, health, technology, culture, and the edges of human possibility.
+    summary: Archived writing by Eric Matzner about health, technology, culture, and personal projects; the feed currently ends in 2018.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmatznerd.com&size=128
   mautic:
     feed_url: https://mautic.org/feed/
     homepage_url: https://mautic.org
     display_name: Mautic
-    summary: World's Largest Open Source Marketing Automation Project
+    summary: Official news, community updates, and project reports from the open-source marketing automation project Mautic.
+    profile_photo: https://mautic.org/wp-content/uploads/2024/10/iTunesArtwork2x-300x300.png
   max_computer:
     feed_url: https://max.computer/index.xml
-    homepage_url: http://max.computer
+    homepage_url: https://max.computer
     display_name: Max.Computer
-    summary: Recent content on Max.Computer
-  maxleiter:
+    summary: Max Veytsman's archived writing and projects about programming, security, and technology.
+    profile_photo: https://github.com/mveytsman.png?size=200
+  max_leiter:
     feed_url: https://maxleiter.com/feed.xml
     homepage_url: https://maxleiter.com
     display_name: Max Leiter
     summary: Max Leiter's blog
-  maxmynter_substack:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmaxleiter.com&size=128
+  relentlessly_curious:
     feed_url: https://maxmynter.substack.com/feed
     homepage_url: https://maxmynter.substack.com
     display_name: Relentlessly Curious
     summary: Riffs on tech, software, pop culture, the occasional philosophy, vibes and what i'm generally on about in life.
-  maxnagy:
+    profile_photo: https://substackcdn.com/image/fetch/$s_!g2ns!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F108bad27-e789-4d64-b7c2-e33f47e34ff0_1166x1168.jpeg
+  max_nagy:
     feed_url: https://maxnagy.com/index.xml
     homepage_url: https://maxnagy.com
     display_name: Max Nagy
-    summary: Recent content on Max Nagy
+    summary: Max Nagy writes about programming, machine learning, and technical projects.
+    profile_photo: https://maxnagy.com/img/favicon/orange.png
   mbleigh_dev:
     feed_url: https://mbleigh.dev/rss.xml
     homepage_url: https://mbleigh.dev
     display_name: mbleigh.dev
-    summary: Updates from mbleigh.dev.
-  mcfunley:
+    summary: Michael Bleigh's writing about software development, AI, and personal projects at mbleigh.dev.
+    profile_photo: https://mbleigh.dev/apple-touch-icon.png
+  dan_mckinley:
     feed_url: https://mcfunley.com/feed.xml
     homepage_url: https://mcfunley.com
     display_name: Dan McKinley
-    summary: Updates from Dan McKinley.
-  mdk_fr:
+    summary: Dan McKinley writes about software engineering, technology, and working in engineering organizations.
+    profile_photo: https://mcfunley.com/assets/images/favicon/apple-touch-icon.png
+  julien_palard:
     feed_url: https://mdk.fr/feeds/all.atom.xml
     homepage_url: https://mdk.fr
     display_name: Julien Palard
-    summary: Updates from Julien Palard.
-  mdw_la:
+    summary: Julien Palard writes about programming, Linux, and open-source tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmdk.fr&size=128
+  matt_welsh:
     feed_url: https://mdw.la/rss.xml
-    homepage_url: https://www.mdw.la
-    display_name: 'mdw.la :: Matt Welsh'
-    summary: Matt Welsh's home page.
+    homepage_url: https://mdw.la
+    display_name: Matt Welsh
+    summary: Matt Welsh's projects, publications, research interests, and academic work.
+    profile_photo: https://mdw.la/mdw-woods-lowres.png
   media_ccc_de:
-    feed_url: https://media.ccc.de/news.atom
+    feed_url: https://media.ccc.de/podcast-hq.xml
     homepage_url: https://media.ccc.de
-    display_name: media.ccc.de - NEWS
-    summary: Updates from media.ccc.de - NEWS.
-  media_mit_edu:
+    display_name: media.ccc.de
+    summary: Recent conference talks and recordings published by the Chaos Computer Club video portal.
+    profile_photo: https://media.ccc.de/favicon-96x96.png
+  mit_media_lab:
     feed_url: https://www.media.mit.edu/feed.rss
     homepage_url: https://www.media.mit.edu
-    display_name: News + Updates - MIT Media Lab
-    summary: Everything from the Media Lab homepage
-  mediamatters:
+    display_name: MIT Media Lab
+    summary: Research news, events, and updates from the MIT Media Lab.
+    profile_photo: https://www.media.mit.edu/static/images/icons/apple-icon-180x180.png
+  media_matters_for_america:
     feed_url: https://www.mediamatters.org/rss.xml
     homepage_url: https://www.mediamatters.org
     display_name: Media Matters for America
-    summary: Articles published by Media Matters for America
-  medicaldaily:
+    summary: Media monitoring and analysis of misinformation and right-wing media from Media Matters for America.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mediamatters.org&size=128
+  medical_daily:
     feed_url: https://www.medicaldaily.com/rss/
     homepage_url: https://www.medicaldaily.com
     display_name: Medical Daily
-    summary: Latest News
-  medriscoll:
+    summary: Health news, medical research, public-health updates, and consumer safety reporting from Medical Daily.
+    profile_photo: https://g.medicaldaily.com/themes/favicons/apple-touch-icon.png
+  m_e_driscoll:
     feed_url: https://medriscoll.com/feed/
     homepage_url: https://medriscoll.com
     display_name: m. e. driscoll
-    summary: Updates from m. e. driscoll.
-  megelison:
+    summary: Archived essays by m. e. driscoll about data, technology, startups, and life; the feed currently ends in 2021.
+    profile_photo: https://i0.wp.com/medriscoll.com/wp-content/uploads/2020/12/cropped-data_collective_2018_1027_grayscale_hero-2000x1200-1.jpg?fit=180%2C180&ssl=1
+  meg_elison:
     feed_url: https://megelison.com/feed
     homepage_url: https://megelison.com
     display_name: Meg Elison
     summary: Author & Essayist
-  mehulkar:
+    profile_photo: https://megelison.com/wp-content/uploads/fbrfg/apple-touch-icon.png
+  mehul_kars_blog:
     feed_url: https://www.mehulkar.com/feed.xml
     homepage_url: https://www.mehulkar.com
     display_name: Mehul Kar's blog
-    summary: Updates from Mehul Kar's blog.
-  about_readcube:
+    summary: Mehul Kar's writing about software development, books, films, and personal interests.
+    profile_photo: https://www.mehulkar.com/images/icon-152.png
+  readcube:
     feed_url: https://about.readcube.com/feed/
     homepage_url: https://about.readcube.com
     display_name: ReadCube
-    summary: Your personal library of research
-  melissagiragrant:
+    summary: Product news and research literature-management advice from ReadCube, which acquired the Papers reference manager.
+    profile_photo: https://about.readcube.com/wp-content/uploads/2018/11/cropped-readucbe-icon-180x180.png
+  melissa_gira_grant:
     feed_url: https://www.melissagiragrant.com/rss/
     homepage_url: https://www.melissagiragrant.com
     display_name: Melissa Gira Grant
     summary: Author and journalist writing on sex, gender, race, and the law.
-  melmagazine:
+    profile_photo: https://storage.ghost.io/c/a1/d3/a1d3e0e4-0457-43a8-b437-0aae429d3ce9/content/images/size/w256h256/2026/08/mgg-256x256.png
+  mel_magazine:
     feed_url: https://melmagazine.com/feed
     homepage_url: https://melmagazine.com
     display_name: MEL Magazine
-    summary: There's no playbook for how to be a guy.
-  memrise:
+    summary: MEL Magazine covers culture, masculinity, work, money, health, relationships, and entertainment.
+    profile_photo: https://melmagazine.com/uploads/2018/09/cropped-favicon.jpg
+  memrise_blog:
     feed_url: https://www.memrise.com/blog/rss.xml
     homepage_url: https://www.memrise.com/blog
     display_name: Memrise Blog
-    summary: Memrise Blog
-  mentalized:
+    summary: Language-learning guides, vocabulary, and cultural tips from the Memrise blog.
+    profile_photo: https://www.memrise.com/hubfs/memrise-flavicon.png
+  mentalized_jakob_skjerning:
     feed_url: https://mentalized.net/journal/entries.xml
     homepage_url: https://mentalized.net
-    display_name: mentalized.net
+    display_name: Mentalized - Jakob Skjerning
     summary: The virtual home of Jakob Skjerning, an experienced web application developer, consultancy owner and grumpy geek
-  merlinmann:
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmentalized.net&size=128
+  roderick_on_the_line:
     feed_url: https://www.merlinmann.com/roderick/atom.xml
-    homepage_url: http://www.merlinmann.com/roderick
+    homepage_url: https://www.merlinmann.com/roderick
     display_name: Roderick on the Line
-    summary: Updates from Roderick on the Line.
-  nutanix:
+    summary: Roderick on the Line, Merlin Mann's weekly conversation with John Roderick.
+  nutanix_blog:
     feed_url: https://www.nutanix.com/blog.rssfeed.xml
     homepage_url: https://www.nutanix.com/blog
-    display_name: Read the Latest Blogs from Nutanix
-    summary: Tips from experts, thoughts from leaders, news from the front line. Join the conversation beyond hyperconverged infrastructure to the enterprise cloud.
-  meta_discourse:
+    display_name: Nutanix Blog
+    summary: Nutanix's broader enterprise-cloud blog. Mesosphere became D2iQ, whose Kubernetes platform is now part of Nutanix.
+    profile_photo: https://www.nutanix.com/apple-touch-icon.png
+  discourse_meta:
     feed_url: https://meta.discourse.org/posts.rss
     homepage_url: https://meta.discourse.org
-    display_name: Discourse Meta - Latest posts
-    summary: Latest posts
+    display_name: Discourse Meta
+    summary: Latest posts in the official Discourse support and community forum.
+    profile_photo: https://global.discourse-cdn.com/meta/optimized/4X/b/1/2/b12885a6f292ceffc222608846855f25a272835b_2_180x180.jpeg
   astral_codex_ten:
     feed_url: https://www.astralcodexten.com/feed
     homepage_url: https://www.astralcodexten.com
