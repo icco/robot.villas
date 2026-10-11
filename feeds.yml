@@ -1122,6 +1122,256 @@ bots:
     display_name: Undark Magazine
     summary: Science journalism at the intersection of research, policy, medicine, and society.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://undark.org&size=128
+  moerner:
+    feed_url: https://moerner.com/index.xml
+    homepage_url: https://moerner.com
+    display_name: Daniel Moerner
+    summary: Recent content on Daniel Moerner
+  molleindustria:
+    feed_url: https://www.molleindustria.org/blog/feed/
+    homepage_url: https://www.molleindustria.org/blog
+    display_name: Molleindustria
+    summary: Radical Games Against the Tyranny of Entertainment
+  money:
+    feed_url: https://money.com/money/feed/
+    homepage_url: https://money.com
+    display_name: Money.com
+    summary: Money.com
+  money_visualcapitalist:
+    feed_url: https://money.visualcapitalist.com/feed/
+    homepage_url: https://money.visualcapitalist.com
+    display_name: The Money Project
+    summary: Updates from The Money Project.
+  monicacatherine:
+    feed_url: https://monicacatherine.com/feed/
+    homepage_url: https://monicacatherine.com
+    display_name: monica byrne
+    summary: novelist . playwright . screenwriter
+  monicahq:
+    feed_url: https://www.monicahq.com/en/blog/feed.xml
+    homepage_url: https://www.monicahq.com/en/blog
+    display_name: The Monica blog — release notes and product decisions
+    summary: What we ship, why we build it that way, and what running a small open-source company actually looks like. Written by the people making Monica.
+  monkeymace:
+    feed_url: https://monkeymace.com/rss
+    homepage_url: https://monkeymace.com
+    display_name: Monkey Mace
+    summary: Humans and Technology
+  monkeyuser:
+    feed_url: https://www.monkeyuser.com/index.xml
+    homepage_url: https://www.monkeyuser.com
+    display_name: Monkeyuser
+    summary: Recent content on Monkeyuser
+  monkigras:
+    feed_url: https://monkigras.com/feed/
+    homepage_url: https://monkigras.com
+    display_name: Monki Gras
+    summary: The developer conference about craft culture
+  monocle:
+    feed_url: https://monocle.com/feed/
+    homepage_url: https://monocle.com
+    display_name: Monocle
+    summary: Monocle is a global briefing covering international affairs, business, culture and design.
+  monodraw_helftone:
+    feed_url: https://blog.helftone.com/feed.xml
+    homepage_url: https://monodraw.helftone.com
+    display_name: Helftone Blog
+    summary: Articles from the Helftone team
+  montananewsroom:
+    feed_url: https://montananewsroom.com/feed/
+    homepage_url: https://montananewsroom.com
+    display_name: Montana Newsroom
+    summary: Updates from Montana Newsroom.
+  monthlymusichackathon:
+    feed_url: https://monthlymusichackathon.org/rss
+    homepage_url: https://monthlymusichackathon.org
+    display_name: Monthly Music Hackathon NYC
+    summary: Updates from Monthly Music Hackathon NYC.
+  moo:
+    feed_url: https://mooprintms.wpengine.com/blog/feed
+    homepage_url: https://www.moo.com/blog
+    display_name: MOO Blog
+    summary: The MOO Blog
+  moogfoundation:
+    feed_url: https://moogfoundation.org/feed/
+    homepage_url: https://moogfoundation.org
+    display_name: The Bob Moog Foundation
+    summary: Igniting creativity at the intersection of music, science, history and innovation.
+  moogmusic:
+    feed_url: https://www.moogmusic.com/rss.xml
+    homepage_url: https://www.moogmusic.com
+    display_name: Moog Music RSS Feed
+    summary: Moog Music RSS Feed
+  moserware:
+    feed_url: https://feeds.feedburner.com/Moserware
+    homepage_url: http://www.moserware.com
+    display_name: Moserware
+    summary: Updates from Moserware.
+  motor1:
+    feed_url: https://www.motor1.com/rss/news/all/
+    homepage_url: https://www.motor1.com/news
+    display_name: Motor1.com - News
+    summary: Get breaking news, in-depth articles and press releases covering News
+  movebits:
+    feed_url: http://movebits.net/atom.xml
+    homepage_url: http://movebits.net
+    display_name: movebits
+    summary: Updates from movebits.
+  moveline:
+    feed_url: https://www.moveline.com/feed/
+    homepage_url: https://www.moveline.com
+    display_name: Moveline
+    summary: Find Trusted Movers
+  moviebarcode_tumblr:
+    feed_url: https://moviebarcode.tumblr.com/rss
+    homepage_url: https://moviebarcode.tumblr.com
+    display_name: moviebarcode
+    summary: Updates from moviebarcode.
+  moviecode_tumblr:
+    feed_url: https://moviecode.tumblr.com/rss
+    homepage_url: https://moviecode.tumblr.com
+    display_name: Source Code in TV and Films
+    summary: Images of the computer code appearing in TV and films and what they really are. See https://behind-the-screens.tv for video versions of some.
+  movingtonyc101_blogspot:
+    feed_url: https://movingtonyc101.blogspot.com/feeds/posts/default
+    homepage_url: https://movingtonyc101.blogspot.com
+    display_name: Moving to NYC 101
+    summary: Updates from Moving to NYC 101.
+  mprnews:
+    feed_url: https://www.mprnews.org/feed/homepage
+    homepage_url: https://www.mprnews.org/homepage
+    display_name: Homepage - MPR News
+    summary: Updates from Homepage - MPR News.
+  mrcoles:
+    feed_url: https://mrcoles.com/feeds/latest/
+    homepage_url: http://mrcoles.com
+    display_name: mrcoles.com feed
+    summary: mrcoles.com posts feed.
+  mrdrozdov_github:
+    feed_url: https://mrdrozdov.github.io/feed.xml
+    homepage_url: https://mrdrozdov.github.io
+    display_name: Andrew Drozdov
+    summary: Updates from Andrew Drozdov.
+  mscorley_blogspot:
+    feed_url: http://feeds.feedburner.com/TheArtOfMSCorley
+    homepage_url: http://mscorley.blogspot.com
+    display_name: The Art of M. S. Corley
+    summary: Updates from The Art of M. S. Corley.
+  mta_info:
+    feed_url: https://www.mta.info/rss.xml
+    homepage_url: https://www.mta.info
+    display_name: MTA
+    summary: Updates from MTA.
+  muetsch:
+    feed_url: https://muetsch.io/rss2.xml
+    homepage_url: https://muetsch.io
+    display_name: Ferdinand Mütsch
+    summary: "Hi and welcome! \U0001F44B I'm Ferdinand, a passionate software- and data engineer and technology enthusiast from Karlsruhe, Germany. I blog about personal projects, software development and systems administration, some machine learning and technology in general. All content you will find here is [human-written](/statement-about-generative-ai.html). Enjoy and feel free to say hi if you wish!"
+  nexttv:
+    feed_url: https://www.nexttv.com/feeds.xml
+    homepage_url: https://www.nexttv.com/multichannel-news
+    display_name: Latest from Next TV
+    summary: All the latest content from the Next TV team
+  munin_monitoring:
+    feed_url: https://munin-monitoring.org/feed.xml
+    homepage_url: https://munin-monitoring.org
+    display_name: Munin Monitoring
+    summary: Munin is a networked resource monitoring tool that can help analyze resource trends and what just happened to kill our performance? problems. It is designed to be very plug and play. A default installation provides a lot of graphs with almost no work.
+  museumhack:
+    feed_url: https://museumhack.com/feed/
+    homepage_url: https://museumhack.com
+    display_name: Museum Hack
+    summary: Updates from Museum Hack.
+  musicbusinessworldwide:
+    feed_url: https://www.musicbusinessworldwide.com/feed/
+    homepage_url: https://www.musicbusinessworldwide.com
+    display_name: Music Business Worldwide
+    summary: News, jobs and analysis for the global music industry
+  musicforprogramming:
+    feed_url: https://musicforprogramming.net/rss.xml
+    homepage_url: https://musicforprogramming.net
+    display_name: Music For Programming
+    summary: Datassette presents a series of mixes intended for listening while programming to focus the brain and inspire the mind (also compatible with other activities).
+  musicmachinery:
+    feed_url: https://musicmachinery.com/feed/
+    homepage_url: https://musicmachinery.com
+    display_name: Music Machinery
+    summary: a blog about music technology by Paul Lamere
+  mvkb:
+    feed_url: https://buttondown.com/MVKB/rss
+    homepage_url: https://mvkb.com
+    display_name: MVKB Updates
+    summary: Occasional updates on MVKB projects. These include group buy updates, in-stock announcements, sneak peeks at upcoming projects and more.
+  mxstbr:
+    feed_url: https://mxstbr.com/rss
+    homepage_url: https://mxstbr.com
+    display_name: Max Stoiber's Essays
+    summary: CEO and co-founder of Stellate, creator of styled-components and react-boilerplate and angel investor in early-stage startups.
+  blogs_opera:
+    feed_url: https://blogs.opera.com/feed/
+    homepage_url: https://blogs.opera.com
+    display_name: www.opera.com
+    summary: Opera Blogs
+  myanimelist:
+    feed_url: https://myanimelist.net/rss/news.xml
+    homepage_url: https://myanimelist.net/news?_location=rss
+    display_name: News - MyAnimeList
+    summary: MyAnimeList's Feed of News
+  myce:
+    feed_url: https://myce.com/blog/feed/
+    homepage_url: https://myce.com/blog
+    display_name: Myce Blog
+    summary: Keep your data yours
+  myfonts:
+    feed_url: https://www.myfonts.com/collections/metronic-slab-pro-font-mostardesign.atom
+    homepage_url: https://www.myfonts.com/collections/all
+    display_name: MyFonts
+    summary: Updates from MyFonts.
+  myfox8:
+    feed_url: https://myfox8.com/feed/
+    homepage_url: https://myfox8.com
+    display_name: FOX8 WGHP
+    summary: North Carolina news, weather, politics, sports and more from the heart of the Triad
+  myharvardclassics:
+    feed_url: https://www.myharvardclassics.com/blog.rss
+    homepage_url: https://www.myharvardclassics.com
+    display_name: Classic Wisdom
+    summary: Official Blog of My Harvard Classics
+  mymorningroutine:
+    feed_url: http://feeds.feedburner.com/mymorningroutine
+    homepage_url: https://mymorningroutine.com
+    display_name: My Morning Routine
+    summary: Discover new ideas to mix into your morning routine from bestselling authors, successful entrepreneurs, and inspiring creatives living all over the world.
+  mynintendonews:
+    feed_url: https://mynintendonews.com/feed/
+    homepage_url: https://mynintendonews.com
+    display_name: My Nintendo News
+    summary: Nintendo News
+  myownfortune_wordpress:
+    feed_url: https://myownfortune.wordpress.com/feed/
+    homepage_url: https://myownfortune.wordpress.com
+    display_name: My Own Fortune
+    summary: All that's left is to make it
+  n_gate:
+    feed_url: http://n-gate.com/index.atom
+    homepage_url: http://n-gate.com
+    display_name: n-gate.com.
+    summary: Updates from n-gate.com..
+  namethatblue:
+    feed_url: https://namethatblue.com/feed
+    homepage_url: https://namethatblue.com
+    display_name: Name That Blue
+    summary: Games Gaming
+  namirdeiter:
+    feed_url: https://feeds.feedburner.com/NDUnlimited
+    homepage_url: https://www.namirdeiter.com
+    display_name: ND Unlimited
+    summary: Nicole and Derek, WonderKittens, You Say it First, and other comics by Isabel Marks
+  naotofukasawa:
+    feed_url: https://naotofukasawa.com/feed/
+    homepage_url: https://naotofukasawa.com
+    display_name: Naoto Fukasawa Design
+    summary: Updates from Naoto Fukasawa Design.
   nasa:
     feed_url: https://www.nasa.gov/feed/
     homepage_url: https://www.nasa.gov
