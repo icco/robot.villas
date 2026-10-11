@@ -890,6 +890,256 @@ bots:
     display_name: Magnum Photos
     summary: Documentary photography, photojournalism, photographers, and visual storytelling.
     profile_photo: https://www.magnumphotos.com/wp-content/themes/template/res/img/favicons/apple-touch-icon-180x180.png
+  gyrovague:
+    feed_url: https://gyrovague.com/feed/
+    homepage_url: https://gyrovague.com
+    display_name: Gyrovague
+    summary: vaguely heretical musings on travel and technology
+  hackerfactor:
+    feed_url: https://www.hackerfactor.com/blog/index.php?/feeds/index.rss2
+    homepage_url: https://hackerfactor.com/blog
+    display_name: The Hacker Factor Blog
+    summary: Nevertheless, she persisted
+  hackerrank:
+    feed_url: https://www.hackerrank.com/blog/feed/
+    homepage_url: https://www.hackerrank.com/blog
+    display_name: HackerRank Blog
+    summary: Leading the Skills-Based Hiring Revolution
+  hackertourism:
+    feed_url: https://hackertourism.com/feed
+    homepage_url: https://hackertourism.com
+    display_name: Hacker Tourism
+    summary: Updates from Hacker Tourism.
+  hackread:
+    feed_url: https://hackread.com/feed/
+    homepage_url: https://hackread.com
+    display_name: Hackread – Cybersecurity News, Data Breaches, AI and More
+    summary: Updates from Hackread – Cybersecurity News, Data Breaches, AI and More.
+  hadid_dev:
+    feed_url: https://hadid.dev/index.xml
+    homepage_url: https://hadid.dev
+    display_name: Home on Mustapha Hadid
+    summary: Recent content in Home on Mustapha Hadid
+  hakaimagazine:
+    feed_url: https://hakaimagazine.com/feed/
+    homepage_url: https://hakaimagazine.com
+    display_name: Hakai Magazine
+    summary: Coastal science and societies
+  hamvocke:
+    feed_url: https://hamvocke.com/feed.xml
+    homepage_url: https://hamvocke.com
+    display_name: Ham Vocke
+    summary: Ham Vocke's musings on life, software engineering, and everything else
+  hanno_co:
+    feed_url: https://hanno.co/journal/feed/index.xml
+    homepage_url: https://hanno.co
+    display_name: Journal RSS Feed
+    summary: The digital health product house.
+  hapticfeedbackgames_blogspot:
+    feed_url: https://hapticfeedbackgames.blogspot.com/feeds/posts/default
+    homepage_url: https://hapticfeedbackgames.blogspot.com
+    display_name: Haptic Feedback
+    summary: Updates from Haptic Feedback.
+  haraldurthorleifsson:
+    feed_url: https://www.haraldurthorleifsson.com/news?format=rss
+    homepage_url: https://www.haraldurthorleifsson.com/news
+    display_name: News - Halli
+    summary: Updates from News - Halli.
+  hard_drive:
+    feed_url: https://hard-drive.net/feed/
+    homepage_url: https://hard-drive.net
+    display_name: Hard Drive
+    summary: Updates from Hard Drive.
+  hardware_slashdot:
+    feed_url: https://rss.slashdot.org/Slashdot/slashdotHardware
+    homepage_url: https://hardware.slashdot.org
+    display_name: 'Slashdot: Hardware'
+    summary: News for nerds, stuff that matters
+  hardwarebug:
+    feed_url: https://hardwarebug.org/feed/
+    homepage_url: https://hardwarebug.org
+    display_name: hardwarebug.org
+    summary: Everything is broken
+  hario:
+    feed_url: https://www.hario.co.uk/blogs/news.atom
+    homepage_url: https://www.hario.co.uk/blogs/news
+    display_name: Hario UK - News
+    summary: Updates from Hario UK - News.
+  haroldtreen:
+    feed_url: https://haroldtreen.com/feed.xml
+    homepage_url: https://haroldtreen.com
+    display_name: Harold Treen
+    summary: Just another nerd.
+  haruhichan:
+    feed_url: https://haruhichan.com/feed/
+    homepage_url: https://haruhichan.com
+    display_name: Haruhichan Network – Anime news and more!
+    summary: Anime, Manga, Japan news and more!
+  haruska:
+    feed_url: https://haruska.com/feed.xml
+    homepage_url: https://haruska.com
+    display_name: haruska.com
+    summary: Updates from haruska.com.
+  hashrocket:
+    feed_url: https://hashrocket.com/blog/posts.rss
+    homepage_url: https://hashrocket.com
+    display_name: Hashrocket
+    summary: Knowledge & news from us to you.
+  hatchmag:
+    feed_url: https://www.hatchmag.com/rss.xml
+    homepage_url: https://www.hatchmag.com
+    display_name: Hatch Magazine - Fly Fishing, etc.
+    summary: Updates from Hatch Magazine - Fly Fishing, etc..
+  haveibeenpwned:
+    feed_url: https://haveibeenpwned.com/feed/breaches/
+    homepage_url: https://haveibeenpwned.com
+    display_name: Have I Been Pwned latest breaches
+    summary: The latest publicly leaked data breaches to hit Have I Been Pwned
+  hawksley_dev:
+    feed_url: https://hawksley.dev/rss.xml
+    homepage_url: https://hawksley.dev
+    display_name: Ethan Hawksley's Blog
+    summary: A blog by Ethan Hawksley, a computer science student at the University of Warwick. Articles on systems programming, cybersecurity, and whatever else grabs my attention.
+  healthdata_gov:
+    feed_url: https://healthdata.gov/catalog.rss
+    homepage_url: https://healthdata.gov
+    display_name: Newly created and updated datasets for healthdata.gov
+    summary: Newly created and updated datasets for healthdata.gov
+  thepermanentcontrarian:
+    feed_url: https://thepermanentcontrarian.com/feed/
+    homepage_url: https://thepermanentcontrarian.com
+    display_name: The Permanent Contrarian
+    summary: Permanently unique and distinguishably contrarian. We discuss topics from real life perspectives you will probably never hear about.
+  heatherburns_tech:
+    feed_url: https://heatherburns.tech/feed/
+    homepage_url: https://heatherburns.tech
+    display_name: Hi, I'm Heather Burns
+    summary: — yes, that one.
+  heise_de:
+    feed_url: https://www.heise.de/rss/heise-atom.xml
+    homepage_url: https://www.heise.de
+    display_name: heise online News
+    summary: Updates from heise online News.
+  hellomagazine:
+    feed_url: https://www.hellomagazine.com/feeds/rss/any/any/any/50.xml
+    homepage_url: https://www.hellomagazine.com
+    display_name: HELLO! Latest news feed
+    summary: News and pictures from the world of celebrity, royalty, entertainment, film, music and videos
+  hellowebbooks:
+    feed_url: https://hellowebbooks.com/rss/
+    homepage_url: http://hellowebbooks.com/news
+    display_name: Hello Web Books RSS Feed
+    summary: News, articles, and tutorials from Hello Web Books
+  obsidian_md:
+    feed_url: https://obsidian.md/feed.xml
+    homepage_url: https://obsidian.md/help
+    display_name: Obsidian Blog
+    summary: Updates from Obsidian Blog.
+  helpnetsecurity:
+    feed_url: https://www.helpnetsecurity.com/feed/
+    homepage_url: https://www.helpnetsecurity.com
+    display_name: Help Net Security
+    summary: Daily information security news with a focus on enterprise security.
+  heltweg:
+    feed_url: https://heltweg.org/rss.xml
+    homepage_url: https://heltweg.org
+    display_name: Philip Heltweg
+    summary: Hi, I am Philip :)
+  henrikwarne:
+    feed_url: https://henrikwarne.com/feed/
+    homepage_url: https://henrikwarne.com
+    display_name: Henrik Warne's blog
+    summary: Thoughts on programming...
+  heraldscotland:
+    feed_url: https://www.heraldscotland.com/news/rss/
+    homepage_url: https://www.heraldscotland.com/news
+    display_name: The Herald | News
+    summary: The Herald News
+  herpackinglist:
+    feed_url: http://feeds.feedburner.com/HerPackingList
+    homepage_url: https://herpackinglist.com
+    display_name: Her Packing List
+    summary: Pack Light, Travel Confidently
+  hetexted:
+    feed_url: https://hetexted.com/feed/
+    homepage_url: https://hetexted.com
+    display_name: HeTexted
+    summary: Dating and Relationship Advice for Women
+  heyuguys:
+    feed_url: https://www.heyuguys.com/feed/
+    homepage_url: https://www.heyuguys.com
+    display_name: HeyUGuys
+    summary: Movie News, Reviews, Trailers and Interviews
+  hgtip:
+    feed_url: https://hgtip.com/feed/
+    homepage_url: https://hgtip.com
+    display_name: Hgtip
+    summary: Updates from Hgtip.
+  hhvm:
+    feed_url: https://hhvm.com/feed.xml
+    homepage_url: http://hhvm.com/
+    display_name: HHVM
+    summary: The landing page for HHVM and the blog of Hack/HHVM
+  hicks_design:
+    feed_url: https://hicks.design/feeds/journal/
+    homepage_url: https://hicks.design/journal
+    display_name: 'Hicks.design Journal: Latest articles'
+    summary: Hicks.design | graphic design, branding, illustration & iconography
+  hieroglyph_asu_edu:
+    feed_url: https://hieroglyph.asu.edu/feed/
+    homepage_url: https://hieroglyph.asu.edu
+    display_name: Project Hieroglyph
+    summary: Getting big things done
+  highbrowmagazine:
+    feed_url: https://www.highbrowmagazine.com/rss.xml
+    homepage_url: https://www.highbrowmagazine.com
+    display_name: Home View Block
+    summary: Updates from Home View Block.
+  higherperspectives:
+    feed_url: https://www.higherperspectives.com/feed
+    homepage_url: https://www.higherperspectives.com
+    display_name: higherperspectives
+    summary: Higher Perspectives
+  highline_huffingtonpost:
+    feed_url: https://highline.huffingtonpost.com/rss.xml
+    homepage_url: http://highline.huffingtonpost.com
+    display_name: Highline - Huffington Post
+    summary: Stories that stay with you.
+  hilarymason:
+    feed_url: https://hilarymason.com/feed/
+    homepage_url: https://hilarymason.com
+    display_name: Hilary Mason
+    summary: Updates from Hilary Mason.
+  hillhouse_neocities:
+    feed_url: https://hillhouse.neocities.org/feed.xml
+    homepage_url: https://hillhouse.neocities.org
+    display_name: welcome to hill house!
+    summary: whatever walked there, walked alone
+  hillsmithart_com_au:
+    feed_url: https://www.hillsmithart.com.au/news?format=rss
+    homepage_url: https://www.hillsmithart.com.au/news
+    display_name: News – Hill Smith Art Advisory - Hill Smith Art Advisory
+    summary: Updates from News – Hill Smith Art Advisory - Hill Smith Art Advisory.
+  hilobrow:
+    feed_url: https://www.hilobrow.com/feed/
+    homepage_url: https://www.hilobrow.com
+    display_name: HILOBROW
+    summary: Josh Glenn, ed.
+  hineslab:
+    feed_url: https://www.hineslab.com/feed/
+    homepage_url: https://www.hineslab.com
+    display_name: HinesLab
+    summary: Steve Hines - HinesLab
+  hispanicfederation:
+    feed_url: https://www.hispanicfederation.org/feed/
+    homepage_url: https://www.hispanicfederation.org
+    display_name: Hispanic Federation
+    summary: Taking Hispanic Causes to Heart
+  hks_harvard_edu:
+    feed_url: https://www.hks.harvard.edu/rss.xml
+    homepage_url: https://www.hks.harvard.edu
+    display_name: Harvard Kennedy School
+    summary: Updates from Harvard Kennedy School.
   nautilus:
     feed_url: https://nautil.us/feed/
     homepage_url: https://nautil.us
