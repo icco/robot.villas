@@ -291,6 +291,256 @@ bots:
     display_name: NYT > Technology
     summary: Technology news from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
+  chris_lamb:
+    feed_url: https://chris-lamb.co.uk/feed
+    homepage_url: https://chris-lamb.co.uk
+    display_name: lamby
+    summary: Updates from lamby.
+  chrisjdavis:
+    feed_url: https://www.chrisjdavis.org/feed.xml
+    homepage_url: https://chrisjdavis.org
+    display_name: SSWI
+    summary: A collection of links, videos, photos and sometimes, just sometimes, missives from the master of Sillyness himself, Chris J. Davis.
+  chriskiehl:
+    feed_url: https://chriskiehl.com/rss.xml
+    homepage_url: https://chriskiehl.com
+    display_name: chriskiehl.com
+    summary: The blog where I pretend to be good at stuff
+  christacy_blogspot:
+    feed_url: https://christacy.blogspot.com/feeds/posts/default
+    homepage_url: https://christacy.blogspot.com
+    display_name: '...deep in the weeds'
+    summary: Updates from ...deep in the weeds.
+  cloudatomiclab:
+    feed_url: https://www.cloudatomiclab.com/index.xml
+    homepage_url: https://www.cloudatomiclab.com
+    display_name: Cloud Atomic Laboratory
+    summary: Recent content on Cloud Atomic Laboratory
+  cloudfoundry:
+    feed_url: https://www.cloudfoundry.org/feed/
+    homepage_url: https://www.cloudfoundry.org
+    display_name: Cloud Foundry
+    summary: The industry standard cloud application platform
+  codeforamerica:
+    feed_url: https://codeforamerica.org/feed/
+    homepage_url: https://codeforamerica.org
+    display_name: Code for America
+    summary: Government can and should work well for everyone. We’re people-centered problem solvers showing that it’s possible.
+  codewords_recurse:
+    feed_url: https://codewords.recurse.com/feed.xml
+    homepage_url: https://codewords.recurse.com
+    display_name: Code Words
+    summary: Updates from Code Words.
+  cointelegraph:
+    feed_url: https://cointelegraph.com/rss
+    homepage_url: https://cointelegraph.com
+    display_name: Cointelegraph.com News
+    summary: Cointelegraph covers fintech, blockchain and Bitcoin bringing you the latest crypto news and analyses on the future of money.
+  comicbookmovie:
+    feed_url: https://comicbookmovie.com/rss/
+    homepage_url: https://comicbookmovie.com
+    display_name: Comic Book Movie
+    summary: Keep up to date with the latest and greatest in comic book, superhero, and pop culture movie and TV news, rumors, videos, and more with ComicBookMovie.com!
+  commoncrawl:
+    feed_url: https://www.commoncrawl.org/blog/rss.xml
+    homepage_url: https://www.commoncrawl.org
+    display_name: Common Crawl
+    summary: The latest news and announcements from Common Crawl
+  commondreams:
+    feed_url: https://www.commondreams.org/feeds/feed.rss
+    homepage_url: https://www.commondreams.org
+    display_name: Common Dreams
+    summary: Common Dreams
+  computerhistory:
+    feed_url: https://computerhistory.org/feed/
+    homepage_url: https://computerhistory.org
+    display_name: CHM
+    summary: Computer History Museum
+  coolmaterial:
+    feed_url: https://coolmaterial.com/feed/
+    homepage_url: https://coolmaterial.com
+    display_name: Cool Material
+    summary: Updates from Cool Material.
+  creativereview:
+    feed_url: https://www.creativereview.co.uk/feed/
+    homepage_url: https://www.creativereview.co.uk
+    display_name: Creative Review
+    summary: The best in creativity
+  cringely:
+    feed_url: https://www.cringely.com/feed/
+    homepage_url: https://www.cringely.com
+    display_name: I, Cringely
+    summary: on technology
+  crunchyroll:
+    feed_url: https://www.crunchyroll.com/rss/
+    homepage_url: http://www.crunchyroll.com
+    display_name: Latest Crunchyroll Videos
+    summary: Check out the newest videos on Crunchyroll.
+  current:
+    feed_url: https://current.org/feed/
+    homepage_url: https://current.org
+    display_name: Current
+    summary: For people in public media
+  cursor:
+    feed_url: https://cursor.com/atom.xml
+    homepage_url: https://cursor.com
+    display_name: Cursor Blog | RSS Feed
+    summary: Updates from Cursor Blog | RSS Feed.
+  cyberlaw_stanford_edu:
+    feed_url: https://cyberlaw.stanford.edu/publications/rss/
+    homepage_url: https://cyberlaw.stanford.edu
+    display_name: Stanford CIS
+    summary: The Center for Internet and Society at Stanford Law School is a leader in the study of the law and policy around the Internet and other emerging technologies.
+  cyberscoop:
+    feed_url: https://cyberscoop.com/feed/
+    homepage_url: https://cyberscoop.com
+    display_name: CyberScoop
+    summary: Updates from CyberScoop.
+  damieng:
+    feed_url: https://damieng.com/rss.xml
+    homepage_url: https://damieng.com
+    display_name: DamienG's Blog
+    summary: Damien Guard on software development, typography, vintage computing, and .NET.
+  datapointed:
+    feed_url: https://www.datapointed.net/feed/
+    homepage_url: https://www.datapointed.net
+    display_name: Data Pointed
+    summary: Data, Visualization, and Art
+  dave_is:
+    feed_url: https://dave.is/atom.xml
+    homepage_url: https://dave.is
+    display_name: David Albert
+    summary: Updates from David Albert.
+  daverupert:
+    feed_url: https://daverupert.com/atom.xml
+    homepage_url: https://daverupert.com
+    display_name: daverupert.com
+    summary: The personal blog of Dave Rupert, web developer and podcaster from Austin, TX.
+  dayoneapp:
+    feed_url: https://dayoneapp.com/feed/
+    homepage_url: https://dayoneapp.com
+    display_name: Day One | Your Journal for Life
+    summary: Day One is the award-winning journaling app for iPhone, Android, iPad and Apple Watch.
+  dazeddigital:
+    feed_url: https://www.dazeddigital.com/rss
+    homepage_url: https://www.dazeddigital.com
+    display_name: Dazed
+    summary: Updates from Dazed.
+  dcrainmaker:
+    feed_url: https://www.dcrainmaker.com/feed
+    homepage_url: https://www.dcrainmaker.com
+    display_name: DC Rainmaker
+    summary: Updates from DC Rainmaker.
+  debian:
+    feed_url: https://www.debian.org/News/news
+    homepage_url: https://www.debian.org/News
+    display_name: Debian News
+    summary: Debian Latest News
+  deepmind_google:
+    feed_url: https://deepmind.google/blog/rss.xml
+    homepage_url: https://deepmind.google/blog
+    display_name: Google DeepMind News
+    summary: Read the latest articles and stories from DeepMind and find out more about our latest breakthroughs in cutting-edge AI research.
+  defcon:
+    feed_url: https://www.defcon.org/defconrss.xml
+    homepage_url: https://www.defcon.org
+    display_name: DEF CON Announcements!
+    summary: 'DEFCON is the world''s largest annual hacker convention, held every year in Las Vegas, Nevada. The first DEFCON took place in June 1993. DEF CON is renowned for the "arcane arts" of drinking, socializing, debugging, and crowd control. DEFCON is what you make of it, so get involved and help the community grow. This Feed will keep you up to date with some announcements surrounding pre and post con events, references to DEFCON in the news, and other errata. For the most up to date information visit '
+  degoes:
+    feed_url: https://degoes.net/feed.xml
+    homepage_url: https://degoes.net
+    display_name: John A De Goes
+    summary: Updates from John A De Goes.
+  dereklow_co:
+    feed_url: https://dereklow.co/rss/
+    homepage_url: https://dereklow.co
+    display_name: Derek Low
+    summary: Stories about travels and startups
+  designobserver:
+    feed_url: https://designobserver.com/feed/
+    homepage_url: https://designobserver.com
+    display_name: DesignObserver
+    summary: Writings on Design + Visual Culture
+  designyoutrust:
+    feed_url: https://designyoutrust.com/feed/
+    homepage_url: https://designyoutrust.com
+    display_name: Design You Trust
+    summary: Updates from Design You Trust.
+  dev_jdherg:
+    feed_url: http://dev.jdherg.com/feeds/all.atom.xml
+    homepage_url: http://dev.jdherg.com
+    display_name: John Hergenroeder
+    summary: Updates from John Hergenroeder.
+  developmentseed:
+    feed_url: https://developmentseed.org/rss.xml
+    homepage_url: https://developmentseed.org
+    display_name: Insights and musing from Development Seed
+    summary: See our planet better.
+  dgtlgrove:
+    feed_url: https://www.dgtlgrove.com/feed
+    homepage_url: https://www.dgtlgrove.com
+    display_name: Digital Grove
+    summary: Towards better computers.
+  dictionaryofobscuresorrows:
+    feed_url: https://dictionaryofobscuresorrows.com/rss
+    homepage_url: https://dictionaryofobscuresorrows.com
+    display_name: The Dictionary of Obscure Sorrows
+    summary: '“Creates beautiful new words that we need but do not yet have.” — John Green, author of The Fault in Our Stars The Book - NOW AVAILABLE FOR PRE-ORDER! It’s finally here. 12 years in the making, 300 pages, 70% new material, including longer video-like definitions, otherworldly illustrations, and some thoughts on language and the meaning of life. Pre-order your copy here (click links on the right): https://www.simonandschuster.com/books/The-Dictionary-of-Obscure-Sorrows/John-Koenig/9781501153648 C'
+  digitalcommons_calpoly_edu:
+    feed_url: https://digitalcommons.calpoly.edu/recent.rss
+    homepage_url: https://digitalcommons.calpoly.edu
+    display_name: DigitalCommons@CalPoly
+    summary: Recent documents in DigitalCommons@CalPoly
+  digitizor:
+    feed_url: https://digitizor.com/feed/
+    homepage_url: https://digitizor.com
+    display_name: Digitizor
+    summary: Your guide to everything Technology.
+  dish_andrewsullivan:
+    feed_url: https://dish.andrewsullivan.com/feed/
+    homepage_url: https://dish.andrewsullivan.com
+    display_name: The Dish
+    summary: Updates from The Dish.
+  distractify:
+    feed_url: https://www.distractify.com/rss
+    homepage_url: https://www.distractify.com
+    display_name: Distractify
+    summary: Latest news and updates
+  diyphotography:
+    feed_url: https://www.diyphotography.net/feed/
+    homepage_url: https://www.diyphotography.net
+    display_name: DIY Photography
+    summary: Your one stop shop for everything photo and video
+  djr:
+    feed_url: https://djr.com/feed.rss
+    homepage_url: https://djr.com
+    display_name: David Jonathan Ross
+    summary: Typeface design and typography by David Jonathan Ross.
+  docs_litellm_ai:
+    feed_url: https://docs.litellm.ai/blog/rss.xml
+    homepage_url: https://docs.litellm.ai/blog
+    display_name: liteLLM Blog
+    summary: liteLLM Blog
+  dresdencodak_tumblr:
+    feed_url: https://dresdencodak.tumblr.com/rss
+    homepage_url: https://dresdencodak.tumblr.com
+    display_name: Dresden Codak
+    summary: My name is Sen (she/her) and I make comics! Patreon | dresdencodak
+  drivesaversdatarecovery:
+    feed_url: https://drivesaversdatarecovery.com/feed/
+    homepage_url: https://drivesaversdatarecovery.com
+    display_name: DriveSavers Data Recovery Services
+    summary: The Worldwide Leader in Data Recovery
+  dwmkerr:
+    feed_url: https://dwmkerr.com/index.xml
+    homepage_url: https://dwmkerr.com
+    display_name: dwmkerr.com
+    summary: Recent content on dwmkerr.com
+  dxomark:
+    feed_url: https://www.dxomark.com/feed/
+    homepage_url: https://www.dxomark.com
+    display_name: DXOMARK
+    summary: The leading source of independent audio, display, battery and image quality measurements and ratings for smartphone, camera, lens, wireless speaker and laptop since 2008.
   nyt_science:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/Science.xml
     homepage_url: https://www.nytimes.com/section/science
