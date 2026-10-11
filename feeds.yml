@@ -39,6 +39,256 @@ bots:
     display_name: Micah Lee
     summary: Security, privacy, journalism, and tools to help journalists, researchers, and activists stay safe and productive.
     profile_photo: https://storage.ghost.io/c/ab/b9/abb95af0-3cb7-4e49-a6c2-c87b36f5d5c2/content/images/size/w256h256/2025/02/programming.png
+  bloomberg:
+    feed_url: https://www.bloomberg.com/feeds/markets/news.rss
+    homepage_url: http://bloomberg.com/markets
+    display_name: Bloomberg Markets
+    summary: Bloomberg Markets
+  theatlantic:
+    feed_url: https://www.theatlantic.com/feed/all/
+    homepage_url: https://www.theatlantic.com
+    display_name: The Atlantic
+    summary: Updates from The Atlantic.
+  slate:
+    feed_url: https://slate.com/feeds/all.rss
+    homepage_url: https://slate.com
+    display_name: Slate Magazine
+    summary: Slate RSS
+  economist:
+    feed_url: https://www.economist.com/latest/rss.xml
+    homepage_url: https://www.economist.com/latest
+    display_name: Latest Updates
+    summary: The most recent blogs and online articles from The Economist
+  kickstarter:
+    feed_url: https://www.kickstarter.com/blog.atom
+    homepage_url: https://www.kickstarter.com/blog
+    display_name: Kickstarter News Archive
+    summary: Updates from Kickstarter News Archive.
+  qz:
+    feed_url: https://qz.com/rss
+    homepage_url: https://qz.com
+    display_name: Quartz
+    summary: Quartz is a guide to the new global economy for people who are excited by change. We cover business, finance, economics, technology, lifestyle, and leadership.
+  cnbc:
+    feed_url: https://www.cnbc.com/id/100003114/device/rss/rss.html
+    homepage_url: https://www.cnbc.com/us-top-news-and-analysis
+    display_name: US Top News and Analysis
+    summary: CNBC is the world leader in business news and real-time financial market coverage. Find fast, actionable information.
+  inc:
+    feed_url: https://www.inc.com/rss
+    homepage_url: https://inc.com
+    display_name: Inc.com
+    summary: Inc.com, the daily resource for entrepreneurs.
+  londonist:
+    feed_url: https://londonist.com/feed
+    homepage_url: https://londonist.com
+    display_name: Londonist
+    summary: A website about London
+  marco:
+    feed_url: https://marco.org/rss
+    homepage_url: https://marco.org
+    display_name: Marco.org
+    summary: I’m Marco Arment, creator of Overcast, technology podcaster and writer, and coffee enthusiast.
+  theonion:
+    feed_url: https://theonion.com/feed/
+    homepage_url: https://theonion.com
+    display_name: The Onion
+    summary: America’s Finest News Source
+  blog_google:
+    feed_url: https://blog.google/rss/
+    homepage_url: https://blog.google
+    display_name: News from Google
+    summary: News from Google
+  dezeen:
+    feed_url: https://www.dezeen.com/feed/
+    homepage_url: https://www.dezeen.com
+    display_name: Dezeen
+    summary: architecture and design magazine
+  hollywoodreporter:
+    feed_url: https://www.hollywoodreporter.com/feed/
+    homepage_url: https://www.hollywoodreporter.com
+    display_name: The Hollywood Reporter
+    summary: Movie news, TV news, awards news, lifestyle news, business news and more from The Hollywood Reporter.
+  theregister:
+    feed_url: https://api.theregister.com/api/v1/article?orderBy=published&site_id=2&remapper=rss
+    homepage_url: https://www.theregister.com
+    display_name: www.theregister.com - Articles
+    summary: Articles from www.theregister.com
+  geekwire:
+    feed_url: https://www.geekwire.com/feed/
+    homepage_url: https://www.geekwire.com
+    display_name: GeekWire
+    summary: Breaking News in Technology & Business
+  hackernoon:
+    feed_url: https://hackernoon.com/feed
+    homepage_url: https://hackernoon.com
+    display_name: HackerNoon
+    summary: How hackers start their afternoons.
+  readwrite:
+    feed_url: https://readwrite.com/feed/
+    homepage_url: https://readwrite.com
+    display_name: ReadWrite
+    summary: Crypto, Gaming & Emerging Tech News
+  thewebivore:
+    feed_url: https://thewebivore.com/feed/
+    homepage_url: https://thewebivore.com
+    display_name: Pam The Webivore
+    summary: Updates from Pam The Webivore.
+  unsplash:
+    feed_url: https://unsplash.com/blog/rss/
+    homepage_url: https://unsplash.com/blog
+    display_name: Unsplash
+    summary: Stories from the community powering the internet’s visuals.
+  esquire:
+    feed_url: https://www.esquire.com/rss/all.xml
+    homepage_url: https://www.esquire.com
+    display_name: Esquire
+    summary: The latest stories from Esquire.
+  infoq:
+    feed_url: https://feed.infoq.com/
+    homepage_url: https://www.infoq.com
+    display_name: InfoQ
+    summary: InfoQ feed
+  blog_mozilla:
+    feed_url: https://blog.mozilla.org/en/feed/
+    homepage_url: https://blog.mozilla.org/en
+    display_name: The Mozilla Blog
+    summary: News and Updates about Mozilla
+  cnet:
+    feed_url: https://www.cnet.com/rss/all/
+    homepage_url: https://www.cnet.com
+    display_name: CNET
+    summary: Updates from CNET.
+  core77:
+    feed_url: http://feeds.feedburner.com/core77/blog
+    homepage_url: https://www.core77.com
+    display_name: Core77
+    summary: Launched in 1995, Core77 serves a devoted global audience of design professionals, corporations, students, enthusiasts and fans.
+  krebsonsecurity:
+    feed_url: https://krebsonsecurity.com/feed/
+    homepage_url: https://krebsonsecurity.com
+    display_name: Krebs on Security
+    summary: In-depth security news and investigation
+  thefader:
+    feed_url: http://feeds.feedburner.com/TheFaderMagazine/
+    homepage_url: https://www.thefader.com
+    display_name: The FADER
+    summary: The FADER is the definitive voice of music and the lifestyle that surrounds it.
+  designboom:
+    feed_url: https://www.designboom.com/feed/
+    homepage_url: https://www.designboom.com
+    display_name: designboom | architecture & design magazine
+    summary: designboom magazine | your first source for architecture, design & art news
+  djtechtools:
+    feed_url: https://djtechtools.com/feed/
+    homepage_url: https://djtechtools.com
+    display_name: DJ TechTools
+    summary: The largest community for DJ and producer techniques, tutorials, and tips. Traktor secrets, controller reviews, a massive MIDI mapping library, and more.
+  feedly:
+    feed_url: https://feedly.com/new-features/feed.xml
+    homepage_url: https://feedly.com/new-features
+    display_name: New in Feedly
+    summary: Updates from New in Feedly.
+  ifixit:
+    feed_url: https://www.ifixit.com/News/rss
+    homepage_url: https://www.ifixit.com/News
+    display_name: iFixit News
+    summary: Fixing the world, one gizmo at a time.
+  nerdist:
+    feed_url: https://nerdist.com/feed/
+    homepage_url: https://nerdist.com
+    display_name: Nerdist
+    summary: Nerdist.com
+  nypost:
+    feed_url: https://nypost.com/feed/
+    homepage_url: https://nypost.com
+    display_name: New York Post
+    summary: Your source for breaking news, news about New York, sports, business, entertainment, opinion, real estate, culture, fashion, and more.
+  vanityfair:
+    feed_url: https://www.vanityfair.com/feed/rss
+    homepage_url: https://www.vanityfair.com
+    display_name: Vanity Fair
+    summary: The latest from www.vanityfair.com
+  highscalability:
+    feed_url: https://highscalability.com/rss/
+    homepage_url: https://highscalability.com
+    display_name: High Scalability
+    summary: Building bigger, faster, more reliable websites.
+  macrumors:
+    feed_url: https://feeds.macrumors.com/MacRumors-All
+    homepage_url: https://www.macrumors.com
+    display_name: 'MacRumors: Mac News and Rumors - All Stories'
+    summary: Apple, iPhone, iPad, Mac News and Rumors
+  thepointsguy:
+    feed_url: https://thepointsguy.com/feed/
+    homepage_url: https://thepointsguy.com/feeds/the-points-guy
+    display_name: The Points Guy Articles
+    summary: The Points Guy Articles Feed
+  androidauthority:
+    feed_url: https://www.androidauthority.com/feed/
+    homepage_url: https://www.androidauthority.com
+    display_name: Android Authority
+    summary: Android News, Reviews, How To
+  behance:
+    feed_url: https://www.behance.net/feeds/user?username=rss
+    homepage_url: https://behance.net
+    display_name: RS S
+    summary: RS S Personal RSS Feed
+  go_dev:
+    feed_url: https://go.dev/blog/feed.atom
+    homepage_url: https://go.dev/blog
+    display_name: The Go Blog
+    summary: Updates from The Go Blog.
+  dailydot:
+    feed_url: https://dailydot.com/feed
+    homepage_url: https://dailydot.com
+    display_name: The Daily Dot
+    summary: The Daily Dot | Your Internet. Your Internet news.
+  motherjones:
+    feed_url: https://www.motherjones.com/feed/
+    homepage_url: https://www.motherjones.com
+    display_name: Mother Jones
+    summary: Smart, fearless journalism
+  raspberrypi:
+    feed_url: https://www.raspberrypi.com/news/feed/
+    homepage_url: https://www.raspberrypi.org
+    display_name: News - Raspberry Pi
+    summary: From industries large and small, to the kitchen table tinkerer, to the classroom coder, we make computing accessible and affordable for everybody
+  thoughtbot:
+    feed_url: https://feed.thoughtbot.com/
+    homepage_url: https://thoughtbot.com/blog
+    display_name: Giant Robots Smashing Into Other Giant Robots
+    summary: Updates from Giant Robots Smashing Into Other Giant Robots.
+  zdnet:
+    feed_url: https://www.zdnet.com/rss/all/
+    homepage_url: https://www.zdnet.com
+    display_name: ZDNET
+    summary: Updates from ZDNET.
+  blog_samaltman:
+    feed_url: https://blog.samaltman.com/posts.atom
+    homepage_url: https://blog.samaltman.com
+    display_name: Sam Altman
+    summary: Updates from Sam Altman.
+  boston:
+    feed_url: https://www.boston.com/feed/
+    homepage_url: https://www.boston.com
+    display_name: Boston.com
+    summary: Boston.com
+  gamedeveloper:
+    feed_url: https://www.gamedeveloper.com/rss.xml
+    homepage_url: https://www.gamedeveloper.com
+    display_name: gamedeveloper
+    summary: Public RSS feed
+  jezebel:
+    feed_url: https://www.jezebel.com/rss.xml
+    homepage_url: https://www.jezebel.com
+    display_name: Jezebel
+    summary: Jezebel is committed to championing diverse voices and journalism that challenges the powers that be
+  producthunt:
+    feed_url: https://www.producthunt.com/feed
+    homepage_url: https://www.producthunt.com
+    display_name: Product Hunt — The best new products, every day
+    summary: Updates from Product Hunt — The best new products, every day.
   chronogram:
     feed_url: https://www.chronogram.com/feed/
     homepage_url: https://www.chronogram.com
