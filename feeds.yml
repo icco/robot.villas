@@ -1372,6 +1372,256 @@ bots:
     homepage_url: https://figbert.com/
     display_name: FIGBERT
     summary: Projects, reading, and reflections from Benji Welner.
+  storybook_js:
+    feed_url: https://storybook.js.org/blog/rss
+    homepage_url: https://storybook.js.org/blog
+    display_name: Storybook Blog
+    summary: Thoughts, stories and ideas.
+  storytotell:
+    feed_url: https://storytotell.org/feed.rss
+    homepage_url: https://storytotell.org
+    display_name: Daniel's Blog
+    summary: Feed for Daniel's Blog
+  straightdope:
+    feed_url: https://www.straightdope.com/rss/index.xml
+    homepage_url: https://www.straightdope.com
+    display_name: The Straight Dope - All
+    summary: Updates from The Straight Dope - All.
+  straitstimes:
+    feed_url: https://www.straitstimes.com/rss.xml
+    homepage_url: https://www.straitstimes.com
+    display_name: The Straits Times
+    summary: Updates from The Straits Times.
+  streetfightmag:
+    feed_url: https://streetfightmag.com/feed/
+    homepage_url: https://streetfightmag.com
+    display_name: Street Fight
+    summary: StreetFight follows the dynamic disruption taking place in multi-location (MULO) marketing.
+  bairesdev:
+    feed_url: https://www.bairesdev.com/blog/feed/
+    homepage_url: https://www.bairesdev.com/blog
+    display_name: 'BairesDev Blog: Insights on Software Development & Tech Talent'
+    summary: 'BairesDev''s Blog: Software Development Outsourcing News & Info. Articles about Technology, Business, Talent, Innovation & more.'
+  striso:
+    feed_url: https://www.striso.org/feed/
+    homepage_url: https://www.striso.org
+    display_name: Striso
+    summary: A new intuitive, portable and expressive music instrument
+  stritar:
+    feed_url: http://stritar.net/Rss/Blog.aspx
+    homepage_url: http://www.stritar.net
+    display_name: Stritar's chronolog
+    summary: Recent blog posts
+  strudel_cc:
+    feed_url: https://strudel.cc/rss.xml
+    homepage_url: https://strudel.cc
+    display_name: Strudel Blog
+    summary: The Strudel Blog will keep you updated with the latest changes and things happening in the strudelsphere.
+  strugglers_net__andy:
+    feed_url: https://strugglers.net/atom.xml
+    homepage_url: https://strugglers.net
+    display_name: The Ongoing Struggle
+    summary: Updates from The Ongoing Struggle.
+  stu_mp:
+    feed_url: http://stu.mp/feed
+    homepage_url: https://stu.mp
+    display_name: stu.mp
+    summary: Just another WordPress weblog
+  stubbornmule:
+    feed_url: https://www.stubbornmule.net/feed/
+    homepage_url: https://www.stubbornmule.net
+    display_name: Stubborn Mule
+    summary: Obstinately objective
+  stuckinthevalley_tumblr:
+    feed_url: https://stuckinthevalley.tumblr.com/rss
+    homepage_url: https://stuckinthevalley.tumblr.com
+    display_name: In the Valley
+    summary: Updates from In the Valley.
+  stylebubble:
+    feed_url: https://stylebubble.co.uk/feed
+    homepage_url: https://stylebubble.co.uk
+    display_name: Style Bubble
+    summary: Bubbling up since 2006
+  stylist:
+    feed_url: https://www.stylist.co.uk/feed
+    homepage_url: https://www.stylist.co.uk
+    display_name: Stylist
+    summary: Stylist is the online home of Stylist Magazine, featuring all of the latest lifestyle, fashion, beauty, travel, wellness & entertainment news, all through a feminist lens.
+  sub_reality:
+    feed_url: https://sub-reality.org/feed
+    homepage_url: https://sub-reality.org
+    display_name: world dream travel
+    summary: Updates from world dream travel.
+  sueodio:
+    feed_url: https://sueodio.com/rss/
+    homepage_url: https://sueodio.com
+    display_name: Sue Odio
+    summary: Operations | People | Communities
+  jdrozd:
+    feed_url: https://jdrozd.com/feed/
+    homepage_url: https://jdrozd.com
+    display_name: Jerzy Drozd
+    summary: Teaching Artist and Cartoonist
+  sunfoundation_tumblr:
+    feed_url: https://sunfoundation.tumblr.com/rss
+    homepage_url: https://sunfoundation.tumblr.com
+    display_name: The Sunlight Foundation
+    summary: We’re a nonpartisan nonprofit trying to make government more transparent and accountable.
+  sunsama:
+    feed_url: https://www.sunsama.com/blog/rss.xml
+    homepage_url: https://www.sunsama.com
+    display_name: Sunsama - Be more intentional with your time
+    summary: Learn healthy work habits.
+  supabase:
+    feed_url: https://supabase.com/rss.xml
+    homepage_url: https://supabase.com
+    display_name: Supabase Blog
+    summary: Latest news from Supabase
+  supermechanical_tumblr:
+    feed_url: https://supermechanical.tumblr.com/rss
+    homepage_url: https://supermechanical.tumblr.com
+    display_name: SUPERMECHANICAL.BLOG
+    summary: Better homes & technology. home how-tos Facebook Twitter about
+  surfer:
+    feed_url: https://www.surfer.com/.rss/feed/2f401c67-8263-44e3-a87b-8bb34bd8ade2.xml
+    homepage_url: https://www.surfer.com
+    display_name: Surfer
+    summary: Surf News, Fantasy Surfer, Photos, Video and Forecasting.
+  surfingcomplexity_blog:
+    feed_url: https://surfingcomplexity.blog/feed/
+    homepage_url: https://surfingcomplexity.blog
+    display_name: Surfing Complexity
+    summary: Lorin Hochstein's ramblings about software, complex systems, and incidents.
+  surrenderat20:
+    feed_url: http://feeds.feedburner.com/surrenderat20
+    homepage_url: http://www.surrenderat20.net
+    display_name: Surrender at 20
+    summary: Updates from Surrender at 20.
+  upwave:
+    feed_url: https://www.upwave.com/feed/
+    homepage_url: https://www.upwave.com
+    display_name: Upwave. Bring Science to Top-of-Funnel.
+    summary: Upwave. Bring Science to Top-of-Funnel.
+  surveymonkey:
+    feed_url: https://www.surveymonkey.com/feed/
+    homepage_url: https://www.surveymonkey.com/curiosity
+    display_name: SurveyMonkey
+    summary: Curiosity at Work
+  survival_burningman:
+    feed_url: https://survival.burningman.org/feed/
+    homepage_url: https://survival.burningman.org
+    display_name: Survival Guide 2026
+    summary: Updates from Survival Guide 2026.
+  survivejs:
+    feed_url: https://survivejs.com/atom.xml
+    homepage_url: https://survivejs.com
+    display_name: SurviveJS
+    summary: Updates from SurviveJS.
+  susam:
+    feed_url: https://susam.net/feed.xml
+    homepage_url: https://susam.net
+    display_name: Susam Pal
+    summary: Updates from Susam Pal.
+  susanjfowler:
+    feed_url: https://www.susanjfowler.com/blog?format=rss
+    homepage_url: https://www.susanjfowler.com/blog
+    display_name: Blog - Susan Fowler
+    summary: Updates from Blog - Susan Fowler.
+  suther_land:
+    feed_url: https://suther.land/index.xml
+    homepage_url: https://suther.land
+    display_name: Sutherland Boswell
+    summary: Recent content on Sutherland Boswell
+  swapped_tumblr:
+    feed_url: https://swapped.tumblr.com/rss
+    homepage_url: https://swapped.tumblr.com
+    display_name: swapped.cc/blog
+    summary: A blog by Alex Pankratov
+  sweet_juniper:
+    feed_url: http://www.sweet-juniper.com/feeds/posts/default
+    homepage_url: http://www.sweet-juniper.com
+    display_name: sweet juniper!
+    summary: Updates from sweet juniper!.
+  swordandlaser:
+    feed_url: http://www.swordandlaser.com/home?format=rss
+    homepage_url: http://www.swordandlaser.com
+    display_name: Sword & Laser
+    summary: Read along with the Sword and Laser book club! From classic science fiction to the latest gritty fantasy, we cover it.
+  swxformat:
+    feed_url: https://swxformat.org/feed/
+    homepage_url: https://swxformat.org
+    display_name: אתר שווה מאד
+    summary: להביא טוב ושפע לעולם
+  security:
+    feed_url: https://www.security.com/rss/v1/blogs/rss.xml
+    homepage_url: https://www.security.com
+    display_name: SECURITY.COM
+    summary: SECURITY.COM Blogs
+  synack:
+    feed_url: https://www.synack.com/feed/
+    homepage_url: https://www.synack.com
+    display_name: Synack
+    summary: Updates from Synack.
+  syncedreview:
+    feed_url: https://syncedreview.com/feed/
+    homepage_url: https://syncedreview.com
+    display_name: Synced
+    summary: AI Technology & Industry Review
+  sysdig:
+    feed_url: https://www.sysdig.com/blog/rss.xml
+    homepage_url: https://www.sysdig.com
+    display_name: Sysdig Blog
+    summary: Updates from Sysdig Blog.
+  sysphere_org__anrxc:
+    feed_url: https://sysphere.org/~anrxc/j/rss.xml
+    homepage_url: https://sysphere.org/~anrxc/j
+    display_name: Unknown and partly hidden
+    summary: journal of Adrian C. (anrxc)
+  system76:
+    feed_url: https://system76.com/blog/rss.xml
+    homepage_url: https://system76.com
+    display_name: System76 Blog RSS Feed
+    summary: System76 Blog RSS Feed
+  t3:
+    feed_url: https://www.t3.com/us/feeds/articletype/review
+    homepage_url: https://www.t3.com/us/review
+    display_name: Latest from T3 in Reviews
+    summary: All the latest reviews content from the T3 team
+  tachingchen:
+    feed_url: https://tachingchen.com/index.xml
+    homepage_url: https://tachingchen.com
+    display_name: Ta Ching Chen
+    summary: Recent content on Ta Ching Chen
+  insufficient_coffee:
+    feed_url: https://insufficient.coffee/atom.xml
+    homepage_url: https://insufficient.coffee
+    display_name: Insufficient.Coffee
+    summary: Updates from Insufficient.Coffee.
+  taggart_tech:
+    feed_url: https://taggart-tech.com/atom.xml
+    homepage_url: https://taggart-tech.com
+    display_name: Taggart Tech
+    summary: Updates from Taggart Tech.
+  tailwindcss:
+    feed_url: https://tailwindcss.com/feeds/feed.xml
+    homepage_url: https://tailwindcss.com/blog
+    display_name: Tailwind CSS Blog
+    summary: All the latest Tailwind CSS news, straight from the team.
+  takeoffvideo:
+    feed_url: https://www.takeoffvideo.com/feed/
+    homepage_url: https://www.takeoffvideo.com
+    display_name: Takeoff
+    summary: Simple Video Collaboration
+  taler:
+    feed_url: https://www.taler.net/en/rss.xml
+    homepage_url: https://taler.net/
+    display_name: Taler.net
+    summary: News posts published by Taler about changes related to Taler, releases and events
+  tantek_pbworks:
+    feed_url: https://tantek.pbworks.com/w/feed/rss
+    homepage_url: http://tantek.pbworks.com
+    display_name: tantek
+    summary: Welcome to Tantek's public PBwiki
   hugh_tipping:
     feed_url: https://techblog.hughtipping.com/feed
     homepage_url: https://techblog.hughtipping.com/
