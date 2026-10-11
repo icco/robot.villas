@@ -1160,6 +1160,256 @@ bots:
     profile_photo: https://en.wikipedia.org/static/apple-touch/wikipedia.png
     default_hashtags:
       - Wikipedia
+  news_xbox:
+    feed_url: https://news.xbox.com/en-us/feed/
+    homepage_url: https://news.xbox.com/en-us
+    display_name: XBOX Wire
+    summary: Your source for news, information, product releases, events, sports, entertainment & exclusive content relating to Xbox
+  newsbusters:
+    feed_url: https://www.newsbusters.org/blog/feed
+    homepage_url: https://www.newsbusters.org
+    display_name: Newsbusters - Welcome to NewsBusters, a project of the Media Research Center (MRC), America’s leadin
+    summary: Updates from Newsbusters - Welcome to NewsBusters, a project of the Media Research Center (MRC), America’s leading media watchdog in documenting, exposing.
+  newsmap_jp:
+    feed_url: https://newsmap.jp/feed/
+    homepage_url: https://newsmap.jp
+    display_name: ニュースマップカジノ
+    summary: ランドカジノの最新ニュースをお届けします。
+  cuimc_columbia_edu:
+    feed_url: https://www.cuimc.columbia.edu/rss.xml
+    homepage_url: https://www.cuimc.columbia.edu
+    display_name: Columbia University Irving Medical Center
+    summary: Updates from Columbia University Irving Medical Center.
+  nextbigwhat:
+    feed_url: https://nextbigwhat.com/feed/
+    homepage_url: https://nextbigwhat.com
+    display_name: nextbigwhat
+    summary: we heart startups
+  nextdraft:
+    feed_url: https://nextdraft.com/archives/feed/
+    homepage_url: https://nextdraft.com
+    display_name: 'NextDraft: The Day''s Most Fascinating News'
+    summary: Real News Daily by Dave Pell, Managing Editor, Internet
+  nextplatform:
+    feed_url: https://www.nextplatform.com/?lab_viewport=rss
+    homepage_url: https://www.nextplatform.com
+    display_name: 'The Next Platform: In-depth coverage of high end computing'
+    summary: 'Articles from The Next Platform: In-depth coverage of high end computing'
+  ngrok:
+    feed_url: https://ngrok.com/blog/rss.xml
+    homepage_url: https://ngrok.com/blog
+    display_name: '[ngrok news]'
+    summary: ngrok is a globally distributed reverse proxy that secures, protects and accelerates your applications and network services, no matter where you run them.
+  nhpr:
+    feed_url: https://www.nhpr.org/latest-from-nhpr-rss.rss
+    homepage_url: https://www.nhpr.org
+    display_name: Latest from NHPR RSS
+    summary: Latest from NHPR RSS
+  nicchan_me:
+    feed_url: https://nicchan.me/feed.xml
+    homepage_url: https://www.nicchan.me
+    display_name: Nic Chan
+    summary: Updates from Nic Chan.
+  niccrane:
+    feed_url: https://niccrane.com/blog.xml
+    homepage_url: https://niccrane.com/blog.html
+    display_name: Nic Crane
+    summary: Updates from Nic Crane.
+  nickbentleygames_wordpress:
+    feed_url: https://nickbentleygames.wordpress.com/feed/
+    homepage_url: https://nickbentleygames.wordpress.com
+    display_name: Nick Bentley Games
+    summary: perfectly simple games
+  nickoneill:
+    feed_url: https://www.nickoneill.com/feed.xml
+    homepage_url: https://www.nickoneill.com
+    display_name: Nick O'Neill
+    summary: Nick O'Neill's personal website.
+  nickyt_co:
+    feed_url: https://www.nickyt.co/feed.xml
+    homepage_url: https://www.nickyt.co
+    display_name: Nick Taylor
+    summary: Nick Taylor is a developer advocate at the intersection of AI, security, and software, building and teaching practical approaches to MCP, AI agents, Zero Trust, and developer infrastructure.
+  nicolaerusan_tumblr:
+    feed_url: https://nicolaerusan.tumblr.com/rss
+    homepage_url: https://nicolaerusan.tumblr.com
+    display_name: how to get your followers up on instagram
+    summary: Both of these sets of users have a lot at stake whenever Insta-gram’s algorithm changes, since they both use the stage to bring in revenue. Getting genuine buy instagram followers cheap 10k is very important, we don’t recommend Fa-Ke instagram followers and engagements. The service team plays an important job for every service. Especially before and after earnings, our specialist service team in our own subjects will be ready to help you every step along the method. Continue Reading
+  nicole_pizza:
+    feed_url: https://nicole.pizza/rss
+    homepage_url: https://nicole.pizza
+    display_name: NICOLE HE'S INTERNET REALM
+    summary: NICOLE HE'S INTERNET REALM
+  niels_ole:
+    feed_url: https://niels-ole.com/feed.xml
+    homepage_url: https://niels-ole.com
+    display_name: Project Blog
+    summary: Focus on AI, Cloud Infrastructure, Linux, Maker Stuff
+  nielsenhayden:
+    feed_url: https://www.nielsenhayden.com/makinglight/feed/
+    homepage_url: https://www.nielsenhayden.com
+    display_name: Making Light – Making Light
+    summary: IncoRporating Electrolite
+  nightlycoding:
+    feed_url: https://nightlycoding.com/feed/
+    homepage_url: https://nightlycoding.com
+    display_name: NightlyCoding
+    summary: Coding in the long hours...
+  nik_art:
+    feed_url: https://nik.art/feed/
+    homepage_url: https://nik.art
+    display_name: nik.art
+    summary: I write for dreamers, doers, and unbroken optimists.
+  nikofischer:
+    feed_url: https://nikofischer.com/rss.xml
+    homepage_url: https://nikofischer.com
+    display_name: NikoFischer.com
+    summary: Updates from NikoFischer.com.
+  nattoli:
+    feed_url: http://www.nattoli.net/rss/blog/nattoli
+    homepage_url: http://www.nattoli.net/blog/nattoli
+    display_name: 'nattoli.net Blog: Nattoli''s blog'
+    summary: Nattoli's blog Blog
+  nirandfar:
+    feed_url: https://www.nirandfar.com/feed/
+    homepage_url: https://www.nirandfar.com
+    display_name: Nir and Far
+    summary: Creating habits and controlling distraction
+  nlihc:
+    feed_url: https://nlihc.org/rss.xml
+    homepage_url: https://nlihc.org
+    display_name: National Low Income Housing Coalition
+    summary: Updates from National Low Income Housing Coalition.
+  nnix:
+    feed_url: https://nnix.com/rss.xml
+    homepage_url: https://nnix.com
+    display_name: nnix.com
+    summary: 'novo nilbud by swamplight: coal’s short but we''ve got plenty of bog in the yard'
+  no_spec:
+    feed_url: https://no-spec.com/feed.xml
+    homepage_url: https://no-spec.com
+    display_name: no-spec
+    summary: Practical advocacy for working designers. Against spec work, against AI-as-shortcut, for fair rates, clear contracts and proof of work.
+  noahpinion_blog:
+    feed_url: https://www.noahpinion.blog/feed
+    homepage_url: https://www.noahpinion.blog
+    display_name: Noahpinion
+    summary: Economics and other interesting stuff
+  nocsdegree:
+    feed_url: https://www.nocsdegree.com/rss/
+    homepage_url: https://www.nocsdegree.com
+    display_name: Learn to code without a CS degree
+    summary: Read 200+ interviews with self-taught and bootcamp-trained developers
+  blog_nocturnalmonkey:
+    feed_url: https://blog.nocturnalmonkey.com/rss/
+    homepage_url: https://blog.nocturnalmonkey.com
+    display_name: Sam Hardacre
+    summary: Semi-coherent thoughts
+  nodejs:
+    feed_url: https://nodejs.org/en/feed/blog.xml
+    homepage_url: https://nodejs.org/en
+    display_name: Node.js Blog
+    summary: Updates from Node.js Blog.
+  nodesource:
+    feed_url: https://nodesource.com/blog/rss
+    homepage_url: https://nodesource.com/blog
+    display_name: The NodeSource Blog
+    summary: Node.js Support, Training and Consulting for the Enterprise, Worldwide
+  noidea_dog:
+    feed_url: https://www.noidea.dog/blog?format=rss
+    homepage_url: https://www.noidea.dog/blog
+    display_name: Blog - No Idea Blog
+    summary: Posts about things.
+  nonscamera:
+    feed_url: https://nonscamera.com/blogs/news.atom
+    homepage_url: https://nonscamera.com/blogs/news
+    display_name: NONS CAMERA - News
+    summary: Updates from NONS CAMERA - News.
+  noodlesoft:
+    feed_url: https://www.noodlesoft.com/feed/
+    homepage_url: https://www.noodlesoft.com
+    display_name: Noodlesoft
+    summary: Noodlesoft - Simply Useful Software
+  noozhawk:
+    feed_url: https://www.noozhawk.com/feed/
+    homepage_url: https://www.noozhawk.com
+    display_name: Noozhawk
+    summary: The freshest news in Santa Barbara County
+  noppanit:
+    feed_url: https://www.noppanit.com/feed.xml
+    homepage_url: https://www.noppanit.com
+    display_name: Noppanit
+    summary: My personal adventure
+  norasamaran:
+    feed_url: https://norasamaran.com/feed/
+    homepage_url: https://norasamaran.com
+    display_name: Dating Tips for the Feminist Man
+    summary: Updates from Dating Tips for the Feminist Man.
+  northeastshooters:
+    feed_url: https://www.northeastshooters.com/xen/ewr-porta/index.rss
+    homepage_url: https://www.northeastshooters.com/xen
+    display_name: Northeastshooters.com Forums
+    summary: Northeastshooters.com - New England's Premier Shooting forum. Discussion on firearm related issues specific to the New England area.
+  norwegianrain:
+    feed_url: https://norwegianrain.com/feed/
+    homepage_url: https://norwegianrain.com
+    display_name: Norwegian Rain
+    summary: Updates from Norwegian Rain.
+  nostarch:
+    feed_url: https://nostarch.com/rss.xml
+    homepage_url: https://nostarch.com
+    display_name: No Starch Press
+    summary: Updates from No Starch Press.
+  notboring_co:
+    feed_url: https://www.notboring.co/feed
+    homepage_url: https://www.notboring.co
+    display_name: Not Boring by Packy McCormick
+    summary: Tech strategy, analysis, and philosophy, but not boring.
+  notemagnet_blogspot:
+    feed_url: https://notemagnet.blogspot.com/feeds/posts/default
+    homepage_url: https://notemagnet.blogspot.com
+    display_name: Greg Smith's Note Magnet
+    summary: Updates from Greg Smith's Note Magnet.
+  notes_jerzygangi:
+    feed_url: https://notes.jerzygangi.com/index.xml
+    homepage_url: http://notes.jerzygangi.com
+    display_name: Jerzy's Notes
+    summary: Recent content on Jerzy's Notes
+  notes_mrjon_es:
+    feed_url: http://notes.mrjon.es/feeds/posts/default
+    homepage_url: http://notes.mrjon.es
+    display_name: notes.mrjon.es
+    summary: Updates from notes.mrjon.es.
+  notfunatparties_substack:
+    feed_url: https://notfunatparties.substack.com/feed
+    homepage_url: https://notfunatparties.substack.com
+    display_name: Not Fun at Parties
+    summary: Stupid memes and ramblings about data, tech & economics. The kind of things that make the wrong kind of people's eyes glaze over.
+  notquitewrong:
+    feed_url: http://feeds.feedburner.com/systemcomic
+    homepage_url: https://www.notquitewrong.com
+    display_name: The System
+    summary: Comics will be posted until morale improves.
+  now_lectronice:
+    feed_url: https://now.lectronice.com/feed.xml
+    homepage_url: https://now.lectronice.com
+    display_name: 'lectronice :: now'
+    summary: 'Updates from lectronice :: now.'
+  circana:
+    feed_url: https://www.circana.com/blog-feed.xml
+    homepage_url: https://www.circana.com/blog
+    display_name: Circana
+    summary: Circana
+  npf:
+    feed_url: https://npf.io/index.xml
+    homepage_url: https://npf.io
+    display_name: npf.io
+    summary: Updates from npf.io.
+  nrkbeta_no:
+    feed_url: https://nrkbeta.no/feed/
+    homepage_url: https://nrkbeta.no
+    display_name: NRKbeta
+    summary: NRKs sandkasse for teknologi og nye medier
   fractal_kitty:
     feed_url: https://www.fractalkitty.com/rss/
     homepage_url: https://www.fractalkitty.com/
