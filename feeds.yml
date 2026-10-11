@@ -3323,6 +3323,280 @@ bots:
     display_name: Xe Iaso
     summary: Technical writing on Nix, Go, and the philosophy of software.
     profile_photo: https://xeiaso.net/static/img/avatar.png
+  distillations:
+    feed_url: https://jasdev.me/atom.xml
+    homepage_url: https://jasdev.me
+    display_name: Distillations - Jasdev Singh
+    summary: 'Jasdev Singh''s Distillations archive of personal essays and technical writing, including Swift and Combine. Latest feed post: March 2021.'
+    profile_photo: https://jasdev.me/public/images/logo.png
+  jason_evanish:
+    feed_url: https://jasonevanish.com/feed/
+    homepage_url: https://jasonevanish.com
+    display_name: Building Customer Driven SaaS Products | Jason Evanish
+    summary: Jason Evanish on SaaS products, customer feedback, product management, leadership, startups, and AI adoption.
+    profile_photo: https://i0.wp.com/jasonevanish.com/wp-content/uploads/2022/10/cropped-Jason-Evanish-Get-Lighthouse-Inc.png?fit=180%2C180&ssl=1
+  math_programming:
+    feed_url: https://www.jeremykun.com/index.xml
+    homepage_url: https://www.jeremykun.com
+    display_name: Math ∩ Programming
+    summary: Jeremy Kun on mathematics, algorithms, programming, cryptography, homomorphic encryption, and short technical updates.
+    profile_photo: https://www.jeremykun.com/apple-touch-icon.png
+  jason_moiron:
+    feed_url: https://jmoiron.net/blog/rss
+    homepage_url: https://jmoiron.net/blog/
+    display_name: jmoiron plays the blues
+    summary: Jason Moiron's essays on software, technology, AI, politics, music, and life.
+  joey_hess:
+    feed_url: https://joeyh.name/blog/index.rss
+    homepage_url: https://joeyh.name/blog/
+    display_name: see shy jo - Joey Hess
+    summary: Joey Hess's personal blog on Debian, free software, git-annex, AI, off-grid living, solar power, and DIY projects.
+  justin_jackson:
+    feed_url: https://justinjackson.ca/feed
+    homepage_url: https://justinjackson.ca
+    display_name: Justin Jackson
+    summary: Justin Jackson on bootstrapping SaaS companies, marketing, podcasting, AI, business ethics, and building a good life.
+    profile_photo: https://justinjackson.ca/img/asset/bWFpbi9icnV0YWwvanVzdGluLWphY2tzb24tZG90cy1jaXJjbGUucG5n/justin-jackson-dots-circle.png?s=8966ce1cf496dce9301fdf6f23ec9d33
+  cool_tools:
+    feed_url: https://kk.org/cooltools/feed/
+    homepage_url: https://kk.org/cooltools
+    display_name: Cool Tools
+    summary: Practical recommendations for tools, books, gadgets, software, and travel, including Cool Tools reviews, Recomendo, and Book Freak.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fkk.org%2Fcooltools&size=128
+  kracekumar:
+    feed_url: https://kracekumar.com/index.xml
+    homepage_url: https://kracekumar.com
+    display_name: Technical Ramblings - Kracekumar
+    summary: 'Kracekumar''s Technical Ramblings on Python, SQLite, developer tools, open source, AI, books, and programming notes. Latest feed post: December 2025.'
+  ktvu_fox_2:
+    feed_url: https://www.ktvu.com/rss.xml
+    homepage_url: https://www.ktvu.com
+    display_name: KTVU FOX 2
+    summary: Local and breaking news from KTVU FOX 2 covering San Francisco, Oakland, San Jose, and the Bay Area, with weather and national coverage.
+    profile_photo: https://static.foxtv.com/static/orion/img/ktvu/favicons/apple-touch-icon-180x180.png
+  sparkfun_learn_blog:
+    feed_url: https://learn.sparkfun.com/feeds/blog
+    homepage_url: https://learn.sparkfun.com/blog
+    display_name: SparkFun Learn Education Blog (Archive)
+    summary: 'SparkFun''s archived Learn education blog about electronics teaching, robotics, soldering workshops, maker events, and open-source hardware. Latest feed post: July 2016.'
+  lawrence_lessig_tumblr:
+    feed_url: https://lessig.tumblr.com/rss
+    homepage_url: https://www.tumblr.com/lessig
+    display_name: LESSIG Blog - Lawrence Lessig
+    summary: 'Lawrence Lessig''s Tumblr archive on democracy, campaign finance, law, copyright, and political reform. Latest feed post: February 2023.'
+  lowendbox:
+    feed_url: https://lowendbox.com/feed/
+    homepage_url: https://lowendbox.com
+    display_name: LowEndBox
+    summary: Budget VPS and hosting offers, industry news, tutorials, reviews, interviews, and community giveaways from LowEndBox.
+    profile_photo: https://lowendbox.com/wp-content/uploads/2021/06/leb_square_200_200_transparent_optimized.png
+  macworld:
+    feed_url: https://www.macworld.com/feed
+    homepage_url: https://www.macworld.com
+    display_name: Macworld
+    summary: Apple and Mac news, reviews, buying advice, how-to guides, security coverage, and sponsored deals from Macworld.
+    profile_photo: https://www.macworld.com/wp-content/uploads/2021/03/cropped-macworld-favicon.png?w=180
+  mahdi_yusuf:
+    feed_url: https://www.mahdiyusuf.com/rss/
+    homepage_url: https://www.mahdiyusuf.com
+    display_name: Mahdi Yusuf
+    summary: Mahdi Yusuf's essays on software engineering, AI coding agents, organizational culture, leadership, and side projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mahdiyusuf.com&size=128
+  marie_claire:
+    feed_url: https://www.marieclaire.com/feeds.xml
+    homepage_url: https://www.marieclaire.com
+    display_name: Marie Claire
+    summary: Fashion, beauty, celebrity and royal news, books, politics, careers, and culture from Marie Claire's US edition.
+    profile_photo: https://cdn.mos.cms.futurecdn.net/flexiimages/ttg0jbzlty1627591120.png
+  marissa_mayer_tumblr:
+    feed_url: https://marissamayr.tumblr.com/rss
+    homepage_url: https://www.tumblr.com/marissamayr
+    display_name: Marissa's Tumblr - Marissa Mayer
+    summary: 'Marissa Mayer''s Tumblr archive of Yahoo leadership updates, company news, reblogs, and personal posts. Latest feed post: June 2017.'
+    profile_photo: https://64.media.tumblr.com/avatar_25092c62bd28_128.pnj
+  mathias_bynens:
+    feed_url: https://mathiasbynens.be/notes.atom
+    homepage_url: https://mathiasbynens.be/notes
+    display_name: Mathias Bynens
+    summary: 'Mathias Bynens''s notes archive on JavaScript, Unicode, browser engines, HTML, CSS, and web development. Latest feed post: April 2019.'
+  matt_mights_blog:
+    feed_url: https://matt.might.net/articles/feed.rss
+    homepage_url: https://matt.might.net/articles/
+    display_name: Matt Might's blog
+    summary: 'Matt Might''s articles on programming, computer science, AI, education, productivity, and behavior change. Latest feed post: January 2024.'
+  matt_mullenweg_photos:
+    feed_url: https://matt.blog/feed/
+    homepage_url: https://matt.blog
+    display_name: Matt on Not-WordPress, mostly photos
+    summary: Matt Mullenweg's photo blog featuring travel, landscapes, friends, and personal snapshots; distinct from his ma.tt blog.
+    profile_photo: https://secure.gravatar.com/blavatar/eef825a9efa93dc9e544af3e746294808fb6d1fb97a3e357dfbab433bda59e38?s=114
+  mattermost_blog:
+    feed_url: https://mattermost.com/feed.xml
+    homepage_url: https://mattermost.com/blog/
+    display_name: Mattermost Blog
+    summary: Official Mattermost blog on secure collaboration, self-hosting, incident response, operational resilience, AI, and product releases.
+    profile_photo: https://mattermost.com/apple-touch-icon.png
+  mcmansion_hell:
+    feed_url: https://mcmansionhell.com/rss
+    homepage_url: https://www.tumblr.com/mcmansionhell
+    display_name: McMansion Hell
+    summary: Kate Wagner's architectural criticism and satire of McMansions, house design, and the built environment, with annotated photographs.
+    profile_photo: https://64.media.tumblr.com/avatar_bf83173c0e09_128.pnj
+  mediaite:
+    feed_url: https://www.mediaite.com/feed/
+    homepage_url: https://www.mediaite.com
+    display_name: Mediaite
+    summary: News and opinion on US politics, television news, media personalities, journalism, entertainment, and sports from Mediaite.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mediaite.com&size=128
+  mixmag:
+    feed_url: https://mixmag.net/rss.xml
+    homepage_url: https://mixmag.net
+    display_name: Mixmag
+    summary: Dance and electronic music news, DJ mixes, club culture, festivals, interviews, music reviews, and gear from Mixmag.
+    profile_photo: https://cdn.craft.cloud/0bfe5635-ac77-4d17-9f4e-811b54bed2f3/builds/a2da8b29-d379-4ddf-9fa9-d67d5080e525/artifacts/apple-touch-icon.png
+  model_view_culture:
+    feed_url: https://modelviewculture.com/feed
+    homepage_url: https://modelviewculture.com
+    display_name: Model View Culture
+    summary: 'Model View Culture''s magazine archive on technology, diversity, labor, accessibility, ethics, and social justice. Latest feed post: October 2020.'
+  modern_luxury:
+    feed_url: https://www.modernluxury.com/feed/
+    homepage_url: https://www.modernluxury.com
+    display_name: Modern Luxury
+    summary: Modern Luxury's multi-city lifestyle coverage of dining, fashion, culture, local personalities, sports, and sponsored events; not limited to San Francisco.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.modernluxury.com&size=128
+  mike_wrobel:
+    feed_url: https://moshi-kun.tumblr.com/rss
+    homepage_url: https://www.tumblr.com/moshi-kun
+    display_name: Mike Wrobel
+    summary: 'Mike Wrobel''s Tumblr archive of pop-culture illustrations, character portraits, art projects, and print releases. Latest feed post: April 2019.'
+    profile_photo: https://64.media.tumblr.com/avatar_034eb1557359_128.pnj
+  mustang_news:
+    feed_url: https://mustangnews.net/feed/
+    homepage_url: https://mustangnews.net
+    display_name: Mustang News
+    summary: Student reporting on Cal Poly and San Luis Obispo, including campus news, local affairs, sports, features, and opinion.
+    profile_photo: https://i0.wp.com/mustangnews.net/wp-content/uploads/2020/02/cropped-MustangNews.png?fit=180%2C180&ssl=1
+  mountain_view_voice:
+    feed_url: https://www.mv-voice.com/feed/
+    homepage_url: https://www.mv-voice.com
+    display_name: Mountain View Voice
+    summary: Nonprofit journalism about Mountain View and the Midpeninsula, with local reporting, opinion, California news, and sponsored features.
+    profile_photo: https://i0.wp.com/www.mv-voice.com/wp-content/uploads/2024/03/mvv-512x512_480.png?fit=180%2C180&ssl=1
+  nbc_bay_area:
+    feed_url: https://www.nbcbayarea.com/?rss=y
+    homepage_url: https://www.nbcbayarea.com
+    display_name: NBC Bay Area
+    summary: NBC Bay Area reporting on San Francisco, San Jose, Oakland, and surrounding communities, plus weather, investigations, sports, and national news.
+    profile_photo: https://media.nbcbayarea.com/2019/09/cropped-NBC_Bay-Area.png?fit=180%2C180&quality=85&strip=all
+  neil_frasers_news:
+    feed_url: https://neil.fraser.name/scripts/atom.py
+    homepage_url: https://neil.fraser.name
+    display_name: Neil Fraser's News
+    summary: Neil Fraser's news and personal projects covering software, unusual hardware, programming education, computing history, and domain-name policy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fneil.fraser.name&size=128
+  evan_martin_tech_notes:
+    feed_url: https://neugierig.org/software/blog/atom.xml
+    homepage_url: https://neugierig.org/software/blog/
+    display_name: Tech Notes - Evan Martin
+    summary: Evan Martin's Tech Notes on programming, build systems, algorithms, software tools, emulation, and technical projects.
+  nieman_foundation:
+    feed_url: https://nieman.harvard.edu/feed/
+    homepage_url: https://nieman.harvard.edu
+    display_name: Nieman Foundation
+    summary: Official Nieman Foundation news about journalism fellowships at Harvard, fellows and alumni, awards, events, and journalism initiatives; not Nieman Lab.
+    profile_photo: https://nieman.harvard.edu/app/uploads/2023/12/cropped-NiemanFavicon-1-180x180.png
+  nithin_bekal:
+    feed_url: https://nithinbekal.com/feed.xml
+    homepage_url: https://nithinbekal.com
+    display_name: Nithin Bekal
+    summary: Nithin Bekal's programming blog on Ruby, Rails, developer tools, Vim, Elixir, and software projects.
+    profile_photo: https://github.com/nithinbekal.png?size=200
+  brian_crabtree:
+    feed_url: https://nnnnnnnn.co/rss.xml
+    homepage_url: https://nnnnnnnn.co
+    display_name: nnnnnnnn.co - Brian Crabtree
+    summary: Brian Crabtree's personal site with logs, sound and music selections, drawings, art, and creative experiments, including 3track mixes.
+  noaa:
+    feed_url: https://www.noaa.gov/rss.xml
+    homepage_url: https://www.noaa.gov
+    display_name: NOAA
+    summary: Official NOAA stories, news, and announcements on oceans, marine life, climate, weather, environmental science, and research.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.noaa.gov&size=128
+  hagiwo:
+    feed_url: https://note.com/solder_state/rss
+    homepage_url: https://note.com/solder_state
+    display_name: HAGIWO
+    summary: HAGIWO's Japanese-language articles on DIY Eurorack modular synthesizers, inexpensive circuits, firmware, module designs, and gear reviews.
+    profile_photo: https://assets.st-note.com/production/uploads/images/93358715/profile_dce711a669585d99709a779321308b6b.png?fit=bounds&format=jpeg&quality=85&width=330
+  time_out_london:
+    feed_url: https://www.timeout.com/london/blog/feed.rss
+    homepage_url: https://www.timeout.com/london
+    display_name: Time Out London
+    summary: Time Out London's news and reviews of restaurants, nightlife, music, theatre, attractions, events, and city life.
+    profile_photo: https://www.timeout.com/static/root-files/favicon-180.png
+  filipa_mendonca_vieira:
+    feed_url: https://okayfail.com/atom.xml
+    homepage_url: https://okayfail.com/
+    display_name: Filipa Mendonca-Vieira
+    summary: Filipa Mendonca-Vieira's essays on programming, AI, identity, raves and music, housing, urbanism, politics, and personal life.
+  one_big_fluke:
+    feed_url: https://www.onebigfluke.com/feeds/posts/default
+    homepage_url: https://www.onebigfluke.com
+    display_name: One Big Fluke
+    summary: 'Brett Slatkin''s One Big Fluke blog on programming, Python, software design, developer careers, and personal reflections. Latest feed post: December 2025.'
+  one_mile_at_a_time:
+    feed_url: https://onemileatatime.com/feed/
+    homepage_url: https://onemileatatime.com
+    display_name: One Mile at a Time
+    summary: Airline and hotel news, first-hand travel reviews, miles and points strategies, elite status, and credit-card offers from One Mile at a Time.
+    profile_photo: https://cdn.onemileatatime.com/wp-content/uploads/2021/02/cropped-cropped-favicon.png?width=180&quality=75&height=180&aspect_ratio=1%3A1
+  brandon_keepers:
+    feed_url: https://opensoul.org/feed.xml
+    homepage_url: https://opensoul.org/
+    display_name: Brandon Keepers
+    summary: 'Brandon Keepers''s archived posts and links on open source, software, maintainership, and developer communities. Latest feed post: July 2016.'
+    profile_photo: https://github.com/bkeepers.png
+  out_magazine:
+    feed_url: https://www.out.com/feeds/feed.rss
+    homepage_url: https://www.out.com
+    display_name: Out Magazine
+    summary: LGBTQ+ entertainment, celebrities, fashion, culture, travel, health, news, and opinion from Out Magazine.
+    profile_photo: https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy81MjI2OTQyNy9vcmlnaW4ucG5nIiwiZXhwaXJlc19hdCI6MTg0Nzc4MjI3N30.BHbVcHqHad2VVw0Ox68_rG7sZiN5HjVFo-jvzf_st10/img.png?width=192&height=192
+  page_six:
+    feed_url: https://pagesix.com/feed/
+    homepage_url: https://pagesix.com
+    display_name: Page Six
+    summary: Celebrity news, entertainment, gossip, royal-family coverage, photos, fashion, and society reporting from Page Six.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpagesix.com&size=128
+  parislemon:
+    feed_url: https://parislemon.com/rss
+    homepage_url: https://www.tumblr.com/parislemon
+    display_name: ParisLemon
+    summary: 'M.G. Siegler''s ParisLemon Tumblr archive of links, quotes, photography, art, technology, and pop-culture reblogs. Latest feed post: February 2022.'
+    profile_photo: https://64.media.tumblr.com/avatar_b65f13721359_128.pnj
+  patagonia_stories:
+    feed_url: https://www.patagonia.com/blog/feed
+    homepage_url: https://www.patagonia.com/stories/
+    display_name: Patagonia Stories
+    summary: Official Patagonia stories on outdoor sports, environmental advocacy, public lands, gear development and care, and food recipes.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.patagonia.com%2Fhome&size=128
+  paul_buchheit:
+    feed_url: https://paulbuchheit.blogspot.com/feeds/posts/default
+    homepage_url: https://paulbuchheit.blogspot.com
+    display_name: Paul Buchheit
+    summary: 'Paul Buchheit''s archived essays on startups, technology, investing, philanthropy, philosophy, and life. Latest feed post: July 2014.'
+  paul_hammants_blog:
+    feed_url: https://paulhammant.com/atom.xml
+    homepage_url: https://paulhammant.com
+    display_name: Paul Hammant's blog
+    summary: Paul Hammant on software delivery, trunk-based development, architecture, build systems, testing, AI, and computing history.
+  pcmag:
+    feed_url: https://www.pcmag.com/feeds/rss/latest
+    homepage_url: https://www.pcmag.com
+    display_name: PCMag
+    summary: Technology news, lab-tested product reviews, buying advice, how-to guides, software, security, and deals from PCMag.
+    profile_photo: https://www.pcmag.com/apple-touch-icon.png
   hackaday:
     feed_url: https://hackaday.com/feed/
     homepage_url: https://hackaday.com
