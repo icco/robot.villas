@@ -14897,256 +14897,264 @@ bots:
     homepage_url: https://www.righto.com
     display_name: Ken Shirriff
     summary: Chip reverse engineering, vintage computer restoration, silicon die photography, and electronics archaeology.
-  expectedbehavior:
-    feed_url: https://www.expectedbehavior.com/building-burndown/feed.xml
-    homepage_url: https://www.expectedbehavior.com/building-burndown
-    display_name: The Burndown Journey
-    summary: Updates from The Burndown Journey.
-  instrumments:
-    feed_url: https://www.instrumments.com/feed/
-    homepage_url: https://www.instrumments.com
-    display_name: Instrumments
-    summary: Updates from Instrumments.
   intellijel:
     feed_url: https://intellijel.com/feed/
     homepage_url: https://intellijel.com
-    display_name: intellijel
-    summary: eurorack modular synthesizers and electronic musical instruments
-  ixdf:
+    display_name: Intellijel
+    summary: Official Intellijel news and firmware changelogs for Eurorack modular synthesizers and electronic musical instruments.
+    profile_photo: https://i0.wp.com/intellijel.com/wp-content/uploads/2015/10/cropped-browser-icon1.jpg?fit=180%2C180&ssl=1
+  interaction_design_foundation:
     feed_url: https://ixdf.org/rss/site_news.xml
     homepage_url: https://ixdf.org/blog
-    display_name: UX Daily - User Experience Daily
-    summary: UX Daily - User Experience Daily
+    display_name: Interaction Design Foundation - UX Daily
+    summary: Interaction Design Foundation articles on UX and UI design, design research, professional communication, and design careers.
+    profile_photo: https://assets.interaction-design.org/build/assets/img/app/apple-touch-icon-D34iMvlS.png
   interfluidity:
-    feed_url: https://www.interfluidity.com/feed
+    feed_url: https://www.interfluidity.com/unify-rss/all-blogs.rss
     homepage_url: https://www.interfluidity.com
     display_name: interfluidity
-    summary: it is what it is.
-  dynatrace:
-    feed_url: https://www.dynatrace.com/news/blog/feed/
-    homepage_url: https://www.dynatrace.com/news/blog
-    display_name: Dynatrace Blog
-    summary: The tech industry is moving fast and our customers are as well. Stay up-to-date with the latest trends, best practices, thought leadership, and our solution's biweekly feature releases.
+    summary: Steve Randy Waldman's essays on economics, finance, politics, institutions, and public policy, combining interfluidity and its newer drafts blog.
+    profile_photo: https://drafts.interfluidity.com/icon/interfluidity-wave-drafts-180x180.png
   internetnews:
     feed_url: https://www.internetnews.com/feed/
     homepage_url: https://www.internetnews.com
     display_name: InternetNews
-    summary: Updates from InternetNews.
-  internetsociety:
+    summary: 'InternetNews archive of enterprise IT, software, networking, security, and technology-business reporting. Latest feed post: April 2022.'
+    profile_photo: https://www.internetnews.com/apple-touch-icon.png
+  internet_society:
     feed_url: https://www.internetsociety.org/feed/
     homepage_url: https://www.internetsociety.org
     display_name: Internet Society
-    summary: 'We are a global charitable organization empowering people to keep the Internet a force for good: open, globally connected, secure, and trustworthy.'
-  intothepixel:
-    feed_url: https://intothepixel.com/feed/
-    homepage_url: https://intothepixel.com
-    display_name: Intothepixel.com
-    summary: Look up the words
-  intu:
+    summary: Internet Society news on Internet access, connectivity, governance, policy, privacy, security, and its global community.
+    profile_photo: https://www.internetsociety.org/wp-content/themes/isoc/dist/images/favicon/apple-icon-57x57.png
+  intuio_blog:
     feed_url: https://intu.io/blog/feed/
     homepage_url: https://intu.io/blog
     display_name: intuio Blog
-    summary: Blogging on User Experience Design, Usability Engineering & User Interface Development
+    summary: intuio articles on user experience design, usability engineering, interface development, design systems, and company news.
+    profile_photo: https://intu.io/assets/images/favicon/apple-touch-icon.png
   inventgeek:
     feed_url: https://www.inventgeek.com/feed/
     homepage_url: https://www.inventgeek.com
-    display_name: Inventgeek.com
-    summary: Invention Through Reinvention
+    display_name: InventGeek
+    summary: 'Jared Bouck''s InventGeek archive of DIY inventions, electronics, computer modifications, repairs, and maker projects. Latest feed post: April 2020.'
   investmentzen:
     feed_url: https://www.investmentzen.com/blog/feed
     homepage_url: http://www.investmentzen.com
     display_name: InvestmentZen
-    summary: Updates from InvestmentZen.
-  invisiblebread:
+    summary: 'InvestmentZen archive of investing, brokerage and robo-advisor reviews, retirement accounts, and personal finance guides. Latest feed posts: August 2022.'
+    profile_photo: https://www.investmentzen.com/blog/wp-content/uploads/2016/03/InvestmentZenFavicon.png
+  invisible_bread:
     feed_url: https://feeds.feedburner.com/InvisibleBread
     homepage_url: https://invisiblebread.com
     display_name: Invisible Bread
-    summary: A webcomic that you'll enjoy if you like comics about things and stuff!
-  invoiceberry:
+    summary: 'Justin Boyd''s Invisible Bread webcomic archive about everyday absurdity, food, friends, and dogs. Latest feed comic: June 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Finvisiblebread.com&size=128
+  invoiceberry_blog:
     feed_url: https://www.invoiceberry.com/blog/feed/
     homepage_url: https://www.invoiceberry.com/blog
     display_name: InvoiceBerry Blog
-    summary: InvoiceBerry's blog about small business news, freelancing and general business guides.
-  iobridge:
-    feed_url: https://iobridge.com/feed/
-    homepage_url: https://iobridge.com
-    display_name: ioBridge – Internet of Things (IoT)
-    summary: Updates from ioBridge – Internet of Things (IoT).
-  ionic:
-    feed_url: https://ionic.io/blog/feed
-    homepage_url: https://ionic.io/blog
-    display_name: Ionic Blog
-    summary: Build amazing native and progressive web apps with the web
-  ipcc_ch:
+    summary: InvoiceBerry articles on small business, freelancing, invoicing, accounting, marketing, and entrepreneurship.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.invoiceberry.com%2Fblog&size=128
+  ionicons:
+    feed_url: https://github.com/ionic-team/ionicons/releases.atom
+    homepage_url: https://ionic.io/ionicons
+    display_name: Ionicons
+    summary: Official releases of Ionicons, Ionic's open-source SVG icon set for web, mobile, and desktop applications.
+    profile_photo: https://ionic.io/apple-icon-57x57.png
+  ipcc:
     feed_url: https://www.ipcc.ch/feed/
     homepage_url: https://www.ipcc.ch
     display_name: IPCC
-    summary: Intergovernmental Panel on Climate Change
-  ir:
+    summary: Official IPCC news on climate assessments, working-group reports, expert reviews, meetings, and climate-science activities.
+    profile_photo: https://www.ipcc.ch/site/assets/themes/ipcc/resources/img/favicon/apple-touch-icon.png
+  ir_net:
     feed_url: http://ir.net/feed/
     homepage_url: http://ir.net
     display_name: IR.net
-    summary: The Latest Breaking Political and Business News
-  isc_sans_edu:
+    summary: 'IR.net archive of political, business, and technology news. Latest feed posts: March 2023.'
+  sans_internet_storm_center:
     feed_url: https://isc.sans.edu/rssfeed.xml
     homepage_url: https://isc.sans.edu
-    display_name: 'SANS Internet Storm Center, InfoCON: green'
-    summary: SANS Internet Storm Center - Cooperative Cyber Security Monitor
+    display_name: SANS Internet Storm Center
+    summary: SANS Internet Storm Center security diaries, incident analysis, threat research, and Stormcast podcast updates.
   ischools:
     feed_url: https://www.ischools.org/blog-feed.xml
     homepage_url: https://www.ischools.org/news
-    display_name: iSchools Inc.
-    summary: The iSchools represent an international organization of over 130 universities.
-  ishadeed:
+    display_name: iSchools
+    summary: News, research, events, and academic job postings from the international iSchools information-science community.
+    profile_photo: https://static.wixstatic.com/media/39c5e8_2bee26c8624e4fbaa6985aea8843d954%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/39c5e8_2bee26c8624e4fbaa6985aea8843d954%7Emv2.jpg
+  ahmad_shadeed:
     feed_url: https://ishadeed.com/feed.xml
     homepage_url: https://ishadeed.com
     display_name: Ahmad Shadeed
-    summary: Deep-dive CSS articles, modern CSS and visual CSS explanations.
-  islandofatlas:
+    summary: Ahmad Shadeed's articles on CSS layouts, frontend development, responsive interfaces, accessibility, and design engineering.
+    profile_photo: https://ishadeed.com/assets/favicon-32x32.png
+  urban_vagabond:
     feed_url: https://islandofatlas.net/atom.xml
     homepage_url: https://islandofatlas.net
-    display_name: urban vagabond
-    summary: Updates from urban vagabond.
+    display_name: Urban Vagabond
+    summary: 'Urban Vagabond travel notes and budget-backpacking advice for Jordan, Israel, and Egypt, plus an older Bay Area guide. Latest feed post: May 2023.'
   islands:
     feed_url: https://www.islands.com/feed/
     homepage_url: https://www.islands.com
-    display_name: 'Islands - Expert Travel Info & Tips: From Islands, to Mountains, & Everything In Between'
-    summary: Islands covers everything you want to do and anywhere you want to travel with expert info, in-depth guides, local tips, and more.
-  issabove:
-    feed_url: http://www.issabove.com/blog?format=rss
-    homepage_url: http://www.issabove.com/blog
-    display_name: Blog - ISS-ABOVE | Track the ISS and See Live Video from Space
-    summary: Updates from Blog - ISS-ABOVE | Track the ISS and See Live Video from Space.
-  issueprojectroom:
+    display_name: Islands
+    summary: Travel reporting and guides on destinations, hotels, outdoor adventures, cruises, food, and local attractions from Islands.
+    profile_photo: https://www.islands.com/img/islands-favicon-512x512.png
+  iss_above:
+    feed_url: https://www.issabove.com/blog?format=rss
+    homepage_url: https://www.issabove.com/blog/
+    display_name: ISS-Above
+    summary: 'ISS-Above blog archive about International Space Station views, space education, STEM events, and the ISS-Above tracker. Latest feed post: September 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.issabove.com%2Fblog&size=128
+  issue_project_room:
     feed_url: https://issueprojectroom.org/events.xml
     homepage_url: https://issueprojectroom.org
-    display_name: 'ISSUE Project Room: Upcoming Events'
-    summary: 'Updates from ISSUE Project Room: Upcoming Events.'
-  istio:
+    display_name: ISSUE Project Room
+    summary: Upcoming experimental music, performance, and interdisciplinary arts events at ISSUE Project Room.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fissueprojectroom.org&size=128
+  istio_blog:
     feed_url: https://istio.io/latest/blog/feed.xml
-    homepage_url: https://istio.io/latest
+    homepage_url: https://istio.io/latest/blog/
     display_name: Istio Blog
-    summary: Blog posts from the Istio service mesh.
-  it_notes_dragas:
+    summary: Official Istio blog on service-mesh features, releases, security, community developments, and technical practices.
+    profile_photo: https://istio.io/latest/favicons/apple-touch-icon-180x180.png
+  it_notes:
     feed_url: https://it-notes.dragas.net/feed.xml
     homepage_url: https://it-notes.dragas.net
     display_name: IT Notes
-    summary: Scattered IT Notes - by Stefano Marinelli
-  itchyi_squarespace:
+    summary: Stefano Marinelli's IT Notes on operating systems, servers, self-hosting, networking, caching, and system administration.
+    profile_photo: https://it-notes.dragas.net/assets/img/favicon-32x32.png
+  itchy_i:
     feed_url: http://itchyi.squarespace.com/thelatest/atom.xml
     homepage_url: http://itchyi.squarespace.com/thelatest
-    display_name: The Latest
-    summary: Updates from The Latest.
-  itooamharvard_tumblr:
+    display_name: itchy i
+    summary: 'itchy i photography and arts blog archive featuring London street scenes, exhibitions, events, and photographic experiments. Latest feed post: September 2015.'
+    profile_photo: http://itchyi.squarespace.com/favicon.png
+  i_too_am_harvard:
     feed_url: https://itooamharvard.tumblr.com/rss
     homepage_url: https://itooamharvard.tumblr.com
     display_name: I, Too, Am Harvard
-    summary: 'A photo campaign highlighting the faces and voices of black students at Harvard College. Our voices often go unheard on this campus, our experiences are devalued, our presence is questioned– this project is our way of speaking back, of claiming this campus, of standing up to say: We are here. This place is ours. We, TOO, are Harvard. The #itooamharvard photo campaign is inspired by I, Too, Am Harvard, a play based on interviews with members of the black community exploring and affirming our dive'
+    summary: 'Archive of the I, Too, Am Harvard photo campaign, student voices, and race-and-advocacy events at Harvard College. Latest feed post: August 2014.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fitooamharvard.tumblr.com&size=128
   itpro:
     feed_url: https://www.itpro.com/feeds.xml
     homepage_url: https://www.itpro.com
-    display_name: Latest from ITPro
-    summary: All the latest content from the ITPro team
-  itsfoss:
+    display_name: ITPro
+    summary: ITPro enterprise technology news and analysis on cybersecurity, cloud, infrastructure, IT leadership, and business policy. ITProPortal redirects to ITPro.
+    profile_photo: https://cdn.mos.cms.futurecdn.net/flexiimages/edzic1oowz1671199822.png
+  its_foss:
     feed_url: https://feed.itsfoss.com/
     homepage_url: https://itsfoss.com
     display_name: It's FOSS
-    summary: Making You a Better Linux User
-  itshouldbeuseful_wordpress:
+    summary: Linux and open-source news, software recommendations, tutorials, and the FOSS Weekly newsletter from It's FOSS.
+    profile_photo: https://itsfoss.com/content/images/size/w256h256/2025/11/android-chrome-512x512.png
+  it_should_be_useful:
     feed_url: https://itshouldbeuseful.wordpress.com/feed/
     homepage_url: https://itshouldbeuseful.wordpress.com
     display_name: it { should be_useful }
-    summary: '[ useful snacks ]'
-  itstactical:
+    summary: 'Archived development notes on Rails, Docker, Linux, testing, command-line tools, and infrastructure. Latest feed posts: February 2017.'
+  its_tactical:
     feed_url: https://www.itstactical.com/feed/
     homepage_url: https://www.itstactical.com
     display_name: ITS Tactical
-    summary: Imminent Threat Solutions
+    summary: 'ITS Tactical archive of preparedness skills, physical security, outdoor equipment, medical supplies, and practical how-to articles. Latest feed post: May 2023.'
+    profile_photo: https://www.itstactical.com/wp-content/themes/its/apple-touch-icon-144x144-precomposed.png
   ivan_bessarabov:
     feed_url: https://ivan.bessarabov.com/blog.rss
     homepage_url: https://ivan.bessarabov.com/blog
-    display_name: Ivan Bessarabov blog
-    summary: Ivan Bessarabov blog
-  ivanzuzak_info:
-    feed_url: http://ivanzuzak.info/atom.xml
+    display_name: Ivan Bessarabov
+    summary: 'Ivan Bessarabov''s blog archive on Home Assistant, Perl, Git, command-line tools, programming, and data analysis. Latest listed posts: 2020.'
+    profile_photo: https://ivan.bessarabov.com/apple-touch-icon.png
+  ivan_zuzak:
+    feed_url: https://ivanzuzak.info/atom.xml
     homepage_url: https://ivanzuzak.info
     display_name: Ivan Zuzak
-    summary: Updates from Ivan Zuzak.
-  ivarch:
+    summary: 'Ivan Zuzak''s archived articles on web engineering, HTTP services, research, and developer tools. Latest feed post: March 2013.'
+    profile_photo: https://github.com/izuzak.png?size=200
+  andrew_wood:
     feed_url: https://www.ivarch.com/social.rss
     homepage_url: https://www.ivarch.com
     display_name: Andrew Wood
-    summary: Public posts from @ivarch@fedi.ivarch.com
-  ivomynttinen:
+    summary: Andrew Wood's public Mastodon posts, including updates on his free-software projects such as Pipe Viewer and Parmo. The RSS is linked from his own website.
+    profile_photo: https://www.ivarch.com/images/icon.png
+  ivo_mynttinen:
     feed_url: https://ivomynttinen.com/rss.xml
     homepage_url: https://ivomynttinen.com
-    display_name: Blog - Ivo Mynttinen
-    summary: Design engineer with a passion for interior design, and homelabbing.
-  iwdrm_tumblr:
+    display_name: Ivo Mynttinen
+    summary: Ivo Mynttinen's writing on interface design, software tools, PDF workflows, personal projects, interior design, and homelabbing.
+    profile_photo: https://ivomynttinen.com/favicon.png
+  if_we_dont_remember_me:
     feed_url: https://iwdrm.tumblr.com/rss
     homepage_url: https://iwdrm.tumblr.com
-    display_name: IF WE DON'T, REMEMBER ME.
-    summary: Updates from IF WE DON'T, REMEMBER ME..
-  labs_iximiuz:
-    feed_url: https://labs.iximiuz.com/feed.rss
-    homepage_url: https://labs.iximiuz.com
-    display_name: iximiuz Labs — All new posts
-    summary: Practice on real servers, solve challenges, and follow guided Linux, Docker, Kubernetes, and Networking learning paths — all from your browser or via SSH.
-  j3s_sh:
+    display_name: If We Don't, Remember Me
+    summary: 'Archive of animated film loops and cinemagraphs from If We Don''t, Remember Me, including commissioned AMC Networks work. Latest feed post: December 2015.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fiwdrm.tumblr.com&size=128
+  iximiuz:
+    feed_url: https://iximiuz.com/feed.rss
+    homepage_url: https://iximiuz.com/en/archive/
+    display_name: iximiuz - Ivan Velichko
+    summary: Ivan Velichko's illustrated articles on containers, Kubernetes, Linux, networking, observability, and software engineering.
+    profile_photo: https://iximiuz.com/img/apple-touch-icon.png
+  jes_olson:
     feed_url: https://j3s.sh/feed.atom
     homepage_url: https://j3s.sh
-    display_name: j3s.sh
-    summary: Updates from j3s.sh.
+    display_name: Jes Olson (j3s.sh)
+    summary: Jes Olson's personal writing on software, infrastructure, online communities, technology ethics, and life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fj3s.sh&size=128
   jack_vanlightly:
     feed_url: https://jack-vanlightly.com/blog?format=rss
     homepage_url: https://jack-vanlightly.com
     display_name: Jack Vanlightly
-    summary: '{ dist sys, formal verification, event streaming }'
-  jackharvest:
+    summary: Jack Vanlightly's technical articles on distributed systems, formal verification, consensus, shared logs, and event streaming.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjack-vanlightly.com&size=128
+  jack_harvest:
     feed_url: https://jackharvest.com/index.php/feed/
     homepage_url: https://jackharvest.com
-    display_name: JackHarvest.com
-    summary: Answers.
-  jacklew_is:
+    display_name: Jack Harvest
+    summary: Jack Harvest's DIY technology guides on NAS builds, 3D printing, media servers, computer hardware, and software projects.
+    profile_photo: https://jackharvest.com/wp-content/uploads/2020/12/cropped-xMyfK1gZ-180x180.jpg
+  jack_lewis:
     feed_url: https://jacklew.is/feed.xml
     homepage_url: https://www.jacklew.is
     display_name: Jack Lewis
-    summary: Updates from Jack Lewis.
-  jacklinke:
+    summary: 'Jack Lewis''s blog archive on custom keyboards, Arduino, Raspberry Pi, Node.js, and Home Assistant. Latest feed post: October 2021.'
+    profile_photo: https://github.com/rhinoceraptor.png?size=200
+  jack_linke:
     feed_url: https://jacklinke.com/rss.xml
     homepage_url: https://jacklinke.com
-    display_name: Jack Linke's Blog
-    summary: Jack Linke's Blog
-  jackmcdade:
+    display_name: Jack Linke
+    summary: Jack Linke's articles on software development, Django, troubleshooting, leadership, and photography.
+    profile_photo: https://cdn.hashnode.com/res/hashnode/image/upload/v1626145857170/hjScNuZS7.jpeg
+  jack_mcdade:
     feed_url: https://jackmcdade.com/articles/rss.xml
     homepage_url: https://jackmcdade.com/articles
-    display_name: Articles by Jack McDade
-    summary: Recent articles by Jack McDade
+    display_name: Jack McDade
+    summary: 'Jack McDade''s archived essays on design, writing, creativity, work, games, and everyday life. Latest feed article: November 2022.'
+    profile_photo: https://jackmcdade.com/img/jack-on-yellow.jpg
   jacks_tumblr:
     feed_url: https://jacks.tumblr.com/rss
     homepage_url: https://jacks.tumblr.com
     display_name: Jack's
-    summary: A sailor, a tailor.
-  jacksongariety:
-    feed_url: https://jacksongariety.com/feed/
-    homepage_url: https://jacksongariety.com
-    display_name: Jackson Gariety
-    summary: Updates from Jackson Gariety.
-  jacobbrazeal_wordpress:
+    summary: 'Jack''s Tumblr archive of reflections on Twitter and Square, user empowerment, speeches, and literary quotations. Latest feed post: April 2014.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjacks.tumblr.com&size=128
+  jacob_brazeal:
     feed_url: https://jacobbrazeal.wordpress.com/feed/
     homepage_url: https://jacobbrazeal.wordpress.com
     display_name: Jacob Brazeal
-    summary: Updates from Jacob Brazeal.
-  jacobtomlinson_dev:
+    summary: Jacob Brazeal's personal articles on software engineering, AI, books, chess, and learning.
+  jacob_tomlinson:
     feed_url: https://jacobtomlinson.dev/feed.xml
     homepage_url: https://jacobtomlinson.dev
     display_name: Jacob Tomlinson
-    summary: Recent content on Jacob Tomlinson
-  jakarta_apache:
+    summary: Jacob Tomlinson's articles on open-source development, Dask, developer tools, distributed computing, and personal projects.
+    profile_photo: https://jacobtomlinson.dev/apple-touch-icon.png
+  apache_jakarta_project:
     feed_url: https://jakarta.apache.org/site/rss.xml
-    homepage_url: http://jakarta.apache.org
+    homepage_url: https://jakarta.apache.org/
     display_name: Apache Jakarta Project
-    summary: News and product releases from Apache's Jakarta Project
+    summary: Archived Apache Jakarta Project news and Java-project releases. Jakarta retired in December 2011; its feed preserves historical announcements.
+    profile_photo: https://jakarta.apache.org/images/jakarta-logo.gif
   chris_siebenmann:
     feed_url: https://utcc.utoronto.ca/~cks/space/blog/?atom
     homepage_url: https://utcc.utoronto.ca/~cks/space/blog/
