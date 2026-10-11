@@ -5129,256 +5129,274 @@ bots:
     display_name: NYT > Opinion
     summary: Opinion and editorials from The New York Times.
     profile_photo: https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png
-  softwarekaizen_substack:
+  software_kaizen:
     feed_url: https://softwarekaizen.substack.com/feed
     homepage_url: https://softwarekaizen.substack.com
     display_name: Software Kaizen
-    summary: A newsletter about finding software delivery excellence.
-  hellofromthemagictavern:
+    summary: Adam Hawkins's Software Kaizen newsletter on software delivery, engineering leadership, systems thinking, and continuous improvement; the feed's latest post is from April 2025.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!8OWi!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F864177f9-6174-44a1-aad1-f8db64c143f2%2Fapple-touch-icon-57x57.png
+  hello_from_the_magic_tavern:
     feed_url: https://hellofromthemagictavern.com/episodes?format=rss
     homepage_url: https://hellofromthemagictavern.com/episodes
-    display_name: Episodes - Hello from the Magic Tavern
-    summary: Updates from Episodes - Hello from the Magic Tavern.
+    display_name: Hello from the Magic Tavern
+    summary: Episode announcements and show notes for Hello from the Magic Tavern, an improvised comedy podcast set in the fantasy world of Foon.
+    profile_photo: https://images.squarespace-cdn.com/content/v1/5d88b1ead6827e7ba648b27c/1569248520445-0J985R69TV3SUH815MS6/favicon.ico?format=100w
   homedit:
     feed_url: https://www.homedit.com/feed/
     homepage_url: https://www.homedit.com
     display_name: Homedit
-    summary: Updates from Homedit.
-  hookrace:
+    summary: Home design and decor inspiration, architecture, furniture, landscaping, and DIY home improvement projects from Homedit.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.homedit.com&size=128
+  hookrace_blog:
     feed_url: https://hookrace.net/blog/feed/
     homepage_url: https://hookrace.net
     display_name: HookRace Blog
-    summary: Updates from HookRace Blog.
+    summary: Dennis Felsing's HookRace blog on programming, database testing, DDNet game development and operations, computers, travel, and personal life.
+    profile_photo: https://hookrace.net/public/apple-touch-icon-precomposed.png
   hothardware:
     feed_url: https://hothardware.com/rss/news.aspx
     homepage_url: https://hothardware.com
-    display_name: HotHardware.com News Rss Feed
-    summary: HotHardware.com News Rss Feed
+    display_name: HotHardware
+    summary: Computing, PC hardware, gaming, gadgets, and technology news from HotHardware; this feed covers news rather than its separate reviews feed.
+    profile_photo: https://hothardware.com/hh-touch-icon-180.png?ver=2
   hotnewhiphop:
     feed_url: https://www.hotnewhiphop.com/feed
     homepage_url: https://www.hotnewhiphop.com
     display_name: HotNewHipHop
-    summary: The Latest Hip Hop News, Songs, Rap Albums & Music, Gossip & Entertainment News, Sneaker Releases, Sports News, TV & Movies, Interviews, Culture & more
-  htmlgoodies:
+    summary: Hip-hop news, songs, albums, interviews, entertainment, culture, sneakers, and sports coverage from HotNewHipHop.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.hotnewhiphop.com&size=128
+  html_goodies:
     feed_url: https://www.htmlgoodies.com/feed/
     homepage_url: https://www.htmlgoodies.com
     display_name: HTML Goodies
-    summary: Updates from HTML Goodies.
-  hungryadmin:
+    summary: HTML Goodies tutorials and resources on web development, HTML, CSS, JavaScript, CMS platforms, and SEO; the feed's latest post is from August 2022.
+    profile_photo: https://www.htmlgoodies.com/apple-touch-icon.png
+  hungry_admin:
     feed_url: https://hungryadmin.com/feeds/all.atom.xml
     homepage_url: https://hungryadmin.com
     display_name: Hungry Admin
-    summary: Updates from Hungry Admin.
-  hvmag:
+    summary: Forrest Alvarez's Hungry Admin blog on software, systems administration, projects, books, work, and employee benefits; the feed's latest post is from February 2021.
+    profile_photo: https://github.com/gravyboat.png?size=200
+  hudson_valley_magazine:
     feed_url: https://hvmag.com/feed/
     homepage_url: https://hvmag.com
     display_name: Hudson Valley Magazine
-    summary: Dining, entertainment and more
-  hyperboleandahalf_blogspot:
-    feed_url: http://feeds.feedburner.com/Hyperbole-and-a-half
-    homepage_url: http://hyperboleandahalf.blogspot.com
+    summary: Hudson Valley Magazine coverage of local dining, arts, events, people, travel, homes, and life in New York's Hudson Valley.
+  hyperbole_and_a_half:
+    feed_url: https://feeds.feedburner.com/Hyperbole-and-a-half
+    homepage_url: https://hyperboleandahalf.blogspot.com
     display_name: Hyperbole and a Half
-    summary: Updates from Hyperbole and a Half.
+    summary: Allie Brosh's illustrated personal stories, comics, and book announcements from Hyperbole and a Half; the feed's latest post is from September 2020.
   ia:
     feed_url: https://ia.net/feed
     homepage_url: https://ia.net
     display_name: iA
-    summary: iA builds products for focus and flow.
-  iamcal:
+    summary: Product announcements and studio writing from iA on writing, presentations, typography, design, iA Writer, iA Presenter, and iA Notebook.
+    profile_photo: https://static.ia.net/favicon-180.png
+  cal_henderson:
     feed_url: https://www.iamcal.com/rss/
-    homepage_url: http://www.iamcal.com
-    display_name: iamcal.com
-    summary: All the links rom iamcal.com
-  ianstormtaylor:
+    homepage_url: https://www.iamcal.com
+    display_name: Cal Henderson
+    summary: Cal Henderson's iamcal.com linklog and personal weblog on software, games, technology, and assorted discoveries.
+    profile_photo: https://github.com/iamcal.png?size=200
+  ian_storm_taylor:
     feed_url: https://ianstormtaylor.com/atom.xml
     homepage_url: https://ianstormtaylor.com
     display_name: Ian Storm Taylor
-    summary: Updates from Ian Storm Taylor.
-  ietf:
+    summary: Ian Storm Taylor's archived essays on interface design and front-end programming; the feed's latest post is from June 2013.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fianstormtaylor.com&size=128
+  ietf_blog:
     feed_url: https://www.ietf.org/blog/feed/
-    homepage_url: https://www.ietf.org/blog
+    homepage_url: https://www.ietf.org/blog/
     display_name: IETF Blog
-    summary: The latest items from the IETF Blog.
+    summary: Official Internet Engineering Task Force blog posts on Internet standards, protocols, meetings, community, and IETF operations.
+    profile_photo: https://www.ietf.org/media/images/ietf-logo-500-square-250x250.original.jpg
   imore:
     feed_url: https://www.imore.com/feeds.xml
     homepage_url: https://www.imore.com
-    display_name: Latest from IMore
-    summary: All the latest content from the IMore team
-  impressivewebs:
+    display_name: iMore
+    summary: Archived iMore news, reviews, buying guides, and how-tos about Apple products and accessories. iMore stopped publishing new content in September 2024.
+    profile_photo: https://cdn.mos.cms.futurecdn.net/flexiimages/99m2rw3pzf1649746644.png
+  impressive_webs:
     feed_url: https://www.impressivewebs.com/feed/
     homepage_url: https://www.impressivewebs.com
     display_name: Impressive Webs
-    summary: Articles on Front-end Web Development
-  incidentalcomics:
-    feed_url: http://feeds.feedburner.com/blogspot/lTBMF
+    summary: Louis Lazaris's articles on HTML, CSS, JavaScript, front-end tools, debugging, and interface design, with occasional sponsored technology articles.
+    profile_photo: https://www.impressivewebs.com/icon.png
+  incidental_comics:
+    feed_url: https://feeds.feedburner.com/blogspot/lTBMF
     homepage_url: http://www.incidentalcomics.com
-    display_name: INCIDENTAL COMICS
-    summary: Updates from INCIDENTAL COMICS.
+    display_name: Incidental Comics
+    summary: 'Grant Snider''s Incidental Comics: illustrated reflections, poetry comics, and book announcements about creativity, reading, and everyday life.'
   increment:
     feed_url: https://increment.com/feed.xml
     homepage_url: https://increment.com
     display_name: Increment
-    summary: A digital magazine about how teams build and operate software systems at scale.
-  influxdata:
+    summary: Archived Increment magazine articles on how teams build and operate software systems at scale; the feed's latest issue is Planning, November 2021.
+    profile_photo: https://increment.com/img/icon-571805a1.png
+  influxdata_blog:
     feed_url: https://www.influxdata.com/feed/
     homepage_url: https://www.influxdata.com/blog
     display_name: InfluxData Blog
-    summary: The place for technical guides, customer observability & IoT use cases, product info, and news on leading time series platform InfluxDB, Telegraf, SQL, & more.
-  insidehighered:
+    summary: InfluxData technical guides, time-series database and observability use cases, and product updates for InfluxDB and Telegraf.
+    profile_photo: https://www.influxdata.com/images/cubo.png
+  inside_higher_ed:
     feed_url: https://www.insidehighered.com/rss.xml
     homepage_url: https://www.insidehighered.com
     display_name: Inside Higher Ed
-    summary: Updates from Inside Higher Ed.
-  intercom:
+    summary: Higher education news and analysis from Inside Higher Ed on colleges, universities, faculty, students, policy, and academic work.
+    profile_photo: https://www.insidehighered.com/sites/default/files/2023-05/ihe-logo-no-wordmark.png
+  the_intercom_blog:
     feed_url: https://www.intercom.com/blog/feed
     homepage_url: https://www.intercom.com/blog
     display_name: The Intercom Blog
-    summary: Articles and Podcasts on Customer Service, AI and Automation, Product, and more.
-  ubuntu:
+    summary: Intercom articles, podcasts, and product announcements on customer service, AI agents, automation, product development, and engineering.
+    profile_photo: https://www.intercom.com/intercom-marketing-site/favicons/favicon-32x32.png
+  ubuntu_blog:
     feed_url: https://ubuntu.com/blog/feed
     homepage_url: https://ubuntu.com/blog
-    display_name: Ubuntu blog
-    summary: Ubuntu blog feed
-  instagram_engineering_tumblr:
+    display_name: Ubuntu Blog
+    summary: Official Ubuntu blog articles from Canonical on Ubuntu releases, security, Linux, cloud infrastructure, developer tools, and open source.
+    profile_photo: https://assets.ubuntu.com/v1/f38b9c7e-COF%20apple-touch-icon.png
+  instagram_engineering:
     feed_url: https://instagram-engineering.tumblr.com/rss
     homepage_url: https://instagram-engineering.tumblr.com
     display_name: Instagram Engineering
-    summary: We’re sharing the tools + techniques we’ve learned in bringing photo-sharing to millions of people
-  interblah:
-    feed_url: http://feeds.feedburner.com/interblah
+    summary: Archived Instagram engineering posts on infrastructure, databases, search, mobile apps, and scaling; this Tumblr feed's latest post is from July 2015.
+    profile_photo: https://api.tumblr.com/v2/blog/instagram-engineering.tumblr.com/avatar/128
+  james_adam:
+    feed_url: https://feeds.feedburner.com/interblah
     homepage_url: https://interblah.net
-    display_name: interblah.net
-    summary: Updates from interblah.net.
-  interestingengineering:
+    display_name: James Adam - interblah.net
+    summary: James Adam's interblah.net blog on software development, Rails, products, work, and personal reflections.
+    profile_photo: https://github.com/lazyatom.png?size=200
+  interesting_engineering:
     feed_url: https://interestingengineering.com/feed
     homepage_url: https://interestingengineering.com
     display_name: Interesting Engineering
-    summary: Updates from Interesting Engineering.
-  spiceworks:
-    feed_url: https://community.spiceworks.com/posts.rss
-    homepage_url: https://www.spiceworks.com
-    display_name: Spiceworks Community - Latest posts
-    summary: Latest posts
-  itch:
+    summary: Interesting Engineering reporting on engineering, technology, science, energy, space, transportation, robotics, and innovation.
+    profile_photo: https://interestingengineering.com/icons/apple-icon-57x57.png?v=14
+  itch_io_featured_games:
     feed_url: https://itch.io/feed/featured.xml
-    homepage_url: http://itch.io
-    display_name: Featured games - itch.io
-    summary: Updates from Featured games - itch.io.
-  itechpost:
+    homepage_url: https://itch.io
+    display_name: itch.io Featured Games
+    summary: Featured indie game releases selected by itch.io, with links to the developers' game pages; this is the featured-games feed, not the itch.io blog or all game releases.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fitch.io&size=128
+  itech_post:
     feed_url: https://www.itechpost.com/rss/archives/archives.xml
     homepage_url: https://www.itechpost.com
-    display_name: 'iTechPost :: Latest News'
-    summary: 'Updates from iTechPost :: Latest News.'
+    display_name: iTech Post
+    summary: iTech Post news, explainers, and reviews about consumer technology, computers, gadgets, apps, gaming, science, and entertainment.
+    profile_photo: https://g.itechpost.com/themes/favicons/apple-touch-icon.png
   jacobin:
     feed_url: https://jacobin.com/feed
     homepage_url: https://jacobin.com
     display_name: Jacobin
-    summary: Updates from Jacobin.
-  jamesshore:
+    summary: Jacobin reporting, essays, interviews, and cultural criticism on politics, economics, labor, and society from a socialist perspective.
+    profile_photo: https://jacobin.com/static/apple-touch-icon.png
+  james_shore:
     feed_url: https://www.jamesshore.com/v2/feed
     homepage_url: https://www.jamesshore.com
     display_name: James Shore
-    summary: The Art of Agile
-  jasonshen:
+    summary: James Shore's writing on software engineering, agile development, organizational effectiveness, leadership, and software's business impact.
+  jason_shen:
     feed_url: https://www.jasonshen.com/rss/
     homepage_url: https://www.jasonshen.com
     display_name: Jason Shen
-    summary: I help deeply ambitious founders repair their partnership and win the inner game
-  jeffhuang:
+    summary: Jason Shen's essays and coaching case studies on founder relationships, ambition, creative risk-taking, trust, and performing under pressure.
+    profile_photo: https://storage.ghost.io/c/ee/b5/eeb51aed-5fc9-48e8-80b2-2499ce01cf7d/content/images/size/w256h256/2021/09/jason-shen-icon-3.png
+  jeff_huang:
     feed_url: https://jeffhuang.com/feed.xml
     homepage_url: https://jeffhuang.com
-    display_name: Jeff Huang's Articles
-    summary: Jeff Huang, Computer Science Professor at Brown University
-  jeffkreeftmeijer:
+    display_name: Jeff Huang
+    summary: Jeff Huang's articles feed currently contains one January 2020 essay about managing productivity with a plain-text file; it is not a feed of his research publications.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjeffhuang.com&size=128
+  jeff_kreeftmeijer:
     feed_url: https://jeffkreeftmeijer.com/feed.xml
     homepage_url: https://jeffkreeftmeijer.com
     display_name: Jeff Kreeftmeijer
-    summary: Updates from Jeff Kreeftmeijer.
-  jekyllrb:
+    summary: Jeff Kreeftmeijer's technical articles on software development, Git, Emacs, and developer tools; this feed ends in August 2021 and omits newer posts visible on his homepage.
+    profile_photo: https://github.com/jeffkreeftmeijer.png?size=200
+  jekyll:
     feed_url: https://jekyllrb.com/feed.xml
     homepage_url: https://jekyllrb.com
-    display_name: Jekyll • Simple, blog-aware, static sites
-    summary: Updates from Jekyll • Simple, blog-aware, static sites.
-  jimjordan_design:
+    display_name: Jekyll
+    summary: Official Jekyll project announcements and release notes for the static site generator.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjekyllrb.com&size=128
+  jim_jordan:
     feed_url: https://jimjordan.design/rss.xml
     homepage_url: https://jimjordan.design
     display_name: Jim Jordan
-    summary: Personal blog covering design, development, and media tracking.
-  jlord_computer:
-    feed_url: https://jlord.computer/feed.xml
-    homepage_url: https://jlord.computer
-    display_name: jlord's weblog
-    summary: What I write and put onto the internet.
-  joeduffyblog:
+    summary: Jim Jordan's personal writing about design, software development, hardware projects, games, books, and media collections.
+    profile_photo: https://jimjordan.design/apple-touch-icon.png
+  joe_duffys_blog:
     feed_url: https://joeduffyblog.com/feed.xml
-    homepage_url: http://joeduffyblog.com
+    homepage_url: https://joeduffyblog.com
     display_name: Joe Duffy's Blog
-    summary: Adventures in the high-tech underbelly
-  joeydevilla:
+    summary: Joe Duffy's archived essays on programming languages, concurrency, Midori, cloud infrastructure, and software leadership; the feed's latest post is from September 2019.
+    profile_photo: https://github.com/joeduffy.png?size=200
+  joey_devilla:
     feed_url: https://www.joeydevilla.com/feed/
     homepage_url: https://www.joeydevilla.com
-    display_name: The Adventures of Accordion Guy in the 21st Century
-    summary: Joey deVilla's Personal Blog
-  jordanorelli:
+    display_name: Joey deVilla - Accordion Guy
+    summary: Joey deVilla's Accordion Guy personal blog on music, technology, culture, humor, politics, travel, and life in Tampa Bay.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.joeydevilla.com&size=128
+  jordan_orelli:
     feed_url: https://jordanorelli.com/rss
     homepage_url: https://jordanorelli.com
-    display_name: jordan orelli
-    summary: engineer at singularity 6 working on palia, @jordanorelli on twitter.
-  journal_neilgaiman:
+    display_name: Jordan Orelli
+    summary: Jordan Orelli's archived Tumblr posts on programming, small games, visual art, and music; the feed's latest post is from February 2020.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fjordanorelli.com&size=128
+  neil_gaimans_journal:
     feed_url: https://journal.neilgaiman.com/feeds/posts/default
     homepage_url: https://journal.neilgaiman.com
     display_name: Neil Gaiman's Journal
-    summary: Updates from Neil Gaiman's Journal.
-  journal_stuffwithstuff:
+    summary: Neil Gaiman's personal journal on writing, books, comics, adaptations, events, and personal updates.
+  bob_nystrom:
     feed_url: https://journal.stuffwithstuff.com/rss.xml
-    homepage_url: http://journal.stuffwithstuff.com
-    display_name: journal.stuffwithstuff.com
-    summary: Programming, languages, compilers, games, etc.
-  jpmens:
+    homepage_url: https://journal.stuffwithstuff.com
+    display_name: Bob Nystrom - Stuff With Stuff
+    summary: Bob Nystrom's journal on programming languages, compilers, game development, writing books, music, and personal projects.
+    profile_photo: https://journal.stuffwithstuff.com/apple-touch-icon.png
+  jan_piet_mens:
     feed_url: https://jpmens.net/atom.xml
     homepage_url: https://jpmens.net
     display_name: Jan-Piet Mens
-    summary: Updates from Jan-Piet Mens.
-  jspowerhour:
+    summary: Jan-Piet Mens's technical blog on systems administration, DNS, Ansible, security, developer tools, and occasional personal notes.
+    profile_photo: https://jpmens.net/inc/apple-touch-icon.png
+  junior_scientist_power_hour:
     feed_url: https://www.jspowerhour.com/comics.rss
     homepage_url: https://www.jspowerhour.com
     display_name: Junior Scientist Power Hour
-    summary: Wider and longer from now on.
-  judiciary_house_gov:
-    feed_url: https://judiciary.house.gov/rss.xml
-    homepage_url: http://judiciary.house.gov
-    display_name: House Judiciary Committee Republicans
-    summary: Updates from House Judiciary Committee Republicans.
-  julianoliver:
+    summary: Abby Howard's Junior Scientist Power Hour autobiographical webcomic archive; the latest feed entry is Hourly Comics Day 2024, which announces a pause.
+  julian_oliver:
     feed_url: https://julianoliver.com/index.xml
     homepage_url: https://julianoliver.com
-    display_name: julian oliver
-    summary: Recent content on julian oliver
-  julieannhorvath:
-    feed_url: https://julieannhorvath.com/feed/
-    homepage_url: https://julieannhorvath.com
-    display_name: Julie Ann Horvath
-    summary: Academic Freelance Writer
-  justonecookbook:
+    display_name: Julian Oliver
+    summary: Julian Oliver's projects and writing on critical engineering, art, networking, privacy, surveillance, and environmental activism.
+  just_one_cookbook:
     feed_url: https://www.justonecookbook.com/feed/
     homepage_url: https://www.justonecookbook.com
     display_name: Just One Cookbook
-    summary: Japanese Food and Recipe Blog
-  kellysutton:
+    summary: Nami's Japanese recipes, cooking techniques, ingredient guides, and food-related articles from Just One Cookbook.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.justonecookbook.com&size=128
+  kelly_sutton:
     feed_url: https://kellysutton.com/feed.xml
     homepage_url: https://kellysutton.com
     display_name: Kelly Sutton
-    summary: Updates from Kelly Sutton.
-  kennethreitz:
+    summary: Kelly Sutton's essays on software engineering, technology, startups, product decisions, management, and working practices.
+  kenneth_reitz:
     feed_url: https://kennethreitz.org/feed.xml
     homepage_url: https://kennethreitz.org
     display_name: Kenneth Reitz
-    summary: Creator of Requests, Pipenv, and other tools. Writing about technology, consciousness, and human-centered design.
-  kernel:
+    summary: Kenneth Reitz, creator of Requests and Pipenv, writing about software, AI, consciousness, mental health, music, and human-centered technology.
+    profile_photo: https://kennethreitz.org/static/images/apple-touch-icon.png
+  the_linux_kernel_archives:
     feed_url: https://www.kernel.org/feeds/all.atom.xml
     homepage_url: https://www.kernel.org
     display_name: The Linux Kernel Archives
-    summary: Updates from The Linux Kernel Archives.
+    summary: Official kernel.org site news and informational page updates from the Linux Kernel Organization; this is the site Atom feed, not the separate kernel-release feed.
+    profile_photo: https://www.kernel.org/theme/images/logos/favicon.png
   nyt_food:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/DiningandWine.xml
     homepage_url: https://www.nytimes.com/section/food
