@@ -5708,252 +5708,285 @@ bots:
     feed_url: https://musictech.com/feed/
     homepage_url: https://musictech.com
     display_name: MusicTech
-    summary: The world’s leading media brand at the intersection of music and technology.
+    summary: Music production news, instrument and recording-gear reviews, artist interviews, and tutorials from MusicTech.
+    profile_photo: https://musictech.com/apple-touch-icon.png
   percona:
     feed_url: https://www.percona.com/feed/
     homepage_url: https://www.percona.com
     display_name: Percona
-    summary: The Way is Open
-  nathanbarry:
+    summary: 'The Percona blog, formerly MySQL Performance Blog: open source databases, performance, operations, and product news.'
+    profile_photo: https://www.percona.com/wp-content/uploads/2026/03/cropped-Favicon-4-180x180.png
+  nathan_barry:
     feed_url: https://nathanbarry.com/feed/
     homepage_url: https://nathanbarry.com
     display_name: Nathan Barry
-    summary: Design, Business, Life
-  nathanleclaire:
-    feed_url: https://nathanleclaire.com/index.xml
+    summary: Nathan Barry on creator businesses, audience growth, design, and entrepreneurship, including The Nathan Barry Show.
+    profile_photo: https://nathanbarry.com/wp-content/uploads/2019/03/favicon.png
+  nathan_leclaire:
+    feed_url: https://nathanleclaire.com/post/index.xml
     homepage_url: https://nathanleclaire.com
-    display_name: nathan leclaire on nathan leclaire
-    summary: Updates from nathan leclaire on nathan leclaire.
+    display_name: Nathan LeClaire
+    summary: Nathan LeClaire on software engineering, distributed systems, AI, and business. The article feed last published in July 2025.
+    profile_photo: https://nathanleclaire.com/images/nateface.jpeg
   neatorama:
     feed_url: https://www.neatorama.com/feed/
     homepage_url: https://www.neatorama.com
     display_name: Neatorama
-    summary: The Neatest Stuff Around
-  nesbitt:
+    summary: Curious stories, science, history, art, humor, and unusual discoveries from Neatorama.
+    profile_photo: https://www.neatorama.com/vosa/theme/neato2/media/logo.gif
+  andrew_nesbitt:
     feed_url: https://nesbitt.io/feed.xml
     homepage_url: https://nesbitt.io
     display_name: Andrew Nesbitt
-    summary: Updates from Andrew Nesbitt.
-  code_tutsplus:
-    feed_url: https://tutsplus.com/posts.atom
+    summary: Andrew Nesbitt on package management, dependency security, and open source infrastructure.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnesbitt.io&size=128
+  envato_tuts_code:
+    feed_url: https://code.tutsplus.com/posts.atom
     homepage_url: https://code.tutsplus.com
-    display_name: Envato Tuts+ Tutorials
-    summary: Updates from Envato Tuts+ Tutorials.
+    display_name: Envato Tuts+ Code
+    summary: Envato Tuts+ Code tutorials on programming, web development, and related design tools. Feed entries span 2014-2025 and are not ordered by publication date.
+    profile_photo: https://static.tutsplus.com/packs/static/images/apple-touch-icon-46747f8b314a25bfa124.png
   netsdaily:
     feed_url: https://www.netsdaily.com/rss/index.xml
     homepage_url: https://www.netsdaily.com
     display_name: NetsDaily
-    summary: Updates from NetsDaily.
-  news_berkeley_edu:
+    summary: Brooklyn Nets news and fan analysis, also covering the Long Island Nets and New York Liberty.
+    profile_photo: https://platform.sbnation.com/wp-content/uploads/sites/2/team-logos/logo-netsdaily.png?w=180
+  berkeley_news:
     feed_url: https://news.berkeley.edu/feed/
     homepage_url: https://news.berkeley.edu
     display_name: Berkeley News
-    summary: News from the University of California, Berkeley
+    summary: Research, campus news, and public affairs from the University of California, Berkeley.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnews.berkeley.edu&size=128
   cheddar:
     feed_url: https://www.cheddar.com/arc/outboundfeeds/rss/
-    homepage_url: https://cheddar.com
-    display_name: Cheddar RSS
-    summary: Cheddar is the leading post-cable news, media, and entertainment company.
-  nextcity:
+    homepage_url: https://www.cheddar.com/
+    display_name: Cheddar
+    summary: Business, technology, financial markets, and culture news and video from Cheddar.
+    profile_photo: https://www.cheddar.com/pf/resources/img/favicons/che/apple-touch-icon.png?d=145
+  next_city:
     feed_url: https://nextcity.org/feeds/features
     homepage_url: https://nextcity.org/features
-    display_name: Next City - Forefront
-    summary: The latest features from Next City.
-  nextjs:
+    display_name: Next City Features
+    summary: In-depth urban reporting from nonprofit newsroom Next City on housing, equity, infrastructure, and city policy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnextcity.org%2Ffeatures&size=128
+  next_js_blog:
     feed_url: https://nextjs.org/feed.xml
-    homepage_url: https://nextjs.org
+    homepage_url: https://nextjs.org/blog
     display_name: Next.js Blog
-    summary: Next.js Blog
-  nikon:
+    summary: Official Next.js release announcements, security advisories, engineering articles, and framework news from Vercel.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnextjs.org&size=128
+  nikon_news:
     feed_url: https://www.nikon.com/company/rss/feeds/news.rss
-    homepage_url: https://www.nikon.com/company/news
-    display_name: News | Nikon About Us
-    summary: News | Nikon About Us
-  ninjasandrobots:
+    homepage_url: https://www.nikon.com/company/news/
+    display_name: Nikon News
+    summary: Official Nikon corporate news, product announcements, research, museum updates, and financial releases, including PDF notices.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.nikon.com%2Fcompany%2Fnews&size=128
+  ninjas_and_robots:
     feed_url: https://ninjasandrobots.com/feed
     homepage_url: https://ninjasandrobots.com
     display_name: Ninjas and Robots
-    summary: Updates from Ninjas and Robots.
+    summary: Nathan Kontny writes about software, AI, startups, product building, and everyday life at Ninjas and Robots.
+    profile_photo: https://svbtleusercontent.com/jaNzs7kEMXXu881bUpNY4y01190xsuap_large.png
   nme:
     feed_url: https://www.nme.com/feed
     homepage_url: https://www.nme.com
     display_name: NME
-    summary: NME brings you the latest music and pop culture news and reviews, along with videos and galleries, band features, concert tickets, magazine, radio and more.
-  nofilmschool:
+    summary: Music, film, television, gaming, and pop culture news and reviews from NME.
+    profile_photo: https://www.nme.com/apple-touch-icon.png
+  no_film_school:
     feed_url: https://nofilmschool.com/feeds/feed.rss
     homepage_url: https://nofilmschool.com
     display_name: No Film School
-    summary: No Film School
-  nuklearpower:
+    summary: Filmmaking tutorials, screenwriting advice, production-gear news, and film and television coverage from No Film School.
+    profile_photo: https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vbm9maWxtc2Nob29sLmNvbS9tZWRpYS1saWJyYXJ5L2Zhdmljb24tMTkyeDE5Mi5wbmc_aWQ9MzM2ODYyNjgiLCJleHBpcmVzX2F0IjoxODQ4NDMwMzYyfQ.GwPYOt29Sn7FsJEl2VjuI_TbHAPtGh-i4HUoHXbBVoo/img.jpg?width=192&height=192
+  nuklear_power:
     feed_url: https://www.nuklearpower.com/feed/
     homepage_url: https://www.nuklearpower.com
     display_name: Nuklear Power
-    summary: Nuklear Power
-  nvie:
+    summary: 'Brian Clevinger''s Nuklear Power, home of the completed 8-Bit Theater webcomic, with occasional book and project announcements. Latest feed post: August 2025.'
+  vincent_driessen:
     feed_url: https://feeds.feedburner.com/nvie
     homepage_url: https://nvie.com
-    display_name: nvie.com
-    summary: Updates from nvie.com.
-  nycresistor:
+    display_name: Vincent Driessen (nvie.com)
+    summary: Vincent Driessen writes about programming, developer tools, APIs, and Git at nvie.com. The full feed is oldest-first and includes posts through February 2026.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnvie.com&size=128
+  nyc_resistor:
     feed_url: https://www.nycresistor.com/feed/
     homepage_url: https://www.nycresistor.com
     display_name: NYC Resistor
-    summary: We learn, share, and make things.
+    summary: NYC Resistor, a Brooklyn hackerspace, shares projects, classes, community events, and maker news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.nycresistor.com&size=128
   nylas:
     feed_url: https://www.nylas.com/feed/
     homepage_url: https://www.nylas.com
     display_name: Nylas
-    summary: Updates from Nylas.
-  nytco:
+    summary: Official Nylas blog covering email and calendar APIs, meeting tools, AI agents, developer guides, and product announcements.
+    profile_photo: https://www.nylas.com/wp-content/uploads/nylas-site-icon-teal-512-300x300.png
+  the_new_york_times_company:
     feed_url: https://www.nytco.com/feed/
     homepage_url: https://www.nytco.com
     display_name: The New York Times Company
-    summary: The New York Times Company
-  obeygiant:
+    summary: Official New York Times Company press announcements, newsroom appointments, and company news, not the newspaper's general news feed.
+    profile_photo: https://www.nytco.com/app/themes/nytco/resources/favicons/apple-touch-icon.png
+  obey_giant:
     feed_url: https://obeygiant.com/feed/
     homepage_url: https://obeygiant.com
     display_name: Obey Giant
-    summary: The Art of Shepard Fairey
-  offscreenmag:
+    summary: 'Shepard Fairey''s official Obey Giant news: artwork, murals, exhibitions, collaborations, and print releases.'
+    profile_photo: https://obeygiant.com/wp-content/themes/obey_beta/_/img/apple-touch-icon.png
+  offscreen:
     feed_url: https://www.offscreenmag.com/blog/rss
     homepage_url: https://www.offscreenmag.com
     display_name: Offscreen
-    summary: Updates from Offscreen.
-  ofsparrows_tumblr:
+    summary: 'Archived blog of Offscreen, an independent print magazine about the human side of technology. Latest post: December 2021; issue 25 was put on indefinite hold.'
+    profile_photo: https://www.offscreenmag.com/assets/images/favicon.png
+  ofsparrows:
     feed_url: https://ofsparrows.tumblr.com/rss
     homepage_url: https://ofsparrows.tumblr.com
     display_name: sparrows
-    summary: terrible drawings faq ∙ twitter ∙ prints
-  om_co:
+    summary: 'Archived original drawings and illustrated humor from sparrows (ofsparrows). Latest RSS post: February 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fofsparrows.tumblr.com&size=128
+  on_my_om:
     feed_url: https://om.co/feed/
     homepage_url: https://om.co
     display_name: On my Om
-    summary: 'Technology & Change: Field Notes From The Present Future'
-  omnigroup:
+    summary: 'Om Malik''s On my Om: technology, business, photography, and reflections. The feed ends with a June 2026 memorial announcement.'
+    profile_photo: https://om.co/wp-content/uploads/2019/09/cropped-OmIcon-1-180x180.jpg
+  the_omni_group:
     feed_url: https://www.omnigroup.com/blog/rss/
     homepage_url: https://www.omnigroup.com
     display_name: The Omni Group
-    summary: The Omni Group makes awesome productivity software for macOS and iOS in the beautiful Pacific Northwest.
-  openlibrary:
-    feed_url: https://openlibrary.org/feed
-    homepage_url: https://openlibrary.org
-    display_name: Infogami - Recent changes
-    summary: Track the most recent changes to https://openlibrary.org in this feed.
-  openmymind:
+    summary: Official Omni Group blog with productivity-app releases, company news, and The Omni Show interviews.
+    profile_photo: https://www.omnigroup.com/assets/img/logo/BlueOmni.png
+  open_library_blog:
+    feed_url: https://blog.openlibrary.org/feed/
+    homepage_url: https://blog.openlibrary.org/
+    display_name: The Open Library Blog
+    summary: 'The official Open Library Blog: project updates, book discovery, community contributions, and library engineering from the Internet Archive''s Open Library.'
+    profile_photo: https://openlibrary.org/static/images/openlibrary-128x128.png
+  karl_seguin:
     feed_url: https://www.openmymind.net/atom.xml
     homepage_url: https://www.openmymind.net
-    display_name: openmymind.net
-    summary: Updates from openmymind.net.
-  opensource:
+    display_name: Karl Seguin
+    summary: Karl Seguin writes about programming, especially Zig, with articles on Elixir, Go, testing, design, and performance.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.openmymind.net&size=128
+  opensource_com:
     feed_url: https://opensource.com/feed
     homepage_url: https://opensource.com
     display_name: Opensource.com
-    summary: Updates from Opensource.com.
-  organized_home:
-    feed_url: https://www.organized-home.com/web-stories/feed/
+    summary: 'Archived Opensource.com articles about open source software, communities, and practices. Latest feed post: June 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fopensource.com&size=128
+  the_organized_home:
+    feed_url: https://www.organized-home.com/feed/
     homepage_url: https://www.organized-home.com
-    display_name: Stories – The Organized Home
-    summary: Smart Storage Solutions for Every Room in the House
+    display_name: The Organized Home
+    summary: 'The Organized Home article archive: storage, organization, and home improvement from the editors of Remodelista and Gardenista. Latest article-feed post: May 2024.'
+    profile_photo: https://www.organized-home.com/assets/favicons/toh/apple-touch-icon.png
   osnews:
     feed_url: https://www.osnews.com/feed/
     homepage_url: https://www.osnews.com
     display_name: OSnews
-    summary: Exploring the Future of Computing
+    summary: Operating systems, computing platforms, software development, and technology news and commentary from OSnews.
+    profile_photo: https://www.osnews.com/icons/apple-touch-icon.png
   pagerduty:
     feed_url: https://www.pagerduty.com/feed/
     homepage_url: https://www.pagerduty.com
     display_name: PagerDuty
-    summary: Build It | Ship It | Own It
+    summary: Official PagerDuty blog on incident management, operational reliability, automation, and product announcements.
+    profile_photo: https://www.pagerduty.com/favicon/prod/apple-touch-icon.png
   pajiba:
     feed_url: https://www.pajiba.com/feed.xml
     homepage_url: https://www.pajiba.com
     display_name: Pajiba
-    summary: Sweetened by Mock, Lightened by Droll
-  palant_info:
+    summary: Film and television reviews, entertainment news, culture, and political commentary from Pajiba.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.pajiba.com&size=128
+  almost_secure:
     feed_url: https://palant.info/rss.xml
     homepage_url: https://palant.info
     display_name: Almost Secure
-    summary: Wladimir Palant's blog
-  paper_li:
-    feed_url: https://paper.li/feed/
-    homepage_url: https://paper.li
-    display_name: Paper.li
-    summary: Updates from Paper.li.
-  invertedpassion:
+    summary: Wladimir Palant's Almost Secure blog on software security, browser extensions, privacy, and technical investigations.
+    profile_photo: https://palant.info/icons/apple-touch-icon.png
+  inverted_passion:
     feed_url: https://invertedpassion.com/feed/
     homepage_url: https://invertedpassion.com
     display_name: Inverted Passion
-    summary: Know what's true and do what's right
+    summary: 'Paras Chopra''s Inverted Passion: essays on AI, science, entrepreneurship, and mental models.'
+    profile_photo: https://invertedpassion.com/wp-content/uploads/2018/04/cropped-inverted-passion-face-512-180x180.jpg
   patch:
     feed_url: https://patch.com/rss/patch_editorial_content
     homepage_url: https://patch.com
-    display_name: Patch Editorial Content
-    summary: Most Recent News For Patch Editorial Content
-  patkay:
+    display_name: Patch
+    summary: Editorial news from the Patch network of US local news sites, including community events, schools, businesses, and public safety.
+    profile_photo: https://cdn.patchcdn.com/assets/layout/icons/logo/apple-touch-icon.png
+  pat_kay:
     feed_url: https://patkay.com/blogs/pk.atom
     homepage_url: https://patkay.com/blogs/pk
-    display_name: Pat Kay - pk
-    summary: Updates from Pat Kay - pk.
-  p_atrick:
+    display_name: Pat Kay
+    summary: 'Pat Kay''s photography and travel blog, with tutorials, gear reviews, and creative-business reflections. Latest article-feed post: September 2022.'
+    profile_photo: https://patkay.com/cdn/shop/files/favicon_54aafd98-71ba-4f61-95fb-ead3dee69c7a_180x180_crop_center.png?v=1708434823
+  this_modern_web:
     feed_url: https://p.atrick.org/feed.xml
     homepage_url: https://p.atrick.org
     display_name: This Modern Web
-    summary: The personal website of Patrick Marsceill
-  patshaughnessy:
-    feed_url: http://feeds2.feedburner.com/patshaughnessy
+    summary: 'Patrick Marsceill''s This Modern Web: personal notes, design, software, and web projects, including untitled short posts.'
+    profile_photo: https://p.atrick.org/apple-icon.png?apple-icon.84b80739.png
+  pat_shaughnessy:
+    feed_url: https://feeds.feedburner.com/patshaughnessy
     homepage_url: https://patshaughnessy.net
     display_name: Pat Shaughnessy
-    summary: Updates from Pat Shaughnessy.
-  pcta:
+    summary: 'Pat Shaughnessy on programming and Ruby internals, including excerpts from Ruby Under a Microscope. Latest feed post: November 2025.'
+  pacific_crest_trail_association:
     feed_url: https://www.pcta.org/feed/
     homepage_url: https://www.pcta.org
     display_name: Pacific Crest Trail Association
-    summary: Protecting, Preserving, Promoting the Pacific Crest Trail
+    summary: Official Pacific Crest Trail Association news on trail protection, maintenance, hiking, volunteers, and public lands.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.pcta.org&size=128
   pearsonified:
     feed_url: https://pearsonified.com/feed/
     homepage_url: https://pearsonified.com
     display_name: Pearsonified
-    summary: Best damn website on the planet since 2005
-  csail_mit_edu:
-    feed_url: https://www.csail.mit.edu/rss.xml
-    homepage_url: https://www.csail.mit.edu
-    display_name: MIT CSAIL
-    summary: Updates from MIT CSAIL.
-  pepijndevos_nl:
+    summary: 'Chris Pearson''s Pearsonified blog on web design, typography, WordPress, software, and personal topics. Latest feed post: September 2024.'
+  wishful_coding:
     feed_url: https://pepijndevos.nl/feed.xml
-    homepage_url: http://pepijndevos.nl
+    homepage_url: https://pepijndevos.nl/
     display_name: Wishful Coding
-    summary: Updates from Wishful Coding.
-  perens:
+    summary: Pepijn de Vos's Wishful Coding blog on programming, electronics, FPGA tools, and creative technical projects.
+    profile_photo: https://pepijndevos.nl/style/icon.png
+  bruce_perens_blog:
     feed_url: https://perens.com/blog/bruce-perens-blog-5/feed
-    homepage_url: https://perens.com/blog/5
+    homepage_url: https://perens.com/blog/bruce-perens-blog-5
     display_name: Bruce Perens' Blog
-    summary: Updates from Bruce Perens' Blog.
-  petefreitag:
+    summary: 'Bruce Perens writes about open source licensing, amateur radio, technical projects, and personal experiences. Latest feed post: October 2025.'
+  pete_freitag:
     feed_url: https://www.petefreitag.com/rss/
     homepage_url: https://www.petefreitag.com
     display_name: Pete Freitag
-    summary: Covering ColdFusion, Java, Web Development, & other topics
-  petekeen:
+    summary: Pete Freitag on ColdFusion, Java, web development, application security, and developer training.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.petefreitag.com&size=128
+  pete_keen:
     feed_url: https://www.petekeen.net/feed.xml
     homepage_url: https://www.petekeen.net
     display_name: Pete Keen
-    summary: Essays and projects by Pete Keen
-  peterbe:
+    summary: Pete Keen's essays and projects on software, homelabs, infrastructure, home automation, business, and personal finance.
+    profile_photo: https://www.petekeen.net/images/bugsplat-48.8247a8afe3f2.png
+  peterbe_com:
     feed_url: https://www.peterbe.com/rss.xml
     homepage_url: https://www.peterbe.com
     display_name: Peterbe.com
-    summary: Stuff in Peter's head
-  phillymag:
+    summary: 'Peter Bengtsson''s personal site: programming articles, photographs, and everyday-life notes.'
+    profile_photo: https://www.peterbe.com/apple-touch-icon.png
+  philadelphia_magazine:
     feed_url: https://www.phillymag.com/feed/
     homepage_url: https://www.phillymag.com
     display_name: Philadelphia Magazine
-    summary: Updates from Philadelphia Magazine.
-  philosophicalhacker:
+    summary: Philadelphia Magazine covers local news, restaurants, culture, sports, lifestyle, and the Philadelphia region.
+    profile_photo: https://cdn10.phillymag.com/wp-content/uploads/sites/3/2026/06/cropped-PM-Favicon-1024x1024-1-180x180.png
+  philosophical_hacker:
     feed_url: https://www.philosophicalhacker.com/index.xml
     homepage_url: https://www.philosophicalhacker.com
     display_name: Philosophical Hacker
-    summary: Recent content on Philosophical Hacker
+    summary: Matt Dupree's Philosophical Hacker blog on software engineering, AI, startups, and philosophical ideas.
   npr_national:
     feed_url: https://feeds.npr.org/1003/rss.xml
     homepage_url: https://www.npr.org
