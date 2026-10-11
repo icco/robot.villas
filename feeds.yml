@@ -16930,256 +16930,271 @@ bots:
     display_name: Streetsblog NYC
     summary: Transportation policy, cycling, transit, street safety, and car culture in New York City.
     profile_photo: https://nyc.streetsblog.org/wp-content/uploads/sites/9/2023/10/cropped-Round-SB-NYC-Stroke-2160px.png?w=192
-  lwgmnz_me:
-    feed_url: https://lwgmnz.me/feed/
-    homepage_url: https://lwgmnz.me
+  law_gimenez:
+    feed_url: https://lwgmnzme.wordpress.com/feed/
+    homepage_url: https://lwgmnzme.wordpress.com
     display_name: Law Gimenez
-    summary: Updates from Law Gimenez.
+    summary: 'Law Gimenez''s archived mobile development, Swift, Kotlin, Flutter, security, music, and personal posts. Latest feed post: May 2022.'
+    profile_photo: https://lwgmnz.me/files/2020/12/cropped-untitled.png
   wikihow:
     feed_url: https://www.wikihow.com/Feeds/main.xml
     homepage_url: https://www.wikihow.com
-    display_name: wikiHow - All New Content
-    summary: Get our newest articles, quizzes, videos, and more
-  pixietrixcomix:
-    feed_url: https://pixietrixcomix.com/pixie-trix-comix/rss
-    homepage_url: https://pixietrixcomix.com
-    display_name: Pixie Trix Comix
-    summary: Latest Pixie Trix Comix comics and news
+    display_name: wikiHow
+    summary: WikiHow's newest how-to articles, explainers, quizzes, and videos across everyday life, practical skills, and popular culture.
+    profile_photo: https://www.wikihow.com/skins/WikiHow/wH-initials_152x152.png
+  menage_a_3:
+    feed_url: https://pixietrixcomix.com/menage-a-3/rss
+    homepage_url: https://pixietrixcomix.com/menage-a-3
+    display_name: Menage a 3
+    summary: 'Gisele Lagace and David Lumsdon''s archived Menage a 3 webcomic and associated news. Latest feed entry: January 2020; the story concluded in April 2019.'
   mac4n6:
-    feed_url: http://www.mac4n6.com/blog?format=rss
-    homepage_url: http://www.mac4n6.com
-    display_name: mac4n6.com
-    summary: Updates from mac4n6.com.
-  macchaffee:
+    feed_url: https://www.mac4n6.com/blog?format=rss
+    homepage_url: https://www.mac4n6.com
+    display_name: Mac4n6
+    summary: Apple digital forensics research, macOS and iOS artifacts, analysis tools, and investigation presentations from Mac4n6.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.mac4n6.com&size=128
+  macs_tech_blog:
     feed_url: https://www.macchaffee.com/blog/atom.xml
-    homepage_url: https://www.macchaffee.com/blog
+    homepage_url: https://www.macchaffee.com/blog/
     display_name: Mac's Tech Blog
-    summary: Updates from Mac's Tech Blog.
+    summary: Mac Chaffee's essays on infrastructure, Kubernetes, security, self-hosting, software engineering, and technology's social impact.
+    profile_photo: https://www.macchaffee.com/static/favicon.png
   macetech:
     feed_url: https://macetech.com/blog/rss.xml
-    homepage_url: http://macetech.com/blog
-    display_name: macetech.com -
-    summary: Updates from macetech.com -.
-  machinepix:
+    homepage_url: https://macetech.com/blog
+    display_name: Macetech
+    summary: 'Macetech''s archived electronics projects, LED displays, RGB Shades, audio sensors, and open-source hardware development. Latest feed post: January 2017.'
+  machinepix_weekly:
     feed_url: https://www.machinepix.com/feed
     homepage_url: https://www.machinepix.com
     display_name: MachinePix Weekly
-    summary: Amazing feats of engineering, delivered weekly. Bonus content beyond the @machinepix Twitter and Instagram. By Kane Hsieh.
-  macleodsawyer:
+    summary: 'Kane Hsieh''s archived MachinePix newsletter on machines, engineering, manufacturing, and interviews with builders. Latest feed post: January 2022.'
+    profile_photo: https://substackcdn.com/image/fetch/$s_!f1pe!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F874a0ca1-0b5f-481f-9aac-5759e33ccc5a%2Fapple-touch-icon-57x57.png
+  macleod_sawyer:
     feed_url: https://macleodsawyer.com/feed.xml
     homepage_url: https://macleodsawyer.com
-    display_name: Macleod Sawyer | Web Portal Feed
-    summary: Updates from Macleod Sawyer | Web Portal Feed.
+    display_name: Macleod Sawyer
+    summary: 'Macleod Sawyer''s essays, links, book reviews, technology projects, and personal writing on computing, science, society, and culture. Latest dated feed entry: January 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmacleodsawyer.com&size=128
   macmenubar:
     feed_url: https://macmenubar.com/feed/
     homepage_url: https://macmenubar.com
-    display_name: MacMenuBar.com
-    summary: A curated directory of 1600+ Mac menu bar apps
-  macournoyer:
+    display_name: MacMenuBar
+    summary: A curated directory of macOS menu bar apps, with app listings, descriptions, and links to their developers.
+    profile_photo: https://macmenubar.com/wp-content/uploads/2026/10/cropped-macmenubar-logo-black-512-180x180.png
+  marc_andre_cournoyer:
     feed_url: https://macournoyer.com/feed.xml
     homepage_url: https://macournoyer.com
     display_name: Marc-André Cournoyer
-    summary: Updates from Marc-André Cournoyer.
-  macpablodesigns_wordpress:
+    summary: 'Marc-Andre Cournoyer''s archived writing on Ruby, programming languages, software projects, entrepreneurship, and strength training. Latest feed post: March 2019.'
+    profile_photo: https://macournoyer.com/apple-touch-icon.png
+  macpablos_ramblings:
     feed_url: https://macpablodesigns.wordpress.com/feed/
     homepage_url: https://macpablodesigns.wordpress.com
     display_name: Macpablo's ramblings
-    summary: Just random stuff I find interesting
+    summary: 'Macpablo''s archived Mac OS X, Ubuntu, Linux, printing, virtualization, and open-source software notes. Latest feed post: October 2010.'
   macstories:
     feed_url: https://www.macstories.net/feed/
     homepage_url: https://www.macstories.net
     display_name: MacStories
-    summary: Apple news, app reviews, and stories by Federico Viticci and John Voorhees.
-  macwright:
+    summary: MacStories' Apple news, app reviews, automation guides, podcasts, newsletters, and sponsored posts.
+    profile_photo: https://www.macstories.net/wp-content/themes/macstories4/images/apple-touch-icon-152x152-precomposed.png
+  tom_macwright:
     feed_url: https://macwright.com/rss.xml
     homepage_url: https://macwright.com
-    display_name: macwright.com
-    summary: JavaScript, math, maps, etc
-  madamearchitect:
+    display_name: Tom MacWright
+    summary: Tom MacWright's writing on software, maps, mathematics, photography, books, projects, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmacwright.com&size=128
+  madame_architect_interviews:
     feed_url: https://www.madamearchitect.org/interviews?format=rss
     homepage_url: https://www.madamearchitect.org/interviews
-    display_name: Interviews - Madame Architect
-    summary: Updates from Interviews - Madame Architect.
-  maddin:
-    feed_url: https://maddin.io/feed.xml
-    homepage_url: https://maddin.io
-    display_name: Gestimer
-    summary: Updates from Gestimer.
-  madebynathan:
+    display_name: Madame Architect Interviews
+    summary: Madame Architect's interviews with women in architecture, design, education, cultural institutions, and the built environment.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.madamearchitect.org%2Finterviews&size=128
+  made_by_nathan:
     feed_url: https://madebynathan.com/rss/
     homepage_url: https://madebynathan.com
     display_name: Made By Nathan
-    summary: 'Hi, I''m Nathan! Here''s a few of my projects:'
-  madhadron:
-    feed_url: https://madhadron.com/atom.xml
-    homepage_url: https://madhadron.com
-    display_name: madhadron
-    summary: Updates from madhadron.
+    summary: Nathan Broadbent's software experiments, electronics, home automation, 3D printing, woodworking, puzzles, and personal projects.
+    profile_photo: https://madebynathan.com/content/images/size/w256h256/2025/03/final_logo.png
   magoz:
     feed_url: https://magoz.com/feed
     homepage_url: https://magoz.com
     display_name: Magoz
-    summary: Updates from Magoz.
-  mairin_wordpress:
-    feed_url: https://mairin.wordpress.com/feed/
-    homepage_url: https://mairin.wordpress.com
+    summary: Magoz's conceptual illustrations and animations exploring everyday life, society, ideas, and visual storytelling.
+    profile_photo: https://magoz.com/i/magoz-og-image.jpg
+  mairin_duffy:
+    feed_url: https://blog.linuxgrrl.com/feed/
+    homepage_url: https://blog.linuxgrrl.com
     display_name: Máirín Duffy
-    summary: Open design forever.
-  makandracards:
+    summary: Mairin Duffy's writing on open-source design, user experience, Fedora, Inkscape, creative tools, and technology.
+    profile_photo: https://blog.linuxgrrl.com/wp-content/uploads/2026/03/mduffy-edited.webp
+  makandra_dev_cards:
     feed_url: https://makandracards.com/makandra/rss
     homepage_url: https://makandracards.com/makandra
-    display_name: 'makandra cards: makandra dev (public cards)'
-    summary: 'Updates from makandra cards: makandra dev (public cards).'
-  makegames_tumblr:
+    display_name: makandra dev cards
+    summary: Makandra's public developer knowledge cards on Ruby on Rails, JavaScript, Linux, testing, Git, and software tooling, including updated existing cards.
+    profile_photo: https://makandracards.com/assets/images/favicons/apple-touch-icon-DDFHAZ22.png
+  make_games:
     feed_url: https://makegames.tumblr.com/rss
     homepage_url: https://makegames.tumblr.com
     display_name: Make Games
-    summary: I’m Derek! I’m thinkin’ about game creation.
+    summary: 'Derek Yu''s archived game development essays, Spelunky book excerpts, indie-game advice, and pixel-art tutorials. Latest feed post: July 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmakegames.tumblr.com&size=128
   makertube:
-    feed_url: https://makertube.net/feeds/videos.xml
+    feed_url: https://makertube.net/feeds/videos.xml?isLocal=true
     homepage_url: https://makertube.net
     display_name: MakerTube
-    summary: A home for makers, musicians, artists and DIY folks
-  makikoitoh:
+    summary: Videos uploaded locally to MakerTube, a PeerTube community for makers, musicians, artists, and DIY creators.
+    profile_photo: https://makertube.net/lazy-static/avatars/b79569ba-e2d0-441a-bb95-daa71c071ebc.jpg
+  makiko_itoh:
     feed_url: https://www.makikoitoh.com/rss.xml
     homepage_url: https://www.makikoitoh.com
-    display_name: 'Makiko Itoh : Not a nameless cat.'
-    summary: Makiko Itoh's personal site.
-  makinaro_tumblr:
+    display_name: Makiko Itoh
+    summary: 'Makiko Itoh''s archived personal journal on Japanese culture, life, and creative work, including Satoshi Kon''s last words. Latest feed post: August 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.makikoitoh.com&size=128
+  draw_o_coward:
     feed_url: https://makinaro.tumblr.com/rss
     homepage_url: https://makinaro.tumblr.com
     display_name: Draw, O Coward
-    summary: 'Award-winning cartoonist. I draw Boxplot and Sufficiently Remarkable. If you like science, you should follow me on twitter: @sciencecomic'
-  malcolmocean:
+    summary: 'Maki Naro''s archived Tumblr comics, science illustration, creative-work commentary, replies, and reblogs. Latest feed post: March 2017.'
+    profile_photo: https://api.tumblr.com/v2/blog/makinaro.tumblr.com/avatar/128
+  malcolm_ocean:
     feed_url: https://malcolmocean.com/feed/
     homepage_url: https://malcolmocean.com
     display_name: Malcolm Ocean
-    summary: culture, change, and mental models
+    summary: Malcolm Ocean's essays on culture, communication, self-reflection, trust, personal growth, and mental models.
+    profile_photo: https://malcolmocean.com/graphics/touch-icon-iphone-precomposed.png
   malicious_link:
     feed_url: https://malicious.link/posts/index.xml
     homepage_url: https://malicious.link/posts
-    display_name: All Posts - Malicious Link - Blog by mubix - Rob Fuller
-    summary: All Posts | Malicious Link - Blog by mubix - Rob Fuller
-  silentpush:
-    feed_url: https://www.silentpush.com/feed/
-    homepage_url: https://www.silentpush.com
-    display_name: Silent Push
-    summary: Neutralize Before Compromise
+    display_name: Malicious Link
+    summary: 'Rob Fuller (mubix)''s archived security research, penetration-testing notes, tools, and security-team practices. Latest feed post: April 2023.'
+    profile_photo: https://malicious.link/apple-touch-icon.png
   malisper_me:
     feed_url: https://malisper.me/feed/
     homepage_url: https://malisper.me
     display_name: malisper.me
-    summary: malisper.me
-  mames_tumblr:
+    summary: Malisper's programming and database articles on PostgreSQL, performance, Lisp, software design, and pgrust development.
+    profile_photo: https://malisper.me/wp-content/uploads/fbrfg/apple-touch-icon.png
+  mamies_bins_in_the_cloud:
     feed_url: https://mamierheingold.com/rss
-    homepage_url: https://mames.tumblr.com
+    homepage_url: https://mamierheingold.com
     display_name: Mamie's bins in the cloud
-    summary: Updates from Mamie's bins in the cloud.
-  managewp:
+    summary: 'Mamie Rheingold''s archived Tumblr travel photos, art, personal reflections, and links. Latest feed post: February 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmames.tumblr.com&size=128
+  managewp_blog:
     feed_url: https://managewp.com/blog/feed/
     homepage_url: https://managewp.com/blog
-    display_name: Blog - ManageWP
-    summary: Manage WordPress Sites from One Dashboard
+    display_name: ManageWP Blog
+    summary: ManageWP's WordPress maintenance tutorials, agency advice, security guidance, and product announcements.
+    profile_photo: https://managewp.com/wp-content/themes/tw-mwp/assets/favicon/apple-touch-icon.png
   manmadediy:
     feed_url: https://www.manmadediy.com/feed/
     homepage_url: https://www.manmadediy.com
-    display_name: manmadediy
-    summary: Creativity and the Handmade Life for the Postmodern Male
-  manservants_co:
+    display_name: Man Made DIY
+    summary: DIY projects, home improvement, cleaning advice, design inspiration, crafts, food, and style from Man Made DIY.
+    profile_photo: https://www.manmadediy.com/wp-content/uploads/sites/52/fbrfg/apple-touch-icon.png?v=PYAb69gpax
+  manservants_inc:
     feed_url: https://manservants.co/blogs/news.atom
     homepage_url: https://manservants.co/blogs/news
-    display_name: ManServants Inc - At Your Nonsexual Service
-    summary: Updates from ManServants Inc - At Your Nonsexual Service.
-  manuela_hoffmann_info:
-    feed_url: https://www.manuela-hoffmann.info/feed/
-    homepage_url: https://www.manuela-hoffmann.info
-    display_name: MH Marketing Inc.
-    summary: Updates from MH Marketing Inc..
-  ignitetech_ai:
-    feed_url: https://ignitetech.ai/feed/
-    homepage_url: https://ignitetech.ai
-    display_name: The AI Enterprise Software Company
-    summary: The AI Enterprise Software Company.
+    display_name: ManServants Inc
+    summary: 'ManServants'' archived commentary on relationships, celebrity culture, gender, and its book and nonsexual service business. Latest feed post: April 2024.'
+    profile_photo: https://manservants.co/cdn/shop/files/Manservant_logo_2x_1_1_32x32.png?v=1613732420
   manybooks:
     feed_url: https://manybooks.net/rss.xml
     homepage_url: https://manybooks.net
     display_name: ManyBooks
-    summary: Updates from ManyBooks.
-  manytricks:
+    summary: New ebook listings from ManyBooks, including contemporary independent fiction and books available through its catalog.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmanybooks.net&size=128
+  many_tricks_blog:
     feed_url: https://manytricks.com/blog/?feed=rss2
     homepage_url: https://manytricks.com/blog
-    display_name: Tales of a Running Bird
-    summary: Many Tricks Musings
-  mapsbynik_tumblr:
+    display_name: Many Tricks Blog
+    summary: Many Tricks' macOS app releases, updates, tips, and company announcements, published as Tales of a Running Bird.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmanytricks.com%2Fblog&size=128
+  mapsbynik:
     feed_url: https://tumblr.mapsbynik.com/rss
-    homepage_url: https://mapsbynik.tumblr.com
+    homepage_url: https://tumblr.mapsbynik.com
     display_name: mapsbynik
-    summary: occasional geographic visualizations and cartographic musings
+    summary: 'Nik''s archived geographic visualizations, maps, cartographic commentary, and reader replies. Latest feed entry: October 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmapsbynik.tumblr.com&size=128
   mapzen:
     feed_url: https://www.mapzen.com/atom.xml
     homepage_url: https://mapzen.com
     display_name: Mapzen
-    summary: Updates from Mapzen.
-  marctenbosch:
-    feed_url: http://feeds.feedburner.com/marctenbosch
-    homepage_url: https://marctenbosch.com/news
-    display_name: mtbdesignworks Blog [Miegakure, 4D Toys, Marc ten Bosch]
-    summary: Updates from mtbdesignworks Blog [Miegakure, 4D Toys, Marc ten Bosch].
-  mariancall:
+    summary: 'Mapzen''s archived open-source mapping, geocoding, routing, data, and project announcements, including its shutdown and Linux Foundation transition. Latest feed post: December 2019.'
+    profile_photo: https://www.mapzen.com/assets/common/styleguide/images/favicons/apple-touch-icon.png
+  marc_ten_bosch:
+    feed_url: https://feeds.feedburner.com/marctenbosch
+    homepage_url: https://marctenbosch.com/news/
+    display_name: Marc ten Bosch
+    summary: Marc ten Bosch's development updates and technical writing on Miegakure, 4D Toys, higher-dimensional graphics, and physics.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmarctenbosch.com%2Fnews&size=128
+  marian_call:
     feed_url: https://mariancall.com/feed/
     homepage_url: https://mariancall.com
     display_name: Marian Call
-    summary: Music
-  marianogappa_github:
+    summary: Singer-songwriter Marian Call's concert announcements, music releases, studio updates, and personal writing.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmariancall.com&size=128
+  mariano_gappas_blog:
     feed_url: https://marianogappa.github.io/index.xml
     homepage_url: https://marianogappa.github.io
     display_name: Mariano Gappa's Blog
-    summary: Recent content on Mariano Gappa's Blog
-  markdalgleish:
+    summary: Mariano Gappa's software engineering articles, Go projects, game development, StarCraft analysis, data systems, and personal reflections.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmarianogappa.github.io&size=128
+  mark_dalgleish:
     feed_url: https://markdalgleish.com/atom.xml
     homepage_url: https://markdalgleish.com
     display_name: Mark Dalgleish
-    summary: Updates from Mark Dalgleish.
-  markgius:
+    summary: 'Mark Dalgleish''s archived frontend development articles on JavaScript, web components, jQuery, AngularJS, and open-source projects. Latest feed post: November 2013.'
+  mark_gius:
     feed_url: http://markgius.com/feed.xml
     homepage_url: http://markgius.com
-    display_name: markgius.com
-    summary: Updates from markgius.com.
-  markjaquith_wordpress:
+    display_name: Mark Gius
+    summary: 'Mark Gius''s archived personal site. Its feed contains one review of The Legend of Zelda: Skyward Sword, published in September 2012.'
+    profile_photo: http://images.markgius.com.s3-website-us-east-1.amazonaws.com/apple-touch-icon-precomposed.png
+  mark_on_wordpress:
     feed_url: https://markjaquith.wordpress.com/feed/
     homepage_url: https://markjaquith.wordpress.com
     display_name: Mark on WordPress
-    summary: Thoughts on WordPress
-  markosaric:
+    summary: 'Mark Jaquith''s archived WordPress development advice, plugin updates, PHP tooling, and ScoutDocs build notes. Latest feed post: May 2020.'
+    profile_photo: https://markjaquith.wordpress.com/wp-content/uploads/2018/02/cropped-headshot13.jpg?w=180
+  marko_saric:
     feed_url: https://markosaric.com/feed/
     homepage_url: https://markosaric.com
     display_name: Marko Saric
-    summary: Updates from Marko Saric.
+    summary: 'Marko Saric''s archived essays on independent blogging, privacy-friendly analytics, ethical marketing, and improving the web. Latest feed post: October 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmarkosaric.com&size=128
   mars_college:
     feed_url: https://marscollege.substack.com/feed
     homepage_url: https://mars.college
     display_name: Mars College
-    summary: Mars College is an educational program, R&D lab, and residential community dedicated to cultivating a low-cost, high-tech lifestyle. Next cohort, Jan 11 - March 29, 2027.
+    summary: Mars College's newsletter about its annual off-grid educational community in the California desert, with classes, art, maker projects, events, and community updates.
+    profile_photo: https://mars.college/apple-touch-icon.png
   marset:
     feed_url: https://www.marset.com/feed/
     homepage_url: https://www.marset.com/usa
-    display_name: USA
-    summary: Lámparas e Iluminación de Diseño
+    display_name: Marset
+    summary: Marset's design-lighting products, installations, projects, and journal stories from its USA website.
+    profile_photo: https://www.marset.com/wp-content/themes/marset/favicons/favicon-180x180.png
   martiancraft:
     feed_url: https://martiancraft.com/feed.xml
-    homepage_url: https://martiancraft.com
-    display_name: The Syndicate
-    summary: A weekly publication on topics that matter covering interface design, software development, and business strategy. Features original writing, design and illustration from MartianCraft.
+    homepage_url: https://martiancraft.com/blog/
+    display_name: MartianCraft - The Syndicate
+    summary: MartianCraft's articles on software engineering, Apple platforms, interface design, AI development tools, and business strategy.
+    profile_photo: https://martiancraft.com/apple-touch-icon.png
   martin_kleppmann:
     feed_url: https://feeds.feedburner.com/martinkl?format=xml
-    homepage_url: http://martin.kleppmann.com
+    homepage_url: https://martin.kleppmann.com
     display_name: Martin Kleppmann's blog
-    summary: Updates from Martin Kleppmann's blog.
-  martinbean_dev:
+    summary: Martin Kleppmann's articles on distributed systems, databases, local-first software, cryptography, formal verification, and research.
+  martin_bean:
     feed_url: https://martinbean.dev/feed.xml
     homepage_url: https://martinbean.dev
     display_name: Martin Bean
-    summary: Updates from Martin Bean.
+    summary: Martin Bean's web development articles on PHP, Laravel, JavaScript, Vue, e-commerce, and software tooling.
+    profile_photo: https://martinbean.dev/img/apple-touch-icon.png
   hudson_valley_one:
     feed_url: https://hudsonvalleyone.com/feed/
     homepage_url: https://hudsonvalleyone.com
