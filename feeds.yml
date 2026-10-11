@@ -17519,253 +17519,280 @@ bots:
   meta_stackexchange:
     feed_url: https://meta.stackexchange.com/feeds
     homepage_url: https://meta.stackexchange.com/questions
-    display_name: Recent Questions - Meta Stack Exchange
-    summary: Updates from Recent Questions - Meta Stack Exchange.
-  metachris_dev:
+    display_name: Meta Stack Exchange
+    summary: Recent community questions about Stack Exchange policies, features, bugs, and site-wide support.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmeta.stackexchange.com%2Fquestions&size=128
+  chris_hager:
     feed_url: https://www.metachris.dev/index.xml
     homepage_url: https://www.metachris.dev
     display_name: Chris Hager
-    summary: Recent content on Chris Hager
-  metafluff:
+    summary: Chris Hager's technical guides and personal writing about software engineering, AI agents, security, open source, and technology.
+    profile_photo: https://www.metachris.dev/images/favicon-32px.png
+  dietrich_ayala:
     feed_url: https://metafluff.com/feed/feed.xml
     homepage_url: https://metafluff.com
-    display_name: dietrich.ayala
-    summary: Updates from dietrich.ayala.
-  methane_github:
+    display_name: Dietrich Ayala
+    summary: Archived writing by Dietrich Ayala about Firefox, browser performance, developer relations, web VR, and life; feed entries end in November 2018.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmetafluff.com&size=128
+  inada_naoki_python_bytes:
     feed_url: https://methane.github.io/index.xml
     homepage_url: https://methane.github.io
-    display_name: Python Bytes
-    summary: Recent content on Python Bytes
-  metropolitan_walkers_org_uk:
+    display_name: Python Bytes - INADA Naoki
+    summary: INADA Naoki's archived posts about Python internals, MySQL drivers, and Go performance; substantive posts end in February 2015. This is not the Python Bytes podcast.
+    profile_photo: https://github.com/methane.png?size=200
+  metropolitan_walkers:
     feed_url: https://www.metropolitan-walkers.org.uk/feed/
     homepage_url: https://www.metropolitan-walkers.org.uk
     display_name: Metropolitan Walkers
-    summary: the London walking community aimed at people of working age
-  mewo2:
+    summary: Walks, social events, weekend trips, and club announcements from Metropolitan Walkers, a London walking community for people of working age.
+    profile_photo: https://www.metropolitan-walkers.org.uk/wp-content/uploads/2021/10/cropped-mw-logo-512x512-1-32x32.png
+  martin_oleary:
     feed_url: https://mewo2.com/feed.xml
     homepage_url: https://mewo2.com
     display_name: Martin O'Leary
-    summary: Updates from Martin O'Leary.
-  rawsignal_ca:
+    summary: Martin O'Leary's personal project notes about creative technology, physical computing, electronic music, and art.
+    profile_photo: https://mewo2.com/images/dithered-portrait-light.png
+  raw_signal_group:
     feed_url: https://www.rawsignal.ca/feed/
     homepage_url: https://www.rawsignal.ca
     display_name: Raw Signal Group
-    summary: We build better bosses.
-  micah_soy:
+    summary: Management and leadership essays by Johnathan and Melissa Nightingale at Raw Signal Group, including the migrated mfbt.ca archive.
+    profile_photo: https://www.rawsignal.ca/wp-content/uploads/2025/01/cropped-RSG_ICON_2C-180x180.png
+  micah_henning:
     feed_url: https://www.micah.soy/index.xml
     homepage_url: https://www.micah.soy
     display_name: Micah Henning
-    summary: Recent content on Micah Henning
-  michael_stapelberg_ch:
+    summary: Micah Henning's technical writing about software development, cloud infrastructure, security, and automation; the latest feed entry is from August 2024.
+    profile_photo: https://www.micah.soy/images/micah-200x200.jpg
+  michael_stapelberg:
     feed_url: https://michael.stapelberg.ch/feed.xml
     homepage_url: https://michael.stapelberg.ch
-    display_name: Michael Stapelbergs Website
-    summary: Updates from Michael Stapelbergs Website.
-  michaellynn_github:
+    display_name: Michael Stapelberg
+    summary: Technical projects and deep dives by Michael Stapelberg about Go, Linux, networking, keyboards, electronics, and systems performance.
+    profile_photo: https://michael.stapelberg.ch/apple-touch-icon-152x152.png
+  mikeymikey_blogs_here:
     feed_url: https://michaellynn.github.io/feed.xml
-    homepage_url: http://michaellynn.github.io
+    homepage_url: https://michaellynn.github.io
     display_name: mikeymikey blogs here
-    summary: the vent for my mind
-  michaelxander:
+    summary: Archived technical posts by Michael Lynn about macOS security, systems administration, networking, and Minecraft; feed entries end in February 2022.
+    profile_photo: https://michaellynn.github.io/apple-touch-icon-57x57.png
+  michael_xander:
     feed_url: https://michaelxander.com/feed.xml
     homepage_url: https://michaelxander.com
     display_name: Michael Xander
-    summary: Musings about technology, design, and how to be more productive.
-  mickens_seas_harvard_edu:
-    feed_url: https://mickens.seas.harvard.edu/feed/
-    homepage_url: https://mickens.seas.harvard.edu
-    display_name: James Mickens
-    summary: Updates from James Mickens.
-  microfictionmondaymagazine:
+    summary: Michael Xander's archived posts about software, product design, productivity, home servers, and privacy; feed entries end in July 2019.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmichaelxander.com&size=128
+  microfiction_monday_magazine:
     feed_url: https://microfictionmondaymagazine.com/feed/
     homepage_url: https://microfictionmondaymagazine.com
     display_name: Microfiction Monday Magazine
-    summary: Updates from Microfiction Monday Magazine.
+    summary: Archived issues of Microfiction Monday Magazine featuring very short fiction; the magazine announced its closure in March 2024.
+    profile_photo: https://secure.gravatar.com/blavatar/55326648b3ea255cf71e0dbed1e0d5f5f712c80114f2d3ab7c729a5cca5544cc?s=114
   microsoft_design:
     feed_url: https://microsoft.design/feed/
     homepage_url: https://microsoft.design
     display_name: Microsoft Design
-    summary: Updates from Microsoft Design.
-  middlechildcomplex_tumblr:
+    summary: Design stories, interviews, typography, brand projects, and product-design perspectives from Microsoft Design.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmicrosoft.design&size=128
+  middle_child_complex:
     feed_url: https://middlechildcomplex.tumblr.com/rss
     homepage_url: https://middlechildcomplex.tumblr.com
     display_name: Middle Child Complex
-    summary: Updates from Middle Child Complex.
+    summary: Archived personal writing and curated art, photography, quotations, and literary imagery from Middle Child Complex; feed entries end in December 2024.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmiddlechildcomplex.tumblr.com&size=128
   mike_bland:
     feed_url: https://mike-bland.com/atom.xml
     homepage_url: https://mike-bland.com
     display_name: Mike Bland
-    summary: Updates from Mike Bland.
-  mikegrouchy:
+    summary: Mike Bland's writing about software engineering, testing, build systems, open source, and music; the latest feed entry is from November 2025.
+    profile_photo: https://mike-bland.com/touch-icon-76.png
+  mike_grouchy:
     feed_url: https://mikegrouchy.com/rss.xml
     homepage_url: https://mikegrouchy.com
     display_name: Mike Grouchy
-    summary: Mike Grouchy's blog about software development, product, and leadership
-  mikekarnj:
+    summary: Mike Grouchy's writing about software development, product, leadership, and AI-assisted programming.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmikegrouchy.com&size=128
+  michael_karnjanaprakorn:
     feed_url: https://mikekarnj.com/posts_feed
     homepage_url: https://mikekarnj.com
     display_name: Michael Karnjanaprakorn
-    summary: Updates from Michael Karnjanaprakorn.
-  mikeknoop:
+    summary: Michael Karnjanaprakorn's personal essays about entrepreneurship, decision making, health, and life.
+    profile_photo: https://cdn.u.pika.page/YPYBfS5yoWtadjzCpgf-UPe6Wv1eBSreqLArAaGKBY4/s:300:300/fn:profile%20copy%204/plain/s3://pika-production/p23zfd6b13ipdyjb5ju6sw35vqsz
+  mike_knoop:
     feed_url: https://mikeknoop.com/feed/
-    homepage_url: http://mikeknoop.com
+    homepage_url: https://mikeknoop.com
     display_name: Mike Knoop
-    summary: Updates from Mike Knoop.
-  mikelovesrobots_substack:
+    summary: Mike Knoop's personal-site updates and essays about entrepreneurship, product development, and AI; the feed includes home and about pages and ends in February 2025.
+    profile_photo: https://mikeknoop.com/static/apple-touch-icon.png
+  mike_judge:
     feed_url: https://mikelovesrobots.substack.com/feed
     homepage_url: https://mikelovesrobots.substack.com
     display_name: Mike Judge
-    summary: 'Software developer for 25+ years. Principal Engineer. Currently investigating whether AI coding tools actually work (spoiler: they don''t).'
-  mikeperham:
+    summary: Software engineer Mike Judge's essays scrutinizing AI coding productivity claims; the two-entry feed ends in September 2025.
+  mike_perham:
     feed_url: https://www.mikeperham.com/index.xml
     homepage_url: https://www.mikeperham.com
     display_name: Mike Perham
-    summary: Recent content on Mike Perham
-  mikeymu_tumblr:
+    summary: Mike Perham's technical writing about Sidekiq, Ruby, background jobs, software performance, and open-source development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mikeperham.com&size=128
+  mikeymu:
     feed_url: https://mikeymu.tumblr.com/rss
     homepage_url: https://mikeymu.tumblr.com
     display_name: MikeyMu
-    summary: Nerd By Day; Nerd By Night. Programming @Recurse. Founder of afikra and LittleBets
-  miki_it:
+    summary: Archived personal learning logs about JavaScript, Node.js, Recurse Center, afikra, and daily life; feed entries end in March 2016.
+    profile_photo: https://api.tumblr.com/v2/blog/mikeymu.tumblr.com/avatar/128
+  mikis_blog:
     feed_url: https://blog.miki.it/index.xml
-    homepage_url: https://miki.it
+    homepage_url: https://blog.miki.it
     display_name: Miki's Blog
-    summary: Recent content on Miki's Blog
-  mikkel_ca:
+    summary: Michele Spagnuolo's archived security research and technical posts about DNS rebinding, web vulnerabilities, APIs, and Flash; feed entries end in August 2015.
+    profile_photo: https://static.miki.it/images/miki_white_small.png
+  mikkel_paulson:
     feed_url: https://mikkel.ca/atom.xml
     homepage_url: https://mikkel.ca
     display_name: Mikkel Paulson
-    summary: Updates from Mikkel Paulson.
+    summary: Mikkel Paulson's personal essays about programming, ADHD, self-employment, community, and politics; the latest feed entry is from February 2023.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmikkel.ca&size=128
   milan_cvitkovic:
     feed_url: https://milan.cvitkovic.net/index.xml
     homepage_url: https://milan.cvitkovic.net
-    display_name: About on Milan Cvitkovic
-    summary: Recent content in About on Milan Cvitkovic
-  milwaukeerecord:
+    display_name: Milan Cvitkovic
+    summary: Milan Cvitkovic's essays and notes about science, neurotechnology, research organizations, travel, and practical life advice.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmilan.cvitkovic.net&size=128
+  milwaukee_record:
     feed_url: https://milwaukeerecord.com/feed/
     homepage_url: https://milwaukeerecord.com
     display_name: Milwaukee Record
-    summary: Bringing you important (and irreverent) coverage of all things Milwaukee since 2014.
-  mindmanager:
+    summary: Milwaukee news, arts, music, food, sports, and irreverent local culture coverage; the feed also includes selected event promotions.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmilwaukeerecord.com&size=128
+  mindmanager_blog:
     feed_url: https://blog.mindmanager.com/feed/
-    homepage_url: https://www.mindmanager.com/en
+    homepage_url: https://blog.mindmanager.com
     display_name: MindManager Blog
-    summary: Updates from MindManager Blog.
-  mindnode:
+    summary: MindManager's product updates and articles about mind mapping, project workflows, task management, and workplace productivity; feed entries end in October 2024.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mindmanager.com%2Fen&size=128
+  mindnode_blog:
     feed_url: https://www.mindnode.com/api/rss
     homepage_url: https://www.mindnode.com
     display_name: MindNode Blog
-    summary: Latest updates, tips, and insights from the MindNode team about mind mapping, productivity, and visual thinking.
-  minimali_se:
-    feed_url: https://minimali.se/feed/
-    homepage_url: https://minimali.se
-    display_name: minimali.se
-    summary: Webbdesign för alla
+    summary: MindNode product releases, tips, and team updates about mind mapping, visual thinking, and productivity.
+    profile_photo: https://www.mindnode.com/static/favicons/apple-touch-icon.png
   minimalissimo:
     feed_url: https://minimalissimo.com/feed/rss
     homepage_url: https://minimalissimo.com
     display_name: Minimalissimo
-    summary: The global platform for the best in minimalist design and culture.
-  minimalmac:
+    summary: Minimalist architecture, interiors, furniture, objects, visual design, and culture curated by Minimalissimo.
+    profile_photo: https://minimalissimo.com/og-image.png
+  minimal_mac:
     feed_url: https://minimalmac.com/rss
     homepage_url: https://minimalmac.com
     display_name: Minimal Mac
-    summary: Written & Curated by Patrick Rhone
-  minimalmonkey:
+    summary: Patrick Rhone's archived writing and curated links about minimalist computing and Apple tools; the final post, The End, is from May 2015.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fminimalmac.com&size=128
+  minimal_monkey:
     feed_url: https://minimalmonkey.com/feed.xml
     homepage_url: https://minimalmonkey.com
-    display_name: Minimal Monkey - Stephen Burgess
-    summary: Hello my name is Stephen Burgess.
-  mininggazette:
+    display_name: Minimal Monkey
+    summary: Stephen Burgess's archived front-end development tutorials, creative coding experiments, and personal updates; feed entries end in July 2014, with working article links on the site's S3 archive.
+  the_mining_gazette:
     feed_url: https://www.mininggazette.com/feed/
     homepage_url: https://www.mininggazette.com
     display_name: The Mining Gazette
-    summary: Updates from The Mining Gazette.
+    summary: Local news, sports, community stories, and opinion from The Mining Gazette in Houghton and Michigan's Copper Country.
+    profile_photo: https://ogden_images.s3.amazonaws.com/www.mininggazette.com/images/2026/07/15151032/favicon.png
   minnpost:
     feed_url: https://www.minnpost.com/feed/
     homepage_url: https://www.minnpost.com
     display_name: MinnPost
-    summary: Nonprofit, independent journalism. Supported by readers.
-  mirantis:
+    summary: Nonprofit journalism about Minnesota politics, public affairs, communities, and culture, with national reporting relevant to Minnesota.
+    profile_photo: https://i0.wp.com/www.minnpost.com/wp-content/uploads/2023/12/favicon.png?fit=180%2C180&ssl=1
+  mirantis_blog:
     feed_url: https://www.mirantis.com/blog/feed.xml
-    homepage_url: https://www.mirantis.com
-    display_name: Blog Mirantis
-    summary: Pure Play Open Cloud
+    homepage_url: https://www.mirantis.com/blog/
+    display_name: Mirantis Blog
+    summary: Mirantis technical articles, training announcements, and product updates about cloud infrastructure, Kubernetes, containers, and AI infrastructure.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mirantis.com&size=128
   mirror:
     feed_url: https://www.mirror.co.uk/?service=rss
     homepage_url: https://www.mirror.co.uk
-    display_name: Mirror - mirror frontpage
-    summary: RSS feed from Mirror
+    display_name: Mirror
+    summary: UK and world news, politics, sport, celebrity coverage, and entertainment from the Mirror.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mirror.co.uk&size=128
   misen:
     feed_url: https://misen.com/blogs/news.atom
     homepage_url: https://misen.com/blogs/news
-    display_name: Misen - News
-    summary: Updates from Misen - News.
+    display_name: Misen
+    summary: Cooking techniques, cookware comparisons, kitchen advice, and product-focused articles from Misen's ChopTalk blog.
+    profile_photo: https://misen.com/cdn/shop/files/Misen_Favicon-Red-2.png?crop=center&height=32&v=1780933984&width=32
   missoulian:
     feed_url: https://missoulian.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
-    homepage_url: https://missoulian.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
-    display_name: 'missoulian.com - RSS Results of type article with keyword(s) of #topstory'
-    summary: 'missoulian.com - RSS Results only for asset type(s) of article with keyword(s) of #topstory'
-  mistral_ai:
+    homepage_url: https://missoulian.com
+    display_name: Missoulian
+    summary: Missoulian articles tagged as top stories about Missoula and Montana news, local history, sports, and community life; this selected feed's latest entries are from March 2026.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmissoulian.com%2Fsearch%2F%3Ff%3Drss%26t%3Darticle%26l%3D50%26s%3Dstart_time%26sd%3Ddesc%26k%255B%255D%3D%2523topstory&size=128
+  mistral_blog:
     feed_url: https://mistral.ai/news/rss
     homepage_url: https://mistral.ai
     display_name: Mistral Blog
-    summary: Latest news and updates from Mistral
+    summary: Official Mistral AI model releases, product announcements, partnerships, and company news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmistral.ai&size=128
   mitchchn_me:
     feed_url: http://www.mitchchn.me/feed.xml
     homepage_url: http://mitchchn.me
     display_name: mitchchn.me
-    summary: Coffee, Code, Language and Giant Spiders - By Mitchell Cohen
+    summary: Mitchell Cohen's archived posts about programming, OS X command-line tools, software, and language; feed entries end in May 2014.
   mitxela:
-    feed_url: http://mitxela.com/feed
+    feed_url: https://mitxela.com/feed
     homepage_url: https://mitxela.com/projects
-    display_name: latest projects - mitxela.com
-    summary: Projects posted recently
+    display_name: mitxela
+    summary: Electronics, clocks, musical devices, and creative hardware projects from mitxela.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmitxela.com%2Fprojects&size=128
   mixd:
     feed_url: https://www.mixd.co.uk/feed/
     homepage_url: https://www.mixd.co.uk
     display_name: Mixd
-    summary: Updates from Mixd.
-  mixes_dabears_ca:
+    summary: Web accessibility, WordPress, design, development, and studio updates from Mixd.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mixd.co.uk&size=128
+  dabears_mixes:
     feed_url: http://mixes.dabears.ca/v2/feed/
     homepage_url: http://mixes.dabears.ca/v2
     display_name: 'dabears : mixes'
-    summary: EDM mixes from the present and past.
-  mjg59_dreamwidth:
-    feed_url: https://mjg59.dreamwidth.org/data/rss
-    homepage_url: https://mjg59.dreamwidth.org
+    summary: Archived electronic dance music mixes and track lists from dabears; the latest feed entry is from July 2021.
+  matthew_garrett:
+    feed_url: https://www.codon.org.uk/~mjg59/blog/index.xml
+    homepage_url: https://codon.org.uk/~mjg59/blog
     display_name: Matthew Garrett
-    summary: Matthew Garrett - Dreamwidth Studios
-  mmminimal:
-    feed_url: https://mmminimal.com/feed/
-    homepage_url: https://mmminimal.com
-    display_name: mmminimal
-    summary: Tastefully Simple
+    summary: Matthew Garrett's writing about Linux, firmware, power management, security, and technology; the current blog is explicitly linked from his former Dreamwidth journal.
   mmorpg:
     feed_url: https://www.mmorpg.com/rss
     homepage_url: https://www.mmorpg.com
-    display_name: MMORPG.com Latest News
-    summary: The latest content from MMORPG.com's industry leading editorial team.
-  mnchrm_co:
+    display_name: MMORPG.com
+    summary: MMO and video-game news, reviews, columns, and gaming hardware coverage from MMORPG.com.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.mmorpg.com&size=128
+  monochromatic_aberration:
     feed_url: https://mnchrm.co/rss/
     homepage_url: https://mnchrm.co
     display_name: Monochromatic Aberration
-    summary: A Manifesto for a More Wondrous Age
-  mnot:
+    summary: Personal essays, photography, art, books, anime, games, and reflections on creativity and the examined life from Monochromatic Aberration.
+    profile_photo: https://mnchrm.co/content/images/size/w256h256/2023/03/android-chrome-512x512-1.png
+  mark_nottingham:
     feed_url: https://mnot.net/blog/index.atom
     homepage_url: https://mnot.net/blog
     display_name: Mark Nottingham
-    summary: Updates from Mark Nottingham.
+    summary: Mark Nottingham's writing about HTTP, web standards, internet architecture, protocols, and technology policy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmnot.net%2Fblog&size=128
   mobiforge:
     feed_url: https://mobiforge.com/feed
     homepage_url: https://mobiforge.com
     display_name: mobiForge
-    summary: Mobile Web Development
-  modernfarmer:
+    summary: Archived mobile-web development tutorials, research, and commentary about browsers, devices, performance, and user-agent detection; the latest feed entry is from July 2023.
+    profile_photo: https://mobiforge.com/wp-content/themes/mobiforge/images/favicons/favicon-57.png
+  modern_farmer:
     feed_url: https://modernfarmer.com/feed/
     homepage_url: https://modernfarmer.com
     display_name: Modern Farmer
-    summary: Farm. Food. Life.
+    summary: Food, farming, gardening, sustainability, and agriculture reporting and practical guides from Modern Farmer.
+    profile_photo: https://modernfarmer.com/wp-content/uploads/fbrfg/apple-touch-icon.png?v=20240807
   colossal:
     feed_url: https://www.thisiscolossal.com/feed/
     homepage_url: https://www.thisiscolossal.com
