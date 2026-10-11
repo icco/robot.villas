@@ -219,6 +219,256 @@ bots:
     display_name: Xe Iaso
     summary: Technical writing on Nix, Go, and the philosophy of software.
     profile_photo: https://xeiaso.net/static/img/avatar.png
+  jasdev_me:
+    feed_url: https://jasdev.me/atom.xml
+    homepage_url: https://jasdev.me
+    display_name: Distillations
+    summary: Updates from Distillations.
+  jasonevanish:
+    feed_url: https://jasonevanish.com/feed/
+    homepage_url: https://jasonevanish.com
+    display_name: Building Customer Driven SaaS Products | Jason Evanish
+    summary: Posts with strategies and tactics on building great products and how to be a better leader
+  jeremykun:
+    feed_url: https://www.jeremykun.com/index.xml
+    homepage_url: https://www.jeremykun.com
+    display_name: Math ∩ Programming
+    summary: Recent content on Math ∩ Programming
+  jmoiron:
+    feed_url: https://jmoiron.net/blog/rss
+    homepage_url: http://jmoiron.net/blog
+    display_name: jmoiron.net blog
+    summary: discussion about tech, footie, photos
+  joeyh_name:
+    feed_url: https://joeyh.name/blog/index.rss
+    homepage_url: http://joeyh.name/blog
+    display_name: see shy jo
+    summary: joey
+  justinjackson_ca:
+    feed_url: https://justinjackson.ca/feed
+    homepage_url: https://justinjackson.ca
+    display_name: Justin Jackson
+    summary: Co-founder of Transistor.fm (podcast hosting). Writing about SaaS, bootstrapping, and building calm companies.
+  kk:
+    feed_url: https://kk.org/cooltools/feed/
+    homepage_url: https://kk.org/cooltools
+    display_name: Cool Tools
+    summary: Cool tools really work. A cool tool can be any book, gadget, software, video, map, hardware, material, or website that is tried and true. All reviews on this site are written by readers who have actually used the tool and others like it. Items can be either old or new as long as they are wonderful. We only post things we like and ignore the rest. Suggestions for tools much better than what is recommended here are always wanted. Tell me what you love.
+  knightfoundation:
+    feed_url: https://knightfoundation.org/feed/
+    homepage_url: https://knightfoundation.org
+    display_name: Knight Foundation
+    summary: Updates from Knight Foundation.
+  kracekumar:
+    feed_url: https://kracekumar.com/index.xml
+    homepage_url: https://kracekumar.com
+    display_name: Technical Ramblings
+    summary: Recent content on Technical Ramblings
+  ktvu:
+    feed_url: https://www.ktvu.com/rss.xml
+    homepage_url: https://www.ktvu.com
+    display_name: Latest & Breaking News | KTVU FOX 2 San Francisco
+    summary: Discover the latest breaking news feed with KTVU FOX 2 San Francisco. Find out what the latest news is and read about the latest news happening today.
+  learn_sparkfun:
+    feed_url: https://learn.sparkfun.com/feeds/blog
+    homepage_url: https://learn.sparkfun.com/blog
+    display_name: 'SparkFun: Learn Blog'
+    summary: 'Updates from SparkFun: Learn Blog.'
+  lessig_tumblr:
+    feed_url: https://lessig.tumblr.com/rss
+    homepage_url: https://lessig.tumblr.com
+    display_name: LESSIG Blog
+    summary: thoughts that should go somewhere
+  lowendbox:
+    feed_url: https://lowendbox.com/feed/
+    homepage_url: https://lowendbox.com
+    display_name: LowEndBox
+    summary: The home of cheap VPS, hosting deals, and industry news
+  macworld:
+    feed_url: https://www.macworld.com/feed
+    homepage_url: https://www.macworld.com
+    display_name: Macworld
+    summary: Macworld is your best source for all things Apple. We give you the scoop on what's new, what's best and how to make the most out of the products you love.
+  mahdiyusuf:
+    feed_url: https://www.mahdiyusuf.com/rss/
+    homepage_url: https://www.mahdiyusuf.com
+    display_name: Mahdi Yusuf
+    summary: Thoughts on software, people, and side projects — written before the story gets cleaned up.
+  marieclaire:
+    feed_url: https://www.marieclaire.com/feeds.xml
+    homepage_url: https://www.marieclaire.com
+    display_name: Latest from Marie Claire
+    summary: All the latest content from the Marie Claire team
+  marissamayr_tumblr:
+    feed_url: https://marissamayr.tumblr.com/rss
+    homepage_url: https://marissamayr.tumblr.com
+    display_name: Marissa's Tumblr
+    summary: Updates from Marissa's Tumblr.
+  mathiasbynens_be:
+    feed_url: https://mathiasbynens.be/notes.atom
+    homepage_url: https://mathiasbynens.be/notes
+    display_name: Mathias Bynens
+    summary: Updates from Mathias Bynens.
+  matt_might:
+    feed_url: https://matt.might.net/articles/feed.rss
+    homepage_url: http://matt.might.net
+    display_name: Matt Might's blog
+    summary: Matt Might's blog
+  matt_blog:
+    feed_url: https://matt.blog/feed/
+    homepage_url: https://matt.blog
+    display_name: Matt on Not-WordPress, mostly photos
+    summary: Stuff and things.
+  mattermost:
+    feed_url: https://mattermost.com/feed.xml
+    homepage_url: https://mattermost.com
+    display_name: Mattermost Blog
+    summary: Mattermost is a secure collaboration platform built for organizations that need to keep their most critical information safe.
+  mcmansionhell:
+    feed_url: https://mcmansionhell.com/rss
+    homepage_url: https://mcmansionhell.com
+    display_name: McMansion Hell
+    summary: If you love to hate the ugly houses that became ubiquitous before (and after) the bubble burst you’ve come to the right place. Be sure to check out McMansions 101! All photos © McMansionHell.com unless otherwise noted.
+  mediaite:
+    feed_url: https://www.mediaite.com/feed/
+    homepage_url: https://www.mediaite.com
+    display_name: Mediaite
+    summary: Mediaite.com | News & Opinion
+  mixmag:
+    feed_url: https://mixmag.net/rss.xml
+    homepage_url: https://mixmag.net
+    display_name: Mixmag
+    summary: The Latest from Mixmag
+  modelviewculture:
+    feed_url: https://modelviewculture.com/feed
+    homepage_url: https://modelviewculture.com
+    display_name: Model View Culture
+    summary: A magazine about technology, culture and diversity.
+  modernluxury:
+    feed_url: https://www.modernluxury.com/feed/
+    homepage_url: https://www.modernluxury.com
+    display_name: Modern Luxury
+    summary: Modern Luxury
+  moshi_kun_tumblr:
+    feed_url: https://moshi-kun.tumblr.com/rss
+    homepage_url: https://moshi-kun.tumblr.com
+    display_name: MIKE WROBEL
+    summary: "French Artist based in Tokyo \U0001F1EB\U0001F1F7 \U0001F1EF\U0001F1F5 Big love for Pop Culture, pizzas, quantum mechanics, numerical relativity and gravitational fields \U0001F61C email: mike@moshistudio.com © 2014 Mike Wrobel All rights reserved. No commercial use, no redistributed modifications allowed."
+  mustangnews:
+    feed_url: https://mustangnews.net/feed/
+    homepage_url: https://mustangnews.net
+    display_name: Mustang News
+    summary: Updates from Mustang News.
+  mv_voice:
+    feed_url: https://www.mv-voice.com/feed/
+    homepage_url: https://www.mv-voice.com
+    display_name: Mountain View Voice
+    summary: Nonprofit local news for the Midpeninsula
+  nbcbayarea:
+    feed_url: https://www.nbcbayarea.com/?rss=y
+    homepage_url: https://www.nbcbayarea.com
+    display_name: NBC Bay Area
+    summary: Updates from NBC Bay Area.
+  neil_fraser_name:
+    feed_url: https://neil.fraser.name/scripts/atom.py
+    homepage_url: https://neil.fraser.name
+    display_name: Neil Fraser's News
+    summary: Updates from Neil Fraser's News.
+  neugierig:
+    feed_url: https://neugierig.org/software/blog/atom.xml
+    homepage_url: https://neugierig.org/software/blog
+    display_name: Tech Notes
+    summary: Updates from Tech Notes.
+  nieman_harvard_edu:
+    feed_url: https://nieman.harvard.edu/feed/
+    homepage_url: https://nieman.harvard.edu
+    display_name: Nieman Foundation
+    summary: Updates from Nieman Foundation.
+  nithinbekal:
+    feed_url: https://nithinbekal.com/feed.xml
+    homepage_url: https://nithinbekal.com
+    display_name: Nithin Bekal
+    summary: Updates from Nithin Bekal.
+  nnnnnnnn_co:
+    feed_url: https://nnnnnnnn.co/rss.xml
+    homepage_url: https://nnnnnnnn.co
+    display_name: nnnnnnnn.co
+    summary: we are new and we are the same.
+  noaa_gov:
+    feed_url: https://www.noaa.gov/rss.xml
+    homepage_url: https://www.noaa.gov
+    display_name: National Oceanic and Atmospheric Administration - U.S. Department of Commerce
+    summary: Updates from National Oceanic and Atmospheric Administration - U.S. Department of Commerce.
+  note:
+    feed_url: https://note.com/solder_state/rss
+    homepage_url: https://note.com/solder_state
+    display_name: HAGIWO/ハギヲ
+    summary: モジュラーシンセを始めた人。仕事はレガシーなエンジニア。
+  timeout:
+    feed_url: https://www.timeout.com/london/blog/feed.rss
+    homepage_url: https://www.timeout.com/london
+    display_name: Time Out London
+    summary: Your up-to-the-minute guide to London life, news, culture, pop-ups, and openings
+  okayfail:
+    feed_url: https://okayfail.com/atom.xml
+    homepage_url: http://okayfail.com
+    display_name: okayfail.com
+    summary: Updates from okayfail.com.
+  onebigfluke:
+    feed_url: https://www.onebigfluke.com/feeds/posts/default
+    homepage_url: https://www.onebigfluke.com
+    display_name: One Big Fluke
+    summary: Updates from One Big Fluke.
+  onemileatatime:
+    feed_url: https://onemileatatime.com/feed/
+    homepage_url: https://onemileatatime.com
+    display_name: One Mile at a Time
+    summary: The latest travel news, reviews, and strategies to maximize elite travel status. Earn more miles, points, and rewards with top credit card offers.
+  ontwik:
+    feed_url: https://www.ontwik.com/feed/
+    homepage_url: https://www.ontwik.com
+    display_name: OTK Tech Info
+    summary: Techy Info
+  opensoul:
+    feed_url: http://feeds.feedburner.com/opensoul
+    homepage_url: http://opensoul.org
+    display_name: Brandon Keepers
+    summary: Updates from Brandon Keepers.
+  out:
+    feed_url: https://www.out.com/feeds/feed.rss
+    homepage_url: https://www.out.com
+    display_name: Out Magazine
+    summary: Out Magazine
+  pagesix:
+    feed_url: https://pagesix.com/feed/
+    homepage_url: https://pagesix.com
+    display_name: Page Six
+    summary: Your source for celebrity news, gossip, entertainment, pop culture, photos, video and more.
+  parislemon:
+    feed_url: https://parislemon.com/rss
+    homepage_url: https://parislemon.com
+    display_name: ParisLemon
+    summary: Howdy, I’m M.G. Siegler. I’m a general partner at GV. This is where I collect things.
+  patagonia:
+    feed_url: https://www.patagonia.com/blog/feed
+    homepage_url: https://www.patagonia.com/home
+    display_name: Patagonia Stories
+    summary: Updates from Patagonia Stories.
+  paulbuchheit_blogspot:
+    feed_url: https://paulbuchheit.blogspot.com/feeds/posts/default
+    homepage_url: https://paulbuchheit.blogspot.com
+    display_name: Paul Buchheit
+    summary: Updates from Paul Buchheit.
+  paulhammant:
+    feed_url: https://paulhammant.com/atom.xml
+    homepage_url: https://paulhammant.com
+    display_name: Paul Hammant's blog
+    summary: Updates from Paul Hammant's blog.
+  pcmag:
+    feed_url: https://www.pcmag.com/feeds/rss/latest
+    homepage_url: https://www.pcmag.com
+    display_name: PCMag.com - Technology Product Reviews, News, Prices & Tips
+    summary: PCMag is your complete guide to PC computers, peripherals and upgrades. We test and review computer- and Internet-related products and services, report technology news and trends, and provide shopping advice and price comparisons.
   hackaday:
     feed_url: https://hackaday.com/feed/
     homepage_url: https://hackaday.com
