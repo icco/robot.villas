@@ -1032,6 +1032,256 @@ bots:
     display_name: Vercel
     summary: Frontend infrastructure, Next.js, edge computing, and web performance.
     profile_photo: https://py8fhxnkzwtsqdo9.public.blob.vercel-storage.com/front/favicon/vercel/android-chrome-512x512.png
+  lawsofsimplicity:
+    feed_url: https://lawsofsimplicity.com/rss.xml
+    homepage_url: https://lawsofsimplicity.com
+    display_name: Astro Blog
+    summary: Welcome to my website!
+  authentise:
+    feed_url: https://www.authentise.com/blog-feed.xml
+    homepage_url: https://www.authentise.com/blog
+    display_name: Authentise
+    summary: Data-driven workflow management solutions for the world’s most agile engineering and manufacturing operations
+  layerbag:
+    feed_url: https://layerbag.com/rss.xml
+    homepage_url: https://layerbag.com
+    display_name: Layerbag's RSS Feed
+    summary: Design and Inspiration Magazine
+  lazyadmin_nl:
+    feed_url: https://lazyadmin.nl/feed/
+    homepage_url: https://lazyadmin.nl
+    display_name: LazyAdmin
+    summary: Tips and howto's about Office 365, PowerShell, Home network and smart devices
+  lbry:
+    feed_url: https://lbry.com/news/rss.xml
+    homepage_url: https://lbry.com/news
+    display_name: LBRY News
+    summary: Recent news about LBRY
+  lcamtuf_blogspot:
+    feed_url: https://lcamtuf.blogspot.com/feeds/posts/default
+    homepage_url: https://lcamtuf.blogspot.com
+    display_name: lcamtuf's old blog
+    summary: Updates from lcamtuf's old blog.
+  blog_coredump_cx:
+    feed_url: https://blog.coredump.cx/feed
+    homepage_url: https://blog.coredump.cx
+    display_name: lcamtuf’s thing
+    summary: geek culture, algorithms, electronic circuit design, and chainsaw safety tips
+  ldirer:
+    feed_url: https://ldirer.com/rss.xml
+    homepage_url: https://ldirer.com/blog
+    display_name: Laurent Direr's blog
+    summary: Posts about programming
+  leaddev:
+    feed_url: https://leaddev.com/feed
+    homepage_url: https://leaddev.com
+    display_name: LeadDev
+    summary: The home of engineering leadership
+  leafo:
+    feed_url: https://leafo.net/feed.xml
+    homepage_url: http://leafo.net
+    display_name: leafo.net
+    summary: New posts and guides on leafo.net
+  leancrew:
+    feed_url: https://leancrew.com/all-this/feed/
+    homepage_url: https://leancrew.com/all-this
+    display_name: And now it’s all this
+    summary: I just said what I said and it was wrong. Or was taken wrong.
+  leandromoreira:
+    feed_url: https://leandromoreira.com/feed/
+    homepage_url: https://leandromoreira.com
+    display_name: Leandro Moreira
+    summary: Software development
+  leanessays:
+    feed_url: https://www.leanessays.com/feeds/posts/default
+    homepage_url: https://www.leanessays.com
+    display_name: Lean Essays
+    summary: Updates from Lean Essays.
+  learnaddict_academy:
+    feed_url: https://learnaddict.academy/index.xml
+    homepage_url: https://learnaddict.academy/index.html
+    display_name: 'Home :: Learn Addict Academy'
+    summary: Secure Your Home Lab With Lets Encrypt SSL Certificates, Caddy and Mythic Beasts DNS Installing OmniFeather with Feathercoin Wallet on a Raspberry Pi Learn about Satellites by building a Ground Station Thinking inside the box – Introducing ChIoT Cross-skilling, Tooling, and Lockdown Bread Learning with a Raspberry Pi powered Pi-Top laptop My Journey Through Education and Academia Using Gammu-smsd and MySQL to Send and Receive SMS Text Messages Send and Receive SMS Text Messages with Raspberry Pi
+  leastauthority:
+    feed_url: https://leastauthority.com/feed/
+    homepage_url: https://leastauthority.com
+    display_name: Least Authority
+    summary: Privacy Matters
+  lecklider:
+    feed_url: https://lecklider.com/rss/
+    homepage_url: https://lecklider.com
+    display_name: Evan Lecklider
+    summary: I'm a full stack software engineer based out of Portland, OR.
+  lee_dohm:
+    feed_url: https://www.lee-dohm.com/feed.xml
+    homepage_url: https://www.lee-dohm.com
+    display_name: lee-dohm.com
+    summary: Updates from lee-dohm.com.
+  leg100_github:
+    feed_url: https://leg100.github.io/index.xml
+    homepage_url: https://leg100.github.io
+    display_name: leg100.github.io
+    summary: Recent content on leg100.github.io
+  legallayer_substack:
+    feed_url: https://legallayer.substack.com/feed
+    homepage_url: https://legallayer.substack.com
+    display_name: Legal Layer
+    summary: Legal architecture for AI builders and founders. Turning complex liability, privacy, and regulatory questions into practical product decisions.
+  legalsupportnetwork:
+    feed_url: https://www.legalsupportnetwork.co.uk/feed/
+    homepage_url: https://www.legalsupportnetwork.co.uk
+    display_name: Legal Support Network
+    summary: Updates from Legal Support Network.
+  lemiffe:
+    feed_url: https://lemiffe.com/atom.xml
+    homepage_url: https://lemiffe.com
+    display_name: LEMIFFE
+    summary: Updates from LEMIFFE.
+  lemonsweetie_tumblr:
+    feed_url: https://lemonsweetie.tumblr.com/rss
+    homepage_url: https://lemonsweetie.tumblr.com
+    display_name: This blog is discontinued
+    summary: This blog was on hiatus but is now inactive If you are here from the Sir Patrick Stewart post/video, and are in need of resources from an abusive relationship, please look at this post here and stay safe. ☆ gifs ☆ Doodles ☆
+  lensrentals:
+    feed_url: https://www.lensrentals.com/blog/feed.xml
+    homepage_url: https://www.lensrentals.com
+    display_name: Lensrentals Blog
+    summary: Photo/video thoughts from the largest rental house.
+  lesswrong:
+    feed_url: https://www.lesswrong.com/feed.xml
+    homepage_url: https://www.lesswrong.com
+    display_name: LessWrong
+    summary: A community blog devoted to refining the art of rationality
+  levels:
+    feed_url: https://levels.io/rss
+    homepage_url: https://levels.io
+    display_name: '@levelsio (Pieter Levels)'
+    summary: Bootstrapping startups while traveling the world.
+  levelshealth:
+    feed_url: https://www.levels.com/feed/
+    homepage_url: https://www.levelshealth.com
+    display_name: Levels
+    summary: Unlock Your Metabolic Health
+  leveragedsellout:
+    feed_url: http://feeds.feedburner.com/leveragedsellout/lCfw
+    homepage_url: https://www.leveragedsellout.com
+    display_name: The Leveraged Sell-Out
+    summary: Living the dream...
+  lexontech:
+    feed_url: https://lexontech.org/feed
+    homepage_url: https://lexontech.org
+    display_name: Lex on Tech
+    summary: Indie apps, Apple, op-eds, and more — tech writing from Lex Friedman.
+  lg:
+    feed_url: https://lg.io/feed.xml
+    homepage_url: https://lg.io
+    display_name: Larry Land
+    summary: Larry Gadea's random ramblings
+  lianza:
+    feed_url: https://lianza.org/index.xml
+    homepage_url: https://lianza.org
+    display_name: Personal Website of Tom Lianza on Personal Website of Tom Lianza
+    summary: Recent content in Personal Website of Tom Lianza on Personal Website of Tom Lianza
+  liberalco:
+    feed_url: https://liberalco.org/feed/
+    homepage_url: https://liberalco.org
+    display_name: Liberal Conspiracy
+    summary: Progressive Ideas United
+  libertystreeteconomics_newyorkfed:
+    feed_url: https://libertystreeteconomics.newyorkfed.org/feed/
+    homepage_url: https://libertystreeteconomics.newyorkfed.org
+    display_name: Liberty Street Economics
+    summary: Updates from Liberty Street Economics.
+  lieu_house_gov:
+    feed_url: https://lieu.house.gov/rss.xml
+    homepage_url: http://lieu.house.gov
+    display_name: Congressman Ted Lieu - Representing the 36th District of California
+    summary: Updates from Congressman Ted Lieu - Representing the 36th District of California.
+  lifeandtimes:
+    feed_url: https://lifeandtimes.com/feed
+    homepage_url: https://lifeandtimes.com
+    display_name: Life+Times
+    summary: Curated by Shawn "JAY Z" Carter, JAY Z's Life+Times is a digital experience covering art, sports, music, fashion and culture.
+  lifebeyondfife:
+    feed_url: https://lifebeyondfife.com/rss.xml
+    homepage_url: https://lifebeyondfife.com
+    display_name: Life Beyond Fife
+    summary: Engineering from the glorious Kingdom
+  au_lifehacker:
+    feed_url: https://au.lifehacker.com/feed.xml
+    homepage_url: https://au.lifehacker.com
+    display_name: Lifehacker Australia
+    summary: Updates from Lifehacker Australia.
+  lifeofastrangerwhostolemyphone_tumblr:
+    feed_url: https://lifeofastrangerwhostolemyphone.tumblr.com/rss
+    homepage_url: https://lifeofastrangerwhostolemyphone.tumblr.com
+    display_name: 'life of a stranger who stole my phone:'
+    summary: This is the inspiring story of hafid from dubai, the douchebag who stole my phone. he forgot to switch off the camera upload function, that’s why we will enjoy a deep insight into his life. Start on first page.
+  lifestyle_si:
+    feed_url: https://lifestyle.si.com/feed
+    homepage_url: https://lifestyle.si.com
+    display_name: SI Lifestyle Feed
+    summary: Updates from SI Lifestyle Feed.
+  lightstalking:
+    feed_url: https://www.lightstalking.com/feed/
+    homepage_url: https://www.lightstalking.com
+    display_name: Light Stalking
+    summary: Illuminating Your Passion
+  lihaoyi:
+    feed_url: https://www.lihaoyi.com/feed.xml
+    homepage_url: http://www.lihaoyi.com
+    display_name: Haoyi's Programming Blog
+    summary: Updates from Haoyi's Programming Blog.
+  lil_law_harvard_edu:
+    feed_url: https://lil.law.harvard.edu/blog/feed/index.xml
+    homepage_url: https://lil.law.harvard.edu/blog
+    display_name: The Harvard Library Innovation Lab
+    summary: The Library Innovation Lab is growing knowledge and community by bringing library principles to technological frontiers.
+  lily_camera:
+    feed_url: https://www.lily.camera/feeds/posts/default
+    homepage_url: https://www.lily.camera
+    display_name: Lily Camera
+    summary: Updates from Lily Camera.
+  limi:
+    feed_url: https://limi.net/feed.xml
+    homepage_url: http://limi.net
+    display_name: Alex Limi
+    summary: Updates from Alex Limi.
+  linbug_github:
+    feed_url: https://linbug.github.io/atom.xml
+    homepage_url: https://linbug.github.io
+    display_name: Linbug
+    summary: Updates from Linbug.
+  line25:
+    feed_url: https://line25.com/feed/
+    homepage_url: https://line25.com
+    display_name: Line25.com
+    summary: Graphic Design & Web Design Since 2009
+  linuxczar:
+    feed_url: https://linuxczar.net/index.xml
+    homepage_url: http://linuxczar.net
+    display_name: LinuxCzar
+    summary: Recent content on LinuxCzar
+  linuxgazette:
+    feed_url: https://linuxgazette.net/lg.rss
+    homepage_url: http://linuxgazette.net
+    display_name: Linux Gazette
+    summary: 'An e-zine dedicated to making Linux just a little bit more fun. Published the first day of every month. Issue 186: June, 2011'
+  linuxiac:
+    feed_url: https://linuxiac.com/feed/
+    homepage_url: https://linuxiac.com
+    display_name: Linuxiac
+    summary: Latest Linux and Open Source News
+  linuxlinks:
+    feed_url: https://www.linuxlinks.com/feed/
+    homepage_url: https://www.linuxlinks.com
+    display_name: LinuxLinks
+    summary: Best Free Linux Software & Open Source Reviews
+  lionpublishers:
+    feed_url: https://lionpublishers.com/feed/
+    homepage_url: https://lionpublishers.com
+    display_name: LION Publishers
+    summary: Local Independent Online News
   sentry:
     feed_url: https://blog.sentry.io/feed.xml
     homepage_url: https://blog.sentry.io
