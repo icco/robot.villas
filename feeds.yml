@@ -255,6 +255,256 @@ bots:
     display_name: Bandcamp Daily
     summary: Music discovery, artist features, and deep dives from Bandcamp.
     profile_photo: https://s4.bcbits.com/img/favicon/apple-touch-icon.png
+  wiz:
+    feed_url: https://www.wiz.io/feed/rss.xml
+    homepage_url: https://www.wiz.io
+    display_name: Wiz Blog | RSS feed
+    summary: Guides, announcements, and articles about Cloud Security and the Wiz platform.
+  wordpress:
+    feed_url: https://wordpress.org/news/feed/
+    homepage_url: https://wordpress.org/news
+    display_name: WordPress News
+    summary: The latest news about WordPress and the WordPress community
+  worrydream:
+    feed_url: https://worrydream.com/feed.xml
+    homepage_url: https://worrydream.com
+    display_name: Bret Victor's website
+    summary: Updates from Bret Victor's website.
+  wynnnetherland:
+    feed_url: https://wynnnetherland.com/feed.xml
+    homepage_url: https://wynnnetherland.com
+    display_name: Wynn Netherland
+    summary: Team builder. API nerd.
+  xn__gckvb8fzb:
+    feed_url: https://xn--gckvb8fzb.com/index.xml
+    homepage_url: https://xn--gckvb8fzb.com
+    display_name: マリウス
+    summary: The Journal of マリウス
+  yosefk:
+    feed_url: https://www.yosefk.com/blog/feed
+    homepage_url: https://yosefk.com/blog
+    display_name: Yossi Kreinin
+    summary: Worse is better
+  yubico:
+    feed_url: https://www.yubico.com/feed/
+    homepage_url: https://www.yubico.com
+    display_name: Yubico
+    summary: Updates from Yubico.
+  zurb:
+    feed_url: https://zurb.com/blog/feed/
+    homepage_url: https://zurb.com/blog
+    display_name: ZURB Blog
+    summary: The ZURB Blog covers design strategy, interaction design, and design thinking to help businesses and designers build better products and experiences.
+  1041uuu_tumblr:
+    feed_url: https://1041uuu.tumblr.com/rss
+    homepage_url: https://1041uuu.tumblr.com
+    display_name: 1041uuu
+    summary: Updates from 1041uuu.
+  1stwebdesigner:
+    feed_url: https://1stwebdesigner.com/feed/
+    homepage_url: https://1stwebdesigner.com
+    display_name: 1stWebDesigner
+    summary: Helping You Build a Better Web
+  512pixels:
+    feed_url: https://512pixels.net/feed.xml
+    homepage_url: https://512pixels.net
+    display_name: 512 Pixels
+    summary: Recent content on 512 Pixels
+  6sqft:
+    feed_url: https://www.6sqft.com/feed/
+    homepage_url: https://www.6sqft.com
+    display_name: 6sqft
+    summary: NYC Real Estate news and information
+  7x7:
+    feed_url: https://www.7x7.com/feeds/feed.rss
+    homepage_url: https://www.7x7.com
+    display_name: 7x7 Bay Area
+    summary: 7x7 Bay Area
+  80000hours:
+    feed_url: https://80000hours.org/feed/
+    homepage_url: https://80000hours.org
+    display_name: 80,000 Hours
+    summary: Updates from 80,000 Hours.
+  acko:
+    feed_url: https://acko.net/atom.xml
+    homepage_url: https://acko.net
+    display_name: Acko.net
+    summary: Updates from Acko.net.
+  adambard:
+    feed_url: https://adambard.com/feed.xml
+    homepage_url: https://adambard.com
+    display_name: Home Page on Adam Bard, Handsome Web Developer
+    summary: Recent content in Home Page on Adam Bard, Handsome Web Developer
+  adit:
+    feed_url: https://www.adit.io/rss.xml
+    homepage_url: http://www.adit.io
+    display_name: Adit's Blog
+    summary: Posts on programming
+  ahmet_im:
+    feed_url: https://ahmet.im/blog/feed/rss.xml
+    homepage_url: https://ahmet.im/blog
+    display_name: Ahmet Alp Balkan
+    summary: RSS feed for blog Ahmet Alp Balkan
+  akamai:
+    feed_url: https://feeds.feedburner.com/akamai/blog
+    homepage_url: https://www.akamai.com/blog
+    display_name: akamai.com
+    summary: Stay ahead with the latest cloud computing, content delivery, and cybersecurity trends, expert analyses, and tech insights from the official Akamai blog.
+  albumwhale:
+    feed_url: https://albumwhale.com/sean-breslin/backpacking-soundtrack-1993-1998.atom
+    homepage_url: https://albumwhale.com
+    display_name: Sean Breslin's Backpacking Soundtrack 1993~1998 on Album Whale
+    summary: Updates from Sean Breslin's Backpacking Soundtrack 1993~1998 on Album Whale.
+  alestic:
+    feed_url: http://feeds.alestic.com/alestic
+    homepage_url: https://alestic.com
+    display_name: Alestic.com - A Personal AWS Blog by Eric Hammond
+    summary: Recent content in Alestic.com - A Personal AWS Blog by Eric Hammond on Alestic.com - A Personal AWS Blog by Eric Hammond
+  alexgaynor:
+    feed_url: https://alexgaynor.net/feed.xml
+    homepage_url: https://alexgaynor.net/blog
+    display_name: Blogs on Alex Gaynor
+    summary: Recent content in Blogs on Alex Gaynor
+  alexkras:
+    feed_url: https://alexkras.com/feed/
+    homepage_url: https://alexkras.com
+    display_name: alexkras.com
+    summary: Mostly a tech blog
+  alfredapp:
+    feed_url: https://www.alfredapp.com/blog/feed.xml
+    homepage_url: https://www.alfredapp.com/blog
+    display_name: Alfred Blog
+    summary: Keep up with the latest news about Alfred 2 for Mac and Alfred Remote for iOS, and discover tips and tricks to make you more productive.
+  allthatsinteresting:
+    feed_url: https://allthatsinteresting.com/feed
+    homepage_url: https://allthatsinteresting.com
+    display_name: All That's Interesting
+    summary: Something interesting to read every day.
+  alumni_berkeley_edu:
+    feed_url: https://alumni.berkeley.edu/feed/
+    homepage_url: https://alumni.berkeley.edu
+    display_name: Cal Alumni Association
+    summary: Berkeley. For Life.
+  androidheadlines:
+    feed_url: https://www.androidheadlines.com/feed
+    homepage_url: https://www.androidheadlines.com
+    display_name: Android Headlines
+    summary: Android Headlines
+  anniecherkaev:
+    feed_url: https://anniecherkaev.com/feed.xml
+    homepage_url: https://anniecherkaev.com
+    display_name: "/* \U0001F916\U0001F6E0️ */"
+    summary: Beep Beep Boop Boop
+  anti_pattern:
+    feed_url: https://anti-pattern.com/feed.xml
+    homepage_url: https://anti-pattern.com
+    display_name: Anti-pattern
+    summary: Updates from Anti-pattern.
+  antonlindstrom:
+    feed_url: https://antonlindstrom.com/feed.xml
+    homepage_url: https://www.antonlindstrom.com
+    display_name: anton lindstrom
+    summary: Updates from anton lindstrom.
+  antonz:
+    feed_url: https://antonz.org/index.xml
+    homepage_url: https://antonz.org
+    display_name: Anton Zhiyanov
+    summary: Everything about Go, SQL, and software in general.
+  appelsiini:
+    feed_url: https://www.appelsiini.net/index.xml
+    homepage_url: https://www.appelsiini.net
+    display_name: Mika Tuupola
+    summary: Recent content on Mika Tuupola
+  arduino_cc:
+    feed_url: https://blog.arduino.cc/feed/
+    homepage_url: https://www.arduino.cc
+    display_name: Arduino Blog
+    summary: Updates from Arduino Blog.
+  ariadne_space:
+    feed_url: https://ariadne.space/feed.xml
+    homepage_url: https://ariadne.space
+    display_name: Ariadne's Space
+    summary: Updates from Ariadne's Space.
+  artificiallawyer:
+    feed_url: https://www.artificiallawyer.com/feed/
+    homepage_url: https://www.artificiallawyer.com
+    display_name: Artificial Lawyer
+    summary: Legal Tech & AI News and Views
+  artima:
+    feed_url: https://www.artima.com/weblogs/feeds/bloggers/beckel.rss
+    homepage_url: http://www.artima.com/weblogs/index.jsp?blogger=beckel
+    display_name: Bruce Eckel's Weblog
+    summary: Artima Weblogs is a community of bloggers posting on a wide range of topics of interest to software developers.
+  artlebedev:
+    feed_url: https://www.artlebedev.ru/news.rdf
+    homepage_url: https://www.artlebedev.com
+    display_name: Новости Студии Артемия Лебедева
+    summary: Новые работы студии, свежие вакансии, изменения в графике работы и ассортименте магазинов.
+  askubuntu:
+    feed_url: https://askubuntu.com/feeds
+    homepage_url: https://askubuntu.com/questions
+    display_name: Recent Questions - Ask Ubuntu
+    summary: Updates from Recent Questions - Ask Ubuntu.
+  attractmo_de:
+    feed_url: https://attractmo.de/rss
+    homepage_url: https://attractmo.de
+    display_name: Almabrizita - The Latest Gaming News
+    summary: 'Attract Mode by Almabrizita: Check the latest gaming news by nerds like you.'
+  batsov:
+    feed_url: https://batsov.com/feed.xml
+    homepage_url: https://batsov.com
+    display_name: (think)
+    summary: Updates from (think).
+  bzamayo:
+    feed_url: https://bzamayo.com/index.atom
+    homepage_url: https://bzamayo.com
+    display_name: Benjamin Mayo
+    summary: Updates from Benjamin Mayo.
+  berkeleyside:
+    feed_url: https://www.berkeleyside.org/feed
+    homepage_url: https://www.berkeleyside.org
+    display_name: Berkeleyside
+    summary: Nonprofit news. Free for all, funded by readers.
+  bert:
+    feed_url: https://bert.org/feed.xml
+    homepage_url: https://bert.org
+    display_name: bertrand fan
+    summary: Updates from bertrand fan.
+  bhautikj_tumblr:
+    feed_url: https://bhautikj.tumblr.com/rss
+    homepage_url: https://bhautikj.tumblr.com
+    display_name: The Professional Dork™
+    summary: Photography and experiments from @bhautikj
+  biblegateway:
+    feed_url: http://feeds.feedburner.com/BibleGatewayBlog
+    homepage_url: https://www.biblegateway.com/blog
+    display_name: Bible Gateway Blog
+    summary: News and reflections from BibleGateway.com
+  bibwild_wordpress:
+    feed_url: https://bibwild.wordpress.com/feed/
+    homepage_url: https://bibwild.wordpress.com
+    display_name: Bibliographic Wilderness
+    summary: Updates from Bibliographic Wilderness.
+  bigthink:
+    feed_url: https://bigthink.com/feed/
+    homepage_url: https://bigthink.com
+    display_name: Big Think
+    summary: Smarter, Faster
+  bits_debian:
+    feed_url: https://bits.debian.org/feeds/atom.xml
+    homepage_url: https://bits.debian.org
+    display_name: Bits from Debian
+    summary: Updates from Bits from Debian.
+  silentcircle:
+    feed_url: https://www.silentcircle.com/rss.xml
+    homepage_url: https://www.silentcircle.com
+    display_name: Silent Circle
+    summary: Silent Circle is a secure communications firm offering enterprise communications solutions including software, devices, and services.
+  bleepingcomputer:
+    feed_url: https://www.bleepingcomputer.com/feed/
+    homepage_url: https://www.bleepingcomputer.com
+    display_name: BleepingComputer
+    summary: BleepingComputer - All Stories
   nyt_homepage:
     feed_url: https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml
     homepage_url: https://www.nytimes.com
