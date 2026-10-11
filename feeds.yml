@@ -158,10 +158,10 @@ bots:
     display_name: The Bold Italic
     summary: The Bold Italic
   cloud_google:
-    feed_url: https://cloudblog.withgoogle.com/topics/threat-intelligence/rss/
-    homepage_url: https://cloud.google.com/blog/topics/threat-intelligence
-    display_name: Threat Intelligence
-    summary: Threat Intelligence
+    feed_url: https://cloudblog.withgoogle.com/rss/
+    homepage_url: https://cloud.google.com/blog
+    display_name: Google Cloud Blog
+    summary: News, product updates, and engineering stories from Google Cloud.
   rollingstone:
     feed_url: https://www.rollingstone.com/feed/
     homepage_url: https://www.rollingstone.com
