@@ -693,6 +693,256 @@ bots:
     display_name: Synth History
     summary: Stories about the history, people, instruments, and culture of synthesizers.
     profile_photo: https://static.wixstatic.com/media/8c9e81_a58d513f3b184515b750539f47c5c6a1%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/8c9e81_a58d513f3b184515b750539f47c5c6a1%7Emv2.png
+  countrylife:
+    feed_url: https://www.countrylife.co.uk/feeds.xml
+    homepage_url: https://www.countrylife.co.uk
+    display_name: Latest from Country Life
+    summary: All the latest content from the Country Life team
+  courthousenews:
+    feed_url: https://courthousenews.com/feed/
+    homepage_url: https://courthousenews.com
+    display_name: Courthouse News Service
+    summary: Probably the best news site in the world
+  covertprestige_info:
+    feed_url: https://covertprestige.info/feed/
+    homepage_url: https://covertprestige.info
+    display_name: Informations
+    summary: Updates from Informations.
+  coveteur:
+    feed_url: https://coveteur.com/rss/all.xml
+    homepage_url: https://coveteur.com
+    display_name: Coveteur
+    summary: Coveteur - Fashion, Beauty, and Lifestyle News
+  cprimozic:
+    feed_url: https://cprimozic.net/rss.xml
+    homepage_url: https://cprimozic.net
+    display_name: cprimozic.net Blog
+    summary: Personal website of Casey Primozic / ameo
+  crankyflier:
+    feed_url: https://crankyflier.com/feed/
+    homepage_url: https://crankyflier.com
+    display_name: Cranky Flier
+    summary: An Airline Industry Blog
+  crashdev:
+    feed_url: https://crashdev.com/feed/
+    homepage_url: https://crashdev.com
+    display_name: Crash Dev
+    summary: Seeking useful patterns wherever they appear.
+  crawshaw:
+    feed_url: https://crawshaw.io/atom.xml
+    homepage_url: https://crawshaw.io
+    display_name: David Crawshaw
+    summary: Updates from David Crawshaw.
+  crazysexyfuntraveler:
+    feed_url: https://feeds.feedburner.com/CrazySexyFunTraveler
+    homepage_url: https://www.crazysexyfuntraveler.com
+    display_name: Crazy sexy fun traveler – travel blog about adventure and spa
+    summary: Crazy travel, fun adventures, sexy photos and healthy lifestyle
+  creativeapplications:
+    feed_url: https://www.creativeapplications.net/feed/
+    homepage_url: https://www.creativeapplications.net?pk_campaign=rss-feed&pk_source=feed&pk_medium=rss
+    display_name: CreativeApplications.Net
+    summary: Technology, Society, and Critical Making (Since 2008)
+  creativecommons:
+    feed_url: https://creativecommons.org/feed/
+    homepage_url: https://creativecommons.org
+    display_name: Creative Commons
+    summary: Updates from Creative Commons.
+  creativegood:
+    feed_url: https://creativegood.com/blog/feed.xml
+    homepage_url: https://creativegood.com/blog
+    display_name: Creative Good
+    summary: By Mark Hurst
+  creditkarma:
+    feed_url: https://www.creditkarma.com/feed
+    homepage_url: https://www.creditkarma.com
+    display_name: Intuit Credit Karma
+    summary: Free Credit Score & Free Credit Reports With Monitoring
+  crispgm:
+    feed_url: https://crispgm.com/feed.xml
+    homepage_url: https://crispgm.com
+    display_name: CrispDev
+    summary: Home page and blog of David Zhang (@crispgm), a minimalist programmer, photographer, and lifehacker.
+  crummy:
+    feed_url: https://www.crummy.com/atom.xml
+    homepage_url: https://www.crummy.com
+    display_name: News You Can Bruise
+    summary: Updates from News You Can Bruise.
+  crypt_codemancers:
+    feed_url: https://crypt.codemancers.com/rss.xml
+    homepage_url: https://crypt.codemancers.com
+    display_name: crypt.codemancers.com
+    summary: Blog posts RSS feed
+  cryptopotato:
+    feed_url: https://cryptopotato.com/feed/
+    homepage_url: https://cryptopotato.com
+    display_name: CryptoPotato
+    summary: Updates from CryptoPotato.
+  cryto_net__joepie91:
+    feed_url: http://cryto.net/~joepie91/blog/feed.xml
+    homepage_url: http://cryto.net/~joepie91/blog
+    display_name: joepie91's Ramblings
+    summary: Updates from joepie91's Ramblings.
+  engineering_tufts_edu:
+    feed_url: https://engineering.tufts.edu/rss.xml
+    homepage_url: https://engineering.tufts.edu
+    display_name: School of Engineering
+    summary: Updates from School of Engineering.
+  cs_ucsb_edu__vlab:
+    feed_url: https://cs.ucsb.edu/rss.xml
+    homepage_url: https://cs.ucsb.edu
+    display_name: UCSB Computer Science
+    summary: Updates from UCSB Computer Science.
+  cs_utexas_edu:
+    feed_url: https://www.cs.utexas.edu/rss.xml
+    homepage_url: https://www.cs.utexas.edu
+    display_name: UT Austin Computer Science
+    summary: Updates from UT Austin Computer Science.
+  cs007_blog:
+    feed_url: https://cs007.blog/feed/
+    homepage_url: https://cs007.blog
+    display_name: 'CS 007: Personal Finance for Engineers'
+    summary: Stanford University 2017-2025 (9th Year)
+  cse_ucsd_edu:
+    feed_url: https://cse.ucsd.edu/rss.xml
+    homepage_url: https://cse.ucsd.edu
+    display_name: Computer Science
+    summary: Updates from Computer Science.
+  csoonline:
+    feed_url: https://www.csoonline.com/feed/
+    homepage_url: https://www.csoonline.com
+    display_name: CSO Online
+    summary: Security at the speed of business
+  cstack_github:
+    feed_url: https://cstack.github.io/db_tutorial/feed.xml
+    homepage_url: https://cstack.github.io/db_tutorial
+    display_name: Let's Build a Simple Database
+    summary: Writing a sqlite clone from scratch in C
+  cstheory_stackexchange:
+    feed_url: https://cstheory.stackexchange.com/feeds
+    homepage_url: https://cstheory.stackexchange.com/questions
+    display_name: Recent Questions - Theoretical Computer Science Stack Exchange
+    summary: Updates from Recent Questions - Theoretical Computer Science Stack Exchange.
+  ctftime:
+    feed_url: https://ctftime.org/event/list/upcoming/rss/
+    homepage_url: https://ctftime.org
+    display_name: 'CTFtime.org: upcoming CTF events'
+    summary: CTFtime.org upcoming CTF events feed.
+  cube_drone:
+    feed_url: https://cube-drone.com/index.xml
+    homepage_url: https://cube-drone.com
+    display_name: Hi. on Blog Drone
+    summary: Recent content in Hi. on Blog Drone
+  cubewatermelon_tumblr:
+    feed_url: https://cubewatermelon.tumblr.com/rss
+    homepage_url: https://cubewatermelon.tumblr.com
+    display_name: Cube Watermelon
+    summary: The Newly reborn tumblr for Me, Cube Watermelon, creator of Sleepless Domain, Kiwi Blitz, and Let’s Speak English. Owner of many good cats. Sometimes a vtuber.
+  cuddly_octo_palm_tree:
+    feed_url: https://cuddly-octo-palm-tree.com/feed.xml
+    homepage_url: https://cuddly-octo-palm-tree.com
+    display_name: Cuddly, Octo-Palm Tree
+    summary: Blog on software engineering, mostly.
+  culturedcode:
+    feed_url: https://culturedcode.com/things/blog/feed/rss.xml
+    homepage_url: https://culturedcode.com/things/blog
+    display_name: Things Blog
+    summary: Things Blog
+  cuong:
+    feed_url: https://cuong.io/rss.xml
+    homepage_url: https://cuong.io
+    display_name: Code Centre
+    summary: Welcome to Code Centre, a blog for developers and those who are interested in AIs.
+  curi_us:
+    feed_url: https://curi.us/rss
+    homepage_url: https://curi.us
+    display_name: curi
+    summary: Explanations for the curious
+  cushionapp:
+    feed_url: https://cushionapp.com/rss.xml
+    homepage_url: https://cushionapp.com
+    display_name: Cushion Blog
+    summary: Stay up-to-date with new Cushion features, announcements, and milestones.
+  cyberasylum_janithw:
+    feed_url: https://cyberasylum.janithw.com/feed/
+    homepage_url: https://cyberasylum.janithw.com
+    display_name: Cyber Asylum
+    summary: For all those who are mad about computing…
+  cycling74:
+    feed_url: https://cycling74.com/rss.xml
+    homepage_url: https://cycling74.com
+    display_name: Cycling '74 » RSS
+    summary: The last 24 hours on https://cycling74.com
+  arcticwolf:
+    feed_url: https://arcticwolf.com/feed/
+    homepage_url: https://arcticwolf.com
+    display_name: Arctic Wolf
+    summary: The Leaders in Security Operations
+  da_data_blogspot:
+    feed_url: https://da-data.blogspot.com/feeds/posts/default
+    homepage_url: https://da-data.blogspot.com
+    display_name: Dave's Data
+    summary: Updates from Dave's Data.
+  dannysullivan:
+    feed_url: https://dannysullivan.com/feed
+    homepage_url: https://dannysullivan.com
+    display_name: Danny Sullivan
+    summary: Updates from Danny Sullivan.
+  daguar_github:
+    feed_url: https://daguar.github.io/atom.xml
+    homepage_url: https://daguar.github.io
+    display_name: Dave Guarino
+    summary: Updates from Dave Guarino.
+  dailymaverick_co_za:
+    feed_url: https://www.dailymaverick.co.za/dmrss/
+    homepage_url: https://www.dailymaverick.co.za
+    display_name: Daily Maverick - Latest News
+    summary: Latest news and analysis from Daily Maverick
+  dailyvim_blogspot:
+    feed_url: https://dailyvim.blogspot.com/feeds/posts/default
+    homepage_url: https://dailyvim.blogspot.com
+    display_name: 'Daily Vim: Text Editor Tips, Tricks, Tutorials, and HOWTOs'
+    summary: 'Updates from Daily Vim: Text Editor Tips, Tricks, Tutorials, and HOWTOs.'
+  daiz_moe:
+    feed_url: https://daiz.moe/rss.xml
+    homepage_url: https://daiz.moe
+    display_name: Daiz on Media & Other Escapades
+    summary: Digital media expert Daiz writes about technology, Japanese media, video games, and consumer awareness matters.
+  damiengwalter:
+    feed_url: https://damiengwalter.com/feed/
+    homepage_url: https://damiengwalter.com
+    display_name: Damien Walter
+    summary: Writer, storyteller and critic
+  damninteresting:
+    feed_url: https://www.damninteresting.com/feeds/everything/
+    homepage_url: https://www.damninteresting.com
+    display_name: Damn Interesting
+    summary: A collection of legitimately fascinating information culled from the past, present, and anticipated future.
+  danaernst:
+    feed_url: http://danaernst.com/feed.xml
+    homepage_url: https://danaernst.com
+    display_name: Dana C. Ernst
+    summary: Updates from Dana C. Ernst.
+  danbooru_donmai_us:
+    feed_url: https://danbooru.donmai.us/posts.atom
+    homepage_url: https://danbooru.donmai.us/posts
+    display_name: Danbooru
+    summary: Updates from Danbooru.
+  daniel_fone_net_nz:
+    feed_url: https://daniel.fone.net.nz/atom.xml
+    homepage_url: http://daniel.fone.net.nz/blog
+    display_name: Daniel Fone
+    summary: Updates from Daniel Fone.
+  danielcompton:
+    feed_url: https://danielcompton.net/index.xml
+    homepage_url: https://danielcompton.net
+    display_name: Daniel Compton
+    summary: Recent content in Welcome on Daniel Compton
+  danielputtick:
+    feed_url: https://www.danielputtick.com/feeds/atom.xml
+    homepage_url: https://www.danielputtick.com
+    display_name: Dan Puttick
+    summary: Updates from Dan Puttick.
   stanislas:
     feed_url: https://stanislas.blog/feed.xml
     homepage_url: https://stanislas.blog
