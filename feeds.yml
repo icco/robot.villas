@@ -14616,252 +14616,270 @@ bots:
     feed_url: https://ihatemornings.com/feed.rss
     homepage_url: https://ihatemornings.com
     display_name: ihatemornings
-    summary: The feed of updates to ihatemornings
-  iheanyi:
+    summary: Personal writing and curated links about music, creative technology, programming, and everyday life from ihatemornings.
+  iheanyi_ekechukwu:
     feed_url: https://iheanyi.com/rss.xml
     homepage_url: https://iheanyi.com
     display_name: Iheanyi Ekechukwu
-    summary: Iheanyi Ekechukwu is a software engineer based in Houston, TX.
-  ijr:
+    summary: Personal essays and software engineering notes by Iheanyi Ekechukwu, including developer tools, Go, music projects, and life experiences.
+    profile_photo: https://iheanyi.com/favicons/apple-touch-icon.png
+  ijr_news:
     feed_url: https://ijr.com/feed
     homepage_url: https://ijr.com
     display_name: IJR News
-    summary: Today's news from every side — the IJR news feed.
-  ilikestuffblog:
-    feed_url: https://ilikestuffblog.com/feed/
-    homepage_url: https://ilikestuffblog.com
-    display_name: ilikestuffblog
-    summary: Thank you for visiting ILikeStuffBlog.com – your go-to source for all the stuff you like, and more!
-  ilovecharts_tumblr:
+    summary: IJR News coverage of politics, world events, business, sports, and entertainment.
+  i_love_charts:
     feed_url: https://ilovecharts.tumblr.com/rss
     homepage_url: https://ilovecharts.tumblr.com
     display_name: I Love Charts
-    summary: By people who love charts. For people who love charts.
-  imagecomics:
+    summary: Charts, graphs, and visual explanations collected and shared by I Love Charts.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Filovecharts.tumblr.com&size=128
+  image_comics:
     feed_url: https://imagecomics.com/rss.xml
     homepage_url: https://imagecomics.com
-    display_name: imagecomics.com
-    summary: The official imagecomics.com RSS feed.
-  imaginaryproperty_tumblr:
+    display_name: Image Comics
+    summary: Official Image Comics press releases about comic books, graphic novels, creators, new series, and upcoming releases.
+    profile_photo: https://cdn.imagecomics.com/apple-touch-icon.png
+  imaginary_property:
     feed_url: https://imaginaryproperty.tumblr.com/rss
     homepage_url: https://imaginaryproperty.tumblr.com
     display_name: Imaginary Property
-    summary: Random thoughts on technology, science, and the law.
-  imakewebthings:
-    feed_url: http://feeds.feedburner.com/OnMakingWebThings
+    summary: An archive of quotes and curiosities about technology, science, and law. The two feed posts were published in October 2013.
+  on_making_web_things:
+    feed_url: http://imakewebthings.com/atom.xml
     homepage_url: http://imakewebthings.com
     display_name: On Making Web Things
-    summary: Updates from On Making Web Things.
-  imperialboyimages_tumblr:
+    summary: 'Caleb Troughton''s archive of web development essays and project announcements, including deck.js and Waypoints. Latest feed post: January 2014.'
+    profile_photo: http://imakewebthings.com/apple-touch-icon.png
+  imperial_boy_images:
     feed_url: https://imperialboyimages.tumblr.com/rss
     homepage_url: https://imperialboyimages.tumblr.com
     display_name: Imperial Boy Images
-    summary: A blog dedicated to showcasing the work of the artist Imperial Boy This blog is in no way affiliated with Imperial Boy. It is a fan-run page. ✖animated work ✖characters ✖another blog Official Website
-  importantshock_wordpress:
+    summary: 'A fan-run archive showcasing art by Imperial Boy and related illustration. Not affiliated with the artist. Latest feed post: June 2014.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fimperialboyimages.tumblr.com&size=128
+  important_shock:
     feed_url: https://importantshock.wordpress.com/feed/
     homepage_url: https://importantshock.wordpress.com
     display_name: Important Shock
-    summary: Updates from Important Shock.
+    summary: 'Archived programming essays about functional programming, JavaScript, C++, and version control. Latest feed post: January 2009.'
   improbable:
     feed_url: https://www.improbable.io/news?format=rss
     homepage_url: https://www.improbable.io/news
-    display_name: News - Improbable
-    summary: Updates from News - Improbable.
-  improveverywhere:
+    display_name: Improbable
+    summary: Company news, venture launches, investments, and commentary from Improbable, a venture builder focused on AI, Web3, and the metaverse.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.improbable.io%2Fnews&size=128
+  improv_everywhere:
     feed_url: https://improveverywhere.com/feed/
     homepage_url: https://improveverywhere.com
     display_name: Improv Everywhere
-    summary: We Cause Scenes
-  chalkbeat:
-    feed_url: https://www.chalkbeat.org/arc/outboundfeeds/rss/
-    homepage_url: https://www.chalkbeat.org
-    display_name: Chalkbeat
-    summary: Updates from Chalkbeat.
+    summary: Public performances, participatory events, and videos from Improv Everywhere, including the Mp3 Experiment.
+    profile_photo: https://improveverywhere.com/wp-content/uploads/2015/05/logo-copy-555ce1bcv1_site_icon-300x300.png
+  chalkbeat_indiana:
+    feed_url: https://www.chalkbeat.org/arc/outboundfeeds/rss/category/indiana/
+    homepage_url: https://www.chalkbeat.org/indiana/
+    display_name: Chalkbeat Indiana
+    summary: Independent education reporting from Chalkbeat Indiana about schools, students, teaching, and state education policy.
+    profile_photo: https://www.chalkbeat.org/pf/resources/images/chalkbeat/apple-touch-icon-180x180.png?d=208
   incase:
     feed_url: https://www.incase.com/collections/all.atom
     homepage_url: https://www.incase.com/collections/all
-    display_name: Incase.com
-    summary: Updates from Incase.com.
-  incident:
+    display_name: Incase
+    summary: Incase product listings for bags, backpacks, laptop cases, and accessories from its official catalog.
+    profile_photo: https://www.incase.com/cdn/shop/files/Incase_Favicon_180x180_acd5dd58-9268-4903-a2b5-b08f0f518599.png?crop=center&height=180&v=1714760114&width=180
+  incident_io_blog:
     feed_url: https://incident.io/blog.xml
     homepage_url: https://incident.io
-    display_name: The incident.io Blog
-    summary: incident.io is a software reliability platform unifying on-call, agentic root cause analysis, incident response, and status pages – helping teams resolve issues faster.
-  inclouds_space:
+    display_name: incident.io Blog
+    summary: Engineering articles and product news from incident.io about incident response, on-call work, reliability, and building software.
+    profile_photo: https://incident.io/icons/icon-192x192.png
+  charles_in_clouds_space:
     feed_url: https://inclouds.space/feed.rss
     homepage_url: https://inclouds.space
     display_name: Charles in Cloud's Space
-    summary: Charles Chamberlain's blog
-  incoherency:
+    summary: Charles Chamberlain's personal blog about software, developer tools, projects, and everyday life.
+    profile_photo: https://inclouds.space/favicon/apple-touch-icon.png
+  james_stanley:
     feed_url: https://incoherency.co.uk/blog/rss.xml
-    homepage_url: http://incoherency.co.uk/blog
-    display_name: jes's blog
-    summary: This is jes's blog
-  incrediblethings:
+    homepage_url: https://incoherency.co.uk/blog/
+    display_name: James Stanley
+    summary: James Stanley's blog about programming, electronics, metalworking, puzzles, security, and hands-on engineering projects.
+  incredible_things:
     feed_url: https://incrediblethings.com/feed/
     homepage_url: https://incrediblethings.com
     display_name: Incredible Things
-    summary: Stay Curious. Stay Inspired. Discover Incredible Things.
-  increpare:
+    summary: Unusual products, science and technology stories, world records, entertainment, and lifestyle features, including partner content.
+    profile_photo: https://incrediblethings.com/wp-content/uploads/2026/05/cropped-IT-fav-180x180.png
+  increpare_games:
     feed_url: https://www.increpare.com/feed.rss
     homepage_url: https://www.increpare.com
     display_name: increpare games
-    summary: Games and other things made by increpare.
-  indelible:
+    summary: Games and other things made by increpare, including small experimental games and tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.increpare.com&size=128
+  indelible_ink:
     feed_url: https://www.indelible.org/feeds/ink/index.xml
     homepage_url: https://www.indelible.org/ink
     display_name: Indelible Ink
-    summary: Updates from Indelible Ink.
-  indexoncensorship:
+    summary: 'Jon Parise''s archived technical writing about programming, networking, Vim, and mobile development. Latest feed post: October 2012.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.indelible.org%2Fink&size=128
+  index_on_censorship:
     feed_url: https://www.indexoncensorship.org/feed/
     homepage_url: https://www.indexoncensorship.org
     display_name: Index on Censorship
-    summary: A voice for the persecuted
-  ictnews:
+    summary: Reporting, commentary, and advocacy on censorship, freedom of expression, and threats facing writers, artists, and dissidents.
+    profile_photo: https://www.indexoncensorship.org/wp-content/uploads/2021/01/cropped-index_stamp-raster-rgb_square-v2-180x180.jpg
+  ict:
     feed_url: https://ictnews.org/feed/
     homepage_url: https://ictnews.org
     display_name: ICT
-    summary: Updates from ICT.
-  indiegamebuzz:
+    summary: ICT, formerly Indian Country Today, reports on Indigenous communities, tribal affairs, politics, culture, and the environment.
+    profile_photo: https://ictnews.org/wp-content/uploads/2025/05/cropped-Favicon-Larger-Icon--180x180.png
+  indie_game_buzz:
     feed_url: https://indiegamebuzz.com/feed/
     homepage_url: https://indiegamebuzz.com
     display_name: Indie Game Buzz
-    summary: Indie game reviews and news for PC, console and mobile
-  indiegamesplus:
+    summary: 'Indie game reviews, developer previews, interviews, and gaming hardware coverage for PC, console, and mobile. Latest feed post: June 2025.'
+    profile_photo: https://indiegamebuzz.com/wp-content/uploads/2019/03/cropped-IndieGameBuzz_logo2_512x512-180x180.png
+  indie_games_plus:
     feed_url: https://indiegamesplus.com/feed/
     homepage_url: https://indiegamesplus.com
     display_name: Indie Games Plus
-    summary: Creative, Personal, Passionate Digital Experiences
-  indybay:
+    summary: Indie Games Plus coverage of independent games, including reviews, previews, and unusual interactive experiences.
+    profile_photo: https://s3-igpbucket.s3.eu-west-2.amazonaws.com/wp-content/uploads/2026/07/24193508/cropped-IndieGamesPlus-Micro-180x180.png
+  indybay_newswire:
     feed_url: https://www.indybay.org/syn/generate_rss.php?news_item_status_restriction=1155
     homepage_url: https://www.indybay.org
     display_name: Indybay newswire
-    summary: SF Bay Area Independent Media Center (Indybay) Newswire
-  inews:
+    summary: 'The San Francisco Bay Area Independent Media Center newswire: community reporting, activist announcements, and local events.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.indybay.org&size=128
+  the_i_paper:
     feed_url: https://inews.co.uk/feed
     homepage_url: https://inews.co.uk
     display_name: The i Paper
-    summary: Impartial news & intelligent debate
-  inference_vc:
+    summary: News, politics, opinion, culture, sport, and lifestyle coverage from The i Paper in the UK.
+    profile_photo: https://inews.co.uk/wp-content/themes/inews-theme/assets/images/favicon/192x192.png
+  inference:
     feed_url: https://www.inference.vc/rss/
     homepage_url: https://www.inference.vc
     display_name: inFERENCe
-    summary: posts on machine learning, statistics, opinions on things I'm reading in the space
-  infiniteundo:
+    summary: Ferenc Huszar's blog about machine learning research, deep learning, causal inference, statistics, and software.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.inference.vc&size=128
+  infinite_undo:
     feed_url: https://infiniteundo.com/rss
     homepage_url: https://infiniteundo.com
     display_name: Infinite Undo
-    summary: Software As Narrative How-To Articles Devops Reading List CC Sharealike © 2025 by Noah Sussman
-  infocaptor:
+    summary: 'Noah Sussman''s archived essays about software testing, observability, DevOps, and software as narrative. Latest feed post: August 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Finfiniteundo.com&size=128
+  infocaptor_ai:
     feed_url: https://www.infocaptor.com/feed
     homepage_url: https://www.infocaptor.com
     display_name: InfoCaptor AI
-    summary: AI Summarizer
-  inform_ly:
-    feed_url: https://inform.ly/feed/
-    homepage_url: https://inform.ly
-    display_name: inform.ly
-    summary: Updates from inform.ly.
-  infotrope:
-    feed_url: https://infotrope.net/feed/
-    homepage_url: https://infotrope.net
-    display_name: Infotrope
-    summary: Infotrope
+    summary: InfoCaptor articles and product updates about dashboards, data visualization, business intelligence, and AI-powered tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.infocaptor.com&size=128
   infovore:
-    feed_url: http://feeds.feedburner.com/infovoredotorg
+    feed_url: https://feeds.feedburner.com/infovoredotorg
     homepage_url: https://infovore.org
     display_name: Infovore
-    summary: a weblog by Tom Armitage
+    summary: 'Tom Armitage''s weblog archive of essays and links about technology, design, music, games, and everyday life. Latest feed post: May 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Finfovore.org&size=128
   inkdroid:
     feed_url: https://inkdroid.org/feed.xml
     homepage_url: https://inkdroid.org
     display_name: inkdroid
-    summary: Paper or Plastic
-  inklestudios:
+    summary: Ed Summers' blog with essays, bookmarks, and photographs about libraries, linked data, web archives, programming, and technology.
+    profile_photo: https://github.com/edsu.png?size=200
+  inkle:
     feed_url: https://www.inklestudios.com/feed.xml
     homepage_url: https://www.inklestudios.com/blog
     display_name: inkle
-    summary: Independent developer of narrative games and interactive stories.
+    summary: 'Official news about inkle''s narrative games, interactive stories, books, and writing tools. Latest feed post: March 2025.'
+    profile_photo: https://www.inklestudios.com/iOS-icons/144.png
   inkling:
     feed_url: https://www.inkling.com/feed/
     homepage_url: https://www.inkling.com
     display_name: Inkling
-    summary: Updates from Inkling.
-  bulrushlabs:
+    summary: 'Inkling articles about frontline employee training, mobile learning, content authoring, and workplace knowledge. Latest feed post: September 2024.'
+    profile_photo: https://www.inkling.com/wp-content/uploads/2023/03/cropped-Favicon_512x512-180x180.png
+  bulrush_labs:
     feed_url: https://bulrushlabs.com/index.xml
     homepage_url: https://bulrushlabs.com
-    display_name: Richard Tibbetts on Bulrush Labs — Richard Tibbetts
-    summary: Recent content in Richard Tibbetts on Bulrush Labs — Richard Tibbetts
+    display_name: Bulrush Labs
+    summary: Richard Tibbetts' writing at Bulrush Labs about software, engineering management, systems, developer experience, and AI tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbulrushlabs.com&size=128
   innonate:
     feed_url: https://innonate.com/blog.rss
     homepage_url: https://innonate.com
-    display_name: innonate - Nate Westheimer's blog
-    summary: Nate Westheimer's blog about making and making sense of things.
-  inoveryourhead:
+    display_name: innonate
+    summary: 'Nate Westheimer''s blog about software, entrepreneurship, projects, and home energy. Latest feed post: May 2024.'
+    profile_photo: https://innonate-static-assets.s3.amazonaws.com/assets/images/favicon.png
+  in_over_your_head:
     feed_url: http://www.inoveryourhead.net/feed/
-    homepage_url: https://www.inoveryourhead.net
+    homepage_url: http://www.inoveryourhead.net/
     display_name: In Over Your Head
-    summary: social capital, trust agents, all that jazz
-  insideedition:
+    summary: 'Julien Smith''s blog archive about learning, writing, personal development, relationships, and work. Latest feed post: February 2023.'
+  inside_edition:
     feed_url: https://www.insideedition.com/feed/taxonomy/term/news
     homepage_url: https://www.insideedition.com/latest/news
-    display_name: News
-    summary: Updates from News.
+    display_name: Inside Edition
+    summary: Inside Edition's official News feed, covering news stories and investigations alongside sponsored Inside Deals shopping posts.
+    profile_photo: https://www.insideedition.com/themes/custom/iebs/images/feed-logo.jpg
   insideevs:
     feed_url: https://insideevs.com/rss/news/all/
     homepage_url: https://insideevs.com/news
-    display_name: InsideEVs - News
-    summary: Get breaking news, in-depth articles and press releases covering News
-  insideinsides_blogspot:
+    display_name: InsideEVs
+    summary: News, reviews, and analysis about electric vehicles, charging, batteries, and the auto industry from InsideEVs.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Finsideevs.com%2Fnews&size=128
+  inside_insides:
     feed_url: https://insideinsides.blogspot.com/feeds/posts/default
     homepage_url: https://insideinsides.blogspot.com
     display_name: Inside Insides
-    summary: Updates from Inside Insides.
-  insightcrime:
+    summary: 'Andy Ellison''s archive of magnetic resonance images and animations of foods, plants, and flowers. Latest feed post: June 2015.'
+  insight_crime:
     feed_url: https://insightcrime.org/feed/
     homepage_url: https://insightcrime.org
     display_name: InSight Crime
-    summary: INVESTIGATION AND ANALYSIS OF ORGANIZED CRIME
-  insimpleterms_blog:
+    summary: Investigations and analysis of organized crime, criminal networks, and public policy in Latin America and the Caribbean.
+    profile_photo: https://i0.wp.com/insightcrime.org/wp-content/uploads/2023/04/ICON-Insight-Crime-svg-Elisa-Roldan-Restrepo.png?fit=146%2C146&quality=100&ssl=1
+  in_simple_terms:
     feed_url: https://insimpleterms.blog/feed
     homepage_url: https://insimpleterms.blog
     display_name: In Simple Terms
-    summary: If I can't find a simple explanation, I write notes for myself. Often about things related to software engineering.
-  inspektor_gadget:
+    summary: Clare Sudbery's notes and essays about software engineering, technical leadership, coaching, and collaboration.
+    profile_photo: https://insimpleterms.blog/wp-content/uploads/2017/07/cropped-cropped-scrabble02-180x180.png
+  inspektor_gadget_blog:
     feed_url: https://inspektor-gadget.io/blog/rss.xml
     homepage_url: https://www.inspektor-gadget.io/blog
     display_name: Inspektor Gadget Blog
-    summary: Inspektor Gadget Blog
+    summary: Project news and technical articles about Inspektor Gadget, eBPF observability, container security, and Kubernetes troubleshooting.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.inspektor-gadget.io%2Fblog&size=128
   inspirationfeed:
     feed_url: https://inspirationfeed.com/feed/
     homepage_url: https://inspirationfeed.com
     display_name: Inspirationfeed
-    summary: Inspiring and educating bright minds.
-  instagrid_me:
-    feed_url: https://instagrid.me/feed/
-    homepage_url: https://instagrid.me
-    display_name: Instagrid.me
-    summary: Updates from Instagrid.me.
+    summary: Articles, interviews, and recommendations about design, creativity, technology, business, self-development, and lifestyle.
+    profile_photo: https://inspirationfeed.com/wp-content/uploads/2019/06/cropped-inspirationfeed-favicon-1-180x180.png
   instantshift:
-    feed_url: http://feeds.feedburner.com/iShift/
+    feed_url: https://feeds.feedburner.com/iShift/
     homepage_url: http://www.instantshift.com
     display_name: InstantShift
-    summary: Web Designers and Developers Daily Resource.
-  instapainting:
+    summary: 'Web design and development articles, tutorials, resources, and digital business advice from InstantShift. Latest feed post: April 2025.'
+    profile_photo: http://www.instantshift.com/assets/themes/instantshiftv2/images/logo-appletouchicon.png
+  instapainting_blog:
     feed_url: https://www.instapainting.com/blog/feed/
     homepage_url: https://www.instapainting.com/blog
     display_name: Instapainting Blog
-    summary: Leveraging Art & Technology
+    summary: Instapainting company news and guides about commissioned artwork, custom portraits, painting, and personalized gifts.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.instapainting.com%2Fblog&size=128
   instiki:
-    feed_url: https://instiki.org/feed/
-    homepage_url: https://instiki.org
+    feed_url: https://github.com/parasew/instiki/releases.atom
+    homepage_url: https://golem.ph.utexas.edu/wiki/instiki/show/HomePage
     display_name: Instiki
-    summary: Updates from Instiki.
-  instinctmagazine:
+    summary: Official release notes for Instiki, the open-source wiki software with mathematical markup, SVG, and document export support.
+  instinct_magazine:
     feed_url: https://instinctmagazine.com/feed/
     homepage_url: https://instinctmagazine.com
     display_name: Instinct Magazine
-    summary: Follow Yours...
+    summary: LGBTQ news, queer culture, entertainment, travel, health, and lifestyle coverage from Instinct Magazine.
+    profile_photo: https://instinctmagazine.com/wp-content/uploads/2019/03/icon-2019-03-17_17-08-04_382595.png
   fasterthanlime:
     feed_url: https://fasterthanli.me/index.xml
     homepage_url: https://fasterthanli.me
