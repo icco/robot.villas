@@ -19271,6 +19271,279 @@ bots:
     display_name: Vishnu Bharathi
     summary: Reading logs and programming notes.
     profile_photo: https://www.gravatar.com/avatar/261fb0f50b7dea501c807ac01f242343?s=180
+  redesigning_the_boarding_pass:
+    feed_url: http://passfail.squarespace.com/journal/atom.xml
+    homepage_url: http://passfail.squarespace.com/journal
+    display_name: Redesigning the Boarding Pass
+    summary: Tyler Thompson's archived boarding-pass design critique and redesign experiment. The feed contains one article published in July 2008.
+  passing_strangeness:
+    feed_url: https://passingstrangeness.wordpress.com/feed/
+    homepage_url: https://passingstrangeness.wordpress.com
+    display_name: Passing Strangeness
+    summary: Essays about unusual history, overlooked events, scientific curiosities, and the odd bits of the world.
+  paul_kinlan:
+    feed_url: https://paul.kinlan.me/index.xml
+    homepage_url: https://paul.kinlan.me
+    display_name: Paul Kinlan
+    summary: Paul Kinlan writes about Chrome, the open web, web development, developer tools, and experiments with AI.
+    profile_photo: https://paul.kinlan.me/images/me.png
+  paul_smith:
+    feed_url: https://pauladamsmith.com/rss.xml
+    homepage_url: https://pauladamsmith.com
+    display_name: Paul Smith
+    summary: Paul Smith writes about software engineering, version control, programming tools, and civic technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpauladamsmith.com&size=128
+  paul_fitzpatrick:
+    feed_url: https://paulfitz.github.io/rss.xml
+    homepage_url: https://paulfitz.github.io
+    display_name: Paul Fitzpatrick
+    summary: 'Archived writing by Paul Fitzpatrick on software projects, data tools, spreadsheets, and experiments. Latest feed article: March 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fpaulfitz.github.io&size=128
+  the_perry_bible_fellowship:
+    feed_url: https://pbfcomics.com/feed/
+    homepage_url: https://pbfcomics.com
+    display_name: The Perry Bible Fellowship
+    summary: Offbeat comic strips by Nicholas Gurewitch.
+    profile_photo: https://pbfcomics.com/wp-content/themes/PBF/images/favicon.png
+  pc_kombo_blog:
+    feed_url: https://www.pc-kombo.com/blog/feed
+    homepage_url: https://www.pc-kombo.com/blog
+    display_name: pc-kombo blog
+    summary: 'Archived pc-kombo articles on PC building, graphics cards, processors, benchmarks, and software development. Latest feed article: August 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.pc-kombo.com%2Fblog&size=128
+  pablo_j_caro_martin:
+    feed_url: https://pcaro.es/index.xml
+    homepage_url: https://pcaro.es
+    display_name: Pablo J. Caro Martín
+    summary: Pablo J. Caro Martin's cybersecurity articles, talks, projects, and Hermit programming font. This feed lists six site pages with placeholder dates, not a chronological news stream.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpcaro.es&size=128
+  pcgamesn:
+    feed_url: https://www.pcgamesn.com/mainrss.xml
+    homepage_url: https://www.pcgamesn.com
+    display_name: PCGamesN
+    summary: PC gaming news, reviews, guides, game updates, and gaming hardware coverage.
+    profile_photo: https://www.pcgamesn.com/wp-content/themes/legion-elite/public/images/pcgamesn/favicons/apple-touch-icon.png
+  peter_christensen:
+    feed_url: http://pchristensen.com/blog/feed/
+    homepage_url: http://pchristensen.com/blog
+    display_name: Peter Christensen
+    summary: Peter Christensen writes about programming, AI, education, career decisions, and personal learning.
+  pcsx2_blog:
+    feed_url: https://pcsx2.net/blog/rss.xml
+    homepage_url: https://pcsx2.net/blog
+    display_name: PCSX2 Blog
+    summary: Release announcements and development updates from PCSX2, the free and open-source PlayStation 2 emulator.
+    profile_photo: https://pcsx2.net/img/favicon.webp
+  peak_5390:
+    feed_url: https://peak5390.wordpress.com/feed/
+    homepage_url: https://peak5390.wordpress.com
+    display_name: peak 5390
+    summary: 'Archived writing on programming, teaching, family, and personal projects. Latest feed article: December 2015.'
+  pecl_releases:
+    feed_url: https://pecl.php.net/feeds/latest.rss
+    homepage_url: https://pecl.php.net
+    display_name: PECL Releases
+    summary: Latest extension releases from the PHP Extension Community Library (PECL).
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpecl.php.net&size=128
+  peergos:
+    feed_url: https://peergos.org/feeds/posts.atom.xml
+    homepage_url: https://peergos.org
+    display_name: Peergos
+    summary: Project updates and technical articles from Peergos, an open-source encrypted storage, sharing, and collaboration platform.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpeergos.org&size=128
+  castellers:
+    feed_url: https://pelegri.wordpress.com/feed/
+    homepage_url: https://pelegri.wordpress.com
+    display_name: Castellers
+    summary: 'Archived Castellers posts on open-source software, Sun Microsystems, biotechnology, careers, and remote work. Latest feed article: May 2022.'
+  kernel_people:
+    feed_url: https://people.kernel.org/read/feed/
+    homepage_url: https://people.kernel.org
+    display_name: Kernel People
+    summary: Posts from kernel.org community blogs on Linux development, hardware, infrastructure, and open-source software.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpeople.kernel.org&size=128
+  perforce_software:
+    feed_url: https://www.perforce.com/rss.xml
+    homepage_url: https://www.perforce.com
+    display_name: Perforce Software
+    summary: Perforce Software's site feed includes product and download pages, staff profiles, and occasional technical articles; it is not a dedicated blog feed.
+    profile_photo: https://www.perforce.com/themes/custom/p4base/assets/favicons/p4/apple-touch-icon.png
+  perishable_press:
+    feed_url: https://perishablepress.com/feed/
+    homepage_url: https://perishablepress.com
+    display_name: Perishable Press
+    summary: Web development, WordPress plugins, site security, and practical server configuration tutorials.
+    profile_photo: https://perishablepress.com/apple-touch-icon.png
+  james_hamilton:
+    feed_url: https://perspectives.mvdirona.com/feed/
+    homepage_url: https://perspectives.mvdirona.com
+    display_name: James Hamilton's Perspectives
+    summary: James Hamilton writes about large-scale computing, datacenters, networking, storage, and engineering.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fperspectives.mvdirona.com&size=128
+  peter_sobot:
+    feed_url: https://petersobot.com/atom.xml
+    homepage_url: https://petersobot.com
+    display_name: Peter Sobot
+    summary: 'Peter Sobot''s archived blog on software engineering, music technology, startups, and projects. Latest feed article: September 2014.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpetersobot.com&size=128
+  peter_ullrich:
+    feed_url: https://peterullrich.com/feed.xml
+    homepage_url: https://peterullrich.com
+    display_name: Peter Ullrich
+    summary: Peter Ullrich writes about Elixir, Phoenix LiveView, software architecture, product engineering, and developer tools.
+    profile_photo: https://github.com/pjullrich.png?size=200
+  pete_wardens_blog:
+    feed_url: https://petewarden.com/feed/
+    homepage_url: https://petewarden.com
+    display_name: Pete Warden's blog
+    summary: Pete Warden writes about machine learning, speech recognition, software engineering, technology policy, and personal interests.
+    profile_photo: https://secure.gravatar.com/blavatar/a924aa92ac9016bfe9c773a9e47ccf2fb84df9216b8ca936e25899edc1019dd1?s=114
+  pew_research_center:
+    feed_url: https://www.pewresearch.org/feed/
+    homepage_url: https://www.pewresearch.org
+    display_name: Pew Research Center
+    summary: Nonpartisan public opinion polling and social science research on politics, society, demographics, religion, media, and technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.pewresearch.org&size=128
+  pganalyze_blog:
+    feed_url: https://pganalyze.com/feed.xml
+    homepage_url: https://pganalyze.com/blog
+    display_name: pganalyze Blog
+    summary: Monitoring Postgres and tuning query performance
+    profile_photo: https://pganalyze.com/favicon-32x32.png
+  pgdog:
+    feed_url: https://pgdog.dev/feed.xml
+    homepage_url: https://pgdog.dev
+    display_name: PgDog
+    summary: Technical articles and project announcements from PgDog, a PostgreSQL connection pooler, load balancer, and sharding proxy.
+    profile_photo: https://pgdog.dev/assets/images/favicon2.png?v=28caed5735
+  phil_calcado:
+    feed_url: https://philcalcado.com/feed.xml
+    homepage_url: https://philcalcado.com
+    display_name: Phil Calçado
+    summary: Phil Calcado writes about software architecture, distributed systems, AI products, and engineering leadership. This feed currently ends in March 2025 despite newer posts on the site.
+    profile_photo: https://github.com/pcalcado.png?size=200
+  phil_chen:
+    feed_url: https://philchen.com/feed/
+    homepage_url: https://philchen.com
+    display_name: Phil Chen
+    summary: 'Phil Chen''s technical articles on application development, cloud infrastructure, containers, and generative AI. Latest feed article: October 2024.'
+    profile_photo: https://philchen.com/wp-content/themes/philchen_theme_2015/favicon.png
+  philip_laine:
+    feed_url: https://philiplaine.com/index.xml
+    homepage_url: https://philiplaine.com
+    display_name: Philip Laine
+    summary: Philip Laine's articles and projects on software development, Kubernetes, containers, and infrastructure.
+    profile_photo: https://philiplaine.com/apple-touch-icon-144-precomposed.png
+  philippe_bourgau:
+    feed_url: https://philippe.bourgau.net/feed.xml
+    homepage_url: https://philippe.bourgau.net
+    display_name: Philippe Bourgau's XP Coaching Blog
+    summary: 'Archived articles on extreme programming, technical coaching, agile practices, and sustainable software development. Latest feed article: December 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fphilippe.bourgau.net&size=128
+  phil_mckinney:
+    feed_url: https://www.philmckinney.com/blog/rss/
+    homepage_url: https://www.philmckinney.com
+    display_name: Phil McKinney
+    summary: Phil McKinney's essays on innovation, leadership, analytical thinking, and building teams.
+    profile_photo: https://storage.ghost.io/c/5b/b8/5bb8ac0c-fd54-4eb9-a76b-b472ce9fa849/content/images/size/w256h256/2023/05/original-180x180-2.png20160614-31052-1t1vap7.png
+  phil_pearls_blog:
+    feed_url: https://philpearl.github.io/index.xml
+    homepage_url: https://philpearl.github.io
+    display_name: Phil Pearl's Blog
+    summary: Phil Pearl writes about Go, performance, data structures, and software engineering.
+  phil_sturgeon:
+    feed_url: https://philsturgeon.com/rss/
+    homepage_url: https://philsturgeon.com
+    display_name: Phil Sturgeon
+    summary: Phil Sturgeon writes about canal-boat and van life, cycling, reforestation, climate, and technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fphilsturgeon.com&size=128
+  phil_wain:
+    feed_url: https://philwbass.com/feed/
+    homepage_url: https://philwbass.com
+    display_name: Phil Wain
+    summary: 'Phil Wain''s archived posts on bass playing, jazz, music, and London''s specialty-coffee scene. Latest feed article: June 2020.'
+    profile_photo: https://secure.gravatar.com/blavatar/ec8e0829331f20814b1dc9a0709fdfed2b845f9a732ed55deb0914951f39406f?s=114
+  phoboslab:
+    feed_url: https://phoboslab.org/log/feed
+    homepage_url: https://phoboslab.org/log
+    display_name: Phoboslab
+    summary: Dominic Szablewski writes about game development, JavaScript, low-level programming, retro consoles, and audio and image formats.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fphoboslab.org%2Flog&size=128
+  phong:
+    feed_url: https://phong.com/feed/
+    homepage_url: https://phong.com
+    display_name: phong
+    summary: 'Phong''s computer graphics, animation, virtual reality, dome visuals, and digital-art projects. Latest feed article: September 2024.'
+    profile_photo: https://phong.com/wp-content/uploads/2014/12/cropped-FAVICON-A-180x180.png
+  photoshop_essentials:
+    feed_url: https://www.photoshopessentials.com/feed/
+    homepage_url: https://www.photoshopessentials.com
+    display_name: Photoshop Essentials
+    summary: Step-by-step Adobe Photoshop tutorials covering photo editing, retouching, image effects, and text effects.
+    profile_photo: https://www.photoshopessentials.com/newsite/wp-content/uploads/2017/05/cropped-favicon-180x180.png
+  photoville:
+    feed_url: https://photoville.com/feed/
+    homepage_url: https://photoville.com
+    display_name: Photoville
+    summary: 'Archived photography interviews, artist features, and festival reading recommendations from Photoville. Latest feed article: December 2021.'
+    profile_photo: https://photoville.com/wp-content/uploads/2020/02/cropped-favicon_main2-32x32.png
+  phrogz:
+    feed_url: https://phrogz.net/rss
+    homepage_url: https://phrogz.net
+    display_name: Phrogz.net
+    summary: 'Gavin Kistner''s archived programming examples, graphics experiments, language notes, and personal projects. Newest dated feed entry: July 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fphrogz.net&size=128
+  phys_org:
+    feed_url: https://phys.org/rss-feed/
+    homepage_url: https://phys.org
+    display_name: Phys.org
+    summary: Science research news covering physics, astronomy, chemistry, biology, Earth science, and the environment.
+    profile_photo: https://phys.b-cdn.net/tmpl/v6/img/favicons/apple-touch-icon.png
+  pi_changelog:
+    feed_url: https://pi.dev/changelog.xml
+    homepage_url: https://pi.dev/changelog
+    display_name: Pi Changelog
+    summary: Release notes, features, fixes, and project announcements for the Pi coding agent.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpi.dev%2Fchangelog&size=128
+  pidgin:
+    feed_url: https://discourse.imfreedom.org/tag/news.rss
+    homepage_url: https://discourse.imfreedom.org/tag/news
+    display_name: Pidgin News
+    summary: Official news from Pidgin and Instant Messaging Freedom on chat software, project development, and community infrastructure.
+    profile_photo: https://pidgin.im/favicon/favicon-180.png
+  pier_24:
+    feed_url: https://pier24.org/feed/
+    homepage_url: https://pier24.org
+    display_name: Pier 24 Photography
+    summary: 'Archived exhibition news and press coverage from Pier 24 Photography and the Pilara Foundation. Latest feed article: January 2023.'
+    profile_photo: https://pier24.org/favicon/apple-icon-180x180.png
+  pietro_menna:
+    feed_url: https://pietro.menna.net.br/atom.xml
+    homepage_url: https://pietro.menna.net.br
+    display_name: Pietro Menna
+    summary: 'Pietro Menna''s archived articles on software development, observability, message queues, and personal experiences. Latest feed article: September 2021.'
+  pin_payments_blog:
+    feed_url: https://pinpayments.com/blog.atom
+    homepage_url: https://pinpayments.com/blog
+    display_name: Pin Payments Blog
+    summary: Pin Payments articles on accepting online payments, transaction fees, payment security, and company news.
+    profile_photo: https://pinpayments.com/apple-touch-icon.png
+  pineapple_bread:
+    feed_url: https://pineapplebread.wordpress.com/feed/
+    homepage_url: https://pineapplebread.wordpress.com
+    display_name: Pineapple Bread
+    summary: Archived food, baking, and photography posts from Pineapple Bread. The final December 2014 post announces a move to a separate photography blog.
+  pioneer_space_sim:
+    feed_url: https://pioneerspacesim.net/index.xml
+    homepage_url: https://pioneerspacesim.net
+    display_name: Pioneer
+    summary: Pioneer is a free and open-source space adventure game. This feed lists three contribution, donation, and download pages dated May 2017, not release announcements.
+  pipistrel:
+    feed_url: https://www.pipistrel-aircraft.com/feed/
+    homepage_url: https://www.pipistrel-aircraft.com
+    display_name: Pipistrel
+    summary: Customer stories and company news from Pipistrel, a manufacturer of light aircraft and electric aircraft.
+    profile_photo: https://www.pipistrel-aircraft.com/wp-content/uploads/2023/02/cropped-pipistrel-siteicon-180x180.png
   veit_heller:
     feed_url: https://blog.veitheller.de/feed.rss
     homepage_url: https://blog.veitheller.de/
