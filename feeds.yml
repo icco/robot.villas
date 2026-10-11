@@ -13707,6 +13707,294 @@ bots:
     display_name: LensCulture
     summary: Contemporary photography, photographers, visual culture, and photography criticism.
     profile_photo: https://www.lensculture.com/icon.png
+  silent_sobbing:
+    feed_url: https://golduck.tumblr.com/rss
+    homepage_url: https://golduck.tumblr.com
+    display_name: silent sobbing
+    summary: 'Art, anime, food, and fandom reblogs from the silent sobbing Tumblr archive. Latest feed post: May 2024.'
+    profile_photo: https://api.tumblr.com/v2/blog/golduck.tumblr.com/avatar/128
+  go_make_things:
+    feed_url: https://gomakethings.com/feed/index.xml
+    homepage_url: https://gomakethings.com/articles
+    display_name: Go Make Things
+    summary: Chris Ferdinandi writes about frontend web development, politics, punk, books, and gardening.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgomakethings.com%2Farticles&size=128
+  good_e_reader:
+    feed_url: https://goodereader.com/blog/feed
+    homepage_url: https://goodereader.com/blog
+    display_name: Good e-Reader
+    summary: News and reviews covering e-readers, e-paper, ebooks, audiobooks, tablets, and digital publishing.
+    profile_photo: https://media.goodereader.com/blog/uploads/images/2025/06/01140849/300x300-4.png
+  the_good_men_project:
+    feed_url: https://goodmenproject.com/feed/
+    homepage_url: https://goodmenproject.com
+    display_name: The Good Men Project
+    summary: Essays and commentary on relationships, masculinity, parenting, culture, politics, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgoodmenproject.com&size=128
+  good_news_network:
+    feed_url: https://www.goodnewsnetwork.org/feed/
+    homepage_url: https://www.goodnewsnetwork.org
+    display_name: Good News Network
+    summary: Positive news stories about people, communities, science, the environment, and inspiring events around the world.
+    profile_photo: https://www.goodnewsnetwork.org/wp-content/uploads/2021/01/cropped-GNN-Logo-Circles-2017-1-180x180.png
+  kk4vcz:
+    feed_url: https://kk4vcz.com/index.xml
+    homepage_url: https://kk4vcz.com
+    display_name: KK4VCZ
+    summary: 'Travis Goodspeed''s archived amateur-radio and hardware projects, including GoodWatch and MD380Tools. Latest blog post: September 2020.'
+    profile_photo: https://kk4vcz.com/apple-touch-icon.png
+  maps_mania:
+    feed_url: http://feeds.feedburner.com/GoogleMapsMania
+    homepage_url: https://googlemapsmania.blogspot.com
+    display_name: Maps Mania
+    summary: Interactive digital maps, cartography projects, and the tools used to create them.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fgooglemapsmania.blogspot.com&size=128
+  gordon_brander:
+    feed_url: https://gordonbrander.com/feed/notes.xml
+    homepage_url: https://gordonbrander.com
+    display_name: Gordon Brander
+    summary: Gordon Brander writes notes on software, design, creative practice, systems, and building living software.
+  gorilla_web_toolkit:
+    feed_url: https://gorilla.github.io/index.xml
+    homepage_url: https://gorilla.github.io
+    display_name: Gorilla Web Toolkit
+    summary: Official Gorilla Web Toolkit project news for Go web developers. This feed contains one project-status update from July 2023.
+    profile_photo: https://gorilla.github.io/img/gorilla-icon-32.png
+  gosha_spark:
+    feed_url: http://feeds.feedburner.com/GoshaArinich
+    homepage_url: https://goshacmd.com
+    display_name: Gosha Spark
+    summary: 'Archived programming articles by Gosha Spark, formerly Gosha Arinich, on React, Ruby, web development, and software design. Latest feed article: July 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgoshacmd.com&size=128
+  sphero:
+    feed_url: https://sphero.com/blogs/news.atom
+    homepage_url: https://sphero.com/blogs/news
+    display_name: Sphero
+    summary: Sphero robotics and STEM education news, classroom activities, teaching resources, and product announcements.
+    profile_photo: https://sphero.com/cdn/shop/files/Sphero_Favicon_245addd3-2a24-4403-bf8a-9f55ddacd159_48x48.png?v=1614773920
+  e_pluribus_unum:
+    feed_url: https://e-pluribusunum.org/feed/
+    homepage_url: https://e-pluribusunum.org
+    display_name: E Pluribus Unum
+    summary: Research and analysis by Alexander B. Howard on open government, transparency, public records, emerging technology, and civic accountability.
+    profile_photo: https://e-pluribusunum.org/wp-content/uploads/2021/01/cropped-epluribus-logo.jpg?w=180
+  go_web_examples:
+    feed_url: https://gowebexamples.com/index.xml
+    homepage_url: https://gowebexamples.com
+    display_name: Go Web Examples
+    summary: Tutorials and code examples for web programming in Go, covering HTTP, routing, templates, middleware, databases, and sessions. Feed entries are documentation pages with placeholder dates.
+    profile_photo: https://gowebexamples.com/apple-icon-57x57.png
+  gq_uk:
+    feed_url: https://www.gq-magazine.co.uk/feed/rss
+    homepage_url: https://www.gq-magazine.co.uk
+    display_name: British GQ
+    summary: British GQ covers men's fashion, style, grooming, watches, fitness, entertainment, sport, and culture.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.gq-magazine.co.uk&size=128
+  graham_cluley:
+    feed_url: https://grahamcluley.com/feed/
+    homepage_url: https://grahamcluley.com
+    display_name: Graham Cluley
+    summary: Cybersecurity news, analysis, security advice, and Smashing Security podcast episodes from Graham Cluley.
+    profile_photo: https://grahamcluley.com/wp-content/uploads/2022/12/cropped-android-chrome-512x512-2-180x180.png
+  grammarist:
+    feed_url: https://grammarist.com/feed/
+    homepage_url: https://grammarist.com
+    display_name: Grammarist
+    summary: English grammar, punctuation, vocabulary, usage, spelling, writing, and editing guides.
+    profile_photo: https://grammarist.com/wp-content/uploads/2022/01/cropped-Grammarist-favicon-2-180x180.png
+  grammarphobia:
+    feed_url: https://grammarphobia.com/feed
+    homepage_url: https://grammarphobia.com
+    display_name: Grammarphobia
+    summary: Patricia T. O'Conner and Stewart Kellerman explain English grammar, etymology, linguistics, and usage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgrammarphobia.com&size=128
+  grape:
+    feed_url: https://grapee.jp/feed
+    homepage_url: https://grapee.jp
+    display_name: grape
+    summary: Japanese-language lifestyle stories, household tips, products, food, animals, and culture from grape. This is not the former English-language grape Japan feed.
+    profile_photo: https://grapee.jp/wp-content/themes/grape_v2/img/apple-touch-icon.png
+  graphite:
+    feed_url: https://graphite.com/feed.xml
+    homepage_url: https://graphite.com/blog
+    display_name: Graphite
+    summary: Graphite product announcements and articles on code review, AI-assisted development, GitHub workflows, and software engineering.
+    profile_photo: https://graphite.com/favicon/apple-touch-icon.png
+  andrea_franz:
+    feed_url: https://gravityblast.com/feed.xml
+    homepage_url: https://gravityblast.com
+    display_name: Andrea Franz
+    summary: 'Andrea Franz''s archived development blog on Go, Ruby, Elixir, JavaScript, and software projects. Latest feed article: November 2021.'
+  gray_area:
+    feed_url: https://grayarea.org/feed/
+    homepage_url: https://grayarea.org
+    display_name: Gray Area
+    summary: 'Archived Gray Area articles on art, technology, audiovisual performance, and urban prototyping. Latest feed article: September 2013.'
+    profile_photo: https://grayarea.org/wp-content/uploads/2025/08/cropped-8f5e47db-7326-4826-9777-b05c4d396187-32x32.jpeg
+  sebastian_graz:
+    feed_url: https://www.graz.io/rss.xml
+    homepage_url: https://www.graz.io/articles
+    display_name: Sebastian Graz
+    summary: Sebastian Graz documents custom keyboard design and builds, including the Bayleaf and Figleaf keyboards.
+    profile_photo: https://www.graz.io/og.png
+  beast_blog:
+    feed_url: http://feeds.feedburner.com/Beast-Blog
+    homepage_url: https://green-beast.com/blog
+    display_name: Beast-Blog
+    summary: 'Mike Cherim''s archived blog on web accessibility, standards, design, development, and personal projects. Latest feed post: September 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fgreen-beast.com%2Fblog&size=128
+  green_and_blue:
+    feed_url: https://www.greenandblue.co.uk/collections/shop-bee-houses.atom
+    homepage_url: https://www.greenandblue.co.uk/collections/shop-bee-houses
+    display_name: Green&Blue
+    summary: Green&Blue's product feed for solitary bee houses, bee bricks, and bee-friendly concrete planters. Entries are products, not news articles.
+    profile_photo: https://www.greenandblue.co.uk/cdn/shop/files/Green_Blue-favicon.png?crop=center&height=32&v=1676994732&width=32
+  greenbot:
+    feed_url: https://www.greenbot.com/feed/
+    homepage_url: https://www.greenbot.com
+    display_name: GreenBot
+    summary: 'Take a look at the best AI coverage: All phone, tablets & wearables models news, reviews, specs & apps with our articles, photos & videos.'
+    profile_photo: https://www.greenbot.com/wp-content/themes/greenbot-new/assets/img/favicon.png
+  green_diary:
+    feed_url: https://greendiary.com/feed/
+    homepage_url: https://greendiary.com
+    display_name: Green Diary
+    summary: Sustainability, green technology, renewable energy, eco-friendly homes, travel, and lifestyle guides from the Dr Prem Guides network.
+  greenheart_games:
+    feed_url: https://www.greenheartgames.com/feed/
+    homepage_url: https://www.greenheartgames.com/app/game-dev-tycoon
+    display_name: Greenheart Games
+    summary: 'Archived Greenheart Games announcements and podcast episodes about Game Dev Tycoon and Tavern Keeper. Latest feed post: August 2020.'
+    profile_photo: https://www.greenheartgames.com/wp-content/uploads/2019/05/cropped-logo2019_Stroke_512-180x180.png
+  gsap:
+    feed_url: https://gsap.com/blog/rss.xml
+    homepage_url: https://gsap.com/blog
+    display_name: GSAP
+    summary: Official GSAP animation-library release announcements, tutorials, and learning resources.
+    profile_photo: https://gsap.com/favicon-32x32.png
+  glenn_greenwald:
+    feed_url: https://greenwald.substack.com/feed
+    homepage_url: https://greenwald.substack.com
+    display_name: Glenn Greenwald
+    summary: Glenn Greenwald's political analysis, investigative reporting, and subscriber question-and-answer episodes.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!P-CW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0ec8fd5-b045-425a-a0e8-b03ca950bba7%2Fapple-touch-icon-57x57.png
+  gregable:
+    feed_url: https://gregable.com/feed.xml
+    homepage_url: https://gregable.com
+    display_name: Gregable
+    summary: Greg Grothaus writes about software, technical projects, home automation, travel, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgregable.com&size=128
+  greg_detre:
+    feed_url: http://oldblog.gregdetre.co.uk/feeds/posts/default
+    homepage_url: http://oldblog.gregdetre.co.uk
+    display_name: Greg Detre
+    summary: 'Greg Detre''s archived writing on startups, technology, apps, learning, and Memrise. Latest feed post: April 2011.'
+  greg_fallis:
+    feed_url: https://gregfallis.com/feed/
+    homepage_url: https://gregfallis.com
+    display_name: Greg Fallis
+    summary: Greg Fallis writes about photography, art, history, politics, cycling, and everyday life.
+    profile_photo: https://gregfallis.com/wp-content/uploads/2016/02/trumpalso-e1492624235351.jpg?w=180
+  gregg_kellogg:
+    feed_url: https://greggkellogg.net/feed.xml
+    homepage_url: https://greggkellogg.net
+    display_name: Gregg Kellogg
+    summary: 'Gregg Kellogg''s archived personal blog on scuba diving, travel, Ruby, and the semantic web. Latest feed post: June 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgreggkellogg.net&size=128
+  grepular:
+    feed_url: https://www.grepular.com/rss
+    homepage_url: https://www.grepular.com
+    display_name: Grepular
+    summary: Mike Cardwell's articles on Linux, security, privacy, software, and technical tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.grepular.com&size=128
+  grex:
+    feed_url: https://grex.substack.com/feed
+    homepage_url: https://grex.substack.com
+    display_name: grex
+    summary: Artist and engineer Greg Hochmuth shares short announcements about new creative, software, and music projects.
+  dain_app:
+    feed_url: https://grisk.itch.io/dain-app/devlog.rss
+    homepage_url: https://grisk.itch.io/dain-app
+    display_name: Dain-App
+    summary: 'Archived development updates for GRisk''s Dain-App, an AI-powered animation interpolation tool for Nvidia GPUs. Latest devlog post: May 2020.'
+    profile_photo: https://img.itch.zone/aW1nLzI4NzM3NjgucG5n/32x32%23/vF4LGB.png
+  grokcode:
+    feed_url: http://www.grokcode.com/feed.xml
+    homepage_url: http://www.grokcode.com
+    display_name: GrokCode
+    summary: 'Archived programming tutorials and essays on software development, code review, and building things on the internet. Latest feed article: February 2018.'
+    profile_photo: http://www.grokcode.com/assets/img/favicon-152.png
+  grpc:
+    feed_url: https://grpc.io/index.xml
+    homepage_url: https://grpc.io
+    display_name: gRPC
+    summary: Official gRPC project news, releases, tutorials, and engineering articles about remote procedure calls.
+    profile_photo: https://grpc.io/favicons/apple-touch-icon.png
+  george_r_r_martin_livejournal:
+    feed_url: https://grrm.livejournal.com/data/rss
+    homepage_url: https://grrm.livejournal.com
+    display_name: 'George R. R. Martin: Not A Blog'
+    summary: 'George R. R. Martin''s archived LiveJournal posts about books, writing, events, and personal interests. Latest post: April 2018, announcing the blog''s move.'
+    profile_photo: https://l-userpic.livejournal.com/91237832/7059164
+  underground_tradecraft:
+    feed_url: https://grugq.tumblr.com/rss
+    homepage_url: https://grugq.tumblr.com
+    display_name: Underground Tradecraft
+    summary: 'The grugq''s archived posts on counterintelligence, operational security, cybersecurity, and tradecraft. Latest feed post: July 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgrugq.tumblr.com&size=128
+  grunt_blog:
+    feed_url: https://gruntjs.com/rss
+    homepage_url: https://gruntjs.com
+    display_name: Grunt Blog
+    summary: 'Official archived release announcements and project news for the Grunt JavaScript task runner. Latest feed article: April 2021.'
+    profile_photo: https://gruntjs.com/img/favicons/apple-touch-icon.png
+  google_workspace_updates:
+    feed_url: http://feeds.feedburner.com/GoogleAppsUpdates
+    homepage_url: https://workspaceupdates.googleblog.com
+    display_name: Google Workspace Updates
+    summary: Official Google Workspace product announcements, feature rollouts, admin updates, and weekly recaps.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fworkspaceupdates.googleblog.com&size=128
+  coral_guides:
+    feed_url: https://guides.coralproject.net/feed/
+    homepage_url: https://guides.coralproject.net
+    display_name: Coral Guides
+    summary: 'Archived Coral by Vox Media guides for journalism communities, comment moderation, audience engagement, and inclusion. Latest feed article: October 2020.'
+    profile_photo: https://guides.coralproject.net/wp-content/uploads/2019/09/cropped-Mark_color-e1568070763915.png?w=180
+  guillermo_grau:
+    feed_url: https://guigrpa.github.io/feed.xml
+    homepage_url: https://guigrpa.github.io
+    display_name: Math.random() - Guillermo Grau
+    summary: 'Guillermo Grau''s archived software engineering articles on JavaScript, testing, immutability, logging, and document generation. Latest feed article: January 2017.'
+  guitar_com:
+    feed_url: https://guitar.com/feed/
+    homepage_url: https://guitar.com
+    display_name: Guitar.com
+    summary: Guitar news, artist interviews, gear reviews, lessons, and guides for guitar players.
+    profile_photo: https://guitar.com/apple-touch-icon.png
+  guitar_player:
+    feed_url: https://www.guitarplayer.com/feeds.xml
+    homepage_url: https://www.guitarplayer.com
+    display_name: Guitar Player
+    summary: Guitar Player covers guitarists, music, electric and acoustic gear, lessons, and playing techniques.
+    profile_photo: https://cdn.mos.cms.futurecdn.net/flexiimages/8hskaqyaak1754554583.png
+  guitar_world:
+    feed_url: https://www.guitarworld.com/feeds.xml
+    homepage_url: https://www.guitarworld.com
+    display_name: Guitar World
+    summary: Guitar World covers guitar and bass artists, gear, music news, reviews, lessons, and playing techniques.
+    profile_photo: https://vanilla.futurecdn.net/guitarworld/1777961/apple-touch-icon.png
+  trustleap_g_wan:
+    feed_url: http://www.gwan.com/trustleap.xml
+    homepage_url: http://www.gwan.com
+    display_name: TrustLeap G-WAN
+    summary: 'Archived TrustLeap G-WAN web application server announcements. Latest feed item: January 2013; legacy article links are partly broken or redirected.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.gwan.com&size=128
+  national_security_archive_legacy:
+    feed_url: https://nsarchive2.gwu.edu/feed.xml
+    homepage_url: https://nsarchive2.gwu.edu
+    display_name: National Security Archive (legacy)
+    summary: 'The National Security Archive''s legacy feed of declassified documents and foreign-policy research. Latest feed posting: August 2012; the legacy website was last updated in August 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fnsarchive2.gwu.edu&size=128
   petapixel:
     feed_url: https://petapixel.com/feed/
     homepage_url: https://petapixel.com
