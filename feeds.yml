@@ -22889,6 +22889,258 @@ bots:
     display_name: Brian Abelson
     summary: Code, writing, and music.
     profile_photo: https://brian.abelson.live/assets/img/apple-touch-icon.png
+  the_players_tribune:
+    feed_url: https://www.theplayerstribune.com/feed
+    homepage_url: https://www.theplayerstribune.com
+    display_name: The Players' Tribune
+    summary: Athletes' first-person essays, letters, interviews, and videos about sport, identity, family, and life beyond competition.
+    profile_photo: https://images2.minutemediacdn.com/image/upload/c_fill,w_1440,ar_1:1,f_auto,q_auto,g_auto/frontier/favicons/tpt-favicon.png
+  the_record_from_recorded_future_news:
+    feed_url: https://therecord.media/feed
+    homepage_url: https://therecord.media
+    display_name: The Record from Recorded Future News
+    summary: Cybersecurity journalism from Recorded Future News covering cybercrime, ransomware, nation-state operations, technology, and policy.
+    profile_photo: https://therecord.media/favicon-180.png
+  the_recount:
+    feed_url: https://www.therecount.com/feed
+    homepage_url: https://legacy.therecount.com
+    display_name: The Recount
+    summary: 'Archived Recount political and cultural video clips, including John Heilemann''s Hell & High Water interviews. Latest feed entry: October 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftherecount.com%2Fshow%2Findex&size=128
+  the_republic_of_letters:
+    feed_url: https://therepublicofletters.substack.com/feed
+    homepage_url: https://therepublicofletters.substack.com
+    display_name: The Republic of Letters
+    summary: Literary and cultural essays, book reviews, fiction, and contributor writing from The Republic of Letters.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!o1hn!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9f62d142-ad0b-4b63-a8d3-6618f78713e6%2Fapple-touch-icon-57x57.png
+  the_reviews_are_in:
+    feed_url: https://thereviewsarein.wordpress.com/feed/
+    homepage_url: https://thereviewsarein.wordpress.com
+    display_name: The Reviews Are In
+    summary: 'Archived personal writing on hockey, television, music, entertainment, and everyday life. Latest feed post: April 2014.'
+    profile_photo: https://secure.gravatar.com/blavatar/e863744f2d366577d42b9d1b1b32af16593029170c6f06777431b8ad9af698d4?s=114
+  the_right_scoop:
+    feed_url: https://therightscoop.com/feed/
+    homepage_url: https://therightscoop.com
+    display_name: The Right Scoop
+    summary: Conservative political news, commentary, and video clips from The Right Scoop.
+    profile_photo: https://therightscoop.com/wp-content/uploads/2019/03/apple-icon-60x60.png
+  river_bend:
+    feed_url: https://theriverbend.co.uk/feed/
+    homepage_url: https://theriverbend.co.uk
+    display_name: River Bend
+    summary: UK fishing guides covering species, tackle, techniques, seasons, rules, and freshwater and coastal locations.
+    profile_photo: https://theriverbend.co.uk/wp-content/uploads/2026/06/favicon-96x96-1.png
+  the_russians_used_a_pencil:
+    feed_url: https://therussiansusedapencil.com/rss
+    homepage_url: https://therussiansusedapencil.com
+    display_name: The Russians Used a Pencil
+    summary: 'Archived Tumblr links, images, quotations, and commentary on design, technology, games, and culture. Latest feed post: July 2014.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftherussiansusedapencil.com&size=128
+  sash:
+    feed_url: https://thesash.me/posts.atom
+    homepage_url: https://thesash.me
+    display_name: Sash!
+    summary: 'Archived essays on startups, design, user experience, product development, and healthcare software. Latest feed post: August 2012.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthesash.me&size=128
+  thesixthaxis:
+    feed_url: https://www.thesixthaxis.com/feed/
+    homepage_url: https://www.thesixthaxis.com
+    display_name: TheSixthAxis
+    summary: Video-game news, reviews, previews, guides, and community features from TheSixthAxis.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.thesixthaxis.com&size=128
+  the_smoking_gun:
+    feed_url: http://www.thesmokinggun.com/rss
+    homepage_url: https://www.thesmokinggun.com/documents
+    display_name: The Smoking Gun
+    summary: Document-based crime and public-records stories, unusual legal cases, mugshots, and Friday Photo Fun quizzes from The Smoking Gun.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.thesmokinggun.com%2Fdocuments&size=128
+  the_spaces:
+    feed_url: https://thespaces.com/feed/
+    homepage_url: https://thespaces.com
+    display_name: The Spaces
+    summary: Architecture, interiors, design, art, property, food, and travel stories from The Spaces.
+    profile_photo: https://cdn.thespaces.com/wp-content/uploads/2017/12/cropped-spaces-fav-512-300x300.png
+  the_star_wars_trilogy:
+    feed_url: https://www.thestarwarstrilogy.com/feed/
+    homepage_url: https://www.thestarwarstrilogy.com
+    display_name: The Star Wars Trilogy
+    summary: 'Star Wars film-preservation and restoration projects, including 4K77, 4K80, 4K83, trailers, and deleted scenes. Latest feed post: February 2024.'
+  the_tab:
+    feed_url: https://thetab.com/feed
+    homepage_url: https://thetab.com
+    display_name: The Tab
+    summary: Student news, university life, entertainment, reality television, politics, opinion, and guides from The Tab.
+    profile_photo: https://thetab.com/wp-content/themes/thetab-four/assets/_img/favicons/apple-touch-icon-180x180.png
+  the_tech_mit:
+    feed_url: https://thetech.com/feed
+    homepage_url: https://thetech.com
+    display_name: The Tech (MIT)
+    summary: MIT's student newspaper covering campus news, opinion, arts, sports, science, and campus life.
+    profile_photo: https://thetech.com/assets/apple-touch-icon-144x144-precomposed-f5878d48539a2789ee3cc43d1c0f2e3b9fc40c143c87b9b60a558319c1f332c7.png
+  the_tiny_life:
+    feed_url: https://thetinylife.com/feed/
+    homepage_url: https://thetinylife.com
+    display_name: The Tiny Life
+    summary: Tiny-house plans, building guides, design ideas, utilities, minimalism, homesteading, and simple living.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthetinylife.com&size=128
+  the_trek:
+    feed_url: https://thetrek.co/feed/
+    homepage_url: https://thetrek.co
+    display_name: The Trek
+    summary: Long-distance backpacking news, trail advice, gear reviews, and hikers' journals covering the Appalachian Trail, Pacific Crest Trail, and other routes.
+    profile_photo: https://thetrek.co/images/favicon.png
+  the_urban_daily:
+    feed_url: https://theurbandaily.com/feed/
+    homepage_url: https://theurbandaily.com
+    display_name: The Urban Daily
+    summary: Black entertainment, music, celebrity news, culture, lifestyle, and entrepreneurship stories, including the Mompreneurs interview series.
+  the_walrus:
+    feed_url: https://thewalrus.ca/feed/
+    homepage_url: https://thewalrus.ca
+    display_name: The Walrus
+    summary: Canadian journalism, essays, and commentary on politics, society, culture, science, and the environment.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthewalrus.ca&size=128
+  the_white_pages:
+    feed_url: https://thewhitepages.net/feed
+    homepage_url: https://thewhitepages.net
+    display_name: The White Pages
+    summary: Garrett Bucks's essays and community discussions on antiracism, politics, relationships, civic action, and building better communities.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!Prad!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F10b36d18-4fdb-44c5-96d2-138491a04e4c%2Fapple-touch-icon-57x57.png
+  the_year_of_mud:
+    feed_url: https://theyearofmud.com/feed/
+    homepage_url: https://theyearofmud.com
+    display_name: The Year of Mud
+    summary: Natural-building projects and workshops in Kentucky covering Japanese carpentry, timber framing, straw bale, cob, and natural plastering.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftheyearofmud.com&size=128
+  thirty_bees:
+    feed_url: https://thirtybees.com/feed/
+    homepage_url: https://thirtybees.com
+    display_name: thirty bees
+    summary: 'Official thirty bees open-source e-commerce news, release announcements, development notes, and shop advice. Latest feed post: November 2024.'
+    profile_photo: https://thirtybees.com/wp-content/uploads/2018/01/apple-icon-114x114.png
+  this_animated_life:
+    feed_url: https://thisanimatedlife.blogspot.com/feeds/posts/default
+    homepage_url: https://thisanimatedlife.blogspot.com
+    display_name: This Animated Life
+    summary: 'Archived animation, visualization, modeling, rigging, and student-film project notes, including Spaceferatu. Latest feed post: April 2017.'
+  kaskade:
+    feed_url: https://thisisadynasty.tumblr.com/rss
+    homepage_url: https://thisisadynasty.tumblr.com
+    display_name: KASKADE
+    summary: 'Kaskade''s archived Tumblr music updates, Redux shows, photos, tour clips, and artist commentary. Latest feed post: April 2016.'
+    profile_photo: https://api.tumblr.com/v2/blog/thisisadynasty.tumblr.com/avatar/128
+  this_is_money:
+    feed_url: https://www.dailymail.com/money/index.rss
+    homepage_url: https://www.thisismoney.co.uk/money/index.html
+    display_name: This Is Money
+    summary: Personal finance, investing, pensions, property, tax, and business stories from This Is Money, delivered through the affiliated Daily Mail Money feed.
+    profile_photo: https://www.thisismoney.co.uk/static/icons/tim/180.png
+  thoka_maer:
+    feed_url: https://thokamaer.com/rss
+    homepage_url: https://thokamaer.com
+    display_name: Thoka Maer
+    summary: 'Thoka Maer''s illustration and animation portfolio, including editorial commissions and animated GIFs. Feed also includes the homepage; latest dated project entry: November 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthokamaer.com&size=128
+  thomas_hawk_digital_connection:
+    feed_url: https://thomashawk.com/feed
+    homepage_url: https://thomashawk.com
+    display_name: Thomas Hawk Digital Connection
+    summary: 'Thomas Hawk''s archived photography, photo-community commentary, technology writing, and social-media essays. Latest feed post: March 2023.'
+    profile_photo: https://thomashawk.com/wp-content/uploads/cropped-Original2520avatar-180x180.jpg
+  thomas_hunter_ii:
+    feed_url: https://thomashunter.name/feed.rss
+    homepage_url: https://thomashunter.name
+    display_name: Thomas Hunter II
+    summary: Thomas Hunter II's writing on JavaScript, Node.js, software engineering, photography, camera gear, and personal projects.
+    profile_photo: https://thomashunter.name/images/icon-66.png
+  thomas_larock:
+    feed_url: https://thomaslarock.com/feed.xml
+    homepage_url: https://thomaslarock.com
+    display_name: Thomas LaRock
+    summary: Thomas LaRock's writing on data engineering, analytics, SQL, machine learning, technology, and career experiences.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthomaslarock.com&size=128
+  thomas_park:
+    feed_url: https://thomaspark.co/feed/
+    homepage_url: https://thomaspark.co
+    display_name: Thomas Park
+    summary: 'Thomas Park''s web-development and product-design projects, CSS learning tools, games, educational interfaces, and creative experiments. Latest feed post: February 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthomaspark.co&size=128
+  thorsten_ball:
+    feed_url: https://thorstenball.com/atom.xml
+    homepage_url: https://thorstenball.com
+    display_name: Thorsten Ball
+    summary: Thorsten Ball's essays on programming, software development, developer tools, engineering careers, and writing books.
+    profile_photo: https://thorstenball.com/images/avatar_2026_final_quadratic.jpg
+  thoughtful_engineering:
+    feed_url: https://thoughtfuleng.substack.com/feed
+    homepage_url: https://thoughtfuleng.substack.com
+    display_name: Thoughtful Engineering
+    summary: Christine Miao's essays on software engineering, AI, engineering careers, company strategy, creativity, and personal values.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!rPqg!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41221b17-aef3-4ae6-b4b1-ec520534b8f4%2Fapple-touch-icon-57x57.png
+  matt_andrews:
+    feed_url: https://mattandrews.info/posts.xml
+    homepage_url: https://mattandrews.info
+    display_name: Matt Andrews
+    summary: 'Matt Andrews''s writing on engineering management, team morale, work, redundancy, cycling, and personal projects. Formerly Threechords; latest feed post: February 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmattandrews.info&size=128
+  three_rings:
+    feed_url: https://threerings.org.uk/feed/
+    homepage_url: https://threerings.org.uk
+    display_name: Three Rings
+    summary: 'Official Three Rings volunteer-management service news, pricing updates, and support for charities and Nightlines. Latest feed post: April 2025.'
+    profile_photo: https://threerings.org.uk/wp-content/uploads/2020/04/cropped-roundel-180x180.png
+  through_voidness:
+    feed_url: https://through-voidness.blogspot.com/feeds/posts/default
+    homepage_url: https://through-voidness.blogspot.com
+    display_name: Through Voidness
+    summary: 'Archived Ruby, Rails, Docker, Linux, OpenERP, and hardware-project notes from Through Voidness. Latest feed post: February 2017.'
+  tristan_hume:
+    feed_url: https://thume.ca/atom.xml
+    homepage_url: https://thume.ca
+    display_name: Tristan Hume
+    summary: 'Tristan Hume''s technical writing on performance, tracing, systems design, compilers, hardware, and developer tools. Latest feed post: December 2023.'
+    profile_photo: https://thume.ca/favicon.png
+  thurrott:
+    feed_url: https://www.thurrott.com/blog/feed
+    homepage_url: https://www.thurrott.com/blog
+    display_name: Thurrott.com
+    summary: Technology news, analysis, reviews, and opinion on Microsoft, Windows, Apple, Google, AI, computing, and games. Includes Premium subscriber posts.
+    profile_photo: https://thurrott-assets.nyc3.digitaloceanspaces.com/web/2020/07/logo-favicon.png
+  leandro_pereira:
+    feed_url: https://tia.mat.br/posts/rss.xml
+    homepage_url: https://tia.mat.br
+    display_name: Leandro Pereira
+    summary: Leandro Pereira's programming and systems articles on C, Lwan, language implementation, data structures, and personal projects, with occasional photography entries.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftia.mat.br&size=128
+  tiamat:
+    feed_url: https://tiamat.tsotech.com/tiamat.rss
+    homepage_url: https://tiamat.tsotech.com
+    display_name: Tiamat
+    summary: 'Brian Hauer''s essays on software development, computing, hardware, privacy, and media. Latest feed post: April 2024.'
+    profile_photo: https://tiamat.tsotech.com/static/logoicons/tiamat-57.png
+  tidal_cycles_blog:
+    feed_url: https://tidalcycles.org/blog/rss.xml
+    homepage_url: https://tidalcycles.org/blog
+    display_name: Tidal Cycles Blog
+    summary: 'Official Tidal Cycles community blog with live-coding musician profiles, performances, playlists, creative projects, and technical notes. Latest feed post: December 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftidalcycles.org%2Fblog&size=128
+  david_winterbottom_tils:
+    feed_url: https://til.codeinthehole.com/posts/index.xml
+    homepage_url: https://til.codeinthehole.com/posts
+    display_name: David Winterbottom's TILs
+    summary: 'David Winterbottom''s short development notes on Git, shell scripting, Vim, testing, Python tooling, and other programming discoveries. Latest feed post: September 2025.'
+  mathowie_tilde_blog:
+    feed_url: https://tilde.club/~mathowie/files/feed.xml
+    homepage_url: https://tilde.club/~mathowie/index.html
+    display_name: ~mathowie's blog
+    summary: 'Archived tilde.club personal notes on technology, privacy, books, cycling, and everyday life. Latest feed post: February 2015.'
+  timely_blog:
+    feed_url: https://www.timely.com/blog/rss.xml
+    homepage_url: https://www.timely.com
+    display_name: Timely Blog
+    summary: Official Timely time-tracking blog covering productivity, project management, automatic time tracking, and comparisons of competing work-management tools.
+    profile_photo: https://www.timely.com/apple-touch-icon.png?v=2
   robbie_lyman:
     feed_url: https://www.robbielyman.com/blog/index.xml
     homepage_url: https://www.robbielyman.com/
