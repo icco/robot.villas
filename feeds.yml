@@ -19819,6 +19819,249 @@ bots:
     display_name: George Mandis
     summary: Web development, creative technology, and travel.
     profile_photo: https://george.mand.is/apple-touch-icon.png
+  pressthink:
+    feed_url: https://pressthink.org/feed/
+    homepage_url: https://pressthink.org
+    display_name: PressThink
+    summary: Jay Rosen's essays on journalism, media criticism, public accountability, and the press, including material from his internet archive.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpressthink.org&size=128
+  preston_lees_blog:
+    feed_url: https://www.prestonlee.com/feed/
+    homepage_url: https://www.prestonlee.com
+    display_name: Preston Lee's Blog
+    summary: Preston Lee's writing about health IT, clinical quality tools, CQL, FHIR, and software development.
+  primer:
+    feed_url: http://feeds2.feedburner.com/primermagazine/otzU
+    homepage_url: https://www.primermagazine.com
+    display_name: Primer
+    summary: Men's style, affordable clothing, self-development, practical advice, and home design from Primer.
+    profile_photo: https://www.primermagazine.com/wp-content/uploads/2014/07/favicon_retina.png
+  princeton_university_news:
+    feed_url: https://www.princeton.edu/feed
+    homepage_url: https://www.princeton.edu
+    display_name: Princeton University News
+    summary: University news, research, faculty and student achievements, alumni, and campus events from Princeton University.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.princeton.edu&size=128
+  swag_pro_formerly_printfection:
+    feed_url: https://www.printfection.com/feed/
+    homepage_url: https://www.printfection.com
+    display_name: Swag Pro (Formerly Printfection)
+    summary: Swag Pro, formerly Printfection, articles about branded merchandise, company swag, event logistics, corporate gifting, and product updates.
+    profile_photo: https://www.printfection.com/wp-content/uploads/2026/02/cropped-SwagPro_favicon-1-32x32.png
+  prinxe:
+    feed_url: https://prinxe.tumblr.com/rss
+    homepage_url: https://prinxe.tumblr.com
+    display_name: prinxe dot tumblr dot com
+    summary: Fan art, drawings, fandom commentary, and reblogs from prinxe, including Acquisitions Incorporated characters.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fprinxe.tumblr.com&size=128
+  privacy_log:
+    feed_url: https://privacylog.blogspot.com/feeds/posts/default
+    homepage_url: https://privacylog.blogspot.com
+    display_name: Privacy Log
+    summary: Archived privacy and security research, vulnerability case studies, and notices linking to the successor blog at blog.phor.net; this Blogger feed ends in July 2023.
+  private_captcha:
+    feed_url: https://privatecaptcha.com/index.xml
+    homepage_url: https://privatecaptcha.com
+    display_name: Private Captcha
+    summary: Private Captcha product pages, integration guides, bot prevention, privacy, and CAPTCHA articles; this site-wide feed includes solution and comparison pages as well as blog posts.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fprivatecaptcha.com&size=128
+  paul_robertson:
+    feed_url: https://probertson.tumblr.com/rss
+    homepage_url: https://probertson.tumblr.com
+    display_name: Paul Robertson
+    summary: Artwork, pixel art, animation, and visual posts from Paul Robertson's Tumblr.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fprobertson.tumblr.com&size=128
+  problogger:
+    feed_url: https://problogger.com/feed/
+    homepage_url: https://problogger.com
+    display_name: ProBlogger
+    summary: Archived blogging advice, writing tips, audience development, and monetization articles from ProBlogger; the latest feed entry is from June 2024.
+    profile_photo: https://problogger.com/apple-touch-icon.png
+  keith_devlin:
+    feed_url: https://profkeithdevlin.org/feed/
+    homepage_url: https://profkeithdevlin.org
+    display_name: Keith Devlin
+    summary: Archived mathematics, education, risk, and personal writing by Keith Devlin; the latest feed entry is a September 2023 announcement of the Devlin's Angle archive.
+  progrium_xyz:
+    feed_url: https://progrium.xyz/blog/feed.xml
+    homepage_url: https://progrium.xyz
+    display_name: progrium.xyz
+    summary: Jeff Lindsay, aka progrium, writes about software development, open source tooling, creative computing, and his projects; the latest feed entry is from June 2025.
+    profile_photo: https://github.com/progrium.png?size=200
+  kiteboat_project:
+    feed_url: https://project.kiteboat.com/feed/
+    homepage_url: https://project.kiteboat.com
+    display_name: Kiteboat Project
+    summary: Archived Kiteboat Project news, kite-powered sailing experiments, hydrofoil designs, test logs, and press coverage from Kai Concepts; the latest feed entry is from June 2018.
+  project_gus:
+    feed_url: https://www.projectgus.com/feed/all.xml
+    homepage_url: https://www.projectgus.com
+    display_name: Project Gus
+    summary: Archived electronics, reverse engineering, electric-vehicle conversion projects, and computer hardware writing from Project Gus; the latest feed entry is from December 2024.
+  projectionlab:
+    feed_url: https://projectionlab.com/feed
+    homepage_url: https://projectionlab.com
+    display_name: ProjectionLab
+    summary: ProjectionLab product announcements, financial and retirement planning guides, company news, and software updates.
+    profile_photo: https://projectionlab.com/favicon.png
+  the_american_prospect:
+    feed_url: https://prospect.org/feed/
+    homepage_url: https://prospect.org
+    display_name: The American Prospect
+    summary: Political reporting, policy analysis, economics, and commentary from The American Prospect, a progressive independent news publication.
+    profile_photo: https://i0.wp.com/prospect.org/wp-content/uploads/2025/08/cropped-favicon.png?fit=180%2C180&ssl=1
+  proto_notes:
+    feed_url: https://proto.garden/rss/notes.xml
+    homepage_url: https://proto.garden/notes
+    display_name: proto notes
+    summary: Personal notes from proto.garden, including album reflections, music lists, recipes, and other interests; this is the notes feed rather than a general article feed.
+    profile_photo: https://proto.garden/lib/images/me.png
+  pruned:
+    feed_url: http://feeds.feedburner.com/Pruned
+    homepage_url: http://pruned.blogspot.com
+    display_name: Pruned
+    summary: Archived landscape architecture, urbanism, ecology, and related visual explorations from Pruned; the latest feed entry is from January 2019.
+  i_still_know_what_you_learned_last_summer:
+    feed_url: https://psung.blogspot.com/feeds/posts/default
+    homepage_url: https://psung.blogspot.com
+    display_name: I Still Know What You Learned Last Summer
+    summary: Archived programming and Linux posts, Git tips, and software projects from I Still Know What You Learned Last Summer; the latest feed entry is from January 2013.
+  psyche:
+    feed_url: https://psyche.co/feed.rss
+    homepage_url: https://psyche.co
+    display_name: Psyche
+    summary: Articles, practical guides, and videos about psychology, mental health, relationships, self-understanding, and living well from Psyche.
+    profile_photo: https://psyche.co/icon-512.png
+  psychology_today:
+    feed_url: https://www.psychologytoday.com/us/front/feed
+    homepage_url: https://www.psychologytoday.com/us
+    display_name: Psychology Today
+    summary: The latest Psychology Today contributor blog posts about psychology, behavior, mental health, relationships, and personal wellbeing.
+    profile_photo: https://cdn2.psychologytoday.com/theme-assets/touch-icons/apple-touch-icon.png
+  psypost:
+    feed_url: https://www.psypost.org/feed/
+    homepage_url: https://www.psypost.org
+    display_name: PsyPost
+    summary: News reporting on scientific studies about psychology, neuroscience, cognition, behavior, and society from PsyPost.
+    profile_photo: https://www.psypost.org/wp-content/uploads/2022/03/cropped-PsyPost-blue-brain-logo-no-name-32x32.png
+  wowhead_news:
+    feed_url: https://www.wowhead.com/news/rss/all
+    homepage_url: https://www.wowhead.com/news
+    display_name: Wowhead News
+    summary: World of Warcraft news, guides, updates, and community coverage from Wowhead News.
+    profile_photo: https://wow.zamimg.com/apple-touch-icon.png
+  pubcast_worldwide:
+    feed_url: http://pubcastworldwide.com/feed/
+    homepage_url: http://pubcastworldwide.com
+    display_name: Pubcast Worldwide
+    summary: Archived Pubcast Worldwide interviews, craft beer, travel, and pub culture, plus podcast announcements; the latest feed entry is from September 2023.
+    profile_photo: http://pubcastworldwide.com/wp-content/uploads/2017/02/cropped-Pint-Logo_1400-180x180.jpg
+  pubnub_blog:
+    feed_url: https://www.pubnub.com/feed/blog/
+    homepage_url: https://www.pubnub.com
+    display_name: PubNub Blog
+    summary: PubNub product news, real-time application development, infrastructure, industry interviews, and tutorials, including gaming use cases.
+    profile_photo: https://www.pubnub.com/favicon/apple-touch-icon.png
+  the_pudding:
+    feed_url: https://pudding.cool/rss.xml
+    homepage_url: https://pudding.cool
+    display_name: The Pudding
+    summary: Data-driven visual essays explaining culture, society, language, history, and everyday life from The Pudding.
+    profile_photo: https://pudding.cool/common/assets/misc/social-facebook.jpg
+  punch:
+    feed_url: http://feeds.feedburner.com/punchdrink
+    homepage_url: https://punchdrink.com
+    display_name: PUNCH
+    summary: Cocktail recipes, bars, spirits, wine, beer, and drinking culture from PUNCH.
+    profile_photo: https://punchdrink.com/wp-content/uploads/2021/06/cropped-Punch_Facebook_Icon_02_512.png?w=180
+  punkt_news:
+    feed_url: https://www.punkt.ch/blogs/news.atom
+    homepage_url: https://www.punkt.ch/blogs/news
+    display_name: Punkt. News
+    summary: Punkt. company and product news about minimalist phones, privacy-focused smartphones, design, and intentional technology.
+    profile_photo: https://www.punkt.ch/cdn/shop/files/favicon.webp?v=1745074169&width=180
+  puppet:
+    feed_url: https://www.puppet.com/rss.xml
+    homepage_url: https://www.puppet.com
+    display_name: Puppet
+    summary: Puppet training resources, on-demand courses, configuration management, testing, and infrastructure automation; the latest entries in this site-wide feed are from November 2025.
+    profile_photo: https://www.puppet.com/themes/custom/p4base/assets/favicons/pup/apple-touch-icon.png
+  purism:
+    feed_url: https://puri.sm/feed/
+    homepage_url: https://puri.sm
+    display_name: Purism
+    summary: Purism product news, PureOS development, privacy, security, and free-software articles.
+    profile_photo: https://puri.sm/wp-content/uploads/2020/04/cropped-purism-logo-rectangle-1-180x180.png
+  push_square:
+    feed_url: https://www.pushsquare.com/feeds/latest
+    homepage_url: https://www.pushsquare.com
+    display_name: Push Square
+    summary: PlayStation news, reviews, guides, features, and game updates from Push Square.
+    profile_photo: https://images.pushsquare.com/site/icon/128x128.png
+  put_this_on:
+    feed_url: https://putthison.com/feed/
+    homepage_url: https://putthison.com
+    display_name: Put This On
+    summary: Men's clothing, style advice, shopping, wardrobe care, and menswear commentary from Put This On.
+  puzzling_stackexchange:
+    feed_url: https://puzzling.stackexchange.com/feeds
+    homepage_url: https://puzzling.stackexchange.com/questions
+    display_name: Puzzling Stack Exchange
+    summary: Recent questions about puzzles, riddles, logic, and puzzle-solving from Puzzling Stack Exchange.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpuzzling.stackexchange.com%2Fquestions&size=128
+  pyramid_thoughts:
+    feed_url: https://pyramidthoughts.wordpress.com/feed/
+    homepage_url: https://pyramidthoughts.wordpress.com
+    display_name: Pyramid Thoughts
+    summary: Archived programming, Ruby, Linux deployment, and bioinformatics posts from Pyramid Thoughts; the feed ends in September 2012.
+  stay_on_task_kid:
+    feed_url: https://pythias.tumblr.com/rss
+    homepage_url: https://pythias.tumblr.com
+    display_name: stay on task, kid
+    summary: Archived art references, illustration, visual inspiration, and reblogs from stay on task, kid; the Tumblr feed ends in November 2014.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpythias.tumblr.com&size=128
+  newest_python_peps:
+    feed_url: https://peps.python.org/peps.rss
+    homepage_url: https://peps.python.org/
+    display_name: Newest Python PEPs
+    summary: New Python Enhancement Proposals covering language features, interpreter changes, and Python development processes; this is the PEP feed, not library documentation updates.
+    profile_photo: https://www.python.org/static/apple-touch-icon-144x144-precomposed.png
+  quantified_self:
+    feed_url: https://thequantifiedself.substack.com/feed
+    homepage_url: https://quantifiedself.com
+    display_name: Quantified Self
+    summary: Quantified Self news, personal science, self-tracking, research, and commentary by Gary Isaac Wolf, published on the official linked Substack.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!AVKG!,w_256,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb411fdcb-0aef-4e07-868d-902405290141_640x640.png
+  queerty:
+    feed_url: https://www.queerty.com/feed/
+    homepage_url: https://www.queerty.com
+    display_name: Queerty
+    summary: LGBTQ life, entertainment, politics, interviews, culture, and community coverage from Queerty.
+    profile_photo: https://queerty-files.b-cdn.net/apple-touch-icon.png?ver=20250909
+  quirksblog:
+    feed_url: https://www.quirksmode.org/quirksblog/rss.xml
+    homepage_url: https://quirksmode.org/quirksblog/
+    display_name: QuirksBlog
+    summary: Peter-Paul Koch's QuirksBlog essays about CSS, browsers, web development, technology, and personal interests; the current feed succeeds the old 2004-2021 blog.
+    profile_photo: https://www.quirksmode.org/pix/logo_ppk.gif
+  quotes_on_design:
+    feed_url: https://quotesondesign.com/feed/
+    homepage_url: https://quotesondesign.com
+    display_name: Quotes on Design
+    summary: Archived design quotations curated by Chris Coyier; the latest feed entry is from October 2019.
+    profile_photo: https://quotesondesign.com/apple-touch-icon.png
+  qwstion:
+    feed_url: https://qwstion.com/blogs/news.atom
+    homepage_url: https://qwstion.com/blogs/news
+    display_name: QWSTION
+    summary: QWSTION stories about designers, artists, sustainable materials, bags, products, and creative work.
+    profile_photo: https://qwstion.com/cdn/shop/files/favicon.png?v=1713537046&width=180
+  raam_dev:
+    feed_url: https://raamdev.com/feed/
+    homepage_url: https://raamdev.com
+    display_name: Raam Dev
+    summary: Archived personal essays and reflections by Raam Dev about life, connection, goals, and self-development; the latest feed timestamp is January 2023.
+    profile_photo: https://raamdev.com/wp-content/uploads/2022/01/image.jpg?w=180
   namanyay_goel:
     feed_url: https://nmn.gl/blog/feed.xml
     homepage_url: https://nmn.gl/blog/
