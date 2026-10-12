@@ -605,6 +605,272 @@ bots:
     display_name: Nat? Nat. Nat!
     summary: Nat Welch's blog about random stuff.
     profile_photo: https://avatars.githubusercontent.com/u/20201?s=200
+  commaful_storytelling_blog:
+    feed_url: https://commaful.com/blog/feed/
+    homepage_url: https://commaful.com/blog
+    display_name: Commaful Storytelling Blog
+    summary: 'Archived Commaful Storytelling Blog articles on poetry, fiction, writing advice, author interviews, and book marketing. Commaful was formerly Pencil; latest feed post: May 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcommaful.com%2Fblog&size=128
+  thanassis_tsiodras:
+    feed_url: https://www.thanassis.space/rss.xml
+    homepage_url: https://www.thanassis.space
+    display_name: Thanassis Tsiodras
+    summary: Thanassis Tsiodras' programming and system-administration projects, covering graphics, embedded systems, electronics, Linux, performance, and backup tools. Formerly hosted at NTUA.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.thanassis.space&size=128
+  uspto:
+    feed_url: https://www.uspto.gov/rss.xml
+    homepage_url: https://www.uspto.gov
+    display_name: USPTO
+    summary: The United States Patent and Trademark Office's sitewide updates, including patent and trademark resources, training, events, announcements, and maintenance notices. This broad feed also includes test pages.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.uspto.gov&size=128
+  tumse_na_ho_paayega:
+    feed_url: https://utsavmamoria.substack.com/feed
+    homepage_url: https://utsavmamoria.substack.com
+    display_name: Tumse Na Ho Paayega
+    summary: Utsav Mamoria's Tumse Na Ho Paayega essays on philosophy, meaning, intuition, beauty, and living an intellectually rich life.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!hIv8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe70bc6ad-d4de-46f2-b549-47f48ab04030%2Fapple-touch-icon-57x57.png
+  university_of_twente_news:
+    feed_url: https://www.utwente.nl/over-ons/nieuws-events-ceremonies/nieuws.rss
+    homepage_url: https://www.utwente.nl/over-ons/nieuws-events-ceremonies/nieuws/
+    display_name: University of Twente - News
+    summary: Official Dutch-language University of Twente news about research, technology, education, campus activities, and university announcements.
+    profile_photo: https://www.utwente.nl/.utdesign/img/favicons/apple-touch-icon.png
+  uwm_report:
+    feed_url: https://uwm.edu/news/feed/
+    homepage_url: https://uwm.edu/news
+    display_name: UWM Report
+    summary: Official University of Wisconsin-Milwaukee news, research, student and faculty stories, campus events, and announcements.
+    profile_photo: https://uwm.edu/news/wp-content/themes/uwmnews/images/favicon-32x32.png
+  uzbl_news:
+    feed_url: https://www.uzbl.org/atom.xml
+    homepage_url: https://www.uzbl.org
+    display_name: Uzbl News
+    summary: 'Archived official release announcements and project news for Uzbl, a lightweight WebKit browser following the Unix philosophy. Latest feed announcement: November 2016.'
+    profile_photo: https://www.uzbl.org/favicon.png
+  v8:
+    feed_url: https://v8.dev/blog.atom
+    homepage_url: https://v8.dev
+    display_name: V8
+    summary: 'Official V8 engineering articles about Google''s JavaScript and WebAssembly engine, runtime performance, compilation, optimizations, and language features. Latest feed article: August 2025.'
+    profile_photo: https://v8.dev/favicon.png
+  vadim_kravcenko:
+    feed_url: https://vadimkravcenko.com/feed/
+    homepage_url: https://vadimkravcenko.com
+    display_name: Vadim Kravcenko
+    summary: 'Vadim Kravcenko''s archived essays on software engineering, startups, technical leadership, SaaS projects, and engineering careers. Latest feed post: July 2024.'
+    profile_photo: https://vadimkravcenko.com/wp-content/themes/vadim/images/favicon.png
+  douglas_vaghetti:
+    feed_url: https://vaghetti.dev/index.xml
+    homepage_url: https://vaghetti.dev
+    display_name: Douglas Vaghetti
+    summary: 'Douglas Vaghetti''s personal essays on programming, TypeScript, technology, science, ethics, and life. Latest feed post: April 2024.'
+    profile_photo: https://vaghetti.dev/apple-touch-icon.png
+  higher_logic:
+    feed_url: https://www.higherlogic.com/feed/
+    homepage_url: https://www.higherlogic.com/blog/
+    display_name: Higher Logic
+    summary: Higher Logic's archived community-software feed, currently containing one October 2022 article on purpose-built customer communities. Vanilla Forums now redirects to Higher Logic Vanilla; this is the parent company's feed, not open-source Vanilla release news.
+    profile_photo: https://www.higherlogic.com/wp-content/uploads/2023/11/FAVICON-1.png
+  jeremiahs_vanishing_new_york:
+    feed_url: https://vanishingnewyork.blogspot.com/feeds/posts/default
+    homepage_url: https://vanishingnewyork.blogspot.com
+    display_name: Jeremiah's Vanishing New York
+    summary: 'Jeremiah Moss'' archived writing about disappearing New York City businesses, neighborhood change, and gentrification. Latest feed post: March 2021.'
+  the_desk_magazine:
+    feed_url: https://vanschneider.com/blog/rss/
+    homepage_url: https://vanschneider.com/blog
+    display_name: The DESK Magazine
+    summary: Tobias van Schneider's The DESK Magazine essays on design, creativity, visual taste, designers' careers, and creative work.
+    profile_photo: https://vanschneider.com/blog/assets/built/images/HOVS-Fav-Icon-red.png?v=YTuBla9yw55I12YQ
+  varun_biniwale:
+    feed_url: https://varun.ch/feed/feed.xml
+    homepage_url: https://varun.ch
+    display_name: Varun Biniwale
+    summary: 'Varun Biniwale''s technical project writeups and security research on browser autofill, web scraping, hardware experiments, and Chromebook video walls. Latest feed post: July 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fvarun.ch&size=128
+  venture_capital_post:
+    feed_url: https://www.vcpost.com/rss/archives/archives.xml
+    homepage_url: https://www.vcpost.com
+    display_name: Venture Capital Post
+    summary: Venture Capital Post's business and financial reporting, including markets, technology companies, cybersecurity, investments, and economic news.
+    profile_photo: https://g.vcpost.com/themes/favicons/apple-touch-icon.png
+  jeffrey_veen:
+    feed_url: https://veen.com/jeff/rss-source.xml
+    homepage_url: https://veen.com/jeff
+    display_name: Jeffrey Veen
+    summary: Jeffrey Veen's essays on design, technology, the web, organizational culture, investing, and AI-assisted development.
+    profile_photo: https://veen.com/apple-touch-icon.png
+  velominati:
+    feed_url: https://www.velominati.com/feed/
+    homepage_url: https://www.velominati.com
+    display_name: Velominati
+    summary: Velominati's road-cycling essays, style rules, equipment commentary, racing coverage, and cycling culture.
+    profile_photo: https://www.velominati.com/wp-content/uploads/2026/09/v-cog-emblem-dark.png?v=1788389213
+  venomous_porridge:
+    feed_url: https://venomousporridge.com/rss
+    homepage_url: https://venomousporridge.com
+    display_name: venomous porridge
+    summary: 'Dan Wineman''s archived Venomous Porridge essays and links about Apple, technology, software, design, and culture. Latest feed post: September 2014.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fvenomousporridge.com&size=128
+  venrock:
+    feed_url: https://www.venrock.com/feed/
+    homepage_url: https://www.venrock.com
+    display_name: Venrock
+    summary: Venrock's official investment and portfolio announcements, healthcare and technology analysis, founder interviews, and podcasts.
+    profile_photo: https://www.venrock.com/wp-content/themes/venrock-2022/logo192.png
+  venture_generated_content:
+    feed_url: https://venturegeneratedcontent.com/feed/
+    homepage_url: https://venturegeneratedcontent.com
+    display_name: Venture Generated Content
+    summary: 'Satya Patel''s archived Venture Generated Content essays on venture capital, startups, hiring, investing, and Homebrew. Latest feed post: June 2021.'
+    profile_photo: https://secure.gravatar.com/blavatar/95b7772a3458094e204949681d5be4a42a01efcd308bfe9377ca7ac544ed9a1a?s=114
+  version_one_ventures:
+    feed_url: https://versionone.vc/feed/
+    homepage_url: https://versionone.vc
+    display_name: Version One Ventures
+    summary: Version One Ventures' official investment announcements, portfolio updates, and essays on startups, venture capital, and emerging technology.
+    profile_photo: https://versionone.vc/wp-content/uploads/2025/03/cropped-favicon-32x32.png
+  verso:
+    feed_url: https://www.versobooks.com/blogs/news.atom
+    homepage_url: https://www.versobooks.com/blogs/news
+    display_name: Verso Books
+    summary: Verso Books' news, essays, author interviews, reading lists, and book excerpts on politics, history, culture, and radical thought.
+    profile_photo: https://www.versobooks.com/cdn/shop/t/13/assets/apple-touch-icon.static.png?v=19150402310172402201674082166
+  vertettes_blog:
+    feed_url: https://vertette.github.io/feed.xml
+    homepage_url: https://vertette.github.io
+    display_name: Vertette's Blog
+    summary: Vertette's essays and opinions on video games, game design, gaming hardware, and the games industry.
+    profile_photo: https://vertette.github.io/favicon.png
+  vevo:
+    feed_url: https://www.hq.vevo.com/blog-feed.xml
+    homepage_url: https://www.hq.vevo.com/blog
+    display_name: Vevo
+    summary: Official Vevo corporate press releases and news about its music-video network, advertising research, distribution partnerships, and industry initiatives. This is not a feed of music videos.
+    profile_photo: https://static.wixstatic.com/media/08392a_787e7672e8ad418f9c09aa5e0d327932%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/08392a_787e7672e8ad418f9c09aa5e0d327932%7Emv2.png
+  vi_stackexchange:
+    feed_url: https://vi.stackexchange.com/feeds
+    homepage_url: https://vi.stackexchange.com/questions
+    display_name: Vi and Vim Stack Exchange
+    summary: Recent community questions about using and configuring Vi, Vim, and related editor tools on Vi and Vim Stack Exchange.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fvi.stackexchange.com%2Fquestions&size=128
+  viable_paradise:
+    feed_url: https://viableparadise.com/feed/
+    homepage_url: https://viableparadise.com
+    display_name: Viable Paradise
+    summary: 'Archived official Viable Paradise science-fiction and fantasy writing-workshop posts, including student advice, alumni experiences, and its harassment policy. Latest feed post: December 2017.'
+    profile_photo: https://viableparadise.com/wp-content/uploads/2017/11/vplogo-sm.gif
+  victo_ngai:
+    feed_url: https://victongai.tumblr.com/rss
+    homepage_url: https://www.tumblr.com/victongai
+    display_name: Victo Ngai
+    summary: Victo Ngai's archived illustrations, commissioned artwork, project notes, and professional announcements on Tumblr. The final September 2018 post announces a move to Instagram.
+    profile_photo: https://64.media.tumblr.com/avatar_feafafcb4cff_128.pnj
+  fox_business:
+    feed_url: https://www.foxbusiness.com/rss.xml?category=
+    homepage_url: https://www.foxbusiness.com
+    display_name: Fox Business
+    summary: Fox Business' latest business, financial, consumer, technology, and economic reporting. This is the general news feed, not the historical video-only channel.
+    profile_photo: https://static.foxnews.com/static/orion/styles/img/fox-business/favicons/apple-touch-icon-57x57.png
+  videogamer:
+    feed_url: https://www.videogamer.com/feed/
+    homepage_url: https://www.videogamer.com
+    display_name: VideoGamer
+    summary: VideoGamer's video-game news, reviews, interviews, guides, and coverage of the games industry.
+    profile_photo: https://www.videogamer.com/wp-content/uploads/cropped-favicon-videogamer-180x180.png
+  view_from_the_wing:
+    feed_url: https://viewfromthewing.com/feed/
+    homepage_url: https://viewfromthewing.com
+    display_name: View from the Wing
+    summary: Gary Leff's View from the Wing reporting and commentary on airlines, airports, travel rewards, loyalty programs, hotels, and travel deals.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fviewfromthewing.com&size=128
+  viget_articles:
+    feed_url: https://feeds.feedburner.com/Viget
+    homepage_url: https://www.viget.com/articles/
+    display_name: Viget Articles
+    summary: Viget's articles on product strategy, design, web development, user research, project management, and working in a digital agency.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.viget.com&size=128
+  vi_greys_journal:
+    feed_url: https://vigrey.com/journal/feed.rss
+    homepage_url: https://vigrey.com/journal/index.html
+    display_name: Vi Grey's Journal
+    summary: Vi Grey's journal on programming, retro-console and hardware projects, technology, personal goals, card tricks, and other interests.
+  viktor_cessan:
+    feed_url: https://www.viktorcessan.com/feed.xml
+    homepage_url: https://www.viktorcessan.com/blog
+    display_name: Viktor Cessan
+    summary: Writing on organizational design, team coaching, product management, and leadership by Viktor Cessan.
+  the_village_green:
+    feed_url: https://villagegreennj.com/feed/
+    homepage_url: https://villagegreennj.com
+    display_name: The Village Green
+    summary: The Village Green's local news for Maplewood and South Orange, New Jersey, covering schools, government, development, businesses, arts, and community events. Some articles require a subscription.
+    profile_photo: https://villagegreennj.com/wp-content/uploads/2021/05/vg-fav-1.png
+  vimcasts:
+    feed_url: http://vimcasts.org/feeds/ogg.rss
+    homepage_url: http://vimcasts.org
+    display_name: Vimcasts
+    summary: 'Drew Neil''s archived Vimcasts tutorials and screencasts about Vim and Neovim, editing workflows, plugins, and related books. Latest feed item: May 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fvimcasts.org&size=128
+  vincent_schmalbach:
+    feed_url: https://www.vincentschmalbach.com/feed/
+    homepage_url: https://www.vincentschmalbach.com
+    display_name: Vincent Schmalbach
+    summary: Vincent Schmalbach's essays on software development, AI tools, technology companies, startups, and the economics of building software.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.vincentschmalbach.com&size=128
+  vincenzo_pagliuca:
+    feed_url: https://vincenzopagliuca.com/rss
+    homepage_url: https://vincenzopagliuca.com
+    display_name: Vincenzo Pagliuca
+    summary: 'Vincenzo Pagliuca''s photography-project portfolio, including Domus, Bunker, Monos, and Napoli Nord. Latest feed update: June 2024.'
+  vincit:
+    feed_url: https://www.vincit.com/insights/rss.xml
+    homepage_url: https://www.vincit.com/insights
+    display_name: Vincit
+    summary: Vincit's official insights on software development, digital commerce, AI, cloud services, product design, and workplace culture.
+    profile_photo: https://www.vincit.com/hubfs/favicon-vincit-gradient.png
+  vinepair:
+    feed_url: https://vinepair.com/feed/
+    homepage_url: https://vinepair.com
+    display_name: VinePair
+    summary: VinePair's reporting, guides, recommendations, and podcasts about wine, beer, spirits, cocktails, bars, and the drinks industry.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fvinepair.com&size=128
+  vipyne:
+    feed_url: https://vipyne.tumblr.com/rss
+    homepage_url: https://vipyne.tumblr.com
+    display_name: vipyne
+    summary: 'Vipyne''s archived programming notes on JavaScript, Swift, cryptography, graphics, and creative coding, including Recurse Center experiences. Latest feed post: September 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fvipyne.tumblr.com&size=128
+  viral_tales:
+    feed_url: https://www.viraltales.com/feed/
+    homepage_url: https://viraltales.com
+    display_name: Viral Tales
+    summary: 'Viral Tales'' human-interest, celebrity, animal, and unusual-news stories. Latest feed post: May 2026.'
+    profile_photo: https://viraltales.com/wp-content/uploads/2021/11/cropped-favicon-180x180.png
+  virginia_mercury:
+    feed_url: https://virginiamercury.com/feed/
+    homepage_url: https://virginiamercury.com
+    display_name: Virginia Mercury
+    summary: Virginia Mercury's reporting on Virginia government, politics, education, healthcare, the environment, and public policy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fvirginiamercury.com&size=128
+  virtualization_howto:
+    feed_url: https://www.virtualizationhowto.com/feed/
+    homepage_url: https://www.virtualizationhowto.com
+    display_name: Virtualization Howto
+    summary: Virtualization Howto's practical home-lab tutorials, infrastructure and networking guides, virtualization coverage, cloud tools, and software reviews.
+    profile_photo: https://www.virtualizationhowto.com/wp-content/smush-webp/2023/02/48x48blk.png.webp
+  virtual_pants:
+    feed_url: https://virtualpants.com/rss
+    homepage_url: https://virtualpants.com
+    display_name: Virtual Pants
+    summary: 'Archived Virtual Pants essays and links about Apple hardware, software, consumer technology, wearables, and computing. Latest feed post: April 2015.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fvirtualpants.com&size=128
+  visidata_blog:
+    feed_url: https://www.visidata.org/feed.xml
+    homepage_url: https://www.visidata.org
+    display_name: VisiData Blog
+    summary: Official VisiData project articles on its command-line data-exploration tool, documentation, releases, data puzzles, and open-source development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.visidata.org&size=128
   micahflee:
     feed_url: https://micahflee.com/rss/
     homepage_url: https://micahflee.com
