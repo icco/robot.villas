@@ -22051,6 +22051,262 @@ bots:
     homepage_url: https://figbert.com/
     display_name: FIGBERT
     summary: Projects, reading, and reflections from Benji Welner.
+  storybook_blog:
+    feed_url: https://storybook.js.org/blog/rss
+    homepage_url: https://storybook.js.org/blog
+    display_name: Storybook Blog
+    summary: Official Storybook articles on UI development, component testing, documentation, design systems, releases, and community projects.
+    profile_photo: https://storybook.js.org/blog/icons/icon-48x48.png
+  daniel_storytotell:
+    feed_url: https://storytotell.org/feed.rss
+    homepage_url: https://storytotell.org
+    display_name: Daniel's Blog - Story to Tell
+    summary: Daniel's personal essays on programming, developer tools, AI, religion, philosophy, and everyday life.
+  the_straight_dope:
+    feed_url: https://www.straightdope.com/rss/index.xml
+    homepage_url: https://www.straightdope.com
+    display_name: The Straight Dope
+    summary: Archived Straight Dope columns answering questions about science, history, language, society, and everyday mysteries. This feed also includes site-information pages; its newest item is September 2020.
+    profile_photo: https://www.straightdope.com/apple-touch-icon.png
+  straits_times_asia:
+    feed_url: https://www.straitstimes.com/news/asia/rss.xml
+    homepage_url: https://www.straitstimes.com
+    display_name: The Straits Times - Asia
+    summary: The Straits Times' official Asia news feed, covering regional politics, society, business, and developments across East, South, and South-east Asia.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.straitstimes.com&size=128
+  street_fight:
+    feed_url: https://streetfightmag.com/feed/
+    homepage_url: https://streetfightmag.com
+    display_name: Street Fight
+    summary: Street Fight's reporting on multi-location marketing, local commerce, advertising technology, retail media, and the businesses serving local consumers.
+    profile_photo: https://streetfightmag.com/wp-content/uploads/SF-Favicon_96x96.jpg
+  striso:
+    feed_url: https://www.striso.org/feed/
+    homepage_url: https://www.striso.org
+    display_name: Striso
+    summary: 'Archived Striso instrument announcements on expressive music controllers, development, crowdfunding, manufacturing, and competitions. Latest feed post: May 2022.'
+    profile_photo: https://www.striso.org/wp-content/uploads/2019/12/icon4.png
+  grega_stritar:
+    feed_url: http://stritar.net/Rss/Blog.aspx
+    homepage_url: http://stritar.net/
+    display_name: Stritar's chronolog
+    summary: 'Grega Stritar''s archived essays on technology, startups, social media, user experience, and Slovenian entrepreneurship. Latest feed post: January 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.stritar.net&size=128
+  strudel_blog:
+    feed_url: https://strudel.cc/rss.xml
+    homepage_url: https://strudel.cc/blog/
+    display_name: Strudel Blog
+    summary: 'Official release notes and project milestones for Strudel, the browser-based music live-coding environment. Latest feed release: v1.2.0 in May 2025.'
+    profile_photo: https://strudel.cc/icons/apple-icon-180.png
+  the_ongoing_struggle:
+    feed_url: https://strugglers.net/atom.xml
+    homepage_url: https://strugglers.net
+    display_name: The Ongoing Struggle
+    summary: Andy Smith's personal blog on Linux and Debian administration, networking, programming, travel, and everyday life, continuing his older strugglers.net/~andy blog.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstrugglers.net&size=128
+  stubborn_mule:
+    feed_url: https://www.stubbornmule.net/feed/
+    homepage_url: https://www.stubbornmule.net
+    display_name: Stubborn Mule
+    summary: 'Archived Stubborn Mule articles on statistics, economics, finance, data visualization, and public-policy questions, including COVID-19 analysis. Latest feed post: August 2021.'
+    profile_photo: https://i0.wp.com/www.stubbornmule.net/wp-content/mule-avatar11.jpg?fit=128%2C128&ssl=1
+  in_the_valley:
+    feed_url: https://stuckinthevalley.tumblr.com/rss
+    homepage_url: https://stuckinthevalley.tumblr.com
+    display_name: In the Valley
+    summary: Archived personal essays on Silicon Valley employee vesting and a road trip through the American Southwest. This two-post Tumblr feed ends in January 2013.
+  style_bubble:
+    feed_url: https://stylebubble.co.uk/feed
+    homepage_url: https://stylebubble.co.uk
+    display_name: Style Bubble
+    summary: 'Susie Lau''s archived Style Bubble writing on fashion, designers, personal style, shopping, art, and travel. Latest feed post: June 2018.'
+  stylist:
+    feed_url: https://www.stylist.co.uk/feed
+    homepage_url: https://www.stylist.co.uk
+    display_name: Stylist
+    summary: Stylist's reporting on feminism, fashion, beauty, health, careers, relationships, culture, and lifestyle.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.stylist.co.uk&size=128
+  sue_odio:
+    feed_url: https://sueodio.com/rss/
+    homepage_url: https://sueodio.com
+    display_name: Sue Odio
+    summary: 'Sue Odio''s archived essays on workplace culture, distributed teams, pay transparency, diversity, inclusion, and belonging. Latest feed post: May 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsueodio.com&size=128
+  jerzy_drozd:
+    feed_url: https://jdrozd.com/feed/
+    homepage_url: https://jdrozd.com
+    display_name: Jerzy Drozd
+    summary: Cartoonist and teaching artist Jerzy Drozd's comics, Doctor Baer webcomic pages, books, workshops, podcasts, and project news, continuing the creator behind Sugary Serials.
+    profile_photo: https://i0.wp.com/jdrozd.com/wp-content/uploads/2021/02/cropped-BvB.png?fit=180%2C180&ssl=1
+  the_sunlight_foundation:
+    feed_url: https://sunfoundation.tumblr.com/rss
+    homepage_url: https://sunfoundation.tumblr.com
+    display_name: Sunlight Foundation - Tumblr Archive
+    summary: 'Archived Sunlight Foundation posts on government transparency, campaign finance, open data, and civic accountability. Latest Tumblr feed post: February 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsunfoundation.tumblr.com&size=128
+  sunsama:
+    feed_url: https://www.sunsama.com/blog/rss.xml
+    homepage_url: https://www.sunsama.com
+    display_name: Sunsama
+    summary: Sunsama's articles on daily planning, healthy productivity, time management, focus, and work-life balance.
+    profile_photo: https://pub-f7ae218077e542729e28e6f8f45a9a40.r2.dev/images/62d20083a317715004301f12_logo-icon-256.png
+  supabase_blog:
+    feed_url: https://supabase.com/rss.xml
+    homepage_url: https://supabase.com/blog
+    display_name: Supabase Blog
+    summary: Official Supabase product news, releases, engineering articles, PostgreSQL guidance, developer tutorials, and community updates.
+    profile_photo: https://supabase.com/favicon/apple-icon-57x57.png
+  supermechanical_blog:
+    feed_url: https://supermechanical.tumblr.com/rss
+    homepage_url: https://supermechanical.tumblr.com
+    display_name: Supermechanical Blog
+    summary: 'Supermechanical''s archived posts on connected home products, hardware design, cooking thermometers, crowdfunding, and user-hackable devices. Latest Tumblr feed post: October 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsupermechanical.tumblr.com&size=128
+  surfer:
+    feed_url: https://www.surfer.com/.rss/feed/2f401c67-8263-44e3-a87b-8bb34bd8ade2.xml
+    homepage_url: https://www.surfer.com
+    display_name: Surfer
+    summary: SURFER's surf news, surfers, waves, competitions, travel, gear, photography, and video coverage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.surfer.com&size=128
+  surfing_complexity:
+    feed_url: https://surfingcomplexity.blog/feed/
+    homepage_url: https://surfingcomplexity.blog
+    display_name: Surfing Complexity
+    summary: Lorin Hochstein's essays on software incidents, complex systems, reliability, resilience, and the human side of engineering.
+    profile_photo: https://surfingcomplexity.blog/wp-content/uploads/2020/05/surfer_1f3c4.png?w=120
+  surrender_at_20:
+    feed_url: https://feeds.feedburner.com/surrenderat20
+    homepage_url: https://www.surrenderat20.net/
+    display_name: Surrender at 20
+    summary: 'Archived League of Legends news, public-beta updates, skins, Riot posts, esports, and Teamfight Tactics coverage from Surrender at 20. Latest feed post: November 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.surrenderat20.net&size=128
+  upwave:
+    feed_url: https://www.upwave.com/feed/
+    homepage_url: https://www.upwave.com
+    display_name: Upwave
+    summary: Upwave's official articles and release notes on brand advertising measurement, campaign insights, marketing research, and product updates. Upwave continues the former Survata company.
+    profile_photo: https://www.upwave.com/wp-content/uploads/2026/06/cropped-favicon-180x180.png
+  survivejs:
+    feed_url: https://survivejs.com/atom.xml
+    homepage_url: https://survivejs.com
+    display_name: SurviveJS
+    summary: 'SurviveJS articles and interviews about web development, JavaScript tooling, libraries, frameworks, and developer events. Latest feed post: November 2024.'
+    profile_photo: https://survivejs.com/favicon.png
+  susam_pal:
+    feed_url: https://susam.net/feed.xml
+    homepage_url: https://susam.net
+    display_name: Susam Pal
+    summary: Susam Pal's essays and explorations in programming, mathematics, computing history, free software, and Internet culture.
+    profile_photo: https://susam.net/favicon.png
+  susan_fowler:
+    feed_url: https://www.susanjfowler.com/blog?format=rss
+    homepage_url: https://www.susanjfowler.com/blog
+    display_name: Susan Fowler
+    summary: Susan Fowler's archived essays on workplace experiences, technology, books, philosophy, and personal life. This blog ends in July 2020 with a move to Squarknotes.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.susanjfowler.com%2Fblog&size=128
+  sutherland_boswell:
+    feed_url: https://suther.land/index.xml
+    homepage_url: https://suther.land
+    display_name: Sutherland Boswell
+    summary: Sutherland Boswell's technical notes, software projects, and practical tips on Apple devices, audio equipment, home technology, and 3D printing.
+  swapped_cc_blog:
+    feed_url: https://swapped.tumblr.com/rss
+    homepage_url: https://swapped.tumblr.com
+    display_name: swapped.cc/blog - Alex Pankratov
+    summary: 'Alex Pankratov''s archived programming and software-product notes on C/C++, optimization, Windows interfaces, spam prevention, and newsletters. Latest Tumblr feed post: February 2013.'
+    profile_photo: https://api.tumblr.com/v2/blog/swapped.tumblr.com/avatar/128
+  sweet_juniper:
+    feed_url: http://www.sweet-juniper.com/feeds/posts/default
+    homepage_url: http://www.sweet-juniper.com
+    display_name: sweet juniper!
+    summary: 'Archived Sweet Juniper family stories, handmade costumes, photographs, art, and observations about Detroit. Latest feed post: November 2017.'
+  sword_and_laser:
+    feed_url: https://www.swordandlaser.com/home?format=rss
+    homepage_url: https://www.swordandlaser.com/
+    display_name: Sword & Laser
+    summary: Sword & Laser's science-fiction and fantasy book-club podcast, reading selections, book discussions, author news, and community updates.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.swordandlaser.com&size=128
+  security_com:
+    feed_url: https://www.security.com/rss/v1/blogs/rss.xml
+    homepage_url: https://www.security.com
+    display_name: SECURITY.COM
+    summary: Broadcom's SECURITY.COM articles on Symantec and Carbon Black products, cybersecurity research, threat intelligence, enterprise defenses, and security-industry perspectives.
+    profile_photo: https://www.security.com/favicon/apple-touch-icon.png
+  synack:
+    feed_url: https://www.synack.com/feed/
+    homepage_url: https://www.synack.com
+    display_name: Synack
+    summary: Synack's articles on penetration testing, security research, vulnerability validation, AI-assisted testing, enterprise security, and product integrations.
+    profile_photo: https://www.synack.com/wp-content/uploads/2023/07/favicon-150x150.webp
+  synced:
+    feed_url: https://syncedreview.com/feed/
+    homepage_url: https://syncedreview.com
+    display_name: Synced
+    summary: 'Synced''s coverage of artificial-intelligence research, machine learning, language models, robotics, and AI industry developments. Latest feed post: August 2025.'
+    profile_photo: https://i0.wp.com/syncedreview.com/wp-content/uploads/2017/08/cropped-screen-shot-2017-08-01-at-2-02-47-pm.png?fit=180%2C180&ssl=1
+  sysdig_blog:
+    feed_url: https://www.sysdig.com/blog/rss.xml
+    homepage_url: https://www.sysdig.com/blog
+    display_name: Sysdig Blog
+    summary: Sysdig's cloud-security research, runtime threat detection, container and Kubernetes security, AI security, engineering articles, and product updates.
+    profile_photo: https://cdn.prod.website-files.com/681a1c8e5b6ebfc0f8529533/6949b653bba4e2246dc01ebb_webclip.png
+  anrxc_journal:
+    feed_url: https://sysphere.org/~anrxc/j/rss.xml
+    homepage_url: https://sysphere.org/~anrxc/j
+    display_name: Unknown and partly hidden - anrxc
+    summary: 'Adrian C. (anrxc)''s archived journal on Linux, FreeBSD, system administration, networking, cryptography, programming, and personal projects. Latest feed post: January 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsysphere.org%2F~anrxc%2Fj&size=128
+  system76_blog:
+    feed_url: https://system76.com/blog/rss.xml
+    homepage_url: https://system76.com
+    display_name: System76 Blog
+    summary: Official System76 announcements on Linux computers, open hardware, Pop!_OS, the COSMIC desktop, customer stories, and company projects.
+    profile_photo: https://cdn11.bigcommerce.com/s-pywjnxrcr2/product_images/system76_logo-fav-32x32.png?t=1711381758
+  t3_reviews:
+    feed_url: https://www.t3.com/us/feeds/articletype/review
+    homepage_url: https://www.t3.com/
+    display_name: T3 Reviews
+    summary: T3's product reviews of consumer technology, audio equipment, wearables, fitness and outdoor gear, home appliances, and lifestyle products.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.t3.com%2Fus%2Freview&size=128
+  ta_ching_chen:
+    feed_url: https://tachingchen.com/index.xml
+    homepage_url: https://tachingchen.com
+    display_name: Ta Ching Chen
+    summary: 'Ta Ching Chen''s archived technical tutorials on Kubernetes, Go, serverless applications, Fission, and cloud infrastructure. Latest feed post: December 2018.'
+  insufficient_coffee:
+    feed_url: https://insufficient.coffee/atom.xml
+    homepage_url: https://insufficient.coffee
+    display_name: Insufficient.Coffee
+    summary: Insufficient.Coffee's writing on Internet communications security, TLS, Let's Encrypt, open-source cryptography, memory safety, and related personal experiences.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Finsufficient.coffee&size=128
+  taggart_tech:
+    feed_url: https://taggart-tech.com/atom.xml
+    homepage_url: https://taggart-tech.com
+    display_name: Taggart Tech
+    summary: Taggart Tech's essays on information security, privacy, software, AI, online communities, technology policy, and teaching.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftaggart-tech.com&size=128
+  tailwind_css_blog:
+    feed_url: https://tailwindcss.com/feeds/feed.xml
+    homepage_url: https://tailwindcss.com/blog
+    display_name: Tailwind CSS Blog
+    summary: Official Tailwind CSS and Tailwind Plus release announcements, new features, developer resources, and Tailwind Labs company news.
+    profile_photo: https://tailwindcss.com/favicons/apple-touch-icon.png?v=4
+  takeoff:
+    feed_url: https://www.takeoffvideo.com/feed/
+    homepage_url: https://www.takeoffvideo.com
+    display_name: Takeoff
+    summary: 'Archived Takeoff articles on video collaboration, video marketing, social media, company culture, streaming, and gaming. Latest feed post: August 2017.'
+  gnu_taler:
+    feed_url: https://www.taler.net/en/rss.xml
+    homepage_url: https://taler.net/
+    display_name: GNU Taler
+    summary: Official GNU Taler news on privacy-preserving digital payments, software releases, integrations, research, and community events.
+    profile_photo: https://www.taler.net/images/apple-touch-icon.png
+  tantek_public_wiki:
+    feed_url: https://tantek.pbworks.com/w/feed/rss
+    homepage_url: http://tantek.pbworks.com
+    display_name: Tantek's Public Wiki
+    summary: Changes to Tantek Celik's public wiki, including IndieWeb and microformats projects, programming notes, productivity, reading, films, and personal reference pages.
   hugh_tipping:
     feed_url: https://techblog.hughtipping.com/feed
     homepage_url: https://techblog.hughtipping.com/
