@@ -2,6 +2,7 @@ import { lookup } from "node:dns/promises";
 import { isIP, type LookupFunction } from "node:net";
 import ipaddr from "ipaddr.js";
 import { Agent } from "undici";
+import { getWebBotAuthHeaders } from "./web-bot-auth";
 
 export function isPublicAddress(address: string): boolean {
   try {
@@ -45,10 +46,19 @@ export function assertRemoteUrl(input: string | URL): URL {
 
 /** Caller owns a deadline covering both this request and consumption of its body. */
 export async function fetchRemote(input: string | URL, init: RequestInit & { signal: AbortSignal }): Promise<Response> {
+  return fetchRemoteWithPolicy(input, init, async () => {});
+}
+
+export async function fetchRemoteWithPolicy(
+  input: string | URL,
+  init: RequestInit & { signal: AbortSignal },
+  beforeRequest: (url: URL) => Promise<void>,
+): Promise<Response> {
   let url = assertRemoteUrl(input);
   const headers = new Headers(init.headers);
   for (let hop = 0; hop <= 5; hop++) {
-    const options: RequestInit & { dispatcher: Agent } = { ...init, headers, dispatcher, redirect: "manual" };
+    await beforeRequest(url);
+    const options: RequestInit & { dispatcher: Agent } = { ...init, headers: getWebBotAuthHeaders(url, headers), dispatcher, redirect: "manual" };
     const response = await fetch(url, options);
     if (![301, 302, 303, 307, 308].includes(response.status)) {
       return response;
