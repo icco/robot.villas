@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CpuChipIcon } from "@heroicons/react/24/solid";
+import { BotList } from "@/components/bot-list";
 import { getGlobals } from "@/lib/globals";
 
 export const dynamic = "force-dynamic";
@@ -26,9 +26,11 @@ export function generateMetadata(): Metadata {
 export default function HomePage() {
   const { config, domain } = getGlobals();
 
-  const sortedBots = Object.entries(config.bots).sort(([a], [b]) =>
-    a.localeCompare(b),
-  );
+  const bots = Object.entries(config.bots);
+  for (let i = bots.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [bots[i], bots[j]] = [bots[j], bots[i]];
+  }
 
   return (
     <>
@@ -48,7 +50,7 @@ export default function HomePage() {
         <div className="card-body">
           <h3 className="card-title font-display text-lg">How it works</h3>
           <ol className="list-decimal list-inside space-y-2 text-sm text-base-content/80">
-            <li>Pick a bot from the list below.</li>
+            <li>Pick a bot below or search the full directory.</li>
             <li>
               Search for its handle (e.g.{" "}
               <code className="bg-base-300 px-1.5 py-0.5 rounded font-mono text-xs">
@@ -64,41 +66,13 @@ export default function HomePage() {
         </div>
       </div>
 
-      <h2 className="text-2xl font-display font-bold mb-4">Bots</h2>
-      <div className="divide-y divide-base-300">
-        {sortedBots.map(([username, bot]) => (
-          <Link
-            key={username}
-            href={`/@${username}`}
-            className="flex items-center gap-3 px-1 py-3 sm:p-3 rounded-lg hover:bg-base-200 transition-colors group"
-          >
-            {bot.profile_photo ? (
-              /* eslint-disable-next-line @next/next/no-img-element */
-              <img
-                src={bot.profile_photo}
-                alt=""
-                width={24}
-                height={24}
-                className="rounded-full"
-              />
-            ) : (
-              <div className="w-6 h-6 rounded-full bg-base-300 flex items-center justify-center">
-                <CpuChipIcon className="w-4 h-4 text-base-content/50" />
-              </div>
-            )}
-            <div className="min-w-0 break-words">
-              <span className="font-mono text-sm font-semibold group-hover:text-primary transition-colors">
-                @{username}
-              </span>
-              <span className="text-base-content/60 mx-1">&ndash;</span>
-              <span className="font-medium">{bot.display_name}</span>
-              <p className="text-xs text-base-content/50 truncate">
-                {bot.summary}
-              </p>
-            </div>
-          </Link>
-        ))}
+      <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+        <h2 className="text-2xl font-display font-bold">Discover bots</h2>
+        <Link href="/search" className="btn btn-sm btn-primary">
+          Search all bots
+        </Link>
       </div>
+      <BotList bots={bots.slice(0, 10)} />
     </>
   );
 }
