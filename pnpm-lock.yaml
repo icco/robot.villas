@@ -38,8 +38,8 @@ importers:
         specifier: ^0.5.1
         version: 0.5.1
       '@logtape/logtape':
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.4.1
+        version: 2.4.1
       '@trybyte/robotstxt-parser':
         specifier: ^2.0.0
         version: 2.0.0
@@ -719,8 +719,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@logtape/logtape@2.4.0':
-    resolution: {integrity: sha512-xhvG/NwfBXs+a+oJxl6xOmqA4zX8giP1brvd5lVbL3qUHUkZfVt+4QE/+9p/Vf76JNwe/upH3XYTNItocKQ8Qg==}
+  '@logtape/logtape@2.4.1':
+    resolution: {integrity: sha512-faEZkjQf5pI8WsnCXbpBInC9SeWqYUNAtLviTLkCI3JLHFkV1bKrfxbIJc96TVqqVjSUz8LYtX0JWKdiBwEpCg==}
 
   '@multiformats/base-x@4.0.1':
     resolution: {integrity: sha512-eMk0b9ReBbV23xXU693TAIrLyeO5iTgBZGSJfpqriG8UkYvr/hC9u9pyMlAakDNHWmbhMZCDs6KQO0jzKD8OTw==}
@@ -2135,8 +2135,8 @@ packages:
   temporal-utils@1.0.3:
     resolution: {integrity: sha512-9jbTSX3HvkOWvDpNpFzwX/d1mkCrgQgwLmVTOEiuocZGKHsrQJtttGZFmybJ2zYP5zCSZuU5ZyeS8+eOEPABiQ==}
 
-  tinybench@6.2.1:
-    resolution: {integrity: sha512-IAbQaPJIIdhVxi0mqy9lez1wEwje0UQf9F1vwtbelEG5Nbgn0nPOxCvU+mNeNS9gyJTAhrHp74CbUaSynQpZcQ==}
+  tinybench@6.2.2:
+    resolution: {integrity: sha512-nIZ2N2dFpjBsg2hgitKu7mA+FvsIJuGJOwysRngmVRRmWgR/UyPjwJj8c/fT/dhm8EkHnF5EOogRf+0Z2qrimA==}
     engines: {node: '>=20.0.0'}
 
   tinyexec@1.3.1:
@@ -2594,7 +2594,7 @@ snapshots:
       '@fedify/vocab': 2.4.2
       '@fedify/vocab-runtime': 2.4.2
       '@fedify/webfinger': 2.4.2
-      '@logtape/logtape': 2.4.0
+      '@logtape/logtape': 2.4.1
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.12.0(@opentelemetry/api@1.9.1)
       '@opentelemetry/sdk-metrics': 2.12.0(@opentelemetry/api@1.9.1)
@@ -2630,7 +2630,7 @@ snapshots:
   '@fedify/postgres@2.4.2(@fedify/fedify@2.4.2)(postgres@3.4.9)':
     dependencies:
       '@fedify/fedify': 2.4.2
-      '@logtape/logtape': 2.4.0
+      '@logtape/logtape': 2.4.1
       postgres: 3.4.9
       temporal-polyfill: 1.0.5
 
@@ -2647,7 +2647,7 @@ snapshots:
   '@fedify/vocab-runtime@2.4.2':
     dependencies:
       '@js-temporal/polyfill': 0.5.1
-      '@logtape/logtape': 2.4.0
+      '@logtape/logtape': 2.4.1
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2667,7 +2667,7 @@ snapshots:
       '@fedify/vocab-runtime': 2.4.2
       '@fedify/vocab-tools': 2.4.2
       '@fedify/webfinger': 2.4.2
-      '@logtape/logtape': 2.4.0
+      '@logtape/logtape': 2.4.1
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
       asn1js: 3.0.10
@@ -2679,7 +2679,7 @@ snapshots:
   '@fedify/webfinger@2.4.2':
     dependencies:
       '@fedify/vocab-runtime': 2.4.2
-      '@logtape/logtape': 2.4.0
+      '@logtape/logtape': 2.4.1
       '@opentelemetry/api': 1.9.1
       es-toolkit: 1.46.1
 
@@ -2868,7 +2868,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@logtape/logtape@2.4.0': {}
+  '@logtape/logtape@2.4.1': {}
 
   '@multiformats/base-x@4.0.1': {}
 
@@ -4109,7 +4109,7 @@ snapshots:
 
   temporal-utils@1.0.3: {}
 
-  tinybench@6.2.1: {}
+  tinybench@6.2.2: {}
 
   tinyexec@1.3.1: {}
 
@@ -4207,7 +4207,7 @@ snapshots:
       obug: 2.2.1
       picomatch: 4.0.7
       std-env: 4.3.0
-      tinybench: 6.2.1
+      tinybench: 6.2.2
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
       vite: 8.3.4(@types/node@26.6.5)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
