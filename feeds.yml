@@ -1179,252 +1179,287 @@ bots:
     feed_url: https://www.visionect.com/feed/
     homepage_url: https://www.visionect.com
     display_name: Visionect
-    summary: We take digital signage to a whole new level.
-  visitsteve:
+    summary: Visionect's official articles on e-paper displays, wireless digital signage, sustainable technology, customer deployments, and company announcements.
+    profile_photo: https://www.visionect.com/wp-content/uploads/2022/10/cropped-Visionect-V-icon@4x-180x180.png
+  steve_lambert:
     feed_url: https://visitsteve.com/feed/
     homepage_url: https://visitsteve.com
     display_name: Steve Lambert
-    summary: Portfolio of Steve Lambert, artist, artistic activist, creative activist, co-founder of the Center for Artistic Activism, and Associate Professor at SUNY Purchase
-  visualcomplexity:
-    feed_url: https://visualcomplexity.com/feed/
-    homepage_url: https://visualcomplexity.com
-    display_name: VISUAL COMPLEXITY
-    summary: Updates from VISUAL COMPLEXITY.
-  visualizingeconomics:
+    summary: Artist Steve Lambert's project announcements, exhibitions, interviews, talks, and writing about art and creative activism.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fvisitsteve.com&size=128
+  visualizing_economics:
     feed_url: https://www.visualizingeconomics.com/blog?format=rss
     homepage_url: https://www.visualizingeconomics.com/blog
-    display_name: Blog - Visualizing Economics
-    summary: Updates from Blog - Visualizing Economics.
-  vitalets_github:
+    display_name: Visualizing Economics
+    summary: 'Catherine Mulbrandon''s archived economic data visualizations and commentary on taxation, investment, savings, consumption, and inequality. Latest feed post: October 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.visualizingeconomics.com%2Fblog&size=128
+  vitaliy_potapov:
     feed_url: https://vitalets.github.io/rss.xml
     homepage_url: https://vitalets.github.io
     display_name: Vitaliy Potapov
-    summary: Personal engineering notes about Playwright, testing, and developer tooling.
-  vivaldi:
+    summary: Vitaliy Potapov's practical engineering articles on Playwright, browser extensions, automated testing, developer tooling, and AI-assisted development.
+    profile_photo: https://github.com/vitalets.png?size=200
+  vivaldi_browser:
     feed_url: https://vivaldi.com/feed/
     homepage_url: https://vivaldi.com
     display_name: Vivaldi Browser
-    summary: Fast & Fully Customizable Web Browser
-  vogella:
+    summary: Official Vivaldi browser release notes, desktop and mobile snapshots, feature announcements, company news, and commentary on the open web.
+    profile_photo: https://vivaldi.com/wp-content/uploads/cropped-favicon-180x180.png
+  vogella_blog:
     feed_url: https://www.vogella.com/blog/feed.xml
     homepage_url: https://vogella.com/blog
     display_name: vogella Blog
-    summary: Updates from vogella Blog.
-  vogue_in:
+    summary: vogella's technical articles on Eclipse, SWT, Java, development tools, application performance, and open-source software.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fvogella.com%2Fblog&size=128
+  vogue_india:
     feed_url: https://www.vogue.in/feed/rss
     homepage_url: https://www.vogue.in
     display_name: Vogue India
-    summary: The latest from www.vogue.in
-  volokh:
-    feed_url: https://volokh.com/feed/
-    homepage_url: https://volokh.com
-    display_name: The Volokh Conspiracy
-    summary: Commentary on law, public policy, and more
-  voltsteve_blogspot:
-    feed_url: http://feeds.feedburner.com/IdiomsIdiots
-    homepage_url: http://voltsteve.blogspot.com
+    summary: Vogue India's coverage of fashion, beauty, weddings, culture, entertainment, shopping, lifestyle, and horoscopes.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.vogue.in&size=128
+  idioms_and_idiots:
+    feed_url: https://feeds.feedburner.com/IdiomsIdiots
+    homepage_url: https://voltsteve.blogspot.com/
     display_name: Idioms & Idiots
-    summary: Updates from Idioms & Idiots.
+    summary: Steve Buckley's archived Idioms & Idiots posts about technical recruitment, job interviews, and assessing employers. This two-post feed ends in December 2011.
   voodootikigod:
     feed_url: https://www.voodootikigod.com/rss.xml
     homepage_url: https://www.voodootikigod.com
-    display_name: voodootikigod
-    summary: Chris Williams - Software engineer, community builder, and open source advocate
-  vorpus:
+    display_name: Chris Williams - voodootikigod
+    summary: Chris Williams' essays on AI agents, engineering workflows, JavaScript, developer communities, hardware, and open-source software at voodootikigod.
+    profile_photo: https://www.voodootikigod.com/favicon.png
+  nathaniel_j_smith:
     feed_url: https://vorpus.org/blog/feeds/atom.xml
     homepage_url: https://vorpus.org/blog
-    display_name: njs blog
-    summary: Updates from njs blog.
-  vps_arachnoid:
+    display_name: Nathaniel J. Smith - njs blog
+    summary: 'Nathaniel J. Smith''s archived technical articles and essays on Trio, asynchronous programming, Python, scientific computing, and open-source infrastructure. Latest feed post: May 2019.'
+    profile_photo: https://vorpus.org/static/cropped-portrait.jpg
+  arachnoid_com:
     feed_url: https://arachnoid.com/feed.xml
-    homepage_url: http://vps.arachnoid.com
-    display_name: arachnoid.com
-    summary: A site for people who think. Intellectual resources, programming, astronomy, science, mathematics, Java/JavaScript applets, programming instruction, home of Arachnophilia.
-  vsevolod:
+    homepage_url: https://arachnoid.com/
+    display_name: arachnoid.com - Paul Lutus
+    summary: Paul Lutus' arachnoid.com articles and project updates on programming, mathematics, science, astronomy, electronics, 3D printing, sailing, and personal commentary.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fvps.arachnoid.com&size=128
+  vsevolod_solovyov:
     feed_url: https://vsevolod.net/rss.xml
     homepage_url: https://vsevolod.net
     display_name: Vsevolod Solovyov
-    summary: Vsevolod Solovyov's blog
+    summary: 'Vsevolod Solovyov''s technical writing on PostgreSQL, debugging, hardware, fraud prevention, and software development. Latest feed post: October 2025.'
+    profile_photo: https://vsevolod.net/favicon-32x32.png
   vusec:
     feed_url: https://www.vusec.net/feed/
     homepage_url: https://www.vusec.net
-    display_name: vusec
-    summary: Systems and Network Security Group at VU Amsterdam
+    display_name: VUSec
+    summary: Official news and awards from VUSec, the Systems and Network Security Group at Vrije Universiteit Amsterdam. Feed publication dates end in August 2021, although the leading awards article includes later updates.
+    profile_photo: https://www.vusec.net/wp-content/uploads/2016/09/cropped-vusec-logo_small-180x180.png
   leftshift:
     feed_url: https://leftshift.io/feed.xml
-    homepage_url: https://leftshift.io
+    homepage_url: https://leftshift.io/blog
     display_name: Leftshift
-    summary: Browse the full archive of the LeftShift blog by month.
-  w00tsec_blogspot:
+    summary: 'LeftShift''s archived mobile-development articles on iOS, Android, JavaScript, app workshops, and development tools. The former vxtindia.com redirects to LeftShift; latest feed post: July 2015.'
+    profile_photo: https://leftshift.io/assets/__favicon-196x196.png
+  w00tsec:
     feed_url: https://w00tsec.blogspot.com/feeds/posts/default
     homepage_url: https://w00tsec.blogspot.com
-    display_name: w00tsec
-    summary: Updates from w00tsec.
+    display_name: w00tsec - Bernardo Rodrigues
+    summary: 'Bernardo Rodrigues'' archived security research and CTF writeups on embedded devices, cable modems, malware, databases, and web applications. Latest feed post: April 2018.'
   w3techs:
     feed_url: https://w3techs.com/blogfeed
     homepage_url: https://w3techs.com
-    display_name: W3Techs.com - Web Technology Blog
-    summary: W3Techs.com - Web Technology Blog
+    display_name: W3Techs
+    summary: W3Techs' web-technology usage statistics, market-share analysis, and short facts about content management systems, web servers, programming languages, CDNs, and related technologies.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fw3techs.com&size=128
   wacaco:
-    feed_url: http://feeds.feedburner.com/Wacaco-Minipresso-Blog
+    feed_url: https://feeds.feedburner.com/Wacaco-Minipresso-Blog
     homepage_url: https://www.wacaco.com/blogs/news
-    display_name: Wacaco - BLOG
-    summary: Updates from Wacaco - BLOG.
-  wakatime:
+    display_name: Wacaco
+    summary: Wacaco's official coffee blog, with specialty roast reviews, portable espresso brewing guides, product comparisons, and instructions for its coffee equipment.
+    profile_photo: https://www.wacaco.com/cdn/shop/files/favicon.png?crop=center&height=32&v=1697093302&width=32
+  the_wakatime_blog:
     feed_url: https://wakatime.com/blog/all.atom
     homepage_url: https://wakatime.com/blog
     display_name: The WakaTime Blog
-    summary: Updates from The WakaTime Blog.
-  wakeuptopolitics:
+    summary: WakaTime's official product announcements, annual programming statistics, engineering articles, and advice on measuring coding time and developer productivity.
+    profile_photo: https://wakatime.com/apple-touch-icon.png
+  wake_up_to_politics:
     feed_url: https://www.wakeuptopolitics.com/feed
     homepage_url: https://www.wakeuptopolitics.com
     display_name: Wake Up To Politics
-    summary: Your guide through the world of politics.
+    summary: Gabe Fleisher's Wake Up To Politics newsletter on US elections, Congress, government, political developments, and reader questions.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!r9e7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6dd07aa8-a849-4984-aa8e-725104d70bb8%2Fapple-touch-icon-57x57.png
   walesonline:
     feed_url: https://www.walesonline.co.uk/?service=rss
     homepage_url: https://www.walesonline.co.uk
-    display_name: WalesOnline - Home
-    summary: RSS feed from WalesOnline
+    display_name: WalesOnline
+    summary: WalesOnline's Welsh and UK news, politics, crime, rugby, football, weather, entertainment, food, shopping, and local lifestyle coverage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.walesonline.co.uk&size=128
   walkah:
     feed_url: https://walkah.net/atom.xml
     homepage_url: https://walkah.net
-    display_name: walkah
-    summary: Updates from walkah.
-  walkingtree_tech:
+    display_name: James Walker - walkah
+    summary: 'James Walker''s archived walkah posts on software development, macOS setup, developer tools, productivity, and open-source projects. Latest feed post: October 2015.'
+    profile_photo: https://s.gravatar.com/avatar/b29b5419f81fa03145cafc684bb20c76.png?s=60
+  walkingtree_technologies:
     feed_url: https://walkingtree.tech/feed/
     homepage_url: https://walkingtree.tech
     display_name: WalkingTree Technologies
-    summary: Updates from WalkingTree Technologies.
+    summary: WalkingTree Technologies' company news and technical and business articles on software engineering, enterprise AI, data systems, quality engineering, and engineering teams.
+    profile_photo: https://walkingtree.tech/wp-content/uploads/2024/12/cropped-Favicon-Walkingtree-1-min-180x180.png
   wamc:
     feed_url: https://www.wamc.org/news.rss
     homepage_url: https://www.wamc.org/news
-    display_name: News
-    summary: News
+    display_name: WAMC News
+    summary: WAMC's regional news reporting on New York, Vermont, Massachusetts, and neighboring Northeast communities, including politics, public affairs, education, and local events.
+    profile_photo: https://www.wamc.org/apple-touch-icon.png
   wamu:
-    feed_url: https://wamu.org/feed/podcast
+    feed_url: https://wamu.org/feed/
     homepage_url: https://wamu.org
     display_name: WAMU
-    summary: '-'
+    summary: WAMU's Washington, DC-area news, politics, arts and culture, public-radio programs, and community reporting from American University Radio.
+    profile_photo: https://wamu.org/wp-content/uploads/2019/01/cropped-WAMU_favicon-1-180x180.png
   wanderingstan:
     feed_url: https://wanderingstan.com/feed
     homepage_url: https://wanderingstan.com
-    display_name: wanderingstan
-    summary: the wanderings and wonderings of stan james
-  warrenellis:
-    feed_url: https://warrenellis.com/feed.rss
-    homepage_url: https://warrenellis.com
-    display_name: Warren Ellis
-    summary: The feed of updates to Warren Ellis
-  warzel_substack:
+    display_name: Stan James - wanderingstan
+    summary: Stan James' wanderingstan essays and personal reflections on technology, AI, society, philosophy, art, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwanderingstan.com&size=128
+  orbital_operations:
+    feed_url: https://rss.beehiiv.com/feeds/QbVHvmKsAf.xml
+    homepage_url: https://orbitaloperations.beehiiv.com/
+    display_name: Orbital Operations - Warren Ellis
+    summary: Warren Ellis' official Orbital Operations newsletter on writing, comics, creative work, books, film, tools, art, and life, linked from his author website.
+    profile_photo: https://beehiiv-images-production.s3.amazonaws.com/uploads/user/profile_picture/5206741b-b594-4447-98aa-c8a8e6cb09ee/ident_clip_for_oo_2.PNG
+  galaxy_brain:
     feed_url: https://warzel.substack.com/feed
     homepage_url: https://warzel.substack.com
-    display_name: Galaxy Brain
-    summary: Thinking out loud about the internet, media, politics...and big ideas.
-  washington_edu:
+    display_name: Galaxy Brain - Charlie Warzel
+    summary: Charlie Warzel's archived Galaxy Brain newsletter on the internet, technology, media, politics, and culture. This Substack feed ends with its November 2021 move to The Atlantic.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!aeJ-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2dfc5470-0bd3-4a45-8968-9714fa391c43%2Fapple-touch-icon-57x57.png
+  uw_news:
     feed_url: https://www.washington.edu/news/feed/
     homepage_url: https://www.washington.edu/news
-    display_name: UW News
-    summary: Updates from UW News.
-  washingtonexaminer:
+    display_name: UW News - University of Washington
+    summary: Official University of Washington research news, expert interviews, campus announcements, events, and university updates from UW News.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.washington.edu%2Fnews&size=128
+  washington_examiner:
     feed_url: https://www.washingtonexaminer.com/feed/
     homepage_url: https://www.washingtonexaminer.com
     display_name: Washington Examiner
-    summary: Political News and Conservative Analysis About Congress, the President, and the Federal Government
+    summary: Washington Examiner's political news and conservative analysis on Congress, the White House, elections, courts, national security, public policy, and culture.
+    profile_photo: https://www.washingtonexaminer.com/wp-content/uploads/2023/11/cropped-favicon.png?w=180
   washingtonian:
     feed_url: https://washingtonian.com/feed/
     homepage_url: https://washingtonian.com
     display_name: Washingtonian
-    summary: The website that Washington lives by.
-  washingtonmonthly:
+    summary: Washingtonian's Washington, DC-area reporting and guides on restaurants, local politics, culture, events, travel, neighborhoods, and lifestyle.
+    profile_photo: https://washingtonian.com/wp-content/uploads/2016/07/cropped-washingtonian-favicon-gigantic-256x256.png
+  washington_monthly:
     feed_url: https://washingtonmonthly.com/feed/
     homepage_url: https://washingtonmonthly.com
     display_name: Washington Monthly
-    summary: Updates from Washington Monthly.
-  washpostpr_tumblr:
+    summary: Washington Monthly's political reporting and policy commentary on government, education, democracy, the economy, health care, and public affairs.
+    profile_photo: https://i0.wp.com/washingtonmonthly.com/wp-content/uploads/2026/08/cropped-IG_Red.png?fit=180%2C180&ssl=1
+  washpost_pr:
     feed_url: https://washpostpr.tumblr.com/rss
     homepage_url: https://washpostpr.tumblr.com
     display_name: WashPost PR
-    summary: Follow The Washington Post PR team at washingtonpost.com/pr.
-  watabou_itch:
+    summary: 'The Washington Post PR team''s archived Tumblr announcements and newsroom job listings. Latest feed post: June 2020; the team points readers to washingtonpost.com/pr.'
+    profile_photo: https://api.tumblr.com/v2/blog/washpostpr.tumblr.com/avatar/128
+  medieval_fantasy_city_generator_devlog:
     feed_url: https://watabou.itch.io/medieval-fantasy-city-generator/devlog.rss
     homepage_url: https://watabou.itch.io/medieval-fantasy-city-generator
-    display_name: Medieval Fantasy City Generator Devlog - itch.io
-    summary: Not a game
-  watchesbysjx:
+    display_name: Medieval Fantasy City Generator Devlog
+    summary: 'watabou''s official Medieval Fantasy City Generator development log, with procedural map-generation updates, experiments, release notes, and related generator announcements. Latest feed post: February 2025.'
+    profile_photo: https://img.itch.zone/aW1nLzcxMTc4NjgucG5n/32x32%23/iPeDTm.png
+  sjx_watches:
     feed_url: https://watchesbysjx.com/feed
     homepage_url: https://watchesbysjx.com
     display_name: SJX Watches
-    summary: A Journal Dedicated to Fine Watches
-  wattenberger:
+    summary: SJX Watches' watch-industry news, hands-on reviews, independent watchmaking coverage, auctions, interviews, technical features, and podcasts.
+    profile_photo: https://watchesbysjx.com/wp-content/uploads/2024/01/cropped-sjx-logo-square-180x180.jpg
+  amelia_wattenberger:
     feed_url: https://wattenberger.com/rss.xml
     homepage_url: https://wattenberger.com
     display_name: Amelia Wattenberger
-    summary: Thoughts on the future of human-computer interaction
-  wattpad:
+    summary: Amelia Wattenberger's essays and interactive explorations on human-computer interaction, AI interfaces, developer tools, data visualization, and tools for thought.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwattenberger.com&size=128
+  wattpad_whats_hot:
     feed_url: https://www.wattpad.com/rss
-    homepage_url: https://www.wattpad.com?mode=1&language=1&lim=&search=&utm_source=rss
+    homepage_url: https://www.wattpad.com/
     display_name: Wattpad - What's Hot
-    summary: Wattpad - Discover a World of Unlimited Stories
-  wattvision:
+    summary: Wattpad's What's Hot feed of user-written stories and chapter selections, including fanfiction, romance, fantasy, and other genres. This is a story-discovery feed, not company news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.wattpad.com%3Fmode%3D1%26language%3D1%26lim%3D%26search%3D%26utm_source%3Drss&size=128
+  wattvision_blog:
     feed_url: https://www.wattvision.com/blog/feed
     homepage_url: https://www.wattvision.com/blog
     display_name: Wattvision Blog
-    summary: Updates from Wattvision Blog.
-  wavelight_ws:
+    summary: Wattvision's official product updates and articles on electricity monitoring, tenant billing, energy costs, sustainability, and saving energy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.wattvision.com%2Fblog&size=128
+  wavelight:
     feed_url: https://wavelight.ws/rss.xml
     homepage_url: https://wavelight.ws
     display_name: wavelight
-    summary: music, art, process, nature, words.
-  wbez:
+    summary: ioflow's wavelight writing on music, creative process, art, nature, photography, and related technologies.
+    profile_photo: https://wavelight.ws/rss.png
+  wbez_chicago:
     feed_url: https://www.wbez.org/rss/index.xml
     homepage_url: https://www.wbez.org
-    display_name: WBEZ Chicago - All
-    summary: Updates from WBEZ Chicago - All.
-  wdwprepschool:
+    display_name: WBEZ Chicago
+    summary: WBEZ Chicago's local journalism on education, politics, immigration, criminal justice, race, communities, arts, culture, and regional public affairs.
+    profile_photo: https://www.wbez.org/apple-touch-icon.png
+  wdw_prep_school:
     feed_url: https://wdwprepschool.com/feed/
     homepage_url: https://wdwprepschool.com
     display_name: WDW Prep School
-    summary: Updates from WDW Prep School.
-  webaim:
+    summary: WDW Prep School's independent Disney World planning guides, park news, trip reports, budgeting advice, and podcast episodes. Not an official Disney publication.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwdwprepschool.com&size=128
+  webaim_blog:
     feed_url: https://webaim.org/blog/feed/
     homepage_url: https://webaim.org/blog
     display_name: WebAIM Blog
-    summary: The WebAIM Web Accessibility Blog
-  webdesignerwall:
+    summary: WebAIM's articles on digital accessibility, WCAG, accessible design, assistive technology, accessibility research, and policy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwebaim.org%2Fblog&size=128
+  web_designer_wall:
     feed_url: https://webdesignerwall.com/feed
     homepage_url: https://webdesignerwall.com
     display_name: Web Designer Wall
-    summary: Design Trends and Tutorials - A wall of design ideas, web trends, and tutorials.
-  weblog_jamisbuck:
+    summary: 'Web Designer Wall''s archived web-design articles, CSS tutorials, WordPress troubleshooting, theme reviews, and design trends. Latest feed post: February 2019; the current homepage emphasizes code snippets.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwebdesignerwall.com&size=128
+  the_buckblog:
     feed_url: https://feeds.feedburner.com/buckblog
-    homepage_url: http://weblog.jamisbuck.org
+    homepage_url: https://weblog.jamisbuck.org/
     display_name: The Buckblog
-    summary: assorted ramblings by Jamis Buck
-  weblog_rogueamoeba:
+    summary: 'Jamis Buck''s archived Buckblog articles on programming, Ruby, algorithms, maze generation, coding challenges, and personal projects. Latest feed post: December 2016.'
+    profile_photo: https://github.com/jamis.png?size=200
+  under_the_microscope:
     feed_url: https://weblog.rogueamoeba.com/feed/
     homepage_url: https://weblog.rogueamoeba.com
-    display_name: Under the Microscope
-    summary: The Rogue Amoeba Blog
-  weblogtoolscollection:
-    feed_url: http://feeds2.feedburner.com/weblogtoolscollection/UXMP
+    display_name: Under the Microscope - Rogue Amoeba
+    summary: Rogue Amoeba's official blog with macOS audio-software releases, compatibility updates, product tips, and company news.
+    profile_photo: https://rogueamoeba.com/global/images/siteimages/iPhoneicon.png
+  weblog_tools_collection:
+    feed_url: https://feeds.feedburner.com/weblogtoolscollection/UXMP
     homepage_url: https://weblogtoolscollection.com
     display_name: Weblog Tools Collection
-    summary: Weblog Tools Blogging Tools Blog
+    summary: 'Weblog Tools Collection''s archived WordPress news, plugin and theme releases, blogging tools, and development advice. Latest feed post: March 2013.'
   webmonkey:
     feed_url: https://www.webmonkey.com/feed/
     homepage_url: https://www.webmonkey.com
     display_name: WebMonkey
-    summary: No More Monkey Business
-  webofstories:
+    summary: The current WebMonkey's guides and reviews on online income, side hustles, rewards apps, surveys, freelancing, and website building. Relaunched under ConsumerCo, it is not the former Wired web-development tutorial archive.
+    profile_photo: https://www.webmonkey.com/wp-content/uploads/2020/05/monkey-thumb_webicon-48x48.png
+  web_of_stories:
     feed_url: https://www.webofstories.com/rss.xml
     homepage_url: https://www.webofstories.com
-    display_name: Web of Stories RSS
-    summary: Web of Stories RSS news
-  webstock_org_nz:
+    display_name: Web of Stories - On this day
+    summary: Selected On this day clips from Web of Stories' oral-history video archive, featuring people recounting their lives and work. This feed currently provides one featured story rather than all new uploads.
+    profile_photo: https://d3qf61oza7ty3z.cloudfront.net/siteAssets/1_0_1/images/logo-web-of-stories.png
+  webstock:
     feed_url: https://www.webstock.org.nz/feed/
     homepage_url: https://www.webstock.org.nz
     display_name: Webstock
-    summary: Updates from Webstock.
+    summary: 'Webstock''s archived New Zealand web-conference announcements, speaker introductions, startup competitions, event logistics, and merchandise updates. Latest feed post: February 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.webstock.org.nz&size=128
   highlands_current:
     feed_url: https://highlandscurrent.org/feed/
     homepage_url: https://highlandscurrent.org
