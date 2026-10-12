@@ -85,6 +85,7 @@ export function buildCreateActivity(
 export interface PublishResult {
   stored: number;
   skipped: number;
+  deferred: number;
 }
 
 export async function getPublishRecipients(
@@ -167,9 +168,19 @@ export async function publishNewEntries(
 ): Promise<PublishResult> {
   let stored = 0;
   let skipped = 0;
+  let deferred = 0;
+  const now = Date.now();
+  const publishedEntries = entries.filter((entry) => {
+    if (entry.publishedAt && entry.publishedAt.getTime() > now) {
+      skipped++;
+      deferred++;
+      return false;
+    }
+    return true;
+  });
   const recipients = await getPublishRecipients(db, botUsername, blockedInstances);
 
-  const truncatedEntries = entries.map((entry) => ({
+  const truncatedEntries = publishedEntries.map((entry) => ({
     entry,
     guid: truncateToMax(entry.guid, MAX_GUID_LENGTH),
     url: truncateToMax(entry.link, MAX_URL_LENGTH),
@@ -221,7 +232,7 @@ export async function publishNewEntries(
     stored++;
   }
 
-  return { stored, skipped };
+  return { stored, skipped, deferred };
 }
 
 export function formatContent(entry: EntryLike, baseUrl?: string | URL): string {
