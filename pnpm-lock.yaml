@@ -40,6 +40,9 @@ importers:
       '@logtape/logtape':
         specifier: ^2.4.0
         version: 2.4.0
+      '@trybyte/robotstxt-parser':
+        specifier: ^2.0.0
+        version: 2.0.0
       daisyui:
         specifier: ^5.7.47
         version: 5.7.47
@@ -1066,6 +1069,10 @@ packages:
 
   '@tailwindcss/postcss@4.3.3':
     resolution: {integrity: sha512-JTSZZGQi1AyKirbLN3azmjVzef92tcX7h+iSqPdaeStyFpGpDlKvvpxeOE8njhbUanbRwr3z8DyzhICWnMtQeg==}
+
+  '@trybyte/robotstxt-parser@2.0.0':
+    resolution: {integrity: sha512-kqoL5DCRQeTkAbG8xsPGP8/5lEFUtFj/t3hOLvIB7kkFZTIjRXH8rm6blH3FjXEJ44zjzMFYXZMamuTZPCwuMw==}
+    engines: {node: '>=22.0.0'}
 
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
@@ -3101,6 +3108,8 @@ snapshots:
       '@tailwindcss/oxide': 4.3.3
       postcss: 8.5.29
       tailwindcss: 4.3.3
+
+  '@trybyte/robotstxt-parser@2.0.0': {}
 
   '@types/chai@5.2.3':
     dependencies:
