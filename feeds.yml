@@ -20352,256 +20352,281 @@ bots:
     homepage_url: https://nickdrozd.github.io/
     display_name: Something Something Programming
     summary: Programming, computation, and Turing machines.
-  builder_aws:
+  aws_builder_center:
     feed_url: https://builder.aws.com/rss.xml
     homepage_url: https://builder.aws.com
-    display_name: builder.aws.com
-    summary: Updates from builder.aws.com.
+    display_name: AWS Builder Center
+    summary: AWS Builder Center community articles on cloud architecture, AWS services, certifications, and development. The former AWS Region Comparison Tool redirects to Builder Center capabilities; this is not a region-comparison feed.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbuilder.aws.com&size=128
   regular_expressions_info:
     feed_url: https://www.regular-expressions.info/updates.xml
     homepage_url: https://www.regular-expressions.info
-    display_name: $new =~ /www\.regular-expressions\.info/
-    summary: Stay up-to-date with changes and new additions to the web's premier site about regular expressions. Gives direct links to the relevant pages on the site.
-  reillywood:
+    display_name: Regular-Expressions.info
+    summary: Official Regular-Expressions.info site-update feed for its regex tutorials and reference. Currently contains one December 2023 announcement linking to the RSS information page.
+    profile_photo: https://www.regular-expressions.info/apple-touch-icon.png
+  reilly_wood:
     feed_url: https://www.reillywood.com/index.xml
     homepage_url: https://www.reillywood.com
     display_name: Reilly Wood
-    summary: Recent content on Reilly Wood
-  relab_blog_torontomu_ca:
+    summary: Reilly Wood's essays on programming, AI tools, housing, urban history, Vancouver, and personal life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.reillywood.com&size=128
+  the_responsive_ecologies_lab:
     feed_url: https://relab.blog.torontomu.ca/feed/
     homepage_url: https://relab.blog.torontomu.ca
     display_name: The Responsive Ecologies Lab
-    summary: The Responsive Ecologies Lab @ Toronto Metropolitan University
-  remote_exploit:
-    feed_url: http://remote-exploit.org/rss.xml
-    homepage_url: http://remote-exploit.org
-    display_name: remote-exploit.org
-    summary: hacking for the fun of it
-  remysharp:
+    summary: 'Archived Responsive Ecologies Lab announcements on electronic music, modular synthesis, accessibility, and creative technology at Toronto Metropolitan University. Latest feed post: May 2022.'
+  remy_sharps_b_log:
     feed_url: https://remysharp.com/feed.xml
     homepage_url: https://remysharp.com
     display_name: remy sharp's b:log
-    summary: About [code] and all that jazz
-  renegademothering:
+    summary: Remy Sharp's posts and annotated links on web development, programming, browsers, retro computing, and technology.
+    profile_photo: https://remysharp.com/images/favicons/blog/apple-icon-57x57.png
+  renegade_mothering:
     feed_url: https://renegademothering.com/feed/
     homepage_url: https://renegademothering.com
     display_name: renegade mothering
-    summary: tales of a wayward mama
-  renesd_blogspot:
+    summary: Janelle Hanchett's archived essays on motherhood, family, recovery, and American society. The final November 2024 post announces the blog's archive and move to Substack.
+    profile_photo: https://renegademothering.com/wp-content/themes/renegade_theme/icons/apple-touch-icon114.png
+  making_apps_making_webs:
     feed_url: https://renesd.blogspot.com/feeds/posts/default
     homepage_url: https://renesd.blogspot.com
     display_name: making apps, making webs.
-    summary: Updates from making apps, making webs..
-  rentafounder:
+    summary: 'Archived programming posts on pygame, games, graphics, audio, databases, and web development. Latest feed post: November 2020.'
+  rent_a_founder:
     feed_url: https://rentafounder.com/index.xml
     homepage_url: https://rentafounder.com
     display_name: Rent-a-founder
-    summary: Recent content on Rent-a-founder
-  rentzsch_tumblr:
+    summary: 'Rent-a-founder articles on Go, terminal user interfaces, software development, entrepreneurship, and remote teams. Latest feed post: April 2024.'
+  rentzsch:
     feed_url: https://rentzsch.tumblr.com/rss
     homepage_url: https://rentzsch.tumblr.com
-    display_name: rentzsch.tumblr.com
-    summary: Updates from rentzsch.tumblr.com.
-  repair_her_armor_tumblr:
+    display_name: rentzsch
+    summary: 'Archived rentzsch posts on software development, mogenerator, Objective-C, Swift, and technology. Latest feed post: October 2016.'
+    profile_photo: https://api.tumblr.com/v2/blog/rentzsch.tumblr.com/avatar/128
+  repair_her_armor:
     feed_url: https://repair-her-armor.tumblr.com/rss
     homepage_url: https://repair-her-armor.tumblr.com
     display_name: Repair Her Armor
-    summary: This blog is dedicated to show and change the looks of ridiculous female armors (and other outfits) that women tend to have in media; such as games and comics. The purpose is to show that over-sexualized women is not “empowering”, but clearly offensive and ridiculous - not to mention it’s also clearly out of context. We’ll also show that their clothes could be greatly improved with a touch of common sense, equality and character. Feel free to submit! Please take note that Tica, the creator of RH
+    summary: 'Archived critiques and redesigns of sexualized female armor and outfits in games and comics. The creator is on hiatus; latest feed post: September 2015.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frepair-her-armor.tumblr.com&size=128
   repography:
     feed_url: https://repography.com/rss/feed.xml
     homepage_url: https://repography.com
-    display_name: 'Repography: Visualize your code'
-    summary: Create graphical dashboards to embed in your README.md, or turn your project into beautiful data visualization posters.
-  resilientwebdesign:
+    display_name: Repography
+    summary: 'Official Repography announcements and articles on repository visualization, code-history posters, and README dashboards. Latest feed post: July 2023.'
+    profile_photo: https://repography.com/apple-touch-icon.png
+  resilient_web_design:
     feed_url: https://resilientwebdesign.com/podcast.rss
     homepage_url: https://resilientwebdesign.com
     display_name: Resilient Web Design
-    summary: A web book by Jeremy Keith.
-  resistancedashboard:
+    summary: Jeremy Keith's free web book on the history of the web, progressive enhancement, and resilient design. The feed contains the book's chapters rather than ongoing news.
+    profile_photo: https://resilientwebdesign.com/images/icon512.png
+  resistance_dashboard:
     feed_url: https://www.resistancedashboard.com/rss.xml
     homepage_url: https://www.resistancedashboard.com
     display_name: Resistance Dashboard
-    summary: Updates from Resistance Dashboard.
-  resist_bot:
+    summary: 'Archived Resistance Dashboard resources for progressive organizing, campaigns, civic groups, and political action. Latest feed entries: July 2017; the selected feed is a resource directory, not the podcast archive.'
+    profile_photo: https://www.resistancedashboard.com/sites/default/files/dial-favicon-3.png
+  resistbot:
     feed_url: https://resist.bot/feed.xml
-    homepage_url: https://resist.bot
+    homepage_url: https://resist.bot/
     display_name: Resistbot
-    summary: I'm Resistbot. Text RESIST to 50409 and I'll help you contact your representatives.
-  retinamacapps:
+    summary: 'Official Resistbot news and civic-action updates on contacting elected officials, voting, legislation, and advocacy. Latest feed post: December 2023.'
+    profile_photo: https://resist.bot/favicons/icon-48x48.png
+  retina_mac_apps:
     feed_url: https://retinamacapps.com/feed/
     homepage_url: https://retinamacapps.com
-    display_name: RetinaMacApps
-    summary: Load up your Mac with these awesome apps
-  revealnews:
+    display_name: Retina Mac Apps
+    summary: 'Mac application recommendations and macOS troubleshooting guides covering performance, storage, hardware, and security. Latest feed post: March 2025.'
+    profile_photo: https://retinamacapps.com/wp-content/uploads/2020/11/cropped-favlogo-180x180.png
+  reveal:
     feed_url: https://revealnews.org/feed/
     homepage_url: https://revealnews.org
     display_name: Reveal
-    summary: from The Center for Investigative Reporting
-  reviews_ofb_biz:
+    summary: 'Reveal''s investigative reporting on labor, civil rights, immigration, justice, and public accountability from the Center for Investigative Reporting. Latest entry in this feed: December 2025.'
+    profile_photo: https://i0.wp.com/revealnews.org/wp-content/uploads/2021/03/cropped-Reveal-Icon.png?fit=180%2C180&ssl=1
+  ofb_labs:
     feed_url: https://reviews.ofb.biz/safari/index.rss
     homepage_url: https://reviews.ofb.biz/safari
     display_name: TestyTim.com - OFB Labs
-    summary: The journal of technology, culture and ideas, serving up insights into the business of life since 2001.
-  revk_uk:
+    summary: TestyTim.com / OFB Labs essays and reviews on technology, Apple products, AI, culture, and public policy.
+    profile_photo: https://ofb.biz/phoenix/images/favicon/apple-touch-icon.png
+  revk:
     feed_url: https://www.revk.uk/feeds/posts/default
     homepage_url: https://www.revk.uk
-    display_name: RevK®'s ramblings
-    summary: Updates from RevK®'s ramblings.
-  revsys:
+    display_name: RevK's ramblings
+    summary: RevK's posts on networking, broadband, electronics, software, printing, and everyday life.
+  revsys_blog:
     feed_url: https://www.revsys.com/blog/feeds/latest/
     homepage_url: https://www.revsys.com/blog/feeds/latest
     display_name: REVSYS Blog
-    summary: Latest News and Tips from REVSYS
-  rfc_editor:
+    summary: Official REVSYS articles and company updates on software engineering, Python, Django, databases, consulting, and developer tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.revsys.com%2Fblog%2Ffeeds%2Flatest&size=128
+  recent_rfcs:
     feed_url: https://www.rfc-editor.org/rfcrss.xml
     homepage_url: https://www.rfc-editor.org
     display_name: Recent RFCs
-    summary: Recently published RFCs
-  rferl:
+    summary: Official RFC Editor feed of recently published RFCs on Internet protocols, networking, standards, and related technical specifications.
+    profile_photo: https://www.rfc-editor.org/api/v1/favicon/180x180.png
+  radio_free_europe_radio_liberty:
     feed_url: https://www.rferl.org/api/
     homepage_url: https://www.rferl.org
-    display_name: Radio Free Europe / Radio Liberty
-    summary: Radio Free Europe / Radio Liberty is an international news organization serving Central and Eastern Europe, the Caucasus, Central Asia, Russia, the Middle East and Balkan countries
-  rfsfeelgoodupdates_substack:
+    display_name: Radio Free Europe/Radio Liberty
+    summary: Radio Free Europe/Radio Liberty reporting on politics, war, human rights, and regional affairs across Eastern Europe, Russia, the Caucasus, Central Asia, and surrounding regions.
+    profile_photo: https://www.rferl.org/Content/responsive/RFE/img/webApp/ico-152x152.png
+  run_for_something_feel_good_updates:
     feed_url: https://rfsfeelgoodupdates.substack.com/feed
     homepage_url: https://rfsfeelgoodupdates.substack.com
     display_name: Run for Something feel-good updates
-    summary: Good vibes - and no fundraising emails - from the Run for Something community. Check your inbox every Monday morning.
+    summary: Amanda Litman's Run for Something newsletter on progressive candidates, local elections, community organizing, and campaign successes.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!ggJ6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fe7307383-286a-4b58-843f-efdd64eec221%2Fapple-touch-icon-57x57.png
   riaa:
     feed_url: https://www.riaa.com/feed/
     homepage_url: https://www.riaa.com
     display_name: RIAA
-    summary: Recording Industry Association of America (RIAA)
-  richarddavidjones:
+    summary: Official Recording Industry Association of America announcements on US music revenues, recording certifications, policy, and music-industry initiatives.
+    profile_photo: https://www.riaa.com/wp-content/uploads/2016/01/cropped-riaaLogo_512x512-32x32.png
+  keeping_up_with_the_jonesy:
     feed_url: https://www.richarddavidjones.com/rss/
     homepage_url: https://www.richarddavidjones.com
     display_name: Keeping up with the Jonesy
-    summary: My personal development project looking at personal wealth and physicial & mental health.
-  rickey:
+    summary: 'Richard Jones''s personal blog on finance, pensions, health, technology, books, and everyday life. Latest feed post: October 2025.'
+    profile_photo: https://storage.ghost.io/c/79/71/79710554-4273-4cb1-8d2b-84a9c7d37086/content/images/size/w256h256/2025/09/apple-touch-icon.png
+  rickey_news_videos:
     feed_url: https://www.rickey.org/index.xml
     homepage_url: https://www.rickey.org
     display_name: Rickey News Videos
-    summary: Recent content on Rickey News Videos
-  rickrubin_substack:
+    summary: Rickey News Videos entertainment and celebrity coverage, including music, television, and obituary posts. Older Rickey.org stories are preserved at archive.rickey.org.
+    profile_photo: https://www.rickey.org/img/apple-touch-icon.png
+  rick_rubin_creative_act:
     feed_url: https://rickrubin.substack.com/feed
     homepage_url: https://rickrubin.substack.com
     display_name: 'The Creative Act: Thoughtforms & Innerworks'
-    summary: A weekly communiqué of actionable practices
-  rickylinn_tumblr:
-    feed_url: https://rickylinn.tumblr.com/rss
-    homepage_url: https://rickylinn.tumblr.com
-    display_name: Ricky Linn
-    summary: Tervislike Linnade - Disabled Dog Stuff - Holland’s Gin Church Of Christ - Environmental And Aquatic Biogeochemistry Laboratory - Ashe Alliance Volleyball
-  rigsomelight:
+    summary: Rick Rubin's newsletter of reflections and practices on creativity, attention, art, and the creative process.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!lwrm!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F77c8bf0a-3366-4c7f-8e10-910afd10871a%2Fapple-touch-icon-57x57.png
+  bruce_haumans_blog:
     feed_url: https://rigsomelight.com/feed.xml
-    homepage_url: http://rigsomelight.com
+    homepage_url: https://rigsomelight.com/
     display_name: Bruce Hauman's Blog
-    summary: Bruce Hauman's ramblings on web development and programming
-  rileyjshaw:
-    feed_url: https://rileyjshaw.com/highlights.xml
+    summary: 'Bruce Hauman''s posts on Clojure, live programming, web development, and geodesic-dome projects. Latest feed post: March 2025.'
+  riley_j_shaw:
+    feed_url: https://rileyjshaw.com/blog-internal.xml
     homepage_url: https://rileyjshaw.com
-    display_name: Highlights feed
-    summary: Riley J. Shaw is a programmer and designer. Rooted in repair and craft, he creates transparent, remixable tools for a sustainable and accessible future.
-  rioterm:
+    display_name: Riley J. Shaw
+    summary: Riley J. Shaw's on-site blog posts on creative coding, web tools, repair, accessibility, and design. Uses the official internal-posts feed to avoid the highlights feed's broken external commit-blog destinations.
+    profile_photo: https://rileyjshaw.com/icons/icon-192x192.png?v=d727e7b0cb6780926dd10fe670efdb62
+  rio_terminal_blog:
     feed_url: https://rioterm.com/blog/rss.xml
     homepage_url: https://rioterm.com/blog
     display_name: Rio Terminal Blog
-    summary: Rio Terminal Blog
-  ritholtz:
+    summary: Official Rio Terminal release news and engineering articles on the terminal emulator, its embeddable engine, performance, and web integrations.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frioterm.com%2Fblog&size=128
+  the_big_picture:
     feed_url: https://ritholtz.com/feed/
     homepage_url: https://ritholtz.com
     display_name: The Big Picture
-    summary: Macro Perspective on the Capital Markets, Economy, Geopolitics, Technology, and Digital Media
-  riverbed:
+    summary: 'Barry Ritholtz''s The Big Picture: market and economic commentary, investing, financial interviews, and curated reading on politics and technology.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fritholtz.com&size=128
+  riverbed_blog:
     feed_url: https://www.riverbed.com/feed/
-    homepage_url: https://www.riverbed.com
-    display_name: Riverbed
-    summary: Digital Experience Innovation & Acceleration
-  rjionline:
+    homepage_url: https://www.riverbed.com/blogs/
+    display_name: Riverbed Blog
+    summary: Official Riverbed articles on network observability, IT performance, digital employee experience, and network operations.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.riverbed.com&size=128
+  reynolds_journalism_institute:
     feed_url: https://rjionline.org/feed/
     homepage_url: https://rjionline.org
-    display_name: RJI
-    summary: Donald W. Reynolds Journalism Institute
-  rmurphey:
+    display_name: Reynolds Journalism Institute
+    summary: Reynolds Journalism Institute articles and project updates on newsroom innovation, journalism tools, audience engagement, impact, and preservation.
+    profile_photo: https://rjionline.org/wp-content/themes/rji/dist/images/favicons/apple-touch-icon.png
+  rebecca_murphey:
     feed_url: https://rmurphey.com/feed/feed.xml
     homepage_url: https://rmurphey.com
     display_name: Rebecca Murphey
-    summary: Updates from Rebecca Murphey.
-  roadandtrack:
+    summary: 'Rebecca Murphey''s archived essays on JavaScript, software engineering, engineering management, communication, and personal life. Latest feed post: December 2021.'
+    profile_photo: https://github.com/rmurphey.png?size=200
+  road_and_track_news:
     feed_url: https://www.roadandtrack.com/rss/news.xml
-    homepage_url: https://www.roadandtrack.com/news
-    display_name: News - Road & Track
-    summary: RSS feed for News - Road & Track
-  roadlesstravelled_me:
+    homepage_url: https://www.roadandtrack.com/news/
+    display_name: Road & Track - News
+    summary: Road & Track's automotive-news feed covering performance cars, motorsport, industry developments, and new vehicles.
+    profile_photo: https://www.roadandtrack.com/_assets/design-tokens/roadandtrack/static/images/apple-touch-icon.7f4e055.png
+  road_less_travelled:
     feed_url: https://roadlesstravelled.me/feed/
     homepage_url: https://roadlesstravelled.me
     display_name: Road Less Travelled
-    summary: Wander profoundly, travel deeply, surrender wholly of don't go at all... Take the Road Less Travelled. Awe-inspiring stories, photos and media from the most incredible destinations and cultures on planet earth.
-  roadmap_space:
+    summary: 'Road Less Travelled''s personal travel stories and photography, including camping, destinations, flights, and cultural experiences. Latest feed post: April 2025.'
+    profile_photo: https://i0.wp.com/roadlesstravelled.me/wp-content/uploads/2019/03/cropped-icon.png?fit=32%2C32&ssl=1
+  roadmap:
     feed_url: https://roadmap.space/index.xml
     homepage_url: https://roadmap.space
-    display_name: Public Roadmap Tool on Roadmap
-    summary: Recent content in Public Roadmap Tool on Roadmap
-  roadtolarissa:
+    display_name: Roadmap
+    summary: 'Official Roadmap articles on public product roadmaps, customer feedback, APIs, and product-management workflows. Latest feed post: March 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Froadmap.space&size=128
+  adam_pearce:
     feed_url: https://roadtolarissa.com/rss.xml
     homepage_url: https://roadtolarissa.com
-    display_name: roadtolarissa
-    summary: Charts from Adam Pearce
-  rknight_me:
+    display_name: Adam Pearce - roadtolarissa
+    summary: 'Adam Pearce''s interactive charts and data-visualization projects on elections, programming, sports, and other topics. Feed is not chronologically ordered; newest listed project: December 2024.'
+  robb_knight:
     feed_url: https://rknight.me/subscribe/posts/atom.xml
     homepage_url: https://rknight.me
-    display_name: Robb Knight • Posts • Atom Feed
-    summary: Updates from Robb Knight • Posts • Atom Feed.
-  robdelaney_tumblr:
+    display_name: Robb Knight
+    summary: Robb Knight's personal blog on web projects, software, gadgets, photography, fundraising, and family life. His original Just Delete Me article survives on rknight.me; robblewis.me is now parked.
+    profile_photo: https://rknight.me/assets/icons/apple-touch-icon.png
+  rob_delaney:
     feed_url: https://robdelaney.tumblr.com/rss
     homepage_url: https://robdelaney.tumblr.com
     display_name: Rob Delaney
-    summary: Updates from Rob Delaney.
-  robdodson_me:
+    summary: 'Rob Delaney''s archived Tumblr posts on politics, mental health, personal life, and advocacy. Latest feed post: October 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frobdelaney.tumblr.com&size=128
+  rob_dodson:
     feed_url: https://robdodson.me/feed.xml
     homepage_url: https://robdodson.me
     display_name: Rob Dodson
-    summary: Updates from Rob Dodson.
-  robertchen_cc:
+    summary: Rob Dodson's posts on front-end development, accessibility, software tools, AI, and personal knowledge management.
+    profile_photo: https://robdodson.me/images/favicon.png
+  robert_chen:
     feed_url: https://robertchen.cc/feed.xml
     homepage_url: https://robertchen.cc/blog
-    display_name: robertchen.cc
-    summary: A collection of some thoughts, occasionally security related
-  robertgreiner:
+    display_name: Robert Chen
+    summary: 'Robert Chen''s archived security research, bug-bounty writeups, and capture-the-flag challenge analyses. Latest feed post: November 2021.'
+    profile_photo: https://robertchen.cc/apple-touch-icon.png
+  robert_greiner:
     feed_url: https://robertgreiner.com/rss.xml
     homepage_url: https://robertgreiner.com
     display_name: Robert Greiner
-    summary: I write about AI strategy, leadership, and technology.
-  robertmuth_blogspot:
+    summary: Robert Greiner's essays on AI strategy, engineering, leadership, and technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frobertgreiner.com&size=128
+  robert_muth:
     feed_url: https://robertmuth.blogspot.com/feeds/posts/default
     homepage_url: https://robertmuth.blogspot.com
     display_name: Robert Muth
-    summary: Updates from Robert Muth.
-  robkhenderson:
+    summary: 'Robert Muth''s archived programming, Bash, graphics, and generative-art posts. Latest feed post: December 2018.'
+  rob_hendersons_newsletter:
     feed_url: https://www.robkhenderson.com/feed
     homepage_url: https://www.robkhenderson.com
     display_name: Rob Henderson's Newsletter
-    summary: Human nature, psychology, social class, luxury beliefs, and more.
+    summary: Rob Henderson's essays and recommendations on psychology, human nature, social class, status, and luxury beliefs.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!iYEh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb086e97c-7d83-4264-b7a3-cf251819fae3%2Fapple-touch-icon-57x57.png
   robohub:
     feed_url: https://robohub.org/feed/
     homepage_url: https://robohub.org
     display_name: Robohub
-    summary: Connecting the robotics community to the world
-  robotrising:
-    feed_url: https://robotrising.org/feed/
-    homepage_url: http://robotrising.org
-    display_name: RobotRising
-    summary: High Altitude Adventures
-  punklabs:
+    summary: Robohub news, research summaries, interviews, and podcasts covering robotics, autonomous systems, and the robotics community.
+    profile_photo: https://robohub.org/wp-content/themes/apx/_images/_x/favicon32sq_r.png
+  punk_labs:
     feed_url: https://punklabs.com/rss
     homepage_url: https://punklabs.com
     display_name: Punk Labs
-    summary: The latest news about Punk Labs games and software.
+    summary: Official Punk Labs news on games, audio plugins, software releases, and studio commentary. RocketDock's former site redirects to the developer's RocketDock page; this feed covers the studio, not just RocketDock.
+    profile_photo: https://punklabs.com/apple-touch-icon.png
   rockyourcode:
     feed_url: https://www.rockyourcode.com/index.xml
     homepage_url: https://www.rockyourcode.com
     display_name: rockyourcode
-    summary: Recent content on rockyourcode
+    summary: rockyourcode programming notes on web development, Linux, editors, self-hosting, security, and developer tools.
+    profile_photo: https://www.rockyourcode.com/favicons/apple-touch-icon.png
   paloma_kop:
     feed_url: https://palomakop.tv/rss.xml
     homepage_url: https://palomakop.tv/
