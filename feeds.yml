@@ -20643,256 +20643,273 @@ bots:
     homepage_url: https://liquidbrain.net/
     display_name: liquidbrain
     summary: Essays on mathematics, programming, music, and community.
-  rogerebert:
+  roger_ebert:
     feed_url: https://www.rogerebert.com/feed
     homepage_url: https://www.rogerebert.com
-    display_name: Roger Ebert
-    summary: Movie reviews and ratings by Film Critic Roger Ebert
-  rogerhub_com__r:
+    display_name: RogerEbert.com
+    summary: Movie reviews, film criticism, festival coverage, interviews, and entertainment news from the contributors to RogerEbert.com.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.rogerebert.com&size=128
+  roger_chen_sysadmin:
     feed_url: https://rogerhub.com/~r/sysadmin/atom.xml
-    homepage_url: https://rogerhub.com/~r
-    display_name: /~r/sysadmin/
-    summary: Updates from /~r/sysadmin/.
-  rohitbhargava:
+    homepage_url: https://rogerhub.com/~r/sysadmin/
+    display_name: Roger Chen - Sysadmin
+    summary: 'Roger Chen''s archived technical articles on system administration, security, software bugs, cloud services, and developer tools. Latest feed article: August 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frogerhub.com%2F~r&size=128
+  non_obvious_insights_blog:
     feed_url: https://rohitbhargava.com/feed/
     homepage_url: https://rohitbhargava.com
     display_name: Non-Obvious Insights Blog
     summary: Helping readers be more interesting since 2005. Non-obvious ideas on trends, marketing, innovation and culture from Rohit Bhargava.
-  romeda:
-    feed_url: https://romeda.org/?feed=rss2
-    homepage_url: https://romeda.org
-    display_name: Romeda
-    summary: Updates from Romeda.
+    profile_photo: https://rohitbhargava.com/assets/img/blog-bulb.png
   romly:
-    feed_url: https://romly.com/feed
-    homepage_url: https://romly.com
+    feed_url: https://romly.com/blog/index.xml
+    homepage_url: https://romly.com/blog/
     display_name: Romly
-    summary: Love Keyboards, 3D printing, etc...
-  rosenfeldmedia:
+    summary: Romly's mostly Japanese-language articles on mechanical keyboards, electronics, 3D printing, DIY projects, computers, and programming; the official Hugo successor to the WordPress blog.
+    profile_photo: https://romly.com/blog/site_icon.png
+  rosenfeld_media:
     feed_url: https://rosenfeldmedia.com/feed/
     homepage_url: https://rosenfeldmedia.com
     display_name: Rosenfeld Media
-    summary: We connect people interested in designing better user experiences with the best expertise available
-  alyssarosenzweig_ca:
+    summary: Rosenfeld Media publishes user-experience and design books, author interviews, podcasts, book excerpts, and professional-development news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frosenfeldmedia.com&size=128
+  alyssa_rosenzweig:
     feed_url: https://alyssarosenzweig.ca/feed.xml
     homepage_url: https://alyssarosenzweig.ca
     display_name: Alyssa Rosenzweig
-    summary: Musing of a graphics witch
-  rotub_me:
-    feed_url: https://rotub.me/feed/
-    homepage_url: https://rotub.me
-    display_name: DA88
-    summary: Updates from DA88.
+    summary: Alyssa Rosenzweig writes about graphics drivers, GPU reverse engineering, Asahi Linux, Vulkan, and computer security.
+    profile_photo: https://alyssarosenzweig.ca/licorne-32.png
   routerjockey:
     feed_url: https://routerjockey.com/index.xml
     homepage_url: https://routerjockey.com
-    display_name: routerjockey
-    summary: Recent posts on routerjockey
-  pingdom:
+    display_name: RouterJockey
+    summary: Network-engineering articles on routing, switching, security, infrastructure, automation, and home labs from RouterJockey.
+    profile_photo: https://routerjockey.com/images/favicon_hu_799c7d0098b003b1.png
+  pingdom_blog:
     feed_url: https://www.pingdom.com/blog/feed/
     homepage_url: https://www.pingdom.com/blog
-    display_name: Blog Posts Archive - Pingdom
-    summary: Website Performance and Availability Monitoring | Pingdom
-  royalboiler_tumblr:
+    display_name: Pingdom Blog
+    summary: Official Pingdom articles about website availability, performance monitoring, cloud disruptions, and web operations; successor to Pingdom Royal.
+    profile_photo: https://www.pingdom.com/wp-content/uploads/2024/01/cropped-SW_Logo_Stacked_Web_Orange-180x180.png
+  brandon_graham:
     feed_url: https://royalboiler.tumblr.com/rss
-    homepage_url: https://royalboiler.tumblr.com
-    display_name: BRANDON GRAHAM
-    summary: hellloo I’m Brandon Graham. I make comics. King city, Multiple Warheads, Prophet, Walrus, Escalator etc.
-  roylines:
+    homepage_url: https://www.tumblr.com/royalboiler
+    display_name: Brandon Graham
+    summary: 'Brandon Graham''s archived Tumblr of comics, drawings, reblogs, interviews, and event announcements. Latest feed post: July 2024.'
+    profile_photo: https://api.tumblr.com/v2/blog/royalboiler.tumblr.com/avatar/128
+  roy_lines:
     feed_url: https://roylines.co.uk/feed.xml
     homepage_url: https://roylines.co.uk
-    display_name: 'Roy Lines: Consultant CTO, Cloud Architect and Devops Specialist'
-    summary: Advisor at Digital McKinsey. Creating high scale systems for money and playing with robots for fun.
-  rpbouman_blogspot:
+    display_name: Roy Lines
+    summary: 'Roy Lines''s archived writing on software development, AWS, infrastructure automation, Node.js, and engineering events. Latest feed post: September 2015.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Froylines.co.uk&size=128
+  roland_boumans_blog:
     feed_url: https://rpbouman.blogspot.com/feeds/posts/default
     homepage_url: https://rpbouman.blogspot.com
     display_name: Roland Bouman's blog
-    summary: Updates from Roland Bouman's blog.
-  rrvs_blogspot:
+    summary: Roland Bouman writes about SQL, MySQL, DuckDB, analytics, query performance, business intelligence, and software development.
+  random_ravings:
     feed_url: http://feeds.feedburner.com/rrvs
-    homepage_url: http://rrvs.blogspot.com
+    homepage_url: https://rrvs.blogspot.com
     display_name: Random Ravings
-    summary: Updates from Random Ravings.
-  rte_ie:
+    summary: 'Archived Random Ravings articles on video games, reviews, guides, giveaways, and World of Warcraft. Latest feed post: May 2022.'
+  rte_news:
     feed_url: https://www.rte.ie/feeds/rss/?index=/news/
     homepage_url: https://www.rte.ie/news
-    display_name: News Headlines
-    summary: Updates from News Headlines.
+    display_name: RTE News
+    summary: Irish and international news, politics, courts, business, science, and current affairs from Ireland's public-service broadcaster RTE.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.rte.ie%2Fnews&size=128
   rtings:
     feed_url: https://www.rtings.com/latest-rss.xml
     homepage_url: https://www.rtings.com
-    display_name: Rtings.com - Latest Reviews
-    summary: Straight to the point buying recommendations. We purchase our own products and put them under the same test bench, so that you can compare the results easily. No cherry-picked units sent by brands. Only real tests.
+    display_name: RTINGS.com
+    summary: RTINGS.com's latest independently tested consumer-product reviews, including audio equipment, displays, computers, peripherals, and home appliances.
+    profile_photo: https://i.rtings.com/assets/favicon/current/apple-icon-57x57-43c13a786f7341d3e5ae53df2f00f731de0b409c2bf9a1990b27bee5d5398ffd.png
   rubinius:
     feed_url: https://rubinius.com/rss.xml
-    homepage_url: https://rubinius.com
-    display_name: Vivarium AI Blog
-    summary: An experimental platform for real AI.
+    homepage_url: https://rubinius.com/blog/
+    display_name: Rubinius Blog
+    summary: Official Rubinius project articles on its revival, compiler and parser development, language infrastructure, build tooling, and software versioning. Feed entries correspond to November 2025 articles.
+    profile_photo: https://github.com/rubinius.png?size=200
   rubymotion:
     feed_url: http://www.rubymotion.com/news/rss.xml
     homepage_url: http://www.rubymotion.com
     display_name: RubyMotion
-    summary: RSS feed for RubyMotion
+    summary: 'Archived official RubyMotion announcements and tutorials about native mobile apps, game development, and Ruby tooling. Latest feed article: December 2015.'
+    profile_photo: http://www.rubymotion.com/img/favicon-32x32.png
   ruchirablog:
     feed_url: https://feeds.feedburner.com/Ruchirablog
     homepage_url: https://ruchirablog.com
-    display_name: Ruchirablog | Servers,SEO,WebApps Gadgets and more!
-    summary: Updates from Ruchirablog | Servers,SEO,WebApps Gadgets and more!.
-  rudebaguette:
+    display_name: Ruchirablog
+    summary: 'Archived Ruchirablog articles on Linux servers, hosting, web applications, WordPress, and technology. Latest feed article: October 2013.'
+  rude_baguette:
     feed_url: https://www.rudebaguette.com/feed/
     homepage_url: https://www.rudebaguette.com
     display_name: Rude Baguette
-    summary: Rude Baguette
-  ruleant_blogspot:
+    summary: Rude Baguette covers technology, startups, cybersecurity, AI, business, and digital culture; the current feed is primarily French-language.
+    profile_photo: https://www.rudebaguette.com/wp-content/uploads/2025/04/cropped-favicon_original_style_500x500-180x180.png
+  pool_of_oblivion:
     feed_url: http://feeds.feedburner.com/poolofoblivion
-    homepage_url: http://ruleant.blogspot.com
+    homepage_url: https://ruleant.blogspot.com
     display_name: Pool of oblivion
-    summary: Updates from Pool of oblivion.
-  rulethepla:
+    summary: 'Dieter Adriaenssens''s archived Pool of oblivion blog on open-source software, technology, climbing, travel, and yearly reflections. Latest feed post: August 2018.'
+  wow_great_stuff:
     feed_url: https://rulethepla.net/rss/
     homepage_url: https://rulethepla.net
     display_name: Wow Great Stuff
-    summary: Some good ideas, some bad ideas, but definitely - ideas.
-  rushi_wordpress:
+    summary: Personal essays from Wow Great Stuff about software, Apple products, work, learning, and everyday ideas.
+    profile_photo: https://rulethepla.net/content/images/size/w256h256/format/jpeg/2025/02/sunny-day-cropped.jpg
+  rushis_ramblings:
     feed_url: https://rushi.wordpress.com/feed/
     homepage_url: https://rushi.wordpress.com
     display_name: Rushi's Ramblings
-    summary: The ramblings of a Web Developer, Mac Enthusiast, coffee junkie and all-round sarcastic sour-puss
-  rushter:
+    summary: 'Archived Rushi''s Ramblings posts on web development, technology, sport, and personal life. Final feed post: January 2009, announcing a blog move.'
+  artem_golubin:
     feed_url: https://rushter.com/blog/feed/
     homepage_url: https://rushter.com
     display_name: Artem Golubin
-    summary: Python, Machine learning, NLP, websec, etc.
-  ruslanspivak:
+    summary: Artem Golubin writes about cybersecurity, software engineering, Rust, Python, machine learning, and internet manipulation.
+    profile_photo: https://rushter.com/static/favicon.png
+  ruslans_blog:
     feed_url: https://ruslanspivak.com/feeds/all.atom.xml
     homepage_url: https://ruslanspivak.com
     display_name: Ruslan's Blog
-    summary: Updates from Ruslan's Blog.
-  rwmj_wordpress:
+    summary: Ruslan Spivak's tutorials and notes on interpreters, web servers, programming, mathematics, and books.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fruslanspivak.com&size=128
+  richard_wm_jones:
     feed_url: https://rwmj.wordpress.com/feed/
     homepage_url: https://rwmj.wordpress.com
     display_name: Richard WM Jones
-    summary: Virtualization, tools and tips
-  ryan_science:
+    summary: Richard W. M. Jones writes about virtualization, Linux, disk-image tools, RISC-V, software development, and technology.
+  ryan_fahey:
     feed_url: https://ryan.science/rss.xml
     homepage_url: https://ryan.science/blog
     display_name: Ryan Fahey
-    summary: My personal website, portfolio, and blog.
-  ryanabbott:
-    feed_url: https://ryanabbott.com/blog/feed/
-    homepage_url: https://ryanabbott.com
-    display_name: ryanabbott.com
-    summary: Updates from ryanabbott.com.
-  ryanarn_blogspot:
+    summary: Ryan Fahey's articles on hardware security, cryptographic keys, digital identity, and technology.
+    profile_photo: https://ryan.science/tessa.png
+  ryan_s_arnold_ryanarn:
     feed_url: https://ryanarn.blogspot.com/feeds/posts/default
     homepage_url: https://ryanarn.blogspot.com
     display_name: Ryan S. Arnold (ryanarn)
-    summary: Updates from Ryan S. Arnold (ryanarn).
-  ryancarson:
+    summary: 'Ryan S. Arnold''s archived technical articles on PowerPC, Linux, debugging, ABI details, and development tools. Latest feed post: July 2011.'
+  ryan_carson:
     feed_url: https://www.ryancarson.com/feed.xml
-    homepage_url: https://ryancarson.com
+    homepage_url: https://www.ryancarson.com
     display_name: Ryan Carson
-    summary: Ryan Carson's blog
-  ryanholiday:
+    summary: Ryan Carson's articles on entrepreneurship, Treehouse, company culture, software products, and AI coding-agent workflows, including republished earlier essays.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fryancarson.com&size=128
+  ryan_holiday:
     feed_url: https://ryanholiday.net/feed/atom/
     homepage_url: https://ryanholiday.net
-    display_name: RyanHoliday.net
-    summary: Updates from RyanHoliday.net.
-  ryanleecarson_tumblr:
+    display_name: Ryan Holiday
+    summary: Ryan Holiday writes about Stoic philosophy, books, personal development, discipline, work, and everyday life.
+    profile_photo: https://ryanholiday.net/wp-content/uploads/2018/04/favicon41.gif
+  the_naive_optimist:
     feed_url: https://ryanleecarson.tumblr.com/rss
-    homepage_url: https://ryanleecarson.tumblr.com
-    display_name: The Naive Optimist
-    summary: The blog of Ryan Carson. I’m a Father, entrepreneur and lover of movies. Co-Founder and CEO of Treehouse.
+    homepage_url: https://www.tumblr.com/ryanleecarson
+    display_name: The Naive Optimist - Ryan Carson (archive)
+    summary: 'Ryan Carson''s archived The Naive Optimist Tumblr on Treehouse, management, entrepreneurship, technology, fitness, and family. Latest feed post: January 2016.'
+    profile_photo: https://api.tumblr.com/v2/blog/ryanleecarson.tumblr.com/avatar/128
   rz01:
     feed_url: https://rz01.org/index.xml
     homepage_url: https://rz01.org
     display_name: rz01.org
-    summary: Recent content on rz01.org
-  sabrinas_space:
-    feed_url: https://sabrinas.space/?feed=rss2
-    homepage_url: https://sabrinas.space
-    display_name: sabrinas.space
-    summary: Updates from sabrinas.space.
-  sacbear:
+    summary: Personal writing and projects at rz01.org about amateur radio, satellites, electronics, Linux, self-hosting, computer security, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frz01.org&size=128
+  the_sacramento_bear:
     feed_url: https://www.sacbear.com/feed/
     homepage_url: https://www.sacbear.com
     display_name: The Sacramento Bear
-    summary: Updates from The Sacramento Bear.
-  sacks_substack:
+    summary: Independent analysis from The Sacramento Bear on consumer infrastructure and accountability, including ISP reliability and automotive problems.
+    profile_photo: https://i0.wp.com/www.sacbear.com/wp-content/uploads/2021/06/cropped-sacbear-logo.png?fit=180%2C180&ssl=1
+  bottom_up_by_david_sacks:
     feed_url: https://sacks.substack.com/feed
     homepage_url: https://sacks.substack.com
     display_name: Bottom Up by David Sacks
-    summary: Playbooks for building software companies.
-  sageadvice_eu:
+    summary: 'David Sacks''s Bottom Up essays and playbooks on SaaS companies, sales, organizational structure, product strategy, and startup growth. Latest feed post: October 2024.'
+    profile_photo: https://substackcdn.com/image/fetch/$s_!6N51!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F18786312-85ec-48b7-94d0-22818a585c2f%2Fapple-touch-icon-57x57.png
+  d_and_d_sage_advice:
     feed_url: https://www.sageadvice.eu/feed/
     homepage_url: https://www.sageadvice.eu
     display_name: D&D Sage Advice
     summary: Questions on Dungeons & Dragons answered by game designers
-  sahandsaba:
+    profile_photo: https://i0.wp.com/www.sageadvice.eu/wp-content/uploads/2019/01/cropped-ZOLTAR_SageAdvice_S.png?fit=180%2C180&ssl=1
+  math_code_by_sahand_saba:
     feed_url: https://sahandsaba.com/feeds/all.atom.xml
     homepage_url: https://sahandsaba.com
-    display_name: Math ∪ Code by Sahand Saba
-    summary: Updates from Math ∪ Code by Sahand Saba.
-  sakurity:
+    display_name: Math and Code by Sahand Saba
+    summary: Sahand Saba writes about mathematics, programming, algorithms, databases, Python, and AI systems.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsahandsaba.com&size=128
+  the_sakurity_blog:
     feed_url: https://sakurity.com/blog/feed.xml
     homepage_url: https://sakurity.com/blog
     display_name: The Sakurity Blog
-    summary: Boutique infosec consultancy
-  salvis:
+    summary: 'Archived Sakurity research on web security, penetration testing, authentication, browser vulnerabilities, and exploitation. Latest feed article: December 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsakurity.com%2Fblog&size=128
+  philipp_salvisbergs_blog:
     feed_url: https://www.salvis.com/blog/feed/
     homepage_url: https://www.salvis.com/blog
     display_name: Philipp Salvisberg's Blog
-    summary: Database-centric development
-  sammachin:
+    summary: Philipp Salvisberg writes about database-centric development, Oracle, SQL, SQLcl, JVM languages, and developer tooling.
+    profile_photo: https://www.salvis.com/blog/wp-content/uploads/2014/04/favicon.png
+  sam_machin:
     feed_url: https://www.sammachin.com/index.xml
     homepage_url: https://www.sammachin.com
-    display_name: Welcome on Sam Machin
-    summary: Recent content in Welcome on Sam Machin
-  samuel_warde:
-    feed_url: https://samuel-warde.com/feed/
-    homepage_url: https://samuel-warde.com
-    display_name: Digital Solutions
-    summary: Transforming Digital Potential into Business Success
-  samuelstern_wordpress:
+    display_name: Sam Machin
+    summary: Sam Machin's technical projects and notes on Alexa, telephony, embedded hardware, pagers, amateur radio, and web integrations.
+    profile_photo: https://github.com/sammachin.png?size=200
+  the_art_of_living:
+    feed_url: https://www.newsletter.samuel-warde.com/feed
+    homepage_url: https://www.newsletter.samuel-warde.com
+    display_name: The Art of Living - Samuel Wynn Warde
+    summary: Samuel Wynn Warde's liberal and progressive commentary on US politics, civil rights, activism, media, and current events; his current official newsletter.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!RFJE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe392aae1-fff3-44f2-85d3-fa08816c2dfe%2Fapple-touch-icon-180x180.png
+  sam_stern:
     feed_url: https://samuelstern.wordpress.com/feed/
     homepage_url: https://samuelstern.wordpress.com
     display_name: Sam Stern
-    summary: Projects, musings, and more
-  samxli_tumblr:
+    summary: 'Sam Stern''s archived posts about software development, web applications, Android devices, and programming. Latest feed post: March 2014.'
+  ideations:
     feed_url: https://samxli.tumblr.com/rss
-    homepage_url: https://samxli.tumblr.com
-    display_name: Ideations
-    summary: 'Sam’s various thoughts and ideas. About the author: www.samxli.com'
-  sanarias:
+    homepage_url: https://www.tumblr.com/samxli
+    display_name: Ideations - Sam Li
+    summary: 'Sam Li''s archived Ideations Tumblr of data visualizations and commentary on employment, technology, business, and history. Latest feed post: September 2015.'
+    profile_photo: https://api.tumblr.com/v2/blog/samxli.tumblr.com/avatar/128
+  santiago_arias:
     feed_url: https://www.sanarias.com/blog/rss
     homepage_url: https://www.sanarias.com/blog
     display_name: Santiago Arias's blog
-    summary: Santiago Arias's blog
-  sandersak_posthaven:
+    summary: 'Santiago Arias''s archived articles on Go, HTTP caching, web services, gRPC, programming, and personal projects. Latest feed post: December 2016.'
+    profile_photo: https://www.sanarias.com/static/ico/apple-touch-icon-144-precomposed.png
+  text_from_sandersak:
     feed_url: https://sandersak.posthaven.com/posts.atom
     homepage_url: https://sandersak.posthaven.com
     display_name: text from sandersak
-    summary: Updates from text from sandersak.
-  sandyuraz:
+    summary: 'Archived text from sandersak essays about startup life, Y Combinator applications, product development, and entrepreneurship. Latest feed post: May 2014.'
+  sandys_website:
     feed_url: https://sandyuraz.com/feed.xml
     homepage_url: https://sandyuraz.com
-    display_name: Sandy’s Website ⛩️
-    summary: Visitor... Welcome to my Pink Lounge. This place exists between dream and reality, mind and matter. I hope you enjoy ...
-  sanremouk:
+    display_name: Sandy's Website
+    summary: Sandy's personal essays, short stories, software projects, film and book criticism, anime notes, cooking, and cocktail recipes.
+    profile_photo: https://sandyuraz.com/assets/apple-touch-icon.png
+  sanremo_uk:
     feed_url: https://www.sanremouk.com/feed/
     homepage_url: https://www.sanremouk.com
     display_name: Sanremo UK
-    summary: Sanremo Coffee Machines
-  santamariatimes:
-    feed_url: https://santamariatimes.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
-    homepage_url: https://santamariatimes.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
-    display_name: 'santamariatimes.com - RSS Results of type article with keyword(s) of #topstory'
-    summary: 'santamariatimes.com - RSS Results only for asset type(s) of article with keyword(s) of #topstory'
-  sashalaundy:
+    summary: Official Sanremo UK news about espresso machines, grinders, coffee events, partnerships, and the coffee industry.
+    profile_photo: https://www.sanremouk.com/wp-content/uploads/2020/06/SanremoUK_Logo_Black-2.png
+  santa_maria_times:
+    feed_url: https://santamariatimes.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc
+    homepage_url: https://santamariatimes.com
+    display_name: Santa Maria Times
+    summary: Santa Maria Times articles covering local and regional news, sports, and Associated Press national and international reporting.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsantamariatimes.com%2Fsearch%2F%3Ff%3Drss%26t%3Darticle%26l%3D50%26s%3Dstart_time%26sd%3Ddesc%26k%255B%255D%3D%2523topstory&size=128
+  sasha_laundy:
     feed_url: https://sashalaundy.com/rss/
     homepage_url: https://sashalaundy.com
     display_name: Sasha Laundy
     summary: Leadership coaching for data teams and beyond
+    profile_photo: https://storage.ghost.io/c/b2/87/b2873496-575e-49b0-b315-9cf8a10d8011/content/images/size/w256h256/2023/02/apple-touch-icon-1.png
   the_slow_path:
     feed_url: https://theslowpath.pages.dev/index.xml
     homepage_url: https://theslowpath.pages.dev/
