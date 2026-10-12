@@ -21768,6 +21768,273 @@ bots:
     display_name: Tierney Cyren
     summary: JavaScript, developer tools, and open protocols.
     profile_photo: https://bnb.im/img/small-card.png
+  chris_hulbert:
+    feed_url: https://feeds.feedburner.com/splintersw
+    homepage_url: https://www.splinter.com.au/
+    display_name: Chris Hulbert - Splinter Software
+    summary: Chris Hulbert's programming articles on Swift, iOS development, software architecture, concurrency, and developer tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.splinter.com.au&size=128
+  pixivision:
+    feed_url: https://www.pixivision.net/en/rss
+    homepage_url: https://www.pixivision.net/en/
+    display_name: pixivision
+    summary: English-language pixivision features on illustrations, manga, artists, creative techniques, and visual themes, continuing pixiv Spotlight.
+    profile_photo: https://s.pximg.net/pixivision/images/sp/apple-touch-icon.png
+  sprintly:
+    feed_url: https://sprint.ly/blog/feed/
+    homepage_url: https://sprint.ly/blog
+    display_name: Sprintly
+    summary: 'Archived official Sprintly product announcements, project-management advice, and software-team practices. Latest feed post: October 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsprint.ly%2Fblog&size=128
+  squashed:
+    feed_url: https://squashed.tumblr.com/rss
+    homepage_url: https://squashed.tumblr.com
+    display_name: Squashed
+    summary: 'Squashed''s archived commentary and humor about politics, law, religion, and current affairs. Latest feed post: October 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsquashed.tumblr.com&size=128
+  squirming:
+    feed_url: https://www.squirming.net/feed/
+    homepage_url: https://www.squirming.net
+    display_name: Squirming
+    summary: Squirming's short satirical posts about startups, AI, and politics, published under the name a bag of eels. The feed contains three posts from May-June 2023.
+  stabyourself_net:
+    feed_url: https://blog.stabyourself.net/rss
+    homepage_url: https://stabyourself.net
+    display_name: Stabyourself.net
+    summary: 'Archived Stabyourself.net game-development news about Mari0, Timelines, arcade projects, and releases. Latest feed post: September 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstabyourself.net&size=128
+  stack_exchange_hot_questions:
+    feed_url: https://stackexchange.com/feeds/questions
+    homepage_url: https://stackexchange.com
+    display_name: Stack Exchange Hot Questions
+    summary: Popular questions and discussions from across the Stack Exchange network, linking to their original community sites.
+    profile_photo: https://cdn.sstatic.net/Sites/stackexchange/Img/apple-touch-icon.png
+  stackify:
+    feed_url: https://stackify.com/feed/
+    homepage_url: https://stackify.com
+    display_name: Stackify
+    summary: 'Stackify''s archived developer tutorials and articles on application performance monitoring, Retrace, debugging, and DevOps. Latest feed post: March 2025.'
+    profile_photo: https://stackify.com/wp-content/uploads/2023/02/favicon.png
+  stacking_the_bricks:
+    feed_url: https://stackingthebricks.com/atom.xml
+    homepage_url: https://stackingthebricks.com
+    display_name: Stacking the Bricks
+    summary: 'Amy Hoy and Alex Hillman''s articles on bootstrapping businesses, building products, finding customers, and entrepreneurship. Latest feed post: January 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstackingthebricks.com&size=128
+  tumblr_staff:
+    feed_url: https://staff.tumblr.com/rss
+    homepage_url: https://staff.tumblr.com
+    display_name: Tumblr Staff
+    summary: Official Tumblr Staff announcements about product features, community updates, and platform changes.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstaff.tumblr.com&size=128
+  staff_engineer:
+    feed_url: https://staffeng.com/index.xml
+    homepage_url: https://staffeng.com
+    display_name: Staff Engineer
+    summary: 'Will Larson''s Staff Engineer interviews and guides about staff-plus engineering careers and technical leadership. Latest feed entry: October 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstaffeng.com&size=128
+  richard_stallmans_political_notes:
+    feed_url: https://stallman.org/rss/rss.xml
+    homepage_url: https://stallman.org/archives/polnotes.html
+    display_name: Richard Stallman's Political Notes
+    summary: Richard Stallman's political commentary, news links, petitions, and notes on civil liberties, society, and world affairs.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstallman.org%2Farchives%2Fpolnotes.html&size=128
+  standards_manual:
+    feed_url: https://standardsmanual.com/blogs/news.atom
+    homepage_url: https://standardsmanual.com/blogs/news
+    display_name: Standards Manual
+    summary: Standards Manual's news about graphic-design history, book releases, archival projects, and design events.
+    profile_photo: https://standardsmanual.com/cdn/shop/t/101/assets/apple-touch-icon.png?v=111883744603113829261781277168
+  starkey_comics:
+    feed_url: https://starkeycomics.com/feed/
+    homepage_url: https://starkeycomics.com
+    display_name: Starkey Comics
+    summary: Ryan Starkey's illustrated maps, etymologies, comics, and explainers about language, geography, history, and culture.
+    profile_photo: https://i0.wp.com/starkeycomics.com/wp-content/uploads/2018/12/cropped-Logo-jpg-4-1.jpg?fit=180%2C180&ssl=1
+  kens_programming_blog:
+    feed_url: https://startingdotneprogramming.blogspot.com/feeds/posts/default
+    homepage_url: https://startingdotneprogramming.blogspot.com
+    display_name: Ken's Programming Blog
+    summary: 'Ken''s archived programming essays on software engineering, developer practices, and the working lives of programmers. Latest feed post: June 2021.'
+  andrew_lee:
+    feed_url: https://startupandrew.com/index.xml
+    homepage_url: https://startupandrew.com
+    display_name: Andrew Lee's Blog
+    summary: 'Andrew Lee''s archived essays about Firebase, engineering interviews, startups, investing, and personal projects. Latest feed post: September 2019.'
+  lessons_learned:
+    feed_url: https://feeds.feedburner.com/startup/lessons/learned
+    homepage_url: https://www.startuplessonslearned.com/
+    display_name: Lessons Learned - Eric Ries
+    summary: Eric Ries's Lessons Learned essays on startups, lean product development, corporate governance, entrepreneurship, and his books.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.startuplessonslearned.com&size=128
+  startuptools:
+    feed_url: https://startuptools.pbworks.com/w/feed/rss
+    homepage_url: http://startuptools.pbworks.com
+    display_name: Startup Tools
+    summary: Recent edits to the Startup Tools community wiki, a curated directory of technical and business tools for startups.
+  start_your_own_isp:
+    feed_url: https://startyourownisp.com/index.xml
+    homepage_url: https://startyourownisp.com
+    display_name: Start Your Own ISP
+    summary: 'Practical guides and resources for starting an internet service provider, including network planning, hardware, operations, and community links. Latest feed entry: November 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstartyourownisp.com&size=128
+  status_cafe:
+    feed_url: https://status.cafe/feed.atom
+    homepage_url: https://status.cafe
+    display_name: status.cafe
+    summary: The public status.cafe community stream of short personal updates, moods, and links from its users.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstatus.cafe&size=128
+  npm_status:
+    feed_url: https://status.npmjs.org/history.atom
+    homepage_url: https://status.npmjs.org
+    display_name: npm Status
+    summary: Official npm service incidents, scheduled maintenance, resolution updates, and postmortems for package publishing and installation.
+    profile_photo: https://dka575ofm4ao0.cloudfront.net/pages-favicon_logos/original/4668/social-square-for_small_sizes.png
+  slack_system_status:
+    feed_url: https://slack-status.com/feed/atom
+    homepage_url: https://slack-status.com
+    display_name: Slack System Status
+    summary: Official Slack service incidents, maintenance notices, resolution updates, and postmortems.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fslack-status.com&size=128
+  stavros_stuff:
+    feed_url: https://www.stavros.io/feed/short/
+    homepage_url: https://www.stavros.io
+    display_name: Stavros' Stuff
+    summary: Stavros' Stuff articles about software development, personal technology projects, electronics, security, and AI tools.
+    profile_photo: https://www.stavros.io/static/images/favicons/apple-touch-icon.png?h=9b5552c9
+  stefan_schueller:
+    feed_url: https://stefan.schueller.net/index.xml
+    homepage_url: https://stefan.schueller.net
+    display_name: Stefan Schüller
+    summary: Stefan Schueller's personal writing about Linux, networking, technology projects, infrastructure, and visits to technical facilities.
+    profile_photo: https://www.gravatar.com/avatar/55582421b8a0c66c4d6324f1f4df581b?s=240&d=mp
+  peter_steinberger:
+    feed_url: https://steipete.me/rss.xml
+    homepage_url: https://steipete.me
+    display_name: Peter Steinberger
+    summary: Peter Steinberger's articles about AI coding agents, open-source tools, Swift and Apple platforms, and software development.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsteipete.me&size=128
+  steph_ango:
+    feed_url: https://stephango.com/feed.xml
+    homepage_url: https://stephango.com
+    display_name: Steph Ango
+    summary: Steph Ango's essays on design, creativity, software, tools, teamwork, and ways of thinking.
+    profile_photo: https://stephango.com/apple-touch-icon.png
+  too_stupid_to_travel:
+    feed_url: https://stephanpastis.wordpress.com/feed/
+    homepage_url: https://stephanpastis.wordpress.com
+    display_name: Too Stupid to Travel
+    summary: 'Cartoonist Stephan Pastis''s humorous travel essays on Too Stupid to Travel, continuing his former Pearls Before Swine blog. Latest feed post: July 2025.'
+    profile_photo: https://stephanpastis.wordpress.com/wp-content/uploads/2025/07/cropped-cropped-too-stupid-to-travel-1.jpg?w=180
+  stephen_searles:
+    feed_url: https://stephensearles.com/index.xml
+    homepage_url: https://stephensearles.com
+    display_name: Stephen Searles
+    summary: 'Stephen Searles''s archived programming articles about Go, web frameworks, self-hosted blogging, and developer tools. Latest feed post: September 2017.'
+  becky_stern:
+    feed_url: https://beckystern.com/feed/
+    homepage_url: https://beckystern.com
+    display_name: Becky Stern
+    summary: Becky Stern's DIY electronics, wearable technology, 3D printing, sewing, craft projects, tutorials, and videos.
+    profile_photo: https://i0.wp.com/beckystern.com/wp-content/uploads/2022/04/cropped-logo-square-black-on-white-512.png?fit=180%2C180&ssl=1
+  steven_shaw:
+    feed_url: https://steshaw.org/rss.xml
+    homepage_url: https://steshaw.org/
+    display_name: Steven Shaw
+    summary: 'Steven Shaw''s archived notes on programming languages, Haskell, developer tools, mathematics, and software practices. Latest feed post: August 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fsteshaw.org&size=128
+  steve_blank:
+    feed_url: https://steveblank.com/feed/
+    homepage_url: https://steveblank.com
+    display_name: Steve Blank
+    summary: Steve Blank's essays on entrepreneurship, customer development, innovation, startup education, AI, and national security.
+  steve_kinney:
+    feed_url: https://stevekinney.com/writing/rss
+    homepage_url: https://stevekinney.com
+    display_name: Steve Kinney
+    summary: Steve Kinney's software-development articles on web technology, developer tools, AI coding workflows, and personal projects.
+    profile_photo: https://stevekinney.com/favicon.png
+  steven_buccini:
+    feed_url: https://www.stevenbuccini.com/feed.xml
+    homepage_url: https://stevenbuccini.com
+    display_name: Steven Buccini
+    summary: 'Steven Buccini''s personal essays about software careers, technology projects, music, and everyday purchases. Latest feed post: December 2024.'
+    profile_photo: https://github.com/stevenbuccini.png?size=200
+  steven_crewniverse:
+    feed_url: https://stevencrewniverse.tumblr.com/rss
+    homepage_url: https://stevencrewniverse.tumblr.com
+    display_name: Steven Crewniverse
+    summary: 'Archived Steven Universe production artwork, storyboards, behind-the-scenes material, and crew reblogs. Latest feed post: February 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstevencrewniverse.tumblr.com&size=128
+  steven_harman:
+    feed_url: https://stevenharman.net/feed.xml
+    homepage_url: https://stevenharman.net
+    display_name: Steven Harman
+    summary: 'Steven Harman''s archived software-engineering notes on Ruby, testing, memory leaks, Git, and SSH. Latest feed post: August 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstevenharman.net&size=128
+  steves_computer_vision_blog:
+    feed_url: https://stevenhickson.blogspot.com/feeds/posts/default
+    homepage_url: https://stevenhickson.blogspot.com
+    display_name: Steves Computer Vision Blog
+    summary: 'Steve Hickson''s archived computer-vision, Raspberry Pi, electronics, and home-technology projects. Latest feed post: March 2021.'
+  steven_rosenbergs_shinobi_blog:
+    feed_url: https://stevenrosenberg.net/feed.xml
+    homepage_url: https://stevenrosenberg.net
+    display_name: Steven Rosenberg's Shinobi blog
+    summary: 'Steven Rosenberg''s plain-text Shinobi blog about RSS readers, Linux, programming, ham radio, and personal computing. Latest feed post: December 2024.'
+  steve_pavlina:
+    feed_url: https://stevepavlina.com/feed/
+    homepage_url: https://stevepavlina.com
+    display_name: Steve Pavlina
+    summary: Steve Pavlina's personal-development essays on productivity, relationships, work, lifestyle, spirituality, and conscious growth.
+    profile_photo: https://stevepavlina.com/wp-content/uploads/2025/01/cropped-Steve-Stonehenge-scaled-1-180x180.jpeg
+  steve_travale:
+    feed_url: https://stevetravale.com/feed/
+    homepage_url: https://stevetravale.com
+    display_name: Steve Travale
+    summary: 'Steve Travale''s archived sound-design and DIY music-electronics projects, including Eurorack builds, synthesizers, MIDI pedals, and enclosures. Latest feed post: March 2023.'
+    profile_photo: https://stevetravale.com/wp-content/uploads/2016/11/cropped-retina-logo-180x180.png
+  stitcher_io:
+    feed_url: https://stitcher.io/rss
+    homepage_url: https://stitcher.io
+    display_name: stitcher.io
+    summary: Brent Roose's stitcher.io articles about modern PHP, web development, programming, developer tools, and AI.
+    profile_photo: https://stitcher.io/favicon/apple-touch-icon.png
+  the_professors_blog:
+    feed_url: https://stitchescrafts.blogspot.com/feeds/posts/default
+    homepage_url: https://stitchescrafts.blogspot.com
+    display_name: The Professor's Blog
+    summary: 'The Atlanta Institute of Stitches and Crafts'' archived sewing, knitting, crochet, craft tutorials, workshops, and inspiration. Latest feed post: March 2014.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstitchescrafts.blogspot.com&size=128
+  st_louis_post_dispatch:
+    feed_url: https://www.stltoday.com/search/?f=rss&t=article&l=50&s=start_time&sd=desc&k%5B%5D=%23topstory
+    homepage_url: https://www.stltoday.com/
+    display_name: St. Louis Post-Dispatch
+    summary: St. Louis Post-Dispatch articles tagged topstory, covering local news, sports, and culture. This filtered feed mostly contains older stories; its latest dated item is August 2026.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.stltoday.com%2Fsearch%2F%3Ff%3Drss%26t%3Darticle%26l%3D50%26s%3Dstart_time%26sd%3Ddesc%26k%255B%255D%3D%2523topstory&size=128
+  stochastic_geometry:
+    feed_url: https://stochasticgeometry.wordpress.com/feed/
+    homepage_url: https://stochasticgeometry.wordpress.com
+    display_name: Stochastic Geometry
+    summary: Mark Dennehy's archived Stochastic Geometry posts on programming, systems administration, mathematics, and personal interests. This WordPress archive ends in February 2010 and announces a move to StochasticGeometry.ie.
+    profile_photo: https://secure.gravatar.com/blavatar/fb8cf4ad198b48d98c95069da657aba650a7c0624a046a7574ac06301523bead?s=114
+  andrew_clay_shafer:
+    feed_url: https://stochasticresonance.wordpress.com/feed/
+    homepage_url: https://stochasticresonance.wordpress.com
+    display_name: fate = will && choice || circumstance
+    summary: 'Andrew Clay Shafer''s archived essays on programming, people, startups, and OpenStack. Latest feed post: January 2014.'
+  storm_consultancy:
+    feed_url: https://stormconsultancy.co.uk/feed/
+    homepage_url: https://stormconsultancy.co.uk
+    display_name: Storm Consultancy
+    summary: Storm Consultancy's articles on web development, design, accessibility, technology, and agency news from Bath, UK.
+    profile_photo: https://stormconsultancy.co.uk/wp-content/uploads/2025/10/cropped-favicon-180x180.jpg
+  storming_the_ivory_tower:
+    feed_url: https://www.stormingtheivorytower.com/feeds/posts/default
+    homepage_url: https://www.stormingtheivorytower.com
+    display_name: Storming the Ivory Tower
+    summary: Storming the Ivory Tower's essays on film, animation, games, comics, music, politics, and pop-culture criticism.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.stormingtheivorytower.com&size=128
   sammy_straus:
     feed_url: https://www.sammystraus.com/feed.xml
     homepage_url: https://www.sammystraus.com/
