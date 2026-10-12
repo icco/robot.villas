@@ -2321,256 +2321,285 @@ bots:
     display_name: Dropbox Tech Blog
     summary: Engineering blog from Dropbox.
     profile_photo: https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/branding/app-dropbox-android.png
-  worldsciencefestival:
+  world_science_festival:
     feed_url: https://www.worldsciencefestival.com/feed/
     homepage_url: https://www.worldsciencefestival.com
     display_name: World Science Festival
-    summary: The World Science Foundation is a 501(c)(3) non-profit organization. Our mission is to cultivate a general public informed by science, inspired by its wonder, convinced of its value, and prepared to engage with its implications for the future.
-  wornandwound:
+    summary: Archived science articles and interviews from the World Science Festival; this feed ends in 2018.
+    profile_photo: https://www.worldsciencefestival.com/wp-content/themes/world-science-festival/images/logo.png
+  worn_and_wound:
     feed_url: https://wornandwound.com/feed/
     homepage_url: https://wornandwound.com
     display_name: Worn & Wound
-    summary: Updates from Worn & Wound.
-  worthdoingbadly:
+    summary: Watch reviews, industry news, collecting guides, and gear coverage from Worn & Wound.
+    profile_photo: https://wornandwound.com/library/uploads/2019/01/cropped-site_Favicon_w_111519-1-180x180.jpg
+  worth_doing_badly:
     feed_url: https://worthdoingbadly.com/feed.xml
     homepage_url: https://worthdoingbadly.com
     display_name: Worth Doing Badly
-    summary: Updates from Worth Doing Badly.
-  wpc_ncep_noaa_gov:
-    feed_url: http://www.wpc.ncep.noaa.gov/metwatch/mdrss.xml
-    homepage_url: http://www.wpc.ncep.noaa.gov
+    summary: Programming experiments, operating-system internals, and security research by Zhuowei Zhang.
+    profile_photo: https://github.com/zhuowei.png?size=200
+  wpc_mesoscale_precipitation_discussions:
+    feed_url: https://www.wpc.ncep.noaa.gov/metwatch/mdrss.xml
+    homepage_url: https://www.wpc.ncep.noaa.gov/metwatch/metwatch_mpd.php
     display_name: WPC Mesoscale Precipitation Discussions
-    summary: Weather Prediction Center - Mesoscale Precipitation Discussions
-  wpdh:
+    summary: Official NOAA Weather Prediction Center mesoscale precipitation discussions about heavy rainfall and flash-flood risks.
+    profile_photo: https://www.wpc.ncep.noaa.gov/images/xml_noaa_logo.gif
+  101_5_wpdh:
     feed_url: https://wpdh.com/feed/
     homepage_url: https://wpdh.com
-    display_name: 101.5 WPDH – The Home of Rock and Roll – Hudson Valley Classic Rock Radio
-    summary: The Home of Rock and Roll
-  overleaf:
+    display_name: 101.5 WPDH
+    summary: Hudson Valley local stories and classic-rock news from 101.5 WPDH in Poughkeepsie, New York.
+    profile_photo: https://townsquare.media/site/987/files/2026/01/attachment-900-24.jpg?w=57&h=57
+  overleaf_blog:
     feed_url: https://www.overleaf.com/blog/feed/
     homepage_url: https://www.overleaf.com
     display_name: Overleaf Blog
-    summary: Updates from Overleaf Blog.
-  writings_thisismissem_social:
+    summary: Product updates, LaTeX guidance, and company news from Overleaf, formerly writeLaTeX.
+    profile_photo: https://cdn.overleaf.com/apple-touch-icon.png
+  writings_of_emelia:
     feed_url: https://writings.thisismissem.social/rss/
     homepage_url: https://writings.thisismissem.social
     display_name: Writings of Emelia
-    summary: Thoughts, stories and ideas.
-  wrla_ch:
+    summary: Emelia Smith writes about the fediverse, decentralized-web standards, technology, and personal experiences.
+    profile_photo: https://www.gravatar.com/avatar/5af0c0726e36b785860aeefed798a8dd?s=250&r=x&d=mp
+  will_lachances_log:
     feed_url: https://wrla.ch/feeds/all.atom.xml
     homepage_url: https://wrla.ch
     display_name: Will Lachance's Log
-    summary: Updates from Will Lachance's Log.
-  wrvo:
-    feed_url: https://www.wrvo.org/news.rss
-    homepage_url: https://www.wrvo.org/news
-    display_name: News
-    summary: News
-  wtfpod:
-    feed_url: http://www.wtfpod.com/podcast?format=rss
-    homepage_url: http://www.wtfpod.com/podcast
-    display_name: Episodes - WTF with Marc Maron Podcast
-    summary: Updates from Episodes - WTF with Marc Maron Podcast.
-  wtop:
+    summary: Will Lachance writes about software, open source, AI-assisted development, and personal projects.
+  wrvo_regional_news:
+    feed_url: https://www.wrvo.org/regional-news.rss
+    homepage_url: https://www.wrvo.org/regional-news
+    display_name: WRVO Regional News
+    summary: Regional reporting on central and upstate New York from WRVO Public Media.
+    profile_photo: https://www.wrvo.org/apple-touch-icon.png
+  wtf_with_marc_maron:
+    feed_url: https://www.wtfpod.com/podcast?format=rss
+    homepage_url: https://www.wtfpod.com/podcast
+    display_name: WTF with Marc Maron
+    summary: Archived interviews and episode notes from WTF with Marc Maron, which concluded in October 2025.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.wtfpod.com%2Fpodcast&size=128
+  wtop_news:
     feed_url: https://wtop.com/feed/
     homepage_url: https://wtop.com
     display_name: WTOP News
-    summary: News Happens Here
-  wunder_schoenaberselten:
+    summary: Washington, DC-area local news, weather, transportation, and national and world reporting from WTOP.
+    profile_photo: https://wtop.com/wp-content/uploads/2026/08/favicon.png
+  wunderschoen_aber_selten:
     feed_url: https://wunder.schoenaberselten.com/feed/
     homepage_url: https://wunder.schoenaberselten.com
     display_name: wunderschoen aber selten
-    summary: very much alive. tales of time, tenderness, and trees
+    summary: Personal essays and short stories about life, time, tenderness, and trees.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwunder.schoenaberselten.com&size=128
   wundergraph:
     feed_url: https://wundergraph.com/atom.xml
     homepage_url: https://wundergraph.com
-    display_name: WunderGraph Feed
-    summary: Updates from WunderGraph Feed.
-  www3_planetcom:
+    display_name: WunderGraph
+    summary: Engineering articles, GraphQL federation guidance, and product and company news from WunderGraph.
+    profile_photo: https://wundergraph.com/favicon/apple-icon-57x57.png
+  planet_computers_archive:
     feed_url: https://www.www3.planetcom.co.uk/blog-feed.xml
     homepage_url: https://www.www3.planetcom.co.uk/news
-    display_name: Mysite
-    summary: Mysite
-  wyldcard:
+    display_name: Planet Computers News Archive
+    summary: Archived Planet Computers news about the Gemini PDA, Cosmo Communicator, accessories, and software; this feed ends in 2020.
+    profile_photo: https://static.wixstatic.com/media/ce2ef2_9f4e1d7b2b9945939aa075c04942a4da%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/ce2ef2_9f4e1d7b2b9945939aa075c04942a4da%7Emv2.png
+  wyldcard_blog:
     feed_url: https://www.wyldcard.io/rss.xml
     homepage_url: https://www.wyldcard.io
     display_name: Wyldcard Blog
-    summary: 'News and essays from Wyldcard: e-paper gaming cards and game design.'
+    summary: E-paper gaming cards, tabletop game design, and software projects from Wyldcard.
+    profile_photo: https://www.wyldcard.io/favicon.webp
   wyofile:
     feed_url: https://wyofile.com/feed/
     homepage_url: https://wyofile.com
     display_name: WyoFile
-    summary: An independent, reader-funded, non-profit news organization focused on the people, places, and policy of Wyoming.
-  xavigimenez:
-    feed_url: https://www.xavigimenez.net/blog/feed/
-    homepage_url: https://www.xavigimenez.net/blog
-    display_name: Xavi Gimenez
-    summary: Data Visualization and Interactive Stuff
-  xudongz:
+    summary: Independent nonprofit reporting on Wyoming politics, people, natural resources, wildlife, and public policy.
+    profile_photo: https://wyofile.com/wp-content/uploads/2021/09/cropped-wyofile-icon-180x180.png
+  xudong_zheng:
     feed_url: https://www.xudongz.com/blog/atom.xml
     homepage_url: https://www.xudongz.com
     display_name: Xudong Zheng
-    summary: Updates from Xudong Zheng.
+    summary: Archived posts by Xudong Zheng about security and computing, including Unicode-domain phishing and Vim with Colemak; this feed ends in 2017.
+    profile_photo: https://github.com/xudongzheng.png?size=200
   xuntos:
     feed_url: https://xuntos.org/feed/
-    homepage_url: https://xuntos.org
+    homepage_url: https://xuntos.org/blog/
     display_name: Xuntos
-    summary: Launch your career in tech
-  yamanote_style:
-    feed_url: http://yamanote.style/feed.xml
-    homepage_url: https://yamanote.style/
-    display_name: Yamanote Style
-    summary: Soundscapes of the JR Yamanote line.
-  yannesposito:
+    summary: Archived Xuntos community posts about technology careers, learning, and recruitment; this feed ends in 2023.
+    profile_photo: https://xuntos.org/wp-content/uploads/2025/10/Xuntos-White-Logo.png
+  yann_esposito:
     feed_url: https://yannesposito.com/atom.xml
     homepage_url: https://yannesposito.com
-    display_name: yannesposito.com
-    summary: Updates from yannesposito.com.
-  yarnpkg:
+    display_name: Yann Esposito
+    summary: Yann Esposito writes about programming, functional languages, editors, and personal computing.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fyannesposito.com&size=128
+  yarn_blog:
     feed_url: https://yarnpkg.com/blog/rss.xml
     homepage_url: https://yarnpkg.com/blog
     display_name: Yarn Blog
-    summary: Yarn Blog
-  yegor256:
+    summary: Official Yarn package-manager release announcements and commentary; this blog feed ends in 2023.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fyarnpkg.com%2Fblog&size=128
+  yegor_bugayenko:
     feed_url: https://www.yegor256.com/rss.xml
     homepage_url: https://www.yegor256.com
     display_name: Yegor Bugayenko
-    summary: Updates from Yegor Bugayenko.
-  yellowstonepark:
+    summary: Yegor Bugayenko writes about software engineering, object-oriented programming, management, and philosophy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.yegor256.com&size=128
+  my_yellowstone_park:
     feed_url: https://www.yellowstonepark.com/feed/?scope=anon
     homepage_url: https://www.yellowstonepark.com
-    display_name: Yellowstone National Park
-    summary: Plan your Trip to Yellowstone National Park
-  yeoman:
+    display_name: My Yellowstone Park (Outside)
+    summary: Yellowstone and Grand Teton travel guides and news from Outside; not the National Park Service.
+    profile_photo: https://cdn.yellowstonepark.com/wp-content/uploads/2021/03/cropped-np-favicon-180x180.png
+  yeoman_blog:
     feed_url: https://yeoman.io/blog/atom.xml
     homepage_url: https://yeoman.io
     display_name: Yeoman Blog
-    summary: Updates from Yeoman Blog.
-  yewjin_substack:
+    summary: Official Yeoman project news about web application scaffolding, releases, maintenance, and security.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fyeoman.io&size=128
+  what_yj_thinks:
     feed_url: https://yewjin.substack.com/feed
     homepage_url: https://yewjin.substack.com
     display_name: What YJ Thinks
-    summary: After nearly two decades building Google Search as a Eng Director, I now write about AI, crypto, trail running, and the slower practices that make life meaningful.
-  yihui:
+    summary: Yew Jin Lim writes about AI, crypto, trail running, and personal reflections on work and life.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!er6U!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5d3731f8-2912-40dc-8983-f5e4de9c2b66%2Fapple-touch-icon-57x57.png
+  yihui_xie:
     feed_url: https://yihui.org/index.xml
     homepage_url: https://yihui.org
-    display_name: Homepage on Yihui Xie | 谢益辉
-    summary: Recent content in Homepage on Yihui Xie | 谢益辉
-  yob_id_au:
+    display_name: Yihui Xie
+    summary: Yihui Xie writes about R packages, reproducible reporting, statistics, software, and personal topics.
+    profile_photo: https://yihui.org/images/logo.png
+  james_healy:
     feed_url: https://yob.id.au/index.rss
-    homepage_url: http://yob.id.au
-    display_name: yob.id.au
-    summary: yob.id.au - James Healy
-  yogastudioapp:
+    homepage_url: https://yob.id.au
+    display_name: James Healy
+    summary: James Healy writes about software development, open-source tools, running, and personal projects.
+    profile_photo: https://github.com/yob.png?size=200
+  yoga_studio_mind_and_body:
     feed_url: https://yogastudioapp.com/blog?format=rss
     homepage_url: https://yogastudioapp.com/blog
     display_name: 'Yoga Studio: Mind & Body'
-    summary: 'Updates from Yoga Studio: Mind & Body.'
-  yorickpeterse:
+    summary: Archived yoga and meditation guidance and Yoga Studio app news; this blog feed ends in 2021.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fyogastudioapp.com%2Fblog&size=128
+  yorick_peterse:
     feed_url: https://yorickpeterse.com/feed.xml
     homepage_url: https://yorickpeterse.com
     display_name: Yorick Peterse
-    summary: Updates from Yorick Peterse.
-  yosekastationery:
+    summary: Yorick Peterse writes about software engineering, open source, systems programming, and the Inko language.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fyorickpeterse.com&size=128
+  yoseka_stationery:
     feed_url: https://yosekastationery.com/blogs/news.atom
     homepage_url: https://yosekastationery.com/blogs/news
-    display_name: Yoseka Stationery - Yoseka Stationery Blog
-    summary: Updates from Yoseka Stationery - Yoseka Stationery Blog.
-  you_know_nothing:
-    feed_url: https://you-know-nothing.com/feed/
-    homepage_url: https://you-know-nothing.com
-    display_name: You-Know-Nothing
-    summary: Play Like a Life.
-  blog_youtube:
+    display_name: Yoseka Stationery
+    summary: Stationery and planner releases, shop events, and product guidance from Yoseka Stationery.
+    profile_photo: https://yosekastationery.com/cdn/shop/files/Screenshot_2024-12-06_at_10.04.20_PM.png?crop=center&height=32&v=1733540674&width=32
+  youtube_official_blog:
     feed_url: https://blog.youtube/rss/
     homepage_url: https://blog.youtube
     display_name: YouTube Official Blog
-    summary: YouTube Official Blog
-  zachgibson:
+    summary: Official YouTube news, product updates, creator and artist stories, and culture and trends.
+    profile_photo: https://blog.youtube/static/blog_youtube/images/apple-touch-icon.png?version=pr20261009-1701
+  zach_gibson:
     feed_url: https://zachgibson.com/rss
     homepage_url: https://zachgibson.com
     display_name: Zach Gibson
-    summary: Zach Gibson
-  zadzmo:
+    summary: Archived graphic-design, printmaking, and collage projects by Zach Gibson; this feed ends in 2017.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fzachgibson.com&size=128
+  nepenthes_releases:
     feed_url: https://zadzmo.org/downloads/nepenthes/rss
-    homepage_url: https://zadzmo.org
-    display_name: Indusium Artifact Repo for nepenthes
-    summary: This is the RSS feed of an Indusium file version manager at https://zadzmo.org, project nepenthes
-  zandy_blog:
+    homepage_url: https://zadzmo.org/code/nepenthes/
+    display_name: Nepenthes Releases
+    summary: Official Nepenthes crawler-tarpit software release downloads from ZADZMO; feed entries link directly to source archives.
+    profile_photo: https://zadzmo.org/img/spleenwort.jpg
+  revelry_reverie:
     feed_url: https://zandy.blog/feed/
     homepage_url: https://zandy.blog
     display_name: Revelry Reverie
-    summary: Updates from Revelry Reverie.
-  zanytomato_tumblr:
+    summary: Zandy Ring writes about family, work, books, design, and everyday life on Revelry Reverie.
+    profile_photo: https://i0.wp.com/zandy.blog/wp-content/uploads/2019/06/cropped-screen-shot-2019-06-21-at-3.54.51-pm.png?fit=180%2C180&ssl=1
+  whos_a_nerdy_girl:
     feed_url: https://zanytomato.tumblr.com/rss
     homepage_url: https://zanytomato.tumblr.com
     display_name: Who's a Nerdy Girl?
-    summary: Musings from the edge of reality
-  zedshaw:
+    summary: Archived essays about virtual reality, games, and computer science from Who's a Nerdy Girl?; this feed ends in 2016.
+    profile_photo: https://api.tumblr.com/v2/blog/zanytomato.tumblr.com/avatar/128
+  zed_a_shaw:
     feed_url: https://zedshaw.com/feed.atom
     homepage_url: https://zedshaw.com
     display_name: Zed A. Shaw
-    summary: Updates from Zed A. Shaw.
-  zef_me:
-    feed_url: https://zef.me/rss/
-    homepage_url: https://zef.me
-    display_name: Zef Hemel
-    summary: Engineering leadership coach and consultant
-  zeldaandscout:
+    summary: Archived personal essays by Zed A. Shaw about programming, art, society, and life; this feed ends in 2022.
+    profile_photo: https://zedshaw.com/apple-touch-icon.png
+  alt_management:
+    feed_url: https://alt.management/rss/
+    homepage_url: https://alt.management/
+    display_name: alt.management
+    summary: Technology leadership and management essays by Zef Hemel on alt.management, including his migrated writing archive.
+    profile_photo: https://alt.management/favicon.png
+  zelda_and_scout:
     feed_url: https://zeldaandscout.com/feed/
     homepage_url: https://zeldaandscout.com
     display_name: Zelda & Scout
-    summary: southern stories from the sleepless city
-  zenrows:
+    summary: Archived Southern and New York stories, recipes, playlists, and cultural essays from Zelda & Scout, which ended in 2019.
+    profile_photo: https://zeldaandscout.com/wp-content/uploads/2017/09/cropped-zeldascout-circle-transparent.png?w=180
+  the_zenrows_blog:
     feed_url: https://www.zenrows.com/blog/rss.xml
     homepage_url: https://www.zenrows.com/blog
     display_name: The Zenrows blog
-    summary: Field guides on getting the web's data.
-  zensounds_de:
+    summary: Web-data extraction and scraping guides, anti-bot techniques, and product updates from Zenrows.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.zenrows.com%2Fblog&size=128
+  zensounds:
     feed_url: https://www.zensounds.de/feed
     homepage_url: https://www.zensounds.de
     display_name: zensounds 禅の音
-    summary: ambient, vaporwave, electronic and experimental music
-  zephyrproject:
+    summary: Stephan Kunze writes about ambient, vaporwave, electronic, and experimental music, with interviews and cultural essays.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!RO25!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff3dda9aa-30a8-4e1c-a1e6-67e7775b8e17%2Fapple-touch-icon-57x57.png
+  zephyr_project:
     feed_url: https://www.zephyrproject.org/feed/
     homepage_url: https://www.zephyrproject.org
     display_name: Zephyr Project
-    summary: A proven RTOS ecosystem, by developers, for developers
-  zerocharactersleft_blogspot:
+    summary: Official Zephyr RTOS project news, technical articles, community updates, events, and podcasts.
+    profile_photo: https://www.zephyrproject.org/wp-content/uploads/2023/04/cropped-zephyr_logo_r_color_negative_minimum-300x300.png
+  zero_characters_left:
     feed_url: https://zerocharactersleft.blogspot.com/feeds/posts/default
     homepage_url: https://zerocharactersleft.blogspot.com
     display_name: Zero Characters Left
-    summary: Updates from Zero Characters Left.
-  zhero_web_sec_github:
+    summary: Archived electronics, FPGA, pinball, and Bitcoin experiments from Zero Characters Left; this feed ends in 2015.
+  zhero_web_security:
     feed_url: https://zhero-web-sec.github.io/feed.xml
     homepage_url: https://zhero-web-sec.github.io
     display_name: zhero_web_security
-    summary: Updates from zhero_web_security.
+    summary: Web-security challenge and CTF writeups by vulnerability researcher Rachid Allam (zhero); this feed does not include every research article.
   zotero:
-    feed_url: http://feeds.feedburner.com/zotero
+    feed_url: https://feeds.feedburner.com/zotero
     homepage_url: https://www.zotero.org/blog
     display_name: Zotero
-    summary: Collect, organize, cite, and share your research
-  zpacks:
+    summary: Official Zotero release announcements, feature updates, and research-workflow guidance.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.zotero.org%2Fblog&size=128
+  zpacks_zip_pouches:
     feed_url: https://zpacks.com/collections/zip-pouches.atom
-    homepage_url: https://zpacks.com/collections/all
-    display_name: Zpacks
-    summary: Updates from Zpacks.
-  zpalexander:
+    homepage_url: https://zpacks.com/collections/zip-pouches
+    display_name: Zpacks Zip Pouches
+    summary: The Zpacks zip-pouches product collection for ultralight backpacking; this is a product feed, not a general news blog.
+    profile_photo: https://zpacks.com/cdn/shop/files/Zpacks-Fav-Icon_57x57.png?v=1613528377
+  zach_alexander:
     feed_url: http://zpalexander.com/rss/
     homepage_url: http://zpalexander.com
     display_name: Zach Alexander
-    summary: Zach Alexander
-  zulko_github:
+    summary: Archived posts by Zach Alexander about web development, accessibility, security, testing, and tools; this feed ends in 2020.
+    profile_photo: http://zpalexander.com/content/images/2017/02/avatar-pic-1-min.png
+  zulko_blog:
     feed_url: https://zulko.github.io/atom.xml
     homepage_url: https://zulko.github.io
-    display_name: __del__( self )
-    summary: Updates from __del__( self ).
+    display_name: __del__(self) (Zulko)
+    summary: Archived programming, mathematics, animation, and MoviePy experiments by Zulko on __del__(self); this feed ends in 2015.
+    profile_photo: https://zulko.github.io/favicon.png
   zx2c4:
     feed_url: https://www.zx2c4.com/feed.xml
     homepage_url: https://www.zx2c4.com
-    display_name: Nerdling Sapple
-    summary: '{{{ ZX2C4 | Jason A. Donenfeld }}}'
+    display_name: ZX2C4 - Jason A. Donenfeld
+    summary: Archived project announcements by Jason A. Donenfeld (ZX2C4), including WireGuard and security tools; this feed ends in 2018.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.zx2c4.com&size=128
   eli_bendersky:
     feed_url: https://eli.thegreenplace.net/feeds/all.atom.xml
     homepage_url: https://eli.thegreenplace.net
