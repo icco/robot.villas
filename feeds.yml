@@ -22600,6 +22600,277 @@ bots:
     homepage_url: https://charlie-volow.com/blog/index.html
     display_name: Charlie Volow's blog
     summary: Developing the Jackdaw digital audio workstation.
+  the_gadgeteer:
+    feed_url: https://the-gadgeteer.com/feed/
+    homepage_url: https://the-gadgeteer.com
+    display_name: The Gadgeteer
+    summary: The Gadgeteer's consumer-technology and gadget news, hands-on reviews, buying guides, everyday-carry gear, and home-product coverage.
+    profile_photo: https://the-gadgeteer.com/wp-content/uploads/2024/11/cropped-cropped-wp-icon-gadgeteer-logo-32x32.jpg
+  the_shooting_star:
+    feed_url: https://the-shooting-star.com/feed/
+    homepage_url: https://the-shooting-star.com
+    display_name: The Shooting Star
+    summary: Shivya Nath's travel stories and guides focused on solo travel, slow journeys, local communities, and sustainable tourism.
+    profile_photo: https://the-shooting-star.com/wp-content/uploads/2024/01/cropped-TSS-Logo-Mark-180x180.png
+  the_tusk:
+    feed_url: https://thetuskdotcom.wordpress.com/feed/
+    homepage_url: https://thetuskdotcom.wordpress.com
+    display_name: The Tusk
+    summary: 'Archived satire, humor, personal essays, fiction, and cultural commentary from The Tusk. Latest feed post: February 2017.'
+    profile_photo: https://secure.gravatar.com/blavatar/809758053d5c8f31b67515d28ff9ec9618989f96dbd854eaf841f8811d48c8ed?s=114
+  the_yorkshireman:
+    feed_url: https://the-yorkshireman.com/feed/
+    homepage_url: https://the-yorkshireman.com
+    display_name: The Yorkshireman
+    summary: Yorkshire news, local culture, food and drink, walks, places to visit, accommodation, and entertainment from The Yorkshireman.
+    profile_photo: https://the-yorkshireman.com/wp-content/uploads/2019/11/cropped-yorkshireman-favicon-2-80x80.png
+  the_advocate_baton_rouge:
+    feed_url: https://www.theadvocate.com/search/?f=rss&t=article&c=baton_rouge/news&l=50&s=start_time&sd=desc
+    homepage_url: https://www.theadvocate.com/baton_rouge/news/
+    display_name: The Advocate - Baton Rouge
+    summary: The Advocate's Baton Rouge news feed, covering local and Louisiana news, crime, government, education, weather, and Gulf Coast hurricanes.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.theadvocate.com%2Fsearch%2F%3Ff%3Drss%26t%3Darticle%26c%3Dbaton_rouge%2Fnews%26l%3D50%26s%3Dstart_time%26sd%3Ddesc&size=128
+  the_age:
+    feed_url: https://www.theage.com.au/rss/feed.xml
+    homepage_url: https://www.theage.com.au
+    display_name: The Age
+    summary: The Age's latest news from Melbourne and Victoria, with Australian and international reporting on politics, business, sport, and society.
+    profile_photo: https://www.theage.com.au/apple-touch-icons/theage.png
+  12_grams_of_carbon:
+    feed_url: https://12gramsofcarbon.com/feed
+    homepage_url: https://12gramsofcarbon.com
+    display_name: 12 Grams of Carbon
+    summary: Essays and technology roundups by theahura on programming, AI, startups, video games, and society, continuing the publication at 12gramsofcarbon.com.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!sjBR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2d43df08-a43b-466c-81d1-64c6ff56132f%2Fapple-touch-icon-57x57.png
+  the_art_newspaper:
+    feed_url: https://www.theartnewspaper.com/rss.xml
+    homepage_url: https://www.theartnewspaper.com
+    display_name: The Art Newspaper
+    summary: The Art Newspaper's international reporting on visual art, museums, exhibitions, artists, the art market, cultural heritage, and restitution.
+  the_art_of_animation:
+    feed_url: https://theartofanimation.tumblr.com/rss
+    homepage_url: https://theartofanimation.tumblr.com
+    display_name: The Art of Animation
+    summary: A Tumblr collection of illustrations, animation-related art, character designs, and artists' work, with links and attribution to their creators.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftheartofanimation.tumblr.com&size=128
+  the_best_page_in_the_universe:
+    feed_url: http://feeds.feedburner.com/TheBestPageInTheUniverse
+    homepage_url: http://maddox.xmission.com
+    display_name: The Best Page in the Universe
+    summary: 'Maddox''s archived satirical essays, rants, and cultural commentary at The Best Page in the Universe. Latest feed post: August 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fmaddox.xmission.com&size=128
+  the_big_lead:
+    feed_url: https://www.thebiglead.com/feed/
+    homepage_url: https://www.thebiglead.com
+    display_name: The Big Lead
+    summary: The Big Lead's sports news, commentary, sports-media coverage, game reactions, and viewing guides.
+    profile_photo: https://www.thebiglead.com/wp-content/uploads/2025/08/TBL-Symbol-1.png
+  blaze_media:
+    feed_url: https://www.theblaze.com/feeds/feed.rss
+    homepage_url: https://www.theblaze.com
+    display_name: Blaze Media
+    summary: Blaze Media's conservative news, political opinion, cultural commentary, lifestyle coverage, and commentary from its shows.
+    profile_photo: https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy81MDI4NzM1OS9vcmlnaW4ucG5nIiwiZXhwaXJlc19hdCI6MTg0NDk0Mjk0Mn0.o-UEkbA1OYXHAVRjyKSaJqugCFX6eR_9uoDbPW_XECs/img.png?width=192&height=192
+  the_blue_moment:
+    feed_url: https://thebluemoment.com/feed/
+    homepage_url: https://thebluemoment.com
+    display_name: The Blue Moment
+    summary: Music critic Richard Williams's writing on jazz, popular music, recordings, live performances, musicians, and music history.
+  the_bookseller:
+    feed_url: https://www.thebookseller.com/Syndication/DF.cfm?f=7&ft=10
+    homepage_url: https://www.thebookseller.com/
+    display_name: The Bookseller
+    summary: The Bookseller's news on publishing, bookselling, authors, literary prizes, rights, book fairs, and the book trade.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.thebookseller.com%2FSyndication%2FDF.cfm%3Ff%3D7%26ft%3D10&size=128
+  yan_cui_theburningmonk:
+    feed_url: https://theburningmonk.com/feed/
+    homepage_url: https://theburningmonk.com
+    display_name: Yan Cui - theburningmonk
+    summary: Yan Cui's technical articles on AWS, serverless architecture, Lambda, Step Functions, distributed systems, and reliable production applications.
+    profile_photo: https://theburningmonk.com/wp-content/uploads/2018/03/favicon-300x300.png
+  the_codeless_code:
+    feed_url: https://thecodelesscode.com/rss
+    homepage_url: http://thecodelesscode.com
+    display_name: The Codeless Code
+    summary: 'Qi''s archived illustrated fables and koans about the art, philosophy, and practice of software development. Latest feed case: July 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fthecodelesscode.com&size=128
+  the_culture_ist:
+    feed_url: https://www.thecultureist.com/feed/
+    homepage_url: https://www.thecultureist.com
+    display_name: The Culture-ist
+    summary: The Culture-ist's articles on travel, cultural traditions, food, design, wellness, sustainability, and conscious living.
+    profile_photo: https://www.thecultureist.com/wp-content/uploads/2016/08/cropped-TC-Oswald-Square-e1471828544677-2-180x180.png
+  the_defiant:
+    feed_url: https://thedefiant.io/api/feed
+    homepage_url: https://thedefiant.io
+    display_name: The Defiant
+    summary: The Defiant's reporting and analysis on decentralized finance, cryptocurrencies, blockchain security, regulation, markets, and financial technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthedefiant.io&size=128
+  the_dial:
+    feed_url: https://www.thedial.world/articles?format=rss
+    homepage_url: https://www.thedial.world/articles
+    display_name: The Dial
+    summary: The Dial's international reporting, essays, criticism, and local perspectives on culture, politics, society, and ideas.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.thedial.world%2Farticles&size=128
+  dieline:
+    feed_url: https://thedieline.com/feed/
+    homepage_url: https://thedieline.com
+    display_name: DIELINE
+    summary: DIELINE's coverage of packaging design, branding, visual identity, materials, sustainability, and design-industry projects.
+    profile_photo: https://i0.wp.com/thedieline.com/wp-content/uploads/2024/04/dieline-favicon.png?fit=180%2C180&quality=65&ssl=1
+  at_the_modules_of_madness:
+    feed_url: https://thedoomthatcametopuppet.tumblr.com/rss
+    homepage_url: https://thedoomthatcametopuppet.tumblr.com
+    display_name: At the Modules of Madness
+    summary: 'Archived Markov-chain text combining Puppet documentation with H. P. Lovecraft''s writing, created by branan. Latest Tumblr feed post: October 2015.'
+  thedotisblack:
+    feed_url: https://thedotisblack.com/rss
+    homepage_url: https://thedotisblack.com/
+    display_name: thedotisblack
+    summary: 'thedotisblack''s generative drawings, animations, code-based visual experiments, and Processing tutorials. Latest Tumblr feed post: January 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthedotisblack.tumblr.com&size=128
+  the_flight_deal:
+    feed_url: https://www.theflightdeal.com/feed/
+    homepage_url: https://www.theflightdeal.com
+    display_name: The Flight Deal
+    summary: The Flight Deal's airfare offers, route and booking details, travel deals, and practical information for finding low fares.
+    profile_photo: https://www.theflightdeal.com/wp-content/uploads/2012/12/logo.png
+  the_freelancery:
+    feed_url: https://thefreelancery.com/feed/
+    homepage_url: https://thefreelancery.com
+    display_name: The Freelancery
+    summary: 'Walt Kania''s archived practical advice on freelancing, finding clients, pricing, managing work, getting paid, and independent careers. Latest feed post: August 2022.'
+  thefw:
+    feed_url: https://thefw.com/feed/
+    homepage_url: https://thefw.com
+    display_name: TheFW
+    summary: TheFW's pop-culture, nostalgia, lifestyle, travel, consumer news, viral stories, humorous lists, and entertainment coverage.
+    profile_photo: https://townsquare.media/wp-content/uploads/2019/05/thefw.png?w=57&h=57
+  the_geekiary:
+    feed_url: https://thegeekiary.com/feed
+    homepage_url: https://thegeekiary.com
+    display_name: The Geekiary
+    summary: The Geekiary's entertainment and fandom news, reviews, interviews, and opinion covering television, comics, anime, books, games, films, and conventions.
+    profile_photo: https://thegeekiary.com/wp-content/uploads/2014/06/GeekiaryIcon.png
+  the_good_trade:
+    feed_url: https://www.thegoodtrade.com/feed/
+    homepage_url: https://www.thegoodtrade.com
+    display_name: The Good Trade
+    summary: The Good Trade's articles on sustainable and ethical living, wellness, relationships, fashion, home goods, parenting, and product reviews.
+    profile_photo: https://www.thegoodtrade.com/wp-content/uploads/2024/12/favicon-t-200x200.png
+  the_great_discontent:
+    feed_url: https://thegreatdiscontent.com/feed/
+    homepage_url: https://thegreatdiscontent.com
+    display_name: The Great Discontent
+    summary: The Great Discontent's interviews, conversations, and personal stories about artists, designers, musicians, makers, and creative work.
+    profile_photo: https://thegreatdiscontent.com/wp-content/uploads/2021/09/cropped-coyote-mark-32x32.png
+  the_half_and_half:
+    feed_url: https://www.thehalfandhalf.com/rss
+    homepage_url: https://www.thehalfandhalf.com
+    display_name: The Half and Half
+    summary: The Half and Half's printmaking portfolio archive, featuring concert posters and art editions. This feed also includes three site-layout entries; its latest dated project is April 2024.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.thehalfandhalf.com&size=128
+  the_hard_times:
+    feed_url: https://thehardtimes.net/feed/
+    homepage_url: https://thehardtimes.net
+    display_name: The Hard Times
+    summary: The Hard Times' satire and parody about punk and hardcore music, popular culture, everyday life, and gaming. Stories are entertainment, not factual news.
+    profile_photo: https://thehardtimes.net/wp-content/themes/thehardtimes-child/images/favicons/apple-touch-icon-57x57.png
+  the_high_line:
+    feed_url: https://www.thehighline.org/blog/feed/
+    homepage_url: https://www.thehighline.org/blog
+    display_name: The High Line
+    summary: Official High Line blog posts on the New York City park's art, gardens, wildlife, community programs, events, and public-space projects.
+    profile_photo: https://fhl-website.s3.amazonaws.com/content/uploads/2018/08/14150526/cropped-High-Line-logo-favicon-180x180.png
+  the_hugo_award:
+    feed_url: https://www.thehugoawards.org/feed/
+    homepage_url: https://www.thehugoawards.org
+    display_name: The Hugo Award
+    summary: Official Hugo Award announcements on finalists, voting, results, trophies, and related science-fiction and fantasy awards administered through Worldcon.
+    profile_photo: https://www.thehugoawards.org/wp-content/uploads/2019/09/cropped-hugo_sm-180x180.jpg
+  the_inertia:
+    feed_url: https://www.theinertia.com/feed/
+    homepage_url: https://www.theinertia.com
+    display_name: The Inertia
+    summary: The Inertia's surf and outdoor reporting, interviews, travel stories, competitions, gear coverage, environmental news, and photography.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.theinertia.com&size=128
+  the_lavin_agency:
+    feed_url: https://thelavinagency.com/feed/
+    homepage_url: https://thelavinagency.com
+    display_name: The Lavin Agency
+    summary: The Lavin Agency's official news about its keynote speakers, their books, ideas, interviews, achievements, and speaking topics.
+    profile_photo: https://thelavinagency.com/wp-content/uploads/2023/03/cropped-LavinIcon2023-180x180.png
+  the_morning_news:
+    feed_url: https://themorningnews.org/rss/
+    homepage_url: https://themorningnews.org
+    display_name: The Morning News
+    summary: The Morning News' curated daily headlines and links on world events, politics, technology, arts, culture, and unusual discoveries.
+    profile_photo: https://storage.ghost.io/c/e6/9a/e69a122b-578c-42c0-b7df-f62bbeaffb39/content/images/size/w256h256/2024/08/TMN-2.png
+  the_motorless_city:
+    feed_url: https://www.themotorlesscity.com/feed/
+    homepage_url: https://www.themotorlesscity.com
+    display_name: The Motorless City
+    summary: 'Archived photographs and personal writing about Detroit, abandoned buildings, neighborhoods, architecture, and urban life. Latest feed post: February 2020.'
+    profile_photo: https://www.themotorlesscity.com/wp-content/uploads/2020/06/cropped-android-chrome-512x512-180x180.png
+  the_music_ninja:
+    feed_url: https://www.themusicninja.com/feed/
+    homepage_url: https://www.themusicninja.com
+    display_name: The Music Ninja
+    summary: The Music Ninja's music discovery, reviews, interviews, industry news, artist resources, and music-technology coverage.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.themusicninja.com&size=128
+  the_needle_drop:
+    feed_url: https://theneedledrop.com/rss/
+    homepage_url: https://theneedledrop.com
+    display_name: The Needle Drop
+    summary: The Needle Drop's music news, reviews, interviews, editorial writing, and commentary on artists, albums, and the music industry.
+    profile_photo: https://theneedledrop.com/content/images/size/w256h256/2026/04/af-icon-1.png
+  the_nerdary:
+    feed_url: https://www.thenerdary.net/rss
+    homepage_url: https://www.thenerdary.net
+    display_name: The Nerdary
+    summary: 'Archived web-development and software posts from The Nerdary, including CSS, JavaScript, jQuery, typography, and application reviews. Latest feed post: November 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.thenerdary.net&size=128
+  the_new_press:
+    feed_url: https://thenewpress.org/feed/
+    homepage_url: https://thenewpress.org
+    display_name: The New Press
+    summary: The New Press's official articles, author interviews, book excerpts, reading lists, and publisher news on justice, democracy, history, culture, and social issues.
+    profile_photo: https://thenewpress.org/wp-content/uploads/2025/03/tnp-header-logo-300x300.png
+  the_one_ring:
+    feed_url: https://www.theonering.net/torwp/feed/
+    homepage_url: https://www.theonering.net/torwp
+    display_name: TheOneRing.net
+    summary: TheOneRing.net's Tolkien fan-community news on Middle-earth books, films, television, games, collectibles, fan events, and literary lore.
+    profile_photo: https://www.theonering.net/torwp/apple-touch-icon.png
+  the_orion:
+    feed_url: https://theorion.com/feed/
+    homepage_url: https://theorion.com
+    display_name: The Orion
+    summary: Chico State's independent student newspaper, covering campus and local news, sports, arts, entertainment, features, and opinion.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftheorion.com&size=128
+  the_pass:
+    feed_url: https://www.thepass.co/feed/
+    homepage_url: https://www.thepass.co
+    display_name: The Pass
+    summary: The Pass dispensary's official articles on Massachusetts cannabis rules, products, cultivation, promotions, and travel around the Berkshires.
+    profile_photo: https://www.thepass.co/apple-touch-icon.png
+  the_passport_chronicles:
+    feed_url: https://thepassportchronicles.com/feed/
+    homepage_url: https://thepassportchronicles.com
+    display_name: The Passport Chronicles
+    summary: Tianna's travel stories and destination guides on history, food, road trips, solo travel, and experiences around the world.
+  the_perfect_pack:
+    feed_url: https://theperfectpack.com/feed/
+    homepage_url: https://theperfectpack.com
+    display_name: The Perfect Pack
+    summary: 'Archived backpack and carry-gear reviews, designer interviews, outdoor equipment coverage, and community articles from The Perfect Pack. Latest feed post: December 2023.'
+    profile_photo: https://theperfectpack.com/wp-content/uploads/2017/06/170616-tpp-falvicon.png?w=100
+  the_phoblographer:
+    feed_url: https://www.thephoblographer.com/feed/
+    homepage_url: https://www.thephoblographer.com
+    display_name: The Phoblographer
+    summary: The Phoblographer's camera and lens reviews, photography techniques, artist features, gear news, and photographic culture.
+    profile_photo: https://www.thephoblographer.com/wp-content/uploads/2022/08/cropped-Phoblographer-Inclusive-rainbow-clear-180x180.png
   jacob_vosmaer:
     feed_url: https://blog.jacobvosmaer.nl/atom.xml
     homepage_url: https://blog.jacobvosmaer.nl/
