@@ -20926,256 +20926,273 @@ bots:
     homepage_url: https://seinwave.com/
     display_name: seinwave
     summary: Personal updates and projects from Matt Seidholz.
-  sassquach:
+  ashley_quach:
     feed_url: http://www.sassquach.com/journal/atom.xml
     homepage_url: http://www.sassquach.com/journal
-    display_name: Journal
-    summary: Updates from Journal.
+    display_name: Ashley Quach - This things I believe...
+    summary: 'Ashley Quach''s archived comics, illustrations, personal journal, and Sassquach Radio audio-drama announcements. Latest feed post: May 2020.'
   sawv:
     feed_url: http://sawv.org/rss.xml
     homepage_url: http://sawv.org
     display_name: sawv
-    summary: jr's notes
-  sawyer_dev:
+    summary: 'JR''s personal notes and links on the small web, technology, birdwatching, crafts, cooking, and everyday life. Latest feed item: April 2025.'
+    profile_photo: http://sawv.org/images/sawv.jpg
+  rory_sawyer:
     feed_url: https://sawyer.dev/feed.xml
     homepage_url: https://sawyer.dev/posts
-    display_name: rory sawyer's stuff
-    summary: blogs from rs
-  says:
+    display_name: Rory Sawyer
+    summary: Rory Sawyer writes about programming languages, data tools, knowledge graphs, books, music, and personal projects.
+  says_malaysia:
     feed_url: https://says.com/feed.xml
     homepage_url: https://says.com/my
     display_name: SAYS Malaysia
-    summary: Latest stories from SAYS
-  scaffold_tumblr:
+    summary: Malaysian news, lifestyle, entertainment, technology, and sponsored explainers from SAYS.
+    profile_photo: https://says.com/my/images/apple-touch-icon.png
+  scaffold_theme:
     feed_url: https://scaffold.tumblr.com/rss
     homepage_url: https://scaffold.tumblr.com
     display_name: Scaffold Theme
-    summary: A minimalist theme with simple custom settings. Designed by Mike Harding. For updates follow @scaffoldtheme on Twitter.
-  scaron_info:
+    summary: Archived demonstration posts for Mike Harding's minimalist Scaffold Tumblr theme, including music and art. Feed ends in March 2010.
+    profile_photo: https://api.tumblr.com/v2/blog/scaffold.tumblr.com/avatar/128
+  stephane_caron:
     feed_url: https://scaron.info/feeds/all.atom.xml
     homepage_url: https://scaron.info
-    display_name: Stéphane on Locomotion
-    summary: Updates from Stéphane on Locomotion.
-  scarymommy:
+    display_name: Stephane Caron - Stephane on Locomotion
+    summary: Stephane Caron's robotics research, publications, teaching, open-source projects, and technical notes on robot learning and locomotion.
+    profile_photo: https://github.com/stephane-caron.png?size=200
+  scary_mommy:
     feed_url: https://www.scarymommy.com/rss
     homepage_url: https://www.scarymommy.com
     display_name: Scary Mommy
-    summary: Scary Mommy is a parenting and lifestyle site for millennial moms who love unfiltered and honest news, advice and opinions about motherhood.
-  scene:
+    summary: Parenting and lifestyle reporting, personal essays, advice, entertainment, and shopping guides from Scary Mommy.
+    profile_photo: https://cdn2.bustle.com/2026/scarymommy/icon-9de8d6760d.png
+  scene_org_latest_parties:
     feed_url: https://files.scene.org/rss/latest-parties/
-    homepage_url: https://www.scene.org
-    display_name: scene.org file archive
-    summary: scene.org file archive
-  sched:
-    feed_url: https://sched.com/feed/
-    homepage_url: https://sched.com
-    display_name: Sched
-    summary: Event Schedule & Agenda Builder App
-  schier_co:
+    homepage_url: https://files.scene.org/
+    display_name: scene.org - Latest Parties
+    summary: New demoparty directories in the official scene.org file archive, containing demos, graphics, music, and competition results.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.scene.org&size=128
+  gregory_schier:
     feed_url: https://schier.co/blog/rss.xml
     homepage_url: https://schier.co/blog
     display_name: Gregory Schier
-    summary: Recent content from me
-  scholaridea:
+    summary: 'Gregory Schier''s programming tutorials, indie-software projects, and personal reflections. Latest feed post: May 2024.'
+    profile_photo: https://schier.co/static-1782989740/favicon/apple-touch-icon.png
+  scholar_idea:
     feed_url: https://scholaridea.com/feed/
     homepage_url: https://scholaridea.com
     display_name: Scholar Idea
-    summary: Find Scholarships and Academic Jobs
-  schoolofma:
+    summary: Scholarship, PhD, postdoctoral, research, and academic-job listings collected from universities and research institutions worldwide.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fscholaridea.com&size=128
+  school_of_machines_news:
     feed_url: https://www.schoolofma.org/news?format=rss
     homepage_url: https://www.schoolofma.org/news
-    display_name: news - School of Machines, Making, and Make-Believe
-    summary: Updates from news - School of Machines, Making, and Make-Believe.
+    display_name: School of Machines, Making, and Make-Believe - News
+    summary: Courses, scholarships, instructor profiles, exhibitions, and community events from the School of Machines, Making, and Make-Believe.
   sciencealert:
     feed_url: https://www.sciencealert.com/feed/gn/
     homepage_url: https://www.sciencealert.com
-    display_name: 'Google News Content : ScienceAlert : The Best in Science News and Amazing Breakthroughs'
-    summary: The Best in Science News and Amazing Breakthroughs
+    display_name: ScienceAlert
+    summary: Science news and explainers covering health, space, nature, physics, technology, and the environment.
+    profile_photo: https://www.sciencealert.com/images/2022/08/cropped-sa-rounded-favicon-180x180.png
   scienceclock:
     feed_url: https://scienceclock.com/feed/
     homepage_url: https://scienceclock.com
     display_name: ScienceClock
-    summary: Fresh news, discoveries, and insights from the world of science
+    summary: ScienceClock publishes accessible science stories, historical curiosities, and explainers about space, nature, technology, and human life.
+    profile_photo: https://scienceclock.com/wp-content/uploads/2025/12/scienceclock-brand-icon-300x300.png
   sciencedaily:
     feed_url: https://www.sciencedaily.com/rss/all.xml
     homepage_url: https://www.sciencedaily.com/news
-    display_name: Latest Science News -- ScienceDaily
-    summary: Updates from Latest Science News -- ScienceDaily.
+    display_name: ScienceDaily
+    summary: Research news and study summaries from universities and research organizations, covering science, medicine, technology, and the environment.
+    profile_photo: https://www.sciencedaily.com/images/scidaily-logo-rss.png
   scifi_stackexchange:
     feed_url: https://scifi.stackexchange.com/feeds
     homepage_url: https://scifi.stackexchange.com/questions
-    display_name: Recent Questions - Science Fiction & Fantasy Stack Exchange
-    summary: Updates from Recent Questions - Science Fiction & Fantasy Stack Exchange.
-  scmp:
+    display_name: Science Fiction and Fantasy Stack Exchange
+    summary: Recent community questions about science-fiction and fantasy books, films, television, games, and fictional universes.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fscifi.stackexchange.com%2Fquestions&size=128
+  south_china_morning_post:
     feed_url: https://www.scmp.com/rss/feed/
     homepage_url: https://www.scmp.com
     display_name: South China Morning Post
-    summary: Updates from South China Morning Post.
-  scottchacon:
+    summary: South China Morning Post reporting, analysis, opinion, and sponsored content on China, Hong Kong, Asia, business, technology, and world affairs.
+    profile_photo: https://assets-v2.i-scmp.com/production/icons/scmp-icon-192x192.png
+  scott_chacon:
     feed_url: https://scottchacon.com/atom.xml
     homepage_url: https://scottchacon.com
     display_name: Scott Chacon
-    summary: Writing from Scott Chacon — Git, languages, technology, and life.
-  scottmeyers_blogspot:
+    summary: Scott Chacon's writing on Git, software development, languages, technology, and life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fscottchacon.com&size=128
+  the_view_from_aristeia:
     feed_url: https://scottmeyers.blogspot.com/feeds/posts/default
     homepage_url: https://scottmeyers.blogspot.com
     display_name: The View from Aristeia
-    summary: Updates from The View from Aristeia.
-  scottwallick:
-    feed_url: http://scottwallick.com/feed/
-    homepage_url: http://scottwallick.com
-    display_name: Scott Wallick’s Blog
-    summary: Updates from Scott Wallick’s Blog.
-  scoutingny:
+    summary: Scott Meyers writes about C++, software, technology, electric vehicles, and his other activities and interests.
+  scouting_ny:
     feed_url: https://www.scoutingny.com/feed/
     homepage_url: https://www.scoutingny.com
     display_name: Scouting NY
-    summary: A Movie Location Scout's Guide To New York City
-  scoutingwire:
+    summary: 'Nick Carr''s archived exploration of New York City architecture, unusual places, and film locations. Latest feed post: September 2015.'
+  scouting_wire:
     feed_url: https://scoutingwire.org/feed/
     homepage_url: https://scoutingwire.org
     display_name: Scouting Wire
-    summary: Updates from Scouting Wire.
+    summary: Scouting America news and resources on youth safety, program delivery, partnerships, recruitment, and community engagement.
+    profile_photo: https://scoutingwire.org/wp-content/uploads/2019/10/cropped-site-icon-32x32.png
   laist:
     feed_url: https://laist.com/index.atom
     homepage_url: https://laist.com
-    display_name: Local and national news, NPR, things to do, food recommendations and guides to Los Angeles, Orange C
-    summary: Updates from Local and national news, NPR, things to do, food recommendations and guides to Los Angeles, Orange County and the Inland Empire.
+    display_name: LAist
+    summary: LAist public-radio reporting, local news, culture, food, and guides for Los Angeles, Orange County, and the Inland Empire, continuing KPCC/Southern California Public Radio.
+    profile_photo: https://laist.com/apple-touch-icon.png
   screencrush:
     feed_url: https://screencrush.com/feed/
     homepage_url: https://screencrush.com
     display_name: ScreenCrush
-    summary: Updates from ScreenCrush.
-  screenshotsofdespair_tumblr:
+    summary: Movie and television news, reviews, trailers, streaming recommendations, and entertainment features from ScreenCrush.
+    profile_photo: https://townsquare.media/wp-content/uploads/2019/05/screencrush.png?w=144&h=144
+  screenshots_of_despair:
     feed_url: https://screenshotsofdespair.tumblr.com/rss
     homepage_url: https://screenshotsofdespair.tumblr.com
-    display_name: screenshots of despair
-    summary: New Aesthetic poetry? Send in screenshots by going to screenshotsofdespair.tumblr.com/submit or by e-mailing them to josh.kimball@gmail.com. I am trying to break your heart.
-  sdrtraveller:
-    feed_url: https://sdrtraveller.com/feed/
-    homepage_url: https://sdrtraveller.com
-    display_name: sdrtraveller
-    summary: Updates from sdrtraveller.
-  se9book_wordpress:
+    display_name: Screenshots of Despair
+    summary: Screenshots capturing bleak, absurd, or unexpectedly poetic messages in software interfaces and digital life.
+    profile_photo: https://api.tumblr.com/v2/blog/screenshotsofdespair.tumblr.com/avatar/128
+  ian_sommerville_software_engineering:
     feed_url: https://se9book.wordpress.com/feed/
     homepage_url: https://se9book.wordpress.com
     display_name: Thoughts on software and systems engineering
-    summary: and other computer-sciencey stuff
-  sealedabstract:
+    summary: Ian Sommerville's archived writing on software engineering, requirements, computing education, and professional institutions. Moved to a new blog in October 2012.
+  sealed_abstract:
     feed_url: https://sealedabstract.com/feed.rss
     homepage_url: https://sealedabstract.com
     display_name: Sealed Abstract
-    summary: iOS and other rants
-  sean_heelan:
+    summary: Drew Crawford's essays and technical writing on software development, Apple platforms, programming, AI, and technology.
+    profile_photo: https://github.com/drewcrawford.png?size=200
+  sean_heelans_blog:
     feed_url: https://sean.heelan.io/feed/
     homepage_url: https://sean.heelan.io
     display_name: Sean Heelan's Blog
-    summary: Software Exploitation and Optimisation
-  sean_terretta:
+    summary: Sean Heelan's research on software exploitation, vulnerability discovery, program analysis, optimization, and applications of language models.
+    profile_photo: https://sean.heelan.io/wp-content/uploads/2009/05/cropped-oxford_7602.jpg?w=180
+  think_thank_thunk:
     feed_url: https://sean.terretta.com/posts.atom
     homepage_url: https://sean.terretta.com
     display_name: think thank thunk
-    summary: Updates from think thank thunk.
-  seanbehan:
+    summary: 'Sean Terretta''s archived notes, quotations, and commentary on software, science, culture, politics, and everyday life. Latest feed post: March 2012.'
+  sean_behan:
     feed_url: https://app.seanbehan.com/feed
     homepage_url: https://www.seanbehan.com
-    display_name: Sean Behan — Writing
-    summary: Updates from Sean Behan — Writing.
-  seanbonner:
+    display_name: Sean Behan
+    summary: Sean Behan's software-development tutorials and project notes, including Rails, web applications, Linux, and programming tools.
+    profile_photo: https://www.seanbehan.com/icon.png
+  sean_bonner:
     feed_url: https://seanbonner.com/feed/
     homepage_url: https://seanbonner.com
-    display_name: SEAN BONNER
-    summary: Updates from SEAN BONNER.
-  seancribbs:
+    display_name: Sean Bonner
+    summary: Sean Bonner's essays and The Crowd newsletter on art, technology, internet culture, creative projects, and society.
+    profile_photo: https://i0.wp.com/seanbonner.com/wp-content/uploads/2023/07/cropped-misanthropologist-token.png?fit=180%2C180&ssl=1
+  sean_cribbs:
     feed_url: https://seancribbs.com/atom.xml
-    homepage_url: http://seancribbs.com
+    homepage_url: https://seancribbs.com
     display_name: Sean Cribbs
-    summary: Updates from Sean Cribbs.
-  secretlycanadian:
+    summary: 'Sean Cribbs''s archived software-engineering articles on Erlang, Elixir, Webmachine, databases, parsing, and personal projects. Latest feed post: August 2016.'
+    profile_photo: https://github.com/seancribbs.png?size=200
+  secretly_canadian:
     feed_url: https://secretlycanadian.com/feed/
     homepage_url: https://secretlycanadian.com
-    display_name: Secretly Canadian – Independent Record Label
-    summary: Updates from Secretly Canadian – Independent Record Label.
-  secure_flyingmeat:
+    display_name: Secretly Canadian
+    summary: Artist signings, releases, music videos, tours, and label announcements from independent record label Secretly Canadian.
+    profile_photo: https://secretlycanadian.com/wp-content/uploads/2025/01/modal-logo.png
+  flying_meat_news:
     feed_url: https://flyingmeat.com/blog/rss.xml
-    homepage_url: https://secure.flyingmeat.com
+    homepage_url: https://flyingmeat.com/blog/
     display_name: News from Flying Meat
-    summary: News from your friends at Flying Meat.
-  php:
+    summary: Official Flying Meat news and release announcements for its Mac apps, including Acorn and Retrobatch.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsecure.flyingmeat.com&size=128
+  php_news:
     feed_url: https://www.php.net/feed.atom
     homepage_url: https://www.php.net
-    display_name: PHP.net news & announcements
-    summary: Updates from PHP.net news & announcements.
-  securedrop:
+    display_name: PHP News
+    summary: Official PHP release announcements, testing releases, project updates, and community events.
+    profile_photo: https://www.php.net/favicon-196x196.png?v=2
+  securedrop_news:
     feed_url: https://securedrop.org/news/feed/
     homepage_url: https://securedrop.org/news
-    display_name: 'SecureDrop: News'
-    summary: 'Updates from SecureDrop: News.'
-  securitywing:
-    feed_url: https://securitywing.com/feed/
-    homepage_url: https://securitywing.com
-    display_name: securitywing
-    summary: Updates from securitywing.
-  self_titledmag:
+    display_name: SecureDrop News
+    summary: Official SecureDrop releases, security advisories, operational guidance, and project news for its whistleblower-submission tools.
+    profile_photo: https://securedrop.org/apple-touch-icon.png
+  self_titled:
     feed_url: https://www.self-titledmag.com/feed/
     homepage_url: https://www.self-titledmag.com
     display_name: self-titled
-    summary: altering your algorithm since 2008
+    summary: 'Music interviews, album features, mixes, premieres, and live reviews from self-titled magazine. Latest feed post: August 2024.'
+    profile_photo: https://www.self-titledmag.com/wp-content/uploads/2016/04/cropped-S-T.LOGO_.largeSQ-32x32.png
   self:
     feed_url: https://www.self.com/feed/rss
     homepage_url: https://www.self.com
-    display_name: Self
-    summary: The latest from www.self.com
-  selfoss_aditu_de:
+    display_name: SELF
+    summary: SELF reporting and advice on health, fitness, food, mental well-being, relationships, beauty, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.self.com&size=128
+  selfoss_releases:
     feed_url: https://github.com/fossar/selfoss/releases.atom
     homepage_url: https://selfoss.aditu.de
-    display_name: Release notes from selfoss
-    summary: Updates from Release notes from selfoss.
+    display_name: selfoss Releases
+    summary: 'Official release notes for selfoss, the open-source web-based RSS reader and aggregator. Latest feed release: version 2.19 in January 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fselfoss.aditu.de&size=128
   semaphore:
     feed_url: https://semaphore.io/feed
     homepage_url: https://semaphore.io
     display_name: Semaphore
-    summary: The best CI/CD tool for high-performance engineering teams.
-  cyd_social:
+    summary: Semaphore product updates and articles on continuous integration, delivery, testing, software development, and engineering workflows.
+    profile_photo: https://semaphore.io/apple-touch-icon.png
+  cyd_blog:
     feed_url: https://cyd.social/blog/rss.xml
     homepage_url: https://cyd.social/blog
     display_name: Cyd Blog
-    summary: Cyd Blog
+    summary: Release notes and development updates for Cyd, the open-source social-media backup and deletion app from the creator of the retired Semiphemeral service.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcyd.social%2Fblog&size=128
   sensepost:
     feed_url: https://sensepost.com/rss.xml
     homepage_url: https://sensepost.com
-    display_name: ':: Orange Cyberdefense :: on Orange Cyberdefense'
-    summary: 'Recent content in :: Orange Cyberdefense :: on Orange Cyberdefense'
-  sensibletits_tumblr:
+    display_name: SensePost
+    summary: Security research, offensive-security techniques, tools, training, and team news from SensePost, Orange Cyberdefense's ethical-hacking team.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsensepost.com&size=128
+  cory_doctorow_readalong:
     feed_url: https://sensibletits.tumblr.com/rss
     homepage_url: https://sensibletits.tumblr.com
     display_name: Let's Read Some Cory Fucking Doctorow
-    summary: Updates from Let's Read Some Cory Fucking Doctorow.
-  sensorsandsensibility:
+    summary: 'Archived irreverent chapter-by-chapter commentary on Cory Doctorow''s Little Brother. Latest feed post: July 2012.'
+    profile_photo: https://api.tumblr.com/v2/blog/sensibletits.tumblr.com/avatar/128
+  sensors_and_sensibility:
     feed_url: https://sensorsandsensibility.com/feed/feed.xml
     homepage_url: https://sensorsandsensibility.com
     display_name: Sensors and Sensibility
-    summary: Updates from Sensors and Sensibility.
-  moz:
+    summary: Home-automation experiments, Home Assistant migrations, connected devices, household infrastructure, and robotics from Sensors and Sensibility.
+  moz_blog:
     feed_url: https://moz.com/feeds/blog.rss
     homepage_url: https://moz.com/blog
-    display_name: moz (en-US)
-    summary: Updates from moz (en-US).
-  seraph_inn:
+    display_name: The Moz Blog
+    summary: SEO research, search-marketing advice, tutorials, industry commentary, and Whiteboard Friday videos from Moz, formerly SEOmoz.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmoz.com%2Fblog&size=128
+  immaterial:
     feed_url: https://www.seraph-inn.com/updates.rss
-    homepage_url: http://www.seraph-inn.com/iview.php
+    homepage_url: https://www.seraph-inn.com/iview.php
     display_name: Immaterial
-    summary: A fantastical adventure graphic novel by Sarah Ellerton
-  sergeychernyshev:
+    summary: 'Sarah Ellerton''s fantasy graphic novel Immaterial: archived page updates and a print-publication announcement. Feed ends in January 2023.'
+  binary_orders_of_magnitude:
     feed_url: https://www.sergeychernyshev.com/blog/feed/
     homepage_url: https://www.sergeychernyshev.com/blog
     display_name: Binary Orders of Magnitude
-    summary: Sergey's blog about projects and web in general.
+    summary: 'Sergey Chernyshev''s archived blog on web performance, open-source software, visual programming, and personal projects. Latest feed post: December 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.sergeychernyshev.com%2Fblog&size=128
   serpapi:
     feed_url: https://serpapi.com/blog/rss/
     homepage_url: https://serpapi.com/blog
     display_name: SerpApi
-    summary: Search engine scraping tutorials, API updates and other tips.
+    summary: Search-engine scraping tutorials, API updates, developer projects, and company news from SerpApi.
+    profile_photo: https://storage.ghost.io/c/a5/00/a5004977-0dd2-4bcd-9292-dd0e05d4c59e/content/images/size/w256h256/2021/07/serpapi-favicon.png
   anton_podviaznikov:
     feed_url: https://podviaznikov.com/rss.xml
     homepage_url: https://podviaznikov.com/
