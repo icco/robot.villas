@@ -22325,6 +22325,264 @@ bots:
     display_name: Push.cx
     summary: Projects and technical notes from Peter Bhat Harkins.
     profile_photo: https://push.cx/apple-touch-icon.png
+  tao_of_mac:
+    feed_url: https://taoofmac.com/atom.xml
+    homepage_url: https://taoofmac.com
+    display_name: Tao of Mac
+    summary: Rui Carmo's personal notebook on computing, Apple devices, software, hardware reviews, music technology, and other interests.
+    profile_photo: https://taoofmac.com/apple-touch-icon-precomposed.png
+  tarensk:
+    feed_url: https://tarensk.tumblr.com/rss
+    homepage_url: https://tarensk.tumblr.com
+    display_name: TarenSK
+    summary: 'TarenSK''s archived reflections on Aaron Swartz, activism, justice, and personal life. Latest Tumblr feed post: December 2013.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftarensk.tumblr.com&size=128
+  tarts_live_or_tell:
+    feed_url: https://tarts.tumblr.com/rss
+    homepage_url: https://tarts.tumblr.com
+    display_name: live or tell
+    summary: 'Archived live or tell Tumblr posts and reblogs on plants, poetry, writing, music, feminism, and everyday life. Latest feed post: May 2016.'
+    profile_photo: https://api.tumblr.com/v2/blog/tarts.tumblr.com/avatar/128
+  taste_and_tell:
+    feed_url: https://www.tasteandtellblog.com/feed/
+    homepage_url: https://www.tasteandtellblog.com
+    display_name: Taste and Tell
+    summary: Taste and Tell's home-cooking recipes, family meals, baking, desserts, and practical kitchen ideas.
+    profile_photo: https://www.tasteandtellblog.com/wp-content/uploads/2019/06/cropped-favicon-180x180.png
+  tastefully_offensive:
+    feed_url: https://www.tastefullyoffensive.com/feed/
+    homepage_url: https://www.tastefullyoffensive.com
+    display_name: Tastefully Offensive
+    summary: 'Tastefully Offensive''s archived funny photographs, memes, social-media posts, parenting humor, and internet entertainment. Latest feed post: December 2025.'
+    profile_photo: https://www.tastefullyoffensive.com/wp-content/uploads/2020/08/cropped-Tastefully_Offensive_Icon_1X-2-180x180.png
+  tasting_table:
+    feed_url: https://www.tastingtable.com/feed/
+    homepage_url: https://www.tastingtable.com
+    display_name: Tasting Table
+    summary: Tasting Table's food and restaurant news, cooking tips, recipes, reviews, rankings, and interviews.
+    profile_photo: https://www.tastingtable.com/img/tasting-table-favicon-448x448.png
+  tate_johnson:
+    feed_url: https://tatey.com/feed.xml
+    homepage_url: https://tatey.com
+    display_name: Tate Johnson
+    summary: Tate Johnson's personal programming projects and practical notes on macOS apps, networking, home servers, and developer tools.
+    profile_photo: https://tatey.com/favicon152.png
+  tax_foundation:
+    feed_url: https://taxfoundation.org/feed/
+    homepage_url: https://taxfoundation.org
+    display_name: Tax Foundation
+    summary: Tax Foundation research, tax-policy analysis, data, and podcasts on federal, state, and international taxation.
+    profile_photo: https://taxfoundation.org/wp-content/uploads/2023/06/cropped-TF-Favicon-01-180x180.png
+  tct_magazine:
+    feed_url: https://www.tctmagazine.com/rss/
+    homepage_url: https://www.tctmagazine.com
+    display_name: TCT Magazine
+    summary: TCT Magazine's additive-manufacturing and 3D-printing news, industry developments, events, and expert analysis.
+    profile_photo: https://storage.ghost.io/c/f0/da/f0da4f6a-82b1-46cf-ab14-3cc5e6b2d473/content/images/size/w256h256/2025/10/TCTmag_logo_whitekeyline-2.png
+  tech_foo:
+    feed_url: https://tech-foo.blogspot.com/feeds/posts/default
+    homepage_url: https://tech-foo.blogspot.com
+    display_name: Tech-Foo
+    summary: Thomi Richards's archived Tech-Foo programming notes on Ubuntu, testing, Python, C++, and developer tools. This Blogger feed ends in May 2013 with a site-move notice.
+  philip_tellis_tech:
+    feed_url: http://feeds.feedburner.com/bluestech
+    homepage_url: https://tech.bluesmoon.info/
+    display_name: The other side of the moon
+    summary: 'Philip Tellis''s technical blog on programming, web performance, system administration, automation, and open-source software. Latest feed post: May 2025.'
+  tech_co:
+    feed_url: https://tech.co/feed
+    homepage_url: https://tech.co
+    display_name: Tech.co
+    summary: Tech.co technology news, business software reviews, AI tools, workplace trends, and advice for small businesses.
+    profile_photo: https://tech.co/wp-content/themes/techco/dist/img/favicon/apple-touch-icon.png
+  cornell_tech:
+    feed_url: https://tech.cornell.edu/feed/
+    homepage_url: https://tech.cornell.edu
+    display_name: Cornell Tech
+    summary: Official Cornell Tech news on research, faculty, students, entrepreneurship, technology, and university initiatives.
+    profile_photo: https://tech.cornell.edu/wp-content/themes/cornell-tech/assets/favicons/apple-touch-icon.png?v=20260317
+  the_tech:
+    feed_url: https://thetech.com/feed
+    homepage_url: https://thetech.com/
+    display_name: The Tech
+    summary: The Tech, MIT's student newspaper, with campus news, opinion, arts, sports, science, and student life.
+    profile_photo: https://thetech.com/assets/apple-touch-icon-144x144-precomposed-f5878d48539a2789ee3cc43d1c0f2e3b9fc40c143c87b9b60a558319c1f332c7.png
+  stonecharioteer_on_tech:
+    feed_url: https://tech.stonecharioteer.com/index.xml
+    homepage_url: https://tech.stonecharioteer.com/
+    display_name: Stonecharioteer on Tech
+    summary: Vinay Keerthi's Stonecharioteer on Tech notes on programming, developer tools, Linux, software engineering, and technical careers.
+    profile_photo: https://tech.stonecharioteer.com/apple-touch-icon.png
+  sbtech:
+    feed_url: https://tech.supercarblondie.com/feed/
+    homepage_url: https://tech.supercarblondie.com
+    display_name: SBTech
+    summary: SBTech reports on consumer technology, gadgets, engineering, electric vehicles, robotics, and emerging inventions.
+    profile_photo: https://tech.supercarblondie.com/uploads/cropped-sb-logo-icon-180x180.jpg
+  techacute:
+    feed_url: https://techacute.com/feed/
+    homepage_url: https://techacute.com
+    display_name: TechAcute
+    summary: TechAcute's technology news, product reviews, software tools, gaming, business technology, and privacy coverage.
+    profile_photo: https://techacute.com/wp-content/uploads/2021/03/TA-2021-Favicon.png
+  bozhos_tech_blog:
+    feed_url: https://techblog.bozho.net/feed/
+    homepage_url: https://techblog.bozho.net
+    display_name: Bozho's tech blog
+    summary: Bozhidar Bozhanov's essays on software engineering, security, privacy, digital policy, and government technology.
+    profile_photo: https://github.com/Glamdring.png?size=200
+  technicus:
+    feed_url: https://techblog.jeppson.org/feed/
+    homepage_url: https://techblog.jeppson.org
+    display_name: Technicus
+    summary: Nick Jeppson's Technicus technical notes on Linux, virtualization, networking, command-line tools, hardware, and system administration.
+    profile_photo: https://techblog.jeppson.org/wp-content/uploads/2026/04/cropped-favicon-180x180.png
+  tech_in_chicago:
+    feed_url: http://www.techinchicago.co/episodes?format=rss
+    homepage_url: http://www.techinchicago.co
+    display_name: Tech In Chicago
+    summary: 'Colin Keeley''s archived Tech In Chicago podcast interviews with Chicago startup founders and investors. Latest feed episode: April 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.techinchicago.co&size=128
+  technet_cz:
+    feed_url: https://servis.idnes.cz/rss.aspx?c=technet
+    homepage_url: https://www.idnes.cz/technet
+    display_name: Technet.cz
+    summary: Technet.cz, the iDNES.cz science and technology section, covering computing, engineering, space, research, reviews, and practical guides.
+    profile_photo: https://1gr.cz/u/favicon/apple-touch-icon/idnes2.png
+  technology_in_government:
+    feed_url: https://technology.blog.gov.uk/feed/
+    homepage_url: https://technology.blog.gov.uk
+    display_name: Technology in government
+    summary: Official UK government posts about public-sector technology, digital services, architecture, procurement, standards, and skills.
+    profile_photo: https://technology.blog.gov.uk/wp-content/themes/gds-blogs/build/govuk-assets/images/govuk-icon-180.png
+  millennium_technology_prize:
+    feed_url: https://millenniumprize.org/news-articles/blog/feed/
+    homepage_url: https://millenniumprize.org/news-articles/blog
+    display_name: Millennium Technology Prize Blog
+    summary: Technology Academy Finland's Millennium Technology Prize blog on innovation, research, energy, health, digital technology, and partner perspectives.
+    profile_photo: https://millenniumprize.org/wp-content/uploads/2021/05/cropped-Screenshot-2021-05-07-at-9.59.04-180x180.png
+  technori:
+    feed_url: https://technori.com/feed/
+    homepage_url: https://technori.com
+    display_name: Technori
+    summary: Technori's reporting and analysis on startups, entrepreneurship, artificial intelligence, technology businesses, and innovation.
+    profile_photo: https://technori.com/wp-content/uploads/2018/08/cropped-Technori-favicon-Logo-2-1-180x180.png
+  adapter:
+    feed_url: https://adapter-dc.com/feed/
+    homepage_url: https://adapter-dc.com
+    display_name: Adapter
+    summary: 'Archived Adapter company and project announcements from Tarek Anandan''s web-development studio, continuing technotarek.com. Latest feed post: April 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fadapter-dc.com&size=128
+  tech_policy_lab:
+    feed_url: https://techpolicylab.uw.edu/feed/
+    homepage_url: https://techpolicylab.uw.edu
+    display_name: Tech Policy Lab
+    summary: 'Archived University of Washington Tech Policy Lab research announcements on technology policy, diverse voices, data statements, and machine learning. Latest feed post: March 2019.'
+    profile_photo: https://techpolicylab.uw.edu/wp-content/uploads/2021/11/tpl-fav.png
+  techpp:
+    feed_url: https://techpp.com/feed/
+    homepage_url: https://techpp.com
+    display_name: TechPP
+    summary: TechPP's consumer-technology buying guides, product reviews, tutorials, practical tips, and opinions.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftechpp.com&size=128
+  tech_times:
+    feed_url: https://www.techtimes.com/rss/archives/archives.xml
+    homepage_url: https://www.techtimes.com
+    display_name: Tech Times
+    summary: Tech Times news and analysis on technology, science, health, business, gadgets, and product reviews.
+    profile_photo: https://g.techtimes.com/themes/favicons/apple-touch-icon.png
+  teddy_zetterlund:
+    feed_url: https://teddyzetterlund.com/feed/feed.xml
+    homepage_url: https://teddyzetterlund.com
+    display_name: Teddy Zetterlund
+    summary: 'Teddy Zetterlund''s archived articles on product management, coaching, onboarding, organizational culture, and teamwork. Latest feed post: October 2024.'
+  tedium:
+    feed_url: https://feed.tedium.co/
+    homepage_url: https://tedium.co
+    display_name: Tedium
+    summary: Tedium's offbeat essays on technology, internet culture, media, overlooked history, and everyday curiosities.
+    profile_photo: https://tedium.co/content/favicons/apple-touch-icon.png
+  teksocial:
+    feed_url: https://teksocial.com/feed/
+    homepage_url: https://teksocial.com
+    display_name: TekSocial
+    summary: 'TekSocial''s articles on online tools, blogging, social media, productivity, website creation, and technology tips. Latest feed post: December 2025.'
+    profile_photo: https://teksocial.com/wp-content/uploads/2023/09/teksocial-1.png
+  the_temboo_blog:
+    feed_url: https://blog.temboo.com/feed/
+    homepage_url: https://blog.temboo.com/
+    display_name: The Temboo Blog
+    summary: Official Temboo articles on AI-assisted embedded programming, firmware testing, debugging, connected devices, and product updates.
+    profile_photo: https://temboo.com/files/favicon-purple-16x16.png
+  tender_crumb:
+    feed_url: http://feeds.feedburner.com/blogspot/qwfbwo
+    homepage_url: http://tendercrumb.blogspot.com
+    display_name: TENDER CRUMB
+    summary: 'Archived Tender Crumb home-baking recipes, cakes, cookies, muffins, tarts, and Tuesdays with Dorie projects. Latest feed post: September 2010.'
+  tomenosuke_shop_blog:
+    feed_url: https://tenshu53.exblog.jp/index.xml
+    homepage_url: https://tenshu53.exblog.jp/
+    display_name: 下呂温泉 留之助商店 店主のブログ
+    summary: The Tomenosuke shop owner's Japanese blog on designer toys, collectible art, film props, releases, and shop events.
+    profile_photo: https://pds.exblog.jp/logo/1/200606/24/42/a007784220130422193739.jpg
+  tenzer_dk:
+    feed_url: https://tenzer.dk/index.xml
+    homepage_url: https://tenzer.dk
+    display_name: Tenzer.dk
+    summary: 'Tenzer.dk''s archived technical notes on servers, Nginx, web development, macOS, and Mastodon. Latest feed post: November 2022.'
+    profile_photo: https://tenzer.dk/static/favicon.829bac9c386c5fcfd7155b6ccb4f67e749595e98798e004d2e970d61da358711.png
+  terminally_incoherent:
+    feed_url: https://www.terminally-incoherent.com/blog/feed/index.html
+    homepage_url: https://www.terminally-incoherent.com/blog/
+    display_name: Terminally Incoherent
+    summary: 'Archived Terminally Incoherent essays on programming, technology, games, science fiction, and geek culture. Latest feed post: March 2016.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.terminally-incoherent.com%2Fblog&size=128
+  terry_godier:
+    feed_url: https://www.terrygodier.com/feed.xml
+    homepage_url: https://terrygodier.com
+    display_name: Terry Godier
+    summary: Terry Godier's essays on software, attention, the web, creative work, and building digital products.
+    profile_photo: https://www.terrygodier.com/apple-icon?f30fe4687a657423
+  the_texas_tribune:
+    feed_url: https://feeds.texastribune.org/feeds/main/
+    homepage_url: https://www.texastribune.org
+    display_name: The Texas Tribune
+    summary: The Texas Tribune's independent reporting on Texas politics, government, public policy, education, and communities.
+    profile_photo: https://i0.wp.com/www.texastribune.org/wp-content/uploads/2025/09/cropped-cropped-texas-tribune-favicon.png?fit=180%2C180&ssl=1
+  textual:
+    feed_url: https://textual.textualize.io/feed_rss_created.xml
+    homepage_url: https://textual.textualize.io/blog/
+    display_name: Textual
+    summary: 'Official Textual blog posts on terminal application development, performance, features, and the Textualize project. Latest feed post: May 2025.'
+  texx_and_the_city:
+    feed_url: https://texxandthecity.com/feed/
+    homepage_url: https://texxandthecity.com
+    display_name: Texx and the City
+    summary: Texx and the City's South African music reporting, independent-artist profiles, releases, live events, and culture coverage.
+    profile_photo: https://texxandthecity.com/wp-content/uploads/2025/01/cropped-cropped-TATC-Logo-2-Transparent-180x180.png
+  thagomizer:
+    feed_url: https://thagomizer.com/atom.xml
+    homepage_url: https://thagomizer.com/
+    display_name: Thagomizer
+    summary: Aja Hammerly's Thagomizer essays on programming, cloud tools, developer relations, AI, tech culture, and management.
+    profile_photo: https://github.com/thagomizer.png?size=200
+  thai_wood:
+    feed_url: https://thaiwood.io/index.xml
+    homepage_url: https://thaiwood.io/
+    display_name: Thai Wood
+    summary: 'Thai Wood''s archived essays on software reliability, incident analysis, service metrics, programming, and engineering practices. Latest feed post: October 2018.'
+  the_best_art:
+    feed_url: https://the-best-art.computer/rss
+    homepage_url: https://the-best-art.computer
+    display_name: The Best Art
+    summary: 'Archived The Best Art projects, Nicole He''s collaboration with a computer that generated artistic instructions for her to execute. Latest feed post: May 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthe-best-art.computer&size=128
+  the_camera_in_the_mirror:
+    feed_url: https://the-camera-in-the-mirror.tumblr.com/rss
+    homepage_url: https://the-camera-in-the-mirror.tumblr.com
+    display_name: the camera in the mirror
+    summary: 'The camera in the mirror''s photography posts and reblogs featuring museums, architecture, places, and visual details. Latest Tumblr feed post: October 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthe-camera-in-the-mirror.tumblr.com&size=128
   zach_ahn:
     feed_url: https://zachahn.com/posts/atom.xml
     homepage_url: https://zachahn.com/
