@@ -1760,256 +1760,278 @@ bots:
     display_name: Hundred Rabbits
     summary: Rek and Devine project updates.
     profile_photo: https://100r.co/media/services/icon.jpg
-  websymphony:
+  amit_gaur:
     feed_url: https://websymphony.net/index.xml
     homepage_url: https://websymphony.net
-    display_name: I am Amit, I make things. on Amit Gaur
-    summary: Recent content in I am Amit, I make things. on Amit Gaur
-  webupd8:
-    feed_url: http://feeds2.feedburner.com/webupd8
+    display_name: Amit Gaur
+    summary: 'Amit Gaur''s archived web-development tutorials and project notes on JavaScript, PostgreSQL, Elixir, Phoenix, and developer tools. Latest feed post: December 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwebsymphony.net&size=128
+  web_upd8:
+    feed_url: https://feeds.feedburner.com/webupd8
     homepage_url: http://www.webupd8.org
-    display_name: Web Upd8 - Ubuntu / Linux blog
-    summary: Daily Ubuntu / Linux news and application reviews
-  weekendengineering_blogspot:
+    display_name: Web Upd8
+    summary: 'Archived Web Upd8 Ubuntu and Linux news, application reviews, desktop customization, and installation guides. Latest feed post: August 2017.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.webupd8.org&size=128
+  weekend_engineering:
     feed_url: https://weekendengineering.blogspot.com/feeds/posts/default
     homepage_url: https://weekendengineering.blogspot.com
     display_name: Weekend Engineering
-    summary: Updates from Weekend Engineering.
-  weekendsherpa:
+    summary: 'Phil''s archived personal posts on electronics, embedded systems, safety, language, recipes, and everyday observations. Latest feed post: December 2018.'
+  weekend_sherpa:
     feed_url: https://www.weekendsherpa.com/rss.xml
     homepage_url: https://www.weekendsherpa.com
     display_name: Weekend Sherpa
-    summary: Weekend Sherpa. Hikes and Outdoor Activities in California.
-  weev_livejournal:
+    summary: Weekend Sherpa hiking guides, outdoor adventures, and weekend getaways in California and the western United States, including sponsored travel stories.
+    profile_photo: https://www.weekendsherpa.com/icons/icon-48x48.png?v=4dd803ab21c7e82f1232a2fc217fedba
+  andrew_auernheimer:
     feed_url: https://weev.livejournal.com/data/rss
     homepage_url: https://weev.livejournal.com
     display_name: Andrew Auernheimer
-    summary: Andrew Auernheimer - LiveJournal.com
-  wegotthiscovered:
+    summary: 'Andrew Auernheimer''s archived LiveJournal posts on hacking, free software, legal defense, and politics, including white-nationalist and antisemitic commentary. Latest feed post: January 2017.'
+  we_got_this_covered:
     feed_url: https://wegotthiscovered.com/feed/
     homepage_url: https://wegotthiscovered.com
     display_name: We Got This Covered
-    summary: All the latest news, trailers, & reviews for movies, TV, celebrities, Marvel, Netflix, anime, and more.
-  welcometodrivein_wordpress:
+    summary: We Got This Covered reporting and commentary on entertainment, movies, television, celebrities, politics, and viral social-media stories.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwegotthiscovered.com&size=128
+  drive_in:
     feed_url: https://welcometodrivein.wordpress.com/feed/
     homepage_url: https://welcometodrivein.wordpress.com
     display_name: '#drive-in'
-    summary: Scheduled film viewings and film discussion
+    summary: '#drive-in film-viewing logs, upcoming screening notices, and chat-room quotes and discussion about movies.'
   welovewp:
     feed_url: https://welovewp.com/feed/
     homepage_url: https://welovewp.com
     display_name: WeLoveWP
-    summary: The famous showcase of WordPress sites, blogs, and theme designs.
-  wgaeast:
+    summary: 'Archived WeLoveWP showcase of WordPress websites, blog designs, portfolios, and themes. Latest feed post: May 2023.'
+    profile_photo: https://welovewp.com/apple-touch-icon.png
+  writers_guild_of_america_east:
     feed_url: https://www.wgaeast.org/feed/
     homepage_url: https://www.wgaeast.org
     display_name: Writers Guild of America East
-    summary: The labor union representing writers in film, television, news, podcasts and online media.
-  whatculture:
+    summary: Official Writers Guild of America East news on organizing, labor contracts, elections, training, events, and the film, television, and media industries.
+    profile_photo: https://www.wgaeast.org/wp-content/themes/wgae/images/favicon.png
+  whatculture_music:
     feed_url: https://whatculture.com/music/feed
-    homepage_url: https://whatculture.com
-    display_name: Music - WhatCulture.com
-    summary: Latest articles from WhatCulture.com
-  whatsinyourbag:
+    homepage_url: https://whatculture.com/music
+    display_name: WhatCulture Music
+    summary: WhatCulture music lists, album rankings, and rock-music commentary, primarily archived posts through September 2023; the feed also includes a June 2025 VPN promotion.
+    profile_photo: https://whatculture.com/assets/img/favicon/apple-touch-icon-120x120.png
+  whats_in_your_bag:
     feed_url: https://whatsinyourbag.com/rss
     homepage_url: https://whatsinyourbag.com
     display_name: What's In Your Bag
-    summary: whatsinyourbag.com is a tribute to the big, squishy, bulky, salty, furry things we carry and simply cannot live without. Rejoice in everyday adventure. Founded by a San Francisco bike messenger in 1989, Timbuk2 pioneered the messenger bag and is known for legendary durability and custom manufacturing.
+    summary: 'Archived What''s In Your Bag photo submissions and profiles showing everyday carry, work gear, and bag contents, associated with Timbuk2. Latest feed post: April 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwhatsinyourbag.com&size=128
   whatthefuck_is:
     feed_url: https://whatthefuck.is/feed.xml
     homepage_url: https://whatthefuck.is
-    display_name: whatthefuck.is
-    summary: whatthefuck.is
-  wheelfront:
+    display_name: Dan's JavaScript Glossary
+    summary: 'Dan Abramov''s archived JavaScript glossary explaining closures, composition, dynamic dispatch, and memoization. Latest feed entry: July 2020.'
+  wheel_front:
     feed_url: https://wheelfront.com/feed/
     homepage_url: https://wheelfront.com
     display_name: Wheel Front
-    summary: Aftermarket Wheels Gallery & Directory
-  wheresjessieb:
+    summary: Wheel Front automotive news on vehicle launches, manufacturers, technology, recalls, and industry developments, alongside its aftermarket-wheel gallery and directory.
+    profile_photo: https://wheelfront.com/wp-content/uploads/2025/02/Untitled-design-13.png
+  wheres_jessie_b:
     feed_url: https://wheresjessieb.com/blog?format=rss
     homepage_url: https://wheresjessieb.com/blog
-    display_name: Blog | Where’s Jessie B.
-    summary: Updates from Blog | Where’s Jessie B..
-  whoisnnamdi:
+    display_name: Where's Jessie B.
+    summary: Jessie Beck's travel guides, itineraries, hotel reviews, packing advice, and outdoor and food recommendations, with a focus on California.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwheresjessieb.com%2Fblog&size=128
+  who_is_nnamdi:
     feed_url: https://whoisnnamdi.com/feed/
     homepage_url: https://whoisnnamdi.com
     display_name: Who is Nnamdi?
-    summary: Thoughts on technology, venture capital, and the economics of both
-  whoownsengland:
+    summary: Essays on technology, venture capital, startups, developer tools, and the economics of the software industry from Who is Nnamdi?
+    profile_photo: https://github.com/whoisnnamdi.png?size=200
+  who_owns_england:
     feed_url: https://whoownsengland.org/feed/
     homepage_url: https://whoownsengland.org
     display_name: Who owns England?
-    summary: Updates from Who owns England?.
-  whyjava_wordpress:
+    summary: Investigations and mapping of land ownership, estates, conservation, shooting, and land-use policy in England from Who owns England?
+  shekhar_gulati:
     feed_url: https://whyjava.wordpress.com/feed/
     homepage_url: https://whyjava.wordpress.com
     display_name: Shekhar Gulati
-    summary: Writings on Software Engineering, Software Architecture, Generative AI and LLMs
-  whywebleep:
+    summary: Shekhar Gulati's writing on software engineering, architecture, generative AI, language models, and production voice agents.
+  why_we_bleep:
     feed_url: https://www.whywebleep.com/whywebleep?format=rss
     homepage_url: https://www.whywebleep.com/whywebleep
     display_name: Why We Bleep
-    summary: Why We Bleep is inspired by the mysterious, unique and amazing people behind the equipment and music that we love. It's about getting better at making music, dweebing out over music and synth technology, and to perhaps better understand where music making might be going.
+    summary: Why We Bleep podcast interviews with electronic musicians, synthesizer designers, and music-technology makers about their equipment, creative processes, and careers.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.whywebleep.com%2Fwhywebleep&size=128
   whyy:
     feed_url: https://whyy.org/feed/
     homepage_url: https://whyy.org
     display_name: WHYY
-    summary: WHYY serves the community by contributing to the quality of life through education, information, entertainment and inspiration.
-  wicki:
+    summary: WHYY public-media news, radio segments, and podcast episodes on Philadelphia, Pennsylvania, New Jersey, Delaware, and national affairs.
+    profile_photo: https://whyy.org/wp-content/themes/whyy/images/icons/favicon-rebrand.png
+  simon_wicki:
     feed_url: https://wicki.io/posts/index.xml
     homepage_url: https://wicki.io/posts
-    display_name: Blog posts on Simon Wicki — Frontend Engineer from Berlin
-    summary: Recent content in Blog posts on Simon Wicki — Frontend Engineer from Berlin
-  wiki_openstreetmap:
+    display_name: Simon Wicki
+    summary: 'Simon Wicki''s archived frontend-development articles on web performance, Angular, JavaScript, CSS, fonts, and privacy. Latest feed post: March 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwicki.io%2Fposts&size=128
+  openstreetmap_wiki:
     feed_url: https://wiki.openstreetmap.org/w/api.php?hidebots=1&hidecategorization=1&hideWikibase=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom
     homepage_url: https://wiki.openstreetmap.org/wiki/Special:RecentChanges
-    display_name: OpenStreetMap Wiki - Recent changes [en]
-    summary: Updates from OpenStreetMap Wiki - Recent changes [en].
+    display_name: OpenStreetMap Wiki
+    summary: Recent edits to OpenStreetMap Wiki documentation, mapping conventions, tags, translations, and discussion pages across languages; item links point to revision comparisons that require login.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwiki.openstreetmap.org%2Fwiki%2FSpecial%3ARecentChanges&size=128
   wikiart:
     feed_url: https://www.wikiart.org/news/feed/
     homepage_url: https://www.wikiart.org/news
-    display_name: WikiArt
-    summary: Updates from WikiArt.
-  wikimatze_de:
+    display_name: WikiArt News
+    summary: 'WikiArt News essays on artists, paintings, art history, and visual culture. Latest feed post: December 2025.'
+    profile_photo: https://www.wikiart.org/news/wp-content/uploads/2024/01/logo.jpeg
+  wikimatze:
     feed_url: https://wikimatze.de/feed.xml
     homepage_url: https://wikimatze.de
     display_name: wikimatze
-    summary: Writings and talks by Matthias Günther.
-  wikimediafoundation:
+    summary: 'Matthias Gunther''s archived programming tutorials and talks on Ruby, Padrino, Vim, Linux, Docker, and developer tools. Latest feed post: November 2022.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwikimatze.de&size=128
+  wikimedia_foundation:
     feed_url: https://wikimediafoundation.org/feed/
     homepage_url: https://wikimediafoundation.org
     display_name: Wikimedia Foundation
-    summary: Updates from Wikimedia Foundation.
-  wikiofthrones:
+    summary: Official Wikimedia Foundation news on Wikipedia and Wikimedia projects, free knowledge, technology, public policy, communities, and organizational developments.
+    profile_photo: https://wikimediafoundation.org/wp-content/uploads/2018/05/cropped-wikimedia-logo_black-svg-2.png?w=180
+  wiki_of_thrones:
     feed_url: https://wikiofthrones.com/feed
     homepage_url: https://wikiofthrones.com
     display_name: Wiki of Thrones
-    summary: A Game of Thrones community for filming news, theories, games, discussions and lots more
+    summary: Fan news, filming updates, interviews, theories, and commentary on Game of Thrones, House of the Dragon, and related adaptations.
+    profile_photo: https://wikiofthrones.com/wp-content/uploads/2023/05/cropped-wot-logo-square-1024-px-180x180.png
   wikipediocracy:
     feed_url: https://wikipediocracy.com/feed/
     homepage_url: https://wikipediocracy.com
     display_name: Wikipediocracy
-    summary: You can't talk about Wikipedia's flaws on Wikipedia
+    summary: Wikipediocracy criticism and analysis of Wikipedia, its editing practices, governance, conflicts of interest, and treatment of public controversies.
+    profile_photo: https://i0.wp.com/wikipediocracy.com/wp-content/uploads/2017/11/logo.png?fit=32%2C32&ssl=1
   wildbit:
     feed_url: https://www.wildbit.com/blog/feed.atom
     homepage_url: https://wildbit.com/blog
-    display_name: Wildbit (en-US)
-    summary: Updates from Wildbit (en-US).
-  merki_ca:
-    feed_url: https://merki.ca/rss.xml
-    homepage_url: https://merki.ca
-    display_name: Merki.ca RSS Feed
-    summary: Robert Merki's personal website
-  wildimagining:
+    display_name: Wildbit
+    summary: 'Archived Wildbit posts on company culture, people-first workplaces, remote work, products, and software engineering. Latest feed post: August 2022.'
+    profile_photo: https://www.wildbit.com/images/apple-touch-icon-precomposed.png%3F20150716
+  wild_imagining:
     feed_url: https://wildimagining.com/feed/
     homepage_url: https://wildimagining.com
     display_name: Wild Imagining
-    summary: Adventure, everywhere
-  wilfredchan:
+    summary: 'Ben and Jenna''s archived travel journal and photography, with destination guides, packing advice, and budget-adventure stories. Latest feed post: April 2018.'
+    profile_photo: https://wildimagining.com/wp-content/uploads/2015/09/cropped-wild-imagining2_SITEICON_3-180x180.png
+  wilfred_chan:
     feed_url: https://www.wilfredchan.net/rss.xml
     homepage_url: https://www.wilfredchan.net
     display_name: Wilfred Chan
-    summary: RSS Feed for Wilfred Chan
-  wilhelmsgames_wordpress:
+    summary: 'Wilfred Chan''s journalism portfolio linking to published reporting on technology, labor, housing, politics, and urban life. Latest feed article: March 2024; links lead to external publishers.'
+    profile_photo: https://media.journoportfolio.com/users/305521/favicons/06f03bd6-6f5f-460c-9875-0b60416b6b9a.png
+  wilhelms_games:
     feed_url: https://wilhelmsgames.wordpress.com/feed/
     homepage_url: https://wilhelmsgames.wordpress.com
     display_name: Wilhelm's Games
-    summary: Updates from Wilhelm's Games.
+    summary: 'Archived Wilhelm''s Games announcements and development notes for tabletop role-playing and story games, including The Daughters of Verona and The Dune Rose. Latest feed post: August 2021.'
+    profile_photo: https://wilhelmsgames.files.wordpress.com/2012/11/logo_small.png?w=150
   willcodefor_beer:
     feed_url: https://willcodefor.beer/feed.xml
     homepage_url: https://willcodefor.beer
     display_name: willcodefor.beer
-    summary: Updates from willcodefor.beer.
-  williamshatner_tumblr:
+    summary: willcodefor.beer articles on web development, JavaScript, editor configuration, developer tools, productivity, and programming projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwillcodefor.beer&size=128
+  william_shatner:
     feed_url: https://williamshatner.tumblr.com/rss
     homepage_url: https://williamshatner.tumblr.com
     display_name: WILLIAM SHATNER
-    summary: These posts are my own and should not be construed as anything but my opinion and views
-  willj:
+    summary: 'William Shatner''s archived Tumblr posts on personal projects, Star Trek, charity auctions, sponsors, and fan updates. Latest feed post: February 2018.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwilliamshatner.tumblr.com&size=128
+  will_jessops_writings:
     feed_url: https://willj.net/rss.xml
     homepage_url: https://willj.net
     display_name: Will Jessop's Writings
-    summary: Recent content on Will Jessop's Writings
-  willmorrison:
+    summary: 'Will Jessop''s writing on Ruby on Rails, PostgreSQL performance, programming tools, robotics, sailing, cooking, and personal projects. Latest feed post: May 2025.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwillj.net&size=128
+  will_morrison:
     feed_url: https://willmorrison.net/index.xml
     homepage_url: https://willmorrison.net
     display_name: Will Morrison
-    summary: Recent content on Will Morrison
-  wilwheaton:
+    summary: 'Will Morrison''s personal project writeups on robotics, procedural music, electronics, fabrication, and interactive art. Latest feed post: November 2025.'
+  wil_wheaton_dot_net:
     feed_url: https://wilwheaton.net/feed/
     homepage_url: https://wilwheaton.net
     display_name: WIL WHEATON dot NET
-    summary: 50,000 Monkeys at 50,000 Typewriters Can't Be Wrong
-  windsooon_github:
+    summary: Wil Wheaton's personal writing on books, games, music, acting, storytelling, creative projects, and everyday life.
+    profile_photo: https://i0.wp.com/wilwheaton.net/wp-content/uploads/2022/01/cropped-PXL_20220121_005816393.jpeg?fit=180%2C180&ssl=1
+  tech_blog_of_unicooo:
     feed_url: https://windsooon.github.io/atom.xml
     homepage_url: https://windsooon.github.io
     display_name: Tech blog of Unicooo
-    summary: Updates from Tech blog of Unicooo.
-  wire:
+    summary: 'Unicooo''s archived technical articles on Python internals, programming, computer architecture, language processing, and open-source development. Latest feed post: August 2019.'
+    profile_photo: https://windsooon.github.io/favicon.png
+  wire_blog:
     feed_url: https://wire.com/en/blog/rss.xml
     homepage_url: https://wire.com/en/blog
     display_name: Wire Blog
-    summary: Explore Wire's secure collaboration platform, prioritizing digital privacy with end-to-end encryption and advanced security features.
-  wkyc:
+    summary: Official Wire blog articles on secure collaboration, end-to-end encryption, privacy, enterprise security, and Wire and Pydio product updates.
+    profile_photo: https://wire.com/hubfs/Short%20logo%20white%20on%20black@2x%20(1).png
+  wkyc_news:
     feed_url: https://www.wkyc.com/feeds/syndication/rss/news
     homepage_url: https://www.wkyc.com
-    display_name: 'WKYC RSS Feed: news'
-    summary: WKYC Rss Feed
-  wlcentral:
+    display_name: WKYC News
+    summary: WKYC 3 Studios news on Cleveland and Northeast Ohio, weather, sports, communities, and national headlines.
+    profile_photo: https://www.wkyc.com/assets/favicons/WKYC.png?ver=2.9.30.42
+  wl_central:
     feed_url: https://wlcentral.org/rss.xml
-    homepage_url: http://wlcentral.org
+    homepage_url: https://wlcentral.org
     display_name: WL Central
-    summary: Updates from WL Central.
+    summary: 'Archived WL Central news, analysis, and advocacy on WikiLeaks, Julian Assange, surveillance, civil liberties, and anti-war activism. Latest feed post: February 2023.'
   women:
     feed_url: https://www.women.com/feed/
     homepage_url: https://www.women.com
-    display_name: Women - News, Celebrity, Lifestyle, and Expert Opinions
-    summary: The ultimate destination for Women. Covering news, celebrity, fashion, beauty, wellness, and expert exclusives - since 1995.
+    display_name: Women
+    summary: Women.com articles on relationships, wellness, beauty, fashion, celebrities, books, and lifestyle.
+    profile_photo: https://www.women.com/img/women-favicon-448x448.png
   wonkette:
     feed_url: https://www.wonkette.com/feed
     homepage_url: https://www.wonkette.com
     display_name: Wonkette
-    summary: Wonkette is filthy, hilarious, liberal news. YOU CAN HANDLE THE TRUTH!
-  woodstockmusicshop:
+    summary: Wonkette liberal political reporting, opinion, satire, cultural commentary, and community discussions.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!t32L!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F608c3c7d-6ed0-4e6d-83dc-5f5b46d2cda8%2Fapple-touch-icon-57x57.png
+  woodstock_music_shop:
     feed_url: https://woodstockmusicshop.com/feed/
     homepage_url: https://woodstockmusicshop.com
     display_name: Woodstock Music Shop
-    summary: Vinyl, Instruments, and Gear in the Heart of Woodstock NY
-  wopc:
+    summary: 'Woodstock Music Shop posts on vinyl collecting, Record Store Day, store hours, and Woodstock, New York. Latest feed post: November 2023.'
+    profile_photo: https://i0.wp.com/woodstockmusicshop.com/wp-content/uploads/2022/07/cropped-img_3959.jpg?fit=180%2C180&ssl=1
+  the_world_of_playing_cards:
     feed_url: https://feeds.feedburner.com/worldofplayingcards
     homepage_url: https://www.wopc.co.uk
     display_name: The World of Playing Cards
-    summary: The small rectangular pieces of cardboard have been a medium for games of luck and skill, as well as a focus for design, advertising, political propaganda, art, history and much more... a miniature encyclopedia of social anthropology
-  wordle:
-    feed_url: https://www.wordle.net/feed/
-    homepage_url: https://www.wordle.net
-    display_name: Wordora — Daily word games & puzzles
-    summary: A fresh word game every day. Five-letter guesses, crosswords, word groups, and a honeycomb letter hunt — all under one roof.
-  workaholicsnews_blogspot:
+    summary: The World of Playing Cards archive updates on playing-card history, design, makers, artists, collecting, and cultural uses, including tarot and historical gambling.
+    profile_photo: https://www.wopc.co.uk/images/icons/apple-touch-icon-152x152.jpg
+  workaholics:
     feed_url: https://workaholicsnews.blogspot.com/feeds/posts/default
     homepage_url: https://workaholicsnews.blogspot.com
     display_name: Workaholics
-    summary: Updates from Workaholics.
-  workingnotworking:
-    feed_url: https://workingnotworking.com/feed/
-    homepage_url: https://workingnotworking.com
-    display_name: workingnotworking.com
-    summary: Updates from workingnotworking.com.
-  world_hey:
+    summary: 'Archived unofficial fan posts, videos, and news about the Workaholics comedy series and its cast. Latest feed post: November 2013.'
+  jason_fried:
     feed_url: https://world.hey.com/jason/feed.atom
     homepage_url: https://world.hey.com/jason
     display_name: Jason Fried
-    summary: Updates from Jason Fried.
-  worldhistory_substack:
+    summary: Jason Fried's HEY World essays on business, design, product development, software, and running 37signals.
+    profile_photo: https://world.hey.com/jason/avatar-9f11ce77d31e68e834c564594ee0bc32a005ee8d
+  looking_through_the_past:
     feed_url: https://worldhistory.substack.com/feed
     homepage_url: https://worldhistory.substack.com
     display_name: Looking Through the Past
-    summary: Illuminating forgotten corners of history and using them to think about the present
-  teaepicure:
-    feed_url: https://teaepicure.com/feed/
-    homepage_url: https://teaepicure.com
+    summary: George Dillard's Looking Through the Past essays on overlooked historical events, people, maps, and institutions and their connections to the present.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!yaE2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F839b379f-60c5-4896-b04e-3bf10d938e46%2Fapple-touch-icon-57x57.png
+  tea_epicure:
+    feed_url: https://teaepicure.com/category/blog/feed/
+    homepage_url: https://teaepicure.com/blog/
     display_name: Tea Epicure
-    summary: Taste Differently
+    summary: 'Tony Gebely''s archived Tea Epicure blog, formerly World of Tea, on tea classification, processing, chemistry, steeping, and storage. Latest blog-feed post: April 2019.'
   mcsweeneys:
     feed_url: https://feeds.feedburner.com/mcsweeneys
     homepage_url: https://www.mcsweeneys.net
