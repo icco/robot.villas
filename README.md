@@ -31,6 +31,7 @@ URLs must be HTTP(S). Feeds are polled every 15 minutes with conditional request
 | --- | --- | --- |
 | `DATABASE_URL` | PostgreSQL connection string | required |
 | `DOMAIN` | Public domain for ActivityPub IDs and handles | required |
+| `WEB_BOT_AUTH_PRIVATE_KEY` | PEM Ed25519 private key for the signed key directory and HTTPS remote fetches | disabled |
 | `PORT` | HTTP port | `3000` (`8080` in Docker) |
 | `BLOCKED_INSTANCES` | Comma-separated hosts added to `blocked_instances` | |
 | `POLL_CONCURRENCY` | Feeds fetched at once | `10` |
@@ -87,6 +88,23 @@ docs/operations.md  How delivery, retries, and limits behave
 ## Deployment
 
 `main` publishes `ghcr.io/icco/robot.villas:main` after CI passes and the built image passes a smoke test. `feeds.yml` is baked into the image; mount a file over `/app/feeds.yml` to override it.
+
+### Cloudflare Botbase
+
+Generate a persistent signing key outside the repository and store it in your deployment's secret manager:
+
+```bash
+umask 077
+openssl genpkey -algorithm ed25519 -out private-key.pem
+```
+
+Set `WEB_BOT_AUTH_PRIVATE_KEY` to the PEM file's contents, including actual newlines, and `DOMAIN=robot.villas`. Never commit the private key or bake it into the image. All replicas must use the same key. Without a key, remote fetches remain unsigned and the key directory returns `503`; invalid configured keys fail instead of silently disabling signing.
+
+The app serves a signed public JWKS at `https://robot.villas/.well-known/http-message-signatures-directory`. Responses bind the request authority, content type, and body digest and disable caching to avoid stale signatures. HTTPS remote fetches sign `@authority` and `signature-agent` with a fresh nonce and a 60-second lifetime on every redirect hop. HTTP requests remain unsigned. ActivityPub signing is unchanged.
+
+Follow [Cloudflare's Web Bot Auth registration instructions](https://developers.cloudflare.com/bots/reference/bot-verification/web-bot-auth/#3-register-your-bot-and-key-directory): select **Request Signature** in the Bot Submission Form and use the directory URL above as **Validation Instructions**. The feed User-Agent is `robot.villas RSS poller/1.0 (+https://robot.villas/about)`. Cloudflare approval is still required before requests become verified.
+
+After deployment, inspect the directory with `curl -i https://robot.villas/.well-known/http-message-signatures-directory` and validate it with Cloudflare's [http-signature-directory tool](https://crates.io/crates/http-signature-directory). [Cloudflare's request test endpoint](https://crawltest.com/cdn-cgi/web-bot-auth) returns `200` for a verified known key, `401` for an unknown key or failed verification, and `400` for malformed requests. Replacing the key also changes its thumbprint; coordinate rotation with Cloudflare before removing the registered key.
 
 ## License
 
