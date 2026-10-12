@@ -23161,6 +23161,275 @@ bots:
     homepage_url: https://www.counterpunch.org/
     display_name: CounterPunch
     summary: Independent journalism and political commentary.
+  timing_time_management_blog:
+    feed_url: https://timingapp.com/blog/feed/atom/
+    homepage_url: https://timingapp.com/blog/
+    display_name: Timing Time Management Blog
+    summary: Timing's official blog on Mac productivity, time tracking, billable work, workflow software, and app comparisons.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftimingapp.com%2Fblog&size=128
+  tim_kadlec:
+    feed_url: https://timkadlec.com/atom.xml
+    homepage_url: https://timkadlec.com
+    display_name: Tim Kadlec
+    summary: Tim Kadlec's writing and annotated links on web performance, observability, product management, software development, and AI.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftimkadlec.com&size=128
+  black_duck:
+    feed_url: https://www.blackduck.com/feed
+    homepage_url: https://www.blackduck.com/blog.html
+    display_name: Black Duck
+    summary: Black Duck's application-security articles on open-source risk, vulnerability testing, software supply chains, AI security, and product releases. Successor organization to Tinfoil Security.
+    profile_photo: https://www.blackduck.com/wp-content/uploads/2026/06/cropped-favicon1-32x32.png
+  tiny_media_manager:
+    feed_url: https://www.tinymediamanager.org/feed.xml
+    homepage_url: https://www.tinymediamanager.org
+    display_name: tinyMediaManager
+    summary: Official tinyMediaManager release notes and project news for its movie and television metadata, artwork, scraping, and media-library management software.
+    profile_photo: https://www.tinymediamanager.org/images/apple-touch-icon.png
+  tiny_projects:
+    feed_url: https://tinyprojects.dev/feed.xml
+    homepage_url: https://tinyprojects.dev
+    display_name: Tiny Projects
+    summary: 'Ben''s archived Tiny Projects essays and project writeups about building small websites, games, internet businesses, and software side projects. Latest feed item: August 2022.'
+    profile_photo: https://tinyprojects.dev/img/favicon/apple-touch-icon.png
+  tiny_shiny_key:
+    feed_url: https://tinyshinykey.tumblr.com/rss
+    homepage_url: https://tinyshinykey.tumblr.com
+    display_name: Tiny Shiny Key
+    summary: 'Archived Tiny Shiny Key illustrations, sketches, lettering, personal posts, and creative work on Tumblr. Latest feed post: September 2014.'
+    profile_photo: https://api.tumblr.com/v2/blog/tinyshinykey.tumblr.com/avatar/128
+  jonathan_rudenberg:
+    feed_url: https://titanous.com/posts.xml
+    homepage_url: https://titanous.com
+    display_name: Jonathan Rudenberg
+    summary: 'Jonathan Rudenberg''s archived security research on Docker images, SMS spoofing, and Heroku''s build system. Latest feed post: December 2014.'
+  no_evidence_tks2103:
+    feed_url: https://tks2103.tumblr.com/rss
+    homepage_url: https://tks2103.tumblr.com
+    display_name: No Evidence - tks2103
+    summary: 'Archived personal essays at No Evidence on burnout, work, self-worth, relationships, and ways of thinking. Latest feed post: November 2014.'
+    profile_photo: https://api.tumblr.com/v2/blog/tks2103.tumblr.com/avatar/128
+  tmonews:
+    feed_url: https://www.tmonews.com/feed/
+    homepage_url: https://www.tmonews.com
+    display_name: TmoNews
+    summary: TmoNews' independent coverage of T-Mobile, mobile networks, phones, service plans, deals, and carrier announcements. Not an official T-Mobile publication.
+    profile_photo: https://www.tmonews.com/wp-content/uploads/2016/08/tmologo.png
+  tobias_mansfield_williams:
+    feed_url: https://www.tmwhere.com/posts/index.xml
+    homepage_url: https://www.tmwhere.com/posts/
+    display_name: Tobias Mansfield-Williams - tmwhere
+    summary: Tobias Mansfield-Williams' tmwhere posts feed. It currently contains one short August 2024 post about setting up Hugo; the site's procedural-generation projects are outside this feed.
+  huan_truongs_pensieve:
+    feed_url: https://www.tnhh.net/feed.xml
+    homepage_url: https://www.tnhh.net
+    display_name: Huan Truong's Pensieve
+    summary: 'Huan Truong''s technical and personal writing on Linux, Raspberry Pi, hardware projects, computing performance, and life. Latest feed post: July 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.tnhh.net&size=128
+  national_museum_of_computing_events:
+    feed_url: https://www.tnmoc.org/events?format=rss
+    homepage_url: https://www.tnmoc.org/events
+    display_name: The National Museum of Computing - Events
+    summary: Official events feed from The National Museum of Computing, including educational Digital Future workshops. This selection is an events feed, not the museum's general news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.tnmoc.org%2Fevents&size=128
+  sadiq_jaffer:
+    feed_url: https://toao.com/feeds/rss.xml
+    homepage_url: https://toao.com/
+    display_name: Sadiq Jaffer
+    summary: Sadiq Jaffer's research and technical writing on OCaml, runtime performance, AI, machine learning, earth observation, and environmental computing.
+    profile_photo: https://www.toao.com/static/profile-small.png
+  todayilearned_co_uk:
+    feed_url: https://todayilearned.co.uk/feed/
+    homepage_url: https://todayilearned.co.uk
+    display_name: todayilearned.co.uk
+    summary: 'Archived short posts about unusual art, science, inventions, and discoveries at todayilearned.co.uk. Latest feed post: June 2013.'
+  tofugu:
+    feed_url: https://www.tofugu.com/feed.xml
+    homepage_url: https://www.tofugu.com
+    display_name: Tofugu
+    summary: 'Tofugu''s Japanese language-learning resources, grammar and study guides, and articles about Japanese culture and travel. Latest feed article: August 2023.'
+    profile_photo: https://www.tofugu.com/apple-touch-icon-152x152-precomposed.png
+  to_goto_to:
+    feed_url: https://togototo.wordpress.com/feed/
+    homepage_url: https://togototo.wordpress.com
+    display_name: To:goto To;
+    summary: 'Archived programming essays and benchmarks at To:goto To;, covering Go, C++, Rust, functional languages, and server development. Latest feed post: March 2015.'
+  tokyo_weekender:
+    feed_url: https://www.tokyoweekender.com/feed/
+    homepage_url: https://www.tokyoweekender.com
+    display_name: Tokyo Weekender
+    summary: Tokyo Weekender's English-language reporting on Japan, local news, culture, food, travel, entertainment, fashion, and events.
+    profile_photo: https://www.tokyoweekender.com/wp-content/themes/tw2023/assets/img/fav/apple-touch-icon.png
+  the_blade:
+    feed_url: https://www.toledoblade.com/rss/
+    homepage_url: https://www.toledoblade.com/
+    display_name: The Blade - Toledo
+    summary: The Blade's latest headlines from Toledo and northwest Ohio, covering local news, politics, sports, entertainment, and regional affairs.
+    profile_photo: https://www.toledoblade.com/favicon-32x32.png?v=lk2d0BAGPx
+  toll_brothers_build_beautiful:
+    feed_url: https://www.tollbrothers.com/blog/feed
+    homepage_url: https://www.tollbrothers.com/blog
+    display_name: Build Beautiful - Toll Brothers
+    summary: Toll Brothers' official Build Beautiful blog, featuring new-home community announcements, luxury-home design, architecture, and homebuilding news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.tollbrothers.com%2Fblog&size=128
+  tom_lorenzo:
+    feed_url: https://tomandlorenzo.com/feed/
+    homepage_url: https://tomandlorenzo.com
+    display_name: Tom + Lorenzo
+    summary: Tom + Lorenzo's opinionated coverage of celebrity style, red-carpet fashion, television, films, and popular culture.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftomandlorenzo.com&size=128
+  tom_armitage:
+    feed_url: https://tomarmitage.com/index.xml
+    homepage_url: https://tomarmitage.com
+    display_name: Tom Armitage
+    summary: 'Tom Armitage''s worknotes and essays on technology, design, creative projects, software, and making things. Latest feed post: January 2025.'
+    profile_photo: https://tomarmitage.com/favicon.png
+  tomaz_muraus:
+    feed_url: https://www.tomaz.me/atom.xml
+    homepage_url: https://www.tomaz.me
+    display_name: Tomaz Muraus
+    summary: 'Tomaz Muraus'' archived technical writing on StackStorm, cloud infrastructure, software performance, security, and aviation projects. Latest feed post: July 2021.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.tomaz.me&size=128
+  tombuntu:
+    feed_url: https://feeds.feedburner.com/Tombuntu
+    homepage_url: https://tombuntu.com
+    display_name: Tombuntu
+    summary: 'Tombuntu''s archived Ubuntu and Linux tutorials, desktop software tips, hardware setup, and site-maintenance notes. Latest feed post: May 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftombuntu.com&size=128
+  tom_talks:
+    feed_url: https://tomtalks.blog/feed/
+    homepage_url: https://tomtalks.blog
+    display_name: Tom Talks
+    summary: Tom Arbuthnot's coverage and commentary on Microsoft Teams, Microsoft 365, enterprise communications, licensing, and collaboration technology.
+    profile_photo: https://tomtalks.blog/wp-content/uploads/2017/11/cropped-Tom-Arbuthont-headshot-2017-180x180.jpg
+  tony_arnold:
+    feed_url: https://tonyarnold.com/posts_feed
+    homepage_url: https://tonyarnold.com
+    display_name: Tony Arnold
+    summary: Tony Arnold's personal essays on software development, AI-assisted coding, science, work, and self-reflection.
+    profile_photo: https://cdn.u.pika.page/qjKO9HvFHPaOjaMKdqmQhzfhuGoGsvxdT40Jc54WEvs/s:300:300/fn:shenanigans/plain/s3://pika-production/zsv2b1eu5qr04oiai26w0ygb3nkh
+  amir_avnis_cartoon_blog:
+    feed_url: https://toonamir.blogspot.com/feeds/posts/default
+    homepage_url: https://toonamir.blogspot.com
+    display_name: Amir Avni's Cartoon Blog
+    summary: 'Amir Avni''s archived animation reels, cartoons, drawings, and production work. Latest feed post: November 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftoonamir.blogspot.com&size=128
+  topcoat:
+    feed_url: http://topcoat.io/rss.xml
+    homepage_url: http://topcoat.io
+    display_name: Topcoat
+    summary: 'Archived Topcoat CSS-library articles on components, theming, documentation, and performance. This mixed feed also includes the homepage, blog index, and contributor-agreement pages; latest item date: February 2014.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Ftopcoat.io&size=128
+  tori_avey:
+    feed_url: https://toriavey.com/feed/
+    homepage_url: https://toriavey.com
+    display_name: Tori Avey
+    summary: Tori Avey's recipes and cooking tutorials, with a focus on Mediterranean cuisine, Jewish food traditions, holidays, and culinary history.
+    profile_photo: https://toriavey.com/images/2022/04/cropped-favicon-1-180x180.png
+  tosbourn:
+    feed_url: https://tosbourn.com/feed.xml
+    homepage_url: https://tosbourn.com
+    display_name: Tosbourn
+    summary: Tosbourn's practical articles on Ruby on Rails, Active Admin, web development, accessibility, and running software projects.
+    profile_photo: https://tosbourn.com/apple-touch-icon.png
+  total_vibration:
+    feed_url: https://totalvibration.tumblr.com/rss
+    homepage_url: https://totalvibration.tumblr.com
+    display_name: Total Vibration
+    summary: 'Lars Gotrich''s archived Total Vibration music writing, album recommendations, year-end lists, and commentary on punk, metal, and other music. Latest feed post: January 2020.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftotalvibration.tumblr.com&size=128
+  trac_ticket_6300:
+    feed_url: https://trac.edgewall.org/ticket/6300?format=rss
+    homepage_url: https://trac.edgewall.org/ticket/6300
+    display_name: Trac Ticket 6300 - Database newer than Trac version
+    summary: Discussion and status changes for Trac ticket 6300, a closed installation issue about mismatched Trac code and database versions. This is one historical ticket, not general Trac news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftrac.edgewall.org%2Fticket%2F6300&size=128
+  tracing_woodgrains:
+    feed_url: https://www.tracingwoodgrains.com/feed
+    homepage_url: https://www.tracingwoodgrains.com
+    display_name: Tracing Woodgrains
+    summary: Tracing Woodgrains' essays and investigations by Jack Despain Zhou on education, politics, culture, AI, institutions, and personal experiences.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!pXVU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F40db7d34-2fa7-473a-9636-1b08463e71b4%2Fapple-touch-icon-57x57.png
+  train_jam:
+    feed_url: https://trainjam.com/feed
+    homepage_url: https://trainjam.com
+    display_name: Train Jam
+    summary: 'Archived official Train Jam announcements about its train-based game jam, tickets, schedules, and participation. The event is on hiatus; latest feed announcement: December 2019.'
+    profile_photo: https://trainjam.com/wp-content/uploads/cropped-TrainJam-32x32.png
+  travis_jeffery:
+    feed_url: https://travisjeffery.com/index.xml
+    homepage_url: https://travisjeffery.com/
+    display_name: Travis Jeffery
+    summary: Travis Jeffery's writing on infrastructure engineering, distributed systems, Go, development tools, AI agents, and engineering careers.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Ftravisjeffery.com&size=128
+  treble:
+    feed_url: https://www.treblezine.com/feed/
+    homepage_url: https://www.treblezine.com
+    display_name: Treble
+    summary: Treble's music news, album reviews, artist interviews, recommendations, lists, and music-history features.
+    profile_photo: https://www.treblezine.com/wp-content/uploads/2020/09/cropped-treble_open2-180x180.png
+  treebetty:
+    feed_url: https://treebetty.com/feed/
+    homepage_url: https://treebetty.com
+    display_name: '*treebetty'
+    summary: treebetty's articles on habits, gratitude, personal goals, and mindful routines, alongside its productivity and habit-tracking apps.
+  trendblog_net:
+    feed_url: https://trendblog.net/feed/
+    homepage_url: https://trendblog.net
+    display_name: Trendblog.net
+    summary: Trendblog.net's technology articles, gadget comparisons, mobile-device coverage, gaming news, and practical software guides.
+    profile_photo: https://trendblog.net/wp-content/uploads/2022/02/32x32.png
+  trent_walton:
+    feed_url: https://trentwalton.com/feed.xml
+    homepage_url: https://trentwalton.com/
+    display_name: Trent Walton
+    summary: 'Trent Walton''s archived writing and project notes on web and product design, design systems, typography, and music. Latest feed post: March 2023.'
+    profile_photo: https://trentwalton.com/assets/icons/apple-icon-180x180.png
+  triangulation_art_blog:
+    feed_url: https://www.triangulationblog.com/feed/
+    homepage_url: https://www.triangulationblog.com
+    display_name: Triangulation Art Blog
+    summary: 'Triangulation Art Blog''s artist features and articles about contemporary, digital, conceptual, and experimental visual art. Latest feed item date: April 2024.'
+    profile_photo: https://www.triangulationblog.com/wp-content/uploads/2020/12/cropped-just-the-triangle-transparent-180x180.png
+  tribeca:
+    feed_url: https://tribecafilm.com/feed.xml
+    homepage_url: https://tribecafilm.com/news
+    display_name: Tribeca
+    summary: Tribeca's archived film and filmmaking articles, interviews, movie previews, and crowdfunding advice. This feed's latest item is April 2013, despite newer articles on Tribeca News.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftribecafilm.com%2Fnews&size=128
+  ryan_trolocsis:
+    feed_url: https://trolocsis.com/atom.xml
+    homepage_url: https://trolocsis.com
+    display_name: Ryan's Blog - trolocsis
+    summary: 'Ryan''s archived technical posts at trolocsis on a Sainsmart amateur-radio hotspot and Linux laptop throttling. Latest feed post: January 2021.'
+  truckpoetry:
+    feed_url: https://feeds.feedburner.com/Truckpoetry
+    homepage_url: http://www.truckpoetry.net
+    display_name: Truckpoetry.net
+    summary: 'Cameron Mathews'' archived Truckpoetry.net personal writing on Baylor football, everyday life, car maintenance, food, and other interests. Latest feed post: November 2014.'
+  jk_brickworks:
+    feed_url: https://feeds.feedburner.com/JKBrickworks
+    homepage_url: https://jkbrickworks.com/
+    display_name: JK Brickworks
+    summary: Jason Allemann and Kristal's JK Brickworks models, mechanical LEGO creations, build instructions, and videos. Jason's work was previously presented as True Dimensions.
+    profile_photo: https://jkbrickworks.com/apple-touch-icon.png
+  trueprepper:
+    feed_url: https://trueprepper.com/feed/
+    homepage_url: https://trueprepper.com
+    display_name: TruePrepper
+    summary: TruePrepper's emergency-preparedness guides, survival-kit advice, off-grid communications articles, and survival-gear reviews.
+    profile_photo: https://i0.wp.com/trueprepper.com/wp-content/uploads/TruePrepper-Favicon-2024-4.png?fit=180%2C180&quality=80&ssl=1
+  trusted_reviews:
+    feed_url: https://www.trustedreviews.com/feed
+    homepage_url: https://www.trustedreviews.com
+    display_name: Trusted Reviews
+    summary: Trusted Reviews' consumer-technology reviews, buying guides, product comparisons, news, and opinion covering phones, computing, home electronics, audio, and wearables.
+    profile_photo: https://www.trustedreviews.com/wp-content/uploads/sites/7/2017/07/cropped-trusted-reviews-icon-3-180x180.png
+  tsm_interactive:
+    feed_url: https://tsminteractive.com/feed/
+    homepage_url: https://tsminteractive.com
+    display_name: TSM Interactive
+    summary: Townsquare Media's TSM Interactive Tip Sheet, currently publishing radio-network sweepstakes, concert-trip promotions, prize announcements, and official contest rules.
+    profile_photo: https://townsquare.media/site/241/files/2011/06/favicon.ico
   joho_todai:
     feed_url: https://joho-todai.com/pinterest-rss/
     homepage_url: https://joho-todai.com/
