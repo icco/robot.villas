@@ -22,256 +22,272 @@ bots:
     display_name: Lobsters
     summary: Stories from Lobsters
     profile_photo: https://lobste.rs/apple-touch-icon-144.png
-  ttvl_co:
+  toto_tvalavadze:
     feed_url: https://ttvl.co/index.xml
     homepage_url: https://ttvl.co
-    display_name: Home on Toto Tvalavadze
-    summary: Recent content in Home on Toto Tvalavadze
-  tuaw:
-    feed_url: https://www.tuaw.com/feed/
-    homepage_url: https://www.tuaw.com
-    display_name: TUAW
-    summary: Apple News, Reviews and How-To Guides
-  tubbypaws_blogspot:
+    display_name: Toto Tvalavadze
+    summary: Toto Tvalavadze's notes, projects, and working logs on photography, bookmaking, creative tools, and interface research.
+    profile_photo: https://ttvl.co/favicon/apple-touch-icon.png
+  tubbypaws:
     feed_url: https://tubbypaws.blogspot.com/feeds/posts/default
     homepage_url: https://tubbypaws.blogspot.com
     display_name: Tubbypaws
-    summary: Updates from Tubbypaws.
+    summary: Archived illustrations, animations, and downloadable papercraft designs by Tubbypaws. The latest feed post is dated 2023.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftubbypaws.blogspot.com&size=128
   tumbledry:
     feed_url: https://tumbledry.org/all.rss
     homepage_url: https://tumbledry.org
-    display_name: tumbledry.org
-    summary: by
-  tumblr_amitgupta:
+    display_name: tumbledry
+    summary: Alex Micek's personal essays, photographs, family notes, and commentary on technology, culture, and politics.
+    profile_photo: https://tumbledry.org/img/apple-touch-icon-precomposed.png
+  amit_gupta_likes_you:
     feed_url: https://tumblr.amitgupta.com/rss
     homepage_url: https://tumblr.amitgupta.com
     display_name: Amit Gupta likes you!
-    summary: 'I live in San Francisco, CA. I started Photojojo & Jelly. (more…) email: [current year] @ amit gupta dot com'
-  tuneage_tumblr:
+    summary: Amit Gupta's archived personal posts, photographs, links, and reblogs. The latest feed post is dated 2022.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftumblr.amitgupta.com&size=128
+  tuneage:
     feed_url: https://tuneage.com/rss
-    homepage_url: https://tuneage.tumblr.com
+    homepage_url: https://tuneage.com/
     display_name: Tuneage
-    summary: Updates from Tuneage.
-  tuple_app:
+    summary: Music recommendations, seasonal playlists, album selections, and reblogs from Tuneage.
+    profile_photo: https://api.tumblr.com/v2/blog/tuneage.tumblr.com/avatar/128
+  tuple_blog:
     feed_url: https://tuple.app/rss.xml
-    homepage_url: https://tuple.app
-    display_name: The Tuple Blog
-    summary: Read the latest news, info and thoughts from the Tuple team
-  turbopuffer:
+    homepage_url: https://tuple.app/blog/
+    display_name: Tuple Blog
+    summary: Product announcements, engineering articles, and team stories from Tuple, the remote pair-programming app.
+    profile_photo: https://tuple.app/apple-touch-icon.png?2024
+  turbopuffer_blog:
     feed_url: https://turbopuffer.com/blog/rss.xml
     homepage_url: https://turbopuffer.com/blog
     display_name: turbopuffer Blog
-    summary: Latest posts from the turbopuffer blog
+    summary: Engineering articles, search research, and product updates from turbopuffer, a search engine built on object storage.
+    profile_photo: https://turbopuffer.com/logo/logo_square_transparent@2x.png
   tutorialedge:
     feed_url: https://tutorialedge.net/index.xml
     homepage_url: https://tutorialedge.net
-    display_name: TutorialEdge.net
-    summary: Recent content on TutorialEdge.net
-  tvstudiohistory:
+    display_name: TutorialEdge
+    summary: Programming tutorials and project guides from Elliot Forbes, with a focus on Go, backend development, and software engineering.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftutorialedge.net&size=128
+  tv_studio_history_bbc_tv_centre:
     feed_url: https://tvstudiohistory.co.uk/studio-category/bbc-tv-centre/feed/
-    homepage_url: https://tvstudiohistory.co.uk
-    display_name: BBC TV Centre - TV Studio History
-    summary: TV Studio History
-  tweetping:
-    feed_url: https://tweetping.net/feed/
-    homepage_url: https://tweetping.net
-    display_name: TweetPing.net | Explore Digital Insights, Trends & Global Stories
-    summary: Updates from TweetPing.net | Explore Digital Insights, Trends & Global Stories.
-  twicsy_tumblr:
-    feed_url: https://twicsy.tumblr.com/rss
-    homepage_url: https://twicsy.tumblr.com
-    display_name: Trending shirt for adults, find your thing
-    summary: All stuff for t-shirts, hoodies, tanks or mugs.
-  twingate:
+    homepage_url: https://tvstudiohistory.co.uk/studio-category/bbc-tv-centre/
+    display_name: TV Studio History - BBC TV Centre
+    summary: Independent historical articles about BBC Television Centre from TV Studio History, not an official BBC publication. Feed entries are dated 2021.
+    profile_photo: https://tvstudiohistory.co.uk/wp-content/uploads/2023/10/apple-touch-icon.png
+  twingate_blog:
     feed_url: https://rss.app/feeds/GvWVHBYxRfO2ER9k.xml
-    homepage_url: https://www.twingate.com
+    homepage_url: https://www.twingate.com/blog
     display_name: Twingate Blog
-    summary: Twingate makes Zero Trust Network Access easy to deploy, even easier to use, and always secure.
-  salesforce:
-    feed_url: https://www.salesforce.com/blog/feed/
-    homepage_url: https://www.salesforce.com/blog
-    display_name: Salesforce
-    summary: Learn how to get ahead of trends and supercharge professional relationships
-  twowaymirrors:
+    summary: Security, remote access, Zero Trust networking, and product news from the Twingate team.
+    profile_photo: https://framerusercontent.com/images/e76KKdP64F9YgzYu302f5fcNbcw.png
+  two_way_mirrors:
     feed_url: https://www.twowaymirrors.com/feed/
     homepage_url: https://www.twowaymirrors.com
     display_name: Two Way Mirrors
-    summary: Mirrors that reflect your ideas
-  tyhalley_tumblr:
+    summary: Mirror and optical-glass product guides, DIY projects, and explanations of reflection and optical illusions from Two Way Mirrors.
+    profile_photo: https://www.twowaymirrors.com/wp-content/uploads/2017/11/two-way-mirrors-icon.png
+  ty_halley:
     feed_url: https://tyhalley.tumblr.com/rss
     homepage_url: https://tyhalley.tumblr.com
     display_name: Ty Halley's Secret Tumblr
-    summary: I created the web-experiment “This Could Chnage Everything”. By taking the form of a “webcomic” this webs-periment dives deep undercover to unfurl the dark, petty and incessantly narcissistic world of “journal comics”.
-  tylercipriani:
+    summary: Ty Halley's archived artwork, comics, sketches, and reblogs. The latest feed post is dated 2021.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftyhalley.tumblr.com&size=128
+  tyler_cipriani:
     feed_url: https://tylercipriani.com/blog/index.atom
     homepage_url: https://tylercipriani.com/blog
-    display_name: 'Tyler Cipriani: blog'
-    summary: 'Updates from Tyler Cipriani: blog.'
+    display_name: Tyler Cipriani
+    summary: Tyler Cipriani's writing on Git, Linux, programming, software supply chains, and personal technology.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Ftylercipriani.com%2Fblog&size=128
   ubergizmo:
     feed_url: https://www.ubergizmo.com/feed/
     homepage_url: https://www.ubergizmo.com
     display_name: Ubergizmo
-    summary: Opinionated news and reviews of consumer electronics
+    summary: Consumer technology news, product reviews, gadgets, and electronics from Ubergizmo.
+    profile_photo: https://i0.wp.com/cdnlegacy.ubergizmo.com/img/2020/1.001/UG_icon_114.png
   ubuntu_nl:
     feed_url: https://www.ubuntu-nl.org/index.xml
     homepage_url: https://www.ubuntu-nl.org
     display_name: Ubuntu NL
-    summary: Recent content on Ubuntu NL
-  ubuntuincident_wordpress:
+    summary: Archived Dutch-language information pages about Ubuntu variants, downloads, licenses, and the Ubuntu NL community. Feed entries are dated 2016, not current news.
+    profile_photo: https://www.ubuntu-nl.org/apple-touch-icon.png
+  the_ubuntu_incident:
     feed_url: https://ubuntuincident.wordpress.com/feed/
     homepage_url: https://ubuntuincident.wordpress.com
     display_name: The Ubuntu Incident
-    summary: Ubuntu Adventures
+    summary: Linux and Ubuntu tips, programming notes, software troubleshooting, and occasional personal posts from The Ubuntu Incident.
+    profile_photo: https://secure.gravatar.com/blavatar/169e7f8ec416523b233b0cbdb2bd8bb942587d524dec828f7bdb57fd3466f82c?s=114
   ugmonk:
     feed_url: https://ugmonk.com/blogs/journal.atom
     homepage_url: https://ugmonk.com/blogs/journal
-    display_name: Ugmonk - Journal
-    summary: Updates from Ugmonk - Journal.
-  uk_news_yahoo:
+    display_name: Ugmonk
+    summary: Archived design stories, product announcements, and behind-the-scenes posts from Ugmonk. The latest journal feed post is dated 2021.
+    profile_photo: https://ugmonk.com/cdn/shop/files/favicon-32x32.png?crop=center&height=32&v=1783529884&width=32
+  yahoo_news_uk_and_ireland:
     feed_url: https://uk.news.yahoo.com/rss/
     homepage_url: https://uk.news.yahoo.com
-    display_name: Yahoo News UK & Ireland - Latest World News & UK News Headlines
-    summary: The latest world news and UK news headlines from Yahoo News UK. Find videos, pictures and in-depth coverage of politics, business, technology, entertainment news and more.
-  uk_pcmag:
+    display_name: Yahoo News UK & Ireland
+    summary: UK and international news, politics, business, entertainment, and current affairs from Yahoo News UK & Ireland.
+    profile_photo: https://s.yimg.com/rz/d/yahoo_news_en-GB_s_f_p_bestfit_news.png
+  pcmag_uk:
     feed_url: https://uk.pcmag.com/feed.xml
     homepage_url: https://uk.pcmag.com
     display_name: PCMag UK
-    summary: Updates from PCMag UK.
-  ultraparanoid_wordpress:
+    summary: Technology news, product reviews, buying advice, and how-to guides from PCMag UK.
+    profile_photo: https://www.pcmag.com/apple-touch-icon.png
+  ultraparanoid:
     feed_url: https://ultraparanoid.wordpress.com/feed/
     homepage_url: https://ultraparanoid.wordpress.com
     display_name: ultraparanoid
-    summary: A blog on computer and internet privacy and security.
-  uncloud_run:
+    summary: Archived essays and practical advice about computer security, privacy, and civil liberties. Feed posts are dated 2007.
+  uncloud_blog:
     feed_url: https://uncloud.run/blog/rss.xml
     homepage_url: https://uncloud.run/blog
     display_name: Uncloud Blog
-    summary: Uncloud Blog
-  xcott:
-    feed_url: https://xcott.com/feed/
-    homepage_url: https://xcott.com
-    display_name: Dark Блог
-    summary: Блог о даркнет площадках, безопасности в сети Tor.
-  unhandledexpression:
+    summary: Technical articles from Uncloud on self-hosting applications, Docker networking, and multi-host deployment.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Funcloud.run%2Fblog&size=128
+  unhandled_expression:
     feed_url: http://unhandledexpression.com/feed.xml
     homepage_url: http://unhandledexpression.com
     display_name: Unhandled Expression
-    summary: Updates from Unhandled Expression.
-  unhosted:
+    summary: Geoffroy Couprie's archived articles on software security, Rust parsing, architecture, and open-source development. This HTTP feed currently ends in 2019, while the homepage has newer posts.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Funhandledexpression.com&size=128
+  unhosted_adventures:
     feed_url: https://unhosted.org/adventures/feed.atom
     homepage_url: https://unhosted.org
     display_name: Unhosted Adventures
-    summary: Updates from Unhosted Adventures.
-  uniglobekisco:
+    summary: Archived Unhosted Adventures chapters on client-side web applications, remote storage, and independent per-user backends. The series feed ends in 2014.
+  uniglobe_kisco_inc:
     feed_url: https://uniglobekisco.com/feed
     homepage_url: https://uniglobekisco.com
     display_name: Uniglobe Kisco Inc
-    summary: Advanced Materials Specialist
-  unison_lang:
+    summary: Archived trade-show reports and company news from Uniglobe Kisco, an advanced materials supplier. The latest feed post is dated 2020.
+    profile_photo: https://uniglobekisco.com/wp-content/uploads/2016/04/Kisco-Logo.gif
+  unison_language:
     feed_url: https://www.unison-lang.org/feed.xml
-    homepage_url: https://www.unison-lang.org
-    display_name: Unison Language | Blog
-    summary: Updates from Unison Language | Blog.
-  universityofcalifornia_edu:
+    homepage_url: https://www.unison-lang.org/blog/
+    display_name: Unison Language
+    summary: Official Unison programming language announcements, release notes, engineering articles, and Unison Cloud news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.unison-lang.org&size=128
+  university_of_california:
     feed_url: https://www.universityofcalifornia.edu/rss.xml
     homepage_url: https://www.universityofcalifornia.edu
-    display_name: University of California - The only world-class public research university for, by and of California
-    summary: Updates from University of California - The only world-class public research university for, by and of California..
-  skor_sh:
+    display_name: University of California
+    summary: Archived University of California news about research, education, campus achievements, and public service. This RSS feed currently ends in August 2021.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.universityofcalifornia.edu&size=128
+  ivan_skorokhodov:
     feed_url: http://skor.sh/index.xml
     homepage_url: https://skor.sh
     display_name: Ivan Skorokhodov
-    summary: Recent content on Ivan Skorokhodov
-  unix:
-    feed_url: https://community.unix.com/t/disconnecting-a-telnet-session/178726.rss
-    homepage_url: https://www.unix.com
-    display_name: Disconnecting a telnet session
-    summary: How can I disconnect an existing telnet session? The host is a serial port server with multiple ports. The users login using the host's name and a port, i.e. telnet host01 1235. Thanks.
+    summary: Ivan Skorokhodov's research project pages on generative models, computer vision, and machine learning. This feed contains five selected projects, not all current publications.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fskor.sh&size=128
+  unix_linux_community:
+    feed_url: https://community.unix.com/latest.rss
+    homepage_url: https://community.unix.com/
+    display_name: Unix Linux Community
+    summary: Recent Unix Linux Community forum topics about shell scripting, system administration, networking, and Unix/Linux troubleshooting.
+    profile_photo: https://community.unix.com/uploads/default/optimized/2X/c/c7e9e16a595259edafe88615719d5c5dcda035c2_2_180x180.png
   unix_stackexchange:
     feed_url: https://unix.stackexchange.com/feeds
     homepage_url: https://unix.stackexchange.com/questions
-    display_name: Recent Questions - Unix & Linux Stack Exchange
-    summary: Updates from Recent Questions - Unix & Linux Stack Exchange.
-  unixetc:
+    display_name: Unix and Linux Stack Exchange
+    summary: Recent questions from Unix & Linux Stack Exchange, a community Q&A site about Unix, Linux, shells, and system administration.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Funix.stackexchange.com%2Fquestions&size=128
+  unix_etc:
     feed_url: https://unixetc.co.uk/feed/
     homepage_url: https://unixetc.co.uk
     display_name: Unix etc.
-    summary: Unix, Linux and related technologies.
-  unknownworlds:
+    summary: Jim McDonnell's articles and practical guides about Unix, Linux, Raspberry Pi, networking, and programming. The latest feed post is dated 2024.
+  unknown_worlds:
     feed_url: https://unknownworlds.com/feed.xml
     homepage_url: https://unknownworlds.com/en/news
-    display_name: Unknown Worlds — News
-    summary: Latest news from Unknown Worlds
-  unlok_ca:
+    display_name: Unknown Worlds
+    summary: Official game-development news, release announcements, and updates from Unknown Worlds, creators of Subnautica and Natural Selection.
+    profile_photo: https://unknownworlds.com/apple-icon.png?daa8328ec3313f78
+  unlok:
     feed_url: https://www.unlok.ca/feed/
     homepage_url: https://www.unlok.ca
     display_name: Unlok
-    summary: Updates from Unlok.
-  unrealengine:
-    feed_url: https://www.unrealengine.com/rss.xml
-    homepage_url: https://unrealengine.com
-    display_name: Unreal Engine - News, Developer Interviews, Spotlights, Tech Blogs
-    summary: Updates from Unreal Engine - News, Developer Interviews, Spotlights, Tech Blogs.
-  unwomen:
+    summary: Wayward development news, release notes, and game updates from Unlok and developer Vaughn Royko.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.unlok.ca&size=128
+  unreal_engine:
+    feed_url: https://www.unrealengine.com/rss.xml?lang=en-US
+    homepage_url: https://www.unrealengine.com/
+    display_name: Unreal Engine
+    summary: Official English-language Unreal Engine news, developer interviews, learning resources, showcases, and technical articles from Epic Games.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Funrealengine.com&size=128
+  un_women:
     feed_url: https://www.unwomen.org/en/rss.xml
     homepage_url: https://www.unwomen.org/en
     display_name: UN Women
-    summary: Updates from UN Women.
-  upguard:
+    summary: Official UN Women statements, press releases, research, and news about gender equality and the rights of women and girls.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.unwomen.org%2Fen&size=128
+  upguard_data_breach_research:
     feed_url: https://www.upguard.com/breaches/rss.xml
-    homepage_url: https://www.upguard.com
+    homepage_url: https://www.upguard.com/breaches
     display_name: UpGuard Data Breach Research
-    summary: Subscribe to UpGuard's data breach research and get notified when new research is released.
+    summary: Data breach investigations, security research, and analysis of exposed systems and data from UpGuard.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.upguard.com&size=128
   uploadvr:
     feed_url: https://www.uploadvr.com/rss/
     homepage_url: https://www.uploadvr.com
     display_name: UploadVR
-    summary: VR & AR news, reviews, guides, and industry analysis.
-  uppy:
+    summary: VR and AR news, reviews, guides, and industry analysis from UploadVR.
+    profile_photo: https://storage.ghost.io/c/2a/2f/2a2f38f0-4b71-407a-9c7e-18a9e2541980/content/images/size/w256h256/2023/04/UploadCircle_favicon.png
+  uppy_blog:
     feed_url: https://uppy.io/blog/rss.xml
     homepage_url: https://uppy.io/blog
     display_name: Uppy Blog
-    summary: Uppy Blog
-  upstartlabs:
+    summary: Release announcements, engineering articles, and migration guides for Uppy, the open-source JavaScript file uploader.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fuppy.io%2Fblog&size=128
+  upstart_labs:
     feed_url: https://upstartlabs.com/feed/
     homepage_url: https://upstartlabs.com
-    display_name: Upstart Labs – Accelerating Market Entry – Upstart Labs
-    summary: Updates from Upstart Labs – Accelerating Market Entry – Upstart Labs.
-  urbangiraffe:
+    display_name: Upstart Labs
+    summary: Archived Portland startup-accelerator news and web-development articles from Upstart Labs. The latest feed posts are dated 2024.
+    profile_photo: https://upstartlabs.com/wp-content/uploads/2024/07/header-logo-8143c1a530cb26cec97a3f4d84d423e4-1-e1720011125361.png
+  urban_giraffe:
     feed_url: https://urbangiraffe.com/feed/
     homepage_url: https://urbangiraffe.com
     display_name: Urban Giraffe
-    summary: Life, The Universe, and WordPress
-  urbankchoze_blogspot:
+    summary: John Godley's archived articles about WordPress plugins, software development, and web tools. The latest feed post is dated 2017.
+    profile_photo: https://urbangiraffe.com/images/blog/2016/10/cropped-poppy-burst-180x180.jpg
+  urban_kchoze:
     feed_url: https://urbankchoze.blogspot.com/feeds/posts/default
     homepage_url: https://urbankchoze.blogspot.com
     display_name: Urban kchoze
-    summary: Updates from Urban kchoze.
-  uri_cat:
+    summary: Archived essays on urban planning, zoning, density, and transportation from Urban kchoze, written by a Quebec traffic engineer. The latest feed post is dated 2020.
+  oriol_ferrer_mesia:
     feed_url: https://uri.cat/feed/
     homepage_url: https://uri.cat
-    display_name: The Works of Oriol Ferrer Mesià
-    summary: Updates from The Works of Oriol Ferrer Mesià.
-  usa_oceana:
+    display_name: Oriol Ferrer Mesia
+    summary: Oriol Ferrer Mesia's archived creative-technology projects, interactive installations, computer graphics, and physical designs. The latest feed project is dated 2023.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Furi.cat&size=128
+  oceana_usa:
     feed_url: https://usa.oceana.org/feed/
-    homepage_url: https://usa.oceana.org/homepage/home
+    homepage_url: https://usa.oceana.org/
     display_name: Oceana USA
-    summary: We are Protecting the World's Oceans.
-  usc_edu:
+    summary: Ocean conservation news, marine science, fisheries policy, and campaign updates from Oceana USA.
+    profile_photo: https://usa.oceana.org/wp-content/uploads/sites/4/cropped-cropped-cropped-Oceana_Icon_2Blue_RGB-01-180x180.png
+  usc:
     feed_url: https://www.usc.edu/feed/
     homepage_url: https://www.usc.edu
     display_name: USC
-    summary: University of Southern California
+    summary: University of Southern California research, campus news, student stories, and institutional announcements.
+    profile_photo: https://www.usc.edu/wp-content/themes/usc-communications-2023/favicon/apple-touch-icon.png
   use_the_index_luke:
     feed_url: https://use-the-index-luke.com/blog/feed
     homepage_url: https://use-the-index-luke.com
     display_name: Use The Index, Luke!
-    summary: A Guide to SQL Performance for Developers
-  usefulfictions_substack:
+    summary: Markus Winand's articles about SQL indexing, query performance, and database optimization, with occasional training announcements. The latest feed article is dated 2024.
+    profile_photo: https://use-the-index-luke.com/static/favicon-180.ZbtZnW-D.png
+  useful_fictions:
     feed_url: https://usefulfictions.substack.com/feed
     homepage_url: https://usefulfictions.substack.com
     display_name: Useful Fictions
-    summary: all models are wrong, but some are useful
+    summary: Cate Hall's Useful Fictions essays on agency, personal growth, decision-making, and practical ways to change your life.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!xraC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd0ff3ee-768e-4fe3-ac65-801de37be140%2Fapple-touch-icon-57x57.png
   cdm:
     feed_url: https://cdm.link/feed/
     homepage_url: https://cdm.link
