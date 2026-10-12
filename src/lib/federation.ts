@@ -639,45 +639,35 @@ export function registerInboxListeners(
     .setSharedKeyDispatcher(() => ({ identifier: botUsernames[0] }))
     .on(Follow, (ctx, follow) => handleFollow(ctx, follow, db, botUsernames, blockedInstances))
     .on(Undo, (ctx, undo) => handleUndo(ctx, undo, db, botUsernames))
-    .on(Accept, async (ctx, accept) => {
+    .on(Accept, async (_ctx, accept) => {
       if (!fromAllowedHost(accept)) {
         return;
       }
-      const object = await accept.getObject(ctx);
-      if (!(object instanceof Follow) || !object.id) {
-        logger.debug("Accept (no local action): not a Follow with id (accept {acceptId} actor {actor} got {got})", {
+      if (!accept.objectId || !accept.actorId) {
+        logger.debug("Accept (no local action): missing objectId or actorId (accept {acceptId})", {
           acceptId: accept.id?.href ?? null,
-          actor: accept.actorId?.href ?? null,
-          got: object == null ? "null" : object.constructor.name,
         });
         return;
       }
-      const followIdHref = object.id.href;
-      if (accept.actorId) {
-        await receiveFollowResponse(db, followIdHref, accept.actorId.href, "accepted");
-      }
-      logger.info("Accepted Follow {followId}", { followId: followIdHref });
+      const followIdHref = accept.objectId.href;
+      await receiveFollowResponse(db, followIdHref, accept.actorId.href, "accepted");
+      logger.info("Received Accept for Follow {followId}", { followId: followIdHref });
     })
-    .on(Reject, async (ctx, reject) => {
+    .on(Reject, async (_ctx, reject) => {
       if (!fromAllowedHost(reject)) {
         return;
       }
-      const object = await reject.getObject(ctx);
-      if (!(object instanceof Follow) || !object.id) {
-        logger.debug("Reject (no local action): not a Follow with id (reject {rejectId} actor {actor} got {got})", {
+      if (!reject.objectId || !reject.actorId) {
+        logger.debug("Reject (no local action): missing objectId or actorId (reject {rejectId})", {
           rejectId: reject.id?.href ?? null,
-          actor: reject.actorId?.href ?? null,
-          got: object == null ? "null" : object.constructor.name,
         });
         return;
       }
-      const followIdHref = object.id.href;
-      if (reject.actorId) {
-        await receiveFollowResponse(db, followIdHref, reject.actorId.href, "rejected");
-      }
-      logger.warn("Follow {followId} was rejected by {actor}", {
+      const followIdHref = reject.objectId.href;
+      await receiveFollowResponse(db, followIdHref, reject.actorId.href, "rejected");
+      logger.warn("Received Reject for Follow {followId} from {actor}", {
         followId: followIdHref,
-        actor: reject.actorId?.href,
+        actor: reject.actorId.href,
       });
     })
     .on(Announce, (ctx, activity) => fromAllowedHost(activity) ? handleReaction(ctx, activity, db, botUsernames) : undefined)

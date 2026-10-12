@@ -81,6 +81,22 @@ bots:
     expect((await getAllFollowing(db)).find((f) => f.botUsername === bot)?.status).toBe("pending");
   });
 
+  it.each([
+    ["Accept", Accept, "accepted"],
+    ["Reject", Reject, "rejected"],
+  ] as const)("authorizes %s references against the current stored Follow", async (_name, Response, status) => {
+    const oldId = ctx.getObjectUri(Follow, { identifier: bot, id: "old" });
+    const currentId = ctx.getObjectUri(Follow, { identifier: bot, id: "current" });
+    await upsertFollowing(db, bot, "alice@good.example", good.href, oldId.href);
+    await upsertFollowing(db, bot, "alice@good.example", good.href, currentId.href);
+    await receive(new Response({ actor: good, object: oldId }));
+    await receive(new Response({ actor: new URL("https://other.example/bob"), object: currentId }));
+    expect((await getAllFollowing(db)).find((f) => f.botUsername === bot)?.status).toBe("pending");
+    await receive(new Response({ actor: good, object: currentId }));
+    await receive(new Response({ actor: good, object: currentId }));
+    expect((await getAllFollowing(db)).find((f) => f.botUsername === bot)?.status).toBe(status);
+  });
+
   it("rejects a Follow whose shared inbox is on a blocked host", async () => {
     const actor = new Application({
       id: good,
