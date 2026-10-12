@@ -21209,256 +21209,272 @@ bots:
     homepage_url: https://iafisher.com/
     display_name: iafisher.com
     summary: Systems programming and backend development from Ian Fisher.
-  serverfault:
+  server_fault:
     feed_url: https://serverfault.com/feeds
     homepage_url: https://serverfault.com/questions
-    display_name: Recent Questions - Server Fault
-    summary: Updates from Recent Questions - Server Fault.
-  serverlesshorrors:
+    display_name: Server Fault
+    summary: Recent community questions about professional system administration, servers, networking, cloud infrastructure, and operations.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fserverfault.com%2Fquestions&size=128
+  serverless_horrors:
     feed_url: https://serverlesshorrors.com/rss.xml
     homepage_url: https://serverlesshorrors.com
-    display_name: ServerlessHorrors | Blog
-    summary: Stories you never want to feel on your own skin
-  sexpigeon_tumblr:
+    display_name: Serverless Horrors
+    summary: Collected accounts of unexpected serverless and cloud-service bills, including usage spikes, attacks, and billing disputes.
+    profile_photo: https://serverlesshorrors.com/apple-touch-icon.png
+  sexpigeon:
     feed_url: https://sexpigeon.tumblr.com/rss
     homepage_url: https://sexpigeon.tumblr.com
-    display_name: The Mid-Life Crisis Of Sexpigeon
-    summary: Tight white shirt tucked in no belt
-  sexyvideogameland_blogspot:
-    feed_url: https://sexyvideogameland.blogspot.com/feeds/posts/default
-    homepage_url: https://sexyvideogameland.blogspot.com
-    display_name: SVGL
-    summary: Updates from SVGL.
-  sfbags:
+    display_name: Sexpigeon - The Mid-Life Crisis
+    summary: 'Archived photographs, visual jokes, commentary, and reblogs from Sexpigeon. Latest feed post: February 2019.'
+    profile_photo: https://api.tumblr.com/v2/blog/sexpigeon.tumblr.com/avatar/128
+  waterfield_messenger_bags:
     feed_url: https://www.sfbags.com/collections/shoulder-messenger-bags.atom
-    homepage_url: https://www.sfbags.com/collections/all
-    display_name: WaterField Designs
-    summary: Updates from WaterField Designs.
-  sfbg:
+    homepage_url: https://www.sfbags.com/collections/shoulder-messenger-bags
+    display_name: WaterField Designs - Messenger Bags
+    summary: New and updated shoulder and messenger bags in WaterField Designs' official product catalog, made in San Francisco.
+    profile_photo: https://www.sfbags.com/cdn/shop/files/favicon-v3-32x32_32x32.png?v=1614337900
+  san_francisco_bay_guardian:
     feed_url: https://www.sfbg.com/feed/
     homepage_url: https://www.sfbg.com
     display_name: San Francisco Bay Guardian
-    summary: Home of the Best of the Bay, Clean Slate election endorsements, and the Bay Guardian Archives (coming soon).
-  sfgiants_tumblr:
+    summary: San Francisco Bay Guardian election endorsements, local politics, Best of the Bay reader polls, and publication news.
+    profile_photo: https://www.sfbg.com/wp-content/uploads/2022/05/favicon.png
+  sf_giants_tumblr:
     feed_url: https://sfgiants.tumblr.com/rss
     homepage_url: https://sfgiants.tumblr.com
-    display_name: https://sfgiants.tumblr.com/
-    summary: The official tumblr account of the San Francisco Giants
+    display_name: San Francisco Giants - Tumblr
+    summary: 'Archived photographs, GIFs, game highlights, and fan posts from the San Francisco Giants'' official Tumblr. Latest feed post: April 2017.'
+    profile_photo: https://api.tumblr.com/v2/blog/sfgiants.tumblr.com/avatar/128
   sfmade:
     feed_url: https://www.sfmade.org/blog-feed.xml
     homepage_url: https://www.sfmade.org/blog
     display_name: SFMade
-    summary: SFMade
-  sfrapoport_github:
-    feed_url: http://sfrapoport.github.io/feed.xml
-    homepage_url: http://sfrapoport.github.io
+    summary: SFMade news, events, resources, and profiles supporting San Francisco manufacturers and local manufacturing jobs.
+    profile_photo: https://static.wixstatic.com/media/ec9b56_d177a5e28dd74522b71d2568dd0f9c1b%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/ec9b56_d177a5e28dd74522b71d2568dd0f9c1b%7Emv2.png
+  sophie_rapoport:
+    feed_url: https://sfrapoport.github.io/feed.xml
+    homepage_url: https://sfrapoport.github.io/
     display_name: Sophie Rapoport
-    summary: Sophie Rapoport's website
-  sfstandard:
+    summary: 'Sophie Rapoport''s archived programming notes and reflections on learning software development. Latest feed post: September 2015.'
+  the_san_francisco_standard:
     feed_url: https://sfstandard.com/feed/
     homepage_url: https://sfstandard.com
     display_name: The San Francisco Standard
-    summary: The San Francisco Bay Area's essential source for daily news, politics, business, food, tech, culture and more
-  sfstation:
+    summary: San Francisco Bay Area reporting on local news, politics, business, technology, sports, food, and culture.
+    profile_photo: https://sfstandard.com/favicon/favicon-180x180-1.png
+  sf_station:
     feed_url: https://www.sfstation.com/feed/
     homepage_url: https://www.sfstation.com
-    display_name: SF Station | San Francisco's City Guide
-    summary: The best events happening right now in the SF Bay Area.
+    display_name: SF Station
+    summary: San Francisco Bay Area concerts, arts, nightlife, local events, entertainment coverage, and ticket giveaways.
   sfwa:
     feed_url: https://sfwa.org/feed/
     homepage_url: https://sfwa.org
-    display_name: SFWA – The Science Fiction & Fantasy Writers Association
-    summary: Updates from SFWA – The Science Fiction & Fantasy Writers Association.
+    display_name: SFWA
+    summary: Science Fiction and Fantasy Writers Association news, publishing advice, contracts and rights explainers, advocacy, and resources for writers.
+    profile_photo: https://sfwa.org/wp-content/uploads/2014/06/cropped-Logo-SFWA-Web-square-e1449097527471-180x180.png
   shadowproof:
     feed_url: https://shadowproof.com/feed/
     homepage_url: https://shadowproof.com
     display_name: Shadowproof
-    summary: Updates from Shadowproof.
-  shagbark_substack:
+    summary: Archived independent reporting on prisons, abolition, civil liberties, and abuses of power. Shadowproof announced its closure in December 2023.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fshadowproof.com&size=128
+  hickmans_hinterlands:
     feed_url: https://shagbark.substack.com/feed
     homepage_url: https://shagbark.substack.com
     display_name: Hickman's Hinterlands
-    summary: A ledger of obscure travels, backwoods rambles, rough bivouacs, and cackling cartographies.
-  shakedko:
+    summary: A.M. Hickman's essays on travel, rural America, frugal living, landscapes, religion, and culture.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!p6CV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F724e9f80-3be3-4e0c-9310-b9d26d1f542e%2Fapple-touch-icon-57x57.png
+  shaked_klein_orbach:
     feed_url: https://shakedko.com/feed.xml
     homepage_url: https://shakedko.com
     display_name: Shaked Klein Orbach
-    summary: Updates from Shaked Klein Orbach.
-  shareably_co:
+    summary: 'Shaked Klein Orbach''s archived writing on programming, application privacy, freelancing, travel, and personal projects. Latest feed post: January 2018.'
+    profile_photo: https://github.com/shaked.png?size=200
+  shareably:
     feed_url: https://shareably.co/feed/
     homepage_url: https://shareably.co
     display_name: Shareably
-    summary: We're the next generation of story-tellers.
-  shayfrendt:
-    feed_url: https://shayfrendt.com/feed/
-    homepage_url: https://shayfrendt.com
-    display_name: Pusat Informasi Sebuah Kerangka Kerja Web Apps dalam Pemrograman
-    summary: Sebuah pusat informasi mengenai tentang program-program web apps dan cara kerjanya yang dapat anda ketahui disini
-  sheldonbrown:
+    summary: Shareably's viral human-interest stories about performances, families, animals, and everyday life. The proposed feed surfaces an older selection of stories.
+    profile_photo: https://cdn.shareably.net/wp-content/themes/sbly-media/assets/img/logos/profile_shareably_32x32.png
+  sheldon_brown_updates:
     feed_url: https://sheldonbrown.com/blog/feed/
     homepage_url: https://sheldonbrown.com/blog
-    display_name: SheldonBrown
-    summary: What's new at sheldonbrown.com
+    display_name: Sheldon Brown - Site Updates
+    summary: Updates to sheldonbrown.com's bicycle maintenance, repair, gearing, compatibility, and cycling reference articles, maintained by the site's editors.
   shell_tips:
     feed_url: https://www.shell-tips.com/rss.xml
     homepage_url: https://www.shell-tips.com
     display_name: Shell Tips!
-    summary: The one stop for hands-on people who love Scripting, Programming and other technical tidbits.
-  shi_foo:
+    summary: Nicolas Brousse's practical tutorials on Bash, shell scripting, Linux, macOS, and programming tools.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.shell-tips.com&size=128
+  shifoo:
     feed_url: https://shi.foo/rss/
     homepage_url: https://shi.foo/weblog
     display_name: Shifoo
-    summary: RSS Feed for Shifoo's Weblog
-  shiftyjelly_wordpress:
+    summary: 'Shifoo''s programming and computer-science weblog, including Go terminal interfaces, parsers, Linux, statistics, and personal projects. Latest feed post: February 2024.'
+    profile_photo: https://shi.foo/static/images/favicons/apple-touch-icon.png
+  shifty_jellys_blog_of_mystery:
     feed_url: https://shiftyjelly.wordpress.com/feed/
     homepage_url: https://shiftyjelly.wordpress.com
     display_name: Shifty Jelly's blog of mystery
-    summary: because some things were meant to be shifty...
-  shippouchan_tumblr:
+    summary: 'Shifty Jelly''s archived developer blog about Pocket Casts, Pocket Weather, app development, and company changes. Latest feed post: August 2018.'
+    profile_photo: https://secure.gravatar.com/blavatar/8aa35a935209b595f490587b86f95dc3eb90993ca0217adb0bb96dc604227b9a?s=114
+  dreaming_in_technicolor:
     feed_url: https://shippouchan.tumblr.com/rss
     homepage_url: https://shippouchan.tumblr.com
     display_name: Dreaming in Technicolor
-    summary: Amid the crazy happenstances of life, we still have time to dream. In technicolor, of course.
-  shlomoswidler:
+    summary: 'Dreaming in Technicolor''s archived personal reflections, travel and film photographs, and family posts. Latest feed post: September 2023.'
+    profile_photo: https://api.tumblr.com/v2/blog/shippouchan.tumblr.com/avatar/128
+  shlomo_swidler:
     feed_url: https://shlomoswidler.com/index.xml
     homepage_url: https://shlomoswidler.com
     display_name: Shlomo Swidler
-    summary: Recent content on Shlomo Swidler
-  shop_bubblesort:
+    summary: 'Shlomo Swidler''s writing on cloud computing, software delivery, business innovation, and learning organizations. Latest feed article: August 2019.'
+  bubblesort_zines_news:
     feed_url: https://shop.bubblesort.io/blogs/news.atom
     homepage_url: https://shop.bubblesort.io/blogs/news
     display_name: BubbleSort Zines - News
-    summary: Updates from BubbleSort Zines - News.
-  shop_darksiderecords:
+    summary: An archived Binary Donuts computer-science tutorial and shop FAQ from BubbleSort Zines. Feed entries date to 2015 and 2019.
+    profile_photo: https://shop.bubblesort.io/cdn/shop/files/bubblesort_logo_small_2eb0e9c0-862b-4796-91da-9e5bca9780b2_32x32.png?v=1614313469
+  darkside_records_news:
     feed_url: https://shop.darksiderecords.com/blogs/news.atom
     homepage_url: https://shop.darksiderecords.com/blogs/news
     display_name: Darkside Records - News
-    summary: Updates from Darkside Records - News.
-  shop_havenshop:
+    summary: News and in-store performance announcements from Darkside Records, an independent record shop in Poughkeepsie, New York.
+    profile_photo: https://shop.darksiderecords.com/cdn/shop/files/favicon-32x32.png?crop=center&height=32&v=1667590365&width=32
+  haven_products:
     feed_url: https://shop.havenshop.com/collections/all.atom
     homepage_url: https://shop.havenshop.com/collections/all
-    display_name: HAVEN
-    summary: Updates from HAVEN.
-  sifterapp:
+    display_name: HAVEN - Products
+    summary: New and updated clothing, footwear, bags, and accessories in HAVEN's official retail product catalog.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fshop.havenshop.com%2Fcollections%2Fall&size=128
+  sifter_blog:
     feed_url: https://sifterapp.com/feeds/blog.xml
     homepage_url: https://sifterapp.com
     display_name: Sifter Blog
-    summary: Updates from Sifter Blog.
-  signadot:
+    summary: 'Sifter''s archived articles on bug tracking, quality assurance, project management, and remote software teams. Latest feed article: October 2020.'
+    profile_photo: https://sifterapp.com/public-assets/vendor/apple-touch-icon-57x57-b2b384e73cec2617fd146e345945838c.png
+  signadot_blog:
     feed_url: https://www.signadot.com/rss.xml
     homepage_url: https://www.signadot.com
-    display_name: Signadot Blog RSS
+    display_name: Signadot Blog
     summary: Microservices testing, ephemeral environments, and agent-native development from the Signadot team.
-  siliconsasquatch:
+    profile_photo: https://www.signadot.com/images/icon-256.png
+  silicon_sasquatch:
     feed_url: https://www.siliconsasquatch.com/blog?format=rss
     homepage_url: https://www.siliconsasquatch.com
     display_name: Silicon Sasquatch
-    summary: An independent podcast covering the cultural significance of games.
+    summary: Independent video-game reviews, podcasts, essays, and Game of the Year selections from Silicon Sasquatch.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.siliconsasquatch.com&size=128
   simogo:
     feed_url: https://simogo.com/feed/
     homepage_url: https://simogo.com
     display_name: Simogo
-    summary: Updates from Simogo.
-  simoncpage:
+    summary: 'News and development updates from Simogo, the game studio behind Sayonara Wild Hearts, DEVICE 6, and Lorelei and the Laser Eyes. Latest feed post: January 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsimogo.com&size=128
+  simon_c_page:
     feed_url: https://simoncpage.co.uk/blog/feed/
     homepage_url: https://simoncpage.co.uk/blog
-    display_name: simoncpage.com
-    summary: Official website of designer and illustrator Simon C Page
-  simonholywell:
+    display_name: Simon C. Page
+    summary: 'Simon C. Page''s archived graphic design, illustration, geometric artwork, and downloadable device wallpapers. Latest feed post: February 2013.'
+  simon_holywell:
     feed_url: https://www.simonholywell.com/feed.xml
     homepage_url: https://www.simonholywell.com
-    display_name: Home · Simon Holywell on Simon Holywell
-    summary: Updates from Home · Simon Holywell on Simon Holywell.
-  simonschreibt_de:
+    display_name: Simon Holywell
+    summary: 'Simon Holywell''s writing on software development, SQL, web applications, mountain biking, and bicycle maintenance. Latest feed post: November 2024.'
+    profile_photo: https://www.simonholywell.com/icons/apple-touch-icon.c283be8ef476aad8d59328c3444c2114436efd3ca40d9ad888f0f4caacb5f087.png
+  simon_schreibt:
     feed_url: https://simonschreibt.de/feed/
     homepage_url: https://simonschreibt.de
-    display_name: Simonschreibt.
-    summary: Updates from Simonschreibt..
-  simpledesktops:
+    display_name: Simon schreibt
+    summary: Game-art and development breakdowns explaining rendering techniques, visual effects, animation, tools, and workflow tricks.
+  simple_desktops:
     feed_url: https://feeds.feedburner.com/simpledesktops
     homepage_url: https://simpledesktops.com
     display_name: Simple Desktops
-    summary: 'Simple Desktops: a collection of bling, drop shadow, and gradient free desktops to help keep you stay focused but also provide just enough eye candy to not be bored.'
-  simplehelp:
+    summary: 'A curated archive of minimalist desktop wallpapers, with downloadable artwork and designer credits. Newest listed feed wallpaper: February 2023.'
+  simple_help:
     feed_url: https://feeds.feedburner.com/simplehelp/
     homepage_url: https://www.simplehelp.net
     display_name: Simple Help
-    summary: Common Questions, Simple Answers
-  scrippsnews:
+    summary: 'Archived how-to guides, troubleshooting tips, and tutorials for computers, phones, tablets, and software. Latest feed article: February 2023.'
+    profile_photo: https://www.simplehelp.net/wp-content/uploads/simplehelp_logo-300x300.png
+  scripps_news_life:
     feed_url: https://www.scrippsnews.com/life.rss
     homepage_url: https://www.scrippsnews.com/life
     display_name: Scripps News Life
-    summary: Scripps News Life
+    summary: Scripps News Life, the destination of the former Simplemost site, covers lifestyle, health, family, culture, and everyday news.
+    profile_photo: https://www.scrippsnews.com/apple-touch-icon.png
   simplexify:
     feed_url: http://simplexify.net/blog/atom.xml
     homepage_url: http://simplexify.net/blog
     display_name: Simplexify
-    summary: Updates from Simplexify.
+    summary: 'David Woods'' archived notes on operations research, optimization, analytics, probability, and software projects. Latest feed post: December 2012.'
   simplifilm:
     feed_url: https://simplifilm.com/feed/
     homepage_url: https://simplifilm.com
-    display_name: Simplifilm-Video Production Agency In Austin Texas
-    summary: Video Sales Funnels. Explainer Videos. Book trailers. Brand Films.
-  simplyquinoa:
+    display_name: Simplifilm
+    summary: 'Simplifilm''s archived articles about explainer videos, video production, sales, marketing, and running a creative business. Latest feed post: September 2017.'
+    profile_photo: https://simplifilm.com/wp-content/uploads/2016/10/cropped-Image-For-Favicon-180x180.png
+  simply_quinoa:
     feed_url: https://www.simplyquinoa.com/feed/
     homepage_url: https://www.simplyquinoa.com
     display_name: Simply Quinoa
-    summary: Healthy Quinoa Recipes Made Simple
+    summary: Simply Quinoa's recipes centered on plants, including gluten-free meals, breakfasts, baked goods, and seasonal dishes.
+    profile_photo: https://www.simplyquinoa.com/wp-content/uploads/fbrfg/apple-touch-icon.png
   singlebrook:
     feed_url: https://singlebrook.com/feed.xml
     homepage_url: https://singlebrook.com
-    display_name: Singlebrook - App developers
-    summary: Singlebrook builds custom web and mobile apps for businesses and startups. We love Javascript, Ruby on Rails, and React. Code with love!
-  singleguysrockclimbing_tumblr:
+    display_name: Singlebrook
+    summary: Singlebrook's software-development articles, project notes, business news, and company announcements.
+  single_guys_rock_climbing:
     feed_url: https://singleguysrockclimbing.tumblr.com/rss
     homepage_url: https://singleguysrockclimbing.tumblr.com
     display_name: Single Guys Rock Climbing
-    summary: Recently single and considering online dating? Maybe you should take up rock climbing. The universal hobby of undateable men.
-  singletracks:
+    summary: 'Archived visual jokes and captions poking fun at rock-climbing photos in online dating profiles. Latest feed post: March 2014.'
+    profile_photo: https://api.tumblr.com/v2/blog/singleguysrockclimbing.tumblr.com/avatar/128
+  singletracks_mountain_bike_news:
     feed_url: https://www.singletracks.com/feed/
     homepage_url: https://www.singletracks.com
     display_name: Singletracks Mountain Bike News
     summary: Mountain bike news, bike reviews, trail information, and tips for better riding.
+    profile_photo: https://images.singletracks.com/graphics/icons/favicons/apple-icon-180x180.png
   singularityhub:
     feed_url: https://singularityhub.com/feed/
     homepage_url: https://singularityhub.com
     display_name: SingularityHub
-    summary: SingularityHub chronicles the technological frontier with coverage of the breakthroughs, players, and issues shaping the future.
-  sirupsen:
-    feed_url: https://sirupsen.com/atom.xml
-    homepage_url: https://sirupsen.com
-    display_name: Simon Eskildsen
-    summary: Updates from Simon Eskildsen.
+    summary: Science and technology reporting on AI, robotics, biotechnology, computing, and emerging research, plus curated weekly links.
+    profile_photo: https://singularityhub.com/uploads/2025/01/sing-hub_favicon_500.png?auto=webp
   siteleaf:
     feed_url: https://www.siteleaf.com/feed.xml
     homepage_url: https://www.siteleaf.com
     display_name: Siteleaf
-    summary: Built for developers, Loved by everyone. Supports Jekyll, user collaboration, publishing to AWS S3, GitHub Pages, FTP, and more.
-  sites_duke_edu:
-    feed_url: https://sites.duke.edu/feed/
-    homepage_url: https://sites.duke.edu
-    display_name: Sites@Duke Express
-    summary: sites.duke.edu
-  sixcolors:
-    feed_url: http://feedpress.me/sixcolors
+    summary: Siteleaf product news, CMS tutorials, Jekyll and static-site workflows, and publishing tips.
+  six_colors:
+    feed_url: https://feedpress.me/sixcolors
     homepage_url: https://sixcolors.com
     display_name: Six Colors
-    summary: Apple, technology, and other stuff
+    summary: Apple and technology reporting, analysis, reviews, links, and podcasts from Jason Snell, Dan Moren, and contributors.
+    profile_photo: https://sixcolors.com/wp-content/themes/sixcolors/images/apple-touch-icon.png
   sixscape:
     feed_url: https://sixscape.com/feed/
     homepage_url: https://sixscape.com
     display_name: Sixscape
-    summary: Cryptographic Identity & Authentication
-  sixthtone:
+    summary: Sixscape company news and technical articles on certificate management, PKI, authentication, email security, and IoT security.
+    profile_photo: https://sixscape.com/wp-content/uploads/2019/07/cropped-LinkedIn-Light-32x32.png
+  sixth_tone:
     feed_url: https://api.sixthtone.com/cont/output/rssApi
     homepage_url: https://www.sixthtone.com
-    display_name: Sixth Tone RSS
-    summary: Sixth Tone RSS
-  skarlso_github:
+    display_name: Sixth Tone
+    summary: Sixth Tone reporting, features, and commentary on contemporary China, society, culture, technology, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.sixthtone.com&size=128
+  gergely_brautigam:
     feed_url: https://skarlso.github.io/index.xml
     homepage_url: https://skarlso.github.io
-    display_name: Ramblings of a cloud engineer
-    summary: Recent content on Ramblings of a cloud engineer
+    display_name: Gergely Brautigam - Ramblings of a Cloud Engineer
+    summary: Gergely Brautigam's writing on Go, Kubernetes, cloud engineering, open-source projects, note-taking, AI, and fiction.
+    profile_photo: https://github.com/Skarlso.png?size=200
   greg_sadetsky:
     feed_url: https://blog.greg.technology/feed.xml
     homepage_url: https://blog.greg.technology/
