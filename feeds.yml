@@ -20079,6 +20079,263 @@ bots:
     display_name: Fauxtrots
     summary: Personal reflections, art, and technology projects.
     profile_photo: https://www.fauxtrots.com/apple-touch-icon.png
+  rabbit_island:
+    feed_url: https://rabbitisland.org/feed/
+    homepage_url: https://rabbitisland.org
+    display_name: Rabbit Island
+    summary: Artist residency announcements and conservation updates from Rabbit Island in Lake Superior.
+    profile_photo: https://rabbitisland.org/wp-content/uploads/2023/03/cropped-ri_logomark-icon-512px-180x180.png
+  maybe_a_blog:
+    feed_url: https://rachbelaid.com/feed.xml
+    homepage_url: http://rachbelaid.com
+    display_name: Maybe a -> Blog
+    summary: An archive of Rachid Belaid's posts about programming, databases, and computer science.
+  rachit_nigam:
+    feed_url: https://people.csail.mit.edu/rachit/post/atom.xml
+    homepage_url: https://people.csail.mit.edu/rachit/post
+    display_name: Rachit's Blog
+    summary: Rachit Nigam writes about programming languages, compilers, research, and life.
+  major_hayden:
+    feed_url: https://major.io/index.xml
+    homepage_url: https://major.io
+    display_name: Major Hayden
+    summary: Major Hayden writes about Linux, infrastructure, security, software, and personal projects.
+    profile_photo: https://major.io/apple-touch-icon.png
+  jays_life:
+    feed_url: https://racketracer.wordpress.com/feed/
+    homepage_url: https://racketracer.wordpress.com
+    display_name: Jay's Life
+    summary: Jay's archived personal blog about programming, data analysis, and projects; the author announced a move in 2015.
+  radek_pazdera:
+    feed_url: https://radek.io/rss.xml
+    homepage_url: https://radek.io
+    display_name: Radek Pazdera
+    summary: Radek Pazdera writes about software products, programming, technology, and personal projects.
+    profile_photo: https://radek.io/images/icons/apple-touch-icon.png
+  radiant_earth:
+    feed_url: https://radiant.earth/index.xml
+    homepage_url: https://radiant.earth
+    display_name: Radiant Earth
+    summary: News and articles from Radiant Earth about geospatial data, open tools, and its projects.
+    profile_photo: https://radiant.earth/apple-touch-icon.png
+  radicalcartography:
+    feed_url: http://radicalcartography.blogspot.com/feeds/posts/default
+    homepage_url: http://radicalcartography.net
+    display_name: radicalcartography
+    summary: Archived map projects and geographic analysis from radicalcartography.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fradicalcartography.net&size=128
+  radio_no:
+    feed_url: https://radio.no/feed/
+    homepage_url: https://radio.no/2018/04/
+    display_name: Radio.no
+    summary: Archived news and listener guidance about Norway's transition from FM to DAB digital radio. The feed ends in 2018.
+    profile_photo: https://media.wpd.digital/radio/uploads/sites/2/2016/10/cropped-INFO-RADIO-RADIOSKIFTET-1-32x32.png
+  raji_bedi:
+    feed_url: https://rajibedi.tumblr.com/rss
+    homepage_url: https://rajibedi.tumblr.com
+    display_name: Raji Bedi
+    summary: Raji Bedi's archived Tumblr posts about entrepreneurship, technology, and personal life.
+    profile_photo: https://api.tumblr.com/v2/blog/rajibedi.tumblr.com/avatar/128
+  rakhims_blog:
+    feed_url: https://rakhim.exotext.com/rss.xml
+    homepage_url: https://rakhim.exotext.com
+    display_name: Rakhim's blog
+    summary: Rakhim's personal blog about software, design, technology, and everyday life.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frakhim.exotext.com&size=128
+  ralph_sevelius:
+    feed_url: https://ralphsevelius.blogspot.com/feeds/posts/default
+    homepage_url: https://ralphsevelius.blogspot.com
+    display_name: Ralph Sevelius
+    summary: An archive of Ralph Sevelius's illustrations and character artwork.
+  ramiro_gomez:
+    feed_url: https://ramiro.org/rss.xml
+    homepage_url: https://ramiro.org
+    display_name: Ramiro Gomez
+    summary: Ramiro Gomez's archived data analysis notebooks, visualizations, and programming resources.
+    profile_photo: https://ramiro.org/img/ramiro-logo.png
+  dr_randal_s_olson:
+    feed_url: https://www.randalolson.com/feed.xml
+    homepage_url: https://www.randalolson.com
+    display_name: Dr. Randal S. Olson
+    summary: Randal S. Olson writes about artificial intelligence, machine learning, data science, and visualization.
+    profile_photo: https://www.randalolson.com/apple-touch-icon.png
+  evs_prime_meridian:
+    feed_url: https://randle.substack.com/feed
+    homepage_url: https://randle.substack.com
+    display_name: Ev's Prime Meridian
+    summary: Everett Randle's essays about investing, business, and financial technology.
+    profile_photo: https://substackcdn.com/image/fetch/$s_!UqAZ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb127bb98-4351-40a9-a01e-12bdc0cc4b96%2Fapple-touch-icon-57x57.png
+  random_hacks:
+    feed_url: https://www.randomhacks.net/feed.xml
+    homepage_url: http://www.randomhacks.net
+    display_name: Random Hacks
+    summary: Eric Kidd writes about software development, code, and personal projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fwww.randomhacks.net&size=128
+  randomly_london:
+    feed_url: https://randomlylondon.com/feed/
+    homepage_url: https://randomlylondon.com
+    display_name: Randomly London
+    summary: Archived posts about walking London's Underground, transport, and the city.
+  randomwire:
+    feed_url: https://randomwire.com/feed/
+    homepage_url: https://randomwire.com
+    display_name: Randomwire
+    summary: David writes about travel, design, technology, and life on Randomwire.
+    profile_photo: https://randomwire.com/wp-content/uploads/rw-logo-300x300.png
+  r_and_s_records:
+    feed_url: https://www.rsrecords.com/feed
+    homepage_url: https://www.rsrecords.com/
+    display_name: R&S Records
+    summary: News, artist announcements, and music releases from R&S Records.
+    profile_photo: https://www.rsrecords.com/wp-content/uploads/2011/12/r-and-s-logo-150x150.png
+  raphael_releases:
+    feed_url: https://github.com/DmitryBaranovskiy/raphael/releases.atom
+    homepage_url: https://dmitrybaranovskiy.github.io/raphael/
+    display_name: Raphael Releases
+    summary: Archived releases of Raphael, the JavaScript library for cross-browser vector graphics.
+  robert_reeses_website:
+    feed_url: https://rareese.com/index.xml
+    homepage_url: https://rareese.com
+    display_name: Robert Reese's Website
+    summary: Robert Reese's personal website, with posts about technology, travel, and projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frareese.com&size=128
+  raspberrypi_stackexchange:
+    feed_url: https://raspberrypi.stackexchange.com/feeds
+    homepage_url: https://raspberrypi.stackexchange.com/questions
+    display_name: Raspberry Pi Stack Exchange
+    summary: Recent questions from Raspberry Pi Stack Exchange, a community Q&A site for Raspberry Pi hardware and software.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fraspberrypi.stackexchange.com%2Fquestions&size=128
+  raymmar_com:
+    feed_url: https://raymmar.com/feed/
+    homepage_url: https://raymmar.com
+    display_name: Raymmar.com
+    summary: Archived essays by Raymmar Tirado about creativity, entrepreneurship, media, and life.
+    profile_photo: https://cdn.prod.website-files.com/625a3ad2e405d925fe7d8992/6369c7cb2304e15c72917596_favicon.png
+  silviu_tantos_razius:
+    feed_url: https://razius.com/feeds/all.atom.xml
+    homepage_url: https://razius.com
+    display_name: Silviu Tantos (razius)
+    summary: An archive of Silviu Tantos's posts about programming, automation, and personal projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frazius.com&size=128
+  russia_beyond:
+    feed_url: https://www.rbth.com/rss
+    homepage_url: https://www.rbth.com
+    display_name: Russia Beyond
+    summary: Articles from Russia Beyond about Russian history, culture, travel, and daily life; this feed's latest entries are from January 2025.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.rbth.com&size=128
+  rcp:
+    feed_url: https://rcptones.com/feed/
+    homepage_url: https://rcptones.com
+    display_name: RCP
+    summary: Archived RCP announcements about ringtones and notification sounds for Android and iPhone.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frcptones.com&size=128
+  richard_crowley:
+    feed_url: https://rcrowley.org/index.atom.xml
+    homepage_url: https://rcrowley.org
+    display_name: Richard Crowley
+    summary: Richard Crowley writes about software engineering, systems, and personal projects.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frcrowley.org&size=128
+  rdist:
+    feed_url: https://rdist.root.org/feed/
+    homepage_url: https://rdist.root.org
+    display_name: rdist
+    summary: Articles from Root Labs' rdist blog about embedded security, cryptography, and software protection.
+    profile_photo: https://rdist.root.org/wp-content/uploads/2022/11/cropped-root_labs_symbol.png?w=180
+  re_cycled_air:
+    feed_url: https://www.re-cycledair.com/feed
+    homepage_url: https://www.re-cycledair.com
+    display_name: Re-Cycled Air
+    summary: Jack Slingerland's posts about programming, technology, and life.
+  books_i_read:
+    feed_url: https://readingbyeugene.com/feed/
+    homepage_url: https://readingbyeugene.com/
+    display_name: Books I Read
+    summary: Eugene's archived blog of reading recommendations, interesting articles, and commentary.
+    profile_photo: https://secure.gravatar.com/blavatar/40fa4fc5d6bf80ce2ba429df3143e1eb102a914505803a8567e7c6b9658ba94d?s=114
+  readings_in_information_security:
+    feed_url: https://readings.owlfolio.org/index.atom
+    homepage_url: https://readings.owlfolio.org
+    display_name: Readings in Information Security
+    summary: An archived collection of annotated research papers about information security.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Freadings.owlfolio.org&size=128
+  read_the_docs:
+    feed_url: https://about.readthedocs.com/feeds/atom.xml
+    homepage_url: https://about.readthedocs.com
+    display_name: Read the Docs
+    summary: Official blog posts about Read the Docs, its documentation hosting platform, and service operations.
+    profile_photo: https://about.readthedocs.com/theme/img/apple-touch-icon.png
+  real_escape_game_created_by_scrap:
+    feed_url: https://realescapegame.com/feed/
+    homepage_url: https://realescapegame.com
+    display_name: REAL ESCAPE GAME Created by SCRAP
+    summary: Archived event announcements from SCRAP's Real Escape Game. This feed's latest events are from 2017.
+    profile_photo: https://realescapegame.com/wp-content/uploads/2023/04/cropped-REG_logo-e1680660650229-180x180.png
+  rebble:
+    feed_url: https://rebble.io/feed.xml
+    homepage_url: https://rebble.io/
+    display_name: Rebble
+    summary: Community and project news from Rebble, which maintains and develops services for Pebble smartwatches.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Frebble.io%2F&size=128
+  peanut_butter_and_co_recipes:
+    feed_url: https://ilovepeanutbutter.com/blogs/recipes.atom
+    homepage_url: https://ilovepeanutbutter.com/blogs/recipes
+    display_name: Peanut Butter & Co Recipes
+    summary: Peanut butter recipes from Peanut Butter & Co.
+    profile_photo: https://ilovepeanutbutter.com/cdn/shop/files/FAVICON_32x32.png?v=1613714059
+  reco_blog:
+    feed_url: https://www.reco.ai/blog/rss.xml
+    homepage_url: https://www.reco.ai/blog
+    display_name: Reco Blog
+    summary: Articles from Reco about SaaS security, data security, AI threats, and company news.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.reco.ai&size=128
+  the_recompiler:
+    feed_url: https://recompilermag.com/feed/
+    homepage_url: https://recompilermag.com
+    display_name: The Recompiler
+    summary: Archived articles and newsletters from The Recompiler about technology and diverse participation.
+    profile_photo: https://recompilermag.com/wp-content/uploads/2016/11/recompiler-ep-17-mp3-image.jpg?w=180
+  recovery_monkey:
+    feed_url: https://recoverymonkey.org/feed/
+    homepage_url: https://recoverymonkey.org
+    display_name: Recovery Monkey
+    summary: Dimitris Krekoukias writes about storage systems, performance, backups, and data protection.
+    profile_photo: https://recoverymonkey.org/wp-content/uploads/2016/03/cropped-IMG_8515-180x180.png
+  recraigslist:
+    feed_url: https://recraigslist.com/feed/
+    homepage_url: https://recraigslist.com
+    display_name: ReCraigslist
+    summary: Archived essays about work, entrepreneurship, appliance repair, and family from ReCraigslist.
+    profile_photo: https://recraigslist.com/wp-content/uploads/2019/10/autodraw-4-17-2017.png
+  redis_blog:
+    feed_url: https://redis.io/blog/feed/
+    homepage_url: https://redis.io/blog/
+    display_name: Redis Blog
+    summary: Official Redis blog posts about database development, product announcements, and company news.
+    profile_photo: https://redis.io/apple-icon.png?apple-icon.0oi7qb05iiq_i.png
+  red_scott:
+    feed_url: https://redscott.tumblr.com/rss
+    homepage_url: https://redscott.tumblr.com
+    display_name: Red Scott
+    summary: Red Scott's Tumblr posts about comedy, photography, and personal life.
+    profile_photo: https://api.tumblr.com/v2/blog/redscott.tumblr.com/avatar/128
+  reductress:
+    feed_url: https://reductress.com/feed/
+    homepage_url: https://reductress.com
+    display_name: Reductress
+    summary: Satirical headlines and articles from the feminist humor publication Reductress.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Freductress.com&size=128
+  reflectoring:
+    feed_url: https://reflectoring.io/index.xml
+    homepage_url: https://reflectoring.io
+    display_name: Reflectoring
+    summary: Software development tutorials and articles from Reflectoring, including Java and Spring.
+    profile_photo: https://reflectoring.io/images/favicon_hu1f1279ae3ed53647d9a8907cf7c47ae6_3248_180x0_resize_box_3.png
+  regex_crossword:
+    feed_url: https://regexcrossword.com/api/feed
+    homepage_url: https://regexcrossword.com
+    display_name: Regex Crossword
+    summary: Announcements of new player-created regular-expression crossword puzzles.
+    profile_photo: https://regexcrossword.com/assets/apple-icon-180-B_BejNK4.png
   evan_schwartz:
     feed_url: https://emschwartz.me/feed/
     homepage_url: https://emschwartz.me/
