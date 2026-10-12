@@ -21492,6 +21492,265 @@ bots:
     homepage_url: https://jagi.studio/
     display_name: Jagi Natarajan
     summary: Audio software and creative projects.
+  transworld_skateboarding:
+    feed_url: https://www.skateboarding.com/.rss/feed/5179d9ba-dd32-4a52-b062-434a0316bb7a.xml
+    homepage_url: https://www.skateboarding.com
+    display_name: TransWorld SKATEboarding
+    summary: Skateboarding news, videos, skaters, events, and industry coverage from TransWorld SKATEboarding.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.skateboarding.com&size=128
+  nick_khami:
+    feed_url: https://www.skeptrune.com/rss.xml
+    homepage_url: https://www.skeptrune.com
+    display_name: Nick Khami's Blog
+    summary: Nick Khami writes about AI systems, inference, search infrastructure, software engineering, open-source projects, and startups.
+    profile_photo: https://www.skeptrune.com/apple-touch-icon.png
+  skerritt_blog:
+    feed_url: https://skerritt.blog/rss/
+    homepage_url: https://skerritt.blog
+    display_name: Skerritt.blog
+    summary: Autumn Skerritt's computer-science explainers, programming projects, AI experiments, and tools for learning Japanese.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fskerritt.blog&size=128
+  sketchupdate:
+    feed_url: https://feeds.feedburner.com/OfficialGoogleSketchupBlog
+    homepage_url: https://sketchupdate.blogspot.com/
+    display_name: SketchUpdate - Retired SketchUp Blog
+    summary: Archived official SketchUp articles on 3D modeling, tutorials, extensions, and 3D Warehouse. This Blogger archive ends in April 2015, when the blog moved to blog.sketchup.com.
+  searchlight_labs:
+    feed_url: https://www.slcyber.io/research/rss.xml
+    homepage_url: https://www.slcyber.io/research
+    display_name: Searchlight Labs
+    summary: Searchlight Cyber's security research on zero-day vulnerabilities, exploitation, detection, and threat investigations.
+    profile_photo: https://cdn.prod.website-files.com/6a2184b69833d9fd0aa95783/6a74e8a4177ce92fadad7573_webclip.png
+  jason_gaston:
+    feed_url: https://jasongaston.net/feed/
+    homepage_url: https://jasongaston.net
+    display_name: Jason Gaston
+    summary: Jason Gaston's personal writing, film and television reviews, travel, photography, art, and podcasts, continuing the author behind Slightly Warped.
+    profile_photo: https://jasongaston.net/wp-content/uploads/2019/01/cropped-286051_2092023375305_5324662_o.jpg?w=180
+  slightly_wrong_quotes:
+    feed_url: https://slightlywrongquotes.tumblr.com/rss
+    homepage_url: https://slightlywrongquotes.tumblr.com
+    display_name: Slightly Wrong Quotes On T-Shirts
+    summary: 'Archived humorous T-shirt designs deliberately misquoting films, songs, and popular culture. Latest feed post: November 2019.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fslightlywrongquotes.tumblr.com&size=128
+  slim_framework_blog:
+    feed_url: https://www.slimframework.com/blog/feed.rss
+    homepage_url: https://www.slimframework.com/blog
+    display_name: Slim Framework Blog
+    summary: Official release announcements, security advisories, and community news for the Slim PHP microframework.
+    profile_photo: https://www.slimframework.com/assets/images/favicon.png
+  smart_mirror_project:
+    feed_url: https://smartmirrorprojectblog.wordpress.com/feed/
+    homepage_url: https://smartmirrorprojectblog.wordpress.com
+    display_name: Smart Mirror Project
+    summary: 'Archived build journal for a Raspberry Pi smart mirror, covering Electron, voice commands, cameras, and cloud integrations. Latest feed post: February 2017.'
+  smitten_kitchen:
+    feed_url: https://feeds.feedburner.com/smittenkitchen
+    homepage_url: https://smittenkitchen.com
+    display_name: smitten kitchen
+    summary: Fearless cooking from a tiny NYC kitchen.
+    profile_photo: https://i0.wp.com/smittenkitchen.com/wp-content/uploads//2017/09/cropped-smitten-kitchen-logo_no_text.jpg?fit=180%2C180&quality=89&ssl=1
+  smittytone_messes_with_micros:
+    feed_url: https://blog.smittytone.net/feed/
+    homepage_url: https://blog.smittytone.net
+    display_name: smittytone messes with micros
+    summary: Programming, Raspberry Pi and Pico projects, macOS utilities, hardware experiments, and retro-computing notes from smittytone.
+    profile_photo: https://blog.smittytone.net/wp-content/uploads/2023/06/cropped-rawblack-1.png?w=180
+  ryan_barrett:
+    feed_url: https://snarfed.org/feed
+    homepage_url: https://snarfed.org
+    display_name: Ryan Barrett
+    summary: Ryan Barrett's personal posts, software projects, IndieWeb and social-web work, links, and everyday observations.
+    profile_photo: https://i0.wp.com/snarfed.org/wp-content/uploads/2024/11/cropped-iraq_square.jpg?fit=180%2C180&ssl=1
+  andreas_happe:
+    feed_url: https://snikt.net/index.xml
+    homepage_url: https://snikt.net
+    display_name: Andreas Happe
+    summary: 'Andreas Happe''s research and technical writing on penetration testing, LLM-assisted security, Linux, networking, and software development. Latest feed post: October 2025.'
+  socket:
+    feed_url: https://socket.dev/api/blog/feed.atom
+    homepage_url: https://socket.dev/blog
+    display_name: Socket Blog
+    summary: Socket's reporting and research on malicious packages, open-source dependencies, software supply-chain security, and developer tools.
+    profile_photo: https://socket.dev/webmanifest/icon-512x512.png
+  socketsite:
+    feed_url: https://socketsite.com/feed
+    homepage_url: https://socketsite.com
+    display_name: SocketSite
+    summary: 'Archived San Francisco real-estate reporting on home sales, rents, development, planning, and local market trends. Latest feed post: July 2024.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsocketsite.com&size=128
+  highlight_js:
+    feed_url: https://github.com/highlightjs/highlight.js/releases.atom
+    homepage_url: https://highlightjs.org/news
+    display_name: highlight.js
+    summary: Official release notes for highlight.js, the JavaScript syntax-highlighting library, including language support, parser fixes, and compatibility changes.
+    profile_photo: https://highlightjs.org/icon.png
+  solidsmack:
+    feed_url: https://www.solidsmack.com/feed/
+    homepage_url: https://www.solidsmack.com
+    display_name: SolidSmack
+    summary: SolidSmack articles on product design, CAD, fabrication, engineering, technology, tools, and related industry topics.
+    profile_photo: https://www.solidsmack.com/wp-content/uploads/2017/05/cropped-solidsmack-logo-sq-512-200x200.png
+  solokeys:
+    feed_url: https://solokeys.com/blogs/news.atom
+    homepage_url: https://solokeys.com/blogs/news
+    display_name: SoloKeys
+    summary: 'Archived SoloKeys announcements about open-source FIDO2 security keys, Solo 2, and Trussed. Latest feed post: June 2023.'
+    profile_photo: https://solokeys.com/cdn/shop/files/solokeys-square-transparent.png?v=1613523713
+  nelsons_weblog:
+    feed_url: https://www.somebits.com/weblog/index.atom
+    homepage_url: https://www.somebits.com/weblog
+    display_name: Nelson's Weblog
+    summary: Nelson Minar's weblog about technology, software, travel, food, gay life, and personal observations.
+  someecards:
+    feed_url: https://cf.someecards.com/rss/homepage.xml
+    homepage_url: https://www.someecards.com
+    display_name: Someecards
+    summary: Humorous news, entertainment, relationship stories, lifestyle commentary, and ecards from Someecards.
+    profile_photo: https://cdn.someecards.com/assets/images/icons/apple-touch-icon-57x57.png
+  matt_maber:
+    feed_url: https://feeds.feedburner.com/Mattmaber
+    homepage_url: https://mattmaber.com
+    display_name: Matt Maber
+    summary: Matt Maber's film and digital photography, camera projects, travel, and family photo journals, continuing somefoolwitha.com.
+    profile_photo: https://i0.wp.com/mattmaber.com/wordpress/wp-content/uploads/2021/03/cropped-mmphoto-icon-.png?fit=180%2C180&ssl=1
+  somethingaboutmaps:
+    feed_url: https://somethingaboutmaps.wordpress.com/feed/
+    homepage_url: https://somethingaboutmaps.wordpress.com
+    display_name: somethingaboutmaps
+    summary: Daniel Huffman's cartography projects, mapmaking tutorials, projections, design experiments, and reflections on the craft of maps.
+  something_similar:
+    feed_url: https://www.somethingsimilar.com/feed
+    homepage_url: https://www.somethingsimilar.com
+    display_name: Something Similar
+    summary: 'Jeff Hodges'' archived essays on distributed systems, programming, photographs, and politics. Latest feed post: January 2017.'
+    profile_photo: https://www.somethingsimilar.com/favicon/apple-touch-icon.png
+  sonatype_blog:
+    feed_url: https://www.sonatype.com/blog/rss.xml
+    homepage_url: https://www.sonatype.com/blog
+    display_name: Sonatype Blog
+    summary: Sonatype's articles on software supply-chain security, open-source dependencies, DevSecOps, continuous delivery, and application security.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.sonatype.com%2Fblog&size=128
+  sonja_jacob:
+    feed_url: https://sonjajacob.tumblr.com/rss
+    homepage_url: https://sonjajacob.tumblr.com
+    display_name: The Real Sonja - Sonja Jacob
+    summary: 'Sonja Jacob''s archived personal blog on creativity, music, marketing, startups, art, film, and everyday life. Latest feed post: September 2012.'
+    profile_photo: https://api.tumblr.com/v2/blog/sonjajacob.tumblr.com/avatar/128
+  sontek:
+    feed_url: https://sontek.net/rss.xml
+    homepage_url: https://sontek.net
+    display_name: sontek's blog
+    summary: 'John Anderson''s archived programming and operations blog on Kubernetes, SRE, Python, Go, Linux, and developer workflows. Latest feed post: November 2023.'
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsontek.net&size=128
+  soundboy:
+    feed_url: https://soundboy.tumblr.com/rss
+    homepage_url: https://soundboy.tumblr.com
+    display_name: Soundboy - Ian Hogarth
+    summary: Ian Hogarth's archived essays on Songkick, startups, technology, books, music, and personal interests. This Tumblr archive ends in June 2018 with a move to ianhogarth.com.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsoundboy.tumblr.com&size=128
+  sound_on_sound:
+    feed_url: https://www.soundonsound.com/rss.xml
+    homepage_url: https://www.soundonsound.com
+    display_name: Sound On Sound
+    summary: Music and recording-technology news, audio equipment, software, and industry updates from Sound On Sound.
+    profile_photo: https://www.soundonsound.com/sites/all/themes/sound_on_sound/apple-touch-icon-precomposed-144x144.png
+  opennews_source:
+    feed_url: https://source.opennews.org/rss/
+    homepage_url: https://source.opennews.org
+    display_name: OpenNews Source
+    summary: OpenNews Source articles on journalism technology, newsroom tools, data reporting, collaboration, and community practices.
+  source_filmmaker_blog:
+    feed_url: https://www.sourcefilmmaker.com/rss.xml
+    homepage_url: https://www.sourcefilmmaker.com
+    display_name: Source Filmmaker Official Blog
+    summary: 'Valve''s archived Source Filmmaker announcements, filmmaking-community updates, and Saxxy Awards coverage. Latest feed post: March 2018.'
+  sourcehut_blog:
+    feed_url: https://sourcehut.org/blog/index.xml
+    homepage_url: https://sourcehut.org/blog
+    display_name: SourceHut Blog
+    summary: Official SourceHut service updates, development reports, policy announcements, community news, and interviews.
+    profile_photo: https://sourcehut.org/logo.png
+  sourcetrail:
+    feed_url: https://github.com/CoatiSoftware/Sourcetrail/releases.atom
+    homepage_url: https://github.com/CoatiSoftware/Sourcetrail
+    display_name: Sourcetrail
+    summary: Official archived releases of Coati Software's Sourcetrail source-code explorer. The project was discontinued in 2021; the final release is 2021.4.19.
+  south_east_asia_backpacker:
+    feed_url: https://southeastasiabackpacker.com/feed/
+    homepage_url: https://southeastasiabackpacker.com
+    display_name: South East Asia Backpacker
+    summary: Backpacking guides, itineraries, travel advice, and destination stories for Southeast Asia from South East Asia Backpacker.
+    profile_photo: https://southeastasiabackpacker.com/wp-content/uploads/2025/01/cropped-B-square-512x512-1-180x180.png
+  southord:
+    feed_url: https://www.southord.com/blogs/news.atom
+    homepage_url: https://www.southord.com/blogs/news
+    display_name: SouthOrd
+    summary: SouthOrd's locksmith-tool news, product advice, and articles on professional lock-picking and locksmith workflows.
+    profile_photo: https://www.southord.com/cdn/shop/files/S.png?width=180&height=180&crop=center&v=1614301811
+  soylentnews:
+    feed_url: https://soylentnews.org/index.atom
+    homepage_url: https://soylentnews.org
+    display_name: SoylentNews
+    summary: Community-submitted technology, science, politics, and general-interest news with discussion from SoylentNews.
+    profile_photo: https://soylentnews.org/apple-touch-icon.png
+  spacenews:
+    feed_url: https://spacenews.com/feed/
+    homepage_url: https://spacenews.com
+    display_name: SpaceNews
+    summary: Covering the business and politics of space
+    profile_photo: https://i0.wp.com/spacenews.com/wp-content/uploads/2024/05/cropped-SN_forza_star.png?fit=180%2C180&ssl=1
+  esa_hubble_news:
+    feed_url: https://feeds.feedburner.com/hubble_news/
+    homepage_url: https://esahubble.org/news
+    display_name: ESA/Hubble News
+    summary: Official ESA/Hubble press releases about Hubble Space Telescope observations, astronomical discoveries, images, and mission milestones.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fesahubble.org%2Fnews&size=128
+  spacing:
+    feed_url: https://spacing.ca/feed/
+    homepage_url: https://spacing.ca/
+    display_name: Spacing
+    summary: Archived Spacing articles on Canadian cities, urban design, transit, public spaces, architecture, and civic life. This root feed's latest post is September 2012; regional sites continue publishing.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http%3A%2F%2Fspacing.ca&size=128
+  sparktoro:
+    feed_url: https://sparktoro.com/blog/feed/
+    homepage_url: https://sparktoro.com/blog
+    display_name: SparkToro
+    summary: SparkToro's articles on audience research, digital marketing, search, social media, entrepreneurship, and product updates.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fsparktoro.com%2Fblog&size=128
+  speaking_io:
+    feed_url: https://speaking.io/atom.xml
+    homepage_url: https://speaking.io
+    display_name: speaking.io
+    summary: 'Zach Holman''s archived practical guide to planning talks, designing slides, preparing presentations, and public speaking. Latest feed post: October 2015.'
+    profile_photo: https://speaking.io/apple-touch-icon.png
+  speckyboy_design_magazine:
+    feed_url: https://speckyboy.com/feed/
+    homepage_url: https://speckyboy.com
+    display_name: Speckyboy Design Magazine
+    summary: Resources for Designers & Developers
+    profile_photo: https://speckyboy.com/wp-content/uploads/2024/03/cropped-sdm-favicon-180x180.png
+  spencer_fry_blog:
+    feed_url: https://www.spencerfry.com/rss/
+    homepage_url: https://www.spencerfry.com/blog
+    display_name: Spencer Fry Blog
+    summary: Spencer Fry's essays on startups, SaaS businesses, entrepreneurship, Podia, and the creator economy.
+    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.spencerfry.com%2Fblog&size=128
+  spend_life_traveling:
+    feed_url: https://www.spendlifetraveling.com/feed/
+    homepage_url: https://www.spendlifetraveling.com
+    display_name: Spend Life Traveling
+    summary: Sanne Wesselman's travel guides, personal experiences, expat interviews, and advice on living and working abroad.
+  diomidis_spinellis:
+    feed_url: https://www.spinellis.gr/blog/dds-blog-rss.xml
+    homepage_url: https://www.spinellis.gr/blog
+    display_name: Diomidis Spinellis
+    summary: Diomidis Spinellis writes about software engineering, programming, research, education, and technology.
+  spitalfields_life:
+    feed_url: https://spitalfieldslife.com/feed/
+    homepage_url: https://spitalfieldslife.com
+    display_name: Spitalfields Life
+    summary: The Gentle Author's stories, photographs, local history, and portraits of life in Spitalfields and London's East End.
   robin_neufeld:
     feed_url: https://metavee.github.io/blog/feed.xml
     homepage_url: https://metavee.github.io/blog/
