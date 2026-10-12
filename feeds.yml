@@ -6215,12 +6215,6 @@ bots:
     display_name: Taylor Stitch Journal
     summary: Taylor Stitch Journal articles about clothing, fabrics, menswear, styling, and the brand's products.
     profile_photo: https://www.taylorstitch.com/cdn/shop/t/12/assets/apple-touch-icon.png?v=16187803519421863921765309372
-  paul_czarkowski:
-    feed_url: https://tech.paulcz.net/index.xml
-    homepage_url: https://tech.paulcz.net
-    display_name: Paul Czarkowski
-    summary: Paul Czarkowski writes about DevOps, Kubernetes, cloud infrastructure, and livestreaming. The feed includes a 2025 biography and older technical articles.
-    profile_photo: https://tech.paulcz.net/img/profile.jpg
   techeblog:
     feed_url: https://www.techeblog.com/feed/
     homepage_url: https://www.techeblog.com
@@ -13675,12 +13669,6 @@ bots:
     display_name: Michael Karnjanaprakorn
     summary: Michael Karnjanaprakorn's personal essays about entrepreneurship, decision making, health, and life.
     profile_photo: https://cdn.u.pika.page/YPYBfS5yoWtadjzCpgf-UPe6Wv1eBSreqLArAaGKBY4/s:300:300/fn:profile%20copy%204/plain/s3://pika-production/p23zfd6b13ipdyjb5ju6sw35vqsz
-  mike_knoop:
-    feed_url: https://mikeknoop.com/feed/
-    homepage_url: https://mikeknoop.com
-    display_name: Mike Knoop
-    summary: Mike Knoop's personal-site updates and essays about entrepreneurship, product development, and AI; the feed includes home and about pages and ends in February 2025.
-    profile_photo: https://mikeknoop.com/static/apple-touch-icon.png
   mike_judge:
     feed_url: https://mikelovesrobots.substack.com/feed
     homepage_url: https://mikelovesrobots.substack.com
