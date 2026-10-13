@@ -14,17 +14,17 @@ importers:
   .:
     dependencies:
       '@fedify/fedify':
-        specifier: ^2.4.2
-        version: 2.4.2
+        specifier: ^2.4.3
+        version: 2.4.3
       '@fedify/next':
-        specifier: ^2.4.2
-        version: 2.4.2(@fedify/fedify@2.4.2)(next@16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))
+        specifier: ^2.4.3
+        version: 2.4.3(@fedify/fedify@2.4.3)(next@16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))
       '@fedify/postgres':
-        specifier: ^2.4.2
-        version: 2.4.2(@fedify/fedify@2.4.2)(postgres@3.4.9)
+        specifier: ^2.4.3
+        version: 2.4.3(@fedify/fedify@2.4.3)(postgres@3.4.9)
       '@fedify/vocab':
-        specifier: ^2.4.2
-        version: 2.4.2
+        specifier: ^2.4.3
+        version: 2.4.3
       '@google/genai':
         specifier: ^2.28.0
         version: 2.28.0
@@ -32,8 +32,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0(react@19.3.0)
       '@icco/react-common':
-        specifier: ^2026.11011.1
-        version: 2026.11011.1(@heroicons/react@2.2.0(react@19.3.0))(jsdom@30.0.0(@noble/hashes@1.8.0))(next@16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@6.0.3)
+        specifier: ^2026.11013.1
+        version: 2026.11013.1(@heroicons/react@2.2.0(react@19.3.0))(jsdom@30.0.0(@noble/hashes@1.8.0))(next@16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@6.0.3)
       '@js-temporal/polyfill':
         specifier: ^0.5.1
         version: 0.5.1
@@ -83,18 +83,18 @@ importers:
         specifier: ^8.11.2
         version: 8.11.2
       zod:
-        specifier: ^4.6.5
-        version: 4.6.5
+        specifier: ^4.6.6
+        version: 4.6.6
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.12.0(jiti@2.7.0))
       '@fedify/lint':
-        specifier: ^2.4.2
-        version: 2.4.2(@fedify/fedify@2.4.2)(eslint@10.12.0(jiti@2.7.0))(typescript@6.0.3)
+        specifier: ^2.4.3
+        version: 2.4.3(@fedify/fedify@2.4.3)(eslint@10.12.0(jiti@2.7.0))(typescript@6.0.3)
       '@fedify/testing':
-        specifier: ^2.4.2
-        version: 2.4.2(@fedify/fedify@2.4.2)
+        specifier: ^2.4.3
+        version: 2.4.3(@fedify/fedify@2.4.3)
       '@next/eslint-plugin-next':
         specifier: ^16.4.0
         version: 16.4.0(eslint@10.12.0(jiti@2.7.0))
@@ -432,54 +432,54 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@fedify/fedify@2.4.2':
-    resolution: {integrity: sha512-HvzDo4OlGhvHhy1RPlfvNMQYdYPR4og8NYwN8NGCue0ZSJ6RHj4s/tuPJXqVcKJ/9sgDHstbmtQSRL3SC70t+A==}
+  '@fedify/fedify@2.4.3':
+    resolution: {integrity: sha512-TnchcMz2oC6CpvmsWxZYpj6NYQtsSBSlXy5mOpK3vm6u1En3+v+UQzA7fDBVxKimDHg6YsY+eEMP7HsgIb1L3g==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/lint@2.4.2':
-    resolution: {integrity: sha512-5JCvFP33EmD/JWRHMO2b3cFpRYn+vFL6FsbdDDnPAygTC+TpQuI12H1SD24cCKE2BboFnb1zFIK7DXSYO7M6eg==}
+  '@fedify/lint@2.4.3':
+    resolution: {integrity: sha512-VIefjMzbvs/91/7mu9umr4rEBE23x95AGDi3FEdm3X+QQoOc6tFMhQkU6YTO+S6t/BwqW82vWcpF5UZODZUarg==}
     peerDependencies:
-      '@fedify/fedify': ^2.4.2
+      '@fedify/fedify': ^2.4.3
       eslint: '>=9.0.0'
     peerDependenciesMeta:
       eslint:
         optional: true
 
-  '@fedify/next@2.4.2':
-    resolution: {integrity: sha512-JBQ83MJFq2/tqq4OmRJiD2ufnkBaTxl624ZetNBrEb0kfjC9iqUI7AzASl1ZmunfWzbY8B7QiA3U1kSUovdlcQ==}
+  '@fedify/next@2.4.3':
+    resolution: {integrity: sha512-fnBrrkwvIpA3qHq1Bk4XMTzozUu0sSM7e5wLJV59vYXVJoG7VROwz0lT8CzGYhfIUEKvVoYPP8qR33FyqWNcZw==}
     peerDependencies:
-      '@fedify/fedify': ^2.4.2
+      '@fedify/fedify': ^2.4.3
       next: '>=15.4.6 <17'
 
-  '@fedify/postgres@2.4.2':
-    resolution: {integrity: sha512-RRmhE45qTXgriyZGj4psCosX8Gr8WJS+ef0B8QsX1nrJbXFkly4zLvTQDwUC/dlwRaQ0D7paAXuxB4WMruLbYQ==}
+  '@fedify/postgres@2.4.3':
+    resolution: {integrity: sha512-PbxxpNuxBj3d9PJtoP/QhU+avfsaYjH2kgTGhQpKKPf3m0Bv9ZP9vJ+miJn/PhlJ10PIwijoimTH+vM4HxrOrw==}
     peerDependencies:
-      '@fedify/fedify': ^2.4.2
+      '@fedify/fedify': ^2.4.3
       postgres: ^3.4.7
 
-  '@fedify/testing@2.4.2':
-    resolution: {integrity: sha512-5HPiPQLxTchXbVJFKt8LWBzp+rSjq5gbaKUOtOui+sXsFcdDGXjL2RiYOfScVzbExr5MZ5VLc/FqjlUMCrSjbg==}
+  '@fedify/testing@2.4.3':
+    resolution: {integrity: sha512-4gfD9nfJ6zc1ONg1SKmhPf0fS1hSauBH2e6ecWwjYtJIEp5ExjWbFo8JatFpTxoK7i97GsdN0vymksjAuo9S4w==}
     peerDependencies:
-      '@fedify/fedify': ^2.4.2
+      '@fedify/fedify': ^2.4.3
 
-  '@fedify/uri-template@2.4.2':
-    resolution: {integrity: sha512-USWTkTxVjEGMaL1mXEQC+mHF+sLdEU74W/Wd7LSmQLqcy5QG7TFAE2zbRQWFsSlZsGY2u+gaSFfxGbvajcRP3w==}
+  '@fedify/uri-template@2.4.3':
+    resolution: {integrity: sha512-461V/LS1NMvd7RMKLVmopWqGcUTB7ovOae30iKuJEJ6WQiUi0O4nw3fF3G59Nz+WOA6F2zzaKPBqiPM5n/24bQ==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab-runtime@2.4.2':
-    resolution: {integrity: sha512-cQrwrp3bptThctj+f6+QDDJ8iH70+kQZoSskERMWSksYHQpkeY2SnR7B/NN8T34SDABeDD6fO4RVi+mHHvxAOg==}
+  '@fedify/vocab-runtime@2.4.3':
+    resolution: {integrity: sha512-/4ztR7Oam4/cXivpCxKxp65WsCQ0gp2bH7H6bbt6P8+bzj+cKIZL6J1nTJPVbEYxR3js/6GBwS9MdoNxhkl1tg==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab-tools@2.4.2':
-    resolution: {integrity: sha512-mxufvIJGRyyQPCNwb216jnI4CMR8RacbGMw8j3bOFJG9D12FwBI/SkUkVv8xOO+Jz9ac9+oZq2Em23KA3RcSdQ==}
+  '@fedify/vocab-tools@2.4.3':
+    resolution: {integrity: sha512-lTfpoDfX4kR8bt6raGF98BAoHs4PuHIBqTyITbUuXtXaQngQRGxMBf4NOkOjHDuxHiP44gJge9dUr7Xb0ADchg==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab@2.4.2':
-    resolution: {integrity: sha512-GGvZmKa6tsV475H2gMniWrJRMM+8LKQJaBGXvywNWbejGLG1u5TkL2ioO9AVC84Ogsr4mEKNrjOQuPSchCn5Fw==}
+  '@fedify/vocab@2.4.3':
+    resolution: {integrity: sha512-Pdq3K0gQjEki64HR8fpcV6c38Fxsel+N6mDgX239iOwVukwtc7hDZWP6X+cOaTlanfEYFzjtMi+tr9mCgXdAQg==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/webfinger@2.4.2':
-    resolution: {integrity: sha512-HqWEAxoHFWjZa0fejCN9g3g4WGNdONBugugWZRQXyOUiGTzxjQM5HKJn3QWCS06rDNLE6xdBLuD04m7CleO+EA==}
+  '@fedify/webfinger@2.4.3':
+    resolution: {integrity: sha512-C2Qp6Bsg3ZMtJC5QY91RkJrs95nMwfvLudIJEI4ni8aXZ8hs8O4hd2MD6G/GEteNkdvtI9gDxAGC8nzy1brGHw==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
   '@fxts/core@1.28.0':
@@ -519,8 +519,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@icco/react-common@2026.11011.1':
-    resolution: {integrity: sha512-UNHHncTwpGd+1cz4nYfeLke1FNsrp2bEhcyBmERvcT1bX3n5gnnMEju4SWOiqv2Hy05EzLECzDWO0NGu/K3weQ==, tarball: https://npm.pkg.github.com/download/@icco/react-common/2026.11011.1/86062ac60944f87e21b7b706914df03666ebd50f}
+  '@icco/react-common@2026.11013.1':
+    resolution: {integrity: sha512-mcrDCIgqRPu3USA0jIKKWPVTNn5Kot12mbwSTBhqd01sAeYxZAxt5WKZkIRpiNElg1ANLnzKe1J6QMrut+Tm9g==, tarball: https://npm.pkg.github.com/download/@icco/react-common/2026.11013.1/8015c10ae3083259bbaa92df405b99e5c685483e}
     peerDependencies:
       '@heroicons/react': ^2.0.0
       jsdom: '>=20.0.0'
@@ -2381,8 +2381,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  zod@4.6.5:
-    resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
+  zod@4.6.6:
+    resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
 snapshots:
 
@@ -2588,12 +2588,12 @@ snapshots:
     optionalDependencies:
       '@noble/hashes': 1.8.0
 
-  '@fedify/fedify@2.4.2':
+  '@fedify/fedify@2.4.3':
     dependencies:
-      '@fedify/uri-template': 2.4.2
-      '@fedify/vocab': 2.4.2
-      '@fedify/vocab-runtime': 2.4.2
-      '@fedify/webfinger': 2.4.2
+      '@fedify/uri-template': 2.4.3
+      '@fedify/vocab': 2.4.3
+      '@fedify/vocab-runtime': 2.4.3
+      '@fedify/webfinger': 2.4.3
       '@logtape/logtape': 2.4.1
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.12.0(@opentelemetry/api@1.9.1)
@@ -2610,9 +2610,9 @@ snapshots:
       temporal-polyfill: 1.0.5
       urlpattern-polyfill: 10.1.0
 
-  '@fedify/lint@2.4.2(@fedify/fedify@2.4.2)(eslint@10.12.0(jiti@2.7.0))(typescript@6.0.3)':
+  '@fedify/lint@2.4.3(@fedify/fedify@2.4.3)(eslint@10.12.0(jiti@2.7.0))(typescript@6.0.3)':
     dependencies:
-      '@fedify/fedify': 2.4.2
+      '@fedify/fedify': 2.4.3
       '@fxts/core': 1.28.0
       '@typescript-eslint/parser': 8.71.1(eslint@10.12.0(jiti@2.7.0))(typescript@6.0.3)
       '@typescript-eslint/utils': 8.71.1(eslint@10.12.0(jiti@2.7.0))(typescript@6.0.3)
@@ -2622,29 +2622,29 @@ snapshots:
       - supports-color
       - typescript
 
-  '@fedify/next@2.4.2(@fedify/fedify@2.4.2)(next@16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))':
+  '@fedify/next@2.4.3(@fedify/fedify@2.4.3)(next@16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))':
     dependencies:
-      '@fedify/fedify': 2.4.2
+      '@fedify/fedify': 2.4.3
       next: 16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
 
-  '@fedify/postgres@2.4.2(@fedify/fedify@2.4.2)(postgres@3.4.9)':
+  '@fedify/postgres@2.4.3(@fedify/fedify@2.4.3)(postgres@3.4.9)':
     dependencies:
-      '@fedify/fedify': 2.4.2
+      '@fedify/fedify': 2.4.3
       '@logtape/logtape': 2.4.1
       postgres: 3.4.9
       temporal-polyfill: 1.0.5
 
-  '@fedify/testing@2.4.2(@fedify/fedify@2.4.2)':
+  '@fedify/testing@2.4.3(@fedify/fedify@2.4.3)':
     dependencies:
-      '@fedify/fedify': 2.4.2
-      '@fedify/vocab': 2.4.2
-      '@fedify/vocab-runtime': 2.4.2
+      '@fedify/fedify': 2.4.3
+      '@fedify/vocab': 2.4.3
+      '@fedify/vocab-runtime': 2.4.3
       es-toolkit: 1.46.1
       temporal-polyfill: 1.0.5
 
-  '@fedify/uri-template@2.4.2': {}
+  '@fedify/uri-template@2.4.3': {}
 
-  '@fedify/vocab-runtime@2.4.2':
+  '@fedify/vocab-runtime@2.4.3':
     dependencies:
       '@js-temporal/polyfill': 0.5.1
       '@logtape/logtape': 2.4.1
@@ -2655,18 +2655,18 @@ snapshots:
       jsonld: 9.0.0
       pkijs: 3.4.1
 
-  '@fedify/vocab-tools@2.4.2':
+  '@fedify/vocab-tools@2.4.3':
     dependencies:
       '@cfworker/json-schema': 4.1.1
       byte-encodings: 1.0.11
       es-toolkit: 1.46.1
       yaml: 2.9.1
 
-  '@fedify/vocab@2.4.2':
+  '@fedify/vocab@2.4.3':
     dependencies:
-      '@fedify/vocab-runtime': 2.4.2
-      '@fedify/vocab-tools': 2.4.2
-      '@fedify/webfinger': 2.4.2
+      '@fedify/vocab-runtime': 2.4.3
+      '@fedify/vocab-tools': 2.4.3
+      '@fedify/webfinger': 2.4.3
       '@logtape/logtape': 2.4.1
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
@@ -2676,9 +2676,9 @@ snapshots:
       pkijs: 3.4.1
       temporal-polyfill: 1.0.5
 
-  '@fedify/webfinger@2.4.2':
+  '@fedify/webfinger@2.4.3':
     dependencies:
-      '@fedify/vocab-runtime': 2.4.2
+      '@fedify/vocab-runtime': 2.4.3
       '@logtape/logtape': 2.4.1
       '@opentelemetry/api': 1.9.1
       es-toolkit: 1.46.1
@@ -2718,7 +2718,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@icco/react-common@2026.11011.1(@heroicons/react@2.2.0(react@19.3.0))(jsdom@30.0.0(@noble/hashes@1.8.0))(next@16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@6.0.3)':
+  '@icco/react-common@2026.11013.1(@heroicons/react@2.2.0(react@19.3.0))(jsdom@30.0.0(@noble/hashes@1.8.0))(next@16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@6.0.3)':
     dependencies:
       '@heroicons/react': 2.2.0(react@19.3.0)
       '@wrksz/themes': 2.0.3(next@16.3.8(@opentelemetry/api@1.9.1)(@types/node@26.6.5)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(typescript@6.0.3)
@@ -4274,4 +4274,4 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  zod@4.6.5: {}
+  zod@4.6.6: {}

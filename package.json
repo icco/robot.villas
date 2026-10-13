@@ -22,13 +22,13 @@
     "validate-feeds": "tsx scripts/validate-feeds.ts"
   },
   "dependencies": {
-    "@fedify/fedify": "^2.4.2",
-    "@fedify/next": "^2.4.2",
-    "@fedify/postgres": "^2.4.2",
-    "@fedify/vocab": "^2.4.2",
+    "@fedify/fedify": "^2.4.3",
+    "@fedify/next": "^2.4.3",
+    "@fedify/postgres": "^2.4.3",
+    "@fedify/vocab": "^2.4.3",
     "@google/genai": "^2.28.0",
     "@heroicons/react": "^2.2.0",
-    "@icco/react-common": "^2026.11011.1",
+    "@icco/react-common": "^2026.11013.1",
     "@js-temporal/polyfill": "^0.5.1",
     "@logtape/logtape": "^2.4.1",
     "@trybyte/robotstxt-parser": "^2.0.0",
@@ -45,12 +45,12 @@
     "saxes": "^6.0.0",
     "tailwindcss": "^4.3.3",
     "undici": "^8.11.2",
-    "zod": "^4.6.5"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@fedify/lint": "^2.4.2",
-    "@fedify/testing": "^2.4.2",
+    "@fedify/lint": "^2.4.3",
+    "@fedify/testing": "^2.4.3",
     "@next/eslint-plugin-next": "^16.4.0",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tailwindcss/postcss": "^4.3.3",
