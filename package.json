@@ -22,17 +22,17 @@
     "validate-feeds": "tsx scripts/validate-feeds.ts"
   },
   "dependencies": {
-    "@fedify/fedify": "^2.4.3",
-    "@fedify/next": "^2.4.3",
-    "@fedify/postgres": "^2.4.3",
-    "@fedify/vocab": "^2.4.3",
-    "@google/genai": "^2.28.0",
+    "@fedify/fedify": "^2.4.4",
+    "@fedify/next": "^2.4.4",
+    "@fedify/postgres": "^2.4.4",
+    "@fedify/vocab": "^2.4.4",
+    "@google/genai": "^2.29.0",
     "@heroicons/react": "^2.2.0",
     "@icco/react-common": "^2026.11013.1",
     "@js-temporal/polyfill": "^0.5.1",
     "@logtape/logtape": "^2.4.1",
     "@trybyte/robotstxt-parser": "^2.0.0",
-    "daisyui": "^5.7.47",
+    "daisyui": "^5.7.48",
     "drizzle-orm": "^0.45.4",
     "escape-html": "^1.0.3",
     "ipaddr.js": "^2.5.0",
@@ -45,12 +45,12 @@
     "saxes": "^6.0.0",
     "tailwindcss": "^4.3.3",
     "undici": "^8.11.2",
-    "zod": "^4.6.6"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@fedify/lint": "^2.4.3",
-    "@fedify/testing": "^2.4.3",
+    "@fedify/lint": "^2.4.4",
+    "@fedify/testing": "^2.4.4",
     "@next/eslint-plugin-next": "^16.4.0",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tailwindcss/postcss": "^4.3.3",
@@ -60,11 +60,11 @@
     "@types/react-dom": "^19.3.0",
     "drizzle-kit": "^0.31.11",
     "eslint": "^10.12.0",
-    "postcss": "^8.5.29",
+    "postcss": "^8.5.30",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.1",
+    "typescript-eslint": "^8.71.2",
     "vite": "^8.3.4",
-    "vitest": "^5.0.3"
+    "vitest": "^5.0.4"
   }
 }
