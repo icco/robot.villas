@@ -26,8 +26,8 @@ importers:
         specifier: ^2.4.4
         version: 2.4.4
       '@google/genai':
-        specifier: ^2.29.0
-        version: 2.29.0
+        specifier: ^2.29.1
+        version: 2.29.1
       '@heroicons/react':
         specifier: ^2.2.0
         version: 2.2.0(react@19.3.0)
@@ -44,8 +44,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       daisyui:
-        specifier: ^5.7.48
-        version: 5.7.48
+        specifier: ^5.7.50
+        version: 5.7.50
       drizzle-orm:
         specifier: ^0.45.4
         version: 0.45.4(@opentelemetry/api@1.9.1)(postgres@3.4.9)
@@ -485,8 +485,8 @@ packages:
   '@fxts/core@1.28.0':
     resolution: {integrity: sha512-6AC3L6wScT5lLaipQRNgBJ/2PrL7rjV1tIt6S2dz7wRZ6c4gds+RWuG5djhq7WsyVB5jGYGImcVMl/DUhG0DlQ==}
 
-  '@google/genai@2.29.0':
-    resolution: {integrity: sha512-jrgU07sEkMFX/K/gtEydDx+SH7NDbY5hdg8eLwDtfqHcJqPhsH68btd9QPrN7KqkrlURzSk49wVQYMKVJRy2Hw==}
+  '@google/genai@2.29.1':
+    resolution: {integrity: sha512-keU+JsY11fT4ykdFA6Q8iQHBgOAAVssFLxPtXRjCIEr5Zt2GzE75c22bBmq87XbhgtpuKaObnSgsrG60rj0ZMA==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       '@modelcontextprotocol/sdk': ^1.25.2
@@ -1260,8 +1260,8 @@ packages:
   cacheable@2.5.0:
     resolution: {integrity: sha512-60cyAOytib/OzBw1JNSoSV/boK1AtHryDIjvVBk7XbN4ugfkM3+Sry7fEjNgPMGgOjuaZPAp8ruZ0Cxafwyq9g==}
 
-  caniuse-lite@1.0.30001815:
-    resolution: {integrity: sha512-uDybUEyfgbyJJ93J1vikTylBX31AkdVYeVPeffMQpf8XN7hSfr0oZOn4VFOIMNvtU5+rHvC5Udg2TgtJKHm23Q==}
+  caniuse-lite@1.0.30001816:
+    resolution: {integrity: sha512-+8Yx7BXCoqk6IF8yTicjfUR6D/ldJzdlsodlEOiOSPmhK844WIgk67/zIQaGAOxNkZyyvBlrRFnLvqKIoqbAFw==}
 
   canonicalize@2.1.0:
     resolution: {integrity: sha512-F705O3xrsUtgt98j7leetNhTWPe+5S72rlL5O4jA1pKqBVQ/dT1O1D6PFxmSXvc0SUOinWS57DKx0I3CHrXJHQ==}
@@ -1285,8 +1285,8 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  daisyui@5.7.48:
-    resolution: {integrity: sha512-BByOgrNYfuRHiXf2YgSFvkg50PqyHxpPd/isV8ohux+n+8RpiC3w+PR1seS0cW8uMyuVoVLEeS0yIBih+/NzSg==}
+  daisyui@5.7.50:
+    resolution: {integrity: sha512-+/LRqnTCoc7s/bJEKKwtJSwzeXCVdAmRdNmZeZzgHCaQ9PJyl7j+2V2U32GQDMyD+VDkP9e/+JGoC72Y1hLk7w==}
 
   data-uri-to-buffer@4.0.1:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
@@ -2126,8 +2126,8 @@ packages:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
     engines: {node: '>=6'}
 
-  temporal-polyfill@1.0.5:
-    resolution: {integrity: sha512-+H/mmY74i6wXCMcjIhGuSnODcyZnc4eois2myhOyX0UqRAKNXQY5m9iB1en5jQ/n4SXtjLXo1ElBI5bmn8tZwQ==}
+  temporal-polyfill@1.0.6:
+    resolution: {integrity: sha512-tYyEry1HLGUDbm2356W3iYD0OZdo7rlP7h98Zr/EnjqLZQwTAfcBDUvJnJbfA15v/vQad57hJZScG5O0W2oKEA==}
 
   temporal-spec@1.0.1:
     resolution: {integrity: sha512-wxVoanmDeavXie1vu2JaQ3WIc3JZnWAOYFBsJyATaVsXsycKYUflGsyBmrRSnoCpZJpwPyr38VpgSUlQ8CbFxg==}
@@ -2324,8 +2324,8 @@ packages:
     resolution: {integrity: sha512-1to4zXBxmXHV3IiSSEInrreIlu02vUOvrhxJJH5vcxYTBDAx51cqZiKdyTxlecdKNSjj8EcxGBxNf6Vg+945gw==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
 
-  whatwg-url@17.2.0:
-    resolution: {integrity: sha512-IhLIHNcBrzIixC5XXsbr4DxdjajyA5vQ5RwGZMtrUp+GbtE5Nrsge9QKau7jXrC0aTXLYGV0xiW7Tb4YS2aomw==}
+  whatwg-url@17.3.0:
+    resolution: {integrity: sha512-KwOAJrpf+GTgBvcBQJcP38sMF0DsQKdwtG+TxM2pW44P6E5k0hDbWrDmyuJDIF0Uef0aQq0ZoJs+5oI+k8ddhg==}
     engines: {node: ^22.14.0 || >=24.0.0}
 
   which@2.0.2:
@@ -2607,7 +2607,7 @@ snapshots:
       json-canon: 1.0.1
       jsonld: 9.0.0
       structured-field-values: 2.0.4
-      temporal-polyfill: 1.0.5
+      temporal-polyfill: 1.0.6
       urlpattern-polyfill: 10.1.0
 
   '@fedify/lint@2.4.4(@fedify/fedify@2.4.4)(eslint@10.12.0(jiti@2.7.0))(typescript@6.0.3)':
@@ -2632,7 +2632,7 @@ snapshots:
       '@fedify/fedify': 2.4.4
       '@logtape/logtape': 2.4.1
       postgres: 3.4.9
-      temporal-polyfill: 1.0.5
+      temporal-polyfill: 1.0.6
 
   '@fedify/testing@2.4.4(@fedify/fedify@2.4.4)':
     dependencies:
@@ -2640,7 +2640,7 @@ snapshots:
       '@fedify/vocab': 2.4.4
       '@fedify/vocab-runtime': 2.4.4
       es-toolkit: 1.46.1
-      temporal-polyfill: 1.0.5
+      temporal-polyfill: 1.0.6
 
   '@fedify/uri-template@2.4.4': {}
 
@@ -2674,7 +2674,7 @@ snapshots:
       es-toolkit: 1.46.1
       jsonld: 9.0.0
       pkijs: 3.4.1
-      temporal-polyfill: 1.0.5
+      temporal-polyfill: 1.0.6
 
   '@fedify/webfinger@2.4.4':
     dependencies:
@@ -2687,7 +2687,7 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@google/genai@2.29.0':
+  '@google/genai@2.29.1':
     dependencies:
       google-auth-library: 10.9.1
       p-retry: 4.6.2
@@ -3311,7 +3311,7 @@ snapshots:
       keyv: 5.6.0
       qified: 0.10.1
 
-  caniuse-lite@1.0.30001815: {}
+  caniuse-lite@1.0.30001816: {}
 
   canonicalize@2.1.0: {}
 
@@ -3332,7 +3332,7 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  daisyui@5.7.48: {}
+  daisyui@5.7.50: {}
 
   data-uri-to-buffer@4.0.1: {}
 
@@ -3667,7 +3667,7 @@ snapshots:
       w3c-xmlserializer: 5.0.0
       webidl-conversions: 8.0.1
       whatwg-mimetype: 5.0.0
-      whatwg-url: 17.2.0(@noble/hashes@1.8.0)
+      whatwg-url: 17.3.0(@noble/hashes@1.8.0)
       xml-name-validator: 5.0.0
     transitivePeerDependencies:
       - '@noble/hashes'
@@ -3853,7 +3853,7 @@ snapshots:
       '@next/env': 16.3.8
       '@swc/helpers': 0.5.23
       baseline-browser-mapping: 2.11.28
-      caniuse-lite: 1.0.30001815
+      caniuse-lite: 1.0.30001816
       postcss: 8.5.23
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
@@ -4100,7 +4100,7 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  temporal-polyfill@1.0.5:
+  temporal-polyfill@1.0.6:
     dependencies:
       temporal-spec: 1.0.1
       temporal-utils: 1.0.3
@@ -4239,7 +4239,7 @@ snapshots:
     transitivePeerDependencies:
       - '@noble/hashes'
 
-  whatwg-url@17.2.0(@noble/hashes@1.8.0):
+  whatwg-url@17.3.0(@noble/hashes@1.8.0):
     dependencies:
       '@exodus/bytes': 1.16.0(@noble/hashes@1.8.0)
       tr46: 7.0.0
