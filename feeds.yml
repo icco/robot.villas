@@ -17581,7 +17581,7 @@ blocked_instances:
   - horche.demkontinuum.de # Friendica, 403 "Bots are not allowed" -- policy, not an outage
   - fediverse.tryptophonic.com # 401 on every delivery
   - 8ball.space # 502 then 405; instance has been broken for days
-relays:
-  - https://relay.toot.io/actor
-  - https://relay.minecloud.ro/actor
-  - https://tags.pub/user/_____relay_____
+# All three previously-configured relays (relay.toot.io, relay.minecloud.ro,
+# tags.pub) were permanently failing delivery (401/400 on every Create),
+# generating heavy retry/log noise for no benefit. Removed; see
+# unsubscribeFromRemovedRelays for the automatic cleanup this triggers.
