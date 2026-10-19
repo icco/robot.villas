@@ -14,6 +14,10 @@ updates:
       prefix-development: chore(deps-dev)
     cooldown:
       default-days: 7
+    ignore:
+      - dependency-name: typescript
+        update-types:
+          - version-update:semver-major
   - package-ecosystem: docker
     directory: /
     schedule:
