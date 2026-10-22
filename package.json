@@ -44,7 +44,7 @@
     "rss-parser": "^3.13.0",
     "saxes": "^6.0.0",
     "tailwindcss": "^4.3.3",
-    "undici": "^8.12.2",
+    "undici": "^8.12.3",
     "zod": "^4.6.7"
   },
   "devDependencies": {
@@ -63,7 +63,7 @@
     "postcss": "^8.5.31",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.2",
+    "typescript-eslint": "^8.72.0",
     "vite": "^8.3.4",
     "vitest": "^5.0.5"
   }
