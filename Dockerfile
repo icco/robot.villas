@@ -28,9 +28,6 @@ ARG GIT_SHA=""
 ENV GIT_SHA=$GIT_SHA
 ENV PORT=8080
 ENV HOSTNAME="0.0.0.0"
-ENV NODE_OPTIONS=--use-openssl-ca
-
-RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates && rm -rf /var/lib/apt/lists/*
 
 # Create a dedicated non-root user, matching the convention used by
 # all other Next.js services in this stack.
