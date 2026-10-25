@@ -285,6 +285,22 @@ describe("startPoller conditional GET and rate limiting", () => {
     expect(mockUpsertStatus.mock.calls[0][1]).toMatchObject({ lastError: null, lastHttpStatus: 304 });
   });
 
+  it("keeps submitting full batches while a poll cycle is still running", async () => {
+    vi.mocked(submitPendingPublications)
+      .mockResolvedValueOnce({ queued: 100, failed: 0, cancelled: 0 })
+      .mockResolvedValueOnce({ queued: 60, failed: 30, cancelled: 10 })
+      .mockResolvedValueOnce({ queued: 5, failed: 0, cancelled: 0 });
+    mockFetchFeed.mockReturnValue(new Promise(() => {}));
+
+    const poller = startOneBot();
+    try {
+      await vi.waitFor(() => expect(submitPendingPublications).toHaveBeenCalledTimes(4));
+      expect(mockUpsertStatus).not.toHaveBeenCalled();
+    } finally {
+      poller.stop();
+    }
+  });
+
   it("keeps the stored validators when a fetch fails", async () => {
     mockGetStatusMap.mockResolvedValue(
       new Map([["bot0", statusRow({ etag: '"abc"', lastModified: "yesterday" })]]),
