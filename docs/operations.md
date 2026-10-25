@@ -8,7 +8,7 @@ How robot.villas delivers posts, handles failures, and limits what remote server
 - A new feed entry and one delivery record per follower or relay inbox are saved in one transaction. A feed's cache headers are saved only after that, so a failure retries the same items on the next poll.
 - A bot's first entries (when it has never stored any, including deleted ones) are saved without delivery records, so adding a feed doesn't send its back catalog to followers.
 - Future-dated entries are not saved. While a feed contains deferred entries, both HTTP validators are cleared so normal polls fetch the full body and reconsider them; caching resumes when none remain. Entries must remain in the source feed until eligible. Incorrect far-future dates increase download bandwidth. Migration 0023 clears existing validators once without changing polling or retry deadlines.
-- The poller hands pending records to Fedify's queue, at most 100 per cycle, backing off up to an hour after errors. "Queued" means Fedify accepted it; Fedify then retries the remote server itself.
+- A loop separate from feed polling hands pending records to Fedify's queue in batches of 100, back to back until none are due, then checks again every 5 seconds. A failing record backs off up to an hour. "Queued" means Fedify accepted it; Fedify then retries the remote server itself.
 - A crash right after queueing can resend the same activity ID once (at-least-once).
 - Blocking a host or removing a bot cancels its pending records. Finished records are deleted after 30 days.
 

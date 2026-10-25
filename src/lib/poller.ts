@@ -17,6 +17,7 @@ const DEFAULT_CONCURRENCY = 10;
 const logger = getLogger(["robot-villas", "poller"]);
 /** Covers fetch plus ingestion (including hashtag generation); expires if a replica dies. */
 const FEED_LEASE_MS = 10 * 60 * 1000;
+const DRAIN_IDLE_MS = 5_000;
 
 export interface PollerOptions {
   config: FeedsConfig;
@@ -145,15 +146,31 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
     }
   }
 
+  async function drain(): Promise<void> {
+    while (!stopped) {
+      let handled = 0;
+      try {
+        const submissions = await submitPendingPublications(getContext(), db, domain, Object.keys(config.bots), blockedInstances);
+        handled = submissions.queued + submissions.failed + submissions.cancelled;
+        if (handled > 0) {
+          logger.info("Publication submissions: {queued} queued, {failed} failed, {cancelled} cancelled", submissions);
+        }
+      } catch (error) {
+        logger.error("Publication submission failed: {error}", { error });
+      }
+      if (handled === 0 && !stopped) {
+        await new Promise((resolve) => setTimeout(resolve, DRAIN_IDLE_MS));
+      }
+    }
+  }
+
   async function poll(): Promise<void> {
     logger.info("Poll cycle starting");
     const ctx = getContext();
     try {
-      const submissions = await submitPendingPublications(ctx, db, domain, Object.keys(config.bots), blockedInstances);
-      logger.info("Publication submissions: {queued} queued, {failed} failed, {cancelled} cancelled", submissions);
       await prunePublications(db);
     } catch (error) {
-      logger.error("Publication retry failed: {error}", { error });
+      logger.error("Publication pruning failed: {error}", { error });
     }
     try {
       await announceNewBots(ctx, db, config, domain);
@@ -173,11 +190,6 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
       concurrency,
       ([username, bot]) => pollBot(ctx, username, bot, statuses.get(username)),
     );
-    try {
-      await submitPendingPublications(ctx, db, domain, Object.keys(config.bots), blockedInstances);
-    } catch (error) {
-      logger.error("Publication submission failed: {error}", { error });
-    }
     logger.info("Poll cycle complete");
   }
 
@@ -191,6 +203,7 @@ export function startPoller(opts: PollerOptions): { stop: () => void } {
   }
 
   loop();
+  drain();
 
   return {
     stop() {
