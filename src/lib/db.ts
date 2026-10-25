@@ -65,12 +65,12 @@ export async function hasEntry(db: Db, botUsername: string, guid: string): Promi
   return rows.length > 0;
 }
 
-/** Includes soft-deleted entries, so a re-added bot is not treated as new. */
-export async function hasAnyEntries(db: Db, botUsername: string): Promise<boolean> {
+/** True once a poll has committed every new entry; a partially failed first ingestion stays false. */
+export async function hasCompletedPoll(db: Db, botUsername: string): Promise<boolean> {
   const rows = await db
-    .select({ id: schema.feedEntries.id })
-    .from(schema.feedEntries)
-    .where(eq(schema.feedEntries.botUsername, botUsername))
+    .select({ botUsername: schema.feedPollStatus.botUsername })
+    .from(schema.feedPollStatus)
+    .where(and(eq(schema.feedPollStatus.botUsername, botUsername), isNotNull(schema.feedPollStatus.lastSuccessAt)))
     .limit(1);
   return rows.length > 0;
 }

@@ -5,7 +5,7 @@ import escapeHtml from "escape-html";
 import { getLogger } from "@logtape/logtape";
 import { partitionBlockedRecipients } from "./blocklist";
 import type { BotConfig } from "./config";
-import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, hasAnyEntries, refreshEntryPublishedDates, type Db } from "./db";
+import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, hasCompletedPoll, refreshEntryPublishedDates, type Db } from "./db";
 import { storeEntryWithPublications } from "./publications";
 import { resolveHashtags } from "./hashtags";
 import type { FeedEntry } from "./rss";
@@ -180,7 +180,7 @@ export async function publishNewEntries(
   });
   const recipients = await getPublishRecipients(db, botUsername, blockedInstances);
   // A new bot's first fetch is its back catalog: store it, but only deliver later posts.
-  const deliverTo = await hasAnyEntries(db, botUsername)
+  const deliverTo = await hasCompletedPoll(db, botUsername)
     ? [...recipients.followerRecipients, ...recipients.relayRecipients]
     : [];
 
