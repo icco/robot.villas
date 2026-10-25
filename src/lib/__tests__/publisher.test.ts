@@ -3,6 +3,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 vi.mock("../db", () => ({
   insertEntry: vi.fn(),
   getExistingGuids: vi.fn(),
+  hasCompletedPoll: vi.fn(),
   refreshEntryPublishedDates: vi.fn().mockResolvedValue(undefined),
   getFollowers: vi.fn(),
   getFollowerRecipients: vi.fn(),
@@ -14,7 +15,7 @@ vi.mock("../hashtags", () => ({
   resolveHashtags: vi.fn().mockResolvedValue(["T1", "T2", "T3"]),
 }));
 
-import { getExistingGuids, getFollowers, getFollowerRecipients, getAcceptedRelays, refreshEntryPublishedDates } from "../db";
+import { getExistingGuids, hasCompletedPoll, getFollowers, getFollowerRecipients, getAcceptedRelays, refreshEntryPublishedDates } from "../db";
 import { storeEntryWithPublications } from "../publications";
 import { resolveHashtags } from "../hashtags";
 import {
@@ -74,6 +75,7 @@ describe("publishNewEntries", () => {
       { followerId: "https://remote.example/user/1", sharedInboxUrl: "https://remote.example/inbox" },
     ]);
     mockGetAcceptedRelays.mockResolvedValue([]);
+    vi.mocked(hasCompletedPoll).mockResolvedValue(true);
   });
 
   afterEach(() => {
@@ -241,6 +243,54 @@ describe("publishNewEntries", () => {
     expect(result.skipped).toBe(0);
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
     expect(mockInsertEntry.mock.calls[0][7][0].inboxId?.href).toBe("https://remote.example/inbox");
+  });
+
+  it("stores a new bot's first entries without delivering them", async () => {
+    vi.mocked(hasCompletedPoll).mockResolvedValue(false);
+
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot",
+      "robot.villas",
+      entries,
+      testBotConfig,
+    );
+
+    expect(result.stored).toBe(3);
+    expect(mockInsertEntry).toHaveBeenCalledTimes(3);
+    for (const call of mockInsertEntry.mock.calls) {
+      expect(call[7]).toEqual([]);
+    }
+  });
+
+  it("keeps suppressing delivery when retrying a partially failed first ingestion", async () => {
+    vi.mocked(hasCompletedPoll).mockResolvedValue(false);
+    mockInsertEntry.mockResolvedValueOnce(1).mockRejectedValueOnce(new Error("database unavailable"));
+    await expect(publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot",
+      "robot.villas",
+      entries,
+      testBotConfig,
+    )).rejects.toThrow("database unavailable");
+
+    mockInsertEntry.mockClear();
+    mockGetExistingGuids.mockResolvedValue(new Set(["g1"]));
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot",
+      "robot.villas",
+      entries,
+      testBotConfig,
+    );
+
+    expect(result.stored).toBe(2);
+    for (const call of mockInsertEntry.mock.calls) {
+      expect(call[7]).toEqual([]);
+    }
   });
 
   it("handles empty entries array", async () => {

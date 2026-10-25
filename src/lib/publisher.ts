@@ -5,7 +5,7 @@ import escapeHtml from "escape-html";
 import { getLogger } from "@logtape/logtape";
 import { partitionBlockedRecipients } from "./blocklist";
 import type { BotConfig } from "./config";
-import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, refreshEntryPublishedDates, type Db } from "./db";
+import { getAcceptedRelays, getExistingGuids, getFollowerRecipients, hasCompletedPoll, refreshEntryPublishedDates, type Db } from "./db";
 import { storeEntryWithPublications } from "./publications";
 import { resolveHashtags } from "./hashtags";
 import type { FeedEntry } from "./rss";
@@ -179,6 +179,10 @@ export async function publishNewEntries(
     return true;
   });
   const recipients = await getPublishRecipients(db, botUsername, blockedInstances);
+  // A new bot's first fetch is its back catalog: store it, but only deliver later posts.
+  const deliverTo = await hasCompletedPoll(db, botUsername)
+    ? [...recipients.followerRecipients, ...recipients.relayRecipients]
+    : [];
 
   const truncatedEntries = publishedEntries.map((entry) => ({
     entry,
@@ -221,7 +225,7 @@ export async function publishNewEntries(
       title,
       entry.publishedAt,
       [...hashtags],
-      [...recipients.followerRecipients, ...recipients.relayRecipients],
+      deliverTo,
     );
 
     if (entryId === null) {
