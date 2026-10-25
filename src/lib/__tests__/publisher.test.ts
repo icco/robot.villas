@@ -3,6 +3,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 vi.mock("../db", () => ({
   insertEntry: vi.fn(),
   getExistingGuids: vi.fn(),
+  hasAnyEntries: vi.fn(),
   refreshEntryPublishedDates: vi.fn().mockResolvedValue(undefined),
   getFollowers: vi.fn(),
   getFollowerRecipients: vi.fn(),
@@ -14,7 +15,7 @@ vi.mock("../hashtags", () => ({
   resolveHashtags: vi.fn().mockResolvedValue(["T1", "T2", "T3"]),
 }));
 
-import { getExistingGuids, getFollowers, getFollowerRecipients, getAcceptedRelays, refreshEntryPublishedDates } from "../db";
+import { getExistingGuids, hasAnyEntries, getFollowers, getFollowerRecipients, getAcceptedRelays, refreshEntryPublishedDates } from "../db";
 import { storeEntryWithPublications } from "../publications";
 import { resolveHashtags } from "../hashtags";
 import {
@@ -74,6 +75,7 @@ describe("publishNewEntries", () => {
       { followerId: "https://remote.example/user/1", sharedInboxUrl: "https://remote.example/inbox" },
     ]);
     mockGetAcceptedRelays.mockResolvedValue([]);
+    vi.mocked(hasAnyEntries).mockResolvedValue(true);
   });
 
   afterEach(() => {
@@ -241,6 +243,25 @@ describe("publishNewEntries", () => {
     expect(result.skipped).toBe(0);
     expect(mockCtx.sendActivity).not.toHaveBeenCalled();
     expect(mockInsertEntry.mock.calls[0][7][0].inboxId?.href).toBe("https://remote.example/inbox");
+  });
+
+  it("stores a new bot's first entries without delivering them", async () => {
+    vi.mocked(hasAnyEntries).mockResolvedValue(false);
+
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot",
+      "robot.villas",
+      entries,
+      testBotConfig,
+    );
+
+    expect(result.stored).toBe(3);
+    expect(mockInsertEntry).toHaveBeenCalledTimes(3);
+    for (const call of mockInsertEntry.mock.calls) {
+      expect(call[7]).toEqual([]);
+    }
   });
 
   it("handles empty entries array", async () => {

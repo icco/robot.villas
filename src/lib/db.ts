@@ -65,6 +65,16 @@ export async function hasEntry(db: Db, botUsername: string, guid: string): Promi
   return rows.length > 0;
 }
 
+/** Includes soft-deleted entries, so a re-added bot is not treated as new. */
+export async function hasAnyEntries(db: Db, botUsername: string): Promise<boolean> {
+  const rows = await db
+    .select({ id: schema.feedEntries.id })
+    .from(schema.feedEntries)
+    .where(eq(schema.feedEntries.botUsername, botUsername))
+    .limit(1);
+  return rows.length > 0;
+}
+
 /**
  * Batched version of hasEntry: looks up which of the given guids already
  * exist (and are not soft-deleted) for a bot in a single round trip, instead
