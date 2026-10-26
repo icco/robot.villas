@@ -8,13 +8,10 @@ export const AS_PUBLIC = "https://www.w3.org/ns/activitystreams#Public";
  * A Follow that serializes `object` as the full Public IRI instead of the
  * `as:Public` CURIE that JSON-LD compaction produces.
  *
- * YUKIMOCHI Activity-Relay — which relay.toot.io and relay.intahnet.co.uk both
- * run — validates subscriptions with a literal string comparison against the
- * full IRI, so the compacted form falls through to its "only
- * https://www.w3.org/ns/activitystreams#Public is allowed to follow" Reject.
- * Fedify applies the same rewrite to to/cc/bto/bcc/audience as of 2.2.0 but not
- * to `object`. Rewriting inside toJsonLd keeps the signed bytes and the wire
- * bytes identical.
+ * YUKIMOCHI Activity-Relay validates subscriptions with a literal string
+ * comparison against the full IRI and Rejects the compacted form. Fedify expands
+ * it on send but not when the object dispatcher serves the Follow, so this keeps
+ * served copies in the same form.
  */
 export class RelayFollow extends Follow {
   override async toJsonLd(options?: Parameters<Follow["toJsonLd"]>[0]): Promise<unknown> {
@@ -35,10 +32,8 @@ export const RELAY_REJECT_RETRY_MS = 30 * 24 * 60 * 60 * 1000;
 export type RelayStatus = "pending" | "accepted" | "rejected";
 
 /**
- * Whether a relay row should still block a new Follow. `accepted` is permanent;
- * `rejected` expires so a relay we were denied by under a since-fixed
- * subscription format gets re-asked. A null time predates the column — ask once,
- * and the reply stamps it.
+ * Whether a relay row should still block a new Follow. `accepted` always does;
+ * `rejected` only within the retry window, and an unstamped Reject never does.
  */
 export function isRelayTerminal(
   status: RelayStatus,
@@ -87,9 +82,8 @@ export function summarizeRelaySubscription(
 }
 
 /**
- * Instances vary on trailing slashes, so every comparison between a URL we
- * store and one we were handed goes through this. Relay bookkeeping keys on
- * `(botUsername, url)` exactly, so treating the two forms as different URLs
+ * Instances vary on trailing slashes, and relay rows key on `(botUsername, url)`
+ * exactly, so compare configured relay URLs through this or a slash-only edit
  * writes a second row for the same relay.
  */
 export function normalizeIdUrl(id: string): string {
@@ -110,9 +104,9 @@ export function selectRemovedRelays<T extends { url: string }>(
 }
 
 /**
- * Pending follows the target already lists as followers — an Accept that was
- * delivered but never recorded. The target won't re-Accept a duplicate Follow,
- * so retrying can't clear these. Empty `followerIds` (hidden followers) yields
+ * Pending follows the target already lists as followers, meaning an Accept was
+ * delivered but never recorded. Some targets ignore a duplicate Follow, so
+ * retrying may never clear these. Empty `followerIds` (hidden followers) yields
  * nothing, so the caller falls back to re-sending.
  */
 export function findLostAccepts(

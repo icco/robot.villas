@@ -1,23 +1,18 @@
 /**
- * Resets relay subscriptions so they are re-attempted on the next restart.
+ * Soft-deletes relay rows so the next deployment with a new build or feeds.yml
+ * follows them again.
  * Only the designated relay bot (`relay_subscription_bot` in feeds.yml, or
  * the first bot) is updated — the same as subscribeToRelays() at runtime.
  *
  * Usage:
- *   DATABASE_URL=... yarn tsx scripts/resubscribe-relays.ts [relay-url ...]
+ *   DATABASE_URL=... pnpm tsx scripts/resubscribe-relays.ts [relay-url ...]
  *
  * With no arguments, resets pending and rejected relay rows for that bot.
  * Pass one or more relay URLs to target specific relays, e.g.:
- *   DATABASE_URL=... yarn tsx scripts/resubscribe-relays.ts \
- *     https://relay.toot.io/actor \
- *     https://relay.intahnet.co.uk/actor
+ *   DATABASE_URL=... pnpm tsx scripts/resubscribe-relays.ts https://relay.example/actor
  *
- * After running, restart the server — subscribeToRelays() will re-send
- * fresh Follow activities for every reset row.
- *
- * Note: if a relay previously sent a Reject (meaning it still has the old
- * subscription in its own DB), you may also need to contact the relay admin
- * to remove the stale subscription on their end, or send Undo(Follow) first.
+ * Rejected rows retry on their own after RELAY_REJECT_RETRY_MS; this retries
+ * sooner once the cause is fixed.
  */
 
 import postgres from "postgres";
@@ -79,5 +74,5 @@ await db
   .set({ deletedAt: new Date() })
   .where(and(...conditions));
 
-console.log(`Done. Restart the server to trigger fresh Follow activities.`);
+console.log(`Done. The next deployment with a new build or feeds.yml sends fresh Follow activities.`);
 await client.end();

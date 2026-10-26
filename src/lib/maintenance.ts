@@ -26,9 +26,8 @@ export const MAINTENANCE_JOBS = [
 export type MaintenanceJob = (typeof MAINTENANCE_JOBS)[number];
 
 /**
- * Startup maintenance runs as named, retried Fedify tasks instead of
- * fire-and-forget promises, so it survives restarts and replicas do not each
- * run it. Must be called before `startQueue()`.
+ * Startup jobs run as retried Fedify tasks so they survive restarts and run once
+ * across replicas. Must be called before `startQueue()`.
  */
 export function defineMaintenanceTasks(federation: Federation<void>, db: Db, config: FeedsConfig) {
   const jobs: Record<MaintenanceJob, (ctx: Context<void>) => Promise<void>> = {

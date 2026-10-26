@@ -225,15 +225,14 @@ export async function handleFollow(
     });
     return;
   }
-  // Same predicate as outbound delivery: the actor and every inbox it would be
-  // delivered through must be allowed, so a follower cannot route around a block.
+  // Check the actor and both inboxes so a follower cannot route deliveries around a block.
   const deliveryHosts = [follower.id, follower.inboxId, follower.endpoints?.sharedInbox]
     .filter((u): u is URL => u != null)
     .map((u) => normalizeHost(u.hostname));
   const blockedHost = deliveryHosts.find((host) => isBlockedHost(host, blockedInstances));
   if (blockedHost) {
     logger.info("Rejected follow from blocked instance {host}", { host: blockedHost });
-    // The one delivery to a blocked host: it tells the remote the follow failed.
+    // Sent despite the block so the remote learns the follow failed.
     await ctx.sendActivity(
       { identifier: parsed.identifier },
       follower,
@@ -329,7 +328,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     httpMessageSignaturesSpecTtl: { days: 90 },
   });
 
-  // --- Actor dispatcher (following the Fedify microblog tutorial pattern) ---
+  // --- Actor dispatcher ---
   const actorCallbacks = federation
     .setActorDispatcher(
       "/users/{identifier}",
@@ -355,7 +354,6 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     )
     .mapHandle((_ctx, handle) => handle);
 
-  // Key pairs dispatcher — must be registered via the setters returned above
   actorCallbacks.setKeyPairsDispatcher(async (_ctx, identifier) => {
     if (!botUsernames.includes(identifier)) {
       return [];
@@ -527,7 +525,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     },
   );
 
-  // --- Follow object dispatcher (so Accept can dereference our outgoing follows) ---
+  // --- Follow object dispatcher: lets remotes dereference our outgoing Follow ids ---
   federation.setObjectDispatcher(
     Follow,
     "/users/{identifier}/follows/{id}",
@@ -537,7 +535,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         return null;
       }
       const followUri = ctx.getObjectUri(Follow, values);
-      // Check the following table (accounts the bot follows, e.g. _followback@tags.pub)
+      // Check the following table (accounts the bot follows)
       const followingRow = await getFollowingByActivityId(db, followUri.href);
       if (followingRow?.targetActorId) {
         return new Follow({
@@ -546,11 +544,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
           object: new URL(followingRow.targetActorId),
         });
       }
-      // Also check the relays table (relay subscriptions)
       const relayRow = await getRelayByActivityId(db, followUri.href);
       if (relayRow?.actorId) {
-        // RelayFollow, not Follow: the relay re-fetches this URL to verify the
-        // subscription and applies the same full-IRI string check.
+        // RelayFollow, so a fetched copy carries the same full Public IRI we sent.
         return new RelayFollow({
           id: followUri,
           actor: ctx.getActorUri(identifier),
@@ -635,7 +631,6 @@ export function registerInboxListeners(
   const fromAllowedHost = (activity: { actorId: URL | null }) =>
     !activity.actorId || !isBlockedHost(activity.actorId.hostname, blockedInstances);
 
-  // --- Inbox listeners ---
   return federation
     .setInboxListeners("/users/{identifier}/inbox", "/inbox")
     .setSharedKeyDispatcher(() => ({ identifier: botUsernames[0] }))
@@ -715,8 +710,8 @@ export function registerInboxListeners(
 }
 
 /**
- * Sends an Update(Application) activity for each bot to all its followers,
- * causing remote servers to refresh their cached copy of the actor profile.
+ * Sends each bot's Update(Application) to followers with a stored, unblocked
+ * inbox, so their servers refresh the cached actor profile.
  */
 export async function sendProfileUpdates(
   ctx: Context<void>,
@@ -770,12 +765,10 @@ const FOLLOWER_PAGE_LIMIT = 200;
 /**
  * Actor IDs in a target's followers collection.
  *
- * Pages over `itemIds` rather than `traverseCollection`, which dereferences
- * every entry — one request per follower, and it throws if any 404s (tags.pub
- * still lists bots we removed).
+ * Reads `itemIds`, not `traverseCollection`, which dereferences every follower.
  *
  * Best-effort: hidden followers or a failed fetch yield an empty or partial
- * set. Read that as "unknown", never "not a follower" — a missing ID only means
+ * set. Read that as "unknown", never "not a follower"; a missing ID only means
  * we fall back to re-sending, which is the safe direction.
  */
 async function fetchFollowerActorIds(
@@ -819,8 +812,8 @@ async function fetchFollowerActorIds(
 }
 
 /**
- * Sends a Follow activity from every bot to each account listed in
- * config.follows. Skips accounts that a bot has already followed.
+ * Follows each config.follows account from every bot, skipping pairs already
+ * accepted or rejected.
  */
 export async function followAccounts(
   ctx: Context<void>,
@@ -834,9 +827,7 @@ export async function followAccounts(
 
   const botUsernames = Object.keys(config.bots);
   const existing = await getAllFollowing(db);
-  // Only skip follows that are already accepted or explicitly rejected.
-  // Pending follows (sent but no Accept received) are retried, matching the
-  // same logic used by subscribeToRelays().
+  // Pending follows are re-sent; unlike relays, a Reject here is permanent.
   const existingSet = new Set(
     existing
       .filter((f) => f.status === "accepted" || f.status === "rejected")
@@ -875,9 +866,8 @@ export async function followAccounts(
       continue;
     }
 
-    // A Follow whose Accept was delivered but never matched a row stays pending
-    // forever, since the target won't re-Accept a duplicate. Record what the
-    // target already lists instead of sending another Follow into the void.
+    // Some servers ignore a duplicate Follow, so a lost Accept can leave the row
+    // pending forever. Record what the target already lists instead.
     const pendingForHandle = existing.filter(
       (f) => f.handle === handle && f.status === "pending",
     );
@@ -946,9 +936,8 @@ export async function followAccounts(
 }
 
 /**
- * Finds followers stored without a sharedInboxUrl (e.g. rows written before
- * the column existed) and re-resolves their actor to backfill the inbox URL.
- * Without this, publisher.ts silently skips delivering posts to them.
+ * Backfills followers stored without a sharedInboxUrl by re-resolving their
+ * actor. Every delivery path silently skips rows without one.
  */
 export async function repairFollowerInboxes(
   ctx: Context<void>,
@@ -983,19 +972,14 @@ export async function repairFollowerInboxes(
 }
 
 /**
- * Drops relay subscriptions whose URL has left feeds.yml, sending an
- * `Undo(Follow)` first so the relay stops sending to us as well.
+ * Soft-deletes relay rows whose URL left feeds.yml, queueing an `Undo(Follow)`
+ * for accepted ones. Delivery targets come from the relays table, not config,
+ * so a removed relay must be dropped here. An enqueue failure is logged and the
+ * row is dropped anyway.
  *
- * Delivery targets come from `getAcceptedRelays`, which reads the DB, so
- * without this a relay removed from config keeps receiving every `Create`
- * forever — one that starts refusing them is a permanent error source with no
- * way out short of editing the table by hand.
- *
- * The `Undo` is best effort: the row is soft-deleted either way, since a relay
- * we cannot reach is exactly the case this usually cleans up after.
- *
- * Deliveries still pending for any removed relay are cancelled on every run,
- * so relays removed before that existed are covered too.
+ * Also cancels pending deliveries to removed relay inboxes that Fedify has not
+ * queued yet. This runs before configured relays are re-subscribed, so
+ * re-adding a relay drops its old pending deliveries too.
  */
 export async function unsubscribeFromRemovedRelays(
   ctx: Context<void>,
@@ -1014,8 +998,8 @@ export async function unsubscribeFromRemovedRelays(
           new Undo({
             id: new URL(`${actorUri.href}#undo-relay-${relay.id}`),
             actor: actorUri,
-            // RelayFollow, and the stored Follow id, so the activity we retract
-            // matches the one we sent byte for byte. See RelayFollow's docstring.
+            // Embeds our original Follow by its stored id; Fedify expands its
+            // `as:Public` object on send.
             object: new RelayFollow({
               id: new URL(relay.followActivityId),
               actor: actorUri,
@@ -1049,11 +1033,9 @@ export async function unsubscribeFromRemovedRelays(
 }
 
 /**
- * Subscribes to configured relays with a **single** bot (see
- * `relay_subscription_bot` in config, default: first bot). Many ActivityPub
- * relays treat one subscription per origin instance; sending a Follow from
- * every feed bot was causing mass Rejects. All bots still send `Create` to
- * a relay if `getAcceptedRelays` has an accepted row.
+ * Follows relays from one bot (`relay_subscription_bot`, default the first),
+ * since relays key subscriptions by host. Every bot's posts still go to
+ * accepted relays.
  */
 export async function subscribeToRelays(
   ctx: Context<void>,
@@ -1082,16 +1064,12 @@ export async function subscribeToRelays(
 
   const allRelays = await getAllRelays(db);
 
-  // Every URL comparison below normalizes trailing slashes, matching
-  // unsubscribeFromRemovedRelays. Strict equality here would read a slash-only
-  // feeds.yml edit as a brand new relay and, since upsertRelay conflicts on
-  // (botUsername, url) exactly, write a second row for a relay we already have.
+  // Compare normalized URLs; see normalizeIdUrl.
   const acceptedUrls = new Set(
     allRelays.filter((r) => r.status === "accepted").map((r) => normalizeIdUrl(r.url)),
   );
   const hasAcceptedForInstance = (url: string) => acceptedUrls.has(normalizeIdUrl(url));
-  // Terminal for the designated bot + URL. Rejects expire (see isRelayTerminal)
-  // so a relay isn't frozen by a denial from a since-fixed format.
+  // Terminal for the designated bot + URL. Rejects expire; see isRelayTerminal.
   const now = new Date();
   const designatedTerminalUrls = new Set(
     allRelays
@@ -1154,10 +1132,8 @@ export async function subscribeToRelays(
       const follow = new RelayFollow({
         id: followId,
         actor: ctx.getActorUri(designated),
-        // ActivityRelay expects object=PUBLIC_COLLECTION (Mastodon-style subscription),
-        // not the relay actor's own URL (which triggers the LitePub peer-relay path
-        // and gets rejected because our actor URLs don't end in /relay).
-        // RelayFollow serializes it as the full IRI; see its docstring.
+        // object=Public is a Mastodon-style subscription; following the relay actor
+        // instead takes the LitePub peer-relay path. RelayFollow keeps the full IRI.
         object: PUBLIC_COLLECTION,
       });
 
@@ -1192,9 +1168,9 @@ export async function subscribeToRelays(
 }
 
 /**
- * Detects bots that have been removed from feeds.yml (but still have keypairs
- * in the DB) and sends a Delete activity to all their followers, then cleans
- * up the database.
+ * Sends Delete for bots that left feeds.yml but still have keys, to followers
+ * with an unblocked inbox, then soft-deletes their rows. A failed send keeps
+ * them for the retry.
  */
 export async function sendDeletedBotActivities(
   ctx: Context<void>,
