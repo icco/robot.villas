@@ -8,7 +8,7 @@ ActivityPub / fediverse server built with Fedify 2.4, Next.js 16 (App Router), D
 - App routes: `src/app/`; federation request routing: `src/proxy.ts`
 - Federation: `src/lib/federation.ts` (inbox state in `inbox-state.ts`), started from `src/instrumentation.ts`
 - Schema & migrations: `src/lib/schema.ts`, `src/lib/db.ts`; SQL in `drizzle/` (generate with `pnpm db:generate`, never hand-edit)
-- Delivery, retries, and limits: `docs/operations.md`
+- Delivery, queues, relays, retries, and limits: `docs/operations.md`
 
 ## Commands
 
@@ -24,7 +24,8 @@ Use pnpm (Node >= 26):
 - TypeScript everywhere, strict type checking.
 - Conventional Commits with lowercase subjects (e.g. `feat(actor): handle follow activity`).
 - Keep Next.js 16 App Router patterns and server/client boundaries clear.
-- Use `^` ranges for dependencies.
+- Use `^` ranges for dependencies, except `next`, which stays pinned exactly.
+- New feeds must follow "Choosing feeds" in `README.md`.
 - Build actors inline in the actor dispatcher so `@fedify/lint` can check them; don't disable its rules.
 - Inbox handlers must check that the sender owns what it changes, and must be safe to run twice.
 
