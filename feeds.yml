@@ -17371,9 +17371,9 @@ follows:
   - '@icco@merveilles.town'
   - '@_followback@tags.pub'
 blocked_instances:
-  - horche.demkontinuum.de
-  - fediverse.tryptophonic.com
-  - 8ball.space
+  - horche.demkontinuum.de # Friendica, 403 "Bots are not allowed" -- policy, not an outage
+  - fediverse.tryptophonic.com # 401 on every delivery
+  - 8ball.space # 502 then 405; instance has been broken for days
 relays:
   - https://relay.minecloud.ro/actor
   - https://tags.pub/user/_____relay_____
