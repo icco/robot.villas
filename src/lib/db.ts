@@ -75,11 +75,7 @@ export async function hasCompletedPoll(db: Db, botUsername: string): Promise<boo
   return rows.length > 0;
 }
 
-/**
- * Batched version of hasEntry: looks up which of the given guids already
- * exist (and are not soft-deleted) for a bot in a single round trip, instead
- * of one query per guid. Used to dedup a whole feed poll's items at once.
- */
+/** Live guids among `guids`; soft-deleted rows are excluded so insertEntry can revive them. */
 export async function getExistingGuids(
   db: Db,
   botUsername: string,
@@ -130,8 +126,8 @@ export async function refreshEntryPublishedDates(
 }
 
 /**
- * Inserts a feed entry. Returns the new row id when inserted, or null when the
- * entry already existed (dedup by bot + guid). Use the returned id for Note URIs.
+ * Inserts a feed entry, or revives a soft-deleted one with the same guid, and
+ * returns its id for Note URIs. Returns null when a live row has this guid.
  */
 export async function insertEntry(
   db: DbExecutor,
@@ -270,10 +266,7 @@ export async function countEntries(db: Db, botUsername: string): Promise<number>
   return rows[0]?.value ?? 0;
 }
 
-/**
- * Total non-deleted entry count across all given bots, in one query.
- * Use instead of summing countEntries() per bot in a loop.
- */
+/** Total non-deleted entry count across all given bots. */
 export async function countEntriesForBots(db: Db, botUsernames: string[]): Promise<number> {
   if (botUsernames.length === 0) {
     return 0;
@@ -443,7 +436,7 @@ export async function countAllEntries(db: Db): Promise<number> {
 
 export interface TagsPage {
   tags: Array<{ tag: string; postCount: number }>;
-  /** Total number of distinct tags, i.e. across every page. */
+  /** Distinct tags across every page; 0 when the page is past the end. */
   total: number;
 }
 
@@ -473,8 +466,8 @@ export async function getTagsPage(db: Db, limit: number, offset: number): Promis
 }
 
 /**
- * Returns stored key pairs for a bot. Handles both the legacy single-JWK
- * format and the new array-of-JWKs format (for dual RSA + Ed25519 keys).
+ * Returns stored key pairs for a bot. Accepts a bare JWK too, for rows that
+ * hold only the original RSA key.
  */
 export async function getKeypairs(
   db: DbExecutor,
@@ -501,8 +494,8 @@ export async function getKeypairs(
 }
 
 /**
- * Saves key pairs for a bot, upserting so that Ed25519 keys can be added
- * alongside existing RSA keys without losing them.
+ * Replaces a bot's whole key list; callers pass the existing RSA pair back in
+ * to keep it.
  */
 export async function saveKeypairs(
   db: DbExecutor,
@@ -704,7 +697,7 @@ export async function getTopPosts(db: Db, limit: number): Promise<FeedEntry[]> {
 /**
  * Soft-deletes non-designated relay rows (pending or rejected only) for the given URLs.
  * Keeps "accepted" on any bot so `getAcceptedRelays` and delivery still work. Run before
- * subscribing with a single designated bot to clear old per-bot rejections.
+ * subscribing so only the designated bot holds pending or rejected rows.
  */
 export async function pruneRedundantRelaySubscriptions(
   db: Db,
@@ -1125,7 +1118,7 @@ export async function claimFeedPoll(db: Db, botUsername: string, now: Date, leas
   return rows.length > 0 ? claimToken : null;
 }
 
-/** Extends a held lease; false means it was lost and the worker should stop. */
+/** Extends a held lease; false means another replica took it over. */
 export async function renewFeedPoll(db: Db, botUsername: string, claimToken: string, until: Date): Promise<boolean> {
   const rows = await db.update(schema.feedPollStatus).set({ claimedUntil: until })
     .where(and(eq(schema.feedPollStatus.botUsername, botUsername), eq(schema.feedPollStatus.claimToken, claimToken)))

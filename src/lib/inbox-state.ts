@@ -27,7 +27,8 @@ export interface ReactionInput {
 
 export async function receiveReaction(db: Db, reaction: ReactionInput, undo = false): Promise<void> {
   await db.transaction(async (tx) => {
-    // Serializes reactions and Undo for this post, including Undo-before-Create.
+    // Row lock serializes reactions and Undo on this post; an Undo that arrives first
+    // leaves an undone row so the late reaction is ignored.
     const [entry] = await tx.select({ id: feedEntries.id }).from(feedEntries).where(and(
       eq(feedEntries.id, reaction.entryId), eq(feedEntries.botUsername, reaction.botUsername), isNull(feedEntries.deletedAt),
     )).for("update");

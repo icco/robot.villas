@@ -57,7 +57,7 @@ export default function HomePage() {
                 @hackernews@{domain}
               </code>
               ) on your Mastodon instance, or click &quot;Follow on
-              Mastodon&quot; on its profile page.
+              the fediverse&quot; on its profile page.
             </li>
             <li>
               New items from the RSS feed will appear in your home timeline.

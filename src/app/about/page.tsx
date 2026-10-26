@@ -31,7 +31,7 @@ function Code({ children }: { children: ReactNode }) {
 
 export default function AboutPage() {
   const { config, domain } = getGlobals();
-  const botCount = Object.keys(config.bots).length;
+  const botCount = Object.values(config.bots).filter((bot) => bot.feed_url).length;
 
   return (
     <>
@@ -48,7 +48,8 @@ export default function AboutPage() {
         <p className="text-base-content/80 mb-4">
           Every bot is one entry in <Code>feeds.yml</Code>. Suggest a feed by opening a pull request
           — or an <a href={`${REPO}/issues/new`} className="link link-primary">issue</a> with the URL
-          if you would rather not.
+          if you would rather not. Suggest news sites and blogs; machine-generated streams (package
+          releases, price drops, status pages) and forum or Q&amp;A feeds are not added.
         </p>
         <ol className="list-decimal list-outside ml-5 space-y-3 text-base-content/80">
           <li>
@@ -69,7 +70,7 @@ export default function AboutPage() {
           </li>
           <li>
             Run <Code>pnpm validate-feeds</Code> to check the schema and that any{" "}
-            <Code>profile_photo</Code> is a reachable image. CI runs it too.
+            <Code>profile_photo</Code> is a reachable image. CI checks the schema on every pull request.
           </li>
           <li>Open the pull request. The bot goes live the next time the server deploys.</li>
         </ol>
@@ -79,8 +80,8 @@ export default function AboutPage() {
         <h2 className="text-2xl font-display font-bold mb-3">Removing a feed</h2>
         <p className="text-base-content/80">
           If you publish a feed here and would rather not, delete its entry in a pull request or open
-          an issue and it will be removed. The bot account is deleted and its posts are withdrawn
-          from the Fediverse.
+          an issue and it will be removed. The bot account is deleted, and its followers&apos; servers
+          are told so.
         </p>
       </section>
 
@@ -100,9 +101,13 @@ export default function AboutPage() {
             so an unchanged feed costs you a 304 and no body.
           </li>
           <li>
-            A <Code>429</Code> pauses that feed until its <Code>Retry-After</Code> has passed.
+            A <Code>429</Code> pauses that feed for its <Code>Retry-After</Code> (one hour if
+            absent, 24 hours at most).
           </li>
-          <li>Only titles and links are reposted, each crediting your feed with a link back.</li>
+          <li>
+            Each post is the item&apos;s title, a link back to it, and up to three hashtags, posted
+            unlisted so it stays out of public timelines.
+          </li>
         </ul>
       </section>
 

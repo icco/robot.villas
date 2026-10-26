@@ -1,8 +1,8 @@
 const INBOX_PATH = /^\/(users\/[^/]+\/)?inbox$/;
 
 /**
- * Relays Announce every post they see, and we only act on boosts of our own
- * posts, so the rest can skip Fedify's queue instead of delaying deliveries.
+ * Announce-style relays boost every post they carry, and we only act on boosts
+ * of our own posts, so the rest skip Fedify's queue, which deliveries share.
  */
 export async function isForeignAnnounce(request: Request, origin: string): Promise<boolean> {
   if (request.method !== "POST" || !INBOX_PATH.test(new URL(request.url).pathname)) {

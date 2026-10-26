@@ -11,11 +11,10 @@ import { prunePublications, submitPendingPublications } from "./publications";
 
 /** Not configurable: a 429 backs a slow-polling host off on its own. */
 const DEFAULT_INTERVAL_MS = 15 * 60 * 1000;
-/** How many bot feeds to poll at once. Keeps a large feeds.yml from making a
- * poll cycle run far longer than intervalMs when polled fully sequentially. */
+/** Fallback when the caller passes no concurrency. */
 const DEFAULT_CONCURRENCY = 10;
 const logger = getLogger(["robot-villas", "poller"]);
-/** Covers fetch plus ingestion (including hashtag generation); expires if a replica dies. */
+/** Renewed while polling; bounds how long a dead replica blocks the feed. */
 const FEED_LEASE_MS = 10 * 60 * 1000;
 const DRAIN_IDLE_MS = 5_000;
 

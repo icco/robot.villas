@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://robot.villas/feeds.schema.json",
   "title": "robot.villas feeds configuration",
-  "description": "Configuration for RSS bot feeds, follows, and relays.",
+  "description": "Configuration for robot.villas bots, follows, relays, and blocked instances.",
   "type": "object",
   "required": [
     "bots"
@@ -36,7 +36,7 @@
     },
     "relays": {
       "type": "array",
-      "description": "ActivityPub relay actor URLs to subscribe to.",
+      "description": "ActivityPub relay actor URLs to subscribe to. HTTP(S), without credentials.",
       "default": [],
       "items": {
         "type": "string",
@@ -45,8 +45,17 @@
     },
     "relay_subscription_bot": {
       "type": "string",
-      "description": "Bot username used for relay subscription requests; must match a key in `bots` (enforced at runtime).",
+      "description": "The one bot that follows each relay; must be a key in `bots`. Defaults to the first bot.",
       "pattern": "^[a-z0-9_]+$"
+    },
+    "blocked_instances": {
+      "type": "array",
+      "description": "Hostnames refused in both directions; a domain also blocks its subdomains. Merged with BLOCKED_INSTANCES.",
+      "default": [],
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
     }
   },
   "$defs": {
@@ -61,7 +70,7 @@
         "feed_url": {
           "type": "string",
           "format": "uri",
-          "description": "RSS/Atom feed URL."
+          "description": "RSS or Atom feed URL. HTTP(S), without credentials."
         },
         "display_name": {
           "type": "string",
@@ -76,12 +85,12 @@
         "profile_photo": {
           "type": "string",
           "format": "uri",
-          "description": "Profile photo URL."
+          "description": "Profile photo URL. HTTP(S), without credentials."
         },
         "homepage_url": {
           "type": "string",
           "format": "uri",
-          "description": "Homepage URL for the site being mirrored."
+          "description": "Homepage URL for the site being mirrored. HTTP(S), without credentials."
         },
         "default_hashtags": {
           "type": "array",

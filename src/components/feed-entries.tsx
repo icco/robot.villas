@@ -18,9 +18,6 @@ type PostFeedProps = {
   showBotHandle?: boolean;
 };
 
-/**
- * One shared post list: (optional @bot), title, hashtags, boost/favorite, date — all inline.
- */
 export function PostFeed({
   domain,
   entries,
