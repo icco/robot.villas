@@ -75,7 +75,7 @@ describe("meta bot announcements", () => {
     expect(note.content).toContain("New &lt;Bot&gt;");
     expect(note.content).toContain('href="https://robot.villas/@newbot"');
     expect(note.id.href).toBe("https://robot.villas/users/meta/posts/42");
-    expect(note.toIds.map((url: URL) => url.href)).toContain("https://www.w3.org/ns/activitystreams#Public");
+    expect(note.ccIds.map((url: URL) => url.href)).toContain("https://www.w3.org/ns/activitystreams#Public");
     expect(markBotsAnnounced).toHaveBeenCalledWith(db, ["newbot"]);
   });
 

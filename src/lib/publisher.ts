@@ -62,8 +62,9 @@ export function buildCreateActivity(
   const note = new Note({
     id: noteId,
     attribution: actorId,
-    to: PUBLIC_COLLECTION,
-    cc: followersId,
+    // Unlisted: bots stay out of public and hashtag timelines but remain visible to followers.
+    to: followersId,
+    cc: PUBLIC_COLLECTION,
     content: formatContent(entry, baseUrl),
     mediaType: "text/html",
     url: safeParseUrl(entry.link),
@@ -79,8 +80,8 @@ export function buildCreateActivity(
     id: new URL(`${noteId.href}#activity`),
     actor: actorId,
     object: note,
-    tos: [PUBLIC_COLLECTION],
-    ccs: [followersId],
+    tos: [followersId],
+    ccs: [PUBLIC_COLLECTION],
   });
 }
 

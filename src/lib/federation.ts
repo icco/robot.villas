@@ -511,8 +511,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
       return new Note({
         id: ctx.getObjectUri(Note, values),
         attribution: ctx.getActorUri(identifier),
-        to: PUBLIC_COLLECTION,
-        cc: ctx.getFollowersUri(identifier),
+        // Must match buildCreateActivity's unlisted addressing.
+        to: ctx.getFollowersUri(identifier),
+        cc: PUBLIC_COLLECTION,
         content,
         mediaType: "text/html",
         url: safeParseUrl(entry.url),
