@@ -266,12 +266,12 @@ describe("publishNewEntries", () => {
     }
   });
 
-  it("stores entries dated more than a day ago without delivering them", async () => {
+  it("stores entries dated more than a week ago without delivering them", async () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date("2026-10-11T12:00:00Z"));
     const datedEntries = [
-      { ...entries[0], guid: "old", publishedAt: new Date("2026-10-10T11:59:59.999Z") },
-      { ...entries[0], guid: "recent", publishedAt: new Date("2026-10-10T12:00:00Z") },
+      { ...entries[0], guid: "old", publishedAt: new Date("2026-10-04T11:59:59.999Z") },
+      { ...entries[0], guid: "recent", publishedAt: new Date("2026-10-04T12:00:00Z") },
       { ...entries[0], guid: "undated", publishedAt: null },
     ];
 

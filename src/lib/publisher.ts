@@ -18,7 +18,7 @@ export const MAX_TITLE_LENGTH = 2000;
 export const MAX_URL_LENGTH = 2048;
 export const MAX_GUID_LENGTH = 2048;
 // Older posts reach followers' hashtag timelines as stale noise, so they are stored but not delivered.
-const MAX_DELIVERY_AGE_MS = 24 * 60 * 60 * 1000;
+const MAX_DELIVERY_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
 export function truncateToMax(s: string, max: number): string {
   if (s.length <= max) {
