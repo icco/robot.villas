@@ -86,6 +86,7 @@ import {
 import { hashtagsForNoteBody } from "./hashtags";
 import { recordInboxReport } from "./inbox-reports";
 import { buildCreateActivity, formatContent, safeParseUrl } from "./publisher";
+import { cancelRemovedRelayPublications } from "./publications";
 
 export interface FederationDeps {
   config: FeedsConfig;
@@ -991,6 +992,9 @@ export async function repairFollowerInboxes(
  *
  * The `Undo` is best effort: the row is soft-deleted either way, since a relay
  * we cannot reach is exactly the case this usually cleans up after.
+ *
+ * Deliveries still pending for any removed relay are cancelled on every run,
+ * so relays removed before that existed are covered too.
  */
 export async function unsubscribeFromRemovedRelays(
   ctx: Context<void>,
@@ -1035,6 +1039,11 @@ export async function unsubscribeFromRemovedRelays(
       url: relay.url,
       bot: relay.botUsername,
     });
+  }
+
+  const cancelled = await cancelRemovedRelayPublications(db);
+  if (cancelled > 0) {
+    logger.info("Cancelled {count} pending deliveries to removed relays", { count: cancelled });
   }
 }
 
