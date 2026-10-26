@@ -22,6 +22,7 @@ How robot.villas delivers posts, handles failures, and limits what remote server
 ## Inbox handling
 
 - Accept and Reject change a subscription only when they come from the account or relay that was followed.
+- An Announce of a post on another server gets `202` and is dropped before Fedify queues it. Relays send one for every post they see, and only boosts of our own posts are counted.
 - Undo applies only to the sender's own Follow or reaction; Delete removes a follower only when the actor deletes itself.
 - Each Like, Announce, and EmojiReact is counted once by activity ID, including duplicates, replays, and an Undo that arrives first. Reactions from before this ledger existed can't be undone individually.
 - Fedify settings: at most 3 HTTP signatures checked per request, 10-second remote document timeout, public keys cached 30 days.
