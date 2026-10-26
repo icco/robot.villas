@@ -29,6 +29,7 @@ import {
   formatContent,
 } from "../publisher";
 import type { FeedEntry } from "../rss";
+import type { Note } from "@fedify/vocab";
 
 const mockInsertEntry = vi.mocked(storeEntryWithPublications);
 const mockGetExistingGuids = vi.mocked(getExistingGuids);
@@ -373,6 +374,21 @@ describe("buildCreateActivity", () => {
     expect(note!.content).not.toContain("javascript:");
     // Hashtag links are fine; only the article link should be suppressed
     expect(note!.content).not.toMatch(/<a href="javascript:/);
+  });
+
+  it("addresses posts unlisted so they stay out of public and hashtag timelines", async () => {
+    const create = buildCreateActivity(
+      "testbot",
+      5,
+      { title: "OK", link: "https://example.com/ok", publishedAt: null, hashtags: ["H1"] },
+      baseUrl,
+    );
+    const followers = ["https://robot.villas/users/testbot/followers"];
+    const pub = ["https://www.w3.org/ns/activitystreams#Public"];
+    const hrefs = (urls: URL[]) => urls.map((u) => u.href);
+    const note = (await create.getObject()) as Note;
+    expect([hrefs(create.toIds), hrefs(create.ccIds)]).toEqual([followers, pub]);
+    expect([hrefs(note.toIds), hrefs(note.ccIds)]).toEqual([followers, pub]);
   });
 
   it("uses https link in Note url and content when link is safe", async () => {
