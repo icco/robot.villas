@@ -227,6 +227,8 @@ describe("publishNewEntries", () => {
   });
 
   it("stores publication intent without attempting network submission", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2024-01-01T12:00:00Z"));
     mockInsertEntry.mockResolvedValueOnce(1).mockResolvedValueOnce(2).mockResolvedValueOnce(3);
     mockCtx.sendActivity.mockRejectedValueOnce(new Error("network error")).mockResolvedValue(undefined);
 
@@ -262,6 +264,29 @@ describe("publishNewEntries", () => {
     for (const call of mockInsertEntry.mock.calls) {
       expect(call[7]).toEqual([]);
     }
+  });
+
+  it("stores entries dated more than a day ago without delivering them", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-10-11T12:00:00Z"));
+    const datedEntries = [
+      { ...entries[0], guid: "old", publishedAt: new Date("2026-10-10T11:59:59.999Z") },
+      { ...entries[0], guid: "recent", publishedAt: new Date("2026-10-10T12:00:00Z") },
+      { ...entries[0], guid: "undated", publishedAt: null },
+    ];
+
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot", "robot.villas", datedEntries, testBotConfig,
+    );
+
+    expect(result.stored).toBe(3);
+    expect(mockInsertEntry.mock.calls.map((call) => [call[2], call[7].length])).toEqual([
+      ["old", 0],
+      ["recent", 1],
+      ["undated", 1],
+    ]);
   });
 
   it("keeps suppressing delivery when retrying a partially failed first ingestion", async () => {
