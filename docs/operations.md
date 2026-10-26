@@ -24,7 +24,7 @@ How robot.villas delivers posts, handles failures, and limits what remote server
 
 - One bot (`relay_subscription_bot`, default the first) follows each relay. Once the relay accepts, every bot's posts go to it, one delivery per post per relay.
 - A relay sends us the posts it carries. Announces of other servers' posts are dropped before queueing (see Inbox handling).
-- A Reject is honored for 30 days, then the Follow is sent again.
+- A Reject is honored for 30 days. The first deploy with a new build or config after that sends the Follow again.
 - Removing a relay from `feeds.yml` sends `Undo(Follow)`, soft-deletes its rows, and cancels its pending records at the next deploy, except a bot's records when one of its followers uses the same inbox. The cancellation runs before configured relays are re-subscribed, so re-adding a relay also drops its old pending records.
 - `/status` shows each relay's stored subscription state, not delivery results. Before removing a relay as broken, compare `Successfully sent` with `Failed to send activity` for its inbox in the logs.
 

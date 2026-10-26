@@ -11,8 +11,8 @@
  * Pass one or more relay URLs to target specific relays, e.g.:
  *   DATABASE_URL=... pnpm tsx scripts/resubscribe-relays.ts https://relay.example/actor
  *
- * Rejected rows retry on their own after RELAY_REJECT_RETRY_MS; this retries
- * sooner once the cause is fixed.
+ * Rejected rows become eligible again after RELAY_REJECT_RETRY_MS and are
+ * followed at the next deploy after that; this skips the wait once the cause is fixed.
  */
 
 import postgres from "postgres";
