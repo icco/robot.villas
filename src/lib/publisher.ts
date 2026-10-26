@@ -17,7 +17,7 @@ const logger = getLogger(["robot-villas", "publisher"]);
 export const MAX_TITLE_LENGTH = 2000;
 export const MAX_URL_LENGTH = 2048;
 export const MAX_GUID_LENGTH = 2048;
-// Older posts reach followers' hashtag timelines as stale noise, so they are stored but not delivered.
+// Older posts would land in followers' timelines as stale noise, so they are stored but not delivered.
 const MAX_DELIVERY_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
 export function truncateToMax(s: string, max: number): string {
@@ -37,7 +37,7 @@ export interface EntryLike {
 
 /**
  * Builds a Create(Note) activity. Uses entryId (our DB id) in the Note URI, not
- * the feed's guid, so feed-supplied data never appears in URLs.
+ * the feed's guid, so feed data never shapes our object URIs.
  */
 export function buildCreateActivity(
   botUsername: string,
@@ -62,7 +62,7 @@ export function buildCreateActivity(
   const note = new Note({
     id: noteId,
     attribution: actorId,
-    // Unlisted: bots stay out of public and hashtag timelines but remain visible to followers.
+    // Unlisted keeps bot posts out of public timelines and search; followers still see them.
     to: followersId,
     cc: PUBLIC_COLLECTION,
     content: formatContent(entry, baseUrl),
@@ -113,8 +113,7 @@ export async function getPublishRecipients(
       endpoints: null,
     }));
 
-  // Blocked hosts are dropped here rather than at follow time: a host can be
-  // blocked long after it followed, and rows for it stay in the DB.
+  // Also filtered here: a host blocked after it followed still has follower rows.
   const followers = partitionBlockedRecipients(allFollowerRecipients, blockedInstances);
   const relayed = partitionBlockedRecipients(allRelayRecipients, blockedInstances);
   const followerRecipients = followers.allowed;
@@ -197,7 +196,6 @@ export async function publishNewEntries(
   await refreshEntryPublishedDates(db, botUsername, truncatedEntries.map(({ entry, guid }) => ({
     guid, publishedAt: entry.publishedAt,
   })));
-  // One round trip to find which guids already exist, instead of one query per entry.
   const existingGuids = await getExistingGuids(
     db,
     botUsername,
@@ -209,9 +207,7 @@ export async function publishNewEntries(
       skipped++;
       continue;
     }
-    // Mark as seen before processing so a duplicate guid later in the same
-    // feed (existingGuids is only a pre-loop DB snapshot) is skipped here
-    // too, instead of redundantly resolving hashtags for it.
+    // Skip a guid repeated later in this feed before resolving hashtags for it twice.
     existingGuids.add(guid);
 
     const hashtags = await resolveHashtags(

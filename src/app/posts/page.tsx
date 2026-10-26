@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const { domain } = getGlobals();
   return {
     title: "All Posts",
-    description: `All posts on ${domain} in chronological order`,
+    description: `All posts on ${domain}, newest first`,
   };
 }
 

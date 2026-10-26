@@ -23,7 +23,7 @@ export function normalizeHost(input: string): string {
   return host.toLowerCase().replace(/\.$/, "");
 }
 
-/** Builds the comparison set. Empty and unparseable entries drop out. */
+/** Builds the comparison set; blank entries drop out. */
 export function buildBlocklist(hosts: Iterable<string>): ReadonlySet<string> {
   const set = new Set<string>();
   for (const raw of hosts) {
@@ -62,13 +62,9 @@ export function isBlockedHost(host: string, blocked: ReadonlySet<string>): boole
 }
 
 /**
- * Splits delivery recipients into those we will send to and those we will not.
- * Callers log the blocked count rather than dropping it silently — a blocklist
- * that quietly eats deliveries is indistinguishable from a delivery bug.
- *
- * An `inboxId` we cannot parse is treated as not blocked: the blocklist is not
- * the right place to reject malformed rows, and swallowing them here would
- * hide them from whatever does.
+ * Splits delivery recipients into those we will send to and those we will not,
+ * and returns the blocked hosts so callers can log what the blocklist dropped.
+ * A recipient without an inboxId is judged by its actor host alone.
  */
 export function partitionBlockedRecipients<T extends { id?: URL | null; inboxId?: URL | null }>(
   recipients: ReadonlyArray<T>,

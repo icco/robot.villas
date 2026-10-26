@@ -13,13 +13,12 @@ export const feedEntries = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
     likeCount: integer("like_count").notNull().default(0),
     boostCount: integer("boost_count").notNull().default(0),
-    /** Stored hashtag labels (no leading #), typically 0–3. Legacy rows may be []. */
+    /** Hashtag labels without the leading #; at most MAX_TAGS, possibly none. */
     hashtags: jsonb("hashtags").$type<string[]>().notNull().default(sql`'[]'::jsonb`),
     deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
   },
   (t) => [
     unique().on(t.botUsername, t.guid),
-    // GIN index for fast JSONB array element lookups (tag filter + tag aggregation)
     index("feed_entries_hashtags_gin_idx").using("gin", t.hashtags).where(sql`${t.deletedAt} IS NULL`),
     // Partial index for chronological pagination across all non-deleted posts
     index("feed_entries_published_at_idx")
@@ -96,7 +95,7 @@ export const following = pgTable(
     targetActorId: text("target_actor_id"),
     followActivityId: text("follow_activity_id"),
     status: text().notNull().default("pending"),
-    /** When `status` last changed; null for pre-existing rows. */
+    /** When `status` last changed; null if never stamped. */
     statusChangedAt: timestamp("status_changed_at", { withTimezone: true, mode: "date" }),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
     deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
@@ -119,7 +118,7 @@ export const relays = pgTable(
     inboxUrl: text("inbox_url"),
     actorId: text("actor_id"),
     status: relayStatusEnum().notNull().default("pending"),
-    /** When `status` last changed; null for pre-existing rows. Drives the Reject cooldown. */
+    /** When `status` last changed; null if never stamped. Drives the Reject cooldown. */
     statusChangedAt: timestamp("status_changed_at", { withTimezone: true, mode: "date" }),
     followActivityId: text("follow_activity_id"),
     createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }).notNull().defaultNow(),
@@ -132,7 +131,7 @@ export const relays = pgTable(
 export const feedPollStatus = pgTable("feed_poll_status", {
   botUsername: text("bot_username").primaryKey(),
   lastCheckedAt: timestamp("last_checked_at", { withTimezone: true, mode: "date" }).notNull(),
-  /** Response status when a response was received; null on network/timeout errors before headers. */
+  /** Status of a fully read response; null when the request or reading its body failed, including robots.txt blocks. */
   lastHttpStatus: integer("last_http_status"),
   /** Null when the last poll completed successfully at HTTP + parse level. */
   lastError: text("last_error"),
@@ -140,7 +139,7 @@ export const feedPollStatus = pgTable("feed_poll_status", {
   etag: text("etag"),
   /** `Last-Modified` from the last 200/304, sent back as `If-Modified-Since`. */
   lastModified: text("last_modified"),
-  /** Set from a 429 `Retry-After`; the poller skips this feed until it passes. */
+  /** Set after a 429 (its `Retry-After`, else 1 hour); the poller skips the feed until then. */
   nextPollAt: timestamp("next_poll_at", { withTimezone: true, mode: "date" }),
   /** Last fetch that parsed (or 304'd) and committed every new entry. */
   lastSuccessAt: timestamp("last_success_at", { withTimezone: true, mode: "date" }),

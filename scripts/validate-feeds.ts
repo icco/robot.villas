@@ -1,10 +1,5 @@
 #!/usr/bin/env tsx
-/**
- * Validates feeds.yml:
- *   1. Schema correctness (via Zod, same rules the app uses at startup)
- *   2. Each profile_photo URL is reachable and returns a Mastodon-compatible
- *      image MIME type (png / jpeg / webp / gif).
- */
+/** Validates feeds.yml with the app schema, then, unless --skip-network, checks each profile_photo is a reachable png, jpeg, webp, or gif. */
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { load as parseYaml } from "js-yaml";
@@ -73,7 +68,6 @@ async function main() {
   const configPath = join(process.cwd(), "feeds.yml");
   const raw = readFileSync(configPath, "utf-8");
 
-  // Step 1: schema validation
   const parsed = parseYaml(raw);
   const result = FeedsConfigSchema.safeParse(parsed);
   if (!result.success) {
@@ -103,9 +97,7 @@ async function main() {
       const url = bot.profile_photo!;
       let r = await probeUrl(url);
 
-      // A transient origin hiccup (e.g. a momentary error page served with
-      // 200 text/html, or a dropped connection) shouldn't fail CI outright.
-      // Retry once after a short delay before treating it as a real error.
+      // Retry once so a transient origin error doesn't fail the weekly probe.
       if (r.kind === "wrong_mime" || r.kind === "network_error") {
         await new Promise((resolve) => setTimeout(resolve, 2000));
         r = await probeUrl(url);

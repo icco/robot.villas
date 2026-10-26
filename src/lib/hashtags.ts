@@ -35,9 +35,7 @@ function dedupePush(pool: string[], next: string): void {
   pool.push(next);
 }
 
-/**
- * Normalize and dedupe stored DB values only (legacy [] → no tags until backfill).
- */
+/** Stored tags may predate current rules, so re-normalize them on read. */
 export function hashtagsForNoteBody(stored: string[]): string[] {
   const pool: string[] = [];
   for (const s of stored) {
@@ -52,9 +50,7 @@ export function hashtagsForNoteBody(stored: string[]): string[] {
   return pool;
 }
 
-/**
- * Normalize and dedupe raw strings (feed categories + config defaults), capped at `max`.
- */
+/** Normalize, dedupe, and cap candidate labels at `max`. */
 export function mergeHashtagCandidates(rawStrings: string[], max = MAX_TAGS): string[] {
   const pool: string[] = [];
   for (const s of rawStrings) {
@@ -79,7 +75,6 @@ function parseTagsObject(raw: string): string[] {
 
 function parseGeminiTagsJson(text: string): string[] {
   const trim = text.trim();
-  // 1. Try raw
   try {
     return parseTagsObject(trim);
   } catch (e) {
@@ -200,14 +195,13 @@ export async function resolveHashtags(
   const hasGemini = !!(apiKey || project);
 
   if (!hasGemini || !bot.feed_url) {
-    // Meta announcements use deterministic tags; RSS falls back here without Gemini.
+    // Without Gemini, use feed categories and defaults directly.
     return mergeHashtagCandidates(
       [...entry.feedCategories, ...(bot.default_hashtags ?? [])],
       MAX_TAGS,
     );
   }
 
-  // Gemini available: seed pool from default_hashtags only; categories go into the prompt.
   const pool = mergeHashtagCandidates(bot.default_hashtags ?? [], MAX_TAGS);
   const need = MAX_TAGS - pool.length;
   if (need <= 0) {

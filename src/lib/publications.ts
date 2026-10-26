@@ -105,7 +105,7 @@ export async function getPublicationSummary(db: Db, now = new Date()): Promise<P
   return { ...pending, ...recent, oldestPendingAt: pending.oldestPendingAt ? new Date(pending.oldestPendingAt) : null };
 }
 
-/** A relay that left config refuses what is still pending for it; a follower on the same inbox keeps its bot's rows. */
+/** Pending rows for relays dropped from config are unwanted; a follower on the same inbox keeps its bot's rows. */
 export async function cancelRemovedRelayPublications(db: Db, now = new Date()): Promise<number> {
   const relayInboxes = (removed: boolean) => db.select({ inboxUrl: relays.inboxUrl }).from(relays)
     .where(and(isNotNull(relays.inboxUrl), removed ? isNotNull(relays.deletedAt) : isNull(relays.deletedAt)));
