@@ -17,6 +17,8 @@ const logger = getLogger(["robot-villas", "publisher"]);
 export const MAX_TITLE_LENGTH = 2000;
 export const MAX_URL_LENGTH = 2048;
 export const MAX_GUID_LENGTH = 2048;
+// Older posts reach followers' hashtag timelines as stale noise, so they are stored but not delivered.
+const MAX_DELIVERY_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
 export function truncateToMax(s: string, max: number): string {
   if (s.length <= max) {
@@ -217,6 +219,7 @@ export async function publishNewEntries(
       bot,
     );
 
+    const backdated = entry.publishedAt !== null && now - entry.publishedAt.getTime() > MAX_DELIVERY_AGE_MS;
     const entryId = await storeEntryWithPublications(
       db,
       botUsername,
@@ -225,7 +228,7 @@ export async function publishNewEntries(
       title,
       entry.publishedAt,
       [...hashtags],
-      deliverTo,
+      backdated ? [] : deliverTo,
     );
 
     if (entryId === null) {
