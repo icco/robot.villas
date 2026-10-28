@@ -426,6 +426,40 @@ export async function getAllEntries(
     .offset(offset);
 }
 
+function escapeLike(value: string): string {
+  return value.replace(/[\\%_]/g, (c) => `\\${c}`);
+}
+
+/**
+ * Posts whose title or hashtags contain `query` (case-insensitive), newest
+ * first. Optionally limited to one bot.
+ */
+export async function searchEntries(
+  db: Db,
+  query: string,
+  limit: number,
+  botUsername?: string,
+): Promise<FeedEntry[]> {
+  const pattern = `%${escapeLike(query)}%`;
+  const matches = or(
+    sql`${schema.feedEntries.title} ILIKE ${pattern}`,
+    sql`EXISTS (
+      SELECT 1 FROM jsonb_array_elements_text(${schema.feedEntries.hashtags}) AS t(v)
+      WHERE t.v ILIKE ${pattern}
+    )`,
+  );
+  return db
+    .select(TAG_ENTRY_FIELDS)
+    .from(schema.feedEntries)
+    .where(and(
+      matches,
+      isNull(schema.feedEntries.deletedAt),
+      botUsername ? eq(schema.feedEntries.botUsername, botUsername) : undefined,
+    ))
+    .orderBy(...ENTRY_ORDER)
+    .limit(limit);
+}
+
 export async function countAllEntries(db: Db): Promise<number> {
   const rows = await db
     .select({ value: count() })

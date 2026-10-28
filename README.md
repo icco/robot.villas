@@ -66,6 +66,7 @@ DATABASE_URL=postgres://localhost/robot_villas DOMAIN=localhost pnpm dev
 
 - `/@name`: bot profile with its posts
 - `/status`: feed health, publishing backlog, relays, follows, and inbox results
+- `/mcp`: read-only, authless [MCP](https://modelcontextprotocol.io/) server (Streamable HTTP) with `search_feeds`, `search_posts`, and `get_feed_posts` tools
 - `/healthcheck` (liveness) and `/readyz` (database reachable)
 - ActivityPub, WebFinger, and NodeInfo are served by [Fedify](https://fedify.dev/) through `src/proxy.ts`
 
