@@ -65,6 +65,12 @@ describe("mcp", () => {
     expect(out.feeds[0].handle).toBe("@synths@robot.villas");
   });
 
+  it("finds feeds by returned handle", async () => {
+    const client = await connect();
+    const out = parse(await client.callTool({ name: "search_feeds", arguments: { query: "@rustblog@robot.villas" } }));
+    expect(out.feeds.map((f: { username: string }) => f.username)).toEqual(["rustblog"]);
+  });
+
   it("searches posts", async () => {
     const client = await connect();
     const out = parse(await client.callTool({ name: "search_posts", arguments: { query: "rust" } }));

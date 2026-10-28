@@ -60,7 +60,7 @@ export function createMcpServer({ db, config, domain }: McpDeps): McpServer {
       const words = query.toLowerCase().split(/\s+/).filter(Boolean);
       const results = Object.entries(config.bots)
         .map(([username, bot]) => {
-          const haystack = [username, bot.display_name, bot.summary, bot.feed_url ?? "", bot.homepage_url ?? "", ...(bot.default_hashtags ?? [])]
+          const haystack = [`@${username}@${domain}`, bot.display_name, bot.summary, bot.feed_url ?? "", bot.homepage_url ?? "", ...(bot.default_hashtags ?? [])]
             .join(" ")
             .toLowerCase();
           return { username, bot, score: words.filter((w) => haystack.includes(w)).length };
