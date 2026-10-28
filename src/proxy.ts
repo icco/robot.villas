@@ -1,6 +1,7 @@
 import { fedifyWith, integrateFederation } from "@fedify/next";
 import { NextResponse } from "next/server";
 import { getGlobals } from "@/lib/globals";
+import { isForeignAnnounce } from "@/lib/inbox-filter";
 
 type Handler = (request: Request) => unknown;
 let handlers: { federation: Handler; webfinger: Handler } | null = null;
@@ -18,12 +19,15 @@ function getHandlers() {
   return handlers;
 }
 
-export default function proxy(request: Request) {
+export default async function proxy(request: Request) {
   const { pathname } = new URL(request.url);
   if (pathname === "/.well-known/webfinger") {
     return request.method === "GET" || request.method === "HEAD"
       ? getHandlers().webfinger(request)
       : NextResponse.next();
+  }
+  if (await isForeignAnnounce(request, `https://${getGlobals().domain}`)) {
+    return new Response(null, { status: 202 });
   }
   return getHandlers().federation(request);
 }

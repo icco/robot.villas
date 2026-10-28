@@ -1,8 +1,8 @@
 import type { Context } from "@fedify/fedify";
 import type { Recipient } from "@fedify/vocab";
-import { and, asc, eq, gt, isNull, lt, lte, or, sql } from "drizzle-orm";
+import { and, asc, eq, gt, inArray, isNotNull, isNull, lt, lte, notExists, notInArray, or, sql } from "drizzle-orm";
 import { insertEntry, type Db } from "./db";
-import { feedEntries, publications } from "./schema";
+import { feedEntries, followers, publications, relays } from "./schema";
 import { buildCreateActivity } from "./publisher";
 import { partitionBlockedRecipients } from "./blocklist";
 
@@ -103,6 +103,29 @@ export async function getPublicationSummary(db: Db, now = new Date()): Promise<P
       .where(gt(publications.queuedAt, new Date(now.getTime() - 86_400_000))),
   ]);
   return { ...pending, ...recent, oldestPendingAt: pending.oldestPendingAt ? new Date(pending.oldestPendingAt) : null };
+}
+
+/** Pending rows for relays dropped from config are unwanted; a follower on the same inbox keeps its bot's rows. */
+export async function cancelRemovedRelayPublications(db: Db, now = new Date()): Promise<number> {
+  const relayInboxes = (removed: boolean) => db.select({ inboxUrl: relays.inboxUrl }).from(relays)
+    .where(and(isNotNull(relays.inboxUrl), removed ? isNotNull(relays.deletedAt) : isNull(relays.deletedAt)));
+  const followerOnInbox = db.select({ one: sql`1` }).from(followers)
+    .innerJoin(feedEntries, eq(feedEntries.botUsername, followers.botUsername))
+    .where(and(
+      eq(feedEntries.id, publications.entryId),
+      eq(followers.sharedInboxUrl, publications.inboxUrl),
+      isNull(followers.deletedAt),
+    ));
+  const rows = await db.update(publications).set({ cancelledAt: now })
+    .where(and(
+      isNull(publications.queuedAt),
+      isNull(publications.cancelledAt),
+      inArray(publications.inboxUrl, relayInboxes(true)),
+      notInArray(publications.inboxUrl, relayInboxes(false)),
+      notExists(followerOnInbox),
+    ))
+    .returning({ id: publications.id });
+  return rows.length;
 }
 
 /** Finished rows are only needed for recent status; drop them after 30 days. */

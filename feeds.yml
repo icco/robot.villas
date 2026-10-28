@@ -112,12 +112,6 @@ bots:
     display_name: Unix Linux Community
     summary: Recent Unix Linux Community forum topics about shell scripting, system administration, networking, and Unix/Linux troubleshooting.
     profile_photo: https://community.unix.com/uploads/default/optimized/2X/c/c7e9e16a595259edafe88615719d5c5dcda035c2_2_180x180.png
-  unix_stackexchange:
-    feed_url: https://unix.stackexchange.com/feeds
-    homepage_url: https://unix.stackexchange.com/questions
-    display_name: Unix and Linux Stack Exchange
-    summary: Recent questions from Unix & Linux Stack Exchange, a community Q&A site about Unix, Linux, shells, and system administration.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Funix.stackexchange.com%2Fquestions&size=128
   unix_etc:
     feed_url: https://unixetc.co.uk/feed/
     homepage_url: https://unixetc.co.uk
@@ -435,12 +429,6 @@ bots:
     display_name: Flickr Blog
     summary: Photography, community stories, and product updates from Flickr.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fblog.flickr.net&size=128
-  bring_a_trailer:
-    feed_url: https://bringatrailer.com/feed/
-    homepage_url: https://bringatrailer.com
-    display_name: Bring a Trailer
-    summary: Collector-car auction listings, including vintage and classic vehicles.
-    profile_photo: https://bringatrailer.com/wp-content/themes/bringatrailer/assets/img/apple-touch-icon-iphone-60x60.png?v=http://26e80dffe5
   fortune:
     feed_url: https://fortune.com/feed/fortune-feeds/?id=3230629
     homepage_url: https://fortune.com
@@ -923,12 +911,6 @@ bots:
     display_name: Jezebel
     summary: Feminist commentary and reporting on politics, celebrity, culture, and entertainment.
     profile_photo: https://www.jezebel.com/wp-content/themes/pastemagazine/img/icon-57x57.png
-  product_hunt:
-    feed_url: https://www.producthunt.com/feed
-    homepage_url: https://www.producthunt.com
-    display_name: Product Hunt
-    summary: New technology products, apps, websites, and tools featured on Product Hunt.
-    profile_photo: https://ph-static.imgix.net/ph-favicon-brand-500.ico?auto=compress&fm=png&w=180&h=180
   chronogram:
     feed_url: https://www.chronogram.com/feed/
     homepage_url: https://www.chronogram.com
@@ -2068,12 +2050,6 @@ bots:
     display_name: Ben Werdmuller
     summary: Ben Werdmuller's essays, links, and personal reflections on technology, journalism, society, and community.
     profile_photo: https://storage.ghost.io/c/18/7c/187cc681-d3f3-49fc-87de-b01d06b76821/content/images/size/w256h256/format/png/2025/06/thumb.webp
-  dev_community:
-    feed_url: https://dev.to/feed
-    homepage_url: https://dev.to
-    display_name: DEV Community
-    summary: Recent community-authored software-development tutorials, project posts, career discussions, and product promotions from DEV Community.
-    profile_photo: https://media2.dev.to/dynamic/image/width=180,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png
   heroku_dev_center_articles:
     feed_url: https://devcenter.heroku.com/articles/feed
     homepage_url: https://devcenter.heroku.com
@@ -2617,12 +2593,6 @@ bots:
     display_name: Kubernetes Blog
     summary: Official Kubernetes project news, release features, engineering articles, and community reports.
     profile_photo: https://kubernetes.io/images/kubernetes.png
-  lines:
-    feed_url: https://llllllll.co/posts.rss
-    homepage_url: https://llllllll.co
-    display_name: lines
-    summary: Latest community forum posts about sound, music-making, art, process, and related technology.
-    profile_photo: https://llllllll.co/uploads/default/optimized/3X/1/2/1250a168c49681b4c186dc79a7192d17061746ee_2_180x180.png
   mary_rose_cook:
     feed_url: https://maryrosecook.com/blog/feed.xml
     homepage_url: https://maryrosecook.com
@@ -2936,12 +2906,6 @@ bots:
     display_name: emptywheel
     summary: Legal, national-security, and political reporting and analysis from emptywheel, led by Marcy Wheeler, with contributing writers.
     profile_photo: https://emptywheel.net/wp-content/uploads/2025/09/cropped-emptywheel-favicon-180x180.png
-  wikiquote_recent_changes:
-    feed_url: https://en.wikiquote.org/w/api.php?hidebots=1&hidecategorization=1&hideWikibase=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom
-    homepage_url: https://en.wikiquote.org/wiki/Special:RecentChanges
-    display_name: Wikiquote - English Recent Changes
-    summary: Recent edits to English Wikiquote, including article, user, talk, and project pages. Links are revision diffs, not a curated quotation-of-the-day feed.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fen.wikiquote.org%2Fwiki%2FSpecial%3ARecentChanges&size=128
   fastly_blog:
     feed_url: https://www.fastly.com/blog_rss.xml
     homepage_url: https://www.fastly.com/blog
@@ -3043,12 +3007,6 @@ bots:
     display_name: Los Techies
     summary: Software development, architecture, .NET, programming tools, and AI coding experiments from the Los Techies community.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Flostechies.com&size=128
-  math_stackexchange:
-    feed_url: https://math.stackexchange.com/feeds
-    homepage_url: https://math.stackexchange.com/
-    display_name: Mathematics Stack Exchange
-    summary: Recent mathematics questions from the Mathematics Stack Exchange community.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmath.stackexchange.com%2Fquestions&size=128
   meetup_blog:
     feed_url: https://www.meetup.com/blog/feed/
     homepage_url: https://www.meetup.com/blog
@@ -4349,12 +4307,6 @@ bots:
     display_name: Art. Lebedev Studio - News (Russian)
     summary: Russian-language news from Art. Lebedev Studio about design projects, identities, typography, products, wayfinding, jobs, and its stores.
     profile_photo: https://img.artlebedev.ru/icons/touch-icon-iphone.png
-  ask_ubuntu:
-    feed_url: https://askubuntu.com/feeds
-    homepage_url: https://askubuntu.com/
-    display_name: Ask Ubuntu - Recent Questions
-    summary: Recent community questions about Ubuntu installation, hardware, networking, applications, system administration, and troubleshooting on Ask Ubuntu.
-    profile_photo: https://cdn.sstatic.net/Sites/askubuntu/Img/apple-touch-icon.png
   attract_mode:
     feed_url: https://medium.com/feed/attract-mode
     homepage_url: https://www.tumblr.com/attract-mode-collective
@@ -4563,12 +4515,6 @@ bots:
     display_name: caffeine.wiki - Changelog
     summary: Website-change notifications for caffeine.wiki, a personal digital garden of software projects, books, music, games, and notes. Feed entries link to the shared website changelog rather than individual essays.
     profile_photo: https://caffeine.wiki/apple-icon-57x57.png
-  camelcamelcamel_price_drops:
-    feed_url: https://camelcamelcamel.com/top_drops/feed
-    homepage_url: https://camelcamelcamel.com/top_drops
-    display_name: camelcamelcamel - Top Amazon Price Drops
-    summary: camelcamelcamel's automated feed of Amazon product price drops, listing previous and current prices and linking to product price-history pages.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fcamelcamelcamel.com%2Ftop_drops%3F&size=128
   fabian_writes:
     feed_url: https://capnfabs.net/posts/index.xml
     homepage_url: https://capnfabs.net/posts
@@ -5056,12 +5002,6 @@ bots:
     display_name: hackNY
     summary: News, fellow profiles, and project reports from hackNY, including its New York City public-interest technology programs.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fhackny.org%2Fblog&size=128
-  hardforum:
-    feed_url: https://hardforum.com/forums/-/index.rss
-    homepage_url: https://hardforum.com
-    display_name: '[H]ard|Forum'
-    summary: Recent threads and discussions from [H]ard|Forum, the HardOCP community for PC hardware, gaming, deals, and computing enthusiasts.
-    profile_photo: https://hardforum.com/data/assets/logo/192.png
   haseeb_qureshi:
     feed_url: https://haseebq.com/feed.xml
     homepage_url: https://haseebq.com
@@ -5861,11 +5801,6 @@ bots:
     display_name: PureWow
     summary: Lifestyle and entertainment reporting from PureWow, including food, beauty, fashion, family, home, travel, and celebrity news.
     profile_photo: https://www.purewow.com/static-gmg/purewow/logos/favicons/favicon-sand-48x48.png
-  pypi_recent_updates:
-    feed_url: https://pypi.org/rss/updates.xml
-    homepage_url: https://pypi.org
-    display_name: PyPI recent updates
-    summary: Recently released package versions on the Python Package Index, with package descriptions and links to their release pages.
   queness:
     feed_url: https://feeds2.feedburner.com/queness
     homepage_url: https://www.queness.com/
@@ -6143,12 +6078,6 @@ bots:
     display_name: Chicago Sun-Times
     summary: Chicago and regional news, politics, sports, arts, and community reporting from the Chicago Sun-Times.
     profile_photo: https://chicago.suntimes.com/apple-touch-icon.png
-  super_user:
-    feed_url: https://superuser.com/feeds
-    homepage_url: https://superuser.com/
-    display_name: Super User
-    summary: Community questions and answers about computer hardware, software, operating systems, and networking.
-    profile_photo: https://cdn.sstatic.net/Sites/superuser/Img/apple-touch-icon.png
   surma:
     feed_url: https://surma.dev/index.xml
     homepage_url: https://surma.dev
@@ -6413,12 +6342,6 @@ bots:
     display_name: WebKit
     summary: Official WebKit development news, browser features, standards work, and Safari Technology Preview release notes.
     profile_photo: https://webkit.org/apple-touch-icon.png
-  mozilla_wiki_recent_changes:
-    feed_url: https://wiki.mozilla.org/api.php?hidebots=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=atom
-    homepage_url: https://wiki.mozilla.org/Special:RecentChanges
-    display_name: MozillaWiki - Recent Changes
-    summary: Recent edits and revision diffs from MozillaWiki, including project documentation, release engineering, support, and community administration.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwiki.mozilla.org%2FSpecial%3ARecentChanges&size=128
   winterdom:
     feed_url: https://winterdom.com/feed.xml
     homepage_url: https://winterdom.com
@@ -7016,12 +6939,6 @@ bots:
     display_name: APIs You Won't Hate
     summary: Articles, tools, newsletters, and podcast interviews about API design, development, documentation, and the API ecosystem.
     profile_photo: https://storage.ghost.io/c/b4/3e/b43eb8f8-cafd-49ee-ab1f-e4fe989d2890/content/images/size/w256h256/2023/03/apis-logo-square.png
-  apkmirror:
-    feed_url: https://www.apkmirror.com/feed/
-    homepage_url: https://www.apkmirror.com
-    display_name: APKMirror
-    summary: Android application release listings from APKMirror, including app names, versions, developers, and download pages.
-    profile_photo: https://www.apkmirror.com/wp-content/themes/APKMirror/images/apple-touch-icon.png
   applied_go:
     feed_url: https://appliedgo.net/index.xml
     homepage_url: https://appliedgo.net
@@ -7316,12 +7233,6 @@ bots:
     display_name: Request Tracker
     summary: Official Request Tracker and RTIR releases, product news, documentation updates, workflow guidance, and open-source ticketing features.
     profile_photo: https://i0.wp.com/requesttracker.com/wp-content/uploads/2024/11/cropped-13d8eb00-c903-11eb-853d-c44e379eca57.png?fit=180%2C180&ssl=1
-  betalist:
-    feed_url: https://feeds.feedburner.com/BetaList
-    homepage_url: https://betalist.com
-    display_name: BetaList
-    summary: Newly featured early-stage startups and their products from BetaList, not its jobs listing.
-    profile_photo: https://betalist.com/assets/touch-icon-precomposed-144-e8598d79.png
   npr_latino_usa:
     feed_url: https://feeds.npr.org/510016/podcast.xml
     homepage_url: https://latinousa.org
@@ -9013,12 +8924,6 @@ bots:
     display_name: WBUR Health
     summary: WBUR's health reporting covers medicine, public health, hospitals, and health policy in Massachusetts and beyond; CommonHealth redirects to this section.
     profile_photo: https://static.wbur.org/images/wbur-logo/apple-touch-icon.png
-  lets_encrypt_community_support:
-    feed_url: https://community.letsencrypt.org/posts.rss
-    homepage_url: https://community.letsencrypt.org
-    display_name: Let's Encrypt Community Support
-    summary: Latest community-support forum posts about Let's Encrypt certificates, ACME clients, HTTPS configuration, troubleshooting, and service incidents.
-    profile_photo: https://global.discourse-cdn.com/letsencrypt/optimized/3X/c/a/ca6c06ea1ea201324bba7048c6841ce60236468d_2_180x180.png
   computing_ed_research:
     feed_url: https://computinged.wordpress.com/feed/
     homepage_url: https://computinged.wordpress.com
@@ -9242,12 +9147,6 @@ bots:
     display_name: Dana C. Ernst
     summary: Mathematics, teaching, inquiry-based learning, research, and student achievements from Dana C. Ernst.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdanaernst.com&size=128
-  danbooru:
-    feed_url: https://danbooru.donmai.us/posts.atom
-    homepage_url: https://danbooru.donmai.us/posts
-    display_name: Danbooru
-    summary: Recent posts from Danbooru, a community-tagged anime and illustration image board; posts may include adult or explicit content.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdanbooru.donmai.us%2Fposts&size=128
   daniel_compton:
     feed_url: https://danielcompton.net/index.xml
     homepage_url: https://danielcompton.net
@@ -9761,12 +9660,6 @@ bots:
     display_name: Drink Tea & Travel
     summary: Travel guides, itineraries, and practical tips with a focus on sustainable travel.
     profile_photo: https://drinkteatravel.com/wp-content/uploads/favicon.png
-  drive_accord:
-    feed_url: https://www.driveaccord.net/forums/-/index.rss
-    homepage_url: https://www.driveaccord.net
-    display_name: Drive Accord
-    summary: Latest community forum discussions about Honda Accord maintenance, repairs, ownership, modifications, and reviews.
-    profile_photo: https://images.platforum.cloud/logos/driveaccord_net_profile.png?1&auto=webp&dpr=2&fit=cover&format=png&height=180&optimize=high&width=180
   drivetribe:
     feed_url: https://drivetribe.com/feed/
     homepage_url: https://drivetribe.com
@@ -9939,12 +9832,6 @@ bots:
     display_name: Plex
     summary: Plex's official blog with streaming recommendations, movie and television guides, and service updates.
     profile_photo: https://watch.plex.tv/icons/plex-76.png
-  elektronauts:
-    feed_url: https://www.elektronauts.com/posts.rss
-    homepage_url: https://www.elektronauts.com
-    display_name: Elektronauts
-    summary: Latest community forum posts about Elektron instruments, synthesizers, music gear, production, and members' music.
-    profile_photo: https://eu5.dh-cdn.net/uploads/db8181/optimized/3X/5/6/560c1d1f88552a2e73e44d22979fc0250d3a1bcb_2_180x180.png
   element_blog:
     feed_url: https://element.io/blog/rss/
     homepage_url: https://element.io/blog
@@ -9963,12 +9850,6 @@ bots:
     display_name: ElevenLabs Blog
     summary: ElevenLabs research, product releases, company news, and guides to AI speech, audio generation, transcription, and voice agents.
     profile_photo: https://elevenlabs.io/apple-icon.png?6592732ab34b1d42
-  ell_stackexchange:
-    feed_url: https://ell.stackexchange.com/feeds
-    homepage_url: https://ell.stackexchange.com/questions
-    display_name: English Language Learners Stack Exchange
-    summary: Recent English Language Learners Stack Exchange questions on English grammar, vocabulary, usage, and meaning.
-    profile_photo: https://cdn.sstatic.net/Sites/ell/Img/apple-touch-icon.png
   elliot_c_smith:
     feed_url: https://www.elliotcsmith.com/rss/
     homepage_url: https://www.elliotcsmith.com
@@ -10022,12 +9903,6 @@ bots:
     display_name: Interfax-Ukraine
     summary: English-language news from Interfax-Ukraine covering Ukrainian politics, business, defense, and international affairs.
     profile_photo: https://interfax.com.ua/static/rss_logo_180x180.jpg
-  wikisource_recent_changes:
-    feed_url: https://en.wikisource.org/w/api.php?hidebots=1&hidecategorization=1&hideWikibase=1&urlversion=1&days=1&limit=50&action=feedrecentchanges&feedformat=atom
-    homepage_url: https://en.wikisource.org/wiki/Special:RecentChanges
-    display_name: English Wikisource Recent Changes
-    summary: Recent edits to English Wikisource, the collaborative library of source texts, including author pages, transcriptions, and proofreading updates.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fen.wikisource.org%2Fwiki%2FSpecial%3ARecentChanges&size=128
   energy_vanguard:
     feed_url: https://www.energyvanguard.com/feed/
     homepage_url: https://www.energyvanguard.com
@@ -10456,12 +10331,6 @@ bots:
     display_name: Fluentd Blog
     summary: Release announcements, support lifecycle updates, and news from the Fluentd logging and data collection project.
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.fluentd.org%2Fblog&size=128
-  fly_fishing_forum:
-    feed_url: https://www.flyfishing.co.uk/forums/-/index.rss
-    homepage_url: https://www.flyfishing.co.uk
-    display_name: Fly Fishing Forum
-    summary: A forum community dedicated to fly fishing and sporting enthusiasts. Come join the discussion about safety, licenses, tips, tricks, rivers, reviews, accessories, classifieds, and more!
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.flyfishing.co.uk&size=128
   fogknife:
     feed_url: https://fogknife.com/atom.xml
     homepage_url: https://fogknife.com
@@ -10503,18 +10372,6 @@ bots:
     homepage_url: https://forum.merveilles.town
     display_name: Merveilles Forum
     summary: Merveilles community discussions about art, creative projects, technology, and everyday life.
-  plex_forum:
-    feed_url: https://forums.plex.tv/posts.rss
-    homepage_url: https://forums.plex.tv
-    display_name: Plex Forum
-    summary: Latest posts and replies in the Plex community support and discussion forums.
-    profile_photo: https://global.discourse-cdn.com/plex/optimized/3X/8/3/833e5cd753c8645af15fef9118673a310d7e286d_2_180x180.png
-  xfinity_community_forum:
-    feed_url: https://forums.xfinity.com/rss/
-    homepage_url: https://forums.xfinity.com
-    display_name: Xfinity Community Forum
-    summary: Customer questions, troubleshooting, and community discussion about Xfinity services.
-    profile_photo: https://sprcdn-assets.sprinklr.com/1110/79e57f25-ebdb-4590-aaf5-b656175f8931-1467995988.png
   the_forward:
     feed_url: https://forward.com/feed/
     homepage_url: https://forward.com
@@ -13591,12 +13448,6 @@ bots:
     display_name: Nutanix Blog
     summary: Nutanix's broader enterprise-cloud blog. Mesosphere became D2iQ, whose Kubernetes platform is now part of Nutanix.
     profile_photo: https://www.nutanix.com/apple-touch-icon.png
-  discourse_meta:
-    feed_url: https://meta.discourse.org/posts.rss
-    homepage_url: https://meta.discourse.org
-    display_name: Discourse Meta
-    summary: Latest posts in the official Discourse support and community forum.
-    profile_photo: https://global.discourse-cdn.com/meta/optimized/4X/b/1/2/b12885a6f292ceffc222608846855f25a272835b_2_180x180.jpeg
   astral_codex_ten:
     feed_url: https://www.astralcodexten.com/feed
     homepage_url: https://www.astralcodexten.com
@@ -13615,12 +13466,6 @@ bots:
     display_name: Asterisk Magazine
     summary: Rigorous writing on forecasting, biosecurity, economics, AI, and global development.
     profile_photo: https://asteriskmag.com/assets/favicon/apple-touch-icon.png
-  meta_stackexchange:
-    feed_url: https://meta.stackexchange.com/feeds
-    homepage_url: https://meta.stackexchange.com/questions
-    display_name: Meta Stack Exchange
-    summary: Recent community questions about Stack Exchange policies, features, bugs, and site-wide support.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fmeta.stackexchange.com%2Fquestions&size=128
   chris_hager:
     feed_url: https://www.metachris.dev/index.xml
     homepage_url: https://www.metachris.dev
@@ -15366,12 +15211,6 @@ bots:
     homepage_url: https://putthison.com
     display_name: Put This On
     summary: Men's clothing, style advice, shopping, wardrobe care, and menswear commentary from Put This On.
-  puzzling_stackexchange:
-    feed_url: https://puzzling.stackexchange.com/feeds
-    homepage_url: https://puzzling.stackexchange.com/questions
-    display_name: Puzzling Stack Exchange
-    summary: Recent questions about puzzles, riddles, logic, and puzzle-solving from Puzzling Stack Exchange.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fpuzzling.stackexchange.com%2Fquestions&size=128
   newest_python_peps:
     feed_url: https://peps.python.org/peps.rss
     homepage_url: https://peps.python.org/
@@ -15548,12 +15387,6 @@ bots:
     homepage_url: https://nickdrozd.github.io/
     display_name: Something Something Programming
     summary: Programming, computation, and Turing machines.
-  aws_builder_center:
-    feed_url: https://builder.aws.com/rss.xml
-    homepage_url: https://builder.aws.com
-    display_name: AWS Builder Center
-    summary: AWS Builder Center community articles on cloud architecture, AWS services, certifications, and development. The former AWS Region Comparison Tool redirects to Builder Center capabilities; this is not a region-comparison feed.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fbuilder.aws.com&size=128
   reilly_wood:
     feed_url: https://www.reillywood.com/index.xml
     homepage_url: https://www.reillywood.com
@@ -15958,12 +15791,6 @@ bots:
     display_name: Scary Mommy
     summary: Parenting and lifestyle reporting, personal essays, advice, entertainment, and shopping guides from Scary Mommy.
     profile_photo: https://cdn2.bustle.com/2026/scarymommy/icon-9de8d6760d.png
-  scholar_idea:
-    feed_url: https://scholaridea.com/feed/
-    homepage_url: https://scholaridea.com
-    display_name: Scholar Idea
-    summary: Scholarship, PhD, postdoctoral, research, and academic-job listings collected from universities and research institutions worldwide.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fscholaridea.com&size=128
   school_of_machines_news:
     feed_url: https://www.schoolofma.org/news?format=rss
     homepage_url: https://www.schoolofma.org/news
@@ -15987,12 +15814,6 @@ bots:
     display_name: ScienceDaily
     summary: Research news and study summaries from universities and research organizations, covering science, medicine, technology, and the environment.
     profile_photo: https://www.sciencedaily.com/images/scidaily-logo-rss.png
-  scifi_stackexchange:
-    feed_url: https://scifi.stackexchange.com/feeds
-    homepage_url: https://scifi.stackexchange.com/questions
-    display_name: Science Fiction and Fantasy Stack Exchange
-    summary: Recent community questions about science-fiction and fantasy books, films, television, games, and fictional universes.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fscifi.stackexchange.com%2Fquestions&size=128
   south_china_morning_post:
     feed_url: https://www.scmp.com/rss/feed/
     homepage_url: https://www.scmp.com
@@ -16128,12 +15949,6 @@ bots:
     display_name: thornberry.io
     summary: Software, fiction, and reflections from Elijah Kennedy.
     profile_photo: https://thornberry.io/static/icon.png
-  server_fault:
-    feed_url: https://serverfault.com/feeds
-    homepage_url: https://serverfault.com/questions
-    display_name: Server Fault
-    summary: Recent community questions about professional system administration, servers, networking, cloud infrastructure, and operations.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fserverfault.com%2Fquestions&size=128
   serverless_horrors:
     feed_url: https://serverlesshorrors.com/rss.xml
     homepage_url: https://serverlesshorrors.com
@@ -16492,12 +16307,6 @@ bots:
     display_name: pixivision
     summary: English-language pixivision features on illustrations, manga, artists, creative techniques, and visual themes, continuing pixiv Spotlight.
     profile_photo: https://s.pximg.net/pixivision/images/sp/apple-touch-icon.png
-  stack_exchange_hot_questions:
-    feed_url: https://stackexchange.com/feeds/questions
-    homepage_url: https://stackexchange.com
-    display_name: Stack Exchange Hot Questions
-    summary: Popular questions and discussions from across the Stack Exchange network, linking to their original community sites.
-    profile_photo: https://cdn.sstatic.net/Sites/stackexchange/Img/apple-touch-icon.png
   stacking_the_bricks:
     feed_url: https://stackingthebricks.com/atom.xml
     homepage_url: https://stackingthebricks.com
@@ -16533,12 +16342,6 @@ bots:
     homepage_url: http://startuptools.pbworks.com
     display_name: Startup Tools
     summary: Recent edits to the Startup Tools community wiki, a curated directory of technical and business tools for startups.
-  status_cafe:
-    feed_url: https://status.cafe/feed.atom
-    homepage_url: https://status.cafe
-    display_name: status.cafe
-    summary: The public status.cafe community stream of short personal updates, moods, and links from its users.
-    profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fstatus.cafe&size=128
   npm_status:
     feed_url: https://status.npmjs.org/history.atom
     homepage_url: https://status.npmjs.org
@@ -17122,12 +16925,6 @@ bots:
     display_name: thedotisblack
     summary: 'thedotisblack''s generative drawings, animations, code-based visual experiments, and Processing tutorials. Latest Tumblr feed post: January 2025.'
     profile_photo: https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fthedotisblack.tumblr.com&size=128
-  the_flight_deal:
-    feed_url: https://www.theflightdeal.com/feed/
-    homepage_url: https://www.theflightdeal.com
-    display_name: The Flight Deal
-    summary: The Flight Deal's airfare offers, route and booking details, travel deals, and practical information for finding low fares.
-    profile_photo: https://www.theflightdeal.com/wp-content/uploads/2012/12/logo.png
   thefw:
     feed_url: https://thefw.com/feed/
     homepage_url: https://thefw.com
@@ -17573,15 +17370,10 @@ relay_subscription_bot: nyt_homepage
 follows:
   - '@icco@merveilles.town'
   - '@_followback@tags.pub'
-# Instances we will not federate with: their Follows are Rejected and they are
-# dropped from every delivery. Hostnames, not URLs; a domain also blocks its
-# subdomains. Each of these refuses us permanently, and without this list every
-# post retries against them until the queue gives up.
 blocked_instances:
   - horche.demkontinuum.de # Friendica, 403 "Bots are not allowed" -- policy, not an outage
   - fediverse.tryptophonic.com # 401 on every delivery
   - 8ball.space # 502 then 405; instance has been broken for days
-# All three previously-configured relays (relay.toot.io, relay.minecloud.ro,
-# tags.pub) were permanently failing delivery (401/400 on every Create),
-# generating heavy retry/log noise for no benefit. Removed; see
-# unsubscribeFromRemovedRelays for the automatic cleanup this triggers.
+relays:
+  - https://relay.minecloud.ro/actor
+  - https://tags.pub/user/_____relay_____

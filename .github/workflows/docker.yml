@@ -13,8 +13,8 @@ permissions:
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
-# One group for main so a newer successful run supersedes an older one and
-# can never be overwritten by it.
+# One group for main, so a later run cancels an in-progress one and two runs
+# never move the main tag at once.
 concurrency:
   group: docker-${{ github.event.pull_request.number || 'main' }}
   cancel-in-progress: true

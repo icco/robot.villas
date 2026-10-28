@@ -29,6 +29,7 @@ import {
   formatContent,
 } from "../publisher";
 import type { FeedEntry } from "../rss";
+import type { Note } from "@fedify/vocab";
 
 const mockInsertEntry = vi.mocked(storeEntryWithPublications);
 const mockGetExistingGuids = vi.mocked(getExistingGuids);
@@ -227,6 +228,8 @@ describe("publishNewEntries", () => {
   });
 
   it("stores publication intent without attempting network submission", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2024-01-01T12:00:00Z"));
     mockInsertEntry.mockResolvedValueOnce(1).mockResolvedValueOnce(2).mockResolvedValueOnce(3);
     mockCtx.sendActivity.mockRejectedValueOnce(new Error("network error")).mockResolvedValue(undefined);
 
@@ -262,6 +265,29 @@ describe("publishNewEntries", () => {
     for (const call of mockInsertEntry.mock.calls) {
       expect(call[7]).toEqual([]);
     }
+  });
+
+  it("stores entries dated more than a week ago without delivering them", async () => {
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date("2026-10-11T12:00:00Z"));
+    const datedEntries = [
+      { ...entries[0], guid: "old", publishedAt: new Date("2026-10-04T11:59:59.999Z") },
+      { ...entries[0], guid: "recent", publishedAt: new Date("2026-10-04T12:00:00Z") },
+      { ...entries[0], guid: "undated", publishedAt: null },
+    ];
+
+    const result = await publishNewEntries(
+      mockCtx,
+      {} as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      "testbot", "robot.villas", datedEntries, testBotConfig,
+    );
+
+    expect(result.stored).toBe(3);
+    expect(mockInsertEntry.mock.calls.map((call) => [call[2], call[7].length])).toEqual([
+      ["old", 0],
+      ["recent", 1],
+      ["undated", 1],
+    ]);
   });
 
   it("keeps suppressing delivery when retrying a partially failed first ingestion", async () => {
@@ -348,6 +374,21 @@ describe("buildCreateActivity", () => {
     expect(note!.content).not.toContain("javascript:");
     // Hashtag links are fine; only the article link should be suppressed
     expect(note!.content).not.toMatch(/<a href="javascript:/);
+  });
+
+  it("addresses posts unlisted so they stay out of public and hashtag timelines", async () => {
+    const create = buildCreateActivity(
+      "testbot",
+      5,
+      { title: "OK", link: "https://example.com/ok", publishedAt: null, hashtags: ["H1"] },
+      baseUrl,
+    );
+    const followers = ["https://robot.villas/users/testbot/followers"];
+    const pub = ["https://www.w3.org/ns/activitystreams#Public"];
+    const hrefs = (urls: URL[]) => urls.map((u) => u.href);
+    const note = (await create.getObject()) as Note;
+    expect([hrefs(create.toIds), hrefs(create.ccIds)]).toEqual([followers, pub]);
+    expect([hrefs(note.toIds), hrefs(note.ccIds)]).toEqual([followers, pub]);
   });
 
   it("uses https link in Note url and content when link is safe", async () => {

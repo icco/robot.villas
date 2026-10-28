@@ -57,7 +57,6 @@ function formatDate(d: Date): string {
   return d.toLocaleString("en-US", { dateStyle: "medium", timeStyle: "short" });
 }
 
-/** Renders a status badge + count, or a "none" badge when count is 0. */
 function StatusCell({ count, type }: { count: number; type: "accepted" | "pending" | "rejected" }) {
   if (count > 0) {
     return (
@@ -85,7 +84,6 @@ export default async function StatusPage() {
   const configuredRelays = config.relays ?? [];
   const configuredFollows = (config.follows ?? []).map((h) => h.replace(/^@/, ""));
 
-  // Build lookup maps for quick access
   const relayMap = new Map(relaySummary.map((r) => [r.url, r]));
   const followMap = new Map(followingSummary.map((f) => [f.handle, f]));
 
@@ -93,7 +91,7 @@ export default async function StatusPage() {
     <>
       <h1 className="text-3xl font-display font-bold tracking-tight mb-2">Status</h1>
       <p className="text-base-content/60 text-sm mb-8">
-        Live view of relay subscriptions, account follows, and configured RSS feeds.
+        Live view of publishing, relay subscriptions, account follows, RSS feeds, and incoming activities.
       </p>
 
       <section className="mb-10">
@@ -120,7 +118,6 @@ export default async function StatusPage() {
         </div>
       </section>
 
-      {/* Relay Subscriptions */}
       <section className="mb-10">
         <h2 className="text-xl font-display font-bold mb-3">Relay Subscriptions</h2>
         <p className="text-base-content/50 text-sm mb-3">
@@ -163,7 +160,6 @@ export default async function StatusPage() {
         )}
       </section>
 
-      {/* Account Follows */}
       <section className="mb-10">
         <h2 className="text-xl font-display font-bold mb-3">Account Follows</h2>
         {configuredFollows.length === 0 ? (
@@ -203,7 +199,6 @@ export default async function StatusPage() {
         )}
       </section>
 
-      {/* RSS Feed Info */}
       <section>
         <h2 className="text-xl font-display font-bold mb-3">RSS Feeds</h2>
         <div className="overflow-x-auto">

@@ -3,8 +3,8 @@ import postgres from "postgres";
 import { eq } from "drizzle-orm";
 import { createFederation } from "@fedify/testing";
 import { createDb, migrate } from "../db";
-import { getPublicationSummary, prunePublications, storeEntryWithPublications, submitPendingPublications } from "../publications";
-import { feedEntries, publications } from "../schema";
+import { cancelRemovedRelayPublications, getPublicationSummary, prunePublications, storeEntryWithPublications, submitPendingPublications } from "../publications";
+import { feedEntries, followers, publications, relays } from "../schema";
 
 describe.skipIf(!process.env.DATABASE_URL)("durable publication", () => {
   const client = postgres(process.env.DATABASE_URL ?? "postgres://unused");
@@ -20,6 +20,8 @@ describe.skipIf(!process.env.DATABASE_URL)("durable publication", () => {
       await db.delete(publications).where(eq(publications.entryId, entry.id));
     }
     await db.delete(feedEntries).where(eq(feedEntries.botUsername, bot));
+    await db.delete(relays).where(eq(relays.botUsername, bot));
+    await db.delete(followers).where(eq(followers.botUsername, bot));
     ctx.reset();
     vi.restoreAllMocks();
   });
@@ -89,5 +91,39 @@ describe.skipIf(!process.env.DATABASE_URL)("durable publication", () => {
       submitPendingPublications(ctx, db, "robot.test", [bot], new Set(["two.example"])),
     ]);
     expect(ctx.getSentActivities()).toHaveLength(1);
+  });
+
+  describe("removed relays", () => {
+    const relayActor = "https://removed-relay.example/actor";
+    const relayInbox = "https://removed-relay.example/inbox";
+    const relay = { id: new URL(relayActor), inboxId: new URL(relayInbox), endpoints: null };
+    const addRelay = (url: string, deletedAt: Date | null) => db.insert(relays).values({
+      botUsername: bot, url, inboxUrl: relayInbox, actorId: relayActor, status: "accepted", deletedAt,
+    });
+    const pendingInboxes = async (id: number) => (await db.select().from(publications).where(eq(publications.entryId, id)))
+      .filter((r) => r.cancelledAt == null).map((r) => r.inboxUrl).sort();
+
+    it("cancels pending deliveries to a relay that left config", async () => {
+      const id = await storeEntryWithPublications(db, bot, "guid", "https://example.com", "title", null, [], [...recipients, relay]);
+      await addRelay(relayActor, new Date());
+      await cancelRemovedRelayPublications(db);
+      expect(await pendingInboxes(id!)).toEqual(["https://one.example/inbox", "https://two.example/inbox"]);
+    });
+
+    it("keeps them while the relay follows the bot", async () => {
+      const id = await storeEntryWithPublications(db, bot, "guid", "https://example.com", "title", null, [], [relay]);
+      await addRelay(relayActor, new Date());
+      await db.insert(followers).values({ botUsername: bot, followerId: relayActor, followId: `${relayActor}#follow`, sharedInboxUrl: relayInbox });
+      await cancelRemovedRelayPublications(db);
+      expect(await pendingInboxes(id!)).toEqual([relayInbox]);
+    });
+
+    it("keeps them while a configured relay shares the inbox", async () => {
+      const id = await storeEntryWithPublications(db, bot, "guid", "https://example.com", "title", null, [], [relay]);
+      await addRelay(relayActor, new Date());
+      await addRelay("https://removed-relay.example/", null);
+      await cancelRemovedRelayPublications(db);
+      expect(await pendingInboxes(id!)).toEqual([relayInbox]);
+    });
   });
 });

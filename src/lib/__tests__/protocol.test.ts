@@ -64,6 +64,12 @@ bots:
     }
   });
 
+  it("serves notes addressed to followers, with Public only in cc", async () => {
+    const note = await (await get(`/users/protocol_test/posts/${entryId}`)).json();
+    expect(note.to).toBe("https://robot.test/users/protocol_test/followers");
+    expect([note.cc].flat()).toEqual([expect.stringMatching(/^(as:Public|https:\/\/www\.w3\.org\/ns\/activitystreams#Public)$/)]);
+  });
+
   it("pages the outbox and refuses invalid cursors", async () => {
     const page = await (await get("/users/protocol_test/outbox?cursor=0")).json();
     expect(page.orderedItems?.length ?? (page.orderedItems ? 1 : 0)).toBeGreaterThan(0);

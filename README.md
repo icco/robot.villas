@@ -1,6 +1,6 @@
 # robot.villas
 
-An RSS-to-fediverse bridge. Each feed in `feeds.yml` becomes a bot account (for example `@hackernews@robot.villas`) that anyone on Mastodon or another ActivityPub server can follow.
+An RSS-to-fediverse bridge. Each feed in `feeds.yml` becomes a bot account (for example `@hackernews@robot.villas`) that anyone on Mastodon or another ActivityPub server can follow. Bots post unlisted, so followers see every post and public timelines and search don't.
 
 ## Configuration
 
@@ -16,14 +16,18 @@ bots:
     profile_photo: https://news.ycombinator.com/y18.svg # optional
     homepage_url: https://news.ycombinator.com          # optional
     default_hashtags: [Tech, News]                      # optional, up to 3
-follows: ["@someone@mastodon.social"] # every bot follows these
-relays: [https://relay.toot.io/actor] # instance relays to subscribe to
+follows: ["@alice@example.social"]    # every bot follows these
+relays: [https://relay.example/actor] # instance relays to subscribe to
 relay_subscription_bot: hackernews    # bot that subscribes to relays (default: first bot)
 blocked_instances: [spam.example]     # blocked both ways, subdomains included
 meta: true                            # adds @meta, which announces new bots
 ```
 
-URLs must be HTTP(S). Feeds are polled every 15 minutes with conditional requests, and a `429` pauses a feed until its `Retry-After`.
+URLs must be HTTP(S). Feeds are polled every 15 minutes with conditional requests, and a `429` pauses a feed until its `Retry-After` (1 hour if missing, 24 hours at most).
+
+### Choosing feeds
+
+Add news sites and blogs, feeds a person would read. Leave out machine-generated streams (package releases, price drops, image boards, status pages, wiki recent changes, listings) and forum or Q&A feeds that post every reply. Every new post becomes one delivery per follower inbox and per relay, and all bots share one delivery queue, so a feed posting thousands of items a day delays every other bot. A bot's first fetch and entries dated more than 7 days back are stored without delivery.
 
 ## Environment
 
@@ -78,7 +82,8 @@ src/lib/
   poller.ts      Feed polling with per-feed leases
   rss.ts         Feed fetching and parsing
   publisher.ts   Stores new entries with their delivery records
-  publications.ts Retries queue submission for each inbox
+  publications.ts Hands delivery records to Fedify's queue, with backoff
+  inbox-filter.ts Drops relay Announces of other servers' posts
   maintenance.ts Startup jobs as Fedify background tasks
   remote-fetch.ts Public-address-only, size-limited fetching
   schema.ts, db.ts  Drizzle schema and queries

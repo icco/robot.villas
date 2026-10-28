@@ -71,7 +71,7 @@ export interface ConditionalGetState {
 
 export interface FeedFetchResult {
   entries: FeedEntry[];
-  /** HTTP status when a response was received; null on errors before a response (e.g. timeout). */
+  /** Status of a fully read response; null when the request or reading its body failed. */
   httpStatus: number | null;
   /** Null when the feed was fetched with a 2xx/304 response and parsed successfully. */
   errorMessage: string | null;
@@ -82,7 +82,7 @@ export interface FeedFetchResult {
    * unparseable body would 304 forever and never retry it.
    */
   validators: ConditionalGetState | null;
-  /** How long the server asked us to wait (429); null when not rate limited. */
+  /** Backoff after a 429; null when not rate limited. */
   retryAfterMs: number | null;
 }
 
@@ -106,8 +106,8 @@ export function parseRetryAfterMs(value: string | null, now: number = Date.now()
 }
 
 /**
- * Fetches a feed with a conditional GET, records status for observability, and parses
- * the body when the response carries one.
+ * Fetches a feed with a conditional GET and parses the body. Never throws, so every
+ * outcome can be stored as poll status.
  */
 export async function fetchFeedWithHttpResult(
   feedUrl: string,
@@ -216,8 +216,8 @@ export async function parseFeedXml(xml: string): Promise<FeedEntry[]> {
   if (Buffer.byteLength(xml) > MAX_FEED_BYTES) {
     throw new Error("Feed exceeds byte limit");
   }
-  // Reject entity declarations and excessive nesting before the object-building
-  // parser allocates an unbounded tree. CDATA remains text in this pass.
+  // Reject DTDs and oversized or deeply nested trees before rss-parser builds
+  // objects for them. CDATA remains text in this pass.
   let depth = 0;
   let nodes = 0;
   const guard = new SaxesParser();

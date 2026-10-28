@@ -11,8 +11,7 @@ const globalForBoot = globalThis as unknown as {
  */
 export async function migrateOrExit(db: Db, logger: Logger): Promise<void> {
   try {
-    // Next re-runs register() per request until it succeeds. Pin the promise so the retry
-    // window can't put two migrations in flight at once.
+    // Share one in-flight migration across register() calls in this process.
     globalForBoot.__robotVillasMigration ??= migrateWithRetry(db, (attempt, delayMs, error) => {
       logger.warn("Migration attempt {attempt} failed, retrying in {delayMs}ms: {error}", {
         attempt,
@@ -22,8 +21,8 @@ export async function migrateOrExit(db: Db, logger: Logger): Promise<void> {
     });
     await globalForBoot.__robotVillasMigration;
   } catch (err) {
-    // Throwing would leave the process up and 500ing every request, so `restart: always`
-    // never fires. Exit and let Docker restart us.
+    // Throwing leaves the process up and 500ing every request; exiting lets the
+    // supervisor restart it.
     logger.fatal("Database migrations failed, exiting so the container restarts: {error}", {
       error: err,
     });
