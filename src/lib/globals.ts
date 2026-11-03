@@ -4,6 +4,7 @@ import { loadConfig, resolveBlockedInstances } from "./config";
 import { createDb } from "./db";
 import { setupFederation } from "./federation";
 import { defineMaintenanceTasks } from "./maintenance";
+import { defineWebmentionTasks } from "./webmentions";
 
 type Globals = ReturnType<typeof initGlobals>;
 
@@ -44,6 +45,7 @@ function initGlobals() {
     blockedInstances,
   });
   const enqueueStartupMaintenance = defineMaintenanceTasks(federation, db, config);
+  defineWebmentionTasks(federation, { db, kv: kvStore, domain, botUsernames: Object.keys(config.bots) });
   return { sql, db, config, federation, kvStore, messageQueue, domain, enqueueStartupMaintenance };
 }
 

@@ -1,6 +1,7 @@
 import { and, eq, isNull, sql } from "drizzle-orm";
 import type { Db } from "./db";
 import { feedEntries, reactions, following, relays } from "./schema";
+import { reactionPageId } from "./webmentions";
 
 /** Authentication establishes the sender; the stored target authorizes this transition. */
 export async function receiveFollowResponse(db: Db, followId: string, actorId: string, status: "accepted" | "rejected") {
@@ -25,17 +26,21 @@ export interface ReactionInput {
   content: string;
 }
 
-export async function receiveReaction(db: Db, reaction: ReactionInput, undo = false): Promise<void> {
-  await db.transaction(async (tx) => {
+/** Returns whether the reaction was newly recorded or undone, so replays trigger nothing. */
+export async function receiveReaction(db: Db, reaction: ReactionInput, undo = false): Promise<boolean> {
+  return db.transaction(async (tx) => {
     // Row lock serializes reactions and Undo on this post; an Undo that arrives first
     // leaves an undone row so the late reaction is ignored.
     const [entry] = await tx.select({ id: feedEntries.id }).from(feedEntries).where(and(
       eq(feedEntries.id, reaction.entryId), eq(feedEntries.botUsername, reaction.botUsername), isNull(feedEntries.deletedAt),
     )).for("update");
     if (!entry) {
-      return;
+      return false;
     }
-    const values = { activityId: reaction.activityId, actorId: reaction.actorId, entryId: reaction.entryId, kind: reaction.kind, content: reaction.content };
+    const values = {
+      activityId: reaction.activityId, actorId: reaction.actorId, entryId: reaction.entryId, kind: reaction.kind, content: reaction.content,
+      pageId: reactionPageId(reaction.activityId), createdAt: new Date(),
+    };
     const column = reaction.kind === "boost" ? feedEntries.boostCount : feedEntries.likeCount;
     let delta: number;
     if (undo) {
@@ -54,5 +59,6 @@ export async function receiveReaction(db: Db, reaction: ReactionInput, undo = fa
         [reaction.kind === "boost" ? "boostCount" : "likeCount"]: sql`GREATEST(${column} + ${delta}, 0)`,
       }).where(eq(feedEntries.id, entry.id));
     }
+    return delta !== 0;
   });
 }

@@ -87,6 +87,7 @@ import { hashtagsForNoteBody } from "./hashtags";
 import { recordInboxReport } from "./inbox-reports";
 import { buildCreateActivity, formatContent, safeParseUrl } from "./publisher";
 import { cancelRemovedRelayPublications } from "./publications";
+import { enqueueReactionWebmention } from "./webmentions";
 
 export interface FederationDeps {
   config: FeedsConfig;
@@ -296,12 +297,18 @@ export async function handleReaction(ctx: Context<void>, activity: Like | EmojiR
   if (!ref || !activity.id || !activity.actorId) {
     return;
   }
-  await receiveReaction(db, {
+  const changed = await receiveReaction(db, {
     activityId: activity.id.href, actorId: activity.actorId.href,
     botUsername: ref.identifier, entryId: ref.entryId,
     kind: activity instanceof Announce ? "boost" : activity instanceof EmojiReact ? "emoji" : "like",
     content: activity instanceof EmojiReact ? String(activity.content ?? "").slice(0, 256) : "",
   }, undo);
+  if (changed && !(activity instanceof EmojiReact)) {
+    // Logged, not thrown: an inbox retry would find the reaction already recorded and enqueue nothing.
+    await enqueueReactionWebmention(ctx, activity.id.href).catch((error) => {
+      logger.warn("Could not enqueue webmention for {activityId}: {error}", { activityId: activity.id?.href, error });
+    });
+  }
 }
 
 export async function handleDelete(del: Delete, db: Db): Promise<void> {
