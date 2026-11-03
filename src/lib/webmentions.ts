@@ -140,7 +140,7 @@ export async function discoverWebmentionEndpoint(kv: KvStore, articleUrl: string
 
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 15_000);
-  let found: Discovery | null = null;
+  let found: Discovery | null;
   let pageUrl: URL;
   try {
     const response = await fetchRemote(requested, {
