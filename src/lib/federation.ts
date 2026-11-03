@@ -87,7 +87,7 @@ import { hashtagsForNoteBody } from "./hashtags";
 import { recordInboxReport } from "./inbox-reports";
 import { buildCreateActivity, formatContent, safeParseUrl } from "./publisher";
 import { cancelRemovedRelayPublications } from "./publications";
-import { enqueueReactionWebmention } from "./webmentions";
+import { enqueueReactionWebmention, isPublicReaction } from "./webmentions";
 
 export interface FederationDeps {
   config: FeedsConfig;
@@ -302,8 +302,7 @@ export async function handleReaction(ctx: Context<void>, activity: Like | EmojiR
     botUsername: ref.identifier, entryId: ref.entryId,
     kind: activity instanceof Announce ? "boost" : activity instanceof EmojiReact ? "emoji" : "like",
     content: activity instanceof EmojiReact ? String(activity.content ?? "").slice(0, 256) : "",
-    isPublic: !(activity instanceof Announce)
-      || [...activity.toIds, ...activity.ccIds].some((id) => id.href === PUBLIC_COLLECTION.href),
+    isPublic: isPublicReaction(activity),
   }, undo);
   if (changed && !(activity instanceof EmojiReact)) {
     // Logged, not thrown: an inbox retry would find the reaction already recorded and enqueue nothing.

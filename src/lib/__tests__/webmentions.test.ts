@@ -1,7 +1,8 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { MemoryKvStore } from "@fedify/fedify";
+import { Announce, Like, PUBLIC_COLLECTION } from "@fedify/vocab";
 import {
-  discoverWebmentionEndpoint, exclusionReason, findWebmentionEndpoint, sendWebmention, webmentionTarget,
+  discoverWebmentionEndpoint, exclusionReason, findWebmentionEndpoint, isPublicReaction, sendWebmention, webmentionTarget,
 } from "../webmentions";
 
 const originalFetch = globalThis.fetch;
@@ -190,5 +191,24 @@ describe("sendWebmention", () => {
     globalThis.fetch = vi.fn() as unknown as typeof globalThis.fetch;
     await expect(sendWebmention("http://127.0.0.1/e", "https://robot.test/s", "https://ada.example/t")).rejects.toThrow("not public");
     expect(globalThis.fetch).not.toHaveBeenCalled();
+  });
+});
+
+describe("isPublicReaction", () => {
+  const ada = new URL("https://ada.example/users/ada");
+  const object = new URL("https://robot.test/users/bot/posts/1");
+  const followers = new URL("https://ada.example/users/ada/followers");
+
+  it("treats public and unlisted boosts as public", () => {
+    expect(isPublicReaction(new Announce({ actor: ada, object, to: PUBLIC_COLLECTION, cc: followers }))).toBe(true);
+    expect(isPublicReaction(new Announce({ actor: ada, object, to: followers, cc: PUBLIC_COLLECTION }))).toBe(true);
+  });
+
+  it("treats followers-only boosts as not public", () => {
+    expect(isPublicReaction(new Announce({ actor: ada, object, to: followers }))).toBe(false);
+  });
+
+  it("treats likes as public", () => {
+    expect(isPublicReaction(new Like({ actor: ada, object }))).toBe(true);
   });
 });

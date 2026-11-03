@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { createExponentialBackoffPolicy, type Context, type Federation, type KvStore, type TaskDefinition } from "@fedify/fedify";
-import { Application, Hashtag, isActor, Service } from "@fedify/vocab";
+import { Announce, Application, type EmojiReact, Hashtag, isActor, type Like, PUBLIC_COLLECTION, Service } from "@fedify/vocab";
 import { Temporal as TemporalPolyfill } from "@js-temporal/polyfill";
 import { getLogger } from "@logtape/logtape";
 import { and, asc, eq, inArray, isNull } from "drizzle-orm";
@@ -121,6 +121,12 @@ export function exclusionReason(profile: {
     return "nobot";
   }
   return profile.discoverable === false ? "undiscoverable" : null;
+}
+
+/** A boost is public with as:Public in `to` (public) or `cc` (unlisted); Likes and emoji reactions carry no audience. */
+export function isPublicReaction(activity: Like | EmojiReact | Announce): boolean {
+  return !(activity instanceof Announce)
+    || [...activity.toIds, ...activity.ccIds].some((id) => id.href === PUBLIC_COLLECTION.href);
 }
 
 export function reactionPageId(activityId: string): string {

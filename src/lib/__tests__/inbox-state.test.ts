@@ -2,7 +2,7 @@ import { beforeAll, afterAll, beforeEach, describe, expect, it } from "vitest";
 import postgres from "postgres";
 import { eq } from "drizzle-orm";
 import { createFederation } from "@fedify/testing";
-import { Announce, Application, Delete, Follow, Like, Note, PUBLIC_COLLECTION, Undo } from "@fedify/vocab";
+import { Application, Delete, Follow, Like, Note, Undo } from "@fedify/vocab";
 import { createDb, migrate, insertEntry, addFollower, getFollowers, upsertFollowing, getAllFollowing, upsertRelay, getAllRelays } from "../db";
 import { receiveFollowResponse, receiveReaction, type ReactionInput } from "../inbox-state";
 import { handleDelete, handleFollow, handleReaction, handleUndo, isPgIntegerId } from "../federation";
@@ -70,15 +70,14 @@ describe.skipIf(!databaseUrl)("inbox authorization and idempotency", () => {
     expect(await receiveReaction(db, reaction, true)).toBe(false);
   });
 
-  it("marks followers-only boosts as not public", async () => {
-    const object = ctx.getObjectUri(Note, { identifier: bot, id: String(reaction.entryId) });
-    const followers = new URL(`${alice}/followers`);
-    await handleReaction(ctx, new Announce({ id: new URL(`${alice}/boosts/private`), actor: alice, object, to: followers }), db, [bot]);
-    await handleReaction(ctx, new Announce({ id: new URL(`${alice}/boosts/unlisted`), actor: alice, object, to: followers, cc: PUBLIC_COLLECTION }), db, [bot]);
+  it("stores whether a reaction was public, defaulting to public", async () => {
+    await receiveReaction(db, { ...reaction, kind: "boost", activityId: `${alice}/boosts/1`, isPublic: false });
+    await receiveReaction(db, reaction);
     const rows = await db.select().from(schema.reactions).where(eq(schema.reactions.actorId, alice.href));
-    const byId = Object.fromEntries(rows.map((r) => [r.activityId, r.isPublic]));
-    expect(byId[`${alice}/boosts/private`]).toBe(false);
-    expect(byId[`${alice}/boosts/unlisted`]).toBe(true);
+    expect(Object.fromEntries(rows.map((r) => [r.activityId, r.isPublic]))).toEqual({
+      [`${alice}/boosts/1`]: false,
+      [reaction.activityId]: true,
+    });
   });
 
   it("records Undo before delivery and refuses forged Undo", async () => {
