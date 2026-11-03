@@ -302,6 +302,8 @@ export async function handleReaction(ctx: Context<void>, activity: Like | EmojiR
     botUsername: ref.identifier, entryId: ref.entryId,
     kind: activity instanceof Announce ? "boost" : activity instanceof EmojiReact ? "emoji" : "like",
     content: activity instanceof EmojiReact ? String(activity.content ?? "").slice(0, 256) : "",
+    isPublic: !(activity instanceof Announce)
+      || [...activity.toIds, ...activity.ccIds].some((id) => id.href === PUBLIC_COLLECTION.href),
   }, undo);
   if (changed && !(activity instanceof EmojiReact)) {
     // Logged, not thrown: an inbox retry would find the reaction already recorded and enqueue nothing.

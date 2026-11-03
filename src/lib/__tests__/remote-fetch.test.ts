@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it } from "vitest";
-import { assertRemoteUrl, fetchRemote, isPublicAddress, publicLookup, readLimitedText } from "../remote-fetch";
+import { assertRemoteUrl, fetchRemote, isPublicAddress, publicLookup, readLimitedText, readTextPrefix } from "../remote-fetch";
 import { fetchFeedWithHttpResult, parseFeedXml, decodeHtmlEntities, MAX_FEED_BYTES } from "../rss";
 import { partitionBlockedRecipients } from "../blocklist";
 import { safeParseUrl } from "../urls";
@@ -50,6 +50,26 @@ describe("remote destination policy", () => {
     await expect(fetchRemote("https://example.com/feed", { signal: signal() })).rejects.toThrow(/not public/);
   });
 
+  it.each([[303, "GET"], [302, "GET"], [301, "GET"], [307, "POST"], [308, "POST"]])(
+    "follows a %i after POST with %s",
+    async (status, expected) => {
+      const seen: Array<{ method?: string; body?: unknown; type: string | null }> = [];
+      globalThis.fetch = async (_url, init) => {
+        seen.push({ method: init?.method, body: init?.body, type: new Headers(init?.headers).get("content-type") });
+        return seen.length === 1
+          ? new Response(null, { status, headers: { location: "/thanks" } })
+          : new Response("ok");
+      };
+      await fetchRemote("https://example.com/wm", {
+        signal: signal(), method: "POST", body: "source=a&target=b",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      });
+      expect(seen[1].method).toBe(expected);
+      expect(seen[1].body).toBe(expected === "GET" ? undefined : "source=a&target=b");
+      expect(seen[1].type).toBe(expected === "GET" ? null : "application/x-www-form-urlencoded");
+    },
+  );
+
   it("stops redirect loops", async () => {
     globalThis.fetch = async () => new Response(null, { status: 302, headers: { location: "/again" } });
     await expect(fetchRemote("https://example.com/", { signal: signal() })).rejects.toThrow(/redirect/);
@@ -61,6 +81,11 @@ describe("bounded feed reading", () => {
     await expect(readLimitedText(new Response("x", { headers: { "content-length": "100" } }), 10)).rejects.toThrow(/limit/);
     await expect(readLimitedText(new Response("x".repeat(11)), 10)).rejects.toThrow(/limit/);
     expect(await readLimitedText(new Response("x".repeat(10)), 10)).toHaveLength(10);
+  });
+
+  it("returns only the first bytes of a long body", async () => {
+    expect(await readTextPrefix(new Response("x".repeat(25)), 10)).toBe("x".repeat(10));
+    expect(await readTextPrefix(new Response("short"), 10)).toBe("short");
   });
 
   it("reports an oversized feed as a poll error without caching validators", async () => {

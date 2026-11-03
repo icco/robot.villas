@@ -24,6 +24,8 @@ export interface ReactionInput {
   entryId: number;
   kind: "like" | "boost" | "emoji";
   content: string;
+  /** Defaults to true; Likes carry no audience. */
+  isPublic?: boolean;
 }
 
 /** Returns whether the reaction was newly recorded or undone, so replays trigger nothing. */
@@ -39,7 +41,7 @@ export async function receiveReaction(db: Db, reaction: ReactionInput, undo = fa
     }
     const values = {
       activityId: reaction.activityId, actorId: reaction.actorId, entryId: reaction.entryId, kind: reaction.kind, content: reaction.content,
-      pageId: reactionPageId(reaction.activityId), createdAt: new Date(),
+      pageId: reactionPageId(reaction.activityId), createdAt: new Date(), isPublic: reaction.isPublic ?? true,
     };
     const column = reaction.kind === "boost" ? feedEntries.boostCount : feedEntries.likeCount;
     let delta: number;

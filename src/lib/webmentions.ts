@@ -88,9 +88,17 @@ export function webmentionTarget(url: URL): URL {
   return target;
 }
 
+const TEXT_BREAKS = new Set(["br", "p", "div", "li", "ul", "ol", "blockquote", "pre", "h1", "h2", "h3", "h4", "h5", "h6", "tr", "td", "th"]);
+
+/** Block and line breaks become newlines so `<p>#nobot</p><p>Hi</p>` doesn't read as `#nobotHi`. */
 function htmlText(html: string): string {
   const parts: string[] = [];
-  const parser = new Parser({ ontext: (text) => parts.push(text) });
+  const separate = (name: string) => {
+    if (TEXT_BREAKS.has(name)) {
+      parts.push("\n");
+    }
+  };
+  const parser = new Parser({ ontext: (text) => parts.push(text), onopentag: separate, onclosetag: separate });
   parser.write(html);
   parser.end();
   return parts.join("");
@@ -156,7 +164,7 @@ export async function discoverWebmentionEndpoint(kv: KvStore, articleUrl: string
       headers: { Accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.1", "User-Agent": WEBMENTION_USER_AGENT },
     });
     pageUrl = new URL(response.url || requested.href);
-    if (response.status === 429 || response.status >= 500) {
+    if (response.status === 408 || response.status === 429 || response.status >= 500) {
       await response.body?.cancel();
       throw new Error(`Article ${requested.href} returned HTTP ${response.status}`);
     }
@@ -282,16 +290,29 @@ export async function deliverReactionWebmention(ctx: Context<void>, deps: Webmen
   if (!row || row.reaction.kind === "emoji" || !row.reaction.pageId || row.entry.deletedAt || !deps.botUsernames.includes(row.entry.botUsername)) {
     return;
   }
-  const actor = await loadRemoteActor(ctx, deps.db, row.reaction.actorId, row.entry.botUsername);
-  if (!actor) {
-    logger.info("Not forwarding {kind} by {actorId}: profile unavailable", { kind: row.reaction.kind, actorId: row.reaction.actorId });
-    return;
-  }
-  if (actor.excludedReason) {
-    logger[actor.excludedReason === "automated" ? "debug" : "info"]("Not forwarding {kind} by {actorId}: {reason}", {
-      kind: row.reaction.kind, actorId: actor.actorId, reason: actor.excludedReason,
-    });
-    return;
+  const { reaction } = row;
+  if (reaction.undoneAt) {
+    // Retract even if the person opted out since; skip only what could never have been sent.
+    const [cached] = await deps.db.select().from(remoteActors).where(eq(remoteActors.actorId, reaction.actorId));
+    if (!cached || cached.excludedReason === "automated" || reaction.isPublic === false) {
+      return;
+    }
+  } else {
+    if (!reaction.isPublic) {
+      logger.info("Not forwarding {kind} by {actorId}: not public", { kind: reaction.kind, actorId: reaction.actorId });
+      return;
+    }
+    const actor = await loadRemoteActor(ctx, deps.db, reaction.actorId, row.entry.botUsername);
+    if (!actor) {
+      logger.info("Not forwarding {kind} by {actorId}: profile unavailable", { kind: reaction.kind, actorId: reaction.actorId });
+      return;
+    }
+    if (actor.excludedReason) {
+      logger[actor.excludedReason === "automated" ? "debug" : "info"]("Not forwarding {kind} by {actorId}: {reason}", {
+        kind: reaction.kind, actorId: actor.actorId, reason: actor.excludedReason,
+      });
+      return;
+    }
   }
   const found = await resolveTarget(deps, row.entry);
   if (found) {
@@ -358,6 +379,7 @@ export async function getPostReactions(db: Db, entryId: number, limit = 200): Pr
     .where(and(
       eq(reactions.entryId, entryId),
       isNull(reactions.undoneAt),
+      eq(reactions.isPublic, true),
       isNull(remoteActors.excludedReason),
       inArray(reactions.kind, ["like", "boost"]),
     ))
@@ -366,6 +388,7 @@ export async function getPostReactions(db: Db, entryId: number, limit = 200): Pr
   return rows as PostReaction[];
 }
 
+/** `named` is false when the page may only say the reaction was removed. */
 export async function getReactionPage(db: Db, botUsername: string, entryId: number, pageId: string) {
   const [row] = await db.select({ reaction: reactions, entry: feedEntries, actor: remoteActors }).from(reactions)
     .innerJoin(feedEntries, eq(feedEntries.id, reactions.entryId))
@@ -375,8 +398,11 @@ export async function getReactionPage(db: Db, botUsername: string, entryId: numb
       eq(reactions.entryId, entryId),
       eq(feedEntries.botUsername, botUsername),
       isNull(feedEntries.deletedAt),
-      isNull(remoteActors.excludedReason),
       inArray(reactions.kind, ["like", "boost"]),
     ));
-  return row ?? null;
+  if (!row) {
+    return null;
+  }
+  const named = !row.reaction.undoneAt && row.reaction.isPublic === true && !row.actor.excludedReason;
+  return named || row.reaction.undoneAt ? { ...row, named } : null;
 }

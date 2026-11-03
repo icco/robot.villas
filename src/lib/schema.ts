@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { index, integer, jsonb, pgEnum, pgTable, text, timestamp, unique, uniqueIndex } from "drizzle-orm/pg-core";
+import { boolean, index, integer, jsonb, pgEnum, pgTable, text, timestamp, unique, uniqueIndex } from "drizzle-orm/pg-core";
 
 export const feedEntries = pgTable(
   "feed_entries",
@@ -48,6 +48,8 @@ export const reactions = pgTable("reactions", {
   /** Public path segment for the reaction's webmention source page; null on rows from before that page existed. */
   pageId: text("page_id"),
   createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }),
+  /** False for a followers-only boost, which must not be named publicly or forwarded. */
+  isPublic: boolean("is_public"),
 }, (t) => [
   uniqueIndex("reactions_active_unique").on(t.actorId, t.entryId, t.kind, t.content).where(sql`${t.undoneAt} IS NULL`),
   uniqueIndex("reactions_page_id_unique").on(t.pageId),

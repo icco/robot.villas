@@ -56,14 +56,22 @@ export async function fetchRemoteWithPolicy(
 ): Promise<Response> {
   let url = assertRemoteUrl(input);
   const headers = new Headers(init.headers);
+  let method = (init.method ?? "GET").toUpperCase();
+  let body = init.body;
   for (let hop = 0; hop <= 5; hop++) {
     await beforeRequest(url);
-    const options: RequestInit & { dispatcher: Agent } = { ...init, headers: getWebBotAuthHeaders(url, headers), dispatcher, redirect: "manual" };
+    const options: RequestInit & { dispatcher: Agent } = { ...init, method, body, headers: getWebBotAuthHeaders(url, headers), dispatcher, redirect: "manual" };
     const response = await fetch(url, options);
     if (![301, 302, 303, 307, 308].includes(response.status)) {
       return response;
     }
     await response.body?.cancel();
+    // https://fetch.spec.whatwg.org/#http-redirect-fetch: 303, and 301/302 after POST, continue as a bodyless GET.
+    if ((response.status === 303 && method !== "HEAD") || ([301, 302].includes(response.status) && method === "POST")) {
+      method = "GET";
+      body = undefined;
+      headers.delete("content-type");
+    }
     const location = response.headers.get("location");
     if (!location || hop === 5) {
       throw new Error("Invalid or excessive remote redirects");

@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   const verb = found.reaction.kind === "boost" ? "boosted" : "liked";
   return {
-    title: `${found.actor.name} ${verb} ${found.entry.title}`,
+    title: found.named ? `${found.actor.name} ${verb} ${found.entry.title}` : `Removed ${found.reaction.kind}`,
     robots: { index: false, follow: false },
   };
 }
@@ -42,11 +42,11 @@ export default async function ReactionPage({ params }: Props) {
   if (!found) {
     notFound();
   }
-  const { reaction, entry, actor, username, bot, domain, pageId, target } = found;
+  const { reaction, entry, actor, username, bot, domain, pageId, target, named } = found;
   const postUrl = entryObjectUrl(domain, username, entry.id);
 
   // Webmention receivers delete a mention whose source stops linking the target.
-  if (reaction.undoneAt) {
+  if (!named) {
     return (
       <p className="text-base-content/70">
         This {reaction.kind} was removed. <Link href={postUrl} className="link">Back to the post</Link>.

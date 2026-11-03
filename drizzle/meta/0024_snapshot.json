@@ -1,5 +1,5 @@
 {
-  "id": "9bd63d93-6c7d-41ad-8ec4-d3d575e65f01",
+  "id": "da3b8267-55c2-464e-ad67-f4cf23a4df6f",
   "prevId": "906cc60e-d249-4c8d-ba95-c5c66c902f61",
   "version": "7",
   "dialect": "postgresql",
@@ -700,6 +700,12 @@
         "created_at": {
           "name": "created_at",
           "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "is_public": {
+          "name": "is_public",
+          "type": "boolean",
           "primaryKey": false,
           "notNull": false
         }

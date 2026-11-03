@@ -108,6 +108,11 @@ describe("exclusionReason", () => {
     expect(exclusionReason({ ...person, hashtags: ["#NoBot"] })).toBe("nobot");
   });
 
+  it("sees opt-out hashtags right before a paragraph or line break", () => {
+    expect(exclusionReason({ ...person, summary: "<p>#nobridge</p><p>Writes about engines</p>" })).toBe("nobridge");
+    expect(exclusionReason({ ...person, summary: "<p>#nobot<br>Writes</p>" })).toBe("nobot");
+  });
+
   it("does not match longer hashtags", () => {
     expect(exclusionReason({ ...person, summary: "<p>#nobridgefan #nobots</p>" })).toBeNull();
   });
@@ -141,12 +146,12 @@ describe("discoverWebmentionEndpoint", () => {
     expect(fetch).toHaveBeenCalledTimes(1);
   });
 
-  it("throws on server errors so the task retries, without caching", async () => {
-    const fetch = vi.fn(async () => respond("down", { status: 503 }));
+  it.each([408, 429, 503])("throws on HTTP %i so the task retries, without caching", async (status) => {
+    const fetch = vi.fn(async () => respond("down", { status }));
     globalThis.fetch = fetch as typeof globalThis.fetch;
     const kv = new MemoryKvStore();
-    await expect(discoverWebmentionEndpoint(kv, "https://ada.example/p/2")).rejects.toThrow("HTTP 503");
-    await expect(discoverWebmentionEndpoint(kv, "https://ada.example/p/2")).rejects.toThrow("HTTP 503");
+    await expect(discoverWebmentionEndpoint(kv, "https://ada.example/p/2")).rejects.toThrow(`HTTP ${status}`);
+    await expect(discoverWebmentionEndpoint(kv, "https://ada.example/p/2")).rejects.toThrow(`HTTP ${status}`);
     expect(fetch).toHaveBeenCalledTimes(2);
   });
 
