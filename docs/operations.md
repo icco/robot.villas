@@ -17,7 +17,7 @@ How robot.villas delivers posts, handles failures, and limits what remote server
 
 ## Queues
 
-- Inbound activities, outbound deliveries, and fanout share Fedify's `fedify_message_v2` table, claimed oldest first, so a flood in either direction delays the other. Startup jobs use the separate `fedify_task_message_v2` table.
+- Inbound activities, outbound deliveries, and fanout share Fedify's `fedify_message_v2` table, claimed oldest first, so a flood in either direction delays the other. Startup jobs and webmentions use the separate `fedify_task_message_v2` table.
 - `/status` counts pending delivery records only. Fedify's backlog is `select message->>'type', count(*) from fedify_message_v2 group by 1`. Never select `message` whole, because outbound messages contain the sending bot's private key.
 
 ## Relays
@@ -41,6 +41,14 @@ How robot.villas delivers posts, handles failures, and limits what remote server
 - Undo applies only to the sender's own Follow or reaction; Delete removes a follower only when the actor deletes itself.
 - Each Like, Announce, and EmojiReact is counted once by activity ID, including duplicates, replays, and an Undo that arrives first.
 - Fedify settings: at most 3 HTTP signatures checked per request, 10-second remote document timeout, public keys cached 30 days.
+
+## Webmentions
+
+- New posts past a feed's back catalog and not backdated, and new or undone likes and boosts, queue a Fedify task on `fedify_task_message_v2`, retried up to five times. Emoji reactions and reactions from before this feature send nothing.
+- Discovery fetches the article ([spec](https://www.w3.org/TR/webmention/#sender-discovers-receiver-webmention-endpoint)): the `Link` header first, then the first `<link>` or `<a>` with `rel=webmention` in the first 1 MiB. The result is cached for a day per article; a host whose article has no endpoint is skipped for a week. The final URL after redirects, minus `utm_*` parameters, is the `target` and is stored in `feed_entries.webmention_target`, which the source pages link.
+- Sources: a post sends `/users/name/posts/id` (the Note's ID, which returns HTML to browsers); a like or boost sends `/users/name/posts/id/reactions/<page_id>`, marked up as `u-like-of` or `u-repost-of`. An undone reaction's page stops linking the article, which tells the receiver to delete it ([spec](https://www.w3.org/TR/webmention/#webmention-verification)).
+- Profiles of reacting accounts are fetched with a bot's signature into `remote_actors`, refreshed after a week. Service and Application accounts, `#nobridge` or `#nobot` in the bio or tags, and `discoverable: false` are never named on post pages or sent; exclusions are logged by reason (automated ones at debug).
+- 408, 429, 5xx, and network errors retry; other 4xx responses are logged and dropped. Discovery and sending use the same public-address checks as feed fetches. Discovery does not check robots.txt.
 
 ## Blocking
 

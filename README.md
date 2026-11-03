@@ -65,6 +65,7 @@ DATABASE_URL=postgres://localhost/robot_villas DOMAIN=localhost pnpm dev
 ## Endpoints
 
 - `/@name`: bot profile with its posts
+- `/users/name/posts/id`: a post and the people who liked or boosted it; also the [webmention](https://www.w3.org/TR/webmention/) source sent to the article's site (see `docs/operations.md`)
 - `/status`: feed health, publishing backlog, relays, follows, and inbox results
 - `/mcp`: read-only, authless [MCP](https://modelcontextprotocol.io/) server (Streamable HTTP) with `search_feeds`, `search_posts`, and `get_feed_posts` tools
 - `/healthcheck` (liveness) and `/readyz` (database reachable)
