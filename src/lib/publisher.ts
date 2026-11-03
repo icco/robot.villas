@@ -10,6 +10,7 @@ import { storeEntryWithPublications } from "./publications";
 import { resolveHashtags } from "./hashtags";
 import type { FeedEntry } from "./rss";
 import { safeParseUrl } from "./urls";
+import { enqueuePostWebmention } from "./webmentions";
 export { safeParseUrl } from "./urls";
 
 const logger = getLogger(["robot-villas", "publisher"]);
@@ -160,7 +161,7 @@ export async function sendCreateActivity(
 }
 
 export async function publishNewEntries(
-  _ctx: Context<void>,
+  ctx: Context<void>,
   db: Db,
   botUsername: string,
   _domain: string,
@@ -182,7 +183,8 @@ export async function publishNewEntries(
   });
   const recipients = await getPublishRecipients(db, botUsername, blockedInstances);
   // A new bot's first fetch is its back catalog: store it, but only deliver later posts.
-  const deliverTo = await hasCompletedPoll(db, botUsername)
+  const pastBackCatalog = await hasCompletedPoll(db, botUsername);
+  const deliverTo = pastBackCatalog
     ? [...recipients.followerRecipients, ...recipients.relayRecipients]
     : [];
 
@@ -234,6 +236,11 @@ export async function publishNewEntries(
     }
 
     stored++;
+    if (pastBackCatalog && !backdated) {
+      await enqueuePostWebmention(ctx, entryId).catch((error) => {
+        logger.warn("Could not enqueue webmention for entry {entryId}: {error}", { entryId, error });
+      });
+    }
   }
 
   return { stored, skipped, deferred };

@@ -7,6 +7,7 @@ import { createDb, migrate, insertEntry, addFollower, getFollowers, upsertFollow
 import { receiveFollowResponse, receiveReaction, type ReactionInput } from "../inbox-state";
 import { handleDelete, handleFollow, handleReaction, handleUndo, isPgIntegerId } from "../federation";
 import * as schema from "../schema";
+import { reactionPageId } from "../webmentions";
 
 const databaseUrl = process.env.DATABASE_URL;
 describe.skipIf(!databaseUrl)("inbox authorization and idempotency", () => {
@@ -56,6 +57,27 @@ describe.skipIf(!databaseUrl)("inbox authorization and idempotency", () => {
     await Promise.all([receiveReaction(db, reaction, true), receiveReaction(db, reaction, true)]);
     await receiveReaction(db, reaction);
     expect(await count()).toBe(0);
+  });
+
+  it("reports only real changes and gives each reaction a stable page id", async () => {
+    expect(await receiveReaction(db, reaction)).toBe(true);
+    expect(await receiveReaction(db, reaction)).toBe(false);
+    const [row] = await db.select().from(schema.reactions).where(eq(schema.reactions.activityId, reaction.activityId));
+    expect(row.pageId).toBe(reactionPageId(reaction.activityId));
+    expect(row.pageId).toMatch(/^[0-9a-f]{32}$/);
+    expect(row.createdAt).toBeInstanceOf(Date);
+    expect(await receiveReaction(db, reaction, true)).toBe(true);
+    expect(await receiveReaction(db, reaction, true)).toBe(false);
+  });
+
+  it("stores whether a reaction was public, defaulting to public", async () => {
+    await receiveReaction(db, { ...reaction, kind: "boost", activityId: `${alice}/boosts/1`, isPublic: false });
+    await receiveReaction(db, reaction);
+    const rows = await db.select().from(schema.reactions).where(eq(schema.reactions.actorId, alice.href));
+    expect(Object.fromEntries(rows.map((r) => [r.activityId, r.isPublic]))).toEqual({
+      [`${alice}/boosts/1`]: false,
+      [reaction.activityId]: true,
+    });
   });
 
   it("records Undo before delivery and refuses forged Undo", async () => {

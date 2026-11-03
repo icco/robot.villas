@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { index, integer, jsonb, pgEnum, pgTable, text, timestamp, unique, uniqueIndex } from "drizzle-orm/pg-core";
+import { boolean, index, integer, jsonb, pgEnum, pgTable, text, timestamp, unique, uniqueIndex } from "drizzle-orm/pg-core";
 
 export const feedEntries = pgTable(
   "feed_entries",
@@ -16,6 +16,8 @@ export const feedEntries = pgTable(
     /** Hashtag labels without the leading #; at most MAX_TAGS, possibly none. */
     hashtags: jsonb("hashtags").$type<string[]>().notNull().default(sql`'[]'::jsonb`),
     deletedAt: timestamp("deleted_at", { withTimezone: true, mode: "date" }),
+    /** Article URL after redirects; webmentions name it as `target`, so pages must link this exact string. */
+    webmentionTarget: text("webmention_target"),
   },
   (t) => [
     unique().on(t.botUsername, t.guid),
@@ -43,9 +45,27 @@ export const reactions = pgTable("reactions", {
   kind: text().$type<"like" | "boost" | "emoji">().notNull(),
   content: text().notNull().default(""),
   undoneAt: timestamp("undone_at", { withTimezone: true, mode: "date" }),
+  /** Public path segment for the reaction's webmention source page; null on rows from before that page existed. */
+  pageId: text("page_id"),
+  createdAt: timestamp("created_at", { withTimezone: true, mode: "date" }),
+  /** False for a followers-only boost, which must not be named publicly or forwarded. */
+  isPublic: boolean("is_public"),
 }, (t) => [
   uniqueIndex("reactions_active_unique").on(t.actorId, t.entryId, t.kind, t.content).where(sql`${t.undoneAt} IS NULL`),
+  uniqueIndex("reactions_page_id_unique").on(t.pageId),
+  index("reactions_entry_id_idx").on(t.entryId),
 ]);
+
+/** Profile cache for accounts that react to bot posts, used by post pages and webmentions. */
+export const remoteActors = pgTable("remote_actors", {
+  actorId: text("actor_id").primaryKey(),
+  name: text().notNull(),
+  profileUrl: text("profile_url").notNull(),
+  iconUrl: text("icon_url"),
+  /** Why the account must not be named or forwarded; null when it may be. */
+  excludedReason: text("excluded_reason").$type<"automated" | "nobridge" | "nobot" | "undiscoverable">(),
+  fetchedAt: timestamp("fetched_at", { withTimezone: true, mode: "date" }).notNull(),
+});
 
 /** Transactional intent to submit one immutable post to one destination inbox. */
 export const publications = pgTable("publications", {
