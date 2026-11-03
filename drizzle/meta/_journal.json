@@ -169,6 +169,13 @@
       "when": 1791751439834,
       "tag": "0023_reset_feed_validators",
       "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "7",
+      "when": 1793732475949,
+      "tag": "0024_webmentions",
+      "breakpoints": true
     }
   ]
 }

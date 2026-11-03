@@ -80,6 +80,33 @@ export async function fetchRemoteWithPolicy(
   throw new Error("Excessive remote redirects");
 }
 
+/** Like `readLimitedText`, but returns the first `maxBytes` instead of failing on larger bodies. */
+export async function readTextPrefix(response: Response, maxBytes: number): Promise<string> {
+  if (!response.body) {
+    return "";
+  }
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  const parts: string[] = [];
+  let bytes = 0;
+  try {
+    while (bytes < maxBytes) {
+      const { done, value } = await reader.read();
+      if (done) {
+        break;
+      }
+      const chunk = value.subarray(0, maxBytes - bytes);
+      bytes += chunk.byteLength;
+      parts.push(decoder.decode(chunk, { stream: true }));
+    }
+    parts.push(decoder.decode());
+    return parts.join("");
+  } finally {
+    await reader.cancel();
+    reader.releaseLock();
+  }
+}
+
 export async function readLimitedText(response: Response, maxBytes: number): Promise<string> {
   if (Number(response.headers.get("content-length")) > maxBytes) {
     await response.body?.cancel();
