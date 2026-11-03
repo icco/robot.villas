@@ -160,7 +160,7 @@ describe("discoverWebmentionEndpoint", () => {
 
 describe("sendWebmention", () => {
   it("posts form-encoded source and target", async () => {
-    const fetch = vi.fn(async (_url: URL, _init: RequestInit) => respond("", { status: 202 }));
+    const fetch = vi.fn<(url: URL, init: RequestInit) => Promise<Response>>(async () => respond("", { status: 202 }));
     globalThis.fetch = fetch as unknown as typeof globalThis.fetch;
     expect(await sendWebmention("https://wm.example/e", "https://robot.test/s", "https://ada.example/t")).toBe(true);
     const [url, init] = fetch.mock.calls[0];
