@@ -138,6 +138,19 @@ describe("discoverWebmentionEndpoint", () => {
     expect(fetch).toHaveBeenCalledTimes(1);
   });
 
+  it("uses a Link header endpoint without reading the body", async () => {
+    const body = new ReadableStream({
+      pull() {
+        throw new Error("body was read");
+      },
+    }, { highWaterMark: 0 });
+    globalThis.fetch = vi.fn(async () => new Response(body, {
+      headers: { "content-type": "text/html", link: `<https://wm.example/e>; rel="webmention"` },
+    })) as typeof globalThis.fetch;
+    expect(await discoverWebmentionEndpoint(new MemoryKvStore(), "https://ada.example/p/3"))
+      .toEqual({ endpoint: "https://wm.example/e", target: "https://ada.example/p/3" });
+  });
+
   it("skips the rest of a host whose article has no endpoint", async () => {
     const fetch = vi.fn(async () => respond("<p>no endpoint</p>", { headers: { "content-type": "text/html" } }));
     globalThis.fetch = fetch as typeof globalThis.fetch;

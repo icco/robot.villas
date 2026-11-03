@@ -179,13 +179,13 @@ export async function discoverWebmentionEndpoint(kv: KvStore, articleUrl: string
       await kv.set(cacheKey, { endpoint: null }, { ttl: days(1) });
       return null;
     }
-    const html = /html/i.test(response.headers.get("content-type") ?? "")
-      ? await readTextPrefix(response, MAX_DISCOVERY_BYTES)
-      : null;
-    if (html === null) {
+    // The Link header wins, so the body is read only when it has no endpoint.
+    let endpoint = findWebmentionEndpoint(response.headers.get("link"), null, pageUrl);
+    if (!endpoint && /html/i.test(response.headers.get("content-type") ?? "")) {
+      endpoint = findWebmentionEndpoint(null, await readTextPrefix(response, MAX_DISCOVERY_BYTES), pageUrl);
+    } else {
       await response.body?.cancel();
     }
-    const endpoint = findWebmentionEndpoint(response.headers.get("link"), html, pageUrl);
     found = endpoint ? { endpoint: endpoint.href, target: webmentionTarget(pageUrl).href } : null;
   } finally {
     clearTimeout(timeout);
