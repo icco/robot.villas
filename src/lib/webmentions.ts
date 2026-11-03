@@ -88,6 +88,14 @@ export function webmentionTarget(url: URL): URL {
   return target;
 }
 
+function htmlText(html: string): string {
+  const parts: string[] = [];
+  const parser = new Parser({ ontext: (text) => parts.push(text) });
+  parser.write(html);
+  parser.end();
+  return parts.join("");
+}
+
 export function exclusionReason(profile: {
   automated: boolean;
   summary: string | null;
@@ -97,7 +105,7 @@ export function exclusionReason(profile: {
   if (profile.automated) {
     return "automated";
   }
-  const text = `${(profile.summary ?? "").replace(/<[^>]*>/g, "")} ${profile.hashtags.join(" ")}`;
+  const text = `${htmlText(profile.summary ?? "")} ${profile.hashtags.join(" ")}`;
   if (/#nobridge(?![\p{L}\p{N}_])/iu.test(text)) {
     return "nobridge";
   }
