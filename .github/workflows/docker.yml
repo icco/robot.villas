@@ -30,7 +30,7 @@ jobs:
       id-token: write
     services:
       postgres:
-        image: postgres:16
+        image: postgres:18-alpine
         env:
           POSTGRES_USER: smoke
           POSTGRES_PASSWORD: smoke
