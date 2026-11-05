@@ -2,7 +2,7 @@ FROM node:26-slim AS builder
 
 WORKDIR /app
 
-RUN npm install -g pnpm@11.2.2
+RUN npm install -g pnpm@12.16.1
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN --mount=type=secret,id=npm_token \
