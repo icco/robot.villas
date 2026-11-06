@@ -4,16 +4,19 @@ import { getGlobals } from "@/lib/globals";
 import { isForeignAnnounce } from "@/lib/inbox-filter";
 
 type Handler = (request: Request) => unknown;
-let handlers: { federation: Handler; webfinger: Handler } | null = null;
+let handlers: { federation: Handler; direct: Handler } | null = null;
+
+// fedifyWith() only handles requests with federation Accept headers or the
+// well-known NodeInfo paths, but WebFinger and NodeInfo clients commonly send
+// `Accept: */*` or `application/json`.
+const DIRECT_PATHS = new Set(["/.well-known/webfinger", "/nodeinfo/2.1"]);
 
 function getHandlers() {
   if (!handlers) {
     const { federation } = getGlobals();
     handlers = {
       federation: fedifyWith(federation)(),
-      // fedifyWith() only handles requests with federation Accept headers, but
-      // WebFinger clients commonly send `Accept: */*`.
-      webfinger: integrateFederation(federation, () => undefined),
+      direct: integrateFederation(federation, () => undefined),
     };
   }
   return handlers;
@@ -21,9 +24,9 @@ function getHandlers() {
 
 export default async function proxy(request: Request) {
   const { pathname } = new URL(request.url);
-  if (pathname === "/.well-known/webfinger") {
+  if (DIRECT_PATHS.has(pathname)) {
     return request.method === "GET" || request.method === "HEAD"
-      ? getHandlers().webfinger(request)
+      ? getHandlers().direct(request)
       : NextResponse.next();
   }
   if (await isForeignAnnounce(request, `https://${getGlobals().domain}`)) {
