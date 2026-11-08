@@ -179,7 +179,7 @@ importers:
         version: 2.4.5(@fedify/fedify@2.4.5)(next@16.4.3(@opentelemetry/api@1.9.1)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))
       '@fedify/postgres':
         specifier: ^2.4.5
-        version: 2.4.5(@fedify/fedify@2.4.5)(postgres@3.4.9)
+        version: 2.4.5(@fedify/fedify@2.4.5)(postgres@4.0.0)
       '@fedify/vocab':
         specifier: ^2.4.5
         version: 2.4.5
@@ -209,7 +209,7 @@ importers:
         version: 5.7.50
       drizzle-orm:
         specifier: ^0.45.4
-        version: 0.45.4(@opentelemetry/api@1.9.1)(postgres@3.4.9)
+        version: 0.45.4(@opentelemetry/api@1.9.1)(postgres@4.0.0)
       escape-html:
         specifier: ^1.0.3
         version: 1.0.3
@@ -229,8 +229,8 @@ importers:
         specifier: 16.4.3
         version: 16.4.3(@opentelemetry/api@1.9.1)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       postgres:
-        specifier: ^3.4.9
-        version: 3.4.9
+        specifier: ^4.0.0
+        version: 4.0.0
       react:
         specifier: ^19.3.1
         version: 19.3.1
@@ -2305,9 +2305,9 @@ packages:
     resolution: {integrity: sha512-LJlKCCAUFKOuZxipUdYw1NzIITEsPcgyOG9LkvRJvuKj/bRzbuRY0ARXvL0pWGpsZvn8jku+LMep2eU0seHp8g==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postgres@3.4.9:
-    resolution: {integrity: sha512-GD3qdB0x1z9xgFI6cdRD6xu2Sp2WCOEoe3mtnyB5Ee0XrrL5Pe+e4CCnJrRMnL1zYtRDZmQQVbvOttLnKDLnaw==}
-    engines: {node: '>=12'}
+  postgres@4.0.0:
+    resolution: {integrity: sha512-kBh8qXtcvvIAc00DftQyOxz7M/3Zxww1tRMXZPLzipNXXl5PIzHml+9zB3Mrge2U8ldc0WF1ZdLp1iYQi7Kh3A==}
+    engines: {node: '>=20'}
 
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
@@ -2540,8 +2540,8 @@ packages:
     resolution: {integrity: sha512-o5sSPKEkg/DIQNmH43V0/uerLrpzVedkUh8tGNvaeXpfpuwjKenlSox/2O/BTlZUtEe+JG7s5YhEz608PlAHRA==}
     engines: {node: '>=0.6'}
 
-  tough-cookie@6.1.0:
-    resolution: {integrity: sha512-FTxc8u8Kl2tz0Lat1u8ksvcy8bwHRyEMawwTWybo51JqaC6O7SvfuhAKg+Ld6VqyIe2QRJBzY9HA7y2WyFRT2w==}
+  tough-cookie@6.0.2:
+    resolution: {integrity: sha512-exgYmnmL/sJpR3upZfXG5PoatXQii55xAiXGXzY+sROLZ/Y+SLcp9PgJNI9Vz37HpQ74WvDcLT8eqm+kV3FzrA==}
     engines: {node: '>=16'}
 
   tr46@7.0.0:
@@ -2592,6 +2592,10 @@ packages:
   undici@7.30.2:
     resolution: {integrity: sha512-mLyPQnHwUxaM/rideoK/+KL8DaAJLRl4aBCfmX444aCSLnIaomqPLtNRe2jdCYcsk5wZzXrDIQC8ZeYNRAYyIA==}
     engines: {node: '>=20.18.1'}
+
+  undici@8.12.3:
+    resolution: {integrity: sha512-+fdndUTwBP86cVjihTp21hZHo7d6oj1c/47XPA3lL8mM0XHs+C4EkcjmgRsFnFk2f/UONGDy9ItBItmXsLOQHw==}
+    engines: {node: '>=22.19.0'}
 
   undici@8.12.4:
     resolution: {integrity: sha512-8Mx+uNKKER2bA4AdtedkqRbwUCIJFr2nJckXRe5yrDqzePqwLP7VNcctN8/XdmDSbF7mS+jJKIszlL+vbam1VA==}
@@ -2982,11 +2986,11 @@ snapshots:
       '@fedify/fedify': 2.4.5
       next: 16.4.3(@opentelemetry/api@1.9.1)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
 
-  '@fedify/postgres@2.4.5(@fedify/fedify@2.4.5)(postgres@3.4.9)':
+  '@fedify/postgres@2.4.5(@fedify/fedify@2.4.5)(postgres@4.0.0)':
     dependencies:
       '@fedify/fedify': 2.4.5
       '@logtape/logtape': 2.4.2
-      postgres: 3.4.9
+      postgres: 4.0.0
       temporal-polyfill: 1.0.8
 
   '@fedify/testing@2.4.5(@fedify/fedify@2.4.5)':
@@ -3829,10 +3833,10 @@ snapshots:
       esbuild: 0.28.2
       tsx: 4.23.15
 
-  drizzle-orm@0.45.4(@opentelemetry/api@1.9.1)(postgres@3.4.9):
+  drizzle-orm@0.45.4(@opentelemetry/api@1.9.1)(postgres@4.0.0):
     optionalDependencies:
       '@opentelemetry/api': 1.9.1
-      postgres: 3.4.9
+      postgres: 4.0.0
 
   dunder-proto@1.0.1:
     dependencies:
@@ -4282,8 +4286,8 @@ snapshots:
       parse5: 8.1.0
       parse5-parser-stream: 8.1.0
       saxes: 6.0.0
-      tough-cookie: 6.1.0
-      undici: 8.12.4
+      tough-cookie: 6.0.2
+      undici: 8.12.3
       w3c-xmlserializer: 6.0.0
       webidl-conversions: 8.0.1
       whatwg-mimetype: 5.0.0
@@ -4548,7 +4552,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.2
 
-  postgres@3.4.9: {}
+  postgres@4.0.0: {}
 
   prelude-ls@1.2.1: {}
 
@@ -4823,7 +4827,7 @@ snapshots:
 
   toidentifier@1.0.1: {}
 
-  tough-cookie@6.1.0:
+  tough-cookie@6.0.2:
     dependencies:
       tldts: 7.4.19
 
@@ -4871,6 +4875,8 @@ snapshots:
   undici@6.29.1: {}
 
   undici@7.30.2: {}
+
+  undici@8.12.3: {}
 
   undici@8.12.4: {}
 
