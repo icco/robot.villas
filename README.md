@@ -16,6 +16,7 @@ bots:
     profile_photo: https://news.ycombinator.com/y18.svg # optional
     homepage_url: https://news.ycombinator.com          # optional
     default_hashtags: [Tech, News]                      # optional, up to 3
+    webmentions: false                                  # optional; stops webmentions to the site
 follows: ["@alice@example.social"]    # every bot follows these
 relays: [https://relay.example/actor] # instance relays to subscribe to
 relay_subscription_bot: hackernews    # bot that subscribes to relays (default: first bot)
@@ -64,8 +65,13 @@ DATABASE_URL=postgres://localhost/robot_villas DOMAIN=localhost pnpm dev
 
 ## Endpoints
 
-- `/@name`: bot profile with its posts
+- `/@name`: bot profile with its posts; `/@name/followers` and `/@name/following`
 - `/users/name/posts/id`: a post and the people who liked or boosted it; also the [webmention](https://www.w3.org/TR/webmention/) source sent to the article's site (see `docs/operations.md`)
+- `/users/name/posts/id/reactions/page_id`: one like or boost, the webmention source for that reaction
+- `/posts`, `/tags`, `/tags/name`: all posts, all hashtags, posts with a hashtag
+- `/search`: find bots by handle, name, or description
+- `/about`: adding and removing feeds, opting out of webmentions, and how the fetcher behaves
+- `/stats`: bot, post, and follower counts
 - `/status`: feed health, publishing backlog, relays, follows, and inbox results
 - `/mcp`: read-only, authless [MCP](https://modelcontextprotocol.io/) server (Streamable HTTP) with `search_feeds`, `search_posts`, and `get_feed_posts` tools
 - `/healthcheck` (liveness) and `/readyz` (database reachable)
@@ -78,6 +84,7 @@ src/app/         Next.js pages and routes
 src/proxy.ts     Sends federation requests to Fedify
 src/instrumentation.ts  Startup: migrations, queue workers, jobs, poller
 src/lib/
+  config.ts      Parses and validates `feeds.yml`
   federation.ts  Actors, objects, collections, inbox listeners
   inbox-state.ts Follow responses and reactions (authorized, idempotent)
   poller.ts      Feed polling with per-feed leases
@@ -87,6 +94,10 @@ src/lib/
   inbox-filter.ts Drops relay Announces of other servers' posts
   maintenance.ts Startup jobs as Fedify background tasks
   remote-fetch.ts Public-address-only, size-limited fetching
+  robots.ts      robots.txt checks before feed fetches
+  webmentions.ts Webmention discovery and sending for posts and reactions
+  hashtags.ts    Hashtags from feed categories, defaults, and Gemini
+  mcp.ts         MCP server tools
   schema.ts, db.ts  Drizzle schema and queries
 drizzle/         SQL migrations
 docs/operations.md  How delivery, retries, and limits behave

@@ -1,5 +1,5 @@
 import { describe, it, expect, afterEach } from "vitest";
-import { getBlockedInstances, getRelaySubscriptionBot, parseConfig, loadConfig, resolveBlockedInstances } from "../config";
+import { getBlockedInstances, getRelaySubscriptionBot, getWebmentionBots, parseConfig, loadConfig, resolveBlockedInstances } from "../config";
 import { join } from "node:path";
 import { readFileSync } from "node:fs";
 import { load as parseYaml } from "js-yaml";
@@ -102,6 +102,7 @@ bots:
       summary: "New bot accounts on robot.villas.",
       profile_photo: `${origin}/icon`,
       homepage_url: `${origin}/`,
+      webmentions: true,
     });
     expect(getRelaySubscriptionBot(enabled)).toBe("news");
     expect(parseConfig(yaml).meta).toBe(false);
@@ -356,5 +357,25 @@ ${blocked ?? ""}`;
     // A pasted inbox URL and stray case must not create an entry that never matches.
     const cfg = parseConfig(yaml('blocked_instances:\n  - " Evil.COM "\n  - "https://x.test/inbox"'));
     expect([...resolveBlockedInstances(cfg)].sort()).toEqual(["evil.com", "x.test"]);
+  });
+});
+
+describe("getWebmentionBots", () => {
+  it("skips bots that opted out", () => {
+    const config = parseConfig(`
+meta: true
+bots:
+  ada:
+    feed_url: "https://ada.example/feed"
+    display_name: "Ada"
+    summary: "Ada's notes"
+  bob:
+    feed_url: "https://bob.example/feed"
+    display_name: "Bob"
+    summary: "Bob's notes"
+    webmentions: false
+`);
+    expect(config.bots.ada.webmentions).toBe(true);
+    expect(getWebmentionBots(config)).toEqual(["ada", "meta"]);
   });
 });

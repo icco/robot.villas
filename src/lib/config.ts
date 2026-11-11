@@ -18,6 +18,8 @@ const BotSchema = z.object({
   homepage_url: HttpUrl.optional(),
   /** Up to three default hashtags (no #); with Gemini they lead, without it feed categories go first. */
   default_hashtags: z.array(z.string().min(1).max(MAX_TAG_LEN)).max(3).optional(),
+  /** False when the site owner asked not to receive webmentions. */
+  webmentions: z.boolean().default(true),
 });
 
 export type RssBotConfig = z.infer<typeof BotSchema>;
@@ -74,6 +76,7 @@ export const FeedsConfigSchema = z
         summary: "New bot accounts on robot.villas.",
         profile_photo: `${origin}/icon`,
         homepage_url: `${origin}/`,
+        webmentions: true,
       };
     }
     return { ...config, bots };
@@ -89,6 +92,10 @@ export function getRelaySubscriptionBot(config: FeedsConfig): string {
     return config.relay_subscription_bot;
   }
   return Object.keys(config.bots)[0];
+}
+
+export function getWebmentionBots(config: FeedsConfig): string[] {
+  return Object.entries(config.bots).filter(([, bot]) => bot.webmentions).map(([username]) => username);
 }
 
 export function loadConfig(path: string): FeedsConfig {

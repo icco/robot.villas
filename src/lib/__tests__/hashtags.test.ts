@@ -28,6 +28,7 @@ const baseBot: BotConfig = {
   feed_url: "https://example.com/feed.xml",
   display_name: "Test",
   summary: "Short summary for hashtag context.",
+  webmentions: true,
 };
 
 function makeEntry(over: Partial<FeedEntry> & Pick<FeedEntry, "title">): FeedEntry {

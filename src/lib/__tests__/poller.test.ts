@@ -71,6 +71,7 @@ function makeConfig(botCount: number): FeedsConfig {
       feed_url: `https://example.com/feed${i}.xml`,
       display_name: `Bot ${i}`,
       summary: "A test bot",
+      webmentions: true,
     };
   }
   return { bots, meta: false, follows: [], relays: [], blocked_instances: [] };
@@ -106,7 +107,7 @@ describe("startPoller concurrency", () => {
   it("runs announcements but only fetches RSS bots, even if announcements fail", async () => {
     const config = makeConfig(1);
     config.meta = true;
-    config.bots.meta = { display_name: "Meta", summary: "New accounts" };
+    config.bots.meta = { display_name: "Meta", summary: "New accounts", webmentions: true };
     vi.mocked(announceNewBots).mockRejectedValueOnce(new Error("database unavailable"));
     mockFetchFeed.mockResolvedValue(okFetch());
     const poller = startPoller({

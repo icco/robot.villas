@@ -64,6 +64,7 @@ const testBotConfig = {
   feed_url: "https://example.com/feed.xml",
   display_name: "Test Bot",
   summary: "A test bot for unit tests.",
+  webmentions: true,
 };
 
 describe("publishNewEntries", () => {
