@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { getGlobals } from "@/lib/globals";
 import { FEED_USER_AGENT } from "@/lib/rss";
+import { WEBMENTION_USER_AGENT } from "@/lib/webmentions";
 
 export const dynamic = "force-dynamic";
 
@@ -9,7 +10,7 @@ const REPO = "https://github.com/icco/robot.villas";
 const EDIT_FEEDS_URL = `${REPO}/edit/main/feeds.yml`;
 
 const DESCRIPTION =
-  "What robot.villas is, how to add a feed, and how its RSS fetcher behaves.";
+  "What robot.villas is, how to add or remove a feed, how webmentions work, and how its RSS fetcher behaves.";
 
 export function generateMetadata(): Metadata {
   const { domain } = getGlobals();
@@ -86,6 +87,26 @@ export default function AboutPage() {
       </section>
 
       <section className="mb-10">
+        <h2 className="text-2xl font-display font-bold mb-3">Webmentions</h2>
+        <p className="text-base-content/80 mb-4">
+          If your site accepts <a href="https://www.w3.org/TR/webmention/" className="link link-primary">webmentions</a>,
+          each new post and each public like or boost of it sends one to the article, identified
+          as <Code>{WEBMENTION_USER_AGENT}</Code>. Undoing a like or boost tells your site to remove it.
+        </p>
+        <ul className="list-disc list-outside ml-5 space-y-2 text-base-content/80">
+          <li>
+            Site owners: to stop them, add <Code>webmentions: false</Code> to your feed&apos;s entry in a
+            pull request, or open an <a href={`${REPO}/issues/new`} className="link link-primary">issue</a>.
+          </li>
+          <li>
+            Fediverse users: your likes and boosts are not named or sent if your account is a bot, the
+            boost is followers-only, your profile has <Code>#nobridge</Code> or <Code>#nobot</Code>, or
+            you have turned off discoverability.
+          </li>
+        </ul>
+      </section>
+
+      <section className="mb-10">
         <h2 className="text-2xl font-display font-bold mb-3">How the fetcher behaves</h2>
         <p className="text-base-content/80 mb-4">
           If you run a site listed on the <a href="/status" className="link link-primary">status page</a>,
@@ -96,6 +117,10 @@ export default function AboutPage() {
             It identifies itself as <Code>{FEED_USER_AGENT}</Code>.
           </li>
           <li>Each feed is fetched at most once every 15 minutes.</li>
+          <li>
+            It honors <Code>Disallow</Code> rules in your <Code>robots.txt</Code> for{" "}
+            <Code>RobotVillas</Code> or <Code>*</Code>.
+          </li>
           <li>
             Requests are conditional (<Code>If-None-Match</Code> / <Code>If-Modified-Since</Code>),
             so an unchanged feed costs you a 304 and no body.
