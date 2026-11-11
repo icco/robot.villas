@@ -45,7 +45,7 @@ function initGlobals() {
     blockedInstances,
   });
   const enqueueStartupMaintenance = defineMaintenanceTasks(federation, db, config);
-  defineWebmentionTasks(federation, { db, kv: kvStore, domain, botUsernames: getWebmentionBots(config) });
+  defineWebmentionTasks(federation, { db, kv: kvStore, domain, botUsernames: Object.keys(config.bots), webmentionBots: getWebmentionBots(config) });
   return { sql, db, config, federation, kvStore, messageQueue, domain, enqueueStartupMaintenance };
 }
 

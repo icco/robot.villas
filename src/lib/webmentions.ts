@@ -32,6 +32,8 @@ export interface WebmentionDeps {
   kv: KvStore;
   domain: string;
   botUsernames: string[];
+  /** Bots whose sites get webmentions; the rest still cache reacting profiles for their post pages. */
+  webmentionBots: string[];
 }
 
 function httpUrl(href: string, base: URL): URL | null {
@@ -279,7 +281,7 @@ async function resolveTarget({ db, kv }: WebmentionDeps, entry: EntryRow): Promi
 
 export async function deliverPostWebmention(deps: WebmentionDeps, entryId: number): Promise<void> {
   const [entry] = await deps.db.select().from(feedEntries).where(and(eq(feedEntries.id, entryId), isNull(feedEntries.deletedAt)));
-  if (!entry || !deps.botUsernames.includes(entry.botUsername)) {
+  if (!entry || !deps.webmentionBots.includes(entry.botUsername)) {
     return;
   }
   const found = await resolveTarget(deps, entry);
@@ -319,6 +321,9 @@ export async function deliverReactionWebmention(ctx: Context<void>, deps: Webmen
       });
       return;
     }
+  }
+  if (!deps.webmentionBots.includes(row.entry.botUsername)) {
+    return;
   }
   const found = await resolveTarget(deps, row.entry);
   if (found) {
