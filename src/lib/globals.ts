@@ -1,6 +1,6 @@
 import { PostgresKvStore, PostgresMessageQueue } from "@fedify/postgres";
 import postgres from "postgres";
-import { loadConfig, resolveBlockedInstances } from "./config";
+import { getWebmentionBots, loadConfig, resolveBlockedInstances } from "./config";
 import { createDb } from "./db";
 import { setupFederation } from "./federation";
 import { defineMaintenanceTasks } from "./maintenance";
@@ -45,7 +45,7 @@ function initGlobals() {
     blockedInstances,
   });
   const enqueueStartupMaintenance = defineMaintenanceTasks(federation, db, config);
-  defineWebmentionTasks(federation, { db, kv: kvStore, domain, botUsernames: Object.keys(config.bots) });
+  defineWebmentionTasks(federation, { db, kv: kvStore, domain, botUsernames: getWebmentionBots(config) });
   return { sql, db, config, federation, kvStore, messageQueue, domain, enqueueStartupMaintenance };
 }
 

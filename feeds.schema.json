@@ -101,6 +101,11 @@
             "minLength": 1,
             "maxLength": 32
           }
+        },
+        "webmentions": {
+          "type": "boolean",
+          "default": true,
+          "description": "False when the site owner asked not to receive webmentions."
         }
       }
     }
