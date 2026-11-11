@@ -102,6 +102,7 @@ bots:
       summary: "New bot accounts on robot.villas.",
       profile_photo: `${origin}/icon`,
       homepage_url: `${origin}/`,
+      webmentions: true,
     });
     expect(getRelaySubscriptionBot(enabled)).toBe("news");
     expect(parseConfig(yaml).meta).toBe(false);
@@ -374,6 +375,7 @@ bots:
     summary: "Bob's notes"
     webmentions: false
 `);
+    expect(config.bots.ada.webmentions).toBe(true);
     expect(getWebmentionBots(config)).toEqual(["ada", "meta"]);
   });
 });
