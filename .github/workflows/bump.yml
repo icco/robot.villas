@@ -40,7 +40,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: pnpm
-      - uses: mikefarah/yq@504fc38780cc46be8444ea1b72fb55919fc0bfb0 # v4.54.1
+      - uses: mikefarah/yq@a4330671f17776618660a419ab2531e4f4dc48b6 # v4.54.2
       - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
       - run: git config user.email "nat@natwelch.com"
       - run: git config user.name "Nat Welch"
