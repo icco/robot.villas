@@ -16,4 +16,19 @@ describe("setupLogging", () => {
 
     expect(error).toHaveBeenCalledTimes(1);
   });
+
+  it("drops per-request http info records but keeps warnings", async () => {
+    const info = vi.spyOn(console, "info").mockImplementation(() => {});
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => {});
+    await setupLogging();
+    info.mockClear();
+    warn.mockClear();
+
+    const http = getLogger(["fedify", "federation", "http"]);
+    http.info('"GET" "/users/alice/outbox": 200');
+    http.warn('"GET" "/users/bob/outbox": 404');
+
+    expect(info).not.toHaveBeenCalled();
+    expect(warn).toHaveBeenCalledTimes(1);
+  });
 });
