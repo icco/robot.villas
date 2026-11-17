@@ -1,9 +1,13 @@
 import { describe, it, expect, vi, afterEach, beforeEach } from "vitest";
 
 const mockGenerateContent = vi.fn().mockRejectedValue(new Error("mock: no real API calls in tests"));
+const mockConstructor = vi.fn();
 
 vi.mock("@google/genai", () => ({
   GoogleGenAI: class {
+    constructor(opts: unknown) {
+      mockConstructor(opts);
+    }
     models = {
       generateContent: mockGenerateContent,
     };
@@ -150,5 +154,11 @@ describe("resolveHashtags", () => {
     expect(tags).not.toContain("ShouldNotAppear");
     expect(tags).not.toContain("AlsoNot");
     expect(tags).toContain("DefaultTag");
+  });
+
+  it("pins the Gemini Developer API to v1beta, which the LiteLLM proxy serves", async () => {
+    mockConstructor.mockClear();
+    await resolveHashtags(makeEntry({ title: "T" }), "my_bot", baseBot, { geminiApiKey: "k" });
+    expect(mockConstructor).toHaveBeenCalledWith(expect.objectContaining({ apiVersion: "v1beta" }));
   });
 });
