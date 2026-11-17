@@ -142,7 +142,7 @@ Respond with JSON only: {"tags":["Tag",...]} with exactly ${need} strings.`;
 
   const ai = project
     ? new GoogleGenAI({ vertexai: true, project, location: location ?? "us-central1" })
-    : new GoogleGenAI({ apiKey: apiKey! });
+    : new GoogleGenAI({ apiKey: apiKey!, apiVersion: "v1beta" });
   const response = await ai.models.generateContent({
     model,
     contents: prompt,
