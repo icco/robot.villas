@@ -1,4 +1,8 @@
+import { registerOTel } from "@vercel/otel";
+
 export async function register() {
+  registerOTel({ serviceName: "robot.villas" });
+
   if (process.env.NEXT_RUNTIME !== "nodejs") {
     return;
   }
