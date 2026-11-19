@@ -22,11 +22,11 @@
     "validate-feeds": "tsx scripts/validate-feeds.ts"
   },
   "dependencies": {
-    "@fedify/fedify": "^2.4.5",
-    "@fedify/next": "^2.4.5",
-    "@fedify/postgres": "^2.4.5",
-    "@fedify/vocab": "^2.4.5",
-    "@google/genai": "^3.4.0",
+    "@fedify/fedify": "^2.4.6",
+    "@fedify/next": "^2.4.6",
+    "@fedify/postgres": "^2.4.6",
+    "@fedify/vocab": "^2.4.6",
+    "@google/genai": "^3.5.0",
     "@heroicons/react": "^2.2.0",
     "@icco/react-common": "^2026.11115.1",
     "@js-temporal/polyfill": "^0.5.1",
@@ -53,8 +53,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@fedify/lint": "^2.4.5",
-    "@fedify/testing": "^2.4.5",
+    "@fedify/lint": "^2.4.6",
+    "@fedify/testing": "^2.4.6",
     "@next/eslint-plugin-next": "^16.4.6",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@tailwindcss/postcss": "^4.3.5",

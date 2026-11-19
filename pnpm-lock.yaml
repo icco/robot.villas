@@ -172,20 +172,20 @@ importers:
   .:
     dependencies:
       '@fedify/fedify':
-        specifier: ^2.4.5
-        version: 2.4.5
+        specifier: ^2.4.6
+        version: 2.4.6
       '@fedify/next':
-        specifier: ^2.4.5
-        version: 2.4.5(@fedify/fedify@2.4.5)(next@16.4.5(@opentelemetry/api@1.9.1)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))
+        specifier: ^2.4.6
+        version: 2.4.6(@fedify/fedify@2.4.6)(next@16.4.5(@opentelemetry/api@1.9.1)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))
       '@fedify/postgres':
-        specifier: ^2.4.5
-        version: 2.4.5(@fedify/fedify@2.4.5)(postgres@4.1.1)
+        specifier: ^2.4.6
+        version: 2.4.6(@fedify/fedify@2.4.6)(postgres@4.1.1)
       '@fedify/vocab':
-        specifier: ^2.4.5
-        version: 2.4.5
+        specifier: ^2.4.6
+        version: 2.4.6
       '@google/genai':
-        specifier: ^3.4.0
-        version: 3.4.0(@modelcontextprotocol/sdk@1.32.2(@cfworker/json-schema@4.1.6)(zod@4.6.7))
+        specifier: ^3.5.0
+        version: 3.5.0(@modelcontextprotocol/sdk@1.32.2(@cfworker/json-schema@4.1.6)(zod@4.6.7))
       '@heroicons/react':
         specifier: ^2.2.0
         version: 2.2.0(react@19.3.1)
@@ -260,11 +260,11 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.15.0(jiti@2.7.0))
       '@fedify/lint':
-        specifier: ^2.4.5
-        version: 2.4.5(@fedify/fedify@2.4.5)(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3)
+        specifier: ^2.4.6
+        version: 2.4.6(@fedify/fedify@2.4.6)(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3)
       '@fedify/testing':
-        specifier: ^2.4.5
-        version: 2.4.5(@fedify/fedify@2.4.5)
+        specifier: ^2.4.6
+        version: 2.4.6(@fedify/fedify@2.4.6)
       '@next/eslint-plugin-next':
         specifier: ^16.4.6
         version: 16.4.6(eslint@10.15.0(jiti@2.7.0))
@@ -566,61 +566,61 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@fedify/fedify@2.4.5':
-    resolution: {integrity: sha512-XHi/dyLeDBKt1gkfyGxNVFgxmijOVdRdlwZGCwslStrE9+5KHeJPaDTZ5vwchrYIZFbeMlD1qjcYNnxVXNvlxg==}
+  '@fedify/fedify@2.4.6':
+    resolution: {integrity: sha512-ByOzrBbnNa4Nvks2QG2/DLVmT3yGuqO1y7wzj18+cOceFPMeiWvN2cZpDC6btOJo8auq1GRMQca+kF+4Zg/S5g==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/lint@2.4.5':
-    resolution: {integrity: sha512-5l6WlEVbbsQU+ow9xSHFnisnhqdss2GNCxAkrUzJhyl8PyQAtbw03fTPKtlb96DsiwEhrNNjPFfp7DP0jv7MNQ==}
+  '@fedify/lint@2.4.6':
+    resolution: {integrity: sha512-HUM9zjlWUhUGveZOUmgrrka7Upfr47idL67fzciIOVQOIR5rOJv+/LF5qjspieFOy36sGqTrTjIQOHNjDKa6Sg==}
     peerDependencies:
-      '@fedify/fedify': ^2.4.5
+      '@fedify/fedify': ^2.4.6
       eslint: '>=9.0.0'
     peerDependenciesMeta:
       eslint:
         optional: true
 
-  '@fedify/next@2.4.5':
-    resolution: {integrity: sha512-vPxHJ2wO//xN56BKuVt1TM7bu8qxUUxz2TFE0/YUoXA+7GQG/+Cj/8zX9k2kcOIFwPBf1LuAdbBVeFYrCohWdg==}
+  '@fedify/next@2.4.6':
+    resolution: {integrity: sha512-786aecIiQJLUBI7UtbfM1KPucwKO7cPYCQi4+UTeixeMlMFTCWVxpeS1dMO6TQLyJmUcwH8Xqo7mTTN1afp12w==}
     peerDependencies:
-      '@fedify/fedify': ^2.4.5
+      '@fedify/fedify': ^2.4.6
       next: '>=15.4.6 <17'
 
-  '@fedify/postgres@2.4.5':
-    resolution: {integrity: sha512-GZOpbzNtioJaTAbAgGmpKRfRXeZJ0zkcZraOA760ubIR8bVO3fk55vHls4Ict8ry1K0oBqzKUNEd8NnmrMriWQ==}
+  '@fedify/postgres@2.4.6':
+    resolution: {integrity: sha512-ybXKAmmWEwo9cEcTSVHU/bqiJHsPLIF8hTd0ARCMMU8MJHfvzEpPrh3T8AdE8xCzk5EBAOu0CAPRDwvYLALlpA==}
     peerDependencies:
-      '@fedify/fedify': ^2.4.5
+      '@fedify/fedify': ^2.4.6
       postgres: ^3.4.7
 
-  '@fedify/testing@2.4.5':
-    resolution: {integrity: sha512-mo7A6+yQzftdwgp/WwdammF+yYOUKFrLr8qsgdOLGOHIcnByz2oge/Ur4dneqBHASil3dYelCYsi5uAVtK2xEA==}
+  '@fedify/testing@2.4.6':
+    resolution: {integrity: sha512-6X5LCQR+DudGUqldfvIMogiT8HkQQMSHWILQ4G3va97KfOzXBEBiv+tz8XI9cRJFGwkeKjcULj6IVBaK3+Y1ZQ==}
     peerDependencies:
-      '@fedify/fedify': ^2.4.5
+      '@fedify/fedify': ^2.4.6
 
-  '@fedify/uri-template@2.4.5':
-    resolution: {integrity: sha512-bIzvZCzBruaemxdoTuBYhboGzzkKFcexJ/tLTFUT8A1+lqCIepYTE/fmpC8DfjlWVe72Jhy1lvsEw4jjPJknKQ==}
+  '@fedify/uri-template@2.4.6':
+    resolution: {integrity: sha512-VGHlEdldFrXbLPHq85ZIu2pz9CMtQem7yWWudcY49Fh+NpXf77lSRyxn8EauD2g9ob+9bJyYTFKV5Sk3EQxaXA==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab-runtime@2.4.5':
-    resolution: {integrity: sha512-6CJMQhrQKY/JWypN7Caasexj0fYcf9u9A3WWG0msf62CvuCYNVhPFLLPzUh1/IWgoxXAG8NfnsvhXJN2ZSBLOw==}
+  '@fedify/vocab-runtime@2.4.6':
+    resolution: {integrity: sha512-RtVarlGZwnH4xKluUcL/Kv/bUbpglXN5LgJIRJnZWXowjqxOGnjxISEstVzZki7L6WhbkjRzgLbG/eTwVyWigQ==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab-tools@2.4.5':
-    resolution: {integrity: sha512-rGaLe+ddlMTaqv5cnRWTYWsKA8SKTrUNfjgUTCVIWA2lS3a2rZRr9gr12jdSgKMtlKcZcjC9SX2abm/4zcSe7A==}
+  '@fedify/vocab-tools@2.4.6':
+    resolution: {integrity: sha512-67lgWKkxz5y8AIDd63gVf1Q23OUxWtJCeg4bgtdqWzY25DlSKKyt+AFsY1jiBPLDGpjLkiEzktis2vvNCURfcw==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/vocab@2.4.5':
-    resolution: {integrity: sha512-fmz2yHuHuLDL1hm8gl697QMbr3ZrlwJtEldRtH2bo1r6aJFgAxBzw9hgNetrTFtGIw8KwJDcpR09M2JViSJPrA==}
+  '@fedify/vocab@2.4.6':
+    resolution: {integrity: sha512-Qdw2x65e/vMt2jZbQ6JWjpc7nKHpbTwWjq+XtII07tw9WcDEnWk+G5hi1esY/vapqj2pScedqqeksbvAagQktA==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
-  '@fedify/webfinger@2.4.5':
-    resolution: {integrity: sha512-jbnOXmS14C95i2p0QiML/0V4KFKbTwZqk8GCwdScJTpysEgAf6Ny0Y0/QfycM0usudZmjZXAz5BN5EplR0r4zA==}
+  '@fedify/webfinger@2.4.6':
+    resolution: {integrity: sha512-moCWEDb5fhX83AqkwoegM7dWN/k9d950X6kdLZh0ujRyP9F06e3DySnJjGJ1SpcVn+7m7AHrr47QWB+ZLQfSgA==}
     engines: {bun: '>=1.1.0', deno: '>=2.0.0', node: '>=22.0.0'}
 
   '@fxts/core@1.28.0':
     resolution: {integrity: sha512-6AC3L6wScT5lLaipQRNgBJ/2PrL7rjV1tIt6S2dz7wRZ6c4gds+RWuG5djhq7WsyVB5jGYGImcVMl/DUhG0DlQ==}
 
-  '@google/genai@3.4.0':
-    resolution: {integrity: sha512-qjsg+KMRSUmQSkg/BVwcbgE/ROVo91Lx933SOicDlS7viU+Z7sBwK/c8TMvW/9W0OvBy17rwa+/sXn0kdKrDZw==}
+  '@google/genai@3.5.0':
+    resolution: {integrity: sha512-A305FnkyvO+jQSBo6OJL5YEvfJLDAAbjut/oWoKtkEoUpJ+lugbI5byN6omIc0wEgxqR1Vwr/36fP0TQp6WKxg==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@modelcontextprotocol/sdk': ^1.25.2
@@ -633,8 +633,8 @@ packages:
     peerDependencies:
       react: '>= 16 || ^19.0.0-rc'
 
-  '@hono/node-server@2.1.8':
-    resolution: {integrity: sha512-jdf7FHh6A1lzjpHHQUgxsg2GeER2vMetnAOfeActzcoli6jamlK+NAwL6Dsr5Fl3BS3tYUQzCdtZjU8Qxv7bEA==}
+  '@hono/node-server@2.1.9':
+    resolution: {integrity: sha512-Sk4NQd3GFY0WZWCzndwFMPwJhtD0y9qjsQ+pjID0/03nK9pxyBCUoUHCho8QYBLBVhi0ssL8UkNPHqbgSOFPIQ==}
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4 || ^5.0.0-0
@@ -1545,8 +1545,8 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
-  csstype@3.2.3:
-    resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
+  csstype@3.2.4:
+    resolution: {integrity: sha512-PoKaoPzQapnEoqUSnHx1u6W6ku8CVEgKsnpmmzU3m1nwkidpPBQ8V/Zq2+bWNrsOKoKLwTGdbx6xF7BXP1zLVQ==}
 
   daisyui@5.8.1:
     resolution: {integrity: sha512-ptP4WHOJ6WltNnA5zwkg3GypOLhsyUM2FHuXCckWVEpWviioInFKsjnShCWYGYHsQ5P9bUCOH1tn45cKLeTUpg==}
@@ -2009,8 +2009,8 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
-  ignore@7.0.14:
-    resolution: {integrity: sha512-wCBiZ77u1tuWde6G/nfOtLaCTYcFDU5yCzARzK10y+rLhzYoL7a7yEemcopcc2Mzow7gZOIjnV2ym1NYmdiJOQ==}
+  ignore@7.0.16:
+    resolution: {integrity: sha512-52N+Y4HRMOJmbLmr+DqO4iSRyyB7N52gm7PWCT6h0p978+oKbqHCB7gIJIwZvBUsjlSdWbrBFqUSmIFNZMpn0A==}
     engines: {node: '>= 4'}
 
   import-in-the-middle@3.6.0:
@@ -2466,8 +2466,8 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
-  router@2.2.0:
-    resolution: {integrity: sha512-nLTrUKm2UyiL7rlhapu/Zl45FwNgkZGaCpZbIHajDYgwlJCOzLSk+cIPAnsEqV955GjILJnKbdQC1nVPz+gAYQ==}
+  router@2.3.0:
+    resolution: {integrity: sha512-bpowRfGjEPe8t9R6fJIzhwmyCGAXwKvxBUsgJm+bJukwdcWmUXbMo7p22w7aYmQBPQTUMNqMV39YX0kMou3z8w==}
     engines: {node: '>= 18'}
 
   rss-parser@3.13.0:
@@ -3041,12 +3041,12 @@ snapshots:
     optionalDependencies:
       '@noble/hashes': 1.8.0
 
-  '@fedify/fedify@2.4.5':
+  '@fedify/fedify@2.4.6':
     dependencies:
-      '@fedify/uri-template': 2.4.5
-      '@fedify/vocab': 2.4.5
-      '@fedify/vocab-runtime': 2.4.5
-      '@fedify/webfinger': 2.4.5
+      '@fedify/uri-template': 2.4.6
+      '@fedify/vocab': 2.4.6
+      '@fedify/vocab-runtime': 2.4.6
+      '@fedify/webfinger': 2.4.6
       '@logtape/logtape': 2.4.2
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.12.1(@opentelemetry/api@1.9.1)
@@ -3063,9 +3063,9 @@ snapshots:
       temporal-polyfill: 1.0.8
       urlpattern-polyfill: 10.1.0
 
-  '@fedify/lint@2.4.5(@fedify/fedify@2.4.5)(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3)':
+  '@fedify/lint@2.4.6(@fedify/fedify@2.4.6)(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3)':
     dependencies:
-      '@fedify/fedify': 2.4.5
+      '@fedify/fedify': 2.4.6
       '@fxts/core': 1.28.0
       '@typescript-eslint/parser': 8.73.0(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3)
       '@typescript-eslint/utils': 8.73.0(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3)
@@ -3076,30 +3076,30 @@ snapshots:
       - supports-color
       - typescript
 
-  '@fedify/next@2.4.5(@fedify/fedify@2.4.5)(next@16.4.5(@opentelemetry/api@1.9.1)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))':
+  '@fedify/next@2.4.6(@fedify/fedify@2.4.6)(next@16.4.5(@opentelemetry/api@1.9.1)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))':
     dependencies:
-      '@fedify/fedify': 2.4.5
+      '@fedify/fedify': 2.4.6
       next: 16.4.5(@opentelemetry/api@1.9.1)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
 
-  '@fedify/postgres@2.4.5(@fedify/fedify@2.4.5)(postgres@4.1.1)':
+  '@fedify/postgres@2.4.6(@fedify/fedify@2.4.6)(postgres@4.1.1)':
     dependencies:
-      '@fedify/fedify': 2.4.5
+      '@fedify/fedify': 2.4.6
       '@logtape/logtape': 2.4.2
       postgres: 4.1.1
       temporal-polyfill: 1.0.8
 
-  '@fedify/testing@2.4.5(@fedify/fedify@2.4.5)':
+  '@fedify/testing@2.4.6(@fedify/fedify@2.4.6)':
     dependencies:
-      '@fedify/fedify': 2.4.5
-      '@fedify/vocab': 2.4.5
-      '@fedify/vocab-runtime': 2.4.5
+      '@fedify/fedify': 2.4.6
+      '@fedify/vocab': 2.4.6
+      '@fedify/vocab-runtime': 2.4.6
       '@opentelemetry/api': 1.9.1
       es-toolkit: 1.46.1
       temporal-polyfill: 1.0.8
 
-  '@fedify/uri-template@2.4.5': {}
+  '@fedify/uri-template@2.4.6': {}
 
-  '@fedify/vocab-runtime@2.4.5':
+  '@fedify/vocab-runtime@2.4.6':
     dependencies:
       '@js-temporal/polyfill': 0.5.1
       '@logtape/logtape': 2.4.2
@@ -3111,18 +3111,18 @@ snapshots:
       pkijs: 3.4.3
       undici: 7.30.2
 
-  '@fedify/vocab-tools@2.4.5':
+  '@fedify/vocab-tools@2.4.6':
     dependencies:
       '@cfworker/json-schema': 4.1.6
       byte-encodings: 1.0.11
       es-toolkit: 1.46.1
       yaml: 2.9.1
 
-  '@fedify/vocab@2.4.5':
+  '@fedify/vocab@2.4.6':
     dependencies:
-      '@fedify/vocab-runtime': 2.4.5
-      '@fedify/vocab-tools': 2.4.5
-      '@fedify/webfinger': 2.4.5
+      '@fedify/vocab-runtime': 2.4.6
+      '@fedify/vocab-tools': 2.4.6
+      '@fedify/webfinger': 2.4.6
       '@logtape/logtape': 2.4.2
       '@multiformats/base-x': 4.0.1
       '@opentelemetry/api': 1.9.1
@@ -3132,9 +3132,9 @@ snapshots:
       pkijs: 3.4.3
       temporal-polyfill: 1.0.8
 
-  '@fedify/webfinger@2.4.5':
+  '@fedify/webfinger@2.4.6':
     dependencies:
-      '@fedify/vocab-runtime': 2.4.5
+      '@fedify/vocab-runtime': 2.4.6
       '@logtape/logtape': 2.4.2
       '@opentelemetry/api': 1.9.1
       es-toolkit: 1.46.1
@@ -3143,7 +3143,7 @@ snapshots:
     dependencies:
       tslib: 2.9.1
 
-  '@google/genai@3.4.0(@modelcontextprotocol/sdk@1.32.2(@cfworker/json-schema@4.1.6)(zod@4.6.7))':
+  '@google/genai@3.5.0(@modelcontextprotocol/sdk@1.32.2(@cfworker/json-schema@4.1.6)(zod@4.6.7))':
     dependencies:
       google-auth-library: 10.9.1
       p-retry: 4.6.2
@@ -3160,7 +3160,7 @@ snapshots:
     dependencies:
       react: 19.3.1
 
-  '@hono/node-server@2.1.8(hono@4.13.19)':
+  '@hono/node-server@2.1.9(hono@4.13.19)':
     dependencies:
       hono: 4.13.19
 
@@ -3336,7 +3336,7 @@ snapshots:
 
   '@modelcontextprotocol/sdk@1.32.2(@cfworker/json-schema@4.1.6)(zod@4.6.7)':
     dependencies:
-      '@hono/node-server': 2.1.8(hono@4.13.19)
+      '@hono/node-server': 2.1.9(hono@4.13.19)
       ajv: 8.20.0
       ajv-formats: 3.0.1
       content-type: 1.0.5
@@ -3672,7 +3672,7 @@ snapshots:
 
   '@types/react@19.3.0':
     dependencies:
-      csstype: 3.2.3
+      csstype: 3.2.4
 
   '@types/retry@0.12.0': {}
 
@@ -3685,7 +3685,7 @@ snapshots:
       '@typescript-eslint/utils': 8.73.0(eslint@10.15.0(jiti@2.7.0))(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.73.0
       eslint: 10.15.0(jiti@2.7.0)
-      ignore: 7.0.14
+      ignore: 7.0.16
       natural-compare: 1.4.0
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
@@ -3938,7 +3938,7 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  csstype@3.2.3: {}
+  csstype@3.2.4: {}
 
   daisyui@5.8.1: {}
 
@@ -4187,7 +4187,7 @@ snapshots:
       proxy-addr: 2.0.8
       qs: 6.17.1
       range-parser: 1.3.0
-      router: 2.2.0
+      router: 2.3.0
       send: 1.2.1
       serve-static: 2.2.1
       statuses: 2.0.2
@@ -4387,7 +4387,7 @@ snapshots:
 
   ignore@5.3.2: {}
 
-  ignore@7.0.14: {}
+  ignore@7.0.16: {}
 
   import-in-the-middle@3.6.0:
     dependencies:
@@ -4819,7 +4819,7 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.2.19
       '@rolldown/binding-win32-x64-msvc': 1.2.19
 
-  router@2.2.0:
+  router@2.3.0:
     dependencies:
       debug: 4.4.3
       depd: 2.0.0
