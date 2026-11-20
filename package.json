@@ -26,7 +26,7 @@
     "@fedify/next": "^2.4.6",
     "@fedify/postgres": "^2.4.6",
     "@fedify/vocab": "^2.4.6",
-    "@google/genai": "^3.5.0",
+    "@google/genai": "^3.6.1",
     "@heroicons/react": "^2.2.0",
     "@icco/react-common": "^2026.11115.1",
     "@js-temporal/polyfill": "^0.5.1",
@@ -70,6 +70,6 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.73.0",
     "vite": "^8.3.8",
-    "vitest": "^5.1.0"
+    "vitest": "^5.1.1"
   }
 }
