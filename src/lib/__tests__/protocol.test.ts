@@ -1,7 +1,7 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import postgres from "postgres";
-import { MemoryKvStore, InProcessMessageQueue } from "@fedify/fedify";
-import { addFollower, createDb, insertEntry, migrate, removeKeypairs, saveKeypairs } from "../db";
+import { exportJwk, generateCryptoKeyPair, MemoryKvStore, InProcessMessageQueue } from "@fedify/fedify";
+import { addFollower, createDb, getKeypairs, insertEntry, migrate, removeKeypairs, saveKeypairs } from "../db";
 import { parseConfig } from "../config";
 import { setupFederation } from "../federation";
 import { actorKeypairs, feedEntries, followers } from "../schema";
@@ -103,5 +103,19 @@ bots:
     expect(actor.status).toBe(410);
     expect(await actor.json()).toMatchObject({ type: "Tombstone", formerType: "as:Application" });
     await db.delete(actorKeypairs).where(eq(actorKeypairs.botUsername, "removed_bot"));
+  });
+
+  it("serves the key pairs it loaded first without rereading them", async () => {
+    const publicKeyPem = async () => (await (await get("/users/protocol_test")).json()).publicKey?.publicKeyPem;
+    const before = await publicKeyPem();
+    const stored = await getKeypairs(db, "protocol_test");
+    const pair = await generateCryptoKeyPair("RSASSA-PKCS1-v1_5");
+    const replacement = { publicKey: await exportJwk(pair.publicKey), privateKey: await exportJwk(pair.privateKey) };
+    await saveKeypairs(db, "protocol_test", [replacement, replacement]);
+    try {
+      expect(await publicKeyPem()).toBe(before);
+    } finally {
+      await saveKeypairs(db, "protocol_test", stored ?? []);
+    }
   });
 });

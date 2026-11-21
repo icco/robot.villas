@@ -39,6 +39,7 @@ import {
 import escapeHtml from "escape-html";
 import { sql } from "drizzle-orm";
 import { receiveFollowResponse, receiveReaction } from "./inbox-state";
+import { memoizeAsync } from "./memoize";
 import { isBlockedHost, normalizeHost, partitionBlockedRecipients } from "./blocklist";
 import { getRelaySubscriptionBot, resolveBlockedInstances, type BotConfig, type FeedsConfig } from "./config";
 import {
@@ -362,11 +363,9 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     )
     .mapHandle((_ctx, handle) => handle);
 
-  actorCallbacks.setKeyPairsDispatcher(async (_ctx, identifier) => {
-    if (!botUsernames.includes(identifier)) {
-      return [];
-    }
-    return db.transaction(async (tx) => {
+  // Fedify asks for keys on every actor fetch and signature, and a bot's keys never change once saved.
+  const loadKeyPairs = memoizeAsync((identifier: string) =>
+    db.transaction(async (tx) => {
       await tx.execute(sql`SELECT pg_advisory_xact_lock(hashtext('actor-keys'), hashtext(${identifier}))`);
       const existing = await getKeypairs(tx, identifier);
       if (existing && existing.length >= 2) {
@@ -410,7 +409,14 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         error,
       });
       throw error;
-    });
+    }),
+  );
+
+  actorCallbacks.setKeyPairsDispatcher(async (_ctx, identifier) => {
+    if (!botUsernames.includes(identifier)) {
+      return [];
+    }
+    return loadKeyPairs(identifier);
   });
 
   // --- Outbox dispatcher ---
