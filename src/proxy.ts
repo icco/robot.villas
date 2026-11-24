@@ -16,7 +16,7 @@ const POST_PATH = /^\/users\/([^/]+)\/posts\/\d+$/;
 const ACTOR_PATH = /^\/users\/[^/]+$/;
 // 98.5% of post fetches are for posts under two hours old, most within minutes of delivery.
 const POST_CACHE_TTL_MS = 60 * 60 * 1000;
-// Posts never change; a removed bot's tombstones skip the app cache, so shared caches lag at most this long.
+// Posts never change; tombstones aren't cached, so a shared cache shows a removed bot's tombstone at most this late.
 const POST_CACHE_CONTROL = "public, max-age=300";
 // Matches Mastodon's actor documents.
 const ACTOR_CACHE_CONTROL = "public, max-age=180";

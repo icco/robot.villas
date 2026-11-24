@@ -1,6 +1,7 @@
 import { getLogger } from "@logtape/logtape";
 import type { Redis } from "ioredis";
 import { LRUCache, type Perf } from "lru-cache";
+import Negotiator from "negotiator";
 
 const logger = getLogger(["robot-villas", "response-cache"]);
 
@@ -44,13 +45,21 @@ export class MemoryResponseStore implements ResponseStore {
   }
 }
 
-const CACHEABLE_STATUSES = new Set([200, 410]);
+/** Mirrors Fedify's internal acceptsJsonLd(), which decides whether a request gets ActivityPub or falls through. */
+function acceptsJsonLd(request: Request): boolean {
+  const types = new Negotiator({ headers: { accept: request.headers.get("Accept") ?? "*/*" } }).mediaTypes();
+  if (types[0] === "text/html" || types[0] === "application/xhtml+xml") {
+    return false;
+  }
+  return types.some((t) => t === "application/activity+json" || t === "application/ld+json" || t === "application/json");
+}
 
 /**
  * Serves ActivityPub GET and HEAD responses for paths `keyFor` names from
  * `store`, so one load answers every fetch of the same document until `ttlMs`
- * passes. Only 200 and 410 activity+json responses are kept, and a failing
- * store falls back to `handler`.
+ * passes. Only 200 activity+json responses are kept, since a re-added bot's
+ * poll revives its tombstoned posts. Requests that would not get ActivityPub
+ * skip the cache, and a failing store falls back to `handler`.
  */
 export function cacheResponses(
   handler: (request: Request) => Promise<Response>,
@@ -76,7 +85,7 @@ export function cacheResponses(
     }
     const response = await handler(request);
     const contentType = response.headers.get("Content-Type") ?? "";
-    if (!CACHEABLE_STATUSES.has(response.status) || !contentType.includes("application/activity+json")) {
+    if (response.status !== 200 || !contentType.includes("application/activity+json")) {
       return response;
     }
     const entry = { status: response.status, contentType, body: await response.text() };
@@ -90,7 +99,7 @@ export function cacheResponses(
 
   return async (request) => {
     const key = keyFor(new URL(request.url).pathname);
-    if (key == null || (request.method !== "GET" && request.method !== "HEAD")) {
+    if (key == null || (request.method !== "GET" && request.method !== "HEAD") || !acceptsJsonLd(request)) {
       return handler(request);
     }
     if (request.method === "HEAD") {

@@ -61,16 +61,41 @@ describe("cacheResponses", () => {
     expect(await Promise.all(responses.map((r) => r.text()))).toEqual(["not found", "not found"]);
   });
 
-  it("keeps tombstones", async () => {
+  it("does not keep tombstones, which a re-added bot's next poll revives", async () => {
     const { handler, calls } = handlerReturning(() => new Response("{}", { status: 410, headers: { "Content-Type": AP } }));
     const cached = cacheResponses(handler, options(new MemoryResponseStore({ max: 10 })));
 
     await cached(request("/users/alice/posts/3"));
     const second = await cached(request("/users/alice/posts/3"));
 
-    expect(calls).toHaveLength(1);
+    expect(calls).toHaveLength(2);
     expect(second.status).toBe(410);
-    expect(second.headers.get("Cache-Control")).toBe("public, max-age=300");
+    expect(second.headers.get("Cache-Control")).toBeNull();
+  });
+
+  it.each([
+    ["JRD", "application/jrd+json"],
+    ["HTML first", "text/html, application/activity+json;q=0.9"],
+  ])("leaves a %s request to content negotiation even when the post is cached", async (_name, accept) => {
+    const { handler, calls } = handlerReturning(note);
+    const cached = cacheResponses(handler, options(new MemoryResponseStore({ max: 10 })));
+    await cached(request("/users/alice/posts/9"));
+
+    await cached(new Request("https://robot.test/users/alice/posts/9", { headers: { Accept: accept } }));
+
+    expect(calls).toHaveLength(2);
+  });
+
+  it("serves Mastodon's Accept header from the cache", async () => {
+    const { handler, calls } = handlerReturning(note);
+    const cached = cacheResponses(handler, options(new MemoryResponseStore({ max: 10 })));
+    const mastodon = "application/activity+json, application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\", text/html;q=0.1";
+
+    await cached(request("/users/alice/posts/10"));
+    const res = await cached(new Request("https://robot.test/users/alice/posts/10", { headers: { Accept: mastodon } }));
+
+    expect(calls).toHaveLength(1);
+    expect(res.status).toBe(200);
   });
 
   it.each([
