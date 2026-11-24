@@ -2,20 +2,40 @@ import { fedifyWith, integrateFederation } from "@fedify/next";
 import { NextResponse } from "next/server";
 import { getGlobals } from "@/lib/globals";
 import { isForeignAnnounce } from "@/lib/inbox-filter";
+import { cacheResponses } from "@/lib/response-cache";
 
 type Handler = (request: Request) => unknown;
-let handlers: { federation: Handler; direct: Handler } | null = null;
+let handlers: { federation: (request: Request) => Promise<Response>; direct: Handler } | null = null;
 
 // fedifyWith() only handles requests with federation Accept headers or the
 // well-known NodeInfo paths, but WebFinger and NodeInfo clients commonly send
 // `Accept: */*` or `application/json`.
 const DIRECT_PATHS = new Set(["/.well-known/webfinger", "/nodeinfo/2.1"]);
 
+const POST_PATH = /^\/users\/([^/]+)\/posts\/\d+$/;
+const ACTOR_PATH = /^\/users\/[^/]+$/;
+// Remote servers fetch each new post within minutes of its delivery, almost never after an hour.
+const POST_CACHE_TTL_MS = 60 * 60 * 1000;
+// Posts never change; a removed bot's tombstones skip the app cache, so shared caches lag at most this long.
+const POST_CACHE_CONTROL = "public, max-age=300";
+// Matches Mastodon's actor documents.
+const ACTOR_CACHE_CONTROL = "public, max-age=180";
+
 function getHandlers() {
   if (!handlers) {
-    const { federation } = getGlobals();
+    const { federation, config, responseStore } = getGlobals();
+    const fedifyHandler = fedifyWith(federation)();
+    const fedify = async (request: Request) => (await fedifyHandler(request)) as Response;
     handlers = {
-      federation: fedifyWith(federation)(),
+      federation: cacheResponses(fedify, {
+        store: responseStore,
+        ttlMs: POST_CACHE_TTL_MS,
+        cacheControl: POST_CACHE_CONTROL,
+        keyFor: (pathname) => {
+          const bot = POST_PATH.exec(pathname)?.[1];
+          return bot && Object.hasOwn(config.bots, bot) ? pathname : null;
+        },
+      }),
       direct: integrateFederation(federation, () => undefined),
     };
   }
@@ -32,7 +52,15 @@ export default async function proxy(request: Request) {
   if (await isForeignAnnounce(request, `https://${getGlobals().domain}`)) {
     return new Response(null, { status: 202 });
   }
-  return getHandlers().federation(request);
+  const response = await getHandlers().federation(request);
+  if (
+    ACTOR_PATH.test(pathname) &&
+    response.status === 200 &&
+    response.headers.get("Content-Type")?.includes("application/activity+json")
+  ) {
+    response.headers.set("Cache-Control", ACTOR_CACHE_CONTROL);
+  }
+  return response;
 }
 
 export const config = {

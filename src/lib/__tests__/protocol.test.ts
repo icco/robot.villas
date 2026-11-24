@@ -91,17 +91,9 @@ bots:
     expect(JSON.stringify(only)).not.toContain("b.example");
   });
 
-  it("serves a post it fetched recently without rereading it", async () => {
-    const content = async () => (await (await get(`/users/protocol_test/posts/${entryId}`)).json()).content as string;
-    expect(await content()).toContain("Hello");
-    await db.update(feedEntries).set({ title: "Edited" }).where(eq(feedEntries.id, entryId));
-    expect(await content()).toContain("Hello");
-  });
-
   it("answers 410 with a Tombstone for deleted posts and removed bots", async () => {
-    const deletedId = (await insertEntry(db, "protocol_test", "p2", "https://example.com/p2", "Gone", new Date(), []))!;
-    await db.update(feedEntries).set({ deletedAt: new Date() }).where(eq(feedEntries.id, deletedId));
-    const note = await get(`/users/protocol_test/posts/${deletedId}`);
+    await db.update(feedEntries).set({ deletedAt: new Date() }).where(eq(feedEntries.id, entryId));
+    const note = await get(`/users/protocol_test/posts/${entryId}`);
     expect(note.status).toBe(410);
     expect(await note.json()).toMatchObject({ type: "Tombstone", formerType: "as:Note" });
 

@@ -36,6 +36,7 @@ Add news sites and blogs, feeds a person would read. Leave out machine-generated
 | --- | --- | --- |
 | `DATABASE_URL` | PostgreSQL connection string | required |
 | `DOMAIN` | Public domain for ActivityPub IDs and handles | required |
+| `REDIS_URL` | Redis for the ActivityPub post response cache | in-process cache |
 | `WEB_BOT_AUTH_PRIVATE_KEY` | PEM Ed25519 private key for the signed key directory and HTTPS remote fetches | disabled |
 | `PORT` | HTTP port | `3000` (`8080` in Docker) |
 | `BLOCKED_INSTANCES` | Comma-separated hosts added to `blocked_instances` | |

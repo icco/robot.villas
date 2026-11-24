@@ -41,6 +41,7 @@ How robot.villas delivers posts, handles failures, and limits what remote server
 - Undo applies only to the sender's own Follow or reaction; Delete removes a follower only when the actor deletes itself.
 - Each Like, Announce, and EmojiReact is counted once by activity ID, including duplicates, replays, and an Undo that arrives first.
 - Fedify settings: at most 3 HTTP signatures checked per request, 10-second remote document timeout, public keys cached 30 days.
+- Relay subscribers fetch each new post from us, about 60 times on average and several hundred for popular bots, nearly all within an hour. `src/proxy.ts` keeps ActivityPub post responses (200 and 410) for an hour in Redis (`REDIS_URL`, else a 5,000-entry in-process cache), loads each post once for concurrent fetches, and skips bots no longer in `feeds.yml`. Posts and tombstones send `Cache-Control: public, max-age=300`, and actors `public, max-age=180` like Mastodon.
 
 ## Webmentions
 

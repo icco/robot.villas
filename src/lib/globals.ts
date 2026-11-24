@@ -1,9 +1,12 @@
 import { PostgresKvStore, PostgresMessageQueue } from "@fedify/postgres";
+import { getLogger } from "@logtape/logtape";
+import { Redis } from "ioredis";
 import postgres from "postgres";
 import { getWebmentionBots, loadConfig, resolveBlockedInstances } from "./config";
 import { createDb } from "./db";
 import { setupFederation } from "./federation";
 import { defineMaintenanceTasks } from "./maintenance";
+import { MemoryResponseStore, RedisResponseStore, type ResponseStore } from "./response-cache";
 import { defineWebmentionTasks } from "./webmentions";
 
 type Globals = ReturnType<typeof initGlobals>;
@@ -18,6 +21,16 @@ function requireEnv(name: string): string {
     throw new Error(`${name} environment variable is required`);
   }
   return value;
+}
+
+function createResponseStore(redisUrl: string | undefined): ResponseStore {
+  if (!redisUrl) {
+    return new MemoryResponseStore({ max: 5_000 });
+  }
+  // Fail fast while Redis is down so fetches fall through to the database instead of queueing.
+  const redis = new Redis(redisUrl, { enableOfflineQueue: false, maxRetriesPerRequest: 0, commandTimeout: 500, connectTimeout: 2_000 });
+  redis.on("error", (error) => getLogger(["robot-villas", "response-cache"]).warn("Redis error: {error}", { error }));
+  return new RedisResponseStore(redis);
 }
 
 function initGlobals() {
@@ -46,7 +59,8 @@ function initGlobals() {
   });
   const enqueueStartupMaintenance = defineMaintenanceTasks(federation, db, config);
   defineWebmentionTasks(federation, { db, kv: kvStore, domain, botUsernames: Object.keys(config.bots), webmentionBots: getWebmentionBots(config) });
-  return { sql, db, config, federation, kvStore, messageQueue, domain, enqueueStartupMaintenance };
+  const responseStore = createResponseStore(process.env.REDIS_URL);
+  return { sql, db, config, federation, kvStore, messageQueue, domain, enqueueStartupMaintenance, responseStore };
 }
 
 export function getGlobals(): Globals {
