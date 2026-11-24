@@ -51,6 +51,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   serverExternalPackages: [
+    "ioredis",
     "postgres",
     "rss-parser",
   ],
