@@ -41,6 +41,7 @@
     "http-link-header": "^1.1.4",
     "ipaddr.js": "^2.5.0",
     "js-yaml": "^5.5.0",
+    "lru-cache": "^11.5.3",
     "next": "16.4.6",
     "postgres": "^4.1.1",
     "react": "^19.3.1",

@@ -39,7 +39,7 @@ import {
 import escapeHtml from "escape-html";
 import { sql } from "drizzle-orm";
 import { receiveFollowResponse, receiveReaction } from "./inbox-state";
-import { memoizeAsync } from "./memoize";
+import { memoizeAsync, memoizeAsyncFor } from "./memoize";
 import { isBlockedHost, normalizeHost, partitionBlockedRecipients } from "./blocklist";
 import { getRelaySubscriptionBot, resolveBlockedInstances, type BotConfig, type FeedsConfig } from "./config";
 import {
@@ -481,6 +481,15 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
     });
 
   // --- Note object dispatcher ---
+  // Followers' servers and relay subscribers fetch each new post hundreds of times within minutes, and posts don't change.
+  const loadEntryForDispatch = memoizeAsyncFor(
+    (key: `${string}/${number}`) => {
+      const [identifier, id] = key.split("/");
+      return getEntryForDispatch(db, identifier, Number(id));
+    },
+    { ttlMs: 60_000, max: 5_000 },
+  );
+
   federation.setObjectDispatcher(
     Note,
     "/users/{identifier}/posts/{id}",
@@ -490,7 +499,7 @@ export function setupFederation(deps: FederationDeps): Federation<void> {
         return null;
       }
       const entryId = Number(id);
-      const entry = await getEntryForDispatch(db, identifier, entryId);
+      const entry = await loadEntryForDispatch(`${identifier}/${entryId}`);
       if (!entry) {
         return null;
       }
