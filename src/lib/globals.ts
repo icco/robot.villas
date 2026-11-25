@@ -46,6 +46,8 @@ function initGlobals() {
   const taskQueue = new PostgresMessageQueue(sql, {
     tableName: "fedify_task_message_v2",
     channelName: "fedify_task_channel",
+    // Maintenance tasks loop over every bot and routinely run past the 60s default.
+    handlerTimeout: { minutes: 15 },
   });
   const blockedInstances = resolveBlockedInstances(config);
   const federation = setupFederation({
