@@ -8,5 +8,4 @@ allowBuilds:
   protobufjs: true
   sharp: true
 minimumReleaseAgeExclude:
-  - '@icco/react-common'
   - '@icco/*'
