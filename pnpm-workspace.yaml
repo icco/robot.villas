@@ -9,3 +9,4 @@ allowBuilds:
   sharp: true
 minimumReleaseAgeExclude:
   - '@icco/react-common'
+  - '@icco/*'
