@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CpuChipIcon } from "@heroicons/react/24/solid";
+import { Cpu } from "lucide-react";
 import type { BotConfig } from "@/lib/config";
 
 export function BotList({ bots }: { bots: [string, BotConfig][] }) {
@@ -22,7 +22,7 @@ export function BotList({ bots }: { bots: [string, BotConfig][] }) {
             />
           ) : (
             <div className="w-6 h-6 rounded-full bg-base-300 flex items-center justify-center">
-              <CpuChipIcon className="w-4 h-4 text-base-content/50" />
+              <Cpu className="w-4 h-4 text-base-content/50" />
             </div>
           )}
           <div className="min-w-0 break-words">

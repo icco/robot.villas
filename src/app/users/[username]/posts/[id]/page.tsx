@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fragment } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CpuChipIcon } from "@heroicons/react/24/solid";
+import { Cpu } from "lucide-react";
 import { EntryInteractButtons } from "@/components/entry-interact-buttons";
 import { ReactorList } from "@/components/reactor-list";
 import { getEntryForDispatch } from "@/lib/db";
@@ -71,7 +71,7 @@ export default async function PostPage({ params }: Props) {
             <img src={bot.profile_photo} alt="" width={48} height={48} className="u-photo rounded-full ring-2 ring-base-300" />
           ) : (
             <span className="w-12 h-12 rounded-full bg-base-300 flex items-center justify-center">
-              <CpuChipIcon className="w-6 h-6 text-base-content/50" />
+              <Cpu className="w-6 h-6 text-base-content/50" />
             </span>
           )}
           <span>

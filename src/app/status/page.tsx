@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import {
-  CheckCircleIcon,
-  ClockIcon,
-  ExclamationCircleIcon,
-  MinusCircleIcon,
-} from "@heroicons/react/24/outline";
+import { CircleAlert, CircleCheck, CircleMinus, Clock } from "lucide-react";
 import { getGlobals } from "@/lib/globals";
 import { getFeedPollStatusMap, getRelayStatusSummary, getFollowingStatusSummary } from "@/lib/db";
 import { getPublicationSummary } from "@/lib/publications";
@@ -28,27 +23,27 @@ function StatusBadge({ status }: { status: "accepted" | "pending" | "rejected" |
   if (status === "accepted") {
     return (
       <span className="inline-flex items-center gap-1 text-success text-xs font-medium">
-        <CheckCircleIcon className="w-3.5 h-3.5" /> accepted
+        <CircleCheck className="w-3.5 h-3.5" /> accepted
       </span>
     );
   }
   if (status === "pending") {
     return (
       <span className="inline-flex items-center gap-1 text-warning text-xs font-medium">
-        <ClockIcon className="w-3.5 h-3.5" /> pending
+        <Clock className="w-3.5 h-3.5" /> pending
       </span>
     );
   }
   if (status === "rejected") {
     return (
       <span className="inline-flex items-center gap-1 text-error text-xs font-medium">
-        <ExclamationCircleIcon className="w-3.5 h-3.5" /> rejected
+        <CircleAlert className="w-3.5 h-3.5" /> rejected
       </span>
     );
   }
   return (
     <span className="inline-flex items-center gap-1 text-base-content/40 text-xs font-medium">
-      <MinusCircleIcon className="w-3.5 h-3.5" /> none
+      <CircleMinus className="w-3.5 h-3.5" /> none
     </span>
   );
 }

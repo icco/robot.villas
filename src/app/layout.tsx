@@ -2,13 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Roboto, Roboto_Mono } from "next/font/google";
-import {
-  ChartBarIcon,
-  InformationCircleIcon,
-  QueueListIcon,
-  SignalIcon,
-  TagIcon,
-} from "@heroicons/react/24/outline";
+import { ChartColumn, Info, List, Radio, Tag } from "lucide-react";
 import { Footer } from "@icco/react-common/Footer";
 import { SiteHeader } from "@icco/react-common/SiteHeader";
 import { WebVitals } from "@icco/react-common/WebVitals";
@@ -77,27 +71,27 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             {
               name: "Posts",
               href: "/posts",
-              icon: <QueueListIcon className="h-5 w-5" />,
+              icon: <List className="h-5 w-5" />,
             },
             {
               name: "Tags",
               href: "/tags",
-              icon: <TagIcon className="h-5 w-5" />,
+              icon: <Tag className="h-5 w-5" />,
             },
             {
               name: "Stats",
               href: "/stats",
-              icon: <ChartBarIcon className="h-5 w-5" />,
+              icon: <ChartColumn className="h-5 w-5" />,
             },
             {
               name: "Status",
               href: "/status",
-              icon: <SignalIcon className="h-5 w-5" />,
+              icon: <Radio className="h-5 w-5" />,
             },
             {
               name: "About",
               href: "/about",
-              icon: <InformationCircleIcon className="h-5 w-5" />,
+              icon: <Info className="h-5 w-5" />,
             },
           ]}
         />

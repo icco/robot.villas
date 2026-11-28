@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowPathRoundedSquareIcon, HeartIcon } from "@heroicons/react/24/outline";
+import { Heart, Repeat } from "lucide-react";
 import { InteractButton } from "@/app/bot/[username]/mastodon-widgets";
 
 type Props = {
@@ -20,7 +20,7 @@ export function EntryInteractButtons({ activityUri, boostCount, likeCount }: Pro
           aria-haspopup="dialog"
           className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-info"
         >
-          <ArrowPathRoundedSquareIcon className="h-4 w-4" aria-hidden="true" /> {boostCount}
+          <Repeat className="h-4 w-4" aria-hidden="true" /> {boostCount}
         </button>
       </InteractButton>
       <InteractButton uri={activityUri} action="favorite">
@@ -31,7 +31,7 @@ export function EntryInteractButtons({ activityUri, boostCount, likeCount }: Pro
           aria-haspopup="dialog"
           className="btn btn-ghost btn-xs gap-1 text-base-content/50 hover:text-error"
         >
-          <HeartIcon className="h-4 w-4" aria-hidden="true" /> {likeCount}
+          <Heart className="h-4 w-4" aria-hidden="true" /> {likeCount}
         </button>
       </InteractButton>
     </>
