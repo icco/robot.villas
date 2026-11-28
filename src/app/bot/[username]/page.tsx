@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CpuChipIcon } from "@heroicons/react/24/solid";
+import { Cpu } from "lucide-react";
 import { PostFeed } from "@/components/feed-entries";
 import { getGlobals } from "@/lib/globals";
 import {
@@ -79,7 +79,7 @@ export default async function BotProfilePage({ params, searchParams }: Props) {
           />
         ) : (
           <div className="w-24 h-24 rounded-full bg-base-300 flex items-center justify-center ring-2 ring-base-300">
-            <CpuChipIcon className="w-10 h-10 text-base-content/50" />
+            <Cpu className="w-10 h-10 text-base-content/50" />
           </div>
         )}
         <div>
